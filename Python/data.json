@@ -2,8 +2,8 @@
     "Title": "Halle",
     "Author": "Arnim, Ludwig Achim von",
     "Date": {
-        "notBefore": "1781",
-        "notAfter": "1831"
+        "notAfter": "1831",
+        "notBefore": "1781"
     },
     "Type": "Schauspiel",
     "Castgroup": [
@@ -41,26 +41,375 @@
     "Minimum Length of Replicas in Drama": 0,
     "Median Length of Replicas in Drama": 20.0,
     "Content": {
-        "1.Akt": {
+        "1 .Akt": {
             "Number": 1,
             "Average Length of Replicas in Act": 31.45945945945946,
             "Maximum Length of Replicas in Act": 367,
             "Minimum Length of Replicas in Act": 0,
-            "Median Length of Replicas in Act": 19.0
+            "Median Length of Replicas in Act": 19.0,
+            "Scenes": {
+                "1 - 1": {
+                    "Number": 1,
+                    "Average Length of Replicas in Scene": 18.761904761904763,
+                    "Maximum Length of Replicas in Scene": 60,
+                    "Minimum Length of Replicas in Scene": 0,
+                    "Median Length of Replicas in Scene": 15
+                },
+                "1 - 2": {
+                    "Number": 2,
+                    "Average Length of Replicas in Scene": 40.83050847457627,
+                    "Maximum Length of Replicas in Scene": 316,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 24
+                },
+                "1 - 3": {
+                    "Number": 3,
+                    "Average Length of Replicas in Scene": 19.892857142857142,
+                    "Maximum Length of Replicas in Scene": 47,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 17.0
+                },
+                "1 - 4": {
+                    "Number": 4,
+                    "Average Length of Replicas in Scene": 20.705882352941178,
+                    "Maximum Length of Replicas in Scene": 45,
+                    "Minimum Length of Replicas in Scene": 6,
+                    "Median Length of Replicas in Scene": 18
+                },
+                "1 - 5": {
+                    "Number": 5,
+                    "Average Length of Replicas in Scene": 36.825,
+                    "Maximum Length of Replicas in Scene": 177,
+                    "Minimum Length of Replicas in Scene": 0,
+                    "Median Length of Replicas in Scene": 24.5
+                },
+                "1 - 6": {
+                    "Number": 6,
+                    "Average Length of Replicas in Scene": 19.16,
+                    "Maximum Length of Replicas in Scene": 54,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 12
+                },
+                "1 - 7": {
+                    "Number": 7,
+                    "Average Length of Replicas in Scene": 64.75,
+                    "Maximum Length of Replicas in Scene": 215,
+                    "Minimum Length of Replicas in Scene": 7,
+                    "Median Length of Replicas in Scene": 36.5
+                },
+                "1 - 8": {
+                    "Number": 8,
+                    "Average Length of Replicas in Scene": 8.333333333333334,
+                    "Maximum Length of Replicas in Scene": 14,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 7.5
+                },
+                "1 - 9": {
+                    "Number": 9,
+                    "Average Length of Replicas in Scene": 32.255319148936174,
+                    "Maximum Length of Replicas in Scene": 109,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 22
+                },
+                "1 - 10": {
+                    "Number": 10,
+                    "Average Length of Replicas in Scene": 25.076923076923077,
+                    "Maximum Length of Replicas in Scene": 49,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 21
+                },
+                "1 - 11": {
+                    "Number": 11,
+                    "Average Length of Replicas in Scene": 131.66666666666666,
+                    "Maximum Length of Replicas in Scene": 367,
+                    "Minimum Length of Replicas in Scene": 8,
+                    "Median Length of Replicas in Scene": 20
+                },
+                "1 - 12": {
+                    "Number": 12,
+                    "Average Length of Replicas in Scene": 19.384615384615383,
+                    "Maximum Length of Replicas in Scene": 49,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 17
+                },
+                "1 - 13": {
+                    "Number": 13,
+                    "Average Length of Replicas in Scene": 120.0,
+                    "Maximum Length of Replicas in Scene": 352,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 7
+                },
+                "1 - 14": {
+                    "Number": 14,
+                    "Average Length of Replicas in Scene": 142.0,
+                    "Maximum Length of Replicas in Scene": 142,
+                    "Minimum Length of Replicas in Scene": 142,
+                    "Median Length of Replicas in Scene": 142
+                },
+                "1 - 15": {
+                    "Number": 15,
+                    "Average Length of Replicas in Scene": 24.0,
+                    "Maximum Length of Replicas in Scene": 87,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 16
+                },
+                "1 - 16": {
+                    "Number": 16,
+                    "Average Length of Replicas in Scene": 32.25,
+                    "Maximum Length of Replicas in Scene": 64,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 33.0
+                },
+                "1 - 17": {
+                    "Number": 17,
+                    "Average Length of Replicas in Scene": 19.625,
+                    "Maximum Length of Replicas in Scene": 48,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 16.0
+                },
+                "1 - 18": {
+                    "Number": 18,
+                    "Average Length of Replicas in Scene": 14.476190476190476,
+                    "Maximum Length of Replicas in Scene": 35,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 12
+                }
+            }
         },
-        "2.Akt": {
+        "2 .Akt": {
             "Number": 2,
             "Average Length of Replicas in Act": 30.55504587155963,
             "Maximum Length of Replicas in Act": 706,
             "Minimum Length of Replicas in Act": 1,
-            "Median Length of Replicas in Act": 20.0
+            "Median Length of Replicas in Act": 20.0,
+            "Scenes": {
+                "2 - 1": {
+                    "Number": 1,
+                    "Average Length of Replicas in Scene": 94.0,
+                    "Maximum Length of Replicas in Scene": 94,
+                    "Minimum Length of Replicas in Scene": 94,
+                    "Median Length of Replicas in Scene": 94
+                },
+                "2 - 2": {
+                    "Number": 2,
+                    "Average Length of Replicas in Scene": 43.0,
+                    "Maximum Length of Replicas in Scene": 268,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 11
+                },
+                "2 - 3": {
+                    "Number": 3,
+                    "Average Length of Replicas in Scene": 37.483870967741936,
+                    "Maximum Length of Replicas in Scene": 158,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 31
+                },
+                "2 - 4": {
+                    "Number": 4,
+                    "Average Length of Replicas in Scene": 32.96296296296296,
+                    "Maximum Length of Replicas in Scene": 133,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 22.5
+                },
+                "2 - 5": {
+                    "Number": 5,
+                    "Average Length of Replicas in Scene": 15.9,
+                    "Maximum Length of Replicas in Scene": 32,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 15.5
+                },
+                "2 - 6": {
+                    "Number": 6,
+                    "Average Length of Replicas in Scene": 63.166666666666664,
+                    "Maximum Length of Replicas in Scene": 706,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 22.5
+                },
+                "2 - 7": {
+                    "Number": 7,
+                    "Average Length of Replicas in Scene": 29.5625,
+                    "Maximum Length of Replicas in Scene": 86,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 19.0
+                },
+                "2 - 8": {
+                    "Number": 8,
+                    "Average Length of Replicas in Scene": 63.8,
+                    "Maximum Length of Replicas in Scene": 343,
+                    "Minimum Length of Replicas in Scene": 7,
+                    "Median Length of Replicas in Scene": 20.5
+                },
+                "2 - 9": {
+                    "Number": 9,
+                    "Average Length of Replicas in Scene": 19.121951219512194,
+                    "Maximum Length of Replicas in Scene": 178,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 10
+                },
+                "2 - 10": {
+                    "Number": 10,
+                    "Average Length of Replicas in Scene": 24.681818181818183,
+                    "Maximum Length of Replicas in Scene": 151,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 13.5
+                },
+                "2 - 11": {
+                    "Number": 11,
+                    "Average Length of Replicas in Scene": 27.682926829268293,
+                    "Maximum Length of Replicas in Scene": 110,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 22
+                },
+                "2 - 12": {
+                    "Number": 12,
+                    "Average Length of Replicas in Scene": 24.28813559322034,
+                    "Maximum Length of Replicas in Scene": 143,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 19
+                },
+                "2 - 13": {
+                    "Number": 13,
+                    "Average Length of Replicas in Scene": 30.0,
+                    "Maximum Length of Replicas in Scene": 64,
+                    "Minimum Length of Replicas in Scene": 11,
+                    "Median Length of Replicas in Scene": 21
+                },
+                "2 - 14": {
+                    "Number": 14,
+                    "Average Length of Replicas in Scene": 22.944444444444443,
+                    "Maximum Length of Replicas in Scene": 55,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 22.5
+                },
+                "2 - 15": {
+                    "Number": 15,
+                    "Average Length of Replicas in Scene": 27.0,
+                    "Maximum Length of Replicas in Scene": 69,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 24.0
+                },
+                "2 - 16": {
+                    "Number": 16,
+                    "Average Length of Replicas in Scene": 32.5,
+                    "Maximum Length of Replicas in Scene": 149,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 21.5
+                },
+                "2 - 17": {
+                    "Number": 17,
+                    "Average Length of Replicas in Scene": 81.33333333333333,
+                    "Maximum Length of Replicas in Scene": 217,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 25
+                }
+            }
         },
-        "3.Akt": {
+        "3 .Akt": {
             "Number": 3,
             "Average Length of Replicas in Act": 35.26569037656904,
             "Maximum Length of Replicas in Act": 774,
             "Minimum Length of Replicas in Act": 2,
-            "Median Length of Replicas in Act": 21.0
+            "Median Length of Replicas in Act": 21.0,
+            "Scenes": {
+                "3 - 1": {
+                    "Number": 1,
+                    "Average Length of Replicas in Scene": 29.973333333333333,
+                    "Maximum Length of Replicas in Scene": 268,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 17
+                },
+                "3 - 2": {
+                    "Number": 2,
+                    "Average Length of Replicas in Scene": 40.06666666666667,
+                    "Maximum Length of Replicas in Scene": 160,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 19
+                },
+                "3 - 3": {
+                    "Number": 3,
+                    "Average Length of Replicas in Scene": 75.64285714285714,
+                    "Maximum Length of Replicas in Scene": 370,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 51.0
+                },
+                "3 - 4": {
+                    "Number": 4,
+                    "Average Length of Replicas in Scene": 55.0,
+                    "Maximum Length of Replicas in Scene": 367,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 25.5
+                },
+                "3 - 5": {
+                    "Number": 5,
+                    "Average Length of Replicas in Scene": 774.0,
+                    "Maximum Length of Replicas in Scene": 774,
+                    "Minimum Length of Replicas in Scene": 774,
+                    "Median Length of Replicas in Scene": 774
+                },
+                "3 - 6": {
+                    "Number": 6,
+                    "Average Length of Replicas in Scene": 30.195121951219512,
+                    "Maximum Length of Replicas in Scene": 109,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 20
+                },
+                "3 - 7": {
+                    "Number": 7,
+                    "Average Length of Replicas in Scene": 29.785714285714285,
+                    "Maximum Length of Replicas in Scene": 211,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 19.0
+                },
+                "3 - 8": {
+                    "Number": 8,
+                    "Average Length of Replicas in Scene": 30.952380952380953,
+                    "Maximum Length of Replicas in Scene": 168,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 16
+                },
+                "3 - 9": {
+                    "Number": 9,
+                    "Average Length of Replicas in Scene": 29.333333333333332,
+                    "Maximum Length of Replicas in Scene": 85,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 29.5
+                },
+                "3 - 10": {
+                    "Number": 10,
+                    "Average Length of Replicas in Scene": 28.973684210526315,
+                    "Maximum Length of Replicas in Scene": 96,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 22.0
+                },
+                "3 - 11": {
+                    "Number": 11,
+                    "Average Length of Replicas in Scene": 28.20754716981132,
+                    "Maximum Length of Replicas in Scene": 133,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 20
+                },
+                "3 - 12": {
+                    "Number": 12,
+                    "Average Length of Replicas in Scene": 41.44444444444444,
+                    "Maximum Length of Replicas in Scene": 73,
+                    "Minimum Length of Replicas in Scene": 7,
+                    "Median Length of Replicas in Scene": 47
+                },
+                "3 - 13": {
+                    "Number": 13,
+                    "Average Length of Replicas in Scene": 25.285714285714285,
+                    "Maximum Length of Replicas in Scene": 65,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 21
+                },
+                "3 - 14": {
+                    "Number": 14,
+                    "Average Length of Replicas in Scene": 23.763157894736842,
+                    "Maximum Length of Replicas in Scene": 156,
+                    "Minimum Length of Replicas in Scene": 5,
+                    "Median Length of Replicas in Scene": 16.5
+                }
+            }
         }
     }
 }

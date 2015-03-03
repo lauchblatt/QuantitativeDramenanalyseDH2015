@@ -82,11 +82,30 @@ class DramaParser:
             act_data['Maximum Length of Replicas in Act'] = act._replicasLength_max
             act_data['Minimum Length of Replicas in Act'] = act._replicasLength_min
             act_data['Median Length of Replicas in Act'] = act._replicasLength_med
+
+            configurations_json = self.generateJSONforConfigurations(act._configurations)
+            act_data['Scenes'] = configurations_json
+
             act_id = str(iterator) + " .Akt"
             acts_data[act_id] = act_data
             iterator = iterator + 1
 
         return acts_data
+
+    def generateJSONforConfigurations(self, configurations):
+        configurations_data = OrderedDict({})
+
+        for configuration in configurations:
+            configuration_data = OrderedDict({})
+            configuration_data['Number'] = configuration._number
+            configuration_data['Average Length of Replicas in Scene'] = configuration._replicasLength_avg
+            configuration_data['Maximum Length of Replicas in Scene'] = configuration._replicasLength_max
+            configuration_data['Minimum Length of Replicas in Scene'] = configuration._replicasLength_min
+            configuration_data['Median Length of Replicas in Scene'] = configuration._replicasLength_med
+
+            configurations_data[configuration._name] = configuration_data
+
+        return configurations_data
 
     def get_xml_root(self, filepath):
         tree = ET.parse(filepath)
