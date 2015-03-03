@@ -252,7 +252,10 @@ class DramaParser:
 
             replica_model._speaker = name
             replica_model._length = self.get_replica_length(subact_speaker_wrapper)
-            replica_data.append(replica_model)
+
+            #Repliken mit Länge 0 (oder geringer) nicht hinzufügen
+            if(replica_model._length > 0):
+                replica_data.append(replica_model)
 
         return replica_data
 
