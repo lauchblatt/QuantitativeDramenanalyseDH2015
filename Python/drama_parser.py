@@ -29,6 +29,7 @@ class DramaParser:
         drama_model._castgroup = self.get_speakers_from_castgroup(xml_root)
 
         drama_model.calc_config_density()
+        drama_model.calc_config_matrix()
         drama_model.calc_speaker_relations()
         drama_model.calc_replicas_statistics()
         #print (vars(drama_model))
@@ -109,7 +110,7 @@ class DramaParser:
             act_data['Median Length of Replicas in Act'] = act._replicasLength_med
 
             configurations_json = self.generateJSONforConfigurations(act._configurations)
-            act_data['Scenes'] = configurations_json
+            act_data['Scenes/Configurations'] = configurations_json
 
             act_id = str(iterator) + " .Act"
             acts_data[act_id] = act_data
@@ -123,6 +124,7 @@ class DramaParser:
         for configuration in configurations:
             configuration_data = OrderedDict({})
             configuration_data['Number'] = configuration._number
+            configuration_data['Appearing Speakers'] = configuration._appearing_speakers
             configuration_data['Average Length of Replicas in Scene'] = configuration._replicasLength_avg
             configuration_data['Maximum Length of Replicas in Scene'] = configuration._replicasLength_max
             configuration_data['Minimum Length of Replicas in Scene'] = configuration._replicasLength_min

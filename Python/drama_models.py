@@ -1,6 +1,7 @@
 #coding: utf8
 
 from statistic_functions import *
+from collections import OrderedDict
 
 class DramaModel:
 
@@ -22,8 +23,36 @@ class DramaModel:
         self._replicasLength_min = None
         self._replicasLength_med = None
         
-    #def calc_config_matrix (self):
-        #self._configuration_matrix = None
+    def calc_config_matrix (self):
+        configuration_matrix = []
+        firstRow = ["Speaker/Configuration"]
+        firstRow.extend(self.getAllConfigurationNames())
+        configuration_matrix.append(firstRow)
+
+        for speaker in self._speakers:
+            nextRow = [speaker._name]
+            nextRow.extend(self.getMatrixRow(speaker))
+            configuration_matrix.append(nextRow)
+        print(configuration_matrix)
+        self._configuration_matrix = configuration_matrix
+
+    def getAllConfigurationNames(self):
+        configurationNames = []
+        for act in self._acts:
+            for configuration in act._configurations:
+                configurationNames.append(configuration._name)
+        return configurationNames
+
+    def getMatrixRow(self, speaker):
+        config_bin = []
+        for act in self._acts:
+            for configuration in act._configurations:
+                if(speaker._name in configuration._appearing_speakers):
+                    config_bin.append(1)
+                else:
+                    config_bin.append(0)
+        return config_bin
+
 
     def calc_config_density (self):
         sum_all = 0
