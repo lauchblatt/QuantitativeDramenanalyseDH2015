@@ -60,6 +60,7 @@ class DramaParser:
         drama_data['All Speakers'] = all_speakers
         """
         drama_data['Configuration Density'] = drama._configuration_density
+        drama_data['Number of Replicas in Drama'] = len(drama.get_replicas_drama())
         drama_data['Average Length of Replicas in Drama'] = drama._replicasLength_avg
         drama_data['Maximum Length of Replicas in Drama'] = drama._replicasLength_max
         drama_data['Minimum Length of Replicas in Drama'] = drama._replicasLength_min
@@ -83,10 +84,11 @@ class DramaParser:
         for speaker in speakers:
             speaker_data = OrderedDict({})
             speaker_data['Name'] = speaker._name
-            speaker_data['Average Length of Replicas of Speaker'] = speaker._replicasLength_avg
-            speaker_data['Maximum Length of Replicas of Speaker'] = speaker._replicasLength_max
-            speaker_data['Minimum Length of Replicas of Speaker'] = speaker._replicasLength_min
-            speaker_data['Median Length of Replicas of Speaker'] = speaker._replicasLength_med
+            speaker_data['Number of Speakers Replicas'] = len(speaker._replicas)
+            speaker_data['Average Length of Speakers Replicas'] = speaker._replicasLength_avg
+            speaker_data['Maximum Length of Speakers Replicas'] = speaker._replicasLength_max
+            speaker_data['Minimum Length of Speakers Replicas'] = speaker._replicasLength_min
+            speaker_data['Median Length of Speakers Replicas'] = speaker._replicasLength_med
 
             speaker_relations = OrderedDict({})
             speaker_relations['Concomitant'] = speaker._concomitant
@@ -106,6 +108,7 @@ class DramaParser:
         for act in acts:
             act_data = OrderedDict({})
             act_data['Number'] = act._number
+            act_data['Number of Replicas in Act'] = len(act.get_replicas_act())
             act_data['Average Length of Replicas in Act'] = act._replicasLength_avg
             act_data['Maximum Length of Replicas in Act'] = act._replicasLength_max
             act_data['Minimum Length of Replicas in Act'] = act._replicasLength_min
@@ -126,6 +129,7 @@ class DramaParser:
         for configuration in configurations:
             configuration_data = OrderedDict({})
             configuration_data['Number'] = configuration._number
+            configuration_data['Number of Replicas in Scene/Configuration'] = len(configuration._replicas)
             configuration_data['Appearing Speakers'] = configuration._appearing_speakers
             configuration_data['Average Length of Replicas in Scene'] = configuration._replicasLength_avg
             configuration_data['Maximum Length of Replicas in Scene'] = configuration._replicasLength_max
@@ -319,7 +323,7 @@ class DramaParser:
 
 def main():
     parser = DramaParser()
-    parser.parse_xml('../Korpus/arnim_halle_s.xml')
+    parser.parse_xml('../Korpus/schi_don_t.xml')
 
 if __name__ == "__main__":
     main()
