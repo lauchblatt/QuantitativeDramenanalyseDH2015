@@ -34,13 +34,13 @@ class DramaParser:
         for act in drama_model._acts:
             act.calc_replicas_statistics()
             for configuration in act._configurations:
-                print(configuration._name)
+                #print(configuration._name)
                 configuration.calc_replicas_statistics()
 
         drama_model.add_replicas_to_speakers()
         for speaker in drama_model._speakers:
             speaker.calc_replicas_statistics()
-            print (vars(speaker))
+            #print (vars(speaker))
 
 
 
@@ -79,7 +79,6 @@ class DramaParser:
     def get_all_speakers(self, xml_root, as_objects = True):
         speaker_list = []
         for speaker in xml_root.findall(".//tei:speaker", self.namespaces):
-
             name = speaker.text
             if name[-1] == ".":
                 name = name[:-1]
@@ -219,8 +218,7 @@ class DramaParser:
 
 def main():
     parser = DramaParser()
-    parser.parse_xml('Korpus/less_nathan_s.xml')
-
+    parser.parse_xml('../Korpus/krue_geistlichen_k.xml')
 
 if __name__ == "__main__":
     main()

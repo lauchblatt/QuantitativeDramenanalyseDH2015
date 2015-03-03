@@ -163,11 +163,17 @@ class ConfigurationModel:
         for replica in replicas:
             replicas_lengths.append(replica._length)
 
-        print(replicas_lengths)
-        self._replicasLength_avg = average(replicas_lengths)
-        self._replicasLength_max = max(replicas_lengths)
-        self._replicasLength_min = min(replicas_lengths)
-        self._replicasLength_med = median(replicas_lengths)
+        if(replicas):
+            self._replicasLength_avg = average(replicas_lengths)
+            self._replicasLength_max = max(replicas_lengths)
+            self._replicasLength_min = min(replicas_lengths)
+            self._replicasLength_med = median(replicas_lengths)
+
+        print(self._name)
+        print(self._replicasLength_avg)
+        print(self._replicasLength_max)
+        print(self._replicasLength_min)
+        print(self._replicasLength_med)
 
 class ReplicaModel:
 
@@ -201,10 +207,12 @@ class SpeakerModel:
         for replicas in self._replicas:
             replicas_lengths.append(replicas._length)
 
-        self._replicasLength_avg = average(replicas_lengths)
-        self._replicasLength_max = max(replicas_lengths)
-        self._replicasLength_min = min(replicas_lengths)
-        self._replicasLength_med = median(replicas_lengths)
+        if(replicas_lengths):
+            self._replicasLength_avg = average(replicas_lengths)
+            self._replicasLength_max = max(replicas_lengths)
+            self._replicasLength_min = min(replicas_lengths)
+            self._replicasLength_med = median(replicas_lengths)
+
         print(self._name)
         print(self._replicasLength_avg)
         print(self._replicasLength_max)
