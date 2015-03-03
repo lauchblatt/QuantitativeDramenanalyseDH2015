@@ -2,7 +2,9 @@
 
 import xml.etree.ElementTree as ET
 import re
+import json
 from drama_models import *
+from collections import OrderedDict
 
 class DramaParser:
 
@@ -24,12 +26,12 @@ class DramaParser:
         drama_model._subact_type = self.get_subact_type(xml_root)
         drama_model._acts = self.extract_act_data(xml_root)
         drama_model._speakers = self.get_all_speakers(xml_root)
-        self.get_speakers_from_castgroup(xml_root)
+        drama_model._castgroup = self.get_speakers_from_castgroup(xml_root)
 
         drama_model.calc_config_density()
         drama_model.calc_speaker_relations()
         drama_model.calc_replicas_statistics()
-        print (vars(drama_model))
+        #print (vars(drama_model))
 
         for act in drama_model._acts:
             act.calc_replicas_statistics()
@@ -42,7 +44,32 @@ class DramaParser:
             speaker.calc_replicas_statistics()
             #print (vars(speaker))
 
+        self.generateJSON(drama_model)
 
+    def generateJSON(self, drama):
+        drama_data = OrderedDict({})
+        drama_data['Title'] = drama._title
+        drama_data['Author'] = drama._author
+        drama_data['Date'] = drama._date
+        drama_data['Type'] = drama._type
+        drama_data['Castgroup'] = drama._castgroup
+        """
+        drama_data['All Speakers'] = all_speakers
+        """
+        drama_data['Configuration Density'] = drama._configuration_density
+        drama_data['Average Length of Replicas in Drama'] = drama._replicasLength_avg
+        drama_data['Maximum Length of Replicas in Drama'] = drama._replicasLength_max
+        drama_data['Minimum Length of Replicas in Drama'] = drama._replicasLength_min
+        drama_data['Median Length of Replicas in Drama'] = drama._replicasLength_med
+
+        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False)
+        print(drama_json)
+
+        doc = open('data.json', 'w')
+        doc.write(drama_json)
+        doc.close
+
+        #print ('JSON:', drama_json)
 
     def get_xml_root(self, filepath):
         tree = ET.parse(filepath)
@@ -205,8 +232,8 @@ class DramaParser:
     def speaker_mapping(self, xml_root):
         castgroup = self.get_speakers_from_castgroup(xml_root)
         all_speakers = self.get_all_speakers(xml_root, False)
-        print (castgroup)
-        print (all_speakers)
+        #print (castgroup)
+        #print (all_speakers)
 
         # stopwortliste!!!!!!
         # compare lists
@@ -214,11 +241,9 @@ class DramaParser:
         #for castgroup_member in castgroup:
             #for speaker in all_speakers:
 
-
-
 def main():
     parser = DramaParser()
-    parser.parse_xml('../Korpus/krue_geistlichen_k.xml')
+    parser.parse_xml('../Korpus/arnim_halle_s.xml')
 
 if __name__ == "__main__":
     main()
