@@ -62,6 +62,9 @@ class DramaParser:
         drama_data['Minimum Length of Replicas in Drama'] = drama._replicasLength_min
         drama_data['Median Length of Replicas in Drama'] = drama._replicasLength_med
 
+        speakers_json = self.generateJSONforSpeakers(drama._speakers)
+        drama_data['Speakers'] = speakers_json
+
         acts_json = self.generateJSONforActs(drama._acts)
         drama_data['Content'] = acts_json
 
@@ -71,6 +74,28 @@ class DramaParser:
         doc = open('data.json', 'w')
         doc.write(drama_json)
         doc.close
+
+    def generateJSONforSpeakers(self, speakers):
+        speakers_data = OrderedDict({})
+        for speaker in speakers:
+            speaker_data = OrderedDict({})
+            speaker_data['Name'] = speaker._name
+            speaker_data['Average Length of Replicas of Speaker'] = speaker._replicasLength_avg
+            speaker_data['Maximum Length of Replicas of Speaker'] = speaker._replicasLength_max
+            speaker_data['Minimum Length of Replicas of Speaker'] = speaker._replicasLength_min
+            speaker_data['Median Length of Replicas of Speaker'] = speaker._replicasLength_med
+
+            speaker_relations = OrderedDict({})
+            speaker_relations['Concomitant'] = speaker._concomitant
+            speaker_relations['Alternative'] = speaker._alternative
+            speaker_relations['Dominates'] = speaker._dominates
+            speaker_relations['Gets dominated by'] = speaker._gets_dominated_by
+            speaker_relations['Independent'] = speaker._independent
+
+            speaker_data["Relations"] = speaker_relations
+            speakers_data[speaker._name] = speaker_data
+
+        return speakers_data
 
     def generateJSONforActs(self, acts):
         acts_data = OrderedDict({})
@@ -86,7 +111,7 @@ class DramaParser:
             configurations_json = self.generateJSONforConfigurations(act._configurations)
             act_data['Scenes'] = configurations_json
 
-            act_id = str(iterator) + " .Akt"
+            act_id = str(iterator) + " .Act"
             acts_data[act_id] = act_data
             iterator = iterator + 1
 
