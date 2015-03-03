@@ -2,8 +2,8 @@
     "Title": "Halle",
     "Author": "Arnim, Ludwig Achim von",
     "Date": {
-        "notAfter": "1831",
-        "notBefore": "1781"
+        "notBefore": "1781",
+        "notAfter": "1831"
     },
     "Type": "Schauspiel",
     "Castgroup": [
@@ -39,5 +39,28 @@
     "Average Length of Replicas in Drama": 32.56931464174455,
     "Maximum Length of Replicas in Drama": 774,
     "Minimum Length of Replicas in Drama": 0,
-    "Median Length of Replicas in Drama": 20.0
+    "Median Length of Replicas in Drama": 20.0,
+    "Content": {
+        "1.Akt": {
+            "Number": 1,
+            "Average Length of Replicas in Act": 31.45945945945946,
+            "Maximum Length of Replicas in Act": 367,
+            "Minimum Length of Replicas in Act": 0,
+            "Median Length of Replicas in Act": 19.0
+        },
+        "2.Akt": {
+            "Number": 2,
+            "Average Length of Replicas in Act": 30.55504587155963,
+            "Maximum Length of Replicas in Act": 706,
+            "Minimum Length of Replicas in Act": 1,
+            "Median Length of Replicas in Act": 20.0
+        },
+        "3.Akt": {
+            "Number": 3,
+            "Average Length of Replicas in Act": 35.26569037656904,
+            "Maximum Length of Replicas in Act": 774,
+            "Minimum Length of Replicas in Act": 2,
+            "Median Length of Replicas in Act": 21.0
+        }
+    }
 }

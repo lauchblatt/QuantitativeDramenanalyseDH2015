@@ -62,14 +62,31 @@ class DramaParser:
         drama_data['Minimum Length of Replicas in Drama'] = drama._replicasLength_min
         drama_data['Median Length of Replicas in Drama'] = drama._replicasLength_med
 
+        acts_json = self.generateJSONforActs(drama._acts)
+        drama_data['Content'] = acts_json
+
         drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False)
-        print(drama_json)
+        #print(drama_json)
 
         doc = open('data.json', 'w')
         doc.write(drama_json)
         doc.close
 
-        #print ('JSON:', drama_json)
+    def generateJSONforActs(self, acts):
+        acts_data = OrderedDict({})
+        iterator = 1
+        for act in acts:
+            act_data = OrderedDict({})
+            act_data['Number'] = act._number
+            act_data['Average Length of Replicas in Act'] = act._replicasLength_avg
+            act_data['Maximum Length of Replicas in Act'] = act._replicasLength_max
+            act_data['Minimum Length of Replicas in Act'] = act._replicasLength_min
+            act_data['Median Length of Replicas in Act'] = act._replicasLength_med
+            act_id = str(iterator) + " .Akt"
+            acts_data[act_id] = act_data
+            iterator = iterator + 1
+
+        return acts_data
 
     def get_xml_root(self, filepath):
         tree = ET.parse(filepath)
