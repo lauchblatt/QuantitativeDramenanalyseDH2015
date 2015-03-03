@@ -33,7 +33,6 @@ class DramaModel:
             nextRow = [speaker._name]
             nextRow.extend(self.getMatrixRow(speaker))
             configuration_matrix.append(nextRow)
-        print(configuration_matrix)
         self._configuration_matrix = configuration_matrix
 
     def getAllConfigurationNames(self):

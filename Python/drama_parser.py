@@ -3,6 +3,7 @@
 import xml.etree.ElementTree as ET
 import re
 import json
+import csv
 from drama_models import *
 from collections import OrderedDict
 
@@ -46,6 +47,7 @@ class DramaParser:
             #print (vars(speaker))
 
         self.generateJSON(drama_model)
+        self.generateConfMatrixCSV(drama_model)
 
     def generateJSON(self, drama):
         drama_data = OrderedDict({})
@@ -133,6 +135,14 @@ class DramaParser:
             configurations_data[configuration._name] = configuration_data
 
         return configurations_data
+
+    def generateConfMatrixCSV(self, drama_model):
+
+        doc = open('configuration_matrix.csv', 'w', newline="")
+        writer = csv.writer(doc, delimiter=",")
+        cf = drama_model._configuration_matrix
+        writer.writerows(cf)
+        doc.close
 
     def get_xml_root(self, filepath):
         tree = ET.parse(filepath)
