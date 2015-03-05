@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import re
 import json
 import csv
+import os
 from drama_models import *
 from collections import OrderedDict
 
@@ -46,8 +47,33 @@ class DramaParser:
             speaker.calc_replicas_statistics()
             #print (vars(speaker))
 
-        self.generateJSON(drama_model)
-        self.generateConfMatrixCSV(drama_model)
+        #self.generateJSON(drama_model)
+        #self.generateConfMatrixCSV(drama_model)
+        #self.generateBasicCSV(drama_model)
+        return drama_model
+
+    def generateBasicCSV(self, dramas):
+        basicCsv = []
+        firstRow = ["Title", "Author", "Date", "Type", "Conf.Density",
+        "Number of Replicas", "Avg. Length of Replicas","Max. Length of Replicas",
+        "Min. Length of Replicas", "Med. Length of Replicas"]
+        basicCsv.append(firstRow);
+        for drama in dramas:
+            #Für Attribute die Kommas enthalten können
+            title = drama._title.replace(",", "")
+            author = drama._author.replace(",", "")
+            date = str(drama._date).replace(",", "")
+
+            dramaData = [title, author, date, drama._type,
+                drama._configuration_density, len(drama.get_replicas_drama()),
+                drama._replicasLength_avg, drama._replicasLength_max, drama._replicasLength_min,
+                drama._replicasLength_med]
+            basicCsv.append(dramaData)        
+
+        doc = open('basicData.csv', 'w', newline="")
+        writer = csv.writer(doc, delimiter=",")
+        writer.writerows(basicCsv)
+        doc.close
 
     def generateJSON(self, drama):
         drama_data = OrderedDict({})
@@ -75,7 +101,7 @@ class DramaParser:
         drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False)
         #print(drama_json)
 
-        doc = open('data.json', 'w')
+        doc = open(drama._author+ "_"+drama._title+'_data.json', 'w')
         doc.write(drama_json)
         doc.close
 
@@ -142,7 +168,7 @@ class DramaParser:
 
     def generateConfMatrixCSV(self, drama_model):
 
-        doc = open('configuration_matrix.csv', 'w', newline="")
+        doc = open(drama_model._author+"_"+drama_model._title+'_matrix.csv', 'w', newline="")
         writer = csv.writer(doc, delimiter=",")
         cf = drama_model._configuration_matrix
         writer.writerows(cf)
@@ -322,8 +348,14 @@ class DramaParser:
             #for speaker in all_speakers:
 
 def main():
+    dramas = []
     parser = DramaParser()
-    parser.parse_xml('../Korpus/schi_don_t.xml')
+    for filename in os.listdir("../Korpus"):
+        try:
+            dramas.append((parser.parse_xml("../Korpus/" + filename)))
+        except:
+            print("Fehler beim Parsen eines Dramas")
+    parser.generateBasicCSV(dramas)
 
 if __name__ == "__main__":
     main()
