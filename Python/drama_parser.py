@@ -50,7 +50,7 @@ class DramaParser:
         #self.generateJSON(drama_model)
         #self.generateConfMatrixCSV(drama_model)
         #self.generateBasicCSV(drama_model)
-        return drama_model
+        ##return drama_model
 
     def generateBasicCSV(self, dramas):
         basicCsv = []
@@ -206,6 +206,9 @@ class DramaParser:
             return "Szene"
 
     # every speaker, even if they are double with different names
+
+    ### Hier werden auch Speakers außerhalb Akt und Szene-Struktur erfasst
+    ### Repliken außerhalb Akt und Szene Struktur werden jedoch schon erfasst
     def get_all_speakers(self, xml_root, as_objects = True):
         speaker_list = []
         for speaker in xml_root.findall(".//tei:speaker", self.namespaces):
@@ -223,6 +226,7 @@ class DramaParser:
         for speaker in speaker_list:
             speaker_model = SpeakerModel()
             speaker_model._name = speaker
+            print(speaker_model._name)
             speaker_model_list.append(speaker_model)
         return speaker_model_list
 
@@ -348,6 +352,7 @@ class DramaParser:
             #for speaker in all_speakers:
 
 def main():
+
     dramas = []
     parser = DramaParser()
     for filename in os.listdir("../Korpus"):
