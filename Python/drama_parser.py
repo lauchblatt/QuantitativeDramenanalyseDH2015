@@ -50,7 +50,7 @@ class DramaParser:
         #self.generateJSON(drama_model)
         #self.generateConfMatrixCSV(drama_model)
         #self.generateBasicCSV(drama_model)
-        ##return drama_model
+        return drama_model
 
     def generateBasicCSV(self, dramas):
         basicCsv = []
@@ -106,7 +106,7 @@ class DramaParser:
         doc.close
 
     def generateJSONforSpeakers(self, speakers):
-        speakers_data = OrderedDict({})
+        speakers_data = []
         for speaker in speakers:
             speaker_data = OrderedDict({})
             speaker_data['Name'] = speaker._name
@@ -124,7 +124,7 @@ class DramaParser:
             speaker_relations['Independent'] = speaker._independent
 
             speaker_data["Relations"] = speaker_relations
-            speakers_data[speaker._name] = speaker_data
+            speakers_data.append(speaker_data)
 
         return speakers_data
 
@@ -355,12 +355,17 @@ def main():
 
     dramas = []
     parser = DramaParser()
+    dramaModel = parser.parse_xml("../Korpus/arnim_halle_s.xml")
+    parser.generateJSON(dramaModel)
+    #Schleife über alle Dramen
+    """
     for filename in os.listdir("../Korpus"):
         try:
             dramas.append((parser.parse_xml("../Korpus/" + filename)))
         except:
             print("Fehler beim Parsen eines Dramas")
     parser.generateBasicCSV(dramas)
+    """
 
 if __name__ == "__main__":
     main()
