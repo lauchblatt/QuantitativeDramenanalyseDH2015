@@ -129,11 +129,11 @@ class DramaParser:
         return speakers_data
 
     def generateJSONforActs(self, acts):
-        acts_data = OrderedDict({})
+        acts_data = []
         iterator = 1
         for act in acts:
             act_data = OrderedDict({})
-            act_data['Number'] = act._number
+            act_data['Number of Act'] = act._number
             act_data['Number of Replicas in Act'] = len(act.get_replicas_act())
             act_data['Average Length of Replicas in Act'] = act._replicasLength_avg
             act_data['Maximum Length of Replicas in Act'] = act._replicasLength_max
@@ -143,18 +143,16 @@ class DramaParser:
             configurations_json = self.generateJSONforConfigurations(act._configurations)
             act_data['Scenes/Configurations'] = configurations_json
 
-            act_id = str(iterator) + " .Act"
-            acts_data[act_id] = act_data
-            iterator = iterator + 1
+            acts_data.append(act_data)
 
         return acts_data
 
     def generateJSONforConfigurations(self, configurations):
-        configurations_data = OrderedDict({})
+        configurations_data = []
 
         for configuration in configurations:
             configuration_data = OrderedDict({})
-            configuration_data['Number'] = configuration._number
+            configuration_data['Number of Scene/Configuration'] = configuration._number
             configuration_data['Number of Replicas in Scene/Configuration'] = len(configuration._replicas)
             configuration_data['Appearing Speakers'] = configuration._appearing_speakers
             configuration_data['Average Length of Replicas in Scene'] = configuration._replicasLength_avg
@@ -162,7 +160,7 @@ class DramaParser:
             configuration_data['Minimum Length of Replicas in Scene'] = configuration._replicasLength_min
             configuration_data['Median Length of Replicas in Scene'] = configuration._replicasLength_med
 
-            configurations_data[configuration._name] = configuration_data
+            configurations_data.append(configuration_data)
 
         return configurations_data
 
