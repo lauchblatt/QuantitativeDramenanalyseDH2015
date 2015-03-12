@@ -3,6 +3,7 @@
 from statistic_functions import *
 from collections import OrderedDict
 
+# model for the whole drama
 class DramaModel:
 
     def __init__ (self):
@@ -23,6 +24,7 @@ class DramaModel:
         self._replicasLength_min = None
         self._replicasLength_med = None
         
+    # calculates the configuration matrix
     def calc_config_matrix (self):
         configuration_matrix = []
         firstRow = ["Speaker/Configuration"]
@@ -52,7 +54,7 @@ class DramaModel:
                     config_bin.append(0)
         return config_bin
 
-
+    # calculates the configuration density
     def calc_config_density (self):
         sum_all = 0
         sum_speaking = 0
@@ -63,6 +65,7 @@ class DramaModel:
 
         self._configuration_density = float(sum_speaking) / sum_all
 
+    # calculates the speaker relations
     def calc_speaker_relations (self):
         for speaker in self._speakers:
             speaker._concomitant = self.get_concomitant_speakers(speaker)
@@ -72,6 +75,7 @@ class DramaModel:
         for speaker in self._speakers:
             speaker._independent = self.get_independent_speakers(speaker)
 
+    # returns a list of all speakers
     def get_list_of_speaker_names(self, current_speaker):
         speaker_names = []
         for speaker in self._speakers:
@@ -79,6 +83,7 @@ class DramaModel:
                 speaker_names.append(speaker._name)
         return speaker_names
 
+    # claculates concomitant speakers
     def get_concomitant_speakers (self, speaker):
         concomitant_speakers = self.get_list_of_speaker_names(speaker)
         for act in self._acts:
@@ -87,6 +92,7 @@ class DramaModel:
                     concomitant_speakers = list(set(concomitant_speakers).intersection(configuration._appearing_speakers))
         return concomitant_speakers
 
+    # # claculates alternative speakers
     def get_alternative_speakers(self, speaker):
         alternative_speakers = self.get_list_of_speaker_names(speaker)
         for act in self._acts:
@@ -95,6 +101,7 @@ class DramaModel:
                     alternative_speakers = list(set(alternative_speakers) - set(configuration._appearing_speakers))
         return alternative_speakers
 
+    # claculates dominant speakers
     def check_dominating_status(self, current_speaker):
         for speaker in self._speakers:
             if speaker is current_speaker:
@@ -105,6 +112,7 @@ class DramaModel:
                     speaker._dominates.append(current_speaker._name)
                     current_speaker._concomitant.remove(speaker._name)
 
+    # claculates independent speakers
     def get_independent_speakers(self, speaker):
         independent_speakers = self.get_list_of_speaker_names(speaker)
         independent_speakers = list(set(independent_speakers) - set(speaker._concomitant))
@@ -140,6 +148,7 @@ class DramaModel:
                     speaker._replicas.append(replica)
                     break
 
+# model for acts
 class ActModel:
 
     def __init__ (self):
@@ -170,6 +179,7 @@ class ActModel:
         self._replicasLength_min = min(replicas_lengths)
         self._replicasLength_med = median(replicas_lengths)
 
+# model for configurations
 class ConfigurationModel:
     def __init__ (self):
         #Waere vielleicht nicht schlecht den Namen, also 1.Akt, 1.Szene zu speichern
@@ -204,6 +214,7 @@ class ConfigurationModel:
         print(self._replicasLength_med)
 
 
+# model for replica
 class ReplicaModel:
 
     def __init__ (self):
@@ -213,6 +224,7 @@ class ReplicaModel:
         self._speaker = None
 
 
+# model for speakers
 class SpeakerModel:
 
     def __init__ (self):
@@ -248,6 +260,4 @@ class SpeakerModel:
         print(self._replicasLength_min)
         print(self._replicasLength_med)
         """
-
-
 

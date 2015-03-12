@@ -12,6 +12,7 @@ class DramaParser:
 
     namespaces = {'tei':'http://www.tei-c.org/ns/1.0'} # used to read the tags in the xml correctly
 
+    # starting point for the parsing
     def parse_xml(self, filepath):
         drama_model = DramaModel()
         xml_root = self.get_xml_root(filepath) # get xml treeroot
@@ -34,18 +35,15 @@ class DramaParser:
         drama_model.calc_config_matrix()
         drama_model.calc_speaker_relations()
         drama_model.calc_replicas_statistics()
-        #print (vars(drama_model))
 
         for act in drama_model._acts:
             act.calc_replicas_statistics()
             for configuration in act._configurations:
-                #print(configuration._name)
                 configuration.calc_replicas_statistics()
 
         drama_model.add_replicas_to_speakers()
         for speaker in drama_model._speakers:
             speaker.calc_replicas_statistics()
-            #print (vars(speaker))
 
         #self.generateJSON(drama_model)
         #self.generateConfMatrixCSV(drama_model)
@@ -59,7 +57,7 @@ class DramaParser:
         "Min. Length of Replicas", "Med. Length of Replicas"]
         basicCsv.append(firstRow);
         for drama in dramas:
-            #Für Attribute die Kommas enthalten können
+            # for attributes which can contain commas
             title = drama._title.replace(",", "")
             author = drama._author.replace(",", "")
             date = str(drama._date).replace(",", "")
@@ -165,29 +163,33 @@ class DramaParser:
         return configurations_data
 
     def generateConfMatrixCSV(self, drama_model):
-
         doc = open(drama_model._author+"_"+drama_model._title+'_matrix.csv', 'w', newline="")
         writer = csv.writer(doc, delimiter=",")
         cf = drama_model._configuration_matrix
         writer.writerows(cf)
         doc.close
 
+    # returns the xml root for the file
     def get_xml_root(self, filepath):
         tree = ET.parse(filepath)
         return tree.getroot()
 
+    # returns the drama title
     def get_title(self, xml_root):
         title = xml_root.find(".//tei:fileDesc/tei:titleStmt/tei:title", self.namespaces).text
         return title
 
+    # returns the drama author
     def get_author(self, xml_root):
         author = xml_root.find(".//tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:author", self.namespaces).text
         return author
 
+    # returns the drama date
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
         return date
 
+    # returns the drama type from the filename
     def get_type(self, filepath):
         if filepath.find("_s.xml") != -1:
             return "Schauspiel"
@@ -196,6 +198,7 @@ class DramaParser:
         elif filepath.find("_k.xml") != -1:
             return "Komoedie"
 
+    # returns if the drama contains Szene or Auftritt
     def get_subact_type(self, xml_root):
         subact_type = xml_root.find(".//tei:div[@type='act']/tei:div[@subtype='work:no']//tei:desc/tei:title", self.namespaces).text
         if subact_type.find("Auftritt") != -1:
@@ -244,6 +247,7 @@ class DramaParser:
 
         return castgroup
 
+    # returns informations about all acts of the drama
     def extract_act_data(self, xml_root):
         act_data = []
         position = 1
@@ -259,6 +263,7 @@ class DramaParser:
 
         return act_data
 
+    # returns informations about all subacts of the drama
     def extract_subact_data(self, act, position):
         config_data = []
         subact_position = 1
@@ -272,6 +277,7 @@ class DramaParser:
             subact_position += 1
         return config_data
 
+    # returns replica for subact
     def get_replicas_for_subact(self, subact):
         replica_data = []
 
@@ -285,12 +291,13 @@ class DramaParser:
             replica_model._speaker = name
             replica_model._length = self.get_replica_length(subact_speaker_wrapper)
 
-            #Repliken mit Länge 0 (oder geringer) nicht hinzufügen
+            # replica with a length of zero or less are not added
             if(replica_model._length > 0):
                 replica_data.append(replica_model)
 
         return replica_data
 
+    # calculates length of replica
     def get_replica_length(self, sub_sp_wrapper):
         length = 0
         stage_dir_length = 0
@@ -311,7 +318,7 @@ class DramaParser:
                 length += self.get_wordcount_from_string(text)
             length = length - stage_dir_length
 
-        #Für klassische Dramen, deren Zeilenwechsel notiert wurde
+        # for classic dramas with noted line breaks
         if l_tag is None:
             lg_tag = sub_sp_wrapper.findall("./tei:lg", self.namespaces)
             for lg_element in sub_sp_wrapper.findall("./tei:lg", self.namespaces):
@@ -320,11 +327,12 @@ class DramaParser:
 
         return length
 
+    # calculates the wordcount of a string
     def get_wordcount_from_string(self, text):
         word_list = re.sub("[^\w]", " ", text).split()
         return len(word_list)
 
-
+    # returns all speakers for the subact
     def get_speakers_for_subact(self, subact):
         speaker_data = []
 
@@ -337,6 +345,7 @@ class DramaParser:
 
         return speaker_data
 
+    # generates a mapping for speakers and castgroup
     def speaker_mapping(self, xml_root):
         castgroup = self.get_speakers_from_castgroup(xml_root)
         all_speakers = self.get_all_speakers(xml_root, False)
@@ -348,6 +357,14 @@ class DramaParser:
 
         #for castgroup_member in castgroup:
             #for speaker in all_speakers:
+
+
+        # Ideen fürs Mapping:
+        # wenn nur eine Person pro Tag drinsteht, ein Name vor dem Komma, mehrere nach dem Komma -> Stoppwortliste
+        # 'gemm_hausvater' überprüfen, ob mehrere Punkte genutzt werden und einfach alles ignorieren?
+        # 'zwsch_abbelino': mehreren Personen eine Bezeichnung zugewiesen, zB Diener, 
+        #       aber das steht erst einige Zeilen weiter unten: erkennbar: Die Zeilen schließen nicht mit Punkt ab???
+
 
 def main():
 
@@ -368,11 +385,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-    # Ideen fürs Mapping:
-    # wenn nur eine Person pro Tag drinsteht, ein Name vor dem Komma, mehrere nach dem Komma -> Stoppwortliste
-    # 'gemm_hausvater' überprüfen, ob mehrere Punkte genutzt werden und einfach alles ignorieren?
-    # 'zwsch_abbelino': mehreren Personen eine Bezeichnung zugewiesen, zB Diener, 
-    #       aber das steht erst einige Zeilen weiter unten: erkennbar: Die Zeilen schließen nicht mit Punkt ab???
-
-    # gemm_hausvater hat noch handlungen????!!!
