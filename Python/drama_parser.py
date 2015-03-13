@@ -99,7 +99,10 @@ class DramaParser:
         drama_data['Content'] = acts_json
 
         drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False)
-        #print(drama_json)
+        drama_output = OrderedDict({})
+        drama_output[0] = drama_data
+        drama_output_json = json.dumps(drama_output, indent=4, ensure_ascii=False)
+        print(drama_output_json)  
 
         doc = open(drama._author+ "_"+drama._title+'_data.json', 'w')
         doc.write(drama_json)
@@ -141,7 +144,7 @@ class DramaParser:
             act_data['Median Length of Replicas in Act'] = act._replicasLength_med
 
             configurations_json = self.generateJSONforConfigurations(act._configurations)
-            act_data['Scenes/Configurations'] = configurations_json
+            act_data['Scenes_Configurations'] = configurations_json
 
             acts_data.append(act_data)
 
@@ -152,8 +155,8 @@ class DramaParser:
 
         for configuration in configurations:
             configuration_data = OrderedDict({})
-            configuration_data['Number of Scene/Configuration'] = configuration._number
-            configuration_data['Number of Replicas in Scene/Configuration'] = len(configuration._replicas)
+            configuration_data['Number of Scene_Configuration'] = configuration._number
+            configuration_data['Number of Replicas in Scene_Configuration'] = len(configuration._replicas)
             configuration_data['Appearing Speakers'] = configuration._appearing_speakers
             configuration_data['Average Length of Replicas in Scene'] = configuration._replicasLength_avg
             configuration_data['Maximum Length of Replicas in Scene'] = configuration._replicasLength_max
@@ -224,7 +227,7 @@ class DramaParser:
         for speaker in speaker_list:
             speaker_model = SpeakerModel()
             speaker_model._name = speaker
-            print(speaker_model._name)
+            #print(speaker_model._name)
             speaker_model_list.append(speaker_model)
         return speaker_model_list
 
@@ -355,15 +358,18 @@ def main():
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/arnim_halle_s.xml")
     parser.generateJSON(dramaModel)
+
+
     #Schleife über alle Dramen
     """
     for filename in os.listdir("../Korpus"):
         try:
-            dramas.append((parser.parse_xml("../Korpus/" + filename)))
+            dramaModel = parser.parse_xml("../Korpus/" + filename)
+            parser.generateJSON(dramaModel)
         except:
             print("Fehler beim Parsen eines Dramas")
-    parser.generateBasicCSV(dramas)
     """
+    
 
 if __name__ == "__main__":
     main()
