@@ -75,7 +75,7 @@ class DramaParser:
         writer.writerows(basicCsv)
         doc.close
 
-    def generateJSON(self, drama):
+    def generateDramaData(self, drama):
         drama_data = OrderedDict({})
         drama_data['Title'] = drama._title
         drama_data['Author'] = drama._author
@@ -98,13 +98,11 @@ class DramaParser:
         acts_json = self.generateJSONforActs(drama._acts)
         drama_data['Content'] = acts_json
 
-        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False)
-        drama_output = OrderedDict({})
-        drama_output[0] = drama_data
-        drama_output_json = json.dumps(drama_output, indent=4, ensure_ascii=False)
-        print(drama_output_json)  
+        return drama_data
 
-        doc = open(drama._author+ "_"+drama._title+'_data.json', 'w')
+    def writeJSON(self, drama_data):
+        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False) 
+        doc = open(drama_data['Author']+ "_"+drama_data['Title']+'_data.json', 'w')
         doc.write(drama_json)
         doc.close
 
@@ -354,21 +352,31 @@ class DramaParser:
 
 def main():
 
-    dramas = []
+    # einen JSON-Output für ein spezielles Drama erstellen
+    """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/arnim_halle_s.xml")
-    parser.generateJSON(dramaModel)
-
-
-    #Schleife über alle Dramen
+    data = parser.generateDramaData(dramaModel)
+    parser.writeJSON(data)
     """
+
+
+    #Schleife über alle Dramen, um JSON-Datei für alle Dramen zu erstellen
+    parser = DramaParser()
+    dramas = []
     for filename in os.listdir("../Korpus"):
         try:
             dramaModel = parser.parse_xml("../Korpus/" + filename)
-            parser.generateJSON(dramaModel)
+            data = parser.generateDramaData(dramaModel)
+            dramas.append(data)
+            print("Erfolg beim Parsen eines Dramas")
         except:
             print("Fehler beim Parsen eines Dramas")
-    """
+    print(len(dramas))
+    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=False) 
+    doc = open('Dramas_data.json', 'w')
+    doc.write(dramas_json)
+    doc.close
     
 
 if __name__ == "__main__":
