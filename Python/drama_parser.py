@@ -100,7 +100,7 @@ class DramaParser:
         #print(drama_json)
 
         doc = open(drama._author+ "_"+drama._title+'_data.json', 'w')
-        doc.write(drama_json)
+        doc.write(drama_json.encode('utf-8'))
         doc.close
 
     def generateJSONforSpeakers(self, speakers):
@@ -212,7 +212,7 @@ class DramaParser:
     ### Repliken außerhalb Akt und Szene Struktur werden jedoch schon erfasst
     def get_all_speakers(self, xml_root, as_objects = True):
         speaker_list = []
-        for speaker in xml_root.findall(".//tei:speaker", self.namespaces):
+        for speaker in xml_root.findall(".//tei:div[@type='act']//tei:speaker", self.namespaces):
             name = speaker.text
             if name[-1] == ".":
                 name = name[:-1]
@@ -370,7 +370,7 @@ def main():
 
     dramas = []
     parser = DramaParser()
-    dramaModel = parser.parse_xml("../Korpus/arnim_halle_s.xml")
+    dramaModel = parser.parse_xml("../Korpus/weis_masaniello_t.xml")
     parser.generateJSON(dramaModel)
     #Schleife über alle Dramen
     """
