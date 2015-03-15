@@ -372,7 +372,7 @@ def main():
         except:
             print("Fehler beim Parsen eines Dramas")
     print(len(dramas))
-    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=False) 
+    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=True) 
     doc = open('Dramas_data.json', 'w')
     doc.write(dramas_json)
     doc.close
