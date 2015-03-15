@@ -101,7 +101,7 @@ class DramaParser:
         return drama_data
 
     def writeJSON(self, drama_data):
-        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False) 
+        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=True) 
         doc = open(drama_data['Author']+ "_"+drama_data['Title']+'_data.json', 'w')
         doc.write(drama_json)
         doc.close
@@ -373,7 +373,7 @@ def main():
         except:
             print("Fehler beim Parsen eines Dramas")
     print(len(dramas))
-    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=False) 
+    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=True) 
     doc = open('Dramas_data.json', 'w')
     doc.write(dramas_json)
     doc.close
