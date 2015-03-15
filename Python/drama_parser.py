@@ -101,7 +101,7 @@ class DramaParser:
         return drama_data
 
     def writeJSON(self, drama_data):
-        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False) 
+        drama_json = json.dumps(drama_data, ensure_ascii=True, indent=4) 
         doc = open(drama_data['Author']+ "_"+drama_data['Title']+'_data.json', 'w')
         doc.write(drama_json)
         doc.close
@@ -353,15 +353,14 @@ class DramaParser:
 def main():
 
     # einen JSON-Output für ein spezielles Drama erstellen
-    """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/arnim_halle_s.xml")
     data = parser.generateDramaData(dramaModel)
     parser.writeJSON(data)
-    """
 
 
     #Schleife über alle Dramen, um JSON-Datei für alle Dramen zu erstellen
+    """
     parser = DramaParser()
     dramas = []
     for filename in os.listdir("../Korpus"):
@@ -377,6 +376,7 @@ def main():
     doc = open('Dramas_data.json', 'w')
     doc.write(dramas_json)
     doc.close
+    """
     
 
 if __name__ == "__main__":

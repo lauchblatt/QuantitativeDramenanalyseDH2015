@@ -1,0 +1,712 @@
+{
+    "Title": "Evander und Alcimna",
+    "Author": "Gessner, Salomon",
+    "Date": {
+        "when": "1762"
+    },
+    "Type": "Schauspiel",
+    "Castgroup": [],
+    "Configuration Density": 0.18421052631578946,
+    "Number of Replicas in Drama": 307,
+    "Average Length of Replicas in Drama": 26.80130293159609,
+    "Maximum Length of Replicas in Drama": 574,
+    "Minimum Length of Replicas in Drama": 1,
+    "Median Length of Replicas in Drama": 15,
+    "Speakers": [
+        {
+            "Name": "CHLOE",
+            "Number of Speakers Replicas": 17,
+            "Average Length of Speakers Replicas": 26.470588235294116,
+            "Maximum Length of Speakers Replicas": 101,
+            "Minimum Length of Speakers Replicas": 3,
+            "Median Length of Speakers Replicas": 19,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "DER ANDRE",
+                    "EVANDER",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [],
+                "Independent": [
+                    "LAMON",
+                    "ALCIMNA",
+                    "ARATES",
+                    "BEDIENTER"
+                ]
+            }
+        },
+        {
+            "Name": "LAMON",
+            "Number of Speakers Replicas": 7,
+            "Average Length of Speakers Replicas": 57.714285714285715,
+            "Maximum Length of Speakers Replicas": 81,
+            "Minimum Length of Speakers Replicas": 9,
+            "Median Length of Speakers Replicas": 75,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ALCIMNA",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "DER ANDRE",
+                    "ARATES",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [],
+                "Independent": [
+                    "PYRHUS",
+                    "BEDIENTER",
+                    "EVANDER",
+                    "CHLOE"
+                ]
+            }
+        },
+        {
+            "Name": "EVANDER",
+            "Number of Speakers Replicas": 88,
+            "Average Length of Speakers Replicas": 33.25,
+            "Maximum Length of Speakers Replicas": 574,
+            "Minimum Length of Speakers Replicas": 1,
+            "Median Length of Speakers Replicas": 14.5,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "CHLOE"
+                ],
+                "Dominates": [
+                    "MILON",
+                    "JUNGER HERR",
+                    "OFFICIER",
+                    "DER ANDRE",
+                    "GELEHRTER"
+                ],
+                "Gets dominated by": [],
+                "Independent": [
+                    "ARATES",
+                    "LAMON",
+                    "PYRHUS",
+                    "BEDIENTER",
+                    "ALCIMNA"
+                ]
+            }
+        },
+        {
+            "Name": "ALCIMNA",
+            "Number of Speakers Replicas": 67,
+            "Average Length of Speakers Replicas": 24.55223880597015,
+            "Maximum Length of Speakers Replicas": 128,
+            "Minimum Length of Speakers Replicas": 2,
+            "Median Length of Speakers Replicas": 14,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "GELEHRTER",
+                    "OFFICIER",
+                    "JUNGER HERR",
+                    "DER ANDRE",
+                    "LAMON"
+                ],
+                "Dominates": [
+                    "MILON",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "ZWEYTE AUFW\u00c6RTERIN"
+                ],
+                "Gets dominated by": [],
+                "Independent": [
+                    "CHLOE",
+                    "PYRHUS",
+                    "BEDIENTER",
+                    "ARATES",
+                    "EVANDER"
+                ]
+            }
+        },
+        {
+            "Name": "MILON",
+            "Number of Speakers Replicas": 18,
+            "Average Length of Speakers Replicas": 18.72222222222222,
+            "Maximum Length of Speakers Replicas": 51,
+            "Minimum Length of Speakers Replicas": 4,
+            "Median Length of Speakers Replicas": 12.0,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "ARATES",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "EVANDER",
+                    "ALCIMNA"
+                ],
+                "Independent": []
+            }
+        },
+        {
+            "Name": "PYRHUS",
+            "Number of Speakers Replicas": 32,
+            "Average Length of Speakers Replicas": 22.28125,
+            "Maximum Length of Speakers Replicas": 78,
+            "Minimum Length of Speakers Replicas": 2,
+            "Median Length of Speakers Replicas": 16.5,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [],
+                "Independent": [
+                    "EVANDER",
+                    "LAMON",
+                    "ALCIMNA",
+                    "ARATES",
+                    "BEDIENTER"
+                ]
+            }
+        },
+        {
+            "Name": "ARATES",
+            "Number of Speakers Replicas": 18,
+            "Average Length of Speakers Replicas": 19.88888888888889,
+            "Maximum Length of Speakers Replicas": 68,
+            "Minimum Length of Speakers Replicas": 1,
+            "Median Length of Speakers Replicas": 14.5,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON",
+                    "LAMON"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [],
+                "Independent": [
+                    "CHLOE",
+                    "PYRHUS",
+                    "BEDIENTER",
+                    "EVANDER",
+                    "ALCIMNA"
+                ]
+            }
+        },
+        {
+            "Name": "BEDIENTER",
+            "Number of Speakers Replicas": 3,
+            "Average Length of Speakers Replicas": 24.0,
+            "Maximum Length of Speakers Replicas": 43,
+            "Minimum Length of Speakers Replicas": 14,
+            "Median Length of Speakers Replicas": 15,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [],
+                "Independent": [
+                    "CHLOE",
+                    "ALCIMNA",
+                    "PYRHUS",
+                    "ARATES",
+                    "EVANDER",
+                    "LAMON"
+                ]
+            }
+        },
+        {
+            "Name": "JUNGER HERR",
+            "Number of Speakers Replicas": 15,
+            "Average Length of Speakers Replicas": 27.333333333333332,
+            "Maximum Length of Speakers Replicas": 112,
+            "Minimum Length of Speakers Replicas": 7,
+            "Median Length of Speakers Replicas": 12,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ALCIMNA",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "PYRHUS",
+                    "ARATES",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "EVANDER"
+                ],
+                "Independent": []
+            }
+        },
+        {
+            "Name": "OFFICIER",
+            "Number of Speakers Replicas": 11,
+            "Average Length of Speakers Replicas": 24.90909090909091,
+            "Maximum Length of Speakers Replicas": 54,
+            "Minimum Length of Speakers Replicas": 3,
+            "Median Length of Speakers Replicas": 18,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "ALCIMNA",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "ARATES",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "EVANDER"
+                ],
+                "Independent": []
+            }
+        },
+        {
+            "Name": "DER ANDRE",
+            "Number of Speakers Replicas": 3,
+            "Average Length of Speakers Replicas": 22.666666666666668,
+            "Maximum Length of Speakers Replicas": 41,
+            "Minimum Length of Speakers Replicas": 10,
+            "Median Length of Speakers Replicas": 17,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ALCIMNA",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "ARATES",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "EVANDER"
+                ],
+                "Independent": []
+            }
+        },
+        {
+            "Name": "GELEHRTER",
+            "Number of Speakers Replicas": 7,
+            "Average Length of Speakers Replicas": 14.0,
+            "Maximum Length of Speakers Replicas": 43,
+            "Minimum Length of Speakers Replicas": 1,
+            "Median Length of Speakers Replicas": 7,
+            "Relations": {
+                "Concomitant": [],
+                "Alternative": [
+                    "OFFICIER",
+                    "ALCIMNA",
+                    "ZWEYTE AUFW\u00c6RTERIN",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "ARATES",
+                    "DER ANDRE",
+                    "ERSTE AUFW\u00c6RTERIN",
+                    "MILON",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "EVANDER"
+                ],
+                "Independent": []
+            }
+        },
+        {
+            "Name": "ERSTE AUFW\u00c6RTERIN",
+            "Number of Speakers Replicas": 10,
+            "Average Length of Speakers Replicas": 22.2,
+            "Maximum Length of Speakers Replicas": 77,
+            "Minimum Length of Speakers Replicas": 1,
+            "Median Length of Speakers Replicas": 13.0,
+            "Relations": {
+                "Concomitant": [
+                    "ZWEYTE AUFW\u00c6RTERIN"
+                ],
+                "Alternative": [
+                    "OFFICIER",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "ARATES",
+                    "EVANDER",
+                    "DER ANDRE",
+                    "MILON",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "ALCIMNA"
+                ],
+                "Independent": []
+            }
+        },
+        {
+            "Name": "ZWEYTE AUFW\u00c6RTERIN",
+            "Number of Speakers Replicas": 11,
+            "Average Length of Speakers Replicas": 22.818181818181817,
+            "Maximum Length of Speakers Replicas": 47,
+            "Minimum Length of Speakers Replicas": 3,
+            "Median Length of Speakers Replicas": 22,
+            "Relations": {
+                "Concomitant": [
+                    "ERSTE AUFW\u00c6RTERIN"
+                ],
+                "Alternative": [
+                    "OFFICIER",
+                    "GELEHRTER",
+                    "JUNGER HERR",
+                    "PYRHUS",
+                    "ARATES",
+                    "EVANDER",
+                    "DER ANDRE",
+                    "MILON",
+                    "LAMON",
+                    "BEDIENTER",
+                    "CHLOE"
+                ],
+                "Dominates": [],
+                "Gets dominated by": [
+                    "ALCIMNA"
+                ],
+                "Independent": []
+            }
+        }
+    ],
+    "Content": [
+        {
+            "Number of Act": 1,
+            "Number of Replicas in Act": 75,
+            "Average Length of Replicas in Act": 27.746666666666666,
+            "Maximum Length of Replicas in Act": 165,
+            "Minimum Length of Replicas in Act": 1,
+            "Median Length of Replicas in Act": 14,
+            "Scenes_Configurations": [
+                {
+                    "Number of Scene_Configuration": 1,
+                    "Number of Replicas in Scene_Configuration": 10,
+                    "Appearing Speakers": [
+                        "CHLOE",
+                        "LAMON"
+                    ],
+                    "Average Length of Replicas in Scene": 57.1,
+                    "Maximum Length of Replicas in Scene": 101,
+                    "Minimum Length of Replicas in Scene": 9,
+                    "Median Length of Replicas in Scene": 64.5
+                },
+                {
+                    "Number of Scene_Configuration": 2,
+                    "Number of Replicas in Scene_Configuration": 8,
+                    "Appearing Speakers": [
+                        "EVANDER",
+                        "ALCIMNA"
+                    ],
+                    "Average Length of Replicas in Scene": 27.625,
+                    "Maximum Length of Replicas in Scene": 165,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 6.0
+                },
+                {
+                    "Number of Scene_Configuration": 3,
+                    "Number of Replicas in Scene_Configuration": 21,
+                    "Appearing Speakers": [
+                        "MILON",
+                        "ALCIMNA",
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 15.619047619047619,
+                    "Maximum Length of Replicas in Scene": 51,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 8
+                },
+                {
+                    "Number of Scene_Configuration": 4,
+                    "Number of Replicas in Scene_Configuration": 22,
+                    "Appearing Speakers": [
+                        "ALCIMNA",
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 36.22727272727273,
+                    "Maximum Length of Replicas in Scene": 122,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 21.5
+                },
+                {
+                    "Number of Scene_Configuration": 5,
+                    "Number of Replicas in Scene_Configuration": 14,
+                    "Appearing Speakers": [
+                        "MILON",
+                        "ALCIMNA",
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 11.714285714285714,
+                    "Maximum Length of Replicas in Scene": 41,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 7.0
+                }
+            ]
+        },
+        {
+            "Number of Act": 2,
+            "Number of Replicas in Act": 112,
+            "Average Length of Replicas in Act": 26.696428571428573,
+            "Maximum Length of Replicas in Act": 237,
+            "Minimum Length of Replicas in Act": 1,
+            "Median Length of Replicas in Act": 16.0,
+            "Scenes_Configurations": [
+                {
+                    "Number of Scene_Configuration": 1,
+                    "Number of Replicas in Scene_Configuration": 5,
+                    "Appearing Speakers": [
+                        "PYRHUS",
+                        "ARATES"
+                    ],
+                    "Average Length of Replicas in Scene": 61.2,
+                    "Maximum Length of Replicas in Scene": 78,
+                    "Minimum Length of Replicas in Scene": 38,
+                    "Median Length of Replicas in Scene": 68
+                },
+                {
+                    "Number of Scene_Configuration": 2,
+                    "Number of Replicas in Scene_Configuration": 22,
+                    "Appearing Speakers": [
+                        "EVANDER",
+                        "PYRHUS",
+                        "ARATES"
+                    ],
+                    "Average Length of Replicas in Scene": 30.40909090909091,
+                    "Maximum Length of Replicas in Scene": 237,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 13.0
+                },
+                {
+                    "Number of Scene_Configuration": 3,
+                    "Number of Replicas in Scene_Configuration": 11,
+                    "Appearing Speakers": [
+                        "BEDIENTER",
+                        "PYRHUS",
+                        "LAMON",
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 24.181818181818183,
+                    "Maximum Length of Replicas in Scene": 52,
+                    "Minimum Length of Replicas in Scene": 4,
+                    "Median Length of Replicas in Scene": 20
+                },
+                {
+                    "Number of Scene_Configuration": 4,
+                    "Number of Replicas in Scene_Configuration": 30,
+                    "Appearing Speakers": [
+                        "EVANDER",
+                        "JUNGER HERR"
+                    ],
+                    "Average Length of Replicas in Scene": 22.733333333333334,
+                    "Maximum Length of Replicas in Scene": 112,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 12.0
+                },
+                {
+                    "Number of Scene_Configuration": 5,
+                    "Number of Replicas in Scene_Configuration": 23,
+                    "Appearing Speakers": [
+                        "EVANDER",
+                        "OFFICIER"
+                    ],
+                    "Average Length of Replicas in Scene": 28.391304347826086,
+                    "Maximum Length of Replicas in Scene": 74,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 21
+                },
+                {
+                    "Number of Scene_Configuration": 6,
+                    "Number of Replicas in Scene_Configuration": 7,
+                    "Appearing Speakers": [
+                        "EVANDER",
+                        "DER ANDRE"
+                    ],
+                    "Average Length of Replicas in Scene": 28.285714285714285,
+                    "Maximum Length of Replicas in Scene": 58,
+                    "Minimum Length of Replicas in Scene": 10,
+                    "Median Length of Replicas in Scene": 22
+                },
+                {
+                    "Number of Scene_Configuration": 7,
+                    "Number of Replicas in Scene_Configuration": 14,
+                    "Appearing Speakers": [
+                        "GELEHRTER",
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 15.428571428571429,
+                    "Maximum Length of Replicas in Scene": 43,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 12.5
+                }
+            ]
+        },
+        {
+            "Number of Act": 3,
+            "Number of Replicas in Act": 120,
+            "Average Length of Replicas in Act": 26.308333333333334,
+            "Maximum Length of Replicas in Act": 574,
+            "Minimum Length of Replicas in Act": 1,
+            "Median Length of Replicas in Act": 15.5,
+            "Scenes_Configurations": [
+                {
+                    "Number of Scene_Configuration": 1,
+                    "Number of Replicas in Scene_Configuration": 21,
+                    "Appearing Speakers": [
+                        "ALCIMNA",
+                        "CHLOE",
+                        "BEDIENTER"
+                    ],
+                    "Average Length of Replicas in Scene": 18.904761904761905,
+                    "Maximum Length of Replicas in Scene": 88,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 15
+                },
+                {
+                    "Number of Scene_Configuration": 2,
+                    "Number of Replicas in Scene_Configuration": 14,
+                    "Appearing Speakers": [
+                        "ARATES",
+                        "BEDIENTER",
+                        "ALCIMNA",
+                        "CHLOE"
+                    ],
+                    "Average Length of Replicas in Scene": 18.0,
+                    "Maximum Length of Replicas in Scene": 46,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 17.0
+                },
+                {
+                    "Number of Scene_Configuration": 3,
+                    "Number of Replicas in Scene_Configuration": 40,
+                    "Appearing Speakers": [
+                        "ERSTE AUFW\u00c6RTERIN",
+                        "ZWEYTE AUFW\u00c6RTERIN",
+                        "ALCIMNA"
+                    ],
+                    "Average Length of Replicas in Scene": 30.175,
+                    "Maximum Length of Replicas in Scene": 128,
+                    "Minimum Length of Replicas in Scene": 1,
+                    "Median Length of Replicas in Scene": 22.5
+                },
+                {
+                    "Number of Scene_Configuration": 4,
+                    "Number of Replicas in Scene_Configuration": 1,
+                    "Appearing Speakers": [
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 574.0,
+                    "Maximum Length of Replicas in Scene": 574,
+                    "Minimum Length of Replicas in Scene": 574,
+                    "Median Length of Replicas in Scene": 574
+                },
+                {
+                    "Number of Scene_Configuration": 5,
+                    "Number of Replicas in Scene_Configuration": 23,
+                    "Appearing Speakers": [
+                        "PYRHUS",
+                        "EVANDER"
+                    ],
+                    "Average Length of Replicas in Scene": 18.82608695652174,
+                    "Maximum Length of Replicas in Scene": 75,
+                    "Minimum Length of Replicas in Scene": 2,
+                    "Median Length of Replicas in Scene": 13
+                },
+                {
+                    "Number of Scene_Configuration": 6,
+                    "Number of Replicas in Scene_Configuration": 7,
+                    "Appearing Speakers": [
+                        "ARATES",
+                        "EVANDER",
+                        "PYRHUS"
+                    ],
+                    "Average Length of Replicas in Scene": 14.428571428571429,
+                    "Maximum Length of Replicas in Scene": 25,
+                    "Minimum Length of Replicas in Scene": 3,
+                    "Median Length of Replicas in Scene": 13
+                },
+                {
+                    "Number of Scene_Configuration": 7,
+                    "Number of Replicas in Scene_Configuration": 14,
+                    "Appearing Speakers": [
+                        "ALCIMNA",
+                        "EVANDER",
+                        "ARATES",
+                        "PYRHUS"
+                    ],
+                    "Average Length of Replicas in Scene": 13.785714285714286,
+                    "Maximum Length of Replicas in Scene": 26,
+                    "Minimum Length of Replicas in Scene": 7,
+                    "Median Length of Replicas in Scene": 13.0
+                }
+            ]
+        }
+    ]
+}
