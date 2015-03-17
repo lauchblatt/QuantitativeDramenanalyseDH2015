@@ -207,13 +207,6 @@ class ConfigurationModel:
             self._replicasLength_min = min(replicas_lengths)
             self._replicasLength_med = median(replicas_lengths)
 
-        print(self._name)
-        print(self._replicasLength_avg)
-        print(self._replicasLength_max)
-        print(self._replicasLength_min)
-        print(self._replicasLength_med)
-
-
 # model for replica
 class ReplicaModel:
 

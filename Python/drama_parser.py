@@ -73,7 +73,7 @@ class DramaParser:
         writer.writerows(basicCsv)
         doc.close
 
-    def generateJSON(self, drama):
+    def generateDramaData(self, drama):
         drama_data = OrderedDict({})
         drama_data['Title'] = drama._title
         drama_data['Author'] = drama._author
@@ -96,11 +96,13 @@ class DramaParser:
         acts_json = self.generateJSONforActs(drama._acts)
         drama_data['Content'] = acts_json
 
-        drama_json = json.dumps(drama_data, indent=4, ensure_ascii=False)
-        #print(drama_json)
+        return drama_data;
 
-        doc = open(drama._author+ "_"+drama._title+'_data.json', 'w')
-        doc.write(drama_json.encode('utf-8'))
+    def writeJSON(self, dramaData):
+        drama_json = json.dumps(dramaData, indent=4, ensure_ascii=True)
+        #print(drama_json)
+        doc = open(dramaData["Author"]+ "_"+dramaData["Title"]+'_data.json', 'w')
+        doc.write(drama_json)
         doc.close
 
     def generateJSONforSpeakers(self, speakers):
@@ -227,7 +229,6 @@ class DramaParser:
         for speaker in speaker_list:
             speaker_model = SpeakerModel()
             speaker_model._name = speaker
-            print(speaker_model._name)
             speaker_model_list.append(speaker_model)
         return speaker_model_list
 
@@ -368,19 +369,32 @@ class DramaParser:
 
 def main():
 
-    dramas = []
+    #to generate one json-file
+    """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/weis_masaniello_t.xml")
-    parser.generateJSON(dramaModel)
-    #Schleife über alle Dramen
+    drama_data = parser.generateDramaData(dramaModel)
+    parser.writeJSON(drama_data)
     """
+
+    #to generate a json-file of all dramas
+    parser = DramaParser()
+    dramas = []
     for filename in os.listdir("../Korpus"):
         try:
-            dramas.append((parser.parse_xml("../Korpus/" + filename)))
+            dramaModel = parser.parse_xml("../Korpus/" + filename)
+            data = parser.generateDramaData(dramaModel)
+            dramas.append(data)
+            print("Erfolg beim Parsen eines Dramas")
         except:
             print("Fehler beim Parsen eines Dramas")
-    parser.generateBasicCSV(dramas)
-    """
+            print("!!! " + filename)
+    print(len(dramas))
+    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=True) 
+    doc = open('Dramas_data.json', 'w')
+    doc.write(dramas_json)
+    doc.close
+
 
 if __name__ == "__main__":
     main()
