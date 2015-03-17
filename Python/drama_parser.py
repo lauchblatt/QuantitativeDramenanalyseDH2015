@@ -353,10 +353,12 @@ class DramaParser:
 def main():
 
     # einen JSON-Output für ein spezielles Drama erstellen
+
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/arnim_halle_s.xml")
     data = parser.generateDramaData(dramaModel)
     parser.writeJSON(data)
+
 
 
     #Schleife über alle Dramen, um JSON-Datei für alle Dramen zu erstellen
