@@ -10,7 +10,9 @@ DramaAnalyzer.DramaModel = function(){
 	};
 
 	var retrieveAllData = function(){
-		firebaseRef.on("value", function(snapshot) {
+		firebaseRef.startAt(null, "10").limit(10).once("value", function(snapshot) {
+			console.log("Data Retrieved");
+			console.log(snapshot.val());
 		  $(that).trigger("AllDataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);

@@ -6,20 +6,21 @@ DramaAnalyzer.DramaListView = function(){
 	};
 
 	var renderList = function(dramaList){
-		for(var i = 0; i < dramaList.length; i++){
-			console.log(dramaList[i]);
+		console.log(dramaList.length);
+		for(var i = 10; i < dramaList.length; i++){
 			var row = createListItem(dramaList[i]);
 			$("#table-tbody").append(row);
 		}
+		$("#loading").css("display","none");
+		$("#drama-table").fadeIn("slow");
 	};
 
 	var createListItem = function(drama){
 		var row = $("<tr>");
-		row.append(($("<td>")).text("0"));
-		row.append(($("<td>")).text(drama.Title));
-		row.append(($("<td>")).text(drama.Author));
-		row.append(($("<td>")).text(drama.Type));
-		row.append(($("<td>")).text(drama.Date));
+		row.append(($("<td>")).text(drama["Title"]));
+		row.append(($("<td>")).text(drama["Author"]));
+		row.append(($("<td>")).text(drama["Type"]));
+		row.append(($("<td>")).text(drama["Date"]));
 		return row;
 	};
 

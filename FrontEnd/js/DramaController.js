@@ -13,6 +13,7 @@ DramaAnalyzer.DramaController = function(){
 
 		initListener();
 
+		console.log("start Retrieval");
 		dramaModel.retrieveAllData();
 	};
 
