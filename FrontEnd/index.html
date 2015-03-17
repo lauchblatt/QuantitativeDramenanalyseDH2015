@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Quantitative Dramenanalyse</title>	
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/front-end.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<h1>DramaAnalyzer</h1>
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/DramaAnalyzer.js"></script>
+		<script type="text/javascript" src="js/DramaModel.js"></script>
+		<script type="text/javascript" src="js/DramaListView.js"></script>
+		<script type="text/javascript" src="js/DramaController.js"></script>
+
+		<script>
+				$(function() {
+					DramaAnalyzer.init();
+				});
+			</script>
+	</body>
+</html>
