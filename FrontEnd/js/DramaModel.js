@@ -10,7 +10,7 @@ DramaAnalyzer.DramaModel = function(){
 	};
 
 	var retrieveAllData = function(){
-		firebaseRef.once("value", function(snapshot) {
+		firebaseRef.orderByChild('Title').once("value", function(snapshot) {
 			console.log("Data Retrieved");
 			console.log(snapshot.val());
 		  $(that).trigger("AllDataRetrieved", [snapshot.val()]);
