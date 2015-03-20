@@ -75,26 +75,26 @@ class DramaParser:
 
     def generateDramaData(self, drama):
         drama_data = OrderedDict({})
-        drama_data['Title'] = drama._title
-        drama_data['Author'] = drama._author
-        drama_data['Date'] = drama._date
-        drama_data['Type'] = drama._type
-        drama_data['Castgroup'] = drama._castgroup
+        drama_data['title'] = drama._title
+        drama_data['author'] = drama._author
+        drama_data['date'] = drama._date
+        drama_data['type'] = drama._type
+        drama_data['castgroup'] = drama._castgroup
         """
         drama_data['All Speakers'] = all_speakers
         """
-        drama_data['Configuration Density'] = drama._configuration_density
-        drama_data['Number of Replicas in Drama'] = len(drama.get_replicas_drama())
-        drama_data['Average Length of Replicas in Drama'] = drama._replicasLength_avg
-        drama_data['Maximum Length of Replicas in Drama'] = drama._replicasLength_max
-        drama_data['Minimum Length of Replicas in Drama'] = drama._replicasLength_min
-        drama_data['Median Length of Replicas in Drama'] = drama._replicasLength_med
+        drama_data['configuration Density'] = drama._configuration_density
+        drama_data['number_of_speeches_in_Drama'] = len(drama.get_replicas_drama())
+        drama_data['average_length_of_speeches_in_drama'] = drama._replicasLength_avg
+        drama_data['maximum_length_of_speeches_in_drama'] = drama._replicasLength_max
+        drama_data['minimum_length_of_speeches_in drama'] = drama._replicasLength_min
+        drama_data['median_length_of_speeches_in_drama'] = drama._replicasLength_med
 
         speakers_json = self.generateJSONforSpeakers(drama._speakers)
-        drama_data['Speakers'] = speakers_json
+        drama_data['speakers'] = speakers_json
 
         acts_json = self.generateJSONforActs(drama._acts)
-        drama_data['Content'] = acts_json
+        drama_data['content'] = acts_json
 
         return drama_data;
 
@@ -109,21 +109,21 @@ class DramaParser:
         speakers_data = []
         for speaker in speakers:
             speaker_data = OrderedDict({})
-            speaker_data['Name'] = speaker._name
-            speaker_data['Number of Speakers Replicas'] = len(speaker._replicas)
-            speaker_data['Average Length of Speakers Replicas'] = speaker._replicasLength_avg
-            speaker_data['Maximum Length of Speakers Replicas'] = speaker._replicasLength_max
-            speaker_data['Minimum Length of Speakers Replicas'] = speaker._replicasLength_min
-            speaker_data['Median Length of Speakers Replicas'] = speaker._replicasLength_med
+            speaker_data['name'] = speaker._name
+            speaker_data['number_of_speakers_speeches'] = len(speaker._replicas)
+            speaker_data['average_length_of_speakers_speeches'] = speaker._replicasLength_avg
+            speaker_data['maximum_length_of_speakers_speeches'] = speaker._replicasLength_max
+            speaker_data['minimum_length_of_speakers_speeches'] = speaker._replicasLength_min
+            speaker_data['median_length_of_speakers_speeches'] = speaker._replicasLength_med
 
             speaker_relations = OrderedDict({})
-            speaker_relations['Concomitant'] = speaker._concomitant
-            speaker_relations['Alternative'] = speaker._alternative
-            speaker_relations['Dominates'] = speaker._dominates
-            speaker_relations['Gets dominated by'] = speaker._gets_dominated_by
-            speaker_relations['Independent'] = speaker._independent
+            speaker_relations['concomitant'] = speaker._concomitant
+            speaker_relations['alternative'] = speaker._alternative
+            speaker_relations['dominates'] = speaker._dominates
+            speaker_relations['gets_dominated_by'] = speaker._gets_dominated_by
+            speaker_relations['independent'] = speaker._independent
 
-            speaker_data["Relations"] = speaker_relations
+            speaker_data["relations"] = speaker_relations
             speakers_data.append(speaker_data)
 
         return speakers_data
@@ -133,15 +133,15 @@ class DramaParser:
         iterator = 1
         for act in acts:
             act_data = OrderedDict({})
-            act_data['Number of Act'] = act._number
-            act_data['Number of Replicas in Act'] = len(act.get_replicas_act())
-            act_data['Average Length of Replicas in Act'] = act._replicasLength_avg
-            act_data['Maximum Length of Replicas in Act'] = act._replicasLength_max
-            act_data['Minimum Length of Replicas in Act'] = act._replicasLength_min
-            act_data['Median Length of Replicas in Act'] = act._replicasLength_med
+            act_data['number_of_act'] = act._number
+            act_data['number_of_speeches_in_act'] = len(act.get_replicas_act())
+            act_data['average_length_of_speeches_in_act'] = act._replicasLength_avg
+            act_data['maximum_length_of_speeches_in_act'] = act._replicasLength_max
+            act_data['minimum_length_of_speeches_in_act'] = act._replicasLength_min
+            act_data['median_length_of_speeches_in_act'] = act._replicasLength_med
 
             configurations_json = self.generateJSONforConfigurations(act._configurations)
-            act_data['Scenes/Configurations'] = configurations_json
+            act_data['scenes'] = configurations_json
 
             acts_data.append(act_data)
 
@@ -152,13 +152,13 @@ class DramaParser:
 
         for configuration in configurations:
             configuration_data = OrderedDict({})
-            configuration_data['Number of Scene/Configuration'] = configuration._number
-            configuration_data['Number of Replicas in Scene/Configuration'] = len(configuration._replicas)
-            configuration_data['Appearing Speakers'] = configuration._appearing_speakers
-            configuration_data['Average Length of Replicas in Scene'] = configuration._replicasLength_avg
-            configuration_data['Maximum Length of Replicas in Scene'] = configuration._replicasLength_max
-            configuration_data['Minimum Length of Replicas in Scene'] = configuration._replicasLength_min
-            configuration_data['Median Length of Replicas in Scene'] = configuration._replicasLength_med
+            configuration_data['number_of_scene'] = configuration._number
+            configuration_data['number_of_speeches_in_scene'] = len(configuration._replicas)
+            configuration_data['appearing_speakers'] = configuration._appearing_speakers
+            configuration_data['average_length_of_speeches_in_scene'] = configuration._replicasLength_avg
+            configuration_data['maximum_length_of_speeches_in_scene'] = configuration._replicasLength_max
+            configuration_data['minimum_length_of_speeches_in_scene'] = configuration._replicasLength_min
+            configuration_data['median_length_of_speeches_in_scene'] = configuration._replicasLength_med
 
             configurations_data.append(configuration_data)
 
