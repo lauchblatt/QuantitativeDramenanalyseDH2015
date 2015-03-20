@@ -189,6 +189,12 @@ class DramaParser:
     # returns the drama date
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
+        print("Date: ", date)
+        if "notBefore" in date:
+            print "if clause"
+            date['middle'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
+
+        print("Date...: ", date)
         return date
 
     # returns the drama type from the filename
@@ -216,9 +222,9 @@ class DramaParser:
         speaker_list = []
         for speaker in xml_root.findall(".//tei:div[@type='act']//tei:speaker", self.namespaces):
             name = speaker.text
-            if name[-1] == ".":
+            if name and name[-1] == ".":
                 name = name[:-1]
-            if name not in speaker_list:
+            if name and name not in speaker_list:
                 speaker_list.append(name)
 
         if not as_objects:
@@ -241,7 +247,7 @@ class DramaParser:
             if "," in real_name:
                 comma = real_name.index(",")
                 real_name = real_name[:comma]
-            elif real_name[-1] == ".":
+            elif real_name and real_name[-1] == ".":
                 real_name = real_name[:-1]
 
             castgroup.append(real_name)
@@ -286,7 +292,7 @@ class DramaParser:
             replica_model = ReplicaModel()
             subact_speaker = subact_speaker_wrapper.find("./tei:speaker", self.namespaces)
             name = subact_speaker.text
-            if name[-1] == ".":
+            if name and name[-1] == ".":
                 name = name[:-1]
 
             replica_model._speaker = name
@@ -339,9 +345,9 @@ class DramaParser:
 
         for subact_speaker in subact.findall(".//tei:speaker", self.namespaces):
             name = subact_speaker.text
-            if name[-1] == ".":
+            if name and name[-1] == ".":
                 name = name[:-1]
-            if name not in speaker_data:
+            if name and name not in speaker_data:
                 speaker_data.append(name)
 
         return speaker_data
@@ -368,6 +374,7 @@ class DramaParser:
 
 
 def main():
+    debug = False
 
     #to generate one json-file
     """
@@ -380,15 +387,27 @@ def main():
     #to generate a json-file of all dramas
     parser = DramaParser()
     dramas = []
-    for filename in os.listdir("../Korpus"):
-        try:
+
+    if debug:
+
+        for filename in os.listdir("../Korpus"):
             dramaModel = parser.parse_xml("../Korpus/" + filename)
             data = parser.generateDramaData(dramaModel)
             dramas.append(data)
             print("Erfolg beim Parsen eines Dramas")
-        except:
-            print("Fehler beim Parsen eines Dramas")
-            print("!!! " + filename)
+
+    else:
+        for filename in os.listdir("../Korpus"):
+            try:
+                dramaModel = parser.parse_xml("../Korpus/" + filename)
+                data = parser.generateDramaData(dramaModel)
+                dramas.append(data)
+                print("Erfolg beim Parsen eines Dramas")
+            except:
+                print("Fehler beim Parsen eines Dramas")
+                print("!!! " + filename)
+
+
     print(len(dramas))
     dramas_json = json.dumps(dramas, indent=4, ensure_ascii=True) 
     doc = open('Dramas_data.json', 'w')
