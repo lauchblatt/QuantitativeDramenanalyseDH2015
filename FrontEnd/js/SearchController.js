@@ -16,9 +16,10 @@ Search.SearchController = function(){
 		formsView.init();
 
 		initListener();
-
+		/*
 		console.log("start Retrieval");
 		dramaListModel.retrieveAllData();
+		*/
 	};
 
 	var initListener = function(){

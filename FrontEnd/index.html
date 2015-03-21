@@ -12,9 +12,42 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<h1>DramaAnalyzer</h1>
+			<h1>Dramalyzer</h1>
 
 			<br/>
+
+			<form class="form-inline">
+			  <div class="form-group">
+			    <label for="input-title">Titel</label>
+			    <input type="text" class="form-control" id="input-title" placeholder="Alle...">
+			  </div>
+			  <div class="form-group">
+			    <label for="input-author">Autor</label>
+			    <input type="text" class="form-control" id="input-author" placeholder="Alle...">
+			  </div>
+			  <br/>
+			  <br/>
+			  <div class="form-group">
+			  	<label>Jahr: </label>
+			    <label for="input-from-year">Von</label>
+			    <input type="text" class="form-control" id="input-from-year" placeholder="Alle...">
+			  </div>
+			  <div class="form-group">
+			    <label for="input-to-year">Bis</label>
+			    <input type="text" class="form-control" id="input-to-year" placeholder="Alle...">
+			  </div>
+			  <br/>
+			  <br/>
+			  <div class="form-group">
+			  	<label>Anzahl der Repliken: </label>
+			    <label for="input-from-numberOfSpeeches">Von</label>
+			    <input type="text" class="form-control" id="input-from-numberOfSpeeches" placeholder="Alle...">
+			  </div>
+			  <div class="form-group">
+			    <label for="input-to-numberOfSpeeches">Bis</label>
+			    <input type="text" class="form-control" id="input-to-numberOfSpeeches" placeholder="Alle...">
+			  </div>
+			</form>
 
 			<div id="loading"><p>Daten werden geladen...</p></div>
 			<table class="table table-bordered" id="drama-table">
