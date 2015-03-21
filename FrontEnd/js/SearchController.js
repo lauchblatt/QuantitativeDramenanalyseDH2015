@@ -16,18 +16,18 @@ Search.SearchController = function(){
 		formsView.init();
 
 		initListener();
-		/*
+
 		console.log("start Retrieval");
-		dramaListModel.retrieveAllData();
-		*/
+		dramaListModel.retrieve();
+
 	};
 
 	var initListener = function(){
 		$(dramaListModel).on("AllDataRetrieved", updateList);
 	};
 
-	var updateList = function(event, dramaList){
-		dramaListView.renderList(dramaList);
+	var updateList = function(event, listItem){
+		dramaListView.renderListItem(listItem);
 	};
 
 	that.init = init;

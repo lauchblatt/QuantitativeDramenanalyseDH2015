@@ -5,13 +5,10 @@ Search.DramaListView = function(){
 
 	};
 
-	var renderList = function(dramaList){
-		for(var i = 0; i < dramaList.length; i++){
-			var row = createListItem(dramaList[i]);
-			$("#table-tbody").append(row);
-		}
+	var renderListItem = function(listItem){
+		var row = createListItem(listItem);
+		$("#table-tbody").append(row);
 		$("#loading").css("display","none");
-		$("#drama-table").fadeIn("slow");
 	};
 
 	var createListItem = function(drama){
@@ -24,7 +21,7 @@ Search.DramaListView = function(){
 	};
 
 	that.init = init;
-	that.renderList = renderList;
+	that.renderListItem = renderListItem;
 
 	return that;
 };
