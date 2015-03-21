@@ -5,3 +5,13 @@
 #drama-table {
 	width: 60%;
 }
+
+th {
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle !important;
+}

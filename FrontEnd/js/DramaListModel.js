@@ -3,15 +3,15 @@ Search.DramaListModel = function(){
 	var firebaseRef = null;
 
 	var init = function(){
-		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/");
+		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
 
 		// Attach an asynchronous callback to read the data at our posts reference
 
 	};
 
 	var retrieve = function(){
-		firebaseRef.orderByChild("Number of Replicas in Drama").startAt(1000).endAt(2000).on("child_added", function(snapshot) {
-			console.log("Data Retrieved");
+		firebaseRef.on("child_added", function(snapshot) {
+			$(that).trigger("DataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
 		});

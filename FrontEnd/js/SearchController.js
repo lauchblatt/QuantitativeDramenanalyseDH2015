@@ -23,7 +23,7 @@ Search.SearchController = function(){
 	};
 
 	var initListener = function(){
-		$(dramaListModel).on("AllDataRetrieved", updateList);
+		$(dramaListModel).on("DataRetrieved", updateList);
 	};
 
 	var updateList = function(event, listItem){
