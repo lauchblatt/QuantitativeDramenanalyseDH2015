@@ -6,6 +6,34 @@
 	width: 60%;
 }
 
+form {
+	width: 30%;
+}
+
+.range {
+	float: left;
+	margin-right: 1%;
+}
+
+.form-control {
+	width: auto;
+}
+
+legend {
+    width:auto; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    margin: 0px !important;
+}
+
+fieldset {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
 th {
 	text-align: center;
 	vertical-align: middle !important;
