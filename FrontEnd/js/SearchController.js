@@ -24,11 +24,6 @@ Search.SearchController = function(){
 
 	var initListener = function(){
 		$(dramaListModel).on("DataRetrieved", updateList);
-		$("#form").submit(test);
-	};
-
-	var test = function(){
-		alert("hello world");
 	};
 
 	var updateList = function(event, listItem){
