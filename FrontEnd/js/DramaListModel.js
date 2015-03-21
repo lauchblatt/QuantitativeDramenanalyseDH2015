@@ -1,4 +1,4 @@
-DramaAnalyzer.DramaModel = function(){
+Search.DramaListModel = function(){
 	var that = {};
 	var firebaseRef = null;
 

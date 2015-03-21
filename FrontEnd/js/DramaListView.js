@@ -1,4 +1,4 @@
-DramaAnalyzer.DramaListView = function(){
+Search.DramaListView = function(){
 	var that = {};
 
 	var init = function(){
