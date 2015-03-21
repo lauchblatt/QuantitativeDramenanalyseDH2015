@@ -6,7 +6,6 @@ DramaAnalyzer.DramaListView = function(){
 	};
 
 	var renderList = function(dramaList){
-		console.log(dramaList.length);
 		for(var i = 0; i < dramaList.length; i++){
 			var row = createListItem(dramaList[i]);
 			$("#table-tbody").append(row);

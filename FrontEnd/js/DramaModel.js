@@ -10,9 +10,10 @@ DramaAnalyzer.DramaModel = function(){
 	};
 
 	var retrieveAllData = function(){
-		firebaseRef.orderByChild('Title').once("value", function(snapshot) {
+		firebaseRef.orderByChild('Number of Replicas in Drama').startAt(1000).endAt(2000).on("child_added", function(snapshot) {
 			console.log("Data Retrieved");
 			console.log(snapshot.val());
+			console.log(snapshot.val().Title + " has " + snapshot.val()["Number of Replicas in Drama"] + " Speeches in Drama.");
 		  $(that).trigger("AllDataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
