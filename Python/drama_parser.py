@@ -73,6 +73,65 @@ class DramaParser:
         writer.writerows(basicCsv)
         doc.close
 
+    def generateDenormalizedJSON(self):
+        dramas = []
+        for filename in os.listdir("../Korpus"):
+            try:
+                dramaModel = self.parse_xml("../Korpus/" + filename)
+                dramas.append(dramaModel)
+                print("Erfolg")
+            except:
+                print("Fehler")
+
+        dramas_output = OrderedDict({})
+        i = 0
+        drama_level_infos = []
+        speakers_level_infos = OrderedDict({})
+        acts_level_infos = OrderedDict({})
+        scenes_level_infos = OrderedDict({})
+
+        for drama in dramas:
+            drama_level_info = self.generateDenormalizedDramaData(drama, i)
+            drama_level_infos.append(drama_level_info)
+
+            speakers_level_info = self.generateJSONforSpeakers(drama._speakers)
+            speakers_level_infos[i] = speakers_level_info
+
+            acts_level_info = self.generateDenormalizedJSONforActs(drama._acts)
+            acts_level_infos[i] = acts_level_info
+
+            scenes_level_info = OrderedDict({})
+            for act in drama._acts:
+                scenes_level_info[act._number] = self.generateJSONforConfigurations(act._configurations)
+            scenes_level_infos[i] = scenes_level_info
+
+            i = i + 1
+        dramas_output["drama_data"] = drama_level_infos
+        dramas_output["speakers_data"] = speakers_level_infos
+        dramas_output["acts_data"] = acts_level_infos
+        dramas_output["scenes_data"] = scenes_level_infos
+
+        dramas_json = json.dumps(dramas_output, indent=4, ensure_ascii=True) 
+        doc = open('Dramas_data.json', 'w')
+        doc.write(dramas_json)
+        doc.close
+
+    def generateDenormalizedDramaData(self, drama, drama_id):
+        drama_data = OrderedDict({})
+        drama_data['id'] = drama_id
+        drama_data['title'] = drama._title
+        drama_data['author'] = drama._author
+        drama_data['date'] = drama._date
+        drama_data['type'] = drama._type
+        drama_data['castgroup'] = drama._castgroup
+        drama_data['configuration_density'] = drama._configuration_density
+        drama_data['number_of_speeches_in_Drama'] = len(drama.get_replicas_drama())
+        drama_data['average_length_of_speeches_in_drama'] = drama._replicasLength_avg
+        drama_data['maximum_length_of_speeches_in_drama'] = drama._replicasLength_max
+        drama_data['minimum_length_of_speeches_in drama'] = drama._replicasLength_min
+        drama_data['median_length_of_speeches_in_drama'] = drama._replicasLength_med
+        return drama_data
+
     def generateDramaData(self, drama):
         drama_data = OrderedDict({})
         drama_data['title'] = drama._title
@@ -83,7 +142,7 @@ class DramaParser:
         """
         drama_data['All Speakers'] = all_speakers
         """
-        drama_data['configuration Density'] = drama._configuration_density
+        drama_data['configuration_density'] = drama._configuration_density
         drama_data['number_of_speeches_in_Drama'] = len(drama.get_replicas_drama())
         drama_data['average_length_of_speeches_in_drama'] = drama._replicasLength_avg
         drama_data['maximum_length_of_speeches_in_drama'] = drama._replicasLength_max
@@ -127,6 +186,22 @@ class DramaParser:
             speakers_data.append(speaker_data)
 
         return speakers_data
+
+    def generateDenormalizedJSONforActs(self, acts):
+        acts_data = []
+        iterator = 1
+        for act in acts:
+            act_data = OrderedDict({})
+            act_data['number_of_act'] = act._number
+            act_data['number_of_speeches_in_act'] = len(act.get_replicas_act())
+            act_data['average_length_of_speeches_in_act'] = act._replicasLength_avg
+            act_data['maximum_length_of_speeches_in_act'] = act._replicasLength_max
+            act_data['minimum_length_of_speeches_in_act'] = act._replicasLength_min
+            act_data['median_length_of_speeches_in_act'] = act._replicasLength_med
+
+            acts_data.append(act_data)
+
+        return acts_data
 
     def generateJSONforActs(self, acts):
         acts_data = []
@@ -189,12 +264,12 @@ class DramaParser:
     # returns the drama date
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
-        print("Date: ", date)
+        #print("Date: ", date)
         if "notBefore" in date:
-            print "if clause"
+            #print "if clause"
             date['middle'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
 
-        print("Date...: ", date)
+        #print("Date...: ", date)
         return date
 
     # returns the drama type from the filename
@@ -384,6 +459,7 @@ def main():
     parser.writeJSON(drama_data)
     """
 
+    """
     #to generate a json-file of all dramas
     parser = DramaParser()
     dramas = []
@@ -413,6 +489,9 @@ def main():
     doc = open('Dramas_data.json', 'w')
     doc.write(dramas_json)
     doc.close
+    """
+    parser = DramaParser()
+    parser.generateDenormalizedJSON()
 
 
 if __name__ == "__main__":
