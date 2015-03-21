@@ -4,9 +4,6 @@ Search.DramaListModel = function(){
 
 	var init = function(){
 		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
-
-		// Attach an asynchronous callback to read the data at our posts reference
-
 	};
 
 	var retrieve = function(){
