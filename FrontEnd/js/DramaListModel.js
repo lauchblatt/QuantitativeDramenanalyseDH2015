@@ -10,10 +10,8 @@ Search.DramaListModel = function(){
 	};
 
 	var retrieve = function(){
-		firebaseRef.orderByChild("Title").on("child_added", function(snapshot) {
+		firebaseRef.orderByChild("Number of Replicas in Drama").startAt(1000).endAt(2000).on("child_added", function(snapshot) {
 			console.log("Data Retrieved");
-			console.log(snapshot.val());
-		  	$(that).trigger("AllDataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
 		});
