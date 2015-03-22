@@ -4,29 +4,54 @@ Search.DramaListModel = function(){
 	//List of Criterions to compare them later
 	var rangeList_year = [];
 	var rangeList_numberOfSpeeches = [];
+	var dramas = [];
 
 	var init = function(){
 		firebaseRef = null;
 		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
+
+		$(that).on("test", filterAllDataByTitleAndAuthor);
 	};
 
-	var retrieveAllData = function(){
+	var retrieveAllData = function(input){
+		firebaseRef = null;
+		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
+
 		$(that).trigger("EmptyTable");
-		firebaseRef.on("child_added", function(snapshot) {
-			$(that).trigger("DataRetrieved", [snapshot.val()]);
+		firebaseRef.orderByChild('author').on("value", function(snapshot) {
+			dramas= snapshot.val();
+			$(that).trigger("test", [input]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
 		});
-	}
+	};
+
+	var filterAllDataByTitleAndAuthor = function(event, input){
+		console.log("helloWorld");
+		console.log(input);
+		console.log(dramas);
+		//If Title is criterion, filter the dramas by title
+		if('title' in input){
+			dramas = filterListByWord('title', input['title']);
+		}
+
+		//If Author is criterion, filter the dramas by author
+		if('author' in input){
+			dramas = filterListByWord('author', input['author']);
+		}
+
+		sendDramas(dramas);
+	};
 
 	var retrieveDramas = function(input){
-		// Reset all Criterions-Lists
+		// Reset all Criterions-Lists, and the list for the result
+		dramas = [];
 		rangeList_year = [];
 		rangeList_numberOfSpeeches = [];
 
-		//If not criterion is chosen, show all dramas
-		if(jQuery.isEmptyObject(input)){
-			retrieveAllData();
+		//If no criterion is chosen, show all dramas, but filter them
+		if(!('number_of_speeches_in_drama' in input) && !('year' in input)){
+			retrieveAllData(input);
 			return;
 		}
 
@@ -40,14 +65,39 @@ Search.DramaListModel = function(){
 			retrieveDataByRange(input['number_of_speeches_in_drama'].from, 
 				input['number_of_speeches_in_drama'].to, 'number_of_speeches_in_drama', rangeList_numberOfSpeeches);
 		}
-		console.log("Stop");
+
 		//Compare all criterion-lists to find dramas that fit all criterions
-		var dramas = compareRangeLists();
+		var rangeDramas = compareRangeLists();
+		if(rangeDramas !== undefined){	
+			dramas = rangeDramas;
+		}
+		//If Title is criterion, filter the dramas by title
+		if('title' in input){
+			dramas = filterListByWord('title', input['title']);
+		}
+
+		//If Author is criterion, filter the dramas by author
+		if('author' in input){
+			dramas = filterListByWord('author', input['author']);
+		}
+
 		sendDramas(dramas);
 
 	};
 
+	var filterListByWord = function(attribute, word){
+		var word = word.toLowerCase();
+		filteredDramaList = [];
+		for(var i = 0; i < dramas.length; i++){
+			if(dramas[i][attribute].toLowerCase().indexOf(word) > -1){
+				filteredDramaList.push(dramas[i]);
+			}
+		}
+		return filteredDramaList;
+	};
+
 	var sendDramas = function(dramas){
+		console.log("sendDramas");
 		for(var i = 0; i < dramas.length; i++){
 			$(that).trigger("DataRetrieved", [dramas[i]]);
 		}
@@ -75,7 +125,6 @@ Search.DramaListModel = function(){
 	return list of dramas that fit all range-criterions
 	*/
 	var compareRangeLists = function(){
-		console.log("compareRangeLists startet");
 		var listsToCompare = [];
 		var sameDramas = [];
 
