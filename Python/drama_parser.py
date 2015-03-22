@@ -24,6 +24,7 @@ class DramaParser:
         drama_model._title = self.get_title(xml_root)
         drama_model._author = self.get_author(xml_root)
         drama_model._date = self.get_date(xml_root)
+        drama_model._year = drama_model._date['when'];
         drama_model._type = self.get_type(filepath)
 
         drama_model._subact_type = self.get_subact_type(xml_root)
@@ -89,6 +90,7 @@ class DramaParser:
         speakers_level_infos = OrderedDict({})
         acts_level_infos = OrderedDict({})
         scenes_level_infos = OrderedDict({})
+        print len(dramas);
 
         for drama in dramas:
             drama_level_info = self.generateDenormalizedDramaData(drama, i)
@@ -122,6 +124,7 @@ class DramaParser:
         drama_data['title'] = drama._title
         drama_data['author'] = drama._author
         drama_data['date'] = drama._date
+        drama_data['year'] = drama._year
         drama_data['type'] = drama._type
         drama_data['castgroup'] = drama._castgroup
         drama_data['configuration_density'] = drama._configuration_density
@@ -265,7 +268,7 @@ class DramaParser:
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
         if "when" in date:
-            date["when"] = (int) (date["when"])
+            date['when'] = (int) (date['when'])
         #print("Date: ", date)
         if "notBefore" in date:
             #print "if clause"

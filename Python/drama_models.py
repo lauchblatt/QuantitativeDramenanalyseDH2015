@@ -12,6 +12,7 @@ class DramaModel:
         self._type = None
         self._author = None
         self._acts = None
+        self._year = None
         # Zur Hilfe alle Speakers speichern, damit sie ueberhaupt irgendwo sind
         self._speakers = None
 
