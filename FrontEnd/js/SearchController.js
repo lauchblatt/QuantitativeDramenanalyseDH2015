@@ -13,11 +13,9 @@ Search.SearchController = function(){
 		dramaListView.init();
 
 		formsView = Search.FormsView();
-		formsView.init();
 
 		initListener();
-
-		dramaListModel.retrieve();
+		formsView.init();
 
 	};
 
@@ -31,7 +29,8 @@ Search.SearchController = function(){
 	};
 
 	var retrieveDramas = function(event, input){
-		console.log(input);
+		console.log("RetrieveDramas");
+		dramaListModel.retrieveDramas(input);
 	};
 
 	that.init = init;
