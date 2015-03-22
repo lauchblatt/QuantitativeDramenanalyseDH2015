@@ -17,12 +17,10 @@ Search.FormsView = function(){
 		if(title != ""){input["title"] = title;}
 		if(author != ""){input["author"] = author;}
 
-		var date = {}
-		if(date_from != ""){date["from"] = date_from;}
-		if(date_to != ""){date["to"] = date_to;}
-		if(date_from != "" || date_to != ""){input["date.when"] = date;}
-
-		console.log(input);
+		var range = {}
+		if(date_from != ""){range.from = parseInt(date_from);}
+		if(date_to != ""){range.to = parseInt(date_to);}
+		if(date_from != "" || date_to != ""){input["year"] = range;}
 
 		$(that).trigger("InputCatched", [input]);
 	};

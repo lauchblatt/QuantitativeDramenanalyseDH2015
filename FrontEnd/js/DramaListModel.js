@@ -7,7 +7,7 @@ Search.DramaListModel = function(){
 	};
 
 	var retrieveAllData = function(){
-		firebaseRef.on("child_added", function(snapshot) {
+		firebaseRef.once("value", function(snapshot) {
 			$(that).trigger("DataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
@@ -15,21 +15,30 @@ Search.DramaListModel = function(){
 	}
 
 	var retrieveDramas = function(input){
-		var date = {};
-		date.from = 1500;
-		date.to = 1600;
-		input['date.when'] = date;
+		/*
+		var range = {};
+		range.from = 1750;
+		range.to = 1755;
+		input['year'] = range;
+		console.log(input['year']);
+		*/
 
 		if(jQuery.isEmptyObject(input)){
 			retrieveAllData();
 			return;
 		}
-		if('date.when' in input){
-			retrieveDataByRange(input['date.when'])
+
+		if('year' in input){
+			retrieveDataByRange(input['year'].from, input['year'].to, 'year')
 		}
 	};
 
-	var retrieveDataByRange = function(range){
+	var retrieveDataByRange = function(from, to, attribute){
+		firebaseRef.orderByChild(attribute).startAt(from).endAt(to).on("value", function(snapshot) {
+			$(that).trigger("DataRetrieved", [snapshot.val()]);
+		}, function (errorObject) {
+		  console.log("The read failed: " + errorObject.code);
+		});
 	};
 
 	that.init = init;

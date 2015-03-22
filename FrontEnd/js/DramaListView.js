@@ -5,8 +5,17 @@ Search.DramaListView = function(){
 
 	};
 
-	var renderList = function(){
-
+	var renderList = function(list){
+		$("#table-tbody").empty();
+		if(list.length !== undefined){
+			for(var i = 0; i < list.length; i++){
+				renderListItem(list[i]);
+			}
+		}else{
+			for(var drama_id in list){
+				renderListItem(list[drama_id]);
+			}
+		}
 	};
 
 	var renderListItem = function(listItem){
@@ -28,11 +37,7 @@ Search.DramaListView = function(){
 			row.append(($("<td>")).text("Unbekannt"));
 		}
 
-		if(drama.date.notBefore !== undefined){
-			row.append(($("<td>")).text("ca. " + drama.date.when));
-		}else{
-			row.append(($("<td>")).text(drama.date.when));
-		}
+		row.append(($("<td>")).text(drama.date['when']));
 
 		row.append(($("<td>")).text(roundToTwoDecimals(drama.configuration_density)));
 		row.append(($("<td>")).text(drama.number_of_speeches_in_drama));
@@ -50,7 +55,7 @@ Search.DramaListView = function(){
 	};
 
 	that.init = init;
-	that.renderListItem = renderListItem;
+	that.renderList = renderList;
 
 	return that;
 };

@@ -24,12 +24,11 @@ Search.SearchController = function(){
 		$(formsView).on("InputCatched", retrieveDramas);
 	};
 
-	var updateList = function(event, listItem){
-		dramaListView.renderListItem(listItem);
+	var updateList = function(event, list){
+		dramaListView.renderList(list);
 	};
 
 	var retrieveDramas = function(event, input){
-		console.log("RetrieveDramas");
 		dramaListModel.retrieveDramas(input);
 	};
 
