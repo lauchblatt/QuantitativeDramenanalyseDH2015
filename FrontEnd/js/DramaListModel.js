@@ -3,11 +3,13 @@ Search.DramaListModel = function(){
 	var firebaseRef = null;
 
 	var init = function(){
+		firebaseRef = null;
 		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
 	};
 
 	var retrieveAllData = function(){
-		firebaseRef.once("value", function(snapshot) {
+		$(that).trigger("EmptyTable");
+		firebaseRef.on("child_added", function(snapshot) {
 			$(that).trigger("DataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
@@ -15,13 +17,6 @@ Search.DramaListModel = function(){
 	}
 
 	var retrieveDramas = function(input){
-		/*
-		var range = {};
-		range.from = 1750;
-		range.to = 1755;
-		input['year'] = range;
-		console.log(input['year']);
-		*/
 
 		if(jQuery.isEmptyObject(input)){
 			retrieveAllData();
@@ -34,7 +29,12 @@ Search.DramaListModel = function(){
 	};
 
 	var retrieveDataByRange = function(from, to, attribute){
-		firebaseRef.orderByChild(attribute).startAt(from).endAt(to).on("value", function(snapshot) {
+		$(that).trigger("EmptyTable");
+		firebaseRef = null;
+		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
+		if(from === undefined){from = 0};
+		if(to === undefined){to = new Date().getFullYear()};
+		firebaseRef.orderByChild(attribute).startAt(from).endAt(to).on("child_added", function(snapshot) {
 			$(that).trigger("DataRetrieved", [snapshot.val()]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);

@@ -37,7 +37,7 @@ Search.DramaListView = function(){
 			row.append(($("<td>")).text("Unbekannt"));
 		}
 
-		row.append(($("<td>")).text(drama.date['when']));
+		row.append(($("<td>")).text(drama.year));
 
 		row.append(($("<td>")).text(roundToTwoDecimals(drama.configuration_density)));
 		row.append(($("<td>")).text(drama.number_of_speeches_in_drama));
@@ -54,8 +54,13 @@ Search.DramaListView = function(){
 		return number
 	};
 
+	var emptyTable = function(){
+		$("#table-tbody").empty();
+	};
+
 	that.init = init;
-	that.renderList = renderList;
+	that.renderListItem = renderListItem;
+	that.emptyTable = emptyTable;
 
 	return that;
 };

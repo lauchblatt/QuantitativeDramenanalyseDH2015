@@ -21,16 +21,21 @@ Search.SearchController = function(){
 
 	var initListener = function(){
 		$(dramaListModel).on("DataRetrieved", updateList);
+		$(dramaListModel).on("EmptyTable", emptyTable);
 		$(formsView).on("InputCatched", retrieveDramas);
 	};
 
-	var updateList = function(event, list){
-		dramaListView.renderList(list);
+	var updateList = function(event, listItem){
+		dramaListView.renderListItem(listItem);
 	};
 
 	var retrieveDramas = function(event, input){
 		dramaListModel.retrieveDramas(input);
 	};
+
+	var emptyTable = function(){
+		dramaListView.emptyTable();
+	}
 
 	that.init = init;
 
