@@ -125,10 +125,10 @@ class DramaParser:
         drama_data['type'] = drama._type
         drama_data['castgroup'] = drama._castgroup
         drama_data['configuration_density'] = drama._configuration_density
-        drama_data['number_of_speeches_in_Drama'] = len(drama.get_replicas_drama())
+        drama_data['number_of_speeches_in_drama'] = len(drama.get_replicas_drama())
         drama_data['average_length_of_speeches_in_drama'] = drama._replicasLength_avg
         drama_data['maximum_length_of_speeches_in_drama'] = drama._replicasLength_max
-        drama_data['minimum_length_of_speeches_in drama'] = drama._replicasLength_min
+        drama_data['minimum_length_of_speeches_in_drama'] = drama._replicasLength_min
         drama_data['median_length_of_speeches_in_drama'] = drama._replicasLength_med
         return drama_data
 
@@ -143,7 +143,7 @@ class DramaParser:
         drama_data['All Speakers'] = all_speakers
         """
         drama_data['configuration_density'] = drama._configuration_density
-        drama_data['number_of_speeches_in_Drama'] = len(drama.get_replicas_drama())
+        drama_data['number_of_speeches_in_drama'] = len(drama.get_replicas_drama())
         drama_data['average_length_of_speeches_in_drama'] = drama._replicasLength_avg
         drama_data['maximum_length_of_speeches_in_drama'] = drama._replicasLength_max
         drama_data['minimum_length_of_speeches_in drama'] = drama._replicasLength_min
@@ -264,10 +264,12 @@ class DramaParser:
     # returns the drama date
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
+        if "when" in date:
+            date["when"] = (int) (date["when"])
         #print("Date: ", date)
         if "notBefore" in date:
             #print "if clause"
-            date['middle'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
+            date['when'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
 
         #print("Date...: ", date)
         return date
