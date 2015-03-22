@@ -17,17 +17,21 @@ Search.SearchController = function(){
 
 		initListener();
 
-		console.log("start Retrieval");
 		dramaListModel.retrieve();
 
 	};
 
 	var initListener = function(){
 		$(dramaListModel).on("DataRetrieved", updateList);
+		$(formsView).on("InputCatched", retrieveDramas);
 	};
 
 	var updateList = function(event, listItem){
 		dramaListView.renderListItem(listItem);
+	};
+
+	var retrieveDramas = function(event, input){
+		console.log(input);
 	};
 
 	that.init = init;

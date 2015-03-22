@@ -5,6 +5,10 @@ Search.DramaListView = function(){
 
 	};
 
+	var renderList = function(){
+
+	};
+
 	var renderListItem = function(listItem){
 		var row = createListItem(listItem);
 		$("#table-tbody").append(row);

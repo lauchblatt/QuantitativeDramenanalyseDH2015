@@ -2,11 +2,14 @@ Search.FormsView = function(){
 	var that = {};
 
 	var init = function(){
-		$("#search-button").on("click", getFormInput);
+		$("#search-button").on("click", setFormInput);
 	};
 
-	var getFormInput = function(){
-		alert("waka waka"+ $("#input-title").val());
+	var setFormInput = function(){
+		var input = {}
+		input["title"] = $("#input-title").val();
+		input["author"] = $("#input-author").val();
+		$(that).trigger("InputCatched", [input]);
 	};
 
 	that.init = init;
