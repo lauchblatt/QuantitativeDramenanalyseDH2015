@@ -28,14 +28,14 @@ Search.DramaListView = function(){
 			row.append(($("<td>")).text("Unbekannt"));
 		}
 
-		if(drama.date.middle !== undefined){
-			row.append(($("<td>")).text("ca. " + drama.date.middle));
+		if(drama.date.notBefore !== undefined){
+			row.append(($("<td>")).text("ca. " + drama.date.when));
 		}else{
 			row.append(($("<td>")).text(drama.date.when));
 		}
 
 		row.append(($("<td>")).text(roundToTwoDecimals(drama.configuration_density)));
-		row.append(($("<td>")).text(drama.number_of_speeches_in_Drama));
+		row.append(($("<td>")).text(drama.number_of_speeches_in_drama));
 		row.append(($("<td>")).text(roundToTwoDecimals(drama.average_length_of_speeches_in_drama)));
 		row.append(($("<td>")).text(drama.median_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.maximum_length_of_speeches_in_drama));
