@@ -103,8 +103,10 @@ class DramaParser:
             acts_level_infos[i] = acts_level_info
 
             scenes_level_info = OrderedDict({})
+            iterator = 0
             for act in drama._acts:
-                scenes_level_info[act._number] = self.generateJSONforConfigurations(act._configurations)
+                scenes_level_info[iterator] = self.generateJSONforConfigurations(act._configurations)
+                iterator = iterator + 1
             scenes_level_infos[i] = scenes_level_info
 
             i = i + 1
