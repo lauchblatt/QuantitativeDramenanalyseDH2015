@@ -38,6 +38,9 @@ Search.DramaListView = function(){
 		}
 
 		row.append(($("<td>")).text(drama.year));
+		row.append(($("<td>")).text(drama.number_of_acts));
+		row.append(($("<td>")).text(drama.number_of_scenes));
+		row.append(($("<td>")).text(getNumberOfSpeakers(drama)));
 
 		row.append(($("<td>")).text(roundToTwoDecimals(drama.configuration_density)));
 		row.append(($("<td>")).text(drama.number_of_speeches_in_drama));
@@ -47,6 +50,11 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.minimum_length_of_speeches_in_drama));
 
 		return row;
+	};
+
+	var getNumberOfSpeakers = function(drama){
+		var speakers = drama.speakers;
+		return speakers.length;
 	};
 
 	var roundToTwoDecimals = function(number){

@@ -4,13 +4,15 @@ Search.DramaListModel = function(){
 	//List of Criterions to compare them later
 	var rangeList_year = [];
 	var rangeList_numberOfSpeeches = [];
+
+	//List of current dramas
 	var dramas = [];
 
 	var init = function(){
 		firebaseRef = null;
 		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
 
-		$(that).on("test", filterAllDataByTitleAndAuthor);
+		$(that).on("AllDramasRetrieved", filterAllDataByTitleAndAuthor);
 	};
 
 	var retrieveAllData = function(input){
@@ -20,7 +22,7 @@ Search.DramaListModel = function(){
 		$(that).trigger("EmptyTable");
 		firebaseRef.orderByChild('author').on("value", function(snapshot) {
 			dramas= snapshot.val();
-			$(that).trigger("test", [input]);
+			$(that).trigger("AllDramasRetrieved", [input]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
 		});
@@ -101,6 +103,8 @@ Search.DramaListModel = function(){
 		for(var i = 0; i < dramas.length; i++){
 			$(that).trigger("DataRetrieved", [dramas[i]]);
 		}
+		$("table").css("display", "none");
+		$("table").fadeIn(1000);
 	};
 
 	var retrieveDataByRange = function(from, to, attribute, criterionList){

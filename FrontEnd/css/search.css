@@ -6,6 +6,10 @@
 	width: 60%;
 }
 
+table {
+	display: none;
+}
+
 form {
 	width: 100%;
 }
@@ -42,4 +46,14 @@ th {
 td {
 	text-align: center;
 	vertical-align: middle !important;
+}
+
+tr {
+	transition: all 1s ease;
+}
+
+tr:hover {
+	background-color: #00BFFF !important;
+	cursor: pointer;
+	border: inset grey 3px;
 }
