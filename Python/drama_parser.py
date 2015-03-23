@@ -133,6 +133,9 @@ class DramaParser:
         drama_data['maximum_length_of_speeches_in_drama'] = drama._replicasLength_max
         drama_data['minimum_length_of_speeches_in_drama'] = drama._replicasLength_min
         drama_data['median_length_of_speeches_in_drama'] = drama._replicasLength_med
+        drama_data['number_of_acts'] = self.getNumberOfActs(drama)
+        drama_data['number_of_scenes'] = self.getNumberOfScenes(drama)
+        drama_data['speakers'] = self.getListOfSpeakers(drama);
         return drama_data
 
     def generateDramaData(self, drama):
@@ -159,6 +162,21 @@ class DramaParser:
         drama_data['content'] = acts_json
 
         return drama_data;
+
+    def getNumberOfActs(self, drama):
+        return len(drama._acts)
+
+    def getNumberOfScenes(self, drama):
+        number = 0
+        for act in drama._acts:
+            number = number + len(act._configurations)
+        return number
+
+    def getListOfSpeakers(self, drama):
+        speakersList = []
+        for speaker in drama._speakers:
+            speakersList.append(speaker._name)
+        return speakersList
 
     def writeJSON(self, dramaData):
         drama_json = json.dumps(dramaData, indent=4, ensure_ascii=True)
