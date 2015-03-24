@@ -4,16 +4,34 @@ Matrix.MatrixView = function(){
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
 		renderheadline(scenesInfo);
 		renderSpeakerColumn(dramaInfo);
+		fillCells(dramaInfo, scenesInfo);
+	};
+
+	var fillCells = function(dramaInfo, scenesInfo){
+		for(var speaker = 0; speaker < dramaInfo.speakers.length; speaker++){
+			var $row = $("#speaker_" + speaker + "_row");
+			console.log($row);
+			for(var act = 0; act < scenesInfo.length; act++){
+				var actClass = "act_" + act;
+				for(var scene = 0; scene < scenesInfo[act].length; scene++){
+					var matrix_id = "matrix_" + act + "_" + scene;
+					$td = $("<td></td>");
+					$td.addClass(actClass);
+					$td.attr("id", matrix_id);
+					$row.append($td);
+				}
+			}
+		}
 	};
 
 	var renderSpeakerColumn = function(dramaInfo){
 		$tableBody = $("#table-body");
 		for(i = 0; i < dramaInfo.speakers.length; i++){
-			var name = dramaInfo.speakers[i];
 			var $row = $("<tr></tr>");
-			$row.attr("id", name + "_row");
+			$row.attr("id", "speaker_" + i + "_row");
 			var $th = $("<th></th>");
-			$th.attr("id", name);
+			$th.attr("id","speaker_" + i);
+			var name = dramaInfo.speakers[i];
 			$th.text(name);
 			$row.append($th);
 			$tableBody.append($row);
