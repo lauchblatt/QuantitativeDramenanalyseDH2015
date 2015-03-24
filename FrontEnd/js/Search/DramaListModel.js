@@ -29,9 +29,6 @@ Search.DramaListModel = function(){
 	};
 
 	var filterAllDataByTitleAndAuthor = function(event, input){
-		console.log("helloWorld");
-		console.log(input);
-		console.log(dramas);
 		//If Title is criterion, filter the dramas by title
 		if('title' in input){
 			dramas = filterListByWord('title', input['title']);
@@ -89,10 +86,14 @@ Search.DramaListModel = function(){
 
 	var filterListByWord = function(attribute, word){
 		var word = word.toLowerCase();
+		var split = word.split(" ");
 		filteredDramaList = [];
 		for(var i = 0; i < dramas.length; i++){
-			if(dramas[i][attribute].toLowerCase().indexOf(word) > -1){
+			for(var j = 0; j < split.length; j++){
+				if(dramas[i][attribute].toLowerCase().indexOf(split[j]) > -1){
 				filteredDramaList.push(dramas[i]);
+				break;
+				}
 			}
 		}
 		return filteredDramaList;
