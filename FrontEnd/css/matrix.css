@@ -4,3 +4,25 @@
 
 table{
 }
+
+th {
+	text-align: center;
+	vertical-align: middle !important;
+	transition: all 1s ease;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle !important;
+	transition: all 0.5s ease;
+}
+
+td:hover {
+	background-color: #00BFFF !important;
+	cursor: pointer;
+}
+
+th:hover {
+	background-color: #00BFFF !important;
+	cursor: pointer;
+}
