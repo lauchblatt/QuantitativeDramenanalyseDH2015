@@ -21,7 +21,7 @@ Matrix.MatrixView = function(){
 		$titleHeader.tooltipster({
 					content: $content,
 					position: "bottom",
-					trigger: 'click'
+					trigger: 'hover'
 				});
 	};
 
@@ -54,7 +54,7 @@ Matrix.MatrixView = function(){
 				$("#"+sceneId).tooltipster({
 					content: $content,
 					position: "bottom",
-					trigger: 'click'
+					trigger: 'hover'
 				});
 			}
 		}
@@ -82,7 +82,7 @@ Matrix.MatrixView = function(){
 			$("#"+actId).tooltipster({
 			content: $content,
 			position: "bottom",
-			trigger: 'click'
+			trigger: 'hover'
 			});
 		}
 	};
@@ -109,7 +109,7 @@ Matrix.MatrixView = function(){
 			$("#"+speakerId).tooltipster({
 			content: $content,
 			position: "right",
-			trigger: 'click'
+			trigger: 'hover'
 			});
 		}
 	};
