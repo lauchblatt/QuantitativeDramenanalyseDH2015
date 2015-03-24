@@ -7,11 +7,82 @@ Matrix.MatrixView = function(){
 		renderSpeakerColumn(dramaInfo);
 		fillTable(dramaInfo, scenesInfo);
 		fillCellsWithConfMatrix(matrix);
+		initTooltipsForSpeakers(speakersInfo);
+		initTooltipsForActs(actsInfo);
 		$("#confMatrix").fadeIn("slow");
+	};
+
+	var initTooltipsForActs = function(actsInfo){
+		for(var i = 0;  i < actsInfo.length; i++){
+			var $content = getActTooltip(actsInfo[i]);
+			var actId = "act_" + i + "_id";
+			console.log($content);
+			console.log(actId);
+			$("#"+actId).tooltipster({
+			content: $content,
+			position: "bottom",
+			trigger: 'click'
+			});
+		}
+	};
+
+	var getActTooltip = function(act){
+		var $content = $("<div></div>");
+		$content.append(buildAttribute(("Akt"), act.number_of_act));
+		$content.append(buildAttribute("Replikenanzahl", act.number_of_speeches_in_act));
+		$content.append(buildAttribute("Mittel Replikenlänge",
+			roundToTwoDecimals(act.average_length_of_speeches_in_act)));
+		$content.append(buildAttribute("Median Replikenlänge", 
+			act.median_length_of_speeches_in_act));
+		$content.append(buildAttribute("Maximum Replikenlänge", 
+			act.maximum_length_of_speeches_in_act));
+		$content.append(buildAttribute("Minimum Replikenlänge", 
+			act.minimum_length_of_speeches_in_act));
+		return $content;
+	};
+
+	var initTooltipsForSpeakers = function(speakersInfo){
+		for(var i = 0; i < speakersInfo.length; i++){
+			var $content = getSpeakerTooltip(speakersInfo[i]);
+			var speakerId = "speaker_" + i;
+			$("#"+speakerId).tooltipster({
+			content: $content,
+			position: "right",
+			trigger: 'click'
+			});
+		}
+	};
+
+	var getSpeakerTooltip = function(speaker){
+		var $content = $("<div></div>");
+		$content.append(buildAttribute("Name", speaker.name));
+		$content.append(buildAttribute("Replikenanzahl", speaker.number_of_speakers_speeches));
+		$content.append(buildAttribute("Mittel Replikenlänge",
+			roundToTwoDecimals(speaker.average_length_of_speakers_speeches)));
+		$content.append(buildAttribute("Median Replikenlänge", 
+			speaker.median_length_of_speakers_speeches));
+		$content.append(buildAttribute("Maximum Replikenlänge", 
+			speaker.maximum_length_of_speakers_speeches));
+		$content.append(buildAttribute("Minimum Replikenlänge", 
+			speaker.minimum_length_of_speakers_speeches));
+		return $content;
+	};
+
+	var buildAttribute = function(name, attribute){
+		var $div = $("<div></div>");
+		$div.text(name + ": " + attribute);
+		return $div;
 	};
 
 	var renderTitle = function(dramaInfo){
 		$("#title").text(dramaInfo["title"] + " von " + dramaInfo.author);
+		$test = $("<div></div>");
+		$test.addClass("test");
+		$test.text("Hello World");
+		$("#title").tooltipster({
+			content: $test,
+			trigger: 'click'
+		});
 	};
 
 	var fillCellsWithConfMatrix = function(matrix){
@@ -63,6 +134,8 @@ Matrix.MatrixView = function(){
 			var lengthOfAct = scenesInfo[i].length;
 			
 			var $th = ($("<th class='act_" + i + "' colspan='" + lengthOfAct +"'></th>"));
+			var id = "act_" + i + "_id";
+			$th.attr("id", id);
 			$th.text((i+1) + ". Akt");
 			$headlineAct.append($th);
 		}
@@ -79,6 +152,11 @@ Matrix.MatrixView = function(){
 			}
 		}
 
+	};
+
+	var roundToTwoDecimals = function(number){
+		number = (Math.round(number * 100)/100).toFixed(2);
+		return number
 	};
 
 	that.init = init;
