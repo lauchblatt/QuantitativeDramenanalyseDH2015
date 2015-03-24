@@ -17,7 +17,12 @@ Matrix.MatrixController = function(){
 	};
 
 	buildTable = function(){
-		matrixView.init();
+		var dramaInfo = matrixModel.getDramaInfo();
+		var actsInfo = matrixModel.getActsInfo();
+		var scenesInfo = matrixModel.getScenesInfo();
+		var speakersInfo = matrixModel.getSpeakersInfo();
+		var matrix = matrixModel.getMatrix();
+		matrixView.init(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix);
 	};
 
 	that.init = init;

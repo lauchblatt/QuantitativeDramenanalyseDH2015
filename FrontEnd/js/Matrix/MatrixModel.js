@@ -12,6 +12,7 @@ Matrix.MatrixModel = function(){
 	var firebaseRef = null; 
 
 	/* Fields to calculate and represent matrix */
+
 	var speakersNames = [];
 	/* Two Dimensional Arrays are not supported for javascript */
 	var matrix = [];
@@ -107,7 +108,32 @@ Matrix.MatrixModel = function(){
 		});
 	};
 
+	var getDramaInfo = function(){
+		return dramaInfo;
+	};
+
+	var getScenesInfo = function(){
+		return scenesInfo;
+	};
+
+	var getActsInfo = function(){
+		return actsInfo;
+	};
+
+	var getSpeakersInfo = function(){
+		return speakersInfo;
+	};
+
+	var getMatrix = function(){
+		return matrix;
+	};
+
 	that.init = init;
+	that.getDramaInfo = getDramaInfo;
+	that.getScenesInfo = getScenesInfo;
+	that.getActsInfo = getActsInfo;
+	that.getSpeakersInfo = getSpeakersInfo;
+	that.getMatrix = getMatrix;
 
 	return that;
 };
