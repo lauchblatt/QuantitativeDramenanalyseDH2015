@@ -196,7 +196,7 @@ Matrix.MatrixView = function(){
 
 		for(var i = 0; i < scenesInfo.length; i++){
 			for(var j = 0; j < scenesInfo[i].length; j++){
-				var act = "'act_" + i + "'";
+				var act = "act_" + i;
 				var scene = "scene_" + i + "_" + j;
 				var $th = $("<th></th>");
 				$th.addClass(act);
