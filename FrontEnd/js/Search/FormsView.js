@@ -3,6 +3,12 @@ Search.FormsView = function(){
 
 	var init = function(){
 		$("#search-button").on("click", setFormInput);
+		$("body").on("keypress", function(event){
+			var key = event.which || event.keyCode;
+			if(key == 13){
+				setFormInput();
+			}
+		});
 		setFormInput();
 	};
 
