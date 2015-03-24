@@ -9,15 +9,76 @@ Matrix.MatrixView = function(){
 		fillCellsWithConfMatrix(matrix);
 		initTooltipsForSpeakers(speakersInfo);
 		initTooltipsForActs(actsInfo);
+		initTooltipsForScenes(scenesInfo);
+		initTooltipsForTitleHeader(dramaInfo);
 		$("#confMatrix").fadeIn("slow");
+	};
+
+	var initTooltipsForTitleHeader = function(dramaInfo){
+		var $titleHeader = $("#title-header");
+		$titleHeader.text(dramaInfo.title);
+		var $content = getDramaTooltip(dramaInfo);
+		$titleHeader.tooltipster({
+					content: $content,
+					position: "bottom",
+					trigger: 'click'
+				});
+	};
+
+	var getDramaTooltip = function(drama){
+		var $content = $("<div></div>");
+		$content.append(buildAttribute(("Titel"), drama.title));
+		$content.append(buildAttribute(("Autor"), drama.author));
+		$content.append(buildAttribute(("Jahr"), drama.year));
+		$content.append(buildAttribute(("Typ"), drama.type));
+		$content.append(buildAttribute(("Sprecher"), drama.speakers.length));
+		$content.append(buildAttribute("Konfigurationsdichte",
+			roundToTwoDecimals(drama.configuration_density)));
+		$content.append(buildAttribute("Replikenanzahl", drama.number_of_speeches_in_drama));
+		$content.append(buildAttribute("Mittel Replikenlänge",
+			roundToTwoDecimals(drama.average_length_of_speeches_in_drama)));
+		$content.append(buildAttribute("Median Replikenlänge", 
+			drama.median_length_of_speeches_in_drama));
+		$content.append(buildAttribute("Maximum Replikenlänge", 
+			drama.maximum_length_of_speeches_in_drama));
+		$content.append(buildAttribute("Minimum Replikenlänge", 
+			drama.minimum_length_of_speeches_in_drama));
+		return $content;
+	};
+
+	var initTooltipsForScenes = function(scenesInfo){
+		for(var act = 0; act < scenesInfo.length; act++){
+			for(var scene = 0; scene < scenesInfo[act].length; scene++){
+				var $content = getSceneTooltip(scenesInfo[act][scene]);
+				var sceneId = "scene_" + act + "_" + scene;
+				$("#"+sceneId).tooltipster({
+					content: $content,
+					position: "bottom",
+					trigger: 'click'
+				});
+			}
+		}
+	};
+
+	var getSceneTooltip = function(scene){
+		var $content = $("<div></div>");
+		$content.append(buildAttribute(("Szene"), scene.number_of_scene));
+		$content.append(buildAttribute("Replikenanzahl", scene.number_of_speeches_in_scene));
+		$content.append(buildAttribute("Mittel Replikenlänge",
+			roundToTwoDecimals(scene.average_length_of_speeches_in_scene)));
+		$content.append(buildAttribute("Median Replikenlänge", 
+			scene.median_length_of_speeches_in_scene));
+		$content.append(buildAttribute("Maximum Replikenlänge", 
+			scene.maximum_length_of_speeches_in_scene));
+		$content.append(buildAttribute("Minimum Replikenlänge", 
+			scene.minimum_length_of_speeches_in_scene));
+		return $content;
 	};
 
 	var initTooltipsForActs = function(actsInfo){
 		for(var i = 0;  i < actsInfo.length; i++){
 			var $content = getActTooltip(actsInfo[i]);
 			var actId = "act_" + i + "_id";
-			console.log($content);
-			console.log(actId);
 			$("#"+actId).tooltipster({
 			content: $content,
 			position: "bottom",
@@ -76,13 +137,6 @@ Matrix.MatrixView = function(){
 
 	var renderTitle = function(dramaInfo){
 		$("#title").text(dramaInfo["title"] + " von " + dramaInfo.author);
-		$test = $("<div></div>");
-		$test.addClass("test");
-		$test.text("Hello World");
-		$("#title").tooltipster({
-			content: $test,
-			trigger: 'click'
-		});
 	};
 
 	var fillCellsWithConfMatrix = function(matrix){
@@ -143,7 +197,7 @@ Matrix.MatrixView = function(){
 		for(var i = 0; i < scenesInfo.length; i++){
 			for(var j = 0; j < scenesInfo[i].length; j++){
 				var act = "'act_" + i + "'";
-				var scene = "'scene_" + i + "_" + j +"'";
+				var scene = "scene_" + i + "_" + j;
 				var $th = $("<th></th>");
 				$th.addClass(act);
 				$th.attr("id", scene);
