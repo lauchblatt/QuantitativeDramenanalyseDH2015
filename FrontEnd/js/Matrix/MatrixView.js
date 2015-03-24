@@ -2,10 +2,16 @@ Matrix.MatrixView = function(){
 	var that = {};
 
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
+		renderTitle(dramaInfo);
 		renderheadline(scenesInfo);
 		renderSpeakerColumn(dramaInfo);
 		fillTable(dramaInfo, scenesInfo);
 		fillCellsWithConfMatrix(matrix);
+		$("#confMatrix").fadeIn("slow");
+	};
+
+	var renderTitle = function(dramaInfo){
+		$("#title").text(dramaInfo["title"] + " von " + dramaInfo.author);
 	};
 
 	var fillCellsWithConfMatrix = function(matrix){

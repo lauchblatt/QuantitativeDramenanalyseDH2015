@@ -1,10 +1,10 @@
-.wrapper {
-	margin: 2%;
+#wrapper {
+	margin-left: 5% !important;
+	margin-right: 5% !important;
 }
-
 table{
+	display: none;
 }
-
 th {
 	text-align: center;
 	vertical-align: middle !important;
