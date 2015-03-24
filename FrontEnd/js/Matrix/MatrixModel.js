@@ -1,6 +1,6 @@
 Matrix.MatrixModel = function(){
 	var that = {};
-	var currentDrama_id = 67;
+	var currentDrama_id = 0;
 	//!!! Important for future dramas with for example only one act
 	//Only works, if dramaInfo is an Object, scenesInfo, actsInfo, speakersInfo is Array
 
