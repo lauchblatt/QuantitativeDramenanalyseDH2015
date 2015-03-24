@@ -1,6 +1,6 @@
 Matrix.MatrixModel = function(){
 	var that = {};
-	var currentDrama_id = 1;
+	var currentDrama_id = 67;
 	//!!! Important for future dramas with for example only one act
 	//Only works, if dramaInfo is an Object, scenesInfo, actsInfo, speakersInfo is Array
 
@@ -69,6 +69,11 @@ Matrix.MatrixModel = function(){
 	};
 
 	var checkIfSpeakerInList = function(speaker, speakerList){
+		console.log(speaker);
+		console.log(speakerList);
+		if(speakerList === undefined){
+			return false;
+		}
 		if (speakerList.indexOf(speaker) > -1) {
     		return true;
 		} else {
