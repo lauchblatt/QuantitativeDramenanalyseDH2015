@@ -29,6 +29,7 @@ Matrix.MatrixModel = function(){
 			console.log("everything is set");
 			speakersNames = dramaInfo.speakers;
 			calculateMatrix();
+			$(that).trigger("ModelInitFinished");
 		}
 	};
 
@@ -40,11 +41,13 @@ Matrix.MatrixModel = function(){
 			sceneCounter = 0;
 			for(var j = 0; j < scenesInfo.length; j++){
 				for(var k = 0; k < scenesInfo[j].length; k++){
+					/*
 					console.log('###');
 					console.log("Akt " + j);
 					console.log("Scene " + k);
 					console.log(dramaInfo.speakers[i]);
 					console.log(scenesInfo[j][k].appearing_speakers);
+					*/
 					
 					var speakerAppears = checkIfSpeakerInList(dramaInfo.speakers[i],
 						scenesInfo[j][k].appearing_speakers);
@@ -54,12 +57,14 @@ Matrix.MatrixModel = function(){
 						matrix[i][sceneCounter] = 0;
 					}
 					sceneCounter++;
+					/*
 					console.log(speakerAppears);
 					console.log('###');
+					*/
 				}
 			}
 		}
-		console.log(matrix);
+		//console.log(matrix);
 	};
 
 	var checkIfSpeakerInList = function(speaker, speakerList){

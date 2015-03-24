@@ -7,8 +7,17 @@ Matrix.MatrixController = function(){
 	var init = function(){
 		matrixView = Matrix.MatrixView();
 		matrixModel = Matrix.MatrixModel();
+		initListener();
 
 		matrixModel.init();
+	};
+
+	initListener = function(){
+		$(matrixModel).on("ModelInitFinished", buildTable);
+	};
+
+	buildTable = function(){
+		matrixView.init();
 	};
 
 	that.init = init;
