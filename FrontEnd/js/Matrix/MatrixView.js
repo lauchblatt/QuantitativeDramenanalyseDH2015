@@ -3,6 +3,21 @@ Matrix.MatrixView = function(){
 
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
 		renderheadline(scenesInfo);
+		renderSpeakerColumn(dramaInfo);
+	};
+
+	var renderSpeakerColumn = function(dramaInfo){
+		$tableBody = $("#table-body");
+		for(i = 0; i < dramaInfo.speakers.length; i++){
+			var name = dramaInfo.speakers[i];
+			var $row = $("<tr></tr>");
+			$row.attr("id", name + "_row");
+			var $th = $("<th></th>");
+			$th.attr("id", name);
+			$th.text(name);
+			$row.append($th);
+			$tableBody.append($row);
+		}
 	};
 
 	var renderheadline = function(scenesInfo){
@@ -21,7 +36,9 @@ Matrix.MatrixView = function(){
 			for(var j = 0; j < scenesInfo[i].length; j++){
 				var act = "'act_" + i + "'";
 				var scene = "'scene_" + i + "_" + j +"'";
-				$th = $("<th class=" + act +"id=" + scene + "</th>");
+				var $th = $("<th></th>");
+				$th.addClass(act);
+				$th.attr("id", scene);
 				$th.text((j+1) + ". Szene");
 				$headlineScene.append($th);
 			}
