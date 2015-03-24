@@ -4,21 +4,32 @@ Matrix.MatrixView = function(){
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
 		renderheadline(scenesInfo);
 		renderSpeakerColumn(dramaInfo);
-		fillCells(dramaInfo, scenesInfo);
+		fillTable(dramaInfo, scenesInfo);
+		fillCellsWithConfMatrix(matrix);
 	};
 
-	var fillCells = function(dramaInfo, scenesInfo){
+	var fillCellsWithConfMatrix = function(matrix){
+		for(var i = 0; i < matrix.length; i++){
+			for(var j = 0; j < matrix[i].length; j++){
+				var matrix_id = "matrix_" + i + "_" + j;
+				$("#" + matrix_id).text(matrix[i][j]);
+			}
+		}
+	};
+
+	var fillTable = function(dramaInfo, scenesInfo){
 		for(var speaker = 0; speaker < dramaInfo.speakers.length; speaker++){
 			var $row = $("#speaker_" + speaker + "_row");
-			console.log($row);
+			var numberOfSceneAbsolute = 0;
 			for(var act = 0; act < scenesInfo.length; act++){
 				var actClass = "act_" + act;
 				for(var scene = 0; scene < scenesInfo[act].length; scene++){
-					var matrix_id = "matrix_" + act + "_" + scene;
+					var matrix_id = "matrix_" + speaker + "_" + numberOfSceneAbsolute;
 					$td = $("<td></td>");
 					$td.addClass(actClass);
 					$td.attr("id", matrix_id);
 					$row.append($td);
+					numberOfSceneAbsolute++;
 				}
 			}
 		}
