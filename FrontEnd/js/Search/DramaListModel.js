@@ -7,6 +7,7 @@ Search.DramaListModel = function(){
 	var rangeList_scenes = [];
 	var rangeList_acts = [];
 	var rangeList_confDensity = [];
+	var rangeList_avg = [];
 
 	//List of current dramas
 	var dramas = [];
@@ -79,11 +80,13 @@ Search.DramaListModel = function(){
 		rangeList_scenes = [];
 		rangeList_numberOfSpeeches = [];
 		rangeList_confDensity = [];
+		rangeList_avg = [];
 
 		//If no criterion is chosen, show all dramas, but filter them
 		if(!('number_of_speeches_in_drama' in input) && !('year' in input)
 			&& !('number_of_acts' in input) && !('number_of_scenes' in input)
-			&& !('configuration_density' in input)){
+			&& !('configuration_density' in input) && !('average_length_of_speeches_in_drama' in input)){
+			console.log("retrieve all data");
 			retrieveAllData(input);
 			return;
 		}
@@ -115,6 +118,13 @@ Search.DramaListModel = function(){
 		if('number_of_speeches_in_drama' in input){
 			retrieveDataByRange(input['number_of_speeches_in_drama'].from, 
 				input['number_of_speeches_in_drama'].to, 'number_of_speeches_in_drama', rangeList_numberOfSpeeches);
+		}
+
+		//If avg Speeches is a criterion, save all dramas in the range in rangeList_avg
+		if('average_length_of_speeches_in_drama' in input){
+			retrieveDataByRange(input['average_length_of_speeches_in_drama'].from, 
+				input['average_length_of_speeches_in_drama'].to, 
+				'average_length_of_speeches_in_drama', rangeList_avg);
 		}
 
 		//Compare all criterion-lists to find dramas that fit all criterions
@@ -164,6 +174,7 @@ Search.DramaListModel = function(){
 	};
 
 	var retrieveDataByRange = function(from, to, attribute, criterionList){
+		console.log("retrieveDataByRange");
 		$(that).trigger("EmptyTable");
 		//Reser Firebase
 		firebaseRef = null;
@@ -194,6 +205,7 @@ Search.DramaListModel = function(){
 		if(rangeList_acts.length > 0){listsToCompare.push(rangeList_acts);}
 		if(rangeList_scenes.length > 0){listsToCompare.push(rangeList_scenes);}
 		if(rangeList_confDensity.length > 0){listsToCompare.push(rangeList_confDensity);}
+		if(rangeList_avg.length > 0){listsToCompare.push(rangeList_avg);}
 
 		//If only one range-criterion is set, return the dramas
 		if(listsToCompare.length == 1){

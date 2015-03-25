@@ -30,6 +30,8 @@ Search.FormsView = function(){
 		var scenes_to = $("#input-numberOfScenes-to").val();
 		var confDensity_from = $("#input-confDensity-from").val();
 		var confDensity_to = $("#input-confDensity-to").val();
+		var avg_from = $("#input-avgSpeechLength-from").val();
+		var avg_to = $("#input-avgSpeechLength-to").val();
 		var numberOfSpeeches_from = $("#input-numberOfSpeeches-from").val();
 		var numberOfSpeeches_to = $("#input-numberOfSpeeches-to").val();
 
@@ -59,13 +61,18 @@ Search.FormsView = function(){
 		if(confDensity_from != ""){range.from = parseFloat(confDensity_from);}
 		if(confDensity_to != ""){range.to = parseFloat(confDensity_to);}
 		if(confDensity_from != "" || confDensity_to != ""){input["configuration_density"] = range;}
-		console.log(range.from);
-		console.log(range.to);
+
+		var range = {};
+		if(avg_from != ""){range.from = parseFloat(avg_from);}
+		if(avg_to != ""){range.to = parseFloat(avg_to);}
+		if(avg_from != "" || avg_to != ""){input["average_length_of_speeches_in_drama"] = range;}
 
 		var range = {};
 		if(numberOfSpeeches_from != ""){range.from = parseInt(numberOfSpeeches_from);}
 		if(numberOfSpeeches_to  != ""){range.to = parseInt(numberOfSpeeches_to);}
 		if(numberOfSpeeches_from != "" || numberOfSpeeches_to  != ""){input["number_of_speeches_in_drama"] = range;}
+
+		console.log(input);
 
 		$(that).trigger("InputCatched", [input]);
 	};
