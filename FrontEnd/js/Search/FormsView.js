@@ -17,6 +17,11 @@ Search.FormsView = function(){
 
 		var title = $("#input-title").val();
 		var author = $("#input-author").val();
+
+		var isComedy = $("#check-comedy").is(":checked");
+		var isTragedy = $("#check-tragedy").is(":checked");
+		var isPageant = $("#check-pageant").is(":checked");
+
 		var date_from = $("#input-date-from").val();
 		var date_to = $("#input-date-to").val();
 		var numberOfSpeeches_from = $("#input-numberOfSpeeches-from").val();
@@ -24,6 +29,10 @@ Search.FormsView = function(){
 
 		if(title != ""){input["title"] = title;}
 		if(author != ""){input["author"] = author;}
+
+		input["isComedy"] = isComedy;
+		input["isTragedy"] = isTragedy;
+		input["isPageant"] = isPageant;
 
 		var range = {};
 		if(date_from != ""){range.from = parseInt(date_from);}

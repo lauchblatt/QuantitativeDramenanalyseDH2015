@@ -13,7 +13,7 @@ Search.DramaListModel = function(){
 		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
 
 		//Dramen die keine Eingrenzung haben müssen noch nach Namen gefiltert werden
-		$(that).on("AllDramasRetrieved", filterDataByTitleAndAuthor);
+		$(that).on("AllDramasRetrieved", filterData);
 	};
 
 	var retrieveAllData = function(input){
@@ -29,7 +29,7 @@ Search.DramaListModel = function(){
 		});
 	};
 
-	var filterDataByTitleAndAuthor = function(event, input){
+	var filterData = function(event, input){
 		//If Title is criterion, filter the dramas by title
 		if('title' in input){
 			dramas = filterListByWord('title', input['title']);
@@ -39,8 +39,33 @@ Search.DramaListModel = function(){
 		if('author' in input){
 			dramas = filterListByWord('author', input['author']);
 		}
+		//Filter By Type
+		dramas = filterDataByType(input);
 
 		sendDramas(dramas);
+	};
+
+	var filterDataByType = function(input){
+		var filteredDramaList = [];
+		for(var i = 0; i < dramas.length; i++){
+			console.l
+			if(input.isComedy){
+				if(dramas[i].type == "Komoedie" || dramas[i].type == "Komödie"){
+					filteredDramaList.push(dramas[i]);
+				}
+			}
+			if(input.isTragedy){
+				if(dramas[i].type == "Trauerspiel" || dramas[i].type == "Tragödie"){
+					filteredDramaList.push(dramas[i]);
+				}
+			}
+			if(input.isPageant){
+				if(dramas[i].type == "Schauspiel"){
+					filteredDramaList.push(dramas[i]);
+				}
+			}
+		}
+		return filteredDramaList;
 	};
 
 	var retrieveDramas = function(input){
@@ -84,7 +109,7 @@ Search.DramaListModel = function(){
 
 		sendDramas(dramas);
 		*/
-		filterDataByTitleAndAuthor(null, input);
+		filterData(null, input);
 
 	};
 
