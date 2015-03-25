@@ -207,6 +207,7 @@ class ConfigurationModel:
             self._replicasLength_max = max(replicas_lengths)
             self._replicasLength_min = min(replicas_lengths)
             self._replicasLength_med = median(replicas_lengths)
+        #else alles 0 setzen
 
 # model for replica
 class ReplicaModel:
