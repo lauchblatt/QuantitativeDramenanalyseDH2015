@@ -4,6 +4,8 @@ Search.DramaListModel = function(){
 	//List of Criterions to compare them later
 	var rangeList_year = [];
 	var rangeList_numberOfSpeeches = [];
+	var rangeList_scenes = [];
+	var rangeList_acts = [];
 
 	//List of current dramas
 	var dramas = [];
@@ -72,10 +74,13 @@ Search.DramaListModel = function(){
 		// Reset all Criterions-Lists, and the list for the result
 		dramas = [];
 		rangeList_year = [];
+		rangeList_acts = [];
+		rangeList_scenes = [];
 		rangeList_numberOfSpeeches = [];
 
 		//If no criterion is chosen, show all dramas, but filter them
-		if(!('number_of_speeches_in_drama' in input) && !('year' in input)){
+		if(!('number_of_speeches_in_drama' in input) && !('year' in input)
+			&& !('number_of_acts' in input) && !('number_of_scenes' in input)){
 			retrieveAllData(input);
 			return;
 		}
@@ -83,6 +88,18 @@ Search.DramaListModel = function(){
 		//If Year is a criterion, save all dramas in the range in rangeList_year
 		if('year' in input){
 			retrieveDataByRange(input['year'].from, input['year'].to, 'year', rangeList_year);
+		}
+
+		//If Act is a criterion, save all dramas in the range in rangeList_acts
+		if('number_of_acts' in input){
+			retrieveDataByRange(input['number_of_acts'].from, input['number_of_acts'].to, 
+				'number_of_acts', rangeList_acts);
+		}
+
+		//If Scene is a criterion, save all dramas in the range in rangeList_scenes
+		if('number_of_scenes' in input){
+			retrieveDataByRange(input['number_of_scenes'].from, input['number_of_scenes'].to, 
+				'number_of_scenes', rangeList_scenes);
 		}
 
 		//If Number of Speeches is a criterion, save all dramas in the range in rangeList_numberOfSpeeches
@@ -165,6 +182,8 @@ Search.DramaListModel = function(){
 		//Compare only lists that have more than one element
 		if(rangeList_year.length > 0){listsToCompare.push(rangeList_year);}
 		if(rangeList_numberOfSpeeches.length > 0){listsToCompare.push(rangeList_numberOfSpeeches);}
+		if(rangeList_acts.length > 0){listsToCompare.push(rangeList_acts);}
+		if(rangeList_scenes.length > 0){listsToCompare.push(rangeList_scenes);}
 
 		//If only one range-criterion is set, return the dramas
 		if(listsToCompare.length == 1){

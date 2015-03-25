@@ -24,6 +24,10 @@ Search.FormsView = function(){
 
 		var date_from = $("#input-date-from").val();
 		var date_to = $("#input-date-to").val();
+		var acts_from = $("#input-numberOfActs-from").val();
+		var acts_to = $("#input-numberOfActs-to").val();
+		var scenes_from = $("#input-numberOfScenes-from").val();
+		var scenes_to = $("#input-numberOfScenes-to").val();
 		var numberOfSpeeches_from = $("#input-numberOfSpeeches-from").val();
 		var numberOfSpeeches_to = $("#input-numberOfSpeeches-to").val();
 
@@ -38,6 +42,16 @@ Search.FormsView = function(){
 		if(date_from != ""){range.from = parseInt(date_from);}
 		if(date_to != ""){range.to = parseInt(date_to);}
 		if(date_from != "" || date_to != ""){input["year"] = range;}
+
+		var range = {};
+		if(acts_from != ""){range.from = parseInt(acts_from);}
+		if(acts_to != ""){range.to = parseInt(acts_to);}
+		if(acts_from != "" || acts_to != ""){input["number_of_acts"] = range;}
+
+		var range = {};
+		if(scenes_from != ""){range.from = parseInt(scenes_from);}
+		if(scenes_to != ""){range.to = parseInt(scenes_to);}
+		if(scenes_from != "" || acts_to != ""){input["number_of_scenes"] = range;}
 
 		var range = {};
 		if(numberOfSpeeches_from != ""){range.from = parseInt(numberOfSpeeches_from);}
