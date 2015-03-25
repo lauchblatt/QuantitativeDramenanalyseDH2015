@@ -28,6 +28,8 @@ Search.FormsView = function(){
 		var acts_to = $("#input-numberOfActs-to").val();
 		var scenes_from = $("#input-numberOfScenes-from").val();
 		var scenes_to = $("#input-numberOfScenes-to").val();
+		var confDensity_from = $("#input-confDensity-from").val();
+		var confDensity_to = $("#input-confDensity-to").val();
 		var numberOfSpeeches_from = $("#input-numberOfSpeeches-from").val();
 		var numberOfSpeeches_to = $("#input-numberOfSpeeches-to").val();
 
@@ -52,6 +54,13 @@ Search.FormsView = function(){
 		if(scenes_from != ""){range.from = parseInt(scenes_from);}
 		if(scenes_to != ""){range.to = parseInt(scenes_to);}
 		if(scenes_from != "" || acts_to != ""){input["number_of_scenes"] = range;}
+
+		var range = {};
+		if(confDensity_from != ""){range.from = parseFloat(confDensity_from);}
+		if(confDensity_to != ""){range.to = parseFloat(confDensity_to);}
+		if(confDensity_from != "" || confDensity_to != ""){input["configuration_density"] = range;}
+		console.log(range.from);
+		console.log(range.to);
 
 		var range = {};
 		if(numberOfSpeeches_from != ""){range.from = parseInt(numberOfSpeeches_from);}

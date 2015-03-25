@@ -6,6 +6,7 @@ Search.DramaListModel = function(){
 	var rangeList_numberOfSpeeches = [];
 	var rangeList_scenes = [];
 	var rangeList_acts = [];
+	var rangeList_confDensity = [];
 
 	//List of current dramas
 	var dramas = [];
@@ -77,10 +78,12 @@ Search.DramaListModel = function(){
 		rangeList_acts = [];
 		rangeList_scenes = [];
 		rangeList_numberOfSpeeches = [];
+		rangeList_confDensity = [];
 
 		//If no criterion is chosen, show all dramas, but filter them
 		if(!('number_of_speeches_in_drama' in input) && !('year' in input)
-			&& !('number_of_acts' in input) && !('number_of_scenes' in input)){
+			&& !('number_of_acts' in input) && !('number_of_scenes' in input)
+			&& !('configuration_density' in input)){
 			retrieveAllData(input);
 			return;
 		}
@@ -100,6 +103,12 @@ Search.DramaListModel = function(){
 		if('number_of_scenes' in input){
 			retrieveDataByRange(input['number_of_scenes'].from, input['number_of_scenes'].to, 
 				'number_of_scenes', rangeList_scenes);
+		}
+
+		//If ConfDensity is a criterion, save all dramas in the range in rangeList_confDensity
+		if('configuration_density' in input){
+			retrieveDataByRange(input['configuration_density'].from, input['configuration_density'].to, 
+				'configuration_density', rangeList_confDensity);
 		}
 
 		//If Number of Speeches is a criterion, save all dramas in the range in rangeList_numberOfSpeeches
@@ -184,6 +193,7 @@ Search.DramaListModel = function(){
 		if(rangeList_numberOfSpeeches.length > 0){listsToCompare.push(rangeList_numberOfSpeeches);}
 		if(rangeList_acts.length > 0){listsToCompare.push(rangeList_acts);}
 		if(rangeList_scenes.length > 0){listsToCompare.push(rangeList_scenes);}
+		if(rangeList_confDensity.length > 0){listsToCompare.push(rangeList_confDensity);}
 
 		//If only one range-criterion is set, return the dramas
 		if(listsToCompare.length == 1){
