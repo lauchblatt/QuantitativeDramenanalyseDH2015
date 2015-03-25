@@ -12,7 +12,8 @@ Search.DramaListModel = function(){
 		firebaseRef = null;
 		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
 
-		$(that).on("AllDramasRetrieved", filterAllDataByTitleAndAuthor);
+		//Dramen die keine Eingrenzung haben müssen noch nach Namen gefiltert werden
+		$(that).on("AllDramasRetrieved", filterDataByTitleAndAuthor);
 	};
 
 	var retrieveAllData = function(input){
@@ -28,7 +29,7 @@ Search.DramaListModel = function(){
 		});
 	};
 
-	var filterAllDataByTitleAndAuthor = function(event, input){
+	var filterDataByTitleAndAuthor = function(event, input){
 		//If Title is criterion, filter the dramas by title
 		if('title' in input){
 			dramas = filterListByWord('title', input['title']);
@@ -70,6 +71,7 @@ Search.DramaListModel = function(){
 		if(rangeDramas !== undefined){	
 			dramas = rangeDramas;
 		}
+		/*
 		//If Title is criterion, filter the dramas by title
 		if('title' in input){
 			dramas = filterListByWord('title', input['title']);
@@ -81,6 +83,8 @@ Search.DramaListModel = function(){
 		}
 
 		sendDramas(dramas);
+		*/
+		filterDataByTitleAndAuthor(null, input);
 
 	};
 
