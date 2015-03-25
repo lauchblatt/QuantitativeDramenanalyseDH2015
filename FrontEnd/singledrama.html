@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Drama Einzelansicht</title>	
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/SingleDrama.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1>Drama Einzelansicht</h1>
+			<table class="table table-striped table-bordered" id="drama-table">
+				<thead>
+					<tr>
+					    <th>Akt</th> 
+					    <th>Anzahl der Szenen</th>
+					    <th>Anzahl der Sprecher</th>
+					    <th>Anzahl der Repliken</th>
+					    <th>Mittelwert Repliken</th>
+					    <th>Median Repliken</th>
+					    <th>Maximum Repliken</th>
+					    <th>Minimum Repliken</th>
+					  </tr>
+				</thead>
+				<tbody id="table-tbody">
+				</tbody>
+			</table>
+		</div>
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/SingleDrama/SingleDrama.js"></script>
+		<script type="text/javascript" src="js/SingleDrama/DramaModel.js"></script>
+		<script type="text/javascript" src="js/SingleDrama/TableDramaView.js"></script>
+		<script type="text/javascript" src="js/SingleDrama/DramaController.js"></script>
+
+		<script>
+				$(function() {
+					SingleDrama.init();
+				});
+			</script>
+	</body>
+</html>
