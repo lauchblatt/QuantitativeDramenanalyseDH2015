@@ -1,6 +1,6 @@
 SingleDrama.DramaModel = function(){
 	var that = {};
-	var currentDrama_id = 55;
+	var currentDrama_id = 40;
 	var actsInfo = [];
 	var scenesInfo = [];
 	var firebaseRef = null;

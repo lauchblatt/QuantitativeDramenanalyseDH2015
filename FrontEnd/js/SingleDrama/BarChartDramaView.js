@@ -15,20 +15,24 @@ SingleDrama.BarChartDramaView = function(){
 		$(that).trigger("ActSelectionClicked");
 	};
 
-	var drawBarChart = function(actInfo){
-		// Create the data table.
+	var drawChartAct = function(actInfo){
+		if(actSelection == "Replikenlänge"){
+			drawSpeechesChartAct(actInfo);
+			return;
+		}
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Akte');
-        data.addColumn('number', 'Anzahl der ' + actSelection);
+        if(actSelection == "Szenen" || actSelection == "Sprecher" || actSelection == "Replikenlänge"){
+        	data.addColumn('number', 'Anzahl der ' + actSelection);
+        }else{
+        	data.addColumn('number', actSelection);
+        }
         var array = [];
         for(var i = 0; i < actInfo.length; i++){
-        	var column = ['Akt ' + (i+1), actInfo[i][actAttribute]];
-        	array.push(column);
+        	var row = ['Akt ' + (i+1), actInfo[i][actAttribute]];
+        	array.push(row);
         }
-        console.log(array);
         data.addRows(array);
-
-        // Set chart options
         var options = {title:'Akt-Statistik',
         			   height: 600,
         			   vAxis: {
@@ -38,11 +42,35 @@ SingleDrama.BarChartDramaView = function(){
                    	   	duration: 700,
                    	   	startup: true
                    	   }};
-
-        // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
         chart.draw(data, options);
 
+	};
+
+	var drawSpeechesChartAct = function(actInfo){
+		var data = new google.visualization.DataTable();
+		data.addColumn('string', 'Akte');
+		data.addColumn('number', 'Minimum Replikenlänge');
+		data.addColumn('number', 'Durchschnittliche Replikenlänge');
+		data.addColumn('number', 'Median Replikenlänge');
+		data.addColumn('number', 'Maximum Replikenlänge');
+		var array = [];
+		for(var i = 0; i < actInfo.length; i++){
+			var row = ['Akt ' + (i+1), actInfo[i].minimum_length_of_speeches_in_act, 
+			actInfo[i].average_length_of_speeches_in_act,
+			actInfo[i].median_length_of_speeches_in_act,
+			actInfo[i].maximum_length_of_speeches_in_act];
+			array.push(row);
+		}
+		data.addRows(array);
+		        var options = {title:'Akt-Statistik',
+        			   height: 600,
+                   	   animation: {
+                   	   	duration: 700,
+                   	   	startup: true
+                   	   }};
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
+        chart.draw(data, options);
 	};
 
 	var setActSelection = function(){
@@ -51,6 +79,10 @@ SingleDrama.BarChartDramaView = function(){
 		if(actSelection == "Szenen"){actAttribute = "number_of_scenes";}
 		//TODO Number of Speakers if(actSelection == "Sprecher")
 		if(actSelection == "Repliken"){actAttribute = "number_of_speeches_in_act";}
+		if(actSelection == "Durchschnittliche Replikenlänge"){actAttribute = "average_length_of_speeches_in_act";}
+		if(actSelection == "Median Replikenlänge"){actAttribute = "median_length_of_speeches_in_act";}
+		if(actSelection == "Maximum Replikenlänge"){actAttribute = "maximum_length_of_speeches_in_act";}
+		if(actSelection == "Minimum Replikenlänge"){actAttribute = "minimum_length_of_speeches_in_act";}
 	};
 
 	var getActSelection = function(){
@@ -58,7 +90,7 @@ SingleDrama.BarChartDramaView = function(){
 	};
 
 	that.init = init;
-	that.drawBarChart = drawBarChart;
+	that.drawChartAct = drawChartAct;
 	that.setActSelection = setActSelection;
 	that.getActSelection = getActSelection;
 

@@ -30,21 +30,21 @@ SingleDrama.DramaController = function(){
 	};
 
 	var initListener = function(){
-		$(dramaModel).on("ActsInfoFinished", visuAct);
+		$(dramaModel).on("ActsInfoFinished", visu);
 		$(barChartDramaView).on("ActSelectionClicked", visuActBarChart);
 	};
 
-	var visuAct = function(event){
+	var visu = function(event){
 		var actInfo = dramaModel.getActInfo();
 		barChartDramaView.setActSelection();
 		tableDramaView.renderAct(actInfo);
-		barChartDramaView.drawBarChart(actInfo);
+		barChartDramaView.drawChartAct(actInfo);
 	};
 
 	var visuActBarChart = function(event){
 		var actInfo = dramaModel.getActInfo();
 		barChartDramaView.setActSelection();
-		barChartDramaView.drawBarChart(actInfo);
+		barChartDramaView.drawChartAct(actInfo);
 	};
 
 	that.init = init;
