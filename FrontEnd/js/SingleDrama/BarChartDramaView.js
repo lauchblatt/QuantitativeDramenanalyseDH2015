@@ -23,8 +23,6 @@ SingleDrama.BarChartDramaView = function(){
 	};
 
 	var drawChartAct = function(actInfo){
-		console.log(actInfo);
-		console.log(actSelection);
 		if(actSelection == "Replikenlänge"){
 			drawSpeechesChartAct(actInfo);
 			return;
@@ -47,6 +45,7 @@ SingleDrama.BarChartDramaView = function(){
         			   height: 600,
         			    trendlines: {
 				          0: {
+				          	tooltip: false,
 				            type: 'polynomial',
 				            color: 'green',
 				            lineWidth: 3,
@@ -123,6 +122,10 @@ SingleDrama.BarChartDramaView = function(){
 	};
 
 	var drawChartForScenesInAct = function(divId, scenesInfoPerAct, act){
+		if(scenesSelection == "Replikenlänge"){
+			drawSpeechesChartScenes(scenesInfoPerAct, act, divId);
+			return;
+		}
         var data = new google.visualization.DataTable();
         data.addColumn('number', 'Szenen');
         if(scenesSelection == "Sprecher" || scenesSelection == "Replikenlänge"){
@@ -136,10 +139,15 @@ SingleDrama.BarChartDramaView = function(){
         	array.push(row);
         }
         data.addRows(array);
+        var ticksArray = [];
+        for(var k = 0; k < scenesInfoPerAct.length; k++){
+        	ticksArray.push(k+1);
+        }
         var options = {title:'Szenen-Statistik: Akt ' + act,
         			   height: 600,
         			    trendlines: {
 				          0: {
+				          	tooltip: false,
 				            type: 'polynomial',
 				            color: 'green',
 				            lineWidth: 3,
@@ -149,7 +157,46 @@ SingleDrama.BarChartDramaView = function(){
 				          }
 				        },
 				        hAxis: {
-        			   	title: 'Szenen'
+        			   	title: 'Szenen',
+        			   	ticks: ticksArray
+        			   },
+        			   vAxis: {
+        			   	baseline: 0
+        			   },
+                   	   animation: {
+                   	   	duration: 700,
+                   	   	startup: true
+                   	   }};
+        var chart = new google.visualization.ColumnChart(document.getElementById(divId));
+        chart.draw(data, options);
+	};
+
+	var drawSpeechesChartScenes = function(scenesInfoPerAct, act, divId){
+		var data = new google.visualization.DataTable();
+		data.addColumn('number', 'Szenen');
+		data.addColumn('number', 'Minimum Replikenlänge');
+		data.addColumn('number', 'Durchschnittliche Replikenlänge');
+		data.addColumn('number', 'Median Replikenlänge');
+		data.addColumn('number', 'Maximum Replikenlänge');
+		var array = [];
+		for(var i = 0; i < scenesInfoPerAct.length; i++){
+			var row = [(i+1), scenesInfoPerAct[i].minimum_length_of_speeches_in_scene, 
+			scenesInfoPerAct[i].average_length_of_speeches_in_scene,
+			scenesInfoPerAct[i].median_length_of_speeches_in_scene,
+			scenesInfoPerAct[i].maximum_length_of_speeches_in_scene];
+			array.push(row);
+		}
+		console.log(array);
+		var ticksArray = [];
+        for(var k = 0; k < scenesInfoPerAct.length; k++){
+        	ticksArray.push(k+1);
+        }
+		data.addRows(array);
+		        var options = {title:'Szenen-Statistik: Akt ' + act,
+        			   height: 600,
+				        hAxis: {
+        			   	title: 'Szenen',
+        			   	ticks: ticksArray
         			   },
         			   vAxis: {
         			   	baseline: 0
