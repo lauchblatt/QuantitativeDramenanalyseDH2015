@@ -20,3 +20,20 @@ td {
 	border: 1px groove grey;
 	padding: 1%;
 }
+
+.unfold-col {
+	padding: 0px !important;
+}
+
+.unfold-down {
+	border: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
+	background-color: white;
+}
+.unfold-up {
+	border: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
+	background-color: white;
+}

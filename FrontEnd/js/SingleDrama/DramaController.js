@@ -39,7 +39,7 @@ SingleDrama.DramaController = function(){
 		var actInfo = dramaModel.getActInfo();
 		var scenesInfo = dramaModel.getScenesInfo();
 
-		tableDramaView.renderAct(actInfo);
+		tableDramaView.renderTable(actInfo, scenesInfo);
 
 		barChartDramaView.setActSelection();
 		barChartDramaView.drawChartAct(actInfo);
