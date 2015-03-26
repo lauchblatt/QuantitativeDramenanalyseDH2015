@@ -143,7 +143,12 @@ Matrix.MatrixView = function(){
 		for(var i = 0; i < matrix.length; i++){
 			for(var j = 0; j < matrix[i].length; j++){
 				var matrix_id = "matrix_" + i + "_" + j;
-				$("#" + matrix_id).text(matrix[i][j]);
+				if(matrix[i][j] == 1){
+					$("#" + matrix_id).css("background-color", '#00BFFF');
+				}else{
+					$("#" + matrix_id).text("");
+				}
+				
 			}
 		}
 	};

@@ -13,7 +13,7 @@ Speakers.SpeechesDominanceView = function(){
 		data.addRows(array);
 
 		var options = {
-		  height: 1000,
+		  height: 600,
           title: 'Replikendominanz',
           is3D: true,
         };
