@@ -14,7 +14,8 @@ SingleDrama.DramaModel = function(){
 	var continueInit = function(){
 		if(scenesInfo.length > 0 && actsInfo.length > 0){
 			calculateNumberOfScenesForAct();
-			$(that).trigger("ActsInfoFinished");
+			calculateNumberOfSpeakersForScene();
+			$(that).trigger("InfoFinished");
 			//TODO in Backend besser
 			//calculateNumberOfSpeakersForAct();
 		}
@@ -23,6 +24,14 @@ SingleDrama.DramaModel = function(){
 	var calculateNumberOfScenesForAct = function(){
 		for(act = 0; act < scenesInfo.length; act++){
 			actsInfo[act].number_of_scenes = scenesInfo[act].length; 
+		}
+	};
+
+	var calculateNumberOfSpeakersForScene = function(){
+		for(act = 0; act < scenesInfo.length; act++){
+			for(scene = 0; scene < scenesInfo[act].length; scene++){
+				scenesInfo[act][scene].number_of_speakers = scenesInfo[act][scene].appearing_speakers.length;
+			}
 		}
 	};
 
@@ -47,10 +56,15 @@ SingleDrama.DramaModel = function(){
 
 	var getActInfo = function(){
 		return actsInfo;
-	}
+	};
+
+	var getScenesInfo = function(){
+		return scenesInfo;
+	};
 
 	that.init = init;
 	that.getActInfo = getActInfo;
+	that.getScenesInfo = getScenesInfo;
 
 	return that;
 };

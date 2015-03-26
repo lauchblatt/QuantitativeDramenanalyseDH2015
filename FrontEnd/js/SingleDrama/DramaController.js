@@ -30,21 +30,34 @@ SingleDrama.DramaController = function(){
 	};
 
 	var initListener = function(){
-		$(dramaModel).on("ActsInfoFinished", visu);
+		$(dramaModel).on("InfoFinished", visu);
 		$(barChartDramaView).on("ActSelectionClicked", visuActBarChart);
+		$(barChartDramaView).on("ScenesSelectionClicked", visuScenesBarCharts);
 	};
 
 	var visu = function(event){
 		var actInfo = dramaModel.getActInfo();
-		barChartDramaView.setActSelection();
+		var scenesInfo = dramaModel.getScenesInfo();
+
 		tableDramaView.renderAct(actInfo);
+
+		barChartDramaView.setActSelection();
 		barChartDramaView.drawChartAct(actInfo);
+
+		barChartDramaView.setScenesSelection();
+		barChartDramaView.drawChartScenes(scenesInfo);
 	};
 
 	var visuActBarChart = function(event){
 		var actInfo = dramaModel.getActInfo();
 		barChartDramaView.setActSelection();
 		barChartDramaView.drawChartAct(actInfo);
+	};
+
+	var visuScenesBarCharts = function(event){
+		var scenesInfo = dramaModel.getScenesInfo();
+		barChartDramaView.setScenesSelection();
+		barChartDramaView.drawChartScenes(scenesInfo);
 	};
 
 	that.init = init;
