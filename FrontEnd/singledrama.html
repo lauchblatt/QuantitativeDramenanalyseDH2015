@@ -29,15 +29,31 @@
 				<tbody id="table-tbody">
 				</tbody>
 			</table>
+
+			<div class="form-group" id="form-act">
+			  <label for="sel1">Parameter:</label>
+			  <select class="form-control" id="selection-act">
+			    <option>Szenen</option>
+			    <option>Sprecher</option>
+			    <option>Repliken</option>
+			    <option>Replikenlänge</option>
+			  </select>
+			</div>
+			</div>
+
+			<div id="chart-div-act"></div>
 		</div>
 
 		<script src="js/libs/jquery-1.11.2.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript"></script>
 
 		<script type="text/javascript" src="js/SingleDrama/SingleDrama.js"></script>
 		<script type="text/javascript" src="js/SingleDrama/DramaModel.js"></script>
 		<script type="text/javascript" src="js/SingleDrama/TableDramaView.js"></script>
+		<script type="text/javascript" src="js/SingleDrama/BarChartDramaView.js"></script>
 		<script type="text/javascript" src="js/SingleDrama/DramaController.js"></script>
 
 		<script>

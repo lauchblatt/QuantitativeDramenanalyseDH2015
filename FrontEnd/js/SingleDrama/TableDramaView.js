@@ -6,7 +6,6 @@ SingleDrama.TableDramaView = function(){
 	};
 
 	var renderAct = function(actInfo){
-		console.log(actInfo);
 		for(var i = 0; i < actInfo.length; i++){
 			$("#table-tbody").append(createListItem(actInfo[i]));
 		}

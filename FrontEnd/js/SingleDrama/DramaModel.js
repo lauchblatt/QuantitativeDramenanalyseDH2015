@@ -1,6 +1,6 @@
 SingleDrama.DramaModel = function(){
 	var that = {};
-	var currentDrama_id = 12;
+	var currentDrama_id = 55;
 	var actsInfo = [];
 	var scenesInfo = [];
 	var firebaseRef = null;
@@ -14,7 +14,7 @@ SingleDrama.DramaModel = function(){
 	var continueInit = function(){
 		if(scenesInfo.length > 0 && actsInfo.length > 0){
 			calculateNumberOfScenesForAct();
-			$(that).trigger("ActsInfoFinished", [actsInfo]);
+			$(that).trigger("ActsInfoFinished");
 			//TODO in Backend besser
 			//calculateNumberOfSpeakersForAct();
 		}
@@ -45,7 +45,12 @@ SingleDrama.DramaModel = function(){
 		});
 	};
 
+	var getActInfo = function(){
+		return actsInfo;
+	}
+
 	that.init = init;
+	that.getActInfo = getActInfo;
 
 	return that;
 };
