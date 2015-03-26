@@ -35,9 +35,16 @@ SingleDrama.BarChartDramaView = function(){
         	data.addColumn('number', actSelection);
         }
         var array = [];
-        for(var i = 0; i < actInfo.length; i++){
+        if(actAttribute == "average_length_of_speeches_in_act"){
+        	for(var i = 0; i < actInfo.length; i++){
+        	var row = [(i+1), roundToTwoDecimals(actInfo[i][actAttribute])];
+        	array.push(row);
+        	}
+        } else{
+        	for(var i = 0; i < actInfo.length; i++){
         	var row = [(i+1), actInfo[i][actAttribute]];
         	array.push(row);
+        	}
         }
         console.log(data);
         data.addRows(array);
@@ -79,7 +86,7 @@ SingleDrama.BarChartDramaView = function(){
 		var array = [];
 		for(var i = 0; i < actInfo.length; i++){
 			var row = [(i+1), actInfo[i].minimum_length_of_speeches_in_act, 
-			actInfo[i].average_length_of_speeches_in_act,
+			roundToTwoDecimals(actInfo[i].average_length_of_speeches_in_act),
 			actInfo[i].median_length_of_speeches_in_act,
 			actInfo[i].maximum_length_of_speeches_in_act];
 			array.push(row);
@@ -134,10 +141,18 @@ SingleDrama.BarChartDramaView = function(){
         	data.addColumn('number', scenesSelection);
         }
         var array = [];
-        for(var i = 0; i < scenesInfoPerAct.length; i++){
+        if(scenesAttribute == "average_length_of_speeches_in_scene"){
+        	for(var i = 0; i < scenesInfoPerAct.length; i++){
+        	var row = [(i+1), roundToTwoDecimals(scenesInfoPerAct[i][scenesAttribute])];
+        	array.push(row);
+        	}
+        } else{
+        	for(var i = 0; i < scenesInfoPerAct.length; i++){
         	var row = [(i+1), scenesInfoPerAct[i][scenesAttribute]];
         	array.push(row);
+        	}
         }
+        
         data.addRows(array);
         var ticksArray = [];
         for(var k = 0; k < scenesInfoPerAct.length; k++){
@@ -181,7 +196,7 @@ SingleDrama.BarChartDramaView = function(){
 		var array = [];
 		for(var i = 0; i < scenesInfoPerAct.length; i++){
 			var row = [(i+1), scenesInfoPerAct[i].minimum_length_of_speeches_in_scene, 
-			scenesInfoPerAct[i].average_length_of_speeches_in_scene,
+			roundToTwoDecimals(scenesInfoPerAct[i].average_length_of_speeches_in_scene),
 			scenesInfoPerAct[i].median_length_of_speeches_in_scene,
 			scenesInfoPerAct[i].maximum_length_of_speeches_in_scene];
 			array.push(row);
@@ -218,6 +233,11 @@ SingleDrama.BarChartDramaView = function(){
 		if(scenesSelection == "Median Replikenlänge"){scenesAttribute = "median_length_of_speeches_in_scene";}
 		if(scenesSelection == "Maximum Replikenlänge"){scenesAttribute = "maximum_length_of_speeches_in_scene";}
 		if(scenesSelection == "Minimum Replikenlänge"){scenesAttribute = "minimum_length_of_speeches_in_scene";}
+	};
+
+	var roundToTwoDecimals = function(number){
+		number = (Math.round(number * 100)/100).toFixed(2);
+		return parseFloat(number)
 	};
 
 	that.init = init;
