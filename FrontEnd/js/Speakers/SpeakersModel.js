@@ -17,6 +17,7 @@ Speakers.SpeakersModel = function(){
 			calculateAppearancePerSpeakers();
 			roundAverageLengths();
 			calculateScenesPerSpeakers();
+			$(that).trigger("InfoFinished");
 		}
 		
 	};
@@ -85,7 +86,12 @@ Speakers.SpeakersModel = function(){
 		return parseFloat(number)
 	};
 
+	var getSpeakersInfo = function(){
+		return speakersInfo;
+	};
+
 	that.init = init;
+	that.getSpeakersInfo = getSpeakersInfo;
 
 	return that;
 };

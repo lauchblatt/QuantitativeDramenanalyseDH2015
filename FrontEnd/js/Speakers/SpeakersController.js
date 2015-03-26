@@ -10,6 +10,17 @@ Speakers.SpeakersController = function(){
 
 		speakersModel.init();
 
+		initListener();
+
+	};
+
+	var initListener = function(){
+		$(speakersModel).on("InfoFinished", visu);
+	};
+
+	var visu = function(){
+		var speakersInfo = speakersModel.getSpeakersInfo();
+		speakersTableView.renderTable(speakersInfo);
 	};
 
 	that.init = init;
