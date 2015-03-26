@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sprecheranalyse</title>	
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/Speakers.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1>Sprecheranalyse</h1>
+
+			<table class="table table-bordered" id="drama-table">
+				<thead>
+					<tr>
+					    <th>Name</th> 
+					    <th>Anwesenheit in Szenen</th>
+					    <th>Anzahl der Repliken</th>
+					    <th>Mittelwert Repliken</th>
+					    <th>Median Repliken</th>
+					    <th>Maximum Repliken</th>
+					    <th>Minimum Repliken</th>
+					  </tr>
+				</thead>
+				<tbody id="table-tbody">
+				</tbody>
+			</table>
+
+		</div>
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript"></script>
+
+		<script type="text/javascript" src="js/Speakers/Speakers.js"></script>
+		<script type="text/javascript" src="js/Speakers/SpeakersModel.js"></script>
+		<script type="text/javascript" src="js/Speakers/SpeakersTableView.js"></script>
+		<script type="text/javascript" src="js/Speakers/SpeakersController.js"></script>
+
+		<script>
+				$(function() {
+					Speakers.init();
+				});
+			</script>
+	</body>
+</html>
