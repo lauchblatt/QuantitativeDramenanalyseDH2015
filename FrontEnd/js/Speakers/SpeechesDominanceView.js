@@ -20,12 +20,12 @@ Speakers.SpeechesDominanceView = function(){
 
         // Create a dashboard.
         var dashboard = new google.visualization.Dashboard(
-            document.getElementById('dashboard-div'));
+            document.getElementById('dashboard-speeches-dominance'));
 
         // Create a range slider, passing some options
         var donutRangeSlider = new google.visualization.ControlWrapper({
           'controlType': 'NumberRangeFilter',
-          'containerId': 'filter-div',
+          'containerId': 'filter-speeches-dominance',
           'options': {
             'filterColumnLabel': 'Zahl der Repliken'
           }
@@ -33,7 +33,7 @@ Speakers.SpeechesDominanceView = function(){
 
         var pieChart = new google.visualization.ChartWrapper({
           'chartType': 'PieChart',
-          'containerId': 'chart-div',
+          'containerId': 'chart-speeches-dominance',
           'options': options
         });
 

@@ -30,9 +30,26 @@
 				<tbody id="table-tbody">
 				</tbody>
 			</table>
-			<div id="dashbord-div">
-				<div id="filter-div"></div>
-				<div id="chart-div"></div>
+			<div id="dashbord-speeches-dominance">
+				<div id="filter-speeches-dominance"></div>
+				<div id="chart-speeches-dominance"></div>
+			</div>
+
+			<div class="form-group dropdown-form" id="form-speakers">
+				  <label for="sel1">Parameter:</label>
+				  <select class="form-control" id="selection-speakers">
+				    <option>Anwesenheit</option>
+				    <option>Anwesenheit in Prozent</option>
+				    <option>Repliken</option>
+				    <option>Durchschnittliche Replikenlänge</option>
+				    <option>Median Replikenlänge</option>
+				    <option>Maximum Replikenlänge</option>
+				    <option>Minimum Replikenlänge</option>
+				  </select>
+			</div>
+			<div id="dashbord-speakers-barChart">
+				<div id="filter-speakers-barChart"></div>
+				<div id="chart-speakers-barChart"></div>
 			</div>
 
 		</div>
@@ -47,6 +64,7 @@
 		<script type="text/javascript" src="js/Speakers/SpeakersModel.js"></script>
 		<script type="text/javascript" src="js/Speakers/SpeakersTableView.js"></script>
 		<script type="text/javascript" src="js/Speakers/SpeechesDominanceView.js"></script>
+		<script type="text/javascript" src="js/Speakers/SpeakersBarChartView.js"></script>
 		<script type="text/javascript" src="js/Speakers/SpeakersController.js"></script>
 
 		<script>

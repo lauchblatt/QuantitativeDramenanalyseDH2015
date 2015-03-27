@@ -4,13 +4,16 @@ Speakers.SpeakersController = function(){
 	var speakersModel = null;
 	var speakersTableView = null;
 	var speechesDominanceView = null;
+	var speakersBarChartView = null;
 
 	var init = function(){
 		speakersModel = Speakers.SpeakersModel();
 		speakersTableView = Speakers.SpeakersTableView();
 		speechesDominanceView = Speakers.SpeechesDominanceView();
+		speakersBarChartView = Speakers.SpeakersBarChartView();
 
 		speakersModel.init();
+		speakersBarChartView.init();
 		initGoogleCharts();
 
 		initListener();
@@ -28,6 +31,7 @@ Speakers.SpeakersController = function(){
 
 	var initListener = function(){
 		$(speakersModel).on("InfoFinished", visu);
+		$(speakersBarChartView).on("SpeakersSelectionClicked", visuBarChart);
 	};
 
 	var visu = function(){
@@ -35,6 +39,16 @@ Speakers.SpeakersController = function(){
 		speakersTableView.renderTable(speakersInfo);
 		speechesDominanceView.renderPieChart(speakersInfo);
 
+		speakersBarChartView.setSpeakersSelection();
+		speakersBarChartView.renderBarChart(speakersInfo);
+
+	};
+
+	var visuBarChart = function(){
+		var speakersInfo = speakersModel.getSpeakersInfo();
+
+		speakersBarChartView.setSpeakersSelection();
+		speakersBarChartView.renderBarChart(speakersInfo);
 	};
 
 	that.init = init;
