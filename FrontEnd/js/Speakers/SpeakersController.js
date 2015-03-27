@@ -52,6 +52,8 @@ Speakers.SpeakersController = function(){
 		speakerRelationsView.setCurrentSpeaker();
 		speakerRelationsView.renderRelation(speakersInfo);
 
+		$("body").fadeIn(1000);
+
 	};
 
 	var visuBarChart = function(){

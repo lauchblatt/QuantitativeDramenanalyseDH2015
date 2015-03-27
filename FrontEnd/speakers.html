@@ -13,62 +13,70 @@
 	<body>
 		<div class="container">
 			<h1>Sprecheranalyse</h1>
-
-			<table class="table table-bordered table-striped" id="speakers-table">
-				<thead>
-					<tr>
-					    <th>Name</th> 
-					    <th>Anwesenheit in Szenen</th>
-					    <th>Anwesenheit pro Szene in Prozent</th>
-					    <th>Anzahl der Repliken</th>
-					    <th>Mittelwert Repliken</th>
-					    <th>Median Repliken</th>
-					    <th>Maximum Repliken</th>
-					    <th>Minimum Repliken</th>
-					  </tr>
-				</thead>
-				<tbody id="table-tbody">
-				</tbody>
-			</table>
-			<div id="dashbord-speeches-dominance">
-				<div id="filter-speeches-dominance"></div>
-				<div id="chart-speeches-dominance"></div>
+			<div class="box">
+				<table class="table table-bordered table-striped table-hover" id="speakers-table">
+					<thead>
+						<tr>
+						    <th>Name</th> 
+						    <th>Anwesenheit in Szenen</th>
+						    <th>Anwesenheit pro Szene in Prozent</th>
+						    <th>Anzahl der Repliken</th>
+						    <th>Mittelwert Repliken</th>
+						    <th>Median Repliken</th>
+						    <th>Maximum Repliken</th>
+						    <th>Minimum Repliken</th>
+						  </tr>
+					</thead>
+					<tbody id="table-tbody">
+					</tbody>
+				</table>
+			</div>
+			<div class="box">
+				<div id="dashbord-speeches-dominance">
+					<div id="filter-speeches-dominance"></div>
+					<div id="chart-speeches-dominance"></div>
+				</div>
 			</div>
 
-			<div class="form-group dropdown-form" id="form-speakers">
-				  <label for="sel1">Parameter:</label>
-				  <select class="form-control" id="selection-speakers">
-				    <option>Anwesenheit</option>
-				    <option>Anwesenheit in Prozent</option>
-				    <option>Repliken</option>
-				    <option>Durchschnittliche Replikenlänge</option>
-				    <option>Median Replikenlänge</option>
-				    <option>Maximum Replikenlänge</option>
-				    <option>Minimum Replikenlänge</option>
-				  </select>
+			<div class="box">
+				<div class="form-group dropdown-form" id="form-speakers">
+					  <label for="sel1">Parameter:</label>
+					  <select class="form-control" id="selection-speakers">
+					    <option>Anwesenheit</option>
+					    <option>Anwesenheit in Prozent</option>
+					    <option>Repliken</option>
+					    <option>Durchschnittliche Replikenlänge</option>
+					    <option>Median Replikenlänge</option>
+					    <option>Maximum Replikenlänge</option>
+					    <option>Minimum Replikenlänge</option>
+					  </select>
+				</div>
+
+				<div id="dashbord-speakers-barChart">
+					<div id="filter-speakers-barChart"></div>
+					<div id="chart-speakers-barChart"></div>
+				</div>
 			</div>
 
-			<div id="dashbord-speakers-barChart">
-				<div id="filter-speakers-barChart"></div>
-				<div id="chart-speakers-barChart"></div>
-			</div>
-			<div class="form-group dropdown-form" id="form-speaker-relations">
-				  <label for="selection-speaker-relations">Sprecher:</label>
-				  <select class="form-control" id="selection-speaker-relations">
-				  </select>
-			</div>
-			<div id="speaker-relation">
-				<div id="speaker-name" class="relation">
+			<div class="box">
+				<div class="form-group dropdown-form" id="form-speaker-relations">
+					  <label for="selection-speaker-relations">Sprecher:</label>
+					  <select class="form-control" id="selection-speaker-relations">
+					  </select>
 				</div>
-				<div id="gets-dominated-by" class="relation">
-				</div>
-				<div id="independent" class="relation">
-				</div>
-				<div id="alternative" class="relation">
-				</div>
-				<div id="concomitant" class="relation">
-				</div>
-				<div id="dominates" class="relation">
+				<div id="speaker-relation">
+					<div id="speaker-name" class="relation">
+					</div>
+					<div id="gets-dominated-by" class="relation">
+					</div>
+					<div id="independent" class="relation">
+					</div>
+					<div id="alternative" class="relation">
+					</div>
+					<div id="concomitant" class="relation">
+					</div>
+					<div id="dominates" class="relation">
+					</div>
 				</div>
 			</div>
 
