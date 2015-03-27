@@ -45,6 +45,8 @@ class DramaParser:
         for speaker in drama_model._speakers:
             speaker.calc_speeches_statistics()
 
+        drama_model.set_speaker_count()
+
         #self.generateJSON(drama_model)
         #self.generateConfMatrixCSV(drama_model)
         #self.generateBasicCSV(drama_model)
@@ -80,6 +82,7 @@ class DramaParser:
         drama_data['date'] = drama._date
         drama_data['type'] = drama._type
         drama_data['castgroup'] = drama._castgroup
+        drama_data['speaker_count'] = drama._speakerCount
         """
         drama_data['All Speakers'] = all_speakers
         """
