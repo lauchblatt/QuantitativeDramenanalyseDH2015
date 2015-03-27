@@ -9,3 +9,10 @@
 
 #dashbord-speakers-barChart{
 }
+
+.relation {
+	margin: 2%;
+	width: 30%;
+	height: 10%;
+	border: 3px solid black;
+}
