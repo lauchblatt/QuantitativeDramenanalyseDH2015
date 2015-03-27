@@ -19,15 +19,21 @@ Speakers.SpeakersBarChartView = function(){
 		var data = new google.visualization.DataTable();
 		data.addColumn("string", "Sprecher");
 		data.addColumn("number", speakersSelection);
+		speakersInfo.sort(sort_by(speakersAttribute,true));
 		var array = [];
 		for(i = 0; i < speakersInfo.length; i++){
-			var row = [speakersInfo[i].name + "\ \ \ ", speakersInfo[i][speakersAttribute]];
+			var row = [speakersInfo[i].name, speakersInfo[i][speakersAttribute]];
 			array.push(row);
 		}
 		data.addRows(array);
 
+		var estimatedHeight = speakersInfo.length * 30;
+		if(estimatedHeight < 800){
+			estimatedHeight = 800;
+		}
+
 		var options = {title:'Sprecher-Statistik',
-        			   height: 1000,
+        			   height: estimatedHeight,
         			   chartArea:{width:'55%',height:'90%'},
 				        hAxis: {
         			   	title: speakersSelection
@@ -75,6 +81,19 @@ Speakers.SpeakersBarChartView = function(){
 		if(speakersSelection == "Median Replikenlänge"){speakersAttribute = "median_length_of_speakers_speeches";}
 		if(speakersSelection == "Maximum Replikenlänge"){speakersAttribute = "maximum_length_of_speakers_speeches";}
 		if(speakersSelection == "Minimum Replikenlänge"){speakersAttribute = "minimum_length_of_speakers_speeches";}
+	};
+
+	var sort_by = function(field, reverse, primer){
+
+   		var key = primer ? 
+        function(x) {return primer(x[field])} : 
+       	function(x) {return x[field]};
+
+   		reverse = !reverse ? 1 : -1;
+
+   		return function (a, b) {
+       	return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+     	} 
 	};
 
 	that.setSpeakersSelection = setSpeakersSelection;

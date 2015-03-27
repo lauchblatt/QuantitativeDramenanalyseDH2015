@@ -1,6 +1,6 @@
 Speakers.SpeakersModel = function(){
 	var that = {};
-	var currentDrama_id = 77;
+	var currentDrama_id = 50;
 	var speakersInfo = [];
 	var scenesInfo = [];
 	var dramaInfo = null;
