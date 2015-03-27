@@ -5,6 +5,7 @@ MultipleDramas.YearView = function(){
 
 	var init = function(){
 		initListener();
+		$("#chart-div-year").css("display", "none");
 	};
 
 	var initListener = function(){
@@ -16,6 +17,7 @@ MultipleDramas.YearView = function(){
 	};
 
 	var renderScatterChart = function(dramas){
+		$("#chart-div-year").css("display", "none");
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
 		data.addColumn("number", yearSelection);
@@ -31,12 +33,12 @@ MultipleDramas.YearView = function(){
 		var options = {
           title: 'Epochenverlauf',
           height: 700,
+          width: 1000,
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          legend: 'none',
-          animation: {duration: 1000, startup: true, easing: 'out'},
           explorer: {},
+          legend: 'none',
           trendlines: {
 				          0: {
 				          	tooltip: false,
@@ -53,6 +55,7 @@ MultipleDramas.YearView = function(){
         var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
 
         chart.draw(data, options);
+        $("#chart-div-year").fadeIn(1000);
 	};
 
 	var createTooltip = function(drama){
