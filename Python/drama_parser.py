@@ -192,12 +192,8 @@ class DramaParser:
     # returns the drama date
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
-        print("Date: ", date)
         if "notBefore" in date:
-            print "if clause"
             date['middle'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
-
-        print("Date...: ", date)
         return date
 
     # returns the drama type from the filename
@@ -268,6 +264,7 @@ class DramaParser:
             act_model = ActModel()
             act_model._number = position
             act_model._configurations = self.extract_subact_data(act, position)
+            act_model.set_appearing_speakers()
             act_data.append(act_model)
             position += 1
 

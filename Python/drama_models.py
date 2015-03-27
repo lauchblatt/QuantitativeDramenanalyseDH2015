@@ -161,7 +161,8 @@ class ActModel:
         #Akt besteht aus Konfigurationen
         self._configurations = None
 
-        self._appearing_speakers = None
+        # um spaeter leichter Beziehungen zu berechnen, als namen
+        self._appearing_speakers = []
 
         self._speechesLength_avg = None
         self._speechesLength_max = None
@@ -185,6 +186,12 @@ class ActModel:
         self._speechesLength_max = max(speeches_lengths)
         self._speechesLength_min = min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
+
+    def set_appearing_speakers(self):
+        for configuration in self._configurations:
+            for speaker in configuration._appearing_speakers:
+                if speaker not in self._appearing_speakers:
+                    self._appearing_speakers.append(speaker)
 
 # model for configurations
 class ConfigurationModel:
