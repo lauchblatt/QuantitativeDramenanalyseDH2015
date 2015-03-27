@@ -1,14 +1,28 @@
 MultipleDramas.YearView = function(){
 	var that = {};
+	var yearSelection = "";
+	var yearAttribute = "";
+
+	var init = function(){
+		initListener();
+	};
+
+	var initListener = function(){
+		$("#selection-year").change(yearSelectionClicked);
+	};
+
+	var yearSelectionClicked = function(){
+		$(that).trigger("YearSelectionClicked");
+	};
 
 	var renderScatterChart = function(dramas){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
-		data.addColumn("number", "Konfigurationsdichte");
+		data.addColumn("number", yearSelection);
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 		var array = [];
 		for(i = 0; i < dramas.length; i++){
-			var row = [dramas[i].year, dramas[i].configuration_density,
+			var row = [dramas[i].year, dramas[i][yearAttribute],
 			createTooltip(dramas[i])];
 			array.push(row);
 		}
@@ -18,9 +32,10 @@ MultipleDramas.YearView = function(){
           title: 'Epochenverlauf',
           height: 700,
           tooltip: { isHtml: true },
-          hAxis: {title: 'Jahr', format: ''},
-          vAxis: {title: 'Konfigurationsdichte'},
+          hAxis: {title: 'Jahr', format: ' '},
+          vAxis: {title: yearSelection},
           legend: 'none',
+          animation: {duration: 1000, startup: true, easing: 'out'},
           explorer: {},
           trendlines: {
 				          0: {
@@ -35,7 +50,7 @@ MultipleDramas.YearView = function(){
 				        }
         };
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div'));
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
 
         chart.draw(data, options);
 	};
@@ -44,9 +59,25 @@ MultipleDramas.YearView = function(){
 		var divBegin = "<div class='tooltip-test'>"
 		var headline = "<div>" + drama.title + " von " + getLastName(drama.author) + "</div>";
 		var year = "<div>" + "<b>Jahr: </b>" + drama.year + "</div>";
-		var data = "<div>" + "<b>Konfigurationsdichte: </b>" + drama.configuration_density + "</div>";
+		var data = "<div>" + "<b>" + yearSelection + ": </b>" + drama[yearAttribute] + "</div>";
 		var divEnd = "</div>";
 		return (divBegin + headline + year + data + divEnd); 
+	};
+
+	var setYearSelection = function(){
+		yearSelection = $("#selection-year").val();
+
+		if(yearSelection == "Szenenanzahl"){yearAttribute = "number_of_scenes"};
+		if(yearSelection == "Replikenanzahl"){yearAttribute = "number_of_speeches_in_drama";}
+		//TODO Sprecheranzahl
+		if(yearSelection == "Konfigurationsdichte"){yearAttribute = "configuration_density";}
+		if(yearSelection == "Durchschnittliche Replikenlänge"){yearAttribute = "average_length_of_speeches_in_drama";}
+		if(yearSelection == "Median Replikenlänge"){yearAttribute = "median_length_of_speeches_in_drama";}
+		if(yearSelection == "Maximum Replikenlänge"){yearAttribute = "maximum_length_of_speeches_in_drama";}
+		if(yearSelection == "Minimum Replikenlänge"){yearAttribute = "minimum_length_of_speeches_in_drama";}
+
+		console.log(yearSelection);
+		console.log(yearAttribute);
 	};
 
 	var getLastName = function(author){
@@ -55,6 +86,8 @@ MultipleDramas.YearView = function(){
 	};
 
 	that.renderScatterChart = renderScatterChart;
+	that.setYearSelection = setYearSelection;
+	that.init = init;
 
 	return that;
 };
