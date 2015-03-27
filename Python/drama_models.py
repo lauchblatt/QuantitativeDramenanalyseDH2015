@@ -12,7 +12,6 @@ class DramaModel:
         self._type = None
         self._author = None
         self._acts = None
-        self._year = None
         # Zur Hilfe alle Speakers speichern, damit sie ueberhaupt irgendwo sind
         self._speakers = None
 
@@ -20,10 +19,10 @@ class DramaModel:
         self._configuration_matrix = None
         self._configuration_density = None
 
-        self._replicasLength_avg = None
-        self._replicasLength_max = None
-        self._replicasLength_min = None
-        self._replicasLength_med = None
+        self._speechesLength_avg = None
+        self._speechesLength_max = None
+        self._speechesLength_min = None
+        self._speechesLength_med = None
         
     # calculates the configuration matrix
     def calc_config_matrix (self):
@@ -122,31 +121,31 @@ class DramaModel:
         independent_speakers = list(set(independent_speakers) - set(speaker._gets_dominated_by))
         return independent_speakers
 
-    def get_replicas_drama(self):
-        replicas_in_drama = []
+    def get_speeches_drama(self):
+        speeches_in_drama = []
         for act in self._acts:
             for configuration in act._configurations:
-                for replicas in configuration._replicas:
-                    replicas_in_drama.append(replicas)
-        return replicas_in_drama
+                for speeches in configuration._speeches:
+                    speeches_in_drama.append(speeches)
+        return speeches_in_drama
 
-    def calc_replicas_statistics(self):
-        replicas = self.get_replicas_drama()
-        replicas_lengths = []
-        for replica in replicas:
-            replicas_lengths.append(replica._length)
+    def calc_speeches_statistics(self):
+        speeches = self.get_speeches_drama()
+        speeches_lengths = []
+        for speech in speeches:
+            speeches_lengths.append(speech._length)
 
-        self._replicasLength_avg = average(replicas_lengths)
-        self._replicasLength_max = max(replicas_lengths)
-        self._replicasLength_min = min(replicas_lengths)
-        self._replicasLength_med = median(replicas_lengths)
+        self._speechesLength_avg = average(speeches_lengths)
+        self._speechesLength_max = max(speeches_lengths)
+        self._speechesLength_min = min(speeches_lengths)
+        self._speechesLength_med = median(speeches_lengths)
 
-    def add_replicas_to_speakers(self):
-        replicas = self.get_replicas_drama()
-        for replica in replicas:
+    def add_speeches_to_speakers(self):
+        speeches = self.get_speeches_drama()
+        for speech in speeches:
             for speaker in self._speakers:
-                if(replica._speaker == speaker._name):
-                    speaker._replicas.append(replica)
+                if(speech._speaker == speaker._name):
+                    speaker._speeches.append(speech)
                     break
 
 # model for acts
@@ -157,28 +156,28 @@ class ActModel:
         #Akt besteht aus Konfigurationen
         self._configurations = None
 
-        self._replicasLength_avg = None
-        self._replicasLength_max = None
-        self._replicasLength_min = None
-        self._replicasLength_med = None        
+        self._speechesLength_avg = None
+        self._speechesLength_max = None
+        self._speechesLength_min = None
+        self._speechesLength_med = None        
 
-    def get_replicas_act(self):
-        replicas_in_act = []
+    def get_speeches_act(self):
+        speeches_in_act = []
         for configuration in self._configurations:
-            for replicas in configuration._replicas:
-                replicas_in_act.append(replicas)
-        return replicas_in_act
+            for speeches in configuration._speeches:
+                speeches_in_act.append(speeches)
+        return speeches_in_act
 
-    def calc_replicas_statistics(self):
-        replicas = self.get_replicas_act()
-        replicas_lengths = []
-        for replica in replicas:
-            replicas_lengths.append(replica._length)
+    def calc_speeches_statistics(self):
+        speeches = self.get_speeches_act()
+        speeches_lengths = []
+        for speech in speeches:
+            speeches_lengths.append(speech._length)
 
-        self._replicasLength_avg = average(replicas_lengths)
-        self._replicasLength_max = max(replicas_lengths)
-        self._replicasLength_min = min(replicas_lengths)
-        self._replicasLength_med = median(replicas_lengths)
+        self._speechesLength_avg = average(speeches_lengths)
+        self._speechesLength_max = max(speeches_lengths)
+        self._speechesLength_min = min(speeches_lengths)
+        self._speechesLength_med = median(speeches_lengths)
 
 # model for configurations
 class ConfigurationModel:
@@ -187,30 +186,29 @@ class ConfigurationModel:
         self._name = None
         self._number = None
         #Konfiguration besteht aus Repliken
-        self._replicas = None
+        self._speeches = None
         # um spaeter leichter Beziehungen zu berechnen, als namen
         self._appearing_speakers = None
 
-        self._replicasLength_avg = None
-        self._replicasLength_max = None
-        self._replicasLength_min = None
-        self._replicasLength_med = None
+        self._speechesLength_avg = None
+        self._speechesLength_max = None
+        self._speechesLength_min = None
+        self._speechesLength_med = None
 
-    def calc_replicas_statistics(self):
-        replicas = self._replicas
-        replicas_lengths = []
-        for replica in replicas:
-            replicas_lengths.append(replica._length)
+    def calc_speeches_statistics(self):
+        speeches = self._speeches
+        speeches_lengths = []
+        for speech in speeches:
+            speeches_lengths.append(speech._length)
 
-        if(replicas):
-            self._replicasLength_avg = average(replicas_lengths)
-            self._replicasLength_max = max(replicas_lengths)
-            self._replicasLength_min = min(replicas_lengths)
-            self._replicasLength_med = median(replicas_lengths)
-        #else alles 0 setzen
+        if(speeches):
+            self._speechesLength_avg = average(speeches_lengths)
+            self._speechesLength_max = max(speeches_lengths)
+            self._speechesLength_min = min(speeches_lengths)
+            self._speechesLength_med = median(speeches_lengths)
 
-# model for replica
-class ReplicaModel:
+# model for speech
+class SpeechModel:
 
     def __init__ (self):
         self._id = None
@@ -225,7 +223,7 @@ class SpeakerModel:
     def __init__ (self):
         self._name = None   
         self._alternative_names = None
-        self._replicas = []
+        self._speeches = []
         self._concomitant = []
         self._alternative = []
         self._dominates = []
@@ -233,26 +231,26 @@ class SpeakerModel:
         self._independent = []
         # self._repetitive_config = None
 
-        self._replicasLength_avg = None
-        self._replicasLength_med = None
-        self._replicasLength_min = None
-        self._replicasLength_max = None
+        self._speechesLength_avg = None
+        self._speechesLength_med = None
+        self._speechesLength_min = None
+        self._speechesLength_max = None
 
-    def calc_replicas_statistics(self):
-        replicas_lengths = []
-        for replicas in self._replicas:
-            replicas_lengths.append(replicas._length)
+    def calc_speeches_statistics(self):
+        speeches_lengths = []
+        for speeches in self._speeches:
+            speeches_lengths.append(speeches._length)
 
-        if(replicas_lengths):
-            self._replicasLength_avg = average(replicas_lengths)
-            self._replicasLength_max = max(replicas_lengths)
-            self._replicasLength_min = min(replicas_lengths)
-            self._replicasLength_med = median(replicas_lengths)
+        if(speeches_lengths):
+            self._speechesLength_avg = average(speeches_lengths)
+            self._speechesLength_max = max(speeches_lengths)
+            self._speechesLength_min = min(speeches_lengths)
+            self._speechesLength_med = median(speeches_lengths)
         """
         print(self._name)
-        print(self._replicasLength_avg)
-        print(self._replicasLength_max)
-        print(self._replicasLength_min)
-        print(self._replicasLength_med)
+        print(self._speechesLength_avg)
+        print(self._speechesLength_max)
+        print(self._speechesLength_min)
+        print(self._speechesLength_med)
         """
 
