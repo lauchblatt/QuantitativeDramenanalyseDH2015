@@ -11,6 +11,7 @@ MultipleDramas.MultipleDramasController = function(){
 		yearView = MultipleDramas.YearView();
 
 		multipleDramasModel.init();
+		yearView.init();
 
 		initGoogleCharts();
 
@@ -20,10 +21,19 @@ MultipleDramas.MultipleDramasController = function(){
 
 	var initListener = function(){
 		$(multipleDramasModel).on("InfoFinished", visu);
+		$(yearView).on("YearSelectionClicked", visuYearChart);
 	};
 
 	var visu = function(){
 		var dramas = multipleDramasModel.getChosenDramas();
+
+		yearView.setYearSelection();
+		yearView.renderScatterChart(dramas);
+	};
+
+	var visuYearChart = function(){
+		var dramas = multipleDramasModel.getChosenDramas();
+		yearView.setYearSelection();
 		yearView.renderScatterChart(dramas);
 	};
 
