@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Drama Einzelansicht</title>	
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/Drama.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="title"></h1>
+			<h2 id="author"></h2>
+			<div id="previewText"></div>
+
+			<button type="button" class="btn btn-default" id="configuration-matrix">Konfigurationsmatrix</button>
+  			<button type="button" class="btn btn-default" id="drama-analysis">Drama-Akt-Szenen-Analyse</button>
+ 			<button type="button" class="btn btn-default" id="speaker-analysis">Sprecher-Analyse</button>
+		</div>
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="js/Drama/Drama.js"></script>
+		<script type="text/javascript" src="js/Drama/DramaModel.js"></script>
+		<script type="text/javascript" src="js/Drama/DramaView.js"></script>
+		<script type="text/javascript" src="js/Drama/DramaController.js"></script>
+
+		<script>
+				$(function() {
+					Drama.init();
+				});
+			</script>
+	</body>
+</html>

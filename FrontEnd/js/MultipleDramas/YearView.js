@@ -50,7 +50,7 @@ MultipleDramas.YearView = function(){
 		var options = {
           title: 'Epochenverlauf',
           height: 700,
-          width: 1200,
+          width: 1170,
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
@@ -103,7 +103,7 @@ MultipleDramas.YearView = function(){
 		var options = {
           title: 'Epochenverlauf',
           height: 700,
-          width: 1200,
+          width: 1170,
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
@@ -114,7 +114,7 @@ MultipleDramas.YearView = function(){
         var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
 
         chart.draw(data, options);
-        
+
 	};
 
 	var renderScatterChartType = function(dramas){
@@ -148,7 +148,7 @@ MultipleDramas.YearView = function(){
 		var options = {
           title: 'Epochenverlauf',
           height: 700,
-          width: 1200,
+          width: 1170,
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
