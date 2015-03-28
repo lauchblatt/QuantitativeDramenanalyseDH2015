@@ -21,6 +21,12 @@ class DramaParser:
         drama_model._title = self.get_title(xml_root)
         drama_model._author = self.get_author(xml_root)
         drama_model._date = self.get_date(xml_root)
+        
+        if 'when' in drama_model._date:
+            drama_model._year = drama_model._date['when']
+        else:
+            drama_model._year = 'unknown'
+
         drama_model._type = self.get_type(filepath)
 
         drama_model._subact_type = self.get_subact_type(xml_root)
@@ -64,8 +70,12 @@ class DramaParser:
     # returns the drama date
     def get_date(self, xml_root):
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
+        if "when" in date:
+            date['when'] = (int) (date['when'])
+            #print("Date: ", date)
+
         if "notBefore" in date:
-            date['middle'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
+            date['when'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
         return date
 
     # returns the drama type from the filename

@@ -42,8 +42,8 @@ class DramaOutput:
         """
         drama_data['All Speakers'] = all_speakers
         """
-        drama_data['configuration Density'] = drama._configuration_density
-        drama_data['number_of_speeches_in_Drama'] = len(drama.get_speeches_drama())
+        drama_data['configuration_density'] = drama._configuration_density
+        drama_data['number_of_speeches_in_drama'] = len(drama.get_speeches_drama())
         drama_data['average_length_of_speeches_in_drama'] = drama._speechesLength_avg
         drama_data['maximum_length_of_speeches_in_drama'] = drama._speechesLength_max
         drama_data['minimum_length_of_speeches_in drama'] = drama._speechesLength_min
@@ -146,3 +146,93 @@ class DramaOutput:
         cf = drama_model._configuration_matrix
         writer.writerows(cf)
         doc.close
+
+    def generateDenormalizedJSON(self, dramas):
+        dramas_output = OrderedDict({})
+        i = 0
+        drama_level_infos = []
+        speakers_level_infos = OrderedDict({})
+        acts_level_infos = OrderedDict({})
+        scenes_level_infos = OrderedDict({})
+        print len(dramas);
+
+        for drama in dramas:
+            drama_level_info = self.generateDenormalizedDramaData(drama, i)
+            drama_level_infos.append(drama_level_info)
+
+            speakers_level_info = self.generateJSONforSpeakers(drama._speakers)
+            speakers_level_infos[i] = speakers_level_info
+
+            acts_level_info = self.generateDenormalizedJSONforActs(drama._acts)
+            acts_level_infos[i] = acts_level_info
+
+            scenes_level_info = OrderedDict({})
+            iterator = 0
+            for act in drama._acts:
+                scenes_level_info[iterator] = self.generateJSONforConfigurations(act._configurations)
+                iterator = iterator + 1
+                scenes_level_infos[i] = scenes_level_info
+
+                i = i + 1
+
+        dramas_output["drama_data"] = drama_level_infos
+        dramas_output["speakers_data"] = speakers_level_infos
+        dramas_output["acts_data"] = acts_level_infos
+        dramas_output["scenes_data"] = scenes_level_infos
+
+        dramas_json = json.dumps(dramas_output, indent=4, ensure_ascii=True)
+        doc = open('Dramas_data.json', 'w')
+        doc.write(dramas_json)
+        doc.close
+
+    def generateDenormalizedDramaData(self, drama, drama_id):
+        drama_data = OrderedDict({})
+        drama_data['id'] = drama_id
+        drama_data['title'] = drama._title
+        drama_data['author'] = drama._author
+        drama_data['date'] = drama._date
+        drama_data['year'] = drama._year
+        drama_data['type'] = drama._type
+        drama_data['castgroup'] = drama._castgroup
+        drama_data['configuration_density'] = drama._configuration_density
+        drama_data['number_of_speeches_in_drama'] = len(drama.get_speeches_drama())
+        drama_data['average_length_of_speeches_in_drama'] = drama._speechesLength_avg
+        drama_data['maximum_length_of_speeches_in_drama'] = drama._speechesLength_max
+        drama_data['minimum_length_of_speeches_in_drama'] = drama._speechesLength_min
+        drama_data['median_length_of_speeches_in_drama'] = drama._speechesLength_med
+        drama_data['number_of_acts'] = self.getNumberOfActs(drama)
+        drama_data['number_of_scenes'] = self.getNumberOfScenes(drama)
+        drama_data['speakers'] = self.getListOfSpeakers(drama);
+        return drama_data
+
+    def getNumberOfActs(self, drama):
+        return len(drama._acts)
+
+    def getNumberOfScenes(self, drama):
+        number = 0
+        for act in drama._acts:
+            number = number + len(act._configurations)
+        return number
+    
+    def getListOfSpeakers(self, drama):
+        speakersList = []
+        for speaker in drama._speakers:
+            speakersList.append(speaker._name)
+
+        return speakersList
+
+    def generateDenormalizedJSONforActs(self, acts):
+        acts_data = []
+        iterator = 1
+        for act in acts:
+            act_data = OrderedDict({})
+            act_data['number_of_act'] = act._number
+            act_data['number_of_speeches_in_act'] = len(act.get_speeches_act())
+            act_data['average_length_of_speeches_in_act'] = act._speechesLength_avg
+            act_data['maximum_length_of_speeches_in_act'] = act._speechesLength_max
+            act_data['minimum_length_of_speeches_in_act'] = act._speechesLength_min
+            act_data['median_length_of_speeches_in_act'] = act._speechesLength_med
+
+            acts_data.append(act_data)
+
+        return acts_data
