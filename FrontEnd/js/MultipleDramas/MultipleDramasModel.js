@@ -8,7 +8,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	var categoryList = [];
 
 	var init = function(){
-		for(var i = 0; i < 2; i++){
+		for(var i = 0; i < 103; i++){
 			chosenDramasIds.push(i);
 		}
 		$(that).on("InitFinished", continueInit);

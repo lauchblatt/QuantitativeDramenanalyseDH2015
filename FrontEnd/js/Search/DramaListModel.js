@@ -27,6 +27,7 @@ Search.DramaListModel = function(){
 		$(that).trigger("EmptyTable");
 		firebaseRef.orderByChild('author').on("value", function(snapshot) {
 			dramas= snapshot.val();
+			console.log(dramas.length);
 			$(that).trigger("AllDramasRetrieved", [input]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
