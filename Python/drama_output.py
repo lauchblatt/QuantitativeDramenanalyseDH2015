@@ -194,6 +194,8 @@ class DramaOutput:
         drama_data['year'] = drama._year
         drama_data['type'] = drama._type
         drama_data['castgroup'] = drama._castgroup
+        drama_data['speaker_count_castgroup'] = drama._speakerCountCast
+        drama_data['speaker_count'] = drama._speakerCountAll
         drama_data['configuration_density'] = drama._configuration_density
         drama_data['number_of_speeches_in_drama'] = len(drama.get_speeches_drama())
         drama_data['average_length_of_speeches_in_drama'] = drama._speechesLength_avg
