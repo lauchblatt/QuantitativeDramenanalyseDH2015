@@ -94,6 +94,8 @@ class DramaOutput:
             act_data = OrderedDict({})
             act_data['number_of_act'] = act._number
             act_data['number_of_speeches_in_act'] = len(act.get_speeches_act())
+            act_data['appearing_speakers'] = act._appearing_speakers
+
             act_data['average_length_of_speeches_in_act'] = act._speechesLength_avg
             act_data['maximum_length_of_speeches_in_act'] = act._speechesLength_max
             act_data['minimum_length_of_speeches_in_act'] = act._speechesLength_min
