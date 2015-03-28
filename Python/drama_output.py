@@ -171,9 +171,9 @@ class DramaOutput:
             for act in drama._acts:
                 scenes_level_info[iterator] = self.generateJSONforConfigurations(act._configurations)
                 iterator = iterator + 1
-                scenes_level_infos[i] = scenes_level_info
+            scenes_level_infos[i] = scenes_level_info
 
-                i = i + 1
+            i = i + 1
 
         dramas_output["drama_data"] = drama_level_infos
         dramas_output["speakers_data"] = speakers_level_infos
@@ -228,6 +228,8 @@ class DramaOutput:
             act_data = OrderedDict({})
             act_data['number_of_act'] = act._number
             act_data['number_of_speeches_in_act'] = len(act.get_speeches_act())
+            act_data['appearing_speakers'] = act._appearing_speakers
+            
             act_data['average_length_of_speeches_in_act'] = act._speechesLength_avg
             act_data['maximum_length_of_speeches_in_act'] = act._speechesLength_max
             act_data['minimum_length_of_speeches_in_act'] = act._speechesLength_min
