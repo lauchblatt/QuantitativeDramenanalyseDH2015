@@ -139,8 +139,8 @@ class DramaModel:
             speeches_lengths.append(speech._length)
 
         self._speechesLength_avg = average(speeches_lengths)
-        self._speechesLength_max = max(speeches_lengths)
-        self._speechesLength_min = min(speeches_lengths)
+        self._speechesLength_max = custom_max(speeches_lengths)
+        self._speechesLength_min = custom_min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
 
     def add_speeches_to_speakers(self):
@@ -185,8 +185,8 @@ class ActModel:
             speeches_lengths.append(speech._length)
 
         self._speechesLength_avg = average(speeches_lengths)
-        self._speechesLength_max = max(speeches_lengths)
-        self._speechesLength_min = min(speeches_lengths)
+        self._speechesLength_max = custom_max(speeches_lengths)
+        self._speechesLength_min = custom_min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
 
     def set_appearing_speakers(self):
@@ -219,8 +219,8 @@ class ConfigurationModel:
 
         if(speeches):
             self._speechesLength_avg = average(speeches_lengths)
-            self._speechesLength_max = max(speeches_lengths)
-            self._speechesLength_min = min(speeches_lengths)
+            self._speechesLength_max = custom_max(speeches_lengths)
+            self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
 
 # model for speech
@@ -259,8 +259,8 @@ class SpeakerModel:
 
         if(speeches_lengths):
             self._speechesLength_avg = average(speeches_lengths)
-            self._speechesLength_max = max(speeches_lengths)
-            self._speechesLength_min = min(speeches_lengths)
+            self._speechesLength_max = custom_max(speeches_lengths)
+            self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
         """
         print(self._name)
