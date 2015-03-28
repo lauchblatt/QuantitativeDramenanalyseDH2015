@@ -4,6 +4,7 @@ MultipleDramas.MultipleDramasController = function(){
 	var multipleDramasModel = null;
 	var yearView = null;
 	var authorView = null;
+	var categoryView = null;
 
 
 	var init = function(){
@@ -11,10 +12,12 @@ MultipleDramas.MultipleDramasController = function(){
 		multipleDramasModel = MultipleDramas.MultipleDramasModel();
 		yearView = MultipleDramas.YearView();
 		authorView = MultipleDramas.AuthorView();
+		categoryView = MultipleDramas.CategoryView();
 
 		multipleDramasModel.init();
 		yearView.init();
 		authorView.init();
+		categoryView.init();
 
 		initGoogleCharts();
 
@@ -26,6 +29,7 @@ MultipleDramas.MultipleDramasController = function(){
 		$(multipleDramasModel).on("InfoFinished", visu);
 		$(yearView).on("YearSelectionClicked", visuYearChart);
 		$(authorView).on("AuthorSelectionClicked", visuAuthorChart);
+		$(categoryView).on("CategorySelectionClicked", visuCategoryChart);
 	};
 
 	var visu = function(){
@@ -38,8 +42,18 @@ MultipleDramas.MultipleDramasController = function(){
 		authorView.setAuthorSelection();
 		authorView.renderBarChart(authorList);
 
+		var categoryList = multipleDramasModel.getCategoryList();
+		categoryView.setCategorySelection();
+		categoryView.renderColumnChart(categoryList);
+
 		$("body").fadeIn();
 
+	};
+
+	var visuCategoryChart = function(){
+		var categoryList = multipleDramasModel.getCategoryList();
+		categoryView.setCategorySelection();
+		categoryView.renderColumnChart(categoryList);
 	};
 
 	var visuYearChart = function(){
