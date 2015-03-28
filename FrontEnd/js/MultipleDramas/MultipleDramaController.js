@@ -35,16 +35,16 @@ MultipleDramas.MultipleDramasController = function(){
 
 	var visu = function(){
 		var dramas = multipleDramasModel.getChosenDramas();
+		var authorList = multipleDramasModel.getAuthorList();
+		var categoryList = multipleDramasModel.getCategoryList();
 
 		yearView.setYearSelection();
 		yearView.setYearCompareSelection();
-		yearView.renderScatterChart(dramas);
-
-		var authorList = multipleDramasModel.getAuthorList();
+		yearView.renderScatterChart(dramas, authorList);
+		
 		authorView.setAuthorSelection();
 		authorView.renderBarChart(authorList);
-
-		var categoryList = multipleDramasModel.getCategoryList();
+		
 		categoryView.setCategorySelection();
 		categoryView.renderColumnChart(categoryList);
 
@@ -60,9 +60,11 @@ MultipleDramas.MultipleDramasController = function(){
 
 	var visuYearChart = function(){
 		var dramas = multipleDramasModel.getChosenDramas();
+		var authorList = multipleDramasModel.getAuthorList();
+
 		yearView.setYearSelection();
 		yearView.setYearCompareSelection();
-		yearView.renderScatterChart(dramas);
+		yearView.renderScatterChart(dramas, authorList);
 	};
 
 	var visuAuthorChart = function(){

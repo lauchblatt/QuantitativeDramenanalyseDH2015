@@ -21,7 +21,7 @@ MultipleDramas.YearView = function(){
 		$(that).trigger("YearSelectionCompareClicked");
 	};
 
-	var renderScatterChart = function(dramas){
+	var renderScatterChart = function(dramas, authors){
 		console.log(compareSelection);
 		if(compareSelection == 'Kein Vergleich'){
 			renderScatterChartNormal(dramas);
@@ -30,9 +30,9 @@ MultipleDramas.YearView = function(){
 			renderScatterChartType(dramas);
 		}
 		if(compareSelection == 'Autor'){
-
+			renderScatterChartAuthor(dramas, authors);
 		}
-	}
+	};
 
 	var renderScatterChartNormal = function(dramas){
 		var data = new google.visualization.DataTable();
@@ -75,6 +75,48 @@ MultipleDramas.YearView = function(){
         chart.draw(data, options);
 	};
 
+	var renderScatterChartAuthor = function(dramas, authors){
+		var data = new google.visualization.DataTable();
+		data.addColumn("number", "Jahr");
+		for(var i = 0; i < authors.length; i++){
+			data.addColumn("number", getLastNameAndFirstInitial(authors[i].name));
+			data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+		}
+		var array = [];
+		var rowLength = ((authors.length*2)+1);
+		for(var i = 0; i < dramas.length; i++){
+			var row = [];
+			for(var j = 0; j < rowLength; j++){
+				row.push(null);
+			}
+			for(var k = 0; k < authors.length; k++){
+				if(dramas[i].author == authors[k].name){
+					row[0] = dramas[i].year;
+					row[(k*2) + 1] = dramas[i][yearAttribute];
+					row[(k*2) + 2] = createTooltip(dramas[i]);
+					array.push(row);
+					}
+				}	
+			}
+		data.addRows(array);
+
+		var options = {
+          title: 'Epochenverlauf',
+          height: 700,
+          width: 1200,
+          tooltip: { isHtml: true },
+          hAxis: {title: 'Jahr', format: ' '},
+          vAxis: {title: yearSelection},
+          animation: {duration: 1000, startup: true},
+          chartArea:{width:'75%',height:'80%'}
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
+
+        chart.draw(data, options);
+        
+	};
+
 	var renderScatterChartType = function(dramas){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
@@ -87,6 +129,7 @@ MultipleDramas.YearView = function(){
 
 		var array = [];
 		for(i = 0; i < dramas.length; i++){
+			console.log(dramas[i].type);
 			if(dramas[i].type == 'Komoedie'){
 				var row = [dramas[i].year, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null, null, null ];
 				array.push(row);
@@ -176,6 +219,14 @@ MultipleDramas.YearView = function(){
 
 	var getLastName = function(author){
 		author = author.slice(0, author.indexOf(","));
+		return author;
+	};
+
+	var getLastNameAndFirstInitial = function(author){
+		var authorLastName = author.slice(0, author.indexOf(","));
+		var commaIndex = author.indexOf(",");
+		var initial = author.slice(commaIndex+1, commaIndex+3);
+		author = authorLastName + "," + initial + ".";
 		return author;
 	};
 
