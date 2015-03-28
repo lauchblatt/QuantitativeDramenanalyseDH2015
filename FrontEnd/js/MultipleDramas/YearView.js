@@ -5,7 +5,6 @@ MultipleDramas.YearView = function(){
 
 	var init = function(){
 		initListener();
-		$("#chart-div-year").css("display", "none");
 	};
 
 	var initListener = function(){
@@ -17,7 +16,6 @@ MultipleDramas.YearView = function(){
 	};
 
 	var renderScatterChart = function(dramas){
-		$("#chart-div-year").css("display", "none");
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
 		data.addColumn("number", yearSelection);
@@ -37,8 +35,9 @@ MultipleDramas.YearView = function(){
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          explorer: {},
+          animation: {duration: 1000, startup: true},
           legend: 'none',
+          chartArea:{width:'70%',height:'75%'},
           trendlines: {
 				          0: {
 				          	tooltip: false,
@@ -55,7 +54,6 @@ MultipleDramas.YearView = function(){
         var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
 
         chart.draw(data, options);
-        $("#chart-div-year").fadeIn(1000);
 	};
 
 	var createTooltip = function(drama){
@@ -78,9 +76,7 @@ MultipleDramas.YearView = function(){
 		if(yearSelection == "Median Replikenlänge"){yearAttribute = "median_length_of_speeches_in_drama";}
 		if(yearSelection == "Maximum Replikenlänge"){yearAttribute = "maximum_length_of_speeches_in_drama";}
 		if(yearSelection == "Minimum Replikenlänge"){yearAttribute = "minimum_length_of_speeches_in_drama";}
-
-		console.log(yearSelection);
-		console.log(yearAttribute);
+		
 	};
 
 	var getLastName = function(author){

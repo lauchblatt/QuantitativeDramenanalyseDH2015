@@ -40,6 +40,7 @@ Speakers.SpeakersBarChartView = function(){
         			   },
         			   animation: {
                    	   	duration: 700,
+                   	   	startup: true
                    	   },
         			   vAxis: {
         			   	baseline: 0

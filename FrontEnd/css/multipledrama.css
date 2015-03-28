@@ -1,3 +1,6 @@
+body {
+	display: none;
+}
 .tooltip-test {
 	padding: 5px;
 	font-size: 15px;
