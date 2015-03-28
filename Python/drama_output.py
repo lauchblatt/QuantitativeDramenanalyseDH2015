@@ -37,7 +37,8 @@ class DramaOutput:
         drama_data['date'] = drama._date
         drama_data['type'] = drama._type
         drama_data['castgroup'] = drama._castgroup
-        drama_data['speaker_count'] = drama._speakerCount
+        drama_data['speaker_count_castgroup'] = drama._speakerCountCast
+        drama_data['speaker_count'] = drama._speakerCountAll
         """
         drama_data['All Speakers'] = all_speakers
         """

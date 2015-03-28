@@ -15,7 +15,8 @@ class DramaModel:
         # Zur Hilfe alle Speakers speichern, damit sie ueberhaupt irgendwo sind
         self._speakers = None
         self._castgroup = None
-        self._speakerCount = None
+        self._speakerCountCast = None
+        self._speakerCountAll = None
 
         # Kann man berechnen innerhalb der Klasse ueber Konfigurationen der Akte
         self._configuration_matrix = None
@@ -151,7 +152,8 @@ class DramaModel:
                     break
 
     def set_speaker_count(self):
-        self._speakerCount = len(self._castgroup)
+        self._speakerCountCast = len(self._castgroup)
+        self._speakerCountAll = len(self._speakers)
 
 # model for acts
 class ActModel:
