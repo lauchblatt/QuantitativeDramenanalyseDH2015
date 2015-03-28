@@ -28,6 +28,7 @@ MultipleDramas.MultipleDramasController = function(){
 	var initListener = function(){
 		$(multipleDramasModel).on("InfoFinished", visu);
 		$(yearView).on("YearSelectionClicked", visuYearChart);
+		$(yearView).on("YearSelectionCompareClicked", visuYearChart);
 		$(authorView).on("AuthorSelectionClicked", visuAuthorChart);
 		$(categoryView).on("CategorySelectionClicked", visuCategoryChart);
 	};
@@ -36,6 +37,7 @@ MultipleDramas.MultipleDramasController = function(){
 		var dramas = multipleDramasModel.getChosenDramas();
 
 		yearView.setYearSelection();
+		yearView.setYearCompareSelection();
 		yearView.renderScatterChart(dramas);
 
 		var authorList = multipleDramasModel.getAuthorList();
@@ -59,6 +61,7 @@ MultipleDramas.MultipleDramasController = function(){
 	var visuYearChart = function(){
 		var dramas = multipleDramasModel.getChosenDramas();
 		yearView.setYearSelection();
+		yearView.setYearCompareSelection();
 		yearView.renderScatterChart(dramas);
 	};
 

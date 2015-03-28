@@ -2,6 +2,7 @@ MultipleDramas.YearView = function(){
 	var that = {};
 	var yearSelection = "";
 	var yearAttribute = "";
+	var compareSelection = "";
 
 	var init = function(){
 		initListener();
@@ -9,13 +10,31 @@ MultipleDramas.YearView = function(){
 
 	var initListener = function(){
 		$("#selection-year").change(yearSelectionClicked);
+		$("#selection-year-compare").change(yearSelectionCompareClicked);
 	};
 
 	var yearSelectionClicked = function(){
 		$(that).trigger("YearSelectionClicked");
 	};
 
+	var yearSelectionCompareClicked = function(){
+		$(that).trigger("YearSelectionCompareClicked");
+	};
+
 	var renderScatterChart = function(dramas){
+		console.log(compareSelection);
+		if(compareSelection == 'Kein Vergleich'){
+			renderScatterChartNormal(dramas);
+		}
+		if(compareSelection == 'Typ'){
+			renderScatterChartType(dramas);
+		}
+		if(compareSelection == 'Autor'){
+
+		}
+	}
+
+	var renderScatterChartNormal = function(dramas){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
 		data.addColumn("number", yearSelection);
@@ -31,13 +50,13 @@ MultipleDramas.YearView = function(){
 		var options = {
           title: 'Epochenverlauf',
           height: 700,
-          width: 1000,
+          width: 1200,
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
           animation: {duration: 1000, startup: true},
           legend: 'none',
-          chartArea:{width:'70%',height:'75%'},
+          chartArea:{width:'75%',height:'80%'},
           trendlines: {
 				          0: {
 				          	tooltip: false,
@@ -56,9 +75,81 @@ MultipleDramas.YearView = function(){
         chart.draw(data, options);
 	};
 
+	var renderScatterChartType = function(dramas){
+		var data = new google.visualization.DataTable();
+		data.addColumn("number", "Jahr");
+		data.addColumn("number", 'Komoedie');
+		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+		data.addColumn("number", 'Schauspiel');
+		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+		data.addColumn("number", 'Trauerspiel');
+		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+
+		var array = [];
+		for(i = 0; i < dramas.length; i++){
+			if(dramas[i].type == 'Komoedie'){
+				var row = [dramas[i].year, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null, null, null ];
+				array.push(row);
+			}
+			if(dramas[i].type == 'Schauspiel'){
+				var row = [dramas[i].year, null, null, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null];
+				array.push(row);
+			}
+			if(dramas[i].type == 'Trauerspiel'){
+				var row = [dramas[i].year, null, null, null, null, dramas[i][yearAttribute], createTooltip(dramas[i])];
+				array.push(row);
+			}
+		}
+		data.addRows(array);
+
+		var options = {
+          title: 'Epochenverlauf',
+          height: 700,
+          width: 1200,
+          tooltip: { isHtml: true },
+          hAxis: {title: 'Jahr', format: ' '},
+          vAxis: {title: yearSelection},
+          animation: {duration: 1000, startup: true},
+          chartArea:{width:'75%',height:'80%'},
+          trendlines: {
+				          0: {
+				          	tooltip: false,
+				            type: 'polynomial',
+				            color: 'blue',
+				            lineWidth: 3,
+				            opacity: 0.3,
+				            showR2: false,
+				            visibleInLegend: false
+				          },
+				          1: {
+				          	tooltip: false,
+				            type: 'polynomial',
+				            color: 'red',
+				            lineWidth: 3,
+				            opacity: 0.3,
+				            showR2: false,
+				            visibleInLegend: false
+				          },
+				          2: {
+				          	tooltip: false,
+				            type: 'polynomial',
+				            color: 'yellow',
+				            lineWidth: 3,
+				            opacity: 0.3,
+				            showR2: false,
+				            visibleInLegend: false
+				          }
+				        }
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
+
+        chart.draw(data, options);
+	};
+
 	var createTooltip = function(drama){
 		var divBegin = "<div class='tooltip-test'>"
-		var headline = "<div>" + drama.title + " von " + getLastName(drama.author) + "</div>";
+		var headline = "<div>" + "'" + drama.title + "'" + " von <em>" + getLastName(drama.author) + "</em></div>";
 		var year = "<div>" + "<b>Jahr: </b>" + drama.year + "</div>";
 		var data = "<div>" + "<b>" + yearSelection + ": </b>" + drama[yearAttribute] + "</div>";
 		var divEnd = "</div>";
@@ -79,6 +170,10 @@ MultipleDramas.YearView = function(){
 		
 	};
 
+	var setYearCompareSelection = function(){
+		compareSelection = $("#selection-year-compare").val();	
+	};
+
 	var getLastName = function(author){
 		author = author.slice(0, author.indexOf(","));
 		return author;
@@ -86,6 +181,7 @@ MultipleDramas.YearView = function(){
 
 	that.renderScatterChart = renderScatterChart;
 	that.setYearSelection = setYearSelection;
+	that.setYearCompareSelection = setYearCompareSelection;
 	that.init = init;
 
 	return that;
