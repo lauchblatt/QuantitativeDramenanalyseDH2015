@@ -119,9 +119,24 @@ class DramaOutput:
             configuration_data['minimum_length_of_speeches_in_scene'] = configuration._speechesLength_min
             configuration_data['median_length_of_speeches_in_scene'] = configuration._speechesLength_med
 
+            configuration_data['speeches'] = self.generateJSONforSpeeches(configuration._speeches)
+
             configurations_data.append(configuration_data)
 
         return configurations_data
+
+    def generateJSONforSpeeches(self, speeches):
+        speeches_data = []
+
+        for speech in speeches:
+            speech_data = OrderedDict({})
+
+            speech_data['speaker'] = speech._speaker
+            speech_data['length'] = speech._length
+
+            speeches_data.append(speech_data)
+
+        return speeches_data
 
     def generateConfMatrixCSV(self, drama_model):
         doc = open(drama_model._author+"_"+drama_model._title+'_matrix.csv', 'w', newline="")
