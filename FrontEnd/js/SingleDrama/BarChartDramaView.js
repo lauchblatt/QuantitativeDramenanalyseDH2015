@@ -41,10 +41,17 @@ SingleDrama.BarChartDramaView = function(){
         	array.push(row);
         	}
         } else{
-        	for(var i = 0; i < actInfo.length; i++){
-        	var row = [(i+1), actInfo[i][actAttribute]];
-        	array.push(row);
-        	}
+        	if(actAttribute == "speaker_length"){
+        		for(var i = 0; i < actInfo.length; i++){
+        			var row = [(i+1), actInfo[i].appearing_speakers.length];
+        			array.push(row);
+        		}
+        	}else{
+        		for(var i = 0; i < actInfo.length; i++){
+	        	var row = [(i+1), actInfo[i][actAttribute]];
+	        	array.push(row);
+	        	}
+        	}	
         }
         console.log(data);
         data.addRows(array);
@@ -109,7 +116,7 @@ SingleDrama.BarChartDramaView = function(){
 		actSelection = $("#selection-act").val();
 
 		if(actSelection == "Szenen"){actAttribute = "number_of_scenes";}
-		//TODO Number of Speakers if(actSelection == "Sprecher")
+		if(actSelection == "Sprecher"){actAttribute = "speaker_length";}
 		if(actSelection == "Repliken"){actAttribute = "number_of_speeches_in_act";}
 		if(actSelection == "Durchschnittliche Replikenlänge"){actAttribute = "average_length_of_speeches_in_act";}
 		if(actSelection == "Median Replikenlänge"){actAttribute = "median_length_of_speeches_in_act";}
