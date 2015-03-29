@@ -22,7 +22,6 @@ MultipleDramas.YearView = function(){
 	};
 
 	var renderScatterChart = function(dramas, authors){
-		console.log(compareSelection);
 		if(compareSelection == 'Kein Vergleich'){
 			renderScatterChartNormal(dramas);
 		}
@@ -51,10 +50,10 @@ MultipleDramas.YearView = function(){
           title: 'Epochenverlauf',
           height: 700,
           width: 1170,
+          explorer: {},
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          animation: {duration: 1000},
           legend: 'none',
           chartArea:{width:'75%',height:'80%'},
           trendlines: {
@@ -74,7 +73,7 @@ MultipleDramas.YearView = function(){
         	ui: {
         		chartType: 'ScatterChart',
         		chartOptions: {
-        			height: 200,
+        			height: 100,
         			width: 1170,
         			chartArea:{width:'75%',height:'80%'},
         			hAxis: {title: 'Jahr', format: ' '}
@@ -140,16 +139,44 @@ MultipleDramas.YearView = function(){
           title: 'Epochenverlauf',
           height: 700,
           width: 1170,
+          explorer: {},
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          animation: {duration: 1000, startup: true},
           chartArea:{width:'75%',height:'80%'}
         };
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
+        var optionsSlider = {
+        	filterColumnLabel: 'Jahr',
+        	ui: {
+        		chartType: 'ScatterChart',
+        		chartOptions: {
+        			height: 100,
+        			width: 1170,
+        			chartArea:{width:'75%',height:'80%'},
+        			hAxis: {title: 'Jahr', format: ' '}
+        		}
+        	}
+        }
 
-        chart.draw(data, options);
+        var dashboard = new google.visualization.Dashboard(
+            document.getElementById('dashbord-year'));
+
+        var rangeSlider1 = new google.visualization.ControlWrapper({
+          'controlType': 'ChartRangeFilter',
+          'containerId': 'controls-year1',
+          'options': optionsSlider
+        });
+
+        var chart = new google.visualization.ChartWrapper({
+          'chartType': 'ScatterChart',
+          'containerId': 'chart-div-year',
+          'options': options
+        });
+
+        dashboard.bind(rangeSlider1, chart);
+
+        dashboard.draw(data);
 
 	};
 
@@ -165,7 +192,6 @@ MultipleDramas.YearView = function(){
 
 		var array = [];
 		for(i = 0; i < dramas.length; i++){
-			console.log(dramas[i].type);
 			if(dramas[i].type == 'Komoedie'){
 				var row = [dramas[i].year, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null, null, null ];
 				array.push(row);
@@ -185,10 +211,10 @@ MultipleDramas.YearView = function(){
           title: 'Epochenverlauf',
           height: 700,
           width: 1170,
+          explorer: {},
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          animation: {duration: 1000, startup: true},
           chartArea:{width:'75%',height:'80%'},
           trendlines: {
 				          0: {
@@ -221,9 +247,37 @@ MultipleDramas.YearView = function(){
 				        }
         };
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
+        var optionsSlider = {
+        	filterColumnLabel: 'Jahr',
+        	ui: {
+        		chartType: 'ScatterChart',
+        		chartOptions: {
+        			height: 100,
+        			width: 1170,
+        			chartArea:{width:'75%',height:'80%'},
+        			hAxis: {title: 'Jahr', format: ' '}
+        		}
+        	}
+        }
 
-        chart.draw(data, options);
+        var dashboard = new google.visualization.Dashboard(
+            document.getElementById('dashbord-year'));
+
+        var rangeSlider1 = new google.visualization.ControlWrapper({
+          'controlType': 'ChartRangeFilter',
+          'containerId': 'controls-year1',
+          'options': optionsSlider
+        });
+
+        var chart = new google.visualization.ChartWrapper({
+          'chartType': 'ScatterChart',
+          'containerId': 'chart-div-year',
+          'options': options
+        });
+
+        dashboard.bind(rangeSlider1, chart);
+
+        dashboard.draw(data);
 	};
 
 	var createTooltip = function(drama){

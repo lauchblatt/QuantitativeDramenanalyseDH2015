@@ -1,11 +1,14 @@
 MultipleDramas.MultipleDramasModel = function(){
 	var that = {};
 	var dramaInfo = [];
+	var scenesInfo = [];
 	var firebaseRef = null;
 	var chosenDramasIds = [];
 	var chosenDramas = [];
+	var chosenScenes = [];
 	var authorList = [];
 	var categoryList = [];
+	var distribution = {};
 
 	var init = function(){
 		for(var i = 0; i < 70; i++){
@@ -13,16 +16,40 @@ MultipleDramas.MultipleDramasModel = function(){
 		}
 		$(that).on("InitFinished", continueInit);
 		initInfo("drama_data");
+		initInfo("scenes_data");
 	};
 
 	var continueInit = function(){
-		if(dramaInfo != null){
+		if(dramaInfo != null && scenesInfo.length > 0){
 			setChosenDramas();
+			setChosenScenes();
 			roundValues();
+			calculateSpeechDistribution();
 			setAuthorList();
 			setCategoryList();
 			$(that).trigger("InfoFinished");
 		}
+	};
+
+	var calculateSpeechDistribution = function(){
+		
+		for(drama = 0; drama < chosenScenes.length; drama++){
+			for(act = 0; act < chosenScenes[drama].length; act++){
+				for(scene = 0; scene < chosenScenes[drama][act].length; scene++){
+					if(chosenScenes[drama][act][scene].speeches !== undefined){
+						for(speech = 0; speech < chosenScenes[drama][act][scene].speeches.length; speech++){
+								var currentspeechLength = chosenScenes[drama][act][scene].speeches[speech].length;
+								if(distribution[currentspeechLength] === undefined){
+									distribution[currentspeechLength] = 1;
+								}else{
+									distribution[currentspeechLength] = distribution[currentspeechLength] + 1;
+								}
+						}	
+					}
+				}
+			}
+		}
+		
 	};
 
 	var roundValues = function(){
@@ -160,6 +187,12 @@ MultipleDramas.MultipleDramasModel = function(){
 		}
 	};
 
+	var setChosenScenes = function(){
+		for(var i = 0; i < chosenDramasIds.length; i++){
+			chosenScenes.push(scenesInfo[chosenDramasIds[i]]);
+		}
+	};
+
 	var getChosenDramas = function(){
 		return chosenDramas;
 	}
@@ -167,7 +200,16 @@ MultipleDramas.MultipleDramasModel = function(){
 	var initInfo = function(name){
 		firebaseRef = new Firebase("https://katharsis.firebaseio.com/" + name);
 		firebaseRef.on("value", function(snapshot) {
-			dramaInfo = snapshot.val();
+			switch (name) {
+				case "scenes_data":
+					scenesInfo = snapshot.val();
+					break;
+				case "drama_data":
+					dramaInfo = snapshot.val();
+					break;
+				default:
+					console.log("Something went wrong.");
+			}
 			$(that).trigger("InitFinished");
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
@@ -179,10 +221,15 @@ MultipleDramas.MultipleDramasModel = function(){
 		return parseFloat(number)
 	};
 
+	var getDistribution = function(){
+		return distribution;
+	};
+
 	that.init = init;
 	that.getChosenDramas = getChosenDramas;
 	that.getAuthorList = getAuthorList;
 	that.getCategoryList = getCategoryList;
+	that.getDistribution = getDistribution;
 
 	return that;
 };
