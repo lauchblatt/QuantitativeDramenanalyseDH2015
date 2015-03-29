@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Replikenvisualisierung</title>	
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/speeches.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="container">
+			<h1>Replikenverteilung</h1>
+			<div id="distribution-dashbord">
+				<div id="distribution-controls"></div>
+				<div id="distribution-chart"></div>
+			</div>
+		</div>
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript"></script>
+
+		<script type="text/javascript" src="js/Speeches/Speeches.js"></script>
+		<script type="text/javascript" src="js/Speeches/SpeechesModel.js"></script>
+		<script type="text/javascript" src="js/Speeches/SpeechesDistributionView.js"></script>
+		<script type="text/javascript" src="js/Speeches/SpeechesController.js"></script>
+
+		<script>
+				$(function() {
+					Speeches.init();
+				});
+			</script>
+	</body>
+</html>
