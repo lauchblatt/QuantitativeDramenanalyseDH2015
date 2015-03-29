@@ -12,7 +12,8 @@ Speeches.SpeechesDistributionView = function(){
 			for(scene = 0; scene < scenesInfo[act].length; scene++){
 				if(scenesInfo[act][scene].speeches !== undefined){
 					for(speech = 0; speech < scenesInfo[act][scene].speeches.length; speech++){
-						var row = ['Replikenlänge in Worten ' + iterator, scenesInfo[act][scene].speeches[speech]['length']];
+						var row = [getSpeechInfo(act, scene, speech, scenesInfo[act][scene].speeches[speech]), 
+						scenesInfo[act][scene].speeches[speech]['length']];
 						array.push(row);
 						iterator++;
 					}
@@ -27,14 +28,22 @@ Speeches.SpeechesDistributionView = function(){
 		  animation: {
 		  	duration: 1000
 		  },
+		  legend: {
+          	position: 'none'
+          },
+          hAxis : {
+          	title: 'Replikenlänge'
+          },
+          vAxis: {
+          	title: 'Häufigkeit'
+          },
 		  chartArea:{width:'75%',height:'80%'},
-          title: 'Histogramm - Replikenverteilung der Längen in Worten'
+          title: 'Histogramm - Häufigkeitsverteilung der Replikenlängen'
         };
 
         var dashboard = new google.visualization.Dashboard(
             document.getElementById('distribution-dashbord'));
 
-        // Create a range slider, passing some options
         var rangeSlider = new google.visualization.ControlWrapper({
           'controlType': 'NumberRangeFilter',
           'containerId': 'distribution-controls',
@@ -43,21 +52,22 @@ Speeches.SpeechesDistributionView = function(){
           }
         });
 
-        // Create a pie chart, passing some options
         var chart = new google.visualization.ChartWrapper({
           'chartType': 'Histogram',
           'containerId': 'distribution-chart',
           'options': options
         });
 
-        // Establish dependencies, declaring that 'filter' drives 'pieChart',
-        // so that the pie chart will only display entries that are let through
-        // given the chosen slider range.
         dashboard.bind(rangeSlider, chart);
 
-        // Draw the dashboard.
         dashboard.draw(data);
 
+	};
+
+	var getSpeechInfo = function(actNumber, sceneNumber, speechNumber, speech){
+		var info = "Sprecher: " + speech.speaker + ", " + (actNumber + 1) + ". Akt, " + (sceneNumber + 1) + ". Szene, " 
+		+ (speechNumber + 1) + ". Replik";
+		return info;
 	};
 
 	that.render = render;

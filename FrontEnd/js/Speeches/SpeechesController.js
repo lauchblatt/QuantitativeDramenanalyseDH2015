@@ -3,10 +3,12 @@ Speeches.SpeechesController = function(){
 
 	var speechesModel = null;
 	var speechesDistributionView = null;
+	var speechesLineView = null;
 
 	var init = function(){
 		speechesModel = Speeches.SpeechesModel();
 		speechesDistributionView = Speeches.SpeechesDistributionView();
+		speechesLineView = Speeches.SpeechesLineView();
 		initGoogleCharts();
 
 		initListener();
@@ -21,6 +23,9 @@ Speeches.SpeechesController = function(){
 	var visu = function(){
 		var scenesInfo = speechesModel.getScenesInfo();
 		speechesDistributionView.render(scenesInfo);
+
+		var distribution = speechesModel.getDistribution();
+		speechesLineView.render(distribution);
 	};
 
 	var initGoogleCharts = function(){
