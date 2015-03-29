@@ -5,6 +5,7 @@ MultipleDramas.MultipleDramasController = function(){
 	var yearView = null;
 	var authorView = null;
 	var categoryView = null;
+	var lineCurveView = null;
 
 
 	var init = function(){
@@ -13,6 +14,7 @@ MultipleDramas.MultipleDramasController = function(){
 		yearView = MultipleDramas.YearView();
 		authorView = MultipleDramas.AuthorView();
 		categoryView = MultipleDramas.CategoryView();
+		lineCurveView = MultipleDramas.LineCurveView();
 
 		multipleDramasModel.init();
 		yearView.init();

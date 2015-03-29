@@ -54,7 +54,7 @@ MultipleDramas.YearView = function(){
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          animation: {duration: 1000, startup: true},
+          animation: {duration: 1000},
           legend: 'none',
           chartArea:{width:'75%',height:'80%'},
           trendlines: {
@@ -69,10 +69,46 @@ MultipleDramas.YearView = function(){
 				          }
 				        }
         };
+        var optionsSlider = {
+        	filterColumnLabel: 'Jahr',
+        	ui: {
+        		chartType: 'ScatterChart',
+        		chartOptions: {
+        			height: 200,
+        			width: 1170,
+        			chartArea:{width:'75%',height:'80%'},
+        			hAxis: {title: 'Jahr', format: ' '}
+        		}
+        	}
+        };
 
-        var chart = new google.visualization.ScatterChart(document.getElementById('chart-div-year'));
+        var dashboard = new google.visualization.Dashboard(
+            document.getElementById('dashbord-year'));
 
-        chart.draw(data, options);
+        var rangeSlider1 = new google.visualization.ControlWrapper({
+          'controlType': 'ChartRangeFilter',
+          'containerId': 'controls-year1',
+          'options': optionsSlider
+        });
+
+        var rangeSlider2 = new google.visualization.ControlWrapper({
+          'controlType': 'NumberRangeFilter',
+          'containerId': 'controls-year2',
+          'options': {
+            'filterColumnLabel': yearSelection
+          }
+        });
+
+        var chart = new google.visualization.ChartWrapper({
+          'chartType': 'ScatterChart',
+          'containerId': 'chart-div-year',
+          'options': options
+        });
+
+        dashboard.bind(rangeSlider1, chart);
+        dashboard.bind(rangeSlider2, chart);
+
+        dashboard.draw(data);
 	};
 
 	var renderScatterChartAuthor = function(dramas, authors){
