@@ -223,6 +223,11 @@ class ConfigurationModel:
             self._speechesLength_max = custom_max(speeches_lengths)
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
+        else:
+            self._speechesLength_avg = 0
+            self._speechesLength_max = 0
+            self._speechesLength_min = 0
+            self._speechesLength_med = 0
 
 # model for speech
 class SpeechModel:

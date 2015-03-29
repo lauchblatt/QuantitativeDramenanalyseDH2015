@@ -115,13 +115,23 @@ class DramaOutput:
             configuration_data = OrderedDict({})
             configuration_data['number_of_scene'] = configuration._number
             configuration_data['number_of_speeches_in_scene'] = len(configuration._speeches)
-            configuration_data['appearing_speakers'] = configuration._appearing_speakers
+
+            if configuration._appearing_speakers:
+                configuration_data['appearing_speakers'] = configuration._appearing_speakers
+            else:
+                configuration_data['appearing_speakers'] = 0
+
             configuration_data['average_length_of_speeches_in_scene'] = configuration._speechesLength_avg
             configuration_data['maximum_length_of_speeches_in_scene'] = configuration._speechesLength_max
             configuration_data['minimum_length_of_speeches_in_scene'] = configuration._speechesLength_min
             configuration_data['median_length_of_speeches_in_scene'] = configuration._speechesLength_med
 
-            configuration_data['speeches'] = self.generateJSONforSpeeches(configuration._speeches)
+            if configuration._speeches:
+                configuration_data['speeches'] = self.generateJSONforSpeeches(configuration._speeches)
+            else:
+                configuration_data['speeches'] = 0
+
+            
 
             configurations_data.append(configuration_data)
 
