@@ -2,7 +2,7 @@ def average(list_of_numbers):
     if(len(list_of_numbers) >= 1):
         return float(sum(list_of_numbers))/len(list_of_numbers)
     else:
-        return float("nan")
+        return float(0)
 
 def median(list_of_numbers):
     sortedLst = sorted(list_of_numbers)
