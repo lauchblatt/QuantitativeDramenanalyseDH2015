@@ -42,7 +42,7 @@ SingleDrama.TableDramaView = function(){
 		row.append(($("<td>")).text(act.number_of_act));
 		row.append(($("<td>")).text(act.number_of_scenes));
 		//TODO
-		row.append(($("<td>")).text(0));
+		row.append(($("<td>")).text(act.appearing_speakers.length));
 		row.append(($("<td>")).text(act.number_of_speeches_in_act));
 		row.append(($("<td>")).text(roundToTwoDecimals(act.average_length_of_speeches_in_act)));
 		row.append(($("<td>")).text(act.median_length_of_speeches_in_act));
