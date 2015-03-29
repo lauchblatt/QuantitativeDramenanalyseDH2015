@@ -11,6 +11,7 @@ Drama.DramaController = function(){
 		initListener();
 
 		dramaModel.init();
+		dramaView.init();
 
 	};
 

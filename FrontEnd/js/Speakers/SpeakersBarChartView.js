@@ -39,8 +39,7 @@ Speakers.SpeakersBarChartView = function(){
         			   	title: speakersSelection
         			   },
         			   animation: {
-                   	   	duration: 700,
-                   	   	startup: true
+                   	   	duration: 1000
                    	   },
         			   vAxis: {
         			   	baseline: 0

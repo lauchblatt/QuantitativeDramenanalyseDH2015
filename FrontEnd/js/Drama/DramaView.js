@@ -17,18 +17,19 @@ Drama.DramaView = function(){
 	};
 
 	var toConfigMatrix = function(){
-		location.replace("matrix.html");
+		location.assign("matrix.html");
 	};
 
 	var toDramaAnalyis = function(){
-		location.replace("singledrama.html");
+		location.assign("singledrama.html");
 	};
 
 	var toSpeakerAnalysis = function(){
-		location.replace("speakers.html");
+		location.assign("speakers.html");
 	};
 
 	that.renderView = renderView;
+	that.init = init;
 
 	return that;
 };
