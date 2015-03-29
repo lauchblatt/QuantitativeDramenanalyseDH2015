@@ -28,6 +28,8 @@ Search.FormsView = function(){
 		var acts_to = $("#input-numberOfActs-to").val();
 		var scenes_from = $("#input-numberOfScenes-from").val();
 		var scenes_to = $("#input-numberOfScenes-to").val();
+		var speakers_from = $("#input-numberOfSpeakers-from").val();
+		var speakers_to = $("#input-numberOfSpeakers-to").val();
 		var confDensity_from = $("#input-confDensity-from").val();
 		var confDensity_to = $("#input-confDensity-to").val();
 		var avg_from = $("#input-avgSpeechLength-from").val();
@@ -56,6 +58,11 @@ Search.FormsView = function(){
 		if(scenes_from != ""){range.from = parseInt(scenes_from);}
 		if(scenes_to != ""){range.to = parseInt(scenes_to);}
 		if(scenes_from != "" || acts_to != ""){input["number_of_scenes"] = range;}
+
+		var range = {};
+		if(speakers_from != ""){range.from = parseInt(speakers_from);}
+		if(speakers_to != ""){range.to = parseInt(speakers_to);}
+		if(speakers_from != "" || speakers_to != ""){input["speaker_count"] = range;}
 
 		var range = {};
 		if(confDensity_from != ""){range.from = parseFloat(confDensity_from);}

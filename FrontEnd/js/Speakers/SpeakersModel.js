@@ -60,7 +60,7 @@ Speakers.SpeakersModel = function(){
 	}
 
 	var initInfo = function(name){
-		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/" + name +"/" + currentDrama_id);
+		firebaseRef = new Firebase("https://katharsis.firebaseio.com/" + name +"/" + currentDrama_id);
 		firebaseRef.on("value", function(snapshot) {
 			switch (name) {
 				case "speakers_data":

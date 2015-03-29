@@ -6,6 +6,7 @@ Search.DramaListModel = function(){
 	var rangeList_numberOfSpeeches = [];
 	var rangeList_scenes = [];
 	var rangeList_acts = [];
+	var rangeList_speakers = [];
 	var rangeList_confDensity = [];
 	var rangeList_avg = [];
 
@@ -14,7 +15,7 @@ Search.DramaListModel = function(){
 
 	var init = function(){
 		firebaseRef = null;
-		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
+		firebaseRef = new Firebase("https://katharsis.firebaseio.com/drama_data");
 
 		//Dramen die keine Eingrenzung haben müssen noch nach Namen gefiltert werden
 		$(that).on("AllDramasRetrieved", filterData);
@@ -22,7 +23,7 @@ Search.DramaListModel = function(){
 
 	var retrieveAllData = function(input){
 		firebaseRef = null;
-		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
+		firebaseRef = new Firebase("https://katharsis.firebaseio.com/drama_data");
 
 		$(that).trigger("EmptyTable");
 		firebaseRef.orderByChild('author').on("value", function(snapshot) {
@@ -79,6 +80,7 @@ Search.DramaListModel = function(){
 		rangeList_year = [];
 		rangeList_acts = [];
 		rangeList_scenes = [];
+		rangeList_speakers = [];
 		rangeList_numberOfSpeeches = [];
 		rangeList_confDensity = [];
 		rangeList_avg = [];
@@ -86,7 +88,8 @@ Search.DramaListModel = function(){
 		//If no criterion is chosen, show all dramas, but filter them
 		if(!('number_of_speeches_in_drama' in input) && !('year' in input)
 			&& !('number_of_acts' in input) && !('number_of_scenes' in input)
-			&& !('configuration_density' in input) && !('average_length_of_speeches_in_drama' in input)){
+			&& !('configuration_density' in input) && !('average_length_of_speeches_in_drama' in input)
+			&& !('speaker_count' in input)){
 			console.log("retrieve all data");
 			retrieveAllData(input);
 			return;
@@ -107,6 +110,12 @@ Search.DramaListModel = function(){
 		if('number_of_scenes' in input){
 			retrieveDataByRange(input['number_of_scenes'].from, input['number_of_scenes'].to, 
 				'number_of_scenes', rangeList_scenes);
+		}
+
+		//If Speaker is a criterion, save all dramas in the range in rangeList_speakers
+		if('speaker_count' in input){
+			retrieveDataByRange(input['speaker_count'].from, input['speaker_count'].to, 
+				'speaker_count', rangeList_speakers);
 		}
 
 		//If ConfDensity is a criterion, save all dramas in the range in rangeList_confDensity
@@ -179,7 +188,7 @@ Search.DramaListModel = function(){
 		$(that).trigger("EmptyTable");
 		//Reser Firebase
 		firebaseRef = null;
-		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/drama_data");
+		firebaseRef = new Firebase("https://katharsis.firebaseio.com/drama_data");
 
 		//Check if from and to is set
 		if(from === undefined){from = 0};
@@ -205,6 +214,7 @@ Search.DramaListModel = function(){
 		if(rangeList_numberOfSpeeches.length > 0){listsToCompare.push(rangeList_numberOfSpeeches);}
 		if(rangeList_acts.length > 0){listsToCompare.push(rangeList_acts);}
 		if(rangeList_scenes.length > 0){listsToCompare.push(rangeList_scenes);}
+		if(rangeList_speakers.length > 0){listsToCompare.push(rangeList_speakers);}
 		if(rangeList_confDensity.length > 0){listsToCompare.push(rangeList_confDensity);}
 		if(rangeList_avg.length > 0){listsToCompare.push(rangeList_avg);}
 
