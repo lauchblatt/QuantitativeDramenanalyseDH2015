@@ -13,7 +13,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	var categoryDistribution = [];
 
 	var init = function(){
-		for(var i = 0; i < 70; i++){
+		for(var i = 5; i < 20; i++){
 			chosenDramasIds.push(i);
 		}
 		$(that).on("InitFinished", continueInit);
@@ -29,7 +29,10 @@ MultipleDramas.MultipleDramasModel = function(){
 			calculateSpeechDistribution();
 			setAuthorList();
 			setCategoryList();
-			//calculateFilteredDistribution(categoryList);
+			categoryDistribution = calculateFilteredDistribution(categoryList);
+			authorDistribution = calculateFilteredDistribution(authorList);
+			console.log(categoryDistribution);
+			console.log(authorDistribution);
 			$(that).trigger("InfoFinished");
 		}
 	};
@@ -52,22 +55,42 @@ MultipleDramas.MultipleDramasModel = function(){
 				}
 			}
 		}
-		console.log(distribution);
 		
 	};
 
-	/*var calculateFilteredDistribution = function(filteredList){
-		console.log(filteredList);
+	var calculateFilteredDistribution = function(filteredList){
+
 		var distributionsList = [];
 		for(var type = 0; type < filteredList.length; type++){
-			for(var obj = 0; obj < filteredList[type].length; obj++){
-				for(scenesList = 0; scenesList < filteredList[type][obj].scenes.length; scenesList++){
-					for(act = 0; act < filteredList[type][obj][])
+			var distributionObject = {};
+
+			if(filteredList[type].type !== undefined){
+				distributionObject.type = filteredList[type].type;
+			}
+			if(filteredList[type].name !== undefined){
+				distributionObject.name = filteredList[type].name;
+			}
+			
+			for(var drama = 0; drama < filteredList[type].scenes.length; drama++){
+				for(var act = 0; act < filteredList[type].scenes[drama].length; act++){
+					for(var scene = 0; scene < filteredList[type].scenes[drama][act].length; scene++){
+						if(filteredList[type].scenes[drama][act][scene].speeches !== undefined){
+							for(var speech = 0; speech < filteredList[type].scenes[drama][act][scene].speeches.length; speech++){
+								var currentspeechLength = filteredList[type].scenes[drama][act][scene].speeches[speech].length;
+								if(distributionObject[currentspeechLength] === undefined){
+									distributionObject[currentspeechLength] = 1;
+								}else{
+									distributionObject[currentspeechLength] = distributionObject[currentspeechLength] + 1;
+								}
+							}
+						}
+					}
 				}
 			}
+			distributionsList.push(distributionObject);
 		}
-
-	};*/
+		return distributionsList;
+	};
 
 	var roundValues = function(){
 		for(var i = 0; i < chosenDramas.length; i++){
