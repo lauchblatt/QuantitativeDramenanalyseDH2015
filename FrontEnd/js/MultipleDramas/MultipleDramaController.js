@@ -40,6 +40,8 @@ MultipleDramas.MultipleDramasController = function(){
 		var authorList = multipleDramasModel.getAuthorList();
 		var categoryList = multipleDramasModel.getCategoryList();
 		var distribution = multipleDramasModel.getDistribution();
+		var catDistribution = multipleDramasModel.getCategoryDistribution();
+		var authorDistribution = multipleDramasModel.getAuthorDistribution();
 
 		yearView.setYearSelection();
 		yearView.setYearCompareSelection();
@@ -51,7 +53,7 @@ MultipleDramas.MultipleDramasController = function(){
 		categoryView.setCategorySelection();
 		categoryView.renderColumnChart(categoryList);
 
-		lineCurveView.render(distribution);
+		lineCurveView.renderTypeCurve(authorDistribution);
 
 		$("body").fadeIn();
 

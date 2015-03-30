@@ -35,7 +35,7 @@ Speeches.SpeechesDistributionView = function(){
           	title: 'Replikenlänge'
           },
           vAxis: {
-          	title: 'Häufigkeit'
+          	title: 'Absolute Häufigkeit'
           },
 		  chartArea:{width:'75%',height:'80%'},
           title: 'Histogramm - Häufigkeitsverteilung der Replikenlängen'

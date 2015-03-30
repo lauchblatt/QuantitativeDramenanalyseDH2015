@@ -13,7 +13,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	var categoryDistribution = [];
 
 	var init = function(){
-		for(var i = 5; i < 20; i++){
+		for(var i = 0; i < 5; i++){
 			chosenDramasIds.push(i);
 		}
 		$(that).on("InitFinished", continueInit);
@@ -31,10 +31,16 @@ MultipleDramas.MultipleDramasModel = function(){
 			setCategoryList();
 			categoryDistribution = calculateFilteredDistribution(categoryList);
 			authorDistribution = calculateFilteredDistribution(authorList);
-			console.log(categoryDistribution);
-			console.log(authorDistribution);
 			$(that).trigger("InfoFinished");
 		}
+	};
+
+	var getCategoryDistribution = function(){
+		return categoryDistribution;
+	};
+
+	var getAuthorDistribution = function(){
+		return authorDistribution;
 	};
 
 	var calculateSpeechDistribution = function(){
@@ -281,6 +287,8 @@ MultipleDramas.MultipleDramasModel = function(){
 	that.getAuthorList = getAuthorList;
 	that.getCategoryList = getCategoryList;
 	that.getDistribution = getDistribution;
+	that.getAuthorDistribution = getAuthorDistribution;
+	that.getCategoryDistribution = getCategoryDistribution;
 
 	return that;
 };
