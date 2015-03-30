@@ -72,10 +72,15 @@ class DramaParser:
         date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
         if "when" in date:
             date['when'] = (int) (date['when'])
-            #print("Date: ", date)
+            return date
 
         if "notBefore" in date:
             date['when'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
+            return date
+
+
+        date['when'] = 'unknown'
+
         return date
 
     # returns the drama type from the filename
