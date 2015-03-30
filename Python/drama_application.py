@@ -5,7 +5,7 @@ from drama_parser import *
 from drama_output import *
 
 def main():
-    debug = False
+    debug = True
 
     #to generate one json-file
     """

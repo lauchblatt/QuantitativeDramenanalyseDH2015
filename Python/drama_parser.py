@@ -103,6 +103,13 @@ class DramaParser:
         speaker_list = []
         for speaker in xml_root.findall(".//tei:div[@type='act']//tei:speaker", self.namespaces):
             name = speaker.text
+
+            if name:
+                name = name.strip(' \t\n\r')
+
+            if not name:
+                continue
+
             if name and name[-1] == ".":
                 name = name[:-1]
             if name and name not in speaker_list:
@@ -124,6 +131,13 @@ class DramaParser:
         castgroup = []
         for actor in xml_root.findall(".//tei:castGroup/tei:castItem", self.namespaces):
             real_name = actor.text
+
+
+            if real_name:
+                real_name = real_name.strip(' \t\n\r')
+
+            if not real_name:
+                continue
 
             if "," in real_name:
                 comma = real_name.index(",")
@@ -174,6 +188,10 @@ class DramaParser:
             speech_model = SpeechModel()
             subact_speaker = subact_speaker_wrapper.find("./tei:speaker", self.namespaces)
             name = subact_speaker.text
+
+            if name:
+                name = name.strip(' \t\n\r')
+
             if name and name[-1] == ".":
                 name = name[:-1]
 
@@ -227,6 +245,13 @@ class DramaParser:
 
         for subact_speaker in subact.findall(".//tei:speaker", self.namespaces):
             name = subact_speaker.text
+
+            if name:
+                name = name.strip(' \t\n\r')
+
+            if not name:
+                continue
+
             if name and name[-1] == ".":
                 name = name[:-1]
             if name and name not in speaker_data:
