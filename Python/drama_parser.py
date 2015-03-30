@@ -197,6 +197,9 @@ class DramaParser:
             if name:
                 name = name.strip(' \t\n\r')
 
+            if not name:
+                continue
+
             if name and name[-1] == ".":
                 name = name[:-1]
 
