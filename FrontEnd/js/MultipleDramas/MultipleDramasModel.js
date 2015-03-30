@@ -9,6 +9,8 @@ MultipleDramas.MultipleDramasModel = function(){
 	var authorList = [];
 	var categoryList = [];
 	var distribution = {};
+	var authorDistribution = [];
+	var categoryDistribution = [];
 
 	var init = function(){
 		for(var i = 0; i < 70; i++){
@@ -27,6 +29,7 @@ MultipleDramas.MultipleDramasModel = function(){
 			calculateSpeechDistribution();
 			setAuthorList();
 			setCategoryList();
+			//calculateFilteredDistribution(categoryList);
 			$(that).trigger("InfoFinished");
 		}
 	};
@@ -49,8 +52,22 @@ MultipleDramas.MultipleDramasModel = function(){
 				}
 			}
 		}
+		console.log(distribution);
 		
 	};
+
+	/*var calculateFilteredDistribution = function(filteredList){
+		console.log(filteredList);
+		var distributionsList = [];
+		for(var type = 0; type < filteredList.length; type++){
+			for(var obj = 0; obj < filteredList[type].length; obj++){
+				for(scenesList = 0; scenesList < filteredList[type][obj].scenes.length; scenesList++){
+					for(act = 0; act < filteredList[type][obj][])
+				}
+			}
+		}
+
+	};*/
 
 	var roundValues = function(){
 		for(var i = 0; i < chosenDramas.length; i++){
@@ -71,7 +88,11 @@ MultipleDramas.MultipleDramasModel = function(){
 
 		for(var i = 0; i < categories.length; i++){
 			var dramaObjects = $.grep(chosenDramas, function(e){ return e.type == categories[i]; });
-			var categoryObject = generateCategoryObject(dramaObjects);
+			var scenes = [];
+			for(var j = 0; j < dramaObjects.length; j++){
+				scenes.push(scenesInfo[dramaObjects[j].id]);
+			}
+			var categoryObject = generateCategoryObject(dramaObjects, scenes);
 			categoryList.push(categoryObject);
 		}
 	};
@@ -80,7 +101,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		return categoryList;
 	};
 
-	var generateCategoryObject = function(dramaObjects){
+	var generateCategoryObject = function(dramaObjects, scenes){
 		var categoryObj = {};
 
 		categoryObj.type = dramaObjects[0].type;
@@ -115,6 +136,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		categoryObj.average_maximum_length_of_speeches = roundToTwoDecimals(average_maximum_length_of_speeches/dramaObjects.length);
 		categoryObj.average_minimum_length_of_speeches = roundToTwoDecimals(average_minimum_length_of_speeches/dramaObjects.length);
 		categoryObj.titles = titles;
+		categoryObj.scenes = scenes;
 
 		return categoryObj;
 
@@ -127,10 +149,15 @@ MultipleDramas.MultipleDramasModel = function(){
 				authors.push(chosenDramas[i].author);
 			}
 		}
-
+		var l = 0;
 		for(var i = 0; i < authors.length; i++){
 			var dramaObjects = $.grep(chosenDramas, function(e){ return e.author == authors[i]; });
-			var authorObject = generateAuthorObject(dramaObjects);
+			var scenes = [];
+			for(var j = 0; j < dramaObjects.length; j++){
+				scenes.push(scenesInfo[dramaObjects[j].id]);
+			}
+			l+=(dramaObjects.length);
+			var authorObject = generateAuthorObject(dramaObjects, scenes);
 			authorList.push(authorObject);
 		}
 	};
@@ -139,7 +166,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		return authorList;
 	};
 
-	var generateAuthorObject = function(dramaObjects){
+	var generateAuthorObject = function(dramaObjects, scenes){
 		var authorObj = {};
 
 		authorObj.name = dramaObjects[0].author;
@@ -174,6 +201,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		authorObj.average_maximum_length_of_speeches = roundToTwoDecimals(average_maximum_length_of_speeches/dramaObjects.length);
 		authorObj.average_minimum_length_of_speeches = roundToTwoDecimals(average_minimum_length_of_speeches/dramaObjects.length);
 		authorObj.titles = titles;
+		authorObj.scenes = scenes;
 
 		return authorObj;
 

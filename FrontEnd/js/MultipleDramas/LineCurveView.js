@@ -8,7 +8,6 @@ MultipleDramas.LineCurveView = function(){
 		var array = [];
 		for(var key in distribution){
 			var row = [parseInt(key), distribution[key]];
-			console.log(row);
 			array.push(row);
 		}
 		data.addRows(array);
