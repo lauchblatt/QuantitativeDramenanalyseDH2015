@@ -3,6 +3,12 @@
 	margin-right: 5% !important;
 }
 
+.analyse-collection {
+	float: left;
+	display: block;
+	width: 100%;
+}
+
 .jumbotron {
 	padding-left: 5%;
 }
@@ -89,4 +95,12 @@ tr:hover {
 
 .glyphicon-download {
 	font-size: 1.5em;
+}
+
+.glyphicon-ok{
+	margin-right: 5px !important;
+}
+
+.analyse-collection {
+	display: none;
 }

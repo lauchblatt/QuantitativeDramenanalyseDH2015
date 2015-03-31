@@ -180,11 +180,13 @@ Search.DramaListModel = function(){
 
 	var sendDramas = function(dramas){
 		$("table").css("display", "none");
+		$(".analyse-collection").css("display", "none");
 		if(dramas.length > 0){
 			for(var i = 0; i < dramas.length; i++){
 			$(that).trigger("DataRetrieved", [dramas[i]]);
 			}
 			$("table").fadeIn(1000);
+			$(".analyse-collection").fadeIn(1000);
 		}else{
 			$(that).trigger("NoResultsFound");
 		}	
