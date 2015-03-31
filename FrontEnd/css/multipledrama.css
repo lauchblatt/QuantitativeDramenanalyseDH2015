@@ -5,3 +5,12 @@ body {
 	padding: 5px;
 	font-size: 15px;
 }
+
+.box {
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 0 0;
+	border-style: solid;
+	padding: 1%;
+	display: inline-block !important;
+}

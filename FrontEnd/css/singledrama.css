@@ -7,6 +7,29 @@ th {
 	display: none;
 }
 
+.line {
+	height: 1px;
+	border: 1px solid #ddd;
+}
+
+table {
+	margin-bottom: 7% !important;
+}
+
+h3 {
+	margin-top: 5%;
+}
+
+.box {
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 0 0;
+	border-style: solid;
+	padding: 1%;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
 td {
 	text-align: center;
 	vertical-align: middle !important;

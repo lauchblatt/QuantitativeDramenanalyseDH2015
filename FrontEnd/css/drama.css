@@ -1,3 +1,8 @@
 .container {
 	display: none;
 }
+
+.jumbo{
+	margin-left: 20%;
+	margin-right: auto;
+}

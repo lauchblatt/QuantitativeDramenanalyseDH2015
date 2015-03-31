@@ -57,7 +57,8 @@ SingleDrama.BarChartDramaView = function(){
         data.addRows(array);
         var options = {title:'Akt-Statistik',
         			   height: 600,
-        			   width: 1170,
+        			   width: 1130,
+        			   chartArea:{width:'70%',height:'75%'},
         			    trendlines: {
 				          0: {
 				          	tooltip: false,

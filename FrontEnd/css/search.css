@@ -3,6 +3,10 @@
 	margin-right: 5% !important;
 }
 
+.jumbotron {
+	padding-left: 5%;
+}
+
 #no-results {
 	width: 100%;
 	float: left !important;

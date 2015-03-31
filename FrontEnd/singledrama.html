@@ -12,28 +12,32 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>Drama-Akt-Szenen-Analyse</h1>
+			<h1 class="page-header">Drama-Akt-Szenen-Analyse</h1>
 			<h2 id="dramaTitle"></h2>
 			<h2 id="dramaAuthor"></h2>
-			<table class="table table-bordered" id="drama-table">
-				<thead>
-					<tr>
-					    <th>Akt</th> 
-					    <th>Anzahl der Szenen</th>
-					    <th>Anzahl der Sprecher</th>
-					    <th>Anzahl der Repliken</th>
-					    <th>Mittelwert Repliken</th>
-					    <th>Median Repliken</th>
-					    <th>Maximum Repliken</th>
-					    <th>Minimum Repliken</th>
-					    <th id="unfold"></th>
-					  </tr>
-				</thead>
-				<tbody id="table-tbody">
-				</tbody>
-			</table>
+			<h3>Akt-Szenen-Tabelle</h3>
+
+				<table class="table table-bordered" id="drama-table">
+					<thead>
+						<tr>
+						    <th>Akt</th> 
+						    <th>Anzahl der Szenen</th>
+						    <th>Anzahl der Sprecher</th>
+						    <th>Anzahl der Repliken</th>
+						    <th>Mittelwert Repliken</th>
+						    <th>Median Repliken</th>
+						    <th>Maximum Repliken</th>
+						    <th>Minimum Repliken</th>
+						    <th id="unfold"></th>
+						  </tr>
+					</thead>
+					<tbody id="table-tbody">
+					</tbody>
+				</table>
 
 			<!--<div id="act-graph">-->
+			<h3>Balkendiagramm - Akt-Statistik</h3>
+			<div class="box">
 				<div class="form-group dropdown-form" id="form-act">
 				  <label for="sel1">Parameter:</label>
 				  <select class="form-control" id="selection-act">
@@ -49,7 +53,10 @@
 				</div>
 
 				<div id="chart-div-act"></div>
+			</div>
 			<!--</div>-->
+			<h3>Balkendiagramm - Szenen-Statistik</h3>
+			<div class="box">
 				<div class="form-group dropdown-form" id="form-scenes">
 					  <label for="sel1">Parameter:</label>
 					  <select class="form-control" id="selection-scenes">
@@ -63,6 +70,7 @@
 					  </select>
 				</div>
 				<div id="charts-scenes"></div>
+			</div>
 		</div>
 
 		<script src="js/libs/jquery-1.11.2.js"></script>
