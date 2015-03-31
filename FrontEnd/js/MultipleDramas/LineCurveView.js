@@ -1,7 +1,33 @@
 MultipleDramas.LineCurveView = function(){
 	var that = {};
 
-	var render = function(distribution){
+  var compareSelection = "";
+
+  var init = function(){
+    initListener();
+  };
+
+  var initListener = function(){
+    $("#selection-speech-compare").change(speechSelectionCompareClicked);
+  };
+
+  var speechSelectionCompareClicked = function(){
+    $(that).trigger("SpeechSelectionCompareClicked");
+  };
+
+  var renderCurve = function(distribution, catDistribution, authorDistribution){
+    if(compareSelection == 'Kein Vergleich'){
+      renderCurveNormal(distribution);
+    }
+    if(compareSelection == 'Typ'){
+      renderTypeCurve(catDistribution);
+    }
+    if(compareSelection == 'Autor'){
+      renderTypeCurve(authorDistribution);
+    }
+  };
+
+	var renderCurveNormal = function(distribution){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Replikenlänge in Worten");
 		data.addColumn("number", 'Replikenhäufigkeit');
@@ -131,8 +157,14 @@ MultipleDramas.LineCurveView = function(){
         dashboard.draw(data);
   };
 
-	that.render = render;
+  var setSpeechCompareSelection = function(){
+    compareSelection = $("#selection-speech-compare").val();  
+  };
+
+	that.renderCurve = renderCurve;
   that.renderTypeCurve = renderTypeCurve;
+  that.init = init;
+  that.setSpeechCompareSelection = setSpeechCompareSelection;
 
 	return that;
 };

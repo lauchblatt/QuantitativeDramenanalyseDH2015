@@ -20,6 +20,7 @@ MultipleDramas.MultipleDramasController = function(){
 		yearView.init();
 		authorView.init();
 		categoryView.init();
+		lineCurveView.init();
 
 		initGoogleCharts();
 
@@ -33,6 +34,7 @@ MultipleDramas.MultipleDramasController = function(){
 		$(yearView).on("YearSelectionCompareClicked", visuYearChart);
 		$(authorView).on("AuthorSelectionClicked", visuAuthorChart);
 		$(categoryView).on("CategorySelectionClicked", visuCategoryChart);
+		$(lineCurveView).on("SpeechSelectionCompareClicked", visuSpeechChart);
 	};
 
 	var visu = function(){
@@ -53,10 +55,21 @@ MultipleDramas.MultipleDramasController = function(){
 		categoryView.setCategorySelection();
 		categoryView.renderColumnChart(categoryList);
 
-		lineCurveView.render(distribution);
+		lineCurveView.setSpeechCompareSelection();
+		lineCurveView.renderCurve(distribution, catDistribution, authorDistribution);
 
 		$("body").fadeIn();
 
+	};
+
+	var visuSpeechChart = function(){
+		var distribution = multipleDramasModel.getDistribution();
+		var catDistribution = multipleDramasModel.getCategoryDistribution();
+		var authorDistribution = multipleDramasModel.getAuthorDistribution();
+
+		lineCurveView.setSpeechCompareSelection();
+
+		lineCurveView.renderCurve(distribution, catDistribution, authorDistribution);
 	};
 
 	var visuCategoryChart = function(){
