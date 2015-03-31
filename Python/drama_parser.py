@@ -85,12 +85,16 @@ class DramaParser:
 
     # returns the drama type from the filename
     def get_type(self, filepath):
-        if filepath.find("_s.xml") != -1:
+        filepath = filepath.lower()
+        if filepath.find("_s.xml") != -1 and filepath.find("_.s.xml") != -1:
             return "Schauspiel"
-        elif filepath.find("_t.xml") != -1:
+        elif filepath.find("_t.xml") != -1 and filepath.find("_.t.xml") != -1 and filepath.find("_t4.xml") != -1:
             return "Trauerspiel"
-        elif filepath.find("_k.xml") != -1:
+        elif filepath.find("_k.xml") != -1 and filepath.find("_.k.xml") != -1:
             return "Komoedie"
+        elif filepath.find("_tk.xml") != -1:
+            return "not sure"
+        return "unknown"
 
     # returns if the drama contains Szene or Auftritt
     def get_subact_type(self, xml_root):
