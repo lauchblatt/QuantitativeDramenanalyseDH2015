@@ -29,7 +29,8 @@ Speeches.SpeechesLineView = function(){
           	title: 'Replikenlänge'
           },
           vAxis: {
-          	title: 'Absolute Häufigkeit'
+          	title: 'Absolute Häufigkeit',
+            baseline: 0
           }
         };
 
@@ -51,6 +52,16 @@ Speeches.SpeechesLineView = function(){
         });
 
         dashboard.bind(rangeSlider, chart);
+
+        var chart_div = document.getElementById('curve-chart');
+
+        $("#pngButton").unbind("click");
+        $("#pngButton").on("click", function(){
+          chart_div.innerHTML = '<img src="' + chart.getChart().getImageURI() + '">';
+          console.log(chart_div.innerHTML);
+          window.open(chart.getChart().getImageURI());
+          render(distribution);
+        });
 
         dashboard.draw(data);
 	};

@@ -86,11 +86,10 @@ SingleDrama.BarChartDramaView = function(){
         var chart_div = document.getElementById('chart-div-act');
         var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
 
+        $("#pngButton").unbind("click");
         $("#pngButton").on("click", function(){
         	chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
         	console.log(chart_div.innerHTML);
-        	
-        	//This is probably not working in every browser
         	window.open(chart.getImageURI());
         	drawChartAct(actInfo);
         });
