@@ -23,6 +23,13 @@ Search.SearchController = function(){
 		$(dramaListModel).on("DataRetrieved", updateList);
 		$(dramaListModel).on("EmptyTable", emptyTable);
 		$(formsView).on("InputCatched", retrieveDramas);
+		$(dramaListView).on("DramaClicked", analyzeDrama);
+	};
+
+	var analyzeDrama = function(event, drama_id, title, author){
+		dramaListModel.saveCurrentDrama(drama_id, title, author);
+		//Probably not working in every browser
+		window.open("drama.html", "_blank");
 	};
 
 	var updateList = function(event, listItem){

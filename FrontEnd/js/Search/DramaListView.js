@@ -50,7 +50,18 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.maximum_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.minimum_length_of_speeches_in_drama));
 
+		row.attr("drama_id", drama.id);
+		row.on("click", dramaClicked);
+
 		return row;
+	};
+
+	var dramaClicked = function(event){
+		var $row = ($(event.target).parent());
+		var drama_id = ($row.attr("drama_id"));
+		var title = $($row.children()[0]).text();
+		var author = $($row.children()[1]).text();
+		$(that).trigger("DramaClicked", [drama_id, title, author]);
 	};
 
 	var getNumberOfSpeakers = function(drama){

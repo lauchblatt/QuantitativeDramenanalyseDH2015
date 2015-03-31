@@ -21,6 +21,12 @@ Search.DramaListModel = function(){
 		$(that).on("AllDramasRetrieved", filterData);
 	};
 
+	var saveCurrentDrama = function(drama_id, title, author){
+		localStorage["drama_id"] = drama_id;
+		localStorage["title"] = title;
+		localStorage["author"] = author;
+	};
+
 	var retrieveAllData = function(input){
 		firebaseRef = null;
 		firebaseRef = new Firebase("https://katharsis.firebaseio.com/drama_data");
@@ -252,6 +258,7 @@ Search.DramaListModel = function(){
 	that.init = init;
 	that.retrieveAllData = retrieveAllData;
 	that.retrieveDramas = retrieveDramas;
+	that.saveCurrentDrama = saveCurrentDrama;
 
 	return that;
 };
