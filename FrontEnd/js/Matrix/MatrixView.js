@@ -2,7 +2,8 @@ Matrix.MatrixView = function(){
 	var that = {};
 
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
-		renderTitle(dramaInfo);
+		$("#dramaTitle").text(localStorage["title"] + " (" + localStorage["year"] + ")");
+		$("#dramaAuthor").text(localStorage["author"]);
 		renderheadline(scenesInfo);
 		renderSpeakerColumn(dramaInfo);
 		fillTable(dramaInfo, scenesInfo);
@@ -133,10 +134,6 @@ Matrix.MatrixView = function(){
 		var $div = $("<div></div>");
 		$div.text(name + ": " + attribute);
 		return $div;
-	};
-
-	var renderTitle = function(dramaInfo){
-		$("#title").text(dramaInfo["title"] + " von " + dramaInfo.author);
 	};
 
 	var fillCellsWithConfMatrix = function(matrix){

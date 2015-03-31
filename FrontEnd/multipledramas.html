@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Drama Einzelansicht</title>	
+		<title>Dramensammlung - Analyse</title>	
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link href="css/multipledrama.css" rel="stylesheet">
@@ -12,15 +12,18 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>Vergleichende Analyse</h1>
+			<h1 class="page-header">Dramensammlung - Analyse</h1>
+			<h2 id="dramaTitle"></h2>
+			<h2 id="dramaAuthor"></h2>
 
-			<h1>Replikenverteilung - Kurvendiagramm</h1>
+			<h3>Replikenverteilung - Kurvendiagramm</h3>
 			<div class="box">
 				<div id="curve-dashbord">
 					<div id="curve-controls"></div>
 					<div id="curve-chart"></div>
 				</div>
 			</div>
+			<h3>Epochenverlauf - Streudiagramm</h3>
 			<div class="box">
 				<div class="form-group dropdown-form" id="form-year">
 						  <label for="selection-year">Parameter:</label>
@@ -54,39 +57,44 @@
 				</div>
 			</div>
 			
-
-			<div class="form-group dropdown-form" id="form-author">
-					  <label for="selection-author">Parameter:</label>
-					  <select class="form-control" id="selection-author">
-					    <option>Szenenanzahl</option>
-					    <option>Replikenanzahl</option>
-					    <option>Sprecheranzahl</option>
-					    <option>Konfigurationsdichte</option>
-					    <option>Durchschnittliche Replikenlänge</option>
-					    <option>Median Replikenlänge</option>
-					    <option>Maximum Replikenlänge</option>
-					    <option>Minimum Replikenlänge</option>
-					  </select>
+			<h3>Autorenvergleich - Balkendiagramm</h3>
+			<div class="box-hard">
+				<div class="form-group dropdown-form" id="form-author">
+						  <label for="selection-author">Parameter:</label>
+						  <select class="form-control" id="selection-author">
+						    <option>Szenenanzahl</option>
+						    <option>Replikenanzahl</option>
+						    <option>Sprecheranzahl</option>
+						    <option>Konfigurationsdichte</option>
+						    <option>Durchschnittliche Replikenlänge</option>
+						    <option>Median Replikenlänge</option>
+						    <option>Maximum Replikenlänge</option>
+						    <option>Minimum Replikenlänge</option>
+						  </select>
+					</div>
+				<div id="dashbord-author">
+					<div id="filter-author"></div>
+					<div id="chart-author"></div>
 				</div>
-			<div id="dashbord-author">
-				<div id="filter-author"></div>
-				<div id="chart-author"></div>
 			</div>
 
-			<div class="form-group dropdown-form" id="form-category">
-					  <label for="selection-category">Parameter:</label>
-					  <select class="form-control" id="selection-category">
-					    <option>Szenenanzahl</option>
-					    <option>Replikenanzahl</option>
-					    <option>Sprecheranzahl</option>
-					    <option>Konfigurationsdichte</option>
-					    <option>Durchschnittliche Replikenlänge</option>
-					    <option>Median Replikenlänge</option>
-					    <option>Maximum Replikenlänge</option>
-					    <option>Minimum Replikenlänge</option>
-					  </select>
-				</div>
-			<div id="chart-category"></div>
+			<h3>Typvergleich - Balkendiagramm</h3>
+			<div class="box-hard">
+				<div class="form-group dropdown-form" id="form-category">
+						  <label for="selection-category">Parameter:</label>
+						  <select class="form-control" id="selection-category">
+						    <option>Szenenanzahl</option>
+						    <option>Replikenanzahl</option>
+						    <option>Sprecheranzahl</option>
+						    <option>Konfigurationsdichte</option>
+						    <option>Durchschnittliche Replikenlänge</option>
+						    <option>Median Replikenlänge</option>
+						    <option>Maximum Replikenlänge</option>
+						    <option>Minimum Replikenlänge</option>
+						  </select>
+					</div>
+				<div id="chart-category"></div>
+			</div>
 
 		</div>
 

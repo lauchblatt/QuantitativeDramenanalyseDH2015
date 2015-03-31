@@ -97,7 +97,7 @@ MultipleDramas.LineCurveView = function(){
         duration: 1000
       },
       chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängen, Relative Häufigkeit',
+          title: 'Replikenlängen, Absolute Häufigkeit',
           curveType: 'function',
           hAxis : {
             title: 'Replikenlänge'

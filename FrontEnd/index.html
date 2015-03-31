@@ -52,6 +52,7 @@
 						    </label>
 					    </div> 
 					  </fieldset> 
+					  
 					  <fieldset class="range more-range">
 					 <legend>Anzahl der Akte</legend>
 						  <div class="form-group">
@@ -110,15 +111,15 @@
 			</form>
 
 			<br/>
-			<button type="button" class="btn btn-default" id="more-button">Mehr</button>
+			<button type="button" class="btn btn-lg" id="more-button">Mehr</button>
 			<br/>
 			<br/>
-			<button type="button" class="btn btn-default" id="search-button">Suchen</button>
+			<button type="button" class="btn btn-lg" id="search-button">Suchen</button>
 			<br/>
 			<table class="table table-striped" id="drama-table">
 				<thead>
 					<tr>
-						<th>Auswahl</th>
+						<th class="selection-box"><input id="all-selector" type="checkbox" checked></th>
 					    <th>Titel</th> 
 					    <th>Autor</th>
 					    <th>Typ</th>
@@ -132,6 +133,7 @@
 					    <th>Median der Replikenlängen</th>
 					    <th>längste Replik</th>
 					    <th>kürzeste Replik</th>
+					    <th><span class="glyphicon glyphicon-download-alt" title="Download JSON"></span></th>
 					  </tr>
 				</thead>
 

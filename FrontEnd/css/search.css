@@ -74,7 +74,19 @@ tr {
 	transition: all 1s ease;
 }
 
+.jumbotron {
+	background-color: #738CFF !important;
+}
+
 tr:hover {
 	background-color: #00BFFF !important;
 	cursor: pointer;
+}
+
+.glyphicon-download-alt {
+	font-size: 1.5em;
+}
+
+.glyphicon-download {
+	font-size: 1.5em;
 }

@@ -2,7 +2,23 @@ Search.DramaListView = function(){
 	var that = {};
 
 	var init = function(){
+		setAllSelector();
+	};
 
+	var setAllSelector = function(){
+		$("#all-selector").on("click", selectAll);
+	};
+
+	var selectAll = function(event){
+		console.log($(event.target).prop("checked"));
+
+		if($(event.target).prop("checked")){
+			console.log("check");
+			$("td input[type='checkbox']").prop("checked", true);
+		}else{
+			$("td input[type='checkbox']").prop("checked", false);
+			
+		}
 	};
 
 	/*var renderList = function(list){
@@ -61,6 +77,12 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.median_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.maximum_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.minimum_length_of_speeches_in_drama));
+		var tdDownload = $("<td>");
+		var spanDownload = $("<span>");
+		spanDownload.addClass("glyphicon glyphicon-download");
+		tdDownload.attr("title", "Download JSON");
+		tdDownload.append(spanDownload);
+		row.append(tdDownload);
 
 		row.attr("drama_id", drama.id);
 		row.on("click", dramaClicked);

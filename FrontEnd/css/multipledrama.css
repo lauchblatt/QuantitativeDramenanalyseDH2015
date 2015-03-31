@@ -6,11 +6,37 @@ body {
 	font-size: 15px;
 }
 
+.dropdown-form {
+	width: 20%;
+}
+
+h3 {
+	margin-top: 5%;
+}
+
 .box {
 	border-color: #ddd;
 	border-width: 1px;
 	border-radius: 4px 4px 0 0;
 	border-style: solid;
 	padding: 1%;
-	display: inline-block !important;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+.box-hard {
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 0 0;
+	border-style: solid;
+	padding: 1%;
+	margin-bottom: 5%;
+}
+
+.google-visualization-controls-rangefilter{
+	text-align: center;
+}
+
+.google-visualization-controls-slider-horizontal{
+	width: 600px !important;
 }
