@@ -3,6 +3,18 @@ Search.DramaListView = function(){
 
 	var init = function(){
 		setAllSelector();
+		$(".analyse-collection").on("click", analyseCollection);
+	};
+
+	var analyseCollection = function(){
+		var checkboxes = ($("td input"));
+		var checkedDramaIds = []
+		for(var i = 0; i < checkboxes.length; i++){
+			if($(checkboxes[i]).is(":checked")){
+				checkedDramaIds.push($(checkboxes[i]).attr("drama_id"));
+			}
+		}
+		$(that).trigger("AnalyseCollection", [checkedDramaIds]);
 	};
 
 	var setAllSelector = function(){
@@ -10,7 +22,6 @@ Search.DramaListView = function(){
 	};
 
 	var selectAll = function(event){
-		console.log($(event.target).prop("checked"));
 
 		if($(event.target).prop("checked")){
 			console.log("check");

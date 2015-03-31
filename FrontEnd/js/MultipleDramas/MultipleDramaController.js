@@ -53,7 +53,7 @@ MultipleDramas.MultipleDramasController = function(){
 		categoryView.setCategorySelection();
 		categoryView.renderColumnChart(categoryList);
 
-		lineCurveView.renderTypeCurve(authorDistribution);
+		lineCurveView.render(distribution);
 
 		$("body").fadeIn();
 

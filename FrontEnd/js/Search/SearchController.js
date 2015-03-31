@@ -25,6 +25,11 @@ Search.SearchController = function(){
 		$(dramaListModel).on("NoResultsFound", noResultsFound);
 		$(formsView).on("InputCatched", retrieveDramas);
 		$(dramaListView).on("DramaClicked", analyzeDrama);
+		$(dramaListView).on("AnalyseCollection", analyseCollection);
+	};
+
+	var analyseCollection = function(event, checkedDramas){
+		localStorage["collection"] = JSON.stringify(checkedDramas);
 	};
 
 	var noResultsFound = function(){

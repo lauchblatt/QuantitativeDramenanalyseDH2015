@@ -136,6 +136,7 @@ SingleDrama.BarChartDramaView = function(){
         
         data.addRows(array);
         var ticksArray = [];
+        console.log(scenesInfoPerAct);
         for(var k = 0; k < scenesInfoPerAct.length; k++){
         	ticksArray.push(k+1);
         }
@@ -171,6 +172,7 @@ SingleDrama.BarChartDramaView = function(){
 	};
 
 	var drawSpeechesChartScenes = function(scenesInfoPerAct, act, divId){
+		console.log(scenesInfoPerAct);
 		var data = new google.visualization.DataTable();
 		data.addColumn('number', 'Szenen');
 		data.addColumn('number', 'Minimum Replikenlänge');

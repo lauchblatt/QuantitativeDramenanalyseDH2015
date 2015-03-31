@@ -27,7 +27,12 @@ SingleDrama.TableDramaView = function(){
 
 		row.append(($("<td>")).text(actNumber + " - " + scene.number_of_scene));
 		row.append(($("<td>")).text("-"));
-		row.append(($("<td>")).text(scene.appearing_speakers.length));
+		if(scene.appearing_speakers != undefined){
+			row.append(($("<td>")).text(scene.appearing_speakers.length));
+		}else{
+			row.append(($("<td>")).text(1));
+		}
+		
 		row.append(($("<td>")).text(scene.number_of_speeches_in_scene));
 		row.append(($("<td>")).text(roundToTwoDecimals(scene.average_length_of_speeches_in_scene)));
 		row.append(($("<td>")).text(scene.median_length_of_speeches_in_scene));

@@ -1,11 +1,12 @@
 SingleDrama.DramaModel = function(){
 	var that = {};
-	var currentDrama_id = 41;
+	var currentDrama_id = 0;
 	var actsInfo = [];
 	var scenesInfo = [];
 	var firebaseRef = null;
 
 	var init = function(){
+		currentDrama_id = localStorage["drama_id"];
 		$(that).on("InitFinished", continueInit);
 		initInfo("acts_data");
 		initInfo("scenes_data");
@@ -28,7 +29,12 @@ SingleDrama.DramaModel = function(){
 	var calculateNumberOfSpeakersForScene = function(){
 		for(act = 0; act < scenesInfo.length; act++){
 			for(scene = 0; scene < scenesInfo[act].length; scene++){
-				scenesInfo[act][scene].number_of_speakers = scenesInfo[act][scene].appearing_speakers.length;
+				if(scenesInfo[act][scene].appearing_speakers != undefined){
+					scenesInfo[act][scene].number_of_speakers = scenesInfo[act][scene].appearing_speakers.length;
+				}else{
+					scenesInfo[act][scene].number_of_speakers = 1;
+				}
+				
 			}
 		}
 	};

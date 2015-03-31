@@ -28,7 +28,8 @@ MultipleDramas.LineCurveView = function(){
           	title: 'Replikenlänge'
           },
           vAxis: {
-          	title: 'Absolute Häufigkeit'
+          	title: 'Absolute Häufigkeit',
+            baseline: 0
           }
         };
 
@@ -103,7 +104,8 @@ MultipleDramas.LineCurveView = function(){
             title: 'Replikenlänge'
           },
           vAxis: {
-            title: 'Häufigkeit'
+            title: 'Häufigkeit',
+            baseline: 0
           }
         };
 

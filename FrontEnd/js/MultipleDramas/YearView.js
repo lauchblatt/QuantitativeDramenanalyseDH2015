@@ -106,7 +106,7 @@ MultipleDramas.YearView = function(){
 
         dashboard.bind(rangeSlider1, chart);
         dashboard.bind(rangeSlider2, chart);
-
+        $("#controls-year2").fadeIn();
         dashboard.draw(data);
 	};
 
@@ -176,6 +176,7 @@ MultipleDramas.YearView = function(){
 
         dashboard.bind(rangeSlider1, chart);
 
+        $("#controls-year2").fadeOut();
         dashboard.draw(data);
 
 	};
@@ -276,7 +277,7 @@ MultipleDramas.YearView = function(){
         });
 
         dashboard.bind(rangeSlider1, chart);
-
+        $("#controls-year2").fadeOut();
         dashboard.draw(data);
 	};
 

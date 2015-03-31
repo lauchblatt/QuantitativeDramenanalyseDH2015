@@ -13,8 +13,17 @@ MultipleDramas.MultipleDramasModel = function(){
 	var categoryDistribution = [];
 
 	var init = function(){
+		/*
 		for(var i = 96; i < 110; i++){
 			chosenDramasIds.push(i);
+		}
+		$(that).on("InitFinished", continueInit);
+		initInfo("drama_data");
+		initInfo("scenes_data");
+		*/
+		var chosenDramasIdsStrings = JSON.parse(localStorage["collection"]);
+		for(var i = 0; i < chosenDramasIdsStrings.length; i++){
+			chosenDramasIds.push(parseInt(chosenDramasIdsStrings[i]));
 		}
 		$(that).on("InitFinished", continueInit);
 		initInfo("drama_data");
