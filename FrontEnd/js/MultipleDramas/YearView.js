@@ -295,7 +295,7 @@ MultipleDramas.YearView = function(){
 
 		if(yearSelection == "Szenenanzahl"){yearAttribute = "number_of_scenes"};
 		if(yearSelection == "Replikenanzahl"){yearAttribute = "number_of_speeches_in_drama";}
-		//TODO Sprecheranzahl
+		if(yearSelection == "Sprecheranzahl"){yearAttribute = "speaker_count"};
 		if(yearSelection == "Konfigurationsdichte"){yearAttribute = "configuration_density";}
 		if(yearSelection == "Durchschnittliche Replikenlänge"){yearAttribute = "average_length_of_speeches_in_drama";}
 		if(yearSelection == "Median Replikenlänge"){yearAttribute = "median_length_of_speeches_in_drama";}
