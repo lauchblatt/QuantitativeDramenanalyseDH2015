@@ -3,6 +3,7 @@ Search.FormsView = function(){
 
 	var init = function(){
 		$("#search-button").on("click", setFormInput);
+		$("#more-button").on("click", showMoreRange);
 		$("body").on("keypress", function(event){
 			var key = event.which || event.keyCode;
 			if(key == 13){
@@ -10,6 +11,11 @@ Search.FormsView = function(){
 			}
 		});
 		setFormInput();
+	};
+
+	var showMoreRange = function(){
+		$("#more-button").css("display", "none");
+		$(".more-range").fadeIn("slow");
 	};
 
 	var setFormInput = function(){

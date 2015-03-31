@@ -50,7 +50,7 @@
 						    </label>
 					    </div> 
 					  </fieldset> 
-					  <fieldset class="range">
+					  <fieldset class="range more-range">
 					 <legend>Anzahl der Akte</legend>
 						  <div class="form-group">
 						    <label for="input-numberOfActs-from">Von</label>
@@ -59,7 +59,7 @@
 						    <input type="text" class="form-control" id="input-numberOfActs-to" placeholder="Alle...">
 						  </div>
 					</fieldset>
-					<fieldset class="range">
+					<fieldset class="range more-range">
 					 <legend>Anzahl der Szenen</legend>
 						  <div class="form-group">
 						    <label for="input-numberOfScenes-from">Von</label>
@@ -68,7 +68,7 @@
 						    <input type="text" class="form-control" id="input-numberOfScenes-to" placeholder="Alle...">
 						  </div>
 					</fieldset>
-					<fieldset class="range">
+					<fieldset class="range more-range">
 					 <legend>Anzahl der Sprecher</legend>
 						  <div class="form-group">
 						    <label for="input-numberOfSpeakers-from">Von</label>
@@ -77,7 +77,7 @@
 						    <input type="text" class="form-control" id="input-numberOfSpeakers-to" placeholder="Alle...">
 						  </div>
 					</fieldset>
-					<fieldset class="range">
+					<fieldset class="range more-range">
 					<legend>Konfigurationsdichte</legend>
 						  <div class="form-group">
 						    <label for="input-confDensity-from">Von</label>
@@ -86,7 +86,7 @@
 						    <input type="text" class="form-control" id="input-confDensity-to" placeholder="Alle...">
 						  </div>
 					</fieldset>
-					<fieldset class="range">
+					<fieldset class="range more-range">
 					 <legend>Anzahl der Repliken</legend>
 						  <div class="form-group">
 						    <label for="input-numberOfSpeeches-from">Von</label>
@@ -95,7 +95,7 @@
 						    <input type="text" class="form-control" id="input-numberOfSpeeches-to" placeholder="Alle...">
 						  </div>
 					</fieldset>
-					<fieldset class="range">
+					<fieldset class="range more-range">
 					 <legend>Durchschn. Replikenlänge</legend>
 						  <div class="form-group">
 						    <label for="input-avgSpeechLength-from">Von</label>
@@ -104,10 +104,14 @@
 						    <input type="text" class="form-control" id="input-avgSpeechLength-to" placeholder="Alle...">
 						  </div>
 					</fieldset>
-			<button type="button" class="btn btn-default" id="search-button">Suchen</button>
+			
 			</form>
 
 			<br/>
+			<button type="button" class="btn btn-default" id="more-button">Mehr</button>
+			<br/>
+			<br/>
+			<button type="button" class="btn btn-default" id="search-button">Suchen</button>
 			<br/>
 			<div id="loading"><p>Daten werden geladen...</p></div>
 			<table class="table table-striped" id="drama-table">

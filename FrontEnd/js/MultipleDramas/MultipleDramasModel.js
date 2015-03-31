@@ -13,7 +13,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	var categoryDistribution = [];
 
 	var init = function(){
-		for(var i = 0; i < 5; i++){
+		for(var i = 96; i < 110; i++){
 			chosenDramasIds.push(i);
 		}
 		$(that).on("InitFinished", continueInit);

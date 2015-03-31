@@ -19,6 +19,7 @@ Search.DramaListView = function(){
 	};
 
 	var renderListItem = function(listItem){
+		console.log("hello world");
 		var row = createListItem(listItem);
 		$("#table-tbody").append(row);
 		$("#loading").css("display","none");

@@ -54,7 +54,6 @@ Search.DramaListModel = function(){
 	var filterDataByType = function(input){
 		var filteredDramaList = [];
 		for(var i = 0; i < dramas.length; i++){
-			console.l
 			if(input.isComedy){
 				if(dramas[i].type == "Komoedie" || dramas[i].type == "Komödie"){
 					filteredDramaList.push(dramas[i]);
