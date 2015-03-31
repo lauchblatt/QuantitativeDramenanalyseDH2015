@@ -1,6 +1,6 @@
 Matrix.MatrixModel = function(){
 	var that = {};
-	var currentDrama_id = 33;
+	var currentDrama_id = 0;
 	//!!! Important for future dramas with for example only one act
 	//Only works, if dramaInfo is an Object, scenesInfo, actsInfo, speakersInfo is Array
 
@@ -18,6 +18,7 @@ Matrix.MatrixModel = function(){
 	var matrix = [];
 
 	var init = function(){
+		currentDrama_id = localStorage["drama_id"];
 		$(that).on("InitFinished", continueInit);
 		initInfo("drama_data");
 		initInfo("scenes_data");

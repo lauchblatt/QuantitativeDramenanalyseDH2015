@@ -11,6 +11,7 @@ SingleDrama.DramaController = function(){
 		tableDramaView = SingleDrama.TableDramaView();
 		barChartDramaView = SingleDrama.BarChartDramaView();
 
+		tableDramaView.init();
 		dramaModel.init();
 		barChartDramaView.init();
 		initGoogleCharts();
@@ -46,6 +47,8 @@ SingleDrama.DramaController = function(){
 
 		barChartDramaView.setScenesSelection();
 		barChartDramaView.drawChartScenes(scenesInfo);
+
+		$(".container").fadeIn("slow");
 	};
 
 	var visuActBarChart = function(event){

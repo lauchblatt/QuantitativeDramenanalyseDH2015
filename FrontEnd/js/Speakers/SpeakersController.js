@@ -15,6 +15,7 @@ Speakers.SpeakersController = function(){
 		speakerRelationsView = Speakers.SpeakerRelationsView();
 
 		speakersModel.init();
+		speakersTableView.init();
 		speakersBarChartView.init();
 		speakerRelationsView.init();
 		initGoogleCharts();

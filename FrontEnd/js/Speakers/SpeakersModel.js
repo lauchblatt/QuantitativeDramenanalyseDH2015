@@ -6,6 +6,7 @@ Speakers.SpeakersModel = function(){
 	var dramaInfo = null;
 
 	var init = function(){
+		currentDrama_id = localStorage["drama_id"];
 		$(that).on("InitFinished", continueInit);
 		initInfo('speakers_data');
 		initInfo("scenes_data");

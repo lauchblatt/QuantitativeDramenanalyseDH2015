@@ -21,10 +21,11 @@ Search.DramaListModel = function(){
 		$(that).on("AllDramasRetrieved", filterData);
 	};
 
-	var saveCurrentDrama = function(drama_id, title, author){
+	var saveCurrentDrama = function(drama_id, title, author, year){
 		localStorage["drama_id"] = drama_id;
 		localStorage["title"] = title;
 		localStorage["author"] = author;
+		localStorage["year"] = year;
 	};
 
 	var retrieveAllData = function(input){
@@ -34,7 +35,6 @@ Search.DramaListModel = function(){
 		$(that).trigger("EmptyTable");
 		firebaseRef.orderByChild('author').on("value", function(snapshot) {
 			dramas= snapshot.val();
-			console.log(dramas.length);
 			$(that).trigger("AllDramasRetrieved", [input]);
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
@@ -95,7 +95,6 @@ Search.DramaListModel = function(){
 			&& !('number_of_acts' in input) && !('number_of_scenes' in input)
 			&& !('configuration_density' in input) && !('average_length_of_speeches_in_drama' in input)
 			&& !('speaker_count' in input)){
-			console.log("retrieve all data");
 			retrieveAllData(input);
 			return;
 		}
@@ -180,16 +179,18 @@ Search.DramaListModel = function(){
 	};
 
 	var sendDramas = function(dramas){
-		console.log("sendDramas");
-		for(var i = 0; i < dramas.length; i++){
-			$(that).trigger("DataRetrieved", [dramas[i]]);
-		}
 		$("table").css("display", "none");
-		$("table").fadeIn(1000);
+		if(dramas.length > 0){
+			for(var i = 0; i < dramas.length; i++){
+			$(that).trigger("DataRetrieved", [dramas[i]]);
+			}
+			$("table").fadeIn(1000);
+		}else{
+			$(that).trigger("NoResultsFound");
+		}	
 	};
 
 	var retrieveDataByRange = function(from, to, attribute, criterionList){
-		console.log("retrieveDataByRange");
 		$(that).trigger("EmptyTable");
 		//Reser Firebase
 		firebaseRef = null;

@@ -1,8 +1,23 @@
-#wrapper {
+.container {
+	margin-left: 5%;
+	margin-right: 5% !important;
 }
 
-#drama-table {
-	width: 60%;
+#no-results {
+	width: 100%;
+	float: left !important;
+}
+
+#download-csv {
+	float: right !important;
+}
+
+table {
+	display: none;
+}
+
+#no-results {
+	display: none;
 }
 
 #confMatrix {
@@ -58,5 +73,4 @@ tr {
 tr:hover {
 	background-color: #00BFFF !important;
 	cursor: pointer;
-	border: inset grey 3px;
 }

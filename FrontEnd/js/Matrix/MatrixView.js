@@ -11,7 +11,7 @@ Matrix.MatrixView = function(){
 		initTooltipsForActs(actsInfo);
 		initTooltipsForScenes(scenesInfo);
 		initTooltipsForTitleHeader(dramaInfo);
-		$("#confMatrix").fadeIn("slow");
+		$(".container").fadeIn("slow");
 	};
 
 	var initTooltipsForTitleHeader = function(dramaInfo){

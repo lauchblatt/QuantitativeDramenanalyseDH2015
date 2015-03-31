@@ -6,14 +6,16 @@ Drama.DramaView = function(){
 	};
 
 	var renderView = function(dramaInfo){
-		$("#title").text(dramaInfo.title);
+		$("#title").text(dramaInfo.title + " (" + dramaInfo.year + ")");
 		$("#author").text(dramaInfo.author);
+		$(".container").fadeIn("slow");
 	};
 
 	var initButtons = function(){
 		$("#configuration-matrix").on("click", toConfigMatrix);
 		$("#drama-analysis").on("click", toDramaAnalyis);
 		$("#speaker-analysis").on("click", toSpeakerAnalysis);
+		$("#speeches-analysis").on("click", toSpeechesAnalysis);
 	};
 
 	var toConfigMatrix = function(){
@@ -26,6 +28,10 @@ Drama.DramaView = function(){
 
 	var toSpeakerAnalysis = function(){
 		location.assign("speakers.html");
+	};
+
+	var toSpeechesAnalysis = function(){
+		location.assign("speeches.html");
 	};
 
 	that.renderView = renderView;

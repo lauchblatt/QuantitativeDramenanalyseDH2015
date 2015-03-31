@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div id="wrapper" class="container">
-			<h1>Katharsis</h1>
+			<h1 class="page-header">Katharsis - Das Tool zur quantitativen Dramenanalyse</h1>
 
 			<br/>
 			<form id="form">
@@ -112,10 +112,10 @@
 			<br/>
 			<button type="button" class="btn btn-default" id="search-button">Suchen</button>
 			<br/>
-			<div id="loading"><p>Daten werden geladen...</p></div>
 			<table class="table table-striped" id="drama-table">
 				<thead>
 					<tr>
+						<th>Auswahl</th>
 					    <th>Titel</th> 
 					    <th>Autor</th>
 					    <th>Typ</th>
@@ -131,9 +131,12 @@
 					    <th>kürzeste Replik</th>
 					  </tr>
 				</thead>
+
 				<tbody id="table-tbody">
 				</tbody>
 			</table>
+
+			<p id="no-results">Keine Ergebnisse gefunden</p>
 		</div>
 
 		<script src="js/libs/jquery-1.11.2.js"></script>

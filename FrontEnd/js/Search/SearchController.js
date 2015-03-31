@@ -22,12 +22,17 @@ Search.SearchController = function(){
 	var initListener = function(){
 		$(dramaListModel).on("DataRetrieved", updateList);
 		$(dramaListModel).on("EmptyTable", emptyTable);
+		$(dramaListModel).on("NoResultsFound", noResultsFound);
 		$(formsView).on("InputCatched", retrieveDramas);
 		$(dramaListView).on("DramaClicked", analyzeDrama);
 	};
 
-	var analyzeDrama = function(event, drama_id, title, author){
-		dramaListModel.saveCurrentDrama(drama_id, title, author);
+	var noResultsFound = function(){
+		dramaListView.showNoResults();
+	};
+
+	var analyzeDrama = function(event, drama_id, title, author, year){
+		dramaListModel.saveCurrentDrama(drama_id, title, author, year);
 		//Probably not working in every browser
 		window.open("drama.html", "_blank");
 	};

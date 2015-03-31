@@ -1,9 +1,10 @@
 Drama.DramaModel = function(){
 	var that = {};
-	var currentDrama_id = 35;
+	var currentDrama_id = 0;
 	var dramaInfo = null;
 
 	var init = function(){
+		currentDrama_id = localStorage["drama_id"];
 		initInfo("drama_data");
 	};
 

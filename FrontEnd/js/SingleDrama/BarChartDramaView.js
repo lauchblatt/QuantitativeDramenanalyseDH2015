@@ -57,6 +57,7 @@ SingleDrama.BarChartDramaView = function(){
         data.addRows(array);
         var options = {title:'Akt-Statistik',
         			   height: 600,
+        			   width: 1170,
         			    trendlines: {
 				          0: {
 				          	tooltip: false,
@@ -72,6 +73,7 @@ SingleDrama.BarChartDramaView = function(){
         			   	title: 'Akte'
         			   },
         			   vAxis: {
+        			   	title: actSelection,
         			   	baseline: 0
         			   },
                    	   animation: {
@@ -81,35 +83,6 @@ SingleDrama.BarChartDramaView = function(){
         var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
         chart.draw(data, options);
 
-	};
-
-	var drawSpeechesChartAct = function(actInfo){
-		var data = new google.visualization.DataTable();
-		data.addColumn('number', 'Akte');
-		data.addColumn('number', 'Minimum Replikenlänge');
-		data.addColumn('number', 'Durchschnittliche Replikenlänge');
-		data.addColumn('number', 'Median Replikenlänge');
-		data.addColumn('number', 'Maximum Replikenlänge');
-		var array = [];
-		for(var i = 0; i < actInfo.length; i++){
-			var row = [(i+1), actInfo[i].minimum_length_of_speeches_in_act, 
-			roundToTwoDecimals(actInfo[i].average_length_of_speeches_in_act),
-			actInfo[i].median_length_of_speeches_in_act,
-			actInfo[i].maximum_length_of_speeches_in_act];
-			array.push(row);
-		}
-		data.addRows(array);
-		        var options = {title:'Akt-Statistik',
-        			   height: 600,
-        			   hAxis: {
-        			   	title: 'Akte'
-        			   },
-                   	   animation: {
-                   	   	duration: 700,
-                   	   	startup: true
-                   	   }};
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
-        chart.draw(data, options);
 	};
 
 	var setActSelection = function(){
@@ -167,6 +140,7 @@ SingleDrama.BarChartDramaView = function(){
         }
         var options = {title:'Szenen-Statistik: Akt ' + act,
         			   height: 600,
+        			   width: 1170,
         			    trendlines: {
 				          0: {
 				          	tooltip: false,
@@ -183,6 +157,7 @@ SingleDrama.BarChartDramaView = function(){
         			   	ticks: ticksArray
         			   },
         			   vAxis: {
+        			   	title: scenesSelection,
         			   	baseline: 0
         			   },
                    	   animation: {
@@ -216,6 +191,7 @@ SingleDrama.BarChartDramaView = function(){
 		data.addRows(array);
 		        var options = {title:'Szenen-Statistik: Akt ' + act,
         			   height: 600,
+        			   width: 1170,
 				        hAxis: {
         			   	title: 'Szenen',
         			   	ticks: ticksArray

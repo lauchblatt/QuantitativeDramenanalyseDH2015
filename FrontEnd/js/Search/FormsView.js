@@ -85,8 +85,6 @@ Search.FormsView = function(){
 		if(numberOfSpeeches_to  != ""){range.to = parseInt(numberOfSpeeches_to);}
 		if(numberOfSpeeches_from != "" || numberOfSpeeches_to  != ""){input["number_of_speeches_in_drama"] = range;}
 
-		console.log(input);
-
 		$(that).trigger("InputCatched", [input]);
 	};
 

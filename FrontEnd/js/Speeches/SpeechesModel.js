@@ -7,6 +7,7 @@ Speeches.SpeechesModel = function(){
 	var distribution = {};
 
 	var init = function(){
+		currentDrama_id = localStorage["drama_id"];
 		$(that).on("InitFinished", continueInit);
 		initInfo("scenes_data");
 		initInfo("drama_data");

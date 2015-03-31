@@ -5,8 +5,9 @@ Search.DramaListView = function(){
 
 	};
 
-	var renderList = function(list){
+	/*var renderList = function(list){
 		$("#table-tbody").empty();
+		console.log("hello world");
 		if(list.length !== undefined){
 			for(var i = 0; i < list.length; i++){
 				renderListItem(list[i]);
@@ -16,17 +17,28 @@ Search.DramaListView = function(){
 				renderListItem(list[drama_id]);
 			}
 		}
+	};*/
+
+	var showNoResults = function(){
+		$("#no-results").fadeIn("slow");
 	};
 
 	var renderListItem = function(listItem){
-		console.log("hello world");
+		$("#no-results").css("display", "none");
 		var row = createListItem(listItem);
 		$("#table-tbody").append(row);
-		$("#loading").css("display","none");
 	};
 
 	var createListItem = function(drama){
 		var row = $("<tr>");
+
+		var firstTd = $("<td>");
+		firstTd.addClass("selection-box");
+		var checkbox = $("<input checked>");
+		checkbox.attr("type", "checkbox");
+		checkbox.attr("drama_id", drama.id);
+		firstTd.append(checkbox);
+		row.append(firstTd);
 
 		row.append(($("<td>")).text(drama.title));
 
@@ -57,11 +69,15 @@ Search.DramaListView = function(){
 	};
 
 	var dramaClicked = function(event){
+		if($(event.target).is("input")){
+			return;
+		}
 		var $row = ($(event.target).parent());
 		var drama_id = ($row.attr("drama_id"));
-		var title = $($row.children()[0]).text();
-		var author = $($row.children()[1]).text();
-		$(that).trigger("DramaClicked", [drama_id, title, author]);
+		var title = $($row.children()[1]).text();
+		var author = $($row.children()[2]).text();
+		var year = $($row.children()[4]).text();
+		$(that).trigger("DramaClicked", [drama_id, title, author, year]);
 	};
 
 	var getNumberOfSpeakers = function(drama){
@@ -81,6 +97,7 @@ Search.DramaListView = function(){
 	that.init = init;
 	that.renderListItem = renderListItem;
 	that.emptyTable = emptyTable;
+	that.showNoResults = showNoResults;
 
 	return that;
 };

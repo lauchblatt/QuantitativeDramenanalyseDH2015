@@ -26,6 +26,11 @@ Speeches.SpeechesController = function(){
 
 		var distribution = speechesModel.getDistribution();
 		speechesLineView.render(distribution);
+
+		$("#dramaTitle").text(localStorage["title"] + " (" + localStorage["year"] + ")");
+		$("#dramaAuthor").text(localStorage["author"]);
+
+		$(".container").fadeIn("slow");
 	};
 
 	var initGoogleCharts = function(){
