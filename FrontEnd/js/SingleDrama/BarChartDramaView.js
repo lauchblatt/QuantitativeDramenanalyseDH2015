@@ -12,6 +12,7 @@ SingleDrama.BarChartDramaView = function(){
 	var initListener = function(){
 		$("#selection-act").change(actSelectionClicked);
 		$("#selection-scenes").change(scenesSelectionClicked);
+
 	};
 
 	var actSelectionClicked = function(){
@@ -81,9 +82,27 @@ SingleDrama.BarChartDramaView = function(){
                    	   	duration: 700,
                    	   	startup: true
                    	   }};
+
+        var chart_div = document.getElementById('chart-div-act');
         var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
+
+        $("#pngButton").on("click", function(){
+        	chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
+        	console.log(chart_div.innerHTML);
+        	
+        	//This is probably not working in every browser
+        	window.open(chart.getImageURI());
+        	drawChartAct(actInfo);
+        });
         chart.draw(data, options);
 
+	};
+
+	var downloadPNG = function(){
+		var chart_div = document.getElementById('chart-div-act');
+		var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
+		chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
+        	console.log(chart_div.innerHTML); 
 	};
 
 	var setActSelection = function(){
