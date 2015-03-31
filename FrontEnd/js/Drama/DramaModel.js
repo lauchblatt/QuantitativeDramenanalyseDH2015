@@ -5,13 +5,15 @@ Drama.DramaModel = function(){
 
 	var init = function(){
 		currentDrama_id = localStorage["drama_id"];
+		console.log(currentDrama_id);
 		initInfo("drama_data");
 	};
 
 	var initInfo = function(name){
-		firebaseRef = new Firebase("https://popping-heat-510.firebaseio.com/" + name +"/" + currentDrama_id);
+		firebaseRef = new Firebase("https://katharsis.firebaseio.com/" + name +"/" + currentDrama_id);
 		firebaseRef.on("value", function(snapshot) {
 		dramaInfo = snapshot.val();
+		console.log(snapshot.val());
 		$(that).trigger("InitFinished");
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);
