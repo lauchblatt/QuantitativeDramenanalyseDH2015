@@ -7,6 +7,14 @@ body {
 	margin-right: auto;
 }
 
+h3 {
+	margin-top: 5%;
+}
+
+.google-visualization-controls-rangefilter{
+	text-align: center;
+}
+
 #speakers-table {
 }
 
@@ -26,7 +34,7 @@ body {
 	border-radius: 4px 4px 0 0;
 	border-style: solid;
 	padding: 1%;
-	margin: 2%;
+	margin-bottom: 5%;
 }
 
 .google-visualization-controls-slider-horizontal{

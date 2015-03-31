@@ -14,6 +14,7 @@ Speakers.SpeechesDominanceView = function(){
 
 		var options = {
 		  height: 600,
+      chartArea:{width:'70%',height:'75%'},
           title: 'Replikendominanz',
           is3D: true,
         };
