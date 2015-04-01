@@ -7,6 +7,10 @@ th {
 	display: none;
 }
 
+.png-download {
+	float: right;
+}
+
 .line {
 	height: 1px;
 	border: 1px solid #ddd;

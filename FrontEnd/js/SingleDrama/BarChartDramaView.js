@@ -83,25 +83,19 @@ SingleDrama.BarChartDramaView = function(){
                    	   	startup: true
                    	   }};
 
-        var chart_div = document.getElementById('chart-div-act');
+        
         var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
+        var chart_div = document.getElementById('chart-div-act');
 
-        $("#pngButton").unbind("click");
-        $("#pngButton").on("click", function(){
+        $("#download-png-act").unbind("click");
+        $("#download-png-act").on("click", function(){
         	chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
-        	console.log(chart_div.innerHTML);
         	window.open(chart.getImageURI());
         	drawChartAct(actInfo);
         });
+
         chart.draw(data, options);
 
-	};
-
-	var downloadPNG = function(){
-		var chart_div = document.getElementById('chart-div-act');
-		var chart = new google.visualization.ColumnChart(document.getElementById('chart-div-act'));
-		chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
-        	console.log(chart_div.innerHTML); 
 	};
 
 	var setActSelection = function(){
@@ -123,6 +117,11 @@ SingleDrama.BarChartDramaView = function(){
 			$div_chart.addClass("scenes-chart");
 			$div_chart.attr("id", "chart-div-scenes-" + act);
 			$charts_scenes.append($div_chart);
+			var $button = $("<button class='btn btn-default png-download'></button>");
+			$button.attr("id", "download-png-" + act);
+			$button.text("Download PNG");
+			var $buttonDiv = $("<div>").addClass("container").append($button);
+			$charts_scenes.append($buttonDiv);
 			drawChartForScenesInAct(("chart-div-scenes-" + act), scenesInfo[act], (act+1));
 		}
 	};
@@ -186,6 +185,16 @@ SingleDrama.BarChartDramaView = function(){
                    	   	startup: true
                    	   }};
         var chart = new google.visualization.ColumnChart(document.getElementById(divId));
+
+        var chart_div = document.getElementById(divId);
+
+        $("#download-png-" + (act-1)).unbind("click");
+        $("#download-png-" + (act-1)).on("click", function(){
+        	chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
+        	window.open(chart.getImageURI());
+        	drawChartForScenesInAct(divId, scenesInfoPerAct, act);
+        });
+
         chart.draw(data, options);
 	};
 
