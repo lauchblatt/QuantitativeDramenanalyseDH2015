@@ -13,18 +13,22 @@ th {
 	transition: all 1s ease;
 }
 
+.filled {
+	background-color: #00BFFF;
+}
+
 td {
 	text-align: center;
 	vertical-align: middle !important;
 	transition: all 0.5s ease;
 }
 
-td:hover {
+td.tooltipstered:hover {
 	background-color: #00BFFF !important;
 	cursor: pointer;
 }
 
-th:hover {
+th.tooltipstered:hover {
 	background-color: #00BFFF !important;
 	cursor: pointer;
 }

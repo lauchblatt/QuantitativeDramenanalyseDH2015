@@ -54,6 +54,9 @@ Matrix.MatrixModel = function(){
 					var speakerAppears = checkIfSpeakerInList(dramaInfo.speakers[i],
 						scenesInfo[j][k].appearing_speakers);
 					if(speakerAppears){
+						var speakersSpeeches = getSpeakersSpeeches(dramaInfo.speakers[i], scenesInfo[j][k].speeches);
+						var speakerCell = getCellObject(dramaInfo.speakers[i], speakersSpeeches);
+						console.log(speakerCell);
 						matrix[i][sceneCounter] = 1;
 					}else{
 						matrix[i][sceneCounter] = 0;
@@ -69,9 +72,63 @@ Matrix.MatrixModel = function(){
 		//console.log(matrix);
 	};
 
+	var getCellObject = function(name, speakerSpeeches){
+		var cellObj = {};
+		var speechesLengths = [];
+		for(var i = 0; i < speakerSpeeches.length; i++){
+			speechesLengths.push(speakerSpeeches[i].length);
+		}
+		cellObj.speaker = name;
+		cellObj.number_of_speeches = speakerSpeeches.length;
+		cellObj.average = getAverage(speechesLengths);
+		cellObj.median = getMedian(speechesLengths);
+		cellObj.max = getMax(speechesLengths);
+		cellObj.min = getMin(speechesLengths);
+
+		return cellObj;
+	};
+
+	var getAverage = function(numbers){
+		var count = 0; 
+		for(var i = 0; i < numbers.length; i++){
+			count = count + numbers[i];
+		};
+
+		return roundToTwoDecimals(count/numbers.length);
+
+	};
+
+	var getMedian = function(numbers){
+
+		numbers.sort( function(a,b) {return a - b;} );
+ 
+	    var half = Math.floor(numbers.length/2);
+	 
+	    if(numbers.length % 2)
+	        return numbers[half];
+	    else
+	        return (numbers[half-1] + numbers[half]) / 2.0;
+	};
+
+	var getMax = function(numbers){
+		return Math.max.apply(Math, numbers);
+	};
+
+	var getMin = function(numbers){
+		return Math.min.apply(Math, numbers);
+	};
+
+	var getSpeakersSpeeches = function(speaker, speeches){
+		var newSpeeches = [];
+		for(var i = 0; i < speeches.length; i++){
+			if(speaker == speeches[i].speaker){
+				newSpeeches.push(speeches[i]);
+			}
+		}
+		return newSpeeches;
+	};
+
 	var checkIfSpeakerInList = function(speaker, speakerList){
-		console.log(speaker);
-		console.log(speakerList);
 		if(speakerList === undefined){
 			return false;
 		}
@@ -132,6 +189,11 @@ Matrix.MatrixModel = function(){
 
 	var getMatrix = function(){
 		return matrix;
+	};
+
+	var roundToTwoDecimals = function(number){
+		number = (Math.round(number * 100)/100).toFixed(2);
+		return number
 	};
 
 	that.init = init;

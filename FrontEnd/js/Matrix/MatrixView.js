@@ -141,7 +141,7 @@ Matrix.MatrixView = function(){
 			for(var j = 0; j < matrix[i].length; j++){
 				var matrix_id = "matrix_" + i + "_" + j;
 				if(matrix[i][j] == 1){
-					$("#" + matrix_id).css("background-color", '#00BFFF');
+					$("#" + matrix_id).addClass("filled");
 				}else{
 					$("#" + matrix_id).text("");
 				}
