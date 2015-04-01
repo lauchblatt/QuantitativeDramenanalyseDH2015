@@ -26,6 +26,7 @@ td {
 td.tooltipstered:hover {
 	background-color: #00BFFF !important;
 	cursor: pointer;
+	border: 1px solid black !important;
 }
 
 th.tooltipstered:hover {

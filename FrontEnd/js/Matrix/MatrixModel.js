@@ -56,10 +56,12 @@ Matrix.MatrixModel = function(){
 					if(speakerAppears){
 						var speakersSpeeches = getSpeakersSpeeches(dramaInfo.speakers[i], scenesInfo[j][k].speeches);
 						var speakerCell = getCellObject(dramaInfo.speakers[i], speakersSpeeches);
-						console.log(speakerCell);
-						matrix[i][sceneCounter] = 1;
+						matrix[i][sceneCounter] = speakerCell;
 					}else{
-						matrix[i][sceneCounter] = 0;
+						var speakerCell = {};
+						speakerCell.matrix_number = 0;
+						speakerCell.name = dramaInfo.speakers[i];
+						matrix[i][sceneCounter] = speakerCell;
 					}
 					sceneCounter++;
 					/*
@@ -78,6 +80,7 @@ Matrix.MatrixModel = function(){
 		for(var i = 0; i < speakerSpeeches.length; i++){
 			speechesLengths.push(speakerSpeeches[i].length);
 		}
+		cellObj.matrix_number = 1;
 		cellObj.speaker = name;
 		cellObj.number_of_speeches = speakerSpeeches.length;
 		cellObj.average = getAverage(speechesLengths);

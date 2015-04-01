@@ -26,6 +26,18 @@ Matrix.MatrixView = function(){
 				});
 	};
 
+	var getCellTooltip = function(cellObject){
+		var $content = $("<div>");
+		$content.append(buildAttribute(("Sprecher"), cellObject.speaker));
+		$content.append(buildAttribute(("Replikenanzahl"), cellObject.number_of_speeches));
+		$content.append(buildAttribute(("Mittel Replikenlänge"), cellObject.average));
+		$content.append(buildAttribute(("Median Replikenlänge"), cellObject.median));
+		$content.append(buildAttribute(("Maximum Replikenlänge"), cellObject.max));
+		$content.append(buildAttribute(("Minimum Replikenlänge"), cellObject.min));
+
+		return $content;
+	};
+
 	var getDramaTooltip = function(drama){
 		var $content = $("<div></div>");
 		$content.append(buildAttribute(("Titel"), drama.title));
@@ -140,10 +152,17 @@ Matrix.MatrixView = function(){
 		for(var i = 0; i < matrix.length; i++){
 			for(var j = 0; j < matrix[i].length; j++){
 				var matrix_id = "matrix_" + i + "_" + j;
-				if(matrix[i][j] == 1){
+				if(matrix[i][j].matrix_number == 1){
 					$("#" + matrix_id).addClass("filled");
+					$content = getCellTooltip(matrix[i][j]);
+					$("#" + matrix_id).tooltipster({
+						content: $content,
+						position: "top",
+						trigger: 'hover'
+						});
 				}else{
 					$("#" + matrix_id).text("");
+					$("#" + matrix_id).attr("title", matrix[i][j].name);
 				}
 				
 			}
