@@ -8,7 +8,6 @@ Speeches.SpeechesLineView = function(){
 		var array = [];
 		for(var key in distribution){
 			var row = [parseInt(key), distribution[key]];
-			console.log(row);
 			array.push(row);
 		}
 		data.addRows(array);
@@ -55,12 +54,14 @@ Speeches.SpeechesLineView = function(){
 
         var chart_div = document.getElementById('curve-chart');
 
-        $("#pngButton").unbind("click");
-        $("#pngButton").on("click", function(){
-          chart_div.innerHTML = '<img src="' + chart.getChart().getImageURI() + '">';
-          console.log(chart_div.innerHTML);
+        $("#download-png-curve").unbind("click");
+        $("#download-png-curve").on("click", function(){
+          //chart_div.innerHTML = '<img src="' + chart.getChart().getImageURI() + '">';
+
           window.open(chart.getChart().getImageURI());
-          render(distribution);
+          
+          //render(distribution);
+
         });
 
         dashboard.draw(data);

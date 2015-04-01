@@ -40,6 +40,12 @@ Speakers.SpeechesDominanceView = function(){
 
         dashboard.bind(donutRangeSlider, pieChart);
 
+        $("#download-png-speeches-dominance").unbind("click");
+        $("#download-png-speeches-dominance").on("click", function(){
+          window.open(pieChart.getChart().getImageURI());
+          //drawChartAct(actInfo);
+        });
+
         // Draw the dashboard.
         dashboard.draw(data);
 	};

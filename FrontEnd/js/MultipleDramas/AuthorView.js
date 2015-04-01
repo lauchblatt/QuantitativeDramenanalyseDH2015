@@ -67,6 +67,11 @@ MultipleDramas.AuthorView = function(){
           'options': options
         });
 
+        $("#download-png-author").unbind("click");
+        $("#download-png-author").on("click", function(){
+          window.open(barChart.getChart().getImageURI());
+        });
+
         dashboard.bind(barChartRangeSlider, barChart);
 
         // Draw the dashboard.

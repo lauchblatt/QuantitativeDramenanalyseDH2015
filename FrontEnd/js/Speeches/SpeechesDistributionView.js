@@ -58,6 +58,13 @@ Speeches.SpeechesDistributionView = function(){
           'options': options
         });
 
+        var chart_div = document.getElementById('distribution-chart');
+
+        $("#download-png-distribution").unbind("click");
+        $("#download-png-distribution").on("click", function(){
+          window.open(chart.getChart().getImageURI());
+        });
+
         dashboard.bind(rangeSlider, chart);
 
         dashboard.draw(data);

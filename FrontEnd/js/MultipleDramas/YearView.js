@@ -104,6 +104,11 @@ MultipleDramas.YearView = function(){
           'options': options
         });
 
+        $("#download-png-year").unbind("click");
+        $("#download-png-year").on("click", function(){
+          window.open(chart.getChart().getImageURI());
+        });
+
         dashboard.bind(rangeSlider1, chart);
         dashboard.bind(rangeSlider2, chart);
         $("#controls-year2").fadeIn();
@@ -172,6 +177,11 @@ MultipleDramas.YearView = function(){
           'chartType': 'ScatterChart',
           'containerId': 'chart-div-year',
           'options': options
+        });
+
+        $("#download-png-year").unbind("click");
+        $("#download-png-year").on("click", function(){
+          window.open(chart.getChart().getImageURI());
         });
 
         dashboard.bind(rangeSlider1, chart);
@@ -274,6 +284,11 @@ MultipleDramas.YearView = function(){
           'chartType': 'ScatterChart',
           'containerId': 'chart-div-year',
           'options': options
+        });
+
+        $("#download-png-year").unbind("click");
+        $("#download-png-year").on("click", function(){
+          window.open(chart.getChart().getImageURI());
         });
 
         dashboard.bind(rangeSlider1, chart);

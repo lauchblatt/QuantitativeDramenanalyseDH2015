@@ -6,6 +6,10 @@ body {
 	font-size: 15px;
 }
 
+.png-download {
+	float: right;
+}
+
 .dropdown-form {
 	width: 20%;
 }

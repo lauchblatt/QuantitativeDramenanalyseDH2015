@@ -76,6 +76,12 @@ MultipleDramas.LineCurveView = function(){
           'options': options
         });
 
+        $("#download-png-curve").unbind("click");
+        $("#download-png-curve").on("click", function(){
+          window.open(chart.getChart().getImageURI());
+          //drawChartAct(actInfo);
+        });
+
         dashboard.bind(rangeSlider, chart);
 
         dashboard.draw(data);
@@ -150,6 +156,11 @@ MultipleDramas.LineCurveView = function(){
           'chartType': 'LineChart',
           'containerId': 'curve-chart',
           'options': options
+        });
+
+        $("#download-png-curve").unbind("click");
+        $("#download-png-curve").on("click", function(){
+          window.open(pieChart.chart().getImageURI());
         });
 
         dashboard.bind(rangeSlider, chart);

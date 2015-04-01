@@ -35,6 +35,12 @@ MultipleDramas.CategoryView = function(){
                    	   	startup: true
                    	   }};
         var chart = new google.visualization.ColumnChart(document.getElementById('chart-category'));
+
+        $("#download-png-category").unbind("click");
+        $("#download-png-category").on("click", function(){
+          window.open(chart.getImageURI());
+        });
+
         chart.draw(data, options);
 	};
 

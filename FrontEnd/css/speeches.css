@@ -6,6 +6,10 @@ h3 {
 	margin-top: 5%;
 }
 
+.png-download {
+	float: right;
+}
+
 .box {
 	border-color: #ddd;
 	border-width: 1px;

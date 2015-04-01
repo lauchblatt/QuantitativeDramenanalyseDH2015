@@ -89,9 +89,8 @@ SingleDrama.BarChartDramaView = function(){
 
         $("#download-png-act").unbind("click");
         $("#download-png-act").on("click", function(){
-        	chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
         	window.open(chart.getImageURI());
-        	drawChartAct(actInfo);
+        	//drawChartAct(actInfo);
         });
 
         chart.draw(data, options);
@@ -190,9 +189,7 @@ SingleDrama.BarChartDramaView = function(){
 
         $("#download-png-" + (act-1)).unbind("click");
         $("#download-png-" + (act-1)).on("click", function(){
-        	chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
         	window.open(chart.getImageURI());
-        	drawChartForScenesInAct(divId, scenesInfoPerAct, act);
         });
 
         chart.draw(data, options);
@@ -235,6 +232,10 @@ SingleDrama.BarChartDramaView = function(){
                    	   	startup: true
                    	   }};
         var chart = new google.visualization.ColumnChart(document.getElementById(divId));
+        $("#download-png-" + (act-1)).unbind("click");
+        $("#download-png-" + (act-1)).on("click", function(){
+        	window.open(chart.getImageURI());
+        });
         chart.draw(data, options);
 	};
 

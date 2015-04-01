@@ -63,7 +63,12 @@ Speakers.SpeakersBarChartView = function(){
           'containerId': 'chart-speakers-barChart',
           'options': options
         });
-        console.log(barChart);
+
+        $("#download-png-speakers-barChart").unbind("click");
+        $("#download-png-speakers-barChart").on("click", function(){
+          window.open(barChart.getChart().getImageURI());
+          //drawChartAct(actInfo);
+        });
 
         dashboard.bind(barChartRangeSlider, barChart);
 

@@ -11,6 +11,10 @@ h3 {
 	margin-top: 5%;
 }
 
+.png-download {
+	float: right;
+}
+
 .dropdown-form {
 	width: 20%;
 }
@@ -39,6 +43,7 @@ h3 {
 	border-style: solid;
 	padding: 1%;
 	margin-bottom: 5%;
+	display: inline-block;
 }
 
 .google-visualization-controls-slider-horizontal{
