@@ -37,11 +37,7 @@ class DramaOutput:
         drama_data['date'] = drama._date
         drama_data['type'] = drama._type
         drama_data['castgroup'] = drama._castgroup
-        drama_data['speaker_count_castgroup'] = drama._speakerCountCast
-        drama_data['speaker_count'] = drama._speakerCountAll
-        """
-        drama_data['All Speakers'] = all_speakers
-        """
+
         drama_data['configuration_density'] = drama._configuration_density
         drama_data['number_of_speeches_in_drama'] = len(drama.get_speeches_drama())
         drama_data['average_length_of_speeches_in_drama'] = drama._speechesLength_avg
@@ -155,6 +151,16 @@ class DramaOutput:
         writer = csv.writer(doc, delimiter=",")
         cf = drama_model._configuration_matrix
         writer.writerows(cf)
+        doc.close
+
+    def generateNormalizedJSON(self, dramas):
+        dramaJsonArray = []
+        for drama in dramas:
+            dramaJsonArray.append(self.generateDramaData(drama))
+
+        dramas_json = json.dumps(dramaJsonArray, indent=4, ensure_ascii=True)
+        doc = open('Dramas_data.json', 'w')
+        doc.write(dramas_json)
         doc.close
 
     def generateDenormalizedJSON(self, dramas):
