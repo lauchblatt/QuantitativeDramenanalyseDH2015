@@ -21,7 +21,7 @@ Matrix.MatrixView = function(){
 		var $content = getDramaTooltip(dramaInfo);
 		$titleHeader.tooltipster({
 					content: $content,
-					position: "bottom",
+					position: "right",
 					trigger: 'hover'
 				});
 	};
@@ -40,22 +40,21 @@ Matrix.MatrixView = function(){
 
 	var getDramaTooltip = function(drama){
 		var $content = $("<div></div>");
-		$content.append(buildAttribute(("Titel"), drama.title));
-		$content.append(buildAttribute(("Autor"), drama.author));
-		$content.append(buildAttribute(("Jahr"), drama.year));
-		$content.append(buildAttribute(("Typ"), drama.type));
-		$content.append(buildAttribute(("Sprecher"), drama.speakers.length));
-		$content.append(buildAttribute("Konfigurationsdichte",
-			roundToTwoDecimals(drama.configuration_density)));
-		$content.append(buildAttribute("Replikenanzahl", drama.number_of_speeches_in_drama));
-		$content.append(buildAttribute("Mittel Replikenlänge",
-			roundToTwoDecimals(drama.average_length_of_speeches_in_drama)));
-		$content.append(buildAttribute("Median Replikenlänge", 
-			drama.median_length_of_speeches_in_drama));
-		$content.append(buildAttribute("Maximum Replikenlänge", 
-			drama.maximum_length_of_speeches_in_drama));
-		$content.append(buildAttribute("Minimum Replikenlänge", 
-			drama.minimum_length_of_speeches_in_drama));
+		var strings = ["Titel:","Autor:", "Jahr:", "Typ:", "Sprecher:", "Konfigurationsdichte:",
+		"Replikenanzahl:","Mittel Replikenlänge:", "Median Replikenlänge:",
+		"Maximum Replikenlänge:", "Minimum Replikenlänge:"];
+		var data = [drama.title, drama.author, drama.year, drama.type, drama.speakers.length,
+		roundToTwoDecimals(drama.configuration_density),
+		drama.number_of_speeches_in_drama, 
+		roundToTwoDecimals(drama.average_length_of_speeches_in_drama),
+		drama.median_length_of_speeches_in_drama, drama.maximum_length_of_speeches_in_drama, 
+		drama.minimum_length_of_speeches_in_drama];
+
+		var $leftColumn = getColumn(strings, "insideLeft");
+		var $rightColumn = getColumn(data, "insideRight");
+		$content.append($leftColumn);
+		$content.append($rightColumn);
+
 		return $content;
 	};
 
@@ -75,16 +74,16 @@ Matrix.MatrixView = function(){
 
 	var getSceneTooltip = function(scene){
 		var $content = $("<div></div>");
-		$content.append(buildAttribute(("Szene"), scene.number_of_scene));
-		$content.append(buildAttribute("Replikenanzahl", scene.number_of_speeches_in_scene));
-		$content.append(buildAttribute("Mittel Replikenlänge",
-			roundToTwoDecimals(scene.average_length_of_speeches_in_scene)));
-		$content.append(buildAttribute("Median Replikenlänge", 
-			scene.median_length_of_speeches_in_scene));
-		$content.append(buildAttribute("Maximum Replikenlänge", 
-			scene.maximum_length_of_speeches_in_scene));
-		$content.append(buildAttribute("Minimum Replikenlänge", 
-			scene.minimum_length_of_speeches_in_scene));
+		var strings = ["Szene:", "Replikenanzahl:", "Mittel Replikenlänge:",
+			"Median Replikenlänge:", "Maximum Replikenlänge:", "Minimum Replikenlänge:"];
+		var data = [scene.number_of_scene, scene.number_of_speeches_in_scene, 
+		roundToTwoDecimals(scene.average_length_of_speeches_in_scene), 
+		scene.median_length_of_speeches_in_scene, scene.maximum_length_of_speeches_in_scene, 
+		scene.minimum_length_of_speeches_in_scene]
+		var $leftColumn = getColumn(strings, "insideLeft");
+		var $rightColumn = getColumn(data, "insideRight");
+		$content.append($leftColumn);
+		$content.append($rightColumn);
 		return $content;
 	};
 
@@ -102,17 +101,32 @@ Matrix.MatrixView = function(){
 
 	var getActTooltip = function(act){
 		var $content = $("<div></div>");
-		$content.append(buildAttribute(("Akt"), act.number_of_act));
-		$content.append(buildAttribute("Replikenanzahl", act.number_of_speeches_in_act));
-		$content.append(buildAttribute("Mittel Replikenlänge",
-			roundToTwoDecimals(act.average_length_of_speeches_in_act)));
-		$content.append(buildAttribute("Median Replikenlänge", 
-			act.median_length_of_speeches_in_act));
-		$content.append(buildAttribute("Maximum Replikenlänge", 
-			act.maximum_length_of_speeches_in_act));
-		$content.append(buildAttribute("Minimum Replikenlänge", 
-			act.minimum_length_of_speeches_in_act));
+
+		var leftColumn = getColumn(["Akt:", "Replikenanzahl:", "Mittel Replikenlänge:",
+			"Median Replikenlänge:", "Maximum Replikenlänge:", "Minimum Replikenlänge:"], "insideLeft");
+		var data = [act.number_of_act, act.number_of_speeches_in_act, 
+		roundToTwoDecimals(act.average_length_of_speeches_in_act), 
+		act.median_length_of_speeches_in_act, act.maximum_length_of_speeches_in_act, 
+		act.minimum_length_of_speeches_in_act];
+		var rightColumn = getColumn(data, "insideRight");
+
+		$content.append(leftColumn);
+		$content.append(rightColumn);
 		return $content;
+
+	};
+
+	var getColumn = function(strings, sideClass){
+		var $column = $("<div>");
+		$column.addClass(sideClass);
+		for(var i = 0; i < strings.length; i++){
+			var br = $("<br>");
+			var span = $("<span>");
+			span.text(strings[i]);
+			$column.append(span);
+			$column.append(br);
+		}
+		return $column;
 	};
 
 	var initTooltipsForSpeakers = function(speakersInfo){
@@ -129,21 +143,24 @@ Matrix.MatrixView = function(){
 
 	var getSpeakerTooltip = function(speaker){
 		var $content = $("<div></div>");
-		$content.append(buildAttribute("Name", speaker.name));
-		$content.append(buildAttribute("Replikenanzahl", speaker.number_of_speakers_speeches));
-		$content.append(buildAttribute("Mittel Replikenlänge",
-			roundToTwoDecimals(speaker.average_length_of_speakers_speeches)));
-		$content.append(buildAttribute("Median Replikenlänge", 
-			speaker.median_length_of_speakers_speeches));
-		$content.append(buildAttribute("Maximum Replikenlänge", 
-			speaker.maximum_length_of_speakers_speeches));
-		$content.append(buildAttribute("Minimum Replikenlänge", 
-			speaker.minimum_length_of_speakers_speeches));
+		var strings = ["Name", "Replikenanzahl", "Mittel Replikenlänge",
+		"Median Replikenlänge","Maximum Replikenlänge", "Minimum Replikenlänge"];
+		var data = [speaker.name, speaker.number_of_speakers_speeches,
+		roundToTwoDecimals(speaker.average_length_of_speakers_speeches), 
+		speaker.median_length_of_speakers_speeches,
+		speaker.maximum_length_of_speakers_speeches,
+		speaker.minimum_length_of_speakers_speeches];
+
+		var $leftColumn = getColumn(strings, "insideLeft");
+		var $rightColumn = getColumn(data, "insideRight");
+		$content.append($leftColumn);
+		$content.append($rightColumn);
+
 		return $content;
 	};
 
 	var buildAttribute = function(name, attribute){
-		var $div = $("<div></div>");
+		$div = $("<div>");
 		$div.text(name + ": " + attribute);
 		return $div;
 	};

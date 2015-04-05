@@ -59,3 +59,50 @@ h3 {
 .google-visualization-controls-slider-horizontal{
 	width: 600px !important;
 }
+
+span {
+	display: block !important;
+}
+
+.relationbox {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+#independent {
+	float: left;
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+	vertical-align: middle;
+}
+
+#concomitant {
+	float: right;
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+	vertical-align: middle;
+}
+
+.independent {
+	float: left;
+}
+
+.concomitant {
+	float: right;
+}
+
+.relationSingleBox {
+	width: 30% !important;
+}
+
+#speaker-name {
+	font-style: bold;
+	font-size: 20px;
+	display: inline-block;
+	display: inline;
+	zoom: 1;
+	vertical-align: middle;
+}
