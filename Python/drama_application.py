@@ -24,7 +24,7 @@ def main():
     if debug:
 
         for filename in os.listdir("../Korpus"):
-            """
+            
             dramaModel = parser.parse_xml("../Korpus/" + filename)
             dramasForDenormalizing.append(dramaModel)
             print("Erfolg beim Parsen eines Dramas")
@@ -32,6 +32,7 @@ def main():
             dramaModel = parser.parse_xml("../Korpus/" + filename)
             dramas.append(dramaModel)
             print("Erfolg beim Parsen eines Dramas")
+            """
 
     else:
         for filename in os.listdir("../Korpus"):
@@ -51,11 +52,12 @@ def main():
     doc = open('Dramas_data.json', 'w')
     doc.write(dramas_json)
     doc.close
-    """
+    
     """
     output.generateDenormalizedJSON(dramasForDenormalizing)
     """
     output.generateNormalizedJSON(dramas)
+    """
 
 
 if __name__ == "__main__":
