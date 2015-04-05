@@ -2,35 +2,78 @@ MultipleDramas.LineCurveView = function(){
 	var that = {};
 
   var compareSelection = "";
+  var speechDistributionSelection = "";
 
   var init = function(){
     initListener();
   };
 
   var initListener = function(){
-    $("#selection-speech-compare").change(speechSelectionCompareClicked);
+    $("#selection-speech-compare").change(speechSelectionClicked);
+    $("#selection-speech-distribution").change(speechSelectionClicked);
   };
 
-  var speechSelectionCompareClicked = function(){
-    $(that).trigger("SpeechSelectionCompareClicked");
+  var speechSelectionClicked = function(){
+    $(that).trigger("SpeechSelectionClicked");
   };
 
   var renderCurve = function(distribution, catDistribution, authorDistribution){
+    console.log(speechDistributionSelection);
     if(compareSelection == 'Kein Vergleich'){
-      renderCurveNormal(distribution);
+      if(speechDistributionSelection == "Absolut"){
+        renderCurveNormal(distribution, "Absolute Häufigkeit", "absolut");
+      }
+      if(speechDistributionSelection == "Relativ"){
+        var distributionInPercent = distributionToPercent(distribution);
+        renderCurveNormal(distributionInPercent, "Relative Häufigkeit in Prozent", "in Prozent");
+      }
     }
     if(compareSelection == 'Typ'){
-      renderTypeCurve(catDistribution);
+      if(speechDistributionSelection == "Absolut"){
+        renderTypeCurve(catDistribution, "Absolute Häufigkeit");
+      }
+      if(speechDistributionSelection == "Relativ"){
+        var catDisInPercent = distributionToPercent(catDistribution);
+        renderTypeCurve(catDisInPercent, "Relative Häufigkeit in Prozent");
+      }    
     }
     if(compareSelection == 'Autor'){
-      renderTypeCurve(authorDistribution);
+      if(speechDistributionSelection == "Absolut"){
+        renderTypeCurve(authorDistribution, "Absolute Häufigkeit");
+      }
+      if(speechDistributionSelection == "Relativ"){
+        var authorDisInPercent = distributionToPercent(authorDistribution);
+        renderTypeCurve(authorDisInPercent, "Relative Häufigkeit in Prozent");
+      }  
     }
   };
 
-	var renderCurveNormal = function(distribution){
+  var distributionToPercent = function(distribution){
+    var disToPercent = {};
+
+    if(distribution.length === undefined){
+      for(key in distribution){
+        disToPercent[key] = (distribution[key]/distribution.total)*100;
+      }
+    }else{
+      disToPercent = []; 
+      for(var i = 0; i < distribution.length; i++){
+        distributionObject = {};
+
+        for(key in distribution[i]){
+          distributionObject[key] = (distribution[i][key]/distribution[i].total)*100;
+        }
+        distributionObject.type = distribution[i].type;
+        disToPercent.push(distributionObject);
+      }
+    }
+    return disToPercent;
+  };
+
+	var renderCurveNormal = function(distribution, frequencyType, toolExtension){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Replikenlänge in Worten");
-		data.addColumn("number", 'Replikenhäufigkeit');
+		data.addColumn("number", 'Replikenhäufigkeit ' + toolExtension);
 		var array = [];
 		for(var key in distribution){
 			var row = [parseInt(key), distribution[key]];
@@ -45,16 +88,16 @@ MultipleDramas.LineCurveView = function(){
 		  	duration: 1000
 		  },
 		  chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängen, Absolute Häufigkeit',
+          title: 'Replikenlängenverteilung, ' + frequencyType,
           curveType: 'function',
           legend: {
           	position: 'none'
           },
           hAxis : {
-          	title: 'Replikenlänge'
+          	title: 'Replikenlänge in Worten'
           },
           vAxis: {
-          	title: 'Absolute Häufigkeit',
+          	title: frequencyType,
             baseline: 0
           }
         };
@@ -87,7 +130,7 @@ MultipleDramas.LineCurveView = function(){
         dashboard.draw(data);
 	};
 
-  var renderTypeCurve = function(typeDistribution){
+  var renderTypeCurve = function(typeDistribution, frequencyType){
 
     var data = new google.visualization.DataTable();
 
@@ -130,13 +173,13 @@ MultipleDramas.LineCurveView = function(){
         duration: 1000
       },
       chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängen, Absolute Häufigkeit',
+          title: 'Replikenlängen, ' + frequencyType,
           curveType: 'function',
           hAxis : {
-            title: 'Replikenlänge'
+            title: 'Replikenlänge in Worten'
           },
           vAxis: {
-            title: 'Häufigkeit',
+            title: frequencyType,
             baseline: 0
           }
         };
@@ -172,8 +215,13 @@ MultipleDramas.LineCurveView = function(){
     compareSelection = $("#selection-speech-compare").val();  
   };
 
+  var setSpeechDistributionSelection = function(){
+    speechDistributionSelection =  $("#selection-speech-distribution").val();
+  };
+
 	that.renderCurve = renderCurve;
   that.renderTypeCurve = renderTypeCurve;
+  that.setSpeechDistributionSelection = setSpeechDistributionSelection;
   that.init = init;
   that.setSpeechCompareSelection = setSpeechCompareSelection;
 

@@ -34,7 +34,7 @@ MultipleDramas.MultipleDramasController = function(){
 		$(yearView).on("YearSelectionCompareClicked", visuYearChart);
 		$(authorView).on("AuthorSelectionClicked", visuAuthorChart);
 		$(categoryView).on("CategorySelectionClicked", visuCategoryChart);
-		$(lineCurveView).on("SpeechSelectionCompareClicked", visuSpeechChart);
+		$(lineCurveView).on("SpeechSelectionClicked", visuSpeechChart);
 	};
 
 	var visu = function(){
@@ -56,6 +56,8 @@ MultipleDramas.MultipleDramasController = function(){
 		categoryView.renderColumnChart(categoryList);
 
 		lineCurveView.setSpeechCompareSelection();
+		lineCurveView.setSpeechDistributionSelection();
+		
 		lineCurveView.renderCurve(distribution, catDistribution, authorDistribution);
 
 		$("body").fadeIn();
@@ -68,6 +70,7 @@ MultipleDramas.MultipleDramasController = function(){
 		var authorDistribution = multipleDramasModel.getAuthorDistribution();
 
 		lineCurveView.setSpeechCompareSelection();
+		lineCurveView.setSpeechDistributionSelection();
 
 		lineCurveView.renderCurve(distribution, catDistribution, authorDistribution);
 	};
