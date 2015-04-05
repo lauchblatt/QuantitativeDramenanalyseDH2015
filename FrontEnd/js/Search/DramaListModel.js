@@ -21,6 +21,18 @@ Search.DramaListModel = function(){
 		$(that).on("AllDramasRetrieved", filterData);
 	};
 
+	var getJSONDrama = function(drama_id){
+		var drama = null;
+		var refJson = null;
+		refJson = new Firebase("https://katharsis-download.firebaseio.com/" + drama_id);
+		refJson.on("value", function(snapshot) {
+			drama = snapshot.val();
+			$(that).trigger("JSONDramaRetrieved", [drama]);
+		}, function (errorObject) {
+		  console.log("The read failed: " + errorObject.code);
+		});
+	};
+
 	var saveCurrentDrama = function(drama_id, title, author, year){
 		localStorage["drama_id"] = drama_id;
 		localStorage["title"] = title;
@@ -262,6 +274,7 @@ Search.DramaListModel = function(){
 	that.retrieveAllData = retrieveAllData;
 	that.retrieveDramas = retrieveDramas;
 	that.saveCurrentDrama = saveCurrentDrama;
+	that.getJSONDrama = getJSONDrama;
 
 	return that;
 };

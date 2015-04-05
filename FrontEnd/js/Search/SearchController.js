@@ -23,9 +23,24 @@ Search.SearchController = function(){
 		$(dramaListModel).on("DataRetrieved", updateList);
 		$(dramaListModel).on("EmptyTable", emptyTable);
 		$(dramaListModel).on("NoResultsFound", noResultsFound);
+		$(dramaListModel).on("JSONDramaRetrieved", downloadDramaJSON);
 		$(formsView).on("InputCatched", retrieveDramas);
 		$(dramaListView).on("DramaClicked", analyzeDrama);
 		$(dramaListView).on("AnalyseCollection", analyseCollection);
+		$(dramaListView).on("DownloadJSON", startDownloadJSON);
+	};
+
+	var startDownloadJSON = function(event, dramaId){
+		dramaListModel.getJSONDrama(dramaId);
+	};
+
+	var downloadDramaJSON = function(event, dramaJson){
+
+		var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dramaJson));
+		console.log(dramaJson.title);
+
+		$('<a href="data:' + data + '" download="' + dramaJson.title + '.json"></a>')[0].click();
+
 	};
 
 	var analyseCollection = function(event, checkedDramas){

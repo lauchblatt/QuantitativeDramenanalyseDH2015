@@ -4,6 +4,7 @@ Search.DramaListView = function(){
 	var init = function(){
 		setAllSelector();
 		$(".analyse-collection").on("click", analyseCollection);
+		
 	};
 
 	var analyseCollection = function(){
@@ -24,7 +25,6 @@ Search.DramaListView = function(){
 	var selectAll = function(event){
 
 		if($(event.target).prop("checked")){
-			console.log("check");
 			$("td input[type='checkbox']").prop("checked", true);
 		}else{
 			$("td input[type='checkbox']").prop("checked", false);
@@ -90,6 +90,7 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.minimum_length_of_speeches_in_drama));
 		var tdDownload = $("<td>");
 		var spanDownload = $("<span>");
+		spanDownload.on("click", downloadJSON);
 		spanDownload.addClass("glyphicon glyphicon-download");
 		tdDownload.attr("title", "Download JSON");
 		tdDownload.append(spanDownload);
@@ -101,8 +102,13 @@ Search.DramaListView = function(){
 		return row;
 	};
 
+	var downloadJSON = function(event){
+		var dramaId = ($(event.target).parent().parent().attr("drama_id"));
+		$(that).trigger("DownloadJSON", [dramaId]);
+	};
+
 	var dramaClicked = function(event){
-		if($(event.target).is("input")){
+		if($(event.target).is("input") || $(event.target).is("span")){
 			return;
 		}
 		var $row = ($(event.target).parent());
