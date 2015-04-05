@@ -1,10 +1,11 @@
 Speeches.SpeechesModel = function(){
 	var that = {};
 
-	var currentDrama_id = 5;
+	var currentDrama_id = 0;
 	var scenesInfo = [];
 	var dramaInfo = null;
 	var distribution = {};
+	var distributionInPercent = {};
 
 	var init = function(){
 		currentDrama_id = localStorage["drama_id"];
@@ -16,9 +17,18 @@ Speeches.SpeechesModel = function(){
 	var continueInit = function(){
 		if(scenesInfo.length > 0  && dramaInfo != null){
 			calculateDistribution();
+			calculateDistributionInPercent();
 			$(that).trigger("InfoFinished");
 		}
 		
+	};
+
+	var calculateDistributionInPercent = function(){
+		var total = 0;
+		for(key in distribution){
+			distributionInPercent[key] = (distribution[key]/dramaInfo.number_of_speeches_in_drama) * 100;
+			total = distributionInPercent[key] + total;
+		}
 	};
 
 	var calculateDistribution = function(){
@@ -36,7 +46,6 @@ Speeches.SpeechesModel = function(){
 				}
 			}
 		}
-		console.log(distribution);
 	};
 
 	var initInfo = function(name){
@@ -70,10 +79,15 @@ Speeches.SpeechesModel = function(){
 		return distribution;
 	};
 
+	var getDistributionInPercent = function(){
+		return distributionInPercent;
+	};
+
 	that.init = init;
 	that.getDramaInfo = getDramaInfo;
 	that.getScenesInfo = getScenesInfo;
 	that.getDistribution = getDistribution;
+	that.getDistributionInPercent = getDistributionInPercent;
 
 	return that;
 };

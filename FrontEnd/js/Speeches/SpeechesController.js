@@ -9,6 +9,7 @@ Speeches.SpeechesController = function(){
 		speechesModel = Speeches.SpeechesModel();
 		speechesDistributionView = Speeches.SpeechesDistributionView();
 		speechesLineView = Speeches.SpeechesLineView();
+		speechesLineView.init();
 		initGoogleCharts();
 
 		initListener();
@@ -18,14 +19,31 @@ Speeches.SpeechesController = function(){
 
 	var initListener = function(){
 		$(speechesModel).on("InfoFinished", visu);
+		$(speechesLineView).on("SelectionClicked", visuCurve);
+	};
+
+	var visuCurve = function(){
+		speechesLineView.setSelection();
+		var selection = speechesLineView.getSelection();
+		var distribution = null;
+		if(selection == "Absolut"){
+			distribution = speechesModel.getDistribution();
+			speechesLineView.renderAbsolute(distribution)
+		}
+		if(selection == "Relativ"){
+			distribution = speechesModel.getDistributionInPercent();
+			speechesLineView.renderRelative(distribution)
+		}
+
+		
 	};
 
 	var visu = function(){
 		var scenesInfo = speechesModel.getScenesInfo();
 		speechesDistributionView.render(scenesInfo);
 
-		var distribution = speechesModel.getDistribution();
-		speechesLineView.render(distribution);
+		var distribution = speechesModel.getDistributionInPercent();
+		speechesLineView.renderRelative(distribution);
 
 		$("#dramaTitle").text(localStorage["title"] + " (" + localStorage["year"] + ")");
 		$("#dramaAuthor").text(localStorage["author"]);

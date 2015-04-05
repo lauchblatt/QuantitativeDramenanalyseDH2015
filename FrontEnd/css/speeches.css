@@ -27,3 +27,7 @@ h3 {
 .google-visualization-controls-slider-horizontal{
 	width: 600px !important;
 }
+
+.dropdown-form {
+	width: 20%;
+}
