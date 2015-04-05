@@ -8,6 +8,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	var chosenScenes = [];
 	var authorList = [];
 	var categoryList = [];
+
 	var distribution = {};
 	var authorDistribution = [];
 	var categoryDistribution = [];
@@ -54,6 +55,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	};
 
 	var calculateSpeechDistribution = function(){
+		var total = 0;
 		
 		for(drama = 0; drama < chosenScenes.length; drama++){
 			for(act = 0; act < chosenScenes[drama].length; act++){
@@ -63,16 +65,17 @@ MultipleDramas.MultipleDramasModel = function(){
 								var currentspeechLength = chosenScenes[drama][act][scene].speeches[speech].length;
 								if(distribution[currentspeechLength] === undefined){
 									distribution[currentspeechLength] = 1;
+									total++;
 								}else{
 									distribution[currentspeechLength] = distribution[currentspeechLength] + 1;
+									total++;
 								}
 						}	
 					}
 				}
 			}
 		}
-		console.log("normale verteilung");
-		console.log(distribution);
+		distribution.total = total;
 		
 	};
 
@@ -81,6 +84,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		var distributionsList = [];
 		for(var type = 0; type < filteredList.length; type++){
 			var distributionObject = {};
+			var total = 0;
 
 			if(filteredList[type].type !== undefined){
 				distributionObject.type = filteredList[type].type;
@@ -97,18 +101,19 @@ MultipleDramas.MultipleDramasModel = function(){
 								var currentspeechLength = filteredList[type].scenes[drama][act][scene].speeches[speech].length;
 								if(distributionObject[currentspeechLength] === undefined){
 									distributionObject[currentspeechLength] = 1;
+									total++;
 								}else{
 									distributionObject[currentspeechLength] = distributionObject[currentspeechLength] + 1;
+									total++;
 								}
 							}
 						}
 					}
 				}
 			}
+			distributionObject.total = total;
 			distributionsList.push(distributionObject);
 		}
-		console.log("gefilterte Distribution");
-		console.log(distributionsList);
 		return distributionsList;
 	};
 
