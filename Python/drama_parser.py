@@ -154,7 +154,8 @@ class DramaParser:
             elif real_name and real_name[-1] == ".":
                 real_name = real_name[:-1]
 
-            castgroup.append(real_name)
+            if real_name: 
+                castgroup.append(real_name)
 
         return castgroup
 
