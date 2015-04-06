@@ -15,7 +15,7 @@ Speakers.SpeakersController = function(){
 		speakerRelationsView = Speakers.SpeakerRelationsView();
 
 		speakersModel.init();
-		speakersTableView.init();
+		
 		speakersBarChartView.init();
 		speakerRelationsView.init();
 		initGoogleCharts();
@@ -41,7 +41,9 @@ Speakers.SpeakersController = function(){
 
 	var visu = function(){
 		var speakersInfo = speakersModel.getSpeakersInfo();
+		var dramaInfo = speakersModel.getDramaInfo();
 
+		speakersTableView.init(dramaInfo);
 		speakersTableView.renderTable(speakersInfo);
 
 		speechesDominanceView.renderPieChart(speakersInfo);

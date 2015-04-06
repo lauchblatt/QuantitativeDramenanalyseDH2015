@@ -8,7 +8,8 @@ Speeches.SpeechesModel = function(){
 	var distributionInPercent = {};
 
 	var init = function(){
-		currentDrama_id = localStorage["drama_id"];
+		var params = window.location.search
+		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 		$(that).on("InitFinished", continueInit);
 		initInfo("scenes_data");
 		initInfo("drama_data");

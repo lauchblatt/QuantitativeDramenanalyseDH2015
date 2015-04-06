@@ -52,9 +52,9 @@ Search.SearchController = function(){
 	};
 
 	var analyzeDrama = function(event, drama_id, title, author, year){
-		dramaListModel.saveCurrentDrama(drama_id, title, author, year);
+
 		//Probably not working in every browser
-		window.open("drama.html", "_blank");
+		window.open("drama.html?drama_id=" + drama_id, "_blank");
 	};
 
 	var updateList = function(event, listItem){

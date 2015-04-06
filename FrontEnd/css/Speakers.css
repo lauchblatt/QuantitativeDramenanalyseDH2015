@@ -12,6 +12,10 @@ th {
 	vertical-align: middle !important;
 }
 
+th:hover {
+	cursor: pointer;
+}
+
 #speeches-dominance {
 	margin-left: auto;
 	margin-right: auto;

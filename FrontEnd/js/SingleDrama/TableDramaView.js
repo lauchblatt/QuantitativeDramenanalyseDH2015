@@ -1,9 +1,9 @@
 SingleDrama.TableDramaView = function(){
 	var that = {};
 
-	var init = function(){
-		$("#dramaTitle").text(localStorage["title"] + " (" + localStorage["year"] + ")");
-		$("#dramaAuthor").text(localStorage["author"]);
+	var init = function(dramaInfo){
+		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
+		$("#dramaAuthor").text(dramaInfo.author);
 	};
 
 	var renderTable = function(actInfo, scenesInfo){

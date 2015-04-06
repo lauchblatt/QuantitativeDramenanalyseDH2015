@@ -2,8 +2,8 @@ Matrix.MatrixView = function(){
 	var that = {};
 
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
-		$("#dramaTitle").text(localStorage["title"] + " (" + localStorage["year"] + ")");
-		$("#dramaAuthor").text(localStorage["author"]);
+		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
+		$("#dramaAuthor").text(dramaInfo.author);
 		renderheadline(scenesInfo);
 		renderSpeakerColumn(dramaInfo);
 		fillTable(dramaInfo, scenesInfo);

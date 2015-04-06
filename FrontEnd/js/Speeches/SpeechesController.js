@@ -40,13 +40,14 @@ Speeches.SpeechesController = function(){
 
 	var visu = function(){
 		var scenesInfo = speechesModel.getScenesInfo();
+		var dramaInfo = speechesModel.getDramaInfo();
 		speechesDistributionView.render(scenesInfo);
 
 		var distribution = speechesModel.getDistributionInPercent();
 		speechesLineView.renderRelative(distribution);
 
-		$("#dramaTitle").text(localStorage["title"] + " (" + localStorage["year"] + ")");
-		$("#dramaAuthor").text(localStorage["author"]);
+		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
+		$("#dramaAuthor").text(dramaInfo.author);
 
 		$(".container").fadeIn("slow");
 	};

@@ -1,19 +1,22 @@
 SingleDrama.DramaModel = function(){
 	var that = {};
 	var currentDrama_id = 0;
+	var dramaInfo = null;
 	var actsInfo = [];
 	var scenesInfo = [];
 	var firebaseRef = null;
 
 	var init = function(){
-		currentDrama_id = localStorage["drama_id"];
+		var params = window.location.search
+		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 		$(that).on("InitFinished", continueInit);
+		initInfo("drama_data");
 		initInfo("acts_data");
 		initInfo("scenes_data");
 	};
 
 	var continueInit = function(){
-		if(scenesInfo.length > 0 && actsInfo.length > 0){
+		if(scenesInfo.length > 0 && actsInfo.length > 0 && dramaInfo != null){
 			calculateNumberOfScenesForAct();
 			calculateNumberOfSpeakersForScene();
 			$(that).trigger("InfoFinished");
@@ -49,6 +52,9 @@ SingleDrama.DramaModel = function(){
 				case "acts_data":
 					actsInfo = snapshot.val();
 					break;
+				case "drama_data":
+					dramaInfo = snapshot.val();
+					break;
 				default:
 					console.log("Something went wrong.");
 			}
@@ -66,9 +72,14 @@ SingleDrama.DramaModel = function(){
 		return scenesInfo;
 	};
 
+	var getDramaInfo = function(){
+		return dramaInfo;
+	};
+
 	that.init = init;
 	that.getActInfo = getActInfo;
 	that.getScenesInfo = getScenesInfo;
+	that.getDramaInfo = getDramaInfo;
 
 	return that;
 };

@@ -1,37 +1,28 @@
 Drama.DramaView = function(){
 	var that = {};
+	var currentDrama_id = 0;
 
 	var init = function(){
-		initButtons();
+		initId();
+		initLinks();
+	};
+
+	var initId = function(){
+		var params = window.location.search
+		currentDrama_id = (params.substring(params.indexOf("=") + 1));
+	};
+
+	var initLinks = function(){
+		$("#to_matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);
+		$("#to_dramaAnalysis").attr("href", "singledrama.html?drama_id=" + currentDrama_id);
+		$("#to_speakerAnalysis").attr("href", "speakers.html?drama_id=" + currentDrama_id);
+		$("#to_speechAnalysis").attr("href", "speeches.html?drama_id=" + currentDrama_id);
 	};
 
 	var renderView = function(dramaInfo){
-		$("#title").text(dramaInfo.title + " (" + dramaInfo.year + ")");
-		$("#author").text(dramaInfo.author);
+		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
+		$("#dramaAuthor").text(dramaInfo.author);
 		$(".container").fadeIn("slow");
-	};
-
-	var initButtons = function(){
-		$("#configuration-matrix").on("click", toConfigMatrix);
-		$("#drama-analysis").on("click", toDramaAnalyis);
-		$("#speaker-analysis").on("click", toSpeakerAnalysis);
-		$("#speeches-analysis").on("click", toSpeechesAnalysis);
-	};
-
-	var toConfigMatrix = function(){
-		location.assign("matrix.html");
-	};
-
-	var toDramaAnalyis = function(){
-		location.assign("singledrama.html");
-	};
-
-	var toSpeakerAnalysis = function(){
-		location.assign("speakers.html");
-	};
-
-	var toSpeechesAnalysis = function(){
-		location.assign("speeches.html");
 	};
 
 	that.renderView = renderView;

@@ -6,7 +6,8 @@ Speakers.SpeakersModel = function(){
 	var dramaInfo = null;
 
 	var init = function(){
-		currentDrama_id = localStorage["drama_id"];
+		var params = window.location.search
+		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 		$(that).on("InitFinished", continueInit);
 		initInfo('speakers_data');
 		initInfo("scenes_data");
@@ -91,8 +92,13 @@ Speakers.SpeakersModel = function(){
 		return speakersInfo;
 	};
 
+	var getDramaInfo = function(){
+		return dramaInfo;
+	};
+
 	that.init = init;
 	that.getSpeakersInfo = getSpeakersInfo;
+	that.getDramaInfo = getDramaInfo;
 
 	return that;
 };

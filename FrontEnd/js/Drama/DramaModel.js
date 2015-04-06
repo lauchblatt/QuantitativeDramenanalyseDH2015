@@ -4,8 +4,8 @@ Drama.DramaModel = function(){
 	var dramaInfo = null;
 
 	var init = function(){
-		currentDrama_id = localStorage["drama_id"];
-		console.log(currentDrama_id);
+		var params = window.location.search
+		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 		initInfo("drama_data");
 	};
 

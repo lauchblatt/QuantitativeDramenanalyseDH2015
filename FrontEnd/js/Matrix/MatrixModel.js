@@ -18,7 +18,8 @@ Matrix.MatrixModel = function(){
 	var matrix = [];
 
 	var init = function(){
-		currentDrama_id = localStorage["drama_id"];
+		var params = window.location.search
+		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 		$(that).on("InitFinished", continueInit);
 		initInfo("drama_data");
 		initInfo("scenes_data");
@@ -132,7 +133,8 @@ Matrix.MatrixModel = function(){
 	};
 
 	var checkIfSpeakerInList = function(speaker, speakerList){
-		if(speakerList === undefined){
+		console.log(speakerList);
+		if(speakerList === undefined || speakerList == 0){
 			return false;
 		}
 		if (speakerList.indexOf(speaker) > -1) {

@@ -11,7 +11,6 @@ SingleDrama.DramaController = function(){
 		tableDramaView = SingleDrama.TableDramaView();
 		barChartDramaView = SingleDrama.BarChartDramaView();
 
-		tableDramaView.init();
 		dramaModel.init();
 		barChartDramaView.init();
 		initGoogleCharts();
@@ -39,7 +38,9 @@ SingleDrama.DramaController = function(){
 	var visu = function(event){
 		var actInfo = dramaModel.getActInfo();
 		var scenesInfo = dramaModel.getScenesInfo();
+		var dramaInfo = dramaModel.getDramaInfo();
 
+		tableDramaView.init(dramaInfo);
 		tableDramaView.renderTable(actInfo, scenesInfo);
 
 		barChartDramaView.setActSelection();
