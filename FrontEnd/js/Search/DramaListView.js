@@ -89,6 +89,7 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.median_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.maximum_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.minimum_length_of_speeches_in_drama));
+		row.attr("title", "Zur Einzelanalyse...");
 		var tdDownload = $("<td>");
 		var spanDownload = $("<span>");
 		spanDownload.on("click", downloadJSON);
