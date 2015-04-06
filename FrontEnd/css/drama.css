@@ -6,3 +6,7 @@
 	margin-left: 20%;
 	margin-right: auto;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
