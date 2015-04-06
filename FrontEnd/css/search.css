@@ -10,7 +10,6 @@
 .analyse-collection {
 	float: left;
 	display: block;
-	width: 100%;
 }
 
 .jumbotron {
@@ -83,13 +82,29 @@ tr {
 	background-color: #738CFF !important;
 }
 
-tr:hover {
+tbody tr:hover {
 	background-color: #00BFFF !important;
+	cursor: pointer;
+}
+
+tr.header-row:hover {
 	cursor: pointer;
 }
 
 .glyphicon-download-alt {
 	font-size: 1.5em;
+}
+
+.glyphicon-triangle-bottom {
+	font-size: 1.5em;
+	display: block;
+	float: right;
+}
+
+.glyphicon-triangle-top {
+	font-size: 1.5em;
+	display: block;
+	float: right;
 }
 
 .glyphicon-download {
@@ -112,12 +127,34 @@ tr:hover {
 	padding: 1%;
 	display: inline-block;
 	margin-bottom: 5%;
-	width: 100%;
+	width: 90%;
+}
+
+.glyphicon-sort {
+	float: right !important;
+}
+
+#info-overall {
+	float: right;
+	font-size: 2em;
+}
+
+#info-compare-div {
+	width: 30%;
+	display: inline-block;
+}
+
+#info-compare {
+	float: left;
+	display: none;
+	font-size: 2em;
+	margin-left: 4%;
+
 }
 
 .search-option {
 	float: left;
-	width: 25%;
+	width: 28%;
 	height: 25%;
 	margin-left: 3% !important;
 }
@@ -146,6 +183,7 @@ tr:hover {
 #more-button {
 	width: 30%;
 	margin-bottom: 1%;
+	vertical-align: bottom !important;
 }
 
 #less-button {
@@ -164,8 +202,21 @@ tr:hover {
 	display: inline-block;
 }
 
-.glyphicon-refresh-animate {
+#loading-circle-button {
 	display: none;
+}
+
+#loading-spinner {
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+
+#loading-spinner-img{
+	font-size: 5em;
+}
+
+.glyphicon-refresh-animate {
     -animation: spin .7s infinite linear;
     -webkit-animation: spin2 .7s infinite linear;
 }

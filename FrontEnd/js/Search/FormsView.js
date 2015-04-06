@@ -11,7 +11,24 @@ Search.FormsView = function(){
 				setFormInput();
 			}
 		});
+		initTooltips();
 		//setFormInput();
+	};
+
+	var initTooltips = function(){
+		var tooltipOverall = $("#info-overall");
+		tooltipOverall.tooltipster({
+					content: 'blablabla',
+					position: "right",
+					trigger: 'hover'
+				});
+
+		var tooltipOverall = $("#info-compare");
+		tooltipOverall.tooltipster({
+					content: 'blablabla',
+					position: "right",
+					trigger: 'hover'
+				});
 	};
 
 	var showLessRange = function(){
@@ -29,7 +46,7 @@ Search.FormsView = function(){
 	var startLoadingAnimation = function(){
 		$("#loading-text-button").text("Suche...");
 		$("#loading-circle-button").css("display", "inline-block");
-		console.log("loading Animation");
+		$("#loading-spinner").css("display", "block");
 	};
 
 	var setFormInput = function(){

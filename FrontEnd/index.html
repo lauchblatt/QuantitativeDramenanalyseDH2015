@@ -6,6 +6,7 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Katharsis</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
 		<link href="css/search.css" rel="stylesheet">
 
 	</head>
@@ -135,10 +136,14 @@
 				
 				<div id="buttons-div">
 					<div>
-					<button type="button" class="btn btn-default btn-lg" id="more-button">Weitere Suchoptionen</button>
+						<button type="button" class="btn btn-default btn-lg" id="more-button">Weitere Suchoptionen
+							<div class="glyphicon glyphicon-triangle-bottom"></div>
+						</button>
 					</div>
 					<div>
-					<button type="button" class="btn btn-default btn-lg" id="less-button">Weniger Suchoptionen</button>
+						<button type="button" class="btn btn-default btn-lg" id="less-button">Weniger Suchoptionen
+							<div class="glyphicon glyphicon-triangle-top"></div>
+						</button>
 					</div>
 					<div>
 					<button type="button" class="btn btn-primary btn-lg" id="search-button">
@@ -152,28 +157,35 @@
 			
 			</div>
 
-			<a target="_blank" href="multipledramas.html"><p class="analyse-collection">
-				<button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-ok"></span><span>Sammlung analysieren</span></button>
-			</p></a>
+			<div id="info-overall" class="glyphicon glyphicon-info-sign">
+			</div>
+
+			<div id="info-compare-div">
+				<a target="_blank" href="multipledramas.html"><p class="analyse-collection">
+					<button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-ok"></span><span>Sammlung analysieren</span></button>
+				</p></a>
+				<div id="info-compare" class="glyphicon glyphicon-info-sign">
+				</div>
+			</div>
 
 			<table class="table table-striped" id="drama-table">
 				<thead>
-					<tr>
+					<tr class="header-row">
 						<th class="selection-box"><input id="all-selector" type="checkbox" checked></th>
-					    <th>Titel</th> 
-					    <th>Autor</th>
-					    <th>Typ</th>
-					    <th>Jahr</th>
-					    <th>Akte</th>
-					    <th>Szenen</th>
-					    <th>Sprecher</th>
-					    <th>Konfigurationsdichte</th>
-					    <th>Zahl der Repliken</th>
-					    <th>durchschnittliche Replikenlänge</th>
-					    <th>Median der Replikenlängen</th>
-					    <th>längste Replik</th>
-					    <th>kürzeste Replik</th>
-					    <th><span class="glyphicon glyphicon-download-alt" title="Download CSV"></span></th>
+					    <th class="table-header-col">Titel</span></th> 
+					    <th class="table-header-col">Autor</th>
+					    <th class="table-header-col">Typ</th>
+					    <th class="table-header-col">Jahr</th>
+					    <th class="table-header-col">Akte</th>
+					    <th class="table-header-col">Szenen</th>
+					    <th class="table-header-col">Sprecher</th>
+					    <th class="table-header-col">Konfigurationsdichte</th>
+					    <th class="table-header-col">Zahl der Repliken</th>
+					    <th class="table-header-col">durchschnittliche Replikenlänge</th>
+					    <th class="table-header-col">Median der Replikenlängen</th>
+					    <th class="table-header-col">längste Replik</th>
+					    <th class="table-header-col">kürzeste Replik</th>
+					    <th><span title="Download JSON">JSON</span></th>
 					  </tr>
 				</thead>
 
@@ -181,14 +193,20 @@
 				</tbody>
 			</table>
 			<a target="_blank" href="multipledramas.html"><p class="analyse-collection">
-				<button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-ok"></span><span>Sammlung analysieren</span></button>
+				<button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-ok" ></span><span>Sammlung analysieren</span></button>
 			</p></a>
+
 			<p id="no-results">Keine Ergebnisse gefunden</p>
+			<p id="loading-spinner">
+				<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate loading-button" id="loading-spinner-img">
+				</span>
+			</p>
 		</div>
 
 		<script src="js/libs/jquery-1.11.2.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltipster.js"></script>
 
 		<script type="text/javascript" src="js/Search/Search.js"></script>
 		<script type="text/javascript" src="js/Search/DramaListModel.js"></script>
