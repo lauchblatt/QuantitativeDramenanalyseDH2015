@@ -253,10 +253,10 @@ class SpeakerModel:
         self._independent = []
         # self._repetitive_config = None
 
-        self._speechesLength_avg = None
-        self._speechesLength_med = None
-        self._speechesLength_min = None
-        self._speechesLength_max = None
+        self._speechesLength_avg = 0
+        self._speechesLength_med = 0
+        self._speechesLength_min = 0
+        self._speechesLength_max = 0
 
     def calc_speeches_statistics(self):
         speeches_lengths = []
