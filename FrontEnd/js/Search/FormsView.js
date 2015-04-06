@@ -4,21 +4,36 @@ Search.FormsView = function(){
 	var init = function(){
 		$("#search-button").on("click", setFormInput);
 		$("#more-button").on("click", showMoreRange);
+		$("#less-button").on("click", showLessRange);
 		$("body").on("keypress", function(event){
 			var key = event.which || event.keyCode;
 			if(key == 13){
 				setFormInput();
 			}
 		});
-		setFormInput();
+		//setFormInput();
+	};
+
+	var showLessRange = function(){
+		$("#more-button").fadeIn();
+		$("#less-button").css("display", "none");
+		$(".more-range").fadeOut();
 	};
 
 	var showMoreRange = function(){
 		$("#more-button").css("display", "none");
-		$(".more-range").fadeIn("slow");
+		$("#less-button").fadeIn();
+		$(".more-range").fadeIn();
+	};
+
+	var startLoadingAnimation = function(){
+		$("#loading-text-button").text("Suche...");
+		$("#loading-circle-button").css("display", "inline-block");
+		console.log("loading Animation");
 	};
 
 	var setFormInput = function(){
+		startLoadingAnimation();
 		var input = {}
 
 		var title = $("#input-title").val();

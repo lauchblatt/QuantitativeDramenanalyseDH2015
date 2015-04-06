@@ -199,8 +199,12 @@ Search.DramaListModel = function(){
 			}
 			$("table").fadeIn(1000);
 			$(".analyse-collection").fadeIn(1000);
+			$("#loading-text-button").text("Suchen");
+			$("#loading-circle-button").css("display", "none");
 		}else{
 			$(that).trigger("NoResultsFound");
+			$("#loading-text-button").text("Suchen");
+			$("#loading-circle-button").css("display", "none");
 		}	
 	};
 
