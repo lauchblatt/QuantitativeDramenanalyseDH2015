@@ -34,9 +34,17 @@ class DramaParser:
         drama_model._speakers = self.get_all_speakers(xml_root)
         drama_model._castgroup = self.get_speakers_from_castgroup(xml_root)
 
+        self.calc_statistics(drama_model)
+
+        return drama_model
+
+    # calculates statistics for the whole drama
+    def calc_statistics(self, drama_model):
         drama_model.calc_config_density()
         drama_model.calc_config_matrix()
         drama_model.calc_speaker_relations()
+
+        # speech statistics
         drama_model.calc_speeches_statistics()
 
         for act in drama_model._acts:
@@ -49,8 +57,6 @@ class DramaParser:
             speaker.calc_speeches_statistics()
 
         drama_model.set_speaker_count()
-
-        return drama_model
 
     # returns the xml root for the file
     def get_xml_root(self, filepath):
@@ -77,7 +83,6 @@ class DramaParser:
         if "notBefore" in date:
             date['when'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
             return date
-
 
         date['when'] = 'unknown'
 
@@ -276,17 +281,15 @@ class DramaParser:
     def speaker_mapping(self, xml_root):
         castgroup = self.get_speakers_from_castgroup(xml_root)
         all_speakers = self.get_all_speakers(xml_root, False)
-        #print (castgroup)
-        #print (all_speakers)
 
-        # stopwortliste!!!!!!
+        # Stopwortliste
         # compare lists
 
         #for castgroup_member in castgroup:
             #for speaker in all_speakers:
 
 
-        # Ideen fürs Mapping:
+        # Ideen für das Mapping:
         # wenn nur eine Person pro Tag drinsteht, ein Name vor dem Komma, mehrere nach dem Komma -> Stoppwortliste
         # 'gemm_hausvater' überprüfen, ob mehrere Punkte genutzt werden und einfach alles ignorieren?
         # 'zwsch_abbelino': mehreren Personen eine Bezeichnung zugewiesen, zB Diener, 

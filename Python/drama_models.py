@@ -16,39 +16,41 @@ class DramaModel:
         # Zur Hilfe alle Speakers speichern, damit sie ueberhaupt irgendwo sind
         self._speakers = None
         self._castgroup = None
-        self._speakerCountCast = None
-        self._speakerCountAll = None
+        self._speakerCountCast = 0
+        self._speakerCountAll = 0
 
         # Kann man berechnen innerhalb der Klasse ueber Konfigurationen der Akte
         self._configuration_matrix = None
         self._configuration_density = None
 
-        self._speechesLength_avg = None
-        self._speechesLength_max = None
-        self._speechesLength_min = None
-        self._speechesLength_med = None
+        self._speechesLength_avg = 0
+        self._speechesLength_max = 0
+        self._speechesLength_min = 0
+        self._speechesLength_med = 0
         
     # calculates the configuration matrix
     def calc_config_matrix (self):
         configuration_matrix = []
         firstRow = ["Speaker/Configuration"]
-        firstRow.extend(self.getAllConfigurationNames())
+        firstRow.extend(self.get_all_config_names())
         configuration_matrix.append(firstRow)
 
         for speaker in self._speakers:
             nextRow = [speaker._name]
-            nextRow.extend(self.getMatrixRow(speaker))
+            nextRow.extend(self.get_matrix_row(speaker))
             configuration_matrix.append(nextRow)
         self._configuration_matrix = configuration_matrix
 
-    def getAllConfigurationNames(self):
+    # extracts all names for configurations
+    def get_all_config_names(self):
         configurationNames = []
         for act in self._acts:
             for configuration in act._configurations:
                 configurationNames.append(configuration._name)
         return configurationNames
 
-    def getMatrixRow(self, speaker):
+    # create a row for the configuration matrix
+    def get_matrix_row(self, speaker):
         config_bin = []
         for act in self._acts:
             for configuration in act._configurations:
@@ -87,7 +89,7 @@ class DramaModel:
                 speaker_names.append(speaker._name)
         return speaker_names
 
-    # claculates concomitant speakers
+    # calculates concomitant speakers
     def get_concomitant_speakers (self, speaker):
         concomitant_speakers = self.get_list_of_speaker_names(speaker)
         for act in self._acts:
@@ -96,7 +98,7 @@ class DramaModel:
                     concomitant_speakers = list(set(concomitant_speakers).intersection(configuration._appearing_speakers))
         return concomitant_speakers
 
-    # # claculates alternative speakers
+    # calculates alternative speakers
     def get_alternative_speakers(self, speaker):
         alternative_speakers = self.get_list_of_speaker_names(speaker)
         for act in self._acts:
@@ -105,7 +107,7 @@ class DramaModel:
                     alternative_speakers = list(set(alternative_speakers) - set(configuration._appearing_speakers))
         return alternative_speakers
 
-    # claculates dominant speakers
+    # calculates dominant speakers
     def check_dominating_status(self, current_speaker):
         for speaker in self._speakers:
             if speaker is current_speaker:
@@ -116,7 +118,7 @@ class DramaModel:
                     speaker._dominates.append(current_speaker._name)
                     current_speaker._concomitant.remove(speaker._name)
 
-    # claculates independent speakers
+    # calculates independent speakers
     def get_independent_speakers(self, speaker):
         independent_speakers = self.get_list_of_speaker_names(speaker)
         independent_speakers = list(set(independent_speakers) - set(speaker._concomitant))
@@ -125,14 +127,14 @@ class DramaModel:
         independent_speakers = list(set(independent_speakers) - set(speaker._gets_dominated_by))
         return independent_speakers
 
+    # returns all speeches of the whole drama
     def get_speeches_drama(self):
         speeches_in_drama = []
         for act in self._acts:
-            for configuration in act._configurations:
-                for speeches in configuration._speeches:
-                    speeches_in_drama.append(speeches)
+            speeches_in_drama.extend(act.get_speeches_act())
         return speeches_in_drama
 
+    # calculates the speech statistics for the whole drama
     def calc_speeches_statistics(self):
         speeches = self.get_speeches_drama()
         speeches_lengths = []
@@ -144,6 +146,7 @@ class DramaModel:
         self._speechesLength_min = custom_min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
 
+    # assigns speeches to speakers
     def add_speeches_to_speakers(self):
         speeches = self.get_speeches_drama()
         for speech in speeches:
@@ -152,26 +155,26 @@ class DramaModel:
                     speaker._speeches.append(speech)
                     break
 
+    # calculates and sets the speaker counts
     def set_speaker_count(self):
         self._speakerCountCast = len(self._castgroup)
         self._speakerCountAll = len(self._speakers)
+
 
 # model for acts
 class ActModel:
 
     def __init__ (self):
         self._number = None
-        #Akt besteht aus Konfigurationen
         self._configurations = None
-
-        # um spaeter leichter Beziehungen zu berechnen, als namen
         self._appearing_speakers = []
 
-        self._speechesLength_avg = None
-        self._speechesLength_max = None
-        self._speechesLength_min = None
-        self._speechesLength_med = None        
+        self._speechesLength_avg = 0
+        self._speechesLength_max = 0
+        self._speechesLength_min = 0
+        self._speechesLength_med = 0       
 
+    # returns all speeches for the act
     def get_speeches_act(self):
         speeches_in_act = []
         for configuration in self._configurations:
@@ -179,6 +182,7 @@ class ActModel:
                 speeches_in_act.append(speeches)
         return speeches_in_act
 
+    # calculates speech statistics for the act
     def calc_speeches_statistics(self):
         speeches = self.get_speeches_act()
         speeches_lengths = []
@@ -190,28 +194,28 @@ class ActModel:
         self._speechesLength_min = custom_min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
 
+    # generates the appearing speakers list
     def set_appearing_speakers(self):
         for configuration in self._configurations:
             for speaker in configuration._appearing_speakers:
                 if speaker not in self._appearing_speakers:
                     self._appearing_speakers.append(speaker)
 
+
 # model for configurations
 class ConfigurationModel:
     def __init__ (self):
-        #Waere vielleicht nicht schlecht den Namen, also 1.Akt, 1.Szene zu speichern
         self._name = None
         self._number = None
-        #Konfiguration besteht aus Repliken
         self._speeches = None
-        # um spaeter leichter Beziehungen zu berechnen, als namen
         self._appearing_speakers = None
 
-        self._speechesLength_avg = None
-        self._speechesLength_max = None
-        self._speechesLength_min = None
-        self._speechesLength_med = None
+        self._speechesLength_avg = 0
+        self._speechesLength_max = 0
+        self._speechesLength_min = 0
+        self._speechesLength_med = 0
 
+    # calculates speech statistics for configuration
     def calc_speeches_statistics(self):
         speeches = self._speeches
         speeches_lengths = []
@@ -223,11 +227,7 @@ class ConfigurationModel:
             self._speechesLength_max = custom_max(speeches_lengths)
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
-        else:
-            self._speechesLength_avg = 0
-            self._speechesLength_max = 0
-            self._speechesLength_min = 0
-            self._speechesLength_med = 0
+
 
 # model for speech
 class SpeechModel:
@@ -235,7 +235,6 @@ class SpeechModel:
     def __init__ (self):
         self._id = None
         self._length = None
-        #Eine Replik hat einen zugewiesenen Speaker, Name des Speakers speichern
         self._speaker = None
 
 
@@ -258,6 +257,7 @@ class SpeakerModel:
         self._speechesLength_min = 0
         self._speechesLength_max = 0
 
+    # calculates speech statistics for speaker
     def calc_speeches_statistics(self):
         speeches_lengths = []
         for speeches in self._speeches:
@@ -268,11 +268,5 @@ class SpeakerModel:
             self._speechesLength_max = custom_max(speeches_lengths)
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
-        """
-        print(self._name)
-        print(self._speechesLength_avg)
-        print(self._speechesLength_max)
-        print(self._speechesLength_min)
-        print(self._speechesLength_med)
-        """
 
+            

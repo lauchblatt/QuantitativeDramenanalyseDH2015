@@ -7,7 +7,7 @@ from drama_output import *
 def main():
     debug = True
 
-    #to generate one json-file
+    # used to generate one JSON file
     """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/weis_masaniello_t.xml")
@@ -15,12 +15,13 @@ def main():
     parser.writeJSON(drama_data)
     """
 
-    #to generate a json-file of all dramas
+    # used to generate a JSON file of all dramas
     parser = DramaParser()
     output = DramaOutput()
     dramas = []
     dramasForDenormalizing = []
 
+    # if debug mode is true, no exception will be catched
     if debug:
 
         for filename in os.listdir("../Korpus"):
