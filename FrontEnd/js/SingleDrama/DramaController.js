@@ -16,6 +16,7 @@ SingleDrama.DramaController = function(){
 		initGoogleCharts();
 
 		initListener();
+		initLinks();
 
 	};
 

@@ -7,6 +7,10 @@ td {
 	vertical-align: middle !important;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
 th {
 	text-align: center;
 	vertical-align: middle !important;
@@ -65,7 +69,7 @@ h3 {
 }
 
 span {
-	display: block !important;
+	display: block;
 }
 
 .relationbox {

@@ -6,6 +6,10 @@ h3 {
 	margin-top: 5%;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
 .png-download {
 	float: right;
 }

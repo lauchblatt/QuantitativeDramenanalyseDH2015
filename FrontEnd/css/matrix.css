@@ -3,6 +3,10 @@
 	margin-right: 5% !important;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
 .insideLeft {
 	float: left;
 }

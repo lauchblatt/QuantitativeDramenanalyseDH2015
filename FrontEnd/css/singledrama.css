@@ -7,6 +7,10 @@ th {
 	display: none;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
 .png-download {
 	float: right;
 }
