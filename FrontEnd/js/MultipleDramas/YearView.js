@@ -202,18 +202,39 @@ MultipleDramas.YearView = function(){
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 
 		var array = [];
+		var hasComedy = false;
+		var hasPageant = false;
+		var hasTragedy = false;
+
+		var trendlinesObj = {};
+		var trendlineComedy = {tooltip: false, type: 'polynomial', color: 'blue', lineWidth: 3, opacity: 0.3, showR2: false, visibleInLegend: false};
+		var trendlinePageant = {tooltip: false, type: 'polynomial', color: 'red', lineWidth: 3, opacity: 0.3, showR2: false, visibleInLegend: false};
+		var trendlineTragedy = {tooltip: false, type: 'polynomial', color: 'green', lineWidth: 3, opacity: 0.3, showR2: false, visibleInLegend: false};
+		console.log(trendlineComedy);
 		for(i = 0; i < dramas.length; i++){
 			if(dramas[i].type == 'Komoedie'){
 				var row = [dramas[i].year, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null, null, null ];
 				array.push(row);
+				if(!hasComedy){
+					trendlinesObj['0'] = trendlineComedy;
+					hasComedy = true;
+				}
 			}
 			if(dramas[i].type == 'Schauspiel'){
 				var row = [dramas[i].year, null, null, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null];
 				array.push(row);
+				if(!hasPageant){
+					trendlinesObj['1'] = trendlinePageant;
+					hasPageant = true;
+				}
 			}
 			if(dramas[i].type == 'Trauerspiel'){
 				var row = [dramas[i].year, null, null, null, null, dramas[i][yearAttribute], createTooltip(dramas[i])];
 				array.push(row);
+				if(!hasTragedy){
+					trendlinesObj['2'] = trendlineTragedy;
+					hasTragedy = true;
+				}
 			}
 		}
 		data.addRows(array);
@@ -227,35 +248,8 @@ MultipleDramas.YearView = function(){
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
           chartArea:{width:'75%',height:'80%'},
-          trendlines: {
-				          0: {
-				          	tooltip: false,
-				            type: 'polynomial',
-				            color: 'blue',
-				            lineWidth: 3,
-				            opacity: 0.3,
-				            showR2: false,
-				            visibleInLegend: false
-				          },
-				          1: {
-				          	tooltip: false,
-				            type: 'polynomial',
-				            color: 'red',
-				            lineWidth: 3,
-				            opacity: 0.3,
-				            showR2: false,
-				            visibleInLegend: false
-				          },
-				          2: {
-				          	tooltip: false,
-				            type: 'polynomial',
-				            color: 'yellow',
-				            lineWidth: 3,
-				            opacity: 0.3,
-				            showR2: false,
-				            visibleInLegend: false
-				          }
-				        }
+          colors: ['blue','red', 'green'],
+          trendlines: trendlinesObj
         };
 
         var optionsSlider = {
@@ -265,6 +259,7 @@ MultipleDramas.YearView = function(){
         		chartOptions: {
         			height: 100,
         			width: 1170,
+        			colors: ['blue', 'red', 'green'],
         			chartArea:{width:'75%',height:'80%'},
         			hAxis: {title: 'Jahr', format: ' '}
         		}
