@@ -11,6 +11,43 @@ th {
     display: block;
  }
 
+  .navbar {
+ 	margin-bottom: 4%;
+ 	margin-top: 3%;
+ 	background: linear-gradient(to left, #114877, #84B4DB);
+ 	font-size: 1.3em;
+ }
+
+ li {
+ 	transition: all 1s ease;
+ }
+
+ ul.dropdown-menu {
+ 	background-color: #84B4DB;
+ 	font-size: 1.1em;
+ }
+
+ .dropdown-menu li {
+ 	transition: all 1s ease;
+ 	background-color: #84B4DB;
+ }
+
+ li.superactive{
+ 	background-color: #3C8F6D !important;
+ }
+
+ li:hover{
+ 	background-color: #3C8F6D;
+ }
+
+.links {
+	color: black !important;
+}
+
+.dropdown ul li a:hover {
+	background-color: #3C8F6D;
+}
+
 .png-download {
 	float: right;
 }
