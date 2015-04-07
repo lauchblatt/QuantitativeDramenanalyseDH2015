@@ -1,6 +1,8 @@
 Matrix.MatrixView = function(){
 	var that = {};
 	var currentDrama_id = 0;
+	var lastScrollLeft = 0;
+	var lastScrollTop = 0;
 
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
 		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
@@ -15,7 +17,60 @@ Matrix.MatrixView = function(){
 		initTooltipsForTitleHeader(dramaInfo);
 		initId();
 		initLinks();
+		initHorizontalScrollListener();
 		$(".container").fadeIn("slow");
+
+	};
+
+	var initHorizontalScrollListener = function(){
+		$(document).scroll(function() {
+		    var documentScrollLeft = $(document).scrollLeft();
+		    var documentScrollTop = $(document).scrollTop();
+
+		    console.log('lastScrollLeft', lastScrollLeft);
+		    console.log('documentScrollLeft', documentScrollLeft);
+
+		    if(lastScrollLeft == 0 && lastScrollLeft < documentScrollLeft){
+		    	console.log('make sticky');
+
+		    	var headWidth = $('#confMatrix thead tr th:first-child').outerWidth();
+				$('#confMatrix thead tr th:first-child').css('min-width', headWidth);
+
+		    	$("#confMatrix tbody tr th:first-child").each(function(){
+		    		var defaultTopValue = $(this).offset().top;
+
+		    		$(this).attr('default-top', defaultTopValue);
+		    		var topValue = $(this).offset().top - documentScrollTop;
+		    		var height = $(this).height();
+		    		var width = $(this).width() + 8;
+
+		    		$(this).next().height(height);
+		    		$(this).css('top', topValue);
+		    		$(this).height(height);
+		    		$(this).width(width);
+		    	});
+		    	$("#confMatrix").addClass('sticky');
+		    }else if(documentScrollLeft == 0){
+		    	$("#confMatrix").removeClass('sticky');
+		    }
+
+		    if (lastScrollLeft != documentScrollLeft) {
+		        lastScrollLeft = documentScrollLeft;
+		    }
+
+		    console.log('lastScrollTop', lastScrollTop);
+		    console.log('documentScrollTop', documentScrollTop);
+
+		    if(lastScrollTop != documentScrollTop){
+		    	lastScrollTop = documentScrollTop;
+
+		    	$("#confMatrix.sticky tbody tr th:first-child").each(function(){
+		    		var topValue = $(this).attr('default-top') - documentScrollTop;
+		    		$(this).css('top', topValue);
+		    	});
+		    }
+
+		});
 	};
 
 	var initTooltipsForTitleHeader = function(dramaInfo){

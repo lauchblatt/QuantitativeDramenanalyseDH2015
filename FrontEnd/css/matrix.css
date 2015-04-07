@@ -57,6 +57,12 @@
 	display: none;
 }
 
+#confMatrix.sticky tbody tr th:first-child{
+    position:fixed; 
+    left:0;
+    background: white;
+}
+
 th {
 	text-align: center;
 	vertical-align: middle !important;
