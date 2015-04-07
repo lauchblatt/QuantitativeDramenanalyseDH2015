@@ -1,10 +1,10 @@
 .container {
-	margin-left: 5%;
-	margin-right: 5% !important;
 }
 
 #header {
 	margin-bottom: 4%;
+	background: linear-gradient(to left, #114877, #84B4DB);
+	padding: 2%;
 }
 
 .analyse-collection {
@@ -83,7 +83,7 @@ tr {
 }
 
 tbody tr:hover {
-	background-color: #00BFFF !important;
+	background-color: #65A5DB !important;
 	cursor: pointer;
 }
 
