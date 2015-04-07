@@ -11,23 +11,24 @@
 
 	</head>
 	<body>
-		<div class="container">
-		<h1 id="dramaTitle"></h1>
-		<h2 id="dramaAuthor"></h2>
+		<div class="container" id="header">
+			<h1 id="dramaTitle"></h1>
+			<h2 id="dramaAuthor"></h2>
+		</div>
 		
-
+		<div class="container">
 			<nav class="navbar navbar-default">
 				  <div class="container-fluid">
 
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
 
-				      	<li class="active"><a id="link-overall" href="#">Übersicht <span class="sr-only">(current)</span></a></li>
+				      	<li class="superactive"><a id="link-overall" class="links" href="#">Übersicht <span class="sr-only">(current)</span></a></li>
 
-				      	<li><a href="#" id="link-matrix">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
+				      	<li><a href="#" id="link-matrix" class="links">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
 
 				        <li class="dropdown">
-				          <a href="" id="link-drama" role="button" aria-expanded="false">
+				          <a href="" id="link-drama" role="button" class="links" aria-expanded="false">
 				          	Drama-Akt-Szenen-Analyse<span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu">
 				            <li><a href="#" id="link-drama-actSceneAnalysis">Akt-Szenen-Tabelle</a></li>
@@ -39,7 +40,7 @@
 				        </li>
 
 				        <li class="dropdown">
-				          <a id="link-speakers" href="#" role="button" aria-expanded="false">
+				          <a id="link-speakers" class="links" href="#" role="button" aria-expanded="false">
 				          	Sprecher-Analyse<span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu">
 				            <li><a href="#" id="link-speaker-table">Sprecher-Tabelle</a></li>
@@ -53,7 +54,7 @@
 				        </li>
 
 				        <li class="dropdown">
-				          <a href="#" id="link-speeches" role="button" aria-expanded="false">
+				          <a href="#" id="link-speeches" class="links" role="button" aria-expanded="false">
 				          	Replikenverteilung<span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu">
 				            <li><a href="#" id="link-histogram">Replikenverteilung - Histogramm</a></li>
