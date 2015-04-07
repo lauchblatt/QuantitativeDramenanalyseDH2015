@@ -2,6 +2,14 @@
 	display: none;
 }
 
+#dramaTitle {
+	color: #3C8F6D;
+}
+
+.text {
+	color: black !important;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
  }
