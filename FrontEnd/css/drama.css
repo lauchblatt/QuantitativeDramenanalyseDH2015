@@ -10,3 +10,36 @@
 .dropdown:hover .dropdown-menu {
     display: block;
  }
+
+ .navbar {
+ 	margin-bottom: 4%;
+ }
+
+ .box {
+ 	width: 40%;
+ 	height: 100%;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 0 0;
+	border-style: solid;
+	padding: 1%;
+	display: inline-block;
+	margin-bottom: 5%;
+	vertical-align: top;
+	margin-right: 4% !important;
+}
+
+.box-row {
+	vertical-align: top;
+	display: inline-block;
+}
+
+#to-matrix {
+	float: left;
+
+
+}
+
+#to-dramaAnalysis {
+	float: left;
+}

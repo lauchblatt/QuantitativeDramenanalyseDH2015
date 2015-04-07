@@ -30,7 +30,7 @@ SingleDrama.TableDramaView = function(){
 
 		row.append(($("<td>")).text(actNumber + " - " + scene.number_of_scene));
 		row.append(($("<td>")).text("-"));
-		if(scene.appearing_speakers != undefined){
+		if(scene.appearing_speakers !== undefined && scene.appearing_speakers != 0){
 			row.append(($("<td>")).text(scene.appearing_speakers.length));
 		}else{
 			row.append(($("<td>")).text(1));
@@ -50,7 +50,7 @@ SingleDrama.TableDramaView = function(){
 
 		row.append(($("<td>")).text(act.number_of_act));
 		row.append(($("<td>")).text(act.number_of_scenes));
-		if(act.appearing_speakers !== undefined){
+		if(act.appearing_speakers !== undefined && act.appearing_speakers != 0){
 			row.append(($("<td>")).text(act.appearing_speakers.length));
 		}else{
 			row.append(($("<td>")).text(0));

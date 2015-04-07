@@ -134,6 +134,7 @@ Matrix.MatrixModel = function(){
 
 	var checkIfSpeakerInList = function(speaker, speakerList){
 		console.log(speakerList);
+		//Anpassung an Datenbank-Änderung
 		if(speakerList === undefined || speakerList == 0){
 			return false;
 		}

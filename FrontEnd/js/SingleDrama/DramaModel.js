@@ -32,7 +32,7 @@ SingleDrama.DramaModel = function(){
 	var calculateNumberOfSpeakersForScene = function(){
 		for(act = 0; act < scenesInfo.length; act++){
 			for(scene = 0; scene < scenesInfo[act].length; scene++){
-				if(scenesInfo[act][scene].appearing_speakers != undefined){
+				if(scenesInfo[act][scene].appearing_speakers != undefined && scenesInfo[act][scene].appearing_speakers != 0){
 					scenesInfo[act][scene].number_of_speakers = scenesInfo[act][scene].appearing_speakers.length;
 				}else{
 					scenesInfo[act][scene].number_of_speakers = 1;
