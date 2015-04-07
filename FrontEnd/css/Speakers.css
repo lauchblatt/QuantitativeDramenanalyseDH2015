@@ -7,6 +7,17 @@ td {
 	vertical-align: middle !important;
 }
 
+body {
+     font-family: Calibri;
+}
+#dramaTitle {
+	color: #3C8F6D;
+}
+
+table {
+	font-size: 1.2em;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
  }

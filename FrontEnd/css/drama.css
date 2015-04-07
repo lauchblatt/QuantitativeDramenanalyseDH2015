@@ -1,13 +1,20 @@
 .container {
 	display: none;
-}
 
+}
+h4 {
+	font-size: 1.5em;
+}
+body {
+     font-family: Calibri !important;
+}
 #dramaTitle {
 	color: #3C8F6D;
 }
 
 .text {
 	color: black !important;
+	font-size: 1.2em;
 }
 
 .dropdown:hover .dropdown-menu {

@@ -1,6 +1,19 @@
 #wrapper {
 	margin-left: 5% !important;
 	margin-right: 5% !important;
+
+}
+
+table {
+	font-size: 1.1em;
+}
+
+#dramaTitle {
+	color: #3C8F6D;
+}
+
+body {
+	font-family: Calibri;
 }
 
 .dropdown:hover .dropdown-menu {
