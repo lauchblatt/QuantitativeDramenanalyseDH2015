@@ -18,14 +18,14 @@ Search.FormsView = function(){
 	var initTooltips = function(){
 		var tooltipOverall = $("#info-overall");
 		tooltipOverall.tooltipster({
-					content: 'blablabla',
+					content: 'Dieses Tool bietet Ihnen nicht nur die Möglichkeit, ein bestimmtes Drama quantitativ zu analysieren, sondern es ist auch möglich, mehrere Dramen miteinander zu vergleichen.',
 					position: "right",
 					trigger: 'hover'
 				});
 
 		var tooltipOverall = $("#info-compare");
 		tooltipOverall.tooltipster({
-					content: 'blablabla',
+					content: 'Hiermit ist der Vergleich von mehreren Dramen möglich. Die mit einem Häkchen markierten Dramen befinden sich in der Sammlung.',
 					position: "right",
 					trigger: 'hover'
 				});
