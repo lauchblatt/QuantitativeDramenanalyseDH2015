@@ -18,7 +18,6 @@ MultipleDramas.LineCurveView = function(){
   };
 
   var renderCurve = function(distribution, catDistribution, authorDistribution){
-    console.log(speechDistributionSelection);
     if(compareSelection == 'Kein Vergleich'){
       if(speechDistributionSelection == "Absolut"){
         renderCurveNormal(distribution, "Absolute Häufigkeit", "absolut");
@@ -43,6 +42,7 @@ MultipleDramas.LineCurveView = function(){
       }
       if(speechDistributionSelection == "Relativ"){
         var authorDisInPercent = distributionToPercent(authorDistribution);
+        console.log(authorDisInPercent);
         renderTypeCurve(authorDisInPercent, "Relative Häufigkeit in Prozent");
       }  
     }
@@ -64,6 +64,7 @@ MultipleDramas.LineCurveView = function(){
           distributionObject[key] = (distribution[i][key]/distribution[i].total)*100;
         }
         distributionObject.type = distribution[i].type;
+        distributionObject.name = getLastNameAndFirstInitial(distribution[i].name);
         disToPercent.push(distributionObject);
       }
     }
@@ -217,6 +218,14 @@ MultipleDramas.LineCurveView = function(){
 
   var setSpeechDistributionSelection = function(){
     speechDistributionSelection =  $("#selection-speech-distribution").val();
+  };
+
+  var getLastNameAndFirstInitial = function(author){
+    var authorLastName = author.slice(0, author.indexOf(","));
+    var commaIndex = author.indexOf(",");
+    var initial = author.slice(commaIndex+1, commaIndex+3);
+    author = authorLastName + "," + initial + ".";
+    return author;
   };
 
 	that.renderCurve = renderCurve;
