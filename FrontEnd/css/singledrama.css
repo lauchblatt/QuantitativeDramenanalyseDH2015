@@ -35,6 +35,7 @@ h3 {
 	border-style: solid;
 	padding: 1%;
 	margin-bottom: 5%;
+	display: inline-block;
 }
 
 td {

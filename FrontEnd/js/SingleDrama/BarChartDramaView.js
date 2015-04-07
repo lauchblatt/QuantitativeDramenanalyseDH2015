@@ -31,7 +31,7 @@ SingleDrama.BarChartDramaView = function(){
         var data = new google.visualization.DataTable();
         data.addColumn('number', 'Akte');
         if(actSelection == "Szenen" || actSelection == "Sprecher" || actSelection == "Replikenlänge"){
-        	data.addColumn('number', 'Anzahl der ' + actSelection);
+        	data.addColumn('number', actSelection);
         }else{
         	data.addColumn('number', actSelection);
         }
@@ -133,7 +133,7 @@ SingleDrama.BarChartDramaView = function(){
         var data = new google.visualization.DataTable();
         data.addColumn('number', 'Szenen');
         if(scenesSelection == "Sprecher" || scenesSelection == "Replikenlänge"){
-        	data.addColumn('number', 'Anzahl der ' + scenesSelection);
+        	data.addColumn('number', scenesSelection);
         }else{
         	data.addColumn('number', scenesSelection);
         }
