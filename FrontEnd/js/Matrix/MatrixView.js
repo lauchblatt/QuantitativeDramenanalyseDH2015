@@ -206,11 +206,17 @@ Matrix.MatrixView = function(){
 		var $content = $("<div></div>");
 		var strings = ["Name", "Replikenanzahl", "Mittel Replikenlänge",
 		"Median Replikenlänge","Maximum Replikenlänge", "Minimum Replikenlänge"];
-		var data = [speaker.name, speaker.number_of_speakers_speeches,
-		roundToTwoDecimals(speaker.average_length_of_speakers_speeches), 
-		speaker.median_length_of_speakers_speeches,
-		speaker.maximum_length_of_speakers_speeches,
-		speaker.minimum_length_of_speakers_speeches];
+		var data = [];
+		if(speaker.number_of_speakers_speeches != 0){
+			data = [speaker.name, speaker.number_of_speakers_speeches,
+			roundToTwoDecimals(speaker.average_length_of_speakers_speeches), 
+			speaker.median_length_of_speakers_speeches,
+			speaker.maximum_length_of_speakers_speeches,
+			speaker.minimum_length_of_speakers_speeches];
+		}else{
+			data = [speaker.name, speaker.number_of_speakers_speeches,0, 0, 0, 0];
+		}
+		
 
 		var $leftColumn = getColumn(strings, "insideLeft");
 		var $rightColumn = getColumn(data, "insideRight");

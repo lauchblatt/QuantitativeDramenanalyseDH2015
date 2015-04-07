@@ -25,13 +25,20 @@ Speakers.SpeakersTableView = function(){
 
 		row.append(($("<td>")).text(speaker.name));
 		row.append(($("<td>")).text(speaker.number_of_appearances));
-		row.append(($("<td>")).text(speaker.appearances_percentage + " %"));
-		row.append(($("<td>")).text(speaker.number_of_speakers_speeches));
-		row.append(($("<td>")).text(speaker.average_length_of_speakers_speeches));
-		row.append(($("<td>")).text(speaker.median_length_of_speakers_speeches));
-		row.append(($("<td>")).text(speaker.maximum_length_of_speakers_speeches));
-		row.append(($("<td>")).text(speaker.minimum_length_of_speakers_speeches));
-
+		row.append(($("<td>")).text(speaker.appearances_percentage));
+		if(speaker.number_of_speakers_speeches != 0){
+			row.append(($("<td>")).text(speaker.number_of_speakers_speeches));
+			row.append(($("<td>")).text(speaker.average_length_of_speakers_speeches));
+			row.append(($("<td>")).text(speaker.median_length_of_speakers_speeches));
+			row.append(($("<td>")).text(speaker.maximum_length_of_speakers_speeches));
+			row.append(($("<td>")).text(speaker.minimum_length_of_speakers_speeches));
+		}else{
+			row.append(($("<td>")).text(0));
+			row.append(($("<td>")).text(0));
+			row.append(($("<td>")).text(0));
+			row.append(($("<td>")).text(0));
+			row.append(($("<td>")).text(0));
+		}
 		return row;
 	};
 
