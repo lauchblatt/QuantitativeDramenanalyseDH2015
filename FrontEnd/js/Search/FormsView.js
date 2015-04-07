@@ -29,6 +29,15 @@ Search.FormsView = function(){
 					position: "right",
 					trigger: 'hover'
 				});
+
+		var tooltipOverall = $("#input-author");
+		tooltipOverall.tooltipster({
+					content: 'z.B.: <i>Goethe</i> oder <i>Lessing Schiller Schlegel</i>',
+					//content: '<i>z.B.:</i> Goethe <i>oder</i> Lessing Schiller Schlegel',
+					position: "right",
+					trigger: 'hover',
+					contentAsHTML: true
+				});
 	};
 
 	var showLessRange = function(){
