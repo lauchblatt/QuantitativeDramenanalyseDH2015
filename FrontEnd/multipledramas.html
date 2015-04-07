@@ -11,7 +11,14 @@
 
 	</head>
 	<body>
-		<div class="container">
+		<div id="loading" class="container">
+			<div id="loading-spinner">
+				<span class="glyphicon glyphicon-repeat glyphicon-repeat-animate loading-button" id="loading-spinner-img">
+				</span>
+				<div id="loading-text">Daten werden berechnet. Dies kann einige Sekunden dauern...</div>
+			</div>
+		</div>
+		<div class="container" id="maincontent">
 			<h1 class="page-header">Dramensammlung - Analyse</h1>
 			<h2 id="dramaTitle"></h2>
 			<h2 id="dramaAuthor"></h2>

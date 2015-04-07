@@ -60,7 +60,8 @@ MultipleDramas.MultipleDramasController = function(){
 		
 		lineCurveView.renderCurve(distribution, catDistribution, authorDistribution);
 
-		$("body").fadeIn();
+		$("#loading").css("display", "none");
+		$("#maincontent").fadeIn();;
 
 	};
 
