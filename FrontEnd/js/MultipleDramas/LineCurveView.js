@@ -204,7 +204,7 @@ MultipleDramas.LineCurveView = function(){
 
         $("#download-png-curve").unbind("click");
         $("#download-png-curve").on("click", function(){
-          window.open(pieChart.chart().getImageURI());
+          window.open(chart.getChart().getImageURI());
         });
 
         dashboard.bind(rangeSlider, chart);
