@@ -34,6 +34,7 @@ Speakers.SpeakersBarChartView = function(){
 
 		var options = {title:'Sprecher-Statistik',
         			   height: estimatedHeight,
+        			   width: 1000,
         			   chartArea:{width:'55%',height:'90%'},
 				        hAxis: {
         			   	title: speakersSelection
