@@ -11,8 +11,8 @@ def main():
     """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Korpus/weis_masaniello_t.xml")
-    drama_data = parser.generateDramaData(dramaModel)
-    parser.writeJSON(drama_data)
+    drama_data = parser.generate_drama_data(dramaModel)
+    parser.write_JSON(drama_data)
     """
 
     # used to generate a JSON file of all dramas
@@ -39,7 +39,7 @@ def main():
         for filename in os.listdir("../Korpus"):
             try:
                 dramaModel = parser.parse_xml("../Korpus/" + filename)
-                data = output.generateDramaData(dramaModel)
+                data = output.generate_drama_data(dramaModel)
                 dramas.append(data)
                 dramasForDenormalizing.append(dramaModel)
                 print("Erfolg beim Parsen eines Dramas")
@@ -55,9 +55,9 @@ def main():
     doc.close
     
     """
-    output.generateDenormalizedJSON(dramasForDenormalizing)
+    output.generate_denormalized_JSON(dramasForDenormalizing)
     """
-    output.generateNormalizedJSON(dramas)
+    output.generates_normalized_JSON(dramas)
     """
 
 

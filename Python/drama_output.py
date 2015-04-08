@@ -7,7 +7,8 @@ from collections import OrderedDict
 # class for generating output about dramas
 class DramaOutput:
 
-    def generateBasicCSV(self, dramas):
+    # generates the basic CSV
+    def generate_basic_CSV(self, dramas):
         basicCsv = []
         firstRow = ["Title", "Author", "Date", "Type", "Conf.Density",
         "Number of Speeches", "Avg. Length of Speeches","Max. Length of Speeches",
@@ -30,7 +31,8 @@ class DramaOutput:
         writer.writerows(basicCsv)
         doc.close
 
-    def generateDramaData(self, drama):
+    # generates an ordered dictionary of drama data
+    def generate_drama_data(self, drama):
         drama_data = OrderedDict({})
         drama_data['title'] = drama._title
         drama_data['author'] = drama._author
@@ -45,22 +47,23 @@ class DramaOutput:
         drama_data['minimum_length_of_speeches_in drama'] = drama._speechesLength_min
         drama_data['median_length_of_speeches_in_drama'] = drama._speechesLength_med
 
-        speakers_json = self.generateJSONforSpeakers(drama._speakers)
+        speakers_json = self.generates_data_struct_for_speakers(drama._speakers)
         drama_data['speakers'] = speakers_json
 
-        acts_json = self.generateJSONforActs(drama._acts)
+        acts_json = self.generates_data_struct_for_acts(drama._acts)
         drama_data['content'] = acts_json
 
         return drama_data;
 
-    def writeJSON(self, dramaData):
+    # writes JSON data into a file
+    def write_JSON(self, dramaData):
         drama_json = json.dumps(dramaData, indent=4, ensure_ascii=True)
-        #print(drama_json)
         doc = open(dramaData["Author"]+ "_"+dramaData["Title"]+'_data.json', 'w')
         doc.write(drama_json)
         doc.close
 
-    def generateJSONforSpeakers(self, speakers):
+    # generates an array of ordered dictionaries containing speaker data
+    def generates_data_struct_for_speakers(self, speakers):
         speakers_data = []
         for speaker in speakers:
             speaker_data = OrderedDict({})
@@ -83,7 +86,8 @@ class DramaOutput:
 
         return speakers_data
 
-    def generateJSONforActs(self, acts):
+    # generates an array of ordered dictionaries containing act data
+    def generates_data_struct_for_acts(self, acts):
         acts_data = []
         iterator = 1
         for act in acts:
@@ -97,14 +101,15 @@ class DramaOutput:
             act_data['minimum_length_of_speeches_in_act'] = act._speechesLength_min
             act_data['median_length_of_speeches_in_act'] = act._speechesLength_med
 
-            configurations_json = self.generateJSONforConfigurations(act._configurations)
+            configurations_json = self.generates_data_struct_for_config(act._configurations)
             act_data['scenes'] = configurations_json
 
             acts_data.append(act_data)
 
         return acts_data
 
-    def generateJSONforConfigurations(self, configurations):
+    # generates an array of ordered dictionaries containing configuration data
+    def generates_data_struct_for_config(self, configurations):
         configurations_data = []
 
         for configuration in configurations:
@@ -123,7 +128,7 @@ class DramaOutput:
             configuration_data['median_length_of_speeches_in_scene'] = configuration._speechesLength_med
 
             if configuration._speeches:
-                configuration_data['speeches'] = self.generateJSONforSpeeches(configuration._speeches)
+                configuration_data['speeches'] = self.generates_data_struct_for_speeches(configuration._speeches)
             else:
                 configuration_data['speeches'] = 0
 
@@ -133,7 +138,8 @@ class DramaOutput:
 
         return configurations_data
 
-    def generateJSONforSpeeches(self, speeches):
+    # generates an array of ordered dictionaries containing speeches data
+    def generates_data_struct_for_speeches(self, speeches):
         speeches_data = []
 
         for speech in speeches:
@@ -146,24 +152,27 @@ class DramaOutput:
 
         return speeches_data
 
-    def generateConfMatrixCSV(self, drama_model):
+    # generates configuration matrix CSV for one drama
+    def generate_config_matrix_CSV(self, drama_model):
         doc = open(drama_model._author+"_"+drama_model._title+'_matrix.csv', 'w', newline="")
         writer = csv.writer(doc, delimiter=",")
         cf = drama_model._configuration_matrix
         writer.writerows(cf)
         doc.close
 
-    def generateNormalizedJSON(self, dramas):
+    # generates normalized JSON
+    def generates_normalized_JSON(self, dramas):
         dramaJsonArray = []
         for drama in dramas:
-            dramaJsonArray.append(self.generateDramaData(drama))
+            dramaJsonArray.append(self.generate_drama_data(drama))
 
         dramas_json = json.dumps(dramaJsonArray, indent=4, ensure_ascii=True)
         doc = open('Dramas_data.json', 'w')
         doc.write(dramas_json)
         doc.close
 
-    def generateDenormalizedJSON(self, dramas):
+    # generates denormalized JSON
+    def generate_denormalized_JSON(self, dramas):
         dramas_output = OrderedDict({})
         i = 0
         drama_level_infos = []
@@ -173,19 +182,19 @@ class DramaOutput:
         print len(dramas);
 
         for drama in dramas:
-            drama_level_info = self.generateDenormalizedDramaData(drama, i)
+            drama_level_info = self.generate_denormalized_drama_data(drama, i)
             drama_level_infos.append(drama_level_info)
 
-            speakers_level_info = self.generateJSONforSpeakers(drama._speakers)
+            speakers_level_info = self.generates_data_struct_for_speakers(drama._speakers)
             speakers_level_infos[i] = speakers_level_info
 
-            acts_level_info = self.generateDenormalizedJSONforActs(drama._acts)
+            acts_level_info = self.generate_denormalized_act_data(drama._acts)
             acts_level_infos[i] = acts_level_info
 
             scenes_level_info = OrderedDict({})
             iterator = 0
             for act in drama._acts:
-                scenes_level_info[iterator] = self.generateJSONforConfigurations(act._configurations)
+                scenes_level_info[iterator] = self.generates_data_struct_for_config(act._configurations)
                 iterator = iterator + 1
             scenes_level_infos[i] = scenes_level_info
 
@@ -201,7 +210,8 @@ class DramaOutput:
         doc.write(dramas_json)
         doc.close
 
-    def generateDenormalizedDramaData(self, drama, drama_id):
+    # generates denormalized drama data
+    def generate_denormalized_drama_data(self, drama, drama_id):
         drama_data = OrderedDict({})
         drama_data['id'] = drama_id
         drama_data['title'] = drama._title
@@ -218,28 +228,32 @@ class DramaOutput:
         drama_data['maximum_length_of_speeches_in_drama'] = drama._speechesLength_max
         drama_data['minimum_length_of_speeches_in_drama'] = drama._speechesLength_min
         drama_data['median_length_of_speeches_in_drama'] = drama._speechesLength_med
-        drama_data['number_of_acts'] = self.getNumberOfActs(drama)
-        drama_data['number_of_scenes'] = self.getNumberOfScenes(drama)
-        drama_data['speakers'] = self.getListOfSpeakers(drama);
+        drama_data['number_of_acts'] = self.get_number_of_acts(drama)
+        drama_data['number_of_scenes'] = self.get_number_of_scenes(drama)
+        drama_data['speakers'] = self.get_list_of_speakers(drama);
         return drama_data
 
-    def getNumberOfActs(self, drama):
+    # returns number of acts
+    def get_number_of_acts(self, drama):
         return len(drama._acts)
 
-    def getNumberOfScenes(self, drama):
+    # returns number of scenes
+    def get_number_of_scenes(self, drama):
         number = 0
         for act in drama._acts:
             number = number + len(act._configurations)
         return number
-    
-    def getListOfSpeakers(self, drama):
+
+    # returns list of all speakers
+    def get_list_of_speakers(self, drama):
         speakersList = []
         for speaker in drama._speakers:
             speakersList.append(speaker._name)
 
         return speakersList
 
-    def generateDenormalizedJSONforActs(self, acts):
+    # generates denormalized data for acts
+    def generate_denormalized_act_data(self, acts):
         acts_data = []
         iterator = 1
         for act in acts:
@@ -256,3 +270,4 @@ class DramaOutput:
             acts_data.append(act_data)
 
         return acts_data
+
