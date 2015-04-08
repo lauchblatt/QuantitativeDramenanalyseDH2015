@@ -24,7 +24,7 @@ body {
  .navbar {
  	margin-bottom: 4%;
  	margin-top: 3%;
- 	background: linear-gradient(to left, #114877, #84B4DB);
+ 	background: linear-gradient(to left, #5485B3, #84B4DB);
  	font-size: 1.3em;
  }
 
@@ -43,7 +43,7 @@ body {
  }
 
  li.superactive{
- 	background-color: #3C8F6D !important;
+ 	background-color: #38B983 !important;
  }
 
  li:hover{
@@ -59,7 +59,7 @@ body {
 }
 
  .box {
- 	width: 40%;
+ 	width: 47.7%;
  	height: 100%;
 	border-color: #ddd;
 	border-width: 1px;
@@ -67,9 +67,14 @@ body {
 	border-style: solid;
 	padding: 1%;
 	display: inline-block;
-	margin-bottom: 5%;
+	margin-bottom: 4%;
 	vertical-align: top;
 	margin-right: 4% !important;
+}
+
+#to_dramaAnalysis .box,
+#to_speechAnalysis .box {
+	margin-right: 0% !important;
 }
 
 .box-row {

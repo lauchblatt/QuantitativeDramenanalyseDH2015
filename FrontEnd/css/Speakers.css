@@ -25,7 +25,7 @@ table {
   .navbar {
  	margin-bottom: 4%;
  	margin-top: 3%;
- 	background: linear-gradient(to left, #114877, #84B4DB);
+ 	background: linear-gradient(to left, #5485B3, #84B4DB);
  	font-size: 1.3em;
  }
 
@@ -44,7 +44,7 @@ table {
  }
 
  li.superactive{
- 	background-color: #3C8F6D !important;
+ 	background-color: #38B983 !important;
  }
 
  li:hover{
@@ -94,6 +94,7 @@ h3 {
 }
 
 #speakers-table {
+	margin-bottom: 70px;
 }
 
 #dashbord-speakers-barChart{
@@ -112,7 +113,7 @@ h3 {
 	border-radius: 4px 4px 0 0;
 	border-style: solid;
 	padding: 1%;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 	display: inline-block;
 }
 

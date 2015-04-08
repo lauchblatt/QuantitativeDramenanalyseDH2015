@@ -43,6 +43,12 @@ Drama.DramaView = function(){
 		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
 		$("#dramaAuthor").text(dramaInfo.author);
 		$(".container").fadeIn("slow");
+		resizeOverviewBoxes();
+	};
+
+	var resizeOverviewBoxes = function(){
+		$("#to_dramaAnalysis .box").height($("#to_matrix .box").height());
+		$("#to_speechAnalysis .box").height($("#to_speakerAnalysis .box").height());
 	};
 
 	that.renderView = renderView;

@@ -23,7 +23,7 @@ body {
   .navbar {
  	margin-bottom: 4%;
  	margin-top: 3%;
- 	background: linear-gradient(to left, #114877, #84B4DB);
+ 	background: linear-gradient(to left, #5485B3, #84B4DB);
  	font-size: 1.3em;
  }
 
@@ -42,7 +42,7 @@ body {
  }
 
  li.superactive{
- 	background-color: #3C8F6D !important;
+ 	background-color: #38B983 !important;
  }
 
  li:hover{
