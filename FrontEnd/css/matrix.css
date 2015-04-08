@@ -102,3 +102,17 @@ th.tooltipstered:hover {
 	background-color: #65A5DB !important;
 	cursor: pointer;
 }
+
+#logo-wrapper,
+#header-wrapper {
+	display: inline-block;
+}
+
+#logo {
+	margin-top: -60px;
+	margin-right: 30px;
+	width: 160px;
+	height: 160px;
+	display: inline-block;
+	border: 2px solid #ccc;
+}
