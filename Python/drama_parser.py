@@ -14,9 +14,6 @@ class DramaParser:
         drama_model = DramaModel()
         xml_root = self.get_xml_root(filepath) # get xml treeroot
 
-        # create speaker mapping
-        self.speaker_mapping(xml_root)
-
         # general information
         drama_model._title = self.get_title(xml_root)
         drama_model._author = self.get_author(xml_root)
@@ -282,20 +279,4 @@ class DramaParser:
 
         return speaker_data
 
-    # generates a mapping for speakers and castgroup
-    def speaker_mapping(self, xml_root):
-        castgroup = self.get_speakers_from_castgroup(xml_root)
-        all_speakers = self.get_all_speakers(xml_root, False)
-
-        # Stopwortliste
-        # compare lists
-
-        #for castgroup_member in castgroup:
-            #for speaker in all_speakers:
-
-
-        # Ideen für das Mapping:
-        # wenn nur eine Person pro Tag drinsteht, ein Name vor dem Komma, mehrere nach dem Komma -> Stoppwortliste
-        # 'gemm_hausvater' überprüfen, ob mehrere Punkte genutzt werden und einfach alles ignorieren?
-        # 'zwsch_abbelino': mehreren Personen eine Bezeichnung zugewiesen, zB Diener, 
-        #       aber das steht erst einige Zeilen weiter unten: erkennbar: Die Zeilen schließen nicht mit Punkt ab???
+    

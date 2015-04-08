@@ -13,13 +13,11 @@ class DramaModel:
         self._author = None
         self._acts = None
         self._year = None
-        # Zur Hilfe alle Speakers speichern, damit sie ueberhaupt irgendwo sind
         self._speakers = None
         self._castgroup = None
         self._speakerCountCast = 0
         self._speakerCountAll = 0
 
-        # Kann man berechnen innerhalb der Klasse ueber Konfigurationen der Akte
         self._configuration_matrix = None
         self._configuration_density = None
 
