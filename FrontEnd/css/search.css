@@ -130,7 +130,7 @@ tr.header-row:hover {
 	padding: 1%;
 	display: inline-block;
 	margin-bottom: 5%;
-	width: 90%;
+	width: 100%;
 }
 
 .glyphicon-sort {
@@ -140,6 +140,8 @@ tr.header-row:hover {
 #info-overall {
 	float: right;
 	font-size: 2em;
+	margin-top: 25px;
+	margin-right: 10px;
 }
 
 #info-compare-div {
@@ -151,13 +153,14 @@ tr.header-row:hover {
 	float: left;
 	display: none;
 	font-size: 2em;
-	margin-left: 4%;
+	margin-left: 5%;
+	margin-top: 10px;
 
 }
 
 .search-option {
 	float: left;
-	width: 28%;
+	width: 30.6%;
 	height: 25%;
 	margin-left: 3% !important;
 }
@@ -248,3 +251,8 @@ tr.header-row:hover {
 	border: 2px solid #ccc;
 }
 
+#search-header {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}

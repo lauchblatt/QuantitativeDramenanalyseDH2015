@@ -18,16 +18,18 @@ Search.FormsView = function(){
 	var initTooltips = function(){
 		var tooltipOverall = $("#info-overall");
 		tooltipOverall.tooltipster({
-					content: 'Dieses Tool bietet Ihnen nicht nur die Möglichkeit, ein bestimmtes Drama quantitativ zu analysieren, sondern es ist auch möglich, mehrere Dramen miteinander zu vergleichen.',
+					content: 'Dieses Tool bietet Ihnen nicht nur die Möglichkeit,<br/> ein bestimmtes Drama quantitativ zu analysieren,<br/> sondern es ist auch möglich,<br/> mehrere Dramen miteinander zu vergleichen.',
 					position: "right",
-					trigger: 'hover'
+					trigger: 'hover',
+					contentAsHTML: true
 				});
 
 		var tooltipOverall = $("#info-compare");
 		tooltipOverall.tooltipster({
-					content: 'Hiermit ist der Vergleich von mehreren Dramen möglich. Die mit einem Häkchen markierten Dramen befinden sich in der Sammlung.',
+					content: 'Hiermit ist der Vergleich von mehreren Dramen möglich.<br/> Die mit einem Häkchen markierten Dramen befinden sich in der Sammlung.',
 					position: "right",
-					trigger: 'hover'
+					trigger: 'hover',
+					contentAsHTML: true
 				});
 
 		var tooltipOverall = $("#input-author");
