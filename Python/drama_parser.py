@@ -110,9 +110,6 @@ class DramaParser:
             return "Szene"
 
     # every speaker, even if they are double with different names
-
-    ### Hier werden auch Speakers außerhalb Akt und Szene-Struktur erfasst
-    ### Repliken außerhalb Akt und Szene Struktur werden jedoch schon erfasst
     def get_all_speakers(self, xml_root, as_objects = True):
         speaker_list = []
         for speaker in xml_root.findall(".//tei:div[@type='act']//tei:speaker", self.namespaces):
@@ -125,6 +122,8 @@ class DramaParser:
                 continue
 
             if name and name[-1] == ".":
+                name = name[:-1]
+            if name and name[-1] == ",":
                 name = name[:-1]
             if name and name not in speaker_list:
                 speaker_list.append(name)
@@ -157,6 +156,8 @@ class DramaParser:
                 comma = real_name.index(",")
                 real_name = real_name[:comma]
             elif real_name and real_name[-1] == ".":
+                real_name = real_name[:-1]
+            elif real_name and real_name[-1] == ",":
                 real_name = real_name[:-1]
 
             if real_name: 
@@ -211,6 +212,8 @@ class DramaParser:
                 continue
 
             if name and name[-1] == ".":
+                name = name[:-1]
+            if name and name[-1] == ",":
                 name = name[:-1]
 
             speech_model._speaker = name
@@ -271,6 +274,8 @@ class DramaParser:
                 continue
 
             if name and name[-1] == ".":
+                name = name[:-1]
+            if name and name[-1] == ",":
                 name = name[:-1]
             if name and name not in speaker_data:
                 speaker_data.append(name)
