@@ -24,6 +24,7 @@ Speakers.SpeakersController = function(){
 
 	};
 
+	//Workaround to get Google Charts working
 	var initGoogleCharts = function(){
 		// Load the Visualization API and the piechart package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 
@@ -39,6 +40,7 @@ Speakers.SpeakersController = function(){
 		$(speakerRelationsView).on("SpeakerRelationsSelectionClicked", visuSpeakerRelations);
 	};
 
+	//Method to call for first rendering process
 	var visu = function(){
 		var speakersInfo = speakersModel.getSpeakersInfo();
 		var dramaInfo = speakersModel.getDramaInfo();
@@ -60,6 +62,7 @@ Speakers.SpeakersController = function(){
 
 	};
 
+	//Methods to call when user interacts with Dropdown-menus
 	var visuBarChart = function(){
 		var speakersInfo = speakersModel.getSpeakersInfo();
 

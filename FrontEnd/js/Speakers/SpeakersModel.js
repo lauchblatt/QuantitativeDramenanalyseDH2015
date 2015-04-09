@@ -15,6 +15,7 @@ Speakers.SpeakersModel = function(){
 	};
 
 	var continueInit = function(){
+		//check if alle Data is set and then continue
 		if(speakersInfo.length > 0 && scenesInfo.length > 0  && dramaInfo != null){
 			calculateAppearancePerSpeakers();
 			roundAverageLengths();
@@ -24,6 +25,7 @@ Speakers.SpeakersModel = function(){
 		
 	};
 
+	// Method to calculate the percentage of appearances of one Speaker
 	var calculateScenesPerSpeakers = function(){
 		for(i = 0; i < speakersInfo.length; i++){
 			var ratio = roundToTwoDecimals(speakersInfo[i].number_of_appearances/dramaInfo.number_of_scenes);
@@ -39,12 +41,14 @@ Speakers.SpeakersModel = function(){
 		}
 	};
 
+	//Method to calculate for every speaker his absolute number of appearances in drama
 	var calculateAppearancePerSpeakers = function(){
 		for(var speaker = 0; speaker < speakersInfo.length; speaker++){
 			calculateAppearancePerSpeaker(speakersInfo[speaker]);
 		}
 	};
 
+	//calculate absolute number of appearances of one speaker
 	var calculateAppearancePerSpeaker = function(speaker){
 		var appearances = 0;
 		for(var act = 0; act < scenesInfo.length; act++){
@@ -58,9 +62,11 @@ Speakers.SpeakersModel = function(){
 				}
 			}
 		}
+		//Add the number of appearances as value to the speaker-object in speakersInfo to fetch it later
 		speaker.number_of_appearances = appearances;
 	}
 
+	//Get all necessary info of the database, and trigger when finished
 	var initInfo = function(name){
 		firebaseRef = new Firebase("https://katharsis.firebaseio.com/" + name +"/" + currentDrama_id);
 		firebaseRef.on("value", function(snapshot) {

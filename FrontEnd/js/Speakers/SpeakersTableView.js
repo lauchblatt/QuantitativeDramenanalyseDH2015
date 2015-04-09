@@ -19,6 +19,7 @@ Speakers.SpeakersTableView = function(){
 
 	};
 
+	//create each row Item of the table with the adapted speakerobject of the model
 	var createSpeakerItem = function(speaker){
 		var row = $("<tr>");
 
@@ -33,6 +34,7 @@ Speakers.SpeakersTableView = function(){
 			row.append(($("<td>")).text(speaker.maximum_length_of_speakers_speeches));
 			row.append(($("<td>")).text(speaker.minimum_length_of_speakers_speeches));
 		}else{
+			//Exception Handling for speakers without speeches
 			row.append(($("<td>")).text(0));
 			row.append(($("<td>")).text(0));
 			row.append(($("<td>")).text(0));
@@ -42,6 +44,7 @@ Speakers.SpeakersTableView = function(){
 		return row;
 	};
 
+	//Table sort from http://stackoverflow.com/questions/3160277/jquery-table-sort
 	var initSorting = function(){
 		$('th').click(function(){
     		var table = $(this).parents('table').eq(0)
@@ -70,6 +73,7 @@ Speakers.SpeakersTableView = function(){
 		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 	};
 
+	//Init links with current Id of drama
 	var initLinks = function(){
 		$("#link-overall").attr("href", "drama.html?drama_id=" + currentDrama_id);
 		$("#link-matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);

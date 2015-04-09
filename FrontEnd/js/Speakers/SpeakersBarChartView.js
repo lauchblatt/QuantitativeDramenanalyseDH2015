@@ -1,5 +1,6 @@
 Speakers.SpeakersBarChartView = function(){
 	var that = {};
+	//saving current Selection, and data attribute that is affected by the selection
 	var speakersSelection = "";
 	var speakersAttribute = "";
 
@@ -7,6 +8,7 @@ Speakers.SpeakersBarChartView = function(){
 		initListener();
 	};
 
+	//Change current selection of dropdown-menu and react accordingly
 	var initListener = function(){
 		$("#selection-speakers").change(speakersSelectionClicked);
 	};
@@ -19,6 +21,7 @@ Speakers.SpeakersBarChartView = function(){
 		var data = new google.visualization.DataTable();
 		data.addColumn("string", "Sprecher");
 		data.addColumn("number", speakersSelection);
+		//To sort by data-attribute
 		speakersInfo.sort(sort_by(speakersAttribute,true));
 		var array = [];
 		for(i = 0; i < speakersInfo.length; i++){
@@ -27,6 +30,7 @@ Speakers.SpeakersBarChartView = function(){
 		}
 		data.addRows(array);
 
+		//Estimate Height according to number of speakers
 		var estimatedHeight = speakersInfo.length * 30;
 		if(estimatedHeight < 800){
 			estimatedHeight = 800;
@@ -77,6 +81,7 @@ Speakers.SpeakersBarChartView = function(){
         dashboard.draw(data);
 	};
 
+	//Adept data-attribute to be rendered according to selection of dropdown-menu
 	var setSpeakersSelection = function(){
 		speakersSelection = $("#selection-speakers").val();
 
@@ -89,6 +94,7 @@ Speakers.SpeakersBarChartView = function(){
 		if(speakersSelection == "Minimum Replikenlänge"){speakersAttribute = "minimum_length_of_speakers_speeches";}
 	};
 
+	//Sort method for objects from http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
 	var sort_by = function(field, reverse, primer){
 
    		var key = primer ? 

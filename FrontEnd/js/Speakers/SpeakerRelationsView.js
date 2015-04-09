@@ -6,6 +6,7 @@ Speakers.SpeakerRelationsView = function(){
 		initListener();
 	};
 
+	//change selection of speaker, when another speaker is chosen
 	var initListener = function(){
 		$("#selection-speaker-relations").change(speakersSelectionClicked);
 	};
@@ -69,6 +70,7 @@ Speakers.SpeakerRelationsView = function(){
 		}
 	};
 
+	//Method to build Dropdown-Menu dynamicly
 	var buildSelection = function(speakersInfo){
 		$select = $("#selection-speaker-relations");
 		for(var i = 0; i < speakersInfo.length; i++){
