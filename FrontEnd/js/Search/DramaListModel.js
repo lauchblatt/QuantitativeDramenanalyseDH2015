@@ -207,6 +207,8 @@ Search.DramaListModel = function(){
 			$(that).trigger("NoResultsFound");
 			$("#loading-text-button").text("Suchen");
 			$("#loading-circle-button").css("display", "none");
+			$("#info-compare").css("display", "none");
+			$("#loading-spinner").css("display", "none");
 		}	
 	};
 
