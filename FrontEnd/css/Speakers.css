@@ -121,49 +121,6 @@ span {
 	display: block;
 }
 
-.relationbox {
-	text-align: center;
-	vertical-align: middle;
-	margin: auto;
-}
-
-#independent {
-	float: left;
-	display: inline-block;
-	display: inline;
-	zoom: 1;
-	vertical-align: middle;
-}
-
-#concomitant {
-	float: right;
-	display: inline-block;
-	display: inline;
-	zoom: 1;
-	vertical-align: middle;
-}
-
-.independent {
-	float: left;
-}
-
-.concomitant {
-	float: right;
-}
-
-.relationSingleBox {
-	width: 30% !important;
-}
-
-#speaker-name {
-	font-style: bold;
-	font-size: 20px;
-	display: inline-block;
-	display: inline;
-	zoom: 1;
-	vertical-align: middle;
-}
-
 #logo-wrapper,
 #header-wrapper {
 	display: inline-block;
@@ -215,4 +172,84 @@ span {
 @keyframes spin {
     from { transform: scale(1) rotate(0deg);}
     to { transform: scale(1) rotate(360deg);}
+}
+
+/* speaker relation */
+
+#speaker-relation .row{
+	margin-bottom: 60px;
+}
+
+#speaker-relation .box{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    border: 3px solid #337ab7;
+    margin-bottom: 0;
+}
+
+
+.relationbox {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+#independent {
+
+}
+
+#concomitant {
+
+}
+
+.relationSingleBox {
+	
+}
+
+#speaker-name {
+	font-weight: bold;
+	font-size: 26px;
+	padding: 10px;
+}
+
+.correlation-box {
+	border: 2px solid #337ab7;
+	margin: 20px 20px 40px 20px;
+	padding: 20px;
+}
+
+/* arrows */
+
+.bottom_arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.bottom_arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #337ab7;
+	border-width: 15px;
+	margin-left: -15px;
+	margin-bottom: 30px;
+}
+.bottom_arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: #337ab7;
+	border-width: 18px;
+	margin-left: -18px;
+}
+
+#speaker-relation .row.no-margin-bottom {
+	margin-bottom: 0;
 }
