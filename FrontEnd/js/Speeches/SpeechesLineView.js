@@ -1,5 +1,6 @@
 Speeches.SpeechesLineView = function(){
 	var that = {};
+  //Current selection of the dropdown-menu
   var disSelection = "";
   var currentDrama_id = 0;
 
@@ -9,6 +10,7 @@ Speeches.SpeechesLineView = function(){
     initLinks();
   };
 
+  //Set Selection, when changed
   var setSelection = function(){
     disSelection = $("#selection-speech-distribution").val();
 
@@ -22,6 +24,7 @@ Speeches.SpeechesLineView = function(){
     $(that).trigger("SelectionClicked");
   };
 
+  //Method to render the relative distribution
 	var renderRelative = function(distribution){
 
 		var data = new google.visualization.DataTable();
@@ -98,6 +101,7 @@ Speeches.SpeechesLineView = function(){
         dashboard.draw(data);
 	};
 
+    //Method to render absolute distribution
     var renderAbsolute = function(distribution){
 
     var data = new google.visualization.DataTable();
@@ -185,6 +189,7 @@ Speeches.SpeechesLineView = function(){
     currentDrama_id = (params.substring(params.indexOf("=") + 1));
   };
 
+  //Init Links on page with ID of currently selected drama
   var initLinks = function(){
     $("#link-overall").attr("href", "drama.html?drama_id=" + currentDrama_id);
     $("#link-matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);

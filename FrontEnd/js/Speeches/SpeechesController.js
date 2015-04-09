@@ -22,10 +22,12 @@ Speeches.SpeechesController = function(){
 		$(speechesLineView).on("SelectionClicked", visuCurve);
 	};
 
+	//Render CurveView new if selection of dropdown-menu is changed
 	var visuCurve = function(){
 		speechesLineView.setSelection();
 		var selection = speechesLineView.getSelection();
 		var distribution = null;
+		//Get appropriate Distribution from Model
 		if(selection == "Absolut"){
 			distribution = speechesModel.getDistribution();
 			speechesLineView.renderAbsolute(distribution)
@@ -38,6 +40,7 @@ Speeches.SpeechesController = function(){
 		
 	};
 
+	//Method to Call when first rendered
 	var visu = function(){
 		var scenesInfo = speechesModel.getScenesInfo();
 		var dramaInfo = speechesModel.getDramaInfo();
@@ -54,8 +57,9 @@ Speeches.SpeechesController = function(){
 		$("#maincontent").fadeIn();
 	};
 
+	//necessary workaround to get google charts working, as crazy as it looks
 	var initGoogleCharts = function(){
-		// Load the Visualization API and the piechart package.
+		// Load the Visualization API and the package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 
       		'packages':['corechart', 'controls']})}, 0);
 	};

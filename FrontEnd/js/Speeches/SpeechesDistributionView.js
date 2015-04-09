@@ -12,6 +12,7 @@ Speeches.SpeechesDistributionView = function(){
 			for(scene = 0; scene < scenesInfo[act].length; scene++){
 				if(scenesInfo[act][scene].speeches !== undefined){
 					for(speech = 0; speech < scenesInfo[act][scene].speeches.length; speech++){
+						//generate Tooltip-Info for every speech in the drama, with every information for a speech
 						var row = [getSpeechInfo(act, scene, speech, scenesInfo[act][scene].speeches[speech]), 
 						scenesInfo[act][scene].speeches[speech]['length']];
 						array.push(row);

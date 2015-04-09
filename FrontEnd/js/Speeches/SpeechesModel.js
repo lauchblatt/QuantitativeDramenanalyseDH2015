@@ -4,6 +4,7 @@ Speeches.SpeechesModel = function(){
 	var currentDrama_id = 0;
 	var scenesInfo = [];
 	var dramaInfo = null;
+	//Distribution object, consisting of the lenght of the speech as key for the number of appearances of this speech length
 	var distribution = {};
 	var distributionInPercent = {};
 
@@ -16,6 +17,7 @@ Speeches.SpeechesModel = function(){
 	};
 
 	var continueInit = function(){
+		//check if all data of database is fetched
 		if(scenesInfo.length > 0  && dramaInfo != null){
 			calculateDistribution();
 			calculateDistributionInPercent();
@@ -32,6 +34,7 @@ Speeches.SpeechesModel = function(){
 		}
 	};
 
+	//Method to calculate Distribution, not calculated in Back-End
 	var calculateDistribution = function(){
 		for(act = 0; act < scenesInfo.length; act++){
 			for(scene = 0; scene < scenesInfo[act].length; scene++){
@@ -39,9 +42,11 @@ Speeches.SpeechesModel = function(){
 				if(scenesInfo[act][scene].speeches !== undefined){
 					for(var speech = 0; speech < scenesInfo[act][scene].speeches.length; speech++){
 							var currentspeechLength = scenesInfo[act][scene].speeches[speech].length;
+							//If speecheslenght doesnt exist create key in distribution-object for that length and count first entry
 							if(distribution[currentspeechLength] === undefined){
 								distribution[currentspeechLength] = 1;
 							}else{
+								//For every other speech with the length increase the value of the speech-length-key
 								distribution[currentspeechLength] = distribution[currentspeechLength] + 1;
 							}
 					}	
@@ -50,6 +55,7 @@ Speeches.SpeechesModel = function(){
 		}
 	};
 
+	//catch alle info from database and trigger when ready
 	var initInfo = function(name){
 		firebaseRef = new Firebase("https://katharsis.firebaseio.com/" + name +"/" + currentDrama_id);
 		firebaseRef.on("value", function(snapshot) {
