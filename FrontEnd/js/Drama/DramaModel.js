@@ -4,6 +4,7 @@ Drama.DramaModel = function(){
 	var dramaInfo = null;
 
 	var init = function(){
+		//Get ID of chosen drama
 		var params = window.location.search
 		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 		initInfo("drama_data");
@@ -13,7 +14,6 @@ Drama.DramaModel = function(){
 		firebaseRef = new Firebase("https://katharsis.firebaseio.com/" + name +"/" + currentDrama_id);
 		firebaseRef.on("value", function(snapshot) {
 		dramaInfo = snapshot.val();
-		console.log(snapshot.val());
 		$(that).trigger("InitFinished");
 		}, function (errorObject) {
 		  console.log("The read failed: " + errorObject.code);

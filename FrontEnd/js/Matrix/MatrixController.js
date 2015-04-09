@@ -17,6 +17,7 @@ Matrix.MatrixController = function(){
 	};
 
 	buildTable = function(){
+		//init all Infos necessary to build the matrix
 		var dramaInfo = matrixModel.getDramaInfo();
 		var actsInfo = matrixModel.getActsInfo();
 		var scenesInfo = matrixModel.getScenesInfo();

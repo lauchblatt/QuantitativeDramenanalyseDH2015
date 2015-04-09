@@ -10,11 +10,10 @@ Drama.DramaView = function(){
 
 	var initId = function(){
 		var params = window.location.search
-		console.log("hello World");
-		console.log(params);
 		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 	};
 
+	//Set different Links of the Page with the ID of the currently selected drama
 	var initLinks = function(){
 		$("#link-overall").attr("href", "drama.html?drama_id=" + currentDrama_id);
 		$("#link-matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);
@@ -32,6 +31,7 @@ Drama.DramaView = function(){
 		$("#link-curve-diagram").attr("href", "speeches.html?drama_id=" + currentDrama_id + "#curve-diagram");
 	};
 
+	//Set UI-Links with the ID of the currently selected drama
 	var initFields = function(){
 		$("#to_matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);
 		$("#to_dramaAnalysis").attr("href", "singledrama.html?drama_id=" + currentDrama_id);

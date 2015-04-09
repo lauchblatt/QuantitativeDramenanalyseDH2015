@@ -43,15 +43,7 @@ Matrix.MatrixModel = function(){
 		for(var i = 0; i < dramaInfo.speakers.length; i++){
 			sceneCounter = 0;
 			for(var j = 0; j < scenesInfo.length; j++){
-				for(var k = 0; k < scenesInfo[j].length; k++){
-					/*
-					console.log('###');
-					console.log("Akt " + j);
-					console.log("Scene " + k);
-					console.log(dramaInfo.speakers[i]);
-					console.log(scenesInfo[j][k].appearing_speakers);
-					*/
-					
+				for(var k = 0; k < scenesInfo[j].length; k++){					
 					var speakerAppears = checkIfSpeakerInList(dramaInfo.speakers[i],
 						scenesInfo[j][k].appearing_speakers);
 					if(speakerAppears){
@@ -65,16 +57,14 @@ Matrix.MatrixModel = function(){
 						matrix[i][sceneCounter] = speakerCell;
 					}
 					sceneCounter++;
-					/*
-					console.log(speakerAppears);
-					console.log('###');
-					*/
 				}
 			}
 		}
 		//console.log(matrix);
 	};
 
+	//Generate an object to hold all data necessary to present infos for inner cells in the matrix
+	//This Data is not calculated in Back-End
 	var getCellObject = function(name, speakerSpeeches){
 		var cellObj = {};
 		var speechesLengths = [];
@@ -134,7 +124,7 @@ Matrix.MatrixModel = function(){
 
 	var checkIfSpeakerInList = function(speaker, speakerList){
 		console.log(speakerList);
-		//Anpassung an Datenbank-Änderung
+		//Catch exceptions of database
 		if(speakerList === undefined || speakerList == 0){
 			return false;
 		}
@@ -145,6 +135,7 @@ Matrix.MatrixModel = function(){
 		}
 	};
 
+	// Work-Around to generate somethin like a two-dimensional Array to represent the matrix
 	var initMatrix = function(){
 		matrix = new Array(dramaInfo.speakers.length);
 		for(var i = 0; i < dramaInfo.speakers.length; i++){

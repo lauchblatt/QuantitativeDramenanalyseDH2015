@@ -7,23 +7,29 @@ Matrix.MatrixView = function(){
 	var init = function(dramaInfo, actsInfo, scenesInfo, speakersInfo, matrix){
 		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
 		$("#dramaAuthor").text(dramaInfo.author);
+
+		//Step-By-Step dynamic building of the matrix
 		renderheadline(scenesInfo);
 		renderSpeakerColumn(dramaInfo);
 		fillTable(dramaInfo, scenesInfo);
 		fillCellsWithConfMatrix(matrix);
+
+		//Initialisation of Tooltips
 		initTooltipsForSpeakers(speakersInfo);
 		initTooltipsForActs(actsInfo);
 		initTooltipsForScenes(scenesInfo);
 		initTooltipsForTitleHeader(dramaInfo);
+
 		initId();
 		initLinks();
-		initHorizontalScrollListener();
+		//initHorizontalScrollListener();
 		$(".container").fadeIn("slow");
 		$("#loading").css("display", "none");
 		$("#maincontent").fadeIn();;
 
 	};
 
+	//Method to enable scrolling of speaker-column
 	var initHorizontalScrollListener = function(){
 		$(document).scroll(function() {
 		    var documentScrollLeft = $(document).scrollLeft();
@@ -74,6 +80,10 @@ Matrix.MatrixView = function(){
 
 		});
 	};
+
+	/* All Tooltips need to be initialised and created, 
+	the content of the tooltip is a jQuery-Object (mostly a div), 
+	which is catched by get-Methods*/
 
 	var initTooltipsForTitleHeader = function(dramaInfo){
 		var $titleHeader = $("#title-header");
@@ -228,12 +238,7 @@ Matrix.MatrixView = function(){
 		return $content;
 	};
 
-	var buildAttribute = function(name, attribute){
-		$div = $("<div>");
-		$div.text(name + ": " + attribute);
-		return $div;
-	};
-
+	//Method to fill inner Cells of matrix, after it is build
 	var fillCellsWithConfMatrix = function(matrix){
 		for(var i = 0; i < matrix.length; i++){
 			for(var j = 0; j < matrix[i].length; j++){
@@ -255,6 +260,7 @@ Matrix.MatrixView = function(){
 		}
 	};
 
+	//Method to fill Table with infos, after it is build
 	var fillTable = function(dramaInfo, scenesInfo){
 		for(var speaker = 0; speaker < dramaInfo.speakers.length; speaker++){
 			var $row = $("#speaker_" + speaker + "_row");
@@ -327,6 +333,7 @@ Matrix.MatrixView = function(){
 		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 	};
 
+	//Init Links with the ID of the currently selected drama
 	var initLinks = function(){
 		$("#link-overall").attr("href", "drama.html?drama_id=" + currentDrama_id);
 		$("#link-matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);
