@@ -16,7 +16,25 @@ Search.DramaListView = function(){
 				checkedDramaIds.push($(checkboxes[i]).attr("drama_id"));
 			}
 		}
-		$(that).trigger("AnalyseCollection", [checkedDramaIds]);
+		if(checkedDramaIds.length == 0){
+			$('#no-drama-selected-popup').show();
+			$('body').on('click', function(){
+				$('.popup').hide();
+				$('body').off('click');
+			});
+			return false;
+		}else if(checkedDramaIds.length == 1){
+			$('#one-drama-selected-popup').show();
+			$('body').on('click', function(){
+				$('.popup').hide();
+				$('body').off('click');
+			});
+			return false;
+		}else{
+			$(that).trigger("AnalyseCollection", [checkedDramaIds]);
+			return true;
+		}
+
 	};
 
 	var setAllSelector = function(){
