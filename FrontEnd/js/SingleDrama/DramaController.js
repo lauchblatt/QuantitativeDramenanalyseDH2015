@@ -51,6 +51,8 @@ SingleDrama.DramaController = function(){
 		barChartDramaView.drawChartScenes(scenesInfo);
 
 		$(".container").fadeIn("slow");
+		$("#loading").css("display", "none");
+		$("#maincontent").fadeIn();
 	};
 
 	var visuActBarChart = function(event){

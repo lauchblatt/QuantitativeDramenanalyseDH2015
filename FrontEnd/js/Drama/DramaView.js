@@ -43,6 +43,8 @@ Drama.DramaView = function(){
 		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
 		$("#dramaAuthor").text(dramaInfo.author);
 		$(".container").fadeIn("slow");
+		$("#loading").css("display", "none");
+		$("#maincontent").fadeIn();;
 		resizeOverviewBoxes();
 	};
 

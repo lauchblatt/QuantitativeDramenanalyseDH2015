@@ -56,7 +56,7 @@ body {
 }
 
 #quicklinks {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	text-align: center;
 	margin-top: 35px;
 }
@@ -112,4 +112,49 @@ h3 {
 	height: 160px;
 	display: inline-block;
 	border: 2px solid #ccc;
+}
+
+#selected-dramas-wrapper {
+	margin-bottom: 70px;
+}
+
+#selected-dramas-wrapper h3 {
+	color: #337ab7;
+  	text-decoration: none;
+}
+
+.glyphicon-triangle-bottom,
+.glyphicon-triangle-top {
+	font-size: 24px;
+	margin-left: 10px;
+}
+
+#selected-dramas-wrapper #selected-dramas
+{
+	display: none;
+}
+
+#selected-dramas-wrapper.open #selected-dramas{
+	display: block;
+	font-size: 1.2em;
+}
+
+#selected-dramas-wrapper.open .glyphicon-triangle-top,
+#selected-dramas-wrapper .glyphicon-triangle-bottom {
+	display: inline-block;
+}
+
+#selected-dramas-wrapper.open .glyphicon-triangle-bottom, 
+#selected-dramas-wrapper .glyphicon-triangle-top{
+	display: none;
+}
+
+th {
+	text-align: center;
+	vertical-align: middle !important;
+}
+
+td {
+	text-align: center;
+	vertical-align: middle !important;
 }

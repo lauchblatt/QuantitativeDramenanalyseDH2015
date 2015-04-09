@@ -50,6 +50,8 @@ Speeches.SpeechesController = function(){
 		$("#dramaAuthor").text(dramaInfo.author);
 
 		$(".container").fadeIn("slow");
+		$("#loading").css("display", "none");
+		$("#maincontent").fadeIn();
 	};
 
 	var initGoogleCharts = function(){

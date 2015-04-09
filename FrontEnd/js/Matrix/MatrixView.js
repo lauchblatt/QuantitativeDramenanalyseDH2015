@@ -19,6 +19,8 @@ Matrix.MatrixView = function(){
 		initLinks();
 		initHorizontalScrollListener();
 		$(".container").fadeIn("slow");
+		$("#loading").css("display", "none");
+		$("#maincontent").fadeIn();;
 
 	};
 

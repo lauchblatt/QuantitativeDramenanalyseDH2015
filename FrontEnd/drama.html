@@ -11,146 +11,155 @@
 
 	</head>
 	<body>
-		<div class="container" id="header">
-				<div id="logo-wrapper">
-					<a href="./index.html" ><img id="logo" src="./img/logo.png" title="Katharsis"></img></a>
-				</div>
-				<div id="header-wrapper">
-					<h1 id="dramaTitle" class="page-header"></h1>
-					<h2 id="dramaAuthor"></h2>
-				</div>
+		<div id="loading" class="container">
+			<div id="loading-spinner">
+				<span class="glyphicon glyphicon-repeat glyphicon-repeat-animate loading-button" id="loading-spinner-img">
+				</span>
+				<div id="loading-text">Daten werden berechnet. Dies kann einige Sekunden dauern...</div>
+			</div>
 		</div>
-		
-		<div class="container">
-			<nav class="navbar navbar-default">
-				  <div class="container-fluid">
-
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-
-				      	<li class="superactive"><a id="link-overall" class="links" href="#">Übersicht <span class="sr-only">(current)</span></a></li>
-
-				      	<li><a href="#" id="link-matrix" class="links">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
-
-				        <li class="dropdown">
-				          <a href="" id="link-drama" role="button" class="links" aria-expanded="false">
-				          	Drama-Akt-Szenen-Analyse<span class="caret"></span></a>
-				          <ul class="dropdown-menu" role="menu">
-				            <li><a href="#" id="link-drama-actSceneAnalysis">Akt-Szenen-Tabelle</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#" id="link-drama-actStatistic">Balkendiagramm - Akt-Statistik</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#" id="link-drama-sceneStatistic">Balkendiagramm - Szenen-Statistik</a></li>
-				          </ul>
-				        </li>
-
-				        <li class="dropdown">
-				          <a id="link-speakers" class="links" href="#" role="button" aria-expanded="false">
-				          	Sprecher-Analyse<span class="caret"></span></a>
-				          <ul class="dropdown-menu" role="menu">
-				            <li><a href="#" id="link-speaker-table">Sprecher-Tabelle</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#" id="link-speeches-dominance">Kreisdiagramm - Replikendominanz</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#" id="link-speaker-statistic">Balkendiagramm - Sprecher-Statistik</a></li>
-				            <li class="divider"></li>
-				            <li><a href="#" id="link-speaker-relations">Sprecher-Relationen</a></li>
-				          </ul>
-				        </li>
-
-				        <li class="dropdown">
-				          <a href="#" id="link-speeches" class="links" role="button" aria-expanded="false">
-				          	Replikenverteilung<span class="caret"></span></a>
-				          <ul class="dropdown-menu" role="menu">
-				            <li><a href="#" id="link-histogram">Replikenverteilung - Histogramm</a></li>
-				            <li class="divider" ></li>
-				            <li><a href="#" id="link-curve-diagram">Replikenverteilung - Kurvendiagramm</a></li>
-				          </ul>
-				        </li>
-
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-			</nav>
-
-			<div class="box-row">
-
-				<a href="" id="to_matrix">
-					<div class="box">
-						<h4>Konfigurationsmatrix</h4>
-						<div class="text">
-							Eine Konfigurationsmatrix ist eine Tabelle, die Auf- und Abtritte der Sprecher im Verlauf des Dramas visualisiert. Auf der x-Achse werden die Szenen eingetragen und auf der y-Achse die Sprecher. Ein inneres
-							Feld wird ausgefüllt, wenn ein Sprecher in einer Szene einen Auftritt hat.
-							<br/>
-							<br/>
-							Die Konfigurationsmatrix ist angereichert durch zahlreiche Drama-, Akt- und Szenenlevelinformationen wie die
-							Konfigurationsdichte und Replikenstatistiken, sowie Daten zu den Sprechern. Diese Daten können beim Hovern über
-							die einzelnen Felder betrachtet werden.
-							<br/>
-							<br/>
-							Inhalt: <b>Konfigurationsmatrix, diverse Dramen-, Akt-, Szenen- und Sprecherstatistiken</b>
-						</div>
+		<div id="maincontent">
+			<div class="container" id="header">
+					<div id="logo-wrapper">
+						<a href="./index.html" ><img id="logo" src="./img/logo.png" title="Katharsis"></img></a>
 					</div>
-				</a>
+					<div id="header-wrapper">
+						<h1 id="dramaTitle" class="page-header"></h1>
+						<h2 id="dramaAuthor"></h2>
+					</div>
+			</div>
+			
+			<div class="container">
+				<nav class="navbar navbar-default">
+					  <div class="container-fluid">
 
-	  			<a href="" id="to_dramaAnalysis">
-	  				<div class="box">
-	  					<h4>Drama-Akt-Szenen-Analyse</h4>
-	  					<div class="text">
-	  						In der Drama-Akt-Szenen-Analyse können Sie verschieden quantitative Parameter und ihre Entwicklung im Verlauf des Dramas, im Verlauf der Akte und der Szenen untersuchen.
-	  						<br/>
-	  						<br/> 
-	  						Zu den Parametern gehören:</br>
-	  						Anzahl der Sprecher, Anzahl der Szenen, Anzahl der Repliken, Mittelwert der Repliken, Median der Repliken,
-	  						Maximum der Repliken, Minimum der Repliken. Replikenlänge jeweils in Worten.
-	  						<br/>
-	  						<br/>
-	  						Inhalt: <b>Akt-Szenen-Tabelle, Balkendiagramm - Akt-Statistik, Balkendiagramm - Szenen-Statistik</b>
-	  					</div>
-	  				</div>
-	  			</a>
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
 
-  			</div>
+					      	<li class="superactive"><a id="link-overall" class="links" href="#">Übersicht <span class="sr-only">(current)</span></a></li>
 
-  			<div class="box-row">
+					      	<li><a href="#" id="link-matrix" class="links">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
 
-	 			<a href="" id="to_speakerAnalysis">
-	 				<div class="box">
-	 					<h4>Sprecher-Analyse</h4>
-	 					<div class="text">
-	 						In der Sprecheranalyse können Sie Statistiken und Parameter zu den einzelnen Sprechern, also dem Figuren-Inventar des Dramas untersuchen. Gleichzeitig können Sie Sprecher global untereinander vergleichen.
-	 						<br/>
-	 						<br/>
-	 						Zu den Parametern gehören:<br/>
-	 						Anwesenheit in Szenen, Anwesenheit pro Szene in Prozent, Anzahl der Repliken, Mittelwert der Replikenlängen, Median der Replikenlängen, Maximum der Replikenlängen, Minimum der Replikenlängen. Replikenlänge jeweils in Worten.
-	 						<br/>
-	 						<br/>
-	 						Ein Kreisdiagramm visualisiert die Replikendominanz des Figuren-Inventars. Gleichzeitig werden die unterschiedlichen szenischen Relationen zwischen Figuren dargestellt (szenisch dominant, konkomitant, alternativ, unabhängig).
-	 						<br/>
-	 						<br/>
-	 						Inhalt: <b>Sprecher-Tabelle, Kreisdiagramm - Replikendominanz, Balkendiagramm - Sprecherstatistik, Sprecherrelationen</b>
-	 					</div>
-	 				</div>
-	 			</a>
+					        <li class="dropdown">
+					          <a href="" id="link-drama" role="button" class="links" aria-expanded="false">
+					          	Drama-Akt-Szenen-Analyse<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#" id="link-drama-actSceneAnalysis">Akt-Szenen-Tabelle</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-drama-actStatistic">Balkendiagramm - Akt-Statistik</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-drama-sceneStatistic">Balkendiagramm - Szenen-Statistik</a></li>
+					          </ul>
+					        </li>
 
-	 			<a href="" id="to_speechAnalysis">
-	 				<div class="box">
-	 					<h4>Replikenverteilung</h4>
-	 					<div class="text">
-	 						Die Replikenverteilung visualisiert die Verteilung aller vorkommender Replikenlängen, welche in Wortanzahl gemessen werden.
-	 						<br/>
-	 						<br/>
-	 						Die Verteilung wird in Form eines manipulierbaren Histogramms, in dem alle Repliken einzeln einsehbar sind und einem Kurvendiagramm. Die Verteilung kann man wahlweise absolut oder in Prozent betrachten.
-	 						<br/>
-	 						<br/>
-	 						Inhalt: <b>Replikenverteilung - Histogramm, Replikenverteilung - Kurvendiagramm</b>
-	 					</div>
-	 				</div>
-	 			</a>
+					        <li class="dropdown">
+					          <a id="link-speakers" class="links" href="#" role="button" aria-expanded="false">
+					          	Sprecher-Analyse<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#" id="link-speaker-table">Sprecher-Tabelle</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-speeches-dominance">Kreisdiagramm - Replikendominanz</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-speaker-statistic">Balkendiagramm - Sprecher-Statistik</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-speaker-relations">Sprecher-Relationen</a></li>
+					          </ul>
+					        </li>
 
- 			</div>
+					        <li class="dropdown">
+					          <a href="#" id="link-speeches" class="links" role="button" aria-expanded="false">
+					          	Replikenverteilung<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#" id="link-histogram">Replikenverteilung - Histogramm</a></li>
+					            <li class="divider" ></li>
+					            <li><a href="#" id="link-curve-diagram">Replikenverteilung - Kurvendiagramm</a></li>
+					          </ul>
+					        </li>
 
-		</div>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+				</nav>
+
+				<div class="box-row">
+
+					<a href="" id="to_matrix">
+						<div class="box">
+							<h4>Konfigurationsmatrix</h4>
+							<div class="text">
+								Eine Konfigurationsmatrix ist eine Tabelle, die Auf- und Abtritte der Sprecher im Verlauf des Dramas visualisiert. Auf der x-Achse werden die Szenen eingetragen und auf der y-Achse die Sprecher. Ein inneres
+								Feld wird ausgefüllt, wenn ein Sprecher in einer Szene einen Auftritt hat.
+								<br/>
+								<br/>
+								Die Konfigurationsmatrix ist angereichert durch zahlreiche Drama-, Akt- und Szenenlevelinformationen wie die
+								Konfigurationsdichte und Replikenstatistiken, sowie Daten zu den Sprechern. Diese Daten können beim Hovern über
+								die einzelnen Felder betrachtet werden.
+								<br/>
+								<br/>
+								Inhalt: <b>Konfigurationsmatrix, diverse Dramen-, Akt-, Szenen- und Sprecherstatistiken</b>
+							</div>
+						</div>
+					</a>
+
+		  			<a href="" id="to_dramaAnalysis">
+		  				<div class="box">
+		  					<h4>Drama-Akt-Szenen-Analyse</h4>
+		  					<div class="text">
+		  						In der Drama-Akt-Szenen-Analyse können Sie verschieden quantitative Parameter und ihre Entwicklung im Verlauf des Dramas, im Verlauf der Akte und der Szenen untersuchen.
+		  						<br/>
+		  						<br/> 
+		  						Zu den Parametern gehören:</br>
+		  						Anzahl der Sprecher, Anzahl der Szenen, Anzahl der Repliken, Mittelwert der Repliken, Median der Repliken,
+		  						Maximum der Repliken, Minimum der Repliken. Replikenlänge jeweils in Worten.
+		  						<br/>
+		  						<br/>
+		  						Inhalt: <b>Akt-Szenen-Tabelle, Balkendiagramm - Akt-Statistik, Balkendiagramm - Szenen-Statistik</b>
+		  					</div>
+		  				</div>
+		  			</a>
+
+	  			</div>
+
+	  			<div class="box-row">
+
+		 			<a href="" id="to_speakerAnalysis">
+		 				<div class="box">
+		 					<h4>Sprecher-Analyse</h4>
+		 					<div class="text">
+		 						In der Sprecheranalyse können Sie Statistiken und Parameter zu den einzelnen Sprechern, also dem Figuren-Inventar des Dramas untersuchen. Gleichzeitig können Sie Sprecher global untereinander vergleichen.
+		 						<br/>
+		 						<br/>
+		 						Zu den Parametern gehören:<br/>
+		 						Anwesenheit in Szenen, Anwesenheit pro Szene in Prozent, Anzahl der Repliken, Mittelwert der Replikenlängen, Median der Replikenlängen, Maximum der Replikenlängen, Minimum der Replikenlängen. Replikenlänge jeweils in Worten.
+		 						<br/>
+		 						<br/>
+		 						Ein Kreisdiagramm visualisiert die Replikendominanz des Figuren-Inventars. Gleichzeitig werden die unterschiedlichen szenischen Relationen zwischen Figuren dargestellt (szenisch dominant, konkomitant, alternativ, unabhängig).
+		 						<br/>
+		 						<br/>
+		 						Inhalt: <b>Sprecher-Tabelle, Kreisdiagramm - Replikendominanz, Balkendiagramm - Sprecherstatistik, Sprecherrelationen</b>
+		 					</div>
+		 				</div>
+		 			</a>
+
+		 			<a href="" id="to_speechAnalysis">
+		 				<div class="box">
+		 					<h4>Replikenverteilung</h4>
+		 					<div class="text">
+		 						Die Replikenverteilung visualisiert die Verteilung aller vorkommender Replikenlängen, welche in Wortanzahl gemessen werden.
+		 						<br/>
+		 						<br/>
+		 						Die Verteilung wird in Form eines manipulierbaren Histogramms, in dem alle Repliken einzeln einsehbar sind und einem Kurvendiagramm. Die Verteilung kann man wahlweise absolut oder in Prozent betrachten.
+		 						<br/>
+		 						<br/>
+		 						Inhalt: <b>Replikenverteilung - Histogramm, Replikenverteilung - Kurvendiagramm</b>
+		 					</div>
+		 				</div>
+		 			</a>
+
+	 			</div>
+
+			</div>
+		</div> <!-- maincontent -->
 
 		<script src="js/libs/jquery-1.11.2.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
