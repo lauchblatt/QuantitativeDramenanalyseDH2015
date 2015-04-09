@@ -39,22 +39,13 @@ def main():
         for filename in os.listdir("../Korpus"):
             try:
                 dramaModel = parser.parse_xml("../Korpus/" + filename)
-                data = output.generate_drama_data(dramaModel)
-                dramas.append(data)
                 dramasForDenormalizing.append(dramaModel)
                 print("Erfolg beim Parsen eines Dramas")
             except:
                 print("Fehler beim Parsen eines Dramas")
                 print("!!! " + filename)
 
-    """
-    print(len(dramas))
-    dramas_json = json.dumps(dramas, indent=4, ensure_ascii=True) 
-    doc = open('Dramas_data.json', 'w')
-    doc.write(dramas_json)
-    doc.close
-    
-    """
+
     output.generate_denormalized_JSON(dramasForDenormalizing)
     """
     output.generates_normalized_JSON(dramas)
