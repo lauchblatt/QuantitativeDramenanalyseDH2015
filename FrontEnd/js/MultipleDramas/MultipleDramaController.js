@@ -35,6 +35,10 @@ MultipleDramas.MultipleDramasController = function(){
 		$(authorView).on("AuthorSelectionClicked", visuAuthorChart);
 		$(categoryView).on("CategorySelectionClicked", visuCategoryChart);
 		$(lineCurveView).on("SpeechSelectionClicked", visuSpeechChart);
+
+		$('#selected-dramas-wrapper').on('click', function(){
+			$(this).toggleClass('open');
+		});
 	};
 
 	var visu = function(){
@@ -44,6 +48,8 @@ MultipleDramas.MultipleDramasController = function(){
 		var distribution = multipleDramasModel.getDistribution();
 		var catDistribution = multipleDramasModel.getCategoryDistribution();
 		var authorDistribution = multipleDramasModel.getAuthorDistribution();
+
+		renderSelectedDramas(dramas);
 
 		yearView.setYearSelection();
 		yearView.setYearCompareSelection();
@@ -64,6 +70,32 @@ MultipleDramas.MultipleDramasController = function(){
 		$("#maincontent").fadeIn();;
 
 	};
+
+	var renderSelectedDramas = function(dramas){
+		for(var i = 0; i < dramas.length; i++){
+			var row = createTableItem(dramas[i]);
+			$("#selected-dramas").append(row);
+		}
+	};
+
+	var createTableItem = function(drama){
+		var row = $("<tr>");
+		row.append(($("<td>")).text(drama.title));
+
+		row.append(($("<td>")).text(drama.author));
+
+		if(drama.type !== undefined){
+			row.append(($("<td>")).text(drama.type));
+		}else{
+			row.append(($("<td>")).text("Unbekannt"));
+		}
+
+		row.append(($("<td>")).text(drama.year));
+
+		row.append(($("<td>")).text(drama.number_of_speeches_in_drama));
+
+		return row;
+	}
 
 	var visuSpeechChart = function(){
 		var distribution = multipleDramasModel.getDistribution();
