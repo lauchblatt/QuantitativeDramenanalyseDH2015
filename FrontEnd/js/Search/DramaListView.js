@@ -136,7 +136,7 @@ Search.DramaListView = function(){
 	};
 
 	var initSorting = function(){
-		$('th').click(function(){
+		$('th.sortable').click(function(){
     		var table = $(this).parents('table').eq(0)
     		var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
     		this.asc = !this.asc
