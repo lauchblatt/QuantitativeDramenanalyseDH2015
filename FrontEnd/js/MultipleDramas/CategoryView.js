@@ -48,6 +48,7 @@ MultipleDramas.CategoryView = function(){
 		$(that).trigger("CategorySelectionClicked");	
 	};
 
+	//set attribute of categories according to selection
 	var setCategorySelection = function(){
 		categorySelection = $("#selection-category").val();
 

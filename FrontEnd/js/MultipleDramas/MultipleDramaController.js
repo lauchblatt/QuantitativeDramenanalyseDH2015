@@ -36,11 +36,13 @@ MultipleDramas.MultipleDramasController = function(){
 		$(categoryView).on("CategorySelectionClicked", visuCategoryChart);
 		$(lineCurveView).on("SpeechSelectionClicked", visuSpeechChart);
 
+		//For the Dramalist
 		$('#selected-dramas-wrapper').on('click', function(){
 			$(this).toggleClass('open');
 		});
 	};
 
+	//Method to be called for first rendering
 	var visu = function(){
 		var dramas = multipleDramasModel.getChosenDramas();
 		var authorList = multipleDramasModel.getAuthorList();
@@ -71,6 +73,7 @@ MultipleDramas.MultipleDramasController = function(){
 
 	};
 
+	//Methods to create Tables for the List of Dramas
 	var renderSelectedDramas = function(dramas){
 		for(var i = 0; i < dramas.length; i++){
 			var row = createTableItem(dramas[i]);
@@ -96,6 +99,10 @@ MultipleDramas.MultipleDramasController = function(){
 
 		return row;
 	}
+
+	/*Different Methods to call when user interacts with dropdown-menus, selection changes and
+	graphs have to adjust
+	*/
 
 	var visuSpeechChart = function(){
 		var distribution = multipleDramasModel.getDistribution();
@@ -129,6 +136,7 @@ MultipleDramas.MultipleDramasController = function(){
 		authorView.renderBarChart(authorList);
 	};
 
+	//Work-Around to get Google Charts working
 	var initGoogleCharts = function(){
 		// Load the Visualization API and the piechart package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 

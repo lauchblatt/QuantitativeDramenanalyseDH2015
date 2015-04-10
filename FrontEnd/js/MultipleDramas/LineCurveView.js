@@ -8,6 +8,7 @@ MultipleDramas.LineCurveView = function(){
     initListener();
   };
 
+  //React to Interaction with Dropdown-Menus
   var initListener = function(){
     $("#selection-speech-compare").change(speechSelectionClicked);
     $("#selection-speech-distribution").change(speechSelectionClicked);
@@ -17,7 +18,9 @@ MultipleDramas.LineCurveView = function(){
     $(that).trigger("SpeechSelectionClicked");
   };
 
+  //Main Method to render Curve, different methods are evoked acoording to selection
   var renderCurve = function(distribution, catDistribution, authorDistribution){
+    //Render Curve according to selection
     if(compareSelection == 'Kein Vergleich'){
       if(speechDistributionSelection == "Absolut"){
         renderCurveNormal(distribution, "Absolute Häufigkeit", "absolut");
@@ -48,6 +51,7 @@ MultipleDramas.LineCurveView = function(){
     }
   };
 
+  //Transform absolute distribution to relative distribution in percent
   var distributionToPercent = function(distribution){
     var disToPercent = {};
 
@@ -71,6 +75,7 @@ MultipleDramas.LineCurveView = function(){
     return disToPercent;
   };
 
+  //Render a normal curve for the distribution with no type or author comparison
 	var renderCurveNormal = function(distribution, frequencyType, toolExtension){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Replikenlänge in Worten");
@@ -131,12 +136,14 @@ MultipleDramas.LineCurveView = function(){
         dashboard.draw(data);
 	};
 
+  //Render a Curve when type or author-selection is chosen
   var renderTypeCurve = function(typeDistribution, frequencyType){
 
     var data = new google.visualization.DataTable();
 
     data.addColumn("number", "Replikenlänge in Worten");
     for(var i = 0; i < typeDistribution.length; i++){
+      //check if type is author or category and adjust the data accordingly
       if(typeDistribution[i].type !== undefined){
         data.addColumn("number", typeDistribution[i].type);
       }
@@ -148,11 +155,13 @@ MultipleDramas.LineCurveView = function(){
     var presentLengths = [];
     for(var i = 0; i < typeDistribution.length; i++){
       for(var key in typeDistribution[i]){
+        //Only add values that are really present (not every length is present for an author or category)
           if(presentLengths.indexOf(key) == -1 && !isNaN(key)){
             presentLengths.push(key);
           }
       }
     }
+    //Build Data array, length that dont exist need to be null for Google Chart to interpolate
     var array = [];
     for(var i = 0; i < presentLengths.length; i++){
       var row = [parseInt(presentLengths[i])];

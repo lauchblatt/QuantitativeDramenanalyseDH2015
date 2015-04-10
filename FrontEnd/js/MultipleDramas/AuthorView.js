@@ -7,6 +7,7 @@ MultipleDramas.AuthorView = function(){
 		initListener();
 	};
 
+	//React to changing of dropdown-menu
 	var initListener = function(){
 		$("#selection-author").change(authorSelectionClicked);
 	};
@@ -19,16 +20,20 @@ MultipleDramas.AuthorView = function(){
 		var data = new google.visualization.DataTable();
 		data.addColumn("string", "Autor");
 		data.addColumn("number", authorSelection);
+		//Extra Column for custom tooltip
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+		//Sort authors by attribute for besser visual effect
 		authors.sort(sort_by(authorAttribute,true));
 		var array = [];
 		for(i = 0; i < authors.length; i++){
+			//Init Legend
 			var row = [getLastNameAndFirstInitial(authors[i].name), authors[i][authorAttribute],
 			createTooltip(authors[i])];
 			array.push(row);
 		}
 		data.addRows(array);
 
+		//Adjust height according to number of authors
 		var estimatedHeight = authors.length * 30;
 		if(estimatedHeight < 300){
 			estimatedHeight = 300;
@@ -78,6 +83,7 @@ MultipleDramas.AuthorView = function(){
         dashboard.draw(data);
 	};
 
+	//set attribute of author according to selection
 	var setAuthorSelection = function(){
 		authorSelection = $("#selection-author").val();
 
@@ -99,6 +105,7 @@ MultipleDramas.AuthorView = function(){
 		return author;
 	};
 
+	//Create custom Tooltip with more information about the author
 	var createTooltip = function(author){
 		var divBegin = "<div class='tooltip-test'>"
 		var authorDiv = "<div>" + "<b>" + author.name + "</b>" + "</div>";
@@ -113,6 +120,7 @@ MultipleDramas.AuthorView = function(){
 		return (divBegin + authorDiv + data + dramas + divEnd); 
 	};
 
+	//Sort method for objects from http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
 	var sort_by = function(field, reverse, primer){
 
    		var key = primer ? 

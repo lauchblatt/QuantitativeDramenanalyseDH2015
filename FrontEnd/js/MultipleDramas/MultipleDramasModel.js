@@ -9,6 +9,8 @@ MultipleDramas.MultipleDramasModel = function(){
 	var authorList = [];
 	var categoryList = [];
 
+	//Lists and objects to calculate Distribution on server-side
+	//Better for performance to calculate everything at once than during usage
 	var distribution = {};
 	var authorDistribution = [];
 	var categoryDistribution = [];
@@ -22,6 +24,8 @@ MultipleDramas.MultipleDramasModel = function(){
 		initInfo("drama_data");
 		initInfo("scenes_data");
 		*/
+
+		//Get the chosen dramas
 		var chosenDramasIdsStrings = JSON.parse(localStorage["collection"]);
 		for(var i = 0; i < chosenDramasIdsStrings.length; i++){
 			chosenDramasIds.push(parseInt(chosenDramasIdsStrings[i]));
@@ -33,6 +37,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	};
 
 	var continueInit = function(){
+		//check if data is catches and start all calculations
 		if(dramaInfo != null && scenesInfo.length > 0){
 			setChosenDramas();
 			setChosenScenes();
@@ -54,6 +59,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		return authorDistribution;
 	};
 
+	// Method to calculate Speech Distribution
 	var calculateSpeechDistribution = function(){
 		var total = 0;
 		
@@ -63,10 +69,12 @@ MultipleDramas.MultipleDramasModel = function(){
 					if(chosenScenes[drama][act][scene].speeches !== undefined){
 						for(speech = 0; speech < chosenScenes[drama][act][scene].speeches.length; speech++){
 								var currentspeechLength = chosenScenes[drama][act][scene].speeches[speech].length;
+								//If speechlength doesnt exist yet, create new key with the value 1
 								if(distribution[currentspeechLength] === undefined){
 									distribution[currentspeechLength] = 1;
 									total++;
 								}else{
+								//if speechlength does exist, increase length by one because another instance with the length was discovered
 									distribution[currentspeechLength] = distribution[currentspeechLength] + 1;
 									total++;
 								}
@@ -75,17 +83,21 @@ MultipleDramas.MultipleDramasModel = function(){
 				}
 			}
 		}
+		//Save number of all Speechlenghts that are present --> easier to calculate relative distribution
 		distribution.total = total;
 		
 	};
 
+	//Method to calculate a Distribution for different Types like Categories or authors
 	var calculateFilteredDistribution = function(filteredList){
 
+		//Array of distributions with one distribution-object for every category or author
 		var distributionsList = [];
 		for(var type = 0; type < filteredList.length; type++){
 			var distributionObject = {};
 			var total = 0;
 
+			//First check if we deal with categories or authors and init the object accordingly
 			if(filteredList[type].type !== undefined){
 				distributionObject.type = filteredList[type].type;
 			}
@@ -93,6 +105,7 @@ MultipleDramas.MultipleDramasModel = function(){
 				distributionObject.name = filteredList[type].name;
 			}
 			
+			//Get to the speech-level of the dramas to calculate the distribution, do it for every category or author
 			for(var drama = 0; drama < filteredList[type].scenes.length; drama++){
 				for(var act = 0; act < filteredList[type].scenes[drama].length; act++){
 					for(var scene = 0; scene < filteredList[type].scenes[drama][act].length; scene++){
@@ -112,6 +125,7 @@ MultipleDramas.MultipleDramasModel = function(){
 				}
 			}
 			distributionObject.total = total;
+			//Result are objects of distributions for every type which are saved in gloabal list
 			distributionsList.push(distributionObject);
 		}
 		return distributionsList;
@@ -124,6 +138,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		}
 	};
 
+	//generate List of categories and custom category-objects
 	var setCategoryList = function(){
 		var categories = [];
 		for(var i = 0; i < chosenDramas.length; i++){
@@ -149,6 +164,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		return categoryList;
 	};
 
+	//generate custom Author Object to hold all necessary infos, --> easier to use in view
 	var generateCategoryObject = function(dramaObjects, scenes){
 		var categoryObj = {};
 
@@ -190,6 +206,7 @@ MultipleDramas.MultipleDramasModel = function(){
 
 	};
 
+	//generate out of dramalist a list of different authors
 	var setAuthorList = function(){
 		var authors = [];
 		for(var i = 0; i < chosenDramas.length; i++){
@@ -214,6 +231,7 @@ MultipleDramas.MultipleDramasModel = function(){
 		return authorList;
 	};
 
+	//generate custom Author Object to hold all necessary infos, --> easier to use in view
 	var generateAuthorObject = function(dramaObjects, scenes){
 		var authorObj = {};
 
