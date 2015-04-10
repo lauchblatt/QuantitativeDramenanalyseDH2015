@@ -19,6 +19,7 @@ SingleDrama.DramaController = function(){
 
 	};
 
+	//Workaround to get Google Charts working
 	var initGoogleCharts = function(){
 		// Load the Visualization API and the piechart package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 

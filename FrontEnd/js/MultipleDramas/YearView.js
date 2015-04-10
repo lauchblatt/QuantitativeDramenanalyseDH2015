@@ -126,11 +126,20 @@ MultipleDramas.YearView = function(){
 	//render Chart if Author is selected as comparison
 	var renderScatterChartAuthor = function(dramas, authors){
 		var data = new google.visualization.DataTable();
+		var trendlineObj = {};
 		data.addColumn("number", "Jahr");
 		for(var i = 0; i < authors.length; i++){
 			//Init Colums for every author and the tooltips
 			data.addColumn("number", getLastNameAndFirstInitial(authors[i].name));
 			data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+			trendlineObj[i] = {
+				          	tooltip: false,
+				            type: 'polynomial',
+				            lineWidth: 3,
+				            opacity: 0.3,
+				            showR2: false,
+				            visibleInLegend: false
+				          };
 		}
 		var array = [];
 		//To visualize Tooltips correct we need null values on every Tooltip column an author doesnt need
@@ -161,7 +170,8 @@ MultipleDramas.YearView = function(){
           tooltip: { isHtml: true },
           hAxis: {title: 'Jahr', format: ' '},
           vAxis: {title: yearSelection},
-          chartArea:{width:'75%',height:'80%'}
+          chartArea:{width:'75%',height:'80%'},
+          trendlines: trendlineObj
         };
 
         var optionsSlider = {
