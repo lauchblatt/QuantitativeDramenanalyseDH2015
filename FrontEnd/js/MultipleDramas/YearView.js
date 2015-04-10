@@ -13,15 +13,18 @@ MultipleDramas.YearView = function(){
 		$("#selection-year-compare").change(yearSelectionCompareClicked);
 	};
 
+	//React if Dropdown-Menu for Parameters is clicked
 	var yearSelectionClicked = function(){
 		$(that).trigger("YearSelectionClicked");
 	};
 
+	//React if Dropdown-Menu for Comparison (Type, Author) is clicked
 	var yearSelectionCompareClicked = function(){
 		$(that).trigger("YearSelectionCompareClicked");
 	};
 
 	var renderScatterChart = function(dramas, authors){
+		//Call Method according to choice
 		if(compareSelection == 'Kein Vergleich'){
 			renderScatterChartNormal(dramas);
 		}
@@ -33,13 +36,16 @@ MultipleDramas.YearView = function(){
 		}
 	};
 
+	//Render Scatter Chart with no Selection
 	var renderScatterChartNormal = function(dramas){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
 		data.addColumn("number", yearSelection);
+		//Add custom tooltip for Graph
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 		var array = [];
 		for(i = 0; i < dramas.length; i++){
+			//create custom Tooltip
 			var row = [dramas[i].year, dramas[i][yearAttribute],
 			createTooltip(dramas[i])];
 			array.push(row);
@@ -84,12 +90,14 @@ MultipleDramas.YearView = function(){
         var dashboard = new google.visualization.Dashboard(
             document.getElementById('dashbord-year'));
 
+        //Different Sliders one for parameter...
         var rangeSlider1 = new google.visualization.ControlWrapper({
           'controlType': 'ChartRangeFilter',
           'containerId': 'controls-year1',
           'options': optionsSlider
         });
 
+        //...one for year
         var rangeSlider2 = new google.visualization.ControlWrapper({
           'controlType': 'NumberRangeFilter',
           'containerId': 'controls-year2',
@@ -115,20 +123,25 @@ MultipleDramas.YearView = function(){
         dashboard.draw(data);
 	};
 
+	//render Chart if Author is selected as comparison
 	var renderScatterChartAuthor = function(dramas, authors){
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Jahr");
 		for(var i = 0; i < authors.length; i++){
+			//Init Colums for every author and the tooltips
 			data.addColumn("number", getLastNameAndFirstInitial(authors[i].name));
 			data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 		}
 		var array = [];
+		//To visualize Tooltips correct we need null values on every Tooltip column an author doesnt need
 		var rowLength = ((authors.length*2)+1);
 		for(var i = 0; i < dramas.length; i++){
 			var row = [];
 			for(var j = 0; j < rowLength; j++){
+				//Fill the row with nulls
 				row.push(null);
 			}
+			//save the correct data on the fitting position
 			for(var k = 0; k < authors.length; k++){
 				if(dramas[i].author == authors[k].name){
 					row[0] = dramas[i].year;
@@ -193,6 +206,7 @@ MultipleDramas.YearView = function(){
 
 	var renderScatterChartType = function(dramas){
 		var data = new google.visualization.DataTable();
+		//Add Columns for every category
 		data.addColumn("number", "Jahr");
 		data.addColumn("number", 'Komoedie');
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
@@ -206,11 +220,13 @@ MultipleDramas.YearView = function(){
 		var hasPageant = false;
 		var hasTragedy = false;
 
+		//prepare Trendlines for every category
 		var trendlinesObj = {};
 		var trendlineComedy = {tooltip: false, type: 'polynomial', color: 'blue', lineWidth: 3, opacity: 0.3, showR2: false, visibleInLegend: false};
 		var trendlinePageant = {tooltip: false, type: 'polynomial', color: 'red', lineWidth: 3, opacity: 0.3, showR2: false, visibleInLegend: false};
 		var trendlineTragedy = {tooltip: false, type: 'polynomial', color: 'green', lineWidth: 3, opacity: 0.3, showR2: false, visibleInLegend: false};
-		console.log(trendlineComedy);
+
+		//create data array with Tooltip for comedy, pageant, tragedy, other columns are null
 		for(i = 0; i < dramas.length; i++){
 			if(dramas[i].type == 'Komoedie'){
 				var row = [dramas[i].year, dramas[i][yearAttribute], createTooltip(dramas[i]), null, null, null, null ];
@@ -291,6 +307,7 @@ MultipleDramas.YearView = function(){
         dashboard.draw(data);
 	};
 
+	//create Tooltip for single drama
 	var createTooltip = function(drama){
 		var divBegin = "<div class='tooltip-test'>"
 		var headline = "<div>" + "'" + drama.title + "'" + " von <em>" + getLastName(drama.author) + "</em></div>";
@@ -300,6 +317,7 @@ MultipleDramas.YearView = function(){
 		return (divBegin + headline + year + data + divEnd); 
 	};
 
+	//set the selection of the attribute according to the selection
 	var setYearSelection = function(){
 		yearSelection = $("#selection-year").val();
 
