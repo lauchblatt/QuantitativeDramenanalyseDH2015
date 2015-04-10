@@ -4,7 +4,7 @@
 	border: 1px solid grey;
 	background: white;
 	color: black;
-	width: 20% !important;
+	display: inline-table !important;
 }
 
 /* Use this next selector to style things like font-size and line-height: */
