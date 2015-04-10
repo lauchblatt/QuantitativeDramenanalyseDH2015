@@ -8,11 +8,14 @@ Search.DramaListView = function(){
 		
 	};
 
+	//Method to call when "Drammensammlung analysieren" is pressed
 	var analyseCollection = function(){
+		//Getting IDs of all checked Items
 		var checkboxes = ($("td input"));
 		var checkedDramaIds = []
 		for(var i = 0; i < checkboxes.length; i++){
 			if($(checkboxes[i]).is(":checked")){
+				//Ids are saved in html-Element with attribute drama_id
 				checkedDramaIds.push($(checkboxes[i]).attr("drama_id"));
 			}
 		}
@@ -51,20 +54,6 @@ Search.DramaListView = function(){
 		}
 	};
 
-	/*var renderList = function(list){
-		$("#table-tbody").empty();
-		console.log("hello world");
-		if(list.length !== undefined){
-			for(var i = 0; i < list.length; i++){
-				renderListItem(list[i]);
-			}
-		}else{
-			for(var drama_id in list){
-				renderListItem(list[drama_id]);
-			}
-		}
-	};*/
-
 	var showNoResults = function(){
 		$("#no-results").fadeIn("slow");
 	};
@@ -75,6 +64,7 @@ Search.DramaListView = function(){
 		$("#table-tbody").append(row);
 	};
 
+	//Method to create one drama-item in the list
 	var createListItem = function(drama){
 		var row = $("<tr>");
 
@@ -108,6 +98,8 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.maximum_length_of_speeches_in_drama));
 		row.append(($("<td>")).text(drama.minimum_length_of_speeches_in_drama));
 		row.attr("title", "Zur Einzelanalyse...");
+
+		//Building and Init of Download-Button
 		var tdDownload = $("<td>");
 		var spanDownload = $("<span>");
 		spanDownload.on("click", downloadJSON);
@@ -127,7 +119,9 @@ Search.DramaListView = function(){
 		$(that).trigger("DownloadJSON", [dramaId]);
 	};
 
+	//trigger drama Clicked with all necessary dat, if the drama is clicked
 	var dramaClicked = function(event){
+		//check if really the drama ist clicked and not something else like Download or checkbox
 		if($(event.target).is("input") || $(event.target).is("span")){
 			return;
 		}
@@ -153,6 +147,7 @@ Search.DramaListView = function(){
 		$("#table-tbody").empty();
 	};
 
+	//Table sort from http://stackoverflow.com/questions/3160277/jquery-table-sort
 	var initSorting = function(){
 		$('th.sortable').click(function(){
     		var table = $(this).parents('table').eq(0)

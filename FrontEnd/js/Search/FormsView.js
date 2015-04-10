@@ -5,6 +5,7 @@ Search.FormsView = function(){
 		$("#search-button").on("click", setFormInput);
 		$("#more-button").on("click", showMoreRange);
 		$("#less-button").on("click", showLessRange);
+		//Init Enter-Button for Search
 		$("body").on("keypress", function(event){
 			var key = event.which || event.keyCode;
 			if(key == 13){
@@ -60,13 +61,17 @@ Search.FormsView = function(){
 		$("#loading-spinner").css("display", "block");
 	};
 
+	//Catching all input
 	var setFormInput = function(){
 		startLoadingAnimation();
+		//building input object with all necessary input data
 		var input = {}
 
+		//Title and author are captured as strings
 		var title = $("#input-title").val();
 		var author = $("#input-author").val();
 
+		//Checking if type is checked
 		var isComedy = $("#check-comedy").is(":checked");
 		var isTragedy = $("#check-tragedy").is(":checked");
 		var isPageant = $("#check-pageant").is(":checked");
@@ -93,6 +98,7 @@ Search.FormsView = function(){
 		input["isTragedy"] = isTragedy;
 		input["isPageant"] = isPageant;
 
+		//catching all Range-data as range-object with two values from and to
 		var range = {};
 		if(date_from != ""){range.from = parseInt(date_from);}
 		if(date_to != ""){range.to = parseInt(date_to);}

@@ -10,6 +10,7 @@ SingleDrama.TableDramaView = function(){
 	};
 
 	var renderTable = function(actInfo, scenesInfo){
+		//Looping through actInfo to create table with act and sceneInfo
 		for(var i = 0; i < actInfo.length; i++){
 			$("#table-tbody").append(createActItem(actInfo[i]));
 			renderScene(scenesInfo[i], (i+1));
@@ -62,6 +63,7 @@ SingleDrama.TableDramaView = function(){
 		row.append(($("<td>")).text(act.minimum_length_of_speeches_in_act));
 		var td = $("<td>");
 		td.addClass("unfold-col");
+		//Create and initialise unfold-Button
 		var $unfoldTd = $("<button>");
 		$unfoldTd.addClass('glyphicon');
 		$unfoldTd.addClass('glyphicon-menu-down');
@@ -74,6 +76,7 @@ SingleDrama.TableDramaView = function(){
 		return row;
 	};
 
+	//Method to call when unfold-Button is pressed, unfolds scenes
 	var unfold = function(event){
 		$unfoldButton = $(event.target);
 		var act_number = ($unfoldButton.attr("act-number"));
@@ -112,6 +115,7 @@ SingleDrama.TableDramaView = function(){
 		currentDrama_id = (params.substring(params.indexOf("=") + 1));
 	};
 
+	//Init Links of Page according to currently selected drama ID
 	var initLinks = function(){
 		$("#link-overall").attr("href", "drama.html?drama_id=" + currentDrama_id);
 		$("#link-matrix").attr("href", "matrix.html?drama_id=" + currentDrama_id);

@@ -36,6 +36,7 @@ SingleDrama.DramaController = function(){
 		$(barChartDramaView).on("ScenesSelectionClicked", visuScenesBarCharts);
 	};
 
+	//First Method to call when rendering for the first time
 	var visu = function(event){
 		var actInfo = dramaModel.getActInfo();
 		var scenesInfo = dramaModel.getScenesInfo();
@@ -55,12 +56,14 @@ SingleDrama.DramaController = function(){
 		$("#maincontent").fadeIn();
 	};
 
+	//Method to call when ActChart gets changed by Dropdown-Menu
 	var visuActBarChart = function(event){
 		var actInfo = dramaModel.getActInfo();
 		barChartDramaView.setActSelection();
 		barChartDramaView.drawChartAct(actInfo);
 	};
 
+	//Method to call when SceneChart gets changed by Dropdown-Menu
 	var visuScenesBarCharts = function(event){
 		var scenesInfo = dramaModel.getScenesInfo();
 		barChartDramaView.setScenesSelection();

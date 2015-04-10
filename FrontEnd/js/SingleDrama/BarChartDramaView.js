@@ -1,5 +1,7 @@
 SingleDrama.BarChartDramaView = function(){
 	var that = {};
+
+	//Variables to save the current selection and the corresponding data-attribute of the dropdown-selection
 	var actSelection = "";
 	var actAttribute = "";
 	var scenesSelection = "";
@@ -9,6 +11,7 @@ SingleDrama.BarChartDramaView = function(){
 		initListener();
 	};
 
+	//Reacting on changes in the dropdown-menus
 	var initListener = function(){
 		$("#selection-act").change(actSelectionClicked);
 		$("#selection-scenes").change(scenesSelectionClicked);
@@ -24,18 +27,21 @@ SingleDrama.BarChartDramaView = function(){
 	};
 
 	var drawChartAct = function(actInfo){
+		//Not important anymore
 		if(actSelection == "Replikenlänge"){
 			drawSpeechesChartAct(actInfo);
 			return;
 		}
         var data = new google.visualization.DataTable();
         data.addColumn('number', 'Akte');
+        //Adjust legend according to chosen selection
         if(actSelection == "Szenen" || actSelection == "Sprecher" || actSelection == "Replikenlänge"){
-        	data.addColumn('number', actSelection);
+        	data.addColumn('number', 'Zahl der ' + actSelection);
         }else{
         	data.addColumn('number', actSelection);
         }
         var array = [];
+        //Round average length of speeches if chosen attribute
         if(actAttribute == "average_length_of_speeches_in_act"){
         	for(var i = 0; i < actInfo.length; i++){
         	var row = [(i+1), roundToTwoDecimals(actInfo[i][actAttribute])];
@@ -54,7 +60,7 @@ SingleDrama.BarChartDramaView = function(){
 	        	}
         	}	
         }
-        console.log(data);
+
         data.addRows(array);
         var options = {title:'Akt-Statistik',
         			   height: 600,
@@ -90,13 +96,13 @@ SingleDrama.BarChartDramaView = function(){
         $("#download-png-act").unbind("click");
         $("#download-png-act").on("click", function(){
         	window.open(chart.getImageURI());
-        	//drawChartAct(actInfo);
         });
 
         chart.draw(data, options);
 
 	};
 
+	//Set relevant attribute of act-object according to selection
 	var setActSelection = function(){
 		actSelection = $("#selection-act").val();
 
@@ -109,6 +115,7 @@ SingleDrama.BarChartDramaView = function(){
 		if(actSelection == "Minimum Replikenlänge"){actAttribute = "minimum_length_of_speeches_in_act";}
 	};
 
+	//Loop to render all Graphs for Scenes dynamically
 	var drawChartScenes = function(scenesInfo){
 		$charts_scenes = $("#charts-scenes");
 		for(var act = 0; act < scenesInfo.length; act++){
@@ -125,6 +132,7 @@ SingleDrama.BarChartDramaView = function(){
 		}
 	};
 
+	//Drawing Chart for Scenes, similar to Act
 	var drawChartForScenesInAct = function(divId, scenesInfoPerAct, act){
 		if(scenesSelection == "Replikenlänge"){
 			drawSpeechesChartScenes(scenesInfoPerAct, act, divId);
@@ -151,8 +159,8 @@ SingleDrama.BarChartDramaView = function(){
         }
         
         data.addRows(array);
+        //necessary to have consistent gaps according to the scenes on the graph 
         var ticksArray = [];
-        console.log(scenesInfoPerAct);
         for(var k = 0; k < scenesInfoPerAct.length; k++){
         	ticksArray.push(k+1);
         }
@@ -195,6 +203,7 @@ SingleDrama.BarChartDramaView = function(){
         chart.draw(data, options);
 	};
 
+	//More complex Method to draw selection "Replikenlänge" to visualize all Speech-Data at once
 	var drawSpeechesChartScenes = function(scenesInfoPerAct, act, divId){
 		console.log(scenesInfoPerAct);
 		var data = new google.visualization.DataTable();
@@ -211,7 +220,6 @@ SingleDrama.BarChartDramaView = function(){
 			scenesInfoPerAct[i].maximum_length_of_speeches_in_scene];
 			array.push(row);
 		}
-		console.log(array);
 		var ticksArray = [];
         for(var k = 0; k < scenesInfoPerAct.length; k++){
         	ticksArray.push(k+1);
@@ -239,6 +247,7 @@ SingleDrama.BarChartDramaView = function(){
         chart.draw(data, options);
 	};
 
+	//Set attribute of scene-object according to selection
 	var setScenesSelection = function(){
 		scenesSelection = $("#selection-scenes").val();
 

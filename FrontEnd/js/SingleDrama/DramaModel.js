@@ -15,8 +15,10 @@ SingleDrama.DramaModel = function(){
 		initInfo("scenes_data");
 	};
 
+	//check if all data is retrieved from database
 	var continueInit = function(){
 		if(scenesInfo.length > 0 && actsInfo.length > 0 && dramaInfo != null){
+			//calculate necessary data for View
 			calculateNumberOfScenesForAct();
 			calculateNumberOfSpeakersForScene();
 			$(that).trigger("InfoFinished");

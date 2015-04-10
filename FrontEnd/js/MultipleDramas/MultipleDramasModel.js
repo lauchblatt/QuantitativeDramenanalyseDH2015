@@ -14,7 +14,7 @@ MultipleDramas.MultipleDramasModel = function(){
 	var categoryDistribution = [];
 
 	var init = function(){
-		/*Testin purposes
+		/*Testing purposes
 		for(var i = 96; i < 110; i++){
 			chosenDramasIds.push(i);
 		}

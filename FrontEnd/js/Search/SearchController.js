@@ -37,12 +37,12 @@ Search.SearchController = function(){
 	var downloadDramaJSON = function(event, dramaJson){
 
 		var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dramaJson));
-		console.log(dramaJson.title);
 
 		$('<a href="data:' + data + '" download="' + dramaJson.title + '.json"></a>')[0].click();
 
 	};
 
+	//save collection in local storage to analyse it later
 	var analyseCollection = function(event, checkedDramas){
 		localStorage["collection"] = JSON.stringify(checkedDramas);
 	};
@@ -51,16 +51,19 @@ Search.SearchController = function(){
 		dramaListView.showNoResults();
 	};
 
+	//last three attributes can be used another time to improve performance/user experience
 	var analyzeDrama = function(event, drama_id, title, author, year){
 
 		//Probably not working in every browser
 		window.open("drama.html?drama_id=" + drama_id, "_blank");
 	};
 
+	//called to render List
 	var updateList = function(event, listItem){
 		dramaListView.renderListItem(listItem);
 	};
 
+	//called to get dramas
 	var retrieveDramas = function(event, input){
 		dramaListModel.retrieveDramas(input);
 	};

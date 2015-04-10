@@ -17,10 +17,11 @@ Search.DramaListModel = function(){
 		firebaseRef = null;
 		firebaseRef = new Firebase("https://katharsis.firebaseio.com/drama_data");
 
-		//Dramen die keine Eingrenzung haben müssen noch nach Namen gefiltert werden
+		//Dramas without any criterion need to be filtered by name and title
 		$(that).on("AllDramasRetrieved", filterData);
 	};
 
+	//Method to get single JSON-Data for Download
 	var getJSONDrama = function(drama_id){
 		var drama = null;
 		var refJson = null;
@@ -158,23 +159,11 @@ Search.DramaListModel = function(){
 		if(rangeDramas !== undefined){	
 			dramas = rangeDramas;
 		}
-		/*
-		//If Title is criterion, filter the dramas by title
-		if('title' in input){
-			dramas = filterListByWord('title', input['title']);
-		}
 
-		//If Author is criterion, filter the dramas by author
-		if('author' in input){
-			dramas = filterListByWord('author', input['author']);
-		}
-
-		sendDramas(dramas);
-		*/
 		filterData(null, input);
 
 	};
-
+	//Primitive String-Filter to search by author or title
 	var filterListByWord = function(attribute, word){
 		var word = word.toLowerCase();
 		var split = word.split(" ");
@@ -195,8 +184,10 @@ Search.DramaListModel = function(){
 		$(".analyse-collection").css("display", "none");
 		if(dramas.length > 0){
 			for(var i = 0; i < dramas.length; i++){
+				//trigger Data Retrieval for every single drama --> improves Performance
 			$(that).trigger("DataRetrieved", [dramas[i]]);
 			}
+			//necessary View-Methods to display actions right before all data is retrieved and compared
 			$("table").fadeIn(1000);
 			$(".analyse-collection").fadeIn(1000);
 			$("#info-compare").fadeIn(1000);
@@ -212,6 +203,7 @@ Search.DramaListModel = function(){
 		}	
 	};
 
+	//Use Firebase to retrieve data by range !!!Firebase only allows one criterion!!!
 	var retrieveDataByRange = function(from, to, attribute, criterionList){
 		$(that).trigger("EmptyTable");
 		//Reser Firebase
