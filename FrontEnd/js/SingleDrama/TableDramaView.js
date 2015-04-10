@@ -29,7 +29,7 @@ SingleDrama.TableDramaView = function(){
 		row.addClass("act-scenes-" + actNumber);
 		row.css("display", "none");
 
-		row.append(($("<td>")).text(actNumber + " - " + scene.number_of_scene));
+		row.append(($("<td>")).text(actNumber + "-" + scene.number_of_scene));
 		row.append(($("<td>")).text("-"));
 		if(scene.appearing_speakers !== undefined && scene.appearing_speakers != 0){
 			row.append(($("<td>")).text(scene.appearing_speakers.length));
