@@ -45,7 +45,6 @@ MultipleDramas.LineCurveView = function(){
       }
       if(speechDistributionSelection == "Relativ"){
         var authorDisInPercent = distributionToPercent(authorDistribution);
-        console.log(authorDisInPercent);
         renderTypeCurve(authorDisInPercent, "Relative Häufigkeit in Prozent");
       }  
     }
@@ -230,11 +229,15 @@ MultipleDramas.LineCurveView = function(){
   };
 
   var getLastNameAndFirstInitial = function(author){
-    var authorLastName = author.slice(0, author.indexOf(","));
-    var commaIndex = author.indexOf(",");
-    var initial = author.slice(commaIndex+1, commaIndex+3);
-    author = authorLastName + "," + initial + ".";
-    return author;
+    if(author !== undefined){
+      var authorLastName = author.slice(0, author.indexOf(","));
+      var commaIndex = author.indexOf(",");
+      var initial = author.slice(commaIndex+1, commaIndex+3);
+      author = authorLastName + "," + initial + ".";
+      return author;
+    } else{
+      return undefined;
+    }
   };
 
 	that.renderCurve = renderCurve;
