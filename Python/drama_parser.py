@@ -255,6 +255,7 @@ class DramaParser:
     # calculates the wordcount of a string
     def get_wordcount_from_string(self, text):
         word_list = re.sub("[^\w]", " ", text).split()
+        # analise the word list
         return len(word_list)
 
     # returns all speakers for the subact

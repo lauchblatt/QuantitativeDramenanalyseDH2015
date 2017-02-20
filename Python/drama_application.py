@@ -8,13 +8,14 @@ def main():
     debug = True
 
     # used to generate one JSON file
-    """
-    parser = DramaParser()
-    dramaModel = parser.parse_xml("../Korpus/weis_masaniello_t.xml")
-    drama_data = parser.generate_drama_data(dramaModel)
-    parser.write_JSON(drama_data)
-    """
 
+    parser = DramaParser()
+    dramaModel = parser.parse_xml("../Korpus/toer_agnes_t.xml")
+    output = DramaOutput()
+    drama_data = output.generate_drama_data(dramaModel)
+    output.write_JSON(drama_data)
+
+    """
     # used to generate a JSON file of all dramas
     parser = DramaParser()
     output = DramaOutput()
@@ -29,11 +30,11 @@ def main():
             dramaModel = parser.parse_xml("../Korpus/" + filename)
             dramasForDenormalizing.append(dramaModel)
             print("Erfolg beim Parsen eines Dramas")
-            """
+            
             dramaModel = parser.parse_xml("../Korpus/" + filename)
             dramas.append(dramaModel)
             print("Erfolg beim Parsen eines Dramas")
-            """
+            
 
     else:
         for filename in os.listdir("../Korpus"):
@@ -47,7 +48,7 @@ def main():
 
 
     output.generate_denormalized_JSON(dramasForDenormalizing)
-    """
+    
     output.generates_normalized_JSON(dramas)
     """
 

@@ -58,7 +58,7 @@ class DramaOutput:
     # writes JSON data into a file
     def write_JSON(self, dramaData):
         drama_json = json.dumps(dramaData, indent=4, ensure_ascii=True)
-        doc = open(dramaData["Author"]+ "_"+dramaData["Title"]+'_data.json', 'w')
+        doc = open(dramaData["author"]+ "_"+dramaData["title"]+'_data.json', 'w')
         doc.write(drama_json)
         doc.close
 

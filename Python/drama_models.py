@@ -218,6 +218,8 @@ class ConfigurationModel:
         speeches = self._speeches
         speeches_lengths = []
         for speech in speeches:
+            print("hello")
+            print(speech)
             speeches_lengths.append(speech._length)
 
         if(speeches):
