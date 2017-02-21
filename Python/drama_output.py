@@ -179,7 +179,6 @@ class DramaOutput:
         speakers_level_infos = OrderedDict({})
         acts_level_infos = OrderedDict({})
         scenes_level_infos = OrderedDict({})
-        print len(dramas);
 
         for drama in dramas:
             drama_level_info = self.generate_denormalized_drama_data(drama, i)

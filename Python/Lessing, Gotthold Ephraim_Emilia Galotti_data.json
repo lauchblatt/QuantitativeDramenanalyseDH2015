@@ -1,0 +1,4541 @@
+{
+    "title": "Emilia Galotti", 
+    "author": "Lessing, Gotthold Ephraim", 
+    "date": {
+        "notBefore": "1729", 
+        "when": 1755, 
+        "notAfter": "1781"
+    }, 
+    "type": "Trauerspiel", 
+    "castgroup": [
+        "Emilia Galotti", 
+        "Odoardo", 
+        "Claudia Galotti", 
+        "Hettore Gonzaga", 
+        "Marinelli", 
+        "Camillo Rota", 
+        "Conti", 
+        "Graf Appiani", 
+        "Gr\u00e4fin Orsina", 
+        "Angelo"
+    ], 
+    "configuration_density": 0.14728682170542637, 
+    "number_of_speeches_in_drama": 835, 
+    "average_length_of_speeches_in_drama": 23.92455089820359, 
+    "maximum_length_of_speeches_in_drama": 250, 
+    "minimum_length_of_speeches_in drama": 1, 
+    "median_length_of_speeches_in_drama": 13, 
+    "speakers": [
+        {
+            "name": "DER PRINZ", 
+            "number_of_speakers_speeches": 157, 
+            "average_length_of_speakers_speeches": 27.452229299363058, 
+            "maximum_length_of_speakers_speeches": 216, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 16, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "APPIANI", 
+                    "ANGELO", 
+                    "CLAUDIA GALOTTI", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [
+                    "DER KAMMERDIENER", 
+                    "CONTI", 
+                    "CAMILLO ROTA"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "ODOARDO", 
+                    "ORSINA", 
+                    "BATTISTA", 
+                    "MARINELLI", 
+                    "EMILIA"
+                ]
+            }
+        }, 
+        {
+            "name": "DER KAMMERDIENER", 
+            "number_of_speakers_speeches": 6, 
+            "average_length_of_speakers_speeches": 5.833333333333333, 
+            "maximum_length_of_speakers_speeches": 14, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 5.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "ORSINA", 
+                    "CAMILLO ROTA", 
+                    "ANGELO", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI", 
+                    "MARINELLI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "DER PRINZ"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "CONTI", 
+            "number_of_speakers_speeches": 24, 
+            "average_length_of_speakers_speeches": 26.791666666666668, 
+            "maximum_length_of_speakers_speeches": 150, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 18.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "CAMILLO ROTA", 
+                    "ANGELO", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI", 
+                    "MARINELLI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "DER PRINZ"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "MARINELLI", 
+            "number_of_speakers_speeches": 221, 
+            "average_length_of_speakers_speeches": 21.239819004524886, 
+            "maximum_length_of_speakers_speeches": 164, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 12, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER KAMMERDIENER", 
+                    "CAMILLO ROTA", 
+                    "CONTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "APPIANI", 
+                    "ORSINA", 
+                    "DER PRINZ", 
+                    "ANGELO", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI"
+                ]
+            }
+        }, 
+        {
+            "name": "CAMILLO ROTA", 
+            "number_of_speakers_speeches": 6, 
+            "average_length_of_speakers_speeches": 14.5, 
+            "maximum_length_of_speakers_speeches": 46, 
+            "minimum_length_of_speakers_speeches": 4, 
+            "median_length_of_speakers_speeches": 6.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "ANGELO", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI", 
+                    "MARINELLI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "DER PRINZ"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "CLAUDIA", 
+            "number_of_speakers_speeches": 71, 
+            "average_length_of_speakers_speeches": 22.6056338028169, 
+            "maximum_length_of_speakers_speeches": 104, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 17, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ANGELO", 
+                    "CONTI", 
+                    "DER KAMMERDIENER", 
+                    "DER PRINZ", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "APPIANI", 
+                    "ORSINA", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "MARINELLI"
+                ]
+            }
+        }, 
+        {
+            "name": "PIRRO", 
+            "number_of_speakers_speeches": 25, 
+            "average_length_of_speakers_speeches": 11.12, 
+            "maximum_length_of_speakers_speeches": 30, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 7, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CONTI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "DER PRINZ", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "ANGELO", 
+                    "APPIANI", 
+                    "MARINELLI", 
+                    "ODOARDO"
+                ]
+            }
+        }, 
+        {
+            "name": "ODOARDO", 
+            "number_of_speakers_speeches": 104, 
+            "average_length_of_speakers_speeches": 20.375, 
+            "maximum_length_of_speakers_speeches": 110, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 10.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ANGELO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "BATTISTA"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "ORSINA", 
+                    "DER PRINZ", 
+                    "EMILIA", 
+                    "ODOARDO GALOTTI", 
+                    "MARINELLI"
+                ]
+            }
+        }, 
+        {
+            "name": "ANGELO", 
+            "number_of_speakers_speeches": 28, 
+            "average_length_of_speakers_speeches": 18.285714285714285, 
+            "maximum_length_of_speakers_speeches": 60, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 11.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "ODOARDO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "DER PRINZ", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "PIRRO", 
+                    "MARINELLI"
+                ]
+            }
+        }, 
+        {
+            "name": "CLAUDIA GALOTTI", 
+            "number_of_speakers_speeches": 2, 
+            "average_length_of_speakers_speeches": 36.0, 
+            "maximum_length_of_speakers_speeches": 65, 
+            "minimum_length_of_speakers_speeches": 7, 
+            "median_length_of_speakers_speeches": 36.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "DER PRINZ", 
+                    "ANGELO", 
+                    "CAMILLO ROTA", 
+                    "EMILIA", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "BATTISTA", 
+                    "MARINELLI"
+                ]
+            }
+        }, 
+        {
+            "name": "EMILIA", 
+            "number_of_speakers_speeches": 64, 
+            "average_length_of_speakers_speeches": 28.140625, 
+            "maximum_length_of_speakers_speeches": 250, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 18.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ANGELO", 
+                    "PIRRO", 
+                    "CONTI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "ODOARDO", 
+                    "APPIANI", 
+                    "DER PRINZ", 
+                    "BATTISTA", 
+                    "MARINELLI"
+                ]
+            }
+        }, 
+        {
+            "name": "APPIANI", 
+            "number_of_speakers_speeches": 48, 
+            "average_length_of_speakers_speeches": 18.8125, 
+            "maximum_length_of_speakers_speeches": 90, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 12.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ANGELO", 
+                    "ODOARDO", 
+                    "CONTI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "DER PRINZ", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "BATTISTA", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "MARINELLI", 
+                    "EMILIA"
+                ]
+            }
+        }, 
+        {
+            "name": "BATTISTA", 
+            "number_of_speakers_speeches": 11, 
+            "average_length_of_speakers_speeches": 14.909090909090908, 
+            "maximum_length_of_speakers_speeches": 94, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 6, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ANGELO", 
+                    "PIRRO", 
+                    "ODOARDO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "ORSINA", 
+                    "CAMILLO ROTA", 
+                    "ODOARDO GALOTTI"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "CLAUDIA GALOTTI", 
+                    "DER PRINZ", 
+                    "MARINELLI", 
+                    "EMILIA"
+                ]
+            }
+        }, 
+        {
+            "name": "ORSINA", 
+            "number_of_speakers_speeches": 64, 
+            "average_length_of_speakers_speeches": 35.234375, 
+            "maximum_length_of_speakers_speeches": 204, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 21.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ANGELO", 
+                    "PIRRO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "CLAUDIA", 
+                    "ODOARDO", 
+                    "DER PRINZ", 
+                    "ODOARDO GALOTTI", 
+                    "MARINELLI"
+                ]
+            }
+        }, 
+        {
+            "name": "ODOARDO GALOTTI", 
+            "number_of_speakers_speeches": 4, 
+            "average_length_of_speakers_speeches": 124.75, 
+            "maximum_length_of_speakers_speeches": 193, 
+            "minimum_length_of_speakers_speeches": 5, 
+            "median_length_of_speakers_speeches": 150.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "CLAUDIA", 
+                    "PIRRO", 
+                    "CONTI", 
+                    "APPIANI", 
+                    "DER KAMMERDIENER", 
+                    "DER PRINZ", 
+                    "ANGELO", 
+                    "CAMILLO ROTA", 
+                    "CLAUDIA GALOTTI", 
+                    "EMILIA", 
+                    "BATTISTA"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "ODOARDO", 
+                    "ORSINA", 
+                    "MARINELLI"
+                ]
+            }
+        }
+    ], 
+    "content": [
+        {
+            "number_of_act": 1, 
+            "number_of_speeches_in_act": 138, 
+            "appearing_speakers": [
+                "DER PRINZ", 
+                "DER KAMMERDIENER", 
+                "CONTI", 
+                "MARINELLI", 
+                "CAMILLO ROTA"
+            ], 
+            "average_length_of_speeches_in_act": 27.855072463768117, 
+            "maximum_length_of_speeches_in_act": 156, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 17.0, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 11, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "DER KAMMERDIENER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 22.818181818181817, 
+                    "maximum_length_of_speeches_in_scene": 73, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 14, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 73
+                        }, 
+                        {
+                            "speaker": "DER KAMMERDIENER", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 56
+                        }, 
+                        {
+                            "speaker": "DER KAMMERDIENER", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DER KAMMERDIENER", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "DER KAMMERDIENER", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "DER KAMMERDIENER", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 17
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 12, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "CONTI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 13.5, 
+                    "maximum_length_of_speeches_in_scene": 29, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 10.0, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 6
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "DER PRINZ"
+                    ], 
+                    "average_length_of_speeches_in_scene": 111.0, 
+                    "maximum_length_of_speeches_in_scene": 111, 
+                    "minimum_length_of_speeches_in_scene": 111, 
+                    "median_length_of_speeches_in_scene": 111, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 111
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 36, 
+                    "appearing_speakers": [
+                        "CONTI", 
+                        "DER PRINZ"
+                    ], 
+                    "average_length_of_speeches_in_scene": 32.888888888888886, 
+                    "maximum_length_of_speeches_in_scene": 150, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 19.5, 
+                    "speeches": [
+                        {
+                            "speaker": "CONTI", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 58
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 106
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 79
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 73
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 150
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 102
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 102
+                        }, 
+                        {
+                            "speaker": "CONTI", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "DER PRINZ"
+                    ], 
+                    "average_length_of_speeches_in_scene": 116.0, 
+                    "maximum_length_of_speeches_in_scene": 116, 
+                    "minimum_length_of_speeches_in_scene": 116, 
+                    "median_length_of_speeches_in_scene": 116, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 116
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 62, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "DER PRINZ"
+                    ], 
+                    "average_length_of_speeches_in_scene": 26.20967741935484, 
+                    "maximum_length_of_speeches_in_scene": 109, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 17.5, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 109
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 72
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 70
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 104
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 78
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 104
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 71
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 72
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 82
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 18
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 3, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "DER KAMMERDIENER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 67.33333333333333, 
+                    "maximum_length_of_speeches_in_scene": 156, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 44, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 156
+                        }, 
+                        {
+                            "speaker": "DER KAMMERDIENER", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 44
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 12, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "CAMILLO ROTA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 16.083333333333332, 
+                    "maximum_length_of_speeches_in_scene": 46, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 10.0, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "CAMILLO ROTA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "CAMILLO ROTA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "CAMILLO ROTA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "CAMILLO ROTA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "CAMILLO ROTA", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "CAMILLO ROTA", 
+                            "length": 46
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 2, 
+            "number_of_speeches_in_act": 215, 
+            "appearing_speakers": [
+                "CLAUDIA", 
+                "PIRRO", 
+                "ODOARDO", 
+                "ANGELO", 
+                "CLAUDIA GALOTTI", 
+                "EMILIA", 
+                "APPIANI", 
+                "MARINELLI"
+            ], 
+            "average_length_of_speeches_in_act": 20.3953488372093, 
+            "maximum_length_of_speeches_in_act": 250, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 12, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "CLAUDIA", 
+                        "PIRRO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 5.8, 
+                    "maximum_length_of_speeches_in_scene": 7, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 6, 
+                    "speeches": [
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 5
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "ODOARDO", 
+                        "CLAUDIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 17.5, 
+                    "maximum_length_of_speeches_in_scene": 63, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 12.0, 
+                    "speeches": [
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 63
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 14
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 39, 
+                    "appearing_speakers": [
+                        "PIRRO", 
+                        "ANGELO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 13.871794871794872, 
+                    "maximum_length_of_speeches_in_scene": 60, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 11, 
+                    "speeches": [
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 60
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 18
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 23, 
+                    "appearing_speakers": [
+                        "ODOARDO", 
+                        "CLAUDIA", 
+                        "PIRRO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 25.0, 
+                    "maximum_length_of_speeches_in_scene": 110, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 10, 
+                    "speeches": [
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 82
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 110
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 85
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "CLAUDIA GALOTTI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 65.0, 
+                    "maximum_length_of_speeches_in_scene": 65, 
+                    "minimum_length_of_speeches_in_scene": 65, 
+                    "median_length_of_speeches_in_scene": 65, 
+                    "speeches": [
+                        {
+                            "speaker": "CLAUDIA GALOTTI", 
+                            "length": 65
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 35, 
+                    "appearing_speakers": [
+                        "EMILIA", 
+                        "CLAUDIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 35.714285714285715, 
+                    "maximum_length_of_speeches_in_scene": 250, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 17, 
+                    "speeches": [
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 250
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 84
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 150
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 91
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 104
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 83
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 48
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 28, 
+                    "appearing_speakers": [
+                        "APPIANI", 
+                        "EMILIA", 
+                        "CLAUDIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 22.035714285714285, 
+                    "maximum_length_of_speeches_in_scene": 89, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 17.5, 
+                    "speeches": [
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 59
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 89
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 69
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 18
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 8, 
+                    "appearing_speakers": [
+                        "APPIANI", 
+                        "CLAUDIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 30.25, 
+                    "maximum_length_of_speeches_in_scene": 90, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 23.5, 
+                    "speeches": [
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 90
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 3
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 9, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "PIRRO", 
+                        "APPIANI", 
+                        "MARINELLI", 
+                        "CLAUDIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 15.2, 
+                    "maximum_length_of_speeches_in_scene": 46, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 6, 
+                    "speeches": [
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PIRRO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 6
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 10, 
+                    "number_of_speeches_in_scene": 54, 
+                    "appearing_speakers": [
+                        "APPIANI", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 13.185185185185185, 
+                    "maximum_length_of_speeches_in_scene": 64, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 7.0, 
+                    "speeches": [
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 11, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "APPIANI", 
+                        "CLAUDIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 14.714285714285714, 
+                    "maximum_length_of_speeches_in_scene": 26, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 17, 
+                    "speeches": [
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "APPIANI", 
+                            "length": 5
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 3, 
+            "number_of_speeches_in_act": 135, 
+            "appearing_speakers": [
+                "MARINELLI", 
+                "DER PRINZ", 
+                "ANGELO", 
+                "BATTISTA", 
+                "EMILIA", 
+                "CLAUDIA GALOTTI", 
+                "CLAUDIA"
+            ], 
+            "average_length_of_speeches_in_act": 25.844444444444445, 
+            "maximum_length_of_speeches_in_act": 216, 
+            "minimum_length_of_speeches_in_act": 2, 
+            "median_length_of_speeches_in_act": 15, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 37, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "DER PRINZ"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.972972972972972, 
+                    "maximum_length_of_speeches_in_scene": 105, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 16, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 96
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 65
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 105
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 15
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 19, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "ANGELO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.57894736842105, 
+                    "maximum_length_of_speeches_in_scene": 105, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 10, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 105
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ANGELO", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 79
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 9, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 30.666666666666668, 
+                    "maximum_length_of_speeches_in_scene": 112, 
+                    "minimum_length_of_speeches_in_scene": 8, 
+                    "median_length_of_speeches_in_scene": 23, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 112
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 22, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "BATTISTA", 
+                        "EMILIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 22.454545454545453, 
+                    "maximum_length_of_speeches_in_scene": 87, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 12.0, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 87
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 49
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 12, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "EMILIA", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 37.833333333333336, 
+                    "maximum_length_of_speeches_in_scene": 216, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 15.0, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 216
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 87
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "BATTISTA", 
+                        "MARINELLI", 
+                        "CLAUDIA GALOTTI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 34.0, 
+                    "maximum_length_of_speeches_in_scene": 111, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 7, 
+                    "speeches": [
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 94
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 111
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "CLAUDIA GALOTTI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 10
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 4, 
+                    "appearing_speakers": [
+                        "CLAUDIA", 
+                        "BATTISTA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 19.5, 
+                    "maximum_length_of_speeches_in_scene": 29, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 22.5, 
+                    "speeches": [
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 29
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 25, 
+                    "appearing_speakers": [
+                        "CLAUDIA", 
+                        "MARINELLI", 
+                        "EMILIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 24.56, 
+                    "maximum_length_of_speeches_in_scene": 97, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 23, 
+                    "speeches": [
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 97
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 29
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 4, 
+            "number_of_speeches_in_act": 205, 
+            "appearing_speakers": [
+                "DER PRINZ", 
+                "MARINELLI", 
+                "BATTISTA", 
+                "ORSINA", 
+                "ODOARDO GALOTTI", 
+                "ODOARDO", 
+                "CLAUDIA"
+            ], 
+            "average_length_of_speeches_in_act": 23.336585365853658, 
+            "maximum_length_of_speeches_in_act": 204, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 12, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 46, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 21.282608695652176, 
+                    "maximum_length_of_speeches_in_scene": 152, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 12.0, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 59
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 51
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 63
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 81
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 152
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 11, 
+                    "appearing_speakers": [
+                        "BATTISTA", 
+                        "DER PRINZ", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 22.363636363636363, 
+                    "maximum_length_of_speeches_in_scene": 85, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 9, 
+                    "speeches": [
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "BATTISTA", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 85
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 55
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 33, 
+                    "appearing_speakers": [
+                        "ORSINA", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 30.78787878787879, 
+                    "maximum_length_of_speeches_in_scene": 175, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 86
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 66
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 108
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 175
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 132
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 45
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 3, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "ORSINA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 24.333333333333332, 
+                    "maximum_length_of_speeches_in_scene": 62, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 7, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 62
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 44, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "ORSINA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 20.5, 
+                    "maximum_length_of_speeches_in_scene": 120, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 9.5, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 106
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 120
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 34
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 18, 
+                    "appearing_speakers": [
+                        "ODOARDO GALOTTI", 
+                        "ORSINA", 
+                        "MARINELLI", 
+                        "ODOARDO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 19.5, 
+                    "maximum_length_of_speeches_in_scene": 54, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 9.5, 
+                    "speeches": [
+                        {
+                            "speaker": "ODOARDO GALOTTI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 47
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 29, 
+                    "appearing_speakers": [
+                        "ORSINA", 
+                        "ODOARDO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 29.06896551724138, 
+                    "maximum_length_of_speeches_in_scene": 204, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 22, 
+                    "speeches": [
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 65
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 204
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 21, 
+                    "appearing_speakers": [
+                        "CLAUDIA", 
+                        "ODOARDO", 
+                        "ORSINA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 17.80952380952381, 
+                    "maximum_length_of_speeches_in_scene": 60, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 60
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 60
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "ORSINA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "CLAUDIA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 29
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 5, 
+            "number_of_speeches_in_act": 142, 
+            "appearing_speakers": [
+                "MARINELLI", 
+                "DER PRINZ", 
+                "ODOARDO GALOTTI", 
+                "ODOARDO", 
+                "EMILIA"
+            ], 
+            "average_length_of_speeches_in_act": 24.471830985915492, 
+            "maximum_length_of_speeches_in_act": 193, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 10.0, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "DER PRINZ"
+                    ], 
+                    "average_length_of_speeches_in_scene": 51.142857142857146, 
+                    "maximum_length_of_speeches_in_scene": 164, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 22, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 164
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 61
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 92
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "ODOARDO GALOTTI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 193.0, 
+                    "maximum_length_of_speeches_in_scene": 193, 
+                    "minimum_length_of_speeches_in_scene": 193, 
+                    "median_length_of_speeches_in_scene": 193, 
+                    "speeches": [
+                        {
+                            "speaker": "ODOARDO GALOTTI", 
+                            "length": 193
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 25, 
+                    "appearing_speakers": [
+                        "MARINELLI", 
+                        "ODOARDO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 10.84, 
+                    "maximum_length_of_speeches_in_scene": 48, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 6, 
+                    "speeches": [
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 48
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "ODOARDO GALOTTI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 165.0, 
+                    "maximum_length_of_speeches_in_scene": 165, 
+                    "minimum_length_of_speeches_in_scene": 165, 
+                    "median_length_of_speeches_in_scene": 165, 
+                    "speeches": [
+                        {
+                            "speaker": "ODOARDO GALOTTI", 
+                            "length": 165
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 61, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "ODOARDO", 
+                        "MARINELLI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 21.57377049180328, 
+                    "maximum_length_of_speeches_in_scene": 112, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 10, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 83
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 41
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 60
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 92
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 77
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 112
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 103
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 15
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "ODOARDO GALOTTI"
+                    ], 
+                    "average_length_of_speeches_in_scene": 136.0, 
+                    "maximum_length_of_speeches_in_scene": 136, 
+                    "minimum_length_of_speeches_in_scene": 136, 
+                    "median_length_of_speeches_in_scene": 136, 
+                    "speeches": [
+                        {
+                            "speaker": "ODOARDO GALOTTI", 
+                            "length": 136
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 35, 
+                    "appearing_speakers": [
+                        "EMILIA", 
+                        "ODOARDO"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.228571428571428, 
+                    "maximum_length_of_speeches_in_scene": 123, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 19, 
+                    "speeches": [
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 88
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 123
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 62
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 19
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 11, 
+                    "appearing_speakers": [
+                        "DER PRINZ", 
+                        "ODOARDO", 
+                        "MARINELLI", 
+                        "EMILIA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 20.272727272727273, 
+                    "maximum_length_of_speeches_in_scene": 97, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 7, 
+                    "speeches": [
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MARINELLI", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "EMILIA", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ODOARDO", 
+                            "length": 97
+                        }, 
+                        {
+                            "speaker": "DER PRINZ", 
+                            "length": 54
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

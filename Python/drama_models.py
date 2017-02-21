@@ -1,6 +1,7 @@
 #coding: utf8
 
 from statistic_functions import *
+from sentiment_analyzer import *
 from collections import OrderedDict
 
 # model for the whole drama
@@ -25,7 +26,7 @@ class DramaModel:
         self._speechesLength_max = 0
         self._speechesLength_min = 0
         self._speechesLength_med = 0
-        
+
     # calculates the configuration matrix
     def calc_config_matrix (self):
         configuration_matrix = []
@@ -218,8 +219,6 @@ class ConfigurationModel:
         speeches = self._speeches
         speeches_lengths = []
         for speech in speeches:
-            print("hello")
-            print(speech)
             speeches_lengths.append(speech._length)
 
         if(speeches):
@@ -236,7 +235,15 @@ class SpeechModel:
         self._id = None
         self._length = None
         self._speaker = None
+        self._text = None
+        self._sentimentScore = None
 
+    def calcSentimentScore(self):
+        sa = Sentiment_Analyzer()
+        sa.initDict()
+
+        sentimentScore = sa.calcSentimentScorePerText(self._text)
+        self._sentimentScore = sentimentScore
 
 # model for speakers
 class SpeakerModel:

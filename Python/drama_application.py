@@ -3,14 +3,18 @@
 import os
 from drama_parser import *
 from drama_output import *
+import sys
+import codecs
 
 def main():
+    sys.stdout = codecs.getwriter('utf8')(sys.stdout)
+    sys.stderr = codecs.getwriter('utf8')(sys.stderr)
     debug = True
 
     # used to generate one JSON file
 
     parser = DramaParser()
-    dramaModel = parser.parse_xml("../Korpus/toer_agnes_t.xml")
+    dramaModel = parser.parse_xml("../Korpus/less_emilia_t.xml")
     output = DramaOutput()
     drama_data = output.generate_drama_data(dramaModel)
     output.write_JSON(drama_data)

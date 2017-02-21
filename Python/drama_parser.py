@@ -214,13 +214,38 @@ class DramaParser:
                 name = name[:-1]
 
             speech_model._speaker = name
+            speech_model._text = self.get_speech_text(subact_speaker_wrapper)
             speech_model._length = self.get_speech_length(subact_speaker_wrapper)
+            speech_model.calcSentimentScore()
 
             # speech with a length of zero or less are not added
             if(speech_model._length > 0):
                 speech_data.append(speech_model)
 
         return speech_data
+
+    # calculates length of speech
+    def get_speech_text(self, sub_sp_wrapper):
+        speechText = ""
+        p_tag = sub_sp_wrapper.find("./tei:p", self.namespaces)
+        l_tag = sub_sp_wrapper.find("./tei:l", self.namespaces)
+
+        if p_tag is not None:
+            for text in p_tag.itertext():
+                speechText = speechText + text
+
+        elif l_tag is not None:
+            for text in l_tag.itertext():
+                speechText = speechText + text
+
+        # for classic dramas with noted line breaks
+        if l_tag is None:
+            lg_tag = sub_sp_wrapper.findall("./tei:lg", self.namespaces)
+            for lg_element in sub_sp_wrapper.findall("./tei:lg", self.namespaces):
+                for l_element in lg_element.findall("./tei:l", self.namespaces):
+                    speechText = speechText + l_element.text
+
+        return speechText
 
     # calculates length of speech
     def get_speech_length(self, sub_sp_wrapper):
