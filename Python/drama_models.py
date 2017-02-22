@@ -27,6 +27,8 @@ class DramaModel:
         self._speechesLength_min = 0
         self._speechesLength_med = 0
 
+        self._sentimentScoreDrama = 0
+
     # calculates the configuration matrix
     def calc_config_matrix (self):
         configuration_matrix = []
@@ -137,13 +139,18 @@ class DramaModel:
     def calc_speeches_statistics(self):
         speeches = self.get_speeches_drama()
         speeches_lengths = []
+        sentimentScore = 0
+
         for speech in speeches:
             speeches_lengths.append(speech._length)
+            sentimentScore = sentimentScore + speech._sentimentScoreSpeech
 
         self._speechesLength_avg = average(speeches_lengths)
         self._speechesLength_max = custom_max(speeches_lengths)
         self._speechesLength_min = custom_min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
+
+        self._sentimentScoreDrama = sentimentScore
 
     # assigns speeches to speakers
     def add_speeches_to_speakers(self):
@@ -181,19 +188,24 @@ class ActModel:
         for configuration in self._configurations:
             for speeches in configuration._speeches:
                 speeches_in_act.append(speeches)
+
         return speeches_in_act
 
     # calculates speech statistics for the act
     def calc_speeches_statistics(self):
         speeches = self.get_speeches_act()
         speeches_lengths = []
+        sentimentScore = 0
         for speech in speeches:
             speeches_lengths.append(speech._length)
+            sentimentScore = sentimentScore + speech._sentimentScoreSpeech
 
         self._speechesLength_avg = average(speeches_lengths)
         self._speechesLength_max = custom_max(speeches_lengths)
         self._speechesLength_min = custom_min(speeches_lengths)
         self._speechesLength_med = median(speeches_lengths)
+
+        self._sentimentScoreAct = sentimentScore
 
     # generates the appearing speakers list
     def set_appearing_speakers(self):
@@ -205,6 +217,7 @@ class ActModel:
 
 # model for configurations
 class ConfigurationModel:
+
     def __init__ (self):
         self._name = None
         self._number = None
@@ -234,8 +247,6 @@ class ConfigurationModel:
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
             self._sentimentScoreConfiguration = sentimentScore
-            print(self._sentimentScoreConfiguration)
-
 
 
 # model for speech
