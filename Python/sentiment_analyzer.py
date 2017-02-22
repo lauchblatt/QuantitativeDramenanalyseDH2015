@@ -27,9 +27,9 @@ class Sentiment_Analyzer:
 		sentimentScore = 0
 		for word in words:
 			word = word.strip(".,:?!();-'\"")
-			print(word + " " + str(self.getSentimentScorePerWord(word)))
 			sentimentScorePerWord = self.getSentimentScorePerWord(word)
 			sentimentScore = sentimentScore + sentimentScorePerWord
+
 		return sentimentScore
 
 	
