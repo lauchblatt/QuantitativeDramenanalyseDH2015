@@ -230,16 +230,19 @@ class ConfigurationModel:
         self._speechesLength_med = 0
 
         self._sentimentScoreConfiguration = None
+        self._sentimentBearingWordsConfiguration = []
 
     # calculates speech statistics for configuration
     def calc_speeches_statistics(self):
         speeches = self._speeches
         speeches_lengths = []
         sentimentScore = 0
+        sentimentBearingWords = []
 
         for speech in speeches:
             speeches_lengths.append(speech._length)
             sentimentScore = sentimentScore + speech._sentimentScoreSpeech
+            sentimentBearingWords.extend(speech._sentimentBearingWords)
 
         if(speeches):
             self._speechesLength_avg = average(speeches_lengths)
@@ -247,6 +250,7 @@ class ConfigurationModel:
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
             self._sentimentScoreConfiguration = sentimentScore
+            self._sentimentBearingWordsConfiguration = sentimentBearingWords
 
 
 # model for speech
@@ -258,10 +262,15 @@ class SpeechModel:
         self._speaker = None
         self._text = None
         self._sentimentScoreSpeech = None
+        self._sentimentBearingWords = []
 
     def calcSentimentScore(self, sentimentAnalyzer):
 
-        sentimentScore = sentimentAnalyzer.calcSentimentScorePerText(self._text)
+        sentimentInformation = sentimentAnalyzer.calcSentimentScorePerText(self._text)
+        sentimentScore = sentimentInformation.sentimentScore
+        sentimentBearingWords = sentimentInformation.sentimentBearingWords
+
+        self._sentimentBearingWords = sentimentBearingWords
         self._sentimentScoreSpeech = sentimentScore
 
 # model for speakers
@@ -283,16 +292,22 @@ class SpeakerModel:
         self._speechesLength_min = 0
         self._speechesLength_max = 0
 
+        self._sentimentScoreSpeaker = 0
+
     # calculates speech statistics for speaker
     def calc_speeches_statistics(self):
         speeches_lengths = []
+        sentimentScore = 0
+
         for speeches in self._speeches:
             speeches_lengths.append(speeches._length)
+            sentimentScore = sentimentScore + speeches._sentimentScoreSpeech
 
         if(speeches_lengths):
             self._speechesLength_avg = average(speeches_lengths)
             self._speechesLength_max = custom_max(speeches_lengths)
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
+            self._sentimentScoreSpeaker = sentimentScore
 
             

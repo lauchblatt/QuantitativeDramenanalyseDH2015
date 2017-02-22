@@ -45,24 +45,33 @@ class DramaParser:
         # speech statistics
         drama_model.calc_speeches_statistics()
 
-        print("Drama " + str(drama_model._title) +": " +
-                    str(drama_model._sentimentScoreDrama))
-
         for act in drama_model._acts:
             act.calc_speeches_statistics()
-
-            print("Act " + str(act._number) +": " +
-                    str(act._sentimentScoreAct))
 
             for configuration in act._configurations:
                 configuration.calc_speeches_statistics()
 
+                
                 print("Configuration " + str(configuration._name) +": " +
                     str(configuration._sentimentScoreConfiguration))
+                """
+                print(configuration._sentimentBearingWordsConfiguration)
+                """
+
+            print("Act " + str(act._number) +": " +
+                    str(act._sentimentScoreAct))
+
+        print("Drama " + drama_model._title + ": " +
+                    str(drama_model._sentimentScoreDrama))
+        
 
         drama_model.add_speeches_to_speakers()
         for speaker in drama_model._speakers:
             speaker.calc_speeches_statistics()
+
+            
+            print("Speaker " + speaker._name + ": " + str(speaker._sentimentScoreSpeaker))
+
 
         drama_model.set_speaker_count()
 

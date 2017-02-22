@@ -1,0 +1,1538 @@
+{
+    "title": "Der Tod Adams", 
+    "author": "Klopstock, Friedrich Gottlieb", 
+    "date": {
+        "when": 1753
+    }, 
+    "type": "Trauerspiel", 
+    "castgroup": [
+        "Adam", 
+        "Kain", 
+        "Seth", 
+        "Heman", 
+        "Sunim", 
+        "Eva", 
+        "Selima", 
+        "Drei M\u00fctter", 
+        "Ein Todesengel"
+    ], 
+    "configuration_density": 0.16785714285714284, 
+    "number_of_speeches_in_drama": 185, 
+    "average_length_of_speeches_in_drama": 32.902702702702705, 
+    "maximum_length_of_speeches_in_drama": 391, 
+    "minimum_length_of_speeches_in drama": 1, 
+    "median_length_of_speeches_in_drama": 16, 
+    "speakers": [
+        {
+            "name": "SELIMA", 
+            "number_of_speakers_speeches": 15, 
+            "average_length_of_speakers_speeches": 42.4, 
+            "maximum_length_of_speakers_speeches": 176, 
+            "minimum_length_of_speakers_speeches": 4, 
+            "median_length_of_speakers_speeches": 31, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [
+                    "HEMAN", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "ALLE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "EVA", 
+                    "SETH", 
+                    "ADAM", 
+                    "SEH"
+                ]
+            }
+        }, 
+        {
+            "name": "SETH", 
+            "number_of_speakers_speeches": 55, 
+            "average_length_of_speakers_speeches": 22.818181818181817, 
+            "maximum_length_of_speakers_speeches": 116, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 11, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [], 
+                "dominates": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "SEH", 
+                    "HEMAN", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "ALLE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "EVA", 
+                    "SELIMA", 
+                    "ADAM", 
+                    "KAIN"
+                ]
+            }
+        }, 
+        {
+            "name": "ADAM", 
+            "number_of_speakers_speeches": 72, 
+            "average_length_of_speakers_speeches": 43.5, 
+            "maximum_length_of_speakers_speeches": 391, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 22.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "SEHT"
+                ], 
+                "dominates": [
+                    "DER TODESENGEL", 
+                    "KAIN", 
+                    "HEMAN", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "ALLE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "EVA", 
+                    "SETH", 
+                    "SELIMA", 
+                    "SEH"
+                ]
+            }
+        }, 
+        {
+            "name": "DER TODESENGEL", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 80.0, 
+            "maximum_length_of_speakers_speeches": 80, 
+            "minimum_length_of_speakers_speeches": 80, 
+            "median_length_of_speakers_speeches": 80, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALLE", 
+                    "SEHT", 
+                    "HEMAN", 
+                    "EVA", 
+                    "DIE DRITTE", 
+                    "SELIMA", 
+                    "SUNIM", 
+                    "KAIN", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "SEH"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SETH", 
+                    "ADAM"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "KAIN", 
+            "number_of_speakers_speeches": 14, 
+            "average_length_of_speakers_speeches": 27.071428571428573, 
+            "maximum_length_of_speakers_speeches": 69, 
+            "minimum_length_of_speakers_speeches": 4, 
+            "median_length_of_speakers_speeches": 22.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "ALLE", 
+                    "SEHT", 
+                    "HEMAN", 
+                    "EVA", 
+                    "DIE DRITTE", 
+                    "SELIMA", 
+                    "SUNIM", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "SEH"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "ADAM"
+                ], 
+                "independent": [
+                    "SETH"
+                ]
+            }
+        }, 
+        {
+            "name": "EVA", 
+            "number_of_speakers_speeches": 19, 
+            "average_length_of_speakers_speeches": 28.473684210526315, 
+            "maximum_length_of_speakers_speeches": 185, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 16, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "KAIN"
+                ], 
+                "dominates": [
+                    "SEHT", 
+                    "SEH", 
+                    "HEMAN", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "ALLE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "SETH", 
+                    "SELIMA", 
+                    "ADAM"
+                ]
+            }
+        }, 
+        {
+            "name": "SEHT", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 15.0, 
+            "maximum_length_of_speakers_speeches": 15, 
+            "minimum_length_of_speakers_speeches": 15, 
+            "median_length_of_speakers_speeches": 15, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "ALLE", 
+                    "NOCH EINE", 
+                    "HEMAN", 
+                    "DIE DRITTE", 
+                    "SELIMA", 
+                    "SUNIM", 
+                    "KAIN", 
+                    "EINE MUTTER", 
+                    "ADAM"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SETH", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "SEH", 
+            "number_of_speakers_speeches": 2, 
+            "average_length_of_speakers_speeches": 6.5, 
+            "maximum_length_of_speakers_speeches": 10, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 6.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "KAIN"
+                ], 
+                "dominates": [
+                    "SEHT", 
+                    "HEMAN", 
+                    "EINE MUTTER", 
+                    "NOCH EINE", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "ALLE"
+                ], 
+                "gets_dominated_by": [
+                    "SETH", 
+                    "EVA"
+                ], 
+                "independent": [
+                    "SELIMA", 
+                    "ADAM"
+                ]
+            }
+        }, 
+        {
+            "name": "HEMAN", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 16.0, 
+            "maximum_length_of_speakers_speeches": 16, 
+            "minimum_length_of_speakers_speeches": 16, 
+            "median_length_of_speakers_speeches": 16, 
+            "relations": {
+                "concomitant": [
+                    "ALLE", 
+                    "NOCH EINE", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "EINE MUTTER"
+                ], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SELIMA", 
+                    "SETH", 
+                    "ADAM", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "EINE MUTTER", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 2.0, 
+            "maximum_length_of_speakers_speeches": 2, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 2, 
+            "relations": {
+                "concomitant": [
+                    "ALLE", 
+                    "NOCH EINE", 
+                    "HEMAN", 
+                    "DIE DRITTE", 
+                    "SUNIM"
+                ], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SELIMA", 
+                    "SETH", 
+                    "ADAM", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "NOCH EINE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 3.0, 
+            "maximum_length_of_speakers_speeches": 3, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 3, 
+            "relations": {
+                "concomitant": [
+                    "ALLE", 
+                    "HEMAN", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "EINE MUTTER"
+                ], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SELIMA", 
+                    "SETH", 
+                    "ADAM", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DIE DRITTE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 4.0, 
+            "maximum_length_of_speakers_speeches": 4, 
+            "minimum_length_of_speakers_speeches": 4, 
+            "median_length_of_speakers_speeches": 4, 
+            "relations": {
+                "concomitant": [
+                    "ALLE", 
+                    "NOCH EINE", 
+                    "HEMAN", 
+                    "SUNIM", 
+                    "EINE MUTTER"
+                ], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SELIMA", 
+                    "SETH", 
+                    "ADAM", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "SUNIM", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 3.0, 
+            "maximum_length_of_speakers_speeches": 3, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 3, 
+            "relations": {
+                "concomitant": [
+                    "ALLE", 
+                    "NOCH EINE", 
+                    "HEMAN", 
+                    "DIE DRITTE", 
+                    "EINE MUTTER"
+                ], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SELIMA", 
+                    "SETH", 
+                    "ADAM", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "ALLE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 8.0, 
+            "maximum_length_of_speakers_speeches": 8, 
+            "minimum_length_of_speakers_speeches": 8, 
+            "median_length_of_speakers_speeches": 8, 
+            "relations": {
+                "concomitant": [
+                    "NOCH EINE", 
+                    "HEMAN", 
+                    "DIE DRITTE", 
+                    "SUNIM", 
+                    "EINE MUTTER"
+                ], 
+                "alternative": [
+                    "DER TODESENGEL", 
+                    "SEHT", 
+                    "KAIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SELIMA", 
+                    "SETH", 
+                    "ADAM", 
+                    "EVA", 
+                    "SEH"
+                ], 
+                "independent": []
+            }
+        }
+    ], 
+    "content": [
+        {
+            "number_of_act": 1, 
+            "number_of_speeches_in_act": 39, 
+            "appearing_speakers": [
+                "SELIMA", 
+                "SETH", 
+                "ADAM", 
+                "DER TODESENGEL"
+            ], 
+            "average_length_of_speeches_in_act": 47.82051282051282, 
+            "maximum_length_of_speeches_in_act": 391, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 23, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 6, 
+                    "appearing_speakers": [
+                        "SELIMA", 
+                        "SETH"
+                    ], 
+                    "average_length_of_speeches_in_scene": 71.33333333333333, 
+                    "maximum_length_of_speeches_in_scene": 176, 
+                    "minimum_length_of_speeches_in_scene": 11, 
+                    "median_length_of_speeches_in_scene": 55.0, 
+                    "speeches": [
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 176
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 70
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 116
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 2, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "SELIMA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 28.0, 
+                    "maximum_length_of_speeches_in_scene": 52, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 28.0, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 4
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "SETH"
+                    ], 
+                    "average_length_of_speeches_in_scene": 64.5, 
+                    "maximum_length_of_speeches_in_scene": 391, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 19.5, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 72
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 391
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 74
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 7
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "SETH"
+                    ], 
+                    "average_length_of_speeches_in_scene": 21.428571428571427, 
+                    "maximum_length_of_speeches_in_scene": 55, 
+                    "minimum_length_of_speeches_in_scene": 8, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 16
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 3, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "SELIMA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 66.33333333333333, 
+                    "maximum_length_of_speeches_in_scene": 106, 
+                    "minimum_length_of_speeches_in_scene": 22, 
+                    "median_length_of_speeches_in_scene": 71, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 106
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 71
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 11, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "SETH", 
+                        "DER TODESENGEL"
+                    ], 
+                    "average_length_of_speeches_in_scene": 35.18181818181818, 
+                    "maximum_length_of_speeches_in_scene": 113, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 23, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 113
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 67
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "DER TODESENGEL", 
+                            "length": 80
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 1
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 2, 
+            "number_of_speeches_in_act": 73, 
+            "appearing_speakers": [
+                "ADAM", 
+                "SETH", 
+                "SELIMA", 
+                "KAIN"
+            ], 
+            "average_length_of_speeches_in_act": 33.54794520547945, 
+            "maximum_length_of_speeches_in_act": 291, 
+            "minimum_length_of_speeches_in_act": 2, 
+            "median_length_of_speeches_in_act": 20, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 15, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "SETH"
+                    ], 
+                    "average_length_of_speeches_in_scene": 44.0, 
+                    "maximum_length_of_speeches_in_scene": 205, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 30, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 158
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 205
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 12
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 6, 
+                    "appearing_speakers": [
+                        "SELIMA", 
+                        "ADAM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 42.0, 
+                    "maximum_length_of_speeches_in_scene": 76, 
+                    "minimum_length_of_speeches_in_scene": 6, 
+                    "median_length_of_speeches_in_scene": 43.5, 
+                    "speeches": [
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 76
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 76
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "SELIMA", 
+                        "ADAM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 19.6, 
+                    "maximum_length_of_speeches_in_scene": 48, 
+                    "minimum_length_of_speeches_in_scene": 7, 
+                    "median_length_of_speeches_in_scene": 15.0, 
+                    "speeches": [
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 9
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 4, 
+                    "appearing_speakers": [
+                        "KAIN", 
+                        "ADAM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 11.25, 
+                    "maximum_length_of_speeches_in_scene": 17, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 11.5, 
+                    "speeches": [
+                        {
+                            "speaker": "KAIN", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 12
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 24, 
+                    "appearing_speakers": [
+                        "ADAM", 
+                        "KAIN", 
+                        "SETH"
+                    ], 
+                    "average_length_of_speeches_in_scene": 24.083333333333332, 
+                    "maximum_length_of_speeches_in_scene": 69, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 22.0, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 69
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 61
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "KAIN", 
+                            "length": 51
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "ADAM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 47.0, 
+                    "maximum_length_of_speeches_in_scene": 47, 
+                    "minimum_length_of_speeches_in_scene": 47, 
+                    "median_length_of_speeches_in_scene": 47, 
+                    "speeches": [
+                        {
+                            "speaker": "ADAM", 
+                            "length": 47
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 13, 
+                    "appearing_speakers": [
+                        "SETH", 
+                        "ADAM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 51.61538461538461, 
+                    "maximum_length_of_speeches_in_scene": 291, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 25, 
+                    "speeches": [
+                        {
+                            "speaker": "SETH", 
+                            "length": 93
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 291
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 98
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 3, 
+            "number_of_speeches_in_act": 73, 
+            "appearing_speakers": [
+                "SELIMA", 
+                "EVA", 
+                "SEHT", 
+                "SETH", 
+                "SEH", 
+                "ADAM", 
+                "HEMAN", 
+                "EINE MUTTER", 
+                "NOCH EINE", 
+                "DIE DRITTE", 
+                "SUNIM", 
+                "ALLE"
+            ], 
+            "average_length_of_speeches_in_act": 24.28767123287671, 
+            "maximum_length_of_speeches_in_act": 221, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 12, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 2, 
+                    "appearing_speakers": [
+                        "SELIMA", 
+                        "EVA"
+                    ], 
+                    "average_length_of_speeches_in_scene": 30.5, 
+                    "maximum_length_of_speeches_in_scene": 46, 
+                    "minimum_length_of_speeches_in_scene": 15, 
+                    "median_length_of_speeches_in_scene": 30.5, 
+                    "speeches": [
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 46
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 17, 
+                    "appearing_speakers": [
+                        "SEHT", 
+                        "EVA", 
+                        "SETH", 
+                        "SEH"
+                    ], 
+                    "average_length_of_speeches_in_scene": 22.41176470588235, 
+                    "maximum_length_of_speeches_in_scene": 185, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "SEHT", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "SEH", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 185
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 13
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 19, 
+                    "appearing_speakers": [
+                        "EVA", 
+                        "SETH", 
+                        "ADAM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 20.63157894736842, 
+                    "maximum_length_of_speeches_in_scene": 64, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 10, 
+                    "speeches": [
+                        {
+                            "speaker": "EVA", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 59
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 8
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 35, 
+                    "appearing_speakers": [
+                        "SELIMA", 
+                        "HEMAN", 
+                        "EINE MUTTER", 
+                        "NOCH EINE", 
+                        "DIE DRITTE", 
+                        "ADAM", 
+                        "SETH", 
+                        "SEH", 
+                        "SUNIM", 
+                        "EVA", 
+                        "ALLE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 26.82857142857143, 
+                    "maximum_length_of_speeches_in_scene": 221, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 11, 
+                    "speeches": [
+                        {
+                            "speaker": "SELIMA", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HEMAN", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "EINE MUTTER", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "NOCH EINE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "DIE DRITTE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 63
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "SEH", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "SUNIM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "ALLE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 159
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 47
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 221
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "EVA", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "SETH", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "ADAM", 
+                            "length": 12
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4810 @@
+{
+    "title": "Kabale und Liebe", 
+    "author": "Schiller, Friedrich", 
+    "date": {
+        "notBefore": "1782", 
+        "when": 1782, 
+        "notAfter": "1783"
+    }, 
+    "type": "Trauerspiel", 
+    "castgroup": [
+        "Pr\u00e4sident von Walter", 
+        "Ferdinand", 
+        "Hofmarschall von Kalb", 
+        "Lady Milford", 
+        "Wurm", 
+        "Miller", 
+        "Dessen Frau", 
+        "Luise", 
+        "Sophie", 
+        "Ein Kammerdiener des F\u00fcrsten", 
+        "Verschiedene Nebenpersonen"
+    ], 
+    "configuration_density": 0.15855855855855855, 
+    "number_of_speeches_in_drama": 920, 
+    "average_length_of_speeches_in_drama": 28.8, 
+    "maximum_length_of_speeches_in_drama": 333, 
+    "minimum_length_of_speeches_in drama": 1, 
+    "median_length_of_speeches_in_drama": 15.0, 
+    "speakers": [
+        {
+            "name": "MILLER", 
+            "number_of_speakers_speeches": 100, 
+            "average_length_of_speakers_speeches": 39.87, 
+            "maximum_length_of_speakers_speeches": 286, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 21.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "LADY", 
+                    "ALLE BEDIENTE", 
+                    "HOFMARSCHALL", 
+                    "BEDIENTER", 
+                    "EIN KAMMERDIENER", 
+                    "SOPHIE", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "KAMMERDIENER"
+                ], 
+                "dominates": [
+                    "FRAU", 
+                    "MILLERIN"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "FERDINAND", 
+                    "LUISE", 
+                    "PR\u00c4SIDENT", 
+                    "WURM"
+                ]
+            }
+        }, 
+        {
+            "name": "FRAU", 
+            "number_of_speakers_speeches": 34, 
+            "average_length_of_speakers_speeches": 17.205882352941178, 
+            "maximum_length_of_speakers_speeches": 39, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 14.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "LADY", 
+                    "ALLE BEDIENTE", 
+                    "HOFMARSCHALL", 
+                    "BEDIENTER", 
+                    "EIN KAMMERDIENER", 
+                    "SOPHIE", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "KAMMERDIENER"
+                ], 
+                "dominates": [
+                    "MILLERIN"
+                ], 
+                "gets_dominated_by": [
+                    "MILLER"
+                ], 
+                "independent": [
+                    "FERDINAND", 
+                    "LUISE", 
+                    "PR\u00c4SIDENT", 
+                    "WURM"
+                ]
+            }
+        }, 
+        {
+            "name": "WURM", 
+            "number_of_speakers_speeches": 96, 
+            "average_length_of_speakers_speeches": 22.635416666666668, 
+            "maximum_length_of_speakers_speeches": 136, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 11.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "LADY", 
+                    "ALLE BEDIENTE", 
+                    "HOFMARSCHALL", 
+                    "BEDIENTER", 
+                    "SOPHIE", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "MILLERIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "MILLER", 
+                    "EIN KAMMERDIENER", 
+                    "FRAU", 
+                    "LUISE", 
+                    "FERDINAND", 
+                    "PR\u00c4SIDENT", 
+                    "KAMMERDIENER"
+                ]
+            }
+        }, 
+        {
+            "name": "LUISE", 
+            "number_of_speakers_speeches": 175, 
+            "average_length_of_speakers_speeches": 26.731428571428573, 
+            "maximum_length_of_speakers_speeches": 333, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 12, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALLE BEDIENTE", 
+                    "HOFMARSCHALL", 
+                    "BEDIENTER", 
+                    "EIN KAMMERDIENER", 
+                    "KAMMERDIENER", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "SOPHIE"
+                ], 
+                "dominates": [
+                    "MILLERIN"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "LADY", 
+                    "MILLER", 
+                    "WURM", 
+                    "FRAU", 
+                    "FERDINAND", 
+                    "PR\u00c4SIDENT"
+                ]
+            }
+        }, 
+        {
+            "name": "FERDINAND", 
+            "number_of_speakers_speeches": 195, 
+            "average_length_of_speakers_speeches": 33.32820512820513, 
+            "maximum_length_of_speakers_speeches": 186, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 20, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALLE BEDIENTE", 
+                    "MILLERIN", 
+                    "BEDIENTER", 
+                    "EIN KAMMERDIENER", 
+                    "SOPHIE", 
+                    "KAMMERDIENER UND SOPHIE"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "MILLER", 
+                    "HOFMARSCHALL", 
+                    "PR\u00c4SIDENT", 
+                    "WURM", 
+                    "FRAU", 
+                    "LUISE", 
+                    "KAMMERDIENER", 
+                    "LADY"
+                ]
+            }
+        }, 
+        {
+            "name": "PR\u00c4SIDENT", 
+            "number_of_speakers_speeches": 136, 
+            "average_length_of_speakers_speeches": 22.264705882352942, 
+            "maximum_length_of_speakers_speeches": 142, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 12.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALLE BEDIENTE", 
+                    "MILLERIN", 
+                    "BEDIENTER", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "SOPHIE", 
+                    "LADY"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "MILLER", 
+                    "HOFMARSCHALL", 
+                    "FRAU", 
+                    "WURM", 
+                    "EIN KAMMERDIENER", 
+                    "LUISE", 
+                    "FERDINAND", 
+                    "KAMMERDIENER"
+                ]
+            }
+        }, 
+        {
+            "name": "EIN KAMMERDIENER", 
+            "number_of_speakers_speeches": 2, 
+            "average_length_of_speakers_speeches": 2.5, 
+            "maximum_length_of_speakers_speeches": 3, 
+            "minimum_length_of_speakers_speeches": 2, 
+            "median_length_of_speakers_speeches": 2.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "MILLER", 
+                    "HOFMARSCHALL", 
+                    "LUISE", 
+                    "KAMMERDIENER", 
+                    "BEDIENTER", 
+                    "FRAU", 
+                    "ALLE BEDIENTE", 
+                    "FERDINAND", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "MILLERIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "PR\u00c4SIDENT", 
+                    "SOPHIE", 
+                    "LADY", 
+                    "WURM"
+                ]
+            }
+        }, 
+        {
+            "name": "HOFMARSCHALL", 
+            "number_of_speakers_speeches": 61, 
+            "average_length_of_speakers_speeches": 18.016393442622952, 
+            "maximum_length_of_speakers_speeches": 112, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 11, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "FRAU", 
+                    "MILLER", 
+                    "MILLERIN", 
+                    "BEDIENTER", 
+                    "WURM", 
+                    "EIN KAMMERDIENER", 
+                    "LUISE"
+                ], 
+                "dominates": [
+                    "KAMMERDIENER UND SOPHIE", 
+                    "ALLE BEDIENTE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "PR\u00c4SIDENT", 
+                    "FERDINAND", 
+                    "LADY", 
+                    "SOPHIE", 
+                    "KAMMERDIENER"
+                ]
+            }
+        }, 
+        {
+            "name": "SOPHIE", 
+            "number_of_speakers_speeches": 22, 
+            "average_length_of_speakers_speeches": 18.545454545454547, 
+            "maximum_length_of_speakers_speeches": 46, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 12.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "MILLER", 
+                    "MILLERIN", 
+                    "WURM", 
+                    "FRAU", 
+                    "LUISE", 
+                    "FERDINAND", 
+                    "PR\u00c4SIDENT"
+                ], 
+                "dominates": [
+                    "BEDIENTER", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "ALLE BEDIENTE"
+                ], 
+                "gets_dominated_by": [
+                    "LADY"
+                ], 
+                "independent": [
+                    "EIN KAMMERDIENER", 
+                    "KAMMERDIENER", 
+                    "HOFMARSCHALL"
+                ]
+            }
+        }, 
+        {
+            "name": "LADY", 
+            "number_of_speakers_speeches": 79, 
+            "average_length_of_speakers_speeches": 46.77215189873418, 
+            "maximum_length_of_speakers_speeches": 218, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 33, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "MILLER", 
+                    "FRAU", 
+                    "PR\u00c4SIDENT", 
+                    "MILLERIN", 
+                    "WURM"
+                ], 
+                "dominates": [
+                    "SOPHIE", 
+                    "BEDIENTER", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "ALLE BEDIENTE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "EIN KAMMERDIENER", 
+                    "KAMMERDIENER", 
+                    "FERDINAND", 
+                    "HOFMARSCHALL", 
+                    "LUISE"
+                ]
+            }
+        }, 
+        {
+            "name": "KAMMERDIENER", 
+            "number_of_speakers_speeches": 14, 
+            "average_length_of_speakers_speeches": 22.5, 
+            "maximum_length_of_speakers_speeches": 115, 
+            "minimum_length_of_speakers_speeches": 4, 
+            "median_length_of_speakers_speeches": 9.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "MILLER", 
+                    "EIN KAMMERDIENER", 
+                    "MILLERIN", 
+                    "FRAU", 
+                    "LUISE"
+                ], 
+                "dominates": [
+                    "BEDIENTER", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "ALLE BEDIENTE"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "LADY", 
+                    "HOFMARSCHALL", 
+                    "WURM", 
+                    "FERDINAND", 
+                    "PR\u00c4SIDENT", 
+                    "SOPHIE"
+                ]
+            }
+        }, 
+        {
+            "name": "BEDIENTER", 
+            "number_of_speakers_speeches": 3, 
+            "average_length_of_speakers_speeches": 4.0, 
+            "maximum_length_of_speakers_speeches": 6, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 3, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALLE BEDIENTE", 
+                    "HOFMARSCHALL", 
+                    "LUISE", 
+                    "EIN KAMMERDIENER", 
+                    "WURM", 
+                    "FRAU", 
+                    "MILLER", 
+                    "PR\u00c4SIDENT", 
+                    "FERDINAND", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "MILLERIN"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "SOPHIE", 
+                    "LADY", 
+                    "KAMMERDIENER"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "MILLERIN", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 6.0, 
+            "maximum_length_of_speakers_speeches": 6, 
+            "minimum_length_of_speakers_speeches": 6, 
+            "median_length_of_speakers_speeches": 6, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALLE BEDIENTE", 
+                    "HOFMARSCHALL", 
+                    "PR\u00c4SIDENT", 
+                    "BEDIENTER", 
+                    "WURM", 
+                    "SOPHIE", 
+                    "EIN KAMMERDIENER", 
+                    "KAMMERDIENER UND SOPHIE", 
+                    "KAMMERDIENER", 
+                    "LADY", 
+                    "FERDINAND"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "MILLER", 
+                    "FRAU", 
+                    "LUISE"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "KAMMERDIENER UND SOPHIE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 3.0, 
+            "maximum_length_of_speakers_speeches": 3, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 3, 
+            "relations": {
+                "concomitant": [
+                    "ALLE BEDIENTE"
+                ], 
+                "alternative": [
+                    "MILLER", 
+                    "MILLERIN", 
+                    "FRAU", 
+                    "BEDIENTER", 
+                    "EIN KAMMERDIENER", 
+                    "LUISE", 
+                    "FERDINAND", 
+                    "WURM", 
+                    "PR\u00c4SIDENT"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HOFMARSCHALL", 
+                    "SOPHIE", 
+                    "LADY", 
+                    "KAMMERDIENER"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "ALLE BEDIENTE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 3.0, 
+            "maximum_length_of_speakers_speeches": 3, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 3, 
+            "relations": {
+                "concomitant": [
+                    "KAMMERDIENER UND SOPHIE"
+                ], 
+                "alternative": [
+                    "MILLER", 
+                    "MILLERIN", 
+                    "FRAU", 
+                    "BEDIENTER", 
+                    "EIN KAMMERDIENER", 
+                    "LUISE", 
+                    "FERDINAND", 
+                    "WURM", 
+                    "PR\u00c4SIDENT"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HOFMARSCHALL", 
+                    "SOPHIE", 
+                    "LADY", 
+                    "KAMMERDIENER"
+                ], 
+                "independent": []
+            }
+        }
+    ], 
+    "content": [
+        {
+            "number_of_act": 1, 
+            "number_of_speeches_in_act": 160, 
+            "appearing_speakers": [
+                "MILLER", 
+                "FRAU", 
+                "WURM", 
+                "LUISE", 
+                "FERDINAND", 
+                "PR\u00c4SIDENT", 
+                "EIN KAMMERDIENER", 
+                "HOFMARSCHALL"
+            ], 
+            "average_length_of_speeches_in_act": 37.10625, 
+            "maximum_length_of_speeches_in_act": 235, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 22.0, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 15, 
+                    "appearing_speakers": [
+                        "MILLER", 
+                        "FRAU"
+                    ], 
+                    "average_length_of_speeches_in_scene": 62.6, 
+                    "maximum_length_of_speeches_in_scene": 175, 
+                    "minimum_length_of_speeches_in_scene": 6, 
+                    "median_length_of_speeches_in_scene": 39, 
+                    "speeches": [
+                        {
+                            "speaker": "MILLER", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 70
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 132
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 100
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 75
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 175
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 99
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 92
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 33, 
+                    "appearing_speakers": [
+                        "FRAU", 
+                        "WURM", 
+                        "MILLER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 33.96969696969697, 
+                    "maximum_length_of_speeches_in_scene": 235, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 15, 
+                    "speeches": [
+                        {
+                            "speaker": "FRAU", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 62
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 80
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 144
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 235
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 108
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 110
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 16, 
+                    "appearing_speakers": [
+                        "LUISE", 
+                        "MILLER", 
+                        "FRAU"
+                    ], 
+                    "average_length_of_speeches_in_scene": 39.5, 
+                    "maximum_length_of_speeches_in_scene": 136, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 21.0, 
+                    "speeches": [
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 85
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 109
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 136
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 130
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 22
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 14, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "LUISE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 43.92857142857143, 
+                    "maximum_length_of_speeches_in_scene": 152, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 29.0, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 60
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 99
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 47
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 91
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 152
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 54
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 29, 
+                    "appearing_speakers": [
+                        "PR\u00c4SIDENT", 
+                        "WURM", 
+                        "EIN KAMMERDIENER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 31.24137931034483, 
+                    "maximum_length_of_speeches_in_scene": 142, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 142
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 112
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 68
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 130
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 47
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 67
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 71
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "EIN KAMMERDIENER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 16, 
+                    "appearing_speakers": [
+                        "HOFMARSCHALL", 
+                        "PR\u00c4SIDENT"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.375, 
+                    "maximum_length_of_speeches_in_scene": 112, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 13.5, 
+                    "speeches": [
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 56
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 112
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 29
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 37, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "PR\u00c4SIDENT"
+                    ], 
+                    "average_length_of_speeches_in_scene": 36.486486486486484, 
+                    "maximum_length_of_speeches_in_scene": 95, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 27, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 93
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 87
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 76
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 95
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 94
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 68
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 61
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 87
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 76
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 74
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 62
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 2, 
+            "number_of_speeches_in_act": 205, 
+            "appearing_speakers": [
+                "SOPHIE", 
+                "LADY", 
+                "KAMMERDIENER", 
+                "BEDIENTER", 
+                "FERDINAND", 
+                "MILLER", 
+                "LUISE", 
+                "MILLERIN", 
+                "FRAU", 
+                "PR\u00c4SIDENT"
+            ], 
+            "average_length_of_speeches_in_act": 27.521951219512196, 
+            "maximum_length_of_speeches_in_act": 218, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 13, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 20, 
+                    "appearing_speakers": [
+                        "SOPHIE", 
+                        "LADY"
+                    ], 
+                    "average_length_of_speeches_in_scene": 47.4, 
+                    "maximum_length_of_speeches_in_scene": 173, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 29.5, 
+                    "speeches": [
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 66
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 137
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 173
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 93
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 57
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 71
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 97
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 30, 
+                    "appearing_speakers": [
+                        "KAMMERDIENER", 
+                        "LADY", 
+                        "SOPHIE", 
+                        "BEDIENTER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.5, 
+                    "maximum_length_of_speeches_in_scene": 115, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 17.0, 
+                    "speeches": [
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 69
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 115
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 41
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "BEDIENTER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "BEDIENTER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "BEDIENTER", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 7
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 51, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "LADY"
+                    ], 
+                    "average_length_of_speeches_in_scene": 39.05882352941177, 
+                    "maximum_length_of_speeches_in_scene": 218, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 9, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 95
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 90
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 73
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 75
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 130
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 140
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 177
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 166
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 218
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 117
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 186
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 61
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 70
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 18, 
+                    "appearing_speakers": [
+                        "MILLER", 
+                        "LUISE", 
+                        "MILLERIN", 
+                        "FRAU"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.0, 
+                    "maximum_length_of_speeches_in_scene": 95, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 19.5, 
+                    "speeches": [
+                        {
+                            "speaker": "MILLER", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLERIN", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 95
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 22, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "LUISE", 
+                        "FRAU", 
+                        "MILLER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 27.818181818181817, 
+                    "maximum_length_of_speeches_in_scene": 96, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 21.5, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 96
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 73
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 51
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 43, 
+                    "appearing_speakers": [
+                        "PR\u00c4SIDENT", 
+                        "FERDINAND", 
+                        "MILLER", 
+                        "FRAU", 
+                        "LUISE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 15.232558139534884, 
+                    "maximum_length_of_speeches_in_scene": 79, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 9, 
+                    "speeches": [
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 79
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 69
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 21, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "PR\u00c4SIDENT", 
+                        "FRAU", 
+                        "MILLER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 15.047619047619047, 
+                    "maximum_length_of_speeches_in_scene": 37, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "FRAU", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 3, 
+            "number_of_speeches_in_act": 225, 
+            "appearing_speakers": [
+                "PR\u00c4SIDENT", 
+                "WURM", 
+                "KAMMERDIENER", 
+                "HOFMARSCHALL", 
+                "LUISE", 
+                "FERDINAND"
+            ], 
+            "average_length_of_speeches_in_act": 22.15111111111111, 
+            "maximum_length_of_speeches_in_act": 167, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 11, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 44, 
+                    "appearing_speakers": [
+                        "PR\u00c4SIDENT", 
+                        "WURM", 
+                        "KAMMERDIENER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 31.045454545454547, 
+                    "maximum_length_of_speeches_in_scene": 136, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 17.5, 
+                    "speeches": [
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 112
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 121
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 136
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 51
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 51
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 58
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 63
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 61
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 58
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 73
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 4
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 59, 
+                    "appearing_speakers": [
+                        "HOFMARSCHALL", 
+                        "PR\u00c4SIDENT"
+                    ], 
+                    "average_length_of_speeches_in_scene": 18.1864406779661, 
+                    "maximum_length_of_speeches_in_scene": 74, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 12, 
+                    "speeches": [
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 59
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 74
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 58
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 7
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 2, 
+                    "appearing_speakers": [
+                        "WURM", 
+                        "PR\u00c4SIDENT"
+                    ], 
+                    "average_length_of_speeches_in_scene": 29.5, 
+                    "maximum_length_of_speeches_in_scene": 36, 
+                    "minimum_length_of_speeches_in_scene": 23, 
+                    "median_length_of_speeches_in_scene": 29.5, 
+                    "speeches": [
+                        {
+                            "speaker": "WURM", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 36
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 19, 
+                    "appearing_speakers": [
+                        "LUISE", 
+                        "FERDINAND"
+                    ], 
+                    "average_length_of_speeches_in_scene": 43.21052631578947, 
+                    "maximum_length_of_speeches_in_scene": 167, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 19, 
+                    "speeches": [
+                        {
+                            "speaker": "LUISE", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 120
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 167
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 67
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 103
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 107
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 28
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 101, 
+                    "appearing_speakers": [
+                        "WURM", 
+                        "LUISE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 16.485148514851485, 
+                    "maximum_length_of_speeches_in_scene": 131, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 9, 
+                    "speeches": [
+                        {
+                            "speaker": "WURM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 56
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 84
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 80
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 51
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 131
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 41
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 71
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 17
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 4, 
+            "number_of_speeches_in_act": 117, 
+            "appearing_speakers": [
+                "FERDINAND", 
+                "KAMMERDIENER", 
+                "HOFMARSCHALL", 
+                "PR\u00c4SIDENT", 
+                "LADY", 
+                "SOPHIE", 
+                "EIN KAMMERDIENER", 
+                "LUISE", 
+                "KAMMERDIENER UND SOPHIE", 
+                "ALLE BEDIENTE"
+            ], 
+            "average_length_of_speeches_in_act": 31.77777777777778, 
+            "maximum_length_of_speeches_in_act": 333, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 20, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "KAMMERDIENER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 8.4, 
+                    "maximum_length_of_speeches_in_scene": 13, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 8, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 32, 
+                    "appearing_speakers": [
+                        "HOFMARSCHALL", 
+                        "FERDINAND"
+                    ], 
+                    "average_length_of_speeches_in_scene": 24.78125, 
+                    "maximum_length_of_speeches_in_scene": 103, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 17.5, 
+                    "speeches": [
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 85
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 87
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 103
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 37
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 16, 
+                    "appearing_speakers": [
+                        "FERDINAND", 
+                        "PR\u00c4SIDENT"
+                    ], 
+                    "average_length_of_speeches_in_scene": 18.5625, 
+                    "maximum_length_of_speeches_in_scene": 44, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 16.0, 
+                    "speeches": [
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 11, 
+                    "appearing_speakers": [
+                        "LADY", 
+                        "SOPHIE", 
+                        "EIN KAMMERDIENER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 24.454545454545453, 
+                    "maximum_length_of_speeches_in_scene": 45, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 26, 
+                    "speeches": [
+                        {
+                            "speaker": "LADY", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "EIN KAMMERDIENER", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 26
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 33, 
+                    "appearing_speakers": [
+                        "LUISE", 
+                        "LADY"
+                    ], 
+                    "average_length_of_speeches_in_scene": 53.93939393939394, 
+                    "maximum_length_of_speeches_in_scene": 333, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 36, 
+                    "speeches": [
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 83
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 74
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 79
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 47
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 189
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 333
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 74
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 90
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 65
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 75
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 188
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 9, 
+                    "number_of_speeches_in_scene": 20, 
+                    "appearing_speakers": [
+                        "KAMMERDIENER", 
+                        "LADY", 
+                        "KAMMERDIENER UND SOPHIE", 
+                        "SOPHIE", 
+                        "HOFMARSCHALL", 
+                        "ALLE BEDIENTE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 26.85, 
+                    "maximum_length_of_speeches_in_scene": 138, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 20.5, 
+                    "speeches": [
+                        {
+                            "speaker": "KAMMERDIENER", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "KAMMERDIENER UND SOPHIE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "SOPHIE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "ALLE BEDIENTE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 138
+                        }, 
+                        {
+                            "speaker": "HOFMARSCHALL", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LADY", 
+                            "length": 40
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 5, 
+            "number_of_speeches_in_act": 213, 
+            "appearing_speakers": [
+                "MILLER", 
+                "LUISE", 
+                "FERDINAND", 
+                "PR\u00c4SIDENT", 
+                "WURM"
+            ], 
+            "average_length_of_speeches_in_act": 29.178403755868544, 
+            "maximum_length_of_speeches_in_act": 286, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 16, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 37, 
+                    "appearing_speakers": [
+                        "MILLER", 
+                        "LUISE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 43.54054054054054, 
+                    "maximum_length_of_speeches_in_scene": 286, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 24, 
+                    "speeches": [
+                        {
+                            "speaker": "MILLER", 
+                            "length": 82
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 62
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 101
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 53
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 87
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 97
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 147
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 286
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 41
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 69
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 74
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 32, 
+                    "appearing_speakers": [
+                        "LUISE", 
+                        "MILLER", 
+                        "FERDINAND"
+                    ], 
+                    "average_length_of_speeches_in_scene": 34.15625, 
+                    "maximum_length_of_speeches_in_scene": 131, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 18.5, 
+                    "speeches": [
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 89
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 73
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 71
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 131
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 62
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 121
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 81
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 45
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "MILLER", 
+                        "FERDINAND"
+                    ], 
+                    "average_length_of_speeches_in_scene": 26.5, 
+                    "maximum_length_of_speeches_in_scene": 70, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 22.0, 
+                    "speeches": [
+                        {
+                            "speaker": "MILLER", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 70
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 32
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 10
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 0, 
+                    "appearing_speakers": 0, 
+                    "average_length_of_speeches_in_scene": 0, 
+                    "maximum_length_of_speeches_in_scene": 0, 
+                    "minimum_length_of_speeches_in_scene": 0, 
+                    "median_length_of_speeches_in_scene": 0, 
+                    "speeches": 0
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 28, 
+                    "appearing_speakers": [
+                        "MILLER", 
+                        "FERDINAND"
+                    ], 
+                    "average_length_of_speeches_in_scene": 27.785714285714285, 
+                    "maximum_length_of_speeches_in_scene": 71, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 25.5, 
+                    "speeches": [
+                        {
+                            "speaker": "MILLER", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 45
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 71
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 57
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 47
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 56
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 48
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 26
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 13, 
+                    "appearing_speakers": [
+                        "LUISE", 
+                        "FERDINAND", 
+                        "MILLER"
+                    ], 
+                    "average_length_of_speeches_in_scene": 15.846153846153847, 
+                    "maximum_length_of_speeches_in_scene": 38, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 10, 
+                    "speeches": [
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 32
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 70, 
+                    "appearing_speakers": [
+                        "LUISE", 
+                        "FERDINAND"
+                    ], 
+                    "average_length_of_speeches_in_scene": 23.97142857142857, 
+                    "maximum_length_of_speeches_in_scene": 139, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 14.0, 
+                    "speeches": [
+                        {
+                            "speaker": "LUISE", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 139
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 122
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 67
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 49
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 105
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 79
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 122
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 80
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 34
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "LUISE", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 84
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 23, 
+                    "appearing_speakers": [
+                        "PR\u00c4SIDENT", 
+                        "FERDINAND", 
+                        "MILLER", 
+                        "WURM"
+                    ], 
+                    "average_length_of_speeches_in_scene": 25.391304347826086, 
+                    "maximum_length_of_speeches_in_scene": 173, 
+                    "minimum_length_of_speeches_in_scene": 2, 
+                    "median_length_of_speeches_in_scene": 11, 
+                    "speeches": [
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 62
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 17
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 173
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 2
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 96
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "WURM", 
+                            "length": 50
+                        }, 
+                        {
+                            "speaker": "MILLER", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 11
+                        }, 
+                        {
+                            "speaker": "FERDINAND", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "PR\u00c4SIDENT", 
+                            "length": 6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

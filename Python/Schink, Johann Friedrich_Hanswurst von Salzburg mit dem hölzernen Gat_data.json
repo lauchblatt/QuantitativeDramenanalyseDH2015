@@ -1,0 +1,2060 @@
+{
+    "title": "Hanswurst von Salzburg mit dem h\u00f6lzernen Gat", 
+    "author": "Schink, Johann Friedrich", 
+    "date": {
+        "notBefore": "1755", 
+        "when": 1795, 
+        "notAfter": "1835"
+    }, 
+    "type": "Komoedie", 
+    "castgroup": [], 
+    "configuration_density": 0.11330049261083744, 
+    "number_of_speeches_in_drama": 194, 
+    "average_length_of_speeches_in_drama": 67.15463917525773, 
+    "maximum_length_of_speeches_in_drama": 989, 
+    "minimum_length_of_speeches_in drama": 1, 
+    "median_length_of_speeches_in_drama": 33.0, 
+    "speakers": [
+        {
+            "name": "HANSWURST", 
+            "number_of_speakers_speeches": 58, 
+            "average_length_of_speakers_speeches": 81.29310344827586, 
+            "maximum_length_of_speakers_speeches": 640, 
+            "minimum_length_of_speakers_speeches": 3, 
+            "median_length_of_speakers_speeches": 35.5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER ERSTE T\u00dcRKE", 
+                    "ZWEITER MATROSE", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "ERSTER MATROSE", 
+                    "DER SKLAV"
+                ], 
+                "dominates": [
+                    "DER KNABE", 
+                    "DER MATROSE", 
+                    "DER ARZT", 
+                    "SULTAN", 
+                    "DIE DAME", 
+                    "DAME", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER SCHWARZROK", 
+                    "DER SOUFLEUR"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "STOFFEL KNIPS", 
+                    "FRAU KNIPS", 
+                    "DER SULTAN", 
+                    "DAS M\u00c4DEL"
+                ]
+            }
+        }, 
+        {
+            "name": "STOFFEL KNIPS", 
+            "number_of_speakers_speeches": 15, 
+            "average_length_of_speakers_speeches": 39.666666666666664, 
+            "maximum_length_of_speakers_speeches": 150, 
+            "minimum_length_of_speakers_speeches": 9, 
+            "median_length_of_speakers_speeches": 36, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "DER SCHWARZROK", 
+                    "DER KNABE", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "FRAU KNIPS", 
+                    "HANSWURST"
+                ]
+            }
+        }, 
+        {
+            "name": "FRAU KNIPS", 
+            "number_of_speakers_speeches": 30, 
+            "average_length_of_speakers_speeches": 34.53333333333333, 
+            "maximum_length_of_speakers_speeches": 215, 
+            "minimum_length_of_speakers_speeches": 5, 
+            "median_length_of_speakers_speeches": 27.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "DER ARZT", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "DER SCHWARZROK", 
+                    "DER SKLAV", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [
+                    "DER KNABE", 
+                    "SULTAN"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "STOFFEL KNIPS", 
+                    "DER SULTAN", 
+                    "HANSWURST", 
+                    "DAS M\u00c4DEL"
+                ]
+            }
+        }, 
+        {
+            "name": "DER ERSTE T\u00dcRKE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 130.0, 
+            "maximum_length_of_speakers_speeches": 130, 
+            "minimum_length_of_speakers_speeches": 130, 
+            "median_length_of_speakers_speeches": 130, 
+            "relations": {
+                "concomitant": [
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE"
+                ], 
+                "alternative": [
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SKLAV", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "HANSWURST", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DER ZWEITE T\u00dcRKE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 116.0, 
+            "maximum_length_of_speakers_speeches": 116, 
+            "minimum_length_of_speakers_speeches": 116, 
+            "median_length_of_speakers_speeches": 116, 
+            "relations": {
+                "concomitant": [
+                    "ERSTER T\u00dcRKE", 
+                    "DER ERSTE T\u00dcRKE"
+                ], 
+                "alternative": [
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SKLAV", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "HANSWURST", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "ERSTER T\u00dcRKE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 9.0, 
+            "maximum_length_of_speakers_speeches": 9, 
+            "minimum_length_of_speakers_speeches": 9, 
+            "median_length_of_speakers_speeches": 9, 
+            "relations": {
+                "concomitant": [
+                    "DER ERSTE T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE"
+                ], 
+                "alternative": [
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER MATROSE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SKLAV", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DER SOUFLEUR", 
+                    "HANSWURST", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "ERSTER MATROSE", 
+            "number_of_speakers_speeches": 3, 
+            "average_length_of_speakers_speeches": 64.0, 
+            "maximum_length_of_speakers_speeches": 128, 
+            "minimum_length_of_speakers_speeches": 8, 
+            "median_length_of_speakers_speeches": 56, 
+            "relations": {
+                "concomitant": [
+                    "ZWEITER MATROSE"
+                ], 
+                "alternative": [
+                    "DER ZWEITE T\u00dcRKE", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "DAS M\u00c4DEL", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "FRAU KNIPS", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SKLAV", 
+                    "DER MATROSE", 
+                    "HANSWURST", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "ZWEITER MATROSE", 
+            "number_of_speakers_speeches": 3, 
+            "average_length_of_speakers_speeches": 32.666666666666664, 
+            "maximum_length_of_speakers_speeches": 55, 
+            "minimum_length_of_speakers_speeches": 15, 
+            "median_length_of_speakers_speeches": 28, 
+            "relations": {
+                "concomitant": [
+                    "ERSTER MATROSE"
+                ], 
+                "alternative": [
+                    "DER ZWEITE T\u00dcRKE", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "DAS M\u00c4DEL", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "FRAU KNIPS", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SKLAV", 
+                    "DER MATROSE", 
+                    "HANSWURST", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DAS M\u00c4DEL", 
+            "number_of_speakers_speeches": 21, 
+            "average_length_of_speakers_speeches": 57.23809523809524, 
+            "maximum_length_of_speakers_speeches": 376, 
+            "minimum_length_of_speakers_speeches": 4, 
+            "median_length_of_speakers_speeches": 33, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "DER ARZT", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "STOFFEL KNIPS", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DAME", 
+                    "DER ZWEITE T\u00dcRKE"
+                ], 
+                "dominates": [
+                    "DER KNABE", 
+                    "DER MATROSE", 
+                    "DER SKLAV", 
+                    "SULTAN"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "FRAU KNIPS", 
+                    "DER SULTAN", 
+                    "HANSWURST"
+                ]
+            }
+        }, 
+        {
+            "name": "DER KNABE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 15.0, 
+            "maximum_length_of_speakers_speeches": 15, 
+            "minimum_length_of_speakers_speeches": 15, 
+            "median_length_of_speakers_speeches": 15, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "FRAU KNIPS", 
+                    "DAS M\u00c4DEL"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DER MATROSE", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 128.0, 
+            "maximum_length_of_speakers_speeches": 128, 
+            "minimum_length_of_speakers_speeches": 128, 
+            "median_length_of_speakers_speeches": 128, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "FRAU KNIPS", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DAME", 
+                    "ERSTER MATROSE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SKLAV"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "DAS M\u00c4DEL"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DER ARZT", 
+            "number_of_speakers_speeches": 5, 
+            "average_length_of_speakers_speeches": 35.2, 
+            "maximum_length_of_speakers_speeches": 42, 
+            "minimum_length_of_speakers_speeches": 23, 
+            "median_length_of_speakers_speeches": 37, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER ZWEITE T\u00dcRKE", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "ERSTER T\u00dcRKE", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SKLAV", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DER SULTAN", 
+            "number_of_speakers_speeches": 16, 
+            "average_length_of_speakers_speeches": 97.4375, 
+            "maximum_length_of_speakers_speeches": 412, 
+            "minimum_length_of_speakers_speeches": 9, 
+            "median_length_of_speakers_speeches": 38.0, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [
+                    "DER SKLAV"
+                ], 
+                "gets_dominated_by": [], 
+                "independent": [
+                    "FRAU KNIPS", 
+                    "HANSWURST", 
+                    "DAS M\u00c4DEL"
+                ]
+            }
+        }, 
+        {
+            "name": "DER SKLAV", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 62.0, 
+            "maximum_length_of_speakers_speeches": 62, 
+            "minimum_length_of_speakers_speeches": 62, 
+            "median_length_of_speakers_speeches": 62, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SCHWARZROK", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "HANSWURST", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "DAS M\u00c4DEL", 
+                    "DER SULTAN"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "SULTAN", 
+            "number_of_speakers_speeches": 3, 
+            "average_length_of_speakers_speeches": 35.666666666666664, 
+            "maximum_length_of_speakers_speeches": 84, 
+            "minimum_length_of_speakers_speeches": 5, 
+            "median_length_of_speakers_speeches": 18, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DIE DAME", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "FRAU KNIPS", 
+                    "DAS M\u00c4DEL"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DIE DAME", 
+            "number_of_speakers_speeches": 17, 
+            "average_length_of_speakers_speeches": 133.58823529411765, 
+            "maximum_length_of_speakers_speeches": 989, 
+            "minimum_length_of_speakers_speeches": 1, 
+            "median_length_of_speakers_speeches": 15, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAS M\u00c4DEL"
+                ], 
+                "dominates": [
+                    "DAME", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "DER SCHWARZROK", 
+                    "DER SOUFLEUR"
+                ], 
+                "gets_dominated_by": [
+                    "HANSWURST"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DAME", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 64.0, 
+            "maximum_length_of_speakers_speeches": 64, 
+            "minimum_length_of_speakers_speeches": 64, 
+            "median_length_of_speakers_speeches": 64, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER ZWEITE T\u00dcRKE", 
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "ALT M\u00dcTTERCHEN", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "FRAU KNIPS", 
+                    "DER SOUFLEUR", 
+                    "DAS M\u00c4DEL", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DER SKLAV"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "DIE DAME"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "EIN ALT M\u00dcTTERCHEN", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 5.0, 
+            "maximum_length_of_speakers_speeches": 5, 
+            "minimum_length_of_speakers_speeches": 5, 
+            "median_length_of_speakers_speeches": 5, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "ERSTER T\u00dcRKE", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "DER SCHWARZROK", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SOUFLEUR", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "DIE DAME", 
+                    "ALT M\u00dcTTERCHEN"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "ALT M\u00dcTTERCHEN", 
+            "number_of_speakers_speeches": 9, 
+            "average_length_of_speakers_speeches": 24.11111111111111, 
+            "maximum_length_of_speakers_speeches": 66, 
+            "minimum_length_of_speakers_speeches": 6, 
+            "median_length_of_speakers_speeches": 20, 
+            "relations": {
+                "concomitant": [], 
+                "alternative": [
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER SKLAV", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SCHWARZROK", 
+                    "DER SOUFLEUR"
+                ], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "DIE DAME"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DER SCHWARZROK", 
+            "number_of_speakers_speeches": 5, 
+            "average_length_of_speakers_speeches": 59.6, 
+            "maximum_length_of_speakers_speeches": 157, 
+            "minimum_length_of_speakers_speeches": 6, 
+            "median_length_of_speakers_speeches": 35, 
+            "relations": {
+                "concomitant": [
+                    "DER SOUFLEUR"
+                ], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "DIE DAME", 
+                    "ALT M\u00dcTTERCHEN"
+                ], 
+                "independent": []
+            }
+        }, 
+        {
+            "name": "DER SOUFLEUR", 
+            "number_of_speakers_speeches": 1, 
+            "average_length_of_speakers_speeches": 33.0, 
+            "maximum_length_of_speakers_speeches": 33, 
+            "minimum_length_of_speakers_speeches": 33, 
+            "median_length_of_speakers_speeches": 33, 
+            "relations": {
+                "concomitant": [
+                    "DER SCHWARZROK"
+                ], 
+                "alternative": [
+                    "EIN ALT M\u00dcTTERCHEN", 
+                    "DER SULTAN", 
+                    "DER ERSTE T\u00dcRKE", 
+                    "SULTAN", 
+                    "DER ARZT", 
+                    "DAS M\u00c4DEL", 
+                    "FRAU KNIPS", 
+                    "ZWEITER MATROSE", 
+                    "DER KNABE", 
+                    "STOFFEL KNIPS", 
+                    "ERSTER T\u00dcRKE", 
+                    "DER ZWEITE T\u00dcRKE", 
+                    "DER SKLAV", 
+                    "ERSTER MATROSE", 
+                    "DER MATROSE", 
+                    "DAME"
+                ], 
+                "dominates": [], 
+                "gets_dominated_by": [
+                    "HANSWURST", 
+                    "DIE DAME", 
+                    "ALT M\u00dcTTERCHEN"
+                ], 
+                "independent": []
+            }
+        }
+    ], 
+    "content": [
+        {
+            "number_of_act": 1, 
+            "number_of_speeches_in_act": 72, 
+            "appearing_speakers": [
+                "HANSWURST", 
+                "STOFFEL KNIPS", 
+                "FRAU KNIPS", 
+                "DER ERSTE T\u00dcRKE", 
+                "DER ZWEITE T\u00dcRKE", 
+                "ERSTER T\u00dcRKE", 
+                "ERSTER MATROSE", 
+                "ZWEITER MATROSE", 
+                "DAS M\u00c4DEL", 
+                "DER KNABE", 
+                "DER MATROSE"
+            ], 
+            "average_length_of_speeches_in_act": 52.22222222222222, 
+            "maximum_length_of_speeches_in_act": 481, 
+            "minimum_length_of_speeches_in_act": 5, 
+            "median_length_of_speeches_in_act": 31.0, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 481.0, 
+                    "maximum_length_of_speeches_in_scene": 481, 
+                    "minimum_length_of_speeches_in_scene": 481, 
+                    "median_length_of_speeches_in_scene": 481, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 481
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "STOFFEL KNIPS", 
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 104.3, 
+                    "maximum_length_of_speeches_in_scene": 278, 
+                    "minimum_length_of_speeches_in_scene": 12, 
+                    "median_length_of_speeches_in_scene": 67.0, 
+                    "speeches": [
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 92
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 150
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 278
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 253
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 123
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 12
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "FRAU KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 118.0, 
+                    "maximum_length_of_speeches_in_scene": 118, 
+                    "minimum_length_of_speeches_in_scene": 118, 
+                    "median_length_of_speeches_in_scene": 118, 
+                    "speeches": [
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 118
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "STOFFEL KNIPS", 
+                        "FRAU KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 28.0, 
+                    "maximum_length_of_speeches_in_scene": 64, 
+                    "minimum_length_of_speeches_in_scene": 9, 
+                    "median_length_of_speeches_in_scene": 32.0, 
+                    "speeches": [
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 43
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 10
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "STOFFEL KNIPS", 
+                        "FRAU KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 29.8, 
+                    "maximum_length_of_speeches_in_scene": 58, 
+                    "minimum_length_of_speeches_in_scene": 8, 
+                    "median_length_of_speeches_in_scene": 30, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 58
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 41
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 8, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "FRAU KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 28.25, 
+                    "maximum_length_of_speeches_in_scene": 113, 
+                    "minimum_length_of_speeches_in_scene": 6, 
+                    "median_length_of_speeches_in_scene": 9.5, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 113
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 10
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 51
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 6
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 3, 
+                    "appearing_speakers": [
+                        "STOFFEL KNIPS", 
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 29.333333333333332, 
+                    "maximum_length_of_speeches_in_scene": 35, 
+                    "minimum_length_of_speeches_in_scene": 20, 
+                    "median_length_of_speeches_in_scene": 33, 
+                    "speeches": [
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 35
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "STOFFEL KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 41.0, 
+                    "maximum_length_of_speeches_in_scene": 41, 
+                    "minimum_length_of_speeches_in_scene": 41, 
+                    "median_length_of_speeches_in_scene": 41, 
+                    "speeches": [
+                        {
+                            "speaker": "STOFFEL KNIPS", 
+                            "length": 41
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 9, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "FRAU KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 36.8, 
+                    "maximum_length_of_speeches_in_scene": 68, 
+                    "minimum_length_of_speeches_in_scene": 18, 
+                    "median_length_of_speeches_in_scene": 33, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 68
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 18
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 32
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 10, 
+                    "number_of_speeches_in_scene": 3, 
+                    "appearing_speakers": [
+                        "DER ERSTE T\u00dcRKE", 
+                        "DER ZWEITE T\u00dcRKE", 
+                        "ERSTER T\u00dcRKE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 85.0, 
+                    "maximum_length_of_speeches_in_scene": 130, 
+                    "minimum_length_of_speeches_in_scene": 9, 
+                    "median_length_of_speeches_in_scene": 116, 
+                    "speeches": [
+                        {
+                            "speaker": "DER ERSTE T\u00dcRKE", 
+                            "length": 130
+                        }, 
+                        {
+                            "speaker": "DER ZWEITE T\u00dcRKE", 
+                            "length": 116
+                        }, 
+                        {
+                            "speaker": "ERSTER T\u00dcRKE", 
+                            "length": 9
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 11, 
+                    "number_of_speeches_in_scene": 6, 
+                    "appearing_speakers": [
+                        "ERSTER MATROSE", 
+                        "ZWEITER MATROSE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 48.333333333333336, 
+                    "maximum_length_of_speeches_in_scene": 128, 
+                    "minimum_length_of_speeches_in_scene": 8, 
+                    "median_length_of_speeches_in_scene": 41.5, 
+                    "speeches": [
+                        {
+                            "speaker": "ERSTER MATROSE", 
+                            "length": 128
+                        }, 
+                        {
+                            "speaker": "ZWEITER MATROSE", 
+                            "length": 55
+                        }, 
+                        {
+                            "speaker": "ERSTER MATROSE", 
+                            "length": 56
+                        }, 
+                        {
+                            "speaker": "ZWEITER MATROSE", 
+                            "length": 28
+                        }, 
+                        {
+                            "speaker": "ERSTER MATROSE", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "ZWEITER MATROSE", 
+                            "length": 15
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 12, 
+                    "number_of_speeches_in_scene": 11, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "FRAU KNIPS", 
+                        "DAS M\u00c4DEL", 
+                        "DER KNABE"
+                    ], 
+                    "average_length_of_speeches_in_scene": 29.818181818181817, 
+                    "maximum_length_of_speeches_in_scene": 141, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 15, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 31
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 68
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 141
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DER KNABE", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 6
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 13, 
+                    "number_of_speeches_in_scene": 3, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "DAS M\u00c4DEL"
+                    ], 
+                    "average_length_of_speeches_in_scene": 17.333333333333332, 
+                    "maximum_length_of_speeches_in_scene": 30, 
+                    "minimum_length_of_speeches_in_scene": 9, 
+                    "median_length_of_speeches_in_scene": 13, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 30
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 14, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "DER MATROSE", 
+                        "DAS M\u00c4DEL", 
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 45.0, 
+                    "maximum_length_of_speeches_in_scene": 128, 
+                    "minimum_length_of_speeches_in_scene": 15, 
+                    "median_length_of_speeches_in_scene": 26, 
+                    "speeches": [
+                        {
+                            "speaker": "DER MATROSE", 
+                            "length": 128
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 26
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 32
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 2, 
+            "number_of_speeches_in_act": 70, 
+            "appearing_speakers": [
+                "HANSWURST", 
+                "DER ARZT", 
+                "DER SULTAN", 
+                "DAS M\u00c4DEL", 
+                "DER SKLAV", 
+                "FRAU KNIPS", 
+                "SULTAN"
+            ], 
+            "average_length_of_speeches_in_act": 68.81428571428572, 
+            "maximum_length_of_speeches_in_act": 412, 
+            "minimum_length_of_speeches_in_act": 4, 
+            "median_length_of_speeches_in_act": 37.0, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 10, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "DER ARZT"
+                    ], 
+                    "average_length_of_speeches_in_scene": 43.1, 
+                    "maximum_length_of_speeches_in_scene": 113, 
+                    "minimum_length_of_speeches_in_scene": 14, 
+                    "median_length_of_speeches_in_scene": 36.0, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DER ARZT", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 113
+                        }, 
+                        {
+                            "speaker": "DER ARZT", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 80
+                        }, 
+                        {
+                            "speaker": "DER ARZT", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "DER ARZT", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "DER ARZT", 
+                            "length": 42
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 63.0, 
+                    "maximum_length_of_speeches_in_scene": 63, 
+                    "minimum_length_of_speeches_in_scene": 63, 
+                    "median_length_of_speeches_in_scene": 63, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 63
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 6, 
+                    "appearing_speakers": [
+                        "DER SULTAN", 
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 97.0, 
+                    "maximum_length_of_speeches_in_scene": 369, 
+                    "minimum_length_of_speeches_in_scene": 29, 
+                    "median_length_of_speeches_in_scene": 44.0, 
+                    "speeches": [
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 66
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 369
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 44
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 44
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "DER SULTAN"
+                    ], 
+                    "average_length_of_speeches_in_scene": 150.0, 
+                    "maximum_length_of_speeches_in_scene": 150, 
+                    "minimum_length_of_speeches_in_scene": 150, 
+                    "median_length_of_speeches_in_scene": 150, 
+                    "speeches": [
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 150
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 5, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "DER SULTAN", 
+                        "DAS M\u00c4DEL"
+                    ], 
+                    "average_length_of_speeches_in_scene": 103.42857142857143, 
+                    "maximum_length_of_speeches_in_scene": 348, 
+                    "minimum_length_of_speeches_in_scene": 7, 
+                    "median_length_of_speeches_in_scene": 39, 
+                    "speeches": [
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 348
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 113
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 39
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 151
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 37
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 6, 
+                    "number_of_speeches_in_scene": 6, 
+                    "appearing_speakers": [
+                        "DER SKLAV", 
+                        "DAS M\u00c4DEL", 
+                        "DER SULTAN"
+                    ], 
+                    "average_length_of_speeches_in_scene": 27.666666666666668, 
+                    "maximum_length_of_speeches_in_scene": 62, 
+                    "minimum_length_of_speeches_in_scene": 4, 
+                    "median_length_of_speeches_in_scene": 22.5, 
+                    "speeches": [
+                        {
+                            "speaker": "DER SKLAV", 
+                            "length": 62
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 4
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 33
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 7, 
+                    "number_of_speeches_in_scene": 17, 
+                    "appearing_speakers": [
+                        "FRAU KNIPS", 
+                        "DER SULTAN", 
+                        "DAS M\u00c4DEL"
+                    ], 
+                    "average_length_of_speeches_in_scene": 97.88235294117646, 
+                    "maximum_length_of_speeches_in_scene": 412, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 33, 
+                    "speeches": [
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 215
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 37
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 27
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 75
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 9
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 19
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 376
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 264
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 83
+                        }, 
+                        {
+                            "speaker": "DER SULTAN", 
+                            "length": 412
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 8, 
+                    "number_of_speeches_in_scene": 8, 
+                    "appearing_speakers": [
+                        "DAS M\u00c4DEL", 
+                        "FRAU KNIPS"
+                    ], 
+                    "average_length_of_speeches_in_scene": 42.375, 
+                    "maximum_length_of_speeches_in_scene": 82, 
+                    "minimum_length_of_speeches_in_scene": 18, 
+                    "median_length_of_speeches_in_scene": 38.5, 
+                    "speeches": [
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 57
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 24
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 46
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 82
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 42
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 18
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 9, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "FRAU KNIPS", 
+                        "DAS M\u00c4DEL"
+                    ], 
+                    "average_length_of_speeches_in_scene": 68.42857142857143, 
+                    "maximum_length_of_speeches_in_scene": 193, 
+                    "minimum_length_of_speeches_in_scene": 16, 
+                    "median_length_of_speeches_in_scene": 52, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 193
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 22
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 51
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 52
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 91
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 10, 
+                    "number_of_speeches_in_scene": 6, 
+                    "appearing_speakers": [
+                        "SULTAN", 
+                        "HANSWURST", 
+                        "FRAU KNIPS", 
+                        "DAS M\u00c4DEL"
+                    ], 
+                    "average_length_of_speeches_in_scene": 30.0, 
+                    "maximum_length_of_speeches_in_scene": 84, 
+                    "minimum_length_of_speeches_in_scene": 5, 
+                    "median_length_of_speeches_in_scene": 21.5, 
+                    "speeches": [
+                        {
+                            "speaker": "SULTAN", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "FRAU KNIPS", 
+                            "length": 23
+                        }, 
+                        {
+                            "speaker": "SULTAN", 
+                            "length": 84
+                        }, 
+                        {
+                            "speaker": "DAS M\u00c4DEL", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "SULTAN", 
+                            "length": 18
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 11, 
+                    "number_of_speeches_in_scene": 1, 
+                    "appearing_speakers": [
+                        "HANSWURST"
+                    ], 
+                    "average_length_of_speeches_in_scene": 39.0, 
+                    "maximum_length_of_speeches_in_scene": 39, 
+                    "minimum_length_of_speeches_in_scene": 39, 
+                    "median_length_of_speeches_in_scene": 39, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 39
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "number_of_act": 3, 
+            "number_of_speeches_in_act": 52, 
+            "appearing_speakers": [
+                "HANSWURST", 
+                "DIE DAME", 
+                "DAME", 
+                "EIN ALT M\u00dcTTERCHEN", 
+                "ALT M\u00dcTTERCHEN", 
+                "DER SCHWARZROK", 
+                "DER SOUFLEUR"
+            ], 
+            "average_length_of_speeches_in_act": 85.59615384615384, 
+            "maximum_length_of_speeches_in_act": 989, 
+            "minimum_length_of_speeches_in_act": 1, 
+            "median_length_of_speeches_in_act": 29.5, 
+            "scenes": [
+                {
+                    "number_of_scene": 1, 
+                    "number_of_speeches_in_scene": 5, 
+                    "appearing_speakers": [
+                        "HANSWURST", 
+                        "DIE DAME", 
+                        "DAME"
+                    ], 
+                    "average_length_of_speeches_in_scene": 166.6, 
+                    "maximum_length_of_speeches_in_scene": 640, 
+                    "minimum_length_of_speeches_in_scene": 12, 
+                    "median_length_of_speeches_in_scene": 64, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 640
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 12
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 84
+                        }, 
+                        {
+                            "speaker": "DAME", 
+                            "length": 64
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 33
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 2, 
+                    "number_of_speeches_in_scene": 25, 
+                    "appearing_speakers": [
+                        "DIE DAME", 
+                        "HANSWURST", 
+                        "EIN ALT M\u00dcTTERCHEN", 
+                        "ALT M\u00dcTTERCHEN"
+                    ], 
+                    "average_length_of_speeches_in_scene": 119.16, 
+                    "maximum_length_of_speeches_in_scene": 989, 
+                    "minimum_length_of_speeches_in_scene": 1, 
+                    "median_length_of_speeches_in_scene": 36, 
+                    "speeches": [
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 99
+                        }, 
+                        {
+                            "speaker": "EIN ALT M\u00dcTTERCHEN", 
+                            "length": 5
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 1
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 16
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 14
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 66
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 36
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 40
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 54
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 92
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 178
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 120
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 74
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 822
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 193
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 25
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 15
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 989
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 64
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 3, 
+                    "number_of_speeches_in_scene": 7, 
+                    "appearing_speakers": [
+                        "ALT M\u00dcTTERCHEN", 
+                        "HANSWURST", 
+                        "DIE DAME"
+                    ], 
+                    "average_length_of_speeches_in_scene": 22.285714285714285, 
+                    "maximum_length_of_speeches_in_scene": 41, 
+                    "minimum_length_of_speeches_in_scene": 7, 
+                    "median_length_of_speeches_in_scene": 21, 
+                    "speeches": [
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 21
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 41
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 29
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 38
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 7
+                        }
+                    ]
+                }, 
+                {
+                    "number_of_scene": 4, 
+                    "number_of_speeches_in_scene": 15, 
+                    "appearing_speakers": [
+                        "DIE DAME", 
+                        "DER SCHWARZROK", 
+                        "HANSWURST", 
+                        "ALT M\u00dcTTERCHEN", 
+                        "DER SOUFLEUR"
+                    ], 
+                    "average_length_of_speeches_in_scene": 32.2, 
+                    "maximum_length_of_speeches_in_scene": 157, 
+                    "minimum_length_of_speeches_in_scene": 3, 
+                    "median_length_of_speeches_in_scene": 20, 
+                    "speeches": [
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 20
+                        }, 
+                        {
+                            "speaker": "DER SCHWARZROK", 
+                            "length": 33
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 30
+                        }, 
+                        {
+                            "speaker": "DER SCHWARZROK", 
+                            "length": 157
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 58
+                        }, 
+                        {
+                            "speaker": "DER SCHWARZROK", 
+                            "length": 67
+                        }, 
+                        {
+                            "speaker": "DER SCHWARZROK", 
+                            "length": 35
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 3
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 13
+                        }, 
+                        {
+                            "speaker": "DER SCHWARZROK", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "HANSWURST", 
+                            "length": 6
+                        }, 
+                        {
+                            "speaker": "DIE DAME", 
+                            "length": 7
+                        }, 
+                        {
+                            "speaker": "ALT M\u00dcTTERCHEN", 
+                            "length": 8
+                        }, 
+                        {
+                            "speaker": "DER SOUFLEUR", 
+                            "length": 33
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

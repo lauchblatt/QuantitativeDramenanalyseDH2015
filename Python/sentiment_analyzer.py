@@ -2,6 +2,7 @@
 
 import os
 import re
+import collections
 
 def main():
 	sa = Sentiment_Analyzer()
@@ -25,12 +26,25 @@ class Sentiment_Analyzer:
 		text = text.strip()
 		words = text.split(" ")
 		sentimentScore = 0
+		sentimentInformation = Sentiment_Information()
+		sentimentInformation.sentimentBearingWords = []
+
 		for word in words:
 			word = word.strip(".,:?!();-'\"")
 			sentimentScorePerWord = self.getSentimentScorePerWord(word)
 			sentimentScore = sentimentScore + sentimentScorePerWord
 
-		return sentimentScore
+			if(sentimentScorePerWord != 0):
+				#OrderedDictionary necessary
+				pair = (word, sentimentScorePerWord)
+				sentimentInformation.sentimentBearingWords.append(pair)
+
+		sentimentInformation.sentimentScore = sentimentScore
+		
+		print(sentimentInformation.sentimentBearingWords)
+		
+
+		return sentimentInformation
 
 	
 	def getSentimentScorePerWord (self, word):
@@ -64,9 +78,11 @@ class Sentiment_Analyzer:
 
 		return sentimentDict
 
+class Sentiment_Information:
 
-	def getSentimentForWord (self, word):
-		print("hello")
+	sentimentScore = 0
+	sentimentBearingWords = []
+
 
 if __name__ == "__main__":
     main()
