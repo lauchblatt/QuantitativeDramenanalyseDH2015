@@ -24,7 +24,7 @@ def main():
     # used to generate one JSON file
 
     parser = DramaParser()
-    dramaModel = parser.parse_xml("../Korpus/less_emilia_t.xml")
+    dramaModel = parser.parse_xml("../Korpus/less_freigeist_k.xml")
     output = DramaOutput()
     drama_data = output.generate_drama_data(dramaModel)
     output.write_JSON(drama_data)
