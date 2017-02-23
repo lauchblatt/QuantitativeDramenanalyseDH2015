@@ -7,8 +7,18 @@ import sys
 import codecs
 
 def main():
-    sys.stdout = codecs.getwriter('utf8')(sys.stdout)
-    sys.stderr = codecs.getwriter('utf8')(sys.stderr)
+    
+    
+    reload(sys)
+    sys.setdefaultencoding('iso-8859-1')
+    
+
+    """
+    s = "Anf\xe4lligkeit"
+    
+    t = s.decode('iso-8859-1')
+    """
+
     debug = True
 
     # used to generate one JSON file

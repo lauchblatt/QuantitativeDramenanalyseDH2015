@@ -54,9 +54,17 @@ class DramaParser:
                 
                 print("Configuration " + str(configuration._name) +": " +
                     str(configuration._sentimentScoreConfiguration))
+                
                 """
-                print(configuration._sentimentBearingWordsConfiguration)
+                print(str(configuration._sentimentBearingWordsConfiguration))
                 """
+                allWords = ""
+                for bearingWord in configuration._sentimentBearingWordsConfiguration:
+                    codedword = bearingWord[0].decode('iso-8859-1').encode('utf-8')
+                    weight = str(bearingWord[1])
+                    total = codedword + " " + weight
+                    allWords = allWords + total
+                print allWords
 
             print("Act " + str(act._number) +": " +
                     str(act._sentimentScoreAct))
@@ -273,6 +281,7 @@ class DramaParser:
                 for l_element in lg_element.findall("./tei:l", self.namespaces):
                     speechText = speechText + l_element.text
 
+        
         return speechText
 
     # calculates length of speech

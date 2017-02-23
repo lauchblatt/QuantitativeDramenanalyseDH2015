@@ -21,7 +21,7 @@
     ], 
     "configuration_density": 0.14728682170542637, 
     "number_of_speeches_in_drama": 835, 
-    "average_length_of_speeches_in_drama": 23.92455089820359, 
+    "average_length_of_speeches_in_drama": 23.92694610778443, 
     "maximum_length_of_speeches_in_drama": 250, 
     "minimum_length_of_speeches_in drama": 1, 
     "median_length_of_speeches_in_drama": 13, 
@@ -29,7 +29,7 @@
         {
             "name": "DER PRINZ", 
             "number_of_speakers_speeches": 157, 
-            "average_length_of_speakers_speeches": 27.452229299363058, 
+            "average_length_of_speakers_speeches": 27.46496815286624, 
             "maximum_length_of_speakers_speeches": 216, 
             "minimum_length_of_speakers_speeches": 1, 
             "median_length_of_speakers_speeches": 16, 
@@ -504,7 +504,7 @@
                 "MARINELLI", 
                 "CAMILLO ROTA"
             ], 
-            "average_length_of_speeches_in_act": 27.855072463768117, 
+            "average_length_of_speeches_in_act": 27.869565217391305, 
             "maximum_length_of_speeches_in_act": 156, 
             "minimum_length_of_speeches_in_act": 1, 
             "median_length_of_speeches_in_act": 17.0, 
@@ -516,14 +516,14 @@
                         "DER PRINZ", 
                         "DER KAMMERDIENER"
                     ], 
-                    "average_length_of_speeches_in_scene": 22.818181818181817, 
-                    "maximum_length_of_speeches_in_scene": 73, 
+                    "average_length_of_speeches_in_scene": 23.0, 
+                    "maximum_length_of_speeches_in_scene": 75, 
                     "minimum_length_of_speeches_in_scene": 1, 
                     "median_length_of_speeches_in_scene": 14, 
                     "speeches": [
                         {
                             "speaker": "DER PRINZ", 
-                            "length": 73
+                            "length": 75
                         }, 
                         {
                             "speaker": "DER KAMMERDIENER", 
