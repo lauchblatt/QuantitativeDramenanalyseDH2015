@@ -8,9 +8,8 @@ import codecs
 
 def main():
     
-    
     reload(sys)
-    sys.setdefaultencoding('iso-8859-1')
+    sys.setdefaultencoding('utf8')
     
 
     """
@@ -24,7 +23,7 @@ def main():
     # used to generate one JSON file
 
     parser = DramaParser()
-    dramaModel = parser.parse_xml("../Korpus/less_freigeist_k.xml")
+    dramaModel = parser.parse_xml("../Korpus/less_emilia_t.xml")
     output = DramaOutput()
     drama_data = output.generate_drama_data(dramaModel)
     output.write_JSON(drama_data)

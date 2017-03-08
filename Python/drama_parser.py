@@ -50,31 +50,35 @@ class DramaParser:
 
             for configuration in act._configurations:
                 configuration.calc_speeches_statistics()
-
+                normal = 0
+                for speech in configuration._speeches:
+                    normal = normal + speech._length
                 
                 print("Configuration " + str(configuration._name) +": " +
-                    str(configuration._sentimentScoreConfiguration))
+                    str((configuration._sentimentScoreConfiguration)))
                 
-                """
+                
+                
                 print(str(configuration._sentimentBearingWordsConfiguration))
-                """
+                
                 allWords = ""
 
-                """
+                
                 for bearingWord in configuration._sentimentBearingWordsConfiguration:
-                    codedword = bearingWord[0].decode('iso-8859-1').encode('utf-8')
+                    codedword = bearingWord[0]
                     weight = str(bearingWord[1])
                     total = "(" + codedword + ", " + weight + ")"
                     allWords = allWords + total + " "
                 print allWords
-                """
+                
                 
             
             print("Act " + str(act._number) +": " +
                     str(act._sentimentScoreAct))
 
-        print("Drama " + drama_model._title.decode('iso-8859-1').encode('utf-8') + ": " +
+        print("Drama " + drama_model._title + ": " +
                     str(drama_model._sentimentScoreDrama))
+        
         
         
 
@@ -82,9 +86,8 @@ class DramaParser:
         for speaker in drama_model._speakers:
             speaker.calc_speeches_statistics()
 
+            print("Speaker " + speaker._name + ": " + str(speaker._sentimentScoreSpeaker))
             
-            print("Speaker " + speaker._name.decode('iso-8859-1').encode('utf-8') + ": " + str(speaker._sentimentScoreSpeaker))
-
 
 
         drama_model.set_speaker_count()
@@ -288,7 +291,6 @@ class DramaParser:
                 for l_element in lg_element.findall("./tei:l", self.namespaces):
                     speechText = speechText + l_element.text
 
-        
         return speechText
 
     # calculates length of speech

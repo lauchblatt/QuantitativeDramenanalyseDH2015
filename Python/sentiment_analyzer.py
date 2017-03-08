@@ -4,15 +4,19 @@ import os
 import re
 import collections
 import locale
+import sys
 
 def main():
+	reload(sys)
+	sys.setdefaultencoding('utf8')
 	sa = Sentiment_Analyzer()
 	sa.initDict()
 	"""
 	si = sa.calcSentimentScorePerText("Anf\xe4lligkeit".decode('cp1252').encode('utf8'))
 	print(si.sentimentBearingWords)
 	"""
-	print (sa.sentimentDict)
+	#print (sa.sentimentDict)
+	#print(sa.sentimentDict[unicode('Abschw\xc3\xa4chung')])
 
 class Sentiment_Analyzer:
 
@@ -39,7 +43,16 @@ class Sentiment_Analyzer:
 		sentimentInformation.sentimentBearingWords = []
 
 		for word in words:
+
 			word = word.strip(".,:?!();-'\"")
+			"""
+			try:
+				word.decode('utf-8')
+				print(word + " is utf-8")
+			except Exception:
+				print("Word is not utf-8")
+			"""
+			
 			"""
 			word = word.replace("\xe4", "\xc3\xa4")
 			"""
@@ -54,12 +67,14 @@ class Sentiment_Analyzer:
 				pair = (word, sentimentScorePerWord)
 				sentimentInformation.sentimentBearingWords.append(pair)
 
+		# Normalisation
 		sentimentInformation.sentimentScore = sentimentScore
 
 		return sentimentInformation
 
 	
 	def getSentimentScorePerWord (self, word):
+		word = unicode(word)
 		scoreString = self.sentimentDict.get(word)
 		
 		if (scoreString is None):
@@ -78,7 +93,8 @@ class Sentiment_Analyzer:
 			tabSplit = line.split("\t")
 			number = tabSplit[1].rstrip()
 
-			sentimentDict[firstWord.decode('utf-8').encode('iso-8859-1')] = number
+			#sentimentDict[firstWord.decode('utf-8').encode('iso-8859-1')] = number
+			sentimentDict[unicode(firstWord)] = number
 
 			if 0 <= 2 < len(tabSplit):
 				flexions = tabSplit[2]
@@ -86,7 +102,8 @@ class Sentiment_Analyzer:
 
 				for flex in seperatedFlexions:
 					flex = flex.rstrip()
-					sentimentDict[flex.decode('utf-8').encode('iso-8859-1')] = number
+					#sentimentDict[flex.decode('utf-8').encode('iso-8859-1')] = number
+					sentimentDict[unicode(flex)] = number
 
 		return sentimentDict
 
