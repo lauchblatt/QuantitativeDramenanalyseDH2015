@@ -5,11 +5,13 @@ from drama_parser import *
 from drama_output import *
 import sys
 import codecs
+import nltk
 
 def main():
     
     reload(sys)
     sys.setdefaultencoding('utf8')
+    print('The nltk version is {}.'.format(nltk.__version__))
     
 
     """
@@ -23,7 +25,7 @@ def main():
     # used to generate one JSON file
 
     parser = DramaParser()
-    dramaModel = parser.parse_xml("../Korpus/less_emilia_t.xml")
+    dramaModel = parser.parse_xml("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
     output = DramaOutput()
     drama_data = output.generate_drama_data(dramaModel)
     output.write_JSON(drama_data)
