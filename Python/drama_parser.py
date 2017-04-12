@@ -54,12 +54,14 @@ class DramaParser:
                 for speech in configuration._speeches:
                     normal = normal + speech._length
                 
+                """
                 print("Configuration " + str(configuration._name) +": " +
                     str((configuration._sentimentScoreConfiguration)))
+                """
                 
-                
-                
+                """
                 print(str(configuration._sentimentBearingWordsConfiguration))
+                """
                 
                 allWords = ""
 
@@ -69,15 +71,16 @@ class DramaParser:
                     weight = str(bearingWord[1])
                     total = "(" + codedword + ", " + weight + ")"
                     allWords = allWords + total + " "
-                print allWords
+                #print allWords
                 
                 
-            
+            """
             print("Act " + str(act._number) +": " +
                     str(act._sentimentScoreAct))
 
         print("Drama " + drama_model._title + ": " +
                     str(drama_model._sentimentScoreDrama))
+        """
         
         
         
@@ -85,9 +88,9 @@ class DramaParser:
         drama_model.add_speeches_to_speakers()
         for speaker in drama_model._speakers:
             speaker.calc_speeches_statistics()
-
+            """
             print("Speaker " + speaker._name + ": " + str(speaker._sentimentScoreSpeaker))
-            
+            """
 
 
         drama_model.set_speaker_count()
@@ -258,8 +261,9 @@ class DramaParser:
             speech_model._length = self.get_speech_length(subact_speaker_wrapper)
             speech_model.calcSentimentScore(sa)
             
-            
+            """
             print("Speech " + str(self.iterator) +": " + str(speech_model._sentimentScoreSpeech))
+            """
             self.iterator = self.iterator + 1
             
             

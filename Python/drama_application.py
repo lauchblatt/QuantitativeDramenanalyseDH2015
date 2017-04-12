@@ -11,8 +11,6 @@ def main():
     
     reload(sys)
     sys.setdefaultencoding('utf8')
-    print('The nltk version is {}.'.format(nltk.__version__))
-    
 
     """
     s = "Anf\xe4lligkeit"
@@ -23,7 +21,7 @@ def main():
     debug = True
 
     # used to generate one JSON file
-
+    """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
     output = DramaOutput()
@@ -63,7 +61,7 @@ def main():
 
 
     output.generate_denormalized_JSON(dramasForDenormalizing)
-    
+    """
     output.generates_normalized_JSON(dramas)
     """
 
