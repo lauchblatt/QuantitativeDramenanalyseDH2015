@@ -259,7 +259,7 @@ class DramaParser:
             speech_model._speaker = name
             speech_model._text = self.get_speech_text(subact_speaker_wrapper)
             speech_model._length = self.get_speech_length(subact_speaker_wrapper)
-            speech_model.calcSentimentScore(sa)
+            #speech_model.calcSentimentScore(sa)
             
             """
             print("Speech " + str(self.iterator) +": " + str(speech_model._sentimentScoreSpeech))

@@ -180,7 +180,7 @@ class ActModel:
         self._speechesLength_min = 0
         self._speechesLength_med = 0   
 
-        self._sentimentScoreAct = None    
+        self._sentimentScoreAct = 0   
 
     # returns all speeches for the act
     def get_speeches_act(self):
@@ -229,7 +229,7 @@ class ConfigurationModel:
         self._speechesLength_min = 0
         self._speechesLength_med = 0
 
-        self._sentimentScoreConfiguration = None
+        self._sentimentScoreConfiguration = 0
         self._sentimentBearingWordsConfiguration = []
 
     # calculates speech statistics for configuration
@@ -261,7 +261,7 @@ class SpeechModel:
         self._length = None
         self._speaker = None
         self._text = None
-        self._sentimentScoreSpeech = None
+        self._sentimentScoreSpeech = 0
         self._sentimentBearingWords = []
 
     def calcSentimentScore(self, sentimentAnalyzer):

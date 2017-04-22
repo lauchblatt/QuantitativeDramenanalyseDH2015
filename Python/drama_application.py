@@ -12,16 +12,10 @@ def main():
     reload(sys)
     sys.setdefaultencoding('utf8')
 
-    """
-    s = "Anf\xe4lligkeit"
-    
-    t = s.decode('iso-8859-1')
-    """
-
     debug = True
 
     # used to generate one JSON file
-    """
+    
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
     output = DramaOutput()
@@ -61,7 +55,6 @@ def main():
 
 
     output.generate_denormalized_JSON(dramasForDenormalizing)
-    """
     output.generates_normalized_JSON(dramas)
     """
 
