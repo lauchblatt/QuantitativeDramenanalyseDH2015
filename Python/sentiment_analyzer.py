@@ -11,10 +11,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 	sa = Sentiment_Analyzer()
 	sa.initDict()
-	"""
-	si = sa.calcSentimentScorePerText("Anf\xe4lligkeit".decode('cp1252').encode('utf8'))
-	print(si.sentimentBearingWords)
-	"""
+
 	#print (sa.sentimentDict)
 	#print(sa.sentimentDict[unicode('Abschw\xc3\xa4chung')])
 
@@ -45,20 +42,6 @@ class Sentiment_Analyzer:
 		for word in words:
 
 			word = word.strip(".,:?!();-'\"")
-			"""
-			try:
-				word.decode('utf-8')
-				print(word + " is utf-8")
-			except Exception:
-				print("Word is not utf-8")
-			"""
-			
-			"""
-			word = word.replace("\xe4", "\xc3\xa4")
-			"""
-			"""
-			word = str(word.decode('iso-8859-1').encode('utf8'))
-			"""
 			sentimentScorePerWord = self.getSentimentScorePerWord(word)
 			sentimentScore = sentimentScore + sentimentScorePerWord
 
@@ -93,7 +76,6 @@ class Sentiment_Analyzer:
 			tabSplit = line.split("\t")
 			number = tabSplit[1].rstrip()
 
-			#sentimentDict[firstWord.decode('utf-8').encode('iso-8859-1')] = number
 			sentimentDict[unicode(firstWord)] = number
 
 			if 0 <= 2 < len(tabSplit):
@@ -102,7 +84,6 @@ class Sentiment_Analyzer:
 
 				for flex in seperatedFlexions:
 					flex = flex.rstrip()
-					#sentimentDict[flex.decode('utf-8').encode('iso-8859-1')] = number
 					sentimentDict[unicode(flex)] = number
 
 		return sentimentDict
