@@ -12,12 +12,13 @@ from drama_output import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-	text = "Anschließend ging ein anderer weg."
 
 	lp = LanguageProcessor()
-	print(lp._stopwords_lemmatized)
-	lp.processText(text)
-	print(lp._lemmas)
+
+	lp.processSingleDrama("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
+
+	lp.generateWordFrequenciesOutput("test")
+	
 
 class LanguageProcessor:
 
@@ -28,6 +29,7 @@ class LanguageProcessor:
 		self._tokens = []
 		self._tokensAndPOS = []
 		self._lemmas = []
+		self._lemmasWithoutStopwords = []
 		self._lemmasAndPOS = []
 		self._lemmaAndPOSDict = None
 		self._wordFrequencies = []
@@ -38,22 +40,40 @@ class LanguageProcessor:
 	def processText(self, plainText):
 		self._plainText = plainText
 		self._textBlob = TextBlobDE(self._plainText)
+		print("TextBlob ready...")
 		self._tokens = self._textBlob.words
+		print("Tokens ready...")
 		self._tokensAndPOS = self._textBlob.tags
+		print("Tags ready...")
 		self.lemmatize()
-		self.calcWordFrequencies()
+		print("Lemmas ready...")
 		self._lemmaAndPOSDict = dict(self._lemmasAndPOS)
-		removeStopWords()
+		self.removeStopWordsFromLemmas()
+		print("StopWords removed...")
+		self.calcWordFrequencies()
+		print("Frequencies calculated...")
 
 	def processSingleDrama(self, path):
 		parser = DramaParser()
 		dramaModel = parser.parse_xml(path)
+		print("dramaModel ready...")
 		text = ""
+		
 		for act in dramaModel._acts:
 			for conf in act._configurations:
 				for speech in conf._speeches:
-					text = text + str(speech._text)
+					newText = str(speech._text.replace("–", ""))
+					text = text + newText
+
+		"""
+		for i in range(0, 1):
+			for conf in dramaModel._acts[i]._configurations:
+				for speech in conf._speeches:
+					newText = str(speech._text.replace("–", ""))
+					text = text + newText
+		print("Text ready...")
 		self.processText(text)
+		"""
 
 	def lemmatize(self):
 		self._lemmas = self._textBlob.words.lemmatize()
@@ -69,12 +89,25 @@ class LanguageProcessor:
 			stopword_lemmatized = TextBlobDE(line.strip()).words.lemmatize()[0]
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
-	def removeStopWords(self):
-		for lemma in self._lemmas:
-			for stopword in self_stopwords_lemmatized:
+	def removeStopWordsFromLemmas(self):
+		lemmasCopy = list(self._lemmas)
+		for stopword in self._stopwords_lemmatized:
+			while stopword.lower() in lemmasCopy:
+				lemmasCopy.remove(stopword.lower())
+			while stopword.title() in lemmasCopy:
+				lemmasCopy.remove(stopword.title())
+
+		for stopword in self._stopwords:
+			while stopword.lower() in lemmasCopy:
+				lemmasCopy.remove(stopword.lower())
+			while stopword.title() in lemmasCopy:
+				lemmasCopy.remove(stopword.title())
+
+		self._lemmasWithoutStopwords = lemmasCopy
+		print(self._lemmasWithoutStopwords)
 
 	def calcWordFrequencies(self):
-		fdist = FreqDist(self._lemmas)
+		fdist = FreqDist(self._lemmasWithoutStopwords)
 		frequencies = fdist.most_common()
 		self._wordFrequencies = frequencies
 
@@ -85,6 +118,7 @@ class LanguageProcessor:
 			pos = self._lemmaAndPOSDict[frequ[0]]
 			outputFile.write(str(frequ[0]) + "\t" + str(pos) + "\t" + str(frequ[1]) + "\n")
 		outputFile.close()
+		print("Output ready...")
 
 if __name__ == "__main__":
     main()
