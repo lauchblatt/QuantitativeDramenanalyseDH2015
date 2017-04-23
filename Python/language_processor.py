@@ -15,9 +15,12 @@ def main():
 
 	lp = LanguageProcessor()
 
-	lp.processSingleDrama("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
+	#lp.processText("Der Bär geht spazieren im Wald. Er hat Hunger und ihm ist kalt.")
+	lp.processSingleDrama("../Lessing-Dramen/less-Minna_von_Barnhelm_k.xml")
 
-	lp.generateWordFrequenciesOutput("test")
+	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/Lemmas/Minna_von_Barnhelm-Lemmas")
+	print(lp._stopwords)
+	print(lp._tokens)
 	
 
 class LanguageProcessor:
@@ -58,22 +61,30 @@ class LanguageProcessor:
 		dramaModel = parser.parse_xml(path)
 		print("dramaModel ready...")
 		text = ""
-		
+		#"""
 		for act in dramaModel._acts:
 			for conf in act._configurations:
 				for speech in conf._speeches:
-					newText = str(speech._text.replace("–", ""))
+					newText = unicode(speech._text.replace("–", ""))
 					text = text + newText
+		#"""
 
 		"""
-		for i in range(0, 1):
+		for i in range(3, 4):
 			for conf in dramaModel._acts[i]._configurations:
 				for speech in conf._speeches:
 					newText = str(speech._text.replace("–", ""))
 					text = text + newText
+		"""
+		
+		"""
+		for speech in dramaModel._acts[3]._configurations[1]._speeches:
+				newText = unicode(str(speech._text.replace("–", "")))
+				text = text + newText
+		"""
+
 		print("Text ready...")
 		self.processText(text)
-		"""
 
 	def lemmatize(self):
 		self._lemmas = self._textBlob.words.lemmatize()
@@ -85,7 +96,7 @@ class LanguageProcessor:
 	def initStopWords(self):
 		stopwords_text = open("stopwords_german.txt")
 		for line in stopwords_text:
-			self._stopwords.append(line.strip())
+			self._stopwords.append(unicode(line.strip()))
 			stopword_lemmatized = TextBlobDE(line.strip()).words.lemmatize()[0]
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
@@ -111,8 +122,11 @@ class LanguageProcessor:
 		frequencies = fdist.most_common()
 		self._wordFrequencies = frequencies
 
-	def generateWordFrequenciesOutput(self, dataName):
+	def generateWordFrequenciesOutputLemmas(self, dataName):
 		outputFile = open(dataName + ".txt", "w")
+
+		outputFile.write("Number of total lemmas " + str(len(self._lemmasWithoutStopwords)) + "\n")
+		outputFile.write("Nummber of different lemmas " + str(len(self._wordFrequencies)) + "\n\n")
 
 		for frequ in self._wordFrequencies:
 			pos = self._lemmaAndPOSDict[frequ[0]]
