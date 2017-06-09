@@ -13,13 +13,14 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	text = "Ich gehe in die Schule, ich bin ein kleines Kind. Und sonst so?"
-
 	lp = LanguageProcessor()
-	
+
+	text = "Ich gehe gerne in die Stadt zum Essen."
 	lp.processText(text)
+	
 	"""
-	lp.processSingleDrama("../Lessing-Dramen/less-Minna_von_Barnhelm_k.xml")
+	lp.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
+	
 	
 	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/Lemmas/Minna_von_Barnhelm-Lemmas")
 	
@@ -32,6 +33,7 @@ class LanguageProcessor:
 	def __init__(self):
 		
 		self._plainText = ""
+		self._filteredText = ""
 		self._textBlob = None
 		self._tokens = []
 		self._tokensAndPOS = []
@@ -52,7 +54,8 @@ class LanguageProcessor:
 
 	def processText(self, plainText):
 		self._plainText = plainText
-		self._textBlob = TextBlobDE(self._plainText)
+		self._filteredText = self.filterText(plainText)
+		self._textBlob = TextBlobDE(self._filteredText)
 		print("TextBlob ready...")
 		self._tokens = self._textBlob.words
 		print("Tokens ready...")
@@ -61,17 +64,25 @@ class LanguageProcessor:
 		self.lemmatize()
 		print("Lemmas ready...")
 
-		self._lemmaAndPOSDict = dict(self._lemmasAndPOS)
 		print("LemmasANDPOSDict ready...")
 
 		self.combineLemmasPOSTokens()
 		print("LemmaAndPOSAndTokens ready...")
-		self._lemmasAndPOSAndTokensDict = dict(self._lemmasAndPOS)
+		
+		self._lemmasAndPOSAndTokensDict = dict(self._lemmasAndPOSAndTokens)
+		
+		print("LemmasAndPOSAndTokensDict ready...")
 		self.removeStopWordsFromLemmas()
 		print("StopWords removed...")
 		self.calcWordFrequencies()
-		print(self._wordFrequencies)
 		print("Frequencies calculated...")
+
+	def filterText(self, text):
+		newText = ""
+		newText = unicode(text.replace("–", ""))
+		newText = unicode(text.replace("'", ""))
+
+		return newText
 
 	def processSingleDrama(self, path):
 		parser = DramaParser()
@@ -82,8 +93,7 @@ class LanguageProcessor:
 		for act in dramaModel._acts:
 			for conf in act._configurations:
 				for speech in conf._speeches:
-					newText = unicode(speech._text.replace("–", ""))
-					text = text + newText
+					text = text + speech._text
 		#"""
 
 		"""
@@ -115,27 +125,21 @@ class LanguageProcessor:
 
 	def combineLemmasPOSTokens(self):
 		for lemma, POS in self._lemmaAndPOSDict.iteritems():
-			print("Combination starts...")
-			print(lemma)
 			tokensOfLemma = []
 			for languageInfo in self._lemmasWithLanguageInfo:
-				print(languageInfo[0])
 				if(lemma == languageInfo[0]):
 					token = languageInfo[1][0]
-					print(token)
-					print(self.isTokenOfLemma(tokensOfLemma, token))
 					if not self.isTokenOfLemma(tokensOfLemma, token):
 						tokensOfLemma.append(token)
 			lemmaAndPOSAndTokens = (lemma, POS, (tokensOfLemma))
 			self._lemmasAndPOSAndTokens.append(lemmaAndPOSAndTokens)
-		print(self._lemmasAndPOSAndTokens)
 
 	def isTokenOfLemma(self, tokensOfLemma, token):
 		for alreadyToken in tokensOfLemma:
 			if(alreadyToken == token):
 				return True
 		return False
-
+	
 	def initStopWords(self):
 		stopwords_text = open("stopwords_german.txt")
 		for line in stopwords_text:
