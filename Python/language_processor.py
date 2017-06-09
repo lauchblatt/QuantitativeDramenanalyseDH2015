@@ -13,14 +13,18 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
+	text = "Ich gehe in die Schule, ich bin ein kleines Kind. Und sonst so?"
+
 	lp = LanguageProcessor()
-
-	#lp.processText("Der Bär geht spazieren im Wald. Er hat Hunger und ihm ist kalt.")
+	
+	lp.processText(text)
+	"""
 	lp.processSingleDrama("../Lessing-Dramen/less-Minna_von_Barnhelm_k.xml")
-
+	
 	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/Lemmas/Minna_von_Barnhelm-Lemmas")
-	print(lp._stopwords)
-	print(lp._tokens)
+	
+	lp.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/")
+	"""
 	
 
 class LanguageProcessor:
@@ -35,6 +39,12 @@ class LanguageProcessor:
 		self._lemmasWithoutStopwords = []
 		self._lemmasAndPOS = []
 		self._lemmaAndPOSDict = None
+
+		self._lemmasWithLanguageInfo = []
+
+		self._lemmasAndPOSAndTokens = []
+		self._lemmasAndPOSAndTokensDict = None
+
 		self._wordFrequencies = []
 		self._stopwords = []
 		self._stopwords_lemmatized = []
@@ -50,10 +60,17 @@ class LanguageProcessor:
 		print("Tags ready...")
 		self.lemmatize()
 		print("Lemmas ready...")
+
 		self._lemmaAndPOSDict = dict(self._lemmasAndPOS)
+		print("LemmasANDPOSDict ready...")
+
+		self.combineLemmasPOSTokens()
+		print("LemmaAndPOSAndTokens ready...")
+		self._lemmasAndPOSAndTokensDict = dict(self._lemmasAndPOS)
 		self.removeStopWordsFromLemmas()
 		print("StopWords removed...")
 		self.calcWordFrequencies()
+		print(self._wordFrequencies)
 		print("Frequencies calculated...")
 
 	def processSingleDrama(self, path):
@@ -93,6 +110,32 @@ class LanguageProcessor:
 			lemmaAndPOS = (self._lemmas[i], self._tokensAndPOS[i][1])
 			self._lemmasAndPOS.append(lemmaAndPOS)
 
+			lemmaAndTokenPOS = (self._lemmas[i], (self._tokensAndPOS[i][0], self._tokensAndPOS[i][1]))
+			self._lemmasWithLanguageInfo.append(lemmaAndTokenPOS)
+
+	def combineLemmasPOSTokens(self):
+		for lemma, POS in self._lemmaAndPOSDict.iteritems():
+			print("Combination starts...")
+			print(lemma)
+			tokensOfLemma = []
+			for languageInfo in self._lemmasWithLanguageInfo:
+				print(languageInfo[0])
+				if(lemma == languageInfo[0]):
+					token = languageInfo[1][0]
+					print(token)
+					print(self.isTokenOfLemma(tokensOfLemma, token))
+					if not self.isTokenOfLemma(tokensOfLemma, token):
+						tokensOfLemma.append(token)
+			lemmaAndPOSAndTokens = (lemma, POS, (tokensOfLemma))
+			self._lemmasAndPOSAndTokens.append(lemmaAndPOSAndTokens)
+		print(self._lemmasAndPOSAndTokens)
+
+	def isTokenOfLemma(self, tokensOfLemma, token):
+		for alreadyToken in tokensOfLemma:
+			if(alreadyToken == token):
+				return True
+		return False
+
 	def initStopWords(self):
 		stopwords_text = open("stopwords_german.txt")
 		for line in stopwords_text:
@@ -115,7 +158,6 @@ class LanguageProcessor:
 				lemmasCopy.remove(stopword.title())
 
 		self._lemmasWithoutStopwords = lemmasCopy
-		print(self._lemmasWithoutStopwords)
 
 	def calcWordFrequencies(self):
 		fdist = FreqDist(self._lemmasWithoutStopwords)
@@ -133,6 +175,34 @@ class LanguageProcessor:
 			outputFile.write(str(frequ[0]) + "\t" + str(pos) + "\t" + str(frequ[1]) + "\n")
 		outputFile.close()
 		print("Output ready...")
+
+	def processMultipleDramasAndGenerateOutputLemmas(self, originpath, resultpath):
+		parser = DramaParser()
+
+		for filename in os.listdir(originpath):
+			print(filename + " processing starts...")
+			dramaModel = parser.parse_xml(originpath + filename)
+			print("DramaModel ready...")
+			title = dramaModel._title
+			self.processSingleDrama(originpath + filename)
+			self.generateWordFrequenciesOutputLemmas(resultpath + title)
+
+	def processEntireCorpusAndGenereateOutputLemmas(self, originpath):
+		parser = DramaParser()
+		totalText = "";
+		for filename in os.listdir(originpath):
+			print(filename + " processing starts...")
+			dramaModel = parser.parse_xml(originpath + filename)
+			
+			for act in dramaModel._acts:
+				for conf in act._configurations:
+					for speech in conf._speeches:
+						newText = unicode(speech._text.replace("–", ""))
+						totalText = totalText + newText
+		self.processText(totalText)
+		self.generateWordFrequenciesOutputLemmas("../Word-Frequencies/EntireCorpus")
+
+
 
 if __name__ == "__main__":
     main()
