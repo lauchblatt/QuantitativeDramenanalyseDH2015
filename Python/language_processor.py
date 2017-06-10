@@ -8,6 +8,7 @@ import nltk
 from nltk import *
 from drama_parser import *
 from drama_output import *
+from collections import defaultdict
 
 def main():
 	reload(sys)
@@ -15,17 +16,14 @@ def main():
 
 	lp = LanguageProcessor()
 
-	text = "Ich gehe gerne in die Stadt zum Essen."
-	lp.processText(text)
-	
-	"""
+	lp2 = LanguageProcessor()
+
+
 	lp.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
 	
+	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/test")
 	
-	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/Lemmas/Minna_von_Barnhelm-Lemmas")
-	
-	lp.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/")
-	"""
+	#lp.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/")
 	
 
 class LanguageProcessor:
@@ -40,12 +38,11 @@ class LanguageProcessor:
 		self._lemmas = []
 		self._lemmasWithoutStopwords = []
 		self._lemmasAndPOS = []
-		self._lemmaAndPOSDict = None
+		self._lemmaAndPOSDict = {}
 
 		self._lemmasWithLanguageInfo = []
 
-		self._lemmasAndPOSAndTokens = []
-		self._lemmasAndPOSAndTokensDict = None
+		self._lemmasAndPOSAndTokensDict = {}
 
 		self._wordFrequencies = []
 		self._stopwords = []
@@ -63,26 +60,40 @@ class LanguageProcessor:
 		print("Tags ready...")
 		self.lemmatize()
 		print("Lemmas ready...")
-
+		self.createLemmaAndPOSDict()
 		print("LemmasANDPOSDict ready...")
-
 		self.combineLemmasPOSTokens()
-		print("LemmaAndPOSAndTokens ready...")
-		
-		self._lemmasAndPOSAndTokensDict = dict(self._lemmasAndPOSAndTokens)
-		
 		print("LemmasAndPOSAndTokensDict ready...")
+
+		#"""
+		print(len(self._lemmas))
+		print(len(self._lemmasAndPOS))
+		print(len(self._lemmasWithLanguageInfo))
+		print(len(self._lemmaAndPOSDict))
+		print(len(self._lemmasAndPOSAndTokensDict))
+
+		print(self._lemmas)
+		print(self._lemmasAndPOS)
+		print(self._lemmasWithLanguageInfo)
+		print(self._lemmaAndPOSDict)
+		print(self._lemmasAndPOSAndTokensDict)
+		#"""
+		
 		self.removeStopWordsFromLemmas()
 		print("StopWords removed...")
 		self.calcWordFrequencies()
 		print("Frequencies calculated...")
 
+
 	def filterText(self, text):
 		newText = ""
 		newText = unicode(text.replace("–", ""))
-		newText = unicode(text.replace("'", ""))
+		newText = unicode(newText.replace("'", ""))
+		newText = unicode(newText.replace("«", ""))
+		newText = unicode(newText.replace("»", ""))
 
 		return newText
+
 
 	def processSingleDrama(self, path):
 		parser = DramaParser()
@@ -100,7 +111,7 @@ class LanguageProcessor:
 		for i in range(3, 4):
 			for conf in dramaModel._acts[i]._configurations:
 				for speech in conf._speeches:
-					newText = str(speech._text.replace("–", ""))
+					newText = text + speech._text
 					text = text + newText
 		"""
 		
@@ -123,6 +134,17 @@ class LanguageProcessor:
 			lemmaAndTokenPOS = (self._lemmas[i], (self._tokensAndPOS[i][0], self._tokensAndPOS[i][1]))
 			self._lemmasWithLanguageInfo.append(lemmaAndTokenPOS)
 
+	# One Lemma can have multiple POS
+	def createLemmaAndPOSDict(self):
+		lemmasSet = set(self._lemmas)
+		for lemma in lemmasSet:
+			POSList = []
+			for compareLemma in self._lemmasAndPOS:
+				if(lemma == compareLemma[0]):
+					if(compareLemma[1] not in POSList):
+						POSList.append(compareLemma[1])
+			self._lemmaAndPOSDict[lemma] = POSList
+	
 	def combineLemmasPOSTokens(self):
 		for lemma, POS in self._lemmaAndPOSDict.iteritems():
 			tokensOfLemma = []
@@ -131,8 +153,9 @@ class LanguageProcessor:
 					token = languageInfo[1][0]
 					if not self.isTokenOfLemma(tokensOfLemma, token):
 						tokensOfLemma.append(token)
-			lemmaAndPOSAndTokens = (lemma, POS, (tokensOfLemma))
-			self._lemmasAndPOSAndTokens.append(lemmaAndPOSAndTokens)
+			#lemmaAndPOSAndTokens = (lemma, POS, (tokensOfLemma))
+			#self._lemmasAndPOSAndTokens.append(lemmaAndPOSAndTokens)
+			self._lemmasAndPOSAndTokensDict[lemma] = (POS, tokensOfLemma)
 
 	def isTokenOfLemma(self, tokensOfLemma, token):
 		for alreadyToken in tokensOfLemma:
@@ -171,12 +194,15 @@ class LanguageProcessor:
 	def generateWordFrequenciesOutputLemmas(self, dataName):
 		outputFile = open(dataName + ".txt", "w")
 
-		outputFile.write("Number of total lemmas " + str(len(self._lemmasWithoutStopwords)) + "\n")
+		outputFile.write("Number of all words " + str(len(self._lemmasWithoutStopwords)) + "\n")
 		outputFile.write("Nummber of different lemmas " + str(len(self._wordFrequencies)) + "\n\n")
 
+		outputFile.write("Lemma" + "\t" + "POS" + "\t" + "Frequency" + "\t" + "Tokens" +"\n")
 		for frequ in self._wordFrequencies:
-			pos = self._lemmaAndPOSDict[frequ[0]]
-			outputFile.write(str(frequ[0]) + "\t" + str(pos) + "\t" + str(frequ[1]) + "\n")
+			lemma = frequ[0]
+			POS = self._lemmasAndPOSAndTokensDict[lemma][0]
+			tokens = self._lemmasAndPOSAndTokensDict[lemma][1]
+			outputFile.write(str(lemma) + "\t" + ', '.join(POS) + "\t" + str(frequ[1]) + "\t" + ', '.join(tokens) + "\n")
 		outputFile.close()
 		print("Output ready...")
 
