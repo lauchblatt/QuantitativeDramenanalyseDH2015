@@ -14,10 +14,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	lp = LanguageProcessor()
-
-	lp2 = LanguageProcessor()
-
+	lp = Language_Processor()
 
 	lp.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
 	
@@ -26,7 +23,7 @@ def main():
 	#lp.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/")
 	
 
-class LanguageProcessor:
+class Language_Processor:
 
 	def __init__(self):
 		
@@ -53,19 +50,20 @@ class LanguageProcessor:
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
 		self._textBlob = TextBlobDE(self._filteredText)
-		print("TextBlob ready...")
+		#print("TextBlob ready...")
 		self._tokens = self._textBlob.words
-		print("Tokens ready...")
+		#print("Tokens ready...")
 		self._tokensAndPOS = self._textBlob.tags
-		print("Tags ready...")
+		#print("Tags ready...")
 		self.lemmatize()
-		print("Lemmas ready...")
+		#print("Lemmas ready...")
+		#print("Lemmas With LanguageInfo ready...")
 		self.createLemmaAndPOSDict()
-		print("LemmasANDPOSDict ready...")
+		#print("LemmasANDPOSDict ready...")
 		self.combineLemmasPOSTokens()
-		print("LemmasAndPOSAndTokensDict ready...")
+		#print("LemmasAndPOSAndTokensDict ready...")
 
-		#"""
+		"""
 		print(len(self._lemmas))
 		print(len(self._lemmasAndPOS))
 		print(len(self._lemmasWithLanguageInfo))
@@ -77,13 +75,18 @@ class LanguageProcessor:
 		print(self._lemmasWithLanguageInfo)
 		print(self._lemmaAndPOSDict)
 		print(self._lemmasAndPOSAndTokensDict)
-		#"""
+		"""
 		
 		self.removeStopWordsFromLemmas()
-		print("StopWords removed...")
+		#print("StopWords removed...")
 		self.calcWordFrequencies()
-		print("Frequencies calculated...")
+		#print("Frequencies calculated...")
 
+
+	def getLemma(self, word):
+		blob = TextBlobDE(unicode(word))
+		lemma = blob.words.lemmatize()[0]
+		return lemma
 
 	def filterText(self, text):
 		newText = ""

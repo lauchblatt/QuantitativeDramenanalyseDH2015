@@ -1,73 +1,84 @@
-#coding: utf8
+# -*- coding: utf8 -*-
 
 import os
 import re
 import collections
 import locale
 import sys
+from language_processor import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-	sa = Sentiment_Analyzer()
-	sa.initDict()
 
-	#print (sa.sentimentDict)
-	#print(sa.sentimentDict[unicode('Abschw\xc3\xa4chung')])
+	lexiconReader = Lexicon_Reader()
+	lexiconReader.initSingleDict("SentiWS")
 
-class Sentiment_Analyzer:
+	#print(lexiconReader._sentimentDict)
+	lexiconReader.lemmmatizeDict()
 
-	sentimentDict = {}
+class Lexicon_Reader:
 
-	def initDict (self):
+	def __init__(self):
+		self._sentimentDict = {}
 
+	def initSingleDict (self, lexicon):
+		if (lexicon == "SentiWS"):
+			self.initSentiWS()
+		else:
+			return("Kein korrekter Lexikonname wurde übergeben")
+
+	def lemmmatizeDict(self):
+		lp = Language_Processor()
+		newSentimentDict = {}
+
+		for word,value in self._sentimentDict.iteritems():
+			#print word
+			"""
+			lp.processText(word)
+			languageInfo = lp._lemmasWithLanguageInfo[0]
+			newSentimentDict[word] = (languageInfo, value)
+			"""
+			#lp.processText(word)
+			lemma = lp.getLemma(word)
+			#print lemma
+			lemmaList = [unicode(lemma)]
+
+			
+			if lemma in newSentimentDict:
+				print("###########")
+				print("Originalwort: " + (word))
+				print("Lemma: " + (lemma))
+				print(lemmaList)
+			
+
+			newSentimentDict[lemma] = value
+			
+			#print (lemma + " " + str(value))
+		print(len(self._sentimentDict))
+		print(len(newSentimentDict))
+		"""
+		for word in self._sentimentDict:
+			print word
+		for key in newSentimentDict:
+			print key
+		"""
+
+
+	
+	def initSentiWS (self):
+		print("initSentiWS")
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS_v1.8c_Negative.txt")
 		sentDictTextPositive = open("../SentimentAnalysis/SentiWS_v1.8c_Positive.txt")
 
-		sentimentDictNegative = self.getSentimentDict(sentDictTextNegative)
-		sentimentDictPositiv = self.getSentimentDict(sentDictTextPositive)
+		sentimentDictNegative = self.getSentimentDictSentiWS(sentDictTextNegative)
+		sentimentDictPositiv = self.getSentimentDictSentiWS(sentDictTextPositive)
 
 		sentimentDictNegative.update(sentimentDictPositiv)
-		self.sentimentDict = sentimentDictNegative
+		self._sentimentDict = sentimentDictNegative
 
-	def calcSentimentScorePerText (self, text):
-
-		text = text.strip()
-		words = text.split(" ")
-
-		sentimentScore = 0
-		sentimentInformation = Sentiment_Information()
-		sentimentInformation.sentimentBearingWords = []
-
-		for word in words:
-
-			word = word.strip(".,:?!();-'\"")
-			sentimentScorePerWord = self.getSentimentScorePerWord(word)
-			sentimentScore = sentimentScore + sentimentScorePerWord
-
-			if(sentimentScorePerWord != 0):
-				#OrderedDictionary necessary
-				pair = (word, sentimentScorePerWord)
-				sentimentInformation.sentimentBearingWords.append(pair)
-
-		# Normalisation
-		sentimentInformation.sentimentScore = sentimentScore
-
-		return sentimentInformation
-
-	
-	def getSentimentScorePerWord (self, word):
-		word = unicode(word)
-		scoreString = self.sentimentDict.get(word)
-		
-		if (scoreString is None):
-			return 0
-
-		scoreFloat = float(scoreString)
-		return scoreFloat
-
-	def getSentimentDict (self, sentimentDictText):
-		
+	def getSentimentDictSentiWS (self, sentimentDictText):
+		print("getSentimentDictSentiWS")
 		sentimentDict = {}
 
 		for line in sentimentDictText:
@@ -77,7 +88,7 @@ class Sentiment_Analyzer:
 			number = tabSplit[1].rstrip()
 
 			sentimentDict[unicode(firstWord)] = number
-
+			"""
 			if 0 <= 2 < len(tabSplit):
 				flexions = tabSplit[2]
 				seperatedFlexions = flexions.split(",")
@@ -85,14 +96,9 @@ class Sentiment_Analyzer:
 				for flex in seperatedFlexions:
 					flex = flex.rstrip()
 					sentimentDict[unicode(flex)] = number
+			"""
 
 		return sentimentDict
-
-class Sentiment_Information:
-
-	sentimentScore = 0
-	sentimentBearingWords = []
-
 
 if __name__ == "__main__":
     main()
