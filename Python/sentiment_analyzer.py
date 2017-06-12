@@ -12,11 +12,12 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHanlder.initSingleDict("SentiWS-Lemmas")
+	lexiconHandler.initSingleDict("SentiWS-Lemmas")
 	#lexiconHandler.initSingleDict("SentiWSOriginal")
 	#lexiconHandler.lemmmatizeDict()
 	#lexiconHandler.createOutput(lexiconHandler._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
 	#lexiconHandler.createOutput(lexiconHandler._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
+	print(lexiconHandler._sentimentDictLemmas)
 
 class Lexicon_Handler:
 
@@ -31,9 +32,6 @@ class Lexicon_Handler:
 			self.initSentiWSLemmas()
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
-
-	def initSentiWSLemmas(self):
-
 
 	def lemmmatizeDict(self):
 		lp = Language_Processor()
@@ -52,7 +50,7 @@ class Lexicon_Handler:
 			"""
 			newSentimentDict[lemma] = value
 		
-		print("Lemmatisation ffinished")	
+		print("Lemmatisation finished")	
 		self._sentimentDictLemmas = newSentimentDict
 
 	def createOutput(self, sentimentDict, dataName):
@@ -72,6 +70,20 @@ class Lexicon_Handler:
 
 		return text
 
+	def initSentiWSLemmas(self):
+		print("initSentiWSLemmas")
+		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas.txt")
+		sentimentDict = {}
+
+		for line in sentimentDictText:
+			wordAndValue = line.split("\t")
+			word = wordAndValue[0]
+			value = wordAndValue[1].rstrip()
+			sentimentDict[unicode(word)] = value
+
+		self._sentimentDictLemmas = sentimentDict
+
+	
 	def initSentiWS (self):
 		print("initSentiWS")
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS_v1.8c_Negative.txt")
