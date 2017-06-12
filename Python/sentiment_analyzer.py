@@ -12,12 +12,9 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("SentiWS-Lemmas")
-	#lexiconHandler.initSingleDict("SentiWSOriginal")
-	#lexiconHandler.lemmmatizeDict()
-	#lexiconHandler.createOutput(lexiconHandler._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
-	#lexiconHandler.createOutput(lexiconHandler._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
-	print(lexiconHandler._sentimentDictLemmas)
+	#lexiconHandler.initSingleDict("SentiWS-Lemmas")
+	lexiconHandler.initSingleDict("NRC")
+	print(lexiconHandler._sentimentDict)
 
 class Lexicon_Handler:
 
@@ -30,8 +27,37 @@ class Lexicon_Handler:
 			self.initSentiWS()
 		elif (lexicon == "SentiWS-Lemmas"):
 			self.initSentiWSLemmas()
+		elif (lexicon == "NRC"):
+			self.initNRC()
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
+
+	def initNRC(self):
+		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
+		self._sentimentDict = self.getSentimentDictNRC(sentDictText)
+	
+	def getSentimentDictNRC(self, sentimentDictText):
+		nrcSentimentDict = {}
+		lines = sentimentDictText.readlines()[1:4]
+		for line in lines:
+			wordsAndValues = line.split("\t")
+			word = wordsAndValues[1]
+			sentimentsPerWord = {}
+
+			sentimentsPerWord["positive"] = wordsAndValues[2]
+			sentimentsPerWord["negative"] = wordsAndValues[3]
+			sentimentsPerWord["anger"] = wordsAndValues[4]
+			sentimentsPerWord["anticipation"] = wordsAndValues[5]
+			sentimentsPerWord["disgust"] = wordsAndValues[6]
+			sentimentsPerWord["fear"] = wordsAndValues[7]
+			sentimentsPerWord["joy"] = wordsAndValues[8]
+			sentimentsPerWord["sadness"] = wordsAndValues[9]
+			sentimentsPerWord["surprise"] = wordsAndValues[10]
+			sentimentsPerWord["trust"] = wordsAndValues[11].rstrip()
+
+			nrcSentimentDict[word] = sentimentsPerWord
+
+		return nrcSentimentDict
 
 	def lemmmatizeDict(self):
 		lp = Language_Processor()
@@ -54,14 +80,12 @@ class Lexicon_Handler:
 		self._sentimentDictLemmas = newSentimentDict
 
 	def createOutput(self, sentimentDict, dataName):
-		print("Create Output")
 		outputFile = open(dataName + ".txt", "w")
 
 		for word in sentimentDict:
 			outputFile.write(word + "\t" + str(sentimentDict[word]) +"\n")
 
 		outputFile.close()
-		print("Output finished")
 
 	def getWordsAsTextFromDict(self):
 		text = ""
@@ -117,6 +141,16 @@ class Lexicon_Handler:
 			
 
 		return sentimentDict
+
+	def createSentimentDictSentiWSRaw(self):
+		self.initSingleDict("SentiWSOriginal")
+		lexiconHandler.createOutput(lexiconHandler._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
+		
+	
+	def createSentimentDictSentiWSLemmas(self):
+		self.initSingleDict("SentiWSOriginal")
+		lexiconHandler.lemmmatizeDict()
+		lexiconHandler.createOutput(lexiconHandler._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
 
 if __name__ == "__main__":
     main()
