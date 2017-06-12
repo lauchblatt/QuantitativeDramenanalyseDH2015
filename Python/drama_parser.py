@@ -237,8 +237,8 @@ class DramaParser:
     def get_speeches_for_subact(self, subact):
         speech_data = []
 
-        sa = Sentiment_Analyzer()
-        sa.initDict()
+        #sa = Sentiment_Analyzer()
+        #sa.initDict()
 
         for subact_speaker_wrapper in subact.findall(".//tei:sp", self.namespaces):
             speech_model = SpeechModel()

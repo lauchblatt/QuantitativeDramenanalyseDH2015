@@ -11,61 +11,67 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	lexiconReader = Lexicon_Reader()
-	lexiconReader.initSingleDict("SentiWS")
+	lexiconHandler = Lexicon_Handler()
+	lexiconHanlder.initSingleDict("SentiWS-Lemmas")
+	#lexiconHandler.initSingleDict("SentiWSOriginal")
+	#lexiconHandler.lemmmatizeDict()
+	#lexiconHandler.createOutput(lexiconHandler._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
+	#lexiconHandler.createOutput(lexiconHandler._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
 
-	#print(lexiconReader._sentimentDict)
-	lexiconReader.lemmmatizeDict()
-
-class Lexicon_Reader:
+class Lexicon_Handler:
 
 	def __init__(self):
 		self._sentimentDict = {}
+		self._sentimentDictLemmas = {}
 
 	def initSingleDict (self, lexicon):
-		if (lexicon == "SentiWS"):
+		if (lexicon == "SentiWSOriginal"):
 			self.initSentiWS()
+		elif (lexicon == "SentiWS-Lemmas"):
+			self.initSentiWSLemmas()
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
+
+	def initSentiWSLemmas(self):
+
 
 	def lemmmatizeDict(self):
 		lp = Language_Processor()
 		newSentimentDict = {}
-
+		print("start Lemmatisation")
+		
 		for word,value in self._sentimentDict.iteritems():
-			#print word
-			"""
-			lp.processText(word)
-			languageInfo = lp._lemmasWithLanguageInfo[0]
-			newSentimentDict[word] = (languageInfo, value)
-			"""
-			#lp.processText(word)
 			lemma = lp.getLemma(word)
-			#print lemma
-			lemmaList = [unicode(lemma)]
-
-			
+			"""
 			if lemma in newSentimentDict:
 				print("###########")
-				print("Originalwort: " + (word))
-				print("Lemma: " + (lemma))
-				print(lemmaList)
-			
-
+				print("Altes Wort: " + newSentimentDict[lemma][0])
+				print("Altes Lemma: " + lemma + " Wert: " + str(newSentimentDict[lemma][1]))
+				print("Neues Wort: " + (word))
+				print("Neues Lemma: " + (lemma) + " Wert: " + str(value))
+			"""
 			newSentimentDict[lemma] = value
-			
-			#print (lemma + " " + str(value))
-		print(len(self._sentimentDict))
-		print(len(newSentimentDict))
-		"""
+		
+		print("Lemmatisation ffinished")	
+		self._sentimentDictLemmas = newSentimentDict
+
+	def createOutput(self, sentimentDict, dataName):
+		print("Create Output")
+		outputFile = open(dataName + ".txt", "w")
+
+		for word in sentimentDict:
+			outputFile.write(word + "\t" + str(sentimentDict[word]) +"\n")
+
+		outputFile.close()
+		print("Output finished")
+
+	def getWordsAsTextFromDict(self):
+		text = ""
 		for word in self._sentimentDict:
-			print word
-		for key in newSentimentDict:
-			print key
-		"""
+			text = text + " " + word
 
+		return text
 
-	
 	def initSentiWS (self):
 		print("initSentiWS")
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS_v1.8c_Negative.txt")
@@ -88,7 +94,7 @@ class Lexicon_Reader:
 			number = tabSplit[1].rstrip()
 
 			sentimentDict[unicode(firstWord)] = number
-			"""
+			
 			if 0 <= 2 < len(tabSplit):
 				flexions = tabSplit[2]
 				seperatedFlexions = flexions.split(",")
@@ -96,7 +102,7 @@ class Lexicon_Reader:
 				for flex in seperatedFlexions:
 					flex = flex.rstrip()
 					sentimentDict[unicode(flex)] = number
-			"""
+			
 
 		return sentimentDict
 

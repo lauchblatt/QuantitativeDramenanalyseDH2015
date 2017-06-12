@@ -50,18 +50,18 @@ class Language_Processor:
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
 		self._textBlob = TextBlobDE(self._filteredText)
-		#print("TextBlob ready...")
+		print("TextBlob ready...")
 		self._tokens = self._textBlob.words
-		#print("Tokens ready...")
+		print("Tokens ready...")
 		self._tokensAndPOS = self._textBlob.tags
-		#print("Tags ready...")
+		print("Tags ready...")
 		self.lemmatize()
-		#print("Lemmas ready...")
-		#print("Lemmas With LanguageInfo ready...")
+		print("Lemmas ready...")
+		print("Lemmas With LanguageInfo ready...")
 		self.createLemmaAndPOSDict()
-		#print("LemmasANDPOSDict ready...")
+		print("LemmasANDPOSDict ready...")
 		self.combineLemmasPOSTokens()
-		#print("LemmasAndPOSAndTokensDict ready...")
+		print("LemmasAndPOSAndTokensDict ready...")
 
 		"""
 		print(len(self._lemmas))
@@ -87,6 +87,11 @@ class Language_Processor:
 		blob = TextBlobDE(unicode(word))
 		lemma = blob.words.lemmatize()[0]
 		return lemma
+
+	def getLemmas(self, wordsAsString):
+		blob = TextBlobDE(unicode(wordsAsString))
+		lemmas = blob.words.lemmatize()
+		return lemmas
 
 	def filterText(self, text):
 		newText = ""
