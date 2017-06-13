@@ -12,12 +12,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	#lexiconHandler.initSingleDict("SentiWS-Lemmas")
-	lexiconHandler.initSingleDict("NRC")
-	print(len(lexiconHandler._sentimentDict))
-	lexiconHandler.lemmatizeDict()
-	print(len(lexiconHandler._sentimentDictLemmas))
-	print(lexiconHandler._sentimentDictLemmas)
+	#lexiconHandler.createSentimentDictFileNRCRaw()
+	#lexiconHandler.createSentimentDictFileNRCLemmas()
 
 class Lexicon_Handler:
 
@@ -26,12 +22,14 @@ class Lexicon_Handler:
 		self._sentimentDictLemmas = {}
 
 	def initSingleDict (self, lexicon):
-		if (lexicon == "SentiWSOriginal"):
+		if (lexicon == "SentiWS-Original"):
 			self.initSentiWS()
 		elif (lexicon == "SentiWS-Lemmas"):
-			self.initSentiWSLemmas()
-		elif (lexicon == "NRC"):
+			self.readAndInitSentiWSLemmas()
+		elif (lexicon == "NRC-Original"):
 			self.initNRC()
+		elif (lexicon == "NRC-Lemmas"):
+			self.readAndInitNRCLemmas()
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 
@@ -39,10 +37,14 @@ class Lexicon_Handler:
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
 		self._sentimentDict = self.getSentimentDictNRC(sentDictText)
 	
+	def readAndinitNRCLemmas():
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
+		self._sentimentDict = self.getSentimentDictNRC(sentDictText)
+		self._lemmatizeDict()
+
 	def getSentimentDictNRC(self, sentimentDictText):
 		nrcSentimentDict = {}
 		lines = sentimentDictText.readlines()[1:]
-		
 		for line in lines:
 			wordsAndValues = line.split("\t")
 			word = wordsAndValues[1]
@@ -63,9 +65,9 @@ class Lexicon_Handler:
 				sentimentsPerWord["trust"] = wordsAndValues[11].rstrip()
 
 				nrcSentimentDict[unicode(word)] = sentimentsPerWord
-
+		
 		return nrcSentimentDict
-
+				
 	def lemmatizeDict(self):
 		lp = Language_Processor()
 		newSentimentDict = {}
@@ -97,10 +99,19 @@ class Lexicon_Handler:
 	def createOutputNRC(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 		sentiments = ["positive", "negative", "anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"]
+		firstLine = "word\tpositive\tnegative\tanger\tanticipation\tdisgust\tfear\tjoy\tsadness\tsurprise\ttrust\n"
+		outputFile.write(firstLine)
+		
 		for word in sentimentDict:
 			line = word + "\t"
 			sentimentsPerWord = sentimentDict[word]
-			#line = line + 
+			for sentiment in sentiments:
+				line = line + sentimentsPerWord[sentiment] + "\t"
+			line = line.rstrip("\t")
+			line = line + "\n"
+			outputFile.write(line)
+		outputFile.close()
+
 
 	def getWordsAsTextFromDict(self):
 		text = ""
@@ -109,8 +120,7 @@ class Lexicon_Handler:
 
 		return text
 
-	def initSentiWSLemmas(self):
-		print("initSentiWSLemmas")
+	def readAndInitSentiWSLemmas(self):
 		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas.txt")
 		sentimentDict = {}
 
@@ -157,15 +167,44 @@ class Lexicon_Handler:
 
 		return sentimentDict
 
-	def createSentimentDictSentiWSRaw(self):
-		self.initSingleDict("SentiWSOriginal")
-		lexiconHandler.createOutput(lexiconHandler._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
+	def getDoublesInGermanNRC(self):
+		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
+		lines = sentDictText.readlines()[1:]
+		words = []
+		doubles = []
+
+		for line in lines:
+			wordsAndValues = line.split("\t")
+			word = wordsAndValues[1]
+
+			if(not(word == "")):
+				if(word in words):
+					doubles.append(word)
+				else:
+					words.append(word)
+		print(len(words))
+		print(len(doubles))
+		for word in doubles:
+			print(word)
+
+	def createSentimentDictFileSentiWSRaw(self):
+		self.initSingleDict("SentiWS-Original")
+		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
 		
 	
-	def createSentimentDictSentiWSLemmas(self):
-		self.initSingleDict("SentiWSOriginal")
-		lexiconHandler.lemmmatizeDict()
-		lexiconHandler.createOutput(lexiconHandler._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
+	def createSentimentDictFileSentiWSLemmas(self):
+		self.initSingleDict("SentiWS-Original")
+		self.lemmatizeDict()
+		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
+
+	def createSentimentDictFileNRCRaw(self):
+		self.initSingleDict("NRC-Original")
+		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Raw")
+
+	def createSentimentDictFileNRCLemmas(self):
+		self.initSingleDict("NRC-Original")
+		self.lemmatizeDict()
+		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/NRC-Lemmas")
 
 if __name__ == "__main__":
     main()
