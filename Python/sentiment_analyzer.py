@@ -14,7 +14,10 @@ def main():
 	lexiconHandler = Lexicon_Handler()
 	#lexiconHandler.initSingleDict("SentiWS-Lemmas")
 	lexiconHandler.initSingleDict("NRC")
-	print(lexiconHandler._sentimentDict)
+	print(len(lexiconHandler._sentimentDict))
+	lexiconHandler.lemmatizeDict()
+	print(len(lexiconHandler._sentimentDictLemmas))
+	print(lexiconHandler._sentimentDictLemmas)
 
 class Lexicon_Handler:
 
@@ -38,28 +41,32 @@ class Lexicon_Handler:
 	
 	def getSentimentDictNRC(self, sentimentDictText):
 		nrcSentimentDict = {}
-		lines = sentimentDictText.readlines()[1:4]
+		lines = sentimentDictText.readlines()[1:]
+		
 		for line in lines:
 			wordsAndValues = line.split("\t")
 			word = wordsAndValues[1]
-			sentimentsPerWord = {}
+			
+			# skip missing german translations
+			if(not(word == "")):
+				sentimentsPerWord = {}
 
-			sentimentsPerWord["positive"] = wordsAndValues[2]
-			sentimentsPerWord["negative"] = wordsAndValues[3]
-			sentimentsPerWord["anger"] = wordsAndValues[4]
-			sentimentsPerWord["anticipation"] = wordsAndValues[5]
-			sentimentsPerWord["disgust"] = wordsAndValues[6]
-			sentimentsPerWord["fear"] = wordsAndValues[7]
-			sentimentsPerWord["joy"] = wordsAndValues[8]
-			sentimentsPerWord["sadness"] = wordsAndValues[9]
-			sentimentsPerWord["surprise"] = wordsAndValues[10]
-			sentimentsPerWord["trust"] = wordsAndValues[11].rstrip()
+				sentimentsPerWord["positive"] = wordsAndValues[2]
+				sentimentsPerWord["negative"] = wordsAndValues[3]
+				sentimentsPerWord["anger"] = wordsAndValues[4]
+				sentimentsPerWord["anticipation"] = wordsAndValues[5]
+				sentimentsPerWord["disgust"] = wordsAndValues[6]
+				sentimentsPerWord["fear"] = wordsAndValues[7]
+				sentimentsPerWord["joy"] = wordsAndValues[8]
+				sentimentsPerWord["sadness"] = wordsAndValues[9]
+				sentimentsPerWord["surprise"] = wordsAndValues[10]
+				sentimentsPerWord["trust"] = wordsAndValues[11].rstrip()
 
-			nrcSentimentDict[word] = sentimentsPerWord
+				nrcSentimentDict[unicode(word)] = sentimentsPerWord
 
 		return nrcSentimentDict
 
-	def lemmmatizeDict(self):
+	def lemmatizeDict(self):
 		lp = Language_Processor()
 		newSentimentDict = {}
 		print("start Lemmatisation")
@@ -86,6 +93,14 @@ class Lexicon_Handler:
 			outputFile.write(word + "\t" + str(sentimentDict[word]) +"\n")
 
 		outputFile.close()
+
+	def createOutputNRC(self, sentimentDict, dataName):
+		outputFile = open(dataName + ".txt", "w")
+		sentiments = ["positive", "negative", "anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"]
+		for word in sentimentDict:
+			line = word + "\t"
+			sentimentsPerWord = sentimentDict[word]
+			#line = line + 
 
 	def getWordsAsTextFromDict(self):
 		text = ""
