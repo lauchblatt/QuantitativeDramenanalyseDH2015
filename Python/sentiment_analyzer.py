@@ -14,6 +14,9 @@ def main():
 	lexiconHandler = Lexicon_Handler()
 	#lexiconHandler.createSentimentDictFileNRCRaw()
 	#lexiconHandler.createSentimentDictFileNRCLemmas()
+	lexiconHandler.initSingleDict("NRC-Lemmas")
+	print(lexiconHandler._sentimentDict)
+	print(lexiconHandler._sentimentDictLemmas)
 
 class Lexicon_Handler:
 
@@ -35,34 +38,38 @@ class Lexicon_Handler:
 
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
-		self._sentimentDict = self.getSentimentDictNRC(sentDictText)
+		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
 	
-	def readAndinitNRCLemmas():
+	def readAndInitNRCLemmas(self):
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
-		self._sentimentDict = self.getSentimentDictNRC(sentDictText)
-		self._lemmatizeDict()
+		self.initNRC()
+		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
-	def getSentimentDictNRC(self, sentimentDictText):
+	def getSentimentDictNRC(self, sentimentDictText, isLemmas):
+		columnSub = 0
+		if(isLemmas):
+			columnSub = 1
+
 		nrcSentimentDict = {}
 		lines = sentimentDictText.readlines()[1:]
 		for line in lines:
 			wordsAndValues = line.split("\t")
-			word = wordsAndValues[1]
+			word = wordsAndValues[1-columnSub]
 			
 			# skip missing german translations
 			if(not(word == "")):
 				sentimentsPerWord = {}
 
-				sentimentsPerWord["positive"] = wordsAndValues[2]
-				sentimentsPerWord["negative"] = wordsAndValues[3]
-				sentimentsPerWord["anger"] = wordsAndValues[4]
-				sentimentsPerWord["anticipation"] = wordsAndValues[5]
-				sentimentsPerWord["disgust"] = wordsAndValues[6]
-				sentimentsPerWord["fear"] = wordsAndValues[7]
-				sentimentsPerWord["joy"] = wordsAndValues[8]
-				sentimentsPerWord["sadness"] = wordsAndValues[9]
-				sentimentsPerWord["surprise"] = wordsAndValues[10]
-				sentimentsPerWord["trust"] = wordsAndValues[11].rstrip()
+				sentimentsPerWord["positive"] = wordsAndValues[2-columnSub]
+				sentimentsPerWord["negative"] = wordsAndValues[3-columnSub]
+				sentimentsPerWord["anger"] = wordsAndValues[4-columnSub]
+				sentimentsPerWord["anticipation"] = wordsAndValues[5-columnSub]
+				sentimentsPerWord["disgust"] = wordsAndValues[6-columnSub]
+				sentimentsPerWord["fear"] = wordsAndValues[7-columnSub]
+				sentimentsPerWord["joy"] = wordsAndValues[8-columnSub]
+				sentimentsPerWord["sadness"] = wordsAndValues[9-columnSub]
+				sentimentsPerWord["surprise"] = wordsAndValues[10-columnSub]
+				sentimentsPerWord["trust"] = wordsAndValues[11-columnSub].rstrip()
 
 				nrcSentimentDict[unicode(word)] = sentimentsPerWord
 		
