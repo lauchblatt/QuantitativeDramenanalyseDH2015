@@ -15,8 +15,6 @@ def main():
 	#lexiconHandler.createSentimentDictFileNRCRaw()
 	#lexiconHandler.createSentimentDictFileNRCLemmas()
 	lexiconHandler.initSingleDict("NRC-Lemmas")
-	print(lexiconHandler._sentimentDict)
-	print(lexiconHandler._sentimentDictLemmas)
 
 class Lexicon_Handler:
 
@@ -38,12 +36,22 @@ class Lexicon_Handler:
 
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
-		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
+		sentimentDict = self.getSentimentDictNRC(sentDictText, False)
+		self._sentimentDict = self.removeTotalZerosFromNRC(sentimentDict)
 	
 	def readAndInitNRCLemmas(self):
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
 		self.initNRC()
-		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
+		sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
+
+		self._sentimentDictLemmas = self.removeTotalZerosFromNRC(sentimentDictLemmas)
+
+	def removeTotalZerosFromNRC(self, nrcSentimentDict):
+		totalZeros = self.getTotalZerosNRC(nrcSentimentDict)
+
+		for zeroWord in totalZeros:
+			del nrcSentimentDict[zeroWord]
+		return nrcSentimentDict
 
 	def getSentimentDictNRC(self, sentimentDictText, isLemmas):
 		columnSub = 0
@@ -128,6 +136,7 @@ class Lexicon_Handler:
 		return text
 
 	def readAndInitSentiWSLemmas(self):
+		self._initSentiWS()
 		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas.txt")
 		sentimentDict = {}
 
@@ -141,7 +150,6 @@ class Lexicon_Handler:
 
 	
 	def initSentiWS (self):
-		print("initSentiWS")
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS_v1.8c_Negative.txt")
 		sentDictTextPositive = open("../SentimentAnalysis/SentiWS_v1.8c_Positive.txt")
 
@@ -152,7 +160,6 @@ class Lexicon_Handler:
 		self._sentimentDict = sentimentDictNegative
 
 	def getSentimentDictSentiWS (self, sentimentDictText):
-		print("getSentimentDictSentiWS")
 		sentimentDict = {}
 
 		for line in sentimentDictText:
@@ -173,6 +180,15 @@ class Lexicon_Handler:
 			
 
 		return sentimentDict
+
+	def getTotalZerosNRC(self, nrcSentimentDict):
+		totalZeros = {}
+		
+		for word in nrcSentimentDict:
+			sentiments = nrcSentimentDict[word]
+			if(all(value == "0" for value in sentiments.values())):
+				totalZeros[word] = sentiments
+		return totalZeros
 
 	def getDoublesInGermanNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
