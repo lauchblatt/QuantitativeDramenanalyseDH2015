@@ -44,9 +44,23 @@ class Language_Processor:
 		self._wordFrequencies = []
 		self._stopwords = []
 		self._stopwords_lemmatized = []
+		
 		self.initStopWords()
 
 	def processText(self, plainText):
+		self._plainText = plainText
+		self._filteredText = self.filterText(plainText)
+		self._textBlob = TextBlobDE(self._filteredText)
+		print("TextBlob ready...")
+		self._tokens = self._textBlob.words
+		print("Tokens ready...")
+		self._tokensAndPOS = self._textBlob.tags
+		print("Tags ready...")
+		self.lemmatize()
+		print("Lemmas ready...")
+		print("Lemmas With LanguageInfo ready...")
+
+	def processTextFully(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
 		self._textBlob = TextBlobDE(self._filteredText)
@@ -130,7 +144,7 @@ class Language_Processor:
 		"""
 
 		print("Text ready...")
-		self.processText(text)
+		self.processTextFully(text)
 
 	def lemmatize(self):
 		self._lemmas = self._textBlob.words.lemmatize()
@@ -237,7 +251,7 @@ class Language_Processor:
 					for speech in conf._speeches:
 						newText = unicode(speech._text.replace("–", ""))
 						totalText = totalText + newText
-		self.processText(totalText)
+		self.processTextFully(totalText)
 		self.generateWordFrequenciesOutputLemmas("../Word-Frequencies/EntireCorpus")
 
 

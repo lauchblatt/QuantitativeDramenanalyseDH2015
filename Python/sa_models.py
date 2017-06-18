@@ -10,32 +10,33 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-class sentimentInformation:
+class Sentiment_Information:
 	#List of SentimentBearingWord-Objects
-	self._sentimentBearingWords = []
+	def __init__(self):
+		self._sentimentBearingWords = []
 
-class sentimentBearingWord:
+class Sentiment_Bearing_Word:
 
-	#SentiWSData
-	self._positiveSentiWS = 0
-	self._negativeSentiWS = 0
+	def __init__(self):
+		#SentiWSData
+		self._polaritySentiWS = 0
 
-	#NRCData
-	self._positiveNrc = 0
-	self._negativeNrc = 0
-	self._anger = 0
-	self._anticipation = 0
-	self._disgust = 0
-	self._fear = 0
-	self._joy = 0
-	self._sadness = 0
-	self._surprise = 0
-	self._trust = 0
+		#NRCData
+		self._positiveNrc = 0
+		self._negativeNrc = 0
+		self._anger = 0
+		self._anticipation = 0
+		self._disgust = 0
+		self._fear = 0
+		self._joy = 0
+		self._sadness = 0
+		self._surprise = 0
+		self._trust = 0
 
-	#Language Data
-	self._token = ""
-	self._lemma = ""
-	self._POS = ""
+		#Language Data
+		self._token = ""
+		self._lemma = ""
+		self._POS = ""
 
 if __name__ == "__main__":
     main()

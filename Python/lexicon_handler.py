@@ -136,7 +136,7 @@ class Lexicon_Handler:
 		return text
 
 	def readAndInitSentiWSLemmas(self):
-		self._initSentiWS()
+		self.initSentiWS()
 		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas.txt")
 		sentimentDict = {}
 
@@ -150,8 +150,8 @@ class Lexicon_Handler:
 
 	
 	def initSentiWS (self):
-		sentDictTextNegative = open("../SentimentAnalysis/SentiWS_v1.8c_Negative.txt")
-		sentDictTextPositive = open("../SentimentAnalysis/SentiWS_v1.8c_Positive.txt")
+		sentDictTextNegative = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Negative.txt")
+		sentDictTextPositive = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Positive.txt")
 
 		sentimentDictNegative = self.getSentimentDictSentiWS(sentDictTextNegative)
 		sentimentDictPositiv = self.getSentimentDictSentiWS(sentDictTextPositive)

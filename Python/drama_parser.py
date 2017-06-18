@@ -8,7 +8,6 @@ from drama_models import *
 class DramaParser:
 
     namespaces = {'tei':'http://www.tei-c.org/ns/1.0'} # used to read the tags in the xml correctly
-    iterator = 1
 
     # starting point for the parsing
     def parse_xml(self, filepath):
@@ -53,45 +52,11 @@ class DramaParser:
                 normal = 0
                 for speech in configuration._speeches:
                     normal = normal + speech._length
-                
-                """
-                print("Configuration " + str(configuration._name) +": " +
-                    str((configuration._sentimentScoreConfiguration)))
-                """
-                
-                """
-                print(str(configuration._sentimentBearingWordsConfiguration))
-                """
-                
-                allWords = ""
-
-                
-                for bearingWord in configuration._sentimentBearingWordsConfiguration:
-                    codedword = bearingWord[0]
-                    weight = str(bearingWord[1])
-                    total = "(" + codedword + ", " + weight + ")"
-                    allWords = allWords + total + " "
-                #print allWords
-                
-                
-            """
-            print("Act " + str(act._number) +": " +
-                    str(act._sentimentScoreAct))
-
-        print("Drama " + drama_model._title + ": " +
-                    str(drama_model._sentimentScoreDrama))
-        """
-        
-        
-        
+                 
 
         drama_model.add_speeches_to_speakers()
         for speaker in drama_model._speakers:
             speaker.calc_speeches_statistics()
-            """
-            print("Speaker " + speaker._name + ": " + str(speaker._sentimentScoreSpeaker))
-            """
-
 
         drama_model.set_speaker_count()
 
@@ -237,9 +202,6 @@ class DramaParser:
     def get_speeches_for_subact(self, subact):
         speech_data = []
 
-        #sa = Sentiment_Analyzer()
-        #sa.initDict()
-
         for subact_speaker_wrapper in subact.findall(".//tei:sp", self.namespaces):
             speech_model = SpeechModel()
             subact_speaker = subact_speaker_wrapper.find("./tei:speaker", self.namespaces)
@@ -259,14 +221,6 @@ class DramaParser:
             speech_model._speaker = name
             speech_model._text = self.get_speech_text(subact_speaker_wrapper)
             speech_model._length = self.get_speech_length(subact_speaker_wrapper)
-            #speech_model.calcSentimentScore(sa)
-            
-            """
-            print("Speech " + str(self.iterator) +": " + str(speech_model._sentimentScoreSpeech))
-            """
-            self.iterator = self.iterator + 1
-            
-            
 
             # speech with a length of zero or less are not added
             if(speech_model._length > 0):
