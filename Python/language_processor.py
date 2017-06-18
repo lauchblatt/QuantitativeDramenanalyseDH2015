@@ -148,6 +148,8 @@ class Language_Processor:
 
 	def lemmatize(self):
 		self._lemmas = self._textBlob.words.lemmatize()
+		self._lemmasAndPOS = []
+		self._lemmasWithLanguageInfo = []
 		
 		for i in range(0, len(self._lemmas)):
 			lemmaAndPOS = (self._lemmas[i], self._tokensAndPOS[i][1])

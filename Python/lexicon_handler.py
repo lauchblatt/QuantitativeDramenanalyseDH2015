@@ -68,16 +68,16 @@ class Lexicon_Handler:
 			if(not(word == "")):
 				sentimentsPerWord = {}
 
-				sentimentsPerWord["positive"] = wordsAndValues[2-columnSub]
-				sentimentsPerWord["negative"] = wordsAndValues[3-columnSub]
-				sentimentsPerWord["anger"] = wordsAndValues[4-columnSub]
-				sentimentsPerWord["anticipation"] = wordsAndValues[5-columnSub]
-				sentimentsPerWord["disgust"] = wordsAndValues[6-columnSub]
-				sentimentsPerWord["fear"] = wordsAndValues[7-columnSub]
-				sentimentsPerWord["joy"] = wordsAndValues[8-columnSub]
-				sentimentsPerWord["sadness"] = wordsAndValues[9-columnSub]
-				sentimentsPerWord["surprise"] = wordsAndValues[10-columnSub]
-				sentimentsPerWord["trust"] = wordsAndValues[11-columnSub].rstrip()
+				sentimentsPerWord["positive"] = int(wordsAndValues[2-columnSub])
+				sentimentsPerWord["negative"] = int(wordsAndValues[3-columnSub])
+				sentimentsPerWord["anger"] = int(wordsAndValues[4-columnSub])
+				sentimentsPerWord["anticipation"] = int(wordsAndValues[5-columnSub])
+				sentimentsPerWord["disgust"] = int(wordsAndValues[6-columnSub])
+				sentimentsPerWord["fear"] = int(wordsAndValues[7-columnSub])
+				sentimentsPerWord["joy"] = int(wordsAndValues[8-columnSub])
+				sentimentsPerWord["sadness"] = int(wordsAndValues[9-columnSub])
+				sentimentsPerWord["surprise"] = int(wordsAndValues[10-columnSub])
+				sentimentsPerWord["trust"] = int(wordsAndValues[11-columnSub].rstrip())
 
 				nrcSentimentDict[unicode(word)] = sentimentsPerWord
 		
@@ -143,7 +143,7 @@ class Lexicon_Handler:
 		for line in sentimentDictText:
 			wordAndValue = line.split("\t")
 			word = wordAndValue[0]
-			value = wordAndValue[1].rstrip()
+			value = float(wordAndValue[1].rstrip())
 			sentimentDict[unicode(word)] = value
 
 		self._sentimentDictLemmas = sentimentDict
@@ -186,7 +186,7 @@ class Lexicon_Handler:
 		
 		for word in nrcSentimentDict:
 			sentiments = nrcSentimentDict[word]
-			if(all(value == "0" for value in sentiments.values())):
+			if(all(value == 0 for value in sentiments.values())):
 				totalZeros[word] = sentiments
 		return totalZeros
 
