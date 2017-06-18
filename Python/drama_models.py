@@ -242,6 +242,8 @@ class SpeechModel:
 
         self._text = None
 
+        self._sentimentInformation = None
+
 # model for speakers
 class SpeakerModel:
 

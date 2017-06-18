@@ -9,6 +9,7 @@ from drama_parser import *
 from language_processor import *
 from lexicon_handler import *
 from sa_models import *
+from sa_metrics import *
 
 def main():
 	reload(sys)
@@ -19,11 +20,25 @@ def main():
 
 	parser = DramaParser()
 	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
-	sa.attachSAInformationToSingleDrama(dramaModel)
+	sa.attachSentimentBearingWordsToSpeeches(dramaModel)
+
+	"""
+	for act in dramaModel._acts:
+		for conf in act._configurations:
+			for speech in conf._speeches:
+				sentimentInformation = speech._sentimentInformation
+				sentimentBearingWords  = sentimentInformation._sentimentBearingWords
+				for word in sentimentBearingWords:
+					print(word._token)
+					print(word._positiveNrc)
+	"""
+	for act in dramaModel._acts:
+		for conf in act._configurations:
+			for speech in conf._speeches:
+				sa.calcSentimentMetrics(speech._sentimentInformation)
+
 
 class Sentiment_Analyzer:
-
-	
 
 	def __init__(self):
 		self._languageProcessor = None
@@ -40,65 +55,78 @@ class Sentiment_Analyzer:
 		lexiconHandlerNrc.initSingleDict("NRC-Lemmas")
 		self._nrc = lexiconHandlerNrc._sentimentDictLemmas
 
-	def attachSAInformationToSingleDrama(self, dramaModel):
-		lengthInWords = 0
-		for act in dramaModel._acts:
-			
-			for configuration in act._configurations:
-				
-				for speech in configuration._speeches[0:3]:
-					text = speech._text
-					lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)
-					
-					lengthInWords = lengthInWords + len(lemmasWithLanguageInfo)					
+	def attachStructuralSentimentInformationToDrama(self, dramaModel):
+		print("#TODO")
 
+	def calcSentimentMetrics(self, sentimentInformation):
+		sentimentBearingWords = sentimentInformation._sentimentBearingWords
+		saMetrics = Sentiment_Metrics()
+		saMetrics.init(sentimentBearingWords)
+		print(saMetrics)
+
+	def attachSentimentBearingWordsToSpeeches(self, dramaModel):
+		lengthInWords = 0
+		sentimentBearingWordsLength = 0
+		for act in dramaModel._acts:
+			for configuration in act._configurations[0:2]:
+				for speech in configuration._speeches:
+					text = speech._text
+					lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					
 					sentimentBearingWords = self.getSentimentBearingWords(lemmasWithLanguageInfo)
-					print(len(sentimentBearingWords))
+
+					sentimentInformationSpeech = Sentiment_Information()
+					sentimentInformationSpeech._sentimentBearingWords = sentimentBearingWords
+					speech._sentimentInformation = sentimentInformationSpeech
+
+					"""
+					sentimentBearingWordsLength = sentimentBearingWordsLength + len(sentimentBearingWords)
+					lengthInWords = lengthInWords + len(lemmasWithLanguageInfo)
+					print(sentimentBearingWordsLength)
 					print(lengthInWords)
+					"""
 
 	def getLemmasWithLanguageInfo(self, text):
 		self._languageProcessor.processText(text)
 		lemmaInformation = self._languageProcessor._lemmasWithLanguageInfo
 		return lemmaInformation
 
+	def setSentiWSInformation(self, sentimentBearingWord):
+		if(sentimentBearingWord._lemma in self._sentiWS):
+			sentimentBearingWord._polaritySentiWS = self._sentiWS[sentimentBearingWord._lemma]
+	
+	def setNrcInformation(self, sentimentBearingWord):
+		if(sentimentBearingWord._lemma in self._nrc):
+			sentiments = self._nrc[sentimentBearingWord._lemma]
+			sentimentBearingWord._positiveNrc = sentiments["positive"]
+			sentimentBearingWord._negativeNrc = sentiments["negative"]
+			sentimentBearingWord._anger = sentiments["anger"]
+			sentimentBearingWord._anticipation = sentiments["anticipation"]
+			sentimentBearingWord._disgust = sentiments["disgust"]
+			sentimentBearingWord._fear = sentiments["fear"]
+			sentimentBearingWord._joy = sentiments["joy"]
+			sentimentBearingWord._sadness = sentiments["sadness"]
+			sentimentBearingWord._surprise = sentiments["surprise"]
+			sentimentBearingWord._trust = sentiments["trust"]
+
+	def getSentimentBearingWord(self, languageInfo):
+		sentimentBearingWord = Sentiment_Bearing_Word()
+		sentimentBearingWord._lemma = languageInfo[0]
+		sentimentBearingWord._token = languageInfo[1][0]
+		sentimentBearingWord._POS = languageInfo[1][1]
+
+		self.setSentiWSInformation(sentimentBearingWord)
+		self.setNrcInformation(sentimentBearingWord)
+
+		return sentimentBearingWord
+				
 	def getSentimentBearingWords(self, lemmasWithLanguageInfo):
 		sentimentBearingWords = []
-		
+
 		for languageInfo in lemmasWithLanguageInfo:
 			lemma = languageInfo[0]
-			token = languageInfo[1][0]
-			POS = languageInfo[1][1]
-
-			sentimentBearingWord = Sentiment_Bearing_Word()
 			
 			if (self.isSentimentBearingWord(lemma)):
-				sentimentBearingWord._lemma = lemma
-				sentimentBearingWord._token = token
-				sentimentBearingWord._POS = POS
-				
-				if(lemma in self._sentiWS):
-					sentimentBearingWord._polaritySentiWS = self._sentiWS[lemma]
-
-				if(lemma in self._nrc):
-					sentiments = self._nrc[lemma]
-					sentimentBearingWord._positiveNrc = sentiments["positive"]
-					sentimentBearingWord._negativeNrc = sentiments["negative"]
-					sentimentBearingWord._anger = sentiments["anger"]
-					sentimentBearingWord._anticipation = sentiments["anticipation"]
-					sentimentBearingWord._disgust = sentiments["disgust"]
-					sentimentBearingWord._fear = sentiments["fear"]
-					sentimentBearingWord._joy = sentiments["joy"]
-					sentimentBearingWord._sadness = sentiments["sadness"]
-					sentimentBearingWord._surprise = sentiments["surprise"]
-					sentimentBearingWord._trust = sentiments["trust"]
-
-				print(sentimentBearingWord)
-				print(sentimentBearingWord._lemma)
-				print(sentimentBearingWord._token)
-				print(sentimentBearingWord._POS)
-				print(sentimentBearingWord._polaritySentiWS)
-				print(sentimentBearingWord._positiveNrc)
-				print(sentimentBearingWord._negativeNrc)
+				sentimentBearingWord = self.getSentimentBearingWord(languageInfo)
 				sentimentBearingWords.append(sentimentBearingWord)
 
 		return sentimentBearingWords
