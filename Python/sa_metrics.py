@@ -5,6 +5,7 @@ import re
 import collections
 import locale
 import sys
+from sa_models import *
 
 def main():
 	reload(sys)
@@ -57,6 +58,26 @@ class Sentiment_Metrics:
 			sadnessTotal = sadnessTotal + word._sadness
 			surpriseTotal = surpriseTotal + word._surprise
 			trustTotal = trustTotal + word._trust
+
+		self._polaritySentiWSTotal = polaritySentiWSTotal
+		self._positiveNrcTotal = positiveNrcTotal
+		self._negativeNrcTotal = negativeNrcTotal
+		self._angerTotal = angerTotal
+		self._anticipationTotal = anticipationTotal
+		self._disgustTotal = disgustTotal
+		self._fearTotal = fearTotal
+		self._joyTotal = joyTotal
+		self._sadnessTotal = sadnessTotal
+		self._surpriseTotal = surpriseTotal
+		self._trustTotal = trustTotal
+
+	def printAllInformation(self):
+		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
+		self._angerTotal,self._anticipationTotal,self._disgustTotal,self._fearTotal,
+		self._joyTotal,self._sadnessTotal,self._surpriseTotal,self._trustTotal])
+		info = "All Values: " + sentiments
+		print sentiments
+
 
 if __name__ == "__main__":
     main()

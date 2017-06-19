@@ -35,10 +35,7 @@ def main():
 	for act in dramaModel._acts:
 		for conf in act._configurations[0:2]:
 			for speech in conf._speeches:
-				#saMetrics = sa.calcAndGetSentimentMetrics(speech._sentimentInformation)
-				print(len(speech._sentimentInformation._sentimentBearingWords))
-				
-
+				saMetrics = sa.calcAndGetSentimentMetrics(speech._sentimentInformation)
 
 class Sentiment_Analyzer:
 
@@ -64,8 +61,7 @@ class Sentiment_Analyzer:
 		sentimentBearingWords = sentimentInformation._sentimentBearingWords
 		saMetrics = Sentiment_Metrics()
 		saMetrics.init(sentimentBearingWords)
-		print(saMetrics._polaritySentiWSTotal)
-		print(saMetrics._positiveNrcTotal)
+		saMetrics.printAllInformation()
 		return saMetrics
 
 	def attachSentimentBearingWordsToSpeeches(self, dramaModel):
@@ -76,9 +72,9 @@ class Sentiment_Analyzer:
 				for speech in configuration._speeches:
 					text = speech._text
 					lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					
-					print(lemmasWithLanguageInfo)
+
 					sentimentBearingWords = self.getSentimentBearingWords(lemmasWithLanguageInfo)
-					print(len(sentimentBearingWords))
+
 					sentimentInformationSpeech = Sentiment_Information()
 					sentimentInformationSpeech._sentimentBearingWords = sentimentBearingWords
 					speech._sentimentInformation = sentimentInformationSpeech

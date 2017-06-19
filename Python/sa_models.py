@@ -38,5 +38,13 @@ class Sentiment_Bearing_Word:
 		self._lemma = ""
 		self._POS = ""
 
+	def printAllInformation(self):
+		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
+		sentiments = ", ".join(str(x) for x in [self._polaritySentiWS,self._positiveNrc,self._negativeNrc,
+		self._anger,self._anticipation,self._disgust,self._fear,self._joy,self._sadness,self._surprise,self._trust])
+
+		info = info + " " + sentiments
+		print info
+
 if __name__ == "__main__":
     main()
