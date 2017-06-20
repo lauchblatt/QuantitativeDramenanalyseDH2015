@@ -26,6 +26,9 @@ class DramaModel:
         self._speechesLength_min = 0
         self._speechesLength_med = 0
 
+        self._sentimentBearingWords = None
+        self._sentimentMetrics = None
+
     # calculates the configuration matrix
     def calc_config_matrix (self):
         configuration_matrix = []
@@ -172,7 +175,10 @@ class ActModel:
         self._speechesLength_avg = 0
         self._speechesLength_max = 0
         self._speechesLength_min = 0
-        self._speechesLength_med = 0 
+        self._speechesLength_med = 0
+
+        self._sentimentBearingWords = None
+        self._sentimentMetrics = None
 
     # returns all speeches for the act
     def get_speeches_act(self):
@@ -216,6 +222,9 @@ class ConfigurationModel:
         self._speechesLength_max = 0
         self._speechesLength_min = 0
         self._speechesLength_med = 0
+
+        self._sentimentBearingWords = None
+        self._sentimentMetrics = None
 
     # calculates speech statistics for configuration
     def calc_speeches_statistics(self):

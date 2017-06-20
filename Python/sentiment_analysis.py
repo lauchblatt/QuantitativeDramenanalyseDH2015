@@ -32,13 +32,28 @@ def main():
 					print(word._token)
 					print(word._positiveNrc)
 	"""
+
 	for act in dramaModel._acts:
 		for conf in act._configurations[0:2]:
 			for speech in conf._speeches:
-				sentimentMetrics = sa.calcAndGetSentimentMetrics(speech._sentimentBearingWords)
-				speech._sentimentMetrics = sentimentMetrics
+				sentimentMetricsSpeech = sa.calcAndGetSentimentMetrics(speech._sentimentBearingWords)
+				speech._sentimentMetrics = sentimentMetricsSpeech
+				print("Speech")
 				speech._sentimentMetrics.printAllInfo()
-
+			print("Conf")
+			sentimentMetricsConf = sa.calcAndGetSentimentMetrics(conf._sentimentBearingWords)
+			conf._sentimentMetrics = sentimentMetricsConf
+			conf._sentimentMetrics.printAllInfo()
+		print("Act")
+		sentimentMetricsAct = sa.calcAndGetSentimentMetrics(act._sentimentBearingWords)
+		act._sentimentMetrics = sentimentMetricsAct
+		act._sentimentMetrics.printAllInfo()
+	print("Drama")
+	sentimentMetricsDrama = sa.calcAndGetSentimentMetrics(dramaModel._sentimentBearingWords)
+	dramaModel._sentimentMetrics = sentimentMetricsDrama
+	dramaModel._sentimentMetrics.printAllInfo()
+	
+	
 class Sentiment_Analyzer:
 
 	def __init__(self):
@@ -79,13 +94,13 @@ class Sentiment_Analyzer:
 					text = speech._text
 					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
 
-					sentimentBearingWordsConf.append(speech._sentimentBearingWords)
-					sentimentBearingWordsAct.append(speech._sentimentBearingWords)
-					sentimentBearingWordsDrama.append(speech._sentimentBearingWords)
+					sentimentBearingWordsConf.extend(speech._sentimentBearingWords)
+					sentimentBearingWordsAct.extend(speech._sentimentBearingWords)
+					sentimentBearingWordsDrama.extend(speech._sentimentBearingWords)
 
 				configuration._sentimentBearingWords = sentimentBearingWordsConf
 
-			act._sentimentBearingwords = sentimentBearingWordsAct
+			act._sentimentBearingWords = sentimentBearingWordsAct
 
 		dramaModel._sentimentBearingWords = sentimentBearingWordsDrama
 

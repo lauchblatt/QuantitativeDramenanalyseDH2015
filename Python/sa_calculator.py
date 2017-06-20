@@ -30,25 +30,30 @@ class Sentiment_Calculator:
 		sadnessTotal = 0
 		surpriseTotal = 0
 		trustTotal = 0
-
-		for word in self._sentimentBearingWords:
-			#print("### " + word._token)
-			#print("Total: " + str(polaritySentiWSTotal) + " + " + str(word._polaritySentiWS))
-			polaritySentiWSTotal = polaritySentiWSTotal + word._polaritySentiWS
-			positiveNrcTotal = positiveNrcTotal + word._positiveNrc
-			negativeNrcTotal = negativeNrcTotal + word._negativeNrc
-			angerTotal = angerTotal + word._anger
-			anticipationTotal = anticipationTotal + word._anticipation
-			disgustTotal = disgustTotal + word._disgust
-			fearTotal = fearTotal + word._fear
-			joyTotal = joyTotal + word._joy
-			sadnessTotal = sadnessTotal + word._sadness
-			surpriseTotal = surpriseTotal + word._surprise
-			trustTotal = trustTotal + word._trust
+		if self._sentimentBearingWords is not None:
+			for word in self._sentimentBearingWords:
+				#print("### " + word._token)
+				#print("Total: " + str(polaritySentiWSTotal) + " + " + str(word._polaritySentiWS))
+				polaritySentiWSTotal = polaritySentiWSTotal + word._polaritySentiWS
+				positiveNrcTotal = positiveNrcTotal + word._positiveNrc
+				negativeNrcTotal = negativeNrcTotal + word._negativeNrc
+				angerTotal = angerTotal + word._anger
+				anticipationTotal = anticipationTotal + word._anticipation
+				disgustTotal = disgustTotal + word._disgust
+				fearTotal = fearTotal + word._fear
+				joyTotal = joyTotal + word._joy
+				sadnessTotal = sadnessTotal + word._sadness
+				surpriseTotal = surpriseTotal + word._surprise
+				trustTotal = trustTotal + word._trust
+		else:
+			print("###############")
 
 		self._sentimentMetrics._polaritySentiWSTotal = polaritySentiWSTotal
+		
 		self._sentimentMetrics._positiveNrcTotal = positiveNrcTotal
 		self._sentimentMetrics._negativeNrcTotal = negativeNrcTotal
+		self._sentimentMetrics._polarityNrcTotal = positiveNrcTotal - negativeNrcTotal
+
 		self._sentimentMetrics._angerTotal = angerTotal
 		self._sentimentMetrics._anticipationTotal = anticipationTotal
 		self._sentimentMetrics._disgustTotal = disgustTotal

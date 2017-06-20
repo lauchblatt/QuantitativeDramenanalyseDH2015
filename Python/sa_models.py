@@ -18,6 +18,8 @@ class Sentiment_Metrics:
 
 		self._positiveNrcTotal = 0
 		self._negativeNrcTotal = 0
+		self._polarityNrcTotal = 0
+
 		self._angerTotal = 0
 		self._anticipationTotal = 0
 		self._disgustTotal = 0
@@ -29,7 +31,7 @@ class Sentiment_Metrics:
 
 	def printAllInfo(self):
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
-		self._angerTotal,self._anticipationTotal,self._disgustTotal,self._fearTotal,
+		self._polarityNrcTotal, self._angerTotal,self._anticipationTotal,self._disgustTotal,self._fearTotal,
 		self._joyTotal,self._sadnessTotal,self._surpriseTotal,self._trustTotal])
 		info = "All Values: " + sentiments
 		print sentiments
