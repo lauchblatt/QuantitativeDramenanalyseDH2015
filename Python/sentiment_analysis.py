@@ -9,7 +9,7 @@ from drama_parser import *
 from language_processor import *
 from lexicon_handler import *
 from sa_models import *
-from sa_metrics import *
+from sa_calculator import *
 
 def main():
 	reload(sys)
@@ -20,7 +20,7 @@ def main():
 
 	parser = DramaParser()
 	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
-	sa.attachSentimentBearingWordsToSpeeches(dramaModel)
+	sa.attachSentimentBearingWordsToDrama(dramaModel)
 
 	"""
 	for act in dramaModel._acts:
@@ -35,7 +35,9 @@ def main():
 	for act in dramaModel._acts:
 		for conf in act._configurations[0:2]:
 			for speech in conf._speeches:
-				saMetrics = sa.calcAndGetSentimentMetrics(speech._sentimentInformation)
+				sentimentMetrics = sa.calcAndGetSentimentMetrics(speech._sentimentBearingWords)
+				speech._sentimentMetrics = sentimentMetrics
+				speech._sentimentMetrics.printAllInfo()
 
 class Sentiment_Analyzer:
 
@@ -57,34 +59,41 @@ class Sentiment_Analyzer:
 	def attachStructuralSentimentInformationToDrama(self, dramaModel):
 		print("#TODO")
 
-	def calcAndGetSentimentMetrics(self, sentimentInformation):
-		sentimentBearingWords = sentimentInformation._sentimentBearingWords
-		saMetrics = Sentiment_Metrics()
-		saMetrics.init(sentimentBearingWords)
-		saMetrics.printAllInformation()
-		return saMetrics
+	def calcAndGetSentimentMetrics(self, sentimentBearingWords):
+		sCalculator = Sentiment_Calculator()
+		sCalculator._sentimentBearingWords = sentimentBearingWords
+		sCalculator.calcTotalMetrics()
 
-	def attachSentimentBearingWordsToSpeeches(self, dramaModel):
-		lengthInWords = 0
-		sentimentBearingWordsLength = 0
+		return sCalculator._sentimentMetrics
+
+	def attachSentimentBearingWordsToDrama(self, dramaModel):
+		sentimentBearingWordsDrama = []
+
 		for act in dramaModel._acts:
+			sentimentBearingWordsAct = []
+
 			for configuration in act._configurations[0:2]:
+				sentimentBearingWordsConf = []
+
 				for speech in configuration._speeches:
 					text = speech._text
-					lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					
+					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
 
-					sentimentBearingWords = self.getSentimentBearingWords(lemmasWithLanguageInfo)
+					sentimentBearingWordsConf.append(speech._sentimentBearingWords)
+					sentimentBearingWordsAct.append(speech._sentimentBearingWords)
+					sentimentBearingWordsDrama.append(speech._sentimentBearingWords)
 
-					sentimentInformationSpeech = Sentiment_Information()
-					sentimentInformationSpeech._sentimentBearingWords = sentimentBearingWords
-					speech._sentimentInformation = sentimentInformationSpeech
+				configuration._sentimentBearingWords = sentimentBearingWordsConf
 
-					"""
-					sentimentBearingWordsLength = sentimentBearingWordsLength + len(sentimentBearingWords)
-					lengthInWords = lengthInWords + len(lemmasWithLanguageInfo)
-					print(sentimentBearingWordsLength)
-					print(lengthInWords)
-					"""
+			act._sentimentBearingwords = sentimentBearingWordsAct
+
+		dramaModel._sentimentBearingWords = sentimentBearingWordsDrama
+
+
+	def getSentimentBearingWordsSpeech(self, text):
+		lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					
+		sentimentBearingWords = self.getSentimentBearingWords(lemmasWithLanguageInfo)
+		return sentimentBearingWords
 
 	def getLemmasWithLanguageInfo(self, text):
 		self._languageProcessor.processText(text)
