@@ -21,6 +21,7 @@ def main():
 	parser = DramaParser()
 	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
+	sa.attachStructuralSentimentMetricsToDrama(dramaModel)
 
 	"""
 	for act in dramaModel._acts:
@@ -32,26 +33,6 @@ def main():
 					print(word._token)
 					print(word._positiveNrc)
 	"""
-
-	for act in dramaModel._acts:
-		for conf in act._configurations[0:2]:
-			for speech in conf._speeches:
-				sentimentMetricsSpeech = sa.calcAndGetSentimentMetrics(speech._sentimentBearingWords)
-				speech._sentimentMetrics = sentimentMetricsSpeech
-				print("Speech")
-				speech._sentimentMetrics.printAllInfo()
-			print("Conf")
-			sentimentMetricsConf = sa.calcAndGetSentimentMetrics(conf._sentimentBearingWords)
-			conf._sentimentMetrics = sentimentMetricsConf
-			conf._sentimentMetrics.printAllInfo()
-		print("Act")
-		sentimentMetricsAct = sa.calcAndGetSentimentMetrics(act._sentimentBearingWords)
-		act._sentimentMetrics = sentimentMetricsAct
-		act._sentimentMetrics.printAllInfo()
-	print("Drama")
-	sentimentMetricsDrama = sa.calcAndGetSentimentMetrics(dramaModel._sentimentBearingWords)
-	dramaModel._sentimentMetrics = sentimentMetricsDrama
-	dramaModel._sentimentMetrics.printAllInfo()
 	
 	
 class Sentiment_Analyzer:
@@ -71,8 +52,26 @@ class Sentiment_Analyzer:
 		lexiconHandlerNrc.initSingleDict("NRC-Lemmas")
 		self._nrc = lexiconHandlerNrc._sentimentDictLemmas
 
-	def attachStructuralSentimentInformationToDrama(self, dramaModel):
-		print("#TODO")
+	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
+		for act in dramaModel._acts:
+			for conf in act._configurations[0:2]:
+				for speech in conf._speeches:
+					sentimentMetricsSpeech = self.calcAndGetSentimentMetrics(speech._sentimentBearingWords)
+					speech._sentimentMetrics = sentimentMetricsSpeech
+					#print("Speech")
+					speech._sentimentMetrics.printAllInfo()
+				#print("Conf")
+				sentimentMetricsConf = self.calcAndGetSentimentMetrics(conf._sentimentBearingWords)
+				conf._sentimentMetrics = sentimentMetricsConf
+				conf._sentimentMetrics.printAllInfo()
+			#print("Act")
+			sentimentMetricsAct = self.calcAndGetSentimentMetrics(act._sentimentBearingWords)
+			act._sentimentMetrics = sentimentMetricsAct
+			act._sentimentMetrics.printAllInfo()
+		#print("Drama")
+		sentimentMetricsDrama = self.calcAndGetSentimentMetrics(dramaModel._sentimentBearingWords)
+		dramaModel._sentimentMetrics = sentimentMetricsDrama
+		dramaModel._sentimentMetrics.printAllInfo()
 
 	def calcAndGetSentimentMetrics(self, sentimentBearingWords):
 		sCalculator = Sentiment_Calculator()
