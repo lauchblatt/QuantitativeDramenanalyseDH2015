@@ -17,6 +17,16 @@ class Sentiment_Calculator:
 
 		self._sentimentBearingWords = []
 		self._sentimentMetrics = Sentiment_Metrics()
+		self._sentimentMetrics.initMetrics()
+
+	def calcNormalisedMetrics(self, lengthInWords):
+		if lengthInWords is 0:
+			for metric in self._sentimentMetrics._metricsTotal:
+				self._sentimentMetrics._metricsNormalised[metric] = 0
+		else:
+			for metric in self._sentimentMetrics._metricsTotal:
+				metricTotal = self._sentimentMetrics._metricsTotal[metric]
+				self._sentimentMetrics._metricsNormalised[metric] = metricTotal/lengthInWords
 
 	def calcTotalMetrics(self):
 		polaritySentiWSTotal = 0
@@ -32,8 +42,6 @@ class Sentiment_Calculator:
 		trustTotal = 0
 		if self._sentimentBearingWords is not None:
 			for word in self._sentimentBearingWords:
-				#print("### " + word._token)
-				#print("Total: " + str(polaritySentiWSTotal) + " + " + str(word._polaritySentiWS))
 				polaritySentiWSTotal = polaritySentiWSTotal + word._polaritySentiWS
 				positiveNrcTotal = positiveNrcTotal + word._positiveNrc
 				negativeNrcTotal = negativeNrcTotal + word._negativeNrc
@@ -45,23 +53,21 @@ class Sentiment_Calculator:
 				sadnessTotal = sadnessTotal + word._sadness
 				surpriseTotal = surpriseTotal + word._surprise
 				trustTotal = trustTotal + word._trust
-		else:
-			print("###############")
 
-		self._sentimentMetrics._polaritySentiWSTotal = polaritySentiWSTotal
+		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = polaritySentiWSTotal
 		
-		self._sentimentMetrics._positiveNrcTotal = positiveNrcTotal
-		self._sentimentMetrics._negativeNrcTotal = negativeNrcTotal
-		self._sentimentMetrics._polarityNrcTotal = positiveNrcTotal - negativeNrcTotal
+		self._sentimentMetrics._metricsTotal["positiveNrc"] = positiveNrcTotal
+		self._sentimentMetrics._metricsTotal["negativeNrc"]  = negativeNrcTotal
+		self._sentimentMetrics._metricsTotal["polarityNrc"] = positiveNrcTotal - negativeNrcTotal
 
-		self._sentimentMetrics._angerTotal = angerTotal
-		self._sentimentMetrics._anticipationTotal = anticipationTotal
-		self._sentimentMetrics._disgustTotal = disgustTotal
-		self._sentimentMetrics._fearTotal = fearTotal
-		self._sentimentMetrics._joyTotal = joyTotal
-		self._sentimentMetrics._sadnessTotal = sadnessTotal
-		self._sentimentMetrics._surpriseTotal = surpriseTotal
-		self._sentimentMetrics._trustTotal = trustTotal
+		self._sentimentMetrics._metricsTotal["anger"] = angerTotal
+		self._sentimentMetrics._metricsTotal["anticipation"] = anticipationTotal
+		self._sentimentMetrics._metricsTotal["disgust"] = disgustTotal
+		self._sentimentMetrics._metricsTotal["fear"] = fearTotal
+		self._sentimentMetrics._metricsTotal["joy"] = joyTotal
+		self._sentimentMetrics._metricsTotal["sadness"] = sadnessTotal
+		self._sentimentMetrics._metricsTotal["surprise"] = surpriseTotal
+		self._sentimentMetrics._metricsTotal["trust"] = trustTotal
 
 
 if __name__ == "__main__":

@@ -58,16 +58,16 @@ class Sentiment_Analyzer:
 				for speech in conf._speeches:
 					print("Speech")
 					self.attachSentimentMetricsToStructuralUnit(speech)
-					speech._sentimentMetrics.printAllInfo()
+					#speech._sentimentMetrics.printAllInfo()
 				print("Conf")
 				self.attachSentimentMetricsToStructuralUnit(conf)
-				conf._sentimentMetrics.printAllInfo()
+				#conf._sentimentMetrics.printAllInfo()
 			print("Act")
 			self.attachSentimentMetricsToStructuralUnit(act)
-			act._sentimentMetrics.printAllInfo()
+			#act._sentimentMetrics.printAllInfo()
 		print("Drama")
 		self.attachSentimentMetricsToStructuralUnit(dramaModel)
-		dramaModel._sentimentMetrics.printAllInfo()
+		#dramaModel._sentimentMetrics.printAllInfo()
 
 	def attachSentimentMetricsToStructuralUnit(self, structuralUnit):
 		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords)
@@ -77,6 +77,7 @@ class Sentiment_Analyzer:
 		sCalculator = Sentiment_Calculator()
 		sCalculator._sentimentBearingWords = sentimentBearingWords
 		sCalculator.calcTotalMetrics()
+		#sCalculator.calcNormalisedMetrics()
 
 		return sCalculator._sentimentMetrics
 
@@ -92,7 +93,9 @@ class Sentiment_Analyzer:
 				for speech in configuration._speeches:
 					text = speech._text
 					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
-
+					speechLength = len(self._languageProcessor._lemmasWithLanguageInfo)
+					speech._lenght = speechLength
+						
 					sentimentBearingWordsConf.extend(speech._sentimentBearingWords)
 					sentimentBearingWordsAct.extend(speech._sentimentBearingWords)
 					sentimentBearingWordsDrama.extend(speech._sentimentBearingWords)

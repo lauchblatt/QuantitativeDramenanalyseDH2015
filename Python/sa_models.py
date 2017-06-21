@@ -14,20 +14,25 @@ def main():
 class Sentiment_Metrics:
 	#List of SentimentBearingWord-Objects
 	def __init__(self):
-		self._polaritySentiWSTotal = 0
+		self._metricsTotal = {}
+		self._metricsNormalised = {}
 
-		self._positiveNrcTotal = 0
-		self._negativeNrcTotal = 0
-		self._polarityNrcTotal = 0
+	def initMetrics(self):
+		self._metricsTotal["polaritySentiWS"] = 0
 
-		self._angerTotal = 0
-		self._anticipationTotal = 0
-		self._disgustTotal = 0
-		self._fearTotal = 0
-		self._joyTotal = 0
-		self._sadnessTotal = 0
-		self._surpriseTotal = 0
-		self._trustTotal = 0
+		self._metricsTotal["positiveNrc"] = 0
+		self._metricsTotal["negativeNrc"] = 0
+		self._metricsTotal["polarityNrc"] = 0
+
+		self._metricsTotal["anger"] = 0
+		self._metricsTotal["anticipation"] = 0
+		self._metricsTotal["disgust"] = 0
+		self._metricsTotal["fear"] = 0
+		self._metricsTotal["joy"] = 0
+		self._metricsTotal["sadness"] = 0
+		self._metricsTotal["surprise"] = 0
+		self._metricsTotal["trust"] = 0
+
 
 	def printAllInfo(self):
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
