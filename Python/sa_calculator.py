@@ -26,7 +26,7 @@ class Sentiment_Calculator:
 		else:
 			for metric in self._sentimentMetrics._metricsTotal:
 				metricTotal = self._sentimentMetrics._metricsTotal[metric]
-				self._sentimentMetrics._metricsNormalised[metric] = metricTotal/lengthInWords
+				self._sentimentMetrics._metricsNormalised[metric] = float(metricTotal)/lengthInWords
 
 	def calcTotalMetrics(self):
 		polaritySentiWSTotal = 0

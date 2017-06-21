@@ -35,8 +35,15 @@ class Sentiment_Metrics:
 
 
 	def printAllInfo(self):
+		print("Total Values: ")
 		for metric,value in self._metricsTotal.items():
-			print(metric + ": " + str(value))
+			item = metric + ": " + str(value)
+			print item,
+
+		print("Normalised Values: ")
+		for metric,value in self._metricsNormalised.items():
+			item = metric + ": " + str(value)
+			print item,
 
 		"""
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
