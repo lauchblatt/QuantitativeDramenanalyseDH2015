@@ -22,7 +22,7 @@ def main():
 	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
 	sa.attachLengthInWordsToStructuralElements(dramaModel)
-	#sa.attachStructuralSentimentMetricsToDrama(dramaModel)
+	sa.attachStructuralSentimentMetricsToDrama(dramaModel)
 
 	"""
 	for act in dramaModel._acts:
@@ -59,26 +59,26 @@ class Sentiment_Analyzer:
 				for speech in conf._speeches:
 					print("Speech")
 					self.attachSentimentMetricsToStructuralUnit(speech)
-					#speech._sentimentMetrics.printAllInfo()
+					speech._sentimentMetrics.printAllInfo()
 				print("Conf")
 				self.attachSentimentMetricsToStructuralUnit(conf)
-				#conf._sentimentMetrics.printAllInfo()
+				conf._sentimentMetrics.printAllInfo()
 			print("Act")
 			self.attachSentimentMetricsToStructuralUnit(act)
-			#act._sentimentMetrics.printAllInfo()
+			act._sentimentMetrics.printAllInfo()
 		print("Drama")
 		self.attachSentimentMetricsToStructuralUnit(dramaModel)
-		#dramaModel._sentimentMetrics.printAllInfo()
+		dramaModel._sentimentMetrics.printAllInfo()
 
 	def attachSentimentMetricsToStructuralUnit(self, structuralUnit):
-		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords)
+		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords, structuralUnit._lengthInWords)
 		structuralUnit._sentimentMetrics = sentimentMetrics
 
-	def calcAndGetSentimentMetrics(self, sentimentBearingWords):
+	def calcAndGetSentimentMetrics(self, sentimentBearingWords, lengthInWords):
 		sCalculator = Sentiment_Calculator()
 		sCalculator._sentimentBearingWords = sentimentBearingWords
 		sCalculator.calcTotalMetrics()
-		#sCalculator.calcNormalisedMetrics()
+		sCalculator.calcNormalisedMetrics(lengthInWords)
 
 		return sCalculator._sentimentMetrics
 

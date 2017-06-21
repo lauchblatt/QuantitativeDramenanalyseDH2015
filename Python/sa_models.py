@@ -35,11 +35,16 @@ class Sentiment_Metrics:
 
 
 	def printAllInfo(self):
+		for metric,value in self._metricsTotal.items():
+			print(metric + ": " + str(value))
+
+		"""
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
 		self._polarityNrcTotal, self._angerTotal,self._anticipationTotal,self._disgustTotal,self._fearTotal,
 		self._joyTotal,self._sadnessTotal,self._surpriseTotal,self._trustTotal])
 		info = "All Values: " + sentiments
 		print sentiments
+		"""
 
 class Sentiment_Bearing_Word:
 
