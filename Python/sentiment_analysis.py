@@ -56,22 +56,22 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			for conf in act._configurations[0:2]:
 				for speech in conf._speeches:
-					sentimentMetricsSpeech = self.calcAndGetSentimentMetrics(speech._sentimentBearingWords)
-					speech._sentimentMetrics = sentimentMetricsSpeech
-					#print("Speech")
+					print("Speech")
+					self.attachSentimentMetricsToStructuralUnit(speech)
 					speech._sentimentMetrics.printAllInfo()
-				#print("Conf")
-				sentimentMetricsConf = self.calcAndGetSentimentMetrics(conf._sentimentBearingWords)
-				conf._sentimentMetrics = sentimentMetricsConf
+				print("Conf")
+				self.attachSentimentMetricsToStructuralUnit(conf)
 				conf._sentimentMetrics.printAllInfo()
-			#print("Act")
-			sentimentMetricsAct = self.calcAndGetSentimentMetrics(act._sentimentBearingWords)
-			act._sentimentMetrics = sentimentMetricsAct
+			print("Act")
+			self.attachSentimentMetricsToStructuralUnit(act)
 			act._sentimentMetrics.printAllInfo()
-		#print("Drama")
-		sentimentMetricsDrama = self.calcAndGetSentimentMetrics(dramaModel._sentimentBearingWords)
-		dramaModel._sentimentMetrics = sentimentMetricsDrama
+		print("Drama")
+		self.attachSentimentMetricsToStructuralUnit(dramaModel)
 		dramaModel._sentimentMetrics.printAllInfo()
+
+	def attachSentimentMetricsToStructuralUnit(self, structuralUnit):
+		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords)
+		structuralUnit._sentimentMetrics = sentimentMetrics
 
 	def calcAndGetSentimentMetrics(self, sentimentBearingWords):
 		sCalculator = Sentiment_Calculator()
