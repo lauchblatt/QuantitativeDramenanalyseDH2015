@@ -59,16 +59,16 @@ class Sentiment_Analyzer:
 				for speech in conf._speeches:
 					print("Speech")
 					self.attachSentimentMetricsToStructuralUnit(speech)
-					speech._sentimentMetrics.printAllInfo()
+					speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
 				print("Conf")
 				self.attachSentimentMetricsToStructuralUnit(conf)
-				conf._sentimentMetrics.printAllInfo()
+				conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
 			print("Act")
 			self.attachSentimentMetricsToStructuralUnit(act)
-			act._sentimentMetrics.printAllInfo()
+			act._sentimentMetrics.printAllInfo(act._lengthInWords)
 		print("Drama")
 		self.attachSentimentMetricsToStructuralUnit(dramaModel)
-		dramaModel._sentimentMetrics.printAllInfo()
+		dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
 
 	def attachSentimentMetricsToStructuralUnit(self, structuralUnit):
 		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords, structuralUnit._lengthInWords)

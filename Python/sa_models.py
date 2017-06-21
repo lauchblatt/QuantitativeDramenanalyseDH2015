@@ -34,7 +34,7 @@ class Sentiment_Metrics:
 		self._metricsTotal["trust"] = 0
 
 
-	def printAllInfo(self):
+	def printAllInfo(self, lengthInWords):
 		print("Total Values: ")
 		for metric,value in self._metricsTotal.items():
 			item = metric + ": " + str(value)
@@ -42,6 +42,7 @@ class Sentiment_Metrics:
 
 		print("Normalised Values: ")
 		for metric,value in self._metricsNormalised.items():
+			print lengthInWords,
 			item = metric + ": " + str(value)
 			print item,
 
