@@ -21,7 +21,8 @@ def main():
 	parser = DramaParser()
 	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
-	sa.attachStructuralSentimentMetricsToDrama(dramaModel)
+	sa.attachLengthInWordsToStructuralElements(dramaModel)
+	#sa.attachStructuralSentimentMetricsToDrama(dramaModel)
 
 	"""
 	for act in dramaModel._acts:
@@ -94,7 +95,7 @@ class Sentiment_Analyzer:
 					text = speech._text
 					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
 					speechLength = len(self._languageProcessor._lemmasWithLanguageInfo)
-					speech._lenght = speechLength
+					speech._lengthInWords = speechLength
 						
 					sentimentBearingWordsConf.extend(speech._sentimentBearingWords)
 					sentimentBearingWordsAct.extend(speech._sentimentBearingWords)
@@ -106,6 +107,24 @@ class Sentiment_Analyzer:
 
 		dramaModel._sentimentBearingWords = sentimentBearingWordsDrama
 
+
+	def attachLengthInWordsToStructuralElements(self, dramaModel):
+		dramaLength = 0
+		for act in dramaModel._acts:
+			actLength = 0
+			for conf in act._configurations[0:2]:
+				confLength = 0
+				for speech in conf._speeches:
+					confLength = confLength + speech._lengthInWords
+					actLength = actLength + speech._lengthInWords
+					dramaLength = dramaLength + speech._lengthInWords
+					#print("Speech: " + str(speech._lengthInWords))
+				conf._lengthInWords = confLength
+				#print("Conf: " + str(conf._lengthInWords))
+			act._lengthInWords = actLength
+			#print("Act: " + str(act._lengthInWords))
+		dramaModel._lengthInWords = dramaLength
+		#print("Drama: " + str(dramaModel._lengthInWords))
 
 	def getSentimentBearingWordsSpeech(self, text):
 		lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					
