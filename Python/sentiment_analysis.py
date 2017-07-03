@@ -26,6 +26,7 @@ def main():
 	sa.attachLengthInWordsToStructuralElements(dramaModel)
 	sa.attachStructuralSentimentMetricsToDrama(dramaModel)
 	sa.attachSentimentMetricsToSpeaker(dramaModel)
+	sa.attachSpeakerRelationsToSpeaker(dramaModel)
 
 	"""
 	for act in dramaModel._acts:
@@ -76,9 +77,41 @@ class Sentiment_Analyzer:
 	def attachSentimentMetricsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
 			self.attachSentimentMetricsToUnit(speaker)
-			print(speaker._name)
-			speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
+			#speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
 
+	def attachSpeakerRelationsToSpeaker(self, dramaModel):
+		for speaker in dramaModel._speakers:
+			self.createSpeakerRelationsForSpeaker(speaker)
+
+	def createSpeakerRelationsForSpeaker(self, speaker):
+		originSpeaker = speaker._name
+		targetSpeakerSpeeches = {}
+
+		for speech in speaker._speeches:
+			if (speech._preOccuringSpeaker == ""):
+				pass
+			else:
+				if (speech._preOccuringSpeaker in targetSpeakerSpeeches):
+					targetSpeakerSpeeches[speech._preOccuringSpeaker].append(speech)
+				else:
+					targetSpeeches = []
+					targetSpeeches.append(speech)
+					targetSpeakerSpeeches[speech._preOccuringSpeaker] = targetSpeeches
+
+		for targetSpeaker in targetSpeakerSpeeches:
+			speeches = targetSpeakerSpeeches[targetSpeaker]
+			speakerRelation = Speaker_Relation(originSpeaker, targetSpeaker, speeches)
+			#todo array and return
+
+		"""
+		print("############")
+		print(originSpeaker)
+		print(targetSpeakerSpeeches)
+		for targetSpeaker in targetSpeakerSpeeches:
+			print targetSpeaker
+			for speech in targetSpeakerSpeeches[targetSpeaker]:
+				print speech._preOccuringSpeaker
+		"""
 
 	def attachSentimentMetricsToUnit(self, unit):
 		sentimentMetrics = self.calcAndGetSentimentMetrics(unit._sentimentBearingWords, unit._lengthInWords)
