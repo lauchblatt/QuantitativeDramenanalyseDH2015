@@ -61,34 +61,32 @@ class Sentiment_Analyzer:
 			for conf in act._configurations[0:4]:
 				for speech in conf._speeches:
 					print("Speech")
-					self.attachSentimentMetricsToStructuralUnit(speech)
+					self.attachSentimentMetricsToUnit(speech)
 					#speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
 				print("Conf")
-				self.attachSentimentMetricsToStructuralUnit(conf)
+				self.attachSentimentMetricsToUnit(conf)
 				#conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
 			print("Act")
-			self.attachSentimentMetricsToStructuralUnit(act)
+			self.attachSentimentMetricsToUnit(act)
 			#act._sentimentMetrics.printAllInfo(act._lengthInWords)
 		print("Drama")
-		self.attachSentimentMetricsToStructuralUnit(dramaModel)
+		self.attachSentimentMetricsToUnit(dramaModel)
 		#dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
 
 	def attachSentimentMetricsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
+			self.attachSentimentMetricsToUnit(speaker)
 			print(speaker._name)
-			print(speaker._lengthInWords)
-			for speech in speaker._speeches:
-				print(speech._text)
+			speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
 
-	def attachSentimentMetricsToStructuralUnit(self, structuralUnit):
-		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords, structuralUnit._lengthInWords)
-		structuralUnit._sentimentMetrics = sentimentMetrics
+
+	def attachSentimentMetricsToUnit(self, unit):
+		sentimentMetrics = self.calcAndGetSentimentMetrics(unit._sentimentBearingWords, unit._lengthInWords)
+		unit._sentimentMetrics = sentimentMetrics
 
 	def calcAndGetSentimentMetrics(self, sentimentBearingWords, lengthInWords):
-		sCalculator = Sentiment_Calculator()
-		sCalculator._sentimentBearingWords = sentimentBearingWords
-		sCalculator.calcTotalMetrics()
-		sCalculator.calcNormalisedMetrics(lengthInWords)
+		sCalculator = Sentiment_Calculator(sentimentBearingWords, lengthInWords)
+		sCalculator.calcMetrics()
 
 		return sCalculator._sentimentMetrics
 
@@ -119,6 +117,14 @@ class Sentiment_Analyzer:
 
 		dramaModel._sentimentBearingWords = sentimentBearingWordsDrama
 
+		self.attachSentimentBearingWordsToSpeakers(dramaModel)
+
+	def attachSentimentBearingWordsToSpeakers(self, dramaModel):
+		for speaker in dramaModel._speakers:
+			sentimentBearingWordsSpeaker = []
+			for speech in speaker._speeches:
+				sentimentBearingWordsSpeaker.extend(speech._sentimentBearingWords)
+			speaker._sentimentBearingWords = sentimentBearingWordsSpeaker
 
 	def attachLengthInWordsToStructuralElements(self, dramaModel):
 		dramaLength = 0

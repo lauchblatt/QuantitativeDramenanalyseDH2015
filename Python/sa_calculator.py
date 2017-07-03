@@ -13,20 +13,35 @@ def main():
 
 class Sentiment_Calculator:
 
-	def __init__(self):
+	def __init__(self, sentimentBearingWords, normalisationFactorLength):
 
-		self._sentimentBearingWords = []
+		self._sentimentBearingWords = sentimentBearingWords
 		self._sentimentMetrics = Sentiment_Metrics()
 		self._sentimentMetrics.initMetrics()
 
-	def calcNormalisedMetrics(self, lengthInWords):
-		if lengthInWords is 0:
+		self._normalisationFactorLength = normalisationFactorLength
+	
+	def calcMetrics(self):
+		self.calcTotalMetrics()
+		self.calcNormalisedMetrics()
+		self.calcSentimentRatio()
+	
+	def calcSentimentRatio(self):
+		if self._normalisationFactorLength is 0:
+			sentimentRatio = 0
+		else:
+			sentimentRatio = float(len(self._sentimentBearingWords))/float(self._normalisationFactorLength)
+			sentimentRatioPercent = sentimentRatio*100
+			self._sentimentMetrics._sentimentRatio = sentimentRatioPercent
+
+	def calcNormalisedMetrics(self):
+		if self._normalisationFactorLength is 0:
 			for metric in self._sentimentMetrics._metricsTotal:
 				self._sentimentMetrics._metricsNormalised[metric] = 0
 		else:
 			for metric in self._sentimentMetrics._metricsTotal:
 				metricTotal = self._sentimentMetrics._metricsTotal[metric]
-				self._sentimentMetrics._metricsNormalised[metric] = float(metricTotal)/lengthInWords
+				self._sentimentMetrics._metricsNormalised[metric] = float(metricTotal)/self._normalisationFactorLength
 
 	def calcTotalMetrics(self):
 		polaritySentiWSTotal = 0

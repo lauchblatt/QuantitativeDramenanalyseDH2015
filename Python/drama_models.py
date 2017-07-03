@@ -256,7 +256,7 @@ class SpeechModel:
 
         self._text = None
 
-        self._sentimentBearingWords = None
+        self._sentimentBearingWords = []
         self._sentimentMetrics = None
         self._subsequentNumber = -1
         self._numberInAct = -1
@@ -284,6 +284,9 @@ class SpeakerModel:
         self._speechesLength_max = 0
 
         self._lengthInWords = 0
+        self._sentimentBearingWords = []
+        self._sentimentMetrics = None
+
 
     # calculates speech statistics for speaker
     def calc_speeches_statistics(self):

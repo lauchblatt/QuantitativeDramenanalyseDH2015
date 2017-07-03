@@ -16,6 +16,7 @@ class Sentiment_Metrics:
 	def __init__(self):
 		self._metricsTotal = {}
 		self._metricsNormalised = {}
+		self._sentimentRatio = 0
 
 	def initMetrics(self):
 		self._metricsTotal["polaritySentiWS"] = 0
@@ -47,6 +48,8 @@ class Sentiment_Metrics:
 			item = metric + ": " + str(value)
 			print item,
 		print("\n")
+
+		print("Sentiment Ratio: " + str(self._sentimentRatio))
 
 		"""
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
