@@ -39,12 +39,14 @@ class Sentiment_Metrics:
 		for metric,value in self._metricsTotal.items():
 			item = metric + ": " + str(value)
 			print item,
+		print("\n")
 
 		print("Normalised Values: ")
+		print("Length in Words: " + str(lengthInWords))
 		for metric,value in self._metricsNormalised.items():
-			print lengthInWords,
 			item = metric + ": " + str(value)
 			print item,
+		print("\n")
 
 		"""
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,

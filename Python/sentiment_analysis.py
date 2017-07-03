@@ -20,9 +20,12 @@ def main():
 
 	parser = DramaParser()
 	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
+	sa.attachPositionsToSpeechesAndConfs(dramaModel)
+	sa.attachPreOccuringSpeakersToSpeeches(dramaModel)
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
 	sa.attachLengthInWordsToStructuralElements(dramaModel)
 	sa.attachStructuralSentimentMetricsToDrama(dramaModel)
+	sa.attachSentimentMetricsToSpeaker(dramaModel)
 
 	"""
 	for act in dramaModel._acts:
@@ -55,20 +58,27 @@ class Sentiment_Analyzer:
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
-			for conf in act._configurations[0:2]:
+			for conf in act._configurations[0:4]:
 				for speech in conf._speeches:
 					print("Speech")
 					self.attachSentimentMetricsToStructuralUnit(speech)
-					speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
+					#speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
 				print("Conf")
 				self.attachSentimentMetricsToStructuralUnit(conf)
-				conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
+				#conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
 			print("Act")
 			self.attachSentimentMetricsToStructuralUnit(act)
-			act._sentimentMetrics.printAllInfo(act._lengthInWords)
+			#act._sentimentMetrics.printAllInfo(act._lengthInWords)
 		print("Drama")
 		self.attachSentimentMetricsToStructuralUnit(dramaModel)
-		dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
+		#dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
+
+	def attachSentimentMetricsToSpeaker(self, dramaModel):
+		for speaker in dramaModel._speakers:
+			print(speaker._name)
+			print(speaker._lengthInWords)
+			for speech in speaker._speeches:
+				print(speech._text)
 
 	def attachSentimentMetricsToStructuralUnit(self, structuralUnit):
 		sentimentMetrics = self.calcAndGetSentimentMetrics(structuralUnit._sentimentBearingWords, structuralUnit._lengthInWords)
@@ -88,14 +98,16 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			sentimentBearingWordsAct = []
 
-			for configuration in act._configurations[0:2]:
+			for configuration in act._configurations[0:4]:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
 					text = speech._text
 					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
+					####
 					speechLength = len(self._languageProcessor._lemmasWithLanguageInfo)
 					speech._lengthInWords = speechLength
+					####
 						
 					sentimentBearingWordsConf.extend(speech._sentimentBearingWords)
 					sentimentBearingWordsAct.extend(speech._sentimentBearingWords)
@@ -112,7 +124,7 @@ class Sentiment_Analyzer:
 		dramaLength = 0
 		for act in dramaModel._acts:
 			actLength = 0
-			for conf in act._configurations[0:2]:
+			for conf in act._configurations[0:4]:
 				confLength = 0
 				for speech in conf._speeches:
 					confLength = confLength + speech._lengthInWords
@@ -125,6 +137,43 @@ class Sentiment_Analyzer:
 			#print("Act: " + str(act._lengthInWords))
 		dramaModel._lengthInWords = dramaLength
 		#print("Drama: " + str(dramaModel._lengthInWords))
+
+		for speaker in dramaModel._speakers:
+			speakerLength = 0
+			for speech in speaker._speeches:
+				speakerLength = speakerLength + speech._lengthInWords
+			speaker._lengthInWords = speakerLength
+
+	def attachPositionsToSpeechesAndConfs(self, dramaModel):
+		subsequentNumberSpeech = 1
+		subsequentNumberConf = 1
+
+		for act in dramaModel._acts:
+			numberInAct = 1
+			for conf in act._configurations:
+				numberInConf = 1
+				conf._subsequentNumber = subsequentNumberConf
+				subsequentNumberConf = subsequentNumberConf + 1
+				for speech in conf._speeches:
+					speech._subsequentNumber = subsequentNumberSpeech
+					speech._numberInAct = numberInAct
+					speech._numberInConf = numberInConf
+
+					subsequentNumberSpeech = subsequentNumberSpeech + 1
+					numberInAct = numberInAct + 1
+					numberInConf = numberInConf +1
+
+	def attachPreOccuringSpeakersToSpeeches(self, dramaModel):
+		preOccuringSpeaker = ""
+
+		for act in dramaModel._acts:
+			# Reset every speaker when new act starts
+			preOccuringSpeaker = ""
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					speech._preOccuringSpeaker = preOccuringSpeaker
+					preOccuringSpeaker = speech._speaker
+
 
 	def getSentimentBearingWordsSpeech(self, text):
 		lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					

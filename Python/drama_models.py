@@ -229,6 +229,8 @@ class ConfigurationModel:
         self._sentimentMetrics = None
         self._lengthInWords = 0
 
+        self._subsequentNumber = -1
+
     # calculates speech statistics for configuration
     def calc_speeches_statistics(self):
         speeches = self._speeches
@@ -248,7 +250,6 @@ class ConfigurationModel:
 class SpeechModel:
 
     def __init__ (self):
-        self._id = None
         self._length = None
         self._lengthInWords = 0
         self._speaker = None
@@ -257,6 +258,11 @@ class SpeechModel:
 
         self._sentimentBearingWords = None
         self._sentimentMetrics = None
+        self._subsequentNumber = -1
+        self._numberInAct = -1
+        self._numberInConf = -1
+
+        self._preOccuringSpeaker = ""
 
 # model for speakers
 class SpeakerModel:
@@ -276,6 +282,8 @@ class SpeakerModel:
         self._speechesLength_med = 0
         self._speechesLength_min = 0
         self._speechesLength_max = 0
+
+        self._lengthInWords = 0
 
     # calculates speech statistics for speaker
     def calc_speeches_statistics(self):
