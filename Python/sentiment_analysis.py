@@ -20,7 +20,7 @@ def main():
 	sa.init()
 
 	parser = DramaParser()
-	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
+	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
 	sa.attachPositionsToSpeechesAndConfs(dramaModel)
 	sa.attachPreOccuringSpeakersToSpeeches(dramaModel)
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
@@ -30,7 +30,8 @@ def main():
 	sa.attachSentimentRelationsToSpeaker(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("Nathan", dramaModel)
+	#sog.createTxtOutputSingleDrama("Nathan", dramaModel)
+	sog.createShortTxtOutputSingleDrama("test", dramaModel)
 
 	"""
 	for speaker in dramaModel._speakers:

@@ -1,76 +1,76 @@
 Philotas
 
-Sentiments for entire Drama: 
+Sentiments for entire #DRAMA: 
 
-Length in Words: 1237
-
-Total Values:
-polaritySentiWS: -13.8554
-positiveNrc: 68
-negativeNrc: 67
-polarityNrc: 1
-anger: 51
-anticipation: 22
-disgust: 11
-fear: 33
-joy: 13
-sadness: 32
-surprise: 8
-trust: 33
-
-Normalised Values: 
-polaritySentiWS: -0.0112008084074
-positiveNrc: 0.0549717057397
-negativeNrc: 0.0541632983023
-polarityNrc: 0.000808407437348
-anger: 0.0412287793048
-anticipation: 0.0177849636217
-disgust: 0.00889248181083
-fear: 0.0266774454325
-joy: 0.0105092966855
-sadness: 0.0258690379951
-surprise: 0.00646725949879
-trust: 0.0266774454325
-
-Sentiment Ratio: 
-16.3298302344
-
-Sentiments for entire Act 1:
-
-Length in Words: 1237
+Length in Words: 6030
 
 Total Values:
-polaritySentiWS: -13.8554
-positiveNrc: 68
-negativeNrc: 67
-polarityNrc: 1
-anger: 51
-anticipation: 22
-disgust: 11
-fear: 33
-joy: 13
-sadness: 32
-surprise: 8
-trust: 33
+polaritySentiWS: -27.6347
+positiveNrc: 374
+negativeNrc: 371
+polarityNrc: 3
+anger: 235
+anticipation: 104
+disgust: 43
+fear: 128
+joy: 95
+sadness: 158
+surprise: 62
+trust: 171
 
 Normalised Values: 
-polaritySentiWS: -0.0112008084074
-positiveNrc: 0.0549717057397
-negativeNrc: 0.0541632983023
-polarityNrc: 0.000808407437348
-anger: 0.0412287793048
-anticipation: 0.0177849636217
-disgust: 0.00889248181083
-fear: 0.0266774454325
-joy: 0.0105092966855
-sadness: 0.0258690379951
-surprise: 0.00646725949879
-trust: 0.0266774454325
+polaritySentiWS: -0.00458286898839
+positiveNrc: 0.0620232172471
+negativeNrc: 0.0615257048093
+polarityNrc: 0.000497512437811
+anger: 0.0389718076285
+anticipation: 0.0172470978441
+disgust: 0.00713101160862
+fear: 0.0212271973466
+joy: 0.0157545605307
+sadness: 0.0262023217247
+surprise: 0.0102819237148
+trust: 0.0283582089552
 
 Sentiment Ratio: 
-16.3298302344
+17.2470978441
 
-Sentiments for entire Configuration 1:
+Sentiments for entire #ACT 1:
+
+Length in Words: 6030
+
+Total Values:
+polaritySentiWS: -27.6347
+positiveNrc: 374
+negativeNrc: 371
+polarityNrc: 3
+anger: 235
+anticipation: 104
+disgust: 43
+fear: 128
+joy: 95
+sadness: 158
+surprise: 62
+trust: 171
+
+Normalised Values: 
+polaritySentiWS: -0.00458286898839
+positiveNrc: 0.0620232172471
+negativeNrc: 0.0615257048093
+polarityNrc: 0.000497512437811
+anger: 0.0389718076285
+anticipation: 0.0172470978441
+disgust: 0.00713101160862
+fear: 0.0212271973466
+joy: 0.0157545605307
+sadness: 0.0262023217247
+surprise: 0.0102819237148
+trust: 0.0283582089552
+
+Sentiment Ratio: 
+17.2470978441
+
+Sentiments for entire #CONFIGURATION 1:
 
 Length in Words: 210
 Number of Speeches: 1
@@ -106,1932 +106,722 @@ trust: 0.00952380952381
 Sentiment Ratio: 
 14.7619047619
 
-Sentiments for Speech 1:
+Sentiments for entire #CONFIGURATION 2:
 
-Length in Words: 210
+Length in Words: 1027
+Number of Speeches: 19
+
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for entire #CONFIGURATION 3:
+
+Length in Words: 737
+Number of Speeches: 19
+
+Total Values:
+polaritySentiWS: -4.3623
+positiveNrc: 54
+negativeNrc: 41
+polarityNrc: 13
+anger: 32
+anticipation: 18
+disgust: 7
+fear: 21
+joy: 16
+sadness: 14
+surprise: 9
+trust: 30
+
+Normalised Values: 
+polaritySentiWS: -0.00591899592944
+positiveNrc: 0.0732700135685
+negativeNrc: 0.055630936228
+polarityNrc: 0.0176390773406
+anger: 0.0434192672999
+anticipation: 0.0244233378562
+disgust: 0.00949796472185
+fear: 0.0284938941655
+joy: 0.0217096336499
+sadness: 0.0189959294437
+surprise: 0.0122116689281
+trust: 0.0407055630936
+
+Sentiment Ratio: 
+18.3175033921
+
+Sentiments for entire #CONFIGURATION 4:
+
+Length in Words: 106
 Number of Speeches: 1
 
 Total Values:
-polaritySentiWS: -4.0184
-positiveNrc: 7
-negativeNrc: 15
-polarityNrc: -8
-anger: 13
-anticipation: 1
-disgust: 3
-fear: 8
+polaritySentiWS: -1.9545
+positiveNrc: 3
+negativeNrc: 5
+polarityNrc: -2
+anger: 5
+anticipation: 3
+disgust: 1
+fear: 4
 joy: 1
-sadness: 7
+sadness: 2
+surprise: 2
+trust: 3
+
+Normalised Values: 
+polaritySentiWS: -0.0184386792453
+positiveNrc: 0.0283018867925
+negativeNrc: 0.0471698113208
+polarityNrc: -0.0188679245283
+anger: 0.0471698113208
+anticipation: 0.0283018867925
+disgust: 0.00943396226415
+fear: 0.0377358490566
+joy: 0.00943396226415
+sadness: 0.0188679245283
+surprise: 0.0188679245283
+trust: 0.0283018867925
+
+Sentiment Ratio: 
+16.9811320755
+
+Sentiments for entire #CONFIGURATION 5:
+
+Length in Words: 1977
+Number of Speeches: 65
+
+Total Values:
+polaritySentiWS: 2.3642
+positiveNrc: 120
+negativeNrc: 142
+polarityNrc: -22
+anger: 72
+anticipation: 30
+disgust: 11
+fear: 31
+joy: 35
+sadness: 56
+surprise: 20
+trust: 70
+
+Normalised Values: 
+polaritySentiWS: 0.00119585230147
+positiveNrc: 0.0606980273141
+negativeNrc: 0.0718259989884
+polarityNrc: -0.0111279716743
+anger: 0.0364188163885
+anticipation: 0.0151745068285
+disgust: 0.00556398583713
+fear: 0.0156803237228
+joy: 0.0177035912999
+sadness: 0.0283257460799
+surprise: 0.0101163378857
+trust: 0.0354071825999
+
+Sentiment Ratio: 
+18.1588265048
+
+Sentiments for entire #CONFIGURATION 6:
+
+Length in Words: 102
+Number of Speeches: 1
+
+Total Values:
+polaritySentiWS: 0.3788
+positiveNrc: 8
+negativeNrc: 4
+polarityNrc: 4
+anger: 3
+anticipation: 4
+disgust: 0
+fear: 0
+joy: 1
+sadness: 1
 surprise: 0
 trust: 2
 
 Normalised Values: 
-polaritySentiWS: -0.0191352380952
-positiveNrc: 0.0333333333333
-negativeNrc: 0.0714285714286
-polarityNrc: -0.0380952380952
-anger: 0.0619047619048
-anticipation: 0.0047619047619
-disgust: 0.0142857142857
-fear: 0.0380952380952
-joy: 0.0047619047619
-sadness: 0.0333333333333
+polaritySentiWS: 0.0037137254902
+positiveNrc: 0.078431372549
+negativeNrc: 0.0392156862745
+polarityNrc: 0.0392156862745
+anger: 0.0294117647059
+anticipation: 0.0392156862745
+disgust: 0.0
+fear: 0.0
+joy: 0.00980392156863
+sadness: 0.00980392156863
 surprise: 0.0
-trust: 0.00952380952381
+trust: 0.0196078431373
 
 Sentiment Ratio: 
-14.7619047619
+17.6470588235
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Anfang, Anfang, NN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(kriegerischen, kriegerisch, JJ): -0.0048, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Kindheit, Kindheit, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(Schlachten, Schlacht, NNS): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Stürme, Sturm, NNS): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Verlust, Verlust, NN): -0.5204, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Wunde, Wunde, NN): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(verbunden, verbinden, RP): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(grausamen, grausam, JJ): -0.625, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(Barmherzigkeit, Barmherzigkeit, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feindes, Feindes, NN): -0.8054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(tödlich, tödlich, JJ): -0.3487, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0
-(Arzt, Arzt, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(trösten, trösten, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(tödlich, tödlich, JJ): -0.3487, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0
-(Wunde, Wunde, NN): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(tödlich, tödlich, JJ): -0.3487, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0
-(machte, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(verbinden, verbinden, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Unglücklicher, Unglücklicher, NN): -0.301, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(höhnisches, höhnisch, JJ): -0.0525, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Krieger, Krieger, NN): 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0
-(machte, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Soldaten, Soldat, NNS): 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0
-(Höflichkeit, Höflichkeit, NN): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Sentiments for entire #CONFIGURATION 7:
 
-
-Sentiments for entire Configuration 2:
-
-Length in Words: 1027
-Number of Speeches: 19
+Length in Words: 837
+Number of Speeches: 29
 
 Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
+polaritySentiWS: -3.1768
+positiveNrc: 54
+negativeNrc: 42
+polarityNrc: 12
+anger: 30
+anticipation: 16
+disgust: 4
+fear: 13
+joy: 14
+sadness: 18
+surprise: 10
+trust: 17
 
 Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
+polaritySentiWS: -0.00379545997611
+positiveNrc: 0.0645161290323
+negativeNrc: 0.0501792114695
+polarityNrc: 0.0143369175627
+anger: 0.0358422939068
+anticipation: 0.0191158900836
+disgust: 0.00477897252091
+fear: 0.015531660693
+joy: 0.0167264038232
+sadness: 0.0215053763441
+surprise: 0.0119474313023
+trust: 0.0203106332139
 
 Sentiment Ratio: 
-16.6504381694
+17.2043010753
 
-Sentiments for Speech 2:
+Sentiments for entire #CONFIGURATION 8:
 
-Length in Words: 1027
-Number of Speeches: 19
+Length in Words: 1034
+Number of Speeches: 46
 
 Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
+polaritySentiWS: -7.0287
+positiveNrc: 67
+negativeNrc: 70
+polarityNrc: -3
+anger: 42
+anticipation: 11
+disgust: 9
+fear: 26
+joy: 15
+sadness: 35
+surprise: 13
+trust: 16
 
 Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
+polaritySentiWS: -0.00679758220503
+positiveNrc: 0.0647969052224
+negativeNrc: 0.0676982591876
+polarityNrc: -0.00290135396518
+anger: 0.0406189555126
+anticipation: 0.0106382978723
+disgust: 0.00870406189555
+fear: 0.0251450676983
+joy: 0.0145067698259
+sadness: 0.0338491295938
+surprise: 0.0125725338491
+trust: 0.0154738878143
 
 Sentiment Ratio: 
-16.6504381694
+15.8607350097
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Sentiments for entire #SPEAKER PHILOTAS
 
-
-Sentiments for Speech 3:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Alter, Alter, NN): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 4:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(komme, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 5:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(verstehe, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(wahr, wahr, RP): 0.004, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(ehrlicher, ehrlich, JJ): 0.1212, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Soldaten, Soldat, NNS): 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 6:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(komme, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 7:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Erniedrigungen, Erniedrigungen, NN): -0.3259, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(gefallen, gefallen, VBN): 0.2578, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(führe, führen, VB): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 8:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Bildung, Bildung, NN): 0.004, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(voll, voll, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(jugendlicher, jugendlich, JJ): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 9:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Bildung, Bildung, NN): 0.004, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(voll, voll, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Narben, Narbe, NNS): 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-
-
-Sentiments for Speech 10:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(große, gross, JJ): 0.3694, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(bewundern, bewundern, VB): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-
-
-Sentiments for Speech 11:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Möchtest, mögen, VB): 0.345, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(gefürchtet, fürchten, VB): -0.3545, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0
-
-
-Sentiments for Speech 12:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(schrecklichsten, schrecklichst, JJ): -0.0242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feind, Feind, NN): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Jugend, Jugend, NN): 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0
-
-
-Sentiments for Speech 13:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(schrecklich, schrecklich, JJ): -0.0242, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
-(verbinden, verbinden, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(wissen, wissen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 14:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-
-
-Sentiments for Speech 15:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(schlug, schlagen, VB): -0.0306, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0
-
-
-Sentiments for Speech 16:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(blutig, blutig, JJ): -0.0491, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-
-
-Sentiments for Speech 17:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(klagen, klagen, VB): -0.3565, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(Feinde, Feind, NNS): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(Schicksal, Schicksal, NN): 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0
-(klagen, klagen, VB): -0.3565, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(verstehen, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Feuer, Feuer, NN): -0.0048, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Jugend, Jugend, JJ): 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(männliche, männlich, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Kindheit, Kindheit, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(Träne, Träne, NN): -0.0562, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(half, helfen, VB): 0.373, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(morgen, morgen, RB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(nach, nach, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(offen, off, JJ): 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(liegt, liegen, VB): 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0
-(Wunden, Wunde, NNS): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(krank, krank, JJ): -0.0048, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(glückliche, glücklich, JJ): 0.115, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Umarmung, Umarmung, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(zur, zur, IN): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(Nachtwache, Nachtwache, NN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(sprang, springen, VB): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(neuen, neu, JJ): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Helm, Helm, NN): 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(stieg, steigen, RB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(müde, müd, JJ): -0.0048, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(Mannschaft, Mannschaft, JJ): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(kamen, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Begleiter, Begleiter, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(Krieger, Krieger, NN): 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(möchte, mögen, VB): 0.345, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Wort, Wort, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(widerrufen, widerrufen, VB): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(zogen, ziehen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(unsterblichen, unsterblichen, PRP$): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(feindlichen, feindlich, JJ): -0.4723, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(Eisen, Eisen, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Tod, Tod, JJ): -0.0697, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0
-(stiller, still, JJ): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feinde, Feind, NNS): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(hoffte, hoffen, VB): 0.2318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(hinter, hinter, IN): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(stoßen, stossen, VB): -0.3563, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Höhe, Höhe, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(jugendlichen, jugendlich, JJ): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Fall, Fall, NN): 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(voraus, voraus, RB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Armseliger, Armseliger, NNP): -0.1814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Wunden, Wunde, NNS): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(Tod, Tod, NN): -0.0697, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0
-(gefaßt, fassen, VBN): 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(schicken, schicken, VB): 0.3372, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(strengen, streng, JJ): -0.3571, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(vereiteln, vereiteln, NN): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Übel, Übel, NN): -0.4895, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(weinen, weinen, VB): -0.1651, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 18:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(unwillig, unwillig, JJ): -0.4665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 19:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Nein, nein, NN): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(männlichen, männlich, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Träne, Träne, NN): -0.0562, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Glück, Glück, NN): 0.2452, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0
-(Liebe, Liebe, NN): 0.0985, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Unglück, Unglück, NN): -0.5004, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(verstehen, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Gefangenschaft, Gefangenschaft, NN): 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(retten, retten, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Elenden, Elenden, NN): -0.0519, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(verlieren, verlieren, VB): -0.393, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(langen, lang, JJ): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(mühsamen, mühsam, NN): -0.3336, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(gewonnen, gewinnen, VBN): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Feind, Feind, NN): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(regieren, regieren, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(würdig, würdig, JJ): 0.2056, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(gemacht, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(Verachtung, Verachtung, NN): -0.3308, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(dulden, dulden, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Scham, Scham, NN): -0.4829, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(sterbe, sterben, VB): -0.0539, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0
-(finster, finst, JJ): -0.0515, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Helden, Held, NNS): 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1
-(ziehen, ziehen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Könige, König, DT): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vorteile, Vorteile, NN): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(ertragen, ertragen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for Speech 20:
-
-Length in Words: 1027
-Number of Speeches: 19
-
-Total Values:
-polaritySentiWS: -9.837
-positiveNrc: 61
-negativeNrc: 52
-polarityNrc: 9
-anger: 38
-anticipation: 21
-disgust: 8
-fear: 25
-joy: 12
-sadness: 25
-surprise: 8
-trust: 31
-
-Normalised Values: 
-polaritySentiWS: -0.00957838364167
-positiveNrc: 0.0593962999026
-negativeNrc: 0.0506329113924
-polarityNrc: 0.00876338851022
-anger: 0.0370009737098
-anticipation: 0.0204479065239
-disgust: 0.00778967867575
-fear: 0.0243427458617
-joy: 0.0116845180136
-sadness: 0.0243427458617
-surprise: 0.00778967867575
-trust: 0.0301850048685
-
-Sentiment Ratio: 
-16.6504381694
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(lieber, lieb, JJ): 0.1131, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Fehler, Fehler, NN): -0.6752, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(Schicksal, Schicksal, NN): 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0
-(grausam, grausam, JJ): -0.625, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Trost, Trost, NN): 0.0706, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-
-
-Sentiments for entire Speaker PHILOTAS
-
-Length in Words: 1096
+Length in Words: 3511
 Number of Speeches: 83
 
 Total Values:
-polaritySentiWS: -11.7711
-positiveNrc: 58
-negativeNrc: 58
-polarityNrc: 0
-anger: 44
-anticipation: 16
-disgust: 10
-fear: 29
-joy: 12
-sadness: 30
-surprise: 7
-trust: 29
+polaritySentiWS: -23.2533
+positiveNrc: 186
+negativeNrc: 230
+polarityNrc: -44
+anger: 141
+anticipation: 54
+disgust: 29
+fear: 91
+joy: 51
+sadness: 106
+surprise: 35
+trust: 99
 
 Normalised Values: 
-polaritySentiWS: -0.0107400547445
-positiveNrc: 0.0529197080292
-negativeNrc: 0.0529197080292
-polarityNrc: 0.0
-anger: 0.0401459854015
-anticipation: 0.014598540146
-disgust: 0.00912408759124
-fear: 0.0264598540146
-joy: 0.0109489051095
-sadness: 0.0273722627737
-surprise: 0.00638686131387
-trust: 0.0264598540146
+polaritySentiWS: -0.00662298490459
+positiveNrc: 0.0529763600114
+negativeNrc: 0.0655084021646
+polarityNrc: -0.0125320421532
+anger: 0.0401594987183
+anticipation: 0.0153802335517
+disgust: 0.00825975505554
+fear: 0.025918541726
+joy: 0.0145257761322
+sadness: 0.0301908288237
+surprise: 0.00996866989462
+trust: 0.0281970948448
 
 Sentiment Ratio: 
-15.7846715328
+16.7758473369
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Anfang, Anfang, NN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(kriegerischen, kriegerisch, JJ): -0.0048, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Kindheit, Kindheit, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(Schlachten, Schlacht, NNS): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Stürme, Sturm, NNS): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Verlust, Verlust, NN): -0.5204, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Wunde, Wunde, NN): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(verbunden, verbinden, RP): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(grausamen, grausam, JJ): -0.625, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(Barmherzigkeit, Barmherzigkeit, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feindes, Feindes, NN): -0.8054, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(tödlich, tödlich, JJ): -0.3487, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0
-(Arzt, Arzt, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(trösten, trösten, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(tödlich, tödlich, JJ): -0.3487, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0
-(Wunde, Wunde, NN): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(tödlich, tödlich, JJ): -0.3487, 0, 1, 0, 0, 1, 1, 0, 1, 0, 0
-(machte, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(verbinden, verbinden, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Unglücklicher, Unglücklicher, NN): -0.301, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(höhnisches, höhnisch, JJ): -0.0525, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Krieger, Krieger, NN): 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0
-(machte, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Soldaten, Soldat, NNS): 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0
-(Höflichkeit, Höflichkeit, NN): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Alter, Alter, NN): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(verstehe, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(wahr, wahr, RP): 0.004, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(ehrlicher, ehrlich, JJ): 0.1212, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Soldaten, Soldat, NNS): 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Erniedrigungen, Erniedrigungen, NN): -0.3259, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(gefallen, gefallen, VBN): 0.2578, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(führe, führen, VB): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Bildung, Bildung, NN): 0.004, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(voll, voll, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Narben, Narbe, NNS): 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(Möchtest, mögen, VB): 0.345, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(gefürchtet, fürchten, VB): -0.3545, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(schrecklich, schrecklich, JJ): -0.0242, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
-(verbinden, verbinden, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(wissen, wissen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(schlug, schlagen, VB): -0.0306, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0
-(klagen, klagen, VB): -0.3565, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(Feinde, Feind, NNS): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(Schicksal, Schicksal, NN): 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0
-(klagen, klagen, VB): -0.3565, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(verstehen, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Feuer, Feuer, NN): -0.0048, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Jugend, Jugend, JJ): 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(männliche, männlich, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Kindheit, Kindheit, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(Träne, Träne, NN): -0.0562, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(half, helfen, VB): 0.373, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(morgen, morgen, RB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(nach, nach, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(offen, off, JJ): 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(liegt, liegen, VB): 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0
-(Wunden, Wunde, NNS): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(krank, krank, JJ): -0.0048, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(glückliche, glücklich, JJ): 0.115, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Umarmung, Umarmung, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(zur, zur, IN): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(Nachtwache, Nachtwache, NN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(sprang, springen, VB): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(neuen, neu, JJ): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Helm, Helm, NN): 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(stieg, steigen, RB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(müde, müd, JJ): -0.0048, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(Mannschaft, Mannschaft, JJ): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(kamen, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Begleiter, Begleiter, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(Krieger, Krieger, NN): 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(möchte, mögen, VB): 0.345, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Wort, Wort, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(widerrufen, widerrufen, VB): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(zogen, ziehen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(unsterblichen, unsterblichen, PRP$): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(feindlichen, feindlich, JJ): -0.4723, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(Eisen, Eisen, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Tod, Tod, JJ): -0.0697, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0
-(stiller, still, JJ): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feinde, Feind, NNS): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(hoffte, hoffen, VB): 0.2318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(hinter, hinter, IN): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(stoßen, stossen, VB): -0.3563, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Höhe, Höhe, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(jugendlichen, jugendlich, JJ): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Fall, Fall, NN): 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(voraus, voraus, RB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Armseliger, Armseliger, NNP): -0.1814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Wunden, Wunde, NNS): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(Tod, Tod, NN): -0.0697, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0
-(gefaßt, fassen, VBN): 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(schicken, schicken, VB): 0.3372, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(strengen, streng, JJ): -0.3571, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(vereiteln, vereiteln, NN): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Übel, Übel, NN): -0.4895, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(weinen, weinen, VB): -0.1651, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Nein, nein, NN): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(männlichen, männlich, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Träne, Träne, NN): -0.0562, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Glück, Glück, NN): 0.2452, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0
-(Liebe, Liebe, NN): 0.0985, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Unglück, Unglück, NN): -0.5004, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(verstehen, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Gefangenschaft, Gefangenschaft, NN): 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(retten, retten, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Elenden, Elenden, NN): -0.0519, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(verlieren, verlieren, VB): -0.393, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(langen, lang, JJ): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(mühsamen, mühsam, NN): -0.3336, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(gewonnen, gewinnen, VBN): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Feind, Feind, NN): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(regieren, regieren, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(würdig, würdig, JJ): 0.2056, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(gemacht, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(Verachtung, Verachtung, NN): -0.3308, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(dulden, dulden, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Scham, Scham, NN): -0.4829, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(sterbe, sterben, VB): -0.0539, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0
-(finster, finst, JJ): -0.0515, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Helden, Held, NNS): 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1
-(ziehen, ziehen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Könige, König, DT): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vorteile, Vorteile, NN): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(ertragen, ertragen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Sentiments for entire #SPEAKER STRATO
 
-
-Sentiments for entire Speaker STRATO
-
-Length in Words: 141
+Length in Words: 483
 Number of Speeches: 24
 
 Total Values:
-polaritySentiWS: -2.0843
-positiveNrc: 10
-negativeNrc: 9
-polarityNrc: 1
-anger: 7
-anticipation: 6
-disgust: 1
-fear: 4
-joy: 1
-sadness: 2
-surprise: 1
-trust: 4
+polaritySentiWS: -4.4268
+positiveNrc: 48
+negativeNrc: 28
+polarityNrc: 20
+anger: 26
+anticipation: 12
+disgust: 5
+fear: 15
+joy: 5
+sadness: 11
+surprise: 5
+trust: 11
 
 Normalised Values: 
-polaritySentiWS: -0.0147822695035
-positiveNrc: 0.0709219858156
-negativeNrc: 0.063829787234
-polarityNrc: 0.00709219858156
-anger: 0.0496453900709
-anticipation: 0.0425531914894
-disgust: 0.00709219858156
-fear: 0.0283687943262
-joy: 0.00709219858156
-sadness: 0.0141843971631
-surprise: 0.00709219858156
-trust: 0.0283687943262
+polaritySentiWS: -0.0091652173913
+positiveNrc: 0.0993788819876
+negativeNrc: 0.0579710144928
+polarityNrc: 0.0414078674948
+anger: 0.0538302277433
+anticipation: 0.0248447204969
+disgust: 0.0103519668737
+fear: 0.0310559006211
+joy: 0.0103519668737
+sadness: 0.0227743271222
+surprise: 0.0103519668737
+trust: 0.0227743271222
 
 Sentiment Ratio: 
-20.5673758865
+19.66873706
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(komme, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(komme, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Bildung, Bildung, NN): 0.004, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(voll, voll, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(jugendlicher, jugendlich, JJ): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(große, gross, JJ): 0.3694, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(bewundern, bewundern, VB): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(schrecklichsten, schrecklichst, JJ): -0.0242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feind, Feind, NN): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Jugend, Jugend, NN): 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(blutig, blutig, JJ): -0.0491, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(unwillig, unwillig, JJ): -0.4665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(lieber, lieb, JJ): 0.1131, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Fehler, Fehler, NN): -0.6752, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(Schicksal, Schicksal, NN): 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0
-(grausam, grausam, JJ): -0.625, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Trost, Trost, NN): 0.0706, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Sentiments for entire #SPEAKER ARIDÄUS
 
-
-Sentiments for entire Speaker ARIDÄUS
-
-Length in Words: 0
+Length in Words: 1087
 Number of Speeches: 42
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -1.2399
+positiveNrc: 76
+negativeNrc: 50
+polarityNrc: 26
+anger: 33
+anticipation: 25
+disgust: 6
+fear: 18
+joy: 25
+sadness: 19
+surprise: 16
+trust: 29
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.00114066237351
+positiveNrc: 0.0699172033119
+negativeNrc: 0.0459981600736
+polarityNrc: 0.0239190432383
+anger: 0.0303587856486
+anticipation: 0.0229990800368
+disgust: 0.00551977920883
+fear: 0.0165593376265
+joy: 0.0229990800368
+sadness: 0.017479300828
+surprise: 0.0147194112236
+trust: 0.0266789328427
 
 Sentiment Ratio: 
-0
+16.9273229071
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+Sentiments for entire #SPEAKER PARMENIO
 
-
-Sentiments for entire Speaker PARMENIO
-
-Length in Words: 0
+Length in Words: 949
 Number of Speeches: 32
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 1.2853
+positiveNrc: 64
+negativeNrc: 63
+polarityNrc: 1
+anger: 35
+anticipation: 13
+disgust: 3
+fear: 4
+joy: 14
+sadness: 22
+surprise: 6
+trust: 32
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 0.00135437302424
+positiveNrc: 0.0674394099052
+negativeNrc: 0.0663856691254
+polarityNrc: 0.00105374077977
+anger: 0.0368809272919
+anticipation: 0.013698630137
+disgust: 0.0031612223393
+fear: 0.00421496311907
+joy: 0.0147523709168
+sadness: 0.0231822971549
+surprise: 0.00632244467861
+trust: 0.0337197049526
 
 Sentiment Ratio: 
-0
+18.124341412
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION PHILOTAS --> STRATO:
 
-
-Sentiment-Relation PHILOTAS --> STRATO:
-
-Length in Words: 886
+Length in Words: 1089
 Number of Speeches: 15
 
 Total Values:
-polaritySentiWS: -7.7527
-positiveNrc: 51
-negativeNrc: 43
-polarityNrc: 8
-anger: 31
-anticipation: 15
-disgust: 7
-fear: 21
-joy: 11
-sadness: 23
-surprise: 7
-trust: 27
+polaritySentiWS: -11.8925
+positiveNrc: 57
+negativeNrc: 71
+polarityNrc: -14
+anger: 45
+anticipation: 17
+disgust: 8
+fear: 27
+joy: 15
+sadness: 35
+surprise: 9
+trust: 31
 
 Normalised Values: 
-polaritySentiWS: -0.00875022573363
-positiveNrc: 0.0575620767494
-negativeNrc: 0.048532731377
-polarityNrc: 0.00902934537246
-anger: 0.0349887133183
-anticipation: 0.0169300225734
-disgust: 0.0079006772009
-fear: 0.0237020316027
-joy: 0.0124153498871
-sadness: 0.0259593679458
-surprise: 0.0079006772009
-trust: 0.0304740406321
+polaritySentiWS: -0.0109205693297
+positiveNrc: 0.0523415977961
+negativeNrc: 0.0651974288338
+polarityNrc: -0.0128558310376
+anger: 0.0413223140496
+anticipation: 0.0156106519743
+disgust: 0.00734618916437
+fear: 0.0247933884298
+joy: 0.0137741046832
+sadness: 0.0321395775941
+surprise: 0.00826446280992
+trust: 0.0284664830119
 
 Sentiment Ratio: 
-16.0270880361
+16.9880624426
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Alter, Alter, NN): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(verstehe, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(wahr, wahr, RP): 0.004, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(ehrlicher, ehrlich, JJ): 0.1212, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Soldaten, Soldat, NNS): 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Erniedrigungen, Erniedrigungen, NN): -0.3259, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(gefallen, gefallen, VBN): 0.2578, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(führe, führen, VB): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Bildung, Bildung, NN): 0.004, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(voll, voll, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Narben, Narbe, NNS): 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(Möchtest, mögen, VB): 0.345, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(gefürchtet, fürchten, VB): -0.3545, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(schrecklich, schrecklich, JJ): -0.0242, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
-(verbinden, verbinden, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(wissen, wissen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(schlug, schlagen, VB): -0.0306, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0
-(klagen, klagen, VB): -0.3565, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(Feinde, Feind, NNS): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(Schicksal, Schicksal, NN): 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0
-(klagen, klagen, VB): -0.3565, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(verstehen, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Feuer, Feuer, NN): -0.0048, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Jugend, Jugend, JJ): 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(männliche, männlich, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Kindheit, Kindheit, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(Träne, Träne, NN): -0.0562, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(half, helfen, VB): 0.373, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(morgen, morgen, RB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(will, wollen, MD): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(nach, nach, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(offen, off, JJ): 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(liegt, liegen, VB): 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0
-(Wunden, Wunde, NNS): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(krank, krank, JJ): -0.0048, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(glückliche, glücklich, JJ): 0.115, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Umarmung, Umarmung, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(Ehre, Ehre, NN): 0.0612, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(zur, zur, IN): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(Nachtwache, Nachtwache, NN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(sprang, springen, VB): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(neuen, neu, JJ): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Helm, Helm, NN): 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(stieg, steigen, RB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(müde, müd, JJ): -0.0048, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(Mannschaft, Mannschaft, JJ): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(kamen, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Begleiter, Begleiter, NN): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1
-(Krieger, Krieger, NN): 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(möchte, mögen, VB): 0.345, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Wort, Wort, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(widerrufen, widerrufen, VB): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(zogen, ziehen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(unsterblichen, unsterblichen, PRP$): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(feindlichen, feindlich, JJ): -0.4723, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(Eisen, Eisen, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Tod, Tod, JJ): -0.0697, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0
-(stiller, still, JJ): 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feinde, Feind, NNS): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(hoffte, hoffen, VB): 0.2318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(hinter, hinter, IN): 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(stoßen, stossen, VB): -0.3563, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Höhe, Höhe, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(jugendlichen, jugendlich, JJ): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Fall, Fall, NN): 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(stürzen, stürzen, VB): -0.6316, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(voraus, voraus, RB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Armseliger, Armseliger, NNP): -0.1814, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Wunden, Wunde, NNS): -0.3396, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0
-(Tod, Tod, NN): -0.0697, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0
-(gefaßt, fassen, VBN): 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0
-(schicken, schicken, VB): 0.3372, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(strengen, streng, JJ): -0.3571, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(vereiteln, vereiteln, NN): -0.0048, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Übel, Übel, NN): -0.4895, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(weinen, weinen, VB): -0.1651, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Nein, nein, NN): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(männlichen, männlich, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Träne, Träne, NN): -0.0562, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Glück, Glück, NN): 0.2452, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0
-(Liebe, Liebe, NN): 0.0985, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(Unglück, Unglück, NN): -0.5004, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(verstehen, verstehen, VB): 0.0957, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(Gefangenschaft, Gefangenschaft, NN): 0, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(retten, retten, VB): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Elenden, Elenden, NN): -0.0519, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(verlieren, verlieren, VB): -0.393, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(langen, lang, JJ): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(mühsamen, mühsam, NN): -0.3336, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(gewonnen, gewinnen, VBN): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Feind, Feind, NN): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(regieren, regieren, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(würdig, würdig, JJ): 0.2056, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(gemacht, machen, VB): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(Verachtung, Verachtung, NN): -0.3308, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(dulden, dulden, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Scham, Scham, NN): -0.4829, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(sterbe, sterben, VB): -0.0539, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0
-(finster, finst, JJ): -0.0515, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Helden, Held, NNS): 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 1
-(ziehen, ziehen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Könige, König, DT): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vorteile, Vorteile, NN): 0.004, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(ertragen, ertragen, VB): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#SENTIMENT-RELATION PHILOTAS --> ARIDÄUS:
 
-
-Sentiment-Relation PHILOTAS --> ARIDÄUS:
-
-Length in Words: 0
+Length in Words: 1082
 Number of Speeches: 33
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -8.8001
+positiveNrc: 58
+negativeNrc: 61
+polarityNrc: -3
+anger: 43
+anticipation: 15
+disgust: 10
+fear: 29
+joy: 13
+sadness: 29
+surprise: 12
+trust: 26
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.0081331792976
+positiveNrc: 0.0536044362292
+negativeNrc: 0.0563770794824
+polarityNrc: -0.00277264325323
+anger: 0.039741219963
+anticipation: 0.0138632162662
+disgust: 0.00924214417745
+fear: 0.0268022181146
+joy: 0.0120147874307
+sadness: 0.0268022181146
+surprise: 0.0110905730129
+trust: 0.0240295748614
 
 Sentiment Ratio: 
-0
+15.5268022181
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION PHILOTAS --> PHILOTAS:
 
-
-Sentiment-Relation PHILOTAS --> PHILOTAS:
-
-Length in Words: 0
+Length in Words: 119
 Number of Speeches: 2
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
+polaritySentiWS: -0.1041
+positiveNrc: 9
+negativeNrc: 5
+polarityNrc: 4
+anger: 4
+anticipation: 4
 disgust: 0
-fear: 0
-joy: 0
-sadness: 0
+fear: 1
+joy: 1
+sadness: 2
 surprise: 0
-trust: 0
+trust: 3
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.000874789915966
+positiveNrc: 0.0756302521008
+negativeNrc: 0.0420168067227
+polarityNrc: 0.0336134453782
+anger: 0.0336134453782
+anticipation: 0.0336134453782
+disgust: 0.0
+fear: 0.00840336134454
+joy: 0.00840336134454
+sadness: 0.0168067226891
+surprise: 0.0
+trust: 0.0252100840336
 
 Sentiment Ratio: 
-0
+18.487394958
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION PHILOTAS --> PARMENIO:
 
-
-Sentiment-Relation PHILOTAS --> PARMENIO:
-
-Length in Words: 0
+Length in Words: 1011
 Number of Speeches: 32
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 1.5618
+positiveNrc: 55
+negativeNrc: 78
+polarityNrc: -23
+anger: 36
+anticipation: 17
+disgust: 8
+fear: 26
+joy: 21
+sadness: 33
+surprise: 14
+trust: 37
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 0.00154480712166
+positiveNrc: 0.0544015825915
+negativeNrc: 0.0771513353116
+polarityNrc: -0.0227497527201
+anger: 0.0356083086053
+anticipation: 0.0168150346192
+disgust: 0.00791295746785
+fear: 0.0257171117705
+joy: 0.0207715133531
+sadness: 0.0326409495549
+surprise: 0.0138476755687
+trust: 0.0365974282888
 
 Sentiment Ratio: 
-0
+18.1008902077
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION STRATO --> ARIDÄUS:
 
-
-Sentiment-Relation STRATO --> ARIDÄUS:
-
-Length in Words: 0
+Length in Words: 274
 Number of Speeches: 8
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -2.9914
+positiveNrc: 24
+negativeNrc: 15
+polarityNrc: 9
+anger: 15
+anticipation: 4
+disgust: 4
+fear: 9
+joy: 3
+sadness: 9
+surprise: 3
+trust: 5
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.0109175182482
+positiveNrc: 0.0875912408759
+negativeNrc: 0.0547445255474
+polarityNrc: 0.0328467153285
+anger: 0.0547445255474
+anticipation: 0.014598540146
+disgust: 0.014598540146
+fear: 0.0328467153285
+joy: 0.0109489051095
+sadness: 0.0328467153285
+surprise: 0.0109489051095
+trust: 0.0182481751825
 
 Sentiment Ratio: 
-0
+17.5182481752
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION STRATO --> PHILOTAS:
 
-
-Sentiment-Relation STRATO --> PHILOTAS:
-
-Length in Words: 141
+Length in Words: 209
 Number of Speeches: 16
 
 Total Values:
-polaritySentiWS: -2.0843
-positiveNrc: 10
-negativeNrc: 9
-polarityNrc: 1
-anger: 7
-anticipation: 6
+polaritySentiWS: -1.4354
+positiveNrc: 24
+negativeNrc: 13
+polarityNrc: 11
+anger: 11
+anticipation: 8
 disgust: 1
-fear: 4
-joy: 1
+fear: 6
+joy: 2
 sadness: 2
-surprise: 1
-trust: 4
+surprise: 2
+trust: 6
 
 Normalised Values: 
-polaritySentiWS: -0.0147822695035
-positiveNrc: 0.0709219858156
-negativeNrc: 0.063829787234
-polarityNrc: 0.00709219858156
-anger: 0.0496453900709
-anticipation: 0.0425531914894
-disgust: 0.00709219858156
-fear: 0.0283687943262
-joy: 0.00709219858156
-sadness: 0.0141843971631
-surprise: 0.00709219858156
-trust: 0.0283687943262
+polaritySentiWS: -0.00686794258373
+positiveNrc: 0.114832535885
+negativeNrc: 0.0622009569378
+polarityNrc: 0.0526315789474
+anger: 0.0526315789474
+anticipation: 0.0382775119617
+disgust: 0.00478468899522
+fear: 0.0287081339713
+joy: 0.00956937799043
+sadness: 0.00956937799043
+surprise: 0.00956937799043
+trust: 0.0287081339713
 
 Sentiment Ratio: 
-20.5673758865
+22.4880382775
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(komme, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(komme, kommen, VB): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Bildung, Bildung, NN): 0.004, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(voll, voll, JJ): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(jugendlicher, jugendlich, JJ): 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
-(große, gross, JJ): 0.3694, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(bewundern, bewundern, VB): 0.004, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(schrecklichsten, schrecklichst, JJ): -0.0242, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Feind, Feind, NN): -0.8054, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(vor, vor, IN): 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
-(Jugend, Jugend, NN): 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(blutig, blutig, JJ): -0.0491, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(in, in, IN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Vater, Vater, NN): 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
-(unwillig, unwillig, JJ): -0.4665, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(lieber, lieb, JJ): 0.1131, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Prinz, Prinz, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Fehler, Fehler, NN): -0.6752, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0
-(Schicksal, Schicksal, NN): 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0
-(grausam, grausam, JJ): -0.625, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0
-(nicht, nicht, RB): 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0
-(König, König, NN): 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
-(Trost, Trost, NN): 0.0706, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0
+#SENTIMENT-RELATION ARIDÄUS --> STRATO:
 
-
-Sentiment-Relation ARIDÄUS --> STRATO:
-
-Length in Words: 0
+Length in Words: 342
 Number of Speeches: 9
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -1.5431
+positiveNrc: 25
+negativeNrc: 16
+polarityNrc: 9
+anger: 13
+anticipation: 6
+disgust: 2
+fear: 9
+joy: 9
+sadness: 6
+surprise: 7
+trust: 8
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.00451198830409
+positiveNrc: 0.0730994152047
+negativeNrc: 0.046783625731
+polarityNrc: 0.0263157894737
+anger: 0.0380116959064
+anticipation: 0.0175438596491
+disgust: 0.00584795321637
+fear: 0.0263157894737
+joy: 0.0263157894737
+sadness: 0.0175438596491
+surprise: 0.0204678362573
+trust: 0.0233918128655
 
 Sentiment Ratio: 
-0
+15.7894736842
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION ARIDÄUS --> PHILOTAS:
 
-
-Sentiment-Relation ARIDÄUS --> PHILOTAS:
-
-Length in Words: 0
+Length in Words: 745
 Number of Speeches: 33
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 0.3032
+positiveNrc: 51
+negativeNrc: 34
+polarityNrc: 17
+anger: 20
+anticipation: 19
+disgust: 4
+fear: 9
+joy: 16
+sadness: 13
+surprise: 9
+trust: 21
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 0.000406979865772
+positiveNrc: 0.0684563758389
+negativeNrc: 0.0456375838926
+polarityNrc: 0.0228187919463
+anger: 0.0268456375839
+anticipation: 0.0255033557047
+disgust: 0.00536912751678
+fear: 0.0120805369128
+joy: 0.0214765100671
+sadness: 0.0174496644295
+surprise: 0.0120805369128
+trust: 0.0281879194631
 
 Sentiment Ratio: 
-0
+17.4496644295
 
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+#SENTIMENT-RELATION PARMENIO --> PHILOTAS:
 
-
-Sentiment-Relation PARMENIO --> PHILOTAS:
-
-Length in Words: 0
+Length in Words: 949
 Number of Speeches: 32
 
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 1.2853
+positiveNrc: 64
+negativeNrc: 63
+polarityNrc: 1
+anger: 35
+anticipation: 13
+disgust: 3
+fear: 4
+joy: 14
+sadness: 22
+surprise: 6
+trust: 32
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: 0.00135437302424
+positiveNrc: 0.0674394099052
+negativeNrc: 0.0663856691254
+polarityNrc: 0.00105374077977
+anger: 0.0368809272919
+anticipation: 0.013698630137
+disgust: 0.0031612223393
+fear: 0.00421496311907
+joy: 0.0147523709168
+sadness: 0.0231822971549
+surprise: 0.00632244467861
+trust: 0.0337197049526
 
 Sentiment Ratio: 
-0
-
-Sentiment Bearing Words: 
-(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust
+18.124341412

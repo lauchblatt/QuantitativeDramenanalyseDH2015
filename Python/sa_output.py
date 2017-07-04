@@ -89,5 +89,35 @@ class Sentiment_Output_Generator:
 
 		return info
 
+	def createShortTxtOutputSingleDrama(self, name, dramaModel):
+		outputFile = open("../SentimentAnalysis/SA-Output/" + name +".txt", "w")
+
+		outputFile.write(dramaModel._title +"\n\n")
+		outputFile.write("Sentiments for entire #DRAMA: " + "\n\n")
+		dramaInformation = self.getMetrics(dramaModel)
+		outputFile.write(dramaInformation)
+
+		for act in dramaModel._acts:
+			outputFile.write("\n\nSentiments for entire #ACT " + str(act._number) + ":\n\n")
+			actInformation = self.getMetrics(act)
+			outputFile.write(actInformation)
+			for conf in act._configurations:
+				outputFile.write("\n\nSentiments for entire #CONFIGURATION " + str(conf._subsequentNumber) + ":\n\n")
+				confInformation = self.getMetrics(conf)
+				outputFile.write(confInformation)
+
+		for speaker in dramaModel._speakers:
+			outputFile.write("\n\nSentiments for entire #SPEAKER " + speaker._name +"\n\n")
+			speakerInformation = self.getMetrics(speaker)
+			outputFile.write(speakerInformation)
+
+		for speaker in dramaModel._speakers:
+			for sentimentRelation in speaker._sentimentRelations:
+				outputFile.write("\n\n#SENTIMENT-RELATION " + speaker._name + " --> " + sentimentRelation._targetSpeaker + ":\n\n")
+				sentimentInformation = self.getMetrics(sentimentRelation)
+				outputFile.write(sentimentInformation)
+
+		outputFile.close()
+
 if __name__ == "__main__":
 	main()
