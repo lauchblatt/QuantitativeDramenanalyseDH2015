@@ -20,7 +20,7 @@ def main():
 	sa.init()
 
 	parser = DramaParser()
-	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
+	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
 	sa.attachPositionsToSpeechesAndConfs(dramaModel)
 	sa.attachPreOccuringSpeakersToSpeeches(dramaModel)
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
@@ -30,7 +30,7 @@ def main():
 	sa.attachSentimentRelationsToSpeaker(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("test", dramaModel)
+	sog.createTxtOutputSingleDrama("Nathan", dramaModel)
 
 	"""
 	for speaker in dramaModel._speakers:
@@ -74,7 +74,7 @@ class Sentiment_Analyzer:
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
-			for conf in act._configurations[0:2]:
+			for conf in act._configurations:
 				for speech in conf._speeches:
 					#print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
@@ -148,7 +148,7 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			sentimentBearingWordsAct = []
 
-			for configuration in act._configurations[0:2]:
+			for configuration in act._configurations:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
@@ -182,7 +182,7 @@ class Sentiment_Analyzer:
 		dramaLength = 0
 		for act in dramaModel._acts:
 			actLength = 0
-			for conf in act._configurations[0:2]:
+			for conf in act._configurations:
 				confLength = 0
 				for speech in conf._speeches:
 					confLength = confLength + speech._lengthInWords
