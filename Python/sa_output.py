@@ -26,18 +26,28 @@ class Sentiment_Output_Generator:
 		outputFile.write(dramaInformation)
 
 		for act in dramaModel._acts:
-			outputFile.write("Sentiments for entire Act" + str(act._number) + ":\n\n")
+			outputFile.write("\n\nSentiments for entire Act " + str(act._number) + ":\n\n")
 			actInformation = self.getMetrics(act)
 			outputFile.write(actInformation)
-			for conf in act._configurations[0:2]:
-				outputFile.write("Sentiments for entire Configuration" + str(conf._subsequentNumber) + ":\n\n")
+			for conf in act._configurations[0:1]:
+				outputFile.write("\n\nSentiments for entire Configuration " + str(conf._subsequentNumber) + ":\n\n")
 				confInformation = self.getMetrics(conf)
 				outputFile.write(confInformation)
 				for speech in conf._speeches:
-					outputFile.write("Sentiments for Speech" + str(speech._subsequentNumber) + ":\n\n")
+					outputFile.write("\n\nSentiments for Speech " + str(speech._subsequentNumber) + ":\n\n")
 					speechInformation = self.getMetrics(conf)
 					outputFile.write(speechInformation)
 
+		for speaker in dramaModel._speakers:
+			outputFile.write("\n\nSentiments for entire Speaker " + speaker._name +"\n\n")
+			speakerInformation = self.getMetrics(speaker)
+			outputFile.write(speakerInformation)
+
+		for speaker in dramaModel._speakers:
+			for sentimentRelation in speaker._sentimentRelations:
+				outputFile.write("\n\nSentiment-Relation " + speaker._name + " --> " + sentimentRelation._targetSpeaker + ":\n\n")
+				sentimentInformation = self.getMetrics(sentimentRelation)
+				outputFile.write(sentimentInformation)
 
 		outputFile.close()
 
