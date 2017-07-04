@@ -6,10 +6,14 @@ import collections
 import locale
 import sys
 from sa_models import *
+from collections import OrderedDict
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+
+	sm = Sentiment_Metrics()
+	sm.initMetrics()
 
 class Sentiment_Relation:
 
@@ -35,8 +39,8 @@ class Sentiment_Relation:
 class Sentiment_Metrics:
 	#List of SentimentBearingWord-Objects
 	def __init__(self):
-		self._metricsTotal = {}
-		self._metricsNormalised = {}
+		self._metricsTotal = OrderedDict([])
+		self._metricsNormalised = OrderedDict([])
 		self._sentimentRatio = 0
 
 	def initMetrics(self):

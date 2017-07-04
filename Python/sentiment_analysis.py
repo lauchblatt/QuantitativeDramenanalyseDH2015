@@ -10,6 +10,7 @@ from language_processor import *
 from lexicon_handler import *
 from sa_models import *
 from sa_calculator import *
+from sa_output import *
 
 def main():
 	reload(sys)
@@ -28,7 +29,10 @@ def main():
 	sa.attachSentimentMetricsToSpeaker(dramaModel)
 	sa.attachSentimentRelationsToSpeaker(dramaModel)
 
-	
+	sog = Sentiment_Output_Generator()
+	sog.createTxtOutputSingleDrama("test", dramaModel)
+
+	"""
 	for speaker in dramaModel._speakers:
 		print("###")
 		print(speaker._name)
@@ -37,6 +41,7 @@ def main():
 			print(relation._originSpeaker)
 			print(relation._targetSpeaker)
 			relation._sentimentMetrics.printAllInfo(relation._lengthInWords)
+	"""
 
 	"""
 	for act in dramaModel._acts:
@@ -69,7 +74,7 @@ class Sentiment_Analyzer:
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
-			for conf in act._configurations[0:4]:
+			for conf in act._configurations[0:2]:
 				for speech in conf._speeches:
 					#print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
@@ -143,7 +148,7 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			sentimentBearingWordsAct = []
 
-			for configuration in act._configurations[0:4]:
+			for configuration in act._configurations[0:2]:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
@@ -177,7 +182,7 @@ class Sentiment_Analyzer:
 		dramaLength = 0
 		for act in dramaModel._acts:
 			actLength = 0
-			for conf in act._configurations[0:4]:
+			for conf in act._configurations[0:2]:
 				confLength = 0
 				for speech in conf._speeches:
 					confLength = confLength + speech._lengthInWords
