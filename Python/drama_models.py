@@ -286,6 +286,7 @@ class SpeakerModel:
         self._lengthInWords = 0
         self._sentimentBearingWords = []
         self._sentimentMetrics = None
+        self._sentimentRelations = None
 
 
     # calculates speech statistics for speaker

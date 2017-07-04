@@ -11,7 +11,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-class Speaker_Relation:
+class Sentiment_Relation:
 
 	def __init__(self, originSpeaker, targetSpeaker, speeches):
 		self._originSpeaker = originSpeaker
@@ -20,10 +20,17 @@ class Speaker_Relation:
 
 		self._sentimentBearingWords = []
 		self._sentimentMetrics = None
+		self._lengthInWords = 0
+
+		self.setSentimentBearingWords()
 
 	def setSentimentBearingWords(self):
+		lengthInWords = 0
 		for speech in self._speeches:
 			self._sentimentBearingWords.extend(speech._sentimentBearingWords)
+			lengthInWords = lengthInWords + speech._lengthInWords
+		self._lengthInWords = lengthInWords
+
 
 class Sentiment_Metrics:
 	#List of SentimentBearingWord-Objects
