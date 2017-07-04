@@ -2,72 +2,76 @@ Philotas
 
 Sentiments for entire Drama: 
 
+Length in Words: 1237
 Total Values:
-polaritySentiWS: -4.0184
-positiveNrc: 7
-negativeNrc: 15
-polarityNrc: -8
-anger: 13
-anticipation: 1
-disgust: 3
-fear: 8
-joy: 1
-sadness: 7
-surprise: 0
-trust: 2
+polaritySentiWS: -13.8554
+positiveNrc: 68
+negativeNrc: 67
+polarityNrc: 1
+anger: 51
+anticipation: 22
+disgust: 11
+fear: 33
+joy: 13
+sadness: 32
+surprise: 8
+trust: 33
 
 Normalised Values: 
-polaritySentiWS: -0.0191352380952
-positiveNrc: 0.0333333333333
-negativeNrc: 0.0714285714286
-polarityNrc: -0.0380952380952
-anger: 0.0619047619048
-anticipation: 0.0047619047619
-disgust: 0.0142857142857
-fear: 0.0380952380952
-joy: 0.0047619047619
-sadness: 0.0333333333333
-surprise: 0.0
-trust: 0.00952380952381
+polaritySentiWS: -0.0112008084074
+positiveNrc: 0.0549717057397
+negativeNrc: 0.0541632983023
+polarityNrc: 0.000808407437348
+anger: 0.0412287793048
+anticipation: 0.0177849636217
+disgust: 0.00889248181083
+fear: 0.0266774454325
+joy: 0.0105092966855
+sadness: 0.0258690379951
+surprise: 0.00646725949879
+trust: 0.0266774454325
 
 Sentiment Ratio: 
-14.7619047619
+16.3298302344
 
 Sentiments for entire Act 1:
 
+Length in Words: 1237
 Total Values:
-polaritySentiWS: -4.0184
-positiveNrc: 7
-negativeNrc: 15
-polarityNrc: -8
-anger: 13
-anticipation: 1
-disgust: 3
-fear: 8
-joy: 1
-sadness: 7
-surprise: 0
-trust: 2
+polaritySentiWS: -13.8554
+positiveNrc: 68
+negativeNrc: 67
+polarityNrc: 1
+anger: 51
+anticipation: 22
+disgust: 11
+fear: 33
+joy: 13
+sadness: 32
+surprise: 8
+trust: 33
 
 Normalised Values: 
-polaritySentiWS: -0.0191352380952
-positiveNrc: 0.0333333333333
-negativeNrc: 0.0714285714286
-polarityNrc: -0.0380952380952
-anger: 0.0619047619048
-anticipation: 0.0047619047619
-disgust: 0.0142857142857
-fear: 0.0380952380952
-joy: 0.0047619047619
-sadness: 0.0333333333333
-surprise: 0.0
-trust: 0.00952380952381
+polaritySentiWS: -0.0112008084074
+positiveNrc: 0.0549717057397
+negativeNrc: 0.0541632983023
+polarityNrc: 0.000808407437348
+anger: 0.0412287793048
+anticipation: 0.0177849636217
+disgust: 0.00889248181083
+fear: 0.0266774454325
+joy: 0.0105092966855
+sadness: 0.0258690379951
+surprise: 0.00646725949879
+trust: 0.0266774454325
 
 Sentiment Ratio: 
-14.7619047619
+16.3298302344
 
 Sentiments for entire Configuration 1:
 
+Length in Words: 210
+Number of Speeches: 1
 Total Values:
 polaritySentiWS: -4.0184
 positiveNrc: 7
@@ -101,6 +105,8 @@ Sentiment Ratio:
 
 Sentiments for Speech 1:
 
+Length in Words: 210
+Number of Speeches: 1
 Total Values:
 polaritySentiWS: -4.0184
 positiveNrc: 7
@@ -131,75 +137,781 @@ trust: 0.00952380952381
 
 Sentiment Ratio: 
 14.7619047619
+
+Sentiments for entire Configuration 2:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 2:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 3:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 4:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 5:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 6:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 7:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 8:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 9:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 10:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 11:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 12:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 13:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 14:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 15:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 16:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 17:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 18:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 19:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
+
+Sentiments for Speech 20:
+
+Length in Words: 1027
+Number of Speeches: 19
+Total Values:
+polaritySentiWS: -9.837
+positiveNrc: 61
+negativeNrc: 52
+polarityNrc: 9
+anger: 38
+anticipation: 21
+disgust: 8
+fear: 25
+joy: 12
+sadness: 25
+surprise: 8
+trust: 31
+
+Normalised Values: 
+polaritySentiWS: -0.00957838364167
+positiveNrc: 0.0593962999026
+negativeNrc: 0.0506329113924
+polarityNrc: 0.00876338851022
+anger: 0.0370009737098
+anticipation: 0.0204479065239
+disgust: 0.00778967867575
+fear: 0.0243427458617
+joy: 0.0116845180136
+sadness: 0.0243427458617
+surprise: 0.00778967867575
+trust: 0.0301850048685
+
+Sentiment Ratio: 
+16.6504381694
 
 Sentiments for entire Speaker PHILOTAS
 
+Length in Words: 1096
+Number of Speeches: 83
 Total Values:
-polaritySentiWS: -4.0184
-positiveNrc: 7
-negativeNrc: 15
-polarityNrc: -8
-anger: 13
-anticipation: 1
-disgust: 3
-fear: 8
-joy: 1
-sadness: 7
-surprise: 0
-trust: 2
+polaritySentiWS: -11.7711
+positiveNrc: 58
+negativeNrc: 58
+polarityNrc: 0
+anger: 44
+anticipation: 16
+disgust: 10
+fear: 29
+joy: 12
+sadness: 30
+surprise: 7
+trust: 29
 
 Normalised Values: 
-polaritySentiWS: -0.0191352380952
-positiveNrc: 0.0333333333333
-negativeNrc: 0.0714285714286
-polarityNrc: -0.0380952380952
-anger: 0.0619047619048
-anticipation: 0.0047619047619
-disgust: 0.0142857142857
-fear: 0.0380952380952
-joy: 0.0047619047619
-sadness: 0.0333333333333
-surprise: 0.0
-trust: 0.00952380952381
+polaritySentiWS: -0.0107400547445
+positiveNrc: 0.0529197080292
+negativeNrc: 0.0529197080292
+polarityNrc: 0.0
+anger: 0.0401459854015
+anticipation: 0.014598540146
+disgust: 0.00912408759124
+fear: 0.0264598540146
+joy: 0.0109489051095
+sadness: 0.0273722627737
+surprise: 0.00638686131387
+trust: 0.0264598540146
 
 Sentiment Ratio: 
-14.7619047619
+15.7846715328
 
 Sentiments for entire Speaker STRATO
 
+Length in Words: 141
+Number of Speeches: 24
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -2.0843
+positiveNrc: 10
+negativeNrc: 9
+polarityNrc: 1
+anger: 7
+anticipation: 6
+disgust: 1
+fear: 4
+joy: 1
+sadness: 2
+surprise: 1
+trust: 4
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.0147822695035
+positiveNrc: 0.0709219858156
+negativeNrc: 0.063829787234
+polarityNrc: 0.00709219858156
+anger: 0.0496453900709
+anticipation: 0.0425531914894
+disgust: 0.00709219858156
+fear: 0.0283687943262
+joy: 0.00709219858156
+sadness: 0.0141843971631
+surprise: 0.00709219858156
+trust: 0.0283687943262
 
 Sentiment Ratio: 
-0
+20.5673758865
 
 Sentiments for entire Speaker ARIDÄUS
 
+Length in Words: 0
+Number of Speeches: 42
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -233,6 +945,8 @@ Sentiment Ratio:
 
 Sentiments for entire Speaker PARMENIO
 
+Length in Words: 0
+Number of Speeches: 32
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -266,39 +980,43 @@ Sentiment Ratio:
 
 Sentiment-Relation PHILOTAS --> STRATO:
 
+Length in Words: 886
+Number of Speeches: 15
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -7.7527
+positiveNrc: 51
+negativeNrc: 43
+polarityNrc: 8
+anger: 31
+anticipation: 15
+disgust: 7
+fear: 21
+joy: 11
+sadness: 23
+surprise: 7
+trust: 27
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.00875022573363
+positiveNrc: 0.0575620767494
+negativeNrc: 0.048532731377
+polarityNrc: 0.00902934537246
+anger: 0.0349887133183
+anticipation: 0.0169300225734
+disgust: 0.0079006772009
+fear: 0.0237020316027
+joy: 0.0124153498871
+sadness: 0.0259593679458
+surprise: 0.0079006772009
+trust: 0.0304740406321
 
 Sentiment Ratio: 
-0
+16.0270880361
 
 Sentiment-Relation PHILOTAS --> ARIDÄUS:
 
+Length in Words: 0
+Number of Speeches: 33
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -332,6 +1050,8 @@ Sentiment Ratio:
 
 Sentiment-Relation PHILOTAS --> PHILOTAS:
 
+Length in Words: 0
+Number of Speeches: 2
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -365,6 +1085,8 @@ Sentiment Ratio:
 
 Sentiment-Relation PHILOTAS --> PARMENIO:
 
+Length in Words: 0
+Number of Speeches: 32
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -398,6 +1120,8 @@ Sentiment Ratio:
 
 Sentiment-Relation STRATO --> ARIDÄUS:
 
+Length in Words: 0
+Number of Speeches: 8
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -431,39 +1155,43 @@ Sentiment Ratio:
 
 Sentiment-Relation STRATO --> PHILOTAS:
 
+Length in Words: 141
+Number of Speeches: 16
 Total Values:
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -2.0843
+positiveNrc: 10
+negativeNrc: 9
+polarityNrc: 1
+anger: 7
+anticipation: 6
+disgust: 1
+fear: 4
+joy: 1
+sadness: 2
+surprise: 1
+trust: 4
 
 Normalised Values: 
-polaritySentiWS: 0
-positiveNrc: 0
-negativeNrc: 0
-polarityNrc: 0
-anger: 0
-anticipation: 0
-disgust: 0
-fear: 0
-joy: 0
-sadness: 0
-surprise: 0
-trust: 0
+polaritySentiWS: -0.0147822695035
+positiveNrc: 0.0709219858156
+negativeNrc: 0.063829787234
+polarityNrc: 0.00709219858156
+anger: 0.0496453900709
+anticipation: 0.0425531914894
+disgust: 0.00709219858156
+fear: 0.0283687943262
+joy: 0.00709219858156
+sadness: 0.0141843971631
+surprise: 0.00709219858156
+trust: 0.0283687943262
 
 Sentiment Ratio: 
-0
+20.5673758865
 
 Sentiment-Relation ARIDÄUS --> STRATO:
 
+Length in Words: 0
+Number of Speeches: 9
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -497,6 +1225,8 @@ Sentiment Ratio:
 
 Sentiment-Relation ARIDÄUS --> PHILOTAS:
 
+Length in Words: 0
+Number of Speeches: 33
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0
@@ -530,6 +1260,8 @@ Sentiment Ratio:
 
 Sentiment-Relation PARMENIO --> PHILOTAS:
 
+Length in Words: 0
+Number of Speeches: 32
 Total Values:
 polaritySentiWS: 0
 positiveNrc: 0

@@ -74,7 +74,7 @@ class Sentiment_Analyzer:
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
-			for conf in act._configurations[0:1]:
+			for conf in act._configurations[0:2]:
 				for speech in conf._speeches:
 					#print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
@@ -148,7 +148,7 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			sentimentBearingWordsAct = []
 
-			for configuration in act._configurations[0:1]:
+			for configuration in act._configurations[0:2]:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
@@ -182,7 +182,7 @@ class Sentiment_Analyzer:
 		dramaLength = 0
 		for act in dramaModel._acts:
 			actLength = 0
-			for conf in act._configurations[0:1]:
+			for conf in act._configurations[0:2]:
 				confLength = 0
 				for speech in conf._speeches:
 					confLength = confLength + speech._lengthInWords

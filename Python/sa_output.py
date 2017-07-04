@@ -29,7 +29,7 @@ class Sentiment_Output_Generator:
 			outputFile.write("\n\nSentiments for entire Act " + str(act._number) + ":\n\n")
 			actInformation = self.getMetrics(act)
 			outputFile.write(actInformation)
-			for conf in act._configurations[0:1]:
+			for conf in act._configurations[0:2]:
 				outputFile.write("\n\nSentiments for entire Configuration " + str(conf._subsequentNumber) + ":\n\n")
 				confInformation = self.getMetrics(conf)
 				outputFile.write(confInformation)
@@ -52,7 +52,14 @@ class Sentiment_Output_Generator:
 		outputFile.close()
 
 	def getMetrics(self, unit):
-		info = "Total Values:" + "\n"
+		info = "Length in Words: " + str(unit._lengthInWords) + "\n"
+
+		if hasattr(unit, "_speeches"):
+			info = info + "Number of Speeches: " + str(len(unit._speeches)) + "\n"
+		else:
+			pass
+
+		info = info + "\nTotal Values:" + "\n"
 		for metric in unit._sentimentMetrics._metricsTotal:
 			metricValuePair = metric + ": " + str(unit._sentimentMetrics._metricsTotal[metric])
 			info = info + metricValuePair +"\n"
