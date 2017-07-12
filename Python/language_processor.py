@@ -18,7 +18,7 @@ def main():
 
 	lp.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
 	
-	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/test")
+	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/test2")
 	
 	#lp.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/")
 	

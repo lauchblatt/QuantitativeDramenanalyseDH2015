@@ -43,9 +43,7 @@ class Lexicon_Handler:
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
 		self.initNRC()
 		sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
-		print(len(sentimentDictLemmas))
 		self._sentimentDictLemmas = self.removeTotalZerosFromNRC(sentimentDictLemmas)
-		print(len(self._sentimentDictLemmas))
 
 	def removeTotalZerosFromNRC(self, nrcSentimentDict):
 		totalZeros = self.getTotalZerosNRC(nrcSentimentDict)
