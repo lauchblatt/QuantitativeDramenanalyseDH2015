@@ -37,7 +37,7 @@ class Sentiment_Relation:
 
 
 class Sentiment_Metrics:
-	#List of SentimentBearingWord-Objects
+	
 	def __init__(self):
 		self._metricsTotal = OrderedDict([])
 		self._metricsNormalised = OrderedDict([])

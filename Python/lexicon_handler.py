@@ -14,7 +14,8 @@ def main():
 	lexiconHandler = Lexicon_Handler()
 	#lexiconHandler.createSentimentDictFileNRCRaw()
 	#lexiconHandler.createSentimentDictFileNRCLemmas()
-	lexiconHandler.initSingleDict("NRC-Lemmas")
+	lexiconHandler.initSingleDict("NRC-Original")
+	print(len(lexiconHandler._sentimentDict))
 
 class Lexicon_Handler:
 
@@ -38,12 +39,22 @@ class Lexicon_Handler:
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
 		sentimentDict = self.getSentimentDictNRC(sentDictText, False)
 		self._sentimentDict = self.removeTotalZerosFromNRC(sentimentDict)
+		self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
 	
 	def readAndInitNRCLemmas(self):
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
 		self.initNRC()
 		sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 		self._sentimentDictLemmas = self.removeTotalZerosFromNRC(sentimentDictLemmas)
+
+	def removePhrasesFromNRC(self, nrcSentimentDict):
+		
+		for word in nrcDictCopy:
+			words = word.split()
+			if(len(words) > 1):
+				del nrcSentimentDict[word]
+				print word
+		return nrcSentimentDict
 
 	def removeTotalZerosFromNRC(self, nrcSentimentDict):
 		totalZeros = self.getTotalZerosNRC(nrcSentimentDict)
@@ -78,10 +89,31 @@ class Lexicon_Handler:
 				sentimentsPerWord["surprise"] = int(wordsAndValues[10-columnSub])
 				sentimentsPerWord["trust"] = int(wordsAndValues[11-columnSub].rstrip())
 
-				nrcSentimentDict[unicode(word)] = sentimentsPerWord
+				alreadyInLexicon = False
+				if(unicode(word) in nrcSentimentDict):
+					higherSentiments = self.getHigherSentimentsValueNrc(sentimentsPerWord, nrcSentimentDict[unicode(word)])
+					alreadyInLexicon = True
+					nrcSentimentDict[unicode(word)] = higherSentiments
+				
+				if(not alreadyInLexicon):
+					nrcSentimentDict[unicode(word)] = sentimentsPerWord
 		
 		return nrcSentimentDict
 				
+	def getHigherSentimentsValueNrc(self, newSentiments, oldSentiments):
+		newSentimentsScore = 0
+		oldSentimentsScore = 0
+
+		for sentiment in newSentiments:
+			newSentimentsScore = newSentimentsScore + newSentiments[sentiment]
+		for sentiment in oldSentiments:
+			oldSentimentsScore = oldSentimentsScore + oldSentiments[sentiment]
+
+		if(newSentimentsScore > oldSentimentsScore):
+			return newSentiments
+		else:
+			return oldSentiments
+
 	def lemmatizeDict(self):
 		lp = Language_Processor()
 		newSentimentDict = {}
@@ -89,14 +121,15 @@ class Lexicon_Handler:
 		
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp.getLemma(word)
-			"""
+			print lemma
+			
 			if lemma in newSentimentDict:
 				print("###########")
-				print("Altes Wort: " + newSentimentDict[lemma][0])
-				print("Altes Lemma: " + lemma + " Wert: " + str(newSentimentDict[lemma][1]))
-				print("Neues Wort: " + (word))
-				print("Neues Lemma: " + (lemma) + " Wert: " + str(value))
-			"""
+				#print("Altes Wort: " + newSentimentDict[lemma][0])
+				#print("Altes Lemma: " + lemma + " Wert: " + str(newSentimentDict[lemma][1]))
+				#print("Neues Wort: " + (word))
+				#print("Neues Lemma: " + (lemma) + " Wert: " + str(value))
+			
 			newSentimentDict[lemma] = value
 		
 		print("Lemmatisation finished")	
@@ -120,7 +153,7 @@ class Lexicon_Handler:
 			line = word + "\t"
 			sentimentsPerWord = sentimentDict[word]
 			for sentiment in sentiments:
-				line = line + sentimentsPerWord[sentiment] + "\t"
+				line = line + str(sentimentsPerWord[sentiment]) + "\t"
 			line = line.rstrip("\t")
 			line = line + "\n"
 			outputFile.write(line)
@@ -221,7 +254,7 @@ class Lexicon_Handler:
 
 	def createSentimentDictFileNRCRaw(self):
 		self.initSingleDict("NRC-Original")
-		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Raw")
+		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Raw-New")
 
 	def createSentimentDictFileNRCLemmas(self):
 		self.initSingleDict("NRC-Original")
