@@ -1,0 +1,263 @@
+start Lemmatisation
+ausweichen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Wort
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+Liebe
+Alte Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+erbrechen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Porno
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+schlecht
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+schreien
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}
+Braut
+Alte Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Geld
+Alte Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}
+Fett
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Haupt
+Alte Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Wunder
+Alte Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}
+Abschreibung
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+wahnsinnig
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Chor
+Alte Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+zwischen
+Alte Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+schneiden
+Alte Werte:
+{'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Witz
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+schassen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+gefährden
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+fallen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Dichtung
+Alte Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+vergessen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+überzeugen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+jammern
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Floh
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+abweichend
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}
+verdienen
+Alte Werte:
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 1}
+Darm
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Justiz
+Alte Werte:
+{'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+gedenken
+Alte Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+verdammt
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+Durcheinander
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+erwarten
+Alte Werte:
+{'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}
+Gewählte Werte
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}
+Argument
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}
+fallen
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Spritze
+Alte Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}
+Neue Werte:
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+Gewählte Werte
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}
+Lemmatisation finished
+4564
+4527

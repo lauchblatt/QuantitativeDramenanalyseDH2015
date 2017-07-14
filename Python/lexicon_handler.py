@@ -14,8 +14,13 @@ def main():
 	lexiconHandler = Lexicon_Handler()
 	#lexiconHandler.createSentimentDictFileNRCRaw()
 	#lexiconHandler.createSentimentDictFileNRCLemmas()
-	lexiconHandler.initSingleDict("NRC-Original")
+	#lexiconHandler.initSingleDict("NRC-Original")
+	#lexiconHandler.initSentiWS()
 	print(len(lexiconHandler._sentimentDict))
+	print(len(lexiconHandler._sentimentDictLemmas))
+	
+	#lexiconHandler.createSentimentDictFileSentiWSRaw()
+	lexiconHandler.createSentimentDictFileSentiWSLemmas()
 
 class Lexicon_Handler:
 
@@ -37,23 +42,24 @@ class Lexicon_Handler:
 
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
-		sentimentDict = self.getSentimentDictNRC(sentDictText, False)
-		self._sentimentDict = self.removeTotalZerosFromNRC(sentimentDict)
+		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
+
 		self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
+		self._sentimentDict = self.removeTotalZerosFromNRC(self._sentimentDict)
 	
 	def readAndInitNRCLemmas(self):
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
 		self.initNRC()
-		sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
-		self._sentimentDictLemmas = self.removeTotalZerosFromNRC(sentimentDictLemmas)
+		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
 	def removePhrasesFromNRC(self, nrcSentimentDict):
-		
-		for word in nrcDictCopy:
+		phrases = []
+		for word in nrcSentimentDict:
 			words = word.split()
 			if(len(words) > 1):
-				del nrcSentimentDict[word]
-				print word
+				phrases.append(word)
+		for phrase in phrases:
+			del nrcSentimentDict[phrase]
 		return nrcSentimentDict
 
 	def removeTotalZerosFromNRC(self, nrcSentimentDict):
@@ -118,21 +124,48 @@ class Lexicon_Handler:
 		lp = Language_Processor()
 		newSentimentDict = {}
 		print("start Lemmatisation")
+		lemmaTokenPairs = {}
 		
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp.getLemma(word)
-			print lemma
 			
 			if lemma in newSentimentDict:
-				print("###########")
-				#print("Altes Wort: " + newSentimentDict[lemma][0])
-				#print("Altes Lemma: " + lemma + " Wert: " + str(newSentimentDict[lemma][1]))
-				#print("Neues Wort: " + (word))
-				#print("Neues Lemma: " + (lemma) + " Wert: " + str(value))
-			
-			newSentimentDict[lemma] = value
+				newScore = value
+				oldScore = newSentimentDict[lemma]
+				higherScore = self.getHigherSentimentValue(newScore, oldScore)
+				oldToken = lemmaTokenPairs[lemma]
+				print(lemma)
+				print("Alter Wert:")
+				print(oldScore)
+				print("Neuer Wert:")
+				print(newScore)
+				print("Gewählter Wert: ")
+				print(higherScore)
+				newSentimentDict[lemma] = higherScore
+			else:
+				newSentimentDict[lemma] = value
+				lemmaTokenPairs[lemma] = word
 		
-		print("Lemmatisation finished")	
+		print("Lemmatisation finished")
+		self._sentimentDictLemmas = newSentimentDict
+
+	def lemmatizeDictNrc(self):
+		lp = Language_Processor()
+		newSentimentDict = {}
+		print("start Lemmatisation")
+		
+		for word,value in self._sentimentDict.iteritems():
+			lemma = lp.getLemma(word)
+			
+			if lemma in newSentimentDict:
+				newSentiments = value
+				oldSentiments = newSentimentDict[lemma]
+				sentiments = self.getHigherSentimentsValueNrc(newSentiments, oldSentiments)
+				newSentimentDict[lemma] = sentiments
+			else:
+				newSentimentDict[lemma] = value
+		
+		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
 	def createOutput(self, sentimentDict, dataName):
@@ -186,6 +219,7 @@ class Lexicon_Handler:
 		sentDictTextPositive = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Positive.txt")
 
 		sentimentDictNegative = self.getSentimentDictSentiWS(sentDictTextNegative)
+
 		sentimentDictPositiv = self.getSentimentDictSentiWS(sentDictTextPositive)
 
 		sentimentDictNegative.update(sentimentDictPositiv)
@@ -193,14 +227,19 @@ class Lexicon_Handler:
 
 	def getSentimentDictSentiWS (self, sentimentDictText):
 		sentimentDict = {}
+		sentimentList = []
 
 		for line in sentimentDictText:
 			firstWord = line.split("|")[0]
 
 			tabSplit = line.split("\t")
-			number = tabSplit[1].rstrip()
+			number = float(tabSplit[1].rstrip())
 
-			sentimentDict[unicode(firstWord)] = number
+			if(unicode(firstWord) in sentimentDict):
+				higherSentiment = self.getHigherSentimentValue(number, sentimentDict[unicode(firstWord)])
+				sentimentDict[unicode(firstWord)] = higherSentiment
+			else:
+				sentimentDict[unicode(firstWord)] = number
 			
 			if 0 <= 2 < len(tabSplit):
 				flexions = tabSplit[2]
@@ -208,11 +247,21 @@ class Lexicon_Handler:
 
 				for flex in seperatedFlexions:
 					flex = flex.rstrip()
-					sentimentDict[unicode(flex)] = number
-			
+
+					if(unicode(flex) in sentimentDict):
+						higherSentiment = self.getHigherSentimentValue(number, sentimentDict[unicode(flex)])
+						sentimentDict[unicode(flex)] = higherSentiment
+					else:
+						sentimentDict[unicode(flex)] = number
 
 		return sentimentDict
 
+	def getHigherSentimentValue(self, newScore, oldScore):
+		if(abs(newScore) > abs(oldScore)):
+			return newScore
+		else:
+			return oldScore
+	
 	def getTotalZerosNRC(self, nrcSentimentDict):
 		totalZeros = {}
 		
@@ -244,13 +293,13 @@ class Lexicon_Handler:
 
 	def createSentimentDictFileSentiWSRaw(self):
 		self.initSingleDict("SentiWS-Original")
-		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw")
+		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw-New")
 		
 	
 	def createSentimentDictFileSentiWSLemmas(self):
 		self.initSingleDict("SentiWS-Original")
 		self.lemmatizeDict()
-		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas")
+		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas-New")
 
 	def createSentimentDictFileNRCRaw(self):
 		self.initSingleDict("NRC-Original")
@@ -258,7 +307,7 @@ class Lexicon_Handler:
 
 	def createSentimentDictFileNRCLemmas(self):
 		self.initSingleDict("NRC-Original")
-		self.lemmatizeDict()
+		self.lemmatizeDictNrc()
 		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/NRC-Lemmas")
 
 if __name__ == "__main__":
