@@ -12,19 +12,11 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	#lexiconHandler.createSentimentDictFileNRCRaw()
-	#lexiconHandler.createSentimentDictFileNRCLemmas()
-	#lexiconHandler.initSingleDict("NRC-Original")
-	#lexiconHandler.initSentiWS()
-	#print(len(lexiconHandler._sentimentDictLemmas))
-	
-	#lexiconHandler.createSentimentDictFileSentiWSRaw()
-	#lexiconHandler.createSentimentDictFileSentiWSLemmas()
 
-	#lexiconHandler.createSentimentDictFileBawlRaw()
-	#lexiconHandler.createSentimentDFileBawlLemmas()
-	lexiconHandler.readAndInitBawlLemmas()
+	lexiconHandler.createSentimentDictFileBawlLemmas()
+	print(len(lexiconHandler._sentimentDict))
 	print(len(lexiconHandler._sentimentDictLemmas))
+	
 
 class Lexicon_Handler:
 
@@ -33,16 +25,12 @@ class Lexicon_Handler:
 		self._sentimentDictLemmas = {}
 
 	def initSingleDict (self, lexicon):
-		if (lexicon == "SentiWS-Original"):
-			self.initSentiWS()
-		elif (lexicon == "SentiWS-Lemmas"):
-			self.readAndInitSentiWSLemmas()
-		elif (lexicon == "NRC-Original"):
-			self.initNRC()
-		elif (lexicon == "NRC-Lemmas"):
-			self.readAndInitNRCLemmas()
-		elif (lexicon == "Bawl-Original"):
-			self.initBawl()
+		if (lexicon == "SentiWS"):
+			self.readAndInitSentiWSAndLemmas()
+		elif (lexicon == "NRC"):
+			self.readAndInitNRCAndLemmas()
+		elif (lexicon == "Bawl"):
+			self.readAndInitBawlAndLemmas()
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 
@@ -50,16 +38,29 @@ class Lexicon_Handler:
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
 		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
 
-		self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
+		#self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
 		self._sentimentDict = self.removeTotalZerosFromNRC(self._sentimentDict)
 	
-	def readAndInitNRCLemmas(self):
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/NRC-Lemmas.txt")
+	def readAndInitSentiWSAndLemmas(self):
+		self.initSentiWS()
+		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/SentiWS-Lemmas.txt")
+		sentimentDict = {}
+
+		for line in sentimentDictText:
+			wordAndValue = line.split("\t")
+			word = wordAndValue[0]
+			value = float(wordAndValue[1].rstrip())
+			sentimentDict[unicode(word)] = value
+
+		self._sentimentDictLemmas = sentimentDict
+
+	def readAndInitNRCAndLemmas(self):
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/NRC-Lemmas.txt")
 		self.initNRC()
 		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
-	def readAndInitBawlLemmas(self):
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Bawl-Lemmas.txt")
+	def readAndInitBawlAndLemmas(self):
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/Bawl-Lemmas.txt")
 		self.initBawl()
 		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
 	
@@ -160,6 +161,7 @@ class Lexicon_Handler:
 		
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp.getLemma(word)
+			print lemma
 			
 			if lemma in newSentimentDict:
 				newSentiments = value
@@ -180,9 +182,11 @@ class Lexicon_Handler:
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp.getLemma(word)			
 			if lemma in newSentimentDict:
-				print lemma
-				#info = self.getHigherSentimentValuesBawl(value)
-				newSentimentDict[lemma] = value
+				#could be a method
+				newAbsolute = abs(value["emotion"]) + abs(value["arousel"])
+				oldAbsolute = abs(newSentimentDict[lemma]["emotion"]) + abs(newSentimentDict[lemma]["arousel"])
+				if(newAbsolute > oldAbsolute):
+					newSentimentDict[lemma] = value
 			else:
 				newSentimentDict[lemma] = value
 		
@@ -230,20 +234,6 @@ class Lexicon_Handler:
 			text = text + " " + word
 
 		return text
-
-	def readAndInitSentiWSLemmas(self):
-		self.initSentiWS()
-		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas.txt")
-		sentimentDict = {}
-
-		for line in sentimentDictText:
-			wordAndValue = line.split("\t")
-			word = wordAndValue[0]
-			value = float(wordAndValue[1].rstrip())
-			sentimentDict[unicode(word)] = value
-
-		self._sentimentDictLemmas = sentimentDict
-
 	
 	def initBawl(self):
 		sentDictText = open("../SentimentAnalysis/Bawl-R/bawl-r.txt")
@@ -339,33 +329,33 @@ class Lexicon_Handler:
 		for word in doubles:
 			print(word)
 
-	def createSentimentDictFileSentiWSRaw(self):
-		self.initSingleDict("SentiWS-Original")
-		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Raw-New")
+	def createSentimentDictFileSentiWSToken(self):
+		self.initSentiWS()
+		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Token")
 		
 	
 	def createSentimentDictFileSentiWSLemmas(self):
-		self.initSingleDict("SentiWS-Original")
+		self.initSentiWS()
 		self.lemmatizeDict()
-		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/SentiWS-Lemmas-New")
+		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/SentiWS-Lemmas")
 
-	def createSentimentDictFileNRCRaw(self):
-		self.initSingleDict("NRC-Original")
-		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Raw-New")
+	def createSentimentDictFileNRCToken(self):
+		self.initNRC()
+		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Token")
 
 	def createSentimentDictFileNRCLemmas(self):
-		self.initSingleDict("NRC-Original")
+		self.initNRC()
 		self.lemmatizeDictNrc()
-		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/NRC-Lemmas")
+		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/NRC-Lemmas")
 	
-	def createSentimentDictFileBawlRaw(self):
-		self.initSingleDict("Bawl-Original")
-		self.createOutputBawl(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/Bawl-Raw")
+	def createSentimentDictFileBawlToken(self):
+		self.initBawl()
+		self.createOutputBawl(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/Bawl-Token")
 
-	def createSentimentDFileBawlLemmas(self):
-		self.initSingleDict("Bawl-Original")
+	def createSentimentDictFileBawlLemmas(self):
+		self.initBawl()
 		self.lemmatizeDictBawl()
-		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Bawl-Lemmas")
+		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/Bawl-Lemmas")
 
 if __name__ == "__main__":
     main()

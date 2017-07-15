@@ -99,8 +99,12 @@ class Language_Processor:
 
 	def getLemma(self, word):
 		blob = TextBlobDE(unicode(word))
-		lemma = blob.words.lemmatize()[0]
-		return lemma
+		lemmas = blob.words.lemmatize()
+		if(len(lemmas) > 1):
+			lemmasString = " ".join(lemmas)
+			return lemmasString
+		else: 
+			return lemmas[0]
 
 	def getLemmas(self, wordsAsString):
 		blob = TextBlobDE(unicode(wordsAsString))

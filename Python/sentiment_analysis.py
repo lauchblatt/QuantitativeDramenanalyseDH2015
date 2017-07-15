@@ -67,10 +67,10 @@ class Sentiment_Analyzer:
 		
 		self._languageProcessor = Language_Processor()
 		lexiconHandlerSentiWS = Lexicon_Handler()
-		lexiconHandlerSentiWS.initSingleDict("SentiWS-Lemmas")
+		lexiconHandlerSentiWS.initSingleDict("SentiWS")
 		self._sentiWS = lexiconHandlerSentiWS._sentimentDictLemmas
 		lexiconHandlerNrc = Lexicon_Handler()
-		lexiconHandlerNrc.initSingleDict("NRC-Lemmas")
+		lexiconHandlerNrc.initSingleDict("NRC")
 		self._nrc = lexiconHandlerNrc._sentimentDictLemmas
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
