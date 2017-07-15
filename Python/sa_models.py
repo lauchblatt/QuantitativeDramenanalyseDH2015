@@ -59,6 +59,9 @@ class Sentiment_Metrics:
 		self._metricsTotal["surprise"] = 0
 		self._metricsTotal["trust"] = 0
 
+		self._metricsTotal["emotion"] = 0
+		self._metricsTotal["arousel"] = 0
+
 
 	def printAllInfo(self, lengthInWords):
 		print("Total Values: ")
@@ -102,6 +105,10 @@ class Sentiment_Bearing_Word:
 		self._surprise = 0
 		self._trust = 0
 
+		#Bawl
+		self._emotion = 0.0
+		self._arousel = 0.0
+
 		#Language Data
 		self._token = ""
 		self._lemma = ""
@@ -111,16 +118,16 @@ class Sentiment_Bearing_Word:
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWS,self._positiveNrc,self._negativeNrc,
 		self._anger,self._anticipation,self._disgust,self._fear,self._joy,self._sadness,self._surprise,self._trust])
-
-		info = info + " " + sentiments
+		bawl = ",".join([str(self._emotion), str(self._arousel)])
+		info = info + " " + sentiments + " " + bawl
 		print info
 
 	def returnInfoAsString(self):
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWS,self._positiveNrc,self._negativeNrc,
 		self._anger,self._anticipation,self._disgust,self._fear,self._joy,self._sadness,self._surprise,self._trust])
-
-		info = info + " " + sentiments
+		bawl = ",".join([str(self._emotion), str(self._arousel)])
+		info = info + " " + sentiments + " " + bawl
 		return info
 
 if __name__ == "__main__":

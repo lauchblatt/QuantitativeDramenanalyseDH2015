@@ -20,7 +20,7 @@ def main():
 	sa.init()
 
 	parser = DramaParser()
-	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
+	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
 	sa.attachPositionsToSpeechesAndConfs(dramaModel)
 	sa.attachPreOccuringSpeakersToSpeeches(dramaModel)
 	sa.attachSentimentBearingWordsToDrama(dramaModel)
@@ -29,9 +29,9 @@ def main():
 	sa.attachSentimentMetricsToSpeaker(dramaModel)
 	sa.attachSentimentRelationsToSpeaker(dramaModel)
 
-	sog = Sentiment_Output_Generator()
+	#sog = Sentiment_Output_Generator()
 	#sog.createTxtOutputSingleDrama("Nathan", dramaModel)
-	sog.createShortTxtOutputSingleDrama("Short-Output/Nathan", dramaModel)
+	#sog.createShortTxtOutputSingleDrama("Short-Output/Nathan", dramaModel)
 
 	"""
 	for speaker in dramaModel._speakers:
@@ -60,8 +60,10 @@ class Sentiment_Analyzer:
 
 	def __init__(self):
 		self._languageProcessor = None
+		
 		self._sentiWS = {}
 		self._nrc = {}
+		self._bawl = {}
 	
 	def init(self):
 		
@@ -72,28 +74,32 @@ class Sentiment_Analyzer:
 		lexiconHandlerNrc = Lexicon_Handler()
 		lexiconHandlerNrc.initSingleDict("NRC")
 		self._nrc = lexiconHandlerNrc._sentimentDictLemmas
+		lexiconHandlerBawl = Lexicon_Handler()
+		lexiconHandlerBawl.initSingleDict("Bawl")
+		self._bawl = lexiconHandlerBawl._sentimentDictLemmas
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
-			for conf in act._configurations:
+			for conf in act._configurations[0:2]:
 				for speech in conf._speeches:
-					#print("Speech")
+					print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
-					#speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
-				#print("Conf")
+					speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
+				print("Conf")
 				self.attachSentimentMetricsToUnit(conf)
-				#conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
-			#print("Act")
+				conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
+			print("Act")
 			self.attachSentimentMetricsToUnit(act)
-			#act._sentimentMetrics.printAllInfo(act._lengthInWords)
-		#print("Drama")
+			act._sentimentMetrics.printAllInfo(act._lengthInWords)
+		print("Drama")
 		self.attachSentimentMetricsToUnit(dramaModel)
-		#dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
+		dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
 
 	def attachSentimentMetricsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
 			self.attachSentimentMetricsToUnit(speaker)
-			#speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
+			print("Speaker")
+			speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
 
 	def attachSentimentRelationsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
@@ -149,7 +155,7 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			sentimentBearingWordsAct = []
 
-			for configuration in act._configurations:
+			for configuration in act._configurations[0:2]:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
@@ -189,13 +195,9 @@ class Sentiment_Analyzer:
 					confLength = confLength + speech._lengthInWords
 					actLength = actLength + speech._lengthInWords
 					dramaLength = dramaLength + speech._lengthInWords
-					#print("Speech: " + str(speech._lengthInWords))
 				conf._lengthInWords = confLength
-				#print("Conf: " + str(conf._lengthInWords))
 			act._lengthInWords = actLength
-			#print("Act: " + str(act._lengthInWords))
 		dramaModel._lengthInWords = dramaLength
-		#print("Drama: " + str(dramaModel._lengthInWords))
 
 		for speaker in dramaModel._speakers:
 			speakerLength = 0
@@ -262,6 +264,14 @@ class Sentiment_Analyzer:
 			sentimentBearingWord._surprise = sentiments["surprise"]
 			sentimentBearingWord._trust = sentiments["trust"]
 
+	def setBawlInformation(self, sentimentBearingWord):
+		if(sentimentBearingWord._lemma in self._bawl):
+			print("###")
+			print(sentimentBearingWord._lemma)
+			info = self._bawl[sentimentBearingWord._lemma]
+			sentimentBearingWord._emotion = info["emotion"]
+			sentimentBearingWord._arousel = info["arousel"]
+	
 	def getSentimentBearingWord(self, languageInfo):
 		sentimentBearingWord = Sentiment_Bearing_Word()
 		sentimentBearingWord._lemma = languageInfo[0]
@@ -270,6 +280,7 @@ class Sentiment_Analyzer:
 
 		self.setSentiWSInformation(sentimentBearingWord)
 		self.setNrcInformation(sentimentBearingWord)
+		self.setBawlInformation(sentimentBearingWord)
 
 		return sentimentBearingWord
 				
@@ -287,7 +298,7 @@ class Sentiment_Analyzer:
 
 	def isSentimentBearingWord(self, word):
 
-		if((word in self._sentiWS) or (word in self._nrc)):
+		if((word in self._sentiWS) or (word in self._nrc) or (word in self._bawl)):
 			return True
 		else:
 			return False

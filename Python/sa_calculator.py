@@ -55,9 +55,13 @@ class Sentiment_Calculator:
 		sadnessTotal = 0
 		surpriseTotal = 0
 		trustTotal = 0
+		emotionTotal = 0
+		arouselTotal = 0
+
 		if self._sentimentBearingWords is not None:
 			for word in self._sentimentBearingWords:
 				polaritySentiWSTotal = polaritySentiWSTotal + word._polaritySentiWS
+				
 				positiveNrcTotal = positiveNrcTotal + word._positiveNrc
 				negativeNrcTotal = negativeNrcTotal + word._negativeNrc
 				angerTotal = angerTotal + word._anger
@@ -68,6 +72,9 @@ class Sentiment_Calculator:
 				sadnessTotal = sadnessTotal + word._sadness
 				surpriseTotal = surpriseTotal + word._surprise
 				trustTotal = trustTotal + word._trust
+
+				emotionTotal = emotionTotal + word._emotion
+				arouselTotal = arouselTotal + word._arousel
 
 		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = polaritySentiWSTotal
 		
@@ -83,6 +90,9 @@ class Sentiment_Calculator:
 		self._sentimentMetrics._metricsTotal["sadness"] = sadnessTotal
 		self._sentimentMetrics._metricsTotal["surprise"] = surpriseTotal
 		self._sentimentMetrics._metricsTotal["trust"] = trustTotal
+
+		self._sentimentMetrics._metricsTotal["emotion"] = emotionTotal
+		self._sentimentMetrics._metricsTotal["arousel"] = arouselTotal
 
 
 if __name__ == "__main__":
