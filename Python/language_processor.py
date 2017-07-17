@@ -16,11 +16,11 @@ def main():
 
 	lp = Language_Processor()
 
-	lp.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
+	lp.processSingleDrama("../Lessing-Dramen/less-Damon_k.xml")
 	
-	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/test2")
+	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/test")
 	
-	#lp.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/")
+	#lp.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Test/")
 	
 
 class Language_Processor:
@@ -59,6 +59,14 @@ class Language_Processor:
 		self.lemmatize()
 		print("Lemmas ready...")
 		print("Lemmas With LanguageInfo ready...")
+
+	def processTextTokens(self, plainText):
+		self._plainText = plainText
+		self._filteredText = self.filterText(plainText)
+		self._textBlob = TextBlobDE(self._filteredText)
+		print("TextBlob ready...")
+		self._tokens = self._textBlob.words
+		print("Tokens ready...")
 
 	def processTextFully(self, plainText):
 		self._plainText = plainText
@@ -161,6 +169,8 @@ class Language_Processor:
 
 			lemmaAndTokenPOS = (self._lemmas[i], (self._tokensAndPOS[i][0], self._tokensAndPOS[i][1]))
 			self._lemmasWithLanguageInfo.append(lemmaAndTokenPOS)
+			#print(self._lemmas[i])
+			#print(self._tokensAndPOS[i][0])
 
 	# One Lemma can have multiple POS
 	def createLemmaAndPOSDict(self):
@@ -218,6 +228,10 @@ class Language_Processor:
 		fdist = FreqDist(self._lemmasWithoutStopwords)
 		frequencies = fdist.most_common()
 		self._wordFrequencies = frequencies
+
+	def generateWordFrequenciesOutputTokens(self, dataName):
+		outputFile = open(dataName + ".txt", "w")
+
 
 	def generateWordFrequenciesOutputLemmas(self, dataName):
 		outputFile = open(dataName + ".txt", "w")

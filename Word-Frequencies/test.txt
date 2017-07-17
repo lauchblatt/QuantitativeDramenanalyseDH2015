@@ -1,1345 +1,1239 @@
-Number of all words 2517
-Nummber of different lemmas 1341
+Number of all words 2686
+Nummber of different lemmas 1235
 
 Lemma	POS	Frequency	Tokens
-Prinz	NN, NNP	49	Prinz
-Vater	NN, JJ	48	Vater
-König	NN, DT, NNP	42	König, Könige
-Sohn	NN, NNS, NNP	25	Sohn, Söhne
-mussen	VB, VBN	21	muß, mußten, mußt, mußte
-Strato	NN	21	Strato
-Schwerd	NNP, NN	19	Schwerd
-Götter	NN	18	Götter
-sagen	VB, VBN	17	sagte, sagen, gesagt, sage
-Vaters	NN, JJ	16	Vaters
-gut	JJ	12	gute, gut, guten, guter
-deinen	NN	12	deinen
-Parmenio	NN	12	Parmenio
-hören	VB, VBN	12	höre, hören, hörtest
-meines	NN, IN, JJ	12	meines
-Feind	NN, NNS	12	Feind, Feinde
-wohl	RP, RB	12	wohl
-Soldat	NNS, NN, JJ	11	Soldaten, Soldat
-sprechen	VB, VBN	11	sprach, gesprochen, sprechen
-hast	NN	10	hast
-gern	IN, RB, RP	10	gern
-fangen	VB, VBN, RP	10	gefangen
-erst	RB, JJ	10	erst, ersten
-Lass	NN, NNP	10	Laß
-Freund	NNS, NN, NNP	10	Freunde, Freund
-lieb	NN, JJ, VB	10	lieben, lieber, liebes, lieb
-willst	RP, RB, WRB	9	willst
-sterben	VB, RP	9	sterbe, gestorben, sterben, stirbt
-deinem	NN	9	deinem
-nie	RB, IN	9	nie
-seiner	PRP$	9	seiner
-morgen	RB, RP, IN	8	morgen
-deines	NN, NNP	8	deines
-Wort	NN, NNS	8	Wort, Worte
-glauben	VB	8	glaubte, glaubst, glauben, glaube, glaubest, geglaubt
-schwöre	NN	8	schwöre
-wirst	RB, RP, WRB	8	wirst
-best	JJ, VB	8	besten, beste, bester
-lass	VB, JJ	8	lassen, laß
-weeissen	VB	8	weiß
-Tod	JJ, NN	7	Tod
-wiedern	RB, VBN	7	wieder
-deiner	PRP$	7	deiner
-Einfall	NNS, NN	7	Einfälle, Einfall
-sehen	VB	7	sehen
-klein	JJ	7	klein, kleine, kleinen, kleines, kleiner
-sonst	RP, RB	7	sonst
-Kind	NN	7	Kind
-Wunde	NN, NNS	7	Wunde, Wunden
-Zeit	NN	7	Zeit
-Willst	WRB	7	Willst
-verstehen	VB	7	verstehe, verstehen, verstanden, versteht
-Höre	NN	6	Höre
-Alter	NN	6	Alter
-weisst	NN	6	weißt
-Komm	NN	6	Komm
-bitten	VB	6	bitte, gebeten, bitten
-oft	RB	6	oft
-Krieg	NNS, NN, NNP	6	Kriege, Krieg
-Sohne	PRP$	6	Sohne
-genug	RB, RP, IN	6	genug
-wissen	VB, RB	6	wissen
-Tage	NN	6	Tage
-Jüngling	NN, NNP	6	Jüngling
-alt	JJ	5	alte, alter, alten
-gewiss	JJ, NN	5	gewisse, gewisser, gewiß
-lange	IN, RB, NNP	5	lange
-glücklich	JJ	5	glückliche, glücklichen
-ziehen	VB, RP, VBN	5	zogen, ziehen, gezogen, zieht
-Unglück	NN	5	Unglück
-denken	VB	5	denken, denke
-Prinze	NNS	5	Prinzen
-kömmen	MD	5	kömmst, kömmt
-itzt	DT, RP	5	itzt
-Höret	NN	5	Höret
+versteh	NN	49	versteh
+Leander	NN, NNP	47	Leander
+Freund	NNS, NN, NNP	47	Freunde, Freund
+Damon	NN, NNP	42	Damon
+wohl	RB, RP, IN	35	wohl
+Versteh	NN	30	Versteh
+Freundschaft	NN, JJ	27	Freundschaft
+sagen	VB, RB, VBN, RP	24	sagen, sage, sagt, gesagt
+Herr	NN, JJ	20	Herr
+Frau	NN	20	Frau
+Vetter	NN, NNP	19	Vetter
+weeissen	VB	19	weiß
+Liebe	NN, JJ	18	Liebe
+gut	JJ	16	gut, guter, guten, gute
+gewiss	NN, JJ	14	gewiß, gewissen
+soen	VBN, RB	14	so
+andern	JJ, DT, RB	14	andern
+ha	NN	14	ha
+Himmel	NN	14	Himmel
+mussen	VB	13	muß, mußtest
+Schiff	NN, NNS	13	Schiff, Schiffe
+Ehre	NN	13	Ehre
+Unglück	NN	12	Unglück
+Ach	NN	12	Ach
+Vermögen	NN	11	Vermögen
+Herz	NN, NNS	11	Herz, Herzen
+Gott	NN	11	Gott
+wenig	RB, IN	11	wenig
+eben	WRB, RB	10	eben
+glauben	VB	10	glauben, glaube, geglaubt
+wahr	RP, RB, JJ	10	wahr
+genug	RB, RP	10	genug
+lieb	NN, JJ, VB	10	lieben, lieber, liebe
+Lisette	NN	10	Lisette
+Recht	NN	9	Recht
+kömmen	MD	9	kömmt
+itzo	NN	9	itzo
+bekommen	VB, VBN	9	bekommen
+erst	RP, RB, JJ	9	erst, ersten
+alsdenn	RB, RP, IN	8	alsdenn
+erklären	VB, VBN	8	erklären, erklärten, erklärt, erkläret, erklärte
+Leandern	NN	8	Leandern
+reden	VB, PRP$	8	redet, reden
+dazuen	VB	8	dazu
+Nachricht	NN	8	Nachricht
+sehen	VBN, VB	8	sehen, gesehen, sieht
+setzen	VB, RP	8	gesetzt, setzen
+Zeit	NN	8	Zeit
+bald	WRB, RB, RP	8	bald
+Ihrem	NN	7	Ihrem
+glücklich	JJ	7	glücklich
+gern	VBN, RB, IN, RP	7	gern
+Neigung	NN, NNS	7	Neigung, Neigungen
+Reden	NN, NNP	7	Reden
+Witwe	NN	7	Witwe
+Vergnügen	NN	7	Vergnügen
+liebster	NN	7	liebster
+verzeihen	VB	7	verzeihen
+suchen	VB	7	suchen, sucht, suchten
+gar	RB	7	gar
+unglücklich	JJ	7	unglücklich
+zwei	CD	7	zwei
+Ha	NN	7	Ha
+verlieren	VB	6	verliert, verlieren, verlöre
+Freundes	NN	6	Freundes
+hören	VB	6	hören, höre
+Gedanke	NNS	6	Gedanken
+Handel	NN	6	Handel
+klein	JJ	6	kleiner, klein, kleines, kleine
+Absichten	NN	6	Absichten
+Art	NN	6	Art
+vielleicht	RB	6	vielleicht
+fein	JJ	6	fein
+verstehen	VB	6	verstehen, verstehe
+Leben	NN	5	Leben
+Madam	JJ	5	Madam
+denken	VB	5	denkt, denken
+heiraten	VB	5	heiraten
+glücklichsten	NN	5	glücklichsten
+Wort	NN	5	Wort
+bitten	VB	5	bitten, bitte
+nehmen	VB	5	nahm, nehmen
+Ursache	NN	5	Ursache
+selb	DT	5	selber
+finden	VB, VBN	5	finden, gefunden
+verlor	JJ	5	verloren
 Glück	NN	5	Glück
-Held	NNS, NN, NNP	5	Helden, Held
-schimpflich	JJ	5	schimpflich, schimpflichen, schimpfliche
-stürzen	VB, VBN	5	stürzen, gestürzt
-wenig	RP, IN, RB	5	wenig
-bin	VB, RB, JJ	5	bin
-Jugend	NN, JJ	5	Jugend
-allein	RP, RB	5	allein
-wählen	VB	4	wählte, wählen
-weit	RB, JJ	4	weit
-unsere	PRP$	4	unsere
-Recht	NN	4	Recht
-Schwur	NN	4	Schwur
-Scham	NN	4	Scham
-versprechen	VB	4	verspricht, versprechen
-nimm	NN	4	nimm
-vielleichen	RB, VBN, JJ	4	vielleicht
-nehmen	VB, VBN	4	nahm, nehmen, genommen
-rechen	VB	4	recht
-zärtlich	JJ	4	zärtliche, zärtlicher, zärtlich
-Gewalt	NN	4	Gewalt
-bestechen	VB	4	bestechen
-soen	VB, RB	4	so
-Ursache	NN	4	Ursache
-erscheinen	VB	4	erscheinen
-fühlen	VB	4	fühlte, fühlen
-Philotas	NN	4	Philotas
-andern	JJ, DT	4	andern
-wahr	RP, JJ	4	wahr, wahre, wahrer
-Mann	NN	4	Mann
-kennen	VB	4	kenne, kennen
-männlich	JJ	4	männliche, männlichen
-Ha	NN	4	Ha
-lachen	VB	4	lachen, lache
-Schicksal	NN	4	Schicksal
-Ehre	NN	4	Ehre
-jung	JJ, NN, RB	4	junge, junger, jungen, jung
-Gib	NNP	3	Gib
-Schlacht	NNS, NN	3	Schlachten, Schlacht
-tödlich	JJ	3	tödlich
-würdig	JJ	3	würdig
-ehrlich	JJ	3	ehrlicher
-Miene	NN	3	Miene
-brauchen	VB	3	braucht, brauchen
-voll	JJ	3	voll, voller
-Soen	RB, VBN	3	So
-Untertanen	NN	3	Untertanen
-Leben	NN	3	Leben
-ward	NNP	3	ward
-sieben	CD	3	sieben
-Sage	NN	3	Sage
-zwischen	IN	3	zwischen
-werfen	VB	3	warf, wirft
-umarmen	VB	3	umarmen
-jugendlich	JJ	3	jugendlicher, jugendlichen, jugendliche
-Verstand	NN	3	Verstand
-Antwort	NN	3	Antwort
-Herz	NNS, NN	3	Herzen, Herz
-Hast	NN	3	Hast
-Königs	NN	3	Königs
-Gefangenen	NN	3	Gefangenen
-feindlich	JJ	3	feindlichen
-verächtlich	JJ	3	verächtlich, verächtliche
-Gehorsam	NN	3	Gehorsam
-bewundern	VB	3	bewundern
-verbinden	RP, VB	3	verbunden, verbinden
-seines	PRP$	3	seines
-zurück	RP, RB	3	zurück
-reden	VB	3	reden, rede
-weine	NN	3	weine
-führen	VB	3	führe, führen, führte
-Weg	NN	3	Weg
-Freude	NN	3	Freude
-erkaufen	NN	3	erkaufen
-rufen	VB, VBN	3	rufe, gerufen, ruft
-Brust	NN	3	Brust
-Fehler	NN	3	Fehler
-Blute	NN	3	Blute
-zwingen	VBN, VB	3	gezwungen, zwingst, zwingen
-Aristodem	NN	3	Aristodem
-überlegen	VB	3	überlegen
-Liebe	NN	3	Liebe
-gar	RP, RB	3	gar
-umringen	VB, VBN	3	umringt
-Gefangen	NN, JJ	3	Gefangen, Gefangener
-näh	JJ	3	näher
-Itzt	NN	3	Itzt
-verwundet	NNP, NN	3	verwundet
-Schande	NN	3	Schande
-bald	RB	3	bald
-Eisen	NN, JJ	3	Eisen
-künftig	JJ	3	künftig, künftigen
-Auge	NN, NNP	3	Auge
-meinigen	NN	3	meinigen
-Lebe	NN	3	Lebe
-fürchte	NN	3	fürchte
-fasen	RB, VB	3	fast
-liebt	NN	3	liebt
-gross	JJ	3	große, groß, großen
-vielleicht	RB, RP	3	vielleicht
-Gesicht	NN	3	Gesicht
-erstaune	NN	3	erstaune
-helfen	VB	3	half, helfen
-Polytimet	NN	3	Polytimet
-Welt	NN	3	Welt
-hör	NN	3	hör
-Erstaunen	NN	3	Erstaunen
-Thron	NNS	3	Throne
-gehören	VB	3	gehören, gehört, gehöret
-Gut	NN, JJ	2	Gut, Gute
-erfahren	VB, VBN	2	erfahren
-Traum	NN, NNS	2	Traum, Träume
-nähern	VB, RP	2	nähert, genähert
-herzlich	JJ	2	herzlich
-verlieren	VB	2	verlieren
-Boten	NN	2	Boten
-reissen	VB, VBN	2	riß, gerissen
-deswegen	RB, RP	2	deswegen
-mache	NN	2	mache
-voraus	RB, IN	2	voraus
-Regierung	NN	2	Regierung
-vergessen	VBN, VB	2	vergessen
-Andenken	NN	2	Andenken
-Gefangenern	VB	2	Gefangener
-Überall	NN	2	Überall
-schrecklich	JJ	2	schrecklich, schreckliche
-Augen	NN	2	Augen
-Kindheit	NN	2	Kindheit
-Gefangenschaft	NN	2	Gefangenschaft
-Verzeihung	NN	2	Verzeihung
-prahlen	VB	2	prahlen
-entwaffnet	NN	2	entwaffnet
-grausam	JJ	2	grausamen, grausam
-Seele	NN	2	Seele
-Göttern	NN	2	Göttern
-Jahren	NN	2	Jahren
-Wozu	NN	2	Wozu
-lässen	VB	2	läßt
-welch	WP, WDT	2	welch
-Wohl	RB, WRB	2	Wohl
-ertappt	NN	2	ertappt
-alsdenn	RB, IN	2	alsdenn
-Sieges	NN	2	Sieges
-sieh	NN	2	sieh
-Ebene	NN	2	Ebene
-Ach	NN	2	Ach
-zerschmettern	NN	2	zerschmettern
-redlich	JJ	2	redliche, redlichen
-unserm	PRP$	2	unserm
-halte	NN	2	halte
+rechen	VB	5	recht, rechten
+sonst	RB	5	sonst
+beleidigen	VB, RP	5	beleidigen, beleidigt
+beleidiget	NN	5	beleidiget
+kennen	VB	5	kenne, kennen
+meines	JJ, NN	5	meines
+helfen	VB	5	hilft, helfen
+Welt	NN	5	Welt
+leicht	JJ	5	leicht, leichter
+jung	JJ	5	jungen, junge
+niederträchtig	JJ	4	niederträchtig
+Pflicht	NN	4	Pflicht
+Freier	NN	4	Freier
+aufs	NN	4	aufs
+grösst	JJ	4	größte, größten
+Person	NN	4	Person
+mirs	NN	4	mirs
+Beleidigungen	NN	4	Beleidigungen
+niemand	DT	4	niemand
+Leanders	NN	4	Leanders
+zeigen	VB, VBN	4	zeigen
+danken	VB	4	danken
+andermal	RB, NNP, RP	4	andermal
+warten	VB, VBN	4	warten
+grossmütig	JJ	4	großmütig, großmütigen
+gehabt	NN	4	gehabt
+untergehen	VBN, RP, VB	4	untergegangen
+angenehm	JJ	4	angenehme, angenehm
+zärtlich	JJ	4	zärtlichen, zärtlich
+verdriesslich	JJ	4	verdrießlich
+antworen	VB	4	antworten
+einander	PRP	4	einander
+sehe	PRP$	4	sehe
+schwach	JJ	4	schwach
+sehn	NN	4	sehn
+Tonne	NN, NNS	4	Tonne, Tonnen
+verlassen	VB	4	verlassen
+Schande	NN	4	Schande
+Reichtum	NN	4	Reichtum
+nie	RB	4	nie
+dächte	NN	4	dächte
+verziehen	VB	4	verziehen
+Nebenbuhler	NN	4	Nebenbuhler
+Geld	NN	4	Geld
+ach	UH	4	ach
+lieben	VB	4	lieben, liebe
+Hand	NN	4	Hand
+hübsch	JJ	4	hübsch, hübsche, hübschen
+Goldes	NN	4	Goldes
+Herrn	NN	4	Herrn
+andre	NN	3	andre
+Hälfte	NN	3	Hälfte
+deswegen	RB	3	deswegen
+glücklichste	NN	3	glücklichste
+übel	JJ	3	übel
+ichs	NN, NNP	3	ichs
+Augen	NN	3	Augen
+gestehen	VB	3	gestehen
+Liebhaber	NN	3	Liebhaber
+verliere	NN	3	verliere
+Verzeihung	NN	3	Verzeihung
+neu	JJ	3	neue
+Unglücke	NN	3	Unglücke
+Ihres	NN	3	Ihres
+Seele	NN	3	Seele
+Wohl	RP, RB	3	Wohl
+Hui	NN	3	Hui
+zuwider	NN	3	zuwider
+entreissen	NN	3	entreißen
+Vorschlag	NN	3	Vorschlag
+Probe	NN	3	Probe
+Augenblick	NN	3	Augenblick
+verlangen	VB, VBN, RP	3	verlangen, verlangt
+Frage	NN	3	Frage
+bloss	JJ, IN	3	bloßer, bloß, bloße
+halb	JJ, CD	3	halbe, halb
+Verstehn	NN	3	Verstehn
+Sachen	NN	3	Sachen
+unterscheiden	VBN, VB	3	unterschieden, unterscheiden
+Himmels	NN	3	Himmels
+Scham	NN	3	Scham
+vollkomm	JJ	3	vollkommen
+behalten	VBN, RP	3	behalten
+einerlei	IN, RB	3	einerlei
+heuen	VB	3	heute
+Paar	NN, JJ	3	Paar
+Aufführung	NN	3	Aufführung
+dasjenig	DT	3	dasjenige
+umsonst	RB	3	umsonst
+ihrem	PRP$	3	ihrem
+verbinden	RP, VBN	3	verbunden
+Rede	NN	3	Rede
+aufrichtig	JJ	3	aufrichtig
+Überlegen	NN	3	Überlegen
+Vielleicht	RB	3	Vielleicht
+süsse	NN	3	süße
+anfangen	VB	3	anfangen
+ganzes	NN	3	ganzes
+empfindlichen	VBN	3	empfindlich
+Gesetzt	NN	3	Gesetzt
+Dank	IN, RP	3	Dank
+zweifeln	VB	3	zweifeln
+allezeit	NN	3	allezeit
+Glücke	NN	3	Glücke
+Untreue	NN	3	Untreue
+dadurch	RB	3	dadurch
+wider	RP, IN	3	wider
+gleichviel	NN	3	gleichviel
+Madame	NN	3	Madame
+Erbe	NNS	3	Erben
+Zweifeln	NN	3	Zweifeln
+fällen	VB	3	fällt, gefällt
+weg	RB, RP	3	weg
+auszuüben	NN	3	auszuüben
+bereden	NN	3	bereden
+wissen	VB	3	wissen
+Gelegenheit	NN	3	Gelegenheit
+verstehn	NN	3	verstehn
+Entschluss	JJ, NN	3	Entschluß
+allzu	RB, IN	3	allzu
+wünschen	VB	3	wünschen, wünschte
+schicken	VB	3	geschickt, schicken
+endlich	RB	3	endlich
+vorkommen	VB	3	vorkommen
+erhalten	VBN, VB	3	erhalten
+Vermögens	NN	3	Vermögens
+gross	JJ	3	groß, große
+etwan	NN	3	etwan
+St	PRP$	3	St
+Verdruss	NN	3	Verdruß
+notwendig	JJ	3	notwendig
+unsrer	PRP$	2	unsrer
+Traum	NNS	2	Träume
+dienen	VB	2	dienen, dient
+gesteh	NN	2	gesteh
+empfindlich	JJ	2	empfindlich
+Sprache	NN	2	Sprache
+reizender	NN	2	reizender
+Eure	NN	2	Eure
+voraus	JJ	2	voraus
+vergessen	RP	2	vergessen
+betrübt	NN, JJ	2	betrübt, betrübte
+vertraue	NN	2	vertraue
+Weder	NN	2	Weder
+wohin	WRB, RB	2	wohin
+billig	JJ, RB	2	billig
+Wahl	NN	2	Wahl
+erfahren	VBN, RP	2	erfahren
+Eidschwur	NN	2	Eidschwur
+fehlen	VB	2	fehlt
+schenken	VBN, VB	2	geschenkt, schenken
+möglichstes	NN	2	möglichstes
+versuchen	VB	2	versuchen
+annehmen	VB	2	annehmen
+daraufen	RB, VB	2	darauf
+Gesichte	NN	2	Gesichte
+Irrung	NN	2	Irrung
+Gütigkeit	NN	2	Gütigkeit
+lustig	JJ	2	lustig
+banqueroute	NN	2	banqueroute
+besitzen	VB	2	besitzen
+Fünfmalten	VBN	2	Fünfmal
+gewissenhaft	JJ	2	gewissenhaft
+Lebens	JJ, NN	2	Lebens
+liebte	NN, NNP	2	liebte
+grossmütigen	NN	2	großmütigen
+Grillenfänger	NN	2	Grillenfänger
+Soen	RB	2	So
+sachte	PRP$	2	sachte
+wertester	NN, JJ	2	wertester
+Pflichten	NN	2	Pflichten
+Gut	NN	2	Gut
+zweifle	NN	2	zweifle
 edel	JJ	2	edel
-klagen	VB	2	klagen
-Sieh	NN	2	Sieh
-nützen	VB	2	nützen
-Zelt	NN	2	Zelt
+bestreben	VB	2	bestrebte, bestreben
+wussten	NN	2	wußten
+unbekannen	VBN	2	unbekannt
+Ausschlag	NN	2	Ausschlag
+Güter	NN	2	Güter
+unmöglich	JJ	2	unmöglich
+zugleich	RB	2	zugleich
+anstehen	VB, NN	2	ansteht, anstehen
+Würde	NN	2	Würde
 schmeicheln	VB	2	schmeicheln
-herab	NN	2	herab
-Verzeih	NN	2	Verzeih
-Greis	NNP, NN	2	Greis
-Taten	NN	2	Taten
-Hülfe	NN	2	Hülfe
-wenden	VB	2	wenden
-kurz	JJ	2	kurz
-Reich	NN	2	Reich
+Gegenstand	NN	2	Gegenstand
+deutlich	JJ	2	deutlich
+teils	NN	2	teils
+Verdacht	NN	2	Verdacht
+nochen	VB	2	noch
+betrügen	VB	2	betrügen
+Sturme	NN	2	Sturme
+eigen	JJ	2	eigenen
+munt	JJ	2	munter
+hoffen	VB	2	hoffe
+vergelte	NN	2	vergelte
+schändlich	JJ	2	schändlichen, schändlich
+versichre	NN	2	versichre
+geweissen	VB	2	gewiß
+Rat	NN	2	Rat
+nötigen	VB, VBN	2	nötigen, nötig
+befürchte	NN	2	befürchte
+schimpfen	VB, RP	2	schimpfen, geschimpft
+hart	JJ	2	harte, harten
+Verstand	NN	2	Verstand
+entschloss	JJ	2	entschlossen
+zürnen	VB	2	zürnen
+manch	DT	2	mancher, manchem
+weniger	RB	2	weniger
+Ei	NN	2	Ei
+Henker	NN	2	Henker
 blind	JJ	2	blinden, blind
-Folge	NN	2	Folge
-alten	VB	2	alt
-aufriss	NN	2	aufriß
-Blut	NN	2	Blut
+wagen	VB	2	wagt, gewagt
+gedenken	VB	2	gedenken
+Eur	JJ	2	Eure
+Banqueroute	NN	2	Banqueroute
+raten	VB	2	raten
+nennen	VB	2	nennen, nennt
+jen	DT	2	jener, jenen
+Närrin	NN	2	Närrin
+Ihrige	NN	2	Ihrige
+bewussten	NN	2	bewußten
+wenigstens	RB, RP	2	wenigstens
+angetroffen	NN	2	angetroffen
+tue	NN	2	tue
+empfinde	NN	2	empfinde
+fünf	CD	2	fünf
+einbilden	NN	2	einbilden
+alles	RB	2	alles
+aufrichtige	NN, JJ	2	aufrichtige
+Erklären	NN	2	Erklären
+derohalben	NN	2	derohalben
+desgleich	VB	2	desgleichen
+Denkt	NN	2	Denkt
+anzufangen	VB	2	anzufangen
+überlassen	VB	2	überlassen
+Mode	NN	2	Mode
+verdienen	VB	2	verdient
+Liebsten	NN	2	Liebsten
+Weg	NN	2	Weg
+Hören	NN	2	Hören
+Mache	NN	2	Mache
+ungegründeten	NN, NNP	2	ungegründeten
+bekümmert	NN	2	bekümmert
+vorstellen	VB, VBN	2	vorstellen, vorgestellt
+begehen	VB, RP	2	begangen
+weswegen	WRB	2	weswegen
+Händen	NN	2	Händen
+Sanftmut	NN	2	Sanftmut
+leugnen	VB	2	leugnen
+vergnügt	JJ	2	vergnügt
+etwa	IN	2	etwa
+Zweifel	NN	2	Zweifel
+ersen	VB	2	erste, ersten
+gefallen	VB, RP	2	gefallen
+trauen	VB	2	trauen
+bessern	VBN, RP	2	besser
+Pöbel	NN	2	Pöbel
+unsre	PRP$	2	unsre
+schreiben	VBN	2	geschrieben
+stumm	JJ	2	stumme
+best	JJ	2	besten
+seh	VB, PRP$	2	sehen, seh
+niemanden	NN	2	niemanden
+Reichtümer	NN	2	Reichtümer
+Geschenk	NN	2	Geschenk
+Tausch	NN	2	Tausch
+bestürzt	NN	2	bestürzt
+Schaden	NN	2	Schaden
+Höre	NN	2	Höre
+Wahrheit	NN	2	Wahrheit
+Tage	NN	2	Tage
+Testamente	NN	2	Testamente
+einzig	VB	2	einzige
+abern	VBN, VB	2	aber
+Heirat	NNS, NN	2	Heiraten, Heirat
+eitle	NN	2	eitle
+verlasse	NNP	2	verlasse
+scheinbar	JJ	2	scheinbare, scheinbar
+Handlung	NN	2	Handlung
+redlich	JJ	2	redliche, redlich
+denjenig	DT	2	denjenigen
+erzählen	VB	2	erzähle, erzählen
+Ihrigen	NN	2	Ihrigen
 schwören	VB	2	schwören, geschworen
-Seite	NN	2	Seite
-dochen	RB, VBN	2	doch
-Lösegeld	NN	2	Lösegeld
-findest	NN	2	findest
-Elend	NN, JJ	2	Elend
-Vorsatze	NN	2	Vorsatze
-frei	JJ	2	frei
-manch	JJ	2	manche, mancher
-Teil	NN	2	Teil
-müd	JJ	2	müde
-zweit	JJ	2	zweiten, zweite
-beschworen	NN	2	beschworen
-Länder	NN, JJ	2	Länder
-Gedanke	NNS	2	Gedanken
-Menschen	NN	2	Menschen
-wagen	VB, VBN	2	wagen, gewagt
-schaudert	NN	2	schaudert
-Imm	JJ	2	Immer
-Zukunft	NN	2	Zukunft
-Kleinigkeit	NN	2	Kleinigkeit
-Stirb	NN	2	Stirb
-gedenken	VBN	2	gedacht
-tot	JJ	2	tot
-schlagen	VB	2	schlug, schlägt
-Verderben	NN	2	Verderben
-Feuer	NN	2	Feuer
-euer	PRP$	2	euer
-umsonst	RB, IN	2	umsonst
-nahe	RP	2	nahe
-Mittel	NN	2	Mittel
-welchem	WP	2	welchem
-Nimm	NN	2	Nimm
-Nichtswürdiger	NNP, NN	2	Nichtswürdiger
-Schmeichle	NN	2	Schmeichle
-sichersten	NN	2	sichersten
-ehe	CC	2	ehe
-Sei	NN	2	Sei
-ungehalten	NN	2	ungehalten
-elend	JJ	2	elend
-Erfahrung	NN	2	Erfahrung
-leben	VB, VBN	2	leben
-Befehlen	NN	2	Befehlen
-grösstes	NN, JJ	2	größtes
-Glied	NNS	2	Glieder
-Welch	NN	2	Welch
-menschlich	JJ	2	menschliche
-finst	JJ	2	finster
-Träne	NN	2	Träne
-Verzweiflung	NN	2	Verzweiflung
-Gegenteil	NN	2	Gegenteil
-stehen	VB	2	steht, stehe
-verlor	JJ	2	verloren
-wehe	NN	2	wehe
-Schwöre	NN	2	Schwöre
-gibst	NN	2	gibst
-zeigen	VB	2	zeigte, zeigen
-wert	JJ, RP	2	wert
-Gebet	NN	2	Gebet
-Schwerde	NN	2	Schwerde
-Liebes	NN	2	Liebes
-vollenden	VB	2	vollenden
-Helm	NN	2	Helm
-feuriger	NNP	2	feuriger
-seh	PRP$, VB	2	seh, sehen
-einst	RB	2	einst
-Frucht	NN	2	Frucht
-hiermit	IN, RP	2	hiermit
-Krieger	NN	2	Krieger
-genugen	RP	2	genug
-fürchten	VB	2	gefürchtet, fürchten
-Lachen	NN	2	Lachen
-glaub	NN	2	glaub
-ernsthaft	JJ	2	ernsthaft
-Umstand	NNS	2	Umstände
-Flamme	NN	2	Flamme
-Heft	NN	2	Heft
-kennst	NN	2	kennst
-erleben	VB	2	erlebe, erleben
-weiss	VB	2	weiß
-lebendig	JJ	2	lebendig
-Sache	NN	2	Sache
-Befehlshaber	NN	2	Befehlshaber
-liebern	VB	2	lieber
-vergönnen	NN	2	vergönnen
-bestärken	NN	2	bestärken
-Anbetung	NN	2	Anbetung
-blutig	JJ	2	blutig, blutigen
-umarme	NN	2	umarme
-Freundschaft	NN	2	Freundschaft
-einzig	JJ	2	einzigen
-abern	VBN	2	aber
-sehnte	NN	2	sehnte
-bewegen	VB	2	bewegen
-Besten	NN	2	Besten
-bluten	VB	2	bluten
-Körper	NN	2	Körper
-unendlich	JJ	2	unendlicher
-Nachricht	NNS, NN	2	Nachrichten, Nachricht
-verweigern	VB	2	verweigern
-Namen	NN	2	Namen
-toden	NN	2	toden
-Befehl	NN	2	Befehl
-lehren	VB, VBN	2	lehren, gelehrt
-Streich	NN	2	Streich
-glücklicher	NN	2	glücklicher
-gewinnen	VBN, VB	2	gewonnen
-Stahl	NN	2	Stahl
+zittere	NN	2	zittere
+alleine	NN	2	alleine
+stellen	VB, RP	2	stellt, gestellt
+besorge	NN	2	besorge
+angekommen	NN	2	angekommen
+sprechen	VB, VBN	2	spricht, gesprochen
+just	JJ	2	just
+Wollte	NN	2	Wollte
+Mutter	NN	2	Mutter
+lese	NN	2	lese
+Einfall	NN	2	Einfall
+hab	NN	2	hab
+gerühret	NN	2	gerühret
+Schimpf	NN	2	Schimpf
+meinigen	NN	2	meinigen
+Drum	NN	2	Drum
+Umständen	NN	2	Umständen
 läng	JJ	2	länger
-Nochen	RB	2	Noch
-begegnen	VB	2	begegnen
-Art	NN	2	Art
-Pferde	NN	2	Pferde
-denkst	FW, NN	2	denkst
-Fasse	NNP	2	Fasse
-besser	RB, RP	2	besser
-Siege	NN	2	Siege
-Seit	IN, NN	2	Seit, Seite
-schicken	VB	2	schicken
-entgegen	IN	2	entgegen
-niederschlagen	VB	2	niederschlagen
-freilich	RB, IN	2	freilich
-deinigen	NN	2	deinigen
-Bildung	NN	2	Bildung
-schiehen	VB	2	geschieht
-Geschichte	NN	2	Geschichte
-Bald	NN	2	Bald
-Hand	NN	2	Hand
-Ende	NN	2	Ende
-sähe	NN	2	sähe
-zählen	VB	2	zähle, zählen
-Tritt	NN	2	Tritt
-melden	VB	2	melden
-fort	RP	2	fort
-erspare	NN	2	erspare
-Grunde	NN	2	Grunde
-erinnern	VB	2	erinnern, erinnere
-Waffe	NNS	2	Waffen
-ins	IN	2	ins
-Väter	NN	2	Väter
-Einsicht	NN	2	Einsicht
-Herolde	NN	2	Herolde
-liebst	WRB	2	liebst
-lang	JJ	2	langen, lang
+anwenden	VB	2	anwenden
+erwarten	VB	2	erwarten
+Spöttereien	NN	2	Spöttereien
+bös	JJ	2	böse
+meinig	DT	2	meinige
+handeln	VB	2	handeln
+Grossmut	NN	2	Großmut
+besser	RB	2	besser
+Klugheit	NN	2	Klugheit
+Eurer	NN	2	Eurer
+hieher	NN	2	hieher
+redet	VB, JJ	2	redet
+besondre	NN	2	besondre
+itzt	DT	2	itzt
+fragen	VB	2	fragen
+Mannspersonen	NN	2	Mannspersonen
+verunglückt	NN	2	verunglückt
+gestünde	NN	2	gestünde
+Seines	PRP$	2	Seines
+Ostindien	NN	2	Ostindien
+empfinden	VB	2	empfinden
+Wasser	NN	2	Wasser
+ehe	CC	2	ehe
+Kapital	NN, NNS	2	Kapital, Kapitale
+liesse	NN	2	ließe
+besorgen	VB	2	besorgte
+schweigen	RB, VB	2	schweigt, schweigen
 Mensch	NN	2	Mensch
+wär	JJ, NN	2	wäre, wär
+Wissen	NN	2	Wissen
+edler	NN	2	edler
+Haus	NN	2	Haus
+Schade	NN	2	Schade
+lang	JJ	2	lang
+ausschlagen	NN	2	ausschlagen
+Ers	NNP	2	Ers
+Exempel	NN	2	Exempel
+Lust	NN	2	Lust
 unser	PRP$	2	unser
-wunderbar	JJ	2	wunderbaren, wunderbarer
-Verräter	NN	2	Verräter
-geschmeidige	NN	1	geschmeidige
-Tut	NN	1	Tut
-Unbedachtsamkeit	NN	1	Unbedachtsamkeit
-Pferden	NN	1	Pferden
-Schöpfer	NN	1	Schöpfer
-aushören	NN	1	aushören
-steigen	RB	1	stieg
-Schenke	NN	1	Schenke
-kehre	NN	1	kehre
-verstatten	NN	1	verstatten
-komm	NN	1	komm
-tu	NN	1	tu
-Eben	NN	1	Eben
-Adern	NN	1	Adern
-Sprache	NN	1	Sprache
-Bedenklichkeit	NN	1	Bedenklichkeit
-Lykus	NN	1	Lykus
-Kriegsmann	NN	1	Kriegsmann
-gestürzet	NN	1	gestürzet
-Armseliger	NNP	1	Armseliger
-unschädlich	JJ	1	unschädlich
-treulich	JJ	1	treulich
-brauch	NN	1	brauch
-Umständen	NN	1	Umständen
-Schwerts	NN	1	Schwerts
-mitteile	NN	1	mitteile
+trennen	VB	2	trennen
+Leichtsinnigkeit	NN	2	Leichtsinnigkeit
+werfen	VB	1	werfen
+wären	VB	1	wären
+verhungern	NN	1	verhungern
+Nase	NN	1	Nase
+edl	JJ	1	edle
+Ehe	NN	1	Ehe
+alt	JJ	1	alten
+Falschheit	NN	1	Falschheit
+Winter	NN	1	Winter
+verstehst	NN	1	verstehst
+eigennützig	JJ	1	eigennützig
+aufhelfen	NN	1	aufhelfen
+Habt	NN	1	Habt
+gescheute	JJ	1	gescheute
+gescheiter	NN	1	gescheiter
+bissgen	NN	1	bißgen
+übrigens	RP	1	übrigens
+verliebt	JJ	1	verliebt
+brächten	NN	1	brächten
+spielte	NN	1	spielte
+Übereilung	NN	1	Übereilung
+philosophisch	JJ	1	philosophisch
+Fein	NN	1	Fein
+Glauben	NN	1	Glauben
 schwerlich	JJ	1	schwerlich
-Wem	NN	1	Wem
-träumen	VB	1	träumen
-rechne	NN	1	rechne
-hauen	VB	1	hauen
-gallose	NN	1	gallose
-versetzen	VB	1	versetzen
-Geschwader	NN	1	Geschwader
-Tat	NN	1	Tat
-streng	JJ	1	strengen
-ablösen	VB	1	ablösen
-Ärgernis	NN	1	Ärgernis
-Göttin	NN	1	Göttin
-durchstreifen	NN	1	durchstreifen
-liessen	NN	1	ließen
-Blitz	NN	1	Blitz
-trägst	NN	1	trägst
-Methymna	NN	1	Methymna
-hattest	WRB	1	hattest
-siehet	NN	1	siehet
-belohnen	VB	1	belohnen
-frühe	NN	1	frühe
-Geh	NN	1	Geh
-begleiten	PRP$	1	begleiten
-grossmütig	JJ	1	großmütig
-ihres	PRP$	1	ihres
-fällt	NN	1	fällt
-süsser	NN	1	süßer
-ten	NN	1	ten
-Philosoph	NN	1	Philosoph
-verdrüsslich	JJ	1	verdrüßlich
-winden	VB	1	winden
-Weibe	NN	1	Weibe
-Sachte	PRP$	1	Sachte
-Gemüt	NN	1	Gemüt
-ausgenomm	JJ	1	ausgenommen
-Monarch	NN	1	Monarch
-Bedenke	NN	1	Bedenke
-teu	JJ	1	teuer
-scheinet	NN	1	scheinet
-unterlassen	VB	1	unterlassen
-untersagte	NN	1	untersagte
-beschenkt	NN	1	beschenkt
-wallet	NN	1	wallet
-unbesorgen	RP	1	unbesorgt
-Vorsatz	NN	1	Vorsatz
-befiehl	NN	1	befiehl
-folge	NN	1	folge
-selige	NN	1	selige
-ungeduldig	JJ	1	ungeduldig
-würdigster	NN	1	würdigster
-beweine	NN	1	beweine
-Beweine	NN	1	Beweine
-wachen	NN	1	wachen
-Lehre	NN	1	Lehre
-neu	JJ	1	neuen
-Bluts	NN	1	Bluts
-Blutes	NN	1	Blutes
-leid	JJ	1	leid
-kostbar	JJ	1	kostbaren
-Läger	NN	1	Läger
-Wunder	NN	1	Wunder
-höhnisch	JJ	1	höhnisches
-weiten	VB	1	weiten
-betrachten	RP	1	betrachtet
-verführerisch	JJ	1	verführerischen
-Ursachen	VB	1	Ursachen
-drei	CD	1	drei
-veruneinigten	NN	1	veruneinigten
-Vielleicht	RB	1	Vielleicht
-Ländern	NN	1	Ländern
-Seeln	VBN	1	Seelen
-treffen	VBN	1	trifft
-scheue	NN	1	scheue
-bedürfen	VB	1	bedarf
-schöne	NN	1	schöne
-Weigere	NNP	1	Weigere
-stürmten	NN	1	stürmten
-bange	NN	1	bange
-ekl	JJ	1	ekler
-Barmherzigkeit	NN	1	Barmherzigkeit
-Standhaftigkeit	NN	1	Standhaftigkeit
-Wut	NN	1	Wut
-derjenig	DT	1	derjenige
-blühende	NN	1	blühende
-Lorbeern	NN	1	Lorbeern
-erhitzen	VB	1	erhitzen
-schaden	VB	1	schaden
-erweisest	NN	1	erweisest
-eilen	VBN	1	geeilt
-entsank	NNP	1	entsank
-Dach	NN	1	Dach
-Ströme	NN	1	Ströme
-Wirst	WRB	1	Wirst
-Weit	NN	1	Weit
-Vorteile	NN	1	Vorteile
-Verzögerung	NN	1	Verzögerung
-sorgende	NN	1	sorgende
-Trauren	NN	1	Trauren
-unglücklicher	NN	1	unglücklicher
-weniger	RB	1	weniger
-Beschönigungen	NN	1	Beschönigungen
-Ersetzung	JJ	1	Ersetzung
-befohlne	NN	1	befohlne
-aufs	NN	1	aufs
-Verlustes	NN	1	Verlustes
-auswechsle	NN	1	auswechsle
+untreu	JJ	1	untreu
+schade	NN	1	schade
+gemein	JJ	1	gemein
+Not	NN	1	Not
+Gewinst	NN	1	Gewinst
+gestern	IN	1	gestern
+verrichten	VB	1	verrichten
+Rang	NN	1	Rang
+gröblich	JJ	1	gröblich
+vernünftigsten	NN	1	vernünftigsten
+beliebt	JJ	1	beliebt
+gewahr	NN	1	gewahr
+Kreaturen	NN	1	Kreaturen
+Angelegenheiten	NN	1	Angelegenheiten
+weien	VBN	1	weit
+verbieten	VBN	1	verboten
+täte	NN	1	täte
+ungegründet	NN	1	ungegründet
+selben	VBN	1	selbst
+erhabenen	NN	1	erhabenen
+He	NN	1	He
+reichlich	JJ	1	reichlicher
+mächtiger	NN	1	mächtiger
+Frisch	JJ	1	Frisch
+Kleinigkeit	NN	1	Kleinigkeit
+belebt	JJ	1	belebter
+gottesvergessen	NN	1	gottesvergessen
+stünde	NN	1	stünde
+vereinigen	VB	1	vereinigen
+würde	RB	1	würde
+Brief	NNS	1	Briefe
+gütig	JJ	1	gütig
+Gegenwart	NN	1	Gegenwart
+rate	NN	1	rate
+schuldig	JJ	1	schuldig
+süssen	NN	1	süßen
+Leb	NN	1	Leb
+übermorgen	RB	1	übermorgen
+sieht	VB	1	sieht
+Grams	NN	1	Grams
+wiederholen	VB	1	wiederholen
+Unrecht	NN	1	Unrecht
+seinig	DT	1	seinige
+warteten	NN	1	warteten
+verleumden	VB	1	verleumden
+Rückkunft	NN	1	Rückkunft
+trotzt	NN	1	trotzt
+erdulden	NN	1	erdulden
+vollends	NN	1	vollends
+hegen	NN	1	hegen
+edlere	NN	1	edlere
+übereinstimmte	NN	1	übereinstimmte
+törichten	NN	1	törichten
+Summe	NN	1	Summe
+Reichtume	NN	1	Reichtume
+Liebeserklärung	NN	1	Liebeserklärung
+schänden	VB	1	schänden
+liebenswürdigsten	NN	1	liebenswürdigsten
+überzeugen	VB	1	überzeugt
+Stolze	NN	1	Stolze
+Angst	NN	1	Angst
+Seeln	VB	1	Seelen
+treffen	VB	1	treffen
+herbestellet	NN	1	herbestellet
+ergeben	VBN	1	ergeben
+heeissen	RB	1	heißt
+Verdienst	NN	1	Verdienst
+liebenswürdige	NN	1	liebenswürdige
+Darnach	RB	1	Darnach
+unglücklichste	NN	1	unglücklichste
+mengest	NN	1	mengest
+schadet	VB	1	schadet
+Hoffnung	NN	1	Hoffnung
+Pfui	NN	1	Pfui
+vorplaudern	NN	1	vorplaudern
+Mühe	NN	1	Mühe
+zuging	FW	1	zuging
+Lügen	NN	1	Lügen
+Ton	NN	1	Ton
+Kräften	NN	1	Kräften
+bleibe	NNP	1	bleibe
+untereinander	NN	1	untereinander
+mache	NN	1	mache
 Schimpfe	NN	1	Schimpfe
-Mannschaft	JJ	1	Mannschaft
-unerfahrner	NN	1	unerfahrner
-Feldherrn	NN	1	Feldherrn
-darum	RB	1	darum
-wäret	NN	1	wäret
-Verwegner	NN	1	Verwegner
-Schonen	RB	1	Schon
-zweideutigen	NN	1	zweideutigen
-Gestern	NN	1	Gestern
-Missdeutungen	NN	1	Mißdeutungen
-genassen	VB	1	genießen
+banquerout	NN	1	banquerout
+liebern	VB	1	lieber
+hieren	VBN	1	hier
+widerlegen	VB	1	widerlegen
+bezeigen	VBN	1	bezeigte
+Begriffen	NN	1	Begriffen
+verfahren	VB	1	verführen
+uneinig	JJ	1	uneinig
+unsers	PRP$	1	unsers
+stünden	NN	1	stünden
+worüber	RB	1	worüber
 würdigen	VB	1	würdigen
-behalt	RP	1	behalten
-Feldherr	NN	1	Feldherr
-gelehrter	NN	1	gelehrter
-Erniedrigungen	NN	1	Erniedrigungen
-ausholt	NN	1	ausholt
-vereiteln	NN	1	vereiteln
-Willen	NN	1	Willen
-würdiger	NN	1	würdiger
-Ferner	RB	1	Ferner
-stockblind	NN	1	stockblind
-Geschäft	NN	1	Geschäft
-Geschenke	NN	1	Geschenke
-ertragen	VB	1	ertragen
-damien	VB	1	damit
-verkümmern	NN	1	verkümmern
-spielen	VB	1	spielen
-listigen	NN	1	listigen
-Gefährten	NN	1	Gefährten
-Schatten	NN	1	Schatten
-weckte	NN	1	weckte
-gelehrt	JJ	1	gelehrt
-Absichten	NN	1	Absichten
-trösten	VB	1	trösten
-springen	VB	1	sprang
-Auswechselung	NN	1	Auswechselung
-ernste	NN	1	ernste
-erblickten	NN	1	erblickten
-Strom	NN	1	Strom
-erbittern	NN	1	erbittern
-fein	JJ	1	fein
-ändern	VB	1	ändere
-Ruhmes	NN	1	Ruhmes
-Füssen	NNP	1	Füßen
-abgefertiget	NN	1	abgefertiget
-würdigest	NN	1	würdigest
-Zurücksinkend	JJ	1	Zurücksinkend
-Vätern	NN	1	Vätern
+besässe	NN	1	besäße
+vorschlagen	VB	1	vorschlagen
+liebst	JJ	1	liebster
+Verziehen	NN	1	Verziehen
+unsere	PRP$	1	unsere
+Lasst	NN	1	Laßt
+Schwierigkeit	NN	1	Schwierigkeit
+unserm	PRP$	1	unserm
+taub	JJ	1	taub
+halte	NN	1	halte
+blieb	NN	1	blieb
+Sage	NN	1	Sage
+würdig	JJ	1	würdig
+Rache	NN	1	Rache
+hintergehen	NN	1	hintergehen
+gegründet	JJ	1	gegründeter
+Glücksgüter	NN	1	Glücksgüter
+Zuwurf	NN	1	Zuwurf
+Unsre	NN	1	Unsre
+neidisch	JJ	1	neidisch
+widerführe	NN	1	widerführe
+Unterschied	NN	1	Unterschied
+Worinne	NN	1	Worinne
+zwölf	CD	1	zwölf
+beitragen	VB	1	beitragen
+eigennützige	NNP	1	eigennützige
+Schwärmereien	NN	1	Schwärmereien
+Euer	NN	1	Euer
+Gasthof	NN	1	Gasthof
+zärtlichen	VBN	1	zärtlich
+Bezeigen	NN	1	Bezeigen
+Beinahe	NN	1	Beinahe
+liebenswürdig	JJ	1	liebenswürdig
+anbringen	RP	1	angebracht
+Gunst	NN	1	Gunst
+satt	JJ	1	satt
+Notwendig	JJ	1	Notwendig
 höre	VB	1	höre
-abgehet	NN	1	abgehet
-Ändere	NN	1	Ändere
-hoh	JJ	1	hohen
-empfindlich	JJ	1	empfindlich
-hoffen	VB	1	hoffte
-weigerte	NN	1	weigerte
-doppelte	NN	1	doppelte
-Aufenthalt	NN	1	Aufenthalt
-verweilten	NN	1	verweilten
-Weinen	NN	1	Weinen
-Elenden	NN	1	Elenden
-Glaube	NN	1	Glaube
-tief	JJ	1	tiefe
-Feindes	NN	1	Feindes
-mag	VB	1	mag
-möcht	VB	1	möchte
-Glaubt	NN	1	Glaubt
-vorenthalten	NN	1	vorenthalten
-schaffen	VB	1	schaffen
-persönlich	JJ	1	persönliche
+verschwenderisch	JJ	1	verschwenderische
+Womit	NN	1	Womit
+Legen	NN	1	Legen
+beruhen	VB	1	beruht
+zugegriffen	NN	1	zugegriffen
+getröste	NN	1	getröste
+seltsam	JJ	1	seltsam
+Fall	NN	1	Fall
+unterdrückt	JJ	1	unterdrückt
+verschwiegen	NN	1	verschwiegen
+entdecken	VB	1	entdecken
+Verlassenschaft	NN	1	Verlassenschaft
+jemals	IN	1	jemals
+verliebten	JJ	1	verliebten
+zehnmal	IN	1	zehnmal
+Taten	NN	1	Taten
+schwärmst	NN	1	schwärmst
+Gasthofe	NN	1	Gasthofe
+genau	RB	1	genau
+zärtlicher	NN	1	zärtlicher
+unterstehen	NN	1	unterstehen
+wählen	VB	1	wählen
+verliebter	NN	1	verliebter
+Vorwürfe	NN	1	Vorwürfe
 versehen	VB	1	versehen
 Gesellschaft	NN	1	Gesellschaft
-stirb	NN	1	stirb
-ungern	NN	1	ungern
-rächen	VB	1	rächen
-balden	VBN	1	bald
-Hörst	NN	1	Hörst
-Vernünfteln	NN	1	Vernünfteln
-Übereilung	NN	1	Übereilung
-heischen	VB	1	heischen
-Stärke	NN	1	Stärke
-vollends	NN	1	vollends
-abgewunden	NN	1	abgewunden
-geniessen	VB	1	genießen
-schnellesten	NN	1	schnellesten
-Schwerdern	NN	1	Schwerdern
-schämst	NN	1	schämst
-Tausch	JJ	1	Tausche
-enthüllen	VB	1	enthüllt
-nunen	VB	1	nun
-Trost	NN	1	Trost
-hersagen	NN	1	hersagen
-davonen	VB	1	davon
-etwa	RB	1	etwa
-getraue	NN	1	getraue
-arm	JJ	1	armer
-neunzig	CD	1	neunzig
-wack	JJ	1	wacker
-früh	JJ	1	früh
-still	JJ	1	stiller
-auslösen	VB	1	auslösen
+gedient	NN	1	gedient
+unzähligen	NN	1	unzähligen
+Empfindlichkeit	NN	1	Empfindlichkeit
+Wände	NN	1	Wände
+beschliessen	VBN	1	beschlossen
+nachlässiger	NNP	1	nachlässiger
+bösen	NN	1	bösen
+kurz	JJ	1	kurzem
+Seiner	PRP$	1	Seiner
+Armen	NN	1	Armen
+Aufrichtigkeit	NN	1	Aufrichtigkeit
+ferner	IN	1	ferner
+bestimmen	VB	1	bestimmen
+gereuen	NN	1	gereuen
+Erfüllung	NN	1	Erfüllung
+ausfündig	JJ	1	ausfündig
+horchen	VB	1	horchen
+erwählen	NN	1	erwählen
+ungestümes	NN	1	ungestümes
+vernünftig	JJ	1	vernünftig
+schallen	VB	1	schallen
+Freierei	NN	1	Freierei
+getreust	JJ	1	getreuste
+gescheh	JJ	1	geschehen
+Misstrauen	NN	1	Mißtrauen
+unersetzlich	JJ	1	unersetzlichen
 Jener	NNP	1	Jener
-siehst	NN	1	siehst
-regieren	VB	1	regieren
-Sehnsucht	NN	1	Sehnsucht
-Wüsste	NN	1	Wüßte
-Jahre	NN	1	Jahre
-Menschenliebe	NN	1	Menschenliebe
-Gehorsame	NN	1	Gehorsame
-befolgen	VBN	1	befolgt
-gelehret	NN	1	gelehret
-Spitze	NN	1	Spitze
-vertraute	NN	1	vertraute
-Vaterland	NN	1	Vaterland
-Hass	NN	1	Haß
-Beute	NN	1	Beute
-frostige	NN	1	frostige
-Aufgeputzt	NN	1	Aufgeputzt
-bewacht	NN	1	bewacht
-nahende	NN	1	nahende
-Fall	NN	1	Fall
-mächtigen	NN	1	mächtigen
-Zunge	NN	1	Zunge
-Gewicht	NNS	1	Gewichte
-vorbei	IN	1	vorbei
-Vortrefflich	JJ	1	Vortrefflich
-Eilfertigkeit	NN	1	Eilfertigkeit
-ungelockten	NN	1	ungelockten
-erzeugen	VBN	1	erzeugt
-erschrecklich	JJ	1	erschrecklich
-Töte	NN	1	Töte
-Dergleichen	VB	1	Dergleichen
-Alsdenn	NN	1	Alsdenn
-verwaiset	NN	1	verwaiset
-Erwartungen	NN	1	Erwartungen
-bedenke	NN	1	bedenke
-Hauptlager	NN	1	Hauptlager
-beglei	NN	1	beglei
-Verschwender	NN	1	Verschwender
-Staates	NN	1	Staates
-itzo	JJ	1	itzo
-inbrünstig	JJ	1	inbrünstiges
+Notlügen	NN	1	Notlügen
+wundern	RP	1	gewundert
+ohngeachtet	NN	1	ohngeachtet
+Hase	NNS	1	Hasen
+aufrichtiger	NN	1	aufrichtiger
+tragen	VB	1	tragen
+Verzeihungen	NN	1	Verzeihungen
+närrisch	JJ	1	närrischen
+tauschen	VB	1	tauschen
+höret	VB	1	höret
+aufrichtigen	NN	1	aufrichtigen
+quält	NN	1	quält
+flüchtig	JJ	1	flüchtig
+ungetreuer	NN	1	ungetreuer
+morgen	RB	1	morgen
+Gelder	NN	1	Gelder
+Begreifen	VB	1	Begriffe
+traurige	NN	1	traurige
+Nötiges	NN	1	Nötiges
+Erschrecken	NN	1	Erschrecken
+übereinstimmen	VB	1	übereinstimmen
+Alles	NN	1	Alles
+Könntet	NN	1	Könntet
+Widern	VB	1	Wider
+aufzuhelfen	NN	1	aufzuhelfen
+tausend	CD	1	tausend
+empfindlichern	VB	1	empfindlicher
+Rechts	NN	1	Rechts
+Seite	NN	1	Seite
+verborgen	VBN	1	verborgen
+verblendenden	NN	1	verblendenden
 stolze	NN	1	stolze
-Feindschaften	NN	1	Feindschaften
-meinig	DT	1	meinige
-Bewusstsein	NN	1	Bewußtsein
-nötigen	VB	1	nötige
-Gehirn	NN	1	Gehirn
-Jahr	NN	1	Jahr
-fortfährest	NN	1	fortfährest
-Nachbar	NN	1	Nachbar
-Lippe	JJ	1	Lippe
-Entschuldige	NN	1	Entschuldige
-unverdächtig	JJ	1	unverdächtigen
-warten	VB	1	warten
-grässlichsten	NN	1	gräßlichsten
-bestimmen	VBN	1	bestimmt
-Alters	NN	1	Alters
-kindlich	JJ	1	kindliche
-begeben	VB	1	begibt
-erkenne	NN	1	erkenne
-Suche	NN	1	Suche
-verzögere	NN	1	verzögere
-töten	VB	1	töten
-Verwünschung	NN	1	Verwünschung
-Gold	NN	1	Gold
-Ross	NN	1	Roß
-zieht	VB	1	zieht
-ruhmvoller	NN	1	ruhmvoller
-angegriff	JJ	1	angegriffen
-Angriff	NN	1	Angriff
-schöners	JJ	1	schöners
-Feiger	NN	1	Feiger
-unwidersprechlich	JJ	1	unwidersprechlich
-Dingen	NN	1	Dingen
-taurest	NN	1	taurest
-seligste	NN	1	seligste
-Ware	NNS	1	Waren
-Übel	NN	1	Übel
-ersparen	VB	1	ersparen
-endlich	RB	1	endlich
-Beischläferinnen	NN	1	Beischläferinnen
-Aufmerksamkeit	NN	1	Aufmerksamkeit
-verkürzen	RP	1	verkürzt
-geheim	VB	1	geheimes
-erfechten	NN	1	erfechten
-daraufen	VB	1	darauf
-mög	NN	1	mög
-Staatsmann	NN	1	Staatsmann
+erwählt	NN	1	erwählt
+inständig	JJ	1	inständig
+Unwürdigen	NN	1	Unwürdigen
+nachteilige	NN	1	nachteilige
+versuchten	NN	1	versuchten
+tot	JJ	1	tot
+drauf	RB	1	drauf
+naseweis	JJ	1	naseweis
+rasend	JJ	1	rasend
+Erleichterung	NN	1	Erleichterung
+kützeln	NN	1	kützeln
+Findet	NN	1	Findet
+genennet	NN	1	genennet
+bekömmt	NN	1	bekömmt
+zuschreiben	VB	1	zuschreiben
+zugestehen	VB	1	zugestehen
+erstaunet	NN	1	erstaunet
+schämen	VB	1	schämen
+Verräterei	NN	1	Verräterei
+Galgenschwengeln	NNP	1	Galgenschwengeln
+Mühle	NN	1	Mühle
+werde	RB	1	werde
+Erfahrung	NN	1	Erfahrung
+Verzeihen	NN	1	Verzeihen
+tadeln	VB	1	tadeln
+liebenswürdigen	JJ	1	liebenswürdigen
+frei	JJ	1	frei
+meinern	VB	1	meiner
+unerträglich	JJ	1	unerträglich
+Niederträchtig	JJ	1	Niederträchtig
+suchte	NN	1	suchte
 Vielleichen	VBN	1	Vielleicht
-kümmert	NN	1	kümmert
-spalten	RP	1	gespalten
-schüchtern	JJ	1	schüchtern
-entwachsen	NN	1	entwachsen
-erkaufe	NN	1	erkaufe
-siehest	RB	1	siehest
-Anfang	NN	1	Anfang
-Necken	NN	1	Necken
-Urteil	NN	1	Urteil
-Freuden	NN	1	Freuden
-Blind	NN	1	Blind
-sahe	NN	1	sahe
-liefert	NN	1	liefert
-geduldige	NN	1	geduldige
-Haar	NNS	1	Haare
-Arbeit	NN	1	Arbeit
-pfropfet	NN	1	pfropfet
-neunzigsten	NN	1	neunzigsten
-richten	VB	1	richten
-wirken	VB	1	wirken
-widerrufen	VB	1	widerrufen
-Sieger	NN	1	Sieger
-Beruhige	NN	1	Beruhige
-Atem	NN	1	Atem
-gehabt	NN	1	gehabt
-tiefsinnigen	NN	1	tiefsinnigen
-fallen	VB	1	fallen
-verdreusst	NN	1	verdreußt
-Seiten	NN	1	Seiten
-gespornt	NN	1	gespornt
-Kriegesglück	NN	1	Kriegesglück
-starken	VBN	1	stark
-umarmte	NN	1	umarmte
-Entschlossenheit	NN	1	Entschlossenheit
-weichlich	VB	1	weichlichen
-stärker	JJ	1	stärkere
-Lamm	NN	1	Lamm
-Mittelspersonen	NN	1	Mittelspersonen
-halb	CD	1	halb
-wunderlich	JJ	1	wunderliche
-behalten	VB	1	behält
-Stirne	NN	1	Stirne
-geringste	NN	1	geringste
-Nachtwache	NN	1	Nachtwache
-Warnung	NN	1	Warnung
-gefährlich	JJ	1	gefährlichen
-Volkes	NNP	1	Volkes
-begnügen	VB	1	begnügen
-retten	VB	1	retten
-bloss	RB	1	bloß
-aufheben	RP	1	aufgehoben
-saten	VBN	1	satt
-dankend	JJ	1	dankende
-Wohlfahrt	NN	1	Wohlfahrt
-bewunderte	NN	1	bewunderte
-nennen	VB	1	nennen
-unschädlichste	PRP$	1	unschädlichste
-ähnlich	JJ	1	ähnlichen
-gib	NN	1	gib
-ewig	JJ	1	ewiges
-Gesinnung	NNS	1	Gesinnungen
-Beschwöre	NN	1	Beschwöre
-Hör	NN	1	Hör
-anvertrauet	NN	1	anvertrauet
-Trommete	NN	1	Trommete
-Keim	NNS	1	Keime
-Dampf	NN	1	Dampf
-schlecht	JJ	1	schlecht
-stolzen	VBN	1	stolz
-Weiber	NN	1	Weiber
-beschimpfen	NN	1	beschimpfen
-sonen	RB	1	sonst
-verabscheuungswürdig	JJ	1	verabscheuungswürdig
-sehnet	NN	1	sehnet
-Ermuntere	NN	1	Ermuntere
-geblitzt	NN	1	geblitzt
-Krümmung	NN	1	Krümmung
-älter	NN	1	älter
-anvertrauen	VB	1	anvertrauen
-unverspottet	NN	1	unverspottet
-Entzückungen	NN	1	Entzückungen
-lege	NN	1	lege
-Fassung	NN	1	Fassung
-verfliegen	VBN	1	verfliegt
-überreden	VB	1	überreden
-Unwahrheit	JJ	1	Unwahrheit
-Rede	NN	1	Rede
-Kennzeichen	NN	1	Kennzeichen
-fürs	NN	1	fürs
-unsicher	JJ	1	unsicheres
-Bin	NN	1	Bin
-kleinmütig	JJ	1	kleinmütig
-Armes	NNP	1	Armes
-sahen	NN	1	sahen
-ausgelöset	NN	1	ausgelöset
-werdend	JJ	1	werdende
-durchaus	RB	1	durchaus
-nachfolgen	VB	1	nachfolgen
-mind	JJ	1	minder
-Wildfang	NN	1	Wildfang
-Ungewissheit	NN	1	Ungewißheit
-drückte	NN	1	drückte
-stumm	JJ	1	stummes
-gerat	NN	1	gerat
-hättest	RP	1	hättest
-beten	VB	1	beten
-frühste	NN	1	frühste
-untrieglich	JJ	1	untrieglichen
-Unschuld	NN	1	Unschuld
-Anschlag	NN	1	Anschlag
-ausgewechselt	NN	1	ausgewechselt
-beisst	NN	1	beißt
-Mutter	NN	1	Mutter
-fertig	JJ	1	fertig
-Verlust	NN	1	Verlust
-Kinde	NN	1	Kinde
-ausgelöst	JJ	1	ausgelösten
-nannte	VB	1	nannte
-Zug	NN	1	Zug
-fliegen	VB	1	flog
-abzulegen	VB	1	abzulegen
-gefälligen	JJ	1	gefälligen
-seufzte	NN	1	seufzte
-entsetze	NN	1	entsetze
-Höhe	NN	1	Höhe
-auszulösen	NN	1	auszulösen
-weibischer	NN	1	weibischer
-hitzig	JJ	1	hitzig
-erdenke	NN	1	erdenke
-überlassen	VB	1	überlassen
-quälenden	NN	1	quälenden
-blühte	NN	1	blühte
-Unser	PRP$	1	Unser
-Ernst	NNP	1	Ernst
-Geschöpf	NN	1	Geschöpf
-Indemen	RB	1	Indem
-Ungeduld	NN	1	Ungeduld
-Schlage	NN	1	Schlage
-Woran	NN	1	Woran
-Vergib	NN	1	Vergib
-gewählet	NN	1	gewählet
-betäubt	NN	1	betäubt
-Befiehl	NN	1	Befiehl
-wacker	JJ	1	wackere
-fordern	VB	1	forderte
-hieltest	NN	1	hieltest
-stark	JJ	1	starke
-Bitte	NN	1	Bitte
-lernen	VB	1	lernt
-sendest	NN	1	sendest
-Feuersbrunst	NN	1	Feuersbrunst
-Spott	NN	1	Spott
-fassen	VBN	1	gefaßt
-Mache	NN	1	Mache
-Schrecken	NN	1	Schrecken
-Freiheit	NN	1	Freiheit
-stehet	NN	1	stehet
-Halt	NN	1	Halt
-dazuen	VB	1	dazu
-rase	NN	1	rase
-Krone	NN	1	Krone
-versetzt	NN	1	versetzt
-Männer	NN	1	Männer
-seligen	NN	1	seligen
-Edeln	NN	1	Edeln
-umringet	NN	1	umringet
-schönes	NN	1	schönes
-Bereitwilligkeit	NN	1	Bereitwilligkeit
-edeln	NN	1	edeln
-kriegerisch	JJ	1	kriegerischen
-Schwermut	NN	1	Schwermut
-unvorgesehenes	NN	1	unvorgesehenes
-begehen	VB	1	begehen
-Verzieh	NN	1	Verzieh
-begleitest	NN	1	begleitest
-traue	NN	1	traue
-erhalten	VB	1	erhalten
-gutes	NNP	1	gutes
-Lager	NN	1	Lager
-reichen	VB	1	reichen
-hinab	NN	1	hinab
-Schweig	JJ	1	Schweig
-Ehren	NN	1	Ehren
-Freilich	FW	1	Freilich
-Vermischung	NN	1	Vermischung
-verachtet	NN	1	verachtet
-befindest	RP	1	befindest
-Umarmung	NN	1	Umarmung
-Betriegen	NN	1	Betriegen
-Knochen	NN	1	Knochen
-Wessen	NN	1	Wessen
-Dämon	NN	1	Dämon
-annehmen	VB	1	annehmen
-hauend	JJ	1	hauend
-Munde	NN	1	Munde
-fühlende	NN	1	fühlende
-leisten	VB	1	geleistet
-verloschne	NN	1	verloschne
-Schwören	NN	1	Schwören
-Versichere	NN	1	Versichere
-ganzes	NN	1	ganzes
-Fels	NNS	1	Felsen
-zeiget	NN	1	zeiget
-Waagschal	JJ	1	Waagschalen
-lebt	VB	1	lebt
-väterlich	JJ	1	väterlichen
-liebster	NN	1	liebster
-gefallen	VBN	1	gefallen
-trauen	VB	1	trauen
-Bedachte	NN	1	Bedachte
-Sohnes	NN	1	Sohnes
-freute	NN	1	freute
-unempfindlich	JJ	1	unempfindliche
-Absicht	NN	1	Absicht
-machst	RB	1	machst
-eignes	NN	1	eignes
-danke	RP	1	danke
-einstimmen	VB	1	einstimmen
-Jünglings	NN	1	Jünglings
-erstaunen	VB	1	erstaunen
-unbetauert	NN	1	unbetauert
-beschleunigen	VB	1	beschleunigen
-jüngern	JJ	1	jüngern
-Fäuste	NN	1	Fäuste
-abgegangen	NN	1	abgegangen
-kindisch	JJ	1	kindisches
-argwohnen	NN	1	argwohnen
-sehe	PRP$	1	sehe
-vergossen	NN	1	vergossen
-verhindern	VB	1	verhindern
-Möchtest	NN	1	Möchtest
-sparet	NN	1	sparet
-rennen	VB	1	rennen
-auslöset	NN	1	auslöset
-Vertrauens	NN	1	Vertrauens
-höchst	JJ	1	höchsten
-wendest	NN	1	wendest
-warte	NN	1	warte
-Hitze	NN	1	Hitze
-wütende	NN	1	wütende
-Schmach	NN	1	Schmach
-gewissesten	NN	1	gewissesten
-Schalk	NN	1	Schalk
-kriegerischer	JJ	1	kriegerischer
-Heimweh	NN	1	Heimweh
-Weib	NN	1	Weib
-freundschaftlich	VB	1	freundschaftliche
-Verachtung	NN	1	Verachtung
-Schale	NNS	1	Schalen
-Wunderbar	JJ	1	Wunderbare
-leidern	RB	1	leider
-Stratos	NN	1	Stratos
-Streitern	NN	1	Streitern
-Glücke	NN	1	Glücke
-Dennen	VBN	1	Denn
-finde	NN	1	finde
-sogleich	IN	1	sogleich
-zitterst	NN	1	zitterst
-überredte	NN	1	überredte
-schnell	JJ	1	schneller
-Knecht	NNP	1	Knecht
-anbelangen	VB	1	anbelangt
-Anteil	NN	1	Anteil
-Lob	NN	1	Lob
-Murre	NN	1	Murre
-narbigte	NN	1	narbigte
-Kleinigkeiten	NN	1	Kleinigkeiten
-Grausame	NN	1	Grausame
-unglücklich	JJ	1	unglücklichen
-ertrotzt	NN	1	ertrotzt
-beruhigte	NN	1	beruhigte
-Unglücklicher	NN	1	Unglücklicher
-gebe	NN	1	gebe
-wider	IN	1	wider
-rauhe	NN	1	rauhe
-ausziehen	VB	1	ausziehen
-Liebenswürdige	NN	1	Liebenswürdige
-verabscheuen	VB	1	verabscheuen
-befriediget	NN	1	befriediget
-Schwüre	NN	1	Schwüre
-verwaist	JJ	1	verwaist
-Umsonst	NN	1	Umsonst
-Gipfel	NN	1	Gipfel
-Stunden	NN	1	Stunden
-Gott	NN	1	Gott
-frühzeitiger	NNP	1	frühzeitiger
-vervielfältiget	NN	1	vervielfältiget
-sag	NN	1	sag
-freundlich	JJ	1	freundliche
-Gedenke	NN	1	Gedenke
-überhäufen	NN	1	überhäufen
-schloss	NN	1	schloß
-Panzer	NN	1	Panzer
-teurer	NN	1	teurer
-Sterblicher	NN	1	Sterblicher
-Ehern	VB	1	Eher
+Teil	NN	1	Teil
+geliebt	NN	1	geliebt
+begleiten	PRP$	1	begleiten
 zukommen	PRP$	1	zukommen
-gewachsen	NN	1	gewachsen
-spar	NN	1	spar
-Erfindungskraft	NN	1	Erfindungskraft
-leitet	NN	1	leitet
-Sturm	NNS	1	Stürme
-abfertigen	NN	1	abfertigen
-Natur	NN	1	Natur
-empfangen	VB	1	empfanget
-durften	VB	1	durften
-mühsam	NN	1	mühsamen
-Erklären	VB	1	Erkläre
-Unterredung	NN	1	Unterredung
-krank	JJ	1	krank
-näher	JJ	1	nähere
-Verwirrung	NN	1	Verwirrung
-eben	NNP	1	eben
-Tugendhafte	NN	1	Tugendhafte
-Meinigen	NN	1	Meinigen
-Elysium	NN	1	Elysium
-Friedens	NN	1	Friedens
-längst	RB	1	längst
-heldenmütiger	NNP	1	heldenmütiger
-Betrieger	NN	1	Betrieger
-Bestes	NN	1	Bestes
-sprechendes	NN	1	sprechendes
-Besuch	NN	1	Besuch
-jungen	VBN	1	jung
-unwillig	JJ	1	unwillig
-Verdienst	NN	1	Verdienst
-entdecken	VB	1	entdecken
-ehren	VB	1	ehren
-Unserigen	NN	1	Unserigen
-angeborne	NN	1	angeborne
-Erhaltung	NN	1	Erhaltung
-zitterte	NN	1	zitterte
-verlassen	VB	1	verlassen
-vorgebauet	NN	1	vorgebauet
-Böse	NN	1	Böse
-Deiner	NN	1	Deiner
-Grösse	NN	1	Größe
-Fallstricke	NN	1	Fallstricke
-erstarrten	NN	1	erstarrten
-Spruch	NN	1	Spruch
-Jammer	NN	1	Jammer
-Unsere	PRP$	1	Unsere
-schone	NN	1	schone
-sanftres	JJ	1	sanftres
-wüsste	NN	1	wüßte
-Schmeicheleien	NN	1	Schmeicheleien
-siebenmal	RB	1	siebenmal
-Schlag	NNP	1	Schlag
-Aristodems	NN	1	Aristodems
-rächt	JJ	1	rächte
-aufzuleg	NN	1	aufzulegen
-Entsetzen	NN	1	Entsetzen
-Höflichkeit	NN	1	Höflichkeit
-durchstechen	VB	1	durchsticht
-gefleht	RB	1	gefleht
-schw	JJ	1	schwer
-off	JJ	1	offen
-Hügel	NN	1	Hügel
-Tapferkeit	NN	1	Tapferkeit
-Gewünscht	NN	1	Gewünscht
-ihrem	PRP$	1	ihrem
-Unseliger	NNP	1	Unseliger
-erstickte	JJ	1	erstickte
-Rätsel	NN	1	Rätsel
-eifersüchtige	NN	1	eifersüchtige
-spöttischst	JJ	1	spöttischste
-übereilt	NN	1	übereilt
-verweigert	NN	1	verweigert
-Friede	NNS	1	Frieden
-abdringen	NN	1	abdringen
-unterdrückte	NN	1	unterdrückte
-bergan	NN	1	bergan
-Papagei	NN	1	Papagei
-gesonnen	NN	1	gesonnen
-licht	JJ	1	lichte
-daranen	VB	1	daran
-entstehen	VB	1	entsteht
-Schaffe	NN	1	Schaffe
-kalt	JJ	1	kalt
-unwürdigen	NN	1	unwürdigen
-erwarte	NN	1	erwarte
-zutragen	NN	1	zutragen
-verwickelt	NN	1	verwickelt
-Früchte	NN	1	Früchte
-meinst	JJ	1	meinst
-tapfre	NN	1	tapfre
-zurückspringen	VB	1	zurückspringt
-weg	RB	1	weg
-Nacheiferung	JJ	1	Nacheiferung
-brach	JJ	1	brachen
-Blicke	NN	1	Blicke
-Glückseligkeit	NN	1	Glückseligkeit
-Dank	RP	1	Dank
-erwecke	NN	1	erwecke
-Erwiderung	NN	1	Erwiderung
-kindischer	NN	1	kindischer
-Wildheit	NN	1	Wildheit
-Lächeln	NN	1	Lächeln
-weibisch	JJ	1	weibischen
-Tugend	NN	1	Tugend
-peinigen	NN	1	peinigen
-Schicksals	NN	1	Schicksals
-Herolds	NN	1	Herolds
-fähig	JJ	1	fähig
-herplappern	NN	1	herplappern
-Spiele	NN	1	Spiele
-Glückes	NN	1	Glückes
-tödlichern	NN	1	tödlichern
-Näh	JJ	1	Näher
-Schwertern	NN	1	Schwertern
-Klügsten	NN	1	Klügsten
-Tals	NN	1	Tals
-Tapfersten	NN	1	Tapfersten
-Harnisch	NN	1	Harnisch
-Lebt	NN	1	Lebt
-Gelegenheit	NN	1	Gelegenheit
-erwarten	VB	1	erwarten
-Angesichte	NN	1	Angesichte
-brennen	VB	1	brennen
-Wärest	NN	1	Wärest
-Schritt	NN	1	Schritt
-weinen	VB	1	weinen
-merke	VB	1	merke
-Unmöglich	JJ	1	Unmöglich
-eiltest	NN	1	eiltest
-Lebens	NN	1	Lebens
-waldigt	JJ	1	waldigten
-verachte	NN	1	verachte
-nu	UH	1	nu
-Narbe	NNS	1	Narben
-Knieen	NN	1	Knieen
-hältst	RP	1	hältst
-Gebrauche	NN	1	Gebrauche
-Verzögere	NN	1	Verzögere
-bös	JJ	1	böse
-klüger	NN	1	klüger
-Ansehen	NN	1	Ansehen
-Kostbarsten	NN	1	Kostbarsten
-tödlichsten	NN	1	tödlichsten
-Auchen	RB	1	Auch
-freudige	NN	1	freudige
-Anstand	NN	1	Anstand
-Luft	NN	1	Luft
-hinter	IN	1	hinter
-Kinder	NN	1	Kinder
-Fusse	NN	1	Fuße
-drücken	VB	1	drücken
-Werde	NN	1	Werde
-erzeigen	NN	1	erzeigen
-treuherziger	NNP	1	treuherziger
-einfältige	NN	1	einfältige
-albernste	NN	1	albernste
-verwünschte	NN	1	verwünschte
-unserer	PRP$	1	unserer
-wünschen	VB	1	wünschest
-Zärtlichkeit	NN	1	Zärtlichkeit
-durchs	NN	1	durchs
-ersetzen	VBN	1	ersetzt
-heiligsten	NN	1	heiligsten
-schleich	VB	1	schleiche
-Habet	NN	1	Habet
-Person	NN	1	Person
-Tagen	NN	1	Tagen
-dasselb	DT	1	dasselbe
-vergeben	RP	1	vergeben
-Toga	NN	1	Toga
-grösser	JJ	1	größere
-unaufhörlich	JJ	1	unaufhörliches
-gekostet	NN	1	gekostet
-Schweres	NN	1	Schweres
-verschwinden	VB	1	verschwinden
-Anlass	NN	1	Anlaß
-Glücklicher	NN	1	Glücklicher
-niedrigern	NN	1	niedrigern
-aussen	RB	1	außen
-verschwindet	VB	1	verschwindet
-anfeuernden	NN	1	anfeuernden
-Wehe	NN	1	Wehe
-nötig	JJ	1	nötig
-fahren	VB	1	fuhr
-Genug	NN	1	Genug
-Hohnsprechende	NN	1	Hohnsprechende
-erobert	NN	1	erobert
-herrschend	JJ	1	herrschende
-rechtfertigen	VB	1	rechtfertigen
-Dienst	NN	1	Dienst
-verlange	NN	1	verlange
-dulden	VB	1	dulden
-verleugnen	NN	1	verleugnen
-geringsten	NN	1	geringsten
-Bubenstück	NN	1	Bubenstück
-Todes	NN	1	Todes
-verzehret	NN	1	verzehret
-Bloss	NN	1	Bloß
-Urheber	NN	1	Urheber
-Lehrjahre	NN	1	Lehrjahre
-höflich	JJ	1	höfliche
-Landes	NN	1	Landes
-bescheid	JJ	1	bescheiden
-verblutet	NN	1	verblutet
-Entwaffnung	NN	1	Entwaffnung
-Na	NN	1	Na
-Arzt	NN	1	Arzt
-Gründe	NN	1	Gründe
-Meinung	NN	1	Meinung
-stossen	VB	1	stoßen
-erhob	NN	1	erhob
-Nebenbuhler	NN	1	Nebenbuhler
-entzückter	NN	1	entzückter
+lässen	VB	1	läßt
+hinlänglich	JJ	1	hinlänglich
+Licht	NN	1	Licht
+Geschicklichkeit	NN	1	Geschicklichkeit
+Haar	NN	1	Haar
+hinderlich	JJ	1	hinderlich
+Abschied	NN	1	Abschied
+12000	CD	1	12000
+Füssen	NNP	1	Füßen
+irren	VB	1	irren
+hassen	VB	1	hassen
+gesunden	PRP$	1	gesunden
+schlüge	NN	1	schlüge
+auszuhalten	NN	1	auszuhalten
+Geniessen	NN	1	Genießen
+unnötig	JJ	1	unnötig
+schlimm	JJ	1	schlimm
+dahinter	RB	1	dahinter
+Stark	NN	1	Stark
+Narr	NN	1	Narr
+Fehlers	NN	1	Fehlers
+wunderlich	JJ	1	wunderlich
+erschrecken	VB	1	erschrecken
+einzusehen	NN	1	einzusehen
+Gleichgewichte	NN	1	Gleichgewichte
+dahin	RB	1	dahin
+vermögend	JJ	1	vermögend
+Dienerin	NN	1	Dienerin
+ankommen	VB	1	ankommen
+anwendeten	NN	1	anwendeten
+wodurch	WRB	1	wodurch
+weisst	NN	1	weißt
+Herzens	NN	1	Herzens
+vielmalten	VBN	1	vielmal
+bittet	VB	1	bittet
+Feuer	NN	1	Feuer
+schlecht	JJ	1	schlecht
+beschimpfen	VB	1	beschimpfet
+erzürnet	NN	1	erzürnet
+abzuwaren	VB	1	abzuwarten
+Kurz	NN	1	Kurz
+Gegenliebe	NN	1	Gegenliebe
+albern	JJ	1	albern
+nahe	RP	1	nahe
+Hause	NN	1	Hause
+schamhaft	NN	1	schamhaft
+vollkommen	JJ	1	vollkommene
+Verflucht	NN	1	Verflucht
+Gemüt	NN	1	Gemüt
+Leute	NN	1	Leute
+welchem	WP	1	welchem
+Behüte	NN	1	Behüte
+vorteilhaftesten	NN	1	vorteilhaftesten
+Geschlechts	NN	1	Geschlechts
+Gegengunst	NN	1	Gegengunst
+umschreiben	VB	1	umschreiben
+Liebeserklärungen	NN	1	Liebeserklärungen
+zärtlichst	JJ	1	zärtlichste
+erwägen	VB	1	erwägen
+genennt	NN	1	genennt
+niederträchtigen	NN	1	niederträchtigen
+stärk	JJ	1	stärker
+Erklärungen	NN	1	Erklärungen
+ewig	JJ	1	ewig
+kaltsinnig	RB	1	kaltsinnig
+unüberwindlich	JJ	1	unüberwindlichen
+verpflichten	VBN	1	verpflichtet
+entzückende	NN	1	entzückende
+durchaus	RB	1	durchaus
+uneigennützigst	JJ	1	uneigennützigsten
+Verschwiegenheit	NN	1	Verschwiegenheit
+Tauschen	VB	1	Tauschen
+Versuchen	NN	1	Versuchen
+Kapitalten	VB	1	Kapitalen
+Scherz	NN	1	Scherz
+zaudern	NN	1	zaudern
+hättest	WRB	1	hättest
+ausschweifende	NN	1	ausschweifende
+Umstand	NNS	1	Umstände
+dumm	JJ	1	dumme
+entschuldigen	VB	1	entschuldigen
+Halt	NN	1	Halt
+anderern	VB	1	anderer
+Gunstbezeigungen	NN	1	Gunstbezeigungen
+übrigen	VBN	1	übrig
+vorhin	RB	1	vorhin
+Streich	JJ	1	Streich
+balden	VBN	1	bald
+Glücklichste	NN	1	Glücklichste
+solle	NN	1	solle
+besonder	JJ	1	besonderes
+beinahe	WRB	1	beinahe
+Galimathias	NNP	1	Galimathias
+Vollkommen	NN	1	Vollkommen
+grösstes	NN	1	größtes
+oft	IN	1	oft
+Seit	IN	1	Seit
+Schelmstück	NN	1	Schelmstück
+Vorwande	NN	1	Vorwande
+recht	VB	1	recht
+hintergangen	NN	1	hintergangen
+jemand	DT	1	jemand
+darbien	VB	1	darbieten
+menschlich	JJ	1	menschlichen
+schätzte	NN	1	schätzte
+Mitleiden	NN	1	Mitleiden
 falle	NN	1	falle
-Hartnäckigkeit	NN	1	Hartnäckigkeit
-Jünglingsen	NN	1	Jünglings
-wach	JJ	1	wachen
-erteiltest	RP	1	erteiltest
-leugst	NN	1	leugst
-glorreich	JJ	1	glorreichen
-hierauf	NN	1	hierauf
-strich	NNP	1	strich
-Walstatt	NN	1	Walstatt
-schrecklichst	JJ	1	schrecklichsten
-Hände	NN	1	Hände
-Blüte	NN	1	Blüte
-handeln	VB	1	handeln
-Liste	JJ	1	Liste
-Opfer	NN	1	Opfer
-Umarme	NN	1	Umarme
-überzeugt	JJ	1	überzeugt
-verwundeten	NNP	1	verwundeten
-geschlagen	NN	1	geschlagen
-ersticken	VB	1	ersticken
-eile	NN	1	eile
-Mädchen	NN	1	Mädchen
-Brüder	NN	1	Brüder
-Nuren	RB	1	Nur
-unsterblichen	PRP$	1	unsterblichen
-Wahrheit	NN	1	Wahrheit
-Mücke	NN	1	Mücke
-einander	PRP	1	einander
-offen	VB	1	offenes
-versöhnt	NNP	1	versöhnt
-seist	RB	1	seist
-glücklichern	NN	1	glücklichern
-Tapfere	NN	1	Tapfere
-deinig	DT	1	deinige
-Vertrauen	NN	1	Vertrauen
-Weges	NN	1	Weges
-seit	IN	1	seit
-verzärteltes	NN	1	verzärteltes
-geblutet	NN	1	geblutet
-argwöhnisch	JJ	1	argwöhnisch
-ersticke	NN	1	ersticke
-grössre	NN	1	größre
-Volk	NN	1	Volk
-leicht	JJ	1	leicht
-Vorsicht	NN	1	Vorsicht
-Verdirb	NN	1	Verdirb
-nuren	RB	1	nur
-schicke	NN	1	schicke
-seid	NN	1	seid
-Unehre	NN	1	Unehre
-müsse	RB	1	müsse
-Eifer	NNP	1	Eifer
-triumphierende	NN	1	triumphierende
-Begierde	NN	1	Begierde
-treten	VB	1	tritt
-dahern	VB	1	daher
-kleidet	NN	1	kleidet
-Himmel	NN	1	Himmel
-schartig	JJ	1	schartig
-geliebten	NN	1	geliebten
-niedergeschlagenen	NN	1	niedergeschlagenen
-kleiden	VB	1	kleiden
-Verweis	NN	1	Verweis
-alleinen	RP	1	allein
-versteinert	NN	1	versteinert
-bedienet	NN	1	bedienet
-Begleiter	NN	1	Begleiter
-silberne	NN	1	silberne
-erinnert	NN	1	erinnert
-höher	JJ	1	höhere
-gespielt	NN	1	gespielt
-Herold	NN	1	Herold
-schmeichelte	NN	1	schmeichelte
-edler	NN	1	edler
-Cäsena	NN	1	Cäsena
-feierlich	JJ	1	feierliches
-Haut	NN	1	Haut
-sagst	NN	1	sagst
-bewegte	NN	1	bewegte
-Knabe	NN	1	Knabe
-dienen	VB	1	dienen
-erinnerst	NN	1	erinnerst
-vorsagen	RP	1	vorsagt
-Gericht	NNS	1	Gerichte
-Augenblicken	NN	1	Augenblicken
-Schuld	NN	1	Schuld
-Heut	NN	1	Heut
-Nacht	NN	1	Nacht
-betauerte	NN	1	betauerte
-Heer	NN	1	Heer
-kehrt	NN	1	kehrt
+beschämt	JJ	1	beschämt
+kostbar	JJ	1	kostbare
+Einfallen	NN	1	Einfallen
+aushalten	NN	1	aushalten
+schuld	NN	1	schuld
+Leibesbeschaffenheit	NN	1	Leibesbeschaffenheit
+müd	JJ	1	müde
+geleg	JJ	1	gelegen
+ausholen	VB	1	ausholen
+Dienste	NN	1	Dienste
 Verbrechen	NN	1	Verbrechen
-erstarrt	NN	1	erstarrt
-Sogleich	NN	1	Sogleich
-unseliger	PRP$	1	unseliger
-Gebirg	NN	1	Gebirge
-Gefährte	NN	1	Gefährte
-Nachteil	NNS	1	Nachteile
-Verwünschungen	NN	1	Verwünschungen
-Deinigen	NN	1	Deinigen
-Anmut	NN	1	Anmut
-wehren	VB	1	wehren
-Schwätzer	NN	1	Schwätzer
-sollst	RB	1	sollst
-höchste	NN	1	höchste
-aufgehalten	NN	1	aufgehalten
-schlimmster	NN	1	schlimmster
-verwöhnt	NN	1	verwöhnt
-vernünfteln	NN	1	vernünfteln
-Wettrennen	NN	1	Wettrennen
-geträumet	NN	1	geträumet
-Bequemlichkeiten	NN	1	Bequemlichkeiten
-taugen	VB	1	taugen
-brennende	NN	1	brennende
-erblicken	VB	1	erblicken
+Soldatenmode	NN	1	Soldatenmode
+lernen	VB	1	lernen
+unserer	PRP$	1	unserer
+einsehen	VB	1	einsehen
+ausstehen	NN	1	ausstehen
+stehen	VB	1	steht
+Jahre	NN	1	Jahre
+Hab	NN	1	Hab
+Wen	NN	1	Wen
+Schluss	NN	1	Schluß
+zugestossen	NN	1	zugestoßen
+schimpfte	NNP	1	schimpfte
+Stande	NN	1	Stande
+Glücklichsten	NN	1	Glücklichsten
+allerliebster	NN	1	allerliebster
+wirst	WRB	1	wirst
+güldne	NN	1	güldne
+Einöde	NN	1	Einöde
+nunmehr	IN	1	nunmehr
+Entschlusses	NN	1	Entschlusses
+verinteressiert	NN	1	verinteressiert
+dagegen	RB	1	dagegen
+beurteilen	VB	1	beurteilt
+Königin	NN	1	Königin
+Heute	RB	1	Heute
+Gemüter	NN	1	Gemüter
+besen	NN	1	beste
+vermuteten	NN	1	vermuteten
+Bestreben	NN	1	Bestreben
+Ansehung	NN	1	Ansehung
+merken	VB	1	merke
+beschieden	NN	1	beschieden
+schwiegen	NN	1	schwiegen
+anzuvertrauen	VB	1	anzuvertrauen
+Bauersfrau	NN	1	Bauersfrau
+Vertrauen	NN	1	Vertrauen
+Reich	VB	1	Reichen
+eifersüchtigen	VBN	1	eifersüchtig
+gleichwo	NN	1	gleichwo
+nachzusetzen	NN	1	nachzusetzen
+geh	NN	1	geh
+fliehen	VB	1	fliehen
+Notwendigkeit	NN	1	Notwendigkeit
+Waage	NN	1	Waage
+nichte	NN	1	nichte
+falsch	JJ	1	falsche
+Munde	JJ	1	Munde
+Anhalten	NN	1	Anhalten
+standhafte	NN	1	standhafte
+ungesund	NN	1	ungesund
+schwer	JJ	1	schwerer
+beschwerlich	JJ	1	beschwerlich
+Freunden	NN	1	Freunden
+Knall	NN	1	Knall
+Madamen	JJ	1	Madam
+Lieben	NN	1	Lieben
+gehe	NN	1	gehe
+schüchtern	JJ	1	schüchtern
+eingelaufen	NN	1	eingelaufen
+Zeug	NNS	1	Zeuge
+Verdriessliche	JJ	1	Verdrießliche
+blindlings	IN	1	blindlings
+beizustehen	NN	1	beizustehen
+stehet	NN	1	stehet
+Verlassen	NN	1	Verlassen
+übereilet	NN	1	übereilet
+Wolfe	NN	1	Wolfe
+gäbe	NN	1	gäbe
+erkundigen	VB	1	erkundigen
+herausfordern	NN	1	herausfordern
+liebsten	NN	1	liebsten
+schimpft	NN	1	schimpft
+auchen	VBN	1	auch
+fähig	JJ	1	fähig
+setzten	NN	1	setzten
+beisteh	DT	1	beistehen
+unvergeblich	JJ	1	unvergeblich
+Wählen	NN	1	Wählen
+Angesicht	NN	1	Angesicht
+klug	JJ	1	klug
+Philosophin	NN	1	Philosophin
+mitbringen	VB	1	mitbringen
+Entschlusse	NN	1	Entschlusse
+verhasst	NN	1	verhaßt
+nützlich	JJ	1	nützlich
+Reue	NN	1	Reue
+Vater	NN	1	Vater
+geschwind	RP	1	geschwind
+versichert	NN	1	versichert
+gottlose	NN	1	gottlose
+Ohre	NN	1	Ohre
+würfeln	VB	1	würfeln
+verzeiht	NNP	1	verzeiht
+Antwort	NN	1	Antwort
+Schale	NN	1	Schale
+ostindisch	JJ	1	ostindische
+Anblick	NN	1	Anblick
+Erlauben	NN	1	Erlauben
+lass	JJ	1	laß
+finde	NN	1	finde
+Gerechter	NN	1	Gerechter
+vorhalte	NN	1	vorhalte
+Neugierigkeit	NN	1	Neugierigkeit
+Tode	NN	1	Tode
+Versichern	NN	1	Versichern
+Fehler	NN	1	Fehler
+Beschäftigung	NN	1	Beschäftigung
+Frauenzimmers	NN	1	Frauenzimmers
+Unruhe	NN	1	Unruhe
+Lob	NNS	1	Lobe
+zufried	JJ	1	zufrieden
+gewisseste	JJ	1	gewisseste
+jemanden	NN	1	jemanden
+besinnen	VB	1	besinnen
+kämpfen	VB	1	kämpfen
+vertrauen	VB	1	vertrauen
+gedulden	NN	1	gedulden
+weiss	VB	1	weiß
+gebe	NN	1	gebe
+Sei	NN	1	Sei
+Ganze	NN	1	Ganze
+Schweig	JJ	1	Schweig
+zehn	CD	1	zehn
+Wisset	NN	1	Wisset
+weder	CC	1	weder
+Verziehn	NN	1	Verziehn
+Kannst	NN	1	Kannst
+betrifft	VB	1	betrifft
+heraus	RB	1	heraus
+Geh	NN	1	Geh
+entzogen	NN	1	entzogen
+Tugend	NN	1	Tugend
+selig	JJ	1	selig
+Ansehen	NN	1	Ansehen
+Könnten	NN	1	Könnten
+unschuldig	JJ	1	unschuldig
+Rechenschaft	NN	1	Rechenschaft
+Rockknöpfe	NN	1	Rockknöpfe
+andres	NN	1	andres
+schaden	VB	1	schaden
+löblich	JJ	1	löbliche
+fest	RB	1	fest
+Floh	NN	1	Floh
+teilen	VB	1	teilen
+Liebste	NN	1	Liebste
+ins	IN	1	ins
+fühlen	VB	1	fühle
+entziehen	VB	1	entziehen
+vorfallender	NN	1	vorfallender
+Vorurteil	NN	1	Vorurteil
+glaube	VB	1	glaube
+bewahren	VB	1	bewahren
+sehren	VB	1	sehr
+möge	RB	1	möge
+Treue	NN	1	Treue
+Nachwelt	NN	1	Nachwelt
+vorzubringen	VB	1	vorzubringen
+Reizungen	NN	1	Reizungen
+lahm	JJ	1	lahm
+Geiz	NN	1	Geiz
+geholfen	NN	1	geholfen
+nütze	NN	1	nütze
+besorgten	NN	1	besorgten
+Unwürdigern	NN	1	Unwürdigern
+verblendet	NN	1	verblendet
+Arbeit	NN	1	Arbeit
+eingenommen	NN	1	eingenommen
+Wertester	NN	1	Wertester
+verlören	NN	1	verlören
+ändern	RP	1	geändert
+Unkosten	NN	1	Unkosten
+kurzen	NN	1	kurzen
+besitze	NN	1	besitze
+berede	NN	1	berede
+verachtungswürdiger	NN	1	verachtungswürdiger
+Liebst	JJ	1	Liebster
+sau	JJ	1	sauer
+lachen	VB	1	lacht
+geirret	NN	1	geirret
+auszusöhnen	NN	1	auszusöhnen
+Zweifelt	NN	1	Zweifelt
+Unsere	PRP$	1	Unsere
+Niemand	NN	1	Niemand
+wüsste	NN	1	wüßte
+scheinet	NN	1	scheinet
+hierinne	NN	1	hierinne
+niederträchtiger	NN	1	niederträchtiger
+entdeckten	NN	1	entdeckten
+verunglücket	NN	1	verunglücket
+gewuchert	NN	1	gewuchert
+schw	JJ	1	schwer
+Narren	NN	1	Narren
+Welch	JJ	1	Welchen
+beurteile	NN	1	beurteile
+Nebenbuhlern	NN	1	Nebenbuhlern
+Vereinigung	NN	1	Vereinigung
+gehässiger	NNP	1	gehässiger
+Bettlerin	NN	1	Bettlerin
+glücklichen	VBN	1	glücklich
+lasst	WRB	1	laßt
+Schwäche	NN	1	Schwäche
+Kummer	NNP	1	Kummer
+schäme	NN	1	schäme
+besess	JJ	1	besessen
+Häusern	NN	1	Häusern
+brechen	VB	1	brechen
+Schäfchen	VB	1	Schäfchen
+Allein	NN	1	Allein
+abwarten	VB	1	abwarten
+sagten	NN	1	sagten
+erleichtern	VB	1	erleichtern
+edle	NN	1	edle
+Zufalle	NN	1	Zufalle
+prächtig	JJ	1	prächtig
+gewinnen	VB	1	gewinnen
+Zwei	CD	1	Zwei
+wen	WP	1	wen
+Geier	NN	1	Geier
+Verlust	NN	1	Verlust
+niemals	RB	1	niemals
+parat	JJ	1	parat
+vermutet	NN	1	vermutet
+Bundes	NN	1	Bundes
+gewollt	NN	1	gewollt
+wundersam	JJ	1	wundersam
+bin	JJ	1	bin
+begegnen	VB	1	begegnet
+einzigen	VB	1	einzige
+Abends	NN	1	Abends
+klugen	VBN	1	klug
+Vorwand	NN	1	Vorwand
+beunruhigen	VB	1	beunruhigen
+neuem	NN	1	neuem
+Zärtliche	RB	1	Zärtliche
+Lebt	NN	1	Lebt
+beunruhiget	NN	1	beunruhiget
+schlagen	VB	1	schlagen
+abzulaufen	VB	1	abzulaufen
+Kohle	NNS	1	Kohlen
+Damons	NN	1	Damons
+schonen	VBN	1	schon
+erste	RB	1	erste
+Vernunft	NN	1	Vernunft
+trockne	NN	1	trockne
+Sperlinge	NN	1	Sperlinge
+jaten	RP	1	ja
+vernehmen	RP	1	vernommen
+vorstelle	NN	1	vorstelle
+Empfindung	NNS	1	Empfindungen
+Regel	NN	1	Regel
+verdammen	VB	1	verdammen
+Geldern	NN	1	Geldern
+versteht	JJ	1	versteht
+liebt	NN	1	liebt
+klüger	NN	1	klüger
+garen	VB	1	gar
+sagt	VB	1	sagt
+Lisett	NN	1	Lisette
+hinter	IN	1	hinter
+Bosheit	NN	1	Bosheit
+niemalsen	VB	1	niemals
+aufbringen	VB	1	aufbringen
+Beifall	NN	1	Beifall
+wahren	VB	1	wahre
+seinetwegen	JJ	1	seinetwegen
+vorgesucht	NN	1	vorgesucht
+Nehmen	VB	1	Nehmen
+ums	IN	1	ums
+Punkt	NN	1	Punkt
+gehören	VB	1	gehöret
+bemühen	VB	1	bemühen
+Tagen	NN	1	Tagen
+stehlen	VB	1	gestohlen
+Sammelplatz	NN	1	Sammelplatz
+Befürchten	NN	1	Befürchten
+vergeben	VB	1	vergeben
+ungestüm	JJ	1	ungestüm
+lossprechen	VBN	1	lossprechen
+führen	VB	1	führt
+Maus	NN	1	Maus
+entzücket	NN	1	entzücket
+acht	CD	1	acht
+sag	NN	1	sag
+habt	NN	1	habt
+verachtungswert	NN	1	verachtungswert
+binden	VB	1	binden
+hergekommen	NN	1	hergekommen
+anfängt	VBN	1	anfängt
+Itzo	NN	1	Itzo
+Wichtigen	VB	1	Wichtige
+Bräutigam	NN	1	Bräutigam
+nötig	JJ	1	nötige
+Grab	NN	1	Grab
+geizig	JJ	1	geizig
+Jugend	NN	1	Jugend
+verschweigen	VB	1	verschweigen
+ausdrücklich	RB	1	ausdrücklich
+Setzen	NN	1	Setzen
+entzückt	NN	1	entzückt
+befreien	VB	1	befreien
+gründen	VB	1	gegründet
+Antrage	NN	1	Antrage
+Seits	NN	1	Seits
+erworbener	NN	1	erworbener
+verderben	VB	1	verderben
+schlage	NN	1	schlage
+woran	WDT	1	woran
+eitel	JJ	1	eitel
+Geldes	NN	1	Geldes
+Wesentlichen	NN	1	Wesentlichen
+Feindschaft	NN	1	Feindschaft
+fern	JJ	1	fern
+Alsdenn	NN	1	Alsdenn
+verursachen	VB	1	verursachen
+Urteilen	NN	1	Urteilen
+aufzuopfern	NN	1	aufzuopfern
+abfinden	PRP$	1	abfinden
+Hartnäckigkeit	NN	1	Hartnäckigkeit
+entschlassen	VB	1	entschließen
+nähern	VBN	1	näher
+dürfte	VB	1	dürfte
+verargen	NN	1	verargen
+vermögen	VB	1	vermöge
+dran	RP	1	dran
+ausnehmende	NN	1	ausnehmende
+gäben	NN	1	gäben
+unbillig	JJ	1	unbillig
+Bald	NN	1	Bald
+beleidigten	NN	1	beleidigten
+Rtlr	NN	1	Rtlr
+Geheimnis	NN	1	Geheimnis
+Zweck	NN	1	Zweck
+aufgehört	NN	1	aufgehört
+sähe	NN	1	sähe
+ausschütten	VB	1	ausschütten
+tändeln	NN	1	tändeln
+zählen	VB	1	zählt
+übrig	JJ	1	übrig
+kostbarste	NN	1	kostbarste
+davor	RB	1	davor
+wenigst	JJ	1	wenigsten
+ltzo	NN	1	ltzo
+wiederholte	NN	1	wiederholte
+artige	JJ	1	artige
+häufig	JJ	1	häufig
+Herren	NN	1	Herren
+fort	RP	1	fort
+erdichtete	NN	1	erdichtete
+verkündigen	VBN	1	verkündigt
+Frauenzimmer	NN	1	Frauenzimmer
+Voll	NN	1	Voll
+sterben	VB	1	sterbe
+munter	JJ	1	munter
+verdammte	NN	1	verdammte
+widerfahren	NN	1	widerfahren
+prächtige	NN	1	prächtige
+ungeschickt	JJ	1	ungeschickt
+Dienen	NN	1	Dienen
+bewaffnet	JJ	1	bewaffnet
+Grausamer	NN	1	Grausamer
+Begierde	NN	1	Begierde
+Entdecken	NN	1	Entdecken
+treten	VB	1	treten
+willen	IN	1	willen
+Wucher	NN	1	Wucher
+streite	NN	1	streite
+zärtlichsten	NN	1	zärtlichsten
+gelangen	PRP$	1	gelangen
+loben	VB	1	loben
+Tränen	NN	1	Tränen
+keins	NN	1	keins
+wert	RP	1	wert
+teilten	NN	1	teilten
+Banquerouten	NN	1	Banquerouten
+schweig	JJ	1	schweig
+zanken	NN	1	zanken
+Anbeter	NN	1	Anbeter
+redete	NN	1	redete
+erholen	VB	1	erholen
+Freundin	NN	1	Freundin
+unwahrscheinlich	JJ	1	unwahrscheinlich
+vorsagen	VBN	1	vorgesagt
+verliebte	NN	1	verliebte
+Antrag	NN	1	Antrag
+Versuch	NN	1	Versuch
+Erstaunen	NN	1	Erstaunen
+weichet	NN	1	weichet
+Zwischen	IN	1	Zwischen
+vorzuwerfen	VB	1	vorzuwerfen
+einigermassen	RB	1	einigermaßen
+Verdrusse	NN	1	Verdrusse
+Mährgen	IN	1	Mährgen
+Fällen	NN	1	Fällen
+täten	NN	1	täten
+unerschrocknen	NN	1	unerschrocknen
+Eigennutz	NN	1	Eigennutz
+nähmen	NN	1	nähmen
+Aufrichtig	IN	1	Aufrichtig
+geheim	JJ	1	geheime
+niederträchtige	NNP	1	niederträchtige
+unschmackhaft	PRP$	1	unschmackhaft
+ersetzen	VB	1	ersetzen
+wohlgemachte	NN	1	wohlgemachte
+holen	VB	1	holt
+Schmerz	NN	1	Schmerz
+Alsdann	NNP	1	Alsdann
+irr	JJ	1	irre

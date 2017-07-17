@@ -11,39 +11,60 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	evaluation = Evaluation_LexiconVSVocabulary("../Word-Frequencies/test.txt")
-	result = evaluation.evaluateLexiconVsVocabularyLemmas("SentiWS-Original")
-	evaluation.writeResultOutput("../Evaluation/SentiWS-Lemmas-Vocabulary-Lemmas.txt", result)
+	evaluation = Evaluation_LexiconVSVocabulary("../Word-Frequencies/test.txt", "CD")
+	
+
+	result = evaluation.evaluateLexiconTokensVsVocabulary()
+
+	evaluation.writeResultOutput("../Evaluation/CD-Lemmas-Vocabulary-Lemmas.txt", result)
 	print(result._recognized)
 	print(result._recognizedPercentage)
 
 class Evaluation_LexiconVSVocabulary:
 
-	def __init__(self, vocPath):
+	def __init__(self, vocPath, lexiconName):
 		self._placeholder = ""
 		self._vocabulary = None
 
+		self._lexiconName = ""
+		self._lexicon = {}
+		self._lexiconLemmas = {}
+
 		self._vocabulary = self.readVocabulary(vocPath)
+		
+		self.setLexicon(lexiconName)
 	
-	def evaluateLexiconVsVocabularyLemmas(self, lexiconName):
+	def setLexicon(self, lexiconName):
 		lexiconHandler = Lexicon_Handler()
 		lexiconHandler.initSingleDict(lexiconName)
-		lexiconLemmasDict = lexiconHandler._sentimentDictLemmas
 
-		recognized = self.getRecognizedLemmasOfVocabulary(lexiconLemmasDict)
-		recognizedPercentage = self.getRecognizedPercentage(recognized, self._vocabulary._lemmas)
+		self._lexiconName = lexiconName
+		self._lexicon = lexiconHandler._sentimentDict
+		self._lexiconLemmas = lexiconHandler._sentimentDictLemmas
+
+	def evaluateLexiconLemmasVsVocabulary(self):
+		result = self.evaluateLexiconVsVocabulary(self._lexiconLemmas)
+		return result
+
+	def evaluateLexiconTokensVsVocabulary(self):
+		result = self.evaluateLexiconVsVocabulary(self._lexicon)
+		return result
+	
+	def evaluateLexiconVsVocabulary(self, lexicon):
+		recognized = self.getRecognizedWordsOfVocabulary(lexicon)
+		recognizedPercentage = self.getRecognizedPercentage(recognized, self._vocabulary._words)
 
 		result = Evaluation_Result_Vocabulary()
-		result._nameOfLexicon = lexiconName
-		result._lexicon = lexiconLemmasDict
+		result._nameOfLexicon = self._lexiconName
+		result._lexicon = lexicon
 		result._recognized = recognized
 		result._recognizedPercentage = recognizedPercentage
 
 		return result
 
-	def getRecognizedLemmasOfVocabulary(self, lexicon):
-		lemmas = self._vocabulary._lemmas
-		recognized = self.getRecognizedWords(lexicon, self._vocabulary._lemmas)
+	def getRecognizedWordsOfVocabulary(self, lexicon):
+		words = self._vocabulary._words
+		recognized = self.getRecognizedWords(lexicon, self._vocabulary._words)
 
 		return recognized
 
@@ -81,7 +102,7 @@ class Evaluation_LexiconVSVocabulary:
 		outputFile.write(result._nameOfLexicon + " IN " + self._vocabulary._name)
 		outputFile.write("\n\n")
 		outputFile.write("Length of Lexicon: " + str(len(result._lexicon)))
-		outputFile.write("\nLength of Vocabulary: " + str(len(self._vocabulary._lemmas)))
+		outputFile.write("\nLength of Vocabulary: " + str(len(self._vocabulary._words)))
 		outputFile.write("\nRecognized Words: " + str(len(result._recognized)))
 		outputFile.write("\nRecognized Percentage: " + str(result._recognizedPercentage))
 
@@ -113,11 +134,8 @@ class Vocabulary:
 	def __init__(self, path):
 		self._name = ""
 
-		self._lemmasWithInformationDict = {}
-		self._lemmas = []
-
-		self._tokensWithInformationDict = {}
-		self._tokens = []
+		self._wordsWithInformationDict = {}
+		self._words = []
 
 		self.init(path)
 
@@ -128,14 +146,12 @@ class Vocabulary:
 		self._name = path.split("/")[-1]
 
 		for line in lines:
-			lemmasWithInformation = line.split("\t")
-			lemma = unicode(lemmasWithInformation[0])
-			information = lemmasWithInformation.pop(0)
+			wordsWithInformation = line.split("\t")
+			word = unicode(wordsWithInformation[0])
+			information = wordsWithInformation.pop(0)
 
-			self._lemmasWithInformationDict[lemma] = information
-			self._lemmas.append(lemma)
-
-			#TODO Tokenssachen machen
+			self._wordsWithInformationDict[word] = information
+			self._words.append(word)
 
 class Evaluation_Result_Vocabulary:
 
