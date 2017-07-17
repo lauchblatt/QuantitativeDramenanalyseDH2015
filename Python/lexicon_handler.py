@@ -13,8 +13,9 @@ def main():
 
 	lexiconHandler = Lexicon_Handler()
 
-	lexiconHandler.initCD()
-	
+	lexiconHandler.readAndInitCDAndLemmas()
+	print(len(lexiconHandler._sentimentDict))
+	print(len(lexiconHandler._sentimentDictLemmas))
 
 class Lexicon_Handler:
 
@@ -29,6 +30,8 @@ class Lexicon_Handler:
 			self.readAndInitNRCAndLemmas()
 		elif (lexicon == "Bawl"):
 			self.readAndInitBawlAndLemmas()
+		elif (lexicon == "CD"):
+			self.readAndInitCDAndLemmas()
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 
@@ -50,6 +53,20 @@ class Lexicon_Handler:
 			value = float(wordAndValue[1].rstrip())
 			sentimentDict[unicode(word)] = value
 
+		self._sentimentDictLemmas = sentimentDict
+
+	def readAndInitCDAndLemmas(self):
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/CD-Lemmas.txt")
+		self.initCD()
+		sentimentDict = {}
+		lines = sentDictText.readlines()[1:]
+		for line in lines:
+			wordAndValues = line.split("\t")
+			sentiments = {}
+			sentiments["positive"] = wordAndValues[1]
+			sentiments["negative"] = wordAndValues[2]
+			sentiments["neutral"] = wordAndValues[3]
+			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
 	def readAndInitNRCAndLemmas(self):
@@ -191,6 +208,22 @@ class Lexicon_Handler:
 		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	def lemmatizeDictCD(self):
+		lp = Language_Processor()
+		newSentimentDict = {}
+		print("start Lemmatisation")
+		for word,value in self._sentimentDict.iteritems():
+			lemma = lp.getLemma(word)
+			if lemma in newSentimentDict:			
+				sentiments = self.getHigherSentimentValuesCD(value, newSentimentDict[lemma])
+				newSentimentDict[lemma] = sentiments
+			else:
+				newSentimentDict[lemma] = value
+
+		print ("Lemmatisation finished")
+		self._sentimentDictLemmas = newSentimentDict
+
+
 	def createOutput(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 
@@ -226,6 +259,17 @@ class Lexicon_Handler:
 			outputFile.write(line)
 		outputFile.close()
 
+	def createOutputCD(self, sentimentDict, dataName):
+		outputFile = open(dataName + ".txt", "w")
+		firstLine = "word\tpositive\tnegative\tneutral"
+		outputFile.write(firstLine)
+
+		for word in sentimentDict:
+			info = sentimentDict[word]
+			line = "\n" + word + "\t" + str(info["positive"]) + "\t" + str(info["negative"]) + "\t" + str(info["neutral"])
+			outputFile.write(line)
+		outputFile.close()
+
 	def getWordsAsTextFromDict(self):
 		text = ""
 		for word in self._sentimentDict:
@@ -236,6 +280,20 @@ class Lexicon_Handler:
 	def initCD(self):
 		sentDictText = open("../SentimentAnalysis/CD/cd.txt")
 		sentimentDict = self.getSentimentDictCD(sentDictText)
+		self._sentimentDict = sentimentDict
+
+		self._sentimentDict = self.removeNeutralWordsFromCD(self._sentimentDict)
+
+	def removeNeutralWordsFromCD(self, cdDict):
+		wordsToDel = []
+		for word in cdDict:
+			sentiments = cdDict[word]
+			if(sentiments["positive"] == 0 and sentiments["negative"] == 0):
+				wordsToDel.append(word)
+		
+		for word in wordsToDel:
+			del cdDict[word]
+		return cdDict
 
 	def getSentimentDictCD(self, sentimentDictText):
 		lines = sentimentDictText.readlines()
@@ -263,21 +321,14 @@ class Lexicon_Handler:
 			else:
 				infoPerWord["neutral"] = 0
 
+			# against current choose one sentiment-Belegung
 			if(unicode(word) in sentimentDict):
 				sentiments = self.getHigherSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)])
-				print("\n")
-				print word
-				print ("Alte Sentiments:")
-				print(sentimentDict[unicode(word)])
-				print("Neue Sentiments:")
-				print(infoPerWord)
-				print("Gewählte Sentiments:")
-				print(sentiments)
 				infoPerWord = sentiments
 			
 			sentimentDict[unicode(word)] = infoPerWord
 
-		print(len(sentimentDict))
+		return sentimentDict
 
 	def getHigherSentimentValuesCD(self, newSentiments, oldSentiments):
 		sentiments = {}
@@ -414,6 +465,15 @@ class Lexicon_Handler:
 		self.initBawl()
 		self.lemmatizeDictBawl()
 		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/Bawl-Lemmas")
+
+	def createSentimentDictFileCDToken(self):
+		self.initCD()
+		self.createOutputCD(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/CD-Token")
+
+	def createSentimentDictFileCDLemmas(self):
+		self.initCD()
+		self.lemmatizeDictCD()
+		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/CD-Lemmas")
 
 if __name__ == "__main__":
     main()
