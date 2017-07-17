@@ -264,13 +264,28 @@ class Lexicon_Handler:
 				infoPerWord["neutral"] = 0
 
 			if(unicode(word) in sentimentDict):
-				sentiments self.getHigherSentimentValuesCD()
+				sentiments = self.getHigherSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)])
+				print("\n")
+				print word
+				print ("Alte Sentiments:")
+				print(sentimentDict[unicode(word)])
+				print("Neue Sentiments:")
+				print(infoPerWord)
+				print("Gewählte Sentiments:")
+				print(sentiments)
+				infoPerWord = sentiments
 			
 			sentimentDict[unicode(word)] = infoPerWord
 
 		print(len(sentimentDict))
 
-	
+	def getHigherSentimentValuesCD(self, newSentiments, oldSentiments):
+		sentiments = {}
+		sentiments["positive"] = self.getHigherSentimentValue(newSentiments["positive"], oldSentiments["positive"])
+		sentiments["negative"] = self.getHigherSentimentValue(newSentiments["negative"], oldSentiments["negative"])
+		sentiments["neutral"] = self.getHigherSentimentValue(newSentiments["neutral"], oldSentiments["neutral"])
+		return sentiments
+
 	def getSentimentCD(self, sentiments):
 		if(sentiments["positive"] != 0):
 			return "POS"
