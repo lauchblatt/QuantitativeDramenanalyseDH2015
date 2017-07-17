@@ -45,6 +45,7 @@ class Sentiment_Calculator:
 
 	def calcTotalMetrics(self):
 		polaritySentiWSTotal = 0
+		
 		positiveNrcTotal = 0
 		negativeNrcTotal = 0
 		angerTotal = 0
@@ -55,6 +56,7 @@ class Sentiment_Calculator:
 		sadnessTotal = 0
 		surpriseTotal = 0
 		trustTotal = 0
+		
 		emotionTotal = 0
 		arouselTotal = 0
 

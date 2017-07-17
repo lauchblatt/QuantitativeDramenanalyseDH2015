@@ -13,9 +13,7 @@ def main():
 
 	lexiconHandler = Lexicon_Handler()
 
-	lexiconHandler.createSentimentDictFileBawlLemmas()
-	print(len(lexiconHandler._sentimentDict))
-	print(len(lexiconHandler._sentimentDictLemmas))
+	lexiconHandler.initCD()
 	
 
 class Lexicon_Handler:
@@ -235,11 +233,56 @@ class Lexicon_Handler:
 
 		return text
 	
+	def initCD(self):
+		sentDictText = open("../SentimentAnalysis/CD/cd.txt")
+		sentimentDict = self.getSentimentDictCD(sentDictText)
+
+	def getSentimentDictCD(self, sentimentDictText):
+		lines = sentimentDictText.readlines()
+		sentimentDict = {}
+		i = 0
+		for line in lines:
+			info = line.split(" ")
+			word = info[0]
+			word = word.replace("_", " ")
+			sentiment = info[1]
+			sentimentInfo = sentiment.split("=")
+			infoPerWord = {}
+			
+			
+			if(sentimentInfo[0] == "POS"):
+				infoPerWord["positive"] = float(sentimentInfo[1])
+			else:
+				infoPerWord["positive"] = 0
+			if(sentimentInfo[0] == "NEG"):
+				infoPerWord["negative"] = float(sentimentInfo[1])
+			else:
+				infoPerWord["negative"] = 0
+			if(sentimentInfo[0] == "NEU"):
+				infoPerWord["neutral"] = float(sentimentInfo[1])
+			else:
+				infoPerWord["neutral"] = 0
+
+			if(unicode(word) in sentimentDict):
+				sentiments self.getHigherSentimentValuesCD()
+			
+			sentimentDict[unicode(word)] = infoPerWord
+
+		print(len(sentimentDict))
+
+	
+	def getSentimentCD(self, sentiments):
+		if(sentiments["positive"] != 0):
+			return "POS"
+		if(sentiments["negative"] != 0):
+			return "NEG"
+		if(sentiments["neutral"] != 0):
+			return "NEU"
+
 	def initBawl(self):
 		sentDictText = open("../SentimentAnalysis/Bawl-R/bawl-r.txt")
 		sentimentDict = self.getSentimentDictBawl(sentDictText)
 		self._sentimentDict = sentimentDict
-		print(len(self._sentimentDict))
 
 	def getSentimentDictBawl(self, sentimentDictText):
 		lines = sentimentDictText.readlines()[1:]
