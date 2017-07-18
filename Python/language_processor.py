@@ -15,10 +15,6 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lp = Language_Processor()
-
-	lp.processSingleDrama("../Lessing-Dramen/less-Damon_k.xml")
-	
-	lp.generateWordFrequenciesOutputLemmas("../Word-Frequencies/test")
 	
 	#lp.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Test/")
 	
@@ -41,9 +37,11 @@ class Language_Processor:
 
 		self._lemmasAndPOSAndTokensDict = {}
 
-		self._wordFrequencies = []
 		self._stopwords = []
 		self._stopwords_lemmatized = []
+
+		self._currentDramaName = ""
+		self._tokensWithoutStopwords = []
 		
 		self.initStopWords()
 
@@ -101,8 +99,6 @@ class Language_Processor:
 		
 		self.removeStopWordsFromLemmas()
 		#print("StopWords removed...")
-		self.calcWordFrequencies()
-		#print("Frequencies calculated...")
 
 
 	def getLemma(self, word):
@@ -125,6 +121,10 @@ class Language_Processor:
 		newText = unicode(newText.replace("'", ""))
 		newText = unicode(newText.replace("«", ""))
 		newText = unicode(newText.replace("»", ""))
+		newText = unicode(newText.replace("[", ""))
+		newText = unicode(newText.replace("]", ""))
+		newText = unicode(newText.replace("...", ""))
+		newText = unicode(newText.replace("..", ""))
 
 		return newText
 
@@ -132,6 +132,7 @@ class Language_Processor:
 	def processSingleDrama(self, path):
 		parser = DramaParser()
 		dramaModel = parser.parse_xml(path)
+		self._currentDramaName = dramaModel._title
 		print("dramaModel ready...")
 		text = ""
 		#"""
@@ -139,24 +140,24 @@ class Language_Processor:
 			for conf in act._configurations:
 				for speech in conf._speeches:
 					text = text + speech._text
-		#"""
-
-		"""
-		for i in range(3, 4):
-			for conf in dramaModel._acts[i]._configurations:
-				for speech in conf._speeches:
-					newText = text + speech._text
-					text = text + newText
-		"""
-		
-		"""
-		for speech in dramaModel._acts[3]._configurations[1]._speeches:
-				newText = unicode(str(speech._text.replace("–", "")))
-				text = text + newText
-		"""
 
 		print("Text ready...")
 		self.processTextFully(text)
+
+	def processSingleDramaTokens(self, path):
+		parser = DramaParser()
+		dramaModel = parser.parse_xml(path)
+		self._currentDramaName = dramaModel._title
+		print("dramaModel ready...")
+		text = ""
+		#"""
+		for act in dramaModel._acts:
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					text = text + speech._text
+
+		print("Text ready...")
+		self.processTextTokens(text)
 
 	def lemmatize(self):
 		self._lemmas = self._textBlob.words.lemmatize()
@@ -169,8 +170,6 @@ class Language_Processor:
 
 			lemmaAndTokenPOS = (self._lemmas[i], (self._tokensAndPOS[i][0], self._tokensAndPOS[i][1]))
 			self._lemmasWithLanguageInfo.append(lemmaAndTokenPOS)
-			#print(self._lemmas[i])
-			#print(self._tokensAndPOS[i][0])
 
 	# One Lemma can have multiple POS
 	def createLemmaAndPOSDict(self):
@@ -210,70 +209,25 @@ class Language_Processor:
 
 	def removeStopWordsFromLemmas(self):
 		lemmasCopy = list(self._lemmas)
-		for stopword in self._stopwords_lemmatized:
-			while stopword.lower() in lemmasCopy:
-				lemmasCopy.remove(stopword.lower())
-			while stopword.title() in lemmasCopy:
-				lemmasCopy.remove(stopword.title())
+		self._lemmasWithoutStopwords = self.removeStopwordsFromList(lemmasCopy)
+	
+	def removeStopwordsFromTokens(self):
+		tokensCopy = list(self._tokens)
+		self._tokensWithoutStopwords = self.removeStopwordsFromList(tokensCopy)
 
+	def removeStopwordsFromList(self, wordList):
 		for stopword in self._stopwords:
-			while stopword.lower() in lemmasCopy:
-				lemmasCopy.remove(stopword.lower())
-			while stopword.title() in lemmasCopy:
-				lemmasCopy.remove(stopword.title())
+			while stopword.lower() in wordList:
+				wordList.remove(stopword.lower())
+			while stopword.title() in wordList:
+				wordList.remove(stopword.title())
 
-		self._lemmasWithoutStopwords = lemmasCopy
-
-	def calcWordFrequencies(self):
-		fdist = FreqDist(self._lemmasWithoutStopwords)
-		frequencies = fdist.most_common()
-		self._wordFrequencies = frequencies
-
-	def generateWordFrequenciesOutputTokens(self, dataName):
-		outputFile = open(dataName + ".txt", "w")
-
-
-	def generateWordFrequenciesOutputLemmas(self, dataName):
-		outputFile = open(dataName + ".txt", "w")
-
-		outputFile.write("Number of all words " + str(len(self._lemmasWithoutStopwords)) + "\n")
-		outputFile.write("Nummber of different lemmas " + str(len(self._wordFrequencies)) + "\n\n")
-
-		outputFile.write("Lemma" + "\t" + "POS" + "\t" + "Frequency" + "\t" + "Tokens" +"\n")
-		for frequ in self._wordFrequencies:
-			lemma = frequ[0]
-			POS = self._lemmasAndPOSAndTokensDict[lemma][0]
-			tokens = self._lemmasAndPOSAndTokensDict[lemma][1]
-			outputFile.write(str(lemma) + "\t" + ', '.join(POS) + "\t" + str(frequ[1]) + "\t" + ', '.join(tokens) + "\n")
-		outputFile.close()
-		print("Output ready...")
-
-	def processMultipleDramasAndGenerateOutputLemmas(self, originpath, resultpath):
-		parser = DramaParser()
-
-		for filename in os.listdir(originpath):
-			print(filename + " processing starts...")
-			dramaModel = parser.parse_xml(originpath + filename)
-			print("DramaModel ready...")
-			title = dramaModel._title
-			self.processSingleDrama(originpath + filename)
-			self.generateWordFrequenciesOutputLemmas(resultpath + title)
-
-	def processEntireCorpusAndGenereateOutputLemmas(self, originpath):
-		parser = DramaParser()
-		totalText = "";
-		for filename in os.listdir(originpath):
-			print(filename + " processing starts...")
-			dramaModel = parser.parse_xml(originpath + filename)
-			
-			for act in dramaModel._acts:
-				for conf in act._configurations:
-					for speech in conf._speeches:
-						newText = unicode(speech._text.replace("–", ""))
-						totalText = totalText + newText
-		self.processTextFully(totalText)
-		self.generateWordFrequenciesOutputLemmas("../Word-Frequencies/EntireCorpus")
-
+		for stopword in self._stopwords_lemmatized:
+			while stopword.lower() in wordList:
+				wordList.remove(stopword.lower())
+			while stopword.title() in wordList:
+				wordList.remove(stopword.title())
+		return wordList
 
 
 if __name__ == "__main__":

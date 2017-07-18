@@ -1,12 +1,13 @@
 Title: Philotas
-Number of all lemmas: 2490
-Nummber of different lemmas: 1338
+Number of all lemmas: 2517
+Nummber of different lemmas: 1341
 
 Lemma	POS	Frequency	Tokens
 Prinz	NN, NNP	49	Prinz
 Vater	NN, JJ	48	Vater
 König	NN, DT, NNP	42	König, Könige
 Sohn	NN, NNS, NNP	25	Sohn, Söhne
+mussen	VB, VBN	21	muß, mußten, mußt, mußte
 Strato	NN	21	Strato
 Schwerd	NNP, NN	19	Schwerd
 Götter	NN	18	Götter
@@ -82,6 +83,7 @@ Held	NNS, NN, NNP	5	Helden, Held
 schimpflich	JJ	5	schimpflich, schimpflichen, schimpfliche
 stürzen	VB, VBN	5	stürzen, gestürzt
 wenig	RP, IN, RB	5	wenig
+bin	VB, RB, JJ	5	bin
 Jugend	NN, JJ	5	Jugend
 allein	RP, RB	5	allein
 wählen	VB	4	wählte, wählen
@@ -246,7 +248,6 @@ alten	VB	2	alt
 aufriss	NN	2	aufriß
 Blut	NN	2	Blut
 schwören	VB	2	schwören, geschworen
-leben	VB, VBN	2	leben
 Seite	NN	2	Seite
 dochen	RB, VBN	2	doch
 Lösegeld	NN	2	Lösegeld
@@ -287,6 +288,7 @@ Sei	NN	2	Sei
 ungehalten	NN	2	ungehalten
 elend	JJ	2	elend
 Erfahrung	NN	2	Erfahrung
+leben	VB, VBN	2	leben
 Befehlen	NN	2	Befehlen
 grösstes	NN, JJ	2	größtes
 Glied	NNS	2	Glieder
@@ -510,7 +512,6 @@ schaden	VB	1	schaden
 erweisest	NN	1	erweisest
 eilen	VBN	1	geeilt
 entsank	NNP	1	entsank
-wack	JJ	1	wacker
 Dach	NN	1	Dach
 Ströme	NN	1	Ströme
 Wirst	WRB	1	Wirst
@@ -625,6 +626,7 @@ etwa	RB	1	etwa
 getraue	NN	1	getraue
 arm	JJ	1	armer
 neunzig	CD	1	neunzig
+wack	JJ	1	wacker
 früh	JJ	1	früh
 still	JJ	1	stiller
 auslösen	VB	1	auslösen
@@ -807,6 +809,7 @@ Rede	NN	1	Rede
 Kennzeichen	NN	1	Kennzeichen
 fürs	NN	1	fürs
 unsicher	JJ	1	unsicheres
+Bin	NN	1	Bin
 kleinmütig	JJ	1	kleinmütig
 Armes	NNP	1	Armes
 sahen	NN	1	sahen

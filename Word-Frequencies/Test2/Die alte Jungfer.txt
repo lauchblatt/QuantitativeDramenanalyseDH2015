@@ -1,6 +1,6 @@
 Title: Die alte Jungfer
-Number of all lemmas: 3539
-Nummber of different lemmas: 1632
+Number of all lemmas: 3562
+Nummber of different lemmas: 1635
 
 Lemma	POS	Frequency	Tokens
 Herr	JJ, NN, NNP	71	Herr, Herren
@@ -16,6 +16,7 @@ lieb	JJ	21	lieber, liebe, lieb, lieben
 Jungfer	NN, JJ	21	Jungfer
 gar	RB, IN, RP	21	gar
 heiraten	VB, RP, VBN	20	heiraten, geheiratet
+mussen	VB, VBN	20	muß, mußt
 gut	JJ	19	gut, guten, gute, guter
 Lelio	NN, NNP	19	Lelio
 wenig	IN, RB, RP	18	wenig
@@ -472,6 +473,7 @@ Beistand	NN	2	Beistand
 künftig	JJ	2	künftig, künftigen
 tanzen	VB	2	tanzen
 finden	VB	2	finden, gefunden
+bin	JJ, VB	2	bin
 fürchte	NN	2	fürchte
 Schämen	NN	2	Schämen
 rechten	NN	2	rechten
@@ -686,6 +688,7 @@ Verbindung	NN	1	Verbindung
 sollens	NN	1	sollens
 schenken	VBN	1	geschenkt
 sagt	RB	1	sagt
+Bin	NN	1	Bin
 Plunder	NN	1	Plunder
 schmeckte	NN	1	schmeckte
 Wenns	NN	1	Wenns

@@ -1,6 +1,6 @@
 Title: Emilia Galotti
-Number of all lemmas: 7277
-Nummber of different lemmas: 2881
+Number of all lemmas: 7336
+Nummber of different lemmas: 2884
 
 Lemma	POS	Frequency	Tokens
 Prinz	NN, JJ	88	Prinz
@@ -13,6 +13,7 @@ Emilia	NNP, NN	60	Emilia
 wohl	RB, RP, WRB, IN, JJ	58	wohl
 gut	JJ, RB, VB	50	gut, gute, guter, gutem, guten
 Graf	NN, NNP	48	Graf
+mussen	VB, VBN	48	muß, mußt, mußte, gemußt
 Vater	NN	47	Vater
 Galotti	NNP, NN	41	Galotti
 hören	VB, VBN	39	höre, hören, hörte, hört, höret, hörten
@@ -178,6 +179,7 @@ darum	RB	7	darum
 nennen	VB	7	nennen, nennst, nannte, nennest
 Verbrechen	NN	7	Verbrechen
 unserer	PRP$	7	unserer
+bin	VB, NN, JJ	7	bin
 Sabionetta	NN	7	Sabionetta
 letzt	JJ	7	letzten, letzte
 befehlen	VB, VBN, PRP$	7	befohlen, befehlen
@@ -288,6 +290,7 @@ konnt	NN	4	konnt
 endlich	RB, JJ	4	endlich, endlichen
 Gleichgültigkeit	NN	4	Gleichgültigkeit
 Sinne	NN	4	Sinne
+Bin	NN	4	Bin
 erhalten	VB	4	erhalten
 Kirche	NN	4	Kirche
 legen	VB	4	legte, legt, legen
@@ -648,6 +651,7 @@ Hofes	NN	2	Hofes
 raten	VB	2	raten
 vielem	NN	2	vielem
 Schein	NN	2	Schein
+Gang	NN	2	Gang
 vieles	NN	2	vieles
 Sei	NN	2	Sei
 durchaus	RP, RB	2	durchaus
@@ -755,7 +759,6 @@ Licht	NN	2	Licht
 gilts	NN	2	gilts
 widerspricht	NN	2	widerspricht
 sündigen	VB	2	sündigen
-Ihrige	NN	2	Ihrige
 Laster	NN	2	Laster
 werd	NN	2	werd
 vier	CD	2	vier
@@ -876,7 +879,6 @@ befehlend	JJ	2	befehlend
 Denke	NN	2	Denke
 sei	VB	2	sei
 fähig	JJ	2	fähig
-Gang	NN	2	Gang
 gnädigster	NN	2	gnädigster
 Ohre	NN	2	Ohre
 Unruhe	NN	2	Unruhe
@@ -908,6 +910,7 @@ Ziele	NN	2	Ziele
 weisen	VB, PRP$	2	weisen
 Wunder	NN	2	Wunder
 Zerstreuung	NN	2	Zerstreuung
+Ihrige	NN	2	Ihrige
 durchstossen	NN	2	durchstoßen
 abreisen	VB	2	abreisen
 steh	NN	2	steh
@@ -1228,7 +1231,6 @@ Nichtswürdiger	NNP	1	Nichtswürdiger
 Geschlechts	NN	1	Geschlechts
 ähnlich	JJ	1	ähnlich
 Ahnung	NNS	1	Ahnungen
-jenes	NN	1	jenes
 Eingeweid	NN	1	Eingeweide
 herrschet	NN	1	herrschet
 mind	JJ	1	minder
@@ -1690,6 +1692,7 @@ Orsinaten	RB	1	Orsina
 vermengen	VB	1	vermengen
 bitt	NN	1	bitt
 spotten	VB	1	spotten
+jenes	NN	1	jenes
 anvertrauet	NN	1	anvertrauet
 braun	JJ	1	braunen
 stolzer	NN	1	stolzer

@@ -1,6 +1,6 @@
 Title: Minna von Barnhelm, oder das Soldatenglück
-Number of all lemmas: 9352
-Nummber of different lemmas: 3421
+Number of all lemmas: 9428
+Nummber of different lemmas: 3424
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ, NNP	211	Herr
@@ -12,6 +12,7 @@ sagen	VB, RP, VBN	72	sagen, sage, gesagt, sagt, sagte
 Tellheim	IN, RB	71	Tellheim
 gut	JJ, VB	69	guten, gut, guter, gute
 Mann	NN, NNP	65	Mann
+mussen	VB, VBN	65	muß, mußte, mußt
 hören	VBN, VB, RB	61	hörte, hört, höre, hörst, hören, hörten, höret
 Wirt	NNS, NN, NNP, JJ	54	Wirte, Wirt
 Ring	NN, NNS	49	Ring, Ringe
@@ -221,6 +222,7 @@ Recht	NN	7	Recht
 Händen	NN	7	Händen
 Gnädiges	NN	7	Gnädiges
 abern	CC, RB, VB	7	aber
+bin	VB, NN, JJ	7	bin
 Nacht	NN	7	Nacht
 indes	RB, CC	7	indes
 fahren	RP, VB	7	gefahren, fahren, fuhr
@@ -396,6 +398,7 @@ Gewalt	NN	4	Gewalt
 Seit	IN	4	Seit
 Tochter	NN	4	Tochter
 Mache	NN, NNP	4	Mache
+Bin	NN	4	Bin
 Freilich	JJ	4	Freilich
 freuen	VB	4	freuen
 rufen	VB	4	ruft, rief
@@ -1592,7 +1595,6 @@ impolie	NN	1	impolie
 schenken	VB	1	geschenkt
 einfällt	NN	1	einfällt
 sagt	VB	1	sagt
-mengen	NN	1	mengen
 coute	NN	1	coute
 untertänigst	RP	1	untertänigst
 Peinigung	NN	1	Peinigung
@@ -2434,6 +2436,7 @@ kützeln	NN	1	kützeln
 fragte	NN	1	fragte
 verzweifelt	JJ	1	verzweifelt
 Vielleichen	VBN	1	Vielleicht
+Ausflüchte	NN	1	Ausflüchte
 Windbeutelei	NN	1	Windbeutelei
 sert	NNP	1	sert
 wiedergegeben	NN	1	wiedergegeben
@@ -2960,6 +2963,7 @@ Zeichnung	NN	1	Zeichnung
 ausgemacht	NN	1	ausgemacht
 Verwahrung	NN	1	Verwahrung
 Dienstfertigkeit	JJ	1	Dienstfertigkeit
+mengen	NN	1	mengen
 krepieren	VB	1	krepieren
 chose	FW	1	chose
 bestrebe	NN	1	bestrebe
@@ -2974,7 +2978,6 @@ Meinetwegen	NN	1	Meinetwegen
 vergehen	VBN	1	vergangen
 darneben	RB	1	darneben
 gens	NN	1	gens
-Ausflüchte	NN	1	Ausflüchte
 Treulosen	NN	1	Treulosen
 bestehlen	NN	1	bestehlen
 Lügen	NN	1	Lügen

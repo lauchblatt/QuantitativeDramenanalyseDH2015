@@ -1,6 +1,6 @@
 Title: Die Juden
-Number of all lemmas: 3475
-Nummber of different lemmas: 1735
+Number of all lemmas: 3500
+Nummber of different lemmas: 1738
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ	49	Herr
@@ -14,6 +14,7 @@ Herrn	NN, NNP, JJ	22	Herrn
 sehen	VB, RP, VBN, RB	20	sieht, gesehen, sehen, seht
 wenig	IN, DT, WRB, JJ, RB, RP	20	wenig, wenige, wenigen
 Vogt	NNP, NN	19	Vogt
+mussen	VB, VBN	19	muß
 Freund	NN, NNS	19	Freund, Freunde
 wahr	RP, RB	18	wahr
 nehmen	VB, RP, RB	17	nimmt, nehme, genommen, nehmen
@@ -119,6 +120,7 @@ fallen	VB, VBN	5	fallen
 Spass	NN	5	Spaß
 Namen	NN	5	Namen
 gestehn	NN	5	gestehn
+bin	VB, JJ	5	bin
 bös	JJ	5	böse
 Vermutung	NN, NNS	5	Vermutung, Vermutungen
 silberne	NN	5	silberne
@@ -731,6 +733,7 @@ Untersuchung	NN	1	Untersuchung
 Sinne	NN	1	Sinne
 mitten	RB	1	mitten
 sagt	VB	1	sagte
+Bin	NN	1	Bin
 wirst	RB	1	wirst
 sieh	NN	1	sieh
 christlich	JJ	1	christliche

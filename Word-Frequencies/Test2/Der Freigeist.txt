@@ -1,12 +1,13 @@
 Title: Der Freigeist
-Number of all lemmas: 7521
-Nummber of different lemmas: 2989
+Number of all lemmas: 7600
+Nummber of different lemmas: 2992
 
 Lemma	POS	Frequency	Tokens
 Adrast	NN, NNP	117	Adrast
 sagen	VB, VBN, RP, RB	87	sagt, gesagt, sagen, sage, sagte
 Theophan	NN, JJ, NNP, RP	86	Theophan
 wohl	RB, IN, RP	83	wohl
+mussen	VB, VBN, RB	64	muß, mußt, mußte
 Herr	NN, JJ, NNP	52	Herr
 glauben	VB, VBN	51	glauben, geglaubt, glaube, glaubt, glaubte, glaubst
 lieb	VB, JJ, NN	48	lieben, lieber, liebe, lieb
@@ -74,6 +75,7 @@ Teufel	NN	14	Teufel
 Mensch	NN	14	Mensch
 genug	RB, RP	13	genug
 Ha	NN	13	Ha
+bin	JJ, VB, RB	13	bin
 Rache	NN	12	Rache
 Zeit	NN	12	Zeit
 lange	RB, IN, RP	12	lange
@@ -709,6 +711,7 @@ Anschlag	NN	2	Anschlag
 balden	RB, VBN	2	bald
 herauskommen	VB	2	herauskommen
 Gegenteil	NN	2	Gegenteil
+Bin	NN	2	Bin
 anderm	NN	2	anderm
 verteidiget	NN	2	verteidiget
 de	FW	2	de
@@ -2403,7 +2406,6 @@ Poete	NN	1	Poete
 angelangen	VBN	1	angelangt
 Adraten	NNP	1	Adrast
 Besitz	NN	1	Besitz
-verschont	NN	1	verschont
 Benennungen	NN	1	Benennungen
 womit	WRB	1	womit
 eitles	NN	1	eitles
@@ -2477,6 +2479,7 @@ maraut	NN	1	maraut
 Überflusse	NN	1	Überflusse
 Nachdruck	NN	1	Nachdruck
 Verlegenheit	NN	1	Verlegenheit
+verschont	NN	1	verschont
 Körpers	NN	1	Körpers
 Abschreckungen	NN	1	Abschreckungen
 Infamer	NN	1	Infamer

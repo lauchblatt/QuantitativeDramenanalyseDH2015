@@ -1,6 +1,6 @@
 Title: Nathan der Weise
-Number of all lemmas: 11081
-Nummber of different lemmas: 4123
+Number of all lemmas: 11154
+Nummber of different lemmas: 4126
 
 Lemma	POS	Frequency	Tokens
 wohl	RB, RP, IN, JJ	121	wohl
@@ -11,6 +11,7 @@ Al-Hafi	NN, NNP	80	Al-Hafi, AL-HAFI
 gut	RB, JJ, VB	78	gut, guter, gute, guten
 Bruder	NN, JJ	67	Bruder
 sagen	VB, VBN, RB, RP, PRP$	62	sagen, sagt, sage, gesagt, sagte
+mussen	VB, VBN, RB	61	muß, mußtet, mußt, mußte
 Jude	NN, NNS	59	Jude, Juden
 Saladin	NN, JJ	59	Saladin, SALADIN
 gar	RP, RB, IN	55	gar
@@ -113,10 +114,10 @@ Schach	NN, JJ	15	Schach
 Dajaten	RB, VB	15	Daja
 Feuer	NN, JJ	14	Feuer
 wisst	NN	14	wißt
+fragen	VB, RP, RB	14	fragen, fragt, gefragt
 heuen	RB, VB, VBN	14	heut, heute
 hast	NN	14	hast
 heeissen	VB	14	heißen, heißt, heiße, heißet
-fragen	VB, RP, RB	14	fragen, fragt, gefragt
 Sieh	NN	13	Sieh
 Wort	NN, NNS	13	Wort, Worte
 brauchen	VB, VBN, RB	13	braucht, brauchen
@@ -190,6 +191,7 @@ verlieren	VB, VBN, PRP$	10	verlieren, verloren
 jen	VB, DT, JJ, WDT	10	je, jene, jenem, jenen, jener
 seh	VB, PRP$	10	sehen, seh
 Namen	NN	10	Namen
+bin	RB, VB	10	bin
 wenigstens	WRB, RB, RP, IN	10	wenigstens
 danken	VB	10	danken, danket, dankt
 Gefahr	NN	10	Gefahr
@@ -1146,7 +1148,6 @@ goldnen	NN	2	goldnen
 wozu	WRB	2	wozu
 Verächtlich	JJ	2	Verächtlich
 wärst	NN	2	wärst
-bereuen	VB	2	bereuen
 nötig	JJ	2	nötig
 sichs	NN	2	sichs
 Eilt	NN	2	Eilt
@@ -1324,9 +1325,11 @@ stünde	NN	2	stünde
 süssen	NN	2	süßen
 Gelt	NN	2	Gelt
 Vorsatz	RP, NN	2	Vorsatz
+Bin	NN	2	Bin
 leb	NN	2	leb
 lee	JJ	2	leer
 Bezahl	NN	2	Bezahl
+bereuen	VB	2	bereuen
 Ströme	NN	2	Ströme
 Finger	NN	2	Finger
 verwickeln	NN, NNP	2	verwickeln

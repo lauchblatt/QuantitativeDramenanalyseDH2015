@@ -1,11 +1,12 @@
 Title: Miß Sara Sampson
-Number of all lemmas: 9507
-Nummber of different lemmas: 3503
+Number of all lemmas: 9602
+Nummber of different lemmas: 3506
 
 Lemma	POS	Frequency	Tokens
 Mellefont	NN, NNP, RB, RP	144	Mellefont
 Miss	NN, NNP, JJ	126	Miß
 Marwood	NN, NNP, JJ	108	Marwood
+mussen	VB, VBN	86	muß, mußte, mußt
 sagen	VB, VBN	78	sage, sagen, gesagt, sagt, sagte
 Lady	IN, NNP, NN	67	Lady
 Ach	NN, NNP	67	Ach
@@ -362,6 +363,7 @@ zwingen	VB, VBN	5	gezwungen, zwingen, zwinget, zwang
 abern	CC, VBN, VB	5	aber
 Besuch	NN, NNP	5	Besuch
 danke	RP, RB, IN	5	danke
+bin	JJ, VB	5	bin
 handeln	VB	5	handle, handeln, handelt
 darinen	VB	5	darin
 Itzt	NN	5	Itzt
@@ -401,6 +403,7 @@ tot	JJ, RB	4	tot
 Bedienter	NN	4	Bedienter
 entschuldigen	VB	4	entschuldigen, entschuldigt
 Einfall	NN	4	Einfall
+Bin	NN	4	Bin
 anfangen	VB	4	anfangen
 Sieh	NN	4	Sieh
 gefällig	JJ	4	gefällig, gefällige
@@ -2857,6 +2860,7 @@ auflegen	VB	1	aufgelegt
 Ankläger	NN	1	Ankläger
 erbitten	VB	1	erbitten
 verdiene	NN	1	verdiene
+obschon	IN	1	obschon
 erbarmt	NN	1	erbarmt
 Heftiges	NN	1	Heftiges
 Gunstbezeigungen	NN	1	Gunstbezeigungen
@@ -3067,7 +3071,6 @@ umsiehst	NN	1	umsiehst
 abzutrotzen	VB	1	abzutrotzen
 überhin	NN	1	überhin
 schiehen	VB	1	geschieht
-obschon	IN	1	obschon
 vertraulichen	VBN	1	vertraulich
 zulässen	VB	1	zuläßt
 Belford	NNP	1	Belford

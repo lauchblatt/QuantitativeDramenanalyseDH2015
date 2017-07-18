@@ -1,6 +1,6 @@
 Title: Der Misogyn
-Number of all lemmas: 4543
-Nummber of different lemmas: 2072
+Number of all lemmas: 4579
+Nummber of different lemmas: 2075
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ, NNP	76	Herr
@@ -10,6 +10,7 @@ wohl	RB, RP, IN	43	wohl
 Vater	NN, NNP	41	Vater
 Schwester	NN	32	Schwester
 Sohn	NN, NNS	29	Sohn, Söhne
+mussen	VB, VBN	28	muß, mußt
 lieb	JJ, VB, NN	27	lieb, lieber, lieben, liebe
 Leander	NN, NNP	27	Leander
 Hilaria	NN, NNP, RP	27	Hilaria
@@ -105,6 +106,7 @@ reden	VB, VBN	7	reden, rede
 Jungfer	NN, NNP	7	Jungfer
 Heirat	NN, NNS	7	Heirat, Heiraten
 fällen	VB, VBN, RP	7	gefällt, fällt
+bin	VB, JJ	7	bin
 weit	JJ	7	weit
 suchen	VB, RP, VBN	7	suchen, gesucht, sucht
 längst	RB, WRB, RP	7	längst
@@ -870,7 +872,7 @@ Verbindung	NN	1	Verbindung
 kaumen	RP	1	kaum
 angehend	JJ	1	angehender
 sagt	JJ	1	sagt
-mengen	VB	1	mengt
+Bin	NN	1	Bin
 eigensinnigen	NN	1	eigensinnigen
 gewandt	JJ	1	gewandt
 hundertmalten	VBN	1	hundertmal
@@ -1409,6 +1411,7 @@ Sturm	NN	1	Sturm
 Mannes	NN	1	Mannes
 niedergehen	NN	1	niedergehen
 Koller	NN	1	Koller
+Befehl	NN	1	Befehl
 Ehescheidungsprozessen	NN	1	Ehescheidungsprozessen
 Rücken	NN	1	Rücken
 Kleinigkeit	NN	1	Kleinigkeit
@@ -1759,7 +1762,7 @@ Bedenken	NN	1	Bedenken
 prahlen	VB	1	prahlen
 denke	VB	1	denke
 Vergilt	NN	1	Vergilt
-Befehl	NN	1	Befehl
+mengen	VB	1	mengt
 leb	JJ	1	leben
 Wunsch	NN	1	Wunsch
 kannst	VB	1	kannst

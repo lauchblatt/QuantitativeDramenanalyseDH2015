@@ -240,14 +240,25 @@ class DramaParser:
 
         elif l_tag is not None:
             for text in l_tag.itertext():
-                speechText = speechText + text
+                # new stuff
+                if (text[0] == " " or speechText.endswith(" ")):
+                    speechText = speechText + text
+                else:
+                    speechText = speechText + " " + text
+                    
+
 
         # for classic dramas with noted line breaks
         if l_tag is None:
             lg_tag = sub_sp_wrapper.findall("./tei:lg", self.namespaces)
             for lg_element in sub_sp_wrapper.findall("./tei:lg", self.namespaces):
                 for l_element in lg_element.findall("./tei:l", self.namespaces):
-                    speechText = speechText + l_element.text
+                    if (l_element.text[0] == " " or speechText.endswith(" ")):
+                        speechText = speechText + l_element.text
+                        #print speechText
+                    else:
+                        speechText = speechText + " " + l_element.text
+                        #print speechText
 
         return speechText
 

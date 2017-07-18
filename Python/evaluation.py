@@ -11,18 +11,17 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	evaluation = Evaluation_LexiconVSVocabulary("../Word-Frequencies/test.txt", "CD")
+	evaluation = Evaluation_LexiconVsVocabulary()
+	#evaluation.init("../Word-Frequencies/Tokens/Emilia Galotti.txt", "SentiWS")
 	
+	evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens", "CD")
+	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	result = evaluation.evaluateLexiconTokensVsVocabulary()
+	#evaluation.writeResultOutput("../Evaluation/test.txt", result)
 
-	evaluation.writeResultOutput("../Evaluation/CD-Lemmas-Vocabulary-Lemmas.txt", result)
-	print(result._recognized)
-	print(result._recognizedPercentage)
+class Evaluation_LexiconVsVocabulary:
 
-class Evaluation_LexiconVSVocabulary:
-
-	def __init__(self, vocPath, lexiconName):
+	def __init__(self):
 		self._placeholder = ""
 		self._vocabulary = None
 
@@ -30,10 +29,14 @@ class Evaluation_LexiconVSVocabulary:
 		self._lexicon = {}
 		self._lexiconLemmas = {}
 
-		self._vocabulary = self.readVocabulary(vocPath)
-		
-		self.setLexicon(lexiconName)
+		self._vocabulary = None
+		self._vocabularyType = ""
+		self._vocabularyName = ""
 	
+	def init(self, vocPath, lexiconName):
+		self._vocabulary = self.readVocabulary(vocPath)
+		self.setLexicon(lexiconName)
+
 	def setLexicon(self, lexiconName):
 		lexiconHandler = Lexicon_Handler()
 		lexiconHandler.initSingleDict(lexiconName)
@@ -41,6 +44,26 @@ class Evaluation_LexiconVSVocabulary:
 		self._lexiconName = lexiconName
 		self._lexicon = lexiconHandler._sentimentDict
 		self._lexiconLemmas = lexiconHandler._sentimentDictLemmas
+
+	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName):
+		for filename in os.listdir(vocFolder):
+			vocPath = vocFolder + "/" + filename
+			self.init(vocPath, lexiconName)
+			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
+			print(results[0]._recognizedPercentage)
+			print(results[1]._recognizedPercentage)
+			outputPathTokens = "../Evaluation/" + lexiconName + "/" + "TokenLexicon" + self._vocabularyName + "-" + self._vocabularyType + ".txt"
+			outputPathLemmas = "../Evaluation/" + lexiconName + "/" + "LemmaLexicon" + self._vocabularyName + "-" + self._vocabularyType + ".txt"
+			
+			self.writeResultOutput(outputPathTokens, result[0])
+			self.writeResultOutput(outputPathLemmas, result[1])
+
+
+	def evaluateLexiconTokensAndLemmasVsVocabulary(self):
+		results = []
+		results.append(self.evaluateLexiconTokensVsVocabulary())
+		results.append(self.evaluateLexiconLemmasVsVocabulary())
+		return results
 
 	def evaluateLexiconLemmasVsVocabulary(self):
 		result = self.evaluateLexiconVsVocabulary(self._lexiconLemmas)
@@ -112,10 +135,6 @@ class Evaluation_LexiconVSVocabulary:
 
 		outputFile.close
 
-		print(self._vocabulary._name)
-		print(result._nameOfLexicon)
-
-
 	def test(self, sentimentDict):
 
 		caseDoubleWords = []
@@ -125,14 +144,12 @@ class Evaluation_LexiconVSVocabulary:
 			lowerWord = word.lower()
 			if(upperWord in sentimentDict and lowerWord in sentimentDict):
 				caseDoubleWords.append(word)
-				print word
-
-		print(len(caseDoubleWords))
 
 class Vocabulary:
 
 	def __init__(self, path):
 		self._name = ""
+		self._type = ""
 
 		self._wordsWithInformationDict = {}
 		self._words = []
@@ -141,9 +158,11 @@ class Vocabulary:
 
 	def init(self, path):
 		vocabularyFile = open(path, 'r')
-		lines = vocabularyFile.readlines()[4:]
+		pathParts = path.split("/")
+		lines = vocabularyFile.readlines()[5:]
 
-		self._name = path.split("/")[-1]
+		self._name = path.split("/")[-1].replace(".txt", "")
+		self._type = path.split("/")[-2]
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")
@@ -157,7 +176,7 @@ class Evaluation_Result_Vocabulary:
 
 	def __init__(self):
 		self._nameOfLexicon = ""
-		self._lexicon = []
+		self._lexicon = {}
 
 		self._recognizedWords = None
 		self._recognizedPercentage = 0.0

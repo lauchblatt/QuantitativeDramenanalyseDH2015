@@ -1,6 +1,6 @@
 Title: Der Schatz
-Number of all lemmas: 4340
-Nummber of different lemmas: 1825
+Number of all lemmas: 4387
+Nummber of different lemmas: 1828
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, NNP, JJ	90	Herr
@@ -8,6 +8,7 @@ wohl	RP, RB, IN	65	wohl
 sagen	RP, VB, VBN	59	gesagt, sage, sagen, sagt, sagte
 Lelio	NN, NNP, JJ	52	Lelio
 gut	JJ, VB	50	gut, guten, gute, guter, gutem
+mussen	VB, VBN, RB	40	muß, mußte, mußt
 Philto	NN, NNP	33	Philto
 Anselmo	NN, NNP, JJ	32	Anselmo
 eben	RB, RP, NNP, IN	31	eben
@@ -209,6 +210,7 @@ lässen	VB, VBN	4	läßt
 Vorwerke	NN	4	Vorwerke
 niemanden	NN, RB	4	niemanden
 Tage	NN	4	Tage
+bin	VB	4	bin
 Jugend	NN	4	Jugend
 Kamillen	NN	4	Kamillen
 darinn	JJ	4	darinne
@@ -239,6 +241,7 @@ ihrem	PRP$	3	ihrem
 vieles	NN	3	vieles
 ansehnlich	JJ	3	ansehnliche, ansehnlich
 Lelane	NN	3	Lelane
+Bin	NN	3	Bin
 wirst	WRB	3	wirst
 anfangen	VB, VBN	3	anfangen, anfängt
 schämen	PRP$, VB	3	schämen

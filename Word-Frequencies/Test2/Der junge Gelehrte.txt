@@ -1,9 +1,10 @@
 Title: Der junge Gelehrte
-Number of all lemmas: 9202
-Nummber of different lemmas: 3412
+Number of all lemmas: 9303
+Nummber of different lemmas: 3415
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ	109	Herr
+mussen	VB, RB, VBN	87	muß, mußte, mußt
 sagen	VB, VBN	87	sagen, gesagt, sage, sagt, sagte
 wohl	RP, RB, IN, VB	83	wohl
 Vater	NN, NNP	67	Vater
@@ -121,6 +122,7 @@ Jahren	NN	12	Jahren
 gelehrt	JJ	12	gelehrten, gelehrte, gelehrt
 lachen	VB	12	lachen, lache, lacht
 lass	JJ, VB	12	laß, lasse
+bin	VB, JJ	12	bin
 gern	RB, RP, VBN	12	gern
 heraus	JJ, IN, RP, RB	12	heraus
 stehen	VB	12	steht, stehen, stand
@@ -828,6 +830,7 @@ Untersuchung	NN	2	Untersuchung
 singen	VB, VBN	2	gesungen
 sage	VB	2	sage
 Verbindung	NN	2	Verbindung
+Bin	NN	2	Bin
 schämen	VB	2	schämen
 uxoribus	FW	2	uxoribus
 Ergötzlichkeiten	NN	2	Ergötzlichkeiten
@@ -1591,7 +1594,6 @@ Spott	NN	1	Spott
 liest	NN	1	liest
 Verschlagenheit	NN	1	Verschlagenheit
 Zeitungsmann	NNP	1	Zeitungsmann
-mengen	NN	1	mengen
 Weiche	NN	1	Weiche
 höchstens	RB	1	höchstens
 Geschöpfe	NN	1	Geschöpfe
@@ -2985,7 +2987,6 @@ undankbar	JJ	1	undankbare
 bereuen	VB	1	bereuen
 draufen	VBN	1	drauf
 schwerern	VB	1	schwerer
-Null	NN	1	Null
 spasshaft	NN	1	spaßhaft
 fürchterlichern	NN	1	fürchterlichern
 Schiffssegel	NN	1	Schiffssegel
@@ -3186,6 +3187,7 @@ rechnen	VB	1	rechnen
 Buchs	NN	1	Buchs
 vorstellen	VB	1	vorstellen
 untergedrucktem	NN	1	untergedrucktem
+Null	NN	1	Null
 neugierig	JJ	1	neugierigen
 Unsere	PRP$	1	Unsere
 libro	NN	1	libro
@@ -3296,6 +3298,7 @@ Goldstücken	NN	1	Goldstücken
 Wohltat	NN	1	Wohltat
 Einbildung	NN	1	Einbildung
 gelungen	RP	1	gelungen
+mengen	NN	1	mengen
 Lobenswürdiges	NN	1	Lobenswürdiges
 gelacht	VBN	1	gelacht
 untersuchen	VB	1	untersuchen

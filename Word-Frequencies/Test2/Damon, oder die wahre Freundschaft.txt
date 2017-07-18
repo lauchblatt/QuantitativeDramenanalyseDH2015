@@ -1,6 +1,6 @@
 Title: Damon, oder die wahre Freundschaft
-Number of all lemmas: 2672
-Nummber of different lemmas: 1233
+Number of all lemmas: 2686
+Nummber of different lemmas: 1235
 
 Lemma	POS	Frequency	Tokens
 versteh	NN	49	versteh
@@ -22,6 +22,7 @@ soen	VBN, RB	14	so
 andern	JJ, DT, RB	14	andern
 ha	NN	14	ha
 Himmel	NN	14	Himmel
+mussen	VB	13	muß, mußtest
 Schiff	NN, NNS	13	Schiff, Schiffe
 Ehre	NN	13	Ehre
 Unglück	NN	12	Unglück
@@ -527,10 +528,9 @@ Verdienst	NN	1	Verdienst
 liebenswürdige	NN	1	liebenswürdige
 Darnach	RB	1	Darnach
 unglücklichste	NN	1	unglücklichste
-Beschäftigung	NN	1	Beschäftigung
 mengest	NN	1	mengest
 schadet	VB	1	schadet
-Zwei	CD	1	Zwei
+Hoffnung	NN	1	Hoffnung
 Pfui	NN	1	Pfui
 vorplaudern	NN	1	vorplaudern
 Mühe	NN	1	Mühe
@@ -937,7 +937,7 @@ Neugierigkeit	NN	1	Neugierigkeit
 Tode	NN	1	Tode
 Versichern	NN	1	Versichern
 Fehler	NN	1	Fehler
-Urteilen	NN	1	Urteilen
+Beschäftigung	NN	1	Beschäftigung
 Frauenzimmers	NN	1	Frauenzimmers
 Unruhe	NN	1	Unruhe
 Lob	NNS	1	Lobe
@@ -991,7 +991,7 @@ vorzubringen	VB	1	vorzubringen
 Reizungen	NN	1	Reizungen
 lahm	JJ	1	lahm
 Geiz	NN	1	Geiz
-Hoffnung	NN	1	Hoffnung
+geholfen	NN	1	geholfen
 nütze	NN	1	nütze
 besorgten	NN	1	besorgten
 Unwürdigern	NN	1	Unwürdigern
@@ -1046,6 +1046,7 @@ edle	NN	1	edle
 Zufalle	NN	1	Zufalle
 prächtig	JJ	1	prächtig
 gewinnen	VB	1	gewinnen
+Zwei	CD	1	Zwei
 wen	WP	1	wen
 Geier	NN	1	Geier
 Verlust	NN	1	Verlust
@@ -1055,7 +1056,7 @@ vermutet	NN	1	vermutet
 Bundes	NN	1	Bundes
 gewollt	NN	1	gewollt
 wundersam	JJ	1	wundersam
-geholfen	NN	1	geholfen
+bin	JJ	1	bin
 begegnen	VB	1	begegnet
 einzigen	VB	1	einzige
 Abends	NN	1	Abends
@@ -1144,6 +1145,7 @@ Feindschaft	NN	1	Feindschaft
 fern	JJ	1	fern
 Alsdenn	NN	1	Alsdenn
 verursachen	VB	1	verursachen
+Urteilen	NN	1	Urteilen
 aufzuopfern	NN	1	aufzuopfern
 abfinden	PRP$	1	abfinden
 Hartnäckigkeit	NN	1	Hartnäckigkeit
