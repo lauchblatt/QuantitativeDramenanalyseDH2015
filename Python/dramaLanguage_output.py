@@ -12,9 +12,10 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dlOutput = DramaLanguage_Output()
+	dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/EntireCorpus")
 
-	#dlOutput.generateWordFrequenciesOutputTokens("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test")
-	dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas-2/")
+	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/testo")
+	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas-2/")
 
 class DramaLanguage_Output:
 
@@ -32,6 +33,12 @@ class DramaLanguage_Output:
 		wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
 
 		outputFile = open(outputPath + ".txt", "w")
+		self.writeOutputTokens(outputFile, wordFrequencies)
+		
+		outputFile.close()
+		print("Output ready...")
+
+	def writeOutputTokens(self, outputFile, wordFrequencies):
 		outputFile.write("Title: " + self._lp._currentDramaName + "\n")
 		outputFile.write("Number of all tokens: " + str(len(self._lp._tokensWithoutStopwords)) + "\n")
 		outputFile.write("Nummber of different tokens: " + str(len(wordFrequencies)) + "\n\n")
@@ -40,15 +47,17 @@ class DramaLanguage_Output:
 		for frequ in wordFrequencies:
 			token = frequ[0]
 			outputFile.write(token + "\t" + str(frequ[1]) + "\n")
-		
-		outputFile.close()
-		print("Output ready...")
+		return outputFile
 
 	def generateWordFrequenciesOutputLemmas(self, inputPath, outputPath):
 		self._lp.processSingleDrama(inputPath)
 		outputFile = open(outputPath + ".txt", "w")
 		wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
+		self.writeOutputLemmas(outputFile, wordFrequencies)
+		outputFile.close()
+		print("Output ready...")
 
+	def writeOutputLemmas(self, outputFile, wordFrequencies):
 		outputFile.write("Title: " + self._lp._currentDramaName + "\n") 
 		outputFile.write("Number of all lemmas: " + str(len(self._lp._lemmasWithoutStopwords)) + "\n")
 		outputFile.write("Nummber of different lemmas: " + str(len(wordFrequencies)) + "\n\n")
@@ -59,8 +68,7 @@ class DramaLanguage_Output:
 			POS = self._lp._lemmasAndPOSAndTokensDict[lemma][0]
 			tokens = self._lp._lemmasAndPOSAndTokensDict[lemma][1]
 			outputFile.write(str(lemma) + "\t" + ', '.join(POS) + "\t" + str(frequ[1]) + "\t" + ', '.join(tokens) + "\n")
-		outputFile.close()
-		print("Output ready...")
+		return outputFile
 
 	def processMultipleDramasAndGenerateOutputTokens(self, originpath, resultpath):
 		parser = DramaParser()
@@ -82,7 +90,35 @@ class DramaLanguage_Output:
 			title = dramaModel._title
 			self.generateWordFrequenciesOutputLemmas(originpath + filename, resultpath + title)
 
-	def processEntireCorpusAndGenereateOutputLemmas(self, originpath):
+	def processEntireCorpusAndGenereateOutputTokens(self, originpath, outputPath):
+		totalText = self.getEntireCorpus(originpath)
+		self._lp.processTextTokens(totalText)
+		self._lp.removeStopwordsFromTokens()
+		self._lp._currentDramaName = "EntireCorpus"
+
+		wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
+
+		outputFile = open(outputPath + ".txt", "w")
+		self.writeOutputTokens(outputFile, wordFrequencies)
+		
+		outputFile.close()
+		print("Output ready...")
+
+	def processEntireCorpusAndGenereateOutputLemmas(self, originpath, outputPath):
+		totalText = self.getEntireCorpus(originpath)
+		self._lp.processTextFully(totalText)
+
+		self._lp._currentDramaName = "EntireCorpus"
+
+		wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
+
+		outputFile = open(outputPath + ".txt", "w")
+		self.writeOutputLemmas(outputFile, wordFrequencies)
+		
+		outputFile.close()
+		print("Output ready...")
+
+	def getEntireCorpus(self, originpath):
 		parser = DramaParser()
 		totalText = "";
 		for filename in os.listdir(originpath):
@@ -94,8 +130,7 @@ class DramaLanguage_Output:
 					for speech in conf._speeches:
 						newText = unicode(speech._text.replace("–", ""))
 						totalText = totalText + newText
-		self._lp.processTextFully(totalText)
-		self.generateWordFrequenciesOutputLemmas("../Word-Frequencies/EntireCorpus")
+		return totalText
 
 	def calcWordFrequencies(self, wordList):
 		fdist = FreqDist(wordList)

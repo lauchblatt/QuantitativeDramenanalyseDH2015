@@ -13,8 +13,15 @@ from collections import defaultdict
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+	parser = DramaParser()
+	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Der_Freigeist_k.xml")
+	for act in dramaModel._acts:
+		for conf in act._configurations:
+			for speech in conf._speeches:
+				print speech._text
+	#lp = Language_Processor()
 
-	lp = Language_Processor()
+
 	
 	#lp.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Test/")
 	
@@ -229,6 +236,12 @@ class Language_Processor:
 				wordList.remove(stopword.title())
 		return wordList
 
+	"""
+	def removeStopwordsFromWordFrequencies(self, wordFrequencies):
+		for wordFrequ in wordFrequencies:
+			word = wordFrequ[0]
+			if (word.lower() in self._stopwords) or (word.title() in self._stopwords):
+	"""
 
 if __name__ == "__main__":
     main()

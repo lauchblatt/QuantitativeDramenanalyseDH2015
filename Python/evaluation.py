@@ -14,7 +14,7 @@ def main():
 	evaluation = Evaluation_LexiconVsVocabulary()
 	#evaluation.init("../Word-Frequencies/Tokens/Emilia Galotti.txt", "SentiWS")
 	
-	evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens", "CD")
+	evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas", "NRC")
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/test.txt", result)
@@ -30,8 +30,6 @@ class Evaluation_LexiconVsVocabulary:
 		self._lexiconLemmas = {}
 
 		self._vocabulary = None
-		self._vocabularyType = ""
-		self._vocabularyName = ""
 	
 	def init(self, vocPath, lexiconName):
 		self._vocabulary = self.readVocabulary(vocPath)
@@ -41,7 +39,7 @@ class Evaluation_LexiconVsVocabulary:
 		lexiconHandler = Lexicon_Handler()
 		lexiconHandler.initSingleDict(lexiconName)
 
-		self._lexiconName = lexiconName
+		self._lexiconName = unicode(lexiconName)
 		self._lexicon = lexiconHandler._sentimentDict
 		self._lexiconLemmas = lexiconHandler._sentimentDictLemmas
 
@@ -52,11 +50,17 @@ class Evaluation_LexiconVsVocabulary:
 			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
 			print(results[0]._recognizedPercentage)
 			print(results[1]._recognizedPercentage)
-			outputPathTokens = "../Evaluation/" + lexiconName + "/" + "TokenLexicon" + self._vocabularyName + "-" + self._vocabularyType + ".txt"
-			outputPathLemmas = "../Evaluation/" + lexiconName + "/" + "LemmaLexicon" + self._vocabularyName + "-" + self._vocabularyType + ".txt"
+			outputPath = "../Evaluation/" + lexiconName + "/"
+			crossFolder1 = "TokensLexiconVS" + self._vocabulary._type + "Vocabulary/"
+			crossFolder2 = "LemmasLexiconVS" + self._vocabulary._type + "Vocabulary/"
+			name1 = lexiconName + "-TokensVS-" + self._vocabulary._name + "-" + self._vocabulary._type
+			name2 = lexiconName + "-LemmasVS-" + self._vocabulary._name + "-" + self._vocabulary._type
+
+			outputPathTokens = outputPath + crossFolder1 + name1 + ".txt"
+			outputPathLemmas = outputPath + crossFolder2 + name2 + ".txt"
 			
-			self.writeResultOutput(outputPathTokens, result[0])
-			self.writeResultOutput(outputPathLemmas, result[1])
+			self.writeResultOutput(outputPathTokens, results[0])
+			self.writeResultOutput(outputPathLemmas, results[1])
 
 
 	def evaluateLexiconTokensAndLemmasVsVocabulary(self):
@@ -161,7 +165,7 @@ class Vocabulary:
 		pathParts = path.split("/")
 		lines = vocabularyFile.readlines()[5:]
 
-		self._name = path.split("/")[-1].replace(".txt", "")
+		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
 		self._type = path.split("/")[-2]
 
 		for line in lines:
