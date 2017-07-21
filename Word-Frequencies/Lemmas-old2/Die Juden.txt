@@ -1,13 +1,13 @@
 Title: Die Juden
-Number of all lemmas: 3477
-Nummber of different lemmas: 1736
+Number of all lemmas: 3475
+Nummber of different lemmas: 1735
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ	49	Herr
 sagen	VBN, VB	37	gesagt, sagt, sagen, sage, sagte
 wohl	RB, RP, IN	29	wohl
 Dose	NN	26	Dose
-Jude	NNS, NN	24	Juden, Jude
+Jude	NNS, NN	25	Juden, Jude
 glauben	VB, VBN	24	glaube, glauben, glaubt, geglaubt, glaubte
 gut	JJ	23	gut, guter, guten, gute, gutem
 Herrn	NN, NNP, JJ	22	Herrn
@@ -28,7 +28,6 @@ denken	VB, VBN	13	denken, denke, dachte
 lieb	JJ, VB	11	lieben, liebe, lieber
 Hand	NN	11	Hand
 Lisette	NN, NNP	11	Lisette
-fragen	VB, VBN	11	fragen, fragt, gefragt
 Ei	NN	11	Ei
 Papa	NN	11	Papa
 Allein	NN, RB	11	Allein
@@ -36,6 +35,7 @@ stehen	NN, VB, RB	11	steht, stehen
 ha	NN	11	ha
 Ach	NN	10	Ach
 Kerl	NNS, NN	10	Kerle, Kerl
+fragen	VB, VBN	10	fragen, fragt
 finden	VB, VBN, RB	10	fand, finden, gefunden
 andre	NN	9	andre
 Uhr	NN	9	Uhr
@@ -177,7 +177,6 @@ heuen	VB, VBN	4	heute
 selb	DT	4	selber
 antworen	VB	4	antworten
 Händen	NN	4	Händen
-Jungfer	NN	4	Jungfer
 unschuldig	JJ	4	unschuldig
 erkenntlich	JJ	4	erkenntlich, erkenntliches
 leicht	JJ	4	leicht, leichter
@@ -282,6 +281,7 @@ Hören	NN	3	Hören
 Ursach	JJ, VB	3	Ursachen
 Dank	IN	3	Dank
 lass	JJ, VB	3	laß, lasse
+Jungfer	NN	3	Jungfer
 Durst	NN	3	Durst
 verlassen	VB	3	verlassen
 fällen	VB, RP	3	gefällt
@@ -369,6 +369,7 @@ hundertmal	RB	2	hundertmal
 Mannspersonen	NN	2	Mannspersonen
 verschweigen	VB	2	verschweigen
 reeissen	VB	2	reißen
+Ende	NN	2	Ende
 schätzbar	JJ	2	schätzbar
 Erstaunen	NN	2	Erstaunen
 Wohlstands	NN	2	Wohlstands
@@ -465,7 +466,6 @@ nötigen	VB	2	nötigen, genötigt
 begeben	VB	2	begeben
 ernsthaft	JJ	2	ernsthaft
 hart	JJ	2	hart
-Komm	NN	2	Komm
 geringste	NN	2	geringste
 irren	VB	2	irren
 wagen	VB	2	gewagt, wagen
@@ -849,7 +849,6 @@ alsdenn	RB	1	alsdenn
 Fuss	NN	1	Fuß
 Pöbels	NN	1	Pöbels
 untern	JJ	1	untern
-Ende	NN	1	Ende
 gib	NN	1	gib
 Verbindlichkeit	NN	1	Verbindlichkeit
 nunen	VBN	1	nun
@@ -1280,6 +1279,7 @@ Adieu	NN	1	Adieu
 sichrer	NNP	1	sichrer
 Dingen	NN	1	Dingen
 abnehmen	VB	1	abnehmen
+Komm	NN	1	Komm
 Tückischen	VB	1	Tückische
 abgedroschnen	NN	1	abgedroschnen
 unerträglich	JJ	1	unerträglich
@@ -1611,7 +1611,6 @@ vorstellen	VB	1	vorstellen
 wiegen	VB	1	wiegt
 Pöbel	NN	1	Pöbel
 begehen	VB	1	begehen
-neugierig	RB	1	neugierig
 Unverschämter	NN	1	Unverschämter
 Betrügerei	NN	1	Betrügerei
 unsinniges	PRP$	1	unsinniges

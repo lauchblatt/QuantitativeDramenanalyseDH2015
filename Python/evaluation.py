@@ -12,12 +12,12 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	evaluation = Evaluation_LexiconVsVocabulary()
-	#evaluation.init("../Word-Frequencies/Tokens/Emilia Galotti.txt", "SentiWS")
+	evaluation.init("../Word-Frequencies/Tokens/EntireCorpus.txt", "NRC")
 	
-	evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas", "NRC")
-	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
+	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas", "NRC")
+	result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	#evaluation.writeResultOutput("../Evaluation/test.txt", result)
+	evaluation.writeResultOutput("../Evaluation/NRC/LemmaTokenEntireCorpus.txt", result)
 
 class Evaluation_LexiconVsVocabulary:
 

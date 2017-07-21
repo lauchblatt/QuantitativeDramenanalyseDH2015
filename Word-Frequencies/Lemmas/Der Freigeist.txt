@@ -1,6 +1,6 @@
 Title: Der Freigeist
-Number of all lemmas: 7521
-Nummber of different lemmas: 2989
+Number of all lemmas: 7523
+Nummber of different lemmas: 2985
 
 Lemma	POS	Frequency	Tokens
 Adrast	NN, NNP	117	Adrast
@@ -78,6 +78,7 @@ Rache	NN	12	Rache
 Zeit	NN	12	Zeit
 lange	RB, IN, RP	12	lange
 Martin	NNP	12	Martin
+Herrn	JJ, NN	12	Herrn
 sonst	RB, IN	12	sonst
 unmöglich	JJ	12	unmöglich
 Religion	NN	12	Religion
@@ -89,7 +90,6 @@ ehrlich	JJ	11	ehrlicher, ehrliche, ehrlichen
 Leute	NN	11	Leute
 Nu	NN	11	Nu
 Menschen	NN, JJ	11	Menschen
-Herrn	JJ, NN	11	Herrn
 hast	NN, JJ	11	hast
 nennen	VB, VBN	11	nennen, nenne, genannt, nannten, nennst, nennte, nennt
 antworen	VB	11	antworten
@@ -135,6 +135,7 @@ Zweifel	NN	8	Zweifel
 Augenblick	NN, NNP	8	Augenblick
 deinen	NN, JJ	8	deinen
 wider	IN	8	wider
+läng	JJ	8	länger
 deswegen	RB, VB	8	deswegen
 verliebt	JJ	8	verliebt
 Tag	NN	8	Tag
@@ -142,6 +143,7 @@ Soen	RB, VBN	8	So
 blind	JJ	8	blinden, blind, blinder, blinde
 sehe	PRP$	8	sehe
 Sache	NN	8	Sache
+unser	PRP$	8	unser
 alsdann	NNP, NN	8	alsdann
 lässen	VB	8	läßt
 fallen	VB, VBN, RB	8	fallen
@@ -159,7 +161,6 @@ frei	JJ	7	frei
 weniger	RB, RP, IN	7	weniger
 Blicke	NN, NNP	7	Blicke
 weiss	VB	7	weiß
-läng	JJ	7	länger
 Hand	NN	7	Hand
 Dinge	NN	7	Dinge
 kurz	JJ, RB	7	kurz
@@ -171,7 +172,6 @@ fragen	RB, VB, RP, VBN	7	fragen, gefragt
 Meinung	NNS, NN	7	Meinungen, Meinung
 gleichwohl	RB, RP	7	gleichwohl
 Exempel	NN	7	Exempel
-unser	PRP$	7	unser
 erlauben	VB, VBN	7	erlauben, erlaubt
 Komm	NN	7	Komm
 bekommen	VB, VBN	7	bekommen
@@ -213,6 +213,7 @@ meines	NN	6	meines
 nötig	JJ	6	nötig, nötige
 stark	JJ	6	starker, stark
 breit	JJ	6	breit
+übel	JJ	6	übel
 Daumen	NN	6	Daumen
 treffen	VB	6	treffen, trifft
 Unglück	NN	6	Unglück
@@ -270,7 +271,6 @@ Ehre	NN	5	Ehre
 Stellen	NN	5	Stellen
 Verdruss	JJ, NN	5	Verdruß
 Stille	NN	5	Stille
-übel	JJ	5	übel
 Kleinigkeit	NN, JJ	5	Kleinigkeit
 Wein	NN, NNS	5	Wein, Weine
 drohen	VB	5	drohe, drohen
@@ -470,6 +470,7 @@ Grund	NN	3	Grund
 mehren	VBN	3	mehr
 Verstandes	NN	3	Verstandes
 Sieh	NN	3	Sieh
+erzählen	VB	3	erzählen
 legen	VBN, VB	3	gelegt, legen
 wärest	WRB, RB, RP	3	wärest
 Beweis	NN, NNS	3	Beweis, Beweise
@@ -737,7 +738,6 @@ Lobrednerin	NN	2	Lobrednerin
 Vorurteil	NN, NNS	2	Vorurteil, Vorurteile
 Trinken	NN	2	Trinken
 Krankheit	NN	2	Krankheit
-erzählen	VB	2	erzählen
 brenne	NN	2	brenne
 zuschwören	NN	2	zuschwören
 ausser	IN	2	außer
@@ -815,7 +815,6 @@ Abschied	NN	2	Abschied
 liebte	NN	2	liebte
 Keines	NN	2	Keines
 Dummkopf	NN	2	Dummkopf
-zweit	JJ	2	zweiten, zweite
 Keinen	NN	2	Keinen
 umsehen	VB	2	umsieht
 Stellung	NN	2	Stellung
@@ -1004,8 +1003,10 @@ Last	FW	2	Last
 Heftigkeit	NN	2	Heftigkeit
 Zufall	NN	2	Zufall
 Nehmen	VB	2	Nehmen
+verziehen	VB	2	verziehen
 Schade	NN	2	Schade
 Szene	NN	2	Szene
+abgeführt	NN	2	abgeführt
 Geschwätze	NN	2	Geschwätze
 Tugenden	NN	2	Tugenden
 Gefallen	NN	2	Gefallen
@@ -1023,6 +1024,7 @@ Unterschrift	NN	2	Unterschrift
 aussetzen	RP, VBN	2	ausgesetzt
 kürzer	NN	2	kürzer
 wozu	WRB	2	wozu
+dran	RB, RP	2	dran
 sucht	VB	2	sucht
 tauscht	NN	2	tauscht
 holen	VB	2	hole, holen
@@ -1081,7 +1083,6 @@ Glas	NN	2	Glas
 solle	NN	2	solle
 Überlegen	NN	2	Überlegen
 geleg	JJ	2	gelegen
-Aufzuges	NN	2	Aufzuges
 Werkzeug	NNS, NN	2	Werkzeuge, Werkzeug
 vorstellen	VB	2	vorstellen
 unwürdig	JJ	2	unwürdig
@@ -1755,6 +1756,7 @@ zärtlichste	NN	1	zärtlichste
 Ursachen	VB	1	Ursachen
 hinhängen	VBN	1	hinhängt
 Stand	NN	1	Stand
+zweit	JJ	1	zweite
 zugetrauet	NN	1	zugetrauet
 Blind	NN	1	Blind
 wetterwendisch	JJ	1	wetterwendischen
@@ -1794,6 +1796,7 @@ stärk	JJ	1	stärker
 Entschluss	NN	1	Entschluß
 Puppe	NN	1	Puppe
 sag	JJ	1	sagen
+tauschen	VB	1	tauschen
 ans	IN	1	ans
 wesentlichst	JJ	1	wesentlichste
 Allzugütige	NN	1	Allzugütige
@@ -2057,7 +2060,6 @@ hoffentlich	RB	1	hoffentlich
 Breite	NN	1	Breite
 Bürgern	NN	1	Bürgern
 Schreck	NN	1	Schreck
-viert	JJ	1	vierten
 wiedergekommen	NN	1	wiedergekommen
 rate	NN	1	rate
 vielleichen	VB	1	vielleicht
@@ -2405,7 +2407,6 @@ Adraten	NNP	1	Adrast
 Besitz	NN	1	Besitz
 verschont	NN	1	verschont
 Benennungen	NN	1	Benennungen
-womit	WRB	1	womit
 eitles	NN	1	eitles
 fürchte	NN	1	fürchte
 Augapfel	NN	1	Augapfel
@@ -2431,7 +2432,6 @@ Tages	NN	1	Tages
 erhielte	NN	1	erhielte
 bleibe	NN	1	bleibe
 Jenen	VBN	1	Jenen
-verziehen	VB	1	verziehen
 Sammelplatz	NN	1	Sammelplatz
 Jungfern	NN	1	Jungfern
 unleugbar	JJ	1	unleugbar
@@ -2494,7 +2494,6 @@ Höllenbrand	NN	1	Höllenbrand
 Schwarzröcke	NN	1	Schwarzröcke
 Zug	NN	1	Zug
 Spöttisch	JJ	1	Spöttisch
-dran	RB	1	dran
 Gebotes	NN	1	Gebotes
 lang	JJ	1	lang
 argwöhnisch	JJ	1	argwöhnisch
@@ -2530,7 +2529,6 @@ verrichten	VB	1	verrichten
 ungerechte	NN	1	ungerechte
 fühlt	VB	1	fühlt
 gemein	JJ	1	gemein
-Ende	NN	1	Ende
 gefärbte	NN	1	gefärbte
 umzechig	JJ	1	umzechig
 nachdrücklicher	RB	1	nachdrücklicher
@@ -2740,7 +2738,6 @@ wiederhole	NN	1	wiederhole
 Gereist	NN	1	Gereist
 Brut	NN	1	Brut
 überraschen	VB	1	überraschen
-sein.ende	NN	1	sein.Ende
 bess	JJ	1	besser
 Pah	NN	1	Pah
 Zorn	NN	1	Zorn
@@ -2909,7 +2906,7 @@ ersuchen	PRP$	1	ersuchen
 Gabe	NN	1	Gabe
 Fallen	NN	1	Fallen
 Schwarzröcken	NN	1	Schwarzröcken
-erzählen.ende	NN	1	erzählen.Ende
+womit	WRB	1	womit
 dennoch	RB	1	dennoch
 Dingern	VB	1	Dinger
 Fortgehen	NN	1	Fortgehen
@@ -2917,7 +2914,6 @@ losen	VB	1	los
 unterbreche	NN	1	unterbreche
 leere	NN	1	leere
 getreuern	NN	1	getreuern
-Freigeists	NN	1	Freigeists
 Gesetzgeber	NN	1	Gesetzgeber
 Ausnahmen	NN	1	Ausnahmen
 Nennen	NN	1	Nennen

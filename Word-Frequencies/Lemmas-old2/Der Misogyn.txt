@@ -1,10 +1,10 @@
 Title: Der Misogyn
-Number of all lemmas: 4546
+Number of all lemmas: 4543
 Nummber of different lemmas: 2072
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ, NNP	76	Herr
-Lelio	NN, NNP, JJ, RB	57	Lelio
+Lelio	NN, NNP, JJ, RB	56	Lelio
 sagen	VBN, VB	53	gesagt, sagen, sage
 wohl	RB, RP, IN	43	wohl
 Vater	NN, NNP	41	Vater
@@ -15,7 +15,7 @@ Leander	NN, NNP	27	Leander
 Hilaria	NN, NNP, RP	27	Hilaria
 Bruder	NN	27	Bruder
 eben	RB, VB, RP, VBN, IN, NNP	27	eben
-sehen	VB, RB, VBN	26	sehen, sah, sieht, gesehen
+sehen	VB, RB, VBN	25	sehen, sah, sieht, gesehen
 glauben	VB, VBN	25	glauben, glaubt, geglaubt, glaube, glaubten, glaubte
 gut	JJ, RB	24	gut, guten, gute, gutem, guter
 Tochter	NN, NNP	23	Tochter
@@ -28,8 +28,8 @@ Laura	NNP, NN	19	Laura
 hören	VB	19	hörst, hören, höre, hört
 gar	IN, RB, RP	19	gar
 Augen	NN, JJ	18	Augen
+erst	RB, JJ, RP, VB	17	erst, erste, ersten
 Leandern	NN, JJ, VB	17	Leandern, Leander
-erst	RB, JJ, RP, VB	16	erst, erste, ersten
 kömmen	MD	15	kömmst, kömmt
 wissen	VB, RB	14	wissen
 hast	NN	14	hast
@@ -142,6 +142,7 @@ gehabt	NN, NNP	5	gehabt
 wirst	WRB, RP	5	wirst
 ihrem	PRP$	5	ihrem
 Geschlecht	NN	5	Geschlecht
+Ende	NN	5	Ende
 Lisette	NN	5	Lisette
 unserm	PRP$	5	unserm
 Torheit	NN	5	Torheit
@@ -180,11 +181,9 @@ best	JJ, NN	4	besten
 erzählen	VB	4	erzählt, erzählen, erzählte
 Schmeicheleien	NN	4	Schmeicheleien
 nie	RB	4	nie
-sprechen	VB, PRP$	4	sprechen
 niemals	RB, RP	4	niemals
 Sagen	NN	4	Sagen
 stiften	VB	4	stiften
-Ende	NN	4	Ende
 verdienen	VBN, VB	4	verdient, verdienen
 fort	RP	4	fort
 deswegen	RB, RP	4	deswegen
@@ -197,7 +196,6 @@ st	PRP$	4	st
 entbehren	VB	4	entbehren
 lieben	VB, NN	4	lieben, liebe
 zweit	JJ	4	zweite, zweiten
-Geduld	NN	4	Geduld
 ansehen	VB, RP	4	ansehen, angesehen
 versichert	NN	4	versichert
 hernach	NN	4	hernach
@@ -274,6 +272,7 @@ wider	IN	3	wider
 Sies	RB, RP	3	Sies
 dächte	NN	3	dächte
 Garten	NN	3	Garten
+sprechen	VB	3	sprechen
 Beweis	NNS, NN	3	Beweise, Beweis
 schäme	NN	3	schäme
 Eigenschaft	NNS	3	Eigenschaften
@@ -302,6 +301,7 @@ Nase	NN	3	Nase
 schlecht	JJ	3	schlechte
 Kurz	NN	3	Kurz
 Treten	NN	3	Treten
+Geduld	NN	3	Geduld
 Furcht	NN	3	Furcht
 lernen	RB, VB	3	lernt, lernen
 führen	PRP$, VB	3	führen
@@ -597,7 +597,6 @@ erfährt	NN	2	erfährt
 Schlimmste	NN	2	Schlimmste
 Ding	NN, JJ	2	Ding, Dingen
 ungehalten	NN	2	ungehalten
-bekomme	NN	2	bekomme
 Aufrichtigkeit	NN	2	Aufrichtigkeit
 andermal	RB	2	andermal
 künftig	JJ	2	künftigen
@@ -1574,7 +1573,7 @@ Narrheit	NN	1	Narrheit
 vergnügt	JJ	1	vergnügt
 hoffnungslose	NN	1	hoffnungslose
 verschlagenste	NN	1	verschlagenste
-bedanke	NN	1	bedanke
+Notwendigkeit	NN	1	Notwendigkeit
 Hörst	NN	1	Hörst
 Spass	NN	1	Spaß
 Gunstbezeugungen	NN	1	Gunstbezeugungen
@@ -1634,6 +1633,7 @@ trügen	VB	1	trügt
 bewegen	VB	1	bewegen
 Ruin	NN	1	Ruin
 herein	RB	1	herein
+bekomme	NN	1	bekomme
 eingenommen	NN	1	eingenommen
 beweisen	VB	1	beweisen
 künftger	NN	1	künftger
@@ -1820,7 +1820,6 @@ umgehen	VB	1	umgeht
 Sekretär	NN	1	Sekretär
 bestreiten	VB	1	bestreiten
 siehst	NN	1	siehst
-Notwendigkeit	NN	1	Notwendigkeit
 Junggesellen	NN	1	Junggesellen
 Womit	NN	1	Womit
 morgen	RB	1	morgen
@@ -1898,6 +1897,7 @@ kuriös	NN	1	kuriös
 geschwindesten	NN	1	geschwindesten
 denk	NN	1	denk
 geleg	JJ	1	gelegen
+Aufzuges	NN	1	Aufzuges
 Hexen	NN	1	Hexen
 desperaten	NN	1	desperaten
 Wollt	NN	1	Wollt

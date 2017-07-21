@@ -12,10 +12,10 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dlOutput = DramaLanguage_Output()
-	dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/EntireCorpus")
+	#dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/EntireCorpus")
 
-	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/testo")
-	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas-2/")
+	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Der_Freigeist_k.xml", "../Word-Frequencies/test")
+	dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens/")
 
 class DramaLanguage_Output:
 

@@ -1,6 +1,6 @@
 Title: Der Freigeist
-Number of all tokens: 7804
-Nummber of different tokens: 3169
+Number of all tokens: 7797
+Nummber of different tokens: 3170
 
 Token	Frequency
 Adrast	118
@@ -84,7 +84,6 @@ Zeit	12
 mag	12
 antworten	12
 gesagt	12
-Herrn	12
 reden	12
 unmöglich	12
 hätten	12
@@ -97,6 +96,7 @@ schönste	11
 böse	11
 Leute	11
 Menschen	11
+Herrn	11
 hast	11
 läßt	11
 Gott	11
@@ -146,13 +146,11 @@ Sache	8
 bloß	8
 meines	8
 gehört	8
-unser	8
 alsdann	8
 deswegen	8
 fallen	8
 bekommen	8
 gewissen	8
-länger	8
 verlassen	8
 Geht	8
 Frauenzimmer	8
@@ -183,10 +181,12 @@ Grunde	7
 Erlauben	7
 gleichwohl	7
 Exempel	7
+unser	7
 könnten	7
 Komm	7
 Theophans	7
 dadurch	7
+länger	7
 heute	7
 näher	7
 stellen	7
@@ -225,7 +225,6 @@ Geduld	6
 verstehe	6
 nötig	6
 breit	6
-übel	6
 Daumen	6
 Unglück	6
 Hölle	6
@@ -238,7 +237,6 @@ Gelegenheit	6
 Gründe	6
 wünschen	6
 gestehen	6
-ersten	6
 Allein	6
 heraus	6
 Vertrauen	6
@@ -266,6 +264,7 @@ gefunden	5
 sieht	5
 mache	5
 selber	5
+bleibt	5
 unsere	5
 unsern	5
 Sage	5
@@ -284,6 +283,7 @@ welchem	5
 Ehre	5
 Stellen	5
 Stille	5
+übel	5
 Kleinigkeit	5
 Verdruß	5
 darum	5
@@ -310,6 +310,7 @@ Nacht	5
 Hände	5
 Anmerkung	5
 beschlossen	5
+ersten	5
 Kredit	5
 erklären	5
 ach	5
@@ -356,7 +357,6 @@ leiden	4
 fort	4
 nu	4
 Schuldner	4
-bleibt	4
 Streiche	4
 ehrlichen	4
 glücklich	4
@@ -489,7 +489,6 @@ Grund	3
 Verstandes	3
 Sieh	3
 gelernt	3
-erzählen	3
 Schande	3
 wärest	3
 gewinnen	3
@@ -767,6 +766,7 @@ Alsdann	2
 Lobrednerin	2
 ähnlichen	2
 Krankheit	2
+erzählen	2
 brenne	2
 legen	2
 ankommen	2
@@ -816,6 +816,7 @@ Unrecht	2
 geäußert	2
 Verächter	2
 einziger	2
+betrachten	2
 Wahrhaftig	2
 Ihret	2
 Französisch	2
@@ -868,7 +869,6 @@ abzulegen	2
 gekannt	2
 Kerl	2
 falschen	2
-betrachten	2
 Wohin	2
 betrachtet	2
 bekümmern	2
@@ -876,7 +876,6 @@ Großmama	2
 Schwiegersöhne	2
 verachten	2
 Heuchler	2
-Aufzugs	2
 schickte	2
 fremden	2
 Ecke	2
@@ -1058,10 +1057,8 @@ bestimmt	2
 Spötterei	2
 Nehmen	2
 Empfindung	2
-verziehen	2
 Schade	2
 Szene	2
-abgeführt	2
 Geschwätze	2
 Tugenden	2
 Gefallen	2
@@ -1080,7 +1077,6 @@ Land	2
 kürzer	2
 erteilen	2
 wozu	2
-dran	2
 tauscht	2
 verwirren	2
 werfen	2
@@ -1144,6 +1140,7 @@ Glas	2
 solle	2
 Überlegen	2
 beizubringen	2
+Aufzuges	2
 umsieht	2
 vorstellen	2
 verfolgt	2
@@ -1322,6 +1319,7 @@ angelegt	1
 unzuerklärenden	1
 Anblicke	1
 Taler	1
+vierten	1
 vernehmen	1
 Exempeln	1
 Holz	1
@@ -1364,7 +1362,6 @@ Erbschaft	1
 Staates	1
 gefährliche	1
 ungeheuer	1
-dritten	1
 Hinderung	1
 he	1
 drunter	1
@@ -1455,7 +1452,6 @@ Bockshorn	1
 Seelenkannibal	1
 wohlbedächtig	1
 Zipfel	1
-bleibt.Ende	1
 Trost	1
 Ehrgeiz	1
 Verschonen	1
@@ -1540,6 +1536,7 @@ unglücklich	1
 wankendem	1
 Anherkunft	1
 vorgegangen	1
+zweiten	1
 anrechnen	1
 Schmeichlerin	1
 Untier	1
@@ -1890,7 +1887,6 @@ diesesmal	1
 sah	1
 Puppe	1
 Futter	1
-tauschen	1
 Erklären	1
 ans	1
 Allzugütige	1
@@ -1927,6 +1923,7 @@ Gesetzt	1
 ernähren	1
 Rocke	1
 setzt	1
+erzählen.Ende	1
 auszuhalten	1
 Brocke	1
 herumhudeln	1
@@ -2213,6 +2210,7 @@ aufstößt	1
 Kannibal	1
 bürden	1
 vernichten	1
+sein.Ende	1
 bezeugte	1
 ungestört	1
 Gehts	1
@@ -2577,6 +2575,7 @@ allzu	1
 Ohren	1
 Tages	1
 erhielte	1
+verziehen	1
 Sammelplatz	1
 Jungfern	1
 unleugbar	1
@@ -2641,6 +2640,7 @@ Höllenbrand	1
 Schwarzröcke	1
 Zug	1
 Spöttisch	1
+dran	1
 Gebotes	1
 lang	1
 verachteten	1
@@ -3091,6 +3091,7 @@ höflich	1
 leere	1
 beschließen	1
 Sag	1
+Freigeists	1
 Gesetzgeber	1
 Ausnahmen	1
 Nennen	1

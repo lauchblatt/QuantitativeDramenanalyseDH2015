@@ -1,6 +1,6 @@
 Title: Die alte Jungfer
-Number of all lemmas: 3538
-Nummber of different lemmas: 1628
+Number of all lemmas: 3539
+Nummber of different lemmas: 1632
 
 Lemma	POS	Frequency	Tokens
 Herr	JJ, NN, NNP	71	Herr, Herren
@@ -24,9 +24,9 @@ Nu	NN	18	Nu
 alt	JJ	18	alt, alten, alte
 Gott	NN	17	Gott
 ha	NN, NNP	17	ha
-Lisette	NN, NNP	16	Lisette
 gewiss	NN, JJ	15	gewiß
 schuldig	JJ	15	schuldig
+Lisette	NN, NNP	15	Lisette
 Muhme	NN	15	Muhme
 glauben	VB, VBN	15	glauben, glaube, glaubst, geglaubt
 Mademoiselle	NN	14	Mademoiselle
@@ -76,7 +76,6 @@ sehn	NN	8	sehn
 bitten	VB	7	bitten, bitte
 soen	VBN, RB, VB	7	so
 genug	RB, JJ, RP	7	genug
-Art	NN	7	Art
 ehrlich	JJ	7	ehrlichen, ehrliches, ehrliche, ehrlicher
 lange	RB, IN	7	lange
 schicken	RP, VB	7	geschickt, schicken, schickt
@@ -94,6 +93,7 @@ best	JJ	6	besten, beste
 sprechen	VB	6	spricht, sprechen, sprach
 andern	JJ, DT	6	andern
 weiss	VB, RB	6	weiß
+Art	NN	6	Art
 vielleicht	IN, RB	6	vielleicht
 Hochzeit	NN	6	Hochzeit
 Tat	NN	6	Tat
@@ -249,7 +249,6 @@ Hochwohlgeborne	NN	3	Hochwohlgeborne
 wem	WP	3	wem
 Tage	NN	3	Tage
 Zimmer	NN	3	Zimmer
-bös	JJ, NN	3	böse, böses
 Schade	NN	3	Schade
 Treppe	NNS, NN	3	Treppen, Treppe
 helfen	VB	3	hilft, helfen
@@ -476,6 +475,7 @@ finden	VB	2	finden, gefunden
 fürchte	NN	2	fürchte
 Schämen	NN	2	Schämen
 rechten	NN	2	rechten
+bös	JJ	2	böse
 Ohren	NN	2	Ohren
 acht	CD	2	acht
 funfzig	JJ	2	funfzig
@@ -926,6 +926,7 @@ Theater	NN	1	Theater
 Lauf	NN	1	Lauf
 unvergleichlicher	NN	1	unvergleichlicher
 Geschmacke	NN	1	Geschmacke
+zweit	JJ	1	zweiten
 umhängen	NN	1	umhängen
 Licht	NN	1	Licht
 ehlich	JJ	1	ehlichen
@@ -934,7 +935,6 @@ unvernünftiges	NN	1	unvernünftiges
 unvernünftiger	NN	1	unvernünftiger
 währen	VB	1	währen
 Post	NN	1	Post
-Omen	NN	1	Omen
 treib	VB	1	treiben
 ansehnlich	JJ	1	ansehnlichen
 unterlassen	VBN	1	unterlassen
@@ -979,6 +979,7 @@ Diensten	NN	1	Diensten
 wüsstest	NN	1	wüßtest
 bekümmern	NN	1	bekümmern
 merken	VB	1	merkt
+Aufzugs	NN	1	Aufzugs
 süsse	NN	1	süße
 geh	NN	1	geh
 Männern	JJ	1	Männern
@@ -1093,7 +1094,9 @@ kleiden	VBN	1	gekleidet
 Freiersmann	NNP	1	Freiersmann
 satyrischem	NN	1	satyrischem
 sagst	NN	1	sagst
+haben.ende	NN	1	haben.Ende
 vorsagen	RP	1	vorsagt
+Stücks	NN	1	Stücks
 Edelmannen	NN	1	Edelmannen
 Beschwerlichkeiten	NN	1	Beschwerlichkeiten
 Gottes	NN	1	Gottes
@@ -1113,6 +1116,7 @@ tu	NN	1	tu
 Entschliessung	NNS	1	Entschließungen
 darnachen	VB	1	darnach
 steckten	NN	1	steckten
+Lisette.Ende	NN	1	Lisette.Ende
 vorhinen	JJ	1	vorhin
 Rücken	NN	1	Rücken
 glaube	VB	1	glaube
@@ -1220,7 +1224,6 @@ Ursache	NN	1	Ursache
 Poesie	JJ	1	Poesie
 Neuigkeiten	NN	1	Neuigkeiten
 beständig	JJ	1	beständig
-schamrot	NN	1	schamrot
 steht	VB	1	steht
 beisst	NN	1	beißt
 Mutter	NN	1	Mutter
@@ -1428,6 +1431,7 @@ Mademoisell	JJ	1	Mademoiselle
 Betteldorf	NN	1	Betteldorf
 Meines	NN	1	Meines
 umgehen	VB	1	umgeht
+dochen	RB	1	doch
 siehst	NN	1	siehst
 ältern	NN	1	ältern
 secessum	NN	1	secessum
