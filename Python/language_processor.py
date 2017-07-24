@@ -15,20 +15,21 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	parser = DramaParser()
-	#dramaModel = parser.parse_xml("../Lessing-Dramen/less-Der_Freigeist_k.xml")
+	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Der_Freigeist_k.xml")
 
-
+	"""
 	for filename in os.listdir("../Lessing-Dramen/"):
 		print(filename)
 		parser = DramaParser()
 		dramaModel = parser.parse_xml("../Lessing-Dramen/" + filename)
 
 	"""
+
 	for act in dramaModel._acts:
 		for conf in act._configurations:
 			for speech in conf._speeches:
-				print speech._text
-	"""
+				print ("SPEECH")
+				print unicode(speech._text)
 
 	#lp = Language_Processor()
 

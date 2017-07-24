@@ -231,75 +231,62 @@ class DramaParser:
     # calculates length of speech
     def get_speech_text(self, sub_sp_wrapper):
         speechText = ""
-        p_tags = sub_sp_wrapper.findall("./tei:p", self.namespaces)
-        l_tags = sub_sp_wrapper.findall("./tei:l", self.namespaces)
-        lg_tags = sub_sp_wrapper.findall("./tei:lg", self.namespaces)
+        
+        speechText = ""
+        children = sub_sp_wrapper.getchildren()
+        
 
-        if (len(l_tags) > 0):
-            for l_tag in l_tags:
-                for text in l_tag.itertext():
-                    # new stuff
+        for element in children:
+            if (element.tag == "{http://www.tei-c.org/ns/1.0}l"):
+                for text in element.itertext():
                     if (text[0] == " " or speechText.endswith(" ")):
                         speechText = speechText + text
                     else:
                         speechText = speechText + " " + text
-
-        elif (len(p_tags) > 0):
-            for p_tag in p_tags:
-                for text in p_tag.itertext():
+            if (element.tag == "{http://www.tei-c.org/ns/1.0}lg"):
+                for l_element in element.findall("./tei:l", self.namespaces):
+                    for text in l_element.itertext():
+                        if (text[0] == " " or speechText.endswith(" ")):
+                            speechText = speechText + text
+                        else:
+                            speechText = speechText + " " + text
+            if (element.tag == "{http://www.tei-c.org/ns/1.0}p"):
+                for text in element.itertext():
+                    if(text.startswith("Ende de")):
+                        speechText = speechText
+                    else:
+                        if (text[0] == " " or speechText.endswith(" ")):
+                            speechText = speechText + text
+                        else:
+                            speechText = speechText + " " + text
+            
+        ### Ohne Szenenanweisungen
+        """
+        for element in children:
+            if (element.tag == "{http://www.tei-c.org/ns/1.0}l"):
+                text = element.text
+                if (text[0] == " " or speechText.endswith(" ")):
                     speechText = speechText + text
-
-        # very special case
-        if(len(l_tags) > 0 and len(p_tags) > 0 and len(lg_tags) > 0):
-            speechText = ""
-            for l_tag in l_tags:
-                for text in l_tag.itertext():
-                    # new stuff
+                else:
+                    speechText = speechText + " " + text
+            if (element.tag == "{http://www.tei-c.org/ns/1.0}lg"):
+                for l_element in element.findall("./tei:l", self.namespaces):
+                    text = element.text
                     if (text[0] == " " or speechText.endswith(" ")):
                         speechText = speechText + text
                     else:
-                        speechText = speechText + " " + text 
-            for lg_element in lg_tags:
-                for l_element in lg_element.findall("./tei:l", self.namespaces):
-                    if (l_element.text[0] == " " or speechText.endswith(" ")):
-                        speechText = speechText + l_element.text
-                        #print speechText
+                        speechText = speechText + " " + text
+            if (element.tag == "{http://www.tei-c.org/ns/1.0}p"):
+                text = element.text
+                if(text.startswith("Ende de")):
+                    speechText = speechText
+                else:
+                    if (text[0] == " " or speechText.endswith(" ")):
+                        speechText = speechText + text
                     else:
-                        speechText = speechText + " " + l_element.text
-                        #print speechText
-            for p_tag in p_tags:
-                for text in p_tag.itertext():
-                    speechText = speechText + text
+                        speechText = speechText + " " + text
+            """
 
-        # for classic dramas with noted line breaks
-
-        if (len(l_tags) == 0):
-            lg_tag = sub_sp_wrapper.findall("./tei:lg", self.namespaces)
-            for lg_element in sub_sp_wrapper.findall("./tei:lg", self.namespaces):
-                for l_element in lg_element.findall("./tei:l", self.namespaces):
-                    if (l_element.text[0] == " " or speechText.endswith(" ")):
-                        speechText = speechText + l_element.text
-                        #print speechText
-                    else:
-                        speechText = speechText + " " + l_element.text
-                        #print speechText
-        
-        if(len(l_tags) > 0 and len(lg_tags) > 0 and len(p_tags) == 0):
-            speechText = ""
-            children = sub_sp_wrapper.getchildren()
-            for element in children:
-                if (element.tag == "{http://www.tei-c.org/ns/1.0}l"):
-                    if (element.text[0] == " " or speechText.endswith(" ")):
-                        speechText = speechText + element.text
-                    else:
-                        speechText = speechText + " " + element.text
-                if (element.tag == "{http://www.tei-c.org/ns/1.0}lg"):
-                    for l_element in element.findall("./tei:l", self.namespaces):
-                        if (l_element.text[0] == " " or speechText.endswith(" ")):
-                            speechText = speechText + l_element.text
-                        else:
-                            speechText = speechText + " " + l_element.text
-            print speechText
         return speechText
 
     # calculates length of speech

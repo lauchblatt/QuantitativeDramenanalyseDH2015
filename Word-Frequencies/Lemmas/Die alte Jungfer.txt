@@ -1,6 +1,6 @@
 Title: Die alte Jungfer
-Number of all lemmas: 3538
-Nummber of different lemmas: 1628
+Number of all lemmas: 3541
+Nummber of different lemmas: 1630
 
 Lemma	POS	Frequency	Tokens
 Herr	JJ, NN, NNP	71	Herr, Herren
@@ -33,10 +33,10 @@ Mademoiselle	NN	14	Mademoiselle
 Heirat	NNS, NN	14	Heiraten, Heirat
 weeissen	VB	14	weiß
 Ohldin	NN, NNP	13	Ohldin
+erst	RB, JJ, NN, RP	12	erst, ersten, erste
 reden	VB, VBN	12	reden, geredet, rede, redet, redest
 Frau	JJ, NN	12	Frau
 Peter	NNP, NN	12	Peter
-erst	RB, JJ, NN, RP	11	erst, ersten, erste
 Ha	NN	11	Ha
 Bräutigam	NN	11	Bräutigam
 denken	VB	11	denke, denkt, denken
@@ -979,6 +979,7 @@ Diensten	NN	1	Diensten
 wüsstest	NN	1	wüßtest
 bekümmern	NN	1	bekümmern
 merken	VB	1	merkt
+Aufzugs	NN	1	Aufzugs
 süsse	NN	1	süße
 geh	NN	1	geh
 Männern	JJ	1	Männern
@@ -1231,6 +1232,7 @@ vorige	NN	1	vorige
 hitzig	JJ	1	hitzig
 theologisch-polemisch-poetisch	JJ	1	theologisch-polemisch-poetischen
 Ratschlägen	NN	1	Ratschlägen
+werden.ende	NN	1	werden.Ende
 Verächter	NN	1	Verächter
 Geldborgern	NN	1	Geldborgern
 Klügste	NN	1	Klügste
@@ -1472,7 +1474,7 @@ zufried	JJ	1	zufrieden
 einbilden	NN	1	einbilden
 lebendig	JJ	1	lebendig
 Forderungen	NN	1	Forderungen
-überraschen	VBN	1	überrascht
+überraschen	RB	1	überrascht
 Belieben	NN	1	Belieben
 ichs	NN	1	ichs
 Zorn	NN	1	Zorn

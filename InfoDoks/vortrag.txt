@@ -1,0 +1,18 @@
+SentiWordNet
+
+Hard nuts bei der Sentiment Analysis:
+
+Negation
+vermutlich sarkastisch
+adverbialer Modifizierer (Früher fand ich Porsches blöd)
+worauf bezieht sich die Bewertung (VW, BMW und Tesla - nur letzteres könne ich mir als Neuwagen vorstellen...)
+Referenz nur mit Weltwissen auflösbar (... aber vertrauen tue ich nur den deutschen Herstellern)
+Das Wetter war die ganze Zeit kühl
+Das Bier war kühl, die Musik heiß (je nach Domäne ändert sich die Polarität)
+
+Das HOtel war ok, aber nicht empfehlenswert (Gewichtungsproblem)
+That was a total crap fest (ungewöhnliches Vokabular)
+
+Dan Jurafsky
+
+regelbasierte Ansätze, Maschinenbasierte Ansätze

@@ -1,6 +1,6 @@
 Title: Der Freigeist
-Number of all lemmas: 7523
-Nummber of different lemmas: 2985
+Number of all lemmas: 7529
+Nummber of different lemmas: 2989
 
 Lemma	POS	Frequency	Tokens
 Adrast	NN, NNP	117	Adrast
@@ -35,9 +35,9 @@ Vetter	NN, NNP	23	Vetter
 Julianen	NN, JJ	23	Julianen
 gar	RP, RB, IN	23	gar
 klein	JJ	22	kleiner, kleinen, kleine, kleines, klein
+erst	VB, JJ, IN, RB, RP	22	erste, ersten, erst, erstes
 wenig	IN, RB, NNP, RP	22	wenig
 reden	VB, VBN	22	reden, redet, rede
-erst	VB, JJ, IN, RB, RP	21	erste, ersten, erst, erstes
 Recht	NN	21	Recht
 Person	NN	20	Person
 Ach	NN	20	Ach
@@ -839,6 +839,7 @@ bekümmern	JJ, NN	2	bekümmern
 verachten	VB	2	verachten
 Heuchler	NN	2	Heuchler
 verachtet	NN, JJ	2	verachtet, verachteten
+Aufzugs	NN	2	Aufzugs
 vergess	VB, VBN	2	vergessen
 schickte	NN	2	schickte
 fremden	PRP$	2	fremden
@@ -1548,6 +1549,7 @@ Tone	NN	1	Tone
 erspare	NN	1	erspare
 la	NN	1	la
 lösen	VB	1	löset
+dritt	JJ	1	dritten
 übereilen	NN	1	übereilen
 Plaudern	NN	1	Plaudern
 Hundertste	NN	1	Hundertste
@@ -2232,6 +2234,7 @@ angenommene	NN	1	angenommene
 bestellen	PRP$	1	bestellen
 Aufführung	NN	1	Aufführung
 gereiset	NN	1	gereiset
+bleibt.ende	NN	1	bleibt.Ende
 Rechten	NN	1	Rechten
 schmachtendes	NN	1	schmachtendes
 schob	NN	1	schob
@@ -2529,6 +2532,7 @@ verrichten	VB	1	verrichten
 ungerechte	NN	1	ungerechte
 fühlt	VB	1	fühlt
 gemein	JJ	1	gemein
+Ende	NN	1	Ende
 gefärbte	NN	1	gefärbte
 umzechig	JJ	1	umzechig
 nachdrücklicher	RB	1	nachdrücklicher

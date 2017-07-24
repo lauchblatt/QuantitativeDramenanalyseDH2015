@@ -11,49 +11,17 @@ from lexicon_handler import *
 from sa_models import *
 from sa_calculator import *
 from sa_output import *
+from sa_pre_processing import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+
+	processor = Drama_Pre_Processing("../Lessing-Dramen/less-Philotas_t.xml")
+	dramaModel = processor.preProcess()
 	
 	sa = Sentiment_Analyzer()
-	sa.init()
-
-	parser = DramaParser()
-	dramaModel = parser.parse_xml("../Lessing-Dramen/less-Philotas_t.xml")
-	sa.attachPositionsToSpeechesAndConfs(dramaModel)
-	sa.attachPreOccuringSpeakersToSpeeches(dramaModel)
-	sa.attachSentimentBearingWordsToDrama(dramaModel)
-	sa.attachLengthInWordsToStructuralElements(dramaModel)
-	sa.attachStructuralSentimentMetricsToDrama(dramaModel)
-	sa.attachSentimentMetricsToSpeaker(dramaModel)
-	sa.attachSentimentRelationsToSpeaker(dramaModel)
-
-	#sog = Sentiment_Output_Generator()
-	#sog.createTxtOutputSingleDrama("Nathan", dramaModel)
-	#sog.createShortTxtOutputSingleDrama("Short-Output/Nathan", dramaModel)
-
-	"""
-	for speaker in dramaModel._speakers:
-		print("###")
-		print(speaker._name)
-		for relation in speaker._sentimentRelations:
-			print("Sentiment Relations: ")
-			print(relation._originSpeaker)
-			print(relation._targetSpeaker)
-			relation._sentimentMetrics.printAllInfo(relation._lengthInWords)
-	"""
-
-	"""
-	for act in dramaModel._acts:
-		for conf in act._configurations:
-			for speech in conf._speeches:
-				sentimentInformation = speech._sentimentInformation
-				sentimentBearingWords  = sentimentInformation._sentimentBearingWords
-				for word in sentimentBearingWords:
-					print(word._token)
-					print(word._positiveNrc)
-	"""
+	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	
 	
 class Sentiment_Analyzer:
@@ -64,8 +32,18 @@ class Sentiment_Analyzer:
 		self._sentiWS = {}
 		self._nrc = {}
 		self._bawl = {}
+
+		self.initLexiconsAndLp()
 	
-	def init(self):
+	def attachAllSentimentInfoToDrama(self, dramaModel):
+		print("######")
+		self.attachSentimentBearingWordsToDrama(dramaModel)
+		self.attachStructuralSentimentMetricsToDrama(dramaModel)
+		self.attachSentimentMetricsToSpeaker(dramaModel)
+		self.attachSentimentRelationsToSpeaker(dramaModel)
+		return dramaModel
+
+	def initLexiconsAndLp(self):
 		
 		self._languageProcessor = Language_Processor()
 		lexiconHandlerSentiWS = Lexicon_Handler()
@@ -80,7 +58,7 @@ class Sentiment_Analyzer:
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
-			for conf in act._configurations[0:2]:
+			for conf in act._configurations:
 				for speech in conf._speeches:
 					print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
@@ -155,15 +133,15 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			sentimentBearingWordsAct = []
 
-			for configuration in act._configurations[0:2]:
+			for configuration in act._configurations:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
 					text = speech._text
 					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
 					####
-					speechLength = len(self._languageProcessor._lemmasWithLanguageInfo)
-					speech._lengthInWords = speechLength
+					#speechLength = len(self._languageProcessor._lemmasWithLanguageInfo)
+					#speech._lengthInWords = speechLength
 					####
 						
 					sentimentBearingWordsConf.extend(speech._sentimentBearingWords)
@@ -184,57 +162,6 @@ class Sentiment_Analyzer:
 			for speech in speaker._speeches:
 				sentimentBearingWordsSpeaker.extend(speech._sentimentBearingWords)
 			speaker._sentimentBearingWords = sentimentBearingWordsSpeaker
-
-	def attachLengthInWordsToStructuralElements(self, dramaModel):
-		dramaLength = 0
-		for act in dramaModel._acts:
-			actLength = 0
-			for conf in act._configurations:
-				confLength = 0
-				for speech in conf._speeches:
-					confLength = confLength + speech._lengthInWords
-					actLength = actLength + speech._lengthInWords
-					dramaLength = dramaLength + speech._lengthInWords
-				conf._lengthInWords = confLength
-			act._lengthInWords = actLength
-		dramaModel._lengthInWords = dramaLength
-
-		for speaker in dramaModel._speakers:
-			speakerLength = 0
-			for speech in speaker._speeches:
-				speakerLength = speakerLength + speech._lengthInWords
-			speaker._lengthInWords = speakerLength
-
-	def attachPositionsToSpeechesAndConfs(self, dramaModel):
-		subsequentNumberSpeech = 1
-		subsequentNumberConf = 1
-
-		for act in dramaModel._acts:
-			numberInAct = 1
-			for conf in act._configurations:
-				numberInConf = 1
-				conf._subsequentNumber = subsequentNumberConf
-				subsequentNumberConf = subsequentNumberConf + 1
-				for speech in conf._speeches:
-					speech._subsequentNumber = subsequentNumberSpeech
-					speech._numberInAct = numberInAct
-					speech._numberInConf = numberInConf
-
-					subsequentNumberSpeech = subsequentNumberSpeech + 1
-					numberInAct = numberInAct + 1
-					numberInConf = numberInConf +1
-
-	def attachPreOccuringSpeakersToSpeeches(self, dramaModel):
-		preOccuringSpeaker = ""
-
-		for act in dramaModel._acts:
-			# Reset every speaker when new act starts
-			preOccuringSpeaker = ""
-			for conf in act._configurations:
-				for speech in conf._speeches:
-					speech._preOccuringSpeaker = preOccuringSpeaker
-					preOccuringSpeaker = speech._speaker
-
 
 	def getSentimentBearingWordsSpeech(self, text):
 		lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					

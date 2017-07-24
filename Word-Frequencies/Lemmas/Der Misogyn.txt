@@ -1,6 +1,6 @@
 Title: Der Misogyn
-Number of all lemmas: 4546
-Nummber of different lemmas: 2072
+Number of all lemmas: 4551
+Nummber of different lemmas: 2074
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ, NNP	76	Herr
@@ -114,6 +114,7 @@ fangen	VB, VBN, RP	6	fängst, fingen, fängt, gefangen
 Schweig	JJ, RB	6	Schweig
 vielleicht	RB, RP	6	vielleicht
 weiblich	JJ	6	weiblichen, weibliches, weiblicher, weibliche
+Ende	NN	6	Ende
 schönste	NN, NNP	6	schönste
 lange	IN, WRB, NNP, RB, RP	6	lange
 kurz	JJ	6	kurz
@@ -145,6 +146,7 @@ Geschlecht	NN	5	Geschlecht
 Lisette	NN	5	Lisette
 unserm	PRP$	5	unserm
 Torheit	NN	5	Torheit
+zweit	JJ	5	zweite, zweiten
 ähnlich	JJ	5	ähnlich
 Bitte	NNS, NN	5	Bitten, Bitte
 merken	VB, VBN	5	merkt, merken, gemerkt
@@ -184,7 +186,6 @@ sprechen	VB, PRP$	4	sprechen
 niemals	RB, RP	4	niemals
 Sagen	NN	4	Sagen
 stiften	VB	4	stiften
-Ende	NN	4	Ende
 verdienen	VBN, VB	4	verdient, verdienen
 fort	RP	4	fort
 deswegen	RB, RP	4	deswegen
@@ -196,7 +197,6 @@ Einwilligung	NN	4	Einwilligung
 st	PRP$	4	st
 entbehren	VB	4	entbehren
 lieben	VB, NN	4	lieben, liebe
-zweit	JJ	4	zweite, zweiten
 Geduld	NN	4	Geduld
 ansehen	VB, RP	4	ansehen, angesehen
 versichert	NN	4	versichert
@@ -1284,6 +1284,7 @@ scherze	NN	1	scherze
 Testimoniis	NN	1	Testimoniis
 Ohrfeige	NN	1	Ohrfeige
 Hunde	NN	1	Hunde
+Misogyn	NN	1	Misogyn
 andrer	NN	1	andrer
 hoffe	VB	1	hoffe
 wohlgeratene	NN	1	wohlgeratene
@@ -1898,6 +1899,7 @@ kuriös	NN	1	kuriös
 geschwindesten	NN	1	geschwindesten
 denk	NN	1	denk
 geleg	JJ	1	gelegen
+Aufzuges	NN	1	Aufzuges
 Hexen	NN	1	Hexen
 desperaten	NN	1	desperaten
 Wollt	NN	1	Wollt
