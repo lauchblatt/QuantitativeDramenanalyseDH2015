@@ -1,0 +1,1384 @@
+!	!	$.	0	0	1	0.332604	0.471554	0.195842
+"	"	$(	0	0	1	0.292191	0.447523	0.260285
+(	(	$(	0	0	1	0.313617	0.446087	0.240296
+)	)	$(	0	0	1	0.334943	0.427278	0.237779
+*	*	$(	0	0	1	0.27451	0.45098	0.27451
+-	-	$(	0	0	1	0.298092	0.464229	0.237679
+.	.	$.	0	0	1	0.281739	0.473789	0.244472
+0	0	CARD	0	0	1	0.277778	0.527778	0.194444
+1	1	CARD	0	0	1	0.276536	0.486034	0.23743
+2	2	CARD	0	0	1	0.234586	0.538346	0.227068
+3	3	CARD	0	0	1	0.205508	0.440678	0.353814
+4	4	CARD	0	0	1	0.272085	0.5053	0.222615
+5	5	CARD	0	0	1	0.386111	0.394444	0.219444
+6	6	CARD	0	0	1	0.205357	0.625	0.169643
+7	7	CARD	0	0	1	0.293333	0.44	0.266667
+8	8	CARD	0	0	1	0.336538	0.423077	0.240385
+9	9	CARD	0	0	1	0.318182	0.386364	0.295455
+:	:	$.	0	0	1	0.299368	0.451862	0.24877
+?	?	$.	0	0	1	0.155789	0.587368	0.256842
+Abbild	Abbild	NN	0	0	1	-	-	-
+Abdeckblech	Abdeckblech	NN	0	0	1	-	-	-
+Abdeckgitter	Abdeckgitter	NN	0	0	1	-	-	-
+Abdeckrost	Abdeckrost	NN	0	0	1	-	-	-
+Abdeckung	Abdeckung	NN	0	0	1	0.454545	0.272727	0.272727
+Abdruck	Abdruck	NN	0	0	1	0	0	1
+Abdrucknehmen	Abdrucknehmen	NN	0	0	1	-	-	-
+Abenteuer	Abenteuer	NN	0	0	1	0	1	0
+Abklären	abklären	VVINF	0	0	1	-	-	-
+Ablage	Ablage	NN	0	0	1	0.25	0.75	0
+Ablagegestell	Ablagegestell	NN	0	0	1	-	-	-
+Ablauf	Ablauf	NN	0	0	1	0	1	0
+Ablaufregelung	Ablaufregelung	NN	0	0	1	-	-	-
+Ablenkblech	Ablenkblech	NN	0	0	1	-	-	-
+Ablenkplatte	Ablenkplatte	NN	0	0	1	-	-	-
+Ablieferung	Ablieferung	NN	0	0	1	-	-	-
+Abmachung	Abmachung	NN	0	0	1	-	-	-
+Abnahme	Abnahme	NN	0	0	1	-	-	-
+Abreicherung	Abreicherung	NN	0	0	1	-	-	-
+Abruf	Abruf	NN	0	0	1	-	-	-
+Abschlag	Abschlag	NN	0	0	1	0	0	1
+Abschlagszahlung	Abschlagszahlung	NN	0	0	1	-	-	-
+Abschnitt	Abschnitt	NN	0	0	1	-	-	-
+Absehen	absehen	VVINF	0	0	1	0.103448	0.586207	0.310345
+Abseite	Abseite	NN	0	0	1	-	-	-
+Absicht	Absicht	NN	0	0	1	0.25	0.75	0
+Abspannung	Abspannung	NN	0	0	1	-	-	-
+Abstinenzbewegung	Abstinenzbewegung	NN	0	0	1	-	-	-
+Abtretung	Abtretung	NN	0	0	1	-	-	-
+Abwehrspieler	Abwehrspieler	NN	0	0	1	-	-	-
+Abwägung	Abwägung	NN	0	0	1	1	0	0
+Additiv	additiv	ADJD	0	0	1	-	-	-
+Advokat	Advokat	NN	0	0	1	-	-	-
+Affekt	Affekt	NN	0	0	1	-	-	-
+Affektion	Affektion	NN	0	0	1	-	-	-
+Affinität	Affinität	NN	0	0	1	-	-	-
+Aha	aha	VVINF	0	0	1	0.5	0.25	0.25
+Aha-Erlebnis	Aha-Erlebnis	NN	0	0	1	-	-	-
+Ahnung	Ahnung	NN	0	0	1	0.3	0.55	0.15
+Akkommodationsbreite	Akkommodationsbreite	NN	0	0	1	-	-	-
+Akkomodationsbreite	Akkomodationsbreite	NN	0	0	1	-	-	-
+Akteur	Akteur	NN	0	0	1	1	0	0
+Allgemeinplatz	Allgemeinplatz	NN	0	0	1	-	-	-
+Alter	Alter	NN	0	0	1	0.307692	0.538462	0.153846
+Alternative	Alternative	NN	0	0	1	0.431818	0.431818	0.136364
+Analyse	Analyse	NN	0	0	1	0.75	0.25	0
+Analysegerät	Analysegerät	NN	0	0	1	-	-	-
+Anblick	Anblick	NN	0	0	1	0	0.5	0.5
+Anbot	anbieten	VVINF	0	0	1	0.1875	0.5625	0.25
+Anbringung	Anbringung	NN	0	0	1	0.333333	0.333333	0.333333
+Andruck	Andruck	NN	0	0	1	-	-	-
+Anfahrt	Anfahrt	NN	0	0	1	-	-	-
+Anfangs	Anfang	NN	0	0	1	0.254237	0.542373	0.20339
+Anfertigung	Anfertigung	NN	0	0	1	-	-	-
+Anforderung	Anforderung	NN	0	0	1	0.166667	0.333333	0.5
+Anforderungen	Anforderung	NN	0	0	1	0.166667	0.333333	0.5
+Angelegenheit	Angelegenheit	NN	0	0	1	0.2	0.6	0.2
+Anlage	Anlage	NN	0	0	1	0.214286	0.535714	0.25
+Anlass	Anlaß	NN	0	0	1	0.666667	0	0.333333
+Anlegbarkeit	Anlegbarkeit	NN	0	0	1	-	-	-
+Anlehnung	Anlehnung	NN	0	0	1	-	-	-
+Anleitung	Anleitung	NN	0	0	1	0.511111	0.333333	0.155556
+Anmerkung	Anmerkung	NN	0	0	1	0.333333	0.333333	0.333333
+Annahme	Annahme	NN	0	0	1	0	0.5	0.5
+Anpflanzung	Anpflanzung	NN	0	0	1	-	-	-
+Anpressvorrichtungen	Anpressvorrichtungen	NN	0	0	1	-	-	-
+Anprobe	Anprobe	NN	0	0	1	-	-	-
+Anrollen	anrollen	VVINF	0	0	1	-	-	-
+Ansaugen	ansaugen	VVINF	0	0	1	1	0	0
+Anschauung	Anschauung	NN	0	0	1	-	-	-
+Anschein	Anschein	NN	0	0	1	1	0	0
+Ansehung	Ansehung	NN	0	0	1	-	-	-
+Ansicht	Ansicht	NN	0	0	1	0.2	0.3	0.5
+Ansichten	Ansicht	NN	0	0	1	0.2	0.3	0.5
+Ansteuerung	Ansteuerung	NN	0	0	1	1	0	0
+Anstoß	Anstoß	NN	0	0	1	-	-	-
+Antasten	antasten	VVINF	0	0	1	-	-	-
+Anteil	Anteil	NN	0	0	1	0.5	0.25	0.25
+Antizyklone	Antizyklone	NN	0	0	1	-	-	-
+Anvulkanisation	Anvulkanisation	NN	0	0	1	-	-	-
+Anvulkanisieren	Anvulkanisieren	NN	0	0	1	-	-	-
+Anzeige	Anzeige	NN	0	0	1	0.52	0.28	0.2
+Apostel	Apostel	NN	0	0	1	-	-	-
+Arbeit	Arbeit	NN	0	0	1	0.428571	0.311688	0.25974
+Arbeitseinstellung	Arbeitseinstellung	NN	0	0	1	-	-	-
+Areal	Areal	NN	0	0	1	-	-	-
+Argument	Argument	NN	0	0	1	0.4	0.6	0
+Argumentation	Argumentation	NN	0	0	1	-	-	-
+Argumente	Argument	NN	0	0	1	0.4	0.6	0
+Art	Art	NN	0	0	1	0.25	0.410714	0.339286
+Aspiration	Aspiration	NN	0	0	1	-	-	-
+Asyl	Asyl	NN	0	0	1	-	-	-
+Aszendent	Aszendent	NN	0	0	1	-	-	-
+Atemzug	Atemzug	NN	0	0	1	-	-	-
+Aufarbeitung	Aufarbeitung	NN	0	0	1	-	-	-
+Aufenthalt	Aufenthalt	NN	0	0	1	-	-	-
+Auffassung	Auffassung	NN	0	0	1	0	0	1
+Aufführung	Aufführung	NN	0	0	1	-	-	-
+Aufgabenstellung	Aufgabenstellung	NN	0	0	1	0	1	0
+Aufladen	aufladen	VVINF	0	0	1	0.36	0.44	0.2
+Auflagergröße	Auflagergröße	NN	0	0	1	-	-	-
+Auflagerkraft	Auflagerkraft	NN	0	0	1	-	-	-
+Auflagerreaktion	Auflagerreaktion	NN	0	0	1	-	-	-
+Aufsteller	Aufsteller	NN	0	0	1	-	-	-
+Auftakt	Auftakt	NN	0	0	1	-	-	-
+Aufteilung	Aufteilung	NN	0	0	1	-	-	-
+Auftrag	Auftrag	NN	0	0	1	0	1	0
+Auftreten	Auftreten	NN	0	0	1	0.121212	0.69697	0.181818
+Auftritt	Auftritt	NN	0	0	1	0.571429	0.428571	0
+Augenblick	Augenblick	NN	0	0	1	0.333333	0.333333	0.333333
+Augenbraue	Augenbraue	NN	0	0	1	-	-	-
+Aus-Stellung	Aus-Stellung	NN	0	0	1	-	-	-
+Ausbildungs	Ausbildungs	NN	0	0	1	-	-	-
+Ausblühungen	Ausblühungen	NN	0	0	1	-	-	-
+Ausdruck	Ausdruck	NN	0	0	1	0.357143	0.428571	0.214286
+Ausführung	Ausführung	NN	0	0	1	0.4	0.466667	0.133333
+Ausführungsform	Ausführungsform	NN	0	0	1	-	-	-
+Ausgang	Ausgang	NN	0	0	1	0.333333	0.5	0.166667
+Ausgangsdrossel	Ausgangsdrossel	NN	0	0	1	-	-	-
+Ausgangsform	Ausgangsform	NN	0	0	1	-	-	-
+Ausgestaltung	Ausgestaltung	NN	0	0	1	-	-	-
+Ausgießen	ausgießen	VVINF	0	0	1	0.375	0.5	0.125
+Aushärten	aushärten	VVINF	0	0	1	-	-	-
+Auskehlung	Auskehlung	NN	0	0	1	-	-	-
+Auskragung	Auskragung	NN	0	0	1	-	-	-
+Auslastung	Auslastung	NN	0	0	1	-	-	-
+Ausleger	Ausleger	NN	0	0	1	-	-	-
+Auslenkung	Auslenkung	NN	0	0	1	-	-	-
+Ausläufer	Ausläufer	NN	0	0	1	-	-	-
+Ausnutzung	Ausnutzung	NN	0	0	1	1	0	0
+Ausrichtung	Ausrichtung	NN	0	0	1	0.4	0.6	0
+Aussehen	Aussehen	NN	0	0	1	0.283582	0.477612	0.238806
+Aussichtspunkte	Aussichtspunkt	NN	0	0	1	-	-	-
+Ausstanzer	Ausstanzer	NN	0	0	1	-	-	-
+Ausstattungsfilm	Ausstattungsfilm	NN	0	0	1	-	-	-
+Aussteifung	Aussteifung	NN	0	0	1	-	-	-
+Ausstellung	Ausstellung	NN	0	0	1	-	-	-
+Aussteuerungsweite	Aussteuerungsweite	NN	0	0	1	-	-	-
+Ausströmreaktionskräfte	Ausströmreaktionskräfte	NN	0	0	1	-	-	-
+Austastung	Austastung	NN	0	0	1	-	-	-
+Ausweg	Ausweg	NN	0	0	1	-	-	-
+Auswerteverfahren	Auswerteverfahren	NN	0	0	1	-	-	-
+Auswertung	Auswertung	NN	0	0	1	0	0.666667	0.333333
+Auswärtsspiel	Auswärtsspiel	NN	0	0	1	-	-	-
+Auszug	Auszug	NN	0	0	1	0.25	0.25	0.5
+Baby	Baby	NN	0	0	1	0.5625	0.3125	0.125
+Bach	Bach	NN	0	0	1	0.25	0.5	0.25
+Bahn	Bahn	NN	0	0	1	0.5	0	0.5
+Balkenrost	Balkenrost	NN	0	0	1	-	-	-
+Ballwechsel	Ballwechsel	NN	0	0	1	-	-	-
+Bank	Bank	NN	0	0	1	0	0	1
+Bankert	Bankert	NE	0	0	1	-	-	-
+Bankschließfach	Bankschließfach	NN	0	0	1	-	-	-
+Basis	Basis	NN	0	0	1	0.307692	0.461538	0.230769
+Basisnetz	Basisnetz	NN	0	0	1	-	-	-
+Bauhöhe	Bauhöhe	NN	0	0	1	0	1	0
+Bauhütte	Bauhütte	NN	0	0	1	-	-	-
+Baumkante	Baumkante	NN	0	0	1	-	-	-
+Bausparkasse	Bausparkasse	NN	0	0	1	-	-	-
+Baustahlgewebe	Baustahlgewebe	NN	0	0	1	-	-	-
+Baustein-Freigabe	Baustein-Freigabe	NN	0	0	1	-	-	-
+Becken	Becken	NN	0	0	1	-	-	-
+Bedarf	Bedarf	NN	0	0	1	0.583333	0.333333	0.0833333
+Bediengerät	Bediengerät	NN	0	0	1	-	-	-
+Bedienungsfeld	Bedienungsfeld	NN	0	0	1	-	-	-
+Befinden	befinden	VVINF	0	0	1	0.410256	0.487179	0.102564
+Begleichung	Begleichung	NN	0	0	1	-	-	-
+Begriff	Begriff	NN	0	0	1	0.0909091	0.727273	0.181818
+Begründung	Begründung	NN	0	0	1	0	0.5	0.5
+Behandlung	Behandlung	NN	0	0	1	0.333333	0.333333	0.333333
+Behälter	Behälter	NN	0	0	1	0.391304	0.304348	0.304348
+Beispiel	Beispiel	NN	0	0	1	0.347305	0.383234	0.269461
+Beispielsfall	Beispielsfall	NN	0	0	1	-	-	-
+Beize	Beize	NN	0	0	1	-	-	-
+Beizen	Beize	NN	0	0	1	-	-	-
+Belang	belangen	VVINF	0	0	1	-	-	-
+Belange	belangen	VVINF	0	0	1	-	-	-
+Belletristik	Belletristik	NN	0	0	1	-	-	-
+Bemerkung	Bemerkung	NN	0	0	1	0	1	0
+Bemessung	Bemessung	NN	0	0	1	0	1	0
+Berater	Berater	NN	0	0	1	-	-	-
+Beratung	Beratung	NN	0	0	1	-	-	-
+Bereifung	Bereifung	NN	0	0	1	-	-	-
+Berichterstatter	Berichterstatter	NN	0	0	1	-	-	-
+Berlocke	Berlocke	NN	0	0	1	-	-	-
+Berührung	Berührung	NN	0	0	1	0	0.75	0.25
+Bescheid	Bescheid	NN	0	0	1	0.25	0.75	0
+Bescheinigungswesen	Bescheinigungswesen	NN	0	0	1	-	-	-
+Beschlag	Beschlag	NN	0	0	1	-	-	-
+Beschleuniger	Beschleuniger	NN	0	0	1	-	-	-
+Beschleunigung	Beschleunigung	NN	0	0	1	0	1	0
+Beschluss	Beschluß	NN	0	0	1	-	-	-
+Beschnittzugabe	Beschnittzugabe	NN	0	0	1	-	-	-
+Besitzer	Besitzer	NN	0	0	1	0.461538	0.461538	0.0769231
+Besitzerin	Besitz	NE	0	0	1	0.47619	0.333333	0.190476
+Besitzübertragung	Besitzübertragung	NN	0	0	1	-	-	-
+Bestimmung	Bestimmung	NN	0	0	1	0	0	1
+Beteiligung	Beteiligung	NN	0	0	1	0	1	0
+Beton	Beton	NN	0	0	1	0.8	0.2	0
+Betonung	Betonung	NN	0	0	1	-	-	-
+Betrieb	Betrieb	NN	0	0	1	0.294118	0.458824	0.247059
+Betriebsverfassungsgesetz	Betriebsverfassungsgesetz	NN	0	0	1	-	-	-
+Beurteilung	Beurteilung	NN	0	0	1	0.142857	0.714286	0.142857
+Bevorzugung	Bevorzugung	NN	0	0	1	-	-	-
+Bewandtnis	Bewandtnis	NN	0	0	1	-	-	-
+Beweggrund	Beweggrund	NN	0	0	1	-	-	-
+Bewegung	Bewegung	NN	0	0	1	0.1875	0.5625	0.25
+Bewusstheit	Bewußtheit	NN	0	0	1	-	-	-
+Bewusstsein	Bewußtsein	NN	0	0	1	-	-	-
+Bewusstseinsbildung	Bewußtseinsbildung	NN	0	0	1	-	-	-
+Bewusstwerdung	Bewusstwerdung	NN	0	0	1	-	-	-
+Bezugsformstück	Bezugsformstück	NN	0	0	1	-	-	-
+Bild	Bild	NN	0	0	1	0.35533	0.380711	0.263959
+Bildabstand	Bildabstand	NN	0	0	1	-	-	-
+Bildhelligkeit	Bildhelligkeit	NN	0	0	1	-	-	-
+Bildkontrastverstärkung	Bildkontrastverstärkung	NN	0	0	1	-	-	-
+Bildnis	Bildnis	NN	0	0	1	-	-	-
+Bindebogen	Bindebogen	NN	0	0	1	-	-	-
+Bisexuelle	Bisexuelle	NN	0	0	1	-	-	-
+Blattschraube	Blattschraube	NN	0	0	1	-	-	-
+Bleiplombe	Bleiplombe	NN	0	0	1	-	-	-
+Blende	Blende	NN	0	0	1	0	1	0
+Blendrahmen	Blendrahmen	NN	0	0	1	-	-	-
+Blitzen	Blitz	NN	0	0	1	0.75	0.25	0
+Block	Block	NN	0	0	1	0.5	0.166667	0.333333
+Blocksatz	Blocksatz	NN	0	0	1	-	-	-
+Blust	Blust	NN	0	0	1	-	-	-
+Blutrot	Blutrot	NN	0	0	1	-	-	-
+Boden	Boden	NN	0	0	1	0.301887	0.471698	0.226415
+Bodenverfestiger	Bodenverfestiger	NN	0	0	1	-	-	-
+Bodenwrange	Bodenwrange	NN	0	0	1	-	-	-
+Bogenweiche	Bogenweiche	NN	0	0	1	-	-	-
+Bohrarbeit	Bohrarbeit	NN	0	0	1	-	-	-
+Bohrloch	Bohrloch	NN	0	0	1	0	0.666667	0.333333
+Bohrung	Bohrung	NN	0	0	1	0	0.5	0.5
+Bordell	Bordell	NN	0	0	1	-	-	-
+Borstenhaar	Borstenhaar	NN	0	0	1	-	-	-
+Brandprobe	Brandprobe	NN	0	0	1	-	-	-
+Brandungswelle	Brandungswelle	NN	0	0	1	-	-	-
+Bride	Bride	NN	0	0	1	-	-	-
+Briefschluss	Briefschluss	NN	0	0	1	-	-	-
+Brötchen	Brötchen	NN	0	0	1	0.4	0.4	0.2
+Brückenpfeiler	Brückenpfeiler	NN	0	0	1	-	-	-
+Bund	Bund	NN	0	0	1	-	-	-
+Bundstäbchen	Bundstäbchen	NN	0	0	1	-	-	-
+Buntes	bunt	ADJA	0	0	1	0	0.454545	0.545455
+Buttertoffee	Buttertoffee	NN	0	0	1	-	-	-
+Bündnis	Bündnis	NN	0	0	1	-	-	-
+Bürgschaft	Bürgschaft	NN	0	0	1	-	-	-
+Bürgschaftsnehmer	Bürgschaftsnehmer	NN	0	0	1	-	-	-
+Cartoon	Cartoon	NN	0	0	1	-	-	-
+Chassis	Chassis	NN	0	0	1	-	-	-
+Cherub	Cherub	NN	0	0	1	-	-	-
+Chevreau	Chevreau	NN	0	0	1	-	-	-
+Chevreauleder	Chevreauleder	NN	0	0	1	-	-	-
+Chiffre	Chiffre	NN	0	0	1	-	-	-
+Chiffrierschlüssel	Chiffrierschlüssel	NN	0	0	1	-	-	-
+Choral	Choral	NN	0	0	1	0.5	0	0.5
+Chorraum	Chorraum	NN	0	0	1	-	-	-
+Chrysantheme	Chrysantheme	NN	0	0	1	-	-	-
+Clique	Clique	NN	0	0	1	-	-	-
+Dachschräge	Dachschräge	NN	0	0	1	-	-	-
+Darsteller	Darsteller	NN	0	0	1	0.333333	0.333333	0.333333
+Darstellung	Darstellung	NN	0	0	1	0.222222	0.444444	0.333333
+Datenoase	Datenoase	NN	0	0	1	-	-	-
+Dauer	Dauer	NN	0	0	1	0.117647	0.558824	0.323529
+Dauerhaftigkeit	Dauerhaftigkeit	NN	0	0	1	-	-	-
+Daumen	Daumen	NN	0	0	1	0.444444	0.444444	0.111111
+Deckband	Deckband	NN	0	0	1	-	-	-
+Deckelkorb	Deckelkorb	NN	0	0	1	-	-	-
+Deckfalte	Deckfalte	NN	0	0	1	-	-	-
+Deckstütze	Deckstütze	NN	0	0	1	-	-	-
+Deduktion	Deduktion	NN	0	0	1	-	-	-
+Definiertheit	Definiertheit	NN	0	0	1	-	-	-
+Delkredere	Delkredere	NN	0	0	1	-	-	-
+Denken	Denken	NN	0	0	1	0.245283	0.462264	0.292453
+Denkungsart	Denkungsart	NN	0	0	1	-	-	-
+Depotfund	Depotfund	NN	0	0	1	-	-	-
+Der	der	PDS	0	0	1	0.281173	0.473879	0.244948
+Destillationsapparat	Destillationsapparat	NN	0	0	1	-	-	-
+Destillationsblase	Destillationsblase	NN	0	0	1	-	-	-
+Dia	Dia	NN	0	0	1	-	-	-
+Diapositiv	Diapositiv	NN	0	0	1	-	-	-
+Dichtung	Dichtung	NN	0	0	1	0.2	0.7	0.1
+Dichtungsfilzstreifen	Dichtungsfilzstreifen	NN	0	0	1	-	-	-
+Diele	Diele	NN	0	0	1	-	-	-
+Dienstbote	Dienstbot	NN	0	0	1	-	-	-
+Dienstbotin	Dienstbotin	NN	0	0	1	-	-	-
+Dienstgrad	Dienstgrad	NN	0	0	1	-	-	-
+Dienstrang	Dienstrang	NN	0	0	1	-	-	-
+Differenz	Differenz	NN	0	0	1	0	1	0
+Differenzbetrag	Differenzbetrag	NN	0	0	1	-	-	-
+Digitalzeichen	Digitalzeichen	NN	0	0	1	-	-	-
+Ding	Ding	NN	0	0	1	0.271605	0.561728	0.166667
+Dinge	Ding	NN	0	0	1	0.271605	0.561728	0.166667
+Diplomatie	Diplomatie	NN	0	0	1	-	-	-
+Distribution	Distribution	NN	0	0	1	0	0	1
+Drahtkorbbuhne	Drahtkorbbuhne	NN	0	0	1	-	-	-
+Drahtschotterbuhne	Drahtschotterbuhne	NN	0	0	1	-	-	-
+Drall	Drall	NN	0	0	1	-	-	-
+Dreh	drehen	ADJD	0	0	1	0.346939	0.408163	0.244898
+Drehdurchmesser	Drehdurchmesser	NN	0	0	1	-	-	-
+Drehscheibe	Drehscheibe	NN	0	0	1	-	-	-
+Drehung	Drehung	NN	0	0	1	-	-	-
+Drehungen	Drehung	NN	0	0	1	-	-	-
+Drosselklappe	Drosselklappe	NN	0	0	1	-	-	-
+Drosselspule	Drosselspule	NN	0	0	1	-	-	-
+Druckluft	Druckluft	NN	0	0	1	-	-	-
+Druckpresse	Druckpresse	NN	0	0	1	-	-	-
+Druckstoß	Druckstoß	NN	0	0	1	-	-	-
+Durchblicke	Durchblick	NN	0	0	1	-	-	-
+Durchfahrtshöhe	Durchfahrtshöhe	NN	0	0	1	-	-	-
+Durchführung	Durchführung	NN	0	0	1	1	0	0
+Durchscheinen	durchscheinen	VVINF	0	0	1	0	0	1
+Durchschlagpapier	Durchschlagpapier	NN	0	0	1	-	-	-
+Dämmerung	Dämmerung	NN	0	0	1	1	0	0
+Dämpfung	Dämpfung	NN	0	0	1	0	1	0
+Dämpfungsverhältnis	Dämpfungsverhältnis	NN	0	0	1	-	-	-
+Eben	eben	ADJD	0	0	1	0.248408	0.43949	0.312102
+Ebene	Ebene	NN	0	0	1	0.25	0.75	0
+Effektivverzinsung	Effektivverzinsung	NN	0	0	1	-	-	-
+Ehefähigkeitszeugnis	Ehefähigkeitszeugnis	NN	0	0	1	-	-	-
+Eigenkapitaldecke	Eigenkapitaldecke	NN	0	0	1	-	-	-
+Eigenschaft	Eigenschaft	NN	0	0	1	0.333333	0.4	0.266667
+Einbildungskraft	Einbildungskraft	NN	0	0	1	-	-	-
+Einfachheit	Einfachheit	NN	0	0	1	0.666667	0.333333	0
+Einfall	Einfall	NN	0	0	1	0	1	0
+Einfallen	einfallen	VVINF	0	0	1	0.166667	0.5	0.333333
+Einflugloch	Einflugloch	NN	0	0	1	-	-	-
+Einfärbemittel	Einfärbemittel	NN	0	0	1	-	-	-
+Einkünfte	Einkunft	NN	0	0	1	-	-	-
+Einstellung	Einstellung	NN	0	0	1	0.296296	0.37037	0.333333
+Eintopf	Eintopf	NN	0	0	1	-	-	-
+Eintopfgericht	Eintopfgericht	NN	0	0	1	-	-	-
+Einziehschacht	Einziehschacht	NN	0	0	1	-	-	-
+Elektronenbeschuss	Elektronenbeschuss	NN	0	0	1	-	-	-
+Elektroschock-Gürtel	Elektroschock-Gürtel	NN	0	0	1	-	-	-
+Elfmeter	Elfmeter	NN	0	0	1	-	-	-
+Eltern	Elter	NN	0	0	1	0.526316	0.315789	0.157895
+Emotion	Emotion	NN	0	0	1	0.6	0.2	0.2
+Empfangsbestätigung	Empfangsbestätigung	NN	0	0	1	-	-	-
+Empfindung	Empfindung	NN	0	0	1	-	-	-
+Endneigung	Endneigung	NN	0	0	1	-	-	-
+Enkelgesellschaft	Enkelgesellschaft	NN	0	0	1	-	-	-
+Entstellung	Entstellung	NN	0	0	1	-	-	-
+Entwerter	Entwerter	NN	0	0	1	-	-	-
+Entwurf	Entwurf	NN	0	0	1	-	-	-
+Entwurfsziel	Entwurfsziel	NN	0	0	1	-	-	-
+Er	ich	XY	0	0	1	0.290617	0.476612	0.232771
+Erbe	Erbe	NN	0	0	1	0	0	1
+Erfindung	Erfindung	NN	0	0	1	0.571429	0.142857	0.285714
+Ergehen	ergehen	VVINF	0	0	1	0	0.75	0.25
+Ergriffenheit	Ergriffenheit	NN	0	0	1	-	-	-
+Ergussgestein	Ergussgestein	NN	0	0	1	-	-	-
+Erkenntnisbereich	Erkenntnisbereich	NN	0	0	1	-	-	-
+Ernährung	Ernährung	NN	0	0	1	1	0	0
+Erprobung	Erprobung	NN	0	0	1	-	-	-
+Erregung	Erregung	NN	0	0	1	-	-	-
+Ersatz	Ersatz	NN	0	0	1	0.148936	0.446809	0.404255
+Erwartung	Erwartung	NN	0	0	1	0.271429	0.457143	0.271429
+Erwartungswert	Erwartungswert	NN	0	0	1	-	-	-
+Erziehungsberechtigte	Erziehungsberechtigte	NN	0	0	1	-	-	-
+Erzählung	Erzählung	NN	0	0	1	-	-	-
+Europäische	Europäische	NN	0	0	1	-	-	-
+Exeget	Exeget	NN	0	0	1	-	-	-
+Exegetin	Exegetin	NN	0	0	1	-	-	-
+Exemplar	Exemplar	NN	0	0	1	0.125	0.625	0.25
+Experiment	Experiment	NN	0	0	1	0.333333	0.333333	0.333333
+Expertenkommission	Expertenkommission	NN	0	0	1	-	-	-
+Fadenreiniger	Fadenreiniger	NN	0	0	1	-	-	-
+Fahrzeugfolge	Fahrzeugfolge	NN	0	0	1	-	-	-
+Fakt	Fakt	NN	0	0	1	0.5	0.5	0
+Faktum	Faktum	NN	0	0	1	0.5	0.25	0.25
+Fall	Fall	NN	0	0	1	0.343434	0.353535	0.30303
+Farbe	Farbe	NN	0	0	1	0.313433	0.328358	0.358209
+Farbstich	Farbstich	NN	0	0	1	-	-	-
+Farbton	Farbton	NN	0	0	1	-	-	-
+Farbtongleichheit	Farbtongleichheit	NN	0	0	1	-	-	-
+Fasten	fasten	VVINF	0	0	1	-	-	-
+Fechtbruder	Fechtbruder	NN	0	0	1	-	-	-
+Federkraft	Federkraft	NN	0	0	1	-	-	-
+Feldstärke	Feldstärke	NN	0	0	1	-	-	-
+Fensternische	Fensternische	NN	0	0	1	-	-	-
+Festung	Festung	NN	0	0	1	-	-	-
+Finanzdiplomatie	Finanzdiplomatie	NN	0	0	1	-	-	-
+Fixativ	Fixativ	NN	0	0	1	-	-	-
+Fixierbad	Fixierbad	NN	0	0	1	-	-	-
+Fixierer	Fixierer	NN	0	0	1	-	-	-
+Flachspan	Flachspan	NN	0	0	1	-	-	-
+Flamme	Flamme	NN	0	0	1	0.25	0.5	0.25
+Fleischergeselle	Fleischergeselle	NN	0	0	1	-	-	-
+Fleischerhandwerk	Fleischerhandwerk	NN	0	0	1	-	-	-
+Flor	Flor	NN	0	0	1	0	0	1
+Fluchtburg	Fluchtburg	NN	0	0	1	-	-	-
+Fluchtstange	Fluchtstange	NN	0	0	1	-	-	-
+Fluglage	Fluglage	NN	0	0	1	-	-	-
+Folgerung	Folgerung	NN	0	0	1	-	-	-
+Freisetzung	Freisetzung	NN	0	0	1	-	-	-
+Fremdatom	Fremdatom	NN	0	0	1	-	-	-
+Fremdfinanzierungsgrad	Fremdfinanzierungsgrad	NN	0	0	1	-	-	-
+Fußnote	Fußnote	NN	0	0	1	-	-	-
+Färbemittel	Färbemittel	NN	0	0	1	-	-	-
+Färberröte	Färberröte	NN	0	0	1	-	-	-
+Färberöte	Färberöte	NN	0	0	1	-	-	-
+Garndrehung	Garndrehung	NN	0	0	1	-	-	-
+Gartenfuchsschwanz	Gartenfuchsschwanz	NN	0	0	1	-	-	-
+Geblüt	Geblüt	NN	0	0	1	-	-	-
+Gebot	Gebot	NN	0	0	1	-	-	-
+Gebärdenspiel	Gebärdenspiel	NN	0	0	1	-	-	-
+Gedanke	Gedanke	NN	0	0	1	0.785714	0.214286	0
+Gedankenstrich	Gedankenstrich	NN	0	0	1	-	-	-
+Gegebenheit	Gegebenheit	NN	0	0	1	0.5	0	0.5
+Gegenüber	gegenüber	PTKVZ	0	0	1	0.423077	0.230769	0.346154
+Geistesart	Geistesart	NN	0	0	1	-	-	-
+Geisteshaltung	Geisteshaltung	NN	0	0	1	-	-	-
+Gemütsart	Gemütsart	NN	0	0	1	-	-	-
+Gemütsverfassung	Gemütsverfassung	NN	0	0	1	-	-	-
+Gericht	Gericht	NN	0	0	1	1	0	0
+Gerichtsentscheidung	Gerichtsentscheidung	NN	0	0	1	-	-	-
+Gerichtshof	Gerichtshof	NN	0	0	1	-	-	-
+Gerichtsurteil	Gerichtsurteil	NN	0	0	1	-	-	-
+Geschichte	Geschichte	NN	0	0	1	0.478261	0.217391	0.304348
+Geschmack	Geschmack	NN	0	0	1	0.292135	0.47191	0.235955
+Geschmacksrichtung	Geschmacksrichtung	NN	0	0	1	1	0	0
+Geschwindigkeit	Geschwindigkeit	NN	0	0	1	0.48	0.28	0.24
+Gesetze	Gesetz	NN	0	0	1	0	0	1
+Gesichtswinkel	Gesichtswinkel	NN	0	0	1	-	-	-
+Gewicht	Gewicht	NN	0	0	1	0.434783	0.369565	0.195652
+Gewissen	Gewisse	NN	0	0	1	0.625	0.25	0.125
+Gewohnheits	Gewohnheit	NE	0	0	1	-	-	-
+Gewächshaus	Gewächshaus	NN	0	0	1	-	-	-
+Ghettoblaster	Ghettoblaster	NE	0	0	1	-	-	-
+Gießbach	Gießbach	NN	0	0	1	-	-	-
+Gittervorspannung	Gittervorspannung	NN	0	0	1	-	-	-
+Glaube	Glaube	NN	0	0	1	0	1	0
+Glauben	Glaube	NN	0	0	1	0	1	0
+Gleisner	Gleisner	NE	0	0	1	-	-	-
+Glimmen	glimmen	VVINF	0	0	1	-	-	-
+Gott	Gott	NN	0	0	1	0.214286	0.642857	0.142857
+Gottes	Gott	NN	0	0	1	0.214286	0.642857	0.142857
+Gottesdienst	Gottesdienst	NN	0	0	1	-	-	-
+Grabung	Grabung	NN	0	0	1	-	-	-
+Grannenhaar	Grannenhaar	NN	0	0	1	-	-	-
+Griffigkeit	Griffigkeit	NN	0	0	1	0	0	1
+Groß	groß	ADJD	0	0	1	0.324427	0.419847	0.255725
+Großsprecher	Großsprecher	NN	0	0	1	-	-	-
+Großunternehmen	Großunternehmen	NN	0	0	1	-	-	-
+Grund	Grund	NN	0	0	1	0.154472	0.642276	0.203252
+Grundaufbau	Grundaufbau	NN	0	0	1	-	-	-
+Grundschaltung	Grundschaltung	NN	0	0	1	-	-	-
+Gruppe	Gruppe	NN	0	0	1	0.181818	0.636364	0.181818
+Gummisauger	Gummisauger	NN	0	0	1	-	-	-
+Guss	Guß	NN	0	0	1	0.857143	0	0.142857
+Gärung	Gärung	NN	0	0	1	-	-	-
+Hafen	Hafen	NN	0	0	1	-	-	-
+Haltung	Haltung	NN	0	0	1	0.4	0.2	0.4
+Handhabung	Handhabung	NN	0	0	1	0.405797	0.318841	0.275362
+Handreichung	Handreichung	NN	0	0	1	-	-	-
+Haptik	Haptik	NN	0	0	1	0.2	0.6	0.2
+Hartmatte	Hartmatte	NE	0	0	1	-	-	-
+Hartmetall	Hartmetall	NN	0	0	1	-	-	-
+Hauch	Hauch	NN	0	0	1	0.333333	0.666667	0
+Haupt	Haupt	NN	0	0	1	0.25	0.75	0
+Hauptwort	Hauptwort	NN	0	0	1	-	-	-
+Hefebrötchen	Hefebrötchen	NN	0	0	1	-	-	-
+Herold	Herold	NN	0	0	1	-	-	-
+Himmelskörper	Himmelskörper	NN	0	0	1	-	-	-
+Hinweis	Hinweis	NN	0	0	1	0.275862	0.551724	0.172414
+Hitze	Hitze	NN	0	0	1	0.142857	0.285714	0.571429
+Hoch	hoch	ADJD	0	0	1	0.33463	0.474708	0.190661
+Hochdruck	Hochdruck	NN	0	0	1	-	-	-
+Hochschaubahn	Hochschaubahn	NN	0	0	1	-	-	-
+Hochsitz	Hochsitz	NN	0	0	1	-	-	-
+Holzpantoffel	Holzpantoffel	NN	0	0	1	-	-	-
+Horstbildung	Horstbildung	NN	0	0	1	-	-	-
+Hotelzimmer	Hotelzimmer	NN	0	0	1	-	-	-
+Hypothese	Hypothese	NN	0	0	1	-	-	-
+Hämatokritwert	Hämatokritwert	NN	0	0	1	-	-	-
+Höhenleitwerk	Höhenleitwerk	NN	0	0	1	-	-	-
+Hügel	Hügel	NN	0	0	1	-	-	-
+Hüne	Hüne	NN	0	0	1	-	-	-
+Hünengestalt	Hünengestalt	NN	0	0	1	-	-	-
+Inanspruchnahme	Inanspruchnahme	NN	0	0	1	0	0	1
+Inbegriff	Inbegriff	NN	0	0	1	1	0	0
+Inhibit-Draht	Inhibit-Draht	NN	0	0	1	-	-	-
+Insel	Insel	NN	0	0	1	0.666667	0	0.333333
+Instrumententafel	Instrumententafel	NN	0	0	1	-	-	-
+Intention	Intention	NN	0	0	1	0	1	0
+Isotopenhäufigkeit	Isotopenhäufigkeit	NN	0	0	1	-	-	-
+Jagdfauna	Jagdfauna	NN	0	0	1	-	-	-
+Jahresabschluss	Jahresabschluß	NN	0	0	1	-	-	-
+Johanniskraut	Johanniskraut	NE	0	0	1	-	-	-
+Kanalkühlofen	Kanalkühlofen	NN	0	0	1	-	-	-
+Kaufmann-Abderhalden-De	Kaufmann-Abderhalden-De	NN	0	0	1	-	-	-
+Kehrschaufel	Kehrschaufel	NN	0	0	1	-	-	-
+Kerl	Kerl	NN	0	0	1	0	1	0
+Kirchengesang	Kirchengesang	NN	0	0	1	-	-	-
+Klausurtagung	Klausurtagung	NN	0	0	1	-	-	-
+Kleinbildkamera	Kleinbildkamera	NN	0	0	1	1	0	0
+Kleinkind	Kleinkind	NN	0	0	1	0.166667	0.5	0.333333
+Kleinstkind	Kleinstkind	NN	0	0	1	-	-	-
+Knabe	Knabe	NN	0	0	1	-	-	-
+Koaxialkabel	Koaxialkabel	NN	0	0	1	-	-	-
+Kohldampf	Kohldampf	NN	0	0	1	-	-	-
+Koje	Koje	NN	0	0	1	-	-	-
+Kollerstoff	Kollerstoff	NN	0	0	1	-	-	-
+Konfektions	Konfektions	NN	0	0	1	-	-	-
+Konfitüre	Konfitüre	NN	0	0	1	-	-	-
+Konjektur	Konjektur	NN	0	0	1	-	-	-
+Konservenglas	Konservenglas	NN	0	0	1	-	-	-
+Kontakt	Kontakt	NN	0	0	1	0.205882	0.588235	0.205882
+Konzernumlagen	Konzernumlage	NN	0	0	1	-	-	-
+Krebs	Krebs	NN	0	0	1	-	-	-
+Kreisen	Kreis	NN	0	0	1	0	1	0
+Kriegsdienstverweigerung	Kriegsdienstverweigerung	NN	0	0	1	-	-	-
+Krokant	Krokant	NN	0	0	1	-	-	-
+Kundgebung	Kundgebung	NN	0	0	1	-	-	-
+Köpfchenkräusel	Köpfchenkräusel	NN	0	0	1	-	-	-
+Körperhaltung	Körperhaltung	NN	0	0	1	1	0	0
+Kühlbahn	Kühlbahn	NN	0	0	1	-	-	-
+Kühlofen	Kühlofen	NN	0	0	1	-	-	-
+Kürbis	Kürbis	NN	0	0	1	1	0	0
+Kürbispflanze	Kürbispflanze	NN	0	0	1	-	-	-
+Lecherleitung	Lecherleitung	NE	0	0	1	-	-	-
+Lehrbetrieb	Lehrbetrieb	NN	0	0	1	-	-	-
+Lehrvortrag	Lehrvortrag	NN	0	0	1	-	-	-
+Letalkonzentration	Letalkonzentration	NN	0	0	1	-	-	-
+Längsmesser	Längsmesser	NN	0	0	1	-	-	-
+MM-These	Mm-these	FM	0	0	1	-	-	-
+Maat	Maat	NN	0	0	1	-	-	-
+Mama	Mama	NN	0	0	1	0.5	0.5	0
+Mantra	Mantra	NN	0	0	1	-	-	-
+Manöver	Manöver	NN	0	0	1	-	-	-
+Markenrecht	Markenrecht	NN	0	0	1	-	-	-
+Markterholung	Markterholung	NN	0	0	1	-	-	-
+Masse	Masse	NN	0	0	1	0.230769	0.615385	0.153846
+Maximum-Likelihood-Schätzung	Maximum-Likelihood-Schätzung	NN	0	0	1	-	-	-
+Maßstab	Maßstab	NN	0	0	1	0.2	0.2	0.6
+Meinung	Meinung	NN	0	0	1	0.287671	0.465753	0.246575
+Meinungen	Meinung	NN	0	0	1	0.287671	0.465753	0.246575
+Menge	Menge	NN	0	0	1	0.389831	0.322034	0.288136
+Menschengeschlecht	Menschengeschlecht	NN	0	0	1	-	-	-
+Merkmal	Merkmal	NN	0	0	1	0.25	0.5	0.25
+Methode	Methode	NN	0	0	1	0.333333	0.333333	0.333333
+Minister	Minister	NN	0	0	1	-	-	-
+Ministerpräsident	Ministerpräsident	NN	0	0	1	-	-	-
+Ministerpräsidentin	Ministerpräsidentin	NN	0	0	1	-	-	-
+Mir	sich	PRF	0	0	1	0.287129	0.478742	0.234129
+Mischen	mischen	VVINF	0	0	1	0.5	0	0.5
+Mittagsschlaf	Mittagsschlaf	NN	0	0	1	-	-	-
+Mittel	Mittel	NN	0	0	1	0.5	0.166667	0.333333
+Mitwirkende	Mitwirkende	NN	0	0	1	-	-	-
+Mond	Mond	NN	0	0	1	0	1	0
+Most	Most	NN	0	0	1	0.5	0	0.5
+Motiv	Motiv	NN	0	0	1	1	0	0
+Muttermund	Muttermund	NN	0	0	1	-	-	-
+März	März	NN	0	0	1	0	0.75	0.25
+Nachleuchten	Nachleuchten	NN	0	0	1	-	-	-
+Nahpunkt	Nahpunkt	NN	0	0	1	-	-	-
+Nahrung	Nahrung	NN	0	0	1	0	0.5	0.5
+Nationalismus	Nationalismus	NN	0	0	1	-	-	-
+Nebenfluss	Nebenfluß	NN	0	0	1	-	-	-
+Nesselzelle	Nesselzelle	NN	0	0	1	-	-	-
+Netzhaftmittel	Netzhaftmittel	NN	0	0	1	-	-	-
+Nickerchen	Nickerchen	NN	0	0	1	-	-	-
+Nimm	nehmen	VVINF	0	0	1	0.246835	0.468354	0.28481
+Normalkorn	Normalkorn	NN	0	0	1	-	-	-
+Nuance	Nuance	NN	0	0	1	0	1	0
+Nutzladung	Nutzladung	NN	0	0	1	-	-	-
+OH-Form	OH-Form	NN	0	0	1	-	-	-
+OH-Gruppe	OH-Gruppe	NN	0	0	1	-	-	-
+Oberflächenansammlung	Oberflächenansammlung	NN	0	0	1	-	-	-
+Offenstall	Offenstall	NN	0	0	1	-	-	-
+Oktopus	Oktopus	NN	0	0	1	-	-	-
+Oldtimer-Ausstellung	Oldtimer-Ausstellung	NN	0	0	1	-	-	-
+Originalmaßstab	Originalmaßstab	NN	0	0	1	-	-	-
+Orthodoxie	Orthodoxie	NN	0	0	1	-	-	-
+Parteianhänger	Parteianhänger	NN	0	0	1	-	-	-
+Parteigänger	Parteigänger	NN	0	0	1	-	-	-
+Patt	Patt	NN	0	0	1	-	-	-
+Pattsituation	Pattsituation	NN	0	0	1	-	-	-
+Pauschal	pauschal	ADJD	0	0	1	-	-	-
+Peilung	Peilung	NN	0	0	1	-	-	-
+Peripheriegerät	Peripheriegerät	NN	0	0	1	-	-	-
+Personality-Job-Fit-Theorie	Personality-Job-Fit-Theorie	NN	0	0	1	-	-	-
+Pflege	Pflege	NN	0	0	1	0.166667	0.666667	0.166667
+Plan	Plan	NN	0	0	1	0	1	0
+Plenar	Plenar	NN	0	0	1	-	-	-
+Plusquamperfekt	Plusquamperfekt	NN	0	0	1	-	-	-
+Plädoyer	Plädoyer	NN	0	0	1	-	-	-
+Pneu	Pneu	XY	0	0	1	-	-	-
+Politik	Politik	NN	0	0	1	0.5	0.25	0.25
+Posaune	Posaune	NN	0	0	1	-	-	-
+Positur	Positur	NN	0	0	1	-	-	-
+Presse	Presse	NN	0	0	1	0.3	0.5	0.2
+Probe	Probe	NN	0	0	1	0	0.6	0.4
+Prophezeiung	Prophezeiung	NN	0	0	1	-	-	-
+Präsenzhandelsform	Präsenzhandelsform	NN	0	0	1	-	-	-
+Präteritum	Präteritum	NN	0	0	1	-	-	-
+Prüfung	Prüfung	NN	0	0	1	0.333333	0.333333	0.333333
+Raffination	Raffination	NN	0	0	1	-	-	-
+Raute	Raute	NN	0	0	1	-	-	-
+Reaktionskräfte	Reaktionskraft	NN	0	0	1	-	-	-
+Realien	Realien	NN	0	0	1	-	-	-
+Redensart	Redensart	NN	0	0	1	-	-	-
+Regeneratgummi	Regeneratgummi	NN	0	0	1	-	-	-
+Reibungselektrizität	Reibungselektrizität	NN	0	0	1	-	-	-
+Reifen	Reif	NN	0	0	1	0.428571	0.357143	0.214286
+Rhetorik	Rhetorik	NN	0	0	1	-	-	-
+Richard	Richard	NE	0	0	1	1	0	0
+Richterspruch	Richterspruch	NN	0	0	1	-	-	-
+Richtlinien	Richtlinie	NN	0	0	1	-	-	-
+Richtung	Richtung	NN	0	0	1	0.241379	0.448276	0.310345
+Rohboden	Rohboden	NN	0	0	1	-	-	-
+Röstbrot	Röstbrot	NE	0	0	1	-	-	-
+Sachkonto	Sachkonto	NN	0	0	1	-	-	-
+Sachverhalt	Sachverhalt	NN	0	0	1	-	-	-
+Sandvorspülung	Sandvorspülung	NN	0	0	1	-	-	-
+Schallfänger	Schallfänger	NN	0	0	1	-	-	-
+Schalltrichter	Schalltrichter	NN	0	0	1	-	-	-
+Schaltpunkt	Schaltpunkt	NN	0	0	1	-	-	-
+Schanze	Schanze	NN	0	0	1	-	-	-
+Schild	Schild	NN	0	0	1	0	0	1
+Schlüsselstelle	Schlüsselstelle	NN	0	0	1	-	-	-
+Seegras	Seegras	NN	0	0	1	-	-	-
+Sein	Sein	NN	0	0	1	0.289392	0.465159	0.24545
+Seine	mein	PPOSAT	0	0	1	0.317023	0.448656	0.234321
+Sendung	Sendung	NN	0	0	1	0	0.833333	0.166667
+Soll-Wert	Soll-Wert	NN	0	0	1	-	-	-
+Spar	sparen	ADJD	0	0	1	0.271605	0.481481	0.246914
+Sparkasse	Sparkasse	NN	0	0	1	-	-	-
+Spaten	Spaten	NN	0	0	1	-	-	-
+Spedition	Spedition	NN	0	0	1	0.571429	0	0.428571
+Spekulation	Spekulation	NN	0	0	1	0	1	0
+Spiel	Spiel	NN	0	0	1	0.4375	0.375	0.1875
+Spielzeug	Spielzeug	NN	0	0	1	0.0588235	0.647059	0.294118
+Stationsvorsteher	Stationsvorsteher	NN	0	0	1	-	-	-
+Stichelhaar	Stichelhaar	NN	0	0	1	-	-	-
+Stola	Stola	NN	0	0	1	-	-	-
+Strahldichte	Strahldichte	NN	0	0	1	-	-	-
+Strahlung	Strahlung	NN	0	0	1	1	0	0
+Tatsache	Tatsache	NN	0	0	1	0.1875	0.4375	0.375
+Testament	Testament	NN	0	0	1	-	-	-
+Toastbrot	Toastbrot	NN	0	0	1	1	0	0
+Trickfilm	Trickfilm	NN	0	0	1	-	-	-
+Typ	Typ	NN	0	0	1	0	0.777778	0.222222
+Umschaltfreigabe	Umschaltfreigabe	NN	0	0	1	-	-	-
+Umwelteinstellungen	Umwelteinstellung	NN	0	0	1	-	-	-
+Unermesslichkeit	Unermeßlichkeit	NN	0	0	1	-	-	-
+Untersuchung	Untersuchung	NN	0	0	1	0	1	0
+Vegetationsaufnahmen	Vegetationsaufnahme	NN	0	0	1	-	-	-
+Verarbeitung	Verarbeitung	NN	0	0	1	0.302439	0.453659	0.243902
+Verbindung	Verbindung	NN	0	0	1	0.234043	0.638298	0.12766
+Verbindungen	Verbindung	NN	0	0	1	0.234043	0.638298	0.12766
+Verkehrsberuhigung	Verkehrsberuhigung	NN	0	0	1	-	-	-
+Vermutung	Vermutung	NN	0	0	1	0	0.666667	0.333333
+Verschanzung	Verschanzung	NN	0	0	1	-	-	-
+Verwandtschaft	Verwandtschaft	NN	0	0	1	-	-	-
+Volllast	Volllast	NN	0	0	1	0	1	0
+Volllastanreicherung	Volllastanreicherung	NN	0	0	1	-	-	-
+Vorahnung	Vorahnung	NN	0	0	1	-	-	-
+Vorspiegelung	Vorspiegelung	NN	0	0	1	-	-	-
+Vorstellung	Vorstellung	NN	0	0	1	0.333333	0.5	0.166667
+Vorvergangenheit	Vorvergangenheit	NN	0	0	1	-	-	-
+Väter	Vater	NN	0	0	1	0.5	0.25	0.25
+Wahlimpulse	Wahlimpuls	NN	0	0	1	-	-	-
+Wahlprüfung	Wahlprüfung	NN	0	0	1	-	-	-
+Wahrscheinlichkeit	Wahrscheinlichkeit	NN	0	0	1	0	0.5	0.5
+Waschtisch	Waschtisch	NN	0	0	1	-	-	-
+Wehrdienstverweigerung	Wehrdienstverweigerung	NN	0	0	1	-	-	-
+Weib	Weib	NN	0	0	1	-	-	-
+Weinraute	Weinraute	NN	0	0	1	-	-	-
+Welle	Welle	NN	0	0	1	0	0.666667	0.333333
+Werde	werden	VVFIN	0	0	1	0.258483	0.493513	0.248004
+Wettbewerb	Wettbewerb	NN	0	0	1	0	1	0
+Wir	wir	PPER	0	0	1	0.327273	0.484848	0.187879
+Zettel	Zettel	NN	0	0	1	0	1	0
+Zollpräferenzen	Zollpräferenz	NN	0	0	1	-	-	-
+Zweimaster	Zweimaster	NN	0	0	1	-	-	-
+Züchtung	Züchtung	NN	0	0	1	-	-	-
+ab-	ab-	VVINF	0	0	1	-	-	-
+aber	aber	KON	0	0	1	0.251292	0.469234	0.279474
+abgetastet	abtasten	VVPP	0	0	1	-	-	-
+ablauschen	ablauschen	VVINF	0	0	1	-	-	-
+ableiten	ableiten	VVINF	0	0	1	0.333333	0.333333	0.333333
+ableitend	ableitend	ADJD	0	0	1	-	-	-
+ablenken	ablenken	VVINF	0	0	1	0	0.5	0.5
+abschätzen	abschätzen	VVINF	0	0	1	1	0	0
+absichtlich	absichtlich	ADJD	0	0	1	0	1	0
+absolut	absolut	ADJD	0	0	1	0.467456	0.420118	0.112426
+absorbiert	absorbieren	VVPP	0	0	1	-	-	-
+abwägen	abwägen	VVINF	0	0	1	-	-	-
+aha	aha	VVINF	0	0	1	0.5	0.25	0.25
+akzentuieren	akzentuieren	VVINF	0	0	1	1	0	0
+akzentuierte	akzentuieren	VVFIN	0	0	1	1	0	0
+allegorisieren	allegorisieren	VVINF	0	0	1	-	-	-
+allegorisierte	allegorisieren	VVFIN	0	0	1	-	-	-
+allenfalls	allenfalls	ADV	0	0	1	0.1	0.8	0.1
+aller	alle	PIS	0	0	1	0.377457	0.395806	0.226737
+allerdings	allerdings	ADV	0	0	1	0.228261	0.42663	0.345109
+allermeist	allermeist	ADJD	0	0	1	-	-	-
+alles	alle	PIS	0	0	1	0.377457	0.395806	0.226737
+allgemein	allgemein	ADJD	0	0	1	0.269231	0.5	0.230769
+alltäglich	alltäglich	ADJD	0	0	1	0	1	0
+allwissend	allwissend	ADJD	0	0	1	-	-	-
+allzu	allzu	PTKA	0	0	1	0.357143	0.571429	0.0714286
+alsbaldig	alsbaldig	ADJD	0	0	1	-	-	-
+analytisch	analytisch	ADJD	0	0	1	-	-	-
+anbelangend	anbelangend	ADJD	0	0	1	-	-	-
+andauernd	andauernd	ADJD	0	0	1	0	1	0
+andenken	andenken	VVINF	0	0	1	0	1	0
+andernfalls	andernfalls	ADV	0	0	1	-	-	-
+anders	anders	NN	0	0	1	0.294737	0.421053	0.284211
+anfänglich	anfänglich	ADJD	0	0	1	0.25	0.416667	0.333333
+angeboren	angeboren	ADJD	0	0	1	-	-	-
+angehender	angehend	ADJD	0	0	1	-	-	-
+angelegentlich	angelegentlich	VVPP	0	0	1	-	-	-
+angewiesen	anweisen	VVINF	0	0	1	0	0.75	0.25
+angezündet	anzünden	VVPP	0	0	1	-	-	-
+anhaftend	anhaftend	ADJD	0	0	1	-	-	-
+anmuten	anmuten	VVINF	0	0	1	-	-	-
+anscheinend	anscheinend	ADJD	0	0	1	0.125	0.5625	0.3125
+ansetzen	ansetzen	VVINF	0	0	1	0.333333	0.333333	0.333333
+anteilig	anteilig	ADJD	0	0	1	-	-	-
+anteilmäßig	anteilmäßig	ADJD	0	0	1	-	-	-
+anwachsend	anwachsend	ADJD	0	0	1	-	-	-
+anzeigend	anzeigend	ADJD	0	0	1	-	-	-
+arbeiten	arbeiten	VVINF	0	0	1	0.397727	0.375	0.227273
+astronomisch	astronomisch	ADJD	0	0	1	0	0	1
+astronomische	astronomisch	XY	0	0	1	0	0	1
+astronomisches	astronomisch	XY	0	0	1	0	0	1
+auch	auch	KON	0	0	1	0.318928	0.434745	0.246327
+auffassen	auffassen	VVINF	0	0	1	-	-	-
+aufgefangen	auffangen	VVPP	0	0	1	0	0	1
+aufgesaugt	aufsaugen	VVPP	0	0	1	0	1	0
+auflesen	auflesen	VVINF	0	0	1	-	-	-
+aufsuchen	aufsuchen	VVINF	0	0	1	0	1	0
+augenfällig	augenfällig	ADJD	0	0	1	-	-	-
+augenscheinlich	augenscheinlich	ADJD	0	0	1	0.5	0	0.5
+ausführlich	ausführlich	ADJD	0	0	1	0.363636	0.181818	0.454545
+ausgearbeitet	ausarbeiten	VVPP	0	0	1	-	-	-
+ausgedehnt	ausgedehnt	ADJD	0	0	1	-	-	-
+ausgesprochen	aussprechen	VVINF	0	0	1	0.75	0.125	0.125
+ausgestopft	ausstopfen	VVPP	0	0	1	-	-	-
+ausgesucht	aussuchen	VVPP	0	0	1	0.444444	0.333333	0.222222
+ausmalen	ausmalen	VVINF	0	0	1	0	1	0
+ausprobieren	ausprobieren	VVINF	0	0	1	0.377358	0.45283	0.169811
+ausrufen	ausrufen	VVINF	0	0	1	-	-	-
+ausschlaggebend	ausschlaggebend	ADJD	0	0	1	0.5	0.5	0
+ausschließlich	ausschließlich	ADJD	0	0	1	0.125	0.4375	0.4375
+aussehend	aussehend	ADJD	0	0	1	0	1	0
+außer	außer	APPR	0	0	1	0.203125	0.5625	0.234375
+außerdem	außerdem	PROAV	0	0	1	0.273292	0.465839	0.26087
+backen	backen	VVINF	0	0	1	0.371429	0.4	0.228571
+beabsichtigen	beabsichtigen	VVINF	0	0	1	0	1	0
+beabsichtigte	beabsichtigen	VVFIN	0	0	1	0	1	0
+beanspruchen	beanspruchen	VVINF	0	0	1	0	0.666667	0.333333
+beanspruchte	beanspruchen	VVFIN	0	0	1	0	0.666667	0.333333
+bedeuten	bedeuten	VVINF	0	0	1	0.166667	0.5	0.333333
+bedeutete	bedeuten	VVFIN	0	0	1	0.166667	0.5	0.333333
+bedingungslos	bedingungslos	ADJD	0	0	1	1	0	0
+begegnete	begegnen	VVFIN	0	0	1	0.666667	0.333333	0
+begierig	begierig	ADJD	0	0	1	-	-	-
+beglaubigt	beglaubigen	VVPP	0	0	1	-	-	-
+begreifen	begreifen	VVINF	0	0	1	0	1	0
+begriff	begreifen	VVINF	0	0	1	0	1	0
+beherrschend	beherrschend	ADJD	0	0	1	-	-	-
+bekannt	bekennen	VVPP	0	0	1	-	-	-
+benötigen	benötigen	VVINF	0	0	1	0.40625	0.34375	0.25
+berechenbar	berechenbar	ADJD	0	0	1	-	-	-
+bereitete	bereiten	VVFIN	0	0	1	0.588235	0.235294	0.176471
+berichtigend	berichtigend	ADJD	0	0	1	-	-	-
+beruhigte	beruhigen	VVINF	0	0	1	0.666667	0	0.333333
+beschauen	beschauen	VVINF	0	0	1	-	-	-
+beschaute	beschauen	VVINF	0	0	1	-	-	-
+bescheinigt	bescheinigen	VVPP	0	0	1	-	-	-
+beschließen	beschließen	VVINF	0	0	1	0	1	0
+beschloss	beschließen	VVINF	0	0	1	0	1	0
+besinnlich	besinnlich	ADJD	0	0	1	0.5	0	0.5
+besondere	besonder	ADJA	0	0	1	0.358974	0.358974	0.282051
+bestandsbezogen	bestandsbezogen	VVINF	0	0	1	-	-	-
+bestimmt	bestimmt	ADJD	0	0	1	0.233333	0.4	0.366667
+betete	beten	VVFIN	0	0	1	0	0	1
+betreffend	betreffend	ADJD	0	0	1	0	1	0
+beträchtlich	beträchtlich	ADJD	0	0	1	0	1	0
+beträchtliche	beträchtlich	ADJA	0	0	1	0	1	0
+bezeichnend	bezeichnend	ADJD	0	0	1	-	-	-
+beziehungsweise	beziehungsweise	KON	0	0	1	0.196203	0.487342	0.316456
+bieten	bieten	VVINF	0	0	1	0.329897	0.43299	0.237113
+billig	billig	ADJD	0	0	1	0.176166	0.544041	0.279793
+billigen	billigen	VVINF	0	0	1	0.535714	0.428571	0.0357143
+billigermaßen	billigermaßen	ADJD	0	0	1	-	-	-
+billigerweise	billigerweise	ADJD	0	0	1	-	-	-
+billigte	billigen	ADJD	0	0	1	0.535714	0.428571	0.0357143
+bindend	bindend	ADJD	0	0	1	-	-	-
+bisher	bisher	ADV	0	0	1	0.418367	0.397959	0.183673
+bitte	bitten	VVFIN	0	0	1	0.210526	0.684211	0.105263
+bißchen	bißchen	PIS	0	0	1	0.294872	0.410256	0.294872
+blasen	blasen	VVINF	0	0	1	0.222222	0.555556	0.222222
+bringen	bringen	VVINF	0	0	1	0.244186	0.546512	0.209302
+brutto	brutto	ADJD	0	0	1	-	-	-
+bunt	bunt	ADJD	0	0	1	0	0.454545	0.545455
+charakteristisch	charakteristisch	ADJD	0	0	1	0	1	0
+dadurch	dadurch	PROAV	0	0	1	0.287129	0.435644	0.277228
+dahin	dahin	PTKVZ	0	0	1	0.166667	0.666667	0.166667
+damit	damit	PROAV	0	0	1	0.288	0.458667	0.253333
+dargelegt	darlegen	VVPP	0	0	1	-	-	-
+darlegen	darlegen	VVINF	0	0	1	-	-	-
+darum	darum	ADV	0	0	1	0.555556	0.277778	0.166667
+darüber	darüber	PTKVZ	0	0	1	0.277778	0.555556	0.166667
+dazu	dazu	PTKVZ	0	0	1	0.377451	0.436275	0.186275
+demzufolge	demzufolge	VVINF	0	0	1	0	0	1
+denken	denken	VVINF	0	0	1	0.245283	0.462264	0.292453
+denkend	denkend	ADJD	0	0	1	-	-	-
+dennoch	dennoch	KON	0	0	1	0.382022	0.337079	0.280899
+derart	derart	ADV	0	0	1	0.0625	0.6875	0.25
+derartig	derartig	ADJD	0	0	1	0	1	0
+derb	derb	ADJD	0	0	1	0.333333	0.333333	0.333333
+dergleichen	dergleicher	PIS	0	0	1	0	0.5	0.5
+derzeitig	derzeitig	ADJD	0	0	1	0.5	0	0.5
+desgleichen	desgleichen	ADV	0	0	1	-	-	-
+deutete	deuten	VVFIN	0	0	1	0	1	0
+dicht	dicht	ADJD	0	0	1	0.428571	0.238095	0.333333
+dickwandig	dickwandig	ADJD	0	0	1	-	-	-
+direkt	direkt	ADJD	0	0	1	0.277778	0.444444	0.277778
+dominierend	dominierend	ADJD	0	0	1	-	-	-
+dramatisch	dramatisch	ADJD	0	0	1	0.5	0.5	0
+druckspitzenfreies	druckspitzenfreies	ADJD	0	0	1	-	-	-
+durch	durch	PTKVZ	0	0	1	0.352217	0.41133	0.236453
+durchaus	durchaus	ADV	0	0	1	0.274194	0.387097	0.33871
+durchdringend	durchdringend	ADJD	0	0	1	-	-	-
+durchscheinend	durchscheinend	ADJD	0	0	1	-	-	-
+durchsichtig	durchsichtig	ADJD	0	0	1	0.2	0.8	0
+dünken	dünken	VVINF	0	0	1	-	-	-
+dünkte	dünken	VVFIN	0	0	1	-	-	-
+dünn	dünn	ADJD	0	0	1	0.215686	0.529412	0.254902
+dürfen	dürfen	VMFIN	0	0	1	0.247706	0.513761	0.238532
+ebenfalls	ebenfalls	ADV	0	0	1	0.355556	0.4	0.244444
+ebenso	ebenso	ADV	0	0	1	0.5	0.36	0.14
+egal	egal	ADJD	0	0	1	0.293103	0.517241	0.189655
+egalitär	egalitär	ADJD	0	0	1	-	-	-
+eh	eh	ADV	0	0	1	0.27027	0.432432	0.297297
+eher	eher	ADV	0	0	1	0.218605	0.47907	0.302326
+eigen	eigen	ADJD	0	0	1	0.325301	0.433735	0.240964
+eigens	eigens	ADV	0	0	1	-	-	-
+eigentlich	eigentlich	ADJD	0	0	1	0.202279	0.512821	0.2849
+eilig	eilig	ADJD	0	0	1	0	1	0
+einförmig	einförmig	ADJD	0	0	1	0	0	1
+eingeschlossen	einschließen	VVINF	0	0	1	1	0	0
+einschneidend	einschneidend	ADJD	0	0	1	-	-	-
+einzeln	einzeln	ADJD	0	0	1	0.372549	0.372549	0.254902
+elementar	elementar	ADJD	0	0	1	0	1	0
+emotionsgeladen	emotionsgeladen	ADJD	0	0	1	-	-	-
+empfindlich	empfindlich	ADJD	0	0	1	0.318182	0.318182	0.363636
+endgültig	endgültig	ADJD	0	0	1	0.111111	0.888889	0
+enthüllend	enthüllend	ADJD	0	0	1	-	-	-
+entspiegelt	entspiegeln	VVPP	0	0	1	0	1	0
+entsprechend	entsprechen	VVPP	0	0	1	0.229508	0.442623	0.327869
+erhalten	erhalten	VVINF	0	0	1	0.277778	0.564815	0.157407
+erkannte	erkennen	VVFIN	0	0	1	0.245614	0.520468	0.233918
+erkennbar	erkennbar	ADJD	0	0	1	0.266667	0.6	0.133333
+erkennen	erkennen	VVINF	0	0	1	0.245614	0.520468	0.233918
+erneuerbar	erneuerbar	VVINF	0	0	1	-	-	-
+erneuerungsfähig	erneuerungsfähig	ADJD	0	0	1	-	-	-
+ernsthaft	ernsthaft	ADJD	0	0	1	0.214286	0.571429	0.214286
+erreichen	erreichen	VVINF	0	0	1	0.396825	0.349206	0.253968
+ersann	ersinnen	ADJD	0	0	1	-	-	-
+ersichtlich	ersichtlich	ADJD	0	0	1	0.166667	0.666667	0.166667
+ersinnen	ersinnen	VVINF	0	0	1	-	-	-
+erst	erst	NN	0	0	1	0.278519	0.491852	0.22963
+erwarten	erwarten	VVINF	0	0	1	0.185965	0.529825	0.284211
+erweiterbar	erweiterbar	VVINF	0	0	1	1	0	0
+etwa	etwa	ADV	0	0	1	0.283582	0.522388	0.19403
+etwas	etwas	PIS	0	0	1	0.336149	0.369932	0.293919
+eventuell	eventuell	ADJD	0	0	1	0.2	0.6	0.2
+exklusiv	exklusiv	ADJD	0	0	1	0	0	1
+fahrend	fahrend	ADJD	0	0	1	-	-	-
+faktisch	faktisch	ADJD	0	0	1	-	-	-
+farbecht	farbecht	ADJD	0	0	1	0	1	0
+fasste	fassen	VVINF	0	0	1	0.26087	0.478261	0.26087
+fehlerbehebend	fehlerbehebend	VVFIN	0	0	1	-	-	-
+ferner	fern	ADJD	0	0	1	0.4	0.4	0.2
+fest	fest	ADJD	0	0	1	0.247059	0.388235	0.364706
+feststellen	feststellen	VVINF	0	0	1	0.216216	0.54955	0.234234
+finanziell	finanziell	ADJD	0	0	1	0	1	0
+finanzielle	finanziell	ADJA	0	0	1	0	1	0
+finanziert	finanzieren	VVPP	0	0	1	0	0.5	0.5
+finden	finden	VVINF	0	0	1	0.347328	0.385496	0.267176
+fix	fix	ADJD	0	0	1	0.454545	0.272727	0.272727
+fixieren	fixieren	VVINF	0	0	1	0.333333	0.25	0.416667
+fixierte	fixieren	VVINF	0	0	1	0.333333	0.25	0.416667
+folglich	folglich	ADV	0	0	1	0	0.5	0.5
+freiheraus	freiheraus	ADJD	0	0	1	-	-	-
+freilich	freilich	ADV	0	0	1	0	0.5	0.5
+freiwerdend	freiwerdend	ADJD	0	0	1	-	-	-
+fundamental	fundamental	ADJD	0	0	1	0.5	0.5	0
+fundiert	fundieren	VVPP	0	0	1	-	-	-
+für	für	APPR	0	0	1	0.326321	0.416111	0.257568
+gab	geben	VVFIN	0	0	1	0.28125	0.450284	0.268466
+galvanisieren	galvanisieren	VVINF	0	0	1	-	-	-
+galvanisierte	galvanisieren	VVFIN	0	0	1	-	-	-
+ganz	ganz	ADJD	0	0	1	0.273134	0.437313	0.289552
+ganze	ganz	ADJA	0	0	1	0.273134	0.437313	0.289552
+ganzrandig	ganzrandig	XY	0	0	1	-	-	-
+gefeit	gefeit	ADJD	0	0	1	-	-	-
+gefüllt	füllen	VVPP	0	0	1	0.275862	0.448276	0.275862
+gegebenenfalls	gegebenenfalls	ADV	0	0	1	-	-	-
+gegenüber	gegenüber	PTKVZ	0	0	1	0.423077	0.230769	0.346154
+gegenüberstehend	gegenüberstehend	ADJD	0	0	1	-	-	-
+geheim	geheim	ADJD	0	0	1	-	-	-
+geheimnisvoll	geheimnisvoll	ADJD	0	0	1	-	-	-
+gelegentlich	gelegentlich	ADJD	0	0	1	0.347826	0.391304	0.26087
+gellend	gellend	ADJD	0	0	1	-	-	-
+geläufig	geläufig	ADJD	0	0	1	-	-	-
+gemeinsam	gemeinsam	ADJD	0	0	1	0.222222	0.666667	0.111111
+gemeinschaftlich	gemeinschaftlich	ADJD	0	0	1	-	-	-
+gerade	gerade	ADJD	0	0	1	0.244444	0.488889	0.266667
+geradeheraus	geradeheraus	VVINF	0	0	1	-	-	-
+geradezu	geradezu	ADV	0	0	1	0.285714	0.428571	0.285714
+gerichtliche	gerichtlich	VVPP	0	0	1	-	-	-
+geruhend	geruhend	ADJD	0	0	1	-	-	-
+geräuscharm	geräuscharm	ADJD	0	0	1	1	0	0
+gesamt	gesamt	ADJD	0	0	1	0.236842	0.526316	0.236842
+gespannt	spannen	VVPP	0	0	1	0.142857	0.571429	0.285714
+gewahr	gewahr	ADJD	0	0	1	-	-	-
+gewissermaßen	gewissermaßen	ADV	0	0	1	-	-	-
+gewöhnlich	gewöhnlich	ADJD	0	0	1	0	0.666667	0.333333
+gewöhnlicher	gewöhnlich	ADJD	0	0	1	0	0.666667	0.333333
+gigantisch	gigantisch	ADJD	0	0	1	0.5	0	0.5
+ging	gehen	VVFIN	0	0	1	0.284375	0.496875	0.21875
+glauben	glauben	VVINF	0	0	1	0.303797	0.556962	0.139241
+glaubte	glauben	VVFIN	0	0	1	0.303797	0.556962	0.139241
+gleich	gleich	ADJD	0	0	1	0.247549	0.566176	0.186275
+gleichartig	gleichartig	ADJD	0	0	1	0	0	1
+gleichbedeutend	gleichbedeutend	ADJD	0	0	1	0	1	0
+gleichförmig	gleichförmig	ADJD	0	0	1	0	1	0
+gleichwertig	gleichwertig	ADJD	0	0	1	0.5	0	0.5
+gleichwohl	gleichwohl	ADV	0	0	1	-	-	-
+glühend	glühend	ADJD	0	0	1	0	1	0
+griff	greifen	NN	0	0	1	0.21875	0.40625	0.375
+großangelegt	großangelegt	ADJD	0	0	1	-	-	-
+großflächig	großflächig	ADJD	0	0	1	0	1	0
+grundlegend	grundlegend	ADJD	0	0	1	0	1	0
+grundsätzlich	grundsätzlich	ADJD	0	0	1	0.178571	0.357143	0.464286
+größtenteils	größtenteils	ADV	0	0	1	0.125	0.5	0.375
+grübeln	grübeln	VVINF	0	0	1	1	0	0
+grübelte	grübeln	ADJD	0	0	1	1	0	0
+gängig	gängig	ADJD	0	0	1	0	0.5	0.5
+gänzlich	gänzlich	ADJD	0	0	1	0	0.8	0.2
+halb	halb	ADJD	0	0	1	0.173333	0.586667	0.24
+halbwegs	halbwegs	ADV	0	0	1	0.0588235	0.705882	0.235294
+harmlos	harmlos	ADJD	0	0	1	0	1	0
+hauptsächlich	hauptsächlich	ADJD	0	0	1	0.26087	0.434783	0.304348
+hautnah	hautnah	ADJD	0	0	1	-	-	-
+heiß	heiß	ADJD	0	0	1	0.333333	0.391667	0.275
+her	her	PTKVZ	0	0	1	0.313043	0.4	0.286957
+hinreichend	hinreichend	ADJD	0	0	1	0	0.333333	0.666667
+hinsichtlich	hinsichtlich	APPR	0	0	1	0.333333	0.444444	0.222222
+hinterfragen	hinterfragen	VVINF	0	0	1	-	-	-
+hinterfragte	hinterfragen	VVINF	0	0	1	-	-	-
+hinweisend	hinweisend	ADJD	0	0	1	-	-	-
+hob	heben	VVFIN	0	0	1	0.3	0.4	0.3
+hochbeanspruchbar	hochbeanspruchbar	ADJD	0	0	1	-	-	-
+hochbeansprucht	hochbeansprucht	ADJD	0	0	1	-	-	-
+hochgewachsen	hochwachsen	VVPP	0	0	1	-	-	-
+hoffen	hoffen	VVINF	0	0	1	0.179104	0.477612	0.343284
+hypnotisieren	hypnotisieren	VVINF	0	0	1	-	-	-
+hypnotisierte	hypnotisieren	VVFIN	0	0	1	-	-	-
+häufig	häufig	ADJD	0	0	1	0.215686	0.529412	0.254902
+höchstens	höchstens	ADV	0	0	1	0.153846	0.538462	0.307692
+höchstwahrscheinlich	höchstwahrscheinlich	ADJD	0	0	1	-	-	-
+immens	immens	ADJD	0	0	1	0	1	0
+immer	immer	ADV	0	0	1	0.301538	0.453846	0.244615
+immerhin	immerhin	ADV	0	0	1	0.107143	0.428571	0.464286
+immun	immun	ADJD	0	0	1	-	-	-
+impliziert	implizieren	VVPP	0	0	1	-	-	-
+implizit	implizit	ADJD	0	0	1	-	-	-
+improvisieren	improvisieren	VVINF	0	0	1	-	-	-
+improvisierte	improvisieren	VVFIN	0	0	1	-	-	-
+infolgedessen	infolgedessen	ADV	0	0	1	-	-	-
+informationell	informationell	ADJD	0	0	1	-	-	-
+informatorisch	informatorisch	ADJD	0	0	1	-	-	-
+inhärent	inhärent	ADJD	0	0	1	-	-	-
+insbesondere	insbesondere	ADV	0	0	1	0.5	0.375	0.125
+insgesamt	insgesamt	ADV	0	0	1	0.242105	0.357895	0.4
+intensiv	intensiv	ADJD	0	0	1	0.294118	0.294118	0.411765
+intensiviert	intensiviert	ADJD	0	0	1	-	-	-
+intim	intim	ADJD	0	0	1	1	0	0
+ironisch	ironisch	ADJD	0	0	1	1	0	0
+jedenfalls	jedenfalls	ADV	0	0	1	0.169014	0.605634	0.225352
+jegliche	jeglich	PIS	0	0	1	0.384615	0.461538	0.153846
+kannte	kennen	VVFIN	0	0	1	0.308943	0.455285	0.235772
+kapitalkräftig	kapitalkräftig	ADJD	0	0	1	-	-	-
+kein Abbruch	kein Abbruch	NN	0	0	1	-	-	-
+kein Album	kein Album	NN	0	0	1	-	-	-
+kein Angabe	kein Angabe	NN	0	0	1	-	-	-
+kein Angst	kein Angst	NN	0	0	1	-	-	-
+kein Auge	kein Auge	NN	0	0	1	-	-	-
+kein Aussage	kein Aussage	NN	0	0	1	-	-	-
+kein CD	kein CD	NN	0	0	1	-	-	-
+kein Computer	kein Computer	NN	0	0	1	-	-	-
+kein Datum	kein Datum	NN	0	0	1	-	-	-
+kein Druck	kein Druck	NN	0	0	1	-	-	-
+kein Einzelfall	kein Einzelfall	NN	0	0	1	-	-	-
+kein Fall	kein Fall	NN	0	0	1	-	-	-
+kein Frage	kein Frage	NN	0	0	1	-	-	-
+kein Gerät	kein Gerät	NN	0	0	1	-	-	-
+kein Grund	kein Grund	NN	0	0	1	-	-	-
+kein Kabel	kein Kabel	NN	0	0	1	-	-	-
+kein Kind	kein Kind	NN	0	0	1	-	-	-
+kein PC	kein PC	NN	0	0	1	-	-	-
+kein Profi	kein Profi	NN	0	0	1	-	-	-
+kein Rede	kein Rede	NN	0	0	1	-	-	-
+kein Rolle	kein Rolle	NN	0	0	1	-	-	-
+kein Spur	kein Spur	NN	0	0	1	-	-	-
+kein Stück	kein Stück	NN	0	0	1	-	-	-
+kein Teil	kein Teil	NN	0	0	1	-	-	-
+kein Titel	kein Titel	NN	0	0	1	-	-	-
+kein Ton	kein Ton	NN	0	0	1	-	-	-
+kein Unterschied	kein Unterschied	NN	0	0	1	-	-	-
+kein Vergleich	kein Vergleich	NN	0	0	1	-	-	-
+kein Wort	kein Wort	NN	0	0	1	-	-	-
+kein Wunder	kein Wunder	NN	0	0	1	-	-	-
+kein ander	kein ander	VVINF	0	0	1	-	-	-
+kein direkt	kein direkt	VVINF	0	0	1	-	-	-
+kein einzig	kein einzig	VVINF	0	0	1	-	-	-
+kein groß	kein groß	VVINF	0	0	1	-	-	-
+kein scharf	kein scharf	VVINF	0	0	1	-	-	-
+kein so	kein so	VVINF	0	0	1	-	-	-
+kein weit	kein weit	VVINF	0	0	1	-	-	-
+kein wirklich	kein wirklich	VVINF	0	0	1	-	-	-
+kennen	kennen	VVINF	0	0	1	0.308943	0.455285	0.235772
+kenntlich	kenntlich	ADJD	0	0	1	-	-	-
+klammheimlich	klammheimlich	ADJD	0	0	1	-	-	-
+komisch	komisch	ADJD	0	0	1	0.166667	0.666667	0.166667
+komplett	komplett	ADJD	0	0	1	0.278261	0.469565	0.252174
+konstant	konstant	ADJD	0	0	1	0.333333	0.444444	0.222222
+kurzfristig	kurzfristig	ADJD	0	0	1	0.333333	0.666667	0
+können	können	VMFIN	0	0	1	0.331807	0.440712	0.227481
+könnte	können	VMFIN	0	0	1	0.331807	0.440712	0.227481
+las	lesen	VVFIN	0	0	1	0.29927	0.489051	0.211679
+lauschte	lauschen	VVFIN	0	0	1	1	0	0
+lebenswichtig	lebenswichtig	ADJD	0	0	1	-	-	-
+lediglich	lediglich	ADV	0	0	1	0.367347	0.346939	0.285714
+legalistisch	legalistisch	VVPP	0	0	1	-	-	-
+legte	legen	VVFIN	0	0	1	0.322222	0.455556	0.222222
+letzt	letzt	ADJD	0	0	1	0.292994	0.509554	0.197452
+letzte	letzt	ADJA	0	0	1	0.292994	0.509554	0.197452
+letztendlich	letztendlich	ADJD	0	0	1	0.2	0.55	0.25
+letztlich	letztlich	ADJD	0	0	1	0.307692	0.384615	0.307692
+liegt	liegen	VVFIN	0	0	1	0.268482	0.490272	0.241245
+locken	locken	VVINF	0	0	1	0.25	0.25	0.5
+lockend	lockend	ADJD	0	0	1	0	0	1
+locker	locker	ADJD	0	0	1	0.487179	0.179487	0.333333
+lockte	locken	VVFIN	0	0	1	0.25	0.25	0.5
+lärmarm	lärmarm	ADJD	0	0	1	-	-	-
+macht	machen	VVFIN	0	0	1	0.340456	0.437322	0.222222
+machte	machen	VVFIN	0	0	1	0.340456	0.437322	0.222222
+malte	malen	VVFIN	0	0	1	0.222222	0.666667	0.111111
+manifest	manifest	VVPP	0	0	1	-	-	-
+mehrmalig	mehrmalig	ADJD	0	0	1	0.129032	0.516129	0.354839
+merklich	merklich	ADJD	0	0	1	0.25	0.5	0.25
+methodisch	methodisch	ADJD	0	0	1	-	-	-
+minderjährig	minderjährig	ADJD	0	0	1	-	-	-
+mini	mini	NN	0	0	1	0.461538	0.307692	0.230769
+mithin	mithin	ADV	0	0	1	-	-	-
+mitteilsam	mitteilsam	ADJD	0	0	1	-	-	-
+mittelbar	mittelbar	ADJD	0	0	1	-	-	-
+mittig	mittig	ADJD	0	0	1	0.333333	0.666667	0
+mutete	muten	ADJD	0	0	1	0	0.666667	0.333333
+mutmaßen	mutmaßen	VVINF	0	0	1	0	1	0
+mutmaßlich	mutmaßlich	ADJD	0	0	1	-	-	-
+mutmaßte	mutmaßen	VVFIN	0	0	1	0	1	0
+möglichenfalls	möglichenfalls	ADV	0	0	1	-	-	-
+möglicherweise	möglicherweise	ADJD	0	0	1	0.272727	0.454545	0.272727
+möglichst	möglichst	ADJD	0	0	1	0.363636	0.454545	0.181818
+mündlich	mündlich	ADJD	0	0	1	-	-	-
+nachbereiten	nachbereiten	VVINF	0	0	1	-	-	-
+nachdenklich	nachdenklich	ADJD	0	0	1	0	0.666667	0.333333
+nachstehenden	nachstehend	ADJA	0	0	1	-	-	-
+nahm	nehmen	VVFIN	0	0	1	0.246835	0.468354	0.28481
+namentlich	namentlich	ADJD	0	0	1	-	-	-
+naszierend	naszierend	VVINF	0	0	1	-	-	-
+naturnah	naturnah	ADJD	0	0	1	-	-	-
+naturverbunden	naturverbunden	ADJD	0	0	1	-	-	-
+neue	neu	ADJA	0	0	1	0.227194	0.53012	0.242685
+nicht -	nicht -	VVINF	0	0	1	-	-	-
+nicht aber	nicht aber	VVINF	0	0	1	-	-	-
+nicht all	nicht all	VVINF	0	0	1	-	-	-
+nicht alle	nicht alle	VVINF	0	0	1	-	-	-
+nicht alleine	nicht alleine	VVINF	0	0	1	-	-	-
+nicht allzu	nicht allzu	VVINF	0	0	1	-	-	-
+nicht als	nicht als	VVINF	0	0	1	-	-	-
+nicht am	nicht am	VVINF	0	0	1	-	-	-
+nicht an	nicht an	VVINF	0	0	1	-	-	-
+nicht anders	nicht anders	VVINF	0	0	1	-	-	-
+nicht anfreunden	nicht anfreunden	VVINF	0	0	1	-	-	-
+nicht anschließen	nicht anschließen	VVINF	0	0	1	-	-	-
+nicht auch	nicht auch	VVINF	0	0	1	-	-	-
+nicht auf	nicht auf	VVINF	0	0	1	-	-	-
+nicht auftreten	nicht auftreten	VVINF	0	0	1	-	-	-
+nicht aus	nicht aus	VVINF	0	0	1	-	-	-
+nicht ausgeben	nicht ausgeben	VVINF	0	0	1	-	-	-
+nicht ausprobieren	nicht ausprobieren	VVINF	0	0	1	-	-	-
+nicht automatisch	nicht automatisch	VVINF	0	0	1	-	-	-
+nicht bestätigen	nicht bestätigen	VVINF	0	0	1	-	-	-
+nicht beurteilen	nicht beurteilen	VVINF	0	0	1	-	-	-
+nicht bewegen	nicht bewegen	VVINF	0	0	1	-	-	-
+nicht billig	nicht billig	VVINF	0	0	1	-	-	-
+nicht blind	nicht blind	VVINF	0	0	1	-	-	-
+nicht dachen	nicht dachen	VVINF	0	0	1	-	-	-
+nicht davon	nicht davon	VVINF	0	0	1	-	-	-
+nicht der	nicht der	VVINF	0	0	1	-	-	-
+nicht direkt	nicht direkt	VVINF	0	0	1	-	-	-
+nicht drauf	nicht drauf	VVINF	0	0	1	-	-	-
+nicht durch	nicht durch	VVINF	0	0	1	-	-	-
+nicht eignen	nicht eignen	VVINF	0	0	1	-	-	-
+nicht erkennen	nicht erkennen	VVINF	0	0	1	-	-	-
+nicht erleben	nicht erleben	VVINF	0	0	1	-	-	-
+nicht erst	nicht erst	VVINF	0	0	1	-	-	-
+nicht erwarten	nicht erwarten	VVINF	0	0	1	-	-	-
+nicht fallen	nicht fallen	VVINF	0	0	1	-	-	-
+nicht feststellen	nicht feststellen	VVINF	0	0	1	-	-	-
+nicht finden	nicht finden	VVINF	0	0	1	-	-	-
+nicht fällen	nicht fällen	VVINF	0	0	1	-	-	-
+nicht für	nicht für	VVINF	0	0	1	-	-	-
+nicht ganz	nicht ganz	VVINF	0	0	1	-	-	-
+nicht gerade	nicht gerade	VVINF	0	0	1	-	-	-
+nicht gewöhnen	nicht gewöhnen	VVINF	0	0	1	-	-	-
+nicht gleich	nicht gleich	VVINF	0	0	1	-	-	-
+nicht groß	nicht groß	VVINF	0	0	1	-	-	-
+nicht heiß	nicht heiß	VVINF	0	0	1	-	-	-
+nicht hin	nicht hin	VVINF	0	0	1	-	-	-
+nicht ich	nicht ich	VVINF	0	0	1	-	-	-
+nicht im	nicht im	VVINF	0	0	1	-	-	-
+nicht immer	nicht immer	VVINF	0	0	1	-	-	-
+nicht in	nicht in	VVINF	0	0	1	-	-	-
+nicht jed	nicht jed	VVINF	0	0	1	-	-	-
+nicht kennen	nicht kennen	VVINF	0	0	1	-	-	-
+nicht lang	nicht lang	VVINF	0	0	1	-	-	-
+nicht lesen	nicht lesen	VVINF	0	0	1	-	-	-
+nicht liegen	nicht liegen	VVINF	0	0	1	-	-	-
+nicht machen	nicht machen	VVINF	0	0	1	-	-	-
+nicht mein	nicht mein	VVINF	0	0	1	-	-	-
+nicht nach	nicht nach	VVINF	0	0	1	-	-	-
+nicht noch	nicht noch	VVINF	0	0	1	-	-	-
+nicht notwendig	nicht notwendig	VVINF	0	0	1	-	-	-
+nicht nur	nicht nur	VVINF	0	0	1	-	-	-
+nicht nötig	nicht nötig	VVINF	0	0	1	-	-	-
+nicht ob	nicht ob	VVINF	0	0	1	-	-	-
+nicht oder	nicht oder	VVINF	0	0	1	-	-	-
+nicht ohne	nicht ohne	VVINF	0	0	1	-	-	-
+nicht optimal	nicht optimal	VVINF	0	0	1	-	-	-
+nicht reinigen	nicht reinigen	VVINF	0	0	1	-	-	-
+nicht sagen	nicht sagen	VVINF	0	0	1	-	-	-
+nicht schaden	nicht schaden	VVINF	0	0	1	-	-	-
+nicht schon	nicht schon	VVINF	0	0	1	-	-	-
+nicht schwer	nicht schwer	VVINF	0	0	1	-	-	-
+nicht sehen	nicht sehen	VVINF	0	0	1	-	-	-
+nicht sehr	nicht sehr	VVINF	0	0	1	-	-	-
+nicht sicher	nicht sicher	VVINF	0	0	1	-	-	-
+nicht sofort	nicht sofort	VVINF	0	0	1	-	-	-
+nicht stimmen	nicht stimmen	VVINF	0	0	1	-	-	-
+nicht stören	nicht stören	VVINF	0	0	1	-	-	-
+nicht teilen	nicht teilen	VVINF	0	0	1	-	-	-
+nicht testen	nicht testen	VVINF	0	0	1	-	-	-
+nicht um	nicht um	VVINF	0	0	1	-	-	-
+nicht unbedingt	nicht unbedingt	VVINF	0	0	1	-	-	-
+nicht und	nicht und	VVINF	0	0	1	-	-	-
+nicht unter	nicht unter	VVINF	0	0	1	-	-	-
+nicht verkaufen	nicht verkaufen	VVINF	0	0	1	-	-	-
+nicht verlangen	nicht verlangen	VVINF	0	0	1	-	-	-
+nicht vermissen	nicht vermissen	VVINF	0	0	1	-	-	-
+nicht verändern	nicht verändern	VVINF	0	0	1	-	-	-
+nicht viel	nicht viel	VVINF	0	0	1	-	-	-
+nicht vom	nicht vom	VVINF	0	0	1	-	-	-
+nicht von	nicht von	VVINF	0	0	1	-	-	-
+nicht vor	nicht vor	VVINF	0	0	1	-	-	-
+nicht vorbei	nicht vorbei	VVINF	0	0	1	-	-	-
+nicht vorstellen	nicht vorstellen	VVINF	0	0	1	-	-	-
+nicht weit	nicht weit	VVINF	0	0	1	-	-	-
+nicht weiter	nicht weiter	VVINF	0	0	1	-	-	-
+nicht wenig	nicht wenig	VVINF	0	0	1	-	-	-
+nicht wer	nicht wer	VVINF	0	0	1	-	-	-
+nicht zu	nicht zu	VVINF	0	0	1	-	-	-
+nicht zum	nicht zum	VVINF	0	0	1	-	-	-
+nicht zur	nicht zur	VVINF	0	0	1	-	-	-
+nicht ändern	nicht ändern	VVINF	0	0	1	-	-	-
+nicht über	nicht über	VVINF	0	0	1	-	-	-
+nicht überall	nicht überall	VVINF	0	0	1	-	-	-
+nicht übertreiben	nicht übertreiben	VVINF	0	0	1	-	-	-
+nichtreflektierend	nichtreflektierend	VVINF	0	0	1	-	-	-
+nichts ander	nichts ander	VVINF	0	0	1	-	-	-
+nichts desto	nichts desto	VVINF	0	0	1	-	-	-
+nichts für	nichts für	VVINF	0	0	1	-	-	-
+nichts mehr	nichts mehr	VVINF	0	0	1	-	-	-
+nichts mit	nichts mit	VVINF	0	0	1	-	-	-
+nichts passieren	nichts passieren	VVINF	0	0	1	-	-	-
+nichts sagen	nichts sagen	VVINF	0	0	1	-	-	-
+nichts und	nichts und	VVINF	0	0	1	-	-	-
+nichts verkehren	nichts verkehren	VVINF	0	0	1	-	-	-
+nichts von	nichts von	VVINF	0	0	1	-	-	-
+nichts wirklich	nichts wirklich	VVINF	0	0	1	-	-	-
+nichts zu	nichts zu	VVINF	0	0	1	-	-	-
+nichtsdestotrotz	nichtsdestotrotz	ADV	0	0	1	0	0.5	0.5
+nie ein	nie ein	VVINF	0	0	1	-	-	-
+nie so	nie so	VVINF	0	0	1	-	-	-
+nur	nur	KON	0	0	1	0.26119	0.496884	0.241926
+objektiv	objektiv	ADJD	0	0	1	0.142857	0.857143	0
+obwohl	obwohl	KOUS	0	0	1	0.197183	0.598592	0.204225
+offenbar	offenbar	ADJD	0	0	1	0.230769	0.692308	0.0769231
+offene	offen	ADJA	0	0	1	0.34375	0.34375	0.3125
+offener	offen	ADJD	0	0	1	0.34375	0.34375	0.3125
+offenkundig	offenkundig	ADJD	0	0	1	-	-	-
+ohne	ohne	KOUI	0	0	1	0.329918	0.452869	0.217213
+optisch	optisch	ADJD	0	0	1	0.34375	0.4375	0.21875
+persönlich	persönlich	ADJD	0	0	1	0.36	0.293333	0.346667
+philosophieren	philosophieren	VVINF	0	0	1	-	-	-
+philosophierte	philosophieren	VVFIN	0	0	1	-	-	-
+predigen	predigen	VVINF	0	0	1	-	-	-
+predigte	predigen	VVFIN	0	0	1	-	-	-
+prognostizierbar	prognostizierbar	VVPP	0	0	1	-	-	-
+prognostizieren	prognostizieren	VVINF	0	0	1	-	-	-
+prognostizierte	prognostiziert	VVPP	0	0	1	-	-	-
+prophezeien	prophezeien	VVINF	0	0	1	-	-	-
+prophezeit	prophezeien	VVPP	0	0	1	-	-	-
+psychoanalytisch	psychoanalytisch	ADJD	0	0	1	-	-	-
+rapid	rapid	ADJD	0	0	1	0	1	0
+rapide	rapid	ADJA	0	0	1	0	1	0
+reagieren	reagieren	VVINF	0	0	1	0.121212	0.484848	0.393939
+reagiert	reagieren	VVPP	0	0	1	0.121212	0.484848	0.393939
+reaktionsschnell	reaktionsschnell	ADJD	0	0	1	-	-	-
+rechenintensiv	rechenintensiv	ADJD	0	0	1	-	-	-
+reflektierend	reflektierend	ADJD	0	0	1	-	-	-
+regte	regen	VVFIN	0	0	1	0.333333	0.444444	0.222222
+reinigen	reinigen	VVINF	0	0	1	0.485714	0.361905	0.152381
+restlos	restlos	ADJD	0	0	1	0.666667	0.333333	0
+rief	rufen	VVFIN	0	0	1	0.5	0.5	0
+sachbezogen	sachbezogen	ADJD	0	0	1	-	-	-
+sachlich	sachlich	ADJD	0	0	1	0	1	0
+schauend	schauend	ADJD	0	0	1	-	-	-
+scheinbar	scheinbar	ADJD	0	0	1	0.212121	0.545455	0.242424
+schleunigst	schleunig	ADJD	0	0	1	-	-	-
+schließlich	schließlich	ADV	0	0	1	0.178571	0.607143	0.214286
+schloss	schließen	NN	0	0	1	0.254902	0.490196	0.254902
+schneiden	schneiden	VVINF	0	0	1	0.338983	0.40678	0.254237
+schreiend	schreiend	ADJD	0	0	1	-	-	-
+schulmeisterlich	schulmeisterlich	ADJD	0	0	1	-	-	-
+sehend	sehend	ADJD	0	0	1	-	-	-
+seine	mein	PPOSAT	0	0	1	0.317023	0.448656	0.234321
+selten	selten	ADJD	0	0	1	0.418605	0.44186	0.139535
+seltener	selten	ADJD	0	0	1	0.418605	0.44186	0.139535
+setzte	setzen	VVFIN	0	0	1	0.265625	0.46875	0.265625
+simpel	simpel	ADJD	0	0	1	0.380952	0.380952	0.238095
+sitzen	sitzen	VVINF	0	0	1	0.308824	0.338235	0.352941
+sitzend	sitzend	ADJD	0	0	1	0	0.5	0.5
+so	so	ADV	0	0	1	0.289201	0.45932	0.251479
+sofort	sofort	ADV	0	0	1	0.415663	0.421687	0.162651
+sogar	sogar	ADV	0	0	1	0.385093	0.385093	0.229814
+sogenannte	sogenannt	ADJA	0	0	1	0.214286	0.571429	0.214286
+sogenannter	sogenannt	ADJD	0	0	1	0.214286	0.571429	0.214286
+sogenanntes	sogenannt	ADJA	0	0	1	0.214286	0.571429	0.214286
+solide	solide	ADJD	0	0	1	0.619048	0.0952381	0.285714
+soll	sollen	VMFIN	0	0	1	0.253049	0.48628	0.260671
+sollen	sollen	VMFIN	0	0	1	0.253049	0.48628	0.260671
+sollte	sollen	VMFIN	0	0	1	0.253049	0.48628	0.260671
+sonst	sonst	ADV	0	0	1	0.233333	0.472222	0.294444
+soviel	soviel	PIS	0	0	1	0.137931	0.517241	0.344828
+sparen	sparen	VVINF	0	0	1	0.271605	0.481481	0.246914
+sprach	sprechen	VVFIN	0	0	1	0.396825	0.380952	0.222222
+sprudelnd	sprudelnd	ADJD	0	0	1	-	-	-
+steinreich	steinreich	ADJD	0	0	1	-	-	-
+still	still	ADJD	0	0	1	0.444444	0.333333	0.222222
+suchen	suchen	VVINF	0	0	1	0.4	0.344828	0.255172
+tatsächlich	tatsächlich	ADJD	0	0	1	0.230769	0.423077	0.346154
+testen	testen	VVINF	0	0	1	0.271028	0.53271	0.196262
+tief	tief	ADJD	0	0	1	0.185185	0.518519	0.296296
+tiefgreifend	tiefgreifend	ADJD	0	0	1	1	0	0
+total	total	ADJD	0	0	1	0.308271	0.556391	0.135338
+trotzdem	trotzdem	PROAV	0	0	1	0.310976	0.347561	0.341463
+tun	tun	VVINF	0	0	1	0.226744	0.587209	0.186047
+unaufhörlich	unaufhörlich	ADJD	0	0	1	-	-	-
+unbedingt	unbedingt	ADJD	0	0	1	0.35	0.36	0.29
+unentgeltlich	unentgeltlich	ADJD	0	0	1	-	-	-
+unfrei	unfrei	ADJD	0	0	1	0	1	0
+ungeachtet	ungeachtet	KON	0	0	1	-	-	-
+ungemein	ungemein	ADJD	0	0	1	0.5	0	0.5
+unsichtbar	unsichtbar	ADJD	0	0	1	0	1	0
+unsichtbare	unsichtbar	ADJA	0	0	1	0	1	0
+unterrichtet	unterrichten	VVPP	0	0	1	-	-	-
+unumschränkt	unumschränkt	ADJD	0	0	1	-	-	-
+unverändert	unverändert	ADJD	0	0	1	0.5	0	0.5
+unzusammenhängend	unzusammenhängend	ADJD	0	0	1	-	-	-
+unzählbar	unzählbar	ADJD	0	0	1	-	-	-
+unzählig	unzählig	ADJD	0	0	1	0.333333	0.333333	0.333333
+ursprünglich	ursprünglich	ADJD	0	0	1	0.166667	0.333333	0.5
+urteilen	urteilen	VVINF	0	0	1	0.5	0	0.5
+urteilte	urteilen	VVFIN	0	0	1	0.5	0	0.5
+verborgen	verborgen	VVINF	0	0	1	-	-	-
+verhaltener	verhalten	VVINF	0	0	1	0.272727	0.636364	0.0909091
+vermutlich	vermutlich	ADJD	0	0	1	0.0869565	0.695652	0.217391
+vernehmlich	vernehmlich	ADJD	0	0	1	-	-	-
+versteckt	verstecken	VVPP	0	0	1	0.416667	0.333333	0.25
+vertraulich	vertraulich	ADJD	0	0	1	-	-	-
+verwunderlich	verwunderlich	ADJD	0	0	1	0	0.666667	0.333333
+verwundert	verwundert	ADJD	0	0	1	-	-	-
+verzichtete	verzichten	VVFIN	0	0	1	0.242424	0.575758	0.181818
+vielleicht	vielleicht	ADJD	0	0	1	0.198068	0.545894	0.256039
+vollauf	vollauf	ADV	0	0	1	0.666667	0.166667	0.166667
+vollelektronisch	vollelektronisch	ADJD	0	0	1	-	-	-
+voller	voll	ADJD	0	0	1	0.435556	0.351111	0.213333
+vollgepfropft	vollpfropfen	VVPP	0	0	1	-	-	-
+vollgestopft	vollstopfen	VVPP	0	0	1	-	-	-
+voraussagbar	voraussagbar	ADJD	0	0	1	-	-	-
+voraussichtlich	voraussichtlich	ADJD	0	0	1	-	-	-
+vorher	vorher	PTKVZ	0	0	1	0.384615	0.407692	0.207692
+völlig	völlig	ADJD	0	0	1	0.253731	0.559701	0.186567
+wachsend	wachsend	ADJD	0	0	1	-	-	-
+wahrscheinlich	wahrscheinlich	ADJD	0	0	1	0.206349	0.507937	0.285714
+weit	weit	ADJD	0	0	1	0.30038	0.460076	0.239544
+weiter	weit	ADJD	0	0	1	0.30038	0.460076	0.239544
+weithin	weithin	ADV	0	0	1	-	-	-
+weitreichend	weitreichend	ADJD	0	0	1	-	-	-
+wenn	wenn	KOUS	0	0	1	0.255429	0.488108	0.256463
+wiedererkennbar	wiedererkennbar	ADJD	0	0	1	-	-	-
+wiederholen	wiederholen	VVINF	0	0	1	0.25	0.583333	0.166667
+wiederholte	wiederholen	VVFIN	0	0	1	0.25	0.583333	0.166667
+windschief	windschief	ADJD	0	0	1	-	-	-
+wird	werden	VVFIN	0	0	1	0.258483	0.493513	0.248004
+wirkend	wirkend	ADJD	0	0	1	0.1	0.6	0.3
+wirklich	wirklich	ADJD	0	0	1	0.338257	0.397341	0.264402
+wissend	wissend	ADJD	0	0	1	-	-	-
+wissenschaftlich	wissenschaftlich	ADJD	0	0	1	0	0	1
+wog	wiegen	VVFIN	0	0	1	0.285714	0.357143	0.357143
+wohl	wohl	ADJD	0	0	1	0.160784	0.607843	0.231373
+wünschen	wünschen	VVINF	0	0	1	0.25	0.4375	0.3125
+würde	werden	VVFIN	0	0	1	0.258483	0.493513	0.248004
+zahllos	zahllos	ADJD	0	0	1	0	1	0
+zielbewusst	zielbewußt	ADJD	0	0	1	-	-	-
+zuerst	zuerst	ADV	0	0	1	0.280702	0.473684	0.245614
+zufällig	zufällig	ADJD	0	0	1	0.4	0.2	0.4
+zulegen	zulegen	VVINF	0	0	1	0.373333	0.466667	0.16
+zuletzt	zuletzt	ADV	0	0	1	0.166667	0.416667	0.416667
+zumal	zumal	KON	0	0	1	0.363636	0.363636	0.272727
+zunehmend	zunehmend	ADJD	0	0	1	0	0.25	0.75
+zurückstrahlend	zurückstrahlend	ADJD	0	0	1	-	-	-
+zuständig	zuständig	ADJD	0	0	1	0	1	0
+zusätzlich	zusätzlich	ADJD	0	0	1	0.436364	0.290909	0.272727
+zutiefst	zutiefst	ADV	0	0	1	1	0	0
+Äußere	äußern	VVFIN	0	0	1	0.290323	0.548387	0.16129
+Äußerung	Äußerung	NN	0	0	1	0	1	0
+Äußerungen	Äußerung	NN	0	0	1	0	1	0
+Überblick	Überblick	NN	0	0	1	0.2	0.2	0.6
+Überlegung	Überlegung	NN	0	0	1	0.6	0.2	0.2
+ähnlich	ähnlich	ADJD	0	0	1	0.258824	0.447059	0.294118
+ähnliche	ähnlich	ADJA	0	0	1	0.258824	0.447059	0.294118
+äußerst	äußerst	ADJD	0	0	1	0	1	0
+äußerster	äußer	ADJA	0	0	1	0.2	0.5	0.3
+über	über	PTKVZ	0	0	1	0.316008	0.451143	0.232848
+überabzählbar	überabzählbar	VVINF	0	0	1	-	-	-
+überall	überall	ADV	0	0	1	0.305556	0.694444	0
+überreden	überreden	VVINF	0	0	1	0	1	0
+überredet	überreden	VVPP	0	0	1	0	1	0
+überredete	überreden	VVINF	0	0	1	0	1	0
+überwiegend	überwiegend	ADJD	0	0	1	0.125	0.5625	0.3125
