@@ -107,15 +107,6 @@ class Sentiment_Analyzer:
 			sentimentRelations.append(sentimentRelation)
 
 		return sentimentRelations
-		"""
-		print("############")
-		print(originSpeaker)
-		print(targetSpeakerSpeeches)
-		for targetSpeaker in targetSpeakerSpeeches:
-			print targetSpeaker
-			for speech in targetSpeakerSpeeches[targetSpeaker]:
-				print speech._preOccuringSpeaker
-		"""
 
 	def attachSentimentMetricsToUnit(self, unit):
 		sentimentMetrics = self.calcAndGetSentimentMetrics(unit._sentimentBearingWords, unit._lengthInWords)

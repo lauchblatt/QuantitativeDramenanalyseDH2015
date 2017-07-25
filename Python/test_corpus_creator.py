@@ -14,9 +14,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	tcc = Test_Corpus_Creator()
-	#tcc.getRandomSpeeches()
-	#tcc.printInfoOfFilteredSingleDramas()
-	tcc.printInfoOfTestCorpus()
+	tcc.shuffleTestCorpus()
+	tcc.createTxtOutputForTestCorpus()
 
 class Test_Corpus_Creator:
 
@@ -28,11 +27,35 @@ class Test_Corpus_Creator:
 		self._filteredSpeechesCorpus = []
 		self._filteredSpeechesCorpusPerDrama = []
 		self._partsPerDrama = [3, 10, 14, 7, 6, 6, 6, 10, 11, 10, 14, 3]
-		self._testCorpusSizeFactor = 1
+		self._testCorpusSizeFactor = 2
 
 		self.initSpeechesCorpus()
 		self.setTestCorpus()
 
+
+	def createTxtOutputForTestCorpus(self):
+		outputFile = open("../Evaluation/Test-Korpus.txt", "w")
+		text = ""
+		i = 0
+		for corpusSpeech in self._testCorpusSpeeches:
+			text = text + self.generateSpeechText(corpusSpeech)
+			text = text + "--------------------\n"
+			if(i == 99):
+				text = text + "###\n"
+			i = i + 1
+		outputFile.write(text)
+		outputFile.close()
+
+	def shuffleTestCorpus(self):
+		random.shuffle(self._testCorpusSpeeches)
+	
+	def generateSpeechText(self, testCorpusSpeech):
+		text = testCorpusSpeech._dramaTitle + " " + testCorpusSpeech._positionInfo + "\n"
+		previousSpeech = testCorpusSpeech._previousSpeech._speaker + ":\n" + testCorpusSpeech._previousSpeech._text.strip() + "\n"
+		currentSpeech = testCorpusSpeech._speech._speaker + ":\n" + testCorpusSpeech._speech._text.strip() + "\n"
+		nextSpeech = testCorpusSpeech._nextSpeech._speaker + ":\n" + testCorpusSpeech._nextSpeech._text.strip() + "\n"
+		text = text + previousSpeech + currentSpeech + nextSpeech
+		return text
 
 	def setTestCorpus(self):
 		dramaInPartsPerDrama = 0
@@ -40,9 +63,13 @@ class Test_Corpus_Creator:
 			numberOfSpeeches = self._partsPerDrama[dramaInPartsPerDrama] * self._testCorpusSizeFactor
 			dramaInPartsPerDrama = dramaInPartsPerDrama + 1
 			i = 0
+			alreadyChosenNumbers = []
 			while (i < numberOfSpeeches):
 				i = i + 1
 				randomNumber = random.randint(0, len(speechesPerDrama[1])-1)
+				while (randomNumber in alreadyChosenNumbers):
+					randomNumber = random.randint(0, len(speechesPerDrama[1])-1)
+				alreadyChosenNumbers.append(randomNumber)
 				testCorpusSpeech = speechesPerDrama[1][randomNumber]
 				self._testCorpusSpeeches.append(testCorpusSpeech)
 
@@ -80,14 +107,6 @@ class Test_Corpus_Creator:
 			allSpeeches = float(len(self._filteredSpeechesCorpus))
 			allSpeechesPerDrama = float(len(speechesPerDrama[1]))
 			print (allSpeechesPerDrama/allSpeeches)*100
-
-	def generateSpeechText(self, testCorpusSpeech):
-		text = testCorpusSpeech._dramaTitle + " " + testCorpusSpeech._positionInfo + "\n"
-		previousSpeech = testCorpusSpeech._previousSpeech._speaker + ":\n" + testCorpusSpeech._previousSpeech._text + "\n"
-		currentSpeech = testCorpusSpeech._speech._speaker + ":\n" + testCorpusSpeech._speech._text + "\n"
-		nextSpeech = testCorpusSpeech._nextSpeech._speaker + ":\n" + testCorpusSpeech._nextSpeech._text
-		text = text + previousSpeech + currentSpeech + nextSpeech
-		return text
 
 	def initSpeechesCorpus(self):
 		dramas = []
@@ -149,7 +168,7 @@ class Test_Corpus_Speech:
 
 	def setPositionInfo(self):
 		self._positionInfo = str(self._actNumber) + ".Akt, " + str(self._confNumber) + \
-		".Szene, " + str(self._speechNumberInConf) + ".Replik"
+		".Szene, " + str(self._speechNumberInConf) + ".Replik" + ", Nummer im Drama: " + str(self._speech._subsequentNumber)
 
 
 if __name__ == "__main__":

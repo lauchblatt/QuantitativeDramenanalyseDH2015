@@ -1,15 +1,11 @@
 TODO Liste:
 
-Parser:
-	hi rend=italic ausgeben lassen, stage-Anweisungen?
-
 Lexika:
 	Weitere Lexika implementieren
 	Erweitertes Lexikon mit allen Klassen implementieren
 	(Umgang mit neutral bei nrc)
 
 Sentiment Analysis:
-	Pre Processing ausbauen
 	Groß- und Kleinschreibung bei Vergleich
 
 Wort-Evaluation:

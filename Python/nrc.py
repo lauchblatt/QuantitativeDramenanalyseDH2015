@@ -1,0 +1,176 @@
+# -*- coding: utf8 -*-
+
+import os
+import re
+import collections
+import locale
+import sys
+from language_processor import *
+
+def main():
+	reload(sys)
+	sys.setdefaultencoding('utf8')
+
+	nrc = NRC()
+	nrc.createSentimentDictFileNRCLemmas()
+
+class NRC:
+
+	def __init__(self):
+		self._sentimentDict = {}
+		self._sentimentDictLemmas = {}
+
+	def readAndInitNRCAndLemmas(self):
+		self.initNRC()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/NRC-Lemmas.txt")
+		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
+
+	def initNRC(self):
+		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
+		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
+
+		#self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
+		self._sentimentDict = self.removeTotalZerosFromNRC(self._sentimentDict)
+
+	def getSentimentDictNRC(self, sentimentDictText, isLemmas):
+		columnSub = 0
+		if(isLemmas):
+			columnSub = 1
+
+		nrcSentimentDict = {}
+		lines = sentimentDictText.readlines()[1:]
+		for line in lines:
+			wordsAndValues = line.split("\t")
+			word = wordsAndValues[1-columnSub]
+			
+			# skip missing german translations
+			if(not(word == "")):
+				sentimentsPerWord = {}
+
+				sentimentsPerWord["positive"] = int(wordsAndValues[2-columnSub])
+				sentimentsPerWord["negative"] = int(wordsAndValues[3-columnSub])
+				sentimentsPerWord["anger"] = int(wordsAndValues[4-columnSub])
+				sentimentsPerWord["anticipation"] = int(wordsAndValues[5-columnSub])
+				sentimentsPerWord["disgust"] = int(wordsAndValues[6-columnSub])
+				sentimentsPerWord["fear"] = int(wordsAndValues[7-columnSub])
+				sentimentsPerWord["joy"] = int(wordsAndValues[8-columnSub])
+				sentimentsPerWord["sadness"] = int(wordsAndValues[9-columnSub])
+				sentimentsPerWord["surprise"] = int(wordsAndValues[10-columnSub])
+				sentimentsPerWord["trust"] = int(wordsAndValues[11-columnSub].rstrip())
+
+				alreadyInLexicon = False
+				if(unicode(word) in nrcSentimentDict):
+					higherSentiments = self.getHigherSentimentsValueNrc(sentimentsPerWord, nrcSentimentDict[unicode(word)])
+					alreadyInLexicon = True
+					nrcSentimentDict[unicode(word)] = higherSentiments
+				
+				if(not alreadyInLexicon):
+					nrcSentimentDict[unicode(word)] = sentimentsPerWord
+		
+		return nrcSentimentDict
+
+	def lemmatizeDictNrc(self):
+		lp = Language_Processor()
+		newSentimentDict = {}
+		print("start Lemmatisation")
+		
+		for word,value in self._sentimentDict.iteritems():
+			lemma = lp.getLemma(word)
+			print lemma
+			
+			if lemma in newSentimentDict:
+				newSentiments = value
+				oldSentiments = newSentimentDict[lemma]
+				sentiments = self.getHigherSentimentsValueNrc(newSentiments, oldSentiments)
+				newSentimentDict[lemma] = sentiments
+			else:
+				newSentimentDict[lemma] = value
+		
+		print("Lemmatisation finished")
+		self._sentimentDictLemmas = newSentimentDict
+
+	def getHigherSentimentsValueNrc(self, newSentiments, oldSentiments):
+		newSentimentsScore = 0
+		oldSentimentsScore = 0
+
+		for sentiment in newSentiments:
+			newSentimentsScore = newSentimentsScore + newSentiments[sentiment]
+		for sentiment in oldSentiments:
+			oldSentimentsScore = oldSentimentsScore + oldSentiments[sentiment]
+
+		if(newSentimentsScore > oldSentimentsScore):
+			return newSentiments
+		else:
+			return oldSentiments
+
+	def removePhrasesFromNRC(self, nrcSentimentDict):
+		phrases = []
+		for word in nrcSentimentDict:
+			words = word.split()
+			if(len(words) > 1):
+				phrases.append(word)
+		for phrase in phrases:
+			del nrcSentimentDict[phrase]
+		return nrcSentimentDict
+
+	def removeTotalZerosFromNRC(self, nrcSentimentDict):
+		totalZeros = self.getTotalZerosNRC(nrcSentimentDict)
+
+		for zeroWord in totalZeros:
+			del nrcSentimentDict[zeroWord]
+		return nrcSentimentDict
+
+	def createOutputNRC(self, sentimentDict, dataName):
+		outputFile = open(dataName + ".txt", "w")
+		sentiments = ["positive", "negative", "anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"]
+		firstLine = "word\tpositive\tnegative\tanger\tanticipation\tdisgust\tfear\tjoy\tsadness\tsurprise\ttrust\n"
+		outputFile.write(firstLine)
+		
+		for word in sentimentDict:
+			line = word + "\t"
+			sentimentsPerWord = sentimentDict[word]
+			for sentiment in sentiments:
+				line = line + str(sentimentsPerWord[sentiment]) + "\t"
+			line = line.rstrip("\t")
+			line = line + "\n"
+			outputFile.write(line)
+		outputFile.close()
+
+	def getTotalZerosNRC(self, nrcSentimentDict):
+		totalZeros = {}
+		
+		for word in nrcSentimentDict:
+			sentiments = nrcSentimentDict[word]
+			if(all(value == 0 for value in sentiments.values())):
+				totalZeros[word] = sentiments
+		return totalZeros
+
+	def getDoublesInGermanNRC(self):
+		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
+		lines = sentDictText.readlines()[1:]
+		words = []
+		doubles = []
+
+		for line in lines:
+			wordsAndValues = line.split("\t")
+			word = wordsAndValues[1]
+
+			if(not(word == "")):
+				if(word in words):
+					doubles.append(word)
+				else:
+					words.append(word)
+		for word in doubles:
+			print(word)
+
+	def createSentimentDictFileNRCToken(self):
+		self.initNRC()
+		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Token")
+
+	def createSentimentDictFileNRCLemmas(self):
+		self.initNRC()
+		self.lemmatizeDictNrc()
+		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/NRC-LemmasTest")
+
+if __name__ == "__main__":
+    main()
