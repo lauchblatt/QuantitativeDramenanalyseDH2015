@@ -12,10 +12,14 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
+	gpc.createSentimentDictFileGPCToken()
+	gpc.createSentimentDictFileGPCLemmas()
+	"""
 	gpc.initGPC()
 	gpc.lemmatizeDictGPC()
 	print(len(gpc._sentimentDict))
 	print(len(gpc._sentimentDictLemmas))
+	"""
 
 class German_Polarity_Clues:
 	def __init__(self):
@@ -92,18 +96,49 @@ class German_Polarity_Clues:
 		lp = Language_Processor()
 		newSentimentDict = {}
 		i = 0
+
 		print("start Lemmatisation")
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp.getLemma(word)
 			if lemma in newSentimentDict:
-				i = i + 1
+				if(self.getPolarityChange(value, newSentimentDict[lemma])):
+					i = i + 1
+					"""
+					print("Lemma:")
+					print(lemma)
+					print("Alte Werte:")
+					print(newSentimentDict[lemma])
+					print("Neue Werte:")
+					print(value)
+					print("Gewählter Wert:")
+					print(self.getChosenValues(value, newSentimentDict[lemma]))
+					"""
+					chosenValues = self.getChosenValues(value, newSentimentDict[lemma])
+					newSentimentDict[lemma] = chosenValues
 			else:
 				newSentimentDict[lemma] = value
-
-		print ("Lemmatisation finished")
 		print i
+		print ("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	def getChosenValues(self, newValues, oldValues):
+		if(newValues["neutral"] > oldValues["neutral"]):
+			return oldValues
+		else:
+			if(newValues["positive"] > oldValues["positive"]):
+				return newValues
+			else:
+				return oldValues
+
+	def getPolarityChange(self, newValues, oldValues):
+		positive = (oldValues["positive"] is newValues["positive"])
+		negative = (oldValues["negative"] is newValues["negative"])
+		neutral = (oldValues["neutral"] is newValues["neutral"])
+		if(positive and negative and neutral):
+			return False
+		else:
+			return True
+	
 	def removePositiveDoubles(self, sentimentDictNegative, sentimentDictPositive):
 		toDel = []
 		for word in sentimentDictNegative:
@@ -124,6 +159,26 @@ class German_Polarity_Clues:
 		for wordToDel in toDel:
 			del sentimentDictNeutral[wordToDel]
 		return sentimentDictNeutral
+
+	def createOutputGPC(self, sentimentDict, dataName):
+		outputFile = open(dataName + ".txt", "w")
+		firstLine = "word\tpositive\tnegative\tneutral"
+		outputFile.write(firstLine)
+
+		for word in sentimentDict:
+			info = sentimentDict[word]
+			line = "\n" + word + "\t" + str(info["positive"]) + "\t" + str(info["negative"]) + "\t" + str(info["neutral"])
+			outputFile.write(line)
+		outputFile.close()
+
+	def createSentimentDictFileGPCToken(self):
+		self.initGPC()
+		self.createOutputGPC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/GPC-Token")
+
+	def createSentimentDictFileGPCLemmas(self):
+		self.initGPC()
+		self.lemmatizeDictGPC()
+		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/GPC-Lemmas")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,246 @@
+Lemmatisierungs-Doppelungen mit neutralen Wörtern und Polaritätsänderung: 30
+Lemma:
+all
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+heben
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+liegen
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+all
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+gehen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+ablösen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+Verschulden
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+dringen
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+stechen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+wohl
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+nicht
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+Befremden
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+dulden
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+lassen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+eben
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+mild
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+gross
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+gering
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+führen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+auflösen
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+voll
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+unermesslich
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+absehen
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+Patt
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+sein
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+Lemma:
+beharren
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+der
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+fasen
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+setzen
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Polaritätsänderung:
+True
+Lemma:
+wünschen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Polaritätsänderung:
+True
+30
+Lemmatisation finished
+10943
+10538
+[Finished in 52.0s]

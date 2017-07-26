@@ -6,16 +6,58 @@ import collections
 import locale
 import sys
 import random
+import pickle
 from drama_parser import *
 from sa_pre_processing import *
+from statistic_functions import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
+	
 	tcc = Test_Corpus_Creator()
-	tcc.shuffleTestCorpus()
-	tcc.createTxtOutputForTestCorpus()
+	tcc.createNewTestCorpus()
+	tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus11.txt")
+	tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus11.p")
+	
+
+	tcr = Test_Corpus_Handler()
+	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/test-corpus11.p")
+	tcr.calcTestCorpusMetrics()
+	#tcc._testCorpusSpeeches = tcr._testCorpusSpeeches
+	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus2.txt")
+
+
+class Test_Corpus_Handler:
+	def __init__(self):
+		self._testCorpusSpeeches = []
+
+		self._average = -1
+		self._median = -1
+		self._max = -1
+		self._min = -1
+
+	def readAndInitTestCorpusFromPickle(self,path):
+		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
+
+	def writeLengths(self, path):
+		wordLengths = []
+		for corpusSpeech in self._testCorpusSpeeches:
+
+	def calcTestCorpusMetrics(self):
+		wordLengths = []
+		for corpusSpeech in self._testCorpusSpeeches:
+			wordLengths.append(corpusSpeech._speech._lengthInWords)
+		self._average = average(wordLengths)
+		self._median = median(wordLengths)
+		self._min = custom_min(wordLengths)
+		self._max = custom_max(wordLengths)
+
+		print(self._average)
+		print(self._median)
+		print(self._min)
+		print(self._max)
 
 class Test_Corpus_Creator:
 
@@ -26,15 +68,20 @@ class Test_Corpus_Creator:
 		self._speechesCorpusPerDrama = []
 		self._filteredSpeechesCorpus = []
 		self._filteredSpeechesCorpusPerDrama = []
-		self._partsPerDrama = [3, 10, 14, 7, 6, 6, 6, 10, 11, 10, 14, 3]
+		self._partsPerDrama = [3, 10, 14, 7, 6, 6, 5, 10, 12, 10, 14, 3]
 		self._testCorpusSizeFactor = 2
 
+	def createNewTestCorpus(self):
 		self.initSpeechesCorpus()
 		self.setTestCorpus()
+		#self.shuffleTestCorpus()
+		self.setIdsAndPositionInfoOfTestCorpus()
 
-
-	def createTxtOutputForTestCorpus(self):
-		outputFile = open("../Evaluation/Test-Korpus.txt", "w")
+	def saveTestCorpusAsPickle(self, path):
+		pickle.dump(self._testCorpusSpeeches, open(path, "wb" ))
+	
+	def createTxtOutputForTestCorpus(self, path):
+		outputFile = open(path, "w")
 		text = ""
 		i = 0
 		for corpusSpeech in self._testCorpusSpeeches:
@@ -49,6 +96,13 @@ class Test_Corpus_Creator:
 	def shuffleTestCorpus(self):
 		random.shuffle(self._testCorpusSpeeches)
 	
+	def setIdsAndPositionInfoOfTestCorpus(self):
+		i = 1
+		for corpusSpeech in self._testCorpusSpeeches:
+			corpusSpeech._id = i
+			i = i + 1
+			corpusSpeech.setPositionInfo()
+
 	def generateSpeechText(self, testCorpusSpeech):
 		text = testCorpusSpeech._dramaTitle + " " + testCorpusSpeech._positionInfo + "\n"
 		previousSpeech = testCorpusSpeech._previousSpeech._speaker + ":\n" + testCorpusSpeech._previousSpeech._text.strip() + "\n"
@@ -129,16 +183,27 @@ class Test_Corpus_Creator:
 					while (i < confLength):
 						previousSpeech = None
 						nextSpeech = None
-
-						if(conf._speeches[i-1] is not None):
+						if((i-1) >= 0):
 							previousSpeech = conf._speeches[i-1]
+
 						currentSpeech = conf._speeches[i]
 						speechLength = conf._speeches[i]._lengthInWords
+						
 						if((i+1) < confLength):
 							nextSpeech = conf._speeches[i+1]
 
-						tcSpeech = Test_Corpus_Speech(currentSpeech, previousSpeech, nextSpeech, dramaTitle, actNumber, confNumber, i-1)
+						tcSpeech = Test_Corpus_Speech(currentSpeech, previousSpeech, nextSpeech, dramaTitle, actNumber, confNumber, i+1)
 						self._speechesCorpus.append(tcSpeech)
+						"""
+						print("Speech")
+						print(tcSpeech._previousSpeech)
+						print(tcSpeech._speech)
+						print(tcSpeech._nextSpeech)
+						print(tcSpeech._actNumber)
+						print(tcSpeech._confNumber)
+						print(tcSpeech._speechNumberInConf)
+						"""
+
 						speechesPerDrama.append(tcSpeech)
 						if(previousSpeech is not None and nextSpeech is not None and speechLength > 18):
 							self._filteredSpeechesCorpus.append(tcSpeech)
@@ -164,11 +229,13 @@ class Test_Corpus_Speech:
 		self._speechNumberInConf = speechNumberInConf
 		
 		self._positionInfo = ""
-		self.setPositionInfo()
+		self._id = -1
+		#self.setPositionInfo()
 
 	def setPositionInfo(self):
 		self._positionInfo = str(self._actNumber) + ".Akt, " + str(self._confNumber) + \
-		".Szene, " + str(self._speechNumberInConf) + ".Replik" + ", Nummer im Drama: " + str(self._speech._subsequentNumber)
+		".Szene, " + str(self._speechNumberInConf) + ".Replik" + ", Drama-Nummer: " + str(self._speech._subsequentNumber) + \
+		", ID:" + str(self._id)
 
 
 if __name__ == "__main__":

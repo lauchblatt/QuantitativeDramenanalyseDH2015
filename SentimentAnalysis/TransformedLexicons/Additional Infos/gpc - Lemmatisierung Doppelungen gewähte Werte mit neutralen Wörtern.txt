@@ -1,0 +1,246 @@
+start Lemmatisation
+Lemma:
+all
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+heben
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+liegen
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+all
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+gehen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+ablösen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+Verschulden
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+dringen
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+stechen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+wohl
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+nicht
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Lemma:
+Befremden
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+dulden
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+lassen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+eben
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+mild
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+gross
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+gering
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+führen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+auflösen
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+voll
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+unermesslich
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+absehen
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Lemma:
+Patt
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Lemma:
+sein
+Alte Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Lemma:
+beharren
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Lemma:
+der
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Lemma:
+fasen
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Lemma:
+setzen
+Alte Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 0, 'negative': 1}
+Gewählter Wert:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Lemma:
+wünschen
+Alte Werte:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+Neue Werte:
+{'positive': 0, 'neutral': 1, 'negative': 0}
+Gewählter Wert:
+{'positive': 1, 'neutral': 0, 'negative': 0}
+30
+Lemmatisation finished
+10943
+10538
+[Finished in 48.5s]
