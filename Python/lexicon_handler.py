@@ -74,7 +74,7 @@ class Lexicon_Handler:
 		self._sentimentDict = gpc._sentimentDict
 		self._sentimentDictLemmas = gpc._sentimentDictLemmas
 
-	def combineSentimentLexicons(self):
+	def combineSentimentLexica(self):
 		keys = self.readAndReturnLexiconKeyDumps()
 		lexiconKeysTokens = keys[0]
 		lexiconKeysLemma = keys[1]
@@ -105,16 +105,17 @@ class Lexicon_Handler:
 			if (key in gpc._sentimentDict): sentiments["gpc"] = gpc._sentimentDict[key]
 			combinedLexiconTokens[key] = sentiments
 
-		for key in lexiconKeysLemmas:
+		for key in lexiconKeysLemma:
 			sentiments = {}
-			if (key in sentiWS._sentimentDict): sentiments["sentiWS"] = sentiWS._sentimentDict[key]
-			if (key in nrc._sentimentDict): sentiments["nrc"] = nrc._sentimentDict[key]
-			if (key in bawl._sentimentDict): sentiments["bawl"] = bawl._sentimentDict[key]
-			if (key in cd._sentimentDict): sentiments["cd"] = cd._sentimentDict[key]
-			if (key in gpc._sentimentDict): sentiments["gpc"] = gpc._sentimentDict[key]
+			if (key in sentiWS._sentimentDictLemmas): sentiments["sentiWS"] = sentiWS._sentimentDictLemmas[key]
+			if (key in nrc._sentimentDictLemmas): sentiments["nrc"] = nrc._sentimentDictLemmas[key]
+			if (key in bawl._sentimentDictLemmas): sentiments["bawl"] = bawl._sentimentDictLemmas[key]
+			if (key in cd._sentimentDictLemmas): sentiments["cd"] = cd._sentimentDictLemmas[key]
+			if (key in gpc._sentimentDictLemmas): sentiments["gpc"] = gpc._sentimentDictLemmas[key]
 			combinedLexiconLemmas[key] = sentiments
 
-		return (combinedLexiconTokens, combinedLexiconLemmas)
+		self._sentimentDict = combinedLexiconTokens
+		self._sentimentDictLemmas = combinedLexiconLemmas
 
 	def readAndReturnLexiconKeyDumps(self):
 		lexiconKeysTokens = pickle.load(open("Dumps/combinedLexiconKeysTokens.p", "rb"))

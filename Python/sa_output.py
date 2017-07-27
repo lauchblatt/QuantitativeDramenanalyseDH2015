@@ -20,16 +20,16 @@ def main():
 	processor = Drama_Pre_Processing()
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Der Misogyn.p")
 	
-	sa = Sentiment_Analyzer()
+	sa = Sentiment_Analyzer(True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("Misogyn", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("Misogyn6", sentimentExtendedDramaModel)
 
 class Sentiment_Output_Generator:
 
 	def createTxtOutputSingleDrama(self, name, dramaModel):
-		outputFile = open("../SentimentAnalysis/SA-Output/" + name +"2.txt", "w")
+		outputFile = open("../SentimentAnalysis/SA-Output/" + name +".txt", "w")
 
 		outputFile.write(dramaModel._title +"\n\n")
 		outputFile.write("Sentiments for entire #DRAMA: " + "\n\n")

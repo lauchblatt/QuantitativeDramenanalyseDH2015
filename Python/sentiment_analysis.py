@@ -6,7 +6,6 @@ import collections
 import locale
 import sys
 from drama_parser import *
-from language_processor import *
 from lexicon_handler import *
 from sa_models import *
 from sa_calculator import *
@@ -20,20 +19,18 @@ def main():
 	processor = Drama_Pre_Processing()
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Der Misogyn.p")
 	
-	sa = Sentiment_Analyzer()
+	sa = Sentiment_Analyzer(True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	
 	
 class Sentiment_Analyzer:
 
-	def __init__(self):
-		self._languageProcessor = None
-		
-		self._sentiWS = {}
-		self._nrc = {}
-		self._bawl = {}
+	def __init__(self, lemmaModeOn):
 
-		self.initLexiconsAndLp()
+		self._sentimentDict = {}
+		self._lemmaModeOn = lemmaModeOn
+
+		self.initLexicons()
 	
 	def attachAllSentimentInfoToDrama(self, dramaModel):
 		self.attachSentimentBearingWordsToDrama(dramaModel)
@@ -42,8 +39,9 @@ class Sentiment_Analyzer:
 		self.attachSentimentRelationsToSpeaker(dramaModel)
 		return dramaModel
 
-	def initLexiconsAndLp(self):
+	def initLexicons(self):
 		
+		"""
 		self._languageProcessor = Language_Processor()
 		lexiconHandlerSentiWS = Lexicon_Handler()
 		lexiconHandlerSentiWS.initSingleDict("SentiWS")
@@ -54,6 +52,15 @@ class Sentiment_Analyzer:
 		lexiconHandlerBawl = Lexicon_Handler()
 		lexiconHandlerBawl.initSingleDict("Bawl")
 		self._bawl = lexiconHandlerBawl._sentimentDictLemmas
+		"""
+		lexiconHandler = Lexicon_Handler()
+		lexiconHandler.combineSentimentLexica()
+		sentimentDictTokens = lexiconHandler._sentimentDict
+		sentimentDictLemmas = lexiconHandler._sentimentDictLemmas
+		if(self._lemmaModeOn):
+			self._sentimentDict = sentimentDictLemmas
+		else:
+			self._sentimentDict = sentimentDictTokens
 
 	def attachStructuralSentimentMetricsToDrama(self, dramaModel):
 		for act in dramaModel._acts:
@@ -152,40 +159,24 @@ class Sentiment_Analyzer:
 	def getSentimentBearingWordsSpeech(self, textAsLanguageInfo):				
 		sentimentBearingWords = self.getSentimentBearingWords(textAsLanguageInfo)
 		return sentimentBearingWords
-
-	def setSentiWSInformation(self, sentimentBearingWord):
-		if(sentimentBearingWord._lemma in self._sentiWS):
-			sentimentBearingWord._polaritySentiWS = self._sentiWS[sentimentBearingWord._lemma]
 	
-	def setNrcInformation(self, sentimentBearingWord):
-		if(sentimentBearingWord._lemma in self._nrc):
-			sentiments = self._nrc[sentimentBearingWord._lemma]
-			sentimentBearingWord._positiveNrc = sentiments["positive"]
-			sentimentBearingWord._negativeNrc = sentiments["negative"]
-			sentimentBearingWord._anger = sentiments["anger"]
-			sentimentBearingWord._anticipation = sentiments["anticipation"]
-			sentimentBearingWord._disgust = sentiments["disgust"]
-			sentimentBearingWord._fear = sentiments["fear"]
-			sentimentBearingWord._joy = sentiments["joy"]
-			sentimentBearingWord._sadness = sentiments["sadness"]
-			sentimentBearingWord._surprise = sentiments["surprise"]
-			sentimentBearingWord._trust = sentiments["trust"]
-
-	def setBawlInformation(self, sentimentBearingWord):
-		if(sentimentBearingWord._lemma in self._bawl):
-			info = self._bawl[sentimentBearingWord._lemma]
-			sentimentBearingWord._emotion = info["emotion"]
-			sentimentBearingWord._arousel = info["arousel"]
-	
-	def getSentimentBearingWord(self, languageInfo):
+	def getSentimentBearingWord(self, languageInfo, word):
 		sentimentBearingWord = Sentiment_Bearing_Word()
+
 		sentimentBearingWord._lemma = languageInfo[0]
 		sentimentBearingWord._token = languageInfo[1][0]
 		sentimentBearingWord._POS = languageInfo[1][1]
 
-		self.setSentiWSInformation(sentimentBearingWord)
-		self.setNrcInformation(sentimentBearingWord)
-		self.setBawlInformation(sentimentBearingWord)
+		if(word in self._sentimentDict):
+			allSentiments = self._sentimentDict[word]
+		else:
+			upperWord = word[:1].upper() + word[1:]
+			lowerWord = word.lower()
+			if(upperWord in self._sentimentDict):
+				allSentiments = self._sentimentDict[upperWord]
+			if(lowerWord in self._sentimentDict):
+				allSentiments = self._sentimentDict[lowerWord]
+		sentimentBearingWord.setAllSentiments(allSentiments)
 
 		return sentimentBearingWord
 				
@@ -193,17 +184,22 @@ class Sentiment_Analyzer:
 		sentimentBearingWords = []
 
 		for languageInfo in lemmasWithLanguageInfo:
-			lemma = languageInfo[0]
+			if(self._lemmaModeOn):
+				word = languageInfo[0]
+			else:
+				word = languageInfo[1][0]
 			
-			if (self.isSentimentBearingWord(lemma)):
-				sentimentBearingWord = self.getSentimentBearingWord(languageInfo)
+			if (self.isSentimentBearingWord(word)):
+				sentimentBearingWord = self.getSentimentBearingWord(languageInfo, word)
 				sentimentBearingWords.append(sentimentBearingWord)
 
 		return sentimentBearingWords
 
 	def isSentimentBearingWord(self, word):
-
-		if((word in self._sentiWS) or (word in self._nrc) or (word in self._bawl)):
+		upperWord = word[:1].upper() + word[1:]
+		lowerWord = word.lower()
+		
+		if(upperWord in self._sentimentDict or lowerWord in self._sentimentDict):
 			return True
 		else:
 			return False
