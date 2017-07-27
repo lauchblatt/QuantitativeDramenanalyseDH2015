@@ -44,6 +44,7 @@ class Sentiment_Calculator:
 				self._sentimentMetrics._metricsNormalised[metric] = float(metricTotal)/self._normalisationFactorLength
 
 	def calcTotalMetrics(self):
+		"""
 		polaritySentiWSTotal = 0
 		
 		positiveNrcTotal = 0
@@ -79,11 +80,9 @@ class Sentiment_Calculator:
 				arouselTotal = arouselTotal + word._arousel
 
 		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = polaritySentiWSTotal
-		
 		self._sentimentMetrics._metricsTotal["positiveNrc"] = positiveNrcTotal
 		self._sentimentMetrics._metricsTotal["negativeNrc"]  = negativeNrcTotal
 		self._sentimentMetrics._metricsTotal["polarityNrc"] = positiveNrcTotal - negativeNrcTotal
-
 		self._sentimentMetrics._metricsTotal["anger"] = angerTotal
 		self._sentimentMetrics._metricsTotal["anticipation"] = anticipationTotal
 		self._sentimentMetrics._metricsTotal["disgust"] = disgustTotal
@@ -95,7 +94,25 @@ class Sentiment_Calculator:
 
 		self._sentimentMetrics._metricsTotal["emotion"] = emotionTotal
 		self._sentimentMetrics._metricsTotal["arousel"] = arouselTotal
+		"""
 
+		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = sum(word._polaritySentiWS for word in self._sentimentBearingWords)
+		
+		self._sentimentMetrics._metricsTotal["positiveNrc"] = sum(word._positiveNrc for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeNrc"]  = sum(word._negativeNrc for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polarityNrc"] = self._sentimentMetrics._metricsTotal["positiveNrc"] - self._sentimentMetrics._metricsTotal["negativeNrc"]
+
+		self._sentimentMetrics._metricsTotal["anger"] = sum(word._anger for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["anticipation"] = sum(word._anticipation for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["disgust"] = sum(word._disgust for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["fear"] = sum(word._fear for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["joy"] = sum(word._joy for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["sadness"] = sum(word._sadness for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["surprise"] = sum(word._surprise for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["trust"] = sum(word._trust for word in self._sentimentBearingWords)
+
+		self._sentimentMetrics._metricsTotal["emotion"] = sum(word._emotion for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["arousel"] = sum(word._arousel for word in self._sentimentBearingWords)
 
 if __name__ == "__main__":
     main()
