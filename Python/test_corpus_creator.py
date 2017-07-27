@@ -18,13 +18,14 @@ def main():
 	
 	tcc = Test_Corpus_Creator()
 	tcc.createNewTestCorpus()
-	tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus11.txt")
-	tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus11.p")
+	tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus7.txt")
+	tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus7.p")
 	
 
 	tcr = Test_Corpus_Handler()
-	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/test-corpus11.p")
+	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/test-corpus7.p")
 	tcr.calcTestCorpusMetrics()
+	tcr.writeLengths("../Evaluation/Test-Korpus/test-corpus7-lengths.txt")
 	#tcc._testCorpusSpeeches = tcr._testCorpusSpeeches
 	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus2.txt")
 
@@ -44,6 +45,12 @@ class Test_Corpus_Handler:
 	def writeLengths(self, path):
 		wordLengths = []
 		for corpusSpeech in self._testCorpusSpeeches:
+			wordLengths.append(corpusSpeech._speech._lengthInWords)
+		outputFile = open(path, "w")
+		wordLengths.sort()
+		for length in wordLengths:
+			outputFile.write(str(length) + "\n")
+		outputFile.close()
 
 	def calcTestCorpusMetrics(self):
 		wordLengths = []
@@ -74,6 +81,7 @@ class Test_Corpus_Creator:
 	def createNewTestCorpus(self):
 		self.initSpeechesCorpus()
 		self.setTestCorpus()
+		print(len(self._speechesCorpus))
 		#self.shuffleTestCorpus()
 		self.setIdsAndPositionInfoOfTestCorpus()
 

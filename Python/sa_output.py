@@ -10,15 +10,26 @@ from language_processor import *
 from lexicon_handler import *
 from sa_models import *
 from sa_calculator import *
+from sa_pre_processing import *
+from sentiment_analysis import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
+	processor = Drama_Pre_Processing()
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Der Misogyn.p")
+	
+	sa = Sentiment_Analyzer()
+	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
+
+	sog = Sentiment_Output_Generator()
+	sog.createTxtOutputSingleDrama("Misogyn", sentimentExtendedDramaModel)
+
 class Sentiment_Output_Generator:
 
 	def createTxtOutputSingleDrama(self, name, dramaModel):
-		outputFile = open("../SentimentAnalysis/SA-Output/" + name +".txt", "w")
+		outputFile = open("../SentimentAnalysis/SA-Output/" + name +"2.txt", "w")
 
 		outputFile.write(dramaModel._title +"\n\n")
 		outputFile.write("Sentiments for entire #DRAMA: " + "\n\n")

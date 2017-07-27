@@ -5,20 +5,35 @@ import locale
 import sys
 from drama_parser import *
 from language_processor import *
+import pickle
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
+	dpp = Drama_Pre_Processing()
+	dpp.preProcessAndDumpAllDramas()
+
 class Drama_Pre_Processing:
 
-	def __init__(self, dramaPath):
+	def __init__(self):
 		self._dramaModel = None
 		self._languageProcessor = None
 
-		self.initDramaModel(dramaPath)
 		self.initLanguageProcessor()
+	
+	def preProcessAndDumpAllDramas(self):
+		for filename in os.listdir("../Lessing-Dramen/"):
+			self.preProcessAndLemmatize("../Lessing-Dramen/" + filename)
+			targetPath = "Dumps/ProcessedDramas/" + self._dramaModel._title + ".p"
+			self.dumpDramaModel(targetPath)
+	
+	def readDramaModelFromDump(self, dramaPath):
+		self._dramaModel = pickle.load(open(dramaPath, "rb"))
+		return self._dramaModel
 
+	def dumpDramaModel(self, dramaPath):
+		pickle.dump(self._dramaModel, open(dramaPath, "wb" ))
 
 	def initDramaModel(self, dramaPath):
 		parser = DramaParser()
@@ -27,11 +42,24 @@ class Drama_Pre_Processing:
 	def initLanguageProcessor(self):
 		self._languageProcessor = Language_Processor()
 
-	def preProcess(self):
+	def preProcess(self, path):
+		self.initDramaModel(path)
 		self.attachPositionsToSpeechesAndConfs()
 		self.attachPreOccuringSpeakersToSpeeches()
 		self.attachLengthInWordsToStructuralElements()
 		return self._dramaModel
+
+	def preProcessAndLemmatize(self, path):
+		self.preProcess(path)
+		self.attachLanguageInfoToSpeeches()
+
+	def attachLanguageInfoToSpeeches(self):
+		for act in self._dramaModel._acts:
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					self._languageProcessor.processText(speech._text)
+					lemmaInformation = self._languageProcessor._lemmasWithLanguageInfo
+					speech._textAsLanguageInfo = lemmaInformation
 
 	def attachLengthInWordsToStructuralElements(self):
 		dramaLength = 0

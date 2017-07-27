@@ -255,6 +255,7 @@ class SpeechModel:
         self._speaker = None
 
         self._text = None
+        self._textAsLanguageInfo = []
 
         self._sentimentBearingWords = []
         self._sentimentMetrics = None

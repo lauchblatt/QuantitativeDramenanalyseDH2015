@@ -17,8 +17,8 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	processor = Drama_Pre_Processing("../Lessing-Dramen/less-Philotas_t.xml")
-	dramaModel = processor.preProcess()
+	processor = Drama_Pre_Processing()
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Der Misogyn.p")
 	
 	sa = Sentiment_Analyzer()
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
@@ -36,7 +36,6 @@ class Sentiment_Analyzer:
 		self.initLexiconsAndLp()
 	
 	def attachAllSentimentInfoToDrama(self, dramaModel):
-		print("######")
 		self.attachSentimentBearingWordsToDrama(dramaModel)
 		self.attachStructuralSentimentMetricsToDrama(dramaModel)
 		self.attachSentimentMetricsToSpeaker(dramaModel)
@@ -128,12 +127,8 @@ class Sentiment_Analyzer:
 				sentimentBearingWordsConf = []
 
 				for speech in configuration._speeches:
-					text = speech._text
-					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(text)
-					####
-					#speechLength = len(self._languageProcessor._lemmasWithLanguageInfo)
-					#speech._lengthInWords = speechLength
-					####
+					textAsLanguageInfo = speech._textAsLanguageInfo
+					speech._sentimentBearingWords = self.getSentimentBearingWordsSpeech(textAsLanguageInfo)
 						
 					sentimentBearingWordsConf.extend(speech._sentimentBearingWords)
 					sentimentBearingWordsAct.extend(speech._sentimentBearingWords)
@@ -154,15 +149,9 @@ class Sentiment_Analyzer:
 				sentimentBearingWordsSpeaker.extend(speech._sentimentBearingWords)
 			speaker._sentimentBearingWords = sentimentBearingWordsSpeaker
 
-	def getSentimentBearingWordsSpeech(self, text):
-		lemmasWithLanguageInfo = self.getLemmasWithLanguageInfo(text)					
-		sentimentBearingWords = self.getSentimentBearingWords(lemmasWithLanguageInfo)
+	def getSentimentBearingWordsSpeech(self, textAsLanguageInfo):				
+		sentimentBearingWords = self.getSentimentBearingWords(textAsLanguageInfo)
 		return sentimentBearingWords
-
-	def getLemmasWithLanguageInfo(self, text):
-		self._languageProcessor.processText(text)
-		lemmaInformation = self._languageProcessor._lemmasWithLanguageInfo
-		return lemmaInformation
 
 	def setSentiWSInformation(self, sentimentBearingWord):
 		if(sentimentBearingWord._lemma in self._sentiWS):
@@ -184,8 +173,6 @@ class Sentiment_Analyzer:
 
 	def setBawlInformation(self, sentimentBearingWord):
 		if(sentimentBearingWord._lemma in self._bawl):
-			print("###")
-			print(sentimentBearingWord._lemma)
 			info = self._bawl[sentimentBearingWord._lemma]
 			sentimentBearingWord._emotion = info["emotion"]
 			sentimentBearingWord._arousel = info["arousel"]

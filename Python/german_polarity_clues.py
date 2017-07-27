@@ -26,6 +26,20 @@ class German_Polarity_Clues:
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
+	def readAndInitGPCAndLemmas(self):
+		self.initGPC()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/GPC-Lemmas.txt")
+		sentimentDict = {}
+		lines = sentDictText.readlines()[1:]
+		for line in lines:
+			wordAndValues = line.split("\t")
+			sentiments = {}
+			sentiments["positive"] = wordAndValues[1]
+			sentiments["negative"] = wordAndValues[2]
+			sentiments["neutral"] = wordAndValues[3]
+			sentimentDict[unicode((wordAndValues)[0])] = sentiments
+		self._sentimentDictLemmas = sentimentDict
+
 	def initGPC(self):
 
 		sentDictTextNegative = open("../SentimentAnalysis/GermanPolarityClues/GermanPolarityClues-Negative-220311.tsv")
