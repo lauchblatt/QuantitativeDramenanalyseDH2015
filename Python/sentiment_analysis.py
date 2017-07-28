@@ -166,16 +166,20 @@ class Sentiment_Analyzer:
 		sentimentBearingWord._lemma = languageInfo[0]
 		sentimentBearingWord._token = languageInfo[1][0]
 		sentimentBearingWord._POS = languageInfo[1][1]
-
+		print word
 		if(word in self._sentimentDict):
 			allSentiments = self._sentimentDict[word]
+			print allSentiments
 		else:
 			upperWord = word[:1].upper() + word[1:]
 			lowerWord = word.lower()
-			if(upperWord in self._sentimentDict):
-				allSentiments = self._sentimentDict[upperWord]
 			if(lowerWord in self._sentimentDict):
 				allSentiments = self._sentimentDict[lowerWord]
+				print allSentiments
+			if(upperWord in self._sentimentDict):
+				allSentiments = self._sentimentDict[upperWord]
+				print allSentiments
+
 		sentimentBearingWord.setAllSentiments(allSentiments)
 
 		return sentimentBearingWord
@@ -198,7 +202,7 @@ class Sentiment_Analyzer:
 	def isSentimentBearingWord(self, word):
 		upperWord = word[:1].upper() + word[1:]
 		lowerWord = word.lower()
-		
+
 		if(upperWord in self._sentimentDict or lowerWord in self._sentimentDict):
 			return True
 		else:

@@ -18,7 +18,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.combineSentimentLexicons()
+	lexiconHandler.combineSentimentLexica()
 	#lexiconHandler.initSingleDict("GPC")
 	#print(len(lexiconHandler._sentimentDict))
 	#print(len(lexiconHandler._sentimentDictLemmas))
@@ -116,6 +116,7 @@ class Lexicon_Handler:
 
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
+		print(self._sentimentDict["Adel"])
 
 	def readAndReturnLexiconKeyDumps(self):
 		lexiconKeysTokens = pickle.load(open("Dumps/combinedLexiconKeysTokens.p", "rb"))

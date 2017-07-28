@@ -10,6 +10,7 @@ import pickle
 from drama_parser import *
 from sa_pre_processing import *
 from statistic_functions import *
+from sentiment_analysis import *
 
 def main():
 	reload(sys)
@@ -17,15 +18,27 @@ def main():
 
 	
 	tcc = Test_Corpus_Creator()
+	"""
 	tcc.createNewTestCorpus()
 	tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus7.txt")
 	tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus7.p")
 	
-
+	"""
 	tcr = Test_Corpus_Handler()
-	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/test-corpus7.p")
-	tcr.calcTestCorpusMetrics()
-	tcr.writeLengths("../Evaluation/Test-Korpus/test-corpus7-lengths.txt")
+	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/test-corpus6-with-Language-Info.p")
+	#tcr.attachLanguageInfoToTestCorpus()
+	#tcr.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus6-with-Language-Info.p")
+
+	sa = Sentiment_Analyzer(False)
+	for corpusSpeech in tcr._testCorpusSpeeches:
+		corpusSpeech._speech._sentimentBearingWords = sa.getSentimentBearingWordsSpeech(corpusSpeech._speech._textAsLanguageInfo)
+		sa.attachSentimentMetricsToUnit(corpusSpeech._speech)
+		corpusSpeech._speech._sentimentMetrics.printAllInfo(corpusSpeech._speech._lengthInWords)
+		for word in corpusSpeech._speech._sentimentBearingWords:
+			word.printAllInformation()
+
+	#tcr.calcTestCorpusMetrics()
+	#tcr.writeLengths("../Evaluation/Test-Korpus/test-corpus7-lengths.txt")
 	#tcc._testCorpusSpeeches = tcr._testCorpusSpeeches
 	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus2.txt")
 
@@ -38,6 +51,13 @@ class Test_Corpus_Handler:
 		self._median = -1
 		self._max = -1
 		self._min = -1
+
+	def attachLanguageInfoToTestCorpus(self):
+		languageProcessor = Language_Processor()
+		for corpusSpeech in self._testCorpusSpeeches:
+			languageProcessor.processText(corpusSpeech._speech._text)
+			lemmaInformation = languageProcessor._lemmasWithLanguageInfo
+			corpusSpeech._speech._textAsLanguageInfo = lemmaInformation
 
 	def readAndInitTestCorpusFromPickle(self,path):
 		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
@@ -52,6 +72,9 @@ class Test_Corpus_Handler:
 			outputFile.write(str(length) + "\n")
 		outputFile.close()
 
+	def saveTestCorpusAsPickle(self, path):
+		pickle.dump(self._testCorpusSpeeches, open(path, "wb" ))
+	
 	def calcTestCorpusMetrics(self):
 		wordLengths = []
 		for corpusSpeech in self._testCorpusSpeeches:
@@ -175,8 +198,8 @@ class Test_Corpus_Creator:
 		path = "../Lessing-Dramen/"	
 
 		for filename in os.listdir(path):		
-			dpp = Drama_Pre_Processing(path + filename)
-			dramaModel = dpp.preProcess()
+			dpp = Drama_Pre_Processing()
+			dramaModel = dpp.preProcess(path + filename)
 			dramaTitle = dramaModel._title
 			print(path+filename)
 			speechesPerDrama = []
