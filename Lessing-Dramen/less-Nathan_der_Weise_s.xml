@@ -3018,15 +3018,21 @@ Ihr Herren, nur so weiter! – Mir schon recht! –</l>
                                     <hi rend="italic" xml:id="tg666.2.4.1">Der Derwisch Al-Hafi. Saladin. Sittah.</hi>
                                  </stage>
                                  <lb xml:id="tg666.2.5"/>
-                                 <p xml:id="tg666.2.6">AL-HAFI.</p>
-                                 <p rend="zenoPLm4n4" xml:id="tg666.2.7">Die Gelder aus</p>
-                                 <p rend="zenoPLm4n4" xml:id="tg666.2.8">Ägypten sind vermutlich angelangt.</p>
-                                 <p rend="zenoPLm4n4" xml:id="tg666.2.9">Wenns nur fein viel ist.</p>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                    <p rend="zenoPLm4n4" xml:id="tg666.2.7">Die Gelder aus</p>
+                                    <p rend="zenoPLm4n4" xml:id="tg666.2.8">Ägypten sind vermutlich angelangt.</p>
+                                    <p rend="zenoPLm4n4" xml:id="tg666.2.9">Wenns nur fein viel ist.</p>
+                                 </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.10">SALADIN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.11">Hast du Nachricht?</l>
-                                       <l xml:id="tg666.2.12">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                    <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.13">Ich?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.14">Ich nicht. Ich denke, daß ich hier sie in</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.15">Empfang soll nehmen.</l>
@@ -3043,8 +3049,9 @@ Ihr Herren, nur so weiter! – Mir schon recht! –</l>
                                        <hi rend="italic" xml:id="tg666.2.20.1">In Gedanken hin und her gehend.</hi>
                                     </stage>
                                     <lb xml:id="tg666.2.21"/>
-                                    <lg>
-                                       <l xml:id="tg666.2.22">AL-HAFI.</l>
+                                 </sp>
+                                 <sp>
+                                     <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.23">Zahl! anstatt, empfang! O schön!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.24">Das ist für Was noch weniger als Nichts. –</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.25">An Sittah? – wiederum an Sittah? Und</l>
@@ -3052,17 +3059,18 @@ Ihr Herren, nur so weiter! – Mir schon recht! –</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.27">
                                           <pb n="239" xml:id="tg666.2.27.1"/>
 Da steht es noch das Spiel!</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.28">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.29">Du gönnst mir doch</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.30">Mein Glück?</l>
-                                       <l xml:id="tg666.2.31">AL-HAFI <hi rend="italic" xml:id="tg666.2.31.1">das Spiel betrachtend.</hi>
-                                       </l>
-                                       <l rend="zenoPLm4n4" xml:id="tg666.2.32">Was gönnen? Wenn – Ihr wißt ja wohl.</l>
                                     </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                    <hi rend="italic" xml:id="tg666.2.31.1">das Spiel betrachtend.</hi>
+                                    <l rend="zenoPLm4n4" xml:id="tg666.2.32">Was gönnen? Wenn – Ihr wißt ja wohl.</l>                                
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.33.part1">SITTAH</speaker> 
@@ -3072,28 +3080,36 @@ Da steht es noch das Spiel!</l>
 
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.34">Bst! Hafi! bst!</l>
-                                       <l xml:id="tg666.2.35">AL-HAFI <hi rend="italic" xml:id="tg666.2.35.1">noch auf das Spiel gerichtet.</hi>
-                                       </l>
-                                       <l rend="zenoPLm4n4" xml:id="tg666.2.36">Gönnts Euch nur selber erst!</l>
                                     </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <hi rend="italic" xml:id="tg666.2.35.1">noch auf das Spiel gerichtet.</hi>
+                                       <l rend="zenoPLm4n4" xml:id="tg666.2.36">Gönnts Euch nur selber erst!</l>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.37">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.38">Al-Hafi! bst!</l>
-                                       <l xml:id="tg666.2.39">AL-HAFI <hi rend="italic" xml:id="tg666.2.39.1">zu Sittah.</hi>
-                                       </l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <hi rend="italic" xml:id="tg666.2.39.1">zu Sittah.</hi>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.40">Die Weißen waren Euer?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.41">Ihr bietet Schach?</l>
-                                    </lg>
+                                 
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.42">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.43">Gut, daß er nichts gehört!</l>
-                                       <l xml:id="tg666.2.44">AL-HAFI.</l>
-                                       <l rend="zenoPLm4n4" xml:id="tg666.2.45">Nun ist der Zug an ihm?</l>
                                     </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <l rend="zenoPLm4n4" xml:id="tg666.2.45">Nun ist der Zug an ihm?</l>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.46.part1">SITTAH</speaker> 
@@ -3104,20 +3120,25 @@ Da steht es noch das Spiel!</l>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.47">So sage doch,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.48">Daß ich mein Geld bekommen kann.</l>
-                                       <l xml:id="tg666.2.49">AL-HAFI <hi rend="italic" xml:id="tg666.2.49.1">noch auf das Spiel geheftet.</hi>
-                                       </l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <hi rend="italic" xml:id="tg666.2.49.1">noch auf das Spiel geheftet.</hi>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.50">Nun ja;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.51">Ihr sollts bekommen, wie Ihrs stets bekommen.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.52">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.53">Wie? bist du toll?</l>
-                                       <l xml:id="tg666.2.54">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.55">Das Spiel ist ja nicht aus.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.56">Ihr habt ja nicht verloren, Saladin.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.57.part1">SALADIN</speaker> 
@@ -3127,10 +3148,12 @@ Da steht es noch das Spiel!</l>
 
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.58">Doch! doch! Bezahl! bezahl!</l>
-                                       <l xml:id="tg666.2.59">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.60">Bezahl! bezahl!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.61">Da steht ja Eure Königin.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.62.part1">SALADIN</speaker> 
@@ -3148,12 +3171,15 @@ Da steht es noch das Spiel!</l>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.66">So mach, und sag,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.67">Daß ich das Geld mir nur kann holen lassen.</l>
-                                       <l xml:id="tg666.2.68">AL-HAFI <hi rend="italic" xml:id="tg666.2.68.1">noch immer in das Spiel vertieft.</hi>
-                                       </l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <hi rend="italic" xml:id="tg666.2.68.1">noch immer in das Spiel vertieft.</hi>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.69">Versteht sich, so wie immer. – Wenn auch schon;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.70">Wenn auch die Königin nichts gilt: Ihr seid</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.71">Doch darum noch nicht matt.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.72.part1">SALADIN</speaker> 
@@ -3164,11 +3190,14 @@ Da steht es noch das Spiel!</l>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.73">Ich bin es; will</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.74">Es sein.</l>
-                                       <l xml:id="tg666.2.75">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.76">Ja so! – Spiel wie Gewinst! So wie</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.77">Gewonnen, so bezahlt.</l>
                                        <pb n="240" xml:id="tg666.2.78"/>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.79.part1">SALADIN</speaker> 
@@ -3194,11 +3223,13 @@ Da steht es noch das Spiel!</l>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.85">Auf dich doch nicht? Auf meine Schwester nicht? –</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.86">Was hör' ich, Hafi? Neidisch? du?</l>
-                                       <l xml:id="tg666.2.87">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.88">Kann sein!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.89">Kann sein! – Ich hätt' ihr Hirn wohl lieber selbst;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.90">Wär' lieber selbst so gut, als sie.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.91">SITTAH.</speaker>
@@ -3208,11 +3239,13 @@ Da steht es noch das Spiel!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.94">Und wird auch heut' bezahlen. Laß ihn nur! –</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.95">Geh nur, Al-Hafi, geh! Ich will das Geld</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.96">Schon holen lassen.</l>
-                                       <l xml:id="tg666.2.97">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.98">Nein; ich spiele länger</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.99">Die Mummerei nicht mit. Er muß es doch</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.100">Einmal erfahren.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.101">SALADIN.</speaker>
@@ -3224,10 +3257,13 @@ Da steht es noch das Spiel!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.104">Al-Hafi!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.105">Ist dieses dein Versprechen? Hältst du so</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.106">Mir Wort?</l>
-                                       <l xml:id="tg666.2.107">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.108">Wie konnt' ich glauben, daß es so</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.109">Weit gehen würde.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.110">SALADIN.</speaker>
@@ -3262,10 +3298,13 @@ Da steht es noch das Spiel!</l>
                                           <pb n="241" xml:id="tg666.2.129.1"/>
 Nur nicht! Ich will sie weder dir, mein Bruder,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.130">Noch Hafi, noch der Kasse schenken.</l>
-                                       <l xml:id="tg666.2.131">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.132">Ja,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.133">Wenns das nur wäre! das!</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.134">SITTAH.</speaker>
@@ -3274,19 +3313,24 @@ Nur nicht! Ich will sie weder dir, mein Bruder,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.136">Auch das ist in der Kasse stehn geblieben,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.137">Was du mir einmal ausgeworfen; ist</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.138">Seit wenig Monden stehn geblieben.</l>
-                                       <l xml:id="tg666.2.139">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.140">Noch</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.141">Nicht alles.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.142">SALADIN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.143">Noch nicht? – Wirst du reden?</l>
-                                       <l xml:id="tg666.2.144">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.145">Seit aus Ägypten wir das Geld erwarten,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.146">Hat sie ...</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.147.part1">SITTAH</speaker> 
@@ -3296,21 +3340,25 @@ Nur nicht! Ich will sie weder dir, mein Bruder,</l>
 
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.148">Wozu ihn hören?</l>
-                                       <l xml:id="tg666.2.149">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.150">Nicht nur Nichts</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.151">Bekommen ...</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.152">SALADIN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.153">Gutes Mädchen! – Auch beiher</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.154">Mit vorgeschossen. Nicht?</l>
-                                       <l xml:id="tg666.2.155">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.156">Den ganzen Hof</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.157">Erhalten; Euern Aufwand ganz allein</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.158">Bestritten.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.159">SALADIN.</speaker>
@@ -3326,11 +3374,14 @@ Nur nicht! Ich will sie weder dir, mein Bruder,</l>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.165">Wer hatte, dies zu können, mich so reich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.166">Gemacht, als du, mein Bruder?</l>
-                                       <l xml:id="tg666.2.167">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.168">Wird schon auch</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.169">So bettelarm sie wieder machen, als</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.170">Er selber ist.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.171">SALADIN.</speaker>
@@ -3347,7 +3398,12 @@ Nur nicht! Ich will sie weder dir, mein Bruder,</l>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.178">Schilt nicht, mein Bruder. Wenn ich unserm Vater</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.179">Auch seine Sorgen so erleichtern könnte!</l>
-                                       <l rend="zenoPLm4n4" xml:id="tg666.2.180">SALADIN, Ah! Ah! Nun schlägst du meine Freudigkeit</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker>SALADIN</speaker>
+                                    <lg>
+                                       <l rend="zenoPLm4n4" xml:id="tg666.2.180">Ah! Ah! Nun schlägst du meine Freudigkeit</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.181">
                                           <pb n="242" xml:id="tg666.2.181.1"/>
 Auf einmal wieder nieder! – Mir, für mich</l>
@@ -3366,13 +3422,16 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.194">Mit meinem Herzen. – Auf den Überschuß</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.195">Von deiner Kasse, Hafi, hatt' ich sehr</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.196">Gerechnet.</l>
-                                       <l xml:id="tg666.2.197">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.198">Überschuß? – Sagt selber, ob</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.199">Ihr mich nicht hättet spießen, wenigstens</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.200">Mich drosseln lassen, wenn auf Überschuß</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.201">Ich von Euch wär' ergriffen worden. Ja,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.202">Auf Unterschleif! das war zu wagen.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.203">SALADIN.</speaker>
@@ -3406,10 +3465,13 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.222">Wie gut ihr Geld in meinen Händen wuchert.</l>
                                        <pb n="243" xml:id="tg666.2.223"/>
                                     </lg>
-                                    <lg>
-                                       <l xml:id="tg666.2.224">AL-HAFI.</l>
+                                    
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.225">Ich kenne deren keine.</l>
-                                    </lg>
+                                    
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.226">SITTAH.</speaker>
@@ -3417,19 +3479,22 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.227">Eben fällt</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.228">Mir ein, gehört zu haben, Hafi, daß</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.229">Dein Freund zurückgekommen.</l>
-                                       <l xml:id="tg666.2.230">AL-HAFI <hi rend="italic" xml:id="tg666.2.230.1">betroffen.</hi>
-                                       </l>
-                                       <l rend="zenoPLm4n4" xml:id="tg666.2.231">Freund? mein Freund?</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <hi rend="italic" xml:id="tg666.2.230.1">betroffen.</hi>                                <l rend="zenoPLm4n4" xml:id="tg666.2.231">Freund? mein Freund?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.232">Wer wär' denn das?</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.233">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.234">Dein hochgepriesner Jude.</l>
-                                       <l xml:id="tg666.2.235">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.236">Gepriesner Jude? hoch von mir?</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.237">SITTAH.</speaker>
@@ -3440,34 +3505,40 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.241">Sein Gott von allen Gütern dieser Welt</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.242">Das kleinst' und größte so in vollem Maß</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.243">Erteilet habe. –</l>
-                                       <l xml:id="tg666.2.244">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.245">Sagt' ich so? – Was meint'</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.246">Ich denn damit?</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.247">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.248">Das kleinste: Reichtum. Und</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.249">Das größte: Weisheit.</l>
-                                       <l xml:id="tg666.2.250">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.251">Wie? von einem Juden?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.252">Von einem Juden hätt' ich das gesagt?</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.253">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.254">Das hättest du von deinem Nathan nicht</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.255">Gesagt?</l>
-                                       <l xml:id="tg666.2.256">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.257">Ja so! von dem! vom Nathan! – Fiel</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.258">Mir der doch gar nicht bei. – Wahrhaftig? Der</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.259">Ist endlich wieder heim gekommen? Ei!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.260">So mags doch gar so schlecht mit ihm nicht stehn. –</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.261">Ganz recht: den nannt' einmal das Volk den Weisen!</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.262">Den Reichen auch.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.263">SITTAH.</speaker>
@@ -3476,21 +3547,25 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.265">Itzt mehr als je. Die ganze Stadt erschallt,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.266">Was er für Kostbarkeiten, was für Schätze,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.267">Er mitgebracht.</l>
-                                       <l xml:id="tg666.2.268">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.269">Nun, ists der Reiche wieder:</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.270">So wirds auch wohl der Weise wieder sein.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.271">SITTAH.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.272">Was meinst du, Hafi, wenn du diesen angingst?</l>
-                                       <l xml:id="tg666.2.273">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.274">Und was bei ihm? – Doch wohl nicht borgen? – Ja,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.275">Da kennt Ihr ihn. – Erborgen! – Seine Weisheit</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.276">Ist eben, daß er niemand borgt.</l>
                                        <pb n="244" xml:id="tg666.2.277"/>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.278">SITTAH.</speaker>
@@ -3498,7 +3573,10 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.279">Du hast</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.280">Mir sonst doch ganz ein ander Bild von ihm</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.281">Gemacht.</l>
-                                       <l xml:id="tg666.2.282">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.283">Zur Not wird er Euch Waren borgen.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.284">Geld aber, Geld? Geld nimmermehr! – Es ist</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.285">Ein Jude freilich übrigens, wie's nicht</l>
@@ -3512,7 +3590,6 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.293">Doch ganz so sonder Ansehn. Jud' und Christ</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.294">Und Muselmann und Parsi, alles ist</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.295">Ihm eins.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.296">SITTAH.</speaker>
@@ -3531,7 +3608,10 @@ Auf einmal wieder nieder! – Mir, für mich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.302">Der sollte Saladin nicht borgen? nicht</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.303">Dem Saladin, der nur für andre braucht,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.304">Nicht sich?</l>
-                                       <l xml:id="tg666.2.305">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.306">Da seht nun gleich den Juden wieder;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.307">Den ganz gemeinen Juden! – Glaubt mirs doch! –</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.308">Er ist aufs Geben Euch so eifersüchtig,</l>
@@ -3553,7 +3633,6 @@ Auf einmal wieder nieder! – Mir, für mich</l>
 Nur gehn, an andre Türen klopfen ... Da</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.323">Besinn' ich mich so eben eines Mohren,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg666.2.324">Der reich und geizig ist. – Ich geh'; ich geh'.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg666.2.325">SITTAH.</speaker>
@@ -4660,57 +4739,72 @@ Denn seht! ich glaube gar, da kömmt vom Sultan</l>
                                     <hi rend="italic" xml:id="tg673.2.4.1">Nathan. Al-Hafi.</hi>
                                  </stage>
                                  <lb xml:id="tg673.2.5"/>
-                                 <p xml:id="tg673.2.6">AL-HAFI.</p>
-                                 <p rend="zenoPLm4n4" xml:id="tg673.2.7">Ha! ha! zu Euch wollt ich nun eben wieder.</p>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                    <p rend="zenoPLm4n4" xml:id="tg673.2.7">Ha! ha! zu Euch wollt ich nun eben wieder.</p>
+                                 </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.8">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.9">Ists denn so eilig? Was verlangt er denn</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.10">Von mir?</l>
-                                       <l xml:id="tg673.2.11">AL-HAFI.</l>
-                                       <l rend="zenoPLm4n4" xml:id="tg673.2.12">Wer?</l>
                                     </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <l rend="zenoPLm4n4" xml:id="tg673.2.12">Wer?</l>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.13">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.14">Saladin. – Ich komm', ich komme.</l>
-                                       <l xml:id="tg673.2.15">AL-HAFI.</l>
-                                       <l rend="zenoPLm4n4" xml:id="tg673.2.16">Zu wem? Zum Saladin?</l>
                                     </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <l rend="zenoPLm4n4" xml:id="tg673.2.16">Zu wem? Zum Saladin?</l>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.17">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.18">Schickt Saladin</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.19">Dich nicht?</l>
-                                       <l xml:id="tg673.2.20">AL-HAFI.</l>
-                                       <l rend="zenoPLm4n4" xml:id="tg673.2.21">Mich? nein. Hat er denn schon geschickt?</l>
                                     </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
+                                       <l rend="zenoPLm4n4" xml:id="tg673.2.21">Mich? nein. Hat er denn schon geschickt?</l>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.22">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.23">Ja freilich hat er.</l>
-                                       <l xml:id="tg673.2.24">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.25">Nun, so ist es richtig.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.26">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.27">Was? was ist richtig?</l>
-                                       <l xml:id="tg673.2.28">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.29">Daß ... ich bin nicht Schuld;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.30">Gott weiß, ich bin nicht Schuld. – Was hab ich nicht</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.31">Von Euch gesagt, gelogen, um es abzuwenden!</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.32">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.33">Was abzuwenden? Was ist richtig?</l>
-                                       <l xml:id="tg673.2.34">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.35">Daß</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.36">Nun Ihr sein Defterdar geworden. Ich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.37">Betaur' Euch. Doch mit ansehn will ichs nicht.</l>
@@ -4720,7 +4814,6 @@ Denn seht! ich glaube gar, da kömmt vom Sultan</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.41">Zu Diensten. Freilich muß es mehr nicht sein,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.42">Als was ein Nackter mit sich schleppen kann.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.43">Ich geh, sagt bald.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.44">NATHAN.</speaker>
@@ -4728,26 +4821,32 @@ Denn seht! ich glaube gar, da kömmt vom Sultan</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.45">Besinn dich doch, Al-Hafi.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.46">Besinn dich, daß ich noch von gar nichts weiß.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.47">Was plauderst du denn da?</l>
-                                       <l xml:id="tg673.2.48">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.49">Ihr bringt sie doch</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.50">Gleich mit, die Beutel?</l>
-                                       <pb n="258" xml:id="tg673.2.51"/>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.52">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.53">Beutel?</l>
-                                       <l xml:id="tg673.2.54">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.55">Nun, das Geld,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.56">Das Ihr dem Saladin vorschießen sollt.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.57">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.58">Und weiter ist es nichts?</l>
-                                       <l xml:id="tg673.2.59">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.60">Ich sollt es wohl</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.61">Mit ansehn, wie er Euch von Tag zu Tag</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.62">Aushöhlen wird bis auf die Zehen? Sollt'</l>
@@ -4761,13 +4860,15 @@ Denn seht! ich glaube gar, da kömmt vom Sultan</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.70">Er Rate folgen! Wenn hat Saladin</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.71">Sich raten lassen? – Denkt nur, Nathan, was</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.72">Mir eben itzt mit ihm begegnet.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.73">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.74">Nun?</l>
-                                       <l xml:id="tg673.2.75">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.76">Da komm ich zu ihm, eben daß er Schach</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.77">Gespielt mit seiner Schwester. Sittah spielt</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.78">Nicht übel; und das Spiel, das Saladin</l>
@@ -4775,57 +4876,66 @@ Denn seht! ich glaube gar, da kömmt vom Sultan</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.80">Das stand noch ganz so da. Ich seh Euch hin,</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.81">Und sehe, daß das Spiel noch lange nicht</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.82">Verloren.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.83">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.84">Ei! das war für dich ein Fund!</l>
-                                       <l xml:id="tg673.2.85">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.86">Er durfte mit dem König an den Bauer</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.87">Nur rücken, auf ihr Schach – Wenn ichs Euch gleich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.88">Nur zeigen könnte!</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.89">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.90">O ich traue dir!</l>
-                                       <l xml:id="tg673.2.91">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.92">Denn so bekam der Roche Feld: und sie</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.93">War hin. – Das alles will ich ihm nun weisen</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.94">Und ruf' ihn. – Denkt! ...</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.95">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.96">Er ist nicht deiner Meinung?</l>
-                                       <l xml:id="tg673.2.97">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.98">Er hört mich gar nicht an, und wirft verächtlich</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.99">Das ganze Spiel in Klumpen.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.100">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.101">Ist das möglich?</l>
-                                       <l xml:id="tg673.2.102">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.103">Und sagt: er wolle matt nun einmal sein;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.104">
                                           <pb n="259" xml:id="tg673.2.104.1"/>
 Er wolle! Heißt das spielen?</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.105">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.106">Schwerlich wohl;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.107">Heißt mit dem Spiele spielen.</l>
-                                       <l xml:id="tg673.2.108">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.109">Gleichwohl galt</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.110">Es keine taube Nuß.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.111">NATHAN.</speaker>
@@ -4836,7 +4946,10 @@ Er wolle! Heißt das spielen?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.115">Von solcher Wichtigkeit dich nicht einmal</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.116">Zu hören! deinen Adlerblick nicht zu</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.117">Bewundern! das, das schreit um Rache; nicht?</l>
-                                       <l xml:id="tg673.2.118">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.119">Ach was? Ich sag Euch das nur so, damit</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.120">Ihr sehen könnt, was für ein Kopf er ist.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.121">Kurz, ich, ich halts mit ihm nicht länger aus.</l>
@@ -4857,7 +4970,6 @@ Er wolle! Heißt das spielen?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.136">Und nach doch drum. So wär' die Plackerei</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.137">Auf einmal aus. Ich schaff Euch einen Delk.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.138">Kommt! kommt!</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.139">NATHAN.</speaker>
@@ -4865,10 +4977,12 @@ Er wolle! Heißt das spielen?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.140">Ich dächte zwar, das blieb uns ja</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.141">Noch immer übrig. Doch, Al-Hafi, will</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.142">Ichs überlegen. Warte ...</l>
-                                       <l xml:id="tg673.2.143">AL-HAFI.</l>
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.144">Überlegen?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.145">Nein, so was überlegt sich nicht.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.146">NATHAN.</speaker>
@@ -4878,26 +4992,31 @@ Er wolle! Heißt das spielen?</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.149">
                                           <pb n="260" xml:id="tg673.2.149.1"/>
 Ich Abschied erst ...</l>
-                                       <l xml:id="tg673.2.150">AL-HAFI.</l>
+
+                                       </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.151">Wer überlegt, der sucht</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.152">Bewegungsgründe, nicht zu dürfen. Wer</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.153">Sich Knall und Fall, ihm selbst zu leben, nicht</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.154">Entschließen kann, der lebet andrer Sklav</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.155">Auf immer. – Wie Ihr wollt! – Lebt wohl! wies Euch</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.156">Wohl dünkt. – Mein Weg liegt dort; und Eurer da.</l>
-                                    </lg>
                                  </sp>
                                  <sp>
                                     <speaker xml:id="tg673.2.157">NATHAN.</speaker>
                                     <lg>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.158">Al-Hafi! Du wirst selbst doch erst das Deine</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.159">Berichtigen?</l>
-                                       <l xml:id="tg673.2.160">AL-HAFI.</l>
+                                    </lg>
+                                 </sp>
+                                 <sp>
+                                    <speaker xml:id="tg666.2.10">AL-HAFI.</speaker>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.161">Ach Possen! Der Bestand</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.162">Von meiner Kaß' ist nicht des Zählens wert;</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.163">Und meine Rechnung bürgt – Ihr oder Sittah.</l>
                                        <l rend="zenoPLm4n4" xml:id="tg673.2.164">Lebt wohl!</l>
-                                    </lg>
                                     <lb xml:id="tg673.2.165"/>
                                     <stage rend="zenoPC" xml:id="tg673.2.166">
                                        <hi rend="italic" xml:id="tg673.2.166.1">Ab.</hi>

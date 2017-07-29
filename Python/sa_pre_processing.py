@@ -12,7 +12,14 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dpp = Drama_Pre_Processing()
-	dpp.preProcessAndDumpAllDramas()
+	dpp.initDramaModel("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
+	i = 0
+	for act in dpp._dramaModel._acts:
+		for conf in act._configurations:
+			for speech in conf._speeches:
+					i = i+1
+	print i
+	#dpp.preProcessAndDumpAllDramas()
 
 class Drama_Pre_Processing:
 
