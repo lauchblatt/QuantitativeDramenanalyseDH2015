@@ -18,6 +18,7 @@ def main():
 
 	
 	tcc = Test_Corpus_Creator()
+
 	"""
 	tcc.createNewTestCorpus()
 	tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus7.txt")
@@ -25,10 +26,18 @@ def main():
 	
 	"""
 	tcr = Test_Corpus_Handler()
-	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/test-corpus6-with-Language-Info.p")
+	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
+	tcr.calcTestCorpusMetrics()
+	#tcc.switchSpecificSpeechesOfTestCorpusByDramaNumber(10, tcr._testCorpusSpeeches)
+	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/switch-test-corpus-6.txt")
+	#tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
+	#tcc._testCorpusSpeeches = tcr._testCorpusSpeeches
+	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/switch-test-corpus-6-test.txt")
+
 	#tcr.attachLanguageInfoToTestCorpus()
 	#tcr.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus6-with-Language-Info.p")
 
+	"""
 	sa = Sentiment_Analyzer(False)
 	for corpusSpeech in tcr._testCorpusSpeeches:
 		corpusSpeech._speech._sentimentBearingWords = sa.getSentimentBearingWordsSpeech(corpusSpeech._speech._textAsLanguageInfo)
@@ -36,6 +45,7 @@ def main():
 		corpusSpeech._speech._sentimentMetrics.printAllInfo(corpusSpeech._speech._lengthInWords)
 		for word in corpusSpeech._speech._sentimentBearingWords:
 			word.printAllInformation()
+	"""
 
 	#tcr.calcTestCorpusMetrics()
 	#tcr.writeLengths("../Evaluation/Test-Korpus/test-corpus7-lengths.txt")
@@ -141,6 +151,43 @@ class Test_Corpus_Creator:
 		nextSpeech = testCorpusSpeech._nextSpeech._speaker + ":\n" + testCorpusSpeech._nextSpeech._text.strip() + "\n"
 		text = text + previousSpeech + currentSpeech + nextSpeech
 		return text
+
+	def switchSpecificSpeechesOfTestCorpusByDramaNumber(self, dramaNumber, testCorpusSpeeches):
+		self.initSpeechesCorpus()
+		self._testCorpusSpeeches = testCorpusSpeeches
+
+		start = self.getStartAndEndSpeechByDramaNumber(dramaNumber)[0]
+		end = self.getStartAndEndSpeechByDramaNumber(dramaNumber)[1]
+		speechesPerDrama = self._filteredSpeechesCorpusPerDrama[dramaNumber]
+		alreadyChosenNumbers = []
+		print start
+		print end
+
+		while (start < end):
+			randomNumber = random.randint(0, len(speechesPerDrama[1])-1)
+			while (randomNumber in alreadyChosenNumbers):
+				randomNumber = random.randint(0, len(speechesPerDrama[1])-1)
+			alreadyChosenNumbers.append(randomNumber)
+			testCorpusSpeech = speechesPerDrama[1][randomNumber]
+			self._testCorpusSpeeches[start] = testCorpusSpeech
+			print testCorpusSpeech._speech._text
+			start = start + 1
+		self.setIdsAndPositionInfoOfTestCorpus()
+
+	def getStartAndEndSpeechByDramaNumber(self, dramaNumber):
+		i = 0
+		start = 0
+		end = 0
+		print ("DramaNumber")
+		print dramaNumber
+		while(i < dramaNumber):
+			dramaSpeeches = self._partsPerDrama[i] * self._testCorpusSizeFactor
+			start = start + dramaSpeeches
+
+			i = i + 1	
+		endDrama = self._partsPerDrama[dramaNumber] * self._testCorpusSizeFactor
+		end = start + endDrama
+		return (start, end)
 
 	def setTestCorpus(self):
 		dramaInPartsPerDrama = 0

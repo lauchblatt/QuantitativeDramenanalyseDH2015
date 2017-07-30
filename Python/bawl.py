@@ -11,6 +11,9 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
+	bawl = Bawl()
+	bawl.initBawl()
+
 class Bawl:
 	def __init__(self):
 		self._sentimentDict = {}
@@ -32,6 +35,11 @@ class Bawl:
 		for line in lines:
 			info = line.split("\t")
 			word = info[0]
+			
+			# for first read to determine firstLetter capital or not
+			if(len(info) > 2):
+				wordClass = info[3]
+				print wordClass
 			infoPerWord = {}
 			infoPerWord["emotion"] = float(info[1].replace(",", "."))
 			infoPerWord["arousel"] = float(info[2].replace(",", "."))
