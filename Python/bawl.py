@@ -12,7 +12,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
-	bawl.initBawl()
+	#bawl.createSentimentDictFileBawlLemmas()
+	#bawl.readAndInitBawlAndLemmas()
 
 class Bawl:
 	def __init__(self):
@@ -25,21 +26,24 @@ class Bawl:
 		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
 
 	def initBawl(self):
-		sentDictText = open("../SentimentAnalysis/Bawl-R/bawl-r.txt")
+		sentDictText = open("../SentimentAnalysis/Bawl-R/bawl-r-wc.txt")
 		sentimentDict = self.getSentimentDictBawl(sentDictText)
 		self._sentimentDict = sentimentDict
 
 	def getSentimentDictBawl(self, sentimentDictText):
 		lines = sentimentDictText.readlines()[1:]
 		sentimentDict = {}
+
 		for line in lines:
 			info = line.split("\t")
 			word = info[0]
-			
-			# for first read to determine firstLetter capital or not
-			if(len(info) > 2):
-				wordClass = info[3]
-				print wordClass
+			#For first Read
+			if(len(info) > 3):
+				wordClass = info[3].rstrip()
+				# Uppercase Word if noun
+				if(wordClass == "N"):
+					upperWord = word[:1].upper() + word[1:]
+					word = upperWord
 			infoPerWord = {}
 			infoPerWord["emotion"] = float(info[1].replace(",", "."))
 			infoPerWord["arousel"] = float(info[2].replace(",", "."))
@@ -52,7 +56,7 @@ class Bawl:
 		print("start Lemmatisation")
 		
 		for word,value in self._sentimentDict.iteritems():
-			lemma = lp.getLemma(word)			
+			lemma = lp.getLemma(word)		
 			if lemma in newSentimentDict:
 				#could be a method
 				newAbsolute = abs(value["emotion"]) + abs(value["arousel"])

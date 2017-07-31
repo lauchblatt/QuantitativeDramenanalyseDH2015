@@ -25,9 +25,10 @@ def main():
 	tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/test-corpus7.p")
 	
 	"""
-	tcr = Test_Corpus_Handler()
-	tcr.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
-	tcr.calcTestCorpusMetrics()
+	tch = Test_Corpus_Handler()
+	tch.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
+	tch.writeInfoPerLine()
+	#tcr.calcTestCorpusMetrics()
 	#tcc.switchSpecificSpeechesOfTestCorpusByDramaNumber(10, tcr._testCorpusSpeeches)
 	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/switch-test-corpus-6.txt")
 	#tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
@@ -71,6 +72,18 @@ class Test_Corpus_Handler:
 
 	def readAndInitTestCorpusFromPickle(self,path):
 		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
+
+	def writeInfoPerLine(self):
+		outputFile = open("../Evaluation/Test-Korpus/test-corpus-infoLines", "w")
+		for corpusSpeech in self._testCorpusSpeeches:
+			info = [corpusSpeech._id, corpusSpeech._dramaTitle,\
+			corpusSpeech._actNumber, corpusSpeech._confNumber,\
+			corpusSpeech._speech._numberInAct, corpusSpeech._speech._numberInConf,\
+			corpusSpeech._speech._subsequentNumber,corpusSpeech._speech._speaker,\
+			corpusSpeech._speech._lengthInWords]
+			infoString = ("\t").join(str(x) for x in info)
+			outputFile.write(infoString)
+
 
 	def writeLengths(self, path):
 		wordLengths = []

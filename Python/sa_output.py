@@ -24,7 +24,7 @@ def main():
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("Tokens/Freigeist", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("Lemmas/Freigeist", sentimentExtendedDramaModel)
 
 class Sentiment_Output_Generator:
 
