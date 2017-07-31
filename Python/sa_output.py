@@ -93,7 +93,10 @@ class Sentiment_Output_Generator:
 	
 	def getSentimentBearingWordsInformation(self, unit):
 		info = ("\n\nSentiment Bearing Words: \n")
-		info = info + ("(Token, Lemma, POS), polaritySentiWS, nrcPositive, nrcNegative, anger, anticipation, disgust, fear, joy, sadness, surprise, trust\n")	
+		info = info + "(Token, Lemma, POS), polaritySentiWS | nrcPositive, nrcNegative,"\
+		 + "anger, anticipation, disgust, fear, joy, sadness, surprise, trust | emotion, arousel"\
+		 + "positiveCd, negativeCd, neutralCd | positiveGpc, negativeGpc, neutralGpc\n"
+		
 		for sentimentBearingWord in unit._sentimentBearingWords:
 			wordInfo = sentimentBearingWord.returnInfoAsString()
 			info = info + wordInfo + "\n"

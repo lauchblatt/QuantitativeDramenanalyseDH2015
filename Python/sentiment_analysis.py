@@ -68,22 +68,22 @@ class Sentiment_Analyzer:
 				for speech in conf._speeches:
 					print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
-					speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
+					#speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
 				print("Conf")
 				self.attachSentimentMetricsToUnit(conf)
-				conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
+				#conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
 			print("Act")
 			self.attachSentimentMetricsToUnit(act)
-			act._sentimentMetrics.printAllInfo(act._lengthInWords)
+			#act._sentimentMetrics.printAllInfo(act._lengthInWords)
 		print("Drama")
 		self.attachSentimentMetricsToUnit(dramaModel)
-		dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
+		#dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
 
 	def attachSentimentMetricsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
 			self.attachSentimentMetricsToUnit(speaker)
 			print("Speaker")
-			speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
+			#speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
 
 	def attachSentimentRelationsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
@@ -166,19 +166,16 @@ class Sentiment_Analyzer:
 		sentimentBearingWord._lemma = languageInfo[0]
 		sentimentBearingWord._token = languageInfo[1][0]
 		sentimentBearingWord._POS = languageInfo[1][1]
-		print word
+		#print word
 		if(word in self._sentimentDict):
 			allSentiments = self._sentimentDict[word]
-			print allSentiments
 		else:
 			upperWord = word[:1].upper() + word[1:]
 			lowerWord = word.lower()
 			if(lowerWord in self._sentimentDict):
 				allSentiments = self._sentimentDict[lowerWord]
-				print allSentiments
 			if(upperWord in self._sentimentDict):
 				allSentiments = self._sentimentDict[upperWord]
-				print allSentiments
 
 		sentimentBearingWord.setAllSentiments(allSentiments)
 

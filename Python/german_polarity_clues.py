@@ -34,9 +34,9 @@ class German_Polarity_Clues:
 		for line in lines:
 			wordAndValues = line.split("\t")
 			sentiments = {}
-			sentiments["positive"] = wordAndValues[1]
-			sentiments["negative"] = wordAndValues[2]
-			sentiments["neutral"] = wordAndValues[3]
+			sentiments["positive"] = int(wordAndValues[1])
+			sentiments["negative"] = int(wordAndValues[2])
+			sentiments["neutral"] = int(wordAndValues[3])
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 

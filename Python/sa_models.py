@@ -62,6 +62,18 @@ class Sentiment_Metrics:
 		self._metricsTotal["emotion"] = 0
 		self._metricsTotal["arousel"] = 0
 
+		#CD
+		self._metricsTotal["positiveCd"] = 0
+		self._metricsTotal["negativeCd"] = 0
+		self._metricsTotal["neutralCd"] = 0
+		self._metricsTotal["polarityCd"] = 0
+
+		#GPC
+		self._metricsTotal["positiveGpc"] = 0
+		self._metricsTotal["negativeGpc"] = 0
+		self._metricsTotal["neutralGpc"] = 0
+		self._metricsTotal["polarityGpc"] = 0
+
 
 	def printAllInfo(self, lengthInWords):
 		print("Total Values: ")
@@ -167,10 +179,13 @@ class Sentiment_Bearing_Word:
 
 	def returnInfoAsString(self):
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
-		sentiments = ", ".join(str(x) for x in [self._polaritySentiWS,self._positiveNrc,self._negativeNrc,
+		sentiWs = str(self._polaritySentiWS)
+		nrc = ", ".join(str(x) for x in [self._positiveNrc,self._negativeNrc,
 		self._anger,self._anticipation,self._disgust,self._fear,self._joy,self._sadness,self._surprise,self._trust])
-		bawl = ",".join([str(self._emotion), str(self._arousel)])
-		info = info + " " + sentiments + " " + bawl
+		bawl = ", ".join([str(self._emotion), str(self._arousel)])
+		cd = ", ".join([str(self._positiveCd), str(self._negativeCd), str(self._neutralCd)])
+		gpc = ", ".join([str(self._positiveGpc), str(self._negativeGpc), str(self._neutralGpc)])
+		info = info + sentiWs + " | " + nrc + " | " + bawl + " | " + cd + " | " + gpc
 		return info
 
 if __name__ == "__main__":

@@ -82,8 +82,8 @@ class Test_Corpus_Handler:
 			corpusSpeech._speech._subsequentNumber,corpusSpeech._speech._speaker,\
 			corpusSpeech._speech._lengthInWords]
 			infoString = ("\t").join(str(x) for x in info)
-			outputFile.write(infoString)
-
+			outputFile.write(infoString + "\n")
+		outputFile.close()
 
 	def writeLengths(self, path):
 		wordLengths = []

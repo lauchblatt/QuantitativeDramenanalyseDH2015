@@ -44,57 +44,6 @@ class Sentiment_Calculator:
 				self._sentimentMetrics._metricsNormalised[metric] = float(metricTotal)/self._normalisationFactorLength
 
 	def calcTotalMetrics(self):
-		"""
-		polaritySentiWSTotal = 0
-		
-		positiveNrcTotal = 0
-		negativeNrcTotal = 0
-		angerTotal = 0
-		anticipationTotal = 0
-		disgustTotal = 0
-		fearTotal = 0
-		joyTotal = 0
-		sadnessTotal = 0
-		surpriseTotal = 0
-		trustTotal = 0
-		
-		emotionTotal = 0
-		arouselTotal = 0
-
-		if self._sentimentBearingWords is not None:
-			for word in self._sentimentBearingWords:
-				polaritySentiWSTotal = polaritySentiWSTotal + word._polaritySentiWS
-				
-				positiveNrcTotal = positiveNrcTotal + word._positiveNrc
-				negativeNrcTotal = negativeNrcTotal + word._negativeNrc
-				angerTotal = angerTotal + word._anger
-				anticipationTotal = anticipationTotal + word._anticipation
-				disgustTotal = disgustTotal + word._disgust
-				fearTotal = fearTotal + word._fear
-				joyTotal = joyTotal + word._joy
-				sadnessTotal = sadnessTotal + word._sadness
-				surpriseTotal = surpriseTotal + word._surprise
-				trustTotal = trustTotal + word._trust
-
-				emotionTotal = emotionTotal + word._emotion
-				arouselTotal = arouselTotal + word._arousel
-
-		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = polaritySentiWSTotal
-		self._sentimentMetrics._metricsTotal["positiveNrc"] = positiveNrcTotal
-		self._sentimentMetrics._metricsTotal["negativeNrc"]  = negativeNrcTotal
-		self._sentimentMetrics._metricsTotal["polarityNrc"] = positiveNrcTotal - negativeNrcTotal
-		self._sentimentMetrics._metricsTotal["anger"] = angerTotal
-		self._sentimentMetrics._metricsTotal["anticipation"] = anticipationTotal
-		self._sentimentMetrics._metricsTotal["disgust"] = disgustTotal
-		self._sentimentMetrics._metricsTotal["fear"] = fearTotal
-		self._sentimentMetrics._metricsTotal["joy"] = joyTotal
-		self._sentimentMetrics._metricsTotal["sadness"] = sadnessTotal
-		self._sentimentMetrics._metricsTotal["surprise"] = surpriseTotal
-		self._sentimentMetrics._metricsTotal["trust"] = trustTotal
-
-		self._sentimentMetrics._metricsTotal["emotion"] = emotionTotal
-		self._sentimentMetrics._metricsTotal["arousel"] = arouselTotal
-		"""
 
 		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = sum(word._polaritySentiWS for word in self._sentimentBearingWords)
 		
@@ -113,6 +62,16 @@ class Sentiment_Calculator:
 
 		self._sentimentMetrics._metricsTotal["emotion"] = sum(word._emotion for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["arousel"] = sum(word._arousel for word in self._sentimentBearingWords)
+
+		self._sentimentMetrics._metricsTotal["positiveCd"] = sum(word._positiveCd for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeCd"] = sum(word._negativeCd for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["neutralCd"] = sum(word._neutralCd for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polarityCd"] = self._sentimentMetrics._metricsTotal["positiveCd"] - self._sentimentMetrics._metricsTotal["negativeCd"]
+
+		self._sentimentMetrics._metricsTotal["positiveGpc"] = sum(word._positiveGpc for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeGpc"] = sum(word._negativeGpc for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["neutralGpc"] = sum(word._neutralGpc for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polarityGpc"] = self._sentimentMetrics._metricsTotal["positiveGpc"] - self._sentimentMetrics._metricsTotal["negativeGpc"]
 
 if __name__ == "__main__":
     main()

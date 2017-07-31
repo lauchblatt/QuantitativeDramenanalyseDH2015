@@ -24,9 +24,9 @@ class CD:
 		for line in lines:
 			wordAndValues = line.split("\t")
 			sentiments = {}
-			sentiments["positive"] = wordAndValues[1]
-			sentiments["negative"] = wordAndValues[2]
-			sentiments["neutral"] = wordAndValues[3]
+			sentiments["positive"] = float(wordAndValues[1])
+			sentiments["negative"] = float(wordAndValues[2])
+			sentiments["neutral"] = float(wordAndValues[3])
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 

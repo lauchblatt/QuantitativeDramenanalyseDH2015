@@ -124,8 +124,6 @@ class Lexicon_Handler:
 	def combineSentimentLexiconsKeysAndDump(self):
 		newLexiconKeysTokens = self.getCombinedLexiconKeysTokens()
 		newLexiconKeysLemmas = self.getCombinedLexiconKeysLemmas()
-		print(len(newLexiconKeysTokens))
-		print(len(newLexiconKeysLemmas))
 		pickle.dump(newLexiconKeysTokens, open("Dumps/combinedLexiconKeysTokens.p", "wb" ))
 		pickle.dump(newLexiconKeysLemmas, open("Dumps/combinedLexiconKeysLemmas.p", "wb" ))
 
