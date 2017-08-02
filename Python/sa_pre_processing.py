@@ -12,8 +12,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dpp = Drama_Pre_Processing()
-	dpp.initDramaModel("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
-	#dpp.preProcessAndDumpAllDramas()
+	dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
 
 class Drama_Pre_Processing:
 
@@ -29,16 +28,20 @@ class Drama_Pre_Processing:
 			targetPath = "Dumps/ProcessedDramas/" + self._dramaModel._title + ".p"
 			self.dumpDramaModel(targetPath)
 	
+	def initDramaModel(self, dramaPath):
+		parser = DramaParser()
+		self._dramaModel = parser.parse_xml(dramaPath)
+	
 	def readDramaModelFromDump(self, dramaPath):
 		self._dramaModel = pickle.load(open(dramaPath, "rb"))
 		return self._dramaModel
 
+	def preProcessLemmatizeAndDump(self, dramaPath):
+		self.preProcessAndLemmatize(dramaPath)
+		self.dumpDramaModel("Dumps/ProcessedDramas/" + self._dramaModel._title + ".p")
+
 	def dumpDramaModel(self, dramaPath):
 		pickle.dump(self._dramaModel, open(dramaPath, "wb" ))
-
-	def initDramaModel(self, dramaPath):
-		parser = DramaParser()
-		self._dramaModel = parser.parse_xml(dramaPath)
 
 	def initLanguageProcessor(self):
 		self._languageProcessor = Language_Processor()
