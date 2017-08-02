@@ -18,13 +18,13 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	processor = Drama_Pre_Processing()
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Der Freigeist.p")
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Nathan der Weise.p")
 	
 	sa = Sentiment_Analyzer(True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("Lemmas/Freigeist", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("Lemmas/Nathan", sentimentExtendedDramaModel)
 
 class Sentiment_Output_Generator:
 
