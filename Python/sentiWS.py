@@ -12,7 +12,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	sentiWs = Senti_WS()
-	sentiWs.createSentimentDictFileSentiWSToken()
+	sentiWs.createSentimentDictFileSentiWSLemmas("treetagger")
 
 class Senti_WS:
 
@@ -21,9 +21,9 @@ class Senti_WS:
 		self._sentimentDictLemmas = {}
 
 
-	def readAndInitSentiWSAndLemmas(self):
+	def readAndInitSentiWSAndLemmas(self, processor):
 		self.initSentiWS()
-		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/SentiWS-Lemmas.txt")
+		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas.txt")
 		sentimentDict = {}
 
 		for line in sentimentDictText:
@@ -76,14 +76,14 @@ class Senti_WS:
 
 		return sentimentDict
 
-	def lemmatizeDict(self):
-		lp = Language_Processor()
+	def lemmatizeDict(self, processor):
+		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		print("start Lemmatisation")
 		lemmaTokenPairs = {}
 		
 		for word,value in self._sentimentDict.iteritems():
-			lemma = lp.getLemma(word)
+			lemma = lp._processor.getLemma(word)
 			
 			if lemma in newSentimentDict:
 				newScore = value
@@ -117,10 +117,10 @@ class Senti_WS:
 		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-TokenTest")
 		
 	
-	def createSentimentDictFileSentiWSLemmas(self):
+	def createSentimentDictFileSentiWSLemmas(self, processor):
 		self.initSentiWS()
-		self.lemmatizeDict()
-		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/SentiWS-Lemmas")
+		self.lemmatizeDict(processor)
+		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas")
 
 if __name__ == "__main__":
     main()

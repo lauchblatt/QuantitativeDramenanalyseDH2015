@@ -12,7 +12,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	nrc = NRC()
-	nrc.createSentimentDictFileNRCLemmas()
+	nrc.createSentimentDictFileNRCLemmas("treetagger")
 
 class NRC:
 
@@ -20,9 +20,9 @@ class NRC:
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
-	def readAndInitNRCAndLemmas(self):
+	def readAndInitNRCAndLemmas(self, processor):
 		self.initNRC()
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/NRC-Lemmas.txt")
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas.txt")
 		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
 	def initNRC(self):
@@ -69,13 +69,13 @@ class NRC:
 		
 		return nrcSentimentDict
 
-	def lemmatizeDictNrc(self):
-		lp = Language_Processor()
+	def lemmatizeDictNrc(self, processor):
+		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		print("start Lemmatisation")
 		
 		for word,value in self._sentimentDict.iteritems():
-			lemma = lp.getLemma(word)
+			lemma = lp._processor.getLemma(word)
 			print lemma
 			
 			if lemma in newSentimentDict:
@@ -167,10 +167,10 @@ class NRC:
 		self.initNRC()
 		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Token")
 
-	def createSentimentDictFileNRCLemmas(self):
+	def createSentimentDictFileNRCLemmas(self, processor):
 		self.initNRC()
-		self.lemmatizeDictNrc()
-		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/NRC-LemmasTest")
+		self.lemmatizeDictNrc(processor)
+		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas")
 
 if __name__ == "__main__":
     main()

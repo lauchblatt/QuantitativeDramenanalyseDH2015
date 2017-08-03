@@ -15,7 +15,7 @@ def main():
 	#dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/EntireCorpus")
 
 	#dlOutput.generateWordFrequenciesOutputTokens("../Lessing-Dramen/less-Der_Freigeist_k.xml", "../Word-Frequencies/test")
-	dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens_ohneKursiv/")
+	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens_ohneKursiv/")
 
 class DramaLanguage_Output:
 

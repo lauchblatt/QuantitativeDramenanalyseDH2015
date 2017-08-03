@@ -12,17 +12,17 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
-	#bawl.createSentimentDictFileBawlLemmas()
-	#bawl.readAndInitBawlAndLemmas()
+	#bawl.createSentimentDictFileBawlLemmas("treetagger")
+	bawl.readAndInitBawlAndLemmas("treetagger")
 
 class Bawl:
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
-	def readAndInitBawlAndLemmas(self):
+	def readAndInitBawlAndLemmas(self, processor):
 		self.initBawl()
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/Bawl-Lemmas.txt")
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/Bawl-Lemmas.txt")
 		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
 
 	def initBawl(self):
@@ -50,13 +50,13 @@ class Bawl:
 			sentimentDict[unicode(word)] = infoPerWord
 		return sentimentDict
 
-	def lemmatizeDictBawl(self):
-		lp = Language_Processor()
+	def lemmatizeDictBawl(self, processor):
+		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		print("start Lemmatisation")
 		
 		for word,value in self._sentimentDict.iteritems():
-			lemma = lp.getLemma(word)		
+			lemma = lp._processor.getLemma(word)		
 			if lemma in newSentimentDict:
 				#could be a method
 				newAbsolute = abs(value["emotion"]) + abs(value["arousel"])
@@ -84,10 +84,10 @@ class Bawl:
 		self.initBawl()
 		self.createOutputBawl(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/Bawl-Token")
 
-	def createSentimentDictFileBawlLemmas(self):
+	def createSentimentDictFileBawlLemmas(self, processor):
 		self.initBawl()
-		self.lemmatizeDictBawl()
-		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/Bawl-Lemmas")
+		self.lemmatizeDictBawl(processor)
+		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/Bawl-Lemmas")
 
 if __name__ == "__main__":
     main()

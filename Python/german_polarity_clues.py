@@ -12,8 +12,9 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
-	gpc.createSentimentDictFileGPCToken()
-	gpc.createSentimentDictFileGPCLemmas()
+	#gpc.createSentimentDictFileGPCToken()
+	#gpc.createSentimentDictFileGPCLemmas("treetagger")
+	gpc.readAndInitGPCAndLemmas("treetagger")
 	"""
 	gpc.initGPC()
 	gpc.lemmatizeDictGPC()
@@ -26,9 +27,9 @@ class German_Polarity_Clues:
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
-	def readAndInitGPCAndLemmas(self):
+	def readAndInitGPCAndLemmas(self, processor):
 		self.initGPC()
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/GPC-Lemmas.txt")
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/GPC-Lemmas.txt")
 		sentimentDict = {}
 		lines = sentDictText.readlines()[1:]
 		for line in lines:
@@ -106,14 +107,14 @@ class German_Polarity_Clues:
 		for wordToDel in toDel:
 			del self._sentimentDict[wordToDel]
 	
-	def lemmatizeDictGPC(self):
-		lp = Language_Processor()
+	def lemmatizeDictGPC(self, processor):
+		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		i = 0
 
 		print("start Lemmatisation")
 		for word,value in self._sentimentDict.iteritems():
-			lemma = lp.getLemma(word)
+			lemma = lp._processor.getLemma(word)
 			if lemma in newSentimentDict:
 				if(self.getPolarityChange(value, newSentimentDict[lemma])):
 					i = i + 1
@@ -189,10 +190,10 @@ class German_Polarity_Clues:
 		self.initGPC()
 		self.createOutputGPC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/GPC-Token")
 
-	def createSentimentDictFileGPCLemmas(self):
+	def createSentimentDictFileGPCLemmas(self, processor):
 		self.initGPC()
-		self.lemmatizeDictGPC()
-		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/GPC-Lemmas")
+		self.lemmatizeDictGPC(processor)
+		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/GPC-Lemmas")
 
 if __name__ == "__main__":
     main()

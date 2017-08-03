@@ -8,14 +8,17 @@ import sys
 from sa_models import *
 import pprint
 import treetaggerwrapper
+from drama_parser import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
 	text = "Das ist ein schöner Tag. Das ist ein großer, aber schwerer Erfolg"
+	text = "Hund"
 	tt = Tree_Tagger()
-	tt.processTextFully(text)
+	tt.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
+	#tt.processTextFully(text)
 
 
 class Tree_Tagger:
@@ -24,8 +27,6 @@ class Tree_Tagger:
 
 		self._plainText = ""
 		self._filteredText = ""
-
-		self._tagger = None
 
 		self._tokens = []
 		self._tokensAndPOS = []
@@ -44,10 +45,11 @@ class Tree_Tagger:
 		self._currentDramaName = ""
 		self._tokensWithoutStopwords = []
 
+		self._tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
+
 	def processText(self, plainText):
 		self._plainText = plainText
-		self._filteredText = self.filterText(plainText)
-		self._tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
+		self._filteredText = self.filterText(plainText)	
 		print("Tagger ready...")
 		self.tagText()
 		print("Tokens ready...")
@@ -58,7 +60,6 @@ class Tree_Tagger:
 	def processTextFully(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
-		self._tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
 		print("Tagger ready...")
 		self.tagText()
 		print("Tokens ready...")
@@ -66,12 +67,11 @@ class Tree_Tagger:
 		print("Lemmas ready...")
 		print("Lemmas With LanguageInfo ready...")
 		self.createLemmaAndPOSDict()
-		print(self._lemmaAndPOSDict)
 		print("LemmasANDPOSDict ready...")
 		self.combineLemmasPOSTokens()
 		print("LemmasAndPOSAndTokensDict ready...")	
 	
-		# One Lemma can have multiple POS
+	# One Lemma can have multiple POS
 	def createLemmaAndPOSDict(self):
 		lemmasSet = set(self._lemmas)
 		for lemma in lemmasSet:
@@ -100,10 +100,8 @@ class Tree_Tagger:
 				return True
 		return False
 
-	#TODO getLemma, getLemmas
 	def getLemma(self, word):
-		blob = TextBlobDE(unicode(word))
-		lemmas = blob.words.lemmatize()
+		lemmas = self.getLemmas(word)
 		if(len(lemmas) > 1):
 			lemmasString = " ".join(lemmas)
 			return lemmasString
@@ -111,8 +109,12 @@ class Tree_Tagger:
 			return lemmas[0]
 
 	def getLemmas(self, wordsAsString):
-		blob = TextBlobDE(unicode(wordsAsString))
-		lemmas = blob.words.lemmatize()
+		tagsTabSeperated = self._tagger.tag_text(unicode(wordsAsString))
+		lemmas = []
+		for tagTabSeperated in tagsTabSeperated:
+			tags = tagTabSeperated.split("\t")
+			lemma = tags[2]
+			lemmas.append(lemma)
 		return lemmas
 
 	def tagText(self):
@@ -138,7 +140,6 @@ class Tree_Tagger:
 		return newTags
 
 	def filterPunctuationMarks(self, tags):
-		print "Start Punctuation Filter"
 		newTags = []
 		for tag in tags:
 			if(not tag[1].startswith("$") or tag[1] == "SEN"):
@@ -168,7 +169,6 @@ class Tree_Tagger:
 			tags = tagsTabSeperated[0].split("\t")
 			stopword_lemmatized = tags[2]
 
-			print(stopword_lemmatized)
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
 	def removeStopWordsFromLemmas(self):
@@ -195,6 +195,21 @@ class Tree_Tagger:
 				wordList.remove(stopword.title())
 		return wordList
 
+	def processSingleDrama(self, path):
+		parser = DramaParser()
+		dramaModel = parser.parse_xml(path)
+		self._currentDramaName = dramaModel._title
+		print("dramaModel ready...")
+		text = ""
+		#"""
+		for act in dramaModel._acts:
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					text = text + speech._text
+
+		print("Text ready...")
+		self.processTextFully(text)
+		print self._lemmas
 
 if __name__ == "__main__":
     main()

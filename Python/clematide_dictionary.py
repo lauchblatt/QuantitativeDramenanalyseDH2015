@@ -10,15 +10,17 @@ from language_processor import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+	cd = CD()
+	cd.createSentimentDictFileCDLemmas("treetagger")
 
 class CD:
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
-	def readAndInitCDAndLemmas(self):
+	def readAndInitCDAndLemmas(self, processor):
 		self.initCD()
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/CD-Lemmas.txt")
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CD-Lemmas.txt")
 		sentimentDict = {}
 		lines = sentDictText.readlines()[1:]
 		for line in lines:
@@ -72,12 +74,12 @@ class CD:
 
 		return sentimentDict
 
-	def lemmatizeDictCD(self):
-		lp = Language_Processor()
+	def lemmatizeDictCD(self, processor):
+		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		print("start Lemmatisation")
 		for word,value in self._sentimentDict.iteritems():
-			lemma = lp.getLemma(word)
+			lemma = lp._processor.getLemma(word)
 			if lemma in newSentimentDict:			
 				sentiments = self.getHigherSentimentValuesCD(value, newSentimentDict[lemma])
 				newSentimentDict[lemma] = sentiments
@@ -134,10 +136,10 @@ class CD:
 		self.initCD()
 		self.createOutputCD(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/CD-Token")
 
-	def createSentimentDictFileCDLemmas(self):
+	def createSentimentDictFileCDLemmas(self, processor):
 		self.initCD()
-		self.lemmatizeDictCD()
-		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/Pattern-Lemmas/CD-Lemmas")
+		self.lemmatizeDictCD(processor)
+		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CD-Lemmas")
 
 if __name__ == "__main__":
     main()

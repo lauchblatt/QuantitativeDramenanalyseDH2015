@@ -5,7 +5,6 @@ import re
 import collections
 import locale
 import sys
-from language_processor import *
 from sentiWS import *
 from nrc import *
 from bawl import *
@@ -29,47 +28,47 @@ class Lexicon_Handler:
 		self._sentimentDictLemmas = {}
 		self._sentimentDicts = ["SentiWS", "NRC", "Bawl", "CD", "GPC"]
 
-	def initSingleDict (self, lexicon):
+	def initSingleDict (self, lexicon, processor):
 		if (lexicon == "SentiWS"):
-			self.initSentiWS()
+			self.initSentiWS(processor)
 		elif (lexicon == "NRC"):
-			self.initNrc()
+			self.initNrc(processor)
 		elif (lexicon == "Bawl"):
-			self.initBawl()
+			self.initBawl(processor)
 		elif (lexicon == "CD"):
 			self.initCD()
 		elif (lexicon == "GPC"):
-			self.initGPC()
+			self.initGPC(processor)
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 	
-	def initSentiWS(self):
+	def initSentiWS(self, processor):
 		sentiWS = Senti_WS()
 		sentiWS.readAndInitSentiWSAndLemmas()
 		self._sentimentDict = sentiWS._sentimentDict
 		self._sentimentDictLemmas = sentiWS._sentimentDictLemmas
 
-	def initNrc(self):
+	def initNrc(self, processor):
 		nrc = NRC()
-		nrc.readAndInitNRCAndLemmas()
+		nrc.readAndInitNRCAndLemmas(processor)
 		self._sentimentDict = nrc._sentimentDict
 		self._sentimentDictLemmas = nrc._sentimentDictLemmas
 
-	def initBawl(self):
+	def initBawl(self, processor):
 		bawl = Bawl()
-		bawl.readAndInitBawlAndLemmas()
+		bawl.readAndInitBawlAndLemmas(processor)
 		self._sentimentDict = bawl._sentimentDict
 		self._sentimentDictLemmas = bawl._sentimentDictLemmas
 
-	def initCD(self):
+	def initCD(self, processor):
 		cd = CD()
-		cd.readAndInitCDAndLemmas()
+		cd.readAndInitCDAndLemmas(processor)
 		self._sentimentDict = cd._sentimentDict
 		self._sentimentDictLemmas = cd._sentimentDictLemmas
 
-	def initGPC(self):
+	def initGPC(self, processor):
 		gpc = German_Polarity_Clues()
-		gpc.readAndInitGPCAndLemmas()
+		gpc.readAndInitGPCAndLemmas(processor)
 		self._sentimentDict = gpc._sentimentDict
 		self._sentimentDictLemmas = gpc._sentimentDictLemmas
 
@@ -116,16 +115,16 @@ class Lexicon_Handler:
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
 
-	def readAndReturnLexiconKeyDumps(self):
-		lexiconKeysTokens = pickle.load(open("Dumps/combinedLexiconKeysTokens.p", "rb"))
-		lexiconKeysLemmas = pickle.load(open("Dumps/combinedLexiconKeysLemmas.p", "rb"))
+	def readAndReturnLexiconKeyDumps(self, processor):
+		lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/combinedLexiconKeysTokens.p", "rb"))
+		lexiconKeysLemmas = pickle.load(open("Dumps/LexiconKeys" + processor + "/combinedLexiconKeysLemmas.p", "rb"))
 		return (lexiconKeysTokens, lexiconKeysLemmas)
 
-	def combineSentimentLexiconsKeysAndDump(self):
+	def combineSentimentLexiconsKeysAndDump(self, processor):
 		newLexiconKeysTokens = self.getCombinedLexiconKeysTokens()
 		newLexiconKeysLemmas = self.getCombinedLexiconKeysLemmas()
-		pickle.dump(newLexiconKeysTokens, open("Dumps/combinedLexiconKeysTokens.p", "wb" ))
-		pickle.dump(newLexiconKeysLemmas, open("Dumps/combinedLexiconKeysLemmas.p", "wb" ))
+		pickle.dump(newLexiconKeysTokens, open("Dumps/LexiconKeys/combinedLexiconKeysTokens.p", "wb" ))
+		pickle.dump(newLexiconKeysLemmas, open("Dumps/LexiconKeys" + processor + "combinedLexiconKeysLemmas.p", "wb" ))
 
 	def getCombinedLexiconKeysTokens(self):
 		newLexiconKeysTokens = []
