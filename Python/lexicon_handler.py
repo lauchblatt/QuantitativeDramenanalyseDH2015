@@ -17,9 +17,10 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
+	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump()
 
-	lexiconHandler.combineSentimentLexica()
+	lexiconHandler.combineSentimentLexica("treetagger")
 
 class Lexicon_Handler:
 
@@ -36,7 +37,7 @@ class Lexicon_Handler:
 		elif (lexicon == "Bawl"):
 			self.initBawl(processor)
 		elif (lexicon == "CD"):
-			self.initCD()
+			self.initCD(processor)
 		elif (lexicon == "GPC"):
 			self.initGPC(processor)
 		else:
@@ -44,7 +45,7 @@ class Lexicon_Handler:
 	
 	def initSentiWS(self, processor):
 		sentiWS = Senti_WS()
-		sentiWS.readAndInitSentiWSAndLemmas()
+		sentiWS.readAndInitSentiWSAndLemmas(processor)
 		self._sentimentDict = sentiWS._sentimentDict
 		self._sentimentDictLemmas = sentiWS._sentimentDictLemmas
 
@@ -72,25 +73,25 @@ class Lexicon_Handler:
 		self._sentimentDict = gpc._sentimentDict
 		self._sentimentDictLemmas = gpc._sentimentDictLemmas
 
-	def combineSentimentLexica(self):
-		keys = self.readAndReturnLexiconKeyDumps()
+	def combineSentimentLexica(self, processor):
+		keys = self.readAndReturnLexiconKeyDumps(processor)
 		lexiconKeysTokens = keys[0]
 		lexiconKeysLemma = keys[1]
 		
 		sentiWS = Senti_WS()
-		sentiWS.readAndInitSentiWSAndLemmas()
+		sentiWS.readAndInitSentiWSAndLemmas(processor)
 
 		nrc = NRC()
-		nrc.readAndInitNRCAndLemmas()
+		nrc.readAndInitNRCAndLemmas(processor)
 
 		bawl = Bawl()
-		bawl.readAndInitBawlAndLemmas()
+		bawl.readAndInitBawlAndLemmas(processor)
 
 		cd = CD()
-		cd.readAndInitCDAndLemmas()
+		cd.readAndInitCDAndLemmas(processor)
 
 		gpc = German_Polarity_Clues()
-		gpc.readAndInitGPCAndLemmas()
+		gpc.readAndInitGPCAndLemmas(processor)
 
 		combinedLexiconTokens = {}
 		combinedLexiconLemmas = {}
@@ -114,22 +115,24 @@ class Lexicon_Handler:
 
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
+		print(len(self._sentimentDict))
+		print(len(self._sentimentDictLemmas))
 
 	def readAndReturnLexiconKeyDumps(self, processor):
-		lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/combinedLexiconKeysTokens.p", "rb"))
-		lexiconKeysLemmas = pickle.load(open("Dumps/LexiconKeys" + processor + "/combinedLexiconKeysLemmas.p", "rb"))
+		lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysTokens.p", "rb"))
+		lexiconKeysLemmas = pickle.load(open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysLemmas.p", "rb"))
 		return (lexiconKeysTokens, lexiconKeysLemmas)
 
 	def combineSentimentLexiconsKeysAndDump(self, processor):
-		newLexiconKeysTokens = self.getCombinedLexiconKeysTokens()
-		newLexiconKeysLemmas = self.getCombinedLexiconKeysLemmas()
-		pickle.dump(newLexiconKeysTokens, open("Dumps/LexiconKeys/combinedLexiconKeysTokens.p", "wb" ))
-		pickle.dump(newLexiconKeysLemmas, open("Dumps/LexiconKeys" + processor + "combinedLexiconKeysLemmas.p", "wb" ))
+		newLexiconKeysTokens = self.getCombinedLexiconKeysTokens(processor)
+		newLexiconKeysLemmas = self.getCombinedLexiconKeysLemmas(processor)
+		pickle.dump(newLexiconKeysTokens, open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysTokens.p", "wb" ))
+		pickle.dump(newLexiconKeysLemmas, open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysLemmas.p", "wb" ))
 
-	def getCombinedLexiconKeysTokens(self):
+	def getCombinedLexiconKeysTokens(self, processor):
 		newLexiconKeysTokens = []
 		for dictString in self._sentimentDicts:
-			self.initSingleDict(dictString)
+			self.initSingleDict(dictString, processor)
 			
 			for key in self._sentimentDict:
 				if(not(key in newLexiconKeysTokens)):
@@ -137,10 +140,10 @@ class Lexicon_Handler:
 
 		return newLexiconKeysTokens
 
-	def getCombinedLexiconKeysLemmas(self):
+	def getCombinedLexiconKeysLemmas(self, processor):
 		newLexiconKeysLemmas = []
 		for dictString in self._sentimentDicts:
-			self.initSingleDict(dictString)
+			self.initSingleDict(dictString, processor)
 			for key in self._sentimentDictLemmas:
 				if(not(key in newLexiconKeysLemmas)):
 					newLexiconKeysLemmas.append(key)

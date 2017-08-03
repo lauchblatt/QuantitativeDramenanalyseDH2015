@@ -11,21 +11,22 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dlOutput = DramaLanguage_Output()
-	#dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/EntireCorpus")
+	dlOutput = DramaLanguage_Output("treetagger")
+	dlOutput.processEntireCorpusAndGenereateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
 
-	#dlOutput.generateWordFrequenciesOutputTokens("../Lessing-Dramen/less-Der_Freigeist_k.xml", "../Word-Frequencies/test")
-	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens_ohneKursiv/")
+	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test")
+	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
 
 class DramaLanguage_Output:
 
-	def __init__(self):
+	def __init__(self, processor):
 		self._lp = None
 
-		self.setLanguageProcessor()
+		self.setLanguageProcessor(processor)
 
-	def setLanguageProcessor(self):
-		self._lp = Language_Processor()
+	def setLanguageProcessor(self, processor):
+		lp = Language_Processor(processor)
+		self._lp = lp._processor
 
 	def generateWordFrequenciesOutputTokens(self, inputPath, outputPath):
 		self._lp.processSingleDramaTokens(inputPath)
@@ -51,6 +52,7 @@ class DramaLanguage_Output:
 
 	def generateWordFrequenciesOutputLemmas(self, inputPath, outputPath):
 		self._lp.processSingleDrama(inputPath)
+		self._lp.removeStopWordsFromLemmas()
 		outputFile = open(outputPath + ".txt", "w")
 		wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
 		self.writeOutputLemmas(outputFile, wordFrequencies)

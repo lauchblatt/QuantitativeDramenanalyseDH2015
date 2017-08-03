@@ -11,21 +11,22 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dpp = Drama_Pre_Processing()
-	dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
+	dpp = Drama_Pre_Processing("treetagger")
+	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
+	dpp.preProcessAndDumpAllDramas()
 
 class Drama_Pre_Processing:
 
-	def __init__(self):
+	def __init__(self, processor):
 		self._dramaModel = None
 		self._languageProcessor = None
-
-		self.initLanguageProcessor()
+		self._processor = processor
+		self.initLanguageProcessor(processor)
 	
 	def preProcessAndDumpAllDramas(self):
 		for filename in os.listdir("../Lessing-Dramen/"):
 			self.preProcessAndLemmatize("../Lessing-Dramen/" + filename)
-			targetPath = "Dumps/ProcessedDramas/" + self._dramaModel._title + ".p"
+			targetPath = "Dumps/ProcessedDramas/" + self._processor + "/" + self._dramaModel._title + ".p"
 			self.dumpDramaModel(targetPath)
 	
 	def initDramaModel(self, dramaPath):
@@ -38,13 +39,15 @@ class Drama_Pre_Processing:
 
 	def preProcessLemmatizeAndDump(self, dramaPath):
 		self.preProcessAndLemmatize(dramaPath)
-		self.dumpDramaModel("Dumps/ProcessedDramas/" + self._dramaModel._title + ".p")
+
+		self.dumpDramaModel("Dumps/ProcessedDramas/" + self._processor + "/" + self._dramaModel._title + ".p")
 
 	def dumpDramaModel(self, dramaPath):
 		pickle.dump(self._dramaModel, open(dramaPath, "wb" ))
 
-	def initLanguageProcessor(self):
-		self._languageProcessor = Language_Processor()
+	def initLanguageProcessor(self, processor):
+		lp = Language_Processor(processor)
+		self._languageProcessor = lp._processor
 
 	def preProcess(self, path):
 		self.initDramaModel(path)

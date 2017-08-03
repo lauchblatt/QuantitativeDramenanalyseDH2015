@@ -57,6 +57,10 @@ class Tree_Tagger:
 		print("Lemmas ready...")
 		print("Lemmas With LanguageInfo ready...")
 
+	# Indeed redundant
+	def processTextTokens(self, plainText):
+		self.processText(plainText)
+
 	def processTextFully(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
@@ -121,6 +125,12 @@ class Tree_Tagger:
 		tagsTabSeperated = self._tagger.tag_text(self._filteredText)
 		tags = self.removeTabSeperation(tagsTabSeperated)
 		tags = self.filterPunctuationMarks(tags)
+		self._tokens = []
+		self._lemmas = []
+		self._tokensAndPOS = []
+		self._lemmasAndPOS = []
+		self._lemmasWithLanguageInfo = []
+
 		for tag in tags:
 			token = tag[0]
 			pos = tag[1]
@@ -174,26 +184,27 @@ class Tree_Tagger:
 	def removeStopWordsFromLemmas(self):
 		self.initStopWords()
 		lemmasCopy = list(self._lemmas)
-		self._lemmasWithoutStopwords = self.removeStopwordsFromList(lemmasCopy)
+		self._lemmasWithoutStopwords = self.removeStopwordsFromLemmasList(lemmasCopy)
 	
 	def removeStopwordsFromTokens(self):
 		self.initStopWords()
 		tokensCopy = list(self._tokens)
-		self._tokensWithoutStopwords = self.removeStopwordsFromList(tokensCopy)
+		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 
-	def removeStopwordsFromList(self, wordList):
-		for stopword in self._stopwords:
-			while stopword.lower() in wordList:
-				wordList.remove(stopword.lower())
-			while stopword.title() in wordList:
-				wordList.remove(stopword.title())
-
+	def removeStopwordsFromLemmasList(self, wordList):
 		for stopword in self._stopwords_lemmatized:
 			while stopword.lower() in wordList:
 				wordList.remove(stopword.lower())
 			while stopword.title() in wordList:
 				wordList.remove(stopword.title())
 		return wordList
+
+	def removeStopwordsFromTokensList(self, wordList):
+		for stopword in self._stopwords:
+			while stopword.lower() in wordList:
+				wordList.remove(stopword.lower())
+			while stopword.title() in wordList:
+				wordList.remove(stopword.title())
 
 	def processSingleDrama(self, path):
 		parser = DramaParser()
@@ -209,7 +220,36 @@ class Tree_Tagger:
 
 		print("Text ready...")
 		self.processTextFully(text)
-		print self._lemmas
+
+	def processSingleDrama(self, path):
+		parser = DramaParser()
+		dramaModel = parser.parse_xml(path)
+		self._currentDramaName = dramaModel._title
+		print("dramaModel ready...")
+		text = ""
+		#"""
+		for act in dramaModel._acts:
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					text = text + speech._text
+
+		print("Text ready...")
+		self.processTextFully(text)
+
+	def processSingleDramaTokens(self, path):
+		parser = DramaParser()
+		dramaModel = parser.parse_xml(path)
+		self._currentDramaName = dramaModel._title
+		print("dramaModel ready...")
+		text = ""
+		#"""
+		for act in dramaModel._acts:
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					text = text + speech._text
+
+		print("Text ready...")
+		self.processTextTokens(text)
 
 if __name__ == "__main__":
     main()

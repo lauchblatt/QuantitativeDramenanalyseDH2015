@@ -96,9 +96,6 @@ class Text_Blob:
 		print(self._lemmaAndPOSDict)
 		print(self._lemmasAndPOSAndTokensDict)
 		"""
-		
-		self.removeStopWordsFromLemmas()
-		#print("StopWords removed...")
 
 
 	def getLemma(self, word):
@@ -208,26 +205,29 @@ class Text_Blob:
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
 	def removeStopWordsFromLemmas(self):
+		self.initStopWords()
 		lemmasCopy = list(self._lemmas)
-		self._lemmasWithoutStopwords = self.removeStopwordsFromList(lemmasCopy)
+		self._lemmasWithoutStopwords = self.removeStopwordsFromLemmasList(lemmasCopy)
 	
 	def removeStopwordsFromTokens(self):
+		self.initStopWords()
 		tokensCopy = list(self._tokens)
-		self._tokensWithoutStopwords = self.removeStopwordsFromList(tokensCopy)
+		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 
-	def removeStopwordsFromList(self, wordList):
-		for stopword in self._stopwords:
-			while stopword.lower() in wordList:
-				wordList.remove(stopword.lower())
-			while stopword.title() in wordList:
-				wordList.remove(stopword.title())
-
+	def removeStopwordsFromLemmasList(self, wordList):
 		for stopword in self._stopwords_lemmatized:
 			while stopword.lower() in wordList:
 				wordList.remove(stopword.lower())
 			while stopword.title() in wordList:
 				wordList.remove(stopword.title())
 		return wordList
+
+	def removeStopwordsFromTokensList(self, wordList):
+		for stopword in self._stopwords:
+			while stopword.lower() in wordList:
+				wordList.remove(stopword.lower())
+			while stopword.title() in wordList:
+				wordList.remove(stopword.title())
 
 	"""
 	def removeStopwordsFromWordFrequencies(self, wordFrequencies):

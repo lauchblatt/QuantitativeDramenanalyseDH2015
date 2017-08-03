@@ -6,8 +6,6 @@ import collections
 import locale
 import sys
 from drama_parser import *
-from language_processor import *
-from lexicon_handler import *
 from sa_models import *
 from sa_calculator import *
 from sa_pre_processing import *
@@ -17,14 +15,15 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	processor = Drama_Pre_Processing()
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Nathan der Weise.p")
+	processor = Drama_Pre_Processing("textblob")
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/textblob/Philotas.p")
 	
-	sa = Sentiment_Analyzer(True)
+	sa = Sentiment_Analyzer(True, "textblob")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("Lemmas/Nathan", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("Lemmas/textblob/Philotas", sentimentExtendedDramaModel)
+	
 
 class Sentiment_Output_Generator:
 

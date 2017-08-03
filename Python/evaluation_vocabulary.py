@@ -31,13 +31,13 @@ class Evaluation_LexiconVsVocabulary:
 
 		self._vocabulary = None
 	
-	def init(self, vocPath, lexiconName):
+	def init(self, vocPath, lexiconName, processor):
 		self._vocabulary = self.readVocabulary(vocPath)
 		self.setLexicon(lexiconName)
 
-	def setLexicon(self, lexiconName):
+	def setLexicon(self, lexiconName, processor):
 		lexiconHandler = Lexicon_Handler()
-		lexiconHandler.initSingleDict(lexiconName)
+		lexiconHandler.initSingleDict(lexiconName, processor)
 
 		self._lexiconName = unicode(lexiconName)
 		self._lexicon = lexiconHandler._sentimentDict
