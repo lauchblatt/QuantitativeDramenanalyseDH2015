@@ -12,13 +12,13 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	evaluation = Evaluation_LexiconVsVocabulary()
-	#evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "NRC", "treetagger")
+	evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "NRC", "treetagger")
 	
 	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/treetagger/", "NRC", "treetagger")
-	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
+	result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	evaluation.evaluateAll()
+	evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
+	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
 
@@ -60,7 +60,7 @@ class Evaluation_LexiconVsVocabulary:
 
 	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName, processor):
 		for filename in os.listdir(vocFolder):
-			vocPath = vocFolder + "/" + filename
+			vocPath = vocFolder + filename
 			self.init(vocPath, lexiconName, processor)
 			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
 			outputPath = "../Evaluation/" + lexiconName + "/" + processor + "/"
@@ -204,8 +204,10 @@ class Vocabulary:
 		lines = vocabularyFile.readlines()[5:]
 
 		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
-		self._type = path.split("/")[-4]
+		self._type = path.split("/")[-3]
+		print path
 		print self._type
+		print self._name
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")
