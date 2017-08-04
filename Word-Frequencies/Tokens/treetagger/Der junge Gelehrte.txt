@@ -1,6 +1,6 @@
 Title: Der junge Gelehrte
-Number of all tokens: 9742
-Nummber of different tokens: 3703
+Number of all tokens: 9932
+Nummber of different tokens: 3727
 
 Token	Frequency
 Herr	110
@@ -10,10 +10,12 @@ weiß	63
 Lisette	58
 Damis	58
 Valer	56
+wollen	50
 gar	45
 Julianen	45
 Sohn	43
 sagen	42
+meinen	40
 werde	40
 Anton	39
 reden	38
@@ -59,7 +61,9 @@ mag	20
 geht	20
 Chrysander	20
 heiraten	20
+halten	20
 etwa	20
+geben	19
 vielleicht	19
 Post	19
 kannst	19
@@ -129,6 +133,7 @@ Einfall	11
 weiter	11
 Thalassio	11
 verstehen	11
+weit	11
 lesen	11
 Berlin	11
 einander	11
@@ -224,6 +229,7 @@ Ernste	7
 anfangen	7
 Geschicklichkeit	7
 sagte	7
+sprechen	7
 Republik	7
 Ihrem	7
 bleibt	7
@@ -247,6 +253,7 @@ Lügen	7
 besten	7
 Willen	7
 hätten	7
+liegen	7
 Teil	7
 Narr	7
 umsonst	7
@@ -265,6 +272,7 @@ Ausstattung	6
 wert	6
 schreiben	6
 fangen	6
+Wollen	6
 kennst	6
 müsse	6
 vernünftig	6
@@ -351,7 +359,6 @@ nunmehr	5
 Geduld	5
 selber	5
 Sachte	5
-Absicht	5
 alte	5
 Preis	5
 Sage	5
@@ -394,6 +401,7 @@ denkst	5
 Bedienter	5
 Stande	5
 Unwissender	5
+Absicht	5
 habt	5
 Freundschaft	5
 Geht	5
@@ -522,7 +530,6 @@ bitten	4
 versteh	4
 Mönch	4
 Endlich	4
-Wissenschaften	4
 Händen	4
 Freude	4
 Tode	4
@@ -547,6 +554,7 @@ Weile	4
 Leben	4
 Ärgers	4
 Kunst	4
+einige	4
 schön	4
 Lobeserhebungen	4
 Pfarr	4
@@ -577,6 +585,7 @@ längst	4
 entdecken	4
 Tasche	4
 gedacht	4
+Wissenschaften	4
 Schimpf	4
 Gelegenheit	4
 zwei	4
@@ -636,6 +645,7 @@ Sieht	3
 erfüllen	3
 ewige	3
 non	3
+Halten	3
 ungestört	3
 zänkisch	3
 geplaudert	3
@@ -774,6 +784,7 @@ Kenntnis	3
 Köpfe	3
 heilige	3
 schien	3
+mögen	3
 vorlesen	3
 verziehen	3
 acht	3
@@ -817,6 +828,7 @@ Entschluß	3
 Rechnung	3
 ziehen	3
 Genies	3
+Sorgen	3
 Bösewicht	3
 lese	3
 aufhören	3
@@ -839,6 +851,7 @@ trifft	2
 glückliche	2
 Beichtvater	2
 brauchte	2
+neu	2
 unbesorgt	2
 Katerchen	2
 Helden	2
@@ -852,6 +865,7 @@ wenigsten	2
 merk	2
 sicher	2
 bringe	2
+spät	2
 gelernt	2
 heirate	2
 gelehrter	2
@@ -931,6 +945,7 @@ Sitten	2
 ankleiden	2
 jetzo	2
 ankommen	2
+dürfen	2
 schließen	2
 ihres	2
 vorgegangen	2
@@ -1025,7 +1040,6 @@ beschreibt	2
 geredt	2
 Beine	2
 Vorwürfe	2
-Erde	2
 Übung	2
 Lohn	2
 schlagen	2
@@ -1137,9 +1151,11 @@ zumal	2
 Dresden	2
 irren	2
 redte	2
+eigen	2
 werfen	2
 vermietet	2
 Betriegerin	2
+Erde	2
 dreimal	2
 besitze	2
 kämen	2
@@ -1307,6 +1323,7 @@ Klugen	2
 sprichst	2
 äußerlichen	2
 Gesangbuche	2
+Meinen	2
 Meiner	2
 Sinn	2
 Doktor	2
@@ -1450,6 +1467,7 @@ Grausamkeit	1
 fürchterlich	1
 Beschimpfungen	1
 nimium	1
+unschätzbare	1
 merkwürdiges	1
 Ururältervater	1
 Todenmahle	1
@@ -1472,6 +1490,7 @@ Galimathias	1
 fleißig	1
 Pum	1
 ißt	1
+sed	1
 ungeheurer	1
 Miene	1
 Lorbeer	1
@@ -1523,7 +1542,6 @@ Pakto	1
 gewisse	1
 ers	1
 δὲ	1
-Entsetzen	1
 befürchtest	1
 Schläge	1
 tiefsinnig	1
@@ -1722,6 +1740,7 @@ liest	1
 Verschlagenheit	1
 mengen	1
 Weiche	1
+Lobenswürdiges	1
 höchstens	1
 Geschöpfe	1
 kurzer	1
@@ -1738,6 +1757,7 @@ verteidigen	1
 eingeblasen	1
 ungültig	1
 Epith	1
+gelten	1
 Dache	1
 eurige	1
 Netz	1
@@ -1769,7 +1789,6 @@ genauer	1
 Mittage	1
 höchsten	1
 Kirche	1
-Brust	1
 Tollhaus	1
 Schuldmanne	1
 Behüte	1
@@ -1791,7 +1810,6 @@ ungelegnen	1
 betrifft	1
 unglückliches	1
 Lumpengesindel	1
-viereckigten	1
 Sprüche	1
 Spiegel	1
 umgeben	1
@@ -1949,6 +1967,7 @@ Ode	1
 bedienen	1
 albernes	1
 erfreut	1
+Stoß	1
 unwert	1
 Trinken	1
 ernsthaften	1
@@ -2002,6 +2021,7 @@ Pfeife	1
 applizieren	1
 spielte	1
 tugendhaftes	1
+Bücherwürmchen	1
 gewissermaßen	1
 Unbeständigkeit	1
 enterben	1
@@ -2023,6 +2043,7 @@ Landsleuten	1
 gefolgt	1
 deutschen	1
 aufbringen	1
+Entsetzen	1
 exceptione	1
 Verschwiegenheit	1
 Appetit	1
@@ -2093,6 +2114,7 @@ würdig	1
 gebeten	1
 zeugen	1
 Unterschied	1
+Brust	1
 zugestutzt	1
 hörst	1
 Sapienti	1
@@ -2222,6 +2244,7 @@ aufweisen	1
 Anstalt	1
 verwandten	1
 Pöbels	1
+Speisen	1
 aliter	1
 Schnitte	1
 untersucht	1
@@ -2501,6 +2524,7 @@ rechnet	1
 Gottlosigkeit	1
 Weißt	1
 stellte	1
+bestehen	1
 seh	1
 passus	1
 eingehen	1
@@ -2694,7 +2718,6 @@ gedruckt	1
 tangere	1
 Anständigkeit	1
 Seltnes	1
-Speisen	1
 spitzen	1
 abscheulich	1
 Vorschlag	1
@@ -2861,6 +2884,7 @@ Spöttisch	1
 Turnier	1
 Zygomaticus	1
 Müdigkeit	1
+nichtsweniger	1
 Vorsatz	1
 Hab	1
 anführt	1
@@ -2871,6 +2895,7 @@ veränderlichen	1
 nehme	1
 quovis	1
 traut	1
+Dienstfertigkeit	1
 Posaune	1
 irgend	1
 gewackelt	1
@@ -2901,7 +2926,6 @@ scheuen	1
 zerbeißen	1
 Denkt	1
 gäbe	1
-vorne	1
 bedanken	1
 bewiesen	1
 arm	1
@@ -2927,6 +2951,7 @@ Ungelehrten	1
 gewissen	1
 irre	1
 abgegeben	1
+Letzt	1
 Rübbenstoße	1
 ungelegener	1
 erträglichsten	1
@@ -2981,6 +3006,7 @@ Koptisch	1
 lateinisches	1
 eure	1
 akkordieren	1
+scheinen	1
 hintergeht	1
 bringst	1
 Gesundheit	1
@@ -3029,7 +3055,7 @@ wiederbekommen	1
 pitha	1
 Gleichgewicht	1
 erhielten	1
-Hin-	1
+sorgen	1
 hinten	1
 hinter	1
 Bosheit	1
@@ -3188,6 +3214,7 @@ Fassen	1
 beigebracht	1
 beliebe	1
 Verdienen	1
+Hin-	1
 Urtel	1
 erkläre	1
 Widersprechen	1
@@ -3202,7 +3229,6 @@ vorträgt	1
 gelegt	1
 Richtigtigkeit	1
 beschäftigten	1
-Dienstfertigkeit	1
 prahlen	1
 Hilf	1
 Befehl	1
@@ -3300,7 +3326,6 @@ ausdrücken	1
 gaben	1
 Stößer	1
 wette	1
-Bücherwürmchen	1
 erstaunen	1
 nachzuäffen	1
 Horne	1
@@ -3348,7 +3373,6 @@ Kompliment	1
 Wende	1
 billige	1
 Unverschämter	1
-hintereinander	1
 wartet	1
 fluchen	1
 Hauskreuz	1
@@ -3408,7 +3432,7 @@ ungelegnern	1
 Erznarren	1
 kauen	1
 Zipfel	1
-sed	1
+vorne	1
 ehemals	1
 verbindet	1
 Erklärungen	1
@@ -3549,6 +3573,7 @@ beschreiben	1
 elender	1
 kränker	1
 Ehrfurcht	1
+Folgen	1
 Zittern	1
 gezogen	1
 allzuviel	1
@@ -3565,7 +3590,6 @@ schelten	1
 Goldstücken	1
 Wohltat	1
 Einbildung	1
-Lobenswürdiges	1
 Weib	1
 Winde	1
 schriftlich	1
@@ -3576,12 +3600,11 @@ Welch	1
 Preise	1
 Drittel	1
 außerordentlichste	1
-nichtsweniger	1
 verwehren	1
 Aufgaben	1
 nachdenke	1
 dümmste	1
-Stoß	1
+Einige	1
 geschafft	1
 griechische	1
 Italienisch	1
@@ -3670,6 +3693,7 @@ drohen	1
 dringen	1
 Umsonst	1
 Gesunden	1
+viereckigten	1
 Schönes	1
 gehörst	1
 Pappelbäume	1
@@ -3683,7 +3707,7 @@ Schimpfwörter	1
 Verlöbnis	1
 Lästern	1
 Willens	1
-unschätzbare	1
+hintereinander	1
 Karesse	1
 Zusammenkünfte	1
 Disputierens	1

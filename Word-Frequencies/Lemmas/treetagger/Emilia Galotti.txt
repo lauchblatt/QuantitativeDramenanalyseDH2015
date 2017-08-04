@@ -1,6 +1,6 @@
 Title: Emilia Galotti
-Number of all lemmas: 6846
-Nummber of different lemmas: 2144
+Number of all lemmas: 6863
+Nummber of different lemmas: 2154
 
 Lemma	POS	Frequency	Tokens
 Prinz	NE, NN	119	Prinz, Prinzen
@@ -129,7 +129,6 @@ Augenblick	NN	9	Augenblick, Augenblicke
 brauchen	VVFIN, VVINF	9	braucht, brauchen, brauchte
 führen	VVINF, VVFIN	9	führen, führt, führtest, führte
 Dosalo	NN	9	Dosalo
-<UNKNOWN>	NN, VVFIN, VVINF	9	Stirne, konnt, größern, weitern
 Madame	NN	9	Madame
 darum	PAV	9	darum
 Freundschaft	NN	9	Freundschaft
@@ -199,6 +198,7 @@ Wille	NN	6	Willen, Willens
 erwägen	VVINF, VVFIN	6	erwägen, Erwägen, erwäge
 Fuß	NN	6	Fuße, Füße, Füßen
 wert	ADJD	6	wert
+diese	PDS	6	diese, diesen, dieser, dieses
 Bräutigam	NN	6	Bräutigam
 schwerlich	ADJD	6	schwerlich, Schwerlich
 Tat	NN	6	Tat, Taten
@@ -272,6 +272,7 @@ vergeben	VVFIN, VVPP, VVINF, VVIMP	5	vergebe, vergeben, vergib, Vergeben
 einander	PRF	5	einander
 Original	NN	5	Original
 Hof	NN	5	Hofe, Hof, Hofes
+am	PTKA	5	Am, am
 dienen	VVPP, VVINF	5	gedient, dienen
 elend	ADJA, ADJD	5	elenden, elender, Elender
 begleiten	VVINF, VVPP	5	begleiten, begleitet
@@ -310,6 +311,7 @@ erblicken	VVFIN, VVINF, VVPP	5	erblicke, erblicken, erblickte, erblickt, Erblick
 niemand	PIS	4	niemanden, Niemand, niemand
 Hülfe	NN	4	Hülfe
 Sinn|Sinnen	NN	4	Sinnen
+konnt	VVFIN	4	konnt
 laufen	VVFIN, VVIMP	4	lief, lauf
 nahe	PTKVZ	4	nahe
 Gleichgültigkeit	NN	4	Gleichgültigkeit
@@ -604,6 +606,7 @@ tragen	VVINF, VVFIN	2	tragen, trug
 beehren	VVFIN	2	beehren, beehrte
 unstreitig	ADJD	2	unstreitig, Unstreitig
 foderte	VVFIN	2	foderte
+Stirne	NN	2	Stirne
 Ware	NN	2	Waren
 nirgends	ADV	2	nirgends
 geliebt	ADJA	2	geliebte, geliebten
@@ -698,6 +701,7 @@ helfen	VVINF	2	helfen
 Bescheidenheit	NN	2	Bescheidenheit
 wunderbar	ADJA	2	wunderbarsten, wunderbaren
 Wen	NE	2	Wen
+weitern	VVINF	2	weitern
 betrachten	VVINF	2	betrachten
 zahm	ADJD	2	zahm
 beurteilen	VVINF	2	beurteilen
@@ -719,7 +723,6 @@ Gebieterin	NN	2	Gebieterin
 ketten	VVFIN	2	kettet, ketten
 Schutz	NN	2	Schutzes, Schutz
 jagen	VVINF	2	jagen
-rauh	ADJD, ADJA	2	rauh, rauhen
 ach	ITJ	2	Ach
 fein	ADJD	2	fein
 woll	VVFIN	2	woll
@@ -787,6 +790,7 @@ befehlend	ADJD	2	befehlend
 verloren	ADJD	2	verloren
 nichten	ADJA	2	nichten
 fähig	ADJD	2	fähig
+rauh	ADJD, ADJA	2	rauh, rauhen
 gefaßt	ADJD	2	gefaßt
 Unruhe	NN	2	Unruhe
 eilig	ADJD	2	eilig, eiligst
@@ -886,6 +890,7 @@ Hoffnung	NN	2	Hoffnung
 abfahren	VVINF, VVPP	2	abfahren, abgefahren
 ernst	ADJD	2	ernst, ernster
 bewundern	VVINF, VVPP	2	bewundern, bewundert
+Einer	NN	2	Einer
 wehen	VVIMP	2	weh, Weh
 verfluchen	VVINF	2	verfluchen
 Studium	NN	2	Studium
@@ -923,6 +928,7 @@ Charakter	NN	1	Charakter
 trollen	VVINF	1	trollen
 treulich	ADJD	1	treulich
 durchstechen	VVFIN	1	durchsticht
+Trotz	NN	1	Trotze
 hervorragend	ADJA	1	hervorragenden
 recht|rechts	ADJA	1	rechten
 versetzen	VVFIN	1	versetzte
@@ -966,6 +972,7 @@ sterben	VVFIN	1	stirbt
 unbegreiflich	ADJD	1	unbegreiflich
 hundert	CARD	1	hundert
 Mütterchen	NN	1	Mütterchen
+Neue	NN	1	Neues
 Einbildungskraft	NN	1	Einbildungskraft
 erstemal	ADV	1	erstemal
 Jünglingskopf	NN	1	Jünglingskopf
@@ -1007,12 +1014,13 @@ Bequemlichkeit	NN	1	Bequemlichkeit
 sahe	VVFIN	1	sahe
 unversöhnlich	ADJD	1	unversöhnlich
 gemächlich	ADJD	1	gemächlich
-Ernste	NN	1	Ernste
 zubringen	VVFIN	1	zubrächte
 ausgefodert	VVPP	1	ausgefodert
 umbringen	VVPP	1	umgebracht
+unschätzbar	ADJA	1	unschätzbare
 Abscheuligkeit	NN	1	Abscheuligkeit
 lauter	PIAT	1	Lauter
+einen	ADJA	1	Einen
 Gesandte	NN	1	Gesandte
 gefährlich	ADJA	1	gefährliches
 werfend	ADJD	1	werfend
@@ -1098,7 +1106,7 @@ bestechen	VVPP	1	bestochen
 ungewöhnlich	ADJD	1	ungewöhnlich
 Hinterhalt	NN	1	Hinterhalt
 Geschenk	NN	1	Geschenke
-Grimasse	NN	1	Grimasse
+Schall	NN	1	Schall
 Genie	NN	1	Genie
 Verwundete	NN	1	Verwundeten
 brav	ADJA	1	braver
@@ -1249,7 +1257,7 @@ Aufwallung	NN	1	Aufwallung
 Vermögen	NN	1	Vermögen
 belachen	VVINF	1	belachen
 gescheuter	ADJA	1	gescheuter
-alleranständigste	ADJA	1	alleranständigste
+trotz	APPR	1	trotz
 Form	NN	1	Form
 verschwendrischen	ADJA	1	verschwendrischen
 Berg	NN	1	Berge
@@ -1440,6 +1448,7 @@ Jahr	NN	1	Jahre
 Güte	NN	1	Güte
 gedulden	VVFIN	1	Gedulden
 Stoff	NN	1	Stoff
+Grimasse	NN	1	Grimasse
 gleichviel	ADV	1	Gleichviel
 befriedigen	VVINF	1	befriedigen
 behüten	VVFIN	1	behüte
@@ -1506,6 +1515,7 @@ zurückkehren	VVINF	1	zurückkehren
 allgütig	ADJA	1	allgütige
 Kommando	NN	1	Kommando
 Rock	NN	1	Rock
+größern	VVINF	1	größern
 feil	ADJD	1	feil
 Überlästigen	NN	1	Überlästigen
 nachplauderndes	ADJA	1	nachplauderndes
@@ -1608,7 +1618,7 @@ Landstraße	NN	1	Landstraße
 brausender	ADJA	1	brausender
 mitleidig	ADJA	1	mitleidiges
 Zauberin	NN	1	Zauberin
-unschätzbar	ADJA	1	unschätzbare
+Ernste	NN	1	Ernste
 dreimal	ADV	1	dreimal
 Hofgeschmeiß	NN	1	Hofgeschmeiß
 hervorziehend	ADJD	1	hervorziehend
@@ -1669,6 +1679,7 @@ passen	VVFIN	1	Passen
 Straße	NN	1	Straße
 Tisch	NN	1	Tische
 überall	ADV	1	überall
+alleranständigste	ADJA	1	alleranständigste
 Vergebung	NN	1	Vergebung
 Schranke	NN	1	Schranken
 Tolldreiste	NN	1	Tolldreiste
@@ -2019,7 +2030,6 @@ Schwierigkeit	NN	1	Schwierigkeit
 drohend	ADJD	1	Drohend
 schal	ADJA	1	schale
 hinbringen	VVINF	1	hinbringen
-Schall	NN	1	Schall
 Lob	NN	1	Lob
 beflügeln	VVFIN	1	beflügelt
 Anzeige|Anzeigen	NN	1	Anzeigen

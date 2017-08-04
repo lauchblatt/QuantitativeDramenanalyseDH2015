@@ -1,14 +1,16 @@
 Title: Die Juden
-Number of all tokens: 3668
-Nummber of different tokens: 1847
+Number of all tokens: 3747
+Nummber of different tokens: 1862
 
 Token	Frequency
 Herr	49
 wohl	30
+wollen	27
 Dose	26
 werde	24
 Herrn	22
 sagen	21
+meinen	20
 gewesen	20
 würde	19
 Vogt	19
@@ -49,6 +51,7 @@ einige	9
 glauben	9
 bald	9
 liebe	9
+geben	8
 recht	8
 Vergnügen	8
 erst	8
@@ -63,8 +66,8 @@ gern	8
 denken	8
 Vielleicht	8
 sehe	8
-getan	8
 Wahrheit	8
+getan	8
 Diener	8
 Seite	7
 Geier	7
@@ -188,6 +191,7 @@ Kleinigkeit	4
 Recht	4
 Schuldigkeit	4
 Henker	4
+kein	4
 Reden	4
 bekommen	4
 höchst	4
@@ -207,6 +211,7 @@ Himmel	4
 Augen	4
 denke	4
 befehlen	4
+halten	4
 guten	4
 Gefahr	4
 wollt	4
@@ -280,7 +285,6 @@ fein	3
 Mantelsäcke	3
 einander	3
 gehört	3
-Ah	3
 gleichwohl	3
 genommen	3
 Exempel	3
@@ -306,11 +310,13 @@ Dank	3
 Durst	3
 erkenntlich	3
 verlassen	3
+scheinen	3
 redt	3
 Pferde	3
 hinter	3
 geglaubt	3
 Frauenzimmer	3
+Ah	3
 Leben	3
 zornig	3
 Euer	3
@@ -373,8 +379,10 @@ schenken	2
 sagt	2
 anfangen	2
 schämen	2
+weiter	2
 erhalten	2
 vermuten	2
+Wollen	2
 Neugierigkeit	2
 allzugütig	2
 Schuld	2
@@ -423,6 +431,7 @@ Unglück	2
 Wollten	2
 Komplimente	2
 Stricke	2
+befinden	2
 wüßte	2
 Ihrige	2
 ewig	2
@@ -564,6 +573,7 @@ Herzen	2
 Gast	2
 zeigen	2
 ganzen	2
+Geben	2
 spotten	2
 Kenner	2
 zumuten	2
@@ -690,6 +700,7 @@ durchzukommen	1
 begreife	1
 Lisettchen	1
 behaltet	1
+Zeitlebens	1
 Rittergute	1
 übereinstimmen	1
 dasmal	1
@@ -709,6 +720,7 @@ muntre	1
 Lisetten	1
 sahe	1
 Geheimnisse	1
+solch	1
 Ernste	1
 Seiner	1
 Siebensachen	1
@@ -828,6 +840,7 @@ sollt	1
 Grobian	1
 Verlauf	1
 beschweren	1
+dürfen	1
 tiefsinnigen	1
 ihres	1
 unbequemsten	1
@@ -945,7 +958,7 @@ Rache	1
 Verschwiegenheit	1
 Gute	1
 gehangen	1
-Schwatzhaftigkeit	1
+Franzose	1
 einzigen	1
 hochadelichen	1
 Klage	1
@@ -1100,6 +1113,7 @@ vermeinte	1
 fremden	1
 schreien	1
 dachte	1
+Liebsten	1
 Griffe	1
 versichere	1
 Abneigung	1
@@ -1206,6 +1220,7 @@ völligen	1
 Gehülfe	1
 Gerichten	1
 gütigen	1
+Wären	1
 schimpfen	1
 vors	1
 geringen	1
@@ -1218,7 +1233,7 @@ Bekannte	1
 Gespräch	1
 Lebens	1
 dunkel	1
-Zeitlebens	1
+Sacke	1
 anderns	1
 Wagen	1
 Alsdann	1
@@ -1273,6 +1288,7 @@ gelaufen	1
 plündern	1
 stellt	1
 Verdienst	1
+meist	1
 stelle	1
 unergründlich	1
 Pfui	1
@@ -1310,7 +1326,6 @@ Erde	1
 übern	1
 besäßen	1
 gemerkt	1
-hastig	1
 schwerlich	1
 nachgewünscht	1
 erlangtes	1
@@ -1384,6 +1399,7 @@ erklärt	1
 küß	1
 überreden	1
 freue	1
+Sorgen	1
 Notwendiges	1
 aime	1
 Ursache	1
@@ -1397,6 +1413,7 @@ denkst	1
 Vorwande	1
 trugen	1
 edles	1
+Schwatzhaftigkeit	1
 Straßenräubern	1
 ermüdet	1
 Verwahrung	1
@@ -1439,7 +1456,6 @@ Wahrhaftig	1
 schwören	1
 Wodurch	1
 reisete	1
-Wären	1
 weislich	1
 Auge	1
 zusammen	1
@@ -1500,6 +1516,7 @@ erste	1
 Zufall	1
 rechten	1
 verhinderlich	1
+mögen	1
 besaufen	1
 hinten	1
 gewisser	1
@@ -1527,6 +1544,7 @@ Geheimnis	1
 ausschütten	1
 Hätten	1
 falschen	1
+nachdenkend	1
 Grunde	1
 Anwesenheit	1
 kürzen	1
@@ -1550,7 +1568,6 @@ Punkte	1
 Hände	1
 lang	1
 sucht	1
-Liebsten	1
 Ausnahme	1
 Ohrwürmchen	1
 angenehmen	1
@@ -1622,7 +1639,6 @@ Schweinfleisch	1
 Wovon	1
 Erklärung	1
 Roman	1
-nachdenkend	1
 erstaunen	1
 heiß	1
 zeitig	1
@@ -1751,7 +1767,6 @@ inbrünstigen	1
 verkaufen	1
 Knecht	1
 Schimpft	1
-Franzose	1
 Lot	1
 besänftigen	1
 scherzen	1
@@ -1823,11 +1838,11 @@ Vergessen	1
 genugsames	1
 Gesindel	1
 wegstipitzt	1
-Sacke	1
 überhoben	1
 Überlegungen	1
 Schirrmeister	1
 schmeckt	1
+hastig	1
 echten	1
 Sprechen	1
 Räubern	1

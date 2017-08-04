@@ -1,6 +1,6 @@
 Title: Miß Sara Sampson
-Number of all lemmas: 8866
-Nummber of different lemmas: 2545
+Number of all lemmas: 8896
+Nummber of different lemmas: 2553
 
 Lemma	POS	Frequency	Tokens
 Mellefont	ADJD, VVFIN, NN, VVIMP, ADJA, NE, VVINF	144	Mellefont
@@ -63,6 +63,7 @@ alt	ADJA, ADJD	21	alter, alte, alten, alt
 Gott	NN	21	Gott, Göttern, Gottes
 Fuß	NN	20	Fuße, Fuß, Füßen, Fußes
 klein	ADJA, ADJD	20	kleinste, kleinen, kleiner, kleine, klein
+diese	PDS	20	diese, Diese, diesem, Dieses, dieses, dieser
 zurück	PTKVZ, ADV	20	zurück
 lange	ADV	20	lange
 Kind	NN	20	Kind, Kindes, Kinder
@@ -467,6 +468,7 @@ Luft	NN	4	Luft
 erzeigen	VVINF, ADJD, VVFIN	4	erzeigen
 wozu	PWAV	4	wozu, Wozu
 diejenig	PDAT	4	diejenige, derjenigen
+am	PTKA	4	am
 gleichwohl	ADV	4	Gleichwohl, gleichwohl
 zitternd	ADJA, ADJD	4	zitternde, zitternd, zitterndes
 treffen	VVINF, VVFIN	4	treffen, trifft
@@ -543,6 +545,7 @@ Sinn|Sinnen	NN	3	Sinnen
 armselig	ADJA, ADJD	3	armselige, armselig, armseligen
 darnach	ADV	3	darnach
 lauter	PIAT	3	lauter
+einen	ADJA, VVFIN	3	einen, Einen, eine
 Närrin	NN	3	Närrin
 laufen	VVFIN, VVINF	3	läuft, laufen
 Gleichgültigkeit	NN	3	Gleichgültigkeit
@@ -551,7 +554,6 @@ leugnen	VVINF, VVFIN	3	leugnen, leugne
 stellen	VVFIN, VVINF	3	stelle, stellen, stellte
 Band	NN	3	Band
 entschuldiget	VVFIN	3	entschuldiget
-<UNKNOWN>	NN, VVINF	3	Stirne, dern, größern
 gemäß	ADJD, APPO	3	gemäß
 Strenge	NN	3	Strenge
 Geschenk	NN	3	Geschenke, Geschenk
@@ -1178,7 +1180,7 @@ Reihe	NN	2	Reihe
 Lust	NN	2	Lust
 Überschlag	NN	1	Überschlag
 öfter	ADV	1	öfter
-beschäftigen	VVINF	1	beschäftigen
+dern	VVINF	1	dern
 auspreßten	VVFIN	1	auspreßten
 Ehe	NN	1	Ehe
 beobachten	VVINF	1	beobachten
@@ -1286,8 +1288,10 @@ Edlern	NN	1	Edlern
 zweideutig	ADJA	1	zweideutiges
 einnehmen	VVPP	1	eingenommen
 Unterhaltung	NN	1	Unterhaltung
+erquickend	ADJA	1	erquickende
 geistlich	ADJD	1	geistlich
 wahrscheinlich	ADJA	1	wahrscheinlicher
+Stirne	NN	1	Stirne
 stutzig	ADJD	1	stutzig
 abwehren	VVIZU	1	abzuwehren
 unternehmen	VVPP	1	unternommen
@@ -1380,7 +1384,6 @@ durchdringen	VVPP	1	durchdrungen
 Entschuldigung	NN	1	Entschuldigung
 Aufschrift	NN	1	Aufschrift
 parteiisch	ADJD	1	parteiisch
-erquickend	ADJA	1	erquickende
 hätt	VVFIN	1	hätt
 Hütte	NN	1	Hütte
 zueilen	VVINF	1	zueilen
@@ -1506,6 +1509,7 @@ Dunkle	NN	1	Dunkle
 stürmisch	ADJA	1	stürmische
 Geduld	NN	1	Geduld
 unbiegsame	ADJA	1	unbiegsame
+gemacht	ADJA	1	gemachten
 Geständnis	NN	1	Geständnisse
 lösen	VVINF	1	lösen
 dringend	ADJA	1	dringendes
@@ -1612,6 +1616,7 @@ dienlich	ADJD	1	dienlich
 schuldigern	NN	1	schuldigern
 Probe	NN	1	Probe
 süßen	VVFIN	1	süße
+Neue	NN	1	Neues
 buhlerhaftesten	ADJA	1	buhlerhaftesten
 unwiderstehlich	ADJA	1	unwiderstehliche
 wirksam	ADJD	1	wirksam
@@ -1722,6 +1727,7 @@ verachtet	ADJA	1	verachteten
 gen	APPR	1	gen
 gegefühlt	VVPP	1	gegefühlt
 ausgebrauset	VVPP	1	ausgebrauset
+beschäftigen	VVINF	1	beschäftigen
 Gewisse	NN	1	Gewisse
 herabströmen	VVFIN	1	herabströmen
 Joch	NN	1	Joch
@@ -1840,6 +1846,7 @@ Friedensbote	NN	1	Friedensboten
 jagen	VVPP	1	gejagt
 entgegen	PTKVZ	1	entgegen
 schamhaft	ADJA	1	schamhafte
+größern	VVINF	1	größern
 misslingen	VVINF	1	mißlingen
 nochmalig	ADJA	1	nochmaliges
 allzufreien	ADJA	1	allzufreien
@@ -1908,6 +1915,7 @@ vereiteln	VVINF	1	vereiteln
 erziehen	VVINF	1	erziehen
 hinein	ADV	1	hinein
 Lebenssatt	NN	1	Lebenssatt
+worden	ADJA	1	gewordenen
 gewahr	ADJD	1	gewahr
 eingeben	VVINF	1	eingeben
 Kränkung	NN	1	Kränkungen

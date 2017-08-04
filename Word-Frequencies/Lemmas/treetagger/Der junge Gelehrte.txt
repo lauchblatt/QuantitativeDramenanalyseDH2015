@@ -1,6 +1,6 @@
 Title: Der junge Gelehrte
-Number of all lemmas: 8748
-Nummber of different lemmas: 2647
+Number of all lemmas: 8769
+Nummber of different lemmas: 2657
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	137	Herr, Herren, Herrn
@@ -173,6 +173,7 @@ Homer	NN, ADJA, ADJD	10	Homer
 suchen	VVFIN, VVPP, VVINF	10	sucht, gesucht, suchte, suchen
 loben	VVFIN, VVINF	10	lobt, lobe, loben, lobte, lobten
 Mädchen	NN	9	Mädchen
+diese	PDS	9	Dieses, dieses, diesen, diese, dieser
 legen	VVFIN, VVPP, VVINF	9	legen, legte, Legen, lege, legt, gelegt
 Vermögen	NN	9	Vermögen, Vermögens
 Epithalamium	NN	9	Epithalamium
@@ -226,7 +227,6 @@ albern	ADJA, ADJD	7	alberne, albern, albernes
 Zweifel	NN	7	Zweifel
 Tugend	NN	7	Tugend, Tugenden
 stoßen	VVFIN, VVINF, VVPP, VVIMP	7	stoße, stoßen, stößt, gestoßen, Stoß
-St	NE	7	St
 fehlen	VVPP, VVFIN	7	gefehlt, fehlte, fehlt, fehlen
 stören	VVINF, VVPP, VVFIN	7	stören, gestört, störe, stört
 Deutsche	NN	7	Deutschen, Deutscher, Deutsche
@@ -240,6 +240,7 @@ essen	VVINF, VVFIN	7	essen, esse, ißt
 übel	ADJD	7	übel, Übel
 laut	ADJD, APPR	7	lauter, laut, Laut, Lauter
 Republik	NN	7	Republik
+St	NE	7	St
 verstecken	VVINF, VVFIN, VVPP	7	verstecken, Verstecke, verstecke, versteckt
 erlauben	VVFIN, VVPP, VVINF	7	Erlauben, erlaubt, erlauben
 fallen	VVFIN, VVIMP, VVINF	7	fiel, fall, fallen
@@ -345,6 +346,7 @@ los	PTKVZ, ADJD	5	los
 Menscher	NN	5	Menscher
 Bestie	NN	5	Bestie, Bestien
 erinnern	VVFIN, VVINF	5	erinnere, erinnern, erinnerten
+am	PTKA	5	am
 Zeitung	NN	5	Zeitung
 berühmt	ADJA, ADJD	5	berühmte, berühmt
 Mühe	NN	5	Mühe
@@ -537,7 +539,6 @@ Vergnügen	NN	3	Vergnügen, Vergnügens
 Grille|Grillen	NN	3	Grillen
 dasjenige	PDS	3	dasjenige
 Gewalt	NN	3	Gewalt
-<UNKNOWN>	NN, VVINF	3	Stirne, öftern, Galimathias
 erfüllen	VVINF	3	erfüllen
 Schweig	NE	3	Schweig
 zänkisch	ADJD	3	zänkisch
@@ -556,6 +557,7 @@ Devise	NN	3	Devise
 dritt	ADJA	3	dritten, dritte
 Ehemann	NN	3	Ehemann
 lateinisch	ADJA, ADJD	3	lateinisches, Lateinisch, lateinischen
+hebräisch	ADJA, ADJD	3	hebräischer, Hebräisch, hebräischen
 vel	NE, ADJA	3	vel
 Tat	NN	3	Tat
 geloben|loben	VVPP	3	gelobt
@@ -623,7 +625,6 @@ Bekanntschaft	NN	3	Bekanntschaft
 Reise|Reisen	NN	3	Reisen
 ungestört	ADJD	3	ungestört
 Verdienst	NN	3	Verdiensten, Verdienste
-hebräisch	ADJA, ADJD	3	hebräischer, Hebräisch, hebräischen
 irren	VVFIN, VVPP	3	irren, geirrt
 Unglück	NN	3	Unglück
 zugleich	ADV	3	zugleich
@@ -749,6 +750,7 @@ unterscheiden	VVINF	2	unterscheiden
 Horn	NN	2	Horn, Horne
 zubringen	VVIZU, VVPP	2	zuzubringen, zugebracht
 unnötig	ADJD	2	unnötig, Unnötig
+einen	ADJA	2	Einen, einen
 Meretrix	NE, NN	2	Meretrix
 Freigeisterei	NN	2	Freigeisterei
 zuletzt	ADV	2	zuletzt
@@ -1112,8 +1114,8 @@ Celarent	ADJA, VVFIN	2	Celarent
 Eifer	NN	2	Eifer
 Haut	NN	2	Haut
 Geschmack	NN	2	Geschmack
-Nachteil	NN	2	Nachteile, Nachteil
 Backe|Backen	NN	2	Backen
+Nachteil	NN	2	Nachteile, Nachteil
 Verräter	NN	2	Verräter
 abzuhangen	VVIZU	1	abzuhangen
 scheiden	VVPP	1	geschieden
@@ -1135,6 +1137,7 @@ Platz	NN	1	Platz
 mäßig	ADJA	1	mäßigen
 überlästig	ADJD	1	überlästig
 nichtswürdigsten	ADJA	1	nichtswürdigsten
+Trotz	NN	1	Trotze
 Telesillen	NN	1	Telesillen
 träumen	VVINF	1	träumen
 Denkungsart	NN	1	Denkungsart
@@ -1155,6 +1158,7 @@ Figur	NN	1	Figuren
 a	FM	1	a
 Abendessen	NN	1	Abendessen
 Schwester	NN	1	Schwester
+Galimathias	NN	1	Galimathias
 Pum	NN	1	Pum
 nachdenken	VVFIN	1	nachdenke
 ruchlos	ADJA	1	ruchloser
@@ -1205,12 +1209,14 @@ Poet	NN	1	Poet
 δ᾽	NN	1	δ᾽
 Tiberim	NE	1	Tiberim
 nachteilig	ADJA	1	nachteilige
+Neue	NN	1	Neues
 unvergänglichsten	ADJA	1	unvergänglichsten
 A	NN	1	A
 vermögend	ADJD	1	vermögend
 Pedant	NN	1	Pedanten
 aufhobst	VVFIN	1	aufhobst
 hüten	VVPP	1	gehütet
+Will	NE	1	Will
 Hülfe	NN	1	Hülfe
 Türkenmäßig	ADJD	1	Türkenmäßig
 unterstützen	VVINF	1	unterstützen
@@ -1241,6 +1247,7 @@ ermuntern	VVINF	1	ermuntern
 verabscheuen	VVINF	1	verabscheuen
 begeistern	VVINF	1	begeistern
 übeln	ADJA	1	übeln
+Stirne	NN	1	Stirne
 Brocken	NN	1	Brocken
 επιτηοντο	NN	1	επιτηοντο
 Kopfbrechen	NN	1	Kopfbrechen
@@ -1299,6 +1306,7 @@ Weltweisheit	NN	1	Weltweisheit
 Gemach	NN	1	Gemach
 beredtesten	ADJD	1	beredtesten
 menschlich	ADJA	1	menschliche
+Journalist	NN	1	Journalisten
 Wand	NN	1	Wände
 Fuß	NN	1	Füßen
 Bürschchen	NN	1	Bürschchen
@@ -1342,7 +1350,6 @@ achtzig	CARD	1	achtzig
 Philosophie	NN	1	Philosophie
 schadlos	ADJD	1	schadlos
 Aufschrift	NN	1	Aufschrift
-Stufenweise	NN	1	Stufenweise
 gemeinschaftlich	ADJD	1	gemeinschaftlich
 trocknen	VVFIN	1	trocknen
 Geschenk	NN	1	Geschenke
@@ -1868,6 +1875,7 @@ gehorchen|horchen	VVPP	1	gehorcht
 Digastricus	NE	1	Digastricus
 Geheimter	ADJA	1	Geheimter
 allerernstlichstem	ADJA	1	allerernstlichstem
+Darf	NN	1	Darf
 hinausstoßen	VVFIN	1	hinausstoßen
 fasten	VVINF	1	fasten
 Entzückung	NN	1	Entzückung
@@ -2064,6 +2072,7 @@ schamrot	ADJD	1	schamrot
 untermengt	VVFIN	1	untermengt
 schlafen	VVFIN	1	schlafe
 gedankenleer	ADJD	1	gedankenleer
+Seine	NE	1	Seine
 Vornehmste	NN	1	Vornehmste
 Nix	NN	1	Nix
 vergebner	NE	1	vergebner
@@ -2225,7 +2234,6 @@ quilibet	ADJD	1	quilibet
 Pack	NN	1	Pack
 Bart	NN	1	Bart
 verführen	VVFIN	1	verführt
-Journalist	NN	1	Journalisten
 thlamium	NN	1	thlamium
 Widerlegung	NN	1	Widerlegung
 nachsetzen	VVINF	1	nachsetzen
@@ -2410,6 +2418,7 @@ lieget	VVFIN	1	lieget
 huschen	VVIMP	1	husch
 ablaufen	VVPP	1	abgelaufen
 Wende	NN	1	Wende
+öftern	VVINF	1	öftern
 hintereinander	ADV	1	hintereinander
 fluchen	VVINF	1	fluchen
 umgekehrt	ADJD	1	umgekehrt
@@ -2469,6 +2478,7 @@ Cha	ADJA	1	Cha
 hinterwärts	ADV	1	hinterwärts
 Bibel	NN	1	Bibel
 Einwurf	NN	1	Einwurf
+Stufenweise	NN	1	Stufenweise
 vorstellen	VVINF	1	vorstellen
 untergedrucktem	ADJA	1	untergedrucktem
 Rechtsgelehrsamkeit	NN	1	Rechtsgelehrsamkeit

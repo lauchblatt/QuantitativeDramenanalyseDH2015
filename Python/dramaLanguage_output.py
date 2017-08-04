@@ -11,22 +11,31 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dlOutput = DramaLanguage_Output("treetagger")
-	dlOutput.processEntireCorpusAndGenereateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
+	#dlOutput = DramaLanguage_Output("textblob")
+	#dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
 
-	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test")
-	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
+	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test6")
+	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
+	dlOutput = DramaLanguage_Output()
+	dlOutput.generateOutputForEverything()
 
 class DramaLanguage_Output:
 
-	def __init__(self, processor):
+	def __init__(self):
 		self._lp = None
 
-		self.setLanguageProcessor(processor)
+		#self.setLanguageProcessor(processor)
 
 	def setLanguageProcessor(self, processor):
 		lp = Language_Processor(processor)
 		self._lp = lp._processor
+
+	def generateOutputForEverything(self):
+		processors = ["treetagger", "textblob"]
+		for processor in processors:
+			self.setLanguageProcessor(processor)
+			self.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens/" + processor + "/")
+			self.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/" + processor + "/")
 
 	def generateWordFrequenciesOutputTokens(self, inputPath, outputPath):
 		self._lp.processSingleDramaTokens(inputPath)
@@ -109,6 +118,7 @@ class DramaLanguage_Output:
 	def processEntireCorpusAndGenereateOutputLemmas(self, originpath, outputPath):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextFully(totalText)
+		self._lp.removeStopWordsFromLemmas()
 
 		self._lp._currentDramaName = "EntireCorpus"
 

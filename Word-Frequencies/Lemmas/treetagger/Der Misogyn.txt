@@ -1,6 +1,6 @@
 Title: Der Misogyn
-Number of all lemmas: 4262
-Nummber of different lemmas: 1616
+Number of all lemmas: 4277
+Nummber of different lemmas: 1624
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	90	Herr, Herrn, Herren
@@ -126,6 +126,7 @@ versichern	VVPP, VVFIN, VVINF	6	versichert, versichere, versichern
 geschwind	ADJD	6	geschwind, Geschwind
 Jahr	NN	6	Jahren, Jahres, Jahr, Jahre
 Betrachtung	NN	6	Betrachtung
+am	PTKA	6	am
 Erfahrung	NN	6	Erfahrung
 Ding	NN	6	Dingen, Ding, Dinge
 Gesicht	NN	6	Gesicht, Gesichte
@@ -261,6 +262,7 @@ brauchen	VVFIN, VVINF	3	brauche, brauchen, braucht
 gefährlich	ADJD, ADJA	3	gefährlich, gefährlichste, gefährlichem
 entschuldigen	VVFIN, VVINF	3	entschuldigt, entschuldigen
 Fuß	NN	3	Fuß, Fuße, Füßen
+diese	PDS	3	dieses
 enthalten	VVPP, VVFIN	3	enthalten, enthielt
 stellen	VVFIN, VVINF	3	stelle, stellen
 wider	APPR	3	wider
@@ -410,8 +412,8 @@ leugnen	VVINF	2	leugnen
 Anschlag	NN	2	Anschlag
 angenehm	ADJD, ADJA	2	angenehm, angenehmere
 Einfall	NN	2	Einfall
-<UNKNOWN>	NN	2	Stirne, Ornate
 gefangen	PTKVZ	2	gefangen
+Macht	NN	2	Macht
 weswegen	PWAV	2	weswegen
 rechtschaffen	ADJA	2	rechtschaffenen
 vielmehr	ADV	2	vielmehr
@@ -667,7 +669,7 @@ erfreuen	VVPP	1	erfreut
 Frist	NN	1	Frist
 Gefälligkeit	NN	1	Gefälligkeit
 zutun	VVPP	1	zugetan
-Sirene	NN	1	Sirene
+einigen	VVFIN	1	einige
 Plaudern	NN	1	Plaudern
 Stutzerchen	NN	1	Stutzerchen
 warm	ADJD	1	warm
@@ -675,6 +677,7 @@ Stube	NN	1	Stube
 Geschäft	NN	1	Geschäften
 untreu	ADJD	1	untreu
 Habit	NN	1	Habit
+trotz	APPR	1	Trotz
 springen	VVFIN	1	springe
 Posse	NN	1	Possen
 anstehen	VVINF	1	anstehen
@@ -704,6 +707,7 @@ Klotz	NN	1	Klotz
 verabscheuen	VVINF	1	verabscheuen
 erwidern	VVFIN	1	erwidert
 Gehn	VVFIN	1	Gehn
+Stirne	NN	1	Stirne
 abziehen	VVPP	1	abgezogen
 behutsamsten	ADJA	1	behutsamsten
 voraussetzen	VVFIN	1	voraussetzt
@@ -725,6 +729,7 @@ kömmst	VVFIN	1	kömmst
 Ernste	NN	1	Ernste
 glaßierten	ADJA	1	glaßierten
 mürrisch	ADJA	1	mürrischen
+einen	ADJA	1	einen
 tot	ADJD	1	tot
 innerlich	ADJA	1	innerlichen
 Vexieren	VVFIN	1	Vexieren
@@ -842,6 +847,7 @@ sechst	ADJA	1	sechsten
 vermengen	VVINF	1	vermengen
 Verbindlichkeit	NN	1	Verbindlichkeiten
 ausgezischt	VVPP	1	ausgezischt
+Sirene	NN	1	Sirene
 vorstehen	VVIZU	1	vorzustehen
 mitbringen	VVPP	1	mitgebracht
 Saufeja	NN	1	Saufeja
@@ -1022,6 +1028,7 @@ gleichgültiger	ADJD	1	gleichgültiger
 verdienest	VVFIN	1	verdienest
 ungebetne	ADJA	1	ungebetne
 schwer	ADJD	1	schwer
+Ornate	NN	1	Ornate
 erkundigen	VVINF	1	erkundigen
 Babylon	NE	1	Babylon
 Kröte	NN	1	Kröten
@@ -1235,6 +1242,7 @@ wenigmale	NN	1	wenigmale
 äußern	VVINF	1	äußern
 Schranke	NN	1	Schranken
 mangeln	VVINF	1	mangeln
+Seine	NE	1	Seine
 begierig	ADJD	1	begierig
 Vornehmste	NN	1	Vornehmste
 unterdrücken	VVINF	1	unterdrücken

@@ -1,6 +1,6 @@
 Title: Die Juden
-Number of all lemmas: 3477
-Nummber of different lemmas: 1736
+Number of all lemmas: 3563
+Nummber of different lemmas: 1762
 
 Lemma	POS	Frequency	Tokens
 Herr	NN, JJ	49	Herr
@@ -11,6 +11,7 @@ Jude	NNS, NN	24	Juden, Jude
 glauben	VB, VBN	24	glaube, glauben, glaubt, geglaubt, glaubte
 gut	JJ	23	gut, guter, guten, gute, gutem
 Herrn	NN, NNP, JJ	22	Herrn
+meine	PRP$	22	meine
 sehen	VB, RP, VBN, RB	20	sieht, gesehen, sehen, seht
 wenig	IN, DT, WRB, JJ, RB, RP	20	wenig, wenige, wenigen
 Vogt	NNP, NN	19	Vogt
@@ -25,6 +26,7 @@ weeissen	VB	14	weiß
 wissen	VB, RB	13	wissen
 Mann	NN	13	Mann
 denken	VB, VBN	13	denken, denke, dachte
+ist	VB, JJ	11	ist
 lieb	JJ, VB	11	lieben, liebe, lieber
 Hand	NN	11	Hand
 Lisette	NN, NNP	11	Lisette
@@ -91,6 +93,7 @@ dumm	JJ, RB	6	dummer, dumm
 klug	JJ	6	klug, kluges
 sitzen	VB	6	sitzen, sitze
 weit	JJ	6	weit
+sind	VB, JJ, RB	6	sind
 Gut	NN	6	Gut
 zufried	JJ	6	zufrieden
 Liebe	NN	6	Liebe
@@ -106,6 +109,7 @@ verstehen	VBN, VB	5	verstanden, versteht, verstehe
 Bitte	NN, NNS	5	Bitte, Bitten
 Tag	NN	5	Tag
 gestern	IN, RB	5	gestern
+kann	VB, RB	5	kann
 wert	RB, RP	5	wert
 verdienen	VB	5	verdient, verdienen
 lernen	VB, VBN	5	lernen, gelernt, lerne
@@ -119,9 +123,11 @@ fallen	VB, VBN	5	fallen
 Spass	NN	5	Spaß
 Namen	NN	5	Namen
 gestehn	NN	5	gestehn
+bin	VB, JJ	5	bin
 bös	JJ	5	böse
 Vermutung	NN, NNS	5	Vermutung, Vermutungen
 silberne	NN	5	silberne
+könnte	VB, RB	5	könnte
 Ernst	NNP, NN	5	Ernst
 etwa	RB, RP	5	etwa
 setzen	VB, VBN	5	setzt, gesetzt, setzen
@@ -135,12 +141,12 @@ verschwiegen	NN	4	verschwiegen
 weniger	RB	4	weniger
 Gedanke	NNS	4	Gedanken
 Bedienter	NN	4	Bedienter
-Garten	NN	4	Garten
 Tochter	NN	4	Tochter
 Dienste	NN	4	Dienste
 andern	DT	4	andern
 näh	JJ	4	näher
 genug	RB, RP, NNP	4	genug
+Garten	NN	4	Garten
 weiss	VB	4	weiß
 Krumm	NNP	4	Krumm
 nu	UH	4	nu
@@ -202,6 +208,7 @@ reissen	VBN, VB	3	gerissen, riß
 verfolgen	VB	3	verfolgen, verfolgt
 Dankbarkeit	NN	3	Dankbarkeit
 annehmen	VB	3	angenommen, annehmen
+muss	VB	3	muß
 heraus	RB, RP	3	heraus
 kehren	VB	3	kehren
 Augenblick	NN, NNP	3	Augenblick
@@ -279,6 +286,7 @@ Hurtig	JJ	3	Hurtig
 urteilen	VB	3	urteilen
 silbernen	NN	3	silbernen
 Hören	NN	3	Hören
+Könnte	NN	3	Könnte
 Ursach	JJ, VB	3	Ursachen
 Dank	IN	3	Dank
 lass	JJ, VB	3	laß, lasse
@@ -335,6 +343,7 @@ spazieren	VB	2	spazieren
 wussen	VB	2	wußte
 bedanken	VB	2	bedanken
 vermisse	NN	2	vermisse
+Macht	NN	2	Macht
 umsonst	RB, RP	2	umsonst
 sollens	NN, JJ	2	sollens
 kurzen	NN	2	kurzen
@@ -413,6 +422,7 @@ Erretter	NN	2	Erretter
 verwirrt	JJ	2	verwirrt
 geschwind	RP, RB	2	geschwind
 tut	VB, JJ	2	tut
+Kann	NNP	2	Kann
 Glücke	NN	2	Glücke
 besorge	NN	2	besorge
 verdammt	NN, JJ	2	verdammte, verdammt
@@ -421,19 +431,22 @@ glaube	VB	2	glaube
 Wisst	NN	2	Wißt
 zugleich	RB	2	zugleich
 Spitzbube	NN	2	Spitzbube
-gottloser	NN	2	gottloser
+Hätte	NN	2	Hätte
 hungert	NN	2	hungert
 schicken	VBN	2	geschickt
 suche	NN	2	suche
+habe	VB, RB	2	habe
 unbelohnt	NN	2	unbelohnt
 essen	VB	2	essen
 ehe	CC	2	ehe
+Sollte	NN	2	Sollte
 Verrichtungen	NN	2	Verrichtungen
 behüte	NN	2	behüte
 Wissen	NN	2	Wissen
 zanken	NN	2	zanken
 Spiel	NN	2	Spiel
 genötiget	NN	2	genötiget
+Meine	PRP$	2	Meine
 notwendig	JJ	2	notwendig
 beschuldigen	VB, RP	2	beschuldigt
 alt	JJ, VB	2	alt
@@ -449,6 +462,7 @@ leid	JJ	2	leid
 grausam	JJ	2	grausam, grausamer
 hast	NN	2	hast
 treffen	VB, VBN	2	getroffen
+gottloser	NN	2	gottloser
 aufs	NN	2	aufs
 rächen	VB	2	rächen
 Gewissen	NN	2	Gewissen
@@ -475,6 +489,7 @@ Vaterlande	NN	2	Vaterlande
 Wege	NN, JJ	2	Wege
 meinig	JJ, DT	2	meinige
 Freiheit	NN	2	Freiheit
+Hat	NN	2	Hat
 küssen	VB	2	küssen
 gewusst	NN	2	gewußt
 Unwahrheit	JJ, NNP	2	Unwahrheit
@@ -544,6 +559,7 @@ Wolle	NNS	2	Wollen
 Gast	NN	2	Gast
 wichtig	RB, JJ	2	wichtig, wichtigen
 spotten	VB	2	spotten
+wird	RB	2	wird
 Kenner	NN	2	Kenner
 zumuten	VB	2	zumuten
 vergebens	WRB, JJ	2	vergebens
@@ -731,6 +747,7 @@ Untersuchung	NN	1	Untersuchung
 Sinne	NN	1	Sinne
 mitten	RB	1	mitten
 sagt	VB	1	sagte
+Bin	NN	1	Bin
 wirst	RB	1	wirst
 sieh	NN	1	sieh
 christlich	JJ	1	christliche
@@ -796,7 +813,6 @@ Verlauf	NN	1	Verlauf
 zornigen	VBN	1	zornig
 verliert	VB	1	verliert
 tiefsinnigen	NN	1	tiefsinnigen
-unergründlich	JJ	1	unergründlich
 angekommen	NN	1	angekommen
 ihres	PRP$	1	ihres
 unbequemsten	NN	1	unbequemsten
@@ -808,6 +824,7 @@ besehn	NN	1	besehn
 offnen	NN	1	offnen
 Tugend	NN	1	Tugend
 besehe	NN	1	besehe
+hat	RB	1	hat
 fragt	VB	1	fragt
 Anfange	NN	1	Anfange
 durstet	NN	1	durstet
@@ -880,9 +897,10 @@ Gütern	NN	1	Gütern
 geschehn	NN	1	geschehn
 dicht	JJ	1	dichter
 verdächtig	JJ	1	verdächtig
-Nehmen	VB	1	Nehmen
+Erzählen	NN	1	Erzählen
 Glauben	NN	1	Glauben
 gehorchen	VB	1	gehorchen
+macht	VB	1	macht
 bezeugte	NN	1	bezeugte
 greulich	JJ	1	greulich
 mache	NN	1	mache
@@ -993,6 +1011,7 @@ Warens	NN	1	Warens
 behaltet	NN	1	behaltet
 einnehmender	NN	1	einnehmender
 Topp	NN	1	Topp
+hätte	RB	1	hätte
 Eur	NN	1	Euren
 Entleibte	NN	1	Entleibte
 Atem	NN	1	Atem
@@ -1058,7 +1077,6 @@ Mädel	NN	1	Mädel
 gottlose	NN	1	gottlose
 Werk	NN	1	Werk
 verzeihen	VB	1	verzeihen
-Erlauben	NN	1	Erlauben
 witzige	NN	1	witzige
 darin	RB	1	darin
 kahle	NN	1	kahle
@@ -1072,6 +1090,7 @@ hintertreiben	VB	1	hintertreiben
 Stich	NN	1	Stich
 genugsam	RB	1	genugsam
 Eigensinn	NN	1	Eigensinn
+Erlauben	NN	1	Erlauben
 verhelfen	VB	1	verhelfen
 entwandt	NNP	1	entwandt
 bestürmen	NN	1	bestürmen
@@ -1101,6 +1120,7 @@ Befehl	NN	1	Befehl
 Verfahren	NN	1	Verfahren
 Ankunft	NN	1	Ankunft
 hohlen	NN	1	hohlen
+Völkerschaften	NN	1	Völkerschaften
 frühmorgens	IN	1	frühmorgens
 schnurrig	RB	1	schnurrig
 erlangtesen	VB	1	erlangtes
@@ -1144,6 +1164,7 @@ Gefälligkeiten	NN	1	Gefälligkeiten
 verschnupft	NN	1	verschnupft
 Orgel	NN	1	Orgel
 Gedränge	NN	1	Gedränge
+gibt	VB	1	gibt
 eingehen	VB	1	eingehen
 unvermuteten	NN	1	unvermuteten
 völligen	NN	1	völligen
@@ -1176,6 +1197,7 @@ ergebe	NN	1	ergebe
 Übels	NN	1	Übels
 Edelmütigkeit	NN	1	Edelmütigkeit
 müsste	VB	1	müßte
+Habe	NN	1	Habe
 überflüssig	JJ	1	überflüssig
 wichtigere	NN	1	wichtigere
 richtig	JJ	1	richtig
@@ -1212,7 +1234,7 @@ plündern	VB	1	plündern
 Verdienst	NN	1	Verdienst
 stelle	NN	1	stelle
 Gönnen	NN	1	Gönnen
-Erzählen	NN	1	Erzählen
+unergründlich	JJ	1	unergründlich
 französisch	JJ	1	französische
 Pfui	NN	1	Pfui
 zurückhalten	VB	1	zurückhalten
@@ -1261,6 +1283,7 @@ alten	VB	1	alt
 Gesetzchen	VB	1	Gesetzchen
 närrisch	JJ	1	närrisch
 möge	VB	1	möge
+musste	RB	1	mußte
 Handelschaft	NN	1	Handelschaft
 verdiente	NN	1	verdiente
 aufpacken	NN	1	aufpacken
@@ -1339,6 +1362,7 @@ eigner	JJ	1	eigner
 arg	RB	1	arg
 manchmal	RB	1	manchmal
 seh	PRP$	1	seh
+Nehmen	VB	1	Nehmen
 auchen	VBN	1	auch
 unterschreiben	VB	1	unterschreiben
 ritt	NN	1	ritt
@@ -1447,7 +1471,7 @@ bewog	NN	1	bewog
 Tausenderlei	NN	1	Tausenderlei
 nah	JJ	1	nahes
 umwechseln	NN	1	umwechseln
-Völkerschaften	NN	1	Völkerschaften
+beide	RB	1	beide
 gottloses	NN	1	gottloses
 gottlosen	NN	1	gottlosen
 wüssten	NN	1	wüßten
@@ -1518,6 +1542,7 @@ fett	JJ	1	fetten
 Pfarr	NN	1	Pfarr
 empfehlen	VB	1	empfehlen
 Verzweifelt	NN	1	Verzweifelt
+Gibt	NNP	1	Gibt
 danken	VB	1	danken
 Schweinfleisch	JJ	1	Schweinfleisch
 Wovon	NN	1	Wovon
@@ -1640,6 +1665,7 @@ sparen	VB	1	sparen
 überlegen	VB	1	überlegen
 inbrünstigen	NN	1	inbrünstigen
 verkaufen	VB	1	verkaufen
+möchte	VB	1	möchte
 Knecht	NNP	1	Knecht
 Schimpft	NN	1	Schimpft
 Lot	NN	1	Lot

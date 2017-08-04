@@ -1,3167 +1,2271 @@
 Title: Der Freigeist
-Number of all tokens: 7806
-Nummber of different tokens: 3162
+Number of all lemmas: 7056
+Nummber of different lemmas: 2266
 
-Token	Frequency
-Adrast	118
-Theophan	86
-wohl	85
-sagen	56
-Herr	52
-würde	46
-weiß	45
-Juliane	43
-eben	38
-werde	37
-Art	33
-wissen	31
-Schwester	29
-glauben	29
-sehen	28
-andern	28
-alles	28
-Mann	28
-lieben	27
-Henriette	25
-Lisette	25
-gar	25
-liebe	25
-Freundschaft	24
-Araspe	23
-Vetter	23
-wollte	23
-Julianen	23
-wenig	22
-gut	22
-hören	22
-Recht	21
-kein	21
-Ach	21
-allein	21
-Person	20
-gewiß	20
-meiner	20
-Herz	19
-bald	19
-Wort	18
-Augen	18
-Glück	18
-Welt	18
-ha	17
-wahr	16
-Wahrheit	16
-Liebe	16
-willst	15
-Seite	15
-sage	15
-finden	15
-Wechsel	15
-vielleicht	15
-nehmen	15
-glaube	15
-besser	15
-Mamsell	15
-Mühe	15
-würden	15
-Henrietten	15
-kömmt	15
-gewesen	15
-seiner	15
-zwei	15
-weiter	14
-genug	14
-Lisidor	14
-einander	14
-Teufel	14
-recht	14
-Mensch	14
-Ha	13
-lieber	13
-lange	13
-denken	13
-sonst	13
-Rache	12
-Zeit	12
-mag	12
-antworten	12
-gesagt	12
-Herrn	12
-reden	12
-unmöglich	12
-hätten	12
-Martin	12
-Religion	12
-ganze	11
-seines	11
-nunmehr	11
-schönste	11
-böse	11
-Leute	11
-Menschen	11
-hast	11
-läßt	11
-Gott	11
-Leben	11
-Nu	11
-Hause	11
-keiner	11
-oft	11
-endlich	10
-erst	10
-Ihrem	10
-geht	10
-sei	10
-Umstände	10
-Seele	10
-rede	10
-zurück	10
-Pst	10
-keinen	10
-müßte	10
-gesehen	9
-Vergnügen	9
-Absicht	9
-Atheist	9
-Mädchen	9
-kennen	9
-bitte	9
-erfahren	9
-Gesichte	9
-Reden	9
-Ei	9
-hassen	9
-gewisse	9
-Worte	9
-vortrefflich	9
-vergessen	8
-jemals	8
-bezahlen	8
-Augenblick	8
-deinen	8
-wider	8
-verliebt	8
-Tag	8
-sehe	8
-Zweifel	8
-Sache	8
-bloß	8
-meines	8
-gehört	8
-unser	8
-alsdann	8
-deswegen	8
-fallen	8
-bekommen	8
-gewissen	8
-länger	8
-verlassen	8
-Geht	8
-Frauenzimmer	8
-gern	8
-vorhin	8
-stehen	8
-Schmeichelei	8
-ganzen	8
-setzen	8
-Geist	8
-Gewiß	8
-gegeben	8
-wahrhaftig	7
-höre	7
-frei	7
-weniger	7
-kleine	7
-Blicke	7
-lieb	7
-Hand	7
-Dinge	7
-Feinde	7
-ehrlicher	7
-groß	7
-kurz	7
-Munde	7
-Grunde	7
-Erlauben	7
-gleichwohl	7
-Exempel	7
-könnten	7
-Komm	7
-Theophans	7
-dadurch	7
-heute	7
-näher	7
-stellen	7
-gehalten	7
-Himmel	7
-wenigstens	7
-eifersüchtig	7
-Rede	7
-Esel	7
-Vielleicht	7
-etwa	7
-sollst	7
-Freund	7
-weg	7
-gute	7
-kleinen	7
-seid	7
-könne	7
-wären	6
-andre	6
-voraus	6
-laß	6
-Araspen	6
-Hülfe	6
-gelassen	6
-Vernunft	6
-nie	6
-niemals	6
-Sagen	6
-Mannspersonen	6
-wollten	6
-Summe	6
-Leuten	6
-spielen	6
-Geduld	6
-verstehe	6
-nötig	6
-breit	6
-übel	6
-Daumen	6
-Unglück	6
-Hölle	6
-erlauben	6
-Mittel	6
-Gedanken	6
-Ihres	6
-richten	6
-Gelegenheit	6
-Gründe	6
-wünschen	6
-gestehen	6
-Allein	6
-heraus	6
-Vertrauen	6
-spricht	6
-getan	6
-liebt	6
-Willen	6
-erstaune	6
-Anbeter	6
-schöne	5
-Adrasten	5
-geworden	5
-dasjenige	5
-Gewalt	5
-Verbindung	5
-sagt	5
-wirst	5
-weißt	5
-vielmehr	5
-Verachtung	5
-jetzo	5
-lasse	5
-Tugend	5
-gefunden	5
-sieht	5
-mache	5
-selber	5
-bleibt	5
-unsere	5
-unsern	5
-Sage	5
-hoffen	5
-Probe	5
-Buch	5
-verbunden	5
-Sachen	5
-gehe	5
-Gesinnungen	5
-geh	5
-glaubt	5
-Mund	5
-suchen	5
-welchem	5
-Ehre	5
-Stellen	5
-Stille	5
-Kleinigkeit	5
-Verdruß	5
-darum	5
-zufrieden	5
-nennen	5
-vollkommen	5
-überall	5
-Hören	5
-Händen	5
-Freude	5
-niemanden	5
-Fehler	5
-habt	5
-Namen	5
-verdient	5
-Vater	5
-erste	5
-hinter	5
-Gesicht	5
-fast	5
-unschuldigen	5
-Begierde	5
-Nacht	5
-Hände	5
-Anmerkung	5
-beschlossen	5
-ersten	5
-Kredit	5
-erklären	5
-ach	5
-kenne	5
-Verstand	5
-einerlei	5
-Herzen	5
-Pöbel	5
-letzte	5
-leben	5
-gefallen	5
-allezeit	5
-gesprochen	5
-Zierde	5
-Hochachtung	5
-freilich	5
-Charakter	4
-Richter	4
-Eigenschaften	4
-fällt	4
-Miene	4
-bringe	4
-A	4
-Aufrichtigkeit	4
-Gesichter	4
-deines	4
-gehabt	4
-beiden	4
-ihrem	4
-Streich	4
-sieh	4
-Schwören	4
-schämen	4
-schwach	4
-verlange	4
-müsse	4
-Fromme	4
-Erlaubnis	4
-Ho	4
-dürfte	4
-geschieht	4
-leiden	4
-fort	4
-nu	4
-Schuldner	4
-Streiche	4
-ehrlichen	4
-glücklich	4
-Pflichten	4
-Johann	4
-Freunde	4
-Beleidigungen	4
-Verdacht	4
-Larve	4
-Wollten	4
-Ansehen	4
-Vorwürfe	4
-Kurz	4
-lacht	4
-Ermahnung	4
-lernen	4
-Weg	4
-merken	4
-unsre	4
-darin	4
-Güte	4
-Büchern	4
-überlegen	4
-hoffe	4
-Lustige	4
-Spitzbube	4
-Lärm	4
-hieher	4
-gezwungen	4
-fragen	4
-Meinung	4
-Laß	4
-stark	4
-Schönheit	4
-schöner	4
-Wissen	4
-freuen	4
-genommen	4
-liebste	4
-Wein	4
-verlieren	4
-drohen	4
-Hast	4
-nimmermehr	4
-Dingen	4
-Ursache	4
-Vollkommenheiten	4
-Streitigkeit	4
-Töchter	4
-meint	4
-unserer	4
-Stande	4
-Einbildungen	4
-fähig	4
-klug	4
-finde	4
-weder	4
-Natur	4
-möchten	4
-gelingen	4
-Herren	4
-derselben	4
-sucht	4
-Lobrede	4
-anhören	4
-Pflicht	4
-entgegen	4
-Wohl	4
-schön	4
-Hochzeit	4
-schmeicheln	4
-zwischen	4
-Erklärung	4
-verlangen	4
-großen	4
-Kompliment	4
-verächtlich	4
-Paar	4
-umsonst	4
-eingebildet	4
-zeigen	4
-spotten	4
-Schwierigkeit	4
-morgen	4
-längst	4
-ziehen	4
-ists	4
-unterbrechen	4
-ankömmt	4
-erkennen	4
-hasse	4
-ho	4
-anfange	4
-seit	4
-einzige	4
-Lust	4
-mußt	3
-Sprache	3
-trifft	3
-strenge	3
-annehmen	3
-fröhlichen	3
-sprachen	3
-Taten	3
-Winkel	3
-höchste	3
-Weise	3
-Bäcker	3
-deinem	3
-geschehen	3
-Verzeihen	3
-überladen	3
-lauter	3
-Worten	3
-deutsch	3
-entschuldigen	3
-Einfall	3
-Seit	3
-Tochter	3
-Fuß	3
-klein	3
-gefällt	3
-sagte	3
-Überzeugung	3
-Schweig	3
-Grund	3
-Verstandes	3
-Sieh	3
-gelernt	3
-erzählen	3
-Schande	3
-wärest	3
-gewinnen	3
-geringsten	3
-gönnen	3
-kosten	3
-widerfahren	3
-Punkt	3
-stecken	3
-jene	3
-angesehen	3
-Geständnis	3
-Stücken	3
-Erstaunen	3
-verstehen	3
-Eben	3
-Ding	3
-führen	3
-Falschheit	3
-beste	3
-ansehen	3
-Tat	3
-heißen	3
-behaupten	3
-Vermögen	3
-Lachen	3
-vorsichtig	3
-nimmt	3
-vermehren	3
-richtig	3
-Freundlichkeit	3
-Begriffen	3
-Gliedern	3
-größte	3
-Lisidors	3
-auszudrücken	3
-Mamsells	3
-gebracht	3
-Geistlichen	3
-halb	3
-erweisen	3
-irre	3
-Gerechtigkeit	3
-List	3
-scheine	3
-blind	3
-Ihrige	3
-jener	3
-ewig	3
-wert	3
-Begriffe	3
-derjenigen	3
-Bitte	3
-Schwachheiten	3
-fassen	3
-beurteilen	3
-Lernen	3
-Wohltaten	3
-liebster	3
-Vierten	3
-Mädel	3
-Glücke	3
-Wahrheiten	3
-Nunmehr	3
-rächen	3
-herum	3
-einzig	3
-sauer	3
-zugleich	3
-Ungeheuer	3
-wessen	3
-vernünftiges	3
-ungerecht	3
-Geister	3
-neuer	3
-erzeigen	3
-Schanden	3
-meinet	3
-tausendmal	3
-Neigung	3
-ehe	3
-überzeugt	3
-Meinungen	3
-erinnern	3
-blinden	3
-zanken	3
-steht	3
-verrät	3
-gibts	3
-ersparen	3
-heißt	3
-Liebhaber	3
-Türe	3
-Körper	3
-treffen	3
-Seelen	3
-Bezahlung	3
-aufs	3
-edel	3
-merke	3
-Bedenklichkeiten	3
-deutlich	3
-Schlingel	3
-tausend	3
-Rat	3
-fehlt	3
-Gang	3
-Schritt	3
-irren	3
-Kanne	3
-ruhig	3
-Atomis	3
-Frömmigkeit	3
-getrost	3
-Großmut	3
-Notwendigkeit	3
-Henriettens	3
-eignen	3
-verloren	3
-Dank	3
-zusammen	3
-durchaus	3
-Umsonst	3
-nähere	3
-Heirat	3
-bekomme	3
-eingenommen	3
-Bitterkeit	3
-wahre	3
-Manne	3
-gefragt	3
-Dienst	3
-danke	3
-Spöttereien	3
-seinetwegen	3
-besten	3
-meinetwegen	3
-Papa	3
-handeln	3
-Feind	3
-Schurke	3
-verfallen	3
-Siehst	3
-Weib	3
-fest	3
-Ruhm	3
-tue	3
-beliebt	3
-Aberglauben	3
-gütig	3
-denke	3
-künftigen	3
-ungewiß	3
-Gut	3
-treffe	3
-weiblichen	3
-danken	3
-klar	3
-komme	3
-guter	3
-Teil	3
-dahin	3
-verbinden	3
-Mißtrauen	3
-einbilden	3
-dawider	3
-hörst	3
-Stelle	3
-ganzes	3
-bessern	3
-Vettern	3
-Kennen	3
-gleicher	3
-scherzen	3
-Überlegung	3
-Versicherungen	3
-Geiste	3
-Entfernung	3
-Schwager	3
-Schluß	3
-Umständen	3
-Hassen	3
-Personen	3
-kleines	3
-oben	3
-eins	3
-Geliebte	3
-drein	3
-erstaunt	3
-braucht	3
-ins	3
-Verstande	3
-Tausend	2
-Grundsätzen	2
-Aberglaubens	2
-Bürgschaft	2
-Wörtchen	2
-versprach	2
-angefangen	2
-glückliche	2
-irret	2
-allzuwohl	2
-liebenswürdige	2
-sicherer	2
-anzusehen	2
-los	2
-empfunden	2
-vorzuschreiben	2
-sicher	2
-zuwider	2
-Stube	2
-neugierig	2
-Trinken	2
-männliche	2
-Bestimmung	2
-Großmutter	2
-hundert	2
-Gegenstand	2
-gebietet	2
-vorigen	2
-Wege	2
-hierher	2
-glaubte	2
-bösen	2
-zuschwören	2
-Gestalt	2
-Anverwandten	2
-behalte	2
-Brüdern	2
-Julchen	2
-starker	2
-unterscheiden	2
-brauchen	2
-Widerspruch	2
-durchgebracht	2
-Ernste	2
-Freigeisterei	2
-raten	2
-Herzens	2
-Mannes	2
-herkommen	2
-Bedienten	2
-albern	2
-nahe	2
-Zinsen	2
-jenes	2
-vorzustellen	2
-eile	2
-Unmöglichkeit	2
-gekommen	2
-angenehm	2
-gewaltig	2
-Liebster	2
-herauskommen	2
-Gegenteil	2
-Freiheit	2
-anderm	2
-verteidiget	2
-de	2
-gehn	2
-Freilich	2
-zeitig	2
-Mademoisell	2
-schäme	2
-Zeug	2
-machst	2
-schreiben	2
-versuchen	2
-Überlegungen	2
-verdrießlich	2
-elenden	2
-Wendung	2
-Platze	2
-Alsdann	2
-Lobrednerin	2
-ähnlichen	2
-Krankheit	2
-brenne	2
-legen	2
-ankommen	2
-Unternehmen	2
-Adrasts	2
-Verwandtschaft	2
-Narren	2
-gönne	2
-verstanden	2
-ihres	2
-ohngefähr	2
-Beweis	2
-Wollte	2
-schämt	2
-Lächeln	2
-überwunden	2
-Proselyten	2
-geschätzt	2
-bereit	2
-ersetzen	2
-Versprechen	2
-Grad	2
-jemand	2
-frommen	2
-Nachsicht	2
-Beste	2
-Billigkeit	2
-schweigen	2
-artige	2
-aufnehmen	2
-geschwind	2
-schönsten	2
-kostet	2
-Verstellung	2
-Eifersucht	2
-nachsagen	2
-entdeckt	2
-Ehe	2
-Juchhei	2
-Pünktchen	2
-entzücken	2
-schwerlich	2
-müßt	2
-gestraft	2
-sogar	2
-Unrecht	2
-geäußert	2
-Verächter	2
-einziger	2
-Wahrhaftig	2
-Ihret	2
-Französisch	2
-alte	2
-Zwei	2
-unglückliche	2
-vielweniger	2
-übergangen	2
-worüber	2
-würdigen	2
-Wirkung	2
-bestreben	2
-großmütig	2
-Fremden	2
-Narre	2
-stolz	2
-wünscht	2
-machten	2
-Vieh	2
-bitten	2
-Gesellschaft	2
-Stärke	2
-gelegen	2
-mißbrauchen	2
-ehrwürdige	2
-rieche	2
-Ordnung	2
-außer	2
-Abschied	2
-denselben	2
-schuldig	2
-Keines	2
-Dummkopf	2
-Ursachen	2
-Keinen	2
-Wider	2
-behalten	2
-Stellung	2
-St	2
-schlagen	2
-Ränke	2
-lache	2
-schlecht	2
-Auge	2
-Stehen	2
-verwirrt	2
-gehörige	2
-Bescheidenheit	2
-abzulegen	2
-gekannt	2
-Kerl	2
-falschen	2
-betrachten	2
-Wohin	2
-betrachtet	2
-bekümmern	2
-Großmama	2
-Schwiegersöhne	2
-verachten	2
-Heuchler	2
-schickte	2
-fremden	2
-Ecke	2
-Wert	2
-tut	2
-aufsuchen	2
-angenommen	2
-wohlweiser	2
-fängt	2
-Werk	2
-Armut	2
-Verteidiger	2
-Kannst	2
-Unterdessen	2
-krank	2
-Anstiften	2
-verlangte	2
-Verteidigung	2
-niederträchtigen	2
-seufzen	2
-lehren	2
-Kömmt	2
-entstehen	2
-Abend	2
-meinst	2
-pflegt	2
-befohlen	2
-Geistes	2
-Geschäfte	2
-Falle	2
-begegnen	2
-kennet	2
-verachte	2
-Knieen	2
-Kinder	2
-destoweniger	2
-suche	2
-Übereinstimmung	2
-gebrauchen	2
-fein	2
-Gutes	2
-stand	2
-diejenigen	2
-wilde	2
-empfinden	2
-langsam	2
-euer	2
-fodern	2
-beibehalten	2
-ausgesetzt	2
-pfui	2
-sagst	2
-Spiel	2
-grausame	2
-gesetzt	2
-anzuhören	2
-heftig	2
-Gründlichkeit	2
-Freigeistes	2
-lach	2
-leichtsinniger	2
-dienen	2
-empfindlich	2
-erschaffen	2
-wohin	2
-billig	2
-schwachen	2
-begleiten	2
-hervor	2
-viere	2
-Freimütigkeit	2
-armseligen	2
-lustig	2
-gewachsen	2
-Wut	2
-besitzen	2
-eilen	2
-Lebens	2
-Gewissen	2
-schweig	2
-gegenwärtig	2
-gewußt	2
-halte	2
-Lauterkeit	2
-herunter	2
-gesucht	2
-ablegen	2
-Bedacht	2
-betauren	2
-Augenblicke	2
-widersprechen	2
-Knoten	2
-rasend	2
-Fall	2
-zehnmal	2
-gemerkt	2
-Tausch	2
-Schwesterchen	2
-heiraten	2
-gleichsam	2
-Anblick	2
-bezahle	2
-Wechsler	2
-Ordens	2
-Fuchs	2
-entfernt	2
-nenne	2
-Julianens	2
-Kopfe	2
-dirs	2
-Muster	2
-geringste	2
-Unterscheid	2
-erbarmte	2
-Überladung	2
-Henker	2
-Handel	2
-wofür	2
-Vaters	2
-Verliebten	2
-notwendigen	2
-Feiertag	2
-Fast	2
-überreden	2
-stehe	2
-urteilen	2
-unterdrücken	2
-Gründen	2
-sprachst	2
-genießen	2
-denkt	2
-möglichstes	2
-nehme	2
-stößt	2
-erregt	2
-Harmonie	2
-beruhigen	2
-scheinet	2
-treiben	2
-Geschlechts	2
-bewiesen	2
-Mama	2
-fand	2
-Kind	2
-gefaßt	2
-weibliche	2
-Stolze	2
-gewisses	2
-zwingen	2
-müßten	2
-Irrtum	2
-nähern	2
-Gegenwart	2
-Bürgschaften	2
-fortgehen	2
-begegnet	2
-beweisen	2
-gesetzte	2
-fühlen	2
-räche	2
-Entdeckung	2
-Versuch	2
-Schwestern	2
-Liebhaberin	2
-Anschlag	2
-nachhängen	2
-ansiehst	2
-aufwachsen	2
-fromme	2
-vermuten	2
-schlechte	2
-findet	2
-liebte	2
-Last	2
-Alte	2
-Heftigkeit	2
-Zufall	2
-Spötterei	2
-Nehmen	2
-Empfindung	2
-verziehen	2
-Schade	2
-Szene	2
-abgeführt	2
-Geschwätze	2
-Tugenden	2
-Gefallen	2
-ausdrücklich	2
-schwatzen	2
-Frankreich	2
-ließe	2
-gehorsam	2
-Schicksal	2
-betrogen	2
-sähe	2
-Betragen	2
-leicht	2
-Unterschrift	2
-Land	2
-kürzer	2
-erteilen	2
-wozu	2
-dran	2
-tauscht	2
-verwirren	2
-werfen	2
-liebten	2
-rauben	2
-aufgeräumt	2
-lenken	2
-Beschaffenheit	2
-Holland	2
-Natürlichste	2
-begriffen	2
-Triumph	2
-führe	2
-behorchen	2
-reich	2
-liegende	2
-Vorsatz	2
-Bedenken	2
-kannst	2
-erstes	2
-Alles	2
-Geringste	2
-bemerkt	2
-zureden	2
-verleugnen	2
-neigen	2
-läuft	2
-dummer	2
-Leidenschaften	2
-wette	2
-sprichst	2
-Folge	2
-umgehen	2
-schwesterliche	2
-siehst	2
-demselben	2
-gleichgültig	2
-Fuße	2
-guten	2
-gutem	2
-unsrigen	2
-gutes	2
-werdet	2
-Segen	2
-Philosoph	2
-geheim	2
-Hörner	2
-kaum	2
-heilig	2
-hinderlich	2
-Würde	2
-große	2
-starken	2
-bewogen	2
-Frau	2
-feine	2
-lebendig	2
-ichs	2
-hättest	2
-Glas	2
-solle	2
-Überlegen	2
-beizubringen	2
-umsieht	2
-vorstellen	2
-verfolgt	2
-unwürdig	2
-Schelm	2
-Füße	2
-bessere	2
-schärfer	2
-auseinander	2
-Irrtümer	2
-Höre	2
-besinnen	2
-gebe	2
-entziehen	2
-entdecken	2
-versprochen	2
-Schwäger	2
-Verzweiflung	2
-Zunge	2
-aufdringen	2
-Wohltat	2
-gedacht	2
-überwerfen	2
-Schwiegervater	2
-England	2
-verkennen	2
-kleiner	2
-gemein	2
-dahinter	2
-Geld	2
-Maul	2
-diejenige	2
-einig	2
-wollt	2
-Bald	2
-Jungfer	2
-Vorzüge	2
-schmeckt	2
-geboten	2
-übrig	2
-Blick	2
-menschliche	2
-treten	2
-Sonderbare	2
-Nachricht	2
-erkenne	2
-spielt	2
-Betrachtung	2
-Auslegungen	1
-ehrbares	1
-fragst	1
-verhungert	1
-wäret	1
-lassende	1
-steigen	1
-ißt	1
-laßt	1
-Sprunge	1
-könnt	1
-Schlosse	1
-niederträchtig	1
-hinterbracht	1
-Schimpfworts	1
-staubigten	1
-letzten	1
-träumen	1
-pflegen	1
-Denkungsart	1
-herumschweifen	1
-Umgang	1
-Unfälle	1
-Wesen	1
-zuletzt	1
-Ärmel	1
-unwissenden	1
-Pfaffengeschmeiß	1
-zurücke	1
-Flattergeist	1
-riechst	1
-verwahren	1
-edlere	1
-überzeugen	1
-Stecken	1
-Zeugen	1
-ungefähr	1
-liebenswürdig	1
-Anerbietens	1
-Vorteil	1
-erkannten	1
-Mangel	1
-mitleidiges	1
-ungezwungene	1
-Seht	1
-reichen	1
-desselben	1
-Gefälligkeit	1
-Priestern	1
-Satan	1
-magst	1
-gerückt	1
-Freuden	1
-bedächtig	1
-nachteilige	1
-Mutmaßungen	1
-Schön	1
-Acht	1
-einiger	1
-Erziehung	1
-Licht	1
-vermögen	1
-Aufopferung	1
-einigem	1
-richterliche	1
-gesetztes	1
-nichtswürdig	1
-ausschreien	1
-Deutschland	1
-herabstürzen	1
-hole	1
-Erkläre	1
-erzeugt	1
-hintergehen	1
-Grade	1
-garstige	1
-springen	1
-Le	1
-befinde	1
-großmütiger	1
-ficht	1
-Uneigennützigkeit	1
-anstehen	1
-Begriff	1
-Hübsch	1
-Vorurteile	1
-Sähe	1
-niemand	1
-verächtlicher	1
-Neugierde	1
-dieselben	1
-Vorschriften	1
-hört	1
-erstemal	1
-Bestehet	1
-lag	1
-hüten	1
-Himmels	1
-Scham	1
-Ganzes	1
-versprechen	1
-redlichen	1
-Empfindlichkeit	1
-verschiedenen	1
-Schimpfworte	1
-geschnitten	1
-Trost	1
-Atheisten	1
-sorglosesten	1
-getraue	1
-Blut	1
-einzuschränken	1
-Vorstellung	1
-Verlieret	1
-Antwort	1
-seichten	1
-ruhige	1
-fix	1
-nahen	1
-erlaubt	1
-ungetreuer	1
-anlegen	1
-Lisettchen	1
-kaltem	1
-Annehmlichkeiten	1
-Fingst	1
-unzüchtigen	1
-gewahr	1
-angelegt	1
-unzuerklärenden	1
-Anblicke	1
-Taler	1
-vernehmen	1
-Exempeln	1
-Holz	1
-Geschwind	1
-verleitet	1
-gedenken	1
-Rindvieh	1
-verderbliche	1
-letztern	1
-täte	1
-Bemühung	1
-wißt	1
-gebundenen	1
-Maulaffe	1
-Aussprüche	1
-Häßlichkeit	1
-Nötigers	1
-Bequemlichkeit	1
-ehrlichsten	1
-Urteil	1
-vergilt	1
-unversöhnlich	1
-Gefährten	1
-Bekenntnis	1
-gesunder	1
-verschone	1
-widerrufen	1
-gegangen	1
-kömmst	1
-Tausche	1
-geliebet	1
-höchstbegierig	1
-Besseres	1
-Gewißheit	1
-Wortes	1
-nichtswürdiges	1
-Erschrecken	1
-darnach	1
-Erbschaft	1
-Staates	1
-gefährliche	1
-ungeheuer	1
-Hinderung	1
-he	1
-drunter	1
-Geldes	1
-lege	1
-Freigeist	1
-Kapitel	1
-wesentlichste	1
-sprengen	1
-bitter	1
-traktieren	1
-Gesinnung	1
-verbieten	1
-Wunderbarer	1
-lüderlicher	1
-Nichtswürdiger	1
-bedanken	1
-Gleichgültigkeit	1
-beschäftiget	1
-Geschlechte	1
-Schwude	1
-Seh	1
-aufmutzen	1
-leugnet	1
-anwendest	1
-ausmacht	1
-Eigennutz	1
-Wildfang	1
-Mine	1
-anständigere	1
-geendigt	1
-Reizen	1
-Märtyrer	1
-Hundsfott	1
-hingehen	1
-Einfalt	1
-herbei	1
-Tausendste	1
-Trauung	1
-Viertelstunden	1
-Weltweisheit	1
-Heitern	1
-erleuchtet	1
-unbeantwortet	1
-bemerkter	1
-Kurtisieren	1
-beschämt	1
-geschlagen	1
-Wand	1
-Bürschchen	1
-Zanks	1
-Abschilderungen	1
-sanften	1
-unterdrückte	1
-Sinne	1
-verweilen	1
-mitten	1
-beratschlagen	1
-gemäß	1
-beteuern	1
-ausgeben	1
-höchstens	1
-Brand	1
-gesonnen	1
-Reisen	1
-Knie	1
-Neubegierde	1
-Unbiegsamer	1
-geklatscht	1
-Gemüter	1
-Bestreben	1
-rechtschaffen	1
-Lehre	1
-verteidigen	1
-lästerliches	1
-nichte	1
-Führen	1
-abbrechen	1
-Anhänger	1
-taubes	1
-mitteilet	1
-heimliche	1
-ältesten	1
-auslassen	1
-ledig	1
-grausam	1
-Bockshorn	1
-Seelenkannibal	1
-wohlbedächtig	1
-Zipfel	1
-Ehrgeiz	1
-Verschonen	1
-Blödsinnigsten	1
-unterdessen	1
-vortreffliche	1
-erhalten	1
-Geschicklichkeit	1
-bezeugt	1
-fürchten	1
-Lobsprüche	1
-parteiisch	1
-Ehemann	1
-enthalten	1
-Nichtswürdigkeit	1
-elendes	1
-Abscheu	1
-begreiflich	1
-une	1
-abscheuliche	1
-Beispielen	1
-Zwingen	1
-Stoß	1
-Kunstgriff	1
-Anmerkungen	1
-springe	1
-entfielen	1
-Ausdrücke	1
-anflehen	1
-hiesigen	1
-derentwegen	1
-Aufschub	1
-unglückliches	1
-Beispiele	1
-Gesichts	1
-abzusagen	1
-Lustig	1
-vornehmlich	1
-absprechen	1
-Schule	1
-überraschen	1
-Steine	1
-abgeleget	1
-angelangt	1
-Hälfte	1
-verdrießlichen	1
-artiges	1
-gestritten	1
-Zürne	1
-Vorurteil	1
-Vorwitz	1
-Verdienst	1
-Besorgung	1
-vorzubringen	1
-servir	1
-geplaudert	1
-artigen	1
-lebhaftes	1
-scheinende	1
-verletzen	1
-entehren	1
-strengern	1
-größre	1
-wenden	1
-ordentlich	1
-Dolch	1
-allzugern	1
-wollts	1
-beleidigende	1
-manches	1
-vornehmsten	1
-geirret	1
-wendet	1
-manche	1
-Reichtum	1
-verlornen	1
-hierinne	1
-annähme	1
-Töchtern	1
-dankbar	1
-unglücklich	1
-wankendem	1
-Anherkunft	1
-vorgegangen	1
-anrechnen	1
-Schmeichlerin	1
-Untier	1
-Verschieb	1
-verdienten	1
-dürren	1
-erwarte	1
-Kopien	1
-eindrückt	1
-Karnevalserfahrung	1
-nächster	1
-frage	1
-stampfen	1
-dächte	1
-Geschlecht	1
-verlangt	1
-borgen	1
-prahlenden	1
-Mädchens	1
-schalten	1
-Stilleschweigen	1
-Schuß	1
-allerfeinste	1
-verließen	1
-beunruhiget	1
-Geier	1
-Wind	1
-erstenmale	1
-Stolz	1
-füllen	1
-Ton	1
-gescheut	1
-Arm	1
-darzu	1
-vermute	1
-eingeladen	1
-Anstand	1
-abzielen	1
-treuherziges	1
-Handschriften	1
-wirft	1
-Beschäftigung	1
-Baue	1
-heiligen	1
-zweite	1
-Derjenige	1
-Bediente	1
-Gläubiger	1
-besinnst	1
-Verschwenden	1
-Schuld	1
-He	1
-Prezeln	1
-Nachttische	1
-bloße	1
-bricht	1
-binden	1
-berühmter	1
-sahe	1
-aufnimmt	1
-regelmäßig	1
-niedrigsten	1
-Formalität	1
-Setzen	1
-verjüngte	1
-abgekartetes	1
-Bürge	1
-Still	1
-Gegenstande	1
-woran	1
-gezürnt	1
-liebet	1
-drüber	1
-Unmensch	1
-Schwiegersohn	1
-Verändrung	1
-erhoben	1
-Notwendig	1
-Rechtfertigungen	1
-beleidigten	1
-blöde	1
-gib	1
-Schulden	1
-Vorstellungen	1
-zurückkommen	1
-unsichtbare	1
-demütigen	1
-zeigt	1
-Richterin	1
-leidet	1
-Verleugner	1
-Fehl	1
-abermal	1
-setze	1
-Tone	1
-erspare	1
-braver	1
-la	1
-munter	1
-Französische	1
-löset	1
-übereilen	1
-Plaudern	1
-Schwachheit	1
-Ruhe	1
-Hundertste	1
-unwert	1
-gelangen	1
-geliebten	1
-ernsthaften	1
-entfallen	1
-bekehren	1
-verschwendet	1
-kostbarer	1
-Gegenteile	1
-gehöret	1
-nötige	1
-Umkehr	1
-gewürzt	1
-Wohlstande	1
-künftig	1
-Hund	1
-niederträchtige	1
-beschrieben	1
-scharf	1
-anbete	1
-Pferd	1
-unbequemen	1
-verdächtig	1
-Äußerste	1
-Glauben	1
-vorbringe	1
-Bär	1
-dringender	1
-überlegt	1
-bearbeitet	1
-Franzosen	1
-Katzenkopf	1
-vorgewiesen	1
-hurtig	1
-Blutsfreunde	1
-stiften	1
-wählen	1
-Wem	1
-Grausamkeit	1
-hinunter	1
-übergeben	1
-reißt	1
-verrichten	1
-Wohlstand	1
-beredtern	1
-Wahn	1
-Bibel	1
-warst	1
-Dinger	1
-Lächelnd	1
-würdest	1
-hundertmal	1
-brave	1
-Wiederholung	1
-verblinden	1
-beurlauben	1
-bestellen	1
-Sachte	1
-Groll	1
-schrecklich	1
-verstecken	1
-Gute	1
-wiederholen	1
-Pfaffen	1
-einzigen	1
-zuziehen	1
-einziges	1
-fliehen	1
-stehet	1
-Fort	1
-Darin	1
-Knien	1
-Pest	1
-schlucken	1
-Streitköpfe	1
-ausliefern	1
-unterschieden	1
-vernünftige	1
-Kahle	1
-verbergen	1
-geblendet	1
-belustigen	1
-auszulachen	1
-stören	1
-Wirst	1
-höfliche	1
-glückseligem	1
-Sehen	1
-unmenschlicher	1
-bleibe	1
-schaden	1
-rettete	1
-pere	1
-Mamsellchen	1
-Hoffe	1
-lächerlich	1
-tyrannisieren	1
-Vorwerk	1
-versetze	1
-ihrigen	1
-gelehrter	1
-Schüler	1
-Gesichtszüge	1
-kriechende	1
-ruchlose	1
-unserm	1
-pathetischer	1
-Backofen	1
-Bösewichter	1
-abgeborgt	1
-würdig	1
-Schwiegersohne	1
-gebeten	1
-Unsre	1
-bestrebet	1
-Unmögliches	1
-zeither	1
-ungläubig	1
-Überfluß	1
-blinde	1
-Balthasarn	1
-Rodomontade	1
-schieben	1
-eingefleischten	1
-Unnatürlichste	1
-Verklagung	1
-entkleiden	1
-scheußlichsten	1
-zerrissen	1
-Konkurse	1
-erträglich	1
-erhält	1
-grob	1
-Glaube	1
-strittest	1
-zugestoßener	1
-verhehlte	1
-abgebrochen	1
-ausgegangen	1
-hebe	1
-kennten	1
-brennt	1
-innere	1
-innern	1
-Urteilen	1
-Gunst	1
-Revansche	1
-Unbesonnenheit	1
-fange	1
-berechtiget	1
-Verleumder	1
-spielst	1
-schnurrige	1
-still	1
-Jenes	1
-Jener	1
-entschuldige	1
-Verdienste	1
-entbehren	1
-Länge	1
-meiste	1
-Schlaue	1
-Lacht	1
-Meisterstück	1
-Fahren	1
-menschlichen	1
-vorausgesetzt	1
-ausgekundschaftet	1
-erteile	1
-Nötiges	1
-vorbei	1
-ruhen	1
-gequälet	1
-erwerben	1
-Überlege	1
-drücken	1
-Gebet	1
-Klasse	1
-Kette	1
-itzt	1
-Wunderlicher	1
-Gelassenheit	1
-ungestalteten	1
-deinigen	1
-Länger	1
-auftragen	1
-et	1
-Danksagung	1
-grausames	1
-Edelste	1
-allerkleinste	1
-Beteurung	1
-ungeschimpft	1
-unanständig	1
-kühnern	1
-peinigen	1
-Schöps	1
-zärtlichste	1
-Stand	1
-klarer	1
-vier	1
-Blind	1
-annimmt	1
-Seid	1
-Wen	1
-willkürliche	1
-Heiligkeit	1
-beiß	1
-geleugnet	1
-Nase	1
-beiher	1
-abgelegt	1
-Standes	1
-zweien	1
-unvernünftigen	1
-unterm	1
-Erde	1
-freundschaftlichste	1
-Engländsch	1
-nachsehend	1
-jenem	1
-dünkt	1
-jenen	1
-vorfallen	1
-Atem	1
-beklage	1
-Lohn	1
-Münze	1
-wüßte	1
-vermengen	1
-Post	1
-drohe	1
-Feuer	1
-stolzen	1
-unterlassen	1
-verraten	1
-erkundigte	1
-kriechenden	1
-beschämen	1
-aufwallende	1
-diesesmal	1
-sah	1
-Puppe	1
-Futter	1
-tauschen	1
-Erklären	1
-ans	1
-Allzugütige	1
-Hals	1
-Haare	1
-Halt	1
-Helfen	1
-Spotte	1
-fertig	1
-bezauberte	1
-gegenseitigen	1
-trägt	1
-ansieht	1
-Name	1
-Höhe	1
-sprach	1
-flüchtigen	1
-machte	1
-carogne	1
-bete	1
-Mitleiden	1
-erwiesen	1
-ohnedem	1
-rückgängige	1
-erbt	1
-fille	1
-bewahre	1
-herauszieht	1
-vorgefaßten	1
-nannten	1
-einsehen	1
-Kröte	1
-Gesetzt	1
-ernähren	1
-Rocke	1
-setzt	1
-auszuhalten	1
-Brocke	1
-herumhudeln	1
-verachtet	1
-geseufzt	1
-hörte	1
-erzürnen	1
-unverschämter	1
-Krank	1
-nachdrücklichste	1
-beschwöre	1
-Männern	1
-schwer	1
-Punkte	1
-Fragst	1
-Religiöse	1
-Niederträchtige	1
-solltet	1
-Joch	1
-fehlte	1
-hungriger	1
-empfindlicher	1
-Schwanz	1
-Volk	1
-leichte	1
-verdroß	1
-stärkern	1
-Lineamente	1
-dachte	1
-Bewegung	1
-Verzieh	1
-Bewundern	1
-fremder	1
-weiden	1
-barmherzige	1
-Sagte	1
-klagt	1
-versichert	1
-verzeihen	1
-Temperamente	1
-vernichte	1
-beklagen	1
-Partei	1
-versäumen	1
-Zwang	1
-verantworten	1
-stimmt	1
-Abscheuliches	1
-gottlose	1
-verwünschen	1
-wahrern	1
-damals	1
-Jahr	1
-scherzt	1
-verdammen	1
-dahinreißt	1
-Grobheit	1
-Kreatur	1
-verachtenden	1
-befriediget	1
-coups	1
-Kaum	1
-Eigensinn	1
-Deist	1
-Halte	1
-Erste	1
-Abgeborgt	1
-Haaren	1
-dergleichen	1
-hitzig	1
-hernach	1
-Dorn	1
-plötzliche	1
-Grundsätze	1
-Vermittelung	1
-eingezogener	1
-verkleideten	1
-Zieht	1
-ferne	1
-sogleich	1
-muntern	1
-Bettel	1
-schreckliches	1
-Ungewißheit	1
-unbeständiger	1
-behutsamer	1
-eigennützig	1
-flüchtige	1
-dringt	1
-Antichrist	1
-samt	1
-zittert	1
-natürlichen	1
-marternde	1
-Schwiegervaters	1
-zittere	1
-greift	1
-Dämmerung	1
-zittern	1
-sinnen	1
-brüderlicher	1
-ausstellen	1
-erholen	1
-brüderlichen	1
-jetzigen	1
-antut	1
-schießen	1
-glücklichen	1
-Schwäche	1
-beißenden	1
-Gehst	1
-erwäge	1
-jemanden	1
-vergangene	1
-Verächtliche	1
-Stuhl	1
-beredet	1
-zerstreut	1
-gering	1
-erstenmal	1
-anwenden	1
-auslachen	1
-Trinkgeld	1
-verbiete	1
-Bravo	1
-ließ	1
-eigne	1
-kriechen	1
-versteht	1
-Topp	1
-Einfältiger	1
-aufzusuchen	1
-ohnmächtig	1
-Dummheit	1
-rückgängig	1
-Kur	1
-Luft	1
-Engel	1
-wahren	1
-sann	1
-Gebieterin	1
-befördern	1
-gerissen	1
-Allgemeinheit	1
-solltest	1
-gemächlichen	1
-kamen	1
-verstorbenen	1
-vergeben	1
-scherze	1
-fürchtest	1
-Höflichkeit	1
-finsterm	1
-Postwagen	1
-jagen	1
-englisch	1
-nötigen	1
-Toren	1
-tanzt	1
-Einwilligung	1
-mißtrauisch	1
-ausreden	1
-befriedigen	1
-voller	1
-zernichten	1
-unschuldige	1
-verknüpfet	1
-empfindet	1
-prellen	1
-Widersprüche	1
-Beruhigung	1
-gelangt	1
-Predigen	1
-zürnen	1
-ausklagen	1
-eingelassen	1
-heucheln	1
-unschmackhaft	1
-zugehöre	1
-schönen	1
-blinder	1
-stellte	1
-gezankt	1
-reicht	1
-Kleine	1
-herausgejagt	1
-wachsende	1
-Liebkosung	1
-wohlgefällt	1
-lockrer	1
-schickt	1
-gegenwärtige	1
-bereichere	1
-Aussöhnung	1
-Entschuldigungen	1
-Tropfen	1
-Rolle	1
-Bekehrung	1
-gehöre	1
-halben	1
-erinnere	1
-heftigen	1
-kleiden	1
-falsche	1
-Lüsten	1
-angehörst	1
-Magen	1
-verderbter	1
-Bücher	1
-Töne	1
-Vermögens	1
-fröhliche	1
-woraus	1
-Erst	1
-schätzen	1
-allmählig	1
-hölzern	1
-untersuchen	1
-Stücke	1
-Madame	1
-Fallstricke	1
-schleppte	1
-Warte	1
-Stadt	1
-notwendig	1
-Jüngling	1
-Weiter	1
-unsrer	1
-Gelde	1
-leichtsinnigen	1
-redlich	1
-alt	1
-selten	1
-gekriegt	1
-gestoßen	1
-verleiten	1
-Dingerchen	1
-fressen	1
-Vorzug	1
-Anfälle	1
-herausspringt	1
-Betragens	1
-einbilde	1
-Wesentlichsten	1
-Fein	1
-baton	1
-glücklichste	1
-verlästert	1
-Sohn	1
-hinein	1
-Rabenaas	1
-elend	1
-Verachtungen	1
-hinhängt	1
-drehen	1
-jederzeit	1
-geschmissen	1
-Reise	1
-hoffentlich	1
-Rühmliches	1
-Breite	1
-Bürgern	1
-laut	1
-Schreck	1
-wiedergekommen	1
-heiße	1
-rate	1
-unbeschreibliche	1
-Strafe	1
-beständige	1
-ausstellten	1
-hinaus	1
-leibhafte	1
-häßlich	1
-anschwatzen	1
-hinreichet	1
-Freunden	1
-leid	1
-Schönheiten	1
-vernichtet	1
-arg	1
-einigermaßen	1
-ging	1
-aufstößt	1
-Kannibal	1
-bürden	1
-vernichten	1
-bezeugte	1
-ungestört	1
-Gehts	1
-ausmachen	1
-versauerst	1
-nennte	1
-französisch	1
-wohnen	1
-übersehen	1
-Pfui	1
-Grillenfänger	1
-ändert	1
-armen	1
-ungläubigen	1
-Schminke	1
-Mosjeu	1
-verdrungen	1
-allerwenigsten	1
-merkliche	1
-Brunnen	1
-streitet	1
-alsdenn	1
-Elemente	1
-wohlgemachtesten	1
-Genüge	1
-allzuvorsichtig	1
-Privilegium	1
-verdeckten	1
-Not	1
-Verziehen	1
-Dreustigkeit	1
-Adel	1
-antworte	1
-komm	1
-ehrwürdigen	1
-derer	1
-Absatze	1
-klimpertst	1
-male	1
-Falten	1
-Ruhig	1
-Annehmung	1
-herab	1
-überlästigen	1
-Streiten	1
-à	1
-Schlechtere	1
-prophezeien	1
-Geblüte	1
-Spare	1
-Zweiflerin	1
-geschworne	1
-Elende	1
-Anständigkeit	1
-angehen	1
-ehrliche	1
-blickt	1
-Vorschlag	1
-versehen	1
-getreuern	1
-vollends	1
-Ekel	1
-Schwarzrocke	1
-gesprächig	1
-kämen	1
-allerliebstes	1
-erstaunlichste	1
-Feindes	1
-Besorgen	1
-heiratet	1
-abhalten	1
-Welchem	1
-Leid	1
-alten	1
-wagen	1
-voran	1
-fühle	1
-bezahlt	1
-altes	1
-alter	1
-Hauptsache	1
-aufzuziehen	1
-entferne	1
-wirkt	1
-freundlichen	1
-Linken	1
-behauptet	1
-aufrichten	1
-nennt	1
-tritt	1
-würdet	1
-Freite	1
-gespielt	1
-erstern	1
-Holunke	1
-Anliegen	1
-Spotten	1
-Lumpenhund	1
-Mut	1
-kritischen	1
-Fahne	1
-artigste	1
-stillen	1
-unvorsichtig	1
-bedeuten	1
-Adieu	1
-Zeugnis	1
-Verkehr	1
-missen	1
-Wollust	1
-verweise	1
-zugestehet	1
-sittsame	1
-abscheulicher	1
-gedungen	1
-ungeschickt	1
-Ungereimtheiten	1
-Mußt	1
-kriegen	1
-Fähigkeit	1
-backen	1
-schwerer	1
-unruhig	1
-vorzuzählen	1
-Haar	1
-versteh	1
-Geheimes	1
-Theolog	1
-natürlicher	1
-nachteiligen	1
-wilder	1
-fromm	1
-boshaft	1
-Wechselbalg	1
-liebenswürdigere	1
-wilden	1
-nachteiliger	1
-Sonnenstrahlen	1
-vorteilhaft	1
-ausgehen	1
-Ansprüche	1
-Vorrechte	1
-Raub	1
-abgesondert	1
-passen	1
-ausgedrückt	1
-angenommene	1
-Aufführung	1
-gereiset	1
-Rechten	1
-schmachtendes	1
-schob	1
-wildes	1
-inbrünstiger	1
-Schlüssel	1
-Theophane	1
-Entzückungen	1
-verdrießen	1
-gedrückt	1
-hineingebracht	1
-Närrin	1
-äußern	1
-mürrisches	1
-bewußten	1
-Ohrenbläser	1
-Schäkerinnen	1
-Beweise	1
-Vergehungen	1
-ungehalten	1
-karg	1
-gefährlichste	1
-mürrischen	1
-spintisiert	1
-Gekitzelt	1
-abholen	1
-Witz	1
-Vornehmste	1
-dichte	1
-hauptsächlichen	1
-Erfahrung	1
-denkst	1
-wiedersehen	1
-unrecht	1
-Neuigkeit	1
-Beschuldigungen	1
-redet	1
-Verdachts	1
-schwatze	1
-Allerboshafteste	1
-überlassen	1
-Vorzuge	1
-schwatzt	1
-schlimme	1
-Verdachte	1
-todsterbenskrank	1
-aufsteht	1
-wunderliches	1
-abtreten	1
-rechtschaffener	1
-edles	1
-Hassenswürdigste	1
-Verbrechen	1
-Lumpen	1
-Fischbeinröcken	1
-vorzügliche	1
-verzweifle	1
-blendet	1
-küssen	1
-Nutze	1
-Julianchen	1
-irgend	1
-angebracht	1
-anzunehmen	1
-traue	1
-Narrheit	1
-gehören	1
-leugnen	1
-vergnügt	1
-Bösewicht	1
-Frankreichsch	1
-Taschenbuch	1
-schmälern	1
-Widerrede	1
-Saufen	1
-Kennst	1
-Gehorsam	1
-durchgerannt	1
-Vermuten	1
-zwanzigmal	1
-Beobachtung	1
-auskommen	1
-manchmal	1
-herstellen	1
-seh	1
-abzirkeln	1
-vergeblichen	1
-engen	1
-höhnisch	1
-ausgelassen	1
-Unmögliche	1
-unparteiisches	1
-deucht	1
-gerufen	1
-erriet	1
-erbte	1
-erreicht	1
-Gescheutes	1
-Tode	1
-tauern	1
-versichern	1
-Unruhe	1
-Hundsfötter	1
-geringschätzig	1
-Zank	1
-Collin	1
-Bündeln	1
-Besondere	1
-bereden	1
-Blute	1
-verwandeln	1
-verziehst	1
-Urteils	1
-Ergebenheit	1
-langt	1
-Ruchlosen	1
-Rasendes	1
-erhaben	1
-unschuldig	1
-bliebe	1
-schlimmsten	1
-häßlicher	1
-häßlichen	1
-erraten	1
-enthält	1
-verbeiße	1
-richtige	1
-beständig	1
-Verdammt	1
-Verlangen	1
-beleidigen	1
-Schimmer	1
-gewöhnlich	1
-hegen	1
-Beischlaf	1
-Frauenzimmerauge	1
-pack	1
-ärger	1
-beweiset	1
-junger	1
-Ruin	1
-ausrechnen	1
-herein	1
-Hurtig	1
-zieht	1
-Widriges	1
-Falte	1
-Uph	1
-Übereilung	1
-Schlucker	1
-untergraben	1
-liebenswürdigste	1
-geführt	1
-andermal	1
-erzogen	1
-Gehe	1
-Anschein	1
-eure	1
-verboten	1
-ähnlicher	1
-Ernsthaftigkeit	1
-fällen	1
-versäufst	1
-geringschätzige	1
-erfuhr	1
-Kenntnis	1
-Schmerzen	1
-Lobspruch	1
-rechte	1
-stärker	1
-glänzenden	1
-Schleicher	1
-ersuchen	1
-Weide	1
-reizend	1
-Monaten	1
-fesseln	1
-redt	1
-erschrecken	1
-verändert	1
-läge	1
-Poete	1
-Nachttischen	1
-Besitz	1
-verschont	1
-Benennungen	1
-eitles	1
-weite	1
-fürchte	1
-heilige	1
-Augapfel	1
-erwarten	1
-unfruchtbaren	1
-spöttischen	1
-Erbe	1
-Denken	1
-weinen	1
-Würfe	1
-Blumen	1
-rechten	1
-entspringt	1
-gewinnt	1
-Ziele	1
-Ehemänner	1
-Wehe	1
-Fröhliches	1
-Bosheit	1
-vollkommene	1
-Herrschaft	1
-allzu	1
-Ohren	1
-Tages	1
-erhielte	1
-Sammelplatz	1
-Jungfern	1
-unleugbar	1
-predigen	1
-verkaufen	1
-Finde	1
-Drohend	1
-Wichtiges	1
-Brocken	1
-hergekommen	1
-Bilder	1
-Pulver	1
-Comment	1
-pfeifen	1
-abzulenken	1
-stückweise	1
-verleugnet	1
-unruhiger	1
-Sicherheit	1
-armselige	1
-Galgendieb	1
-Freuen	1
-Korb	1
-vorzupredigen	1
-weggehen	1
-Bedünkens	1
-Beunruhigen	1
-wahres	1
-Geheimnis	1
-herrscht	1
-gekitzelt	1
-glaubst	1
-geglaubt	1
-helfen	1
-Plunder	1
-Gemütsart	1
-besorgen	1
-erlangen	1
-unverdienten	1
-armer	1
-zornig	1
-Labsal	1
-vorstellten	1
-Glückes	1
-unschuldiges	1
-maraut	1
-Überflusse	1
-vorzuwerfen	1
-Verlegenheit	1
-Körpers	1
-Abschreckungen	1
-vous	1
-Gemahl	1
-Morgen	1
-angeborne	1
-gestanden	1
-Männerchen	1
-großmütigsten	1
-Werkzeuge	1
-Versicherung	1
-Höllenbrand	1
-Schwarzröcke	1
-Zug	1
-Spöttisch	1
-Gebotes	1
-lang	1
-verachteten	1
-argwöhnisch	1
-Abwesenheit	1
-Kaltsinn	1
-holen	1
-strafbar	1
-reinen	1
-verholfen	1
-Verbindliches	1
-unverzüglich	1
-Werken	1
-Errettung	1
-witzig	1
-allerfrömmsten	1
-trüben	1
-Nachdenken	1
-Schöpfer	1
-Verzweifeltste	1
-wiederkommen	1
-Klügerm	1
-beilegten	1
-Erhebung	1
-Leber	1
-Glase	1
-Irrtümern	1
-lenket	1
-zuhören	1
-Augenblicken	1
-schreit	1
-spielendes	1
-Schlange	1
-ungerechte	1
-Stimme	1
-fühlt	1
-Bocksfüße	1
-gefärbte	1
-umzechig	1
-Fällt	1
-nachdrücklicher	1
-Blitz	1
-Fassen	1
-Verschweigung	1
-Wäldern	1
-Hierauf	1
-Streichen	1
-Findest	1
-Ochse	1
-Weiß	1
-schlimm	1
-begnügen	1
-Nachmittagspredigt	1
-betäuben	1
-vorgenommen	1
-übermorgen	1
-Liebste	1
-betaure	1
-gelegt	1
-Zaume	1
-beschäftigten	1
-Blutsfreund	1
-erfunden	1
-weitre	1
-gefahren	1
-wünsche	1
-Wunsch	1
-Seufzen	1
-Revers	1
-hierzu	1
-dürft	1
-Tiere	1
-Scheine	1
-ergeben	1
-Verführung	1
-Heiligste	1
-est-il	1
-gehts	1
-anhalten	1
-Unartige	1
-überführet	1
-Niederträchtigen	1
-schriftliche	1
-überführen	1
-geraubt	1
-verdammter	1
-liebenswerter	1
-geliehen	1
-Menschheit	1
-übeln	1
-nackend	1
-nötigsten	1
-Hum	1
-widerstehen	1
-sachte	1
-befehlen	1
-Aufmerksamkeit	1
-künftiges	1
-künftiger	1
-Nachdruck	1
-Lehrer	1
-Abermals	1
-schafft	1
-begierig	1
-Betschwester	1
-nehmt	1
-Hanges	1
-verschonen	1
-Jugend	1
-geschwatzt	1
-stechen	1
-herumschleicht	1
-Geschlechtern	1
-listiger	1
-persönlichen	1
-tat	1
-nachzufolgen	1
-Zahn	1
-Quelle	1
-kennt	1
-Neckereien	1
-Unordnung	1
-Schwur	1
-vergnügen	1
-Veränderung	1
-widerrufst	1
-hindert	1
-Schnippchen	1
-Lösungswort	1
-gewärtig	1
-Verzweifelt	1
-beneide	1
-zugetrauet	1
-vergißt	1
-Aufenthalt	1
-Einlenkungen	1
-Priesterfrau	1
-christliche	1
-stille	1
-umkehrt	1
-angenehme	1
-rechtschaffnen	1
-wetterwendischen	1
-Wovon	1
-verlasse	1
-heure	1
-gereuet	1
-Pfarr	1
-worin	1
-wohinter	1
-unterscheide	1
-widerlegte	1
-erkannte	1
-waret	1
-Fehlern	1
-großer	1
-Einwurf	1
-wundern	1
-aufhört	1
-Trinkgelder	1
-Endzwecke	1
-Seiten	1
-abzuzwingen	1
-streitig	1
-Nähzeuge	1
-Fragen	1
-wollende	1
-erträglicher	1
-ausrichten	1
-überladene	1
-einlassen	1
-Posthause	1
-schnakisch	1
-Geistlichkeit	1
-sichersten	1
-Mannsperson	1
-Vortrefflich	1
-Woche	1
-rennen	1
-Nachrede	1
-hochbefehlenden	1
-gedenke	1
-Pfeife	1
-Umfange	1
-umarmen	1
-Hör	1
-Summen	1
-gedenkt	1
-solcher	1
-warten	1
-Gesetzes	1
-scharfe	1
-Trotze	1
-anfangen	1
-Gefahr	1
-Vers	1
-reißen	1
-gegeneinander	1
-Zeisig	1
-schönern	1
-stundenlanges	1
-Tue	1
-plagst	1
-suchte	1
-derjenige	1
-bestätigen	1
-bilden	1
-Anfang	1
-geraten	1
-Geständnisse	1
-überfallen	1
-bestärkten	1
-Flitterwochen	1
-vorhergehen	1
-Skrupel	1
-herauf	1
-Widerwillen	1
-erhabenern	1
-Narr	1
-Hasse	1
-Warten	1
-abgemalt	1
-Halssachen	1
-wunderlich	1
-närrische	1
-Glaubt	1
-erstaunen	1
-aufgeben	1
-verwünscht	1
-Spaß	1
-Orakel	1
-angeboten	1
-gefalle	1
-Gleiches	1
-Gleichem	1
-Meilen	1
-zerrissenen	1
-Leere	1
-Reife	1
-Lieblingsmeinung	1
-Entzückende	1
-Prediger	1
-überdrüssig	1
-fühlte	1
-aussprechen	1
-geschmolzen	1
-meinige	1
-vernünftig	1
-aufrichtig	1
-gegebenes	1
-angenehmste	1
-beigelegt	1
-Allernichtswürdigste	1
-wiederhole	1
-Gereist	1
-Brut	1
-biegt	1
-Pah	1
-Zorn	1
-Wahre	1
-Ansehens	1
-unhöflich	1
-dumm	1
-solls	1
-Zuflucht	1
-singt	1
-übrigen	1
-Studierstube	1
-hämtückischen	1
-Gleichgültig	1
-aufgebrachte	1
-melden	1
-schimpflichen	1
-fliegen	1
-fangen	1
-anzufangen	1
-Wahrscheinlichkeit	1
-kleinste	1
-Mode	1
-Wohnung	1
-Ernst	1
-rege	1
-egales	1
-käme	1
-Ohngefähr	1
-verderbt	1
-abgejagt	1
-wichtigen	1
-Hierseins	1
-erwecket	1
-austeilen	1
-Jenen	1
-bekannt	1
-Werkzeug	1
-gestellt	1
-rechnen	1
-mächtige	1
-bestanden	1
-ankäme	1
-denkende	1
-schönes	1
-begehen	1
-dunkler	1
-Umganges	1
-abgekühlt	1
-allerweitesten	1
-nötigten	1
-aufgedeckt	1
-stürmisch	1
-gewürdiget	1
-Erschreckliches	1
-ganzem	1
-Bestätigung	1
-geborne	1
-Lieber	1
-verlorne	1
-reif	1
-unparteiischer	1
-keinem	1
-Aufs	1
-Äußeres	1
-hilft	1
-großes	1
-herschrieben	1
-spottet	1
-Völkern	1
-packen	1
-desperate	1
-spöttisch	1
-suchst	1
-verhindert	1
-seht	1
-Irrungen	1
-allzusehr	1
-wirs	1
-Ausflucht	1
-Minute	1
-nennst	1
-Strahlen	1
-Wische	1
-dummen	1
-Stütze	1
-gründlichen	1
-dargegen	1
-vergebens	1
-allerliebste	1
-lebt	1
-Anlage	1
-gespart	1
-Hervor	1
-vortrefflichsten	1
-Verloren	1
-Weisheit	1
-aufgebracht	1
-Wünschen	1
-Heu	1
-verdienst	1
-Drohen	1
-Haupt	1
-Verbrecher	1
-schmeichle	1
-kindischen	1
-verließe	1
-Schwätzerin	1
-Geschöpfchen	1
-abgestiegen	1
-vielmal	1
-Geh	1
-ungerechtes	1
-Geräte	1
-Entschluß	1
-Munterkeit	1
-Trinkgeldern	1
-Anmut	1
-wütenden	1
-göttlichen	1
-loben	1
-schmackhaft	1
-bunt	1
-Einfälle	1
-schlimmer	1
-schlichte	1
-Verwirrung	1
-Hoffnung	1
-Wenigstens	1
-glaubten	1
-bestürzen	1
-schenkte	1
-stellten	1
-Unkosten	1
-Urheber	1
-Kopf	1
-hervorbringen	1
-beschreiben	1
-unendlich	1
-verstellen	1
-vorzöge	1
-leichtfertig	1
-siebenmal	1
-bewundere	1
-entfärben	1
-anmelden	1
-sparsamer	1
-Zweifeln	1
-gezittert	1
-fetten	1
-Tasche	1
-erteilt	1
-Mundwerk	1
-Stern	1
-Welch	1
-siehts	1
-Unabhängigkeit	1
-Worauf	1
-worauf	1
-Freidenker	1
-abwarten	1
-aufhören	1
-martern	1
-vorschlagen	1
-wen	1
-wem	1
-verwechseln	1
-Verlust	1
-Brauchen	1
-Bluts	1
-Männchen	1
-Eigentum	1
-vertrautesten	1
-angewandte	1
-Drum	1
-verhärten	1
-Geschmack	1
-wehmütigen	1
-Blitzmädel	1
-aufrichtigern	1
-hieß	1
-Gabe	1
-Fallen	1
-Schwarzröcken	1
-womit	1
-dennoch	1
-anbeißen	1
-Fortgehen	1
-unterbreche	1
-besonnen	1
-höflich	1
-leere	1
-beschließen	1
-Sag	1
-Gesetzgeber	1
-Ausnahmen	1
-Nennen	1
-Freigeiste	1
-spielende	1
-Empfindungen	1
-Geschick	1
-barmherzig	1
-Diantre	1
-stürzen	1
-wünschet	1
-nachgeben	1
-Rätsel	1
-wackern	1
-erheiratet	1
-darreicht	1
-Väter	1
-rechtfertigen	1
-gelesen	1
-neidisch	1
-vorschießen	1
-schimpflichsten	1
-betauern	1
-geringstes	1
-hetzen	1
-Laus	1
-Hauch	1
-Bocke	1
-gescholten	1
-wolle	1
-erhob	1
-mere	1
-unverrichteter	1
-verwandt	1
-leisten	1
-lachen	1
-Leibe	1
-murre	1
-diable	1
-ehemals	1
-Geplärre	1
-auszusetzen	1
-Abschlag	1
-abgeschmackte	1
-zweifelt	1
-davor	1
-Diener	1
-Infamer	1
-zweifeln	1
-anhaltendes	1
-Potz	1
-ärgerlich	1
-Stunden	1
-coquin	1
-vorsätzlich	1
-Philosophen	1
-Heuchelei	1
-Anfänge	1
-Haus	1
-bekömmt	1
-aufschlägt	1
-umgesehen	1
-ausgesprochen	1
-süßen	1
-freundlich	1
-Reize	1
-Weine	1
-ernstlich	1
-Aushalten	1
-reinigen	1
-Verwünschungen	1
-fische	1
-Vorsorge	1
-Gründliches	1
-Mäßigung	1
-Freigeister	1
-verwiesen	1
-belehre	1
-Schlimmste	1
-Kitzelung	1
-gefällige	1
+Lemma	POS	Frequency	Tokens
+Adrast	VVFIN, ADJD, VVPP, NN, TRUNC, ADJA, VVIMP, NE	118	Adrast
+sagen	VVFIN, VVPP, VVINF, VVIMP	104	sagt, gesagt, sagen, Sagen, sage, sagst, sagte, Sage, Sagte, Sag
+wohl	ADV	88	wohl, Wohl
+Theophan	NE, NN	86	Theophan
+wissen	VVFIN, VVINF, VVPP	85	Wissen, weiß, wissen, wißt, Weiß, wüßte, gewußt
+sehen	VVPP, VVFIN, VVINF, VVIMP	69	gesehen, sehe, Sehen, sehen, sieht, sah, Sieh, Sähe, sieh, siehst, Siehst, sähe, Seht, seht
+Herr	NN	68	Herren, Herr, Herrn
+gut	ADJD, ADJA	64	Gut, besser, beste, gut, gute, gutes, bessere, guten, guter, gutem, besten
+glauben	VVFIN, VVPP, VVINF	57	glauben, geglaubt, Glauben, glaube, glaubt, glaubte, Glaube, glaubten, glaubst, Glaubt
+lieben	VVINF, VVFIN	56	lieben, liebe, liebt, liebet, liebte, liebten
+gewiss	ADJD, ADJA	47	Gewiß, gewisse, gewisses, gewiß, gewissen
+Juliane	NE	43	Juliane
+hören	VVFIN, VVINF, VVIMP	42	Hören, hören, Höre, hört, höre, Hör, hörst, hörte
+eben	ADV	41	Eben, eben
+lieb	ADJD, ADJA	36	lieber, liebe, lieben, liebste, lieb, liebster, Lieber, Liebster
+Mann	NN	34	Mann, Manne, Männern, Mannes
+Art	NN	33	Art
+Wort	NN	31	Worte, Wort, Wortes, Worten
+Schwester	NN	31	Schwestern, Schwester
+finden	VVINF, VVFIN, VVPP	30	finden, findet, finde, Findest, gefunden, Finde, fand
+schön	ADJD, ADJA	29	schön, schöner, schöne, schönste, schönsten, schönen, schönes, Schön
+nehmen	VVINF, VVFIN, VVPP	27	nehmen, nehme, genommen, Nehmen, nimmt, nehmt
+allein	ADV, PTKVZ	27	allein, Allein
+Herz	NN	26	Herz, Herzen, Herzens
+Vetter	NN, NE	26	Vetter, Vettern
+ach	ITJ	26	Ach, ach
+Henriette	NE	25	Henriette
+Lisette	NE	25	Lisette
+reden	VVINF, VVFIN	25	reden, redet, rede, Reden
+gar	ADV	25	gar
+Mensch	NN	25	Mensch, Menschen
+kennen	VVFIN, VVPP, VVINF	24	kennen, kennten, gekannt, Kennen, kennet, kennt, Kennst, kenne
+Freundschaft	NN	24	Freundschaft
+Araspe	NN, ADJD	23	Araspe
+Person	NN	23	Person, Personen
+klein	ADJA, ADJD	23	kleiner, kleinen, kleine, kleines, klein, kleinste
+erst	ADV, ADJA	23	Erst, erste, ersten, erst, erstes
+Julianen	NN	23	Julianen
+vielleicht	ADV	22	vielleicht, Vielleicht
+denken	VVINF, VVFIN	22	denken, denke, dachte, Denken, denkst, denkt, dächte
+wahr	ADJD, ADJA	21	wahr, wahre, wahren, wahres
+bald	ADV	21	Bald, bald
+Auge	NN	20	Augen, Auge
+Gesicht	NN	19	Gesichte, Gesicht, Gesichts, Gesichter
+Wahrheit	NN	19	Wahrheiten, Wahrheit
+recht	ADJD, PTKVZ	18	Recht, recht
+Grund	NN	18	Grund, Grunde, Gründe, Gründen
+groß	ADJD, ADJA	18	groß, großen, großer, großes, große, größte
+wenige	PIAT, PIS	18	wenig, weniger
+Glück	NN	18	Glück
+zwei	CARD	18	Zwei, zwei, zweien
+Welt	NN	18	Welt
+diese	PDS	17	diese, dieses, Diesen, Diese, dieser, Dieses, diesen
+Hand	NN	17	Hand, Hände, Händen
+Leute	NN	17	Leute, Leuten
+unser	PPOSAT	17	unsere, unser, unserm, unsrer, unserer
+Recht	NN	17	Recht
+stehen	VVFIN, VVINF	17	stehen, steht, stehe, Stehen, stehet, stand
+ha	NE	17	ha
+Seite	NN	16	Seite, Seiten
+Geist	NN	16	Geiste, Geist, Geister, Geistes
+Liebe	NN	16	Liebe
+Wechsel	NN	15	Wechsel
+Ding	NN	15	Dinge, Dingen, Dinger, Ding
+Mühe	NN	15	Mühe
+Henrietten	NN	15	Henrietten
+kömmt	VVFIN, VVINF, ADJD	15	kömmt
+suchen	VVFIN, VVINF, VVPP	15	suche, suchte, suchst, sucht, suchen, gesucht
+Mamsell	NE, ADJA, NN	15	Mamsell
+weiter	PTKVZ, ADV	14	weiter, Weiter
+genug	ADV	14	genug
+nunmehr	ADV	14	nunmehr, Nunmehr
+einander	PRF	14	einander
+Lisidor	NE, NN	14	Lisidor
+Teufel	NN	14	Teufel
+erlauben	VVFIN, VVINF, VVPP	14	erlauben, Erlauben, erlaubt
+Ha	NE	13	Ha
+verstehen	VVFIN, VVPP, VVINF, VVIMP	13	verstehe, verstanden, versteht, verstehen, versteh
+ehrlich	ADJA	13	ehrlicher, ehrliche, ehrlichen, ehrlichsten
+lange	ADV	13	lange
+kurz	ADJD	13	kurz, kürzer, Kurz
+böse	ADJD, ADJA	13	böse, bösen
+antworten	VVINF, VVFIN	13	antworten, antworte
+Sache	NN	13	Sachen, Sache
+hassen	VVINF, VVFIN	13	hassen, hasse
+nennen	VVFIN, VVPP, VVINF	13	Nennen, nennen, nenne, genannt, nannten, nennst, nennte, nennt
+Umstand	NN	13	Umständen, Umstände
+sonst	ADV	13	sonst
+Seele	NN	13	Seelen, Seele
+setzen	VVPP, VVFIN, VVINF	13	gesetzt, setzt, Setzen, setzen, setze
+Rache	NN	12	Rache
+Zeit	NN	12	Zeit
+Religion	NN	12	Religion
+unmöglich	ADJD	12	unmöglich
+Martin	NE	12	Martin
+Mund	NN	12	Mund, Munde
+jen	PDAT, PDS	12	jene, jener, jenes, jenem, jenen, Jenes, Jener
+Leben	NN	12	Leben, Lebens
+Freund	NN	12	Freund, Freunde, Freunden
+Haus	NN	12	Hause, Haus
+vortrefflich	ADJD, ADJA	12	vortrefflich, vortrefflichsten, vortreffliche, Vortrefflich
+bezahlen	VVPP, VVINF, VVFIN	11	bezahlt, bezahlen, bezahle
+Augenblick	NN	11	Augenblick, Augenblicke, Augenblicken
+bitten	VVFIN, VVINF, VVPP	11	bitte, bitten, gebeten
+stellen	VVFIN, VVPP, VVINF	11	stellen, gestellt, Stellen, stellte, stellten
+ansehen	VVFIN, VVPP, VVINF, VVIZU	11	ansiehst, angesehen, ansieht, ansehen, anzusehen
+einzig	ADJA, ADJD	11	einzige, einziger, einzigen, einzig, einziges
+bekommen	VVINF, VVFIN, VVPP	11	bekommen, bekomme
+Gott	NN	11	Gott
+verlassen	VVINF, VVFIN, VVPP	11	verlassen, verließen, verließe, verlasse
+Feind	NN	11	Feinde, Feindes, Feind
+Verstand	NN	11	Verstandes, Verstande, Verstand
+oft	ADV	11	oft
+Mädchen	NN	10	Mädchen, Mädchens
+hoffen	VVINF, VVFIN	10	hoffen, Hoffe, hoffe
+Buch	NN	10	Buch, Bücher, Büchern
+spielen	VVFIN, VVPP, VVINF	10	spielt, spielst, spielen, gespielt
+unsre	PPOSAT	10	Unsre, unsre, unsern
+Atheist	NN	10	Atheist, Atheisten
+fragen	VVINF, VVFIN, VVPP	10	fragen, gefragt, fragst, frage, Fragst
+erfahren	VVFIN, VVPP, VVINF	10	erfuhr, erfahren
+endlich	ADV	10	endlich
+lachen	VVFIN, VVIMP, VVINF	10	lacht, lache, Lacht, lach, lachen
+lang	ADJD	10	länger, lang, Länger
+zurück	PTKVZ	10	zurück
+Pst	NN	10	Pst
+wünschen	VVFIN, VVINF	10	wünschen, wünsche, Wünschen, wünscht
+vergessen	VVFIN, VVINF, VVPP	9	vergessen, vergißt
+wahrhaftig	ADJD	9	Wahrhaftig, wahrhaftig
+Vergnügen	NN	9	Vergnügen
+wider	APPR	9	wider, Wider
+Tag	NN	9	Tag, Tages
+Absicht	NN	9	Absicht
+lernen	VVFIN, VVPP, VVINF	9	Lernen, gelernt, lernen
+merken	VVFIN, VVPP, VVINF	9	merke, gemerkt, merken
+bloß	ADJD, ADJA	9	bloß, bloße
+nötig	ADJD, ADJA	9	nötig, nötige, nötigen, nötigsten
+Nu	NN	9	Nu
+stark	ADJA, ADJD	9	starker, stärker, starken, stark
+treffen	VVFIN, VVINF	9	treffe, treffen, trifft
+fallen	VVFIN, VVINF	9	fallen, Fallen
+verlangen	VVFIN, VVINF, VVPP	9	verlange, verlangen, verlangt
+Blick	NN	9	Blick, Blicke
+jemals	ADV	8	jemals
+annehmen	VVFIN, VVPP, VVINF, VVIZU	8	annimmt, angenommen, annehmen, anzunehmen, annähme
+Tochter	NN	8	Töchtern, Töchter, Tochter
+anfangen	VVFIN, VVPP, VVIZU, VVINF	8	anfange, angefangen, anzufangen, anfangen
+schämen	VVFIN, VVINF	8	schämt, schämen, schäme
+Zweifel	NN	8	Zweifel
+deswegen	PAV	8	deswegen
+heißen	VVFIN	8	heißen, heißt, heiße, hieß
+glücklich	ADJD, ADJA	8	glücklich, glücklichen, glückliche, glücklichste
+ei	NE	8	Ei
+blind	ADJA, ADJD	8	blinden, blind, blinder, blinde
+Exempel	NN	8	Exempel, Exempeln
+alsdann	ADJD, VVFIN, ADJA	8	alsdann
+verlieren	VVPP, VVINF	8	verloren, Verloren, verlieren
+unschuldig	ADJA, ADJD	8	unschuldige, unschuldigen, unschuldiges, unschuldig
+Streich	NN	8	Streich, Streiche
+Vater	NN	8	Vaters, Vater, Väter
+Frauenzimmer	NN	8	Frauenzimmer
+Himmel	NN	8	Himmel, Himmels
+wenigstens	ADV	8	wenigstens, Wenigstens
+Pflicht	NN	8	Pflichten, Pflicht
+gern	ADV	8	gern
+erstaunen	VVFIN	8	erstaune, erstaunt, erstaunen
+einbilden	VVPP, VVINF, VVFIN	8	eingebildet, einbilden, einbilde
+vorhin	ADV	8	vorhin
+Schmeichelei	NN	8	Schmeichelei
+überlegen	VVFIN, VVINF	8	Überlegen, Überlege, überlegen, überlegt
+geschehen	VVFIN, VVINF, VVPP	7	geschieht, geschehen
+frei	ADJD	7	frei
+Rede|Reden	NN	7	Reden
+Fuß	NN	7	Fuß, Füße, Fuße
+Tugend	NN	7	Tugend, Tugenden
+verdienen	VVPP, VVFIN	7	verdient, verdienten, verdienst
+schweigen	VVIMP, VVINF	7	Schweig, schweigen, schweig
+Begriff	NN	7	Begriffe, Begriffen, Begriff
+gering	ADJA, ADJD	7	geringstes, gering, geringste, geringsten
+Meinung	NN	7	Meinungen, Meinung
+alt	ADJA, ADJD	7	alter, alte, altes, alten, ältesten, alt
+Theophans	NE	7	Theophans
+dadurch	PAV	7	dadurch
+zwingen	VVFIN, VVPP, VVINF	7	Zwingen, gezwungen, zwingen
+heute	ADV	7	heute
+gehören|hören	VVPP	7	gehört
+fast	ADV	7	fast, Fast
+erklären	VVFIN, VVINF	7	Erkläre, erklären, Erklären
+Mannsperson	NN	7	Mannsperson, Mannspersonen
+eifersüchtig	ADJD	7	eifersüchtig
+umsonst	ADV	7	Umsonst, umsonst
+verbinden	VVPP, VVFIN, VVINF	7	verbunden, verbinden
+Rede	NN	7	Rede
+Esel	NN	7	Esel
+etwa	ADV	7	etwa
+leben	VVINF, VVFIN	7	leben, lebt, Leben
+gleichwohl	ADV	7	gleichwohl
+weg	ADV, PTKVZ	7	weg
+freilich	ADV	7	freilich, Freilich
+erkennen	VVINF, VVFIN	7	erkennen, erkenne, erkannte
+seit	APPR, KOUS	7	seit, Seit
+voraus	ADV, PTKVZ	6	voraus
+laß	ADJD	6	laß
+Araspen	NN	6	Araspen
+niemand	PIS	6	niemand, niemanden
+Wille	NN	6	Willen
+brauchen	VVINF, VVFIN	6	brauchen, Brauchen, braucht
+weniger	ADV	6	weniger
+Gedanke	NN	6	Gedanken
+Gesinnung	NN	6	Gesinnungen, Gesinnung
+Vernunft	NN	6	Vernunft
+schwach	ADJA, ADJD	6	schwachen, schwach
+Schande	NN	6	Schande, Schanden
+nie	ADV	6	nie
+niemals	ADV	6	niemals
+nu	ITJ	6	Nu, nu
+Tat	NN	6	Taten, Tat
+Summe	NN	6	Summe
+Verdacht	NN	6	Verdacht, Verdachte, Verdachts
+Stand	NN	6	Standes, Stande, Stand
+Name	NN	6	Namen, Name
+Geduld	NN	6	Geduld
+Weg	NN	6	Weg, Wege
+verzeihen	VVFIN, VVPP, VVINF	6	Verzeihen, verziehen, Verzieh, verzeihen
+breit	ADJD	6	breit
+übel	ADJD	6	übel
+Daumen	NN	6	Daumen
+drohen	VVFIN	6	drohe, drohen, Drohen
+Unglück	NN	6	Unglück
+Hölle	NN	6	Hölle
+vollkommen	ADJD, ADJA	6	vollkommen, vollkommene
+Mittel	NN	6	Mittel
+Ursache	NN	6	Ursachen, Ursache
+Freude	NN	6	Freude, Freuden
+Fehler	NN	6	Fehler, Fehlern
+richten	VVINF	6	richten
+künftig	ADJA, ADJD	6	künftiger, künftigen, künftiges, künftig
+Gelegenheit	NN	6	Gelegenheit
+beschließen	VVPP, VVINF	6	beschlossen, beschließen
+Anmerkung	NN	6	Anmerkung, Anmerkungen
+anhören	VVINF, VVIZU	6	anhören, anzuhören
+gestehen	VVINF, VVFIN	6	gestehen
+danken	VVINF, VVFIN	6	danken, danke
+heraus	PTKVZ, ADV	6	heraus
+Vertrauen	NN	6	Vertrauen
+Anbeter	NN	6	Anbeter
+Adrasten	NN	5	Adrasten
+sicher	ADJD, ADJA	5	sicherer, sichersten, sicher
+versprechen	VVPP, VVFIN	5	versprochen, versprechen, versprach
+einen	ADJA	5	einen
+dasjenige	PDS	5	dasjenige
+Gewalt	NN	5	Gewalt
+Verbindung	NN	5	Verbindung
+vielmehr	ADV	5	vielmehr
+fangen	VVFIN, VVINF	5	Fingst, fängt, fange, fangen
+Verachtung	NN	5	Verachtung
+wenig	ADV	5	wenig
+vernünftig	ADJA, ADJD	5	vernünftiges, vernünftige, vernünftig
+jetzo	ADJD	5	jetzo
+Geschlecht	NN	5	Geschlecht, Geschlechts, Geschlechte, Geschlechtern
+gönnen	VVFIN, VVINF	5	gönne, gönnen
+kosten	VVINF, VVFIN	5	kosten, kostet
+weiblich	ADJA	5	weiblichen, weibliche
+leiden	VVINF, VVFIN	5	leiden, leidet
+fort	PTKVZ, ADV	5	fort, Fort
+führen	VVINF, VVFIN, VVPP	5	führen, Führen, geführt
+selber	ADV	5	selber
+Probe	NN	5	Probe
+Nacht	NN	5	Nacht
+Ansehen	NN	5	Ansehens, Ansehen
+schlecht	ADJA, ADJD	5	schlechte, schlecht, Schlechtere
+freuen	VVINF, VVFIN	5	freuen, Freuen
+verachten	VVFIN, VVINF, VVPP	5	verachte, verachten, verachtet
+fallen|fällen	VVFIN	5	fällt, Fällt
+darin	PAV	5	darin, Darin
+ungerecht	ADJA, ADJD	5	ungerechtes, ungerecht, ungerechte
+artig	ADJA	5	artige, artiges, artigste, artigen
+fein	ADJA, ADJD	5	feine, fein, Fein
+empfinden	VVPP, VVFIN, VVINF	5	empfunden, empfindet, empfinden
+Schönheit	NN	5	Schönheit, Schönheiten
+Aberglaube	NN	5	Aberglaubens, Aberglauben
+Ehre	NN	5	Ehre
+Verdruss	NN	5	Verdruß
+Stille	NN	5	Stille
+elend	ADJA, ADJD	5	elenden, elend, Elende, elendes
+Kleinigkeit	NN	5	Kleinigkeit
+Wein	NN	5	Wein, Weine
+rächen	VVINF, VVFIN	5	rächen, räche
+darum	PAV	5	darum
+edel	ADJD, ADJA	5	edel, edlere, edles
+weißen	VVFIN	5	weißt
+ablegen	VVINF, VVIZU, VVPP	5	ablegen, abzulegen, abgelegt
+zufrieden	ADJD	5	zufrieden
+fromm	ADJA, ADJD	5	fromme, frommen, fromm
+ruhig	ADJA, ADJD	5	ruhige, ruhig, Ruhig
+überall	ADV	5	überall
+Irrtum	NN	5	Irrtümern, Irrtümer, Irrtum
+fühlen	VVFIN, VVINF	5	fühlte, fühle, fühlt, fühlen
+hinter	APPR	5	hinter
+helfen	VVFIN, VVINF	5	Hülfe, helfen, Helfen, hilft
+Begierde	NN	5	Begierde
+Kredit	NN	5	Kredit
+schmeicheln	VVINF, VVFIN	5	schmeicheln, schmeichle
+liebenswürdig	ADJA, ADJD	5	liebenswürdige, liebenswürdigste, liebenswürdigere, liebenswürdig
+morgen	ADV	5	morgen, Morgen
+verächtlich	ADJA, ADJD	5	verächtlicher, verächtlich
+einerlei	PIAT, ADV	5	einerlei
+vorstellen	VVIZU, VVFIN, VVINF	5	vorzustellen, vorstellten, vorstellen
+Pöbel	NN	5	Pöbel
+zeigen	VVINF, VVFIN	5	zeigen, zeigt
+spotten	VVINF, VVFIN	5	spotten, spottet
+allezeit	ADV	5	allezeit
+scherzen	VVFIN, VVINF	5	scherzen, scherze, scherzt
+Überlegung	NN	5	Überlegung, Überlegungen
+wild	ADJA	5	wilde, wilder, wilden, wildes
+Zierde	NN	5	Zierde
+Hochachtung	NN	5	Hochachtung
+Wohltat	NN	5	Wohltat, Wohltaten
+Spötterei	NN	5	Spöttereien, Spötterei
+unterbrechen	VVFIN, VVINF	5	unterbreche, unterbrechen
+Lust	NN	5	Lüsten, Lust
+niederträchtig	ADJA, ADJD	4	niederträchtigen, niederträchtige, niederträchtig
+Charakter	NN	4	Charakter
+Richter	NN, NE	4	Richter
+Bürgschaft	NN	4	Bürgschaft, Bürgschaften
+Lärm	NN	4	Lärm
+Miene	NN	4	Miene
+A	NN, FM	4	A
+richtig	ADJA, ADJD	4	richtige, richtig
+Hülfe	NN	4	Hülfe
+überladen	VVPP, ADJA, VVINF	4	überladen, überladene
+unterscheiden	VVINF, VVPP, VVFIN	4	unterscheiden, unterschieden, unterscheide
+Freigeist	NN	4	Freigeist, Freigeister, Freigeistes
+verraten	VVFIN, VVPP	4	verrät, verraten
+entschuldigen	VVINF, VVFIN	4	entschuldigen, entschuldige
+angenehm	ADJA, ADJD	4	angenehme, angenehmste, angenehm
+Einfall	NN	4	Einfall, Einfälle
+Fromme	NN	4	Fromme
+Erlaubnis	NN	4	Erlaubnis
+legen	VVPP, VVINF, VVFIN	4	gelegt, legen, lege
+unglücklich	ADJD, ADJA	4	unglücklich, unglückliche, unglückliches
+dieselb	PDAT	4	derselben, demselben
+Eigenschaft	NN	4	Eigenschaften
+gewinnen	VVFIN, VVINF	4	gewinnt, gewinnen
+Punkt	NN	4	Punkt, Punkte
+Ho	NE	4	Ho
+stecken	VVINF, VVFIN	4	stecken, Stecken
+Geständnis	NN	4	Geständnis, Geständnisse
+Stück	NN	4	Stücken, Stücke
+Schwachheit	NN	4	Schwachheiten, Schwachheit
+scharf	ADJD, ADJA	4	schärfer, scharf, scharfe
+Schuldner	NN	4	Schuldner
+zeihen|ziehen	VVFIN	4	Zieht, ziehen, zieht
+behaupten	VVFIN, VVINF	4	behauptet, behaupten
+fehlen	VVFIN	4	fehlt, fehlte
+Vermögen	NN	4	Vermögens, Vermögen
+verlieben	VVPP	4	verliebt
+schlimm	ADJD, ADJA	4	schlimmer, schlimm, schlimmsten, schlimme
+Larve	NN	4	Larve
+halb	ADJA, ADJD	4	halben, halb
+erweisen	VVPP, VVINF, VVFIN	4	erwiesen, erweisen
+ihrige	PPOSAT	4	Ihrige, ihrigen
+behalten	VVFIN, VVINF	4	behalte, behalten
+Ermahnung	NN	4	Ermahnung
+fassen	VVINF, VVFIN	4	fassen, Fassen
+betrachten	VVPP, VVFIN, VVINF	4	betrachtet, betrachten
+Güte	NN	4	Güte
+Lustige	NN	4	Lustige
+Spitzbube	NN	4	Spitzbube
+zittern	VVFIN, VVINF, VVPP	4	zittert, zittere, zittern, gezittert
+begegnen	VVPP, VVINF	4	begegnet, begegnen
+Stelle|Stellen	NN	4	Stellen
+hieher	NN	4	hieher
+entgegen	PTKVZ, APPR	4	entgegen
+erinnern	VVFIN	4	erinnern, erinnere
+zanken	VVINF, VVPP	4	zanken, gezankt
+gesetzt	ADJA, ADJD	4	gesetzte, gesetztes, Gesetzt
+notwendig	ADJD, ADJA	4	Notwendig, notwendigen, notwendig
+wohin	PWAV	4	wohin, Wohin
+ersparen	VVFIN, VVINF	4	ersparen, erspare
+Körper	NN	4	Körper, Körpers
+grausam	ADJA, ADJD	4	grausames, grausame, grausam
+eilen	VVFIN, VVINF	4	eile, eilen
+aufs	APPRART	4	aufs, Aufs
+verliebt	ADJD	4	verliebt
+nimmermehr	ADV	4	nimmermehr
+Vollkommenheiten	NN	4	Vollkommenheiten
+Streitigkeit	NN	4	Streitigkeit
+dumm	ADJD, ADJA	4	dumm, dummer, dummen
+fähig	ADJD	4	fähig
+klug	ADJD	4	klug
+Kind	NN	4	Kind, Kinder
+weder	KON	4	weder
+Natur	NN	4	Natur
+beweisen	VVINF, VVPP	4	beweisen, bewiesen
+Aufrichtigkeit	NN	4	Aufrichtigkeit
+gelingen	VVINF	4	gelingen
+vermuten	VVINF, VVFIN	4	vermuten, Vermuten, vermute
+schwatzen	VVINF, VVPP, VVFIN	4	schwatzen, geschwatzt, schwatzt
+erteilen	VVINF, VVPP, VVFIN	4	erteilen, erteilt, erteile
+Versicherung	NN	4	Versicherungen, Versicherung
+Lobrede	NN	4	Lobrede
+Johann	NE	4	Johann
+Hochzeit	NN	4	Hochzeit
+zwischen	APPR	4	zwischen
+klar	ADJA, ADJD	4	klarer, klar
+Erklärung	NN	4	Erklärung
+ausdrücken	VVIZU, VVPP	4	auszudrücken, ausgedrückt
+Beleidigung	NN	4	Beleidigungen
+fröhlich	ADJA	4	fröhlichen, fröhliche
+Kompliment	NN	4	Kompliment
+Anfang	NN	4	Anfänge, Anfangs, Anfang
+heilig	ADJA, ADJD	4	heilige, heilig, heiligen
+ists	VVFIN	4	ists
+gefallen	VVFIN, VVINF	4	gefällt, gefallen, gefalle
+Schwierigkeit	NN	4	Schwierigkeit
+besinnen	VVFIN, VVPP, VVINF	4	besinnen, besinnst, besonnen
+Vorwurf	NN	4	Vorwürfe
+längst	ADV	4	längst
+entdecken	VVPP, VVINF	4	entdeckt, entdecken
+Einbildung	NN	4	Einbildungen
+Geld	NN	4	Geld, Gelde, Geldes
+diejenige	PDS	4	Derjenige, diejenige, derjenige, derjenigen
+ankömmt	VVFIN	4	ankömmt
+ho	VVFIN	4	ho
+Sprache	NN	3	Sprache
+pflegen	VVFIN, VVINF	3	pflegt, pflegen
+Misstrauen	NN	3	Mißtrauen
+überzeugen	VVPP, VVINF	3	überzeugt, überzeugen
+Gleiche	NN	3	Gleiches, Gleichem, Gleichen
+Gegenstand	NN	3	Gegenstand, Gegenstande
+nachteilig	ADJA	3	nachteiligen, nachteiliger, nachteilige
+Winkel	NN	3	Winkel
+Blut	NN	3	Blut, Bluts, Blute
+Weise	NN	3	Weise
+Bäcker	NN	3	Bäcker
+falsch	ADJA	3	falsche, falschen
+dieselbe	PDS	3	demselben, dieselben, derselben
+Widerspruch	NN	3	Widersprüche, Widerspruch
+armselig	ADJA	3	armseligen, armselige
+raten	VVFIN, VVINF	3	rate, raten
+deutsch	ADJD	3	deutsch
+herkommen	VVPP, VVINF	3	hergekommen, herkommen
+verbieten	VVFIN, VVINF, VVPP	3	verbiete, verbieten, verboten
+Gang	NN	3	Gang
+durchaus	ADV	3	durchaus
+leugnen	VVPP, VVINF, VVFIN	3	geleugnet, leugnen, leugnet
+Empfindung	NN	3	Empfindungen, Empfindung
+Gegenteil	NN	3	Gegenteil, Gegenteile
+Schwören	NN	3	Schwören
+brennen	VVFIN	3	brennt, brenne
+erhalten	VVFIN, VVINF	3	erhielte, erhalten, erhält
+fürchten	VVFIN	3	fürchten, fürchtest, fürchte
+verdrießlich	ADJD, ADJA	3	verdrießlich, verdrießlichen
+ehrwürdig	ADJA	3	ehrwürdige, ehrwürdigen
+Überzeugung	NN	3	Überzeugung
+fest	ADJD	3	fest
+erzählen	VVFIN, VVINF	3	erzählen
+ankommen	VVINF, VVFIN	3	ankommen, ankäme
+Beweis	NN	3	Beweis, Beweise
+Lache|Lachen	NN	3	Lachen
+stoßen	VVPP, VVFIN	3	gestoßen, stößt
+Ton	NN	3	Tone, Töne, Ton
+Bediente	NN	3	Bediente, Bedienten
+Grad	NN	3	Grade, Grad
+jemand	PIS	3	jemand, jemanden
+Schwiegersohn	NN	3	Schwiegersohn, Schwiegersöhne
+aufnehmen	VVFIN, VVINF	3	aufnimmt, aufnehmen
+widerfahren	VVINF, VVPP	3	widerfahren
+Erstaunen	NN	3	Erstaunen
+Kanne	NN	3	Kanne
+Falschheit	NN	3	Falschheit
+Bedenklichkeit	NN	3	Bedenklichkeiten
+Geistliche	NN	3	Geistlichen
+Gute	NN	3	Gutes, Gute
+aussetzen	VVIZU, VVPP	3	auszusetzen, ausgesetzt
+vorsichtig	ADJD	3	vorsichtig
+Freundlichkeit	NN	3	Freundlichkeit
+beurteilen	VVINF, VVFIN	3	beurteilen
+großmütig	ADJD, ADJA	3	großmütig, großmütiger
+stolz	ADJA, ADJD	3	stolzen, stolz
+Lisidors	NN	3	Lisidors
+Mamsells	NN, NE	3	Mamsells
+menschlich	ADJA	3	menschlichen, menschliche
+still	ADJA, ADJD	3	stillen, Still, still
+meiste	PIS	3	meisten
+tauschen	VVFIN, VVINF	3	tauscht, tauschen
+werfen	VVINF, VVFIN	3	werfen, wirft
+irre	ADJD, PTKVZ	3	irre
+Gerechtigkeit	NN	3	Gerechtigkeit
+List	NN	3	List
+umsehen	VVPP, VVFIN	3	umgesehen, umsieht
+schlagen	VVINF, VVPP	3	schlagen, geschlagen
+ähnlich	ADJA	3	ähnlicher, ähnlichen
+ewig	ADJD	3	ewig
+wert	ADJD	3	wert
+unterdessen	ADV	3	Unterdessen, unterdessen
+Vierte	NN	3	Vierten
+geschwind	ADJD	3	geschwind, Geschwind
+Bitte	NN	3	Bitte
+aufsuchen	VVINF, VVIZU	3	aufsuchen, aufzusuchen
+Mädel	NN	3	Mädel
+Werk	NN	3	Werk, Werken
+Glücke	NN	3	Glücke
+herum	APZR, PTKVZ	3	herum
+sauer	ADJD	3	sauer
+zugleich	ADV	3	zugleich
+sinnen	VVFIN, VVPP	3	sinnen, sann, gesonnen
+seufzen	VVPP, VVINF	3	geseufzt, seufzen
+Frömmigkeit	NN	3	Frömmigkeit
+Trinkgeld	NN	3	Trinkgeld, Trinkgeldern, Trinkgelder
+erzeigen	VVFIN, VVINF	3	erzeigen
+schicken	VVFIN	3	schickte, schickt
+meinet	VVFIN	3	meinet
+tausendmal	ADV	3	tausendmal
+Neigung	NN	3	Neigung
+zürnen	VVFIN, VVINF, VVPP	3	Zürne, zürnen, gezürnt
+ehe	KOUS	3	ehe
+euer	PPOSAT	3	eure, euer
+Schwager	NN	3	Schwager
+pfui	ITJ	3	Pfui, pfui
+schätzen	VVPP, VVINF	3	geschätzt, schätzen
+gibts	NN	3	gibts
+heftig	ADJD, ADJA	3	heftig, heftigen
+empfindlich	ADJD	3	empfindlicher, empfindlich
+Vorzug	NN	3	Vorzüge, Vorzug
+derselbe	PDS	3	denselben, desselben
+laut	ADJD	3	lauter, laut
+hervor	ADV, PTKVZ	3	Hervor, hervor
+Liebhaber	NN	3	Liebhaber
+Türe	NN	3	Türe
+vernichten	VVINF, VVFIN	3	vernichten, vernichte, vernichtet
+lustig	ADJD	3	lustig, Lustig
+Bezahlung	NN	3	Bezahlung
+französisch	ADJD	3	Französisch, französisch
+gegenwärtig	ADJD, ADJA	3	gegenwärtig, gegenwärtige
+Geliebte	NN	3	Geliebte
+rasend	ADJD, ADJA	3	rasend, Rasendes
+deutlich	ADJD	3	deutlich
+Schlingel	NN	3	Schlingel
+Tausch	NN	3	Tausche, Tausch
+heiraten	VVINF, VVFIN	3	heiraten, heiratet
+Anblick	NN	3	Anblick, Anblicke
+tausend	CARD	3	tausend
+Rat	NN	3	Rat
+diejenig	PDAT	3	derjenigen, diejenige
+Schritt	NN	3	Schritt
+Haar	NN	3	Haaren, Haar, Haare
+irren	VVINF, VVFIN	3	irren
+riechen	VVFIN	3	rieche, riechst
+Atomis	NN	3	Atomis
+äußern	VVINF, VVPP	3	äußern, geäußert
+urteilen	VVINF, VVFIN	3	urteilen, Urteilen
+unterdrücken	VVINF, VVFIN	3	unterdrücken, unterdrückte
+getrost	ADV	3	getrost
+Glied|Gliedern	NN	3	Gliedern
+Großmut	NN	3	Großmut
+Notwendigkeit	NN	3	Notwendigkeit
+Henriettens	NN, NE	3	Henriettens
+Dank	NN	3	Dank
+zusammen	PTKVZ, ADV	3	zusammen
+Jungfer	NN	3	Jungfer, Jungfern
+Heirat	NN	3	Heirat
+Bitterkeit	NN	3	Bitterkeit
+fällen	VVINF, VVPP	3	fällen, gefällt
+ungewiss	ADJD	3	ungewiß
+Dienst	NN	3	Dienst
+seinetwegen	ADV	3	seinetwegen
+verleugnen	VVPP, VVINF	3	verleugnet, verleugnen
+meinetwegen	ADV	3	meinetwegen
+Papa	NN	3	Papa
+Betragen	NN	3	Betragen, Betragens
+leicht	ADJD, ADJA	3	leicht, leichte
+fallen|gefallen	VVPP	3	gefallen
+Schurke	NN	3	Schurke
+verfallen	VVPP	3	verfallen
+verwirren	VVFIN, VVINF, VVPP	3	verwirren, verwirrt
+rauben	VVINF, VVPP	3	rauben, geraubt
+Weib	NN	3	Weib
+Ruhm	NN	3	Ruhm
+reich	ADJA, ADJD	3	reichen, reich
+gütig	ADJD	3	gütig
+befehlen	VVPP, VVINF	3	befohlen, befehlen
+verschonen	VVINF, VVFIN	3	verschonen, verschone, verschont
+paar	PIAT, PIS	3	Paar
+Folge	NN	3	Folgen, Folge
+gleichgültig	ADJD	3	Gleichgültig, gleichgültig
+warten	VVFIN	3	warten, Warte, Warten
+reißen	VVPP, VVFIN, VVINF	3	gerissen, reißt, reißen
+Philosoph	NN	3	Philosoph, Philosophen
+Teil	NN	3	Teil
+kaum	ADV	3	kaum, Kaum
+Narr	NN	3	Narr, Narren
+einnehmen	VVPP	3	eingenommen
+wunderlich	ADJD, ADJA	3	wunderlich, Wunderlicher, wunderliches
+gedenken	VVFIN, VVINF	3	gedenkt, gedenke, gedenken
+dahin	PAV	3	dahin
+hässlich	ADJD, ADJA	3	häßlicher, häßlich, häßlichen
+Glas	NN	3	Glase, Glas
+Schluss	NN	3	Schluß
+dawider	ADV	3	dawider
+Stelle	NN	3	Stelle
+vier	CARD	3	viere, vier
+bessern	VVFIN, VVINF	3	bessern
+fremd	ADJA	3	fremden, fremder
+Ungeheuer	NN	3	Ungeheuer
+Entfernung	NN	3	Entfernung
+Kopf	NN	3	Kopf, Kopfe
+vermehren	VVINF	3	vermehren
+Grundsatz	NN	3	Grundsätzen, Grundsätze
+Schwiegervater	NN	3	Schwiegervater, Schwiegervaters
+Hassen	NN	3	Hassen
+handeln	VVINF	3	handeln
+oben	ADV	3	oben
+eins	CARD	3	eins
+drein	ADV	3	drein
+übrig	ADJA, ADJD	3	übrigen, übrig
+zweifeln	VVINF, VVFIN	3	zweifeln, zweifelt, Zweifeln
+treten	VVINF, VVFIN	3	treten, tritt
+vorschreiben	VVIZU	2	vorzuschreiben
+Ehe	NN	2	Ehe
+Liebste	NN	2	Liebster, Liebste
+Platz	NN	2	Platze
+Tausend	NN	2	Tausend
+recht|rechts	ADJA	2	rechte, rechten
+Umgang	NN	2	Umganges, Umgang
+Wörtchen	NN	2	Wörtchen
+verfolgen	VVPP, VVFIN	2	verfolgt
+Überfluss	NN	2	Überflusse, Überfluß
+Zeug	NN	2	Zeug
+vorig	ADJA	2	vorigen
+allzuwohl	ADJD	2	allzuwohl
+Nachsicht	NN	2	Nachsicht
+los	ADJD, PTKVZ	2	los
+zuwider	PTKVZ, APPO	2	zuwider
+Stube	NN	2	Stube
+Geschäft	NN	2	Geschäfte
+fortgehen	VVINF	2	fortgehen
+springen	VVINF, VVFIN	2	springen, springe
+Abschied	NN	2	Abschied
+Großmutter	NN	2	Großmutter
+hundert	CARD	2	hundert
+schwesterlich	ADJA	2	schwesterliche
+gebieten	VVFIN	2	gebietet
+gelassen	ADJD	2	gelassen
+Proselyt	NN	2	Proselyten
+zuschwören	VVFIN	2	zuschwören
+Gestalt	NN	2	Gestalt
+beklagen	VVFIN, VVINF	2	beklage, beklagen
+anlegen	VVPP, VVINF	2	angelegt, anlegen
+Julchen	NN	2	Julchen
+scheinet	VVFIN	2	scheinet
+Urteil	NN	2	Urteils, Urteil
+Horn	NN	2	Hörner
+Ernste	NN	2	Ernste
+mürrisch	ADJA	2	mürrisches, mürrischen
+gefährlich	ADJA	2	gefährlichste, gefährliche
+Freigeisterei	NN	2	Freigeisterei
+laufen	VVFIN	2	läuft
+albern	ADJD	2	albern
+Schwarzrock	NN	2	Schwarzröcken, Schwarzröcke
+kitzeln	VVPP	2	gekitzelt, Gekitzelt
+Unmöglichkeit	NN	2	Unmöglichkeit
+Anschlag	NN	2	Anschlag
+Lobspruch	NN	2	Lobsprüche, Lobspruch
+herauskommen	VVINF	2	herauskommen
+Macht	NN	2	Macht
+erben	VVFIN	2	erbt, erbte
+de	NE	2	de
+gehn	VVFIN	2	gehn
+Mademoisell	VVFIN, ADJA	2	Mademoisell
+Zins	NN	2	Zinsen
+abbrechen	VVINF, VVPP	2	abbrechen, abgebrochen
+wachsen	VVPP	2	gewachsen
+schreiben	VVINF	2	schreiben
+enthalten	VVPP, VVFIN	2	enthalten, enthält
+brav	ADJA	2	brave, braver
+Wendung	NN	2	Wendung
+freundlich	ADJA, ADJD	2	freundlichen, freundlich
+Vorurteil	NN	2	Vorurteil, Vorurteile
+Wut	NN	2	Wut
+Trinken	NN	2	Trinken
+Krankheit	NN	2	Krankheit
+wenden	VVFIN	2	wenden, wendet
+manche	PIAT	2	manche, manches
+strengen	VVFIN	2	strenge
+Unternehmen	NN	2	Unternehmen
+Adrasts	NN	2	Adrasts
+Verwandtschaft	NN	2	Verwandtschaft
+ohngefähr	ADJD	2	ohngefähr
+Lächeln	NN	2	Lächeln
+verlangt	ADJA	2	verlangte
+Leidenschaft	NN	2	Leidenschaften
+hierher	PAV	2	hierher
+bereit	ADJD	2	bereit
+ersetzen	VVINF	2	ersetzen
+Versprechen	NN	2	Versprechen
+missbrauchen	VVINF	2	mißbrauchen
+Beste	NN	2	Beste
+Billigkeit	NN	2	Billigkeit
+überwinden	VVPP	2	überwunden
+Volk	NN	2	Völkern, Volk
+Ehemann	NN	2	Ehemänner, Ehemann
+entfallen	VVFIN	2	entfielen, entfallen
+Verstellung	NN	2	Verstellung
+Eifersucht	NN	2	Eifersucht
+gehören	VVFIN	2	gehören, gehöre
+nachsagen	VVINF	2	nachsagen
+hurtig	ADJD	2	hurtig, Hurtig
+Juchhei	NE	2	Juchhei
+Pünktchen	NN	2	Pünktchen
+entzücken	VVFIN, VVINF	2	entzücken
+schwerlich	ADJD	2	schwerlich
+Kömmt	VVFIN, NN	2	Kömmt
+bezeugen	VVPP, VVFIN	2	bezeugt, bezeugte
+Rank	NN	2	Ränke
+sogar	ADV	2	sogar
+schrecklich	ADJA, ADJD	2	schreckliches, schrecklich
+wiederholen	VVINF, VVFIN	2	wiederholen, wiederhole
+Unrecht	NN	2	Unrecht
+Verächter	NN	2	Verächter
+versuchen	VVINF, VVFIN	2	versuchen
+Übereinstimmung	NN	2	Übereinstimmung
+Ihret	NE	2	Ihret
+unparteiisch	ADJA, ADJD	2	unparteiisches, unparteiischer
+worüber	PWAV	2	worüber
+Wirkung	NN	2	Wirkung
+entfernen	VVFIN, VVPP	2	entferne, entfernt
+bestreben	VVINF	2	bestreben
+Sage	NE	2	Sage
+würdig	ADJD, ADJA	2	würdig, würdigen
+Narre	NN	2	Narre
+ungläubig	ADJA, ADJD	2	ungläubigen, ungläubig
+unwürdig	ADJD	2	unwürdig
+schieben	VVFIN, VVINF	2	schob, schieben
+Vieh	NN	2	Vieh
+erträglich	ADJD	2	erträglich, erträglicher
+Stärke	NN	2	Stärke
+betrügen	VVPP	2	betrogen
+beibringen	VVIZU	2	beizubringen
+drücken	VVPP, VVINF	2	gedrückt, drücken
+Ordnung	NN	2	Ordnung
+außer	KOUS, APPR	2	außer
+schmecken	VVFIN	2	schmeckt
+schuldig	ADJD	2	schuldig
+Dummkopf	NN	2	Dummkopf
+Stellung	NN	2	Stellung
+vorbringen	VVIZU, VVFIN	2	vorzubringen, vorbringe
+bemerken	VVPP	2	bemerkt
+beschämen	VVFIN, VVINF	2	beschämt, beschämen
+Bescheidenheit	NN	2	Bescheidenheit
+Kerl	NN	2	Kerl
+unsrig	PPOSAT	2	unsrigen
+erregen	VVPP	2	erregt
+vielweniger	ADJD	2	vielweniger
+bekümmern	VVINF	2	bekümmern
+Großmama	NN	2	Großmama
+aufhören	VVFIN	2	aufhören, aufhört
+Heuchler	NN	2	Heuchler
+schwer	ADJD	2	schwer, schwerer
+Vorstellung	NN	2	Vorstellungen, Vorstellung
+Ecke	NN	2	Ecke
+versichern	VVPP, VVINF	2	versichert, versichern
+Wert	NN	2	Wert
+wohlweiser	ADJA	2	wohlweiser
+gehörig	ADJA	2	gehörige
+verwünschen	VVINF, VVFIN	2	verwünschen, verwünscht
+verdammen	VVPP, VVINF	2	Verdammt, verdammen
+Armut	NN	2	Armut
+Verteidiger	NN	2	Verteidiger
+krank	ADJD	2	krank
+Verteidigung	NN	2	Verteidigung
+erschaffen	VVPP	2	erschaffen
+ausstellen	VVFIN, VVINF	2	ausstellten, ausstellen
+entstehen	VVINF	2	entstehen
+Abend	NN	2	Abend
+bereden	VVFIN	2	beredet, bereden
+anwenden	VVFIN, VVINF	2	anwendest, anwenden
+Falle	NN	2	Falle
+auslachen	VVINF, VVIZU	2	auslachen, auszulachen
+Fremde	NN	2	Fremden
+Knieen	NN	2	Knieen
+wozu	PWAV	2	wozu
+destoweniger	ADJA, VVFIN	2	destoweniger
+Geringste	NN	2	Geringste
+Beschaffenheit	NN	2	Beschaffenheit
+liegend	ADJA	2	liegende
+Nächste	NN	2	Nächsten
+gebrauchen	VVFIN, VVINF	2	gebrauchen
+Betrachtung	NN	2	Betrachtung
+diejenigen	PDAT, PDS	2	diejenigen
+einlassen	VVINF, VVPP	2	einlassen, eingelassen
+fodern	VVINF, NN	2	fodern
+beibehalten	VVPP	2	beibehalten
+worauf	PWAV	2	Worauf, worauf
+Spiel	NN	2	Spiel
+Gründlichkeit	NN	2	Gründlichkeit
+redlich	ADJA, ADJD	2	redlichen, redlich
+dienen	VVINF	2	dienen
+verleiten	VVINF, VVFIN	2	verleiten, verleitet
+billig	ADJD	2	billig
+gewaltig	ADJD	2	gewaltig
+schade	ADJD	2	Schade
+begleiten	VVINF	2	begleiten
+leichtsinnig	ADJA, ADJD	2	leichtsinnigen, leichtsinniger
+Freimütigkeit	NN	2	Freimütigkeit
+verzweifeln	VVPP, VVFIN	2	Verzweifelt, verzweifle
+Verdienst	NN	2	Verdienste, Verdienst
+besitzen	VVFIN	2	besitzen
+ausmachen	VVFIN, VVINF	2	ausmacht, ausmachen
+streiten	VVFIN, VVPP	2	streitet, gestritten
+erheben	VVFIN, VVPP	2	erhob, erhoben
+Gewissen	NN	2	Gewissen
+St	NE	2	St
+Lauterkeit	NN	2	Lauterkeit
+herunter	PTKVZ	2	herunter
+Bedacht	NN	2	Bedacht
+betauren	ADJA, NN	2	betauren
+widersprechen	VVFIN, VVINF	2	widersprechen
+Knoten	NN	2	Knoten
+Fall	NN	2	Fall
+übergehen	VVPP	2	übergangen
+zehnmal	ADV	2	zehnmal
+abscheulich	ADJA	2	abscheuliche, abscheulicher
+Schwesterchen	NN	2	Schwesterchen
+gleichsam	ADJD	2	gleichsam
+Wechsler	NN	2	Wechsler
+flüchtig	ADJA	2	flüchtigen, flüchtige
+Fuchs	NN	2	Fuchs
+Julianens	NN	2	Julianens
+dirs	NN	2	dirs
+Muster	NN	2	Muster
+kriegen	VVPP, VVFIN	2	gekriegt, kriegen
+abführen	VVPP	2	abgeführt
+brüderlich	ADJA	2	brüderlichen, brüderlicher
+Unterscheid	NN	2	Unterscheid
+unruhig	ADJD, ADJA	2	unruhig, unruhiger
+irret	VVFIN	2	irret
+Überladung	NN	2	Überladung
+Henker	NN	2	Henker
+Handel	NN	2	Handel
+wofür	PWAV	2	wofür
+ausgehen	VVINF, VVPP	2	ausgehen, ausgegangen
+Feiertag	NN	2	Feiertag
+verdrießen	VVFIN, VVINF	2	verdroß, verdrießen
+überreden	VVINF	2	überreden
+beständig	ADJA, ADJD	2	beständige, beständig
+lehren	VVINF	2	lehren
+blenden	VVPP, VVFIN	2	geblendet, blendet
+Freiheit	NN	2	Freiheit
+erbarmen	VVFIN	2	erbarmte
+genießen	VVINF	2	genießen
+beruhigen	VVINF	2	beruhigen
+treiben	VVINF	2	treiben
+allerlieb	ADJA	2	allerliebste, allerliebstes
+arg	ADJD	2	ärger, arg
+Mama	NN	2	Mama
+arm	ADJA	2	armen, armer
+seh	FM	2	seh, Seh
+strafen	VVPP	2	gestraft
+Unmögliche	NN	2	Unmögliche, Unmögliches
+gefaßt	ADJD	2	gefaßt
+geringschätzig	ADJD, ADJA	2	geringschätzig, geringschätzige
+Zank	NN	2	Zank, Zanks
+erraten	VVPP, VVFIN	2	erraten, erriet
+nähern	VVFIN	2	nähern
+Gegenwart	NN	2	Gegenwart
+bewegen	VVPP	2	bewogen
+Entdeckung	NN	2	Entdeckung
+Versuch	NN	2	Versuch
+Liebhaberin	NN	2	Liebhaberin
+nachhängen	VVINF	2	nachhängen
+aufwachsen	VVINF	2	aufwachsen
+Last	NN	2	Last
+Alte	NN	2	Alte
+Heftigkeit	NN	2	Heftigkeit
+erwarten	VVFIN, VVINF	2	erwarte, erwarten
+Zufall	NN	2	Zufall
+männlich	ADJA	2	männliche
+Szene	NN	2	Szene
+Lobrednerin	NN	2	Lobrednerin
+Geschwätze	NN	2	Geschwätze
+Gefallen	NN	2	Gefallen
+ausdrücklich	ADJD	2	ausdrücklich
+gehorsam	ADJD	2	gehorsam
+Schicksal	NN	2	Schicksal
+spielend	ADJA	2	spielendes, spielende
+besorgen	VVINF, VVFIN	2	besorgen, Besorgen
+Unterschrift	NN	2	Unterschrift
+dran	PAV, PTKVZ	2	dran
+langsam	ADJD	2	langsam
+holen	VVFIN, VVINF	2	hole, holen
+wiederkommen	VVPP, VVINF	2	wiedergekommen, wiederkommen
+lenken	VVINF	2	lenken
+Holland	NE	2	Holland
+Natürlichste	NN	2	Natürlichste
+begreifen	VVPP	2	begriffen
+Triumph	NN	2	Triumph
+beliebt	ADJD	2	beliebt
+behorchen	VVINF	2	behorchen
+Bruder	NN	2	Brüdern
+Vorsatz	NN	2	Vorsatz
+Stolze	NN	2	Stolze
+Frankreich	NE	2	Frankreich
+verschwenden	VVFIN, VVPP	2	Verschwenden, verschwendet
+Land	NN	2	Land
+zureden	VVFIN, VVINF	2	zureden
+neigen	VVFIN	2	neigen
+verteidiget	VVFIN	2	verteidiget
+beilegen	VVFIN, VVPP	2	beilegten, beigelegt
+rechtschaffen	ADJA, ADJD	2	rechtschaffener, rechtschaffen
+umgehen	VVINF	2	umgehen
+spöttisch	ADJA, ADJD	2	spöttischen, spöttisch
+Harmonie	NN	2	Harmonie
+fahren|führen	VVFIN	2	führe
+Beispiel	NN	2	Beispielen, Beispiele
+bieten|gebieten	VVPP	2	geboten
+hinderlich	ADJD	2	hinderlich
+Bestimmung	NN	2	Bestimmung
+Frau	NN	2	Frau
+Gesellschaft	NN	2	Gesellschaft
+dünken	VVFIN	2	dünkt, deucht
+aussprechen	VVINF, VVPP	2	aussprechen, ausgesprochen
+lebendig	ADJD	2	lebendig
+ichs	ADJD	2	ichs
+munter	ADJD, ADJA	2	munter, muntern
+Werkzeug	NN	2	Werkzeuge, Werkzeug
+Schimpfwort	NN	2	Schimpfworts, Schimpfworte
+neugierig	ADJD	2	neugierig
+Nachttisch	NN	2	Nachttische, Nachttischen
+Schelm	NN	2	Schelm
+packen	VVIMP, VVFIN	2	pack, packen
+auseinander	PTKVZ	2	auseinander
+sparen	VVPP, VVFIN	2	gespart, Spare
+Anstiften	NN	2	Anstiften
+überwerfen	VVINF	2	überwerfen
+entziehen	VVINF	2	entziehen
+ziehen	VVINF	2	ziehen
+Verliebte	NN	2	Verliebten
+beschreiben	VVPP, VVINF	2	beschrieben, beschreiben
+nachdrücklich	ADJD, ADJA	2	nachdrücklicher, nachdrücklichste
+Schwäger	NN	2	Schwäger
+Orden	NN	2	Ordens
+Verzweiflung	NN	2	Verzweiflung
+Zunge	NN	2	Zunge
+bewundern	VVFIN	2	Bewundern, bewundere
+aufdringen	VVINF	2	aufdringen
+England	NE	2	England
+höflich	ADJD, ADJA	2	höflich, höfliche
+verkennen	VVINF, VVFIN	2	verkennen
+Anverwandte	NN	2	Anverwandten
+denken|gedenken	VVPP	2	gedacht
+durchbringen	VVPP	2	durchgebracht
+gemein	ADJD	2	gemein
+wetten	VVFIN	2	wette
+dahinter	PAV	2	dahinter
+fahren	VVFIN, VVPP	2	Fahren, gefahren
+Maul	NN	2	Maul
+einig	ADJD	2	einig
+Segen	NN	2	Segen
+geheim	ADJD	2	geheim
+erstaunt	ADJD	2	erstaunt
+zeitig	ADJD	2	zeitig
+verweisen	VVFIN, VVPP	2	verweise, verwiesen
+he	ITJ	2	he, He
+Sonderbare	NN	2	Sonderbare
+Nachricht	NN	2	Nachricht
+Schuld	NN	2	Schuld, Schulden
+Alsdann	NE	2	Alsdann
+barmherzig	ADJA, ADJD	2	barmherzige, barmherzig
+verhungern	VVPP	1	verhungert
+steigen	VVINF	1	steigen
+Sprunge	NN	1	Sprunge
+Trotz	NN	1	Trotze
+Verbindliche	NN	1	Verbindliches
+staubigten	ADJA	1	staubigten
+vertraut	ADJA	1	vertrautesten
+träumen	VVINF	1	träumen
+Denkungsart	NN	1	Denkungsart
+versetzen	VVFIN	1	versetze
+Übel	NN	1	übeln
+desperat	ADJA	1	desperate
+zuletzt	ADV	1	zuletzt
+Ärmel	NN	1	Ärmel
+plagst	VVFIN	1	plagst
+Pfaffengeschmeiß	NN	1	Pfaffengeschmeiß
+Flattergeist	NN	1	Flattergeist
+verwahren	VVINF	1	verwahren
+ruchlos	ADJA	1	ruchlose
+Urheber	NN	1	Urheber
+ungefähr	ADJD	1	ungefähr
+Anerbietens	NN	1	Anerbietens
+Vorteil	NN	1	Vorteil
+gottlos	ADJA	1	gottlose
+Mangel	NN	1	Mangel
+Recht|Rechte	NN	1	Rechten
+reichen	VVFIN	1	reicht
+Gefälligkeit	NN	1	Gefälligkeit
+Satan	NN	1	Satan
+beweiset	NN	1	beweiset
+bedächtig	ADJD	1	bedächtig
+Erziehung	NN	1	Erziehung
+Licht	NN	1	Licht
+vermögen	VVINF	1	vermögen
+Aufopferung	NN	1	Aufopferung
+Plaudern	NN	1	Plaudern
+beleidigend	ADJA	1	beleidigende
+Blume	NN	1	Blumen
+nichtswürdig	ADJD	1	nichtswürdig
+bewusst	ADJA	1	bewußten
+ausschreien	VVFIN	1	ausschreien
+Deutschland	NE	1	Deutschland
+herabstürzen	VVINF	1	herabstürzen
+er|es	PPER	1	Ihm
+Coup	NN	1	coups
+auskundschaften	VVPP	1	ausgekundschaftet
+hintergehen	VVFIN	1	hintergehen
+Le	NE	1	Le
+Rabenaas	NN	1	Rabenaas
+Uneigennützigkeit	NN	1	Uneigennützigkeit
+anstehen	VVINF	1	anstehen
+zeither	ADJD	1	zeither
+eng	ADJA	1	engen
+Neue	NN	1	Neue
+Neugierde	NN	1	Neugierde
+erstemal	ADV	1	erstemal
+herumhudeln	VVFIN	1	herumhudeln
+Bestehet	VVFIN	1	Bestehet
+hüten	VVINF	1	hüten
+Scham	NN	1	Scham
+Reiz|Reizen	NN	1	Reizen
+persönlich	ADJA	1	persönlichen
+Empfindlichkeit	NN	1	Empfindlichkeit
+schneiden	VVPP	1	geschnitten
+Monat	NN	1	Monaten
+Sohn	NN	1	Sohn
+verzeihen|verziehen	VVFIN	1	Verziehen
+Trost	NN	1	Trost
+herausziehen	VVFIN	1	herauszieht
+Frage	NN	1	Fragen
+wollend	ADJA	1	wollende
+Ausdruck	NN	1	Ausdrücke
+Verlieret	VVFIN	1	Verlieret
+Antwort	NN	1	Antwort
+fix	ADJD	1	fix
+tragen	VVFIN	1	trägt
+Geheime	NN	1	Geheimes
+Lisettchen	NN	1	Lisettchen
+antun	VVFIN	1	antut
+plötzlich	ADJA	1	plötzliche
+Widerwille	NN	1	Widerwillen
+Ziel	NN	1	Ziele
+erzeugen	VVPP	1	erzeugt
+unzüchtig	ADJA	1	unzüchtigen
+unzuerklärenden	ADJA	1	unzuerklärenden
+Brocken	NN	1	Brocken
+voraussetzen	VVPP	1	vorausgesetzt
+vernehmen	VVINF	1	vernehmen
+Kannibal	NN	1	Kannibal
+Holz	NN	1	Holz
+Rindvieh	NN	1	Rindvieh
+Madame	NN	1	Madame
+erziehen	VVPP	1	erzogen
+Verzeihen	NN	1	Verzeihen
+letztern	NN	1	letztern
+Bemühung	NN	1	Bemühung
+unbequem	ADJA	1	unbequemen
+Nötigers	NN	1	Nötigers
+Bequemlichkeit	NN	1	Bequemlichkeit
+beißen	VVIMP	1	beiß
+unversöhnlich	ADJD	1	unversöhnlich
+Bekenntnis	NN	1	Bekenntnis
+gemächlich	ADJA	1	gemächlichen
+widerrufen	VVINF	1	widerrufen
+kömmst	VVFIN	1	kömmst
+angehen	VVINF	1	angehen
+Gesichtszug	NN	1	Gesichtszüge
+geliebet	NE	1	geliebet
+höchstbegierig	ADJD	1	höchstbegierig
+nichtswürdiges	ADJA	1	nichtswürdiges
+nichtswürdiger	ADJA	1	Nichtswürdiger
+darnach	ADV	1	darnach
+Erbschaft	NN	1	Erbschaft
+lauter	PIAT	1	lauter
+Fahne	NN	1	Fahne
+ungeheuer	ADJD	1	ungeheuer
+vorgehen	VVPP	1	vorgegangen
+Hinderung	NN	1	Hinderung
+drunter	PAV	1	drunter
+Kapitel	NN	1	Kapitel
+sprengen	VVINF	1	sprengen
+bitter	ADJD	1	bitter
+traktieren	VVINF	1	traktieren
+erreichen	VVPP	1	erreicht
+Knie|Knien	NN	1	Knien
+Rühmliche	NN	1	Rühmliches
+lüderlicher	ADJA	1	lüderlicher
+nahe	APPR	1	nahe
+Viertelstunde	NN	1	Viertelstunden
+Schein	NN	1	Scheine
+bedanken	VVINF	1	bedanken
+Gleichgültigkeit	NN	1	Gleichgültigkeit
+Priester	NN	1	Priestern
+abgeschmackt	ADJA	1	abgeschmackte
+Schwude	NE	1	Schwude
+leihen	VVPP	1	geliehen
+aufmutzen	VVINF	1	aufmutzen
+Eigennutz	NN	1	Eigennutz
+nachfolgen	VVIZU	1	nachzufolgen
+Wildfang	NN	1	Wildfang
+Ungewissheit	NN	1	Ungewißheit
+geendigt	ADJD	1	geendigt
+herrschen	VVFIN	1	herrscht
+ungetreu	ADJA	1	ungetreuer
+Hundsfott	NN	1	Hundsfott
+hingehen	VVINF	1	hingehen
+Einfalt	NN	1	Einfalt
+herbei	PTKVZ	1	herbei
+angewandt	ADJA	1	angewandte
+Tausendste	NN	1	Tausendste
+Trauung	NN	1	Trauung
+Weltweisheit	NN	1	Weltweisheit
+einladen	VVPP	1	eingeladen
+erleuchten	VVPP	1	erleuchtet
+Sicherheit	NN	1	Sicherheit
+unbeantwortet	ADJD	1	unbeantwortet
+Kurtisieren	NN	1	Kurtisieren
+Wand	NN	1	Wand
+Bürschchen	NN	1	Bürschchen
+Abschilderungen	NN	1	Abschilderungen
+singen	VVFIN	1	singt
+verweilen	VVFIN	1	verweilen
+mitten	ADV	1	mitten
+beratschlagen	VVINF	1	beratschlagen
+gemäß	APPO	1	gemäß
+schenken	VVFIN	1	schenkte
+ausgeben	VVINF	1	ausgeben
+höchstens	ADV	1	höchstens
+Brand	NN	1	Brand
+Streit	NN	1	Streiten
+Knie	NE	1	Knie
+Neubegierde	NN	1	Neubegierde
+Unbiegsamer	NN	1	Unbiegsamer
+demütig	ADJA	1	demütigen
+schlichten	VVFIN	1	schlichte
+Bestreben	NN	1	Bestreben
+Wollte	ADJA	1	Wollte
+christlich	ADJA	1	christliche
+Lehre	NN	1	Lehre
+verteidigen	VVINF	1	verteidigen
+nichte	ADJA	1	nichte
+mitteilet	ADJD	1	mitteilet
+Mamsellchen	NN	1	Mamsellchen
+schimpflich	ADJA	1	schimpflichen
+erfinden	VVPP	1	erfunden
+Zaum	NN	1	Zaume
+auslassen	VVINF	1	auslassen
+blicken	VVFIN	1	blickt
+Schleicher	NN	1	Schleicher
+Bockshorn	NN	1	Bockshorn
+hiesig	ADJA	1	hiesigen
+Seelenkannibal	NE	1	Seelenkannibal
+wohlbedächtig	ADJD	1	wohlbedächtig
+Ehrgeiz	NN	1	Ehrgeiz
+bekannt	ADJD	1	bekannt
+Verschonen	NN	1	Verschonen
+Blödsinnigsten	NN	1	Blödsinnigsten
+rufen	VVPP	1	gerufen
+Umfang	NN	1	Umfange
+Entschuldigung	NN	1	Entschuldigungen
+parteiisch	ADJD	1	parteiisch
+Nichtswürdigkeit	NN	1	Nichtswürdigkeit
+geraten|raten	VVPP	1	geraten
+kriechend	ADJA	1	kriechenden
+sorglos	ADJA	1	sorglosesten
+Abscheu	NN	1	Abscheu
+begreiflich	ADJD	1	begreiflich
+une	ADJA	1	une
+Kopie	NN	1	Kopien
+Stoß	NN	1	Stoß
+Kunstgriff	NN	1	Kunstgriff
+Lump|Lumpen	NN	1	Lumpen
+anflehen	VVINF	1	anflehen
+derentwegen	VVFIN	1	derentwegen
+Allernichtswürdigste	NN	1	Allernichtswürdigste
+vornehmen	VVPP	1	vorgenommen
+belieben	VVPP	1	beliebt
+vornehmlich	ADJD	1	vornehmlich
+Pfaffe	NN	1	Pfaffen
+à	FM	1	à
+Schule	NN	1	Schule
+abkühlen	VVPP	1	abgekühlt
+abgeleget	VVPP	1	abgeleget
+unfruchtbar	ADJA	1	unfruchtbaren
+Hälfte	NN	1	Hälfte
+Hiersein	NN	1	Hierseins
+Vorwitz	NN	1	Vorwitz
+Besorgung	NN	1	Besorgung
+servir	NE	1	servir
+verletzen	VVINF	1	verletzen
+Wichtige	NN	1	Wichtiges
+entehren	VVFIN	1	entehren
+strengern	ADJA	1	strengern
+ordentlich	ADJD	1	ordentlich
+Dolch	NN	1	Dolch
+allzugern	NN	1	allzugern
+beten	VVFIN	1	bete
+geirret	NE	1	geirret
+Reichtum	NN	1	Reichtum
+verlornen	ADJA	1	verlornen
+hierinne	VVFIN	1	hierinne
+Mine	NN	1	Mine
+Anherkunft	NN	1	Anherkunft
+anrechnen	VVINF	1	anrechnen
+Schmeichlerin	NN	1	Schmeichlerin
+Untier	NN	1	Untier
+gefällig	ADJA	1	gefällige
+kalt	ADJA	1	kaltem
+eindrückt	VVFIN	1	eindrückt
+Karnevalserfahrung	NN	1	Karnevalserfahrung
+richterlich	ADJA	1	richterliche
+stampfen	VVINF	1	stampfen
+lästerlich	ADJA	1	lästerliches
+borgen	VVINF	1	borgen
+allerklein	ADJA	1	allerkleinste
+schalten	VVINF	1	schalten
+dankbar	ADJD	1	dankbar
+beunruhiget	VVFIN	1	beunruhiget
+wankend	ADJA	1	wankendem
+Geier	NE	1	Geier
+Wind	NN	1	Wind
+erstenmale	NN	1	erstenmale
+Stolz	NN	1	Stolz
+füllen	VVINF	1	füllen
+Arm	NN	1	Arm
+darzu	VVIZU	1	darzu
+Anstand	NN	1	Anstand
+Zeuge	NN	1	Zeugen
+Französische	NN	1	Französische
+abzielen	VVINF	1	abzielen
+misstrauisch	ADJD	1	mißtrauisch
+niedrig	ADJA	1	niedrigsten
+beneiden	VVFIN	1	beneide
+Beschäftigung	NN	1	Beschäftigung
+Gläubiger	NN	1	Gläubiger
+stiften	VVINF	1	stiften
+hundertmal	ADV	1	hundertmal
+Prezeln	NN	1	Prezeln
+absondern	VVPP	1	abgesondert
+binden	VVINF	1	binden
+wachsend	ADJA	1	wachsende
+tyrannisieren	VVINF	1	tyrannisieren
+regelmäßig	ADJD	1	regelmäßig
+seicht	ADJA	1	seichten
+Formalität	NN	1	Formalität
+Acht	NN	1	Acht
+Bürge	NN	1	Bürge
+woran	PWAV	1	woran
+drüber	PAV	1	drüber
+Unmensch	NN	1	Unmensch
+Verändrung	NN	1	Verändrung
+verbunden	ADJD	1	verbunden
+Hang	NN	1	Hanges
+unterm	APPRART	1	unterm
+vermengen	VVINF	1	vermengen
+hübsch	ADJD	1	Hübsch
+zugehören	VVFIN	1	zugehöre
+Spotte	NN	1	Spotte
+Richterin	NN	1	Richterin
+wohlgemachtesten	ADJA	1	wohlgemachtesten
+Verleugner	NN	1	Verleugner
+abermal	ADJD	1	abermal
+stürmisch	ADJD	1	stürmisch
+verantworten	VVINF	1	verantworten
+löset	VVFIN	1	löset
+aushalten	VVIZU	1	auszuhalten
+übereilen	VVINF	1	übereilen
+Hundertste	NN	1	Hundertste
+unwert	ADJD	1	unwert
+Taler	NN	1	Taler
+Vermittelung	NN	1	Vermittelung
+treuherziges	ADJA	1	treuherziges
+bekehren	VVINF	1	bekehren
+erholen	VVINF	1	erholen
+gehöret	ADJA	1	gehöret
+erstaunlich	ADJA	1	erstaunlichste
+Umkehr	NN	1	Umkehr
+Wohlstande	NN	1	Wohlstande
+Hund	NN	1	Hund
+unschmackhaft	ADJD	1	unschmackhaft
+Schmerz	NN	1	Schmerzen
+Pferd	NN	1	Pferd
+verdächtig	ADJD	1	verdächtig
+Äußerste	NN	1	Äußerste
+bearbeiten	VVPP	1	bearbeitet
+anhaltend	ADJA	1	anhaltendes
+hierzu	PAV	1	hierzu
+lächelnd	ADJD	1	Lächelnd
+unwissend	ADJA	1	unwissenden
+dringender	ADJD	1	dringender
+Abschlag	NN	1	Abschlag
+Katzenkopf	NN	1	Katzenkopf
+unsichtbar	ADJA	1	unsichtbare
+inbrünstig	ADJD	1	inbrünstiger
+Anhänger	NN	1	Anhänger
+Blutsfreunde	NN	1	Blutsfreunde
+Stilleschweigen	NN	1	Stilleschweigen
+wählen	VVINF	1	wählen
+Grausamkeit	NN	1	Grausamkeit
+hinunter	ADV	1	hinunter
+übergeben	VVPP	1	übergeben
+streng	ADJA	1	strenge
+Wohlstand	NN	1	Wohlstand
+beredtern	ADJA	1	beredtern
+Wahn	NN	1	Wahn
+Spotten	NN	1	Spotten
+Wiederholung	NN	1	Wiederholung
+verblinden	VVFIN	1	verblinden
+beurlauben	VVINF	1	beurlauben
+aufbringen	VVPP	1	aufgebracht
+Sachte	NN	1	Sachte
+Groll	NN	1	Groll
+verstecken	VVINF	1	verstecken
+aufziehen	VVIZU	1	aufzuziehen
+Franzose	NN	1	Franzosen
+zuziehen	VVINF	1	zuziehen
+Benennung	NN	1	Benennungen
+fliehen	VVINF	1	fliehen
+gelangen|langen	VVPP	1	gelangt
+Wisch	NN	1	Wische
+abzwingen	VVIZU	1	abzuzwingen
+höhnisch	ADJD	1	höhnisch
+Pest	NN	1	Pest
+schlucken	VVINF	1	schlucken
+Streitköpfe	NN	1	Streitköpfe
+ausliefern	VVINF	1	ausliefern
+verbergen	VVINF	1	verbergen
+Verlangen	NN	1	Verlangen
+belustigen	VVINF	1	belustigen
+stören	VVINF	1	stören
+glückseligem	ADJA	1	glückseligem
+eingefleischt	ADJA	1	eingefleischten
+lesen	VVPP	1	gelesen
+schaden	VVINF	1	schaden
+pere	ADJA	1	pere
+schleppen	VVFIN	1	schleppte
+denkend	ADJA	1	denkende
+lächerlich	ADJD	1	lächerlich
+Revansche	NN	1	Revansche
+Vorwerk	NN	1	Vorwerk
+würdigen	VVINF	1	würdigen
+Schüler	NN	1	Schüler
+kriechende	ADJA	1	kriechende
+Handschrift	NN	1	Handschriften
+Backofen	NN	1	Backofen
+Bösewichter	ADJD	1	Bösewichter
+abgeborgt	VVPP	1	abgeborgt
+Schwiegersohne	NN	1	Schwiegersohne
+bestrebet	VVFIN	1	bestrebet
+Balthasarn	NE	1	Balthasarn
+Rodomontade	NE	1	Rodomontade
+aufräumen	VVPP	1	aufgeräumt
+kritisch	ADJA	1	kritischen
+Unnatürlichste	NN	1	Unnatürlichste
+Verklagung	NN	1	Verklagung
+zerrissen	ADJA	1	zerrissenen
+grob	ADJD	1	grob
+strittest	VVFIN	1	strittest
+zugestoßener	ADJA	1	zugestoßener
+Gebot	NN	1	Gebotes
+abgekartet	ADJA	1	abgekartetes
+abermals	ADV	1	Abermals
+größre	ADJA	1	größre
+innern	ADJA	1	innern
+Gunst	NN	1	Gunst
+Unbesonnenheit	NN	1	Unbesonnenheit
+berechtiget	VVFIN	1	berechtiget
+Verleumder	NN	1	Verleumder
+anbieten	VVPP	1	angeboten
+entbehren	VVINF	1	entbehren
+Länge	NN	1	Länge
+Schlaue	NN	1	Schlaue
+bunt	ADJD	1	bunt
+halt	ADV	1	Halt
+vergeblich	ADJA	1	vergeblichen
+Nötiges	NN	1	Nötiges
+vorbei	ADV	1	vorbei
+ruhen	VVINF	1	ruhen
+herumschleichen	VVFIN	1	herumschleicht
+gequälet	VVPP	1	gequälet
+Bündel|Bündeln	NN	1	Bündeln
+erwerben	VVINF	1	erwerben
+Klasse	NN	1	Klasse
+Kette	NN	1	Kette
+itzt	ADJD	1	itzt
+Gelassenheit	NN	1	Gelassenheit
+ungestalteten	ADJA	1	ungestalteten
+deinigen	ADJA	1	deinigen
+verkleidet	ADJA	1	verkleideten
+auftragen	VVINF	1	auftragen
+et	FM	1	et
+bekömmt	VVFIN	1	bekömmt
+zurückkommen	VVINF	1	zurückkommen
+Edelste	NN	1	Edelste
+Beteurung	NN	1	Beteurung
+ungeschimpft	ADJD	1	ungeschimpft
+unanständig	ADJD	1	unanständig
+kühnern	ADJA	1	kühnern
+Wesen	NN	1	Wesen
+Schöps	NN	1	Schöps
+Keines	NN	1	Keines
+zweit	ADJA	1	zweite
+zugetrauet	VVFIN	1	zugetrauet
+Blind	NE	1	Blind
+wetterwendisch	ADJA	1	wetterwendischen
+dürr	ADJA	1	dürren
+wirken	VVFIN	1	wirkt
+Heiligkeit	NN	1	Heiligkeit
+beiher	NN	1	beiher
+einschränken	VVIZU	1	einzuschränken
+freundschaftlichste	ADJA	1	freundschaftlichste
+murren	VVFIN	1	murre
+Engländsch	NN	1	Engländsch
+nachsehend	ADJD	1	nachsehend
+vorfallen	VVFIN	1	vorfallen
+Atem	NN	1	Atem
+Lohn	NN	1	Lohn
+Münze	NN	1	Münze
+Post	NN	1	Post
+Meile	NN	1	Meilen
+Märtyrer	NN	1	Märtyrer
+Feuer	NN	1	Feuer
+liebenswert	ADJD	1	liebenswerter
+unterlassen	VVPP	1	unterlassen
+Stehen	NN	1	Stehen
+verwirrt	ADJD	1	verwirrt
+Bürger	NN	1	Bürgern
+Puppe	NN	1	Puppe
+vornehm	ADJA	1	vornehmsten
+ans	APPRART	1	ans
+ehrbar	ADJA	1	ehrbares
+Allzugütige	ADJA	1	Allzugütige
+Hals	NN	1	Hals
+fertig	ADJD	1	fertig
+Verlust	NN	1	Verlust
+Höhe	NN	1	Höhe
+carogne	ADJA	1	carogne
+Mitleiden	NN	1	Mitleiden
+ohnedem	VVFIN	1	ohnedem
+rückgängige	ADJA	1	rückgängige
+fille	NN	1	fille
+wunderbar	ADJA	1	Wunderbarer
+einsehen	VVINF	1	einsehen
+ernähren	VVINF	1	ernähren
+Rocke	NN	1	Rocke
+garstig	ADJA	1	garstige
+Brocke	NN	1	Brocke
+unbeschreiblich	ADJA	1	unbeschreibliche
+abjagen	VVPP	1	abgejagt
+Nachrede	NN	1	Nachrede
+vorzüglich	ADJA	1	vorzügliche
+verachtet	ADJA	1	verachteten
+erzürnen	VVINF	1	erzürnen
+Krank	NE	1	Krank
+Religiöse	NN	1	Religiöse
+Niederträchtige	NN	1	Niederträchtige
+Joch	NN	1	Joch
+wütend	ADJA	1	wütenden
+Schwanz	NN	1	Schwanz
+behutsam	ADJD	1	behutsamer
+erkundigen	VVFIN	1	erkundigte
+stärkern	NN	1	stärkern
+lebhaft	ADJA	1	lebhaftes
+schreien	VVFIN	1	schreit
+Lineamente	NN	1	Lineamente
+Kröte	NN	1	Kröte
+Bewegung	NN	1	Bewegung
+weiden	VVFIN	1	weiden
+angenommen	ADJA	1	angenommene
+Anspruch	NN	1	Ansprüche
+absprechen	VVINF	1	absprechen
+Partei	NN	1	Partei
+versäumen	VVINF	1	versäumen
+Zwang	NN	1	Zwang
+Abscheuliches	NN	1	Abscheuliches
+Glückes	NN	1	Glückes
+wahrern	ADJA	1	wahrern
+damals	ADV	1	damals
+verdammt	ADJA	1	verdammter
+Jahr	NN	1	Jahr
+dahinreißt	VVFIN	1	dahinreißt
+Vorzuge	NN	1	Vorzuge
+Grobheit	NN	1	Grobheit
+Kreatur	NN	1	Kreatur
+eitel	ADJA	1	eitles
+Hässlichkeit	NN	1	Häßlichkeit
+befriediget	VVFIN	1	befriediget
+Eigensinn	NN	1	Eigensinn
+Deist	NN	1	Deist
+Aufschub	NN	1	Aufschub
+Erste	NN	1	Erste
+Abgeborgt	VVPP	1	Abgeborgt
+gelangen	VVINF	1	gelangen
+verhelfen	VVPP	1	verholfen
+dergleichen	PIS	1	dergleichen
+hernach	ADV	1	hernach
+Dorn	NN	1	Dorn
+drohend	ADJD	1	Drohend
+ferne	ADV	1	ferne
+Rolle	NN	1	Rolle
+sogleich	ADV	1	sogleich
+Bettel	NN	1	Bettel
+eigennützig	ADJD	1	eigennützig
+Antichrist	NN	1	Antichrist
+samt	APPR	1	samt
+unvernünftig	ADJA	1	unvernünftigen
+marternd	ADJA	1	marternde
+verkaufen	VVINF	1	verkaufen
+Wechselbalg	NN	1	Wechselbalg
+Weisheit	NN	1	Weisheit
+Gerät	NN	1	Geräte
+schießen	VVINF	1	schießen
+Schwäche	NN	1	Schwäche
+Männerchen	NN	1	Männerchen
+Verächtliche	NN	1	Verächtliche
+Stuhl	NN	1	Stuhl
+Uph	NE	1	Uph
+erstenmal	NN	1	erstenmal
+beißend	ADJA	1	beißenden
+Bravo	NN	1	Bravo
+vergelten	VVFIN	1	vergilt
+kriechen	VVINF	1	kriechen
+ohnmächtig	ADJD	1	ohnmächtig
+Dummheit	NN	1	Dummheit
+rückgängig	ADJD	1	rückgängig
+Kur	NN	1	Kur
+Luft	NN	1	Luft
+Engel	NN	1	Engel
+Gebieterin	NN	1	Gebieterin
+befördern	VVINF	1	befördern
+anständig	ADJA	1	anständigere
+vergeben	VVINF	1	vergeben
+Höflichkeit	NN	1	Höflichkeit
+fechten	VVFIN	1	ficht
+Postwagen	NN	1	Postwagen
+jagen	VVINF	1	jagen
+englisch	ADJD	1	englisch
+nötigen	VVFIN	1	nötigten
+allzuvorsichtig	ADJD	1	allzuvorsichtig
+ausreden	VVINF	1	ausreden
+befriedigen	VVINF	1	befriedigen
+zernichten	VVFIN	1	zernichten
+Mut	NN	1	Mut
+prellen	VVINF	1	prellen
+Beruhigung	NN	1	Beruhigung
+essen	VVFIN	1	ißt
+entspringen	VVFIN	1	entspringt
+Predigen	NN	1	Predigen
+vergangen	ADJA	1	vergangene
+ausklagen	NN	1	ausklagen
+heucheln	VVINF	1	heucheln
+beleidigt	ADJA	1	beleidigten
+Prediger	NN	1	Prediger
+überzeugt	ADJD	1	überzeugt
+Wurf	NN	1	Würfe
+Kleine	NN	1	Kleine
+Mutmaßung	NN	1	Mutmaßungen
+belehren	VVFIN	1	belehre
+wohlgefällt	VVPP	1	wohlgefällt
+Labsal	NN	1	Labsal
+allerfein	ADJA	1	allerfeinste
+Gewissheit	NN	1	Gewißheit
+bereichern	VVFIN	1	bereichere
+gehört	ADJD	1	gehört
+Aussöhnung	NN	1	Aussöhnung
+Tropfen	NN	1	Tropfen
+Bekehrung	NN	1	Bekehrung
+am	PTKA	1	am
+kleiden	VVINF	1	kleiden
+angehörst	VVFIN	1	angehörst
+Magen	NN	1	Magen
+verderbter	ADJA	1	verderbter
+woraus	PWAV	1	woraus
+entkleiden	VVINF	1	entkleiden
+hölzern	ADJD	1	hölzern
+wackern	VVFIN	1	wackern
+Element	NN	1	Elemente
+dunkel	ADJD	1	dunkler
+leisten	VVINF	1	leisten
+diable	ADJA	1	diable
+leichtsinniger	ADJA	1	leichtsinniger
+Stunde|Stunden	NN	1	Stunden
+Dingerchen	NN	1	Dingerchen
+gestehen|stehen	VVPP	1	gestanden
+Annehmlichkeit	NN	1	Annehmlichkeiten
+Wesentlichsten	NN	1	Wesentlichsten
+baton	NE	1	baton
+hinein	PTKVZ	1	hinein
+Verachtungen	NN	1	Verachtungen
+hinhängt	VVFIN	1	hinhängt
+drehen	VVINF	1	drehen
+jederzeit	ADV	1	jederzeit
+gewahr	ADJD	1	gewahr
+Reise	NN	1	Reise
+Breite	NN	1	Breite
+einfältig	ADJA	1	Einfältiger
+Schreck	NN	1	Schreck
+Bär	NN	1	Bär
+Strafe	NN	1	Strafe
+hinaus	ADV	1	hinaus
+leibhafte	ADJA	1	leibhafte
+berühmt	ADJA	1	berühmter
+anschwatzen	VVFIN	1	anschwatzen
+hinreichet	ADJA	1	hinreichet
+leid	ADJD	1	leid
+heben	VVFIN	1	hebe
+einigermaßen	ADV	1	einigermaßen
+Reise|Reisen	NN	1	Reisen
+bürden	VVFIN	1	bürden
+geliebt	ADJA	1	geliebten
+ungestört	ADJD	1	ungestört
+Gehts	NN	1	Gehts
+versauerst	VVFIN	1	versauerst
+widern	VVIMP	1	wider
+wohnen	VVFIN	1	wohnen
+übersehen	VVINF	1	übersehen
+Tor	NN	1	Toren
+Grillenfänger	NN	1	Grillenfänger
+Schminke	NN	1	Schminke
+Tod	NN	1	Tode
+Mosjeu	NN	1	Mosjeu
+verdrungen	NN	1	verdrungen
+Brunnen	NN	1	Brunnen
+alsdenn	NE	1	alsdenn
+wehmütig	ADJA	1	wehmütigen
+Genüge	NN	1	Genüge
+Privilegium	NN	1	Privilegium
+sahe	VVFIN	1	sahe
+Dreustigkeit	NN	1	Dreustigkeit
+Adel	NN	1	Adel
+fressen	VVINF	1	fressen
+taub	ADJA	1	taubes
+klagen	VVFIN	1	klagt
+Absatze	NN	1	Absatze
+klimpertst	VVFIN	1	klimpertst
+gelehrt	ADJA	1	gelehrter
+Falte|Falten	NN	1	Falten
+Annehmung	NN	1	Annehmung
+herab	PTKVZ	1	herab
+überlästigen	ADJA	1	überlästigen
+anbringen	VVPP	1	angebracht
+prophezeien	VVFIN	1	prophezeien
+Geblüte	NN	1	Geblüte
+Meisterstück	NN	1	Meisterstück
+Zweiflerin	NN	1	Zweiflerin
+unmenschlich	ADJD	1	unmenschlicher
+Anständigkeit	NN	1	Anständigkeit
+Erde	NN	1	Erde
+Laus	NN	1	Laus
+Vorschlag	NN	1	Vorschlag
+versehen	VVINF	1	versehen
+getreuern	NN	1	getreuern
+listig	ADJA	1	listiger
+vollends	ADV	1	vollends
+Ekel	NN	1	Ekel
+Schwarzrocke	NN	1	Schwarzrocke
+Fehl	NN	1	Fehl
+Leib	NN	1	Leibe
+abhalten	VVINF	1	abhalten
+Rechtfertigung	NN	1	Rechtfertigungen
+Leid	NN	1	Leid
+Konkurs	NN	1	Konkurse
+Stein	NN	1	Steine
+voran	ADV	1	voran
+närrisch	ADJA	1	närrische
+dichten	VVFIN	1	dichte
+Hauptsache	NN	1	Hauptsache
+Hass	NN	1	Hasse
+Bau	NN	1	Baue
+Erschrecken	NN	1	Erschrecken
+malen	VVFIN	1	male
+entfernt	ADJD	1	entfernt
+aufrichten	VVINF	1	aufrichten
+Bessere	NN	1	Besseres
+klatschen	VVPP	1	geklatscht
+Freite	NN	1	Freite
+erstern	NN	1	erstern
+Holunke	NN	1	Holunke
+Anliegen	NN	1	Anliegen
+Lumpenhund	NN	1	Lumpenhund
+verschieden	ADJA	1	verschiedenen
+unverdient	ADJA	1	unverdienten
+stillen	VVFIN	1	stille
+ernsthaft	ADJA	1	ernsthaften
+unvorsichtig	ADJD	1	unvorsichtig
+bedeuten	VVINF	1	bedeuten
+Zeugnis	NN	1	Zeugnis
+Verkehr	NN	1	Verkehr
+missen	VVINF	1	missen
+zugestehet	VVFIN	1	zugestehet
+hoffentlich	ADV	1	hoffentlich
+ungeschickt	ADJD	1	ungeschickt
+Nutz	NN	1	Nutze
+Irrung	NN	1	Irrungen
+Fähigkeit	NN	1	Fähigkeit
+backen	VVINF	1	backen
+Ei	NN	1	Ei
+vorzuzählen	VVIZU	1	vorzuzählen
+Theolog	NN	1	Theolog
+geschworne	ADJA	1	geschworne
+wagen	VVINF	1	wagen
+boshaft	ADJD	1	boshaft
+Dämmerung	NN	1	Dämmerung
+dingen	VVPP	1	gedungen
+fischen	VVFIN	1	fische
+Topp	NN	1	Topp
+vorteilhaft	ADJD	1	vorteilhaft
+Raub	NN	1	Raub
+bestellen	VVINF	1	bestellen
+Aufführung	NN	1	Aufführung
+gereiset	ADJD	1	gereiset
+schmachtendes	ADJA	1	schmachtendes
+bedenken	VVFIN	1	Bedenken
+Schlüssel	NN	1	Schlüssel
+Theophane	NE	1	Theophane
+Entzückungen	NN	1	Entzückungen
+jetzig	ADJA	1	jetzigen
+unverschämt	ADJA	1	unverschämter
+passen	VVINF	1	passen
+darreichen	VVFIN	1	darreicht
+Närrin	NN	1	Närrin
+scheußlich	ADJA	1	scheußlichsten
+Ohrenbläser	NN	1	Ohrenbläser
+Schäkerinnen	NN	1	Schäkerinnen
+unbeständig	ADJA	1	unbeständiger
+ungehalten	ADJD	1	ungehalten
+karg	ADJD	1	karg
+spintisiert	VVFIN	1	spintisiert
+abholen	VVINF	1	abholen
+Witz	NN	1	Witz
+Vornehmste	NN	1	Vornehmste
+Futter	NN	1	Futter
+Erfahrung	NN	1	Erfahrung
+wiedersehen	VVINF	1	wiedersehen
+biegen	VVFIN	1	biegt
+unrecht	ADJD	1	unrecht
+Neuigkeit	NN	1	Neuigkeit
+schwatze	VVFIN	1	schwatze
+Allerboshafteste	NN	1	Allerboshafteste
+abmalen	VVPP	1	abgemalt
+kostbar	ADJD	1	kostbarer
+erkannt	ADJA	1	erkannten
+todsterbenskrank	ADJD	1	todsterbenskrank
+Verbrecher	NN	1	Verbrecher
+abtreten	VVINF	1	abtreten
+Hassenswürdigste	NN	1	Hassenswürdigste
+Verbrechen	NN	1	Verbrechen
+zerreißen	VVPP	1	zerrissen
+Spöttisch	NN	1	Spöttisch
+Fischbeinröcken	NN	1	Fischbeinröcken
+Zipfel	NN	1	Zipfel
+küssen	VVINF	1	küssen
+Heiligste	NN	1	Heiligste
+Julianchen	NN	1	Julianchen
+irgend	ADV	1	irgend
+Narrheit	NN	1	Narrheit
+vergnügt	ADJD	1	vergnügt
+Frankreichsch	NN	1	Frankreichsch
+Taschenbuch	NN	1	Taschenbuch
+schmälern	VVINF	1	schmälern
+Widerrede	NN	1	Widerrede
+Saufen	NN	1	Saufen
+Gehorsam	NN	1	Gehorsam
+durchgerannt	VVPP	1	durchgerannt
+zwanzigmal	ADV	1	zwanzigmal
+Beobachtung	NN	1	Beobachtung
+manchmal	ADV	1	manchmal
+herstellen	VVINF	1	herstellen
+abzirkeln	VVINF	1	abzirkeln
+egales	ADJA	1	egales
+Ausspruch	NN	1	Aussprüche
+ausgelassen	ADJD	1	ausgelassen
+infam	ADJD	1	Infamer
+ernstlich	ADJD	1	ernstlich
+hungrig	ADJA	1	hungriger
+Gescheutes	NN	1	Gescheutes
+schmeißen	VVPP	1	geschmissen
+Unruhe	NN	1	Unruhe
+Hundsfötter	NN	1	Hundsfötter
+Collin	NN	1	Collin
+Ungereimtheit	NN	1	Ungereimtheiten
+schwören	VVFIN	1	Schwören
+Besondere	NN	1	Besondere
+rücken	VVPP	1	gerückt
+stürzen	VVFIN	1	stürzen
+verwandeln	VVINF	1	verwandeln
+Ergebenheit	NN	1	Ergebenheit
+Ruchlosen	NN	1	Ruchlosen
+erhaben	ADJD	1	erhaben
+bestärken	VVFIN	1	bestärkten
+Schlimmste	NN	1	Schlimmste
+verbeiße	VVFIN	1	verbeiße
+Vergehungen	NN	1	Vergehungen
+bewahren	VVFIN	1	bewahre
+beleidigen	VVINF	1	beleidigen
+Schimmer	NN	1	Schimmer
+gewöhnlich	ADJD	1	gewöhnlich
+hegen	VVINF	1	hegen
+Eigentum	NN	1	Eigentum
+Frauenzimmerauge	NN	1	Frauenzimmerauge
+allerwenig	ADJA	1	allerwenigsten
+Ruin	NN	1	Ruin
+ausrechnen	VVINF	1	ausrechnen
+herein	PTKVZ	1	herein
+Verschweigung	NN	1	Verschweigung
+Widriges	NN	1	Widriges
+Falte	NN	1	Falte
+Übereilung	NN	1	Übereilung
+Schlucker	NN	1	Schlucker
+untergraben	VVINF	1	untergraben
+ungezwungen	ADJA	1	ungezwungene
+andermal	ADV	1	andermal
+hineinbringen	VVPP	1	hineingebracht
+pathetisch	ADJD	1	pathetischer
+Anschein	NN	1	Anschein
+sittsam	ADJA	1	sittsame
+Ernsthaftigkeit	NN	1	Ernsthaftigkeit
+beschäftiget	VVFIN	1	beschäftiget
+beschäftigen	VVFIN	1	beschäftigten
+versäufst	VVFIN	1	versäufst
+vorgefaßt	ADJA	1	vorgefaßten
+Kenntnis	NN	1	Kenntnis
+beteuern	VVFIN	1	beteuern
+tanzen	VVFIN	1	tanzt
+begierig	ADJD	1	begierig
+ledig	ADJD	1	ledig
+Weide	NN	1	Weide
+reizend	ADJD	1	reizend
+fesseln	VVINF	1	fesseln
+Staat	NN	1	Staates
+sanft	ADJA	1	sanften
+erschrecken	VVFIN	1	erschrecken
+verändert	ADJD	1	verändert
+Poete	NN	1	Poete
+angelangen	VVPP	1	angelangt
+Besitz	NN	1	Besitz
+absteigen	VVPP	1	abgestiegen
+Augapfel	NN	1	Augapfel
+Erbe	NN	1	Erbe
+beschwören	VVFIN	1	beschwöre
+weinen	VVFIN	1	weinen
+Maulaffe	NN	1	Maulaffe
+Linke	NN	1	Linken
+Wehe	NN	1	Wehe
+meinig	PPOSS	1	meinige
+Bosheit	NN	1	Bosheit
+Herrschaft	NN	1	Herrschaft
+allzu	PTKA	1	allzu
+Jenen	NN	1	Jenen
+verziehen	VVFIN	1	verziehst
+Sammelplatz	NN	1	Sammelplatz
+unleugbar	ADJD	1	unleugbar
+predigen	VVINF	1	predigen
+Bild	NN	1	Bilder
+hitzig	ADJD	1	hitzig
+überlassen	VVPP	1	überlassen
+Pulver	NN	1	Pulver
+Comment	ADJD	1	Comment
+pfeifen	VVFIN	1	pfeifen
+verdeckt	ADJA	1	verdeckten
+stückweise	ADJD	1	stückweise
+zerstreuen	VVFIN	1	zerstreut
+lassend	ADJA	1	lassende
+schaffen	VVFIN	1	schafft
+verderben	VVFIN	1	verderbt
+Galgendieb	NN	1	Galgendieb
+aufwallend	ADJA	1	aufwallende
+vorzupredigen	VVIZU	1	vorzupredigen
+weggehen	VVINF	1	weggehen
+Bedünkens	NN	1	Bedünkens
+Beunruhigen	NN	1	Beunruhigen
+scheinend	ADJA	1	scheinende
+Geheimnis	NN	1	Geheimnis
+Temperament	NN	1	Temperamente
+vorweisen	VVPP	1	vorgewiesen
+diesesmal	ADV	1	diesesmal
+Plunder	NN	1	Plunder
+Gemütsart	NN	1	Gemütsart
+erlangen	VVINF	1	erlangen
+Lernen	NN	1	Lernen
+unverrichtet	ADJA	1	unverrichteter
+schmelzen	VVPP	1	geschmolzen
+maraut	VVFIN	1	maraut
+Verlegenheit	NN	1	Verlegenheit
+herausgejagt	VVPP	1	herausgejagt
+Abschreckungen	NN	1	Abschreckungen
+verwenden	VVPP	1	verwandt
+vous	NE	1	vous
+Sonnenstrahl	NN	1	Sonnenstrahlen
+bemerkt	ADJA	1	bemerkter
+Gemahl	NN	1	Gemahl
+Fröhliche	NN	1	Fröhliches
+angeborne	ADJA	1	angeborne
+mächtig	ADJA	1	mächtige
+zurücken	VVFIN	1	zurücke
+Allgemeinheit	NN	1	Allgemeinheit
+schnurrig	ADJA	1	schnurrige
+großmütigsten	ADJA	1	großmütigsten
+wollts	VVFIN	1	wollts
+dringen	VVFIN	1	dringt
+Höllenbrand	NN	1	Höllenbrand
+Liebkosung	NN	1	Liebkosung
+Zug	NN	1	Zug
+auskommen	VVINF	1	auskommen
+argwöhnisch	ADJD	1	argwöhnisch
+Abwesenheit	NN	1	Abwesenheit
+Kaltsinn	NN	1	Kaltsinn
+strafbar	ADJD	1	strafbar
+Ausnahme	NN	1	Ausnahmen
+unverzüglich	ADJD	1	unverzüglich
+absagen	VVIZU	1	abzusagen
+Errettung	NN	1	Errettung
+witzig	ADJD	1	witzig
+allerfrömmsten	ADJA	1	allerfrömmsten
+trüben	VVINF	1	trüben
+Nachdenken	NN	1	Nachdenken
+Schöpfer	NN	1	Schöpfer
+blöd	ADJA	1	blöde
+Verzweifeltste	NN	1	Verzweifeltste
+aufgeräumt	ADJD	1	aufgeräumt
+Klügerm	NN	1	Klügerm
+Erhebung	NN	1	Erhebung
+Leber	NN	1	Leber
+lenket	VVFIN	1	lenket
+sparsam	ADJD	1	sparsamer
+zuhören	VVINF	1	zuhören
+Not	NN	1	Not
+Wollust	NN	1	Wollust
+Ruhe	NN	1	Ruhe
+Schlange	NN	1	Schlange
+verrichten	VVINF	1	verrichten
+Stimme	NN	1	Stimme
+Bocksfüße	NN	1	Bocksfüße
+umzechig	ADJD	1	umzechig
+Blitz	NN	1	Blitz
+Ochse	NN	1	Ochse
+gesprächig	ADJD	1	gesprächig
+begnügen	VVINF	1	begnügen
+Nachmittagspredigt	NN	1	Nachmittagspredigt
+Gemüt	NN	1	Gemüter
+betäuben	VVINF	1	betäuben
+Summe|Summen	NN	1	Summen
+übermorgen	ADV	1	übermorgen
+betaure	VVFIN	1	betaure
+finsterm	ADJA	1	finsterm
+Bedenken	NN	1	Bedenken
+Blutsfreund	NN	1	Blutsfreund
+Einwilligung	NN	1	Einwilligung
+weitre	ADJA	1	weitre
+aufschlagen	VVFIN	1	aufschlägt
+Wunsch	NN	1	Wunsch
+Seufzen	NN	1	Seufzen
+Revers	NN	1	Revers
+anbeten	VVFIN	1	anbete
+ergeben	VVPP	1	ergeben
+Verführung	NN	1	Verführung
+gehts	VVFIN	1	gehts
+anhalten	VVINF	1	anhalten
+redt	ADJD	1	redt
+voll	ADJA	1	voller
+überführet	VVFIN	1	überführet
+Niederträchtigen	NN	1	Niederträchtigen
+überführen	VVINF	1	überführen
+Menschheit	NN	1	Menschheit
+Soll	NN	1	solls
+verachtend	ADJA	1	verachtenden
+Hum	NN	1	Hum
+Wohl	NN	1	Wohl
+sachte	ADV	1	sachte
+göttlich	ADJA	1	göttlichen
+Aufmerksamkeit	NN	1	Aufmerksamkeit
+zornig	ADJD	1	zornig
+Nachdruck	NN	1	Nachdruck
+Lehrer	NN	1	Lehrer
+Betschwester	NN	1	Betschwester
+Nase	NN	1	Nase
+stechen	VVFIN	1	stechen
+Sorge|Sorgen	NN	1	Sorgen
+widerlegt	ADJA	1	widerlegte
+ablenken	VVIZU	1	abzulenken
+est-il	ADJD	1	est-il
+Zahn	NN	1	Zahn
+Quelle	NN	1	Quelle
+gründlich	ADJA	1	gründlichen
+gegenseitig	ADJA	1	gegenseitigen
+Unordnung	NN	1	Unordnung
+vergnügen	VVINF	1	vergnügen
+Schwur	NN	1	Schwur
+widerrufst	VVFIN	1	widerrufst
+fett	ADJA	1	fetten
+Schnippchen	NN	1	Schnippchen
+Lösungswort	NN	1	Lösungswort
+gewärtig	ADJD	1	gewärtig
+waret	ADJA	1	waret
+Veränderung	NN	1	Veränderung
+langen	VVFIN	1	langt
+Aufenthalt	NN	1	Aufenthalt
+Einlenkungen	NN	1	Einlenkungen
+hindern	VVFIN	1	hindert
+Priesterfrau	NN	1	Priesterfrau
+rechtschaffnen	ADJA	1	rechtschaffnen
+merklich	ADJA	1	merkliche
+Pfarr	NE	1	Pfarr
+worin	PWAV	1	worin
+wohinter	PWAV	1	wohinter
+herumschweifen	VVINF	1	herumschweifen
+Fallstrick	NN	1	Fallstricke
+wundern	VVFIN	1	wundern
+la	FM	1	la
+Endzwecke	NN	1	Endzwecke
+gesund	ADJA	1	gesunder
+Sinn	NN	1	Sinne
+streitig	ADJD	1	streitig
+Nähzeuge	NN	1	Nähzeuge
+Beschuldigung	NN	1	Beschuldigungen
+Flitterwoche	NN	1	Flitterwochen
+ausrichten	VVINF	1	ausrichten
+verknüpfet	VVFIN	1	verknüpfet
+Posthause	NN	1	Posthause
+Schuss	NN	1	Schuß
+schnakisch	ADJD	1	schnakisch
+Geistlichkeit	NN	1	Geistlichkeit
+verhehlen	VVFIN	1	verhehlte
+Woche	NN	1	Woche
+rennen	VVINF	1	rennen
+hochbefehlenden	ADJA	1	hochbefehlenden
+Pfeife	NN	1	Pfeife
+umarmen	VVINF	1	umarmen
+schimpflichsten	ADJA	1	schimpflichsten
+Geschicklichkeit	NN	1	Geschicklichkeit
+gegeben	ADJA	1	gegebenes
+gefärbt	ADJA	1	gefärbte
+Gefahr	NN	1	Gefahr
+Vers	NN	1	Vers
+bitte	PTKANT	1	bitte
+gegeneinander	ADV	1	gegeneinander
+Zeisig	NN	1	Zeisig
+schönern	NN	1	schönern
+vorwerfen	VVIZU	1	vorzuwerfen
+unartig	ADJA	1	Unartige
+bestätigen	VVINF	1	bestätigen
+bilden	VVINF	1	bilden
+Vorschrift	NN	1	Vorschriften
+überfallen	VVINF	1	überfallen
+wovon	PWAV	1	Wovon
+vorhergehen	VVINF	1	vorhergehen
+Skrupel	NN	1	Skrupel
+prahlend	ADJA	1	prahlenden
+herauf	ADV	1	herauf
+erwägen	VVFIN	1	erwäge
+Vorrecht	NN	1	Vorrechte
+erhabenern	ADJA	1	erhabenern
+Halssachen	NN	1	Halssachen
+Verwünschung	NN	1	Verwünschungen
+Auslegung	NN	1	Auslegungen
+aufgeben	VVINF	1	aufgeben
+Spaß	NN	1	Spaß
+Tier	NN	1	Tiere
+verjüngt	ADJA	1	verjüngte
+Paar	NN	1	Paar
+gereuet	VVFIN	1	gereuet
+Orakel	NN	1	Orakel
+aufstoßen	VVFIN	1	aufstößt
+Leere	NN	1	Leere
+Reife	NN	1	Reife
+Lieblingsmeinung	NN	1	Lieblingsmeinung
+Entzückende	NN	1	Entzückende
+überdrüssig	ADJD	1	überdrüssig
+aufrichtig	ADJD	1	aufrichtig
+Unfall	NN	1	Unfälle
+Gereist	NN	1	Gereist
+Brut	NN	1	Brut
+überraschen	VVINF	1	überraschen
+Pah	NE	1	Pah
+Zorn	NN	1	Zorn
+Wahre	NN	1	Wahre
+coquin	ADJD	1	coquin
+unhöflich	ADJD	1	unhöflich
+Zuflucht	NN	1	Zuflucht
+hinterbrechen	VVFIN	1	hinterbracht
+mitleidig	ADJA	1	mitleidiges
+Studierstube	NN	1	Studierstube
+hämtückischen	ADJA	1	hämtückischen
+rein	ADJA	1	reinen
+melden	VVINF	1	melden
+verschieben	VVIMP	1	Verschieb
+zärtlich	ADJA	1	zärtlichste
+fliegen	VVINF	1	fliegen
+adieu	ADV	1	Adieu
+Neckerei	NN	1	Neckereien
+Wahrscheinlichkeit	NN	1	Wahrscheinlichkeit
+Mode	NN	1	Mode
+Wohnung	NN	1	Wohnung
+Ernst	NE	1	Ernst
+rege	ADJD	1	rege
+plaudern	VVPP	1	geplaudert
+Ohngefähr	NN	1	Ohngefähr
+Anfall	NN	1	Anfälle
+erwecket	VVFIN	1	erwecket
+Bibel	NN	1	Bibel
+Einwurf	NN	1	Einwurf
+rechnen	VVINF	1	rechnen
+Äußere	NN	1	Äußeres
+widerstehen	VVINF	1	widerstehen
+Schloss	NN	1	Schlosse
+Korb	NN	1	Korb
+begehen	VVINF	1	begehen
+glänzend	ADJA	1	glänzenden
+allerweitesten	ADJA	1	allerweitesten
+aufgedeckt	ADJD	1	aufgedeckt
+gewürdiget	VVPP	1	gewürdiget
+Erschreckliches	NN	1	Erschreckliches
+gebunden	ADJA	1	gebundenen
+willkürlich	ADJA	1	willkürliche
+Gebet	NN	1	Gebet
+Bestätigung	NN	1	Bestätigung
+geborne	ADJA	1	geborne
+stimmen	VVFIN	1	stimmt
+Danksagung	NN	1	Danksagung
+verlorne	ADJA	1	verlorne
+reif	ADJD	1	reif
+trauen	VVFIN	1	traue
+herausspringen	VVFIN	1	herausspringt
+herschrieben	VVFIN	1	herschrieben
+Entschluss	NN	1	Entschluß
+bezaubert	ADJA	1	bezauberte
+allzusehr	ADJD	1	allzusehr
+kindisch	ADJA	1	kindischen
+wirs	ADJD	1	wirs
+verhindern	VVFIN	1	verhindert
+Ausflucht	NN	1	Ausflucht
+Minute	NN	1	Minute
+Gesetz	NN	1	Gesetzes
+Stütze	NN	1	Stütze
+drum	PAV	1	Drum
+dargegen	ADV	1	dargegen
+vergebens	ADV	1	vergebens
+Anlage	NN	1	Anlage
+aufgebracht	ADJA	1	aufgebrachte
+Heu	NN	1	Heu
+Haupt	NN	1	Haupt
+Strahl|Strahlen	NN	1	Strahlen
+heimlich	ADJA	1	heimliche
+Schwätzerin	NN	1	Schwätzerin
+Ganze	NN	1	Ganzes
+Geschöpfchen	NN	1	Geschöpfchen
+kahl	ADJA	1	Kahle
+vielmal	ADV	1	vielmal
+lockrer	ADJA	1	lockrer
+Munterkeit	NN	1	Munterkeit
+allmählig	ADJD	1	allmählig
+Anmut	NN	1	Anmut
+Stadt	NN	1	Stadt
+selten	ADJD	1	selten
+schmackhaft	ADJD	1	schmackhaft
+getrauen	VVFIN	1	getraue
+verlästern	VVPP	1	verlästert
+leer	ADJA	1	leere
+Verwirrung	NN	1	Verwirrung
+Hoffnung	NN	1	Hoffnung
+bestürzen	VVINF	1	bestürzen
+ändern	VVFIN	1	ändert
+Unkosten	NN	1	Unkosten
+greifen	VVFIN	1	greift
+Gefährt|Gefährte	NN	1	Gefährten
+hervorbringen	VVINF	1	hervorbringen
+unendlich	ADJD	1	unendlich
+verstellen	VVINF	1	verstellen
+vorzöge	VVFIN	1	vorzöge
+leichtfertig	ADJD	1	leichtfertig
+Reiz	NN	1	Reize
+siebenmal	ADV	1	siebenmal
+entfärben	VVFIN	1	entfärben
+anmelden	VVINF	1	anmelden
+tauern	VVFIN	1	tauern
+retten	VVFIN	1	rettete
+schelten	VVPP	1	gescholten
+Tasche	NN	1	Tasche
+untersuchen	VVINF	1	untersuchen
+schriftlich	ADJA	1	schriftliche
+Mundwerk	NN	1	Mundwerk
+eingezogen	ADJD	1	eingezogener
+heitern	VVFIN	1	Heitern
+Stern	NN	1	Stern
+siehts	NN	1	siehts
+Unabhängigkeit	NN	1	Unabhängigkeit
+Bösewicht	NN	1	Bösewicht
+scheuen	VVPP	1	gescheut
+Freidenker	NN	1	Freidenker
+heuern	VVFIN	1	heure
+abwarten	VVINF	1	abwarten
+martern	VVINF	1	martern
+vorschlagen	VVINF	1	vorschlagen
+verwechseln	VVFIN	1	verwechseln
+umkehren	VVFIN	1	umkehrt
+peinigen	VVINF	1	peinigen
+Männchen	NN	1	Männchen
+Beischlaf	NN	1	Beischlaf
+verhärten	VVINF	1	verhärten
+brechen	VVFIN	1	bricht
+Geschmack	NN	1	Geschmack
+Blitzmädel	NN	1	Blitzmädel
+aufrichtigern	ADJA	1	aufrichtigern
+ersuchen	VVINF	1	ersuchen
+Gabe	NN	1	Gabe
+womit	PWAV	1	womit
+dennoch	ADV	1	dennoch
+Fortgehen	NN	1	Fortgehen
+Ohr	NN	1	Ohren
+Gesetzgeber	NN	1	Gesetzgeber
+streichen	VVFIN	1	Streichen
+Freigeiste	NN	1	Freigeiste
+Geschick	NN	1	Geschick
+Diantre	ADJA	1	Diantre
+wünschet	ADJD	1	wünschet
+nachgeben	VVINF	1	nachgeben
+verderblich	ADJA	1	verderbliche
+Rätsel	NN	1	Rätsel
+erheiraten	VVFIN	1	erheiratet
+nackend	ADJD	1	nackend
+rechtfertigen	VVINF	1	rechtfertigen
+Jugend	NN	1	Jugend
+neidisch	ADJD	1	neidisch
+vorschießen	VVINF	1	vorschießen
+betauern	VVFIN	1	betauern
+hetzen	VVINF	1	hetzen
+aufstehen	VVFIN	1	aufsteht
+Hauch	NN	1	Hauch
+Bocke	NN	1	Bocke
+anbeißen	VVINF	1	anbeißen
+mere	ADJA	1	mere
+würzen	VVPP	1	gewürzt
+hierauf	PAV	1	Hierauf
+inner	ADJA	1	innere
+ehemals	ADV	1	ehemals
+Geplärre	NN	1	Geplärre
+austeilen	VVINF	1	austeilen
+Wald	NN	1	Wäldern
+davor	PAV	1	davor
+Diener	NN	1	Diener
+Potz	NN	1	Potz
+ärgerlich	ADJD	1	ärgerlich
+vorsätzlich	ADJD	1	vorsätzlich
+loben	VVINF	1	loben
+Heuchelei	NN	1	Heuchelei
+süß	ADJA	1	süßen
+stundenlang	ADJA	1	stundenlanges
+Aushalten	NN	1	Aushalten
+jung	ADJA	1	junger
+Jüngling	NN	1	Jüngling
+reinigen	VVINF	1	reinigen
+Vorsorge	NN	1	Vorsorge
+Gründliches	NN	1	Gründliches
+Mäßigung	NN	1	Mäßigung
+verstorben	ADJA	1	verstorbenen
+Kitzelung	NN	1	Kitzelung

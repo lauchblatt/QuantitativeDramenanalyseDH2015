@@ -118,6 +118,8 @@ class Tree_Tagger:
 		for tagTabSeperated in tagsTabSeperated:
 			tags = tagTabSeperated.split("\t")
 			lemma = tags[2]
+			if(lemma == "<UNKNOWN>"):
+				lemma = tags[0]
 			lemmas.append(lemma)
 		return lemmas
 
@@ -135,6 +137,8 @@ class Tree_Tagger:
 			token = tag[0]
 			pos = tag[1]
 			lemma = tag[2]
+			if(lemma == "<UNKNOWN>"):
+				lemma = tag[0]
 			lemmaWithLanguageInfo = (lemma, (token, pos))
 			self._tokens.append(token)
 			self._lemmas.append(lemma)
@@ -154,7 +158,7 @@ class Tree_Tagger:
 		for tag in tags:
 			if(not tag[1].startswith("$") or tag[1] == "SEN"):
 				newTags.append(tag)
-		
+				
 		return newTags
 	
 	def filterText(self, text):
@@ -178,6 +182,7 @@ class Tree_Tagger:
 			tagsTabSeperated = self._tagger.tag_text(stopword)
 			tags = tagsTabSeperated[0].split("\t")
 			stopword_lemmatized = tags[2]
+			#print stopword_lemmatized
 
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
@@ -192,19 +197,29 @@ class Tree_Tagger:
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 
 	def removeStopwordsFromLemmasList(self, wordList):
+		newList = [word for word in wordList if not (word.lower() in self._stopwords_lemmatized or word.title() in self._stopwords_lemmatized)]
+		return newList
+		"""
 		for stopword in self._stopwords_lemmatized:
 			while stopword.lower() in wordList:
 				wordList.remove(stopword.lower())
 			while stopword.title() in wordList:
 				wordList.remove(stopword.title())
 		return wordList
+		"""
 
 	def removeStopwordsFromTokensList(self, wordList):
+		newList = [word for word in wordList if not (word.lower() in self._stopwords or word.title() in self._stopwords)]
+		return newList
+		
+		"""
 		for stopword in self._stopwords:
 			while stopword.lower() in wordList:
 				wordList.remove(stopword.lower())
 			while stopword.title() in wordList:
 				wordList.remove(stopword.title())
+		return wordList
+		"""
 
 	def processSingleDrama(self, path):
 		parser = DramaParser()

@@ -1,6 +1,6 @@
 Title: Emilia Galotti
-Number of all tokens: 7534
-Nummber of different tokens: 3060
+Number of all tokens: 7686
+Nummber of different tokens: 3084
 
 Token	Frequency
 Prinz	88
@@ -16,6 +16,7 @@ alles	43
 Galotti	41
 sagen	41
 Gräfin	39
+wollen	39
 Grafen	32
 Prinzen	31
 gar	31
@@ -32,6 +33,7 @@ Augen	24
 keinen	24
 Conti	23
 Frau	23
+sprechen	22
 ruhig	22
 sehen	22
 hab	21
@@ -56,6 +58,7 @@ Morgen	17
 recht	17
 Zufall	17
 Orsina	16
+meinen	16
 gern	16
 lieber	15
 andern	15
@@ -76,6 +79,7 @@ nie	13
 Tone	13
 sogleich	13
 Gnade	13
+geben	12
 weniger	12
 Angelo	12
 Gewalt	12
@@ -122,8 +126,9 @@ besser	9
 gesagt	9
 darum	9
 Freundschaft	9
-Gut	9
 Brief	9
+Gut	9
+halten	9
 komme	9
 zurück	9
 gesprochen	9
@@ -149,6 +154,7 @@ unser	8
 geschehen	8
 herein	8
 finden	8
+weit	8
 ersten	8
 schön	8
 heut	8
@@ -165,6 +171,7 @@ Stunde	7
 Mädchen	7
 Verzeihen	7
 Verachtung	7
+dürfen	7
 Tugend	7
 Ding	7
 sieht	7
@@ -228,6 +235,7 @@ wollt	6
 Kammerherr	6
 voraus	5
 willst	5
+spät	5
 gelassen	5
 brauchen	5
 ganze	5
@@ -241,17 +249,19 @@ Art	5
 nochmals	5
 fort	5
 Massa	5
+Wen	5
+schwerlich	5
 Tat	5
 heißen	5
 glücklich	5
 worüber	5
+folgen	5
 gestern	5
 Freunde	5
 lieben	5
 Leute	5
 sprach	5
 Furcht	5
-Wen	5
 merken	5
 einzig	5
 glaube	5
@@ -260,7 +270,6 @@ führe	5
 einander	5
 könnten	5
 Gift	5
-schwerlich	5
 würden	5
 Rose	5
 Schritt	5
@@ -403,18 +412,20 @@ denk	4
 Gebiete	4
 Sinnen	4
 Lieber	4
-Schuldigkeit	4
+Geben	4
 gefallen	4
 Anteil	4
 suchen	4
 Überlegung	4
 nämlichen	4
 selten	4
+Wollen	4
 Entfernung	4
 oft	4
 findet	4
 Beutel	4
 seit	4
+Schuldigkeit	4
 müßte	4
 wahrlich	3
 Platz	3
@@ -474,7 +485,6 @@ fehlen	3
 früher	3
 geträumet	3
 mache	3
-hatten	3
 Religion	3
 sogar	3
 einzigen	3
@@ -532,6 +542,7 @@ Rota	3
 gewußt	3
 Fall	3
 ehrliche	3
+hatten	3
 Armen	3
 befehlen	3
 Porträte	3
@@ -583,6 +594,7 @@ Ruhe	3
 früh	3
 Indes	3
 denkt	3
+einige	3
 Durchlaucht	3
 traurigen	3
 Lügen	3
@@ -592,6 +604,7 @@ schmeicheln	3
 geschmeichelt	3
 möcht	3
 großen	3
+Meinen	3
 morgen	3
 gleichgültig	3
 Fuße	3
@@ -618,6 +631,7 @@ vorzüglichsten	3
 schlimmer	3
 längst	3
 zitterte	3
+Folgen	3
 Gewiß	3
 Welch	3
 weg	3
@@ -837,6 +851,7 @@ abhangen	2
 andrer	2
 hoffe	2
 redlich	2
+sorgen	2
 Höflichkeit	2
 dürften	2
 Erwägen	2
@@ -1022,6 +1037,7 @@ Mitleids	2
 verhehlen	2
 hämisch	2
 trat	2
+liegen	2
 wartet	2
 Gnaden	2
 bekennen	2
@@ -1177,6 +1193,7 @@ genießt	1
 Uhr	1
 unglückselige	1
 Befriedigung	1
+trotzen	1
 nichtswürdig	1
 breites	1
 gesperrt	1
@@ -1185,7 +1202,6 @@ innigern	1
 Geschäft	1
 mitgebracht	1
 lohnen	1
-Entsetzen	1
 erkenntlich	1
 gefährliches	1
 weckte	1
@@ -1439,6 +1455,7 @@ beliebet	1
 mehres	1
 sonderbare	1
 verschließt	1
+Halten	1
 Lustig	1
 müsse	1
 aufgehobner	1
@@ -1623,7 +1640,6 @@ Hohngelächter	1
 stünd	1
 fortreißen	1
 Anstande	1
-ansehen	1
 zweifelte	1
 Saales	1
 Grausamkeit	1
@@ -1644,6 +1660,7 @@ Aufwallung	1
 bestellen	1
 unsrer	1
 teuere	1
+Entsetzen	1
 Vermögen	1
 belachen	1
 gescheuter	1
@@ -1809,6 +1826,7 @@ versprechen	1
 jenem	1
 geseufzet	1
 Atem	1
+befinden	1
 vermengen	1
 bitt	1
 spotten	1
@@ -1852,6 +1870,7 @@ Sünden	1
 Schmuck	1
 Putze	1
 verkümmert	1
+ansehen	1
 Gesinnungen	1
 Erhalten	1
 führet	1
@@ -2146,6 +2165,7 @@ grausam	1
 Schönheiten	1
 Gliede	1
 Gesichte	1
+verbessert	1
 verzweifelt	1
 Kopie	1
 gegolten	1
@@ -2360,6 +2380,7 @@ beruhigen	1
 Knall	1
 Zorne	1
 Gehorsam	1
+gewinnt	1
 überreden	1
 eignen	1
 Beobachtung	1
@@ -2425,7 +2446,6 @@ steckte	1
 junger	1
 Anzeigen	1
 bewegen	1
-Anschlage	1
 ausmache	1
 fortgehen	1
 Sklave	1
@@ -2484,10 +2504,11 @@ ausrichtete	1
 weinen	1
 vermute	1
 rechten	1
-gewinnt	1
+bestimmt	1
 nassen	1
 Toren	1
 Hexerei	1
+mögen	1
 tiefer	1
 Vierteil	1
 Bosheit	1
@@ -2566,6 +2587,7 @@ beehrte	1
 Rock	1
 hör	1
 gestanden	1
+nah	1
 einkömmt	1
 Rufe	1
 wozu	1
@@ -2603,6 +2625,7 @@ umwendet	1
 stilles	1
 Sibylle	1
 anständige	1
+Nase	1
 abwesender	1
 härter	1
 Halse	1
@@ -2668,7 +2691,6 @@ bestes	1
 bester	1
 größern	1
 erblickte	1
-Nase	1
 besäße	1
 Geschenke	1
 denkest	1
@@ -2696,7 +2718,6 @@ Gewissenhaften	1
 rechtschaffnen	1
 tief	1
 Herunter	1
-rechtschaffner	1
 paar	1
 geheimsten	1
 worin	1
@@ -2746,6 +2767,7 @@ gutem	1
 Mitbewerber	1
 augenblicklichen	1
 Schwören	1
+Anschlage	1
 Steinen	1
 Unverschämter	1
 solchem	1
@@ -2782,6 +2804,7 @@ veranlaßt	1
 Narr	1
 aufschieben	1
 Markte	1
+rechtschaffner	1
 getrau	1
 Bedinge	1
 stampft	1
@@ -2794,6 +2817,7 @@ wohlfeil	1
 Verurteilung	1
 vollzöge	1
 verbinden	1
+gelten	1
 Gebäudes	1
 Mißtrauen	1
 Genuß	1
@@ -2918,7 +2942,6 @@ Wollüstling	1
 Behäglicher	1
 erschossene	1
 plastische	1
-verbessert	1
 eitle	1
 gefodert	1
 Verwirrung	1
@@ -2940,6 +2963,7 @@ bewundern	1
 Mordtat	1
 trennet	1
 plötzlichen	1
+Sorgen	1
 umhin	1
 vermehren	1
 schriftlich	1

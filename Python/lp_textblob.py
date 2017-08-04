@@ -215,19 +215,29 @@ class Text_Blob:
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 
 	def removeStopwordsFromLemmasList(self, wordList):
+		newList = [word for word in wordList if not (word.lower() in self._stopwords_lemmatized or word.title() in self._stopwords_lemmatized)]
+		return newList
+
+		"""
 		for stopword in self._stopwords_lemmatized:
 			while stopword.lower() in wordList:
 				wordList.remove(stopword.lower())
 			while stopword.title() in wordList:
 				wordList.remove(stopword.title())
 		return wordList
+		"""
 
 	def removeStopwordsFromTokensList(self, wordList):
+		newList = [word for word in wordList if not (word.lower() in self._stopwords or word.title() in self._stopwords)]
+		return newList
+
+		"""
 		for stopword in self._stopwords:
 			while stopword.lower() in wordList:
 				wordList.remove(stopword.lower())
 			while stopword.title() in wordList:
 				wordList.remove(stopword.title())
+		"""
 
 	"""
 	def removeStopwordsFromWordFrequencies(self, wordFrequencies):

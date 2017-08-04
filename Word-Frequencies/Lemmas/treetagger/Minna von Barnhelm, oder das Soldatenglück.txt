@@ -1,6 +1,6 @@
 Title: Minna von Barnhelm, oder das Soldatenglück
-Number of all lemmas: 8891
-Nummber of different lemmas: 2687
+Number of all lemmas: 8908
+Nummber of different lemmas: 2695
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	245	Herrn, Herr, Herren
@@ -247,6 +247,7 @@ Heraklius	NE	6	Heraklius
 Monat	NN	6	Monate, Monat, Monaten
 laufen	VVFIN, VVIMP, VVINF	6	laufen, lauf, lief
 Streich	NN	6	Streiche, Streich
+diese	PDS	6	Diese, dieser, diesen
 fest	ADJD, ADJA	6	fest, festen, feste
 erzählen	VVINF, VVPP, VVFIN, VVIMP	6	erzählen, erzählt, Erzähl
 kalt	ADJD, ADJA	6	kalt, kalte, Kalt
@@ -373,6 +374,7 @@ recht|rechts	ADJA	4	rechten, rechte
 Wille	NN	4	Willen
 Läufer	NN	4	Läufer, Läufers
 darnach	ADV	4	darnach
+einen	ADJA, VVINF	4	Einen, einen
 gefährlich	ADJD	4	gefährlich
 Schlüssel	NN	4	Schlüssel
 durchaus	ADV	4	durchaus
@@ -579,6 +581,7 @@ starr	ADJD, ADJA	3	starr, starren
 Küche	NN	3	Küche
 zurücknehmen	VVINF, VVPP	3	zurücknehmen, zurückgenommen
 vors	APPRART	3	vors
+am	PTKA	3	am
 au	ITJ	3	au
 Briefchen	NN	3	Briefchen
 Winter	NN	3	Winter
@@ -742,7 +745,6 @@ Holla	NE	2	Holla
 Equipage	NN	2	Equipage
 Lazarett	NN	2	Lazarette, Lazarett
 Grille|Grillen	NN	2	Grillen
-<UNKNOWN>	NE, ADJD	2	Se, depend
 speisen	VVINF	2	speisen
 Stübchen	NN	2	Stübchen
 Weile	NN	2	Weile
@@ -1144,6 +1146,7 @@ Frauenszeug	NN	1	Frauenszeug
 Licht	NN	1	Licht
 Hieb	NN	1	Hieb
 Farbe	NN	1	Farbe
+Trotz	NN	1	Trotz
 Eselsgehirn	NN	1	Eselsgehirn
 Denkungsart	NN	1	Denkungsart
 fürchterlich	ADJD	1	fürchterlicher
@@ -1212,6 +1215,7 @@ françois	VVFIN	1	françois
 Junge	NN	1	Junge
 untergesteckt	VVPP	1	untergesteckt
 satt	ADJD	1	satt
+Neue	NN	1	Neues
 Augenblickchen	NN	1	Augenblickchen
 erstemal	ADV	1	erstemal
 A	NN	1	A
@@ -1575,6 +1579,7 @@ beurlauben	VVFIN	1	beurlauben
 desfalls	NN	1	desfalls
 bestellen	VVINF	1	bestellen
 Gutt	ADJD	1	Gutt
+trotz	APPR	1	Trotz
 Monarch	NN	1	Monarch
 rasieren	VVINF	1	rasieren
 aufziehen	VVFIN	1	aufzieht
@@ -1915,7 +1920,6 @@ beibehalten	VVPP	1	beibehalten
 Aufwartung	NN	1	Aufwartung
 Hof	NN	1	Hof
 unveränderlich	ADJD	1	unveränderlich
-gratulier	NN	1	gratulier
 umnebeln	VVPP	1	umnebelt
 gäb	VVFIN	1	gäb
 allervollständigste	ADJA	1	allervollständigste
@@ -1989,6 +1993,7 @@ Richtigkeit	NN	1	Richtigkeit
 redlich	ADJA	1	redlichen
 reizen	VVPP	1	gereizt
 Rittmeister	NN	1	Rittmeister
+Se	NE	1	Se
 enfant	NN	1	enfant
 prompt	ADJD	1	prompt
 Wien	NE	1	Wien
@@ -2563,8 +2568,10 @@ kahl	ADJD	1	kahl
 quil	ADJA	1	quil
 Straß	NN	1	Straß
 Magen	NN	1	Magen
+gratulier	NN	1	gratulier
 Gespräch	NN	1	Gespräch
 geplündert	ADJA	1	geplünderten
+depend	ADJD	1	depend
 allerschlecht	ADJA	1	allerschlechtesten
 Generalin	NN	1	Generalin
 innerhalb	ADJD	1	innerhalb
@@ -2596,6 +2603,7 @@ sauter	ADJA	1	sauter
 retten	VVINF	1	retten
 beschenken	VVINF	1	beschenken
 Angenehme	NN	1	Angenehmes
+Einer	NN	1	Einer
 Würdigste	NN	1	Würdigste
 untersuchen	VVPP	1	untersucht
 vermehren	VVINF	1	vermehren

@@ -1,6 +1,6 @@
 Title: Minna von Barnhelm, oder das Soldatenglück
-Number of all tokens: 9648
-Nummber of different tokens: 3676
+Number of all tokens: 9839
+Nummber of different tokens: 3698
 
 Token	Frequency
 Herr	211
@@ -10,6 +10,7 @@ wohl	80
 Franziska	79
 Tellheim	73
 Mann	66
+wollen	57
 Just	49
 sagen	47
 Wirt	45
@@ -22,6 +23,7 @@ gut	37
 weiß	37
 Ihro	36
 alles	35
+meinen	35
 Wachtmeister	34
 Frauenzimmerchen	31
 Ehre	31
@@ -46,6 +48,8 @@ Hand	22
 Brief	22
 gewiß	22
 vergessen	21
+geben	21
+sprechen	21
 wahr	21
 Unglück	21
 sei	21
@@ -184,6 +188,7 @@ Komm	8
 Hören	8
 Gott	8
 herein	8
+weit	8
 un	8
 entgegen	8
 Dukaten	8
@@ -207,6 +212,7 @@ mache	7
 Tag	7
 nimmt	7
 Ihres	7
+folgen	7
 nimm	7
 Leute	7
 wert	7
@@ -251,6 +257,7 @@ ganze	6
 Bedienten	6
 sagt	6
 Freilich	6
+Wollen	6
 Schwester	6
 hab	6
 vielleicht	6
@@ -259,13 +266,13 @@ nochmals	6
 gib	6
 Eben	6
 heißen	6
+Männer	6
 ehrlicher	6
 gestern	6
 hoffen	6
 Kurz	6
 sag	6
 lernen	6
-Männer	6
 Wohin	6
 geh	6
 Mühe	6
@@ -346,6 +353,7 @@ Mannes	5
 lachen	5
 Dank	5
 Tage	5
+scheinen	5
 Dame	5
 Nehmen	5
 verkennen	5
@@ -412,6 +420,7 @@ achtzig	4
 kennst	4
 aufgehoben	4
 Grobian	4
+dürfen	4
 Art	4
 lieset	4
 lieb	4
@@ -451,6 +460,7 @@ ehe	4
 Tellheims	4
 Spiel	4
 unser	4
+notwendig	4
 dienen	4
 könnten	4
 gewahr	4
@@ -527,7 +537,6 @@ Ohr	4
 Willen	4
 Diener	4
 Haus	4
-notwendig	4
 ausfahren	3
 mußt	3
 jemals	3
@@ -567,6 +576,7 @@ Streich	3
 befiehlt	3
 Reisen	3
 trinken	3
+halten	3
 bar	3
 vielmehr	3
 aufzuheben	3
@@ -581,6 +591,7 @@ une	3
 Cest	3
 Schweig	3
 iß	3
+Halten	3
 Sieh	3
 erzählen	3
 seines	3
@@ -624,6 +635,7 @@ Gerechtigkeit	3
 verkauft	3
 ei	3
 Verräter	3
+Geben	3
 Sachen	3
 behalten	3
 beklage	3
@@ -720,6 +732,7 @@ Band	3
 danke	3
 erwarten	3
 Zufall	3
+mögen	3
 hinter	3
 Interessen	3
 Tagen	3
@@ -749,6 +762,7 @@ wiß	3
 Philipp	3
 Verstand	3
 verlangen	3
+Meinen	3
 Kaffee	3
 Woche	3
 verabschiedet	3
@@ -803,6 +817,7 @@ Regiment	2
 trifft	2
 beleidigen	2
 Schritte	2
+neu	2
 Unglücks	2
 mutwillig	2
 ungefähr	2
@@ -887,7 +902,6 @@ behelfen	2
 Bestie	2
 Ringelchen	2
 Husch	2
-Brust	2
 sagte	2
 Wendung	2
 Unglücke	2
@@ -1156,6 +1170,7 @@ wohnt	2
 Hast	2
 Guten	2
 fünf	2
+Folgen	2
 erlauben	2
 Vorsatze	2
 frisieren	2
@@ -1244,6 +1259,7 @@ vermute	2
 rechten	2
 Mißverständnis	2
 Unglückliche	2
+sorgen	2
 allzu	2
 Ohren	2
 rien	2
@@ -1351,11 +1367,13 @@ streitig	2
 wills	2
 scherzen	2
 nämlichen	2
+Brust	2
 Verwirrung	2
 ehemaligen	2
 ziehen	2
 erinnert	2
 Kaffeehause	2
+Sorgen	2
 Tasche	2
 schriftlich	2
 Welch	2
@@ -1508,6 +1526,7 @@ gewisse	1
 Schlägt	1
 lohnen	1
 Trommelschläger	1
+spät	1
 Rache	1
 hinzugesetzt	1
 springen	1
@@ -1621,6 +1640,7 @@ vorbereiten	1
 moment	1
 Gratial	1
 Seines	1
+verboten	1
 gehörigen	1
 nichtswürdiger	1
 Gliedmaßen	1
@@ -2039,7 +2059,7 @@ betauere	1
 einziger	1
 merkt	1
 fliehen	1
-zurückgibt	1
+setzt	1
 Fleischerknecht	1
 höhnisch	1
 nachkomme	1
@@ -2051,7 +2071,6 @@ langt	1
 Eigentümer	1
 blühende	1
 unbescheiden	1
-Künftige	1
 Lesen	1
 beurteilet	1
 steckts	1
@@ -2266,7 +2285,8 @@ Wen	1
 Bube	1
 Schwert	1
 losdrücken	1
-setzt	1
+eigen	1
+Künftige	1
 blinde	1
 Lektion	1
 nüchtern	1
@@ -2559,7 +2579,6 @@ notwendik	1
 verlegt	1
 Zurücknehmung	1
 herschreibt	1
-Gasthöfe	1
 versiegelte	1
 Schlafzimmer	1
 Fix	1
@@ -2789,6 +2808,7 @@ vollkommen	1
 Zwanges	1
 Schlage	1
 trouvoient	1
+Vors	1
 vorgeht	1
 Notwendiges	1
 Oberst	1
@@ -2844,6 +2864,7 @@ fing	1
 frisch	1
 küssen	1
 hinwerfen	1
+Dienstfertigkeit	1
 Heute	1
 Händel	1
 traue	1
@@ -2855,6 +2876,7 @@ ungestümes	1
 zweitenmale	1
 Taschenbuch	1
 Hörst	1
+zurückgibt	1
 Verabschiedet	1
 Eigensinne	1
 beruhiget	1
@@ -2967,7 +2989,6 @@ Vielmehr	1
 obersten	1
 hingezogen	1
 Schwestern	1
-verboten	1
 vorsichtigen	1
 mot	1
 allenfalls	1
@@ -3176,7 +3197,7 @@ schrieben	1
 kaufe	1
 ausgemacht	1
 Verwahrung	1
-Dienstfertigkeit	1
+einige	1
 erfunden	1
 krepieren	1
 chose	1
@@ -3311,6 +3332,7 @@ Katzenbuckel	1
 Mildtätigen	1
 eifersüchtig	1
 kommend	1
+liegen	1
 befugt	1
 Zimmers	1
 reißen	1
@@ -3508,7 +3530,6 @@ entschuldiget	1
 umgegangen	1
 Mores	1
 General	1
-Erbin	1
 wild	1
 schlimmer	1
 Kompagnie	1
@@ -3541,7 +3562,6 @@ Winterquartieren	1
 beschenken	1
 Dritter	1
 soviel	1
-Vors	1
 Würdigste	1
 Aufenthalts	1
 ernsthafte	1
@@ -3608,6 +3628,7 @@ ertappte	1
 Taschenbuche	1
 aufzieht	1
 heiligste	1
+Erbin	1
 Sommer	1
 Schöpfer	1
 jammerte	1
@@ -3672,6 +3693,7 @@ Reste	1
 erdrosseln	1
 vertreiben	1
 unverzeihlicher	1
+Gasthöfe	1
 Lust	1
 häßlichen	1
 schreckliche	1

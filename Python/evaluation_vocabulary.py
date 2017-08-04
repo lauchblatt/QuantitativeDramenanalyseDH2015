@@ -12,12 +12,13 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	evaluation = Evaluation_LexiconVsVocabulary()
-	evaluation.init("../Word-Frequencies/Tokens/EntireCorpus.txt", "NRC")
+	#evaluation.init("../Word-Frequencies/Lemmas/textblob/EntireCorpus.txt", "NRC", "textblob")
 	
-	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas", "NRC")
-	result = evaluation.evaluateLexiconLemmasVsVocabulary()
+	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/treetagger/", "NRC", "treetagger")
+	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	evaluation.writeResultOutput("../Evaluation/NRC/LemmaTokenEntireCorpus.txt", result)
+	#evaluation.writeResultOutput("../Evaluation/NRC/Textblob-LemmasLemmasEntireCorpus.txt", result)
+	evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
 
@@ -33,7 +34,7 @@ class Evaluation_LexiconVsVocabulary:
 	
 	def init(self, vocPath, lexiconName, processor):
 		self._vocabulary = self.readVocabulary(vocPath)
-		self.setLexicon(lexiconName)
+		self.setLexicon(lexiconName, processor)
 
 	def setLexicon(self, lexiconName, processor):
 		lexiconHandler = Lexicon_Handler()
@@ -43,14 +44,27 @@ class Evaluation_LexiconVsVocabulary:
 		self._lexicon = lexiconHandler._sentimentDict
 		self._lexiconLemmas = lexiconHandler._sentimentDictLemmas
 
-	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName):
+	def evaluateAll(self):
+		processors = ["treetagger", "textblob"]
+		lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC"]
+		for processor in processors:
+			for lexicon in lexicons:
+				#First evaluation against token-vocs
+				self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
+					, lexicon, processor)
+				# then evaluation against lemmma-vocs
+				self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/" + processor + "/" \
+					, lexicon, processor)
+
+	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName, processor):
 		for filename in os.listdir(vocFolder):
 			vocPath = vocFolder + "/" + filename
-			self.init(vocPath, lexiconName)
+			self.init(vocPath, lexiconName, processor)
 			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
 			print(results[0]._recognizedPercentage)
 			print(results[1]._recognizedPercentage)
-			outputPath = "../Evaluation/" + lexiconName + "/"
+			outputPath = "../Evaluation/" + lexiconName + "/" + processor + "/"
+			print self._vocabulary._type
 			crossFolder1 = "TokensLexiconVS" + self._vocabulary._type + "Vocabulary/"
 			crossFolder2 = "LemmasLexiconVS" + self._vocabulary._type + "Vocabulary/"
 			name1 = lexiconName + "-TokensVS-" + self._vocabulary._name + "-" + self._vocabulary._type
@@ -166,7 +180,10 @@ class Vocabulary:
 		lines = vocabularyFile.readlines()[5:]
 
 		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
-		self._type = path.split("/")[-2]
+		self._type = path.split("/")[-4]
+		print ("hello World")
+		print self._name
+		print self._type
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")

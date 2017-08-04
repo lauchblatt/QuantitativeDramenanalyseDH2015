@@ -1,6 +1,6 @@
 Title: Die alte Jungfer
-Number of all lemmas: 3541
-Nummber of different lemmas: 1630
+Number of all lemmas: 3644
+Nummber of different lemmas: 1671
 
 Lemma	POS	Frequency	Tokens
 Herr	JJ, NN, NNP	71	Herr, Herren
@@ -8,11 +8,12 @@ Capitaine	NN, NNP	41	Capitaine
 Ach	NN	35	Ach
 Schlag	NNP, NN	34	Schlag
 sagen	VB, VBN, PRP$, RP	34	sagen, gesagt, sagte, sagt, sage
-wohl	RP, RB, IN	30	wohl
+wohl	RP, RB, IN	31	wohl
 Jahr	NN	25	Jahr
 Mann	NN	25	Mann
 nehmen	RB, VB, VBN	22	nimmt, nehme, nehmen, genommen
 lieb	JJ	21	lieber, liebe, lieb, lieben
+meine	PRP$	21	meine
 Jungfer	NN, JJ	21	Jungfer
 gar	RB, IN, RP	21	gar
 heiraten	VB, RP, VBN	20	heiraten, geheiratet
@@ -27,18 +28,19 @@ ha	NN, NNP	17	ha
 Lisette	NN, NNP	16	Lisette
 gewiss	NN, JJ	15	gewiß
 schuldig	JJ	15	schuldig
+ist	JJ, RB, VB	15	ist
 Muhme	NN	15	Muhme
 glauben	VB, VBN	15	glauben, glaube, glaubst, geglaubt
 Mademoiselle	NN	14	Mademoiselle
 Heirat	NNS, NN	14	Heiraten, Heirat
 weeissen	VB	14	weiß
 Ohldin	NN, NNP	13	Ohldin
-erst	RB, JJ, NN, RP	12	erst, ersten, erste
+Bräutigam	NN	12	Bräutigam
 reden	VB, VBN	12	reden, geredet, rede, redet, redest
 Frau	JJ, NN	12	Frau
 Peter	NNP, NN	12	Peter
+erst	RB, JJ, NN, RP	11	erst, ersten, erste
 Ha	NN	11	Ha
-Bräutigam	NN	11	Bräutigam
 denken	VB	11	denke, denkt, denken
 itzo	NN, RB	11	itzo
 Herrn	NN, JJ	11	Herrn
@@ -51,6 +53,7 @@ Schneider	NN, NNP	10	Schneider
 Ei	NN	10	Ei
 Henker	NN	10	Henker
 rechen	VB, VBN	10	recht
+bald	RB, RP, WRB, IN	10	bald
 Wort	NN, NNS	9	Wort, Worte, Wörter
 sehen	VB, VBN	9	sehen, sieht, gesehen
 nu	UH	9	nu
@@ -60,7 +63,6 @@ etwan	NN	9	etwan
 heeissen	VB, VBN	9	heißt, heißen
 Lass	NN	9	Laß
 Poeten	NN	9	Poeten
-bald	RB, RP, WRB, IN	9	bald
 bezahlen	VB, VBN	8	bezahlen, bezahlt
 willst	RP, WRB	8	willst
 Augenblick	NNP, NN	8	Augenblick
@@ -71,6 +73,7 @@ Kinder	NN	8	Kinder
 närrisch	JJ	8	närrische, närrisch
 Kind	NN	8	Kind
 Gut	NN	8	Gut
+sind	JJ, RB, VB	8	sind
 Oronte	NN, NNP	8	Oronte
 sehn	NN	8	sehn
 bitten	VB	7	bitten, bitte
@@ -80,6 +83,7 @@ Art	NN	7	Art
 ehrlich	JJ	7	ehrlichen, ehrliches, ehrliche, ehrlicher
 lange	RB, IN	7	lange
 schicken	RP, VB	7	geschickt, schicken, schickt
+Meine	PRP$	7	Meine
 Teufel	NN	7	Teufel
 heuen	VB, VBN	7	heute
 Namen	NN	7	Namen
@@ -122,6 +126,7 @@ Taler	NN	5	Taler
 Hund	NN, NNP	5	Hund
 Vermögen	NN	5	Vermögen
 Ihrem	NN	5	Ihrem
+Stelle	NN	5	Stelle
 ansehen	VB	5	ansieht, ansehen
 dergleichen	PRP	5	dergleichen
 richtig	JJ	5	richtig
@@ -150,7 +155,6 @@ läng	JJ	4	länger
 Wechsel	NN	4	Wechsel
 Sachte	PRP$	4	Sachte
 glücklich	JJ	4	glücklichen, glücklich, glückliche
-Stelle	NN	4	Stelle
 Standes	NN	4	Standes
 wert	RP	4	wert
 fertig	JJ	4	fertig
@@ -161,6 +165,7 @@ zwanzig	CD	4	zwanzig
 Menschen	NN	4	Menschen
 einander	PRP	4	einander
 Ehre	NN	4	Ehre
+breit	JJ	4	breiten, breit, breite
 hast	NN	4	hast
 900	CD	4	900
 Unglück	NN	4	Unglück
@@ -217,6 +222,7 @@ kurz	JJ	3	kurz
 spielen	VB	3	spielen
 wirds	NN	3	wirds
 Hand	NN	3	Hand
+hätte	RB	3	hätte
 führen	VB	3	führen, führe
 kosen	VB, VBN	3	kosten
 Neuesen	VB, NN	3	Neues
@@ -230,7 +236,6 @@ kennen	VB	3	kennen, kennt
 besser	RP, RB	3	besser
 Rock	NN	3	Rock
 entsprossen	NN	3	entsprossen
-breit	JJ	3	breiten, breit
 Verzeihen	NN	3	Verzeihen
 nachlaufen	NN	3	nachlaufen
 Gesichte	NN	3	Gesichte
@@ -243,7 +248,6 @@ Komm	NN	3	Komm
 Reden	NN	3	Reden
 Haar	NNS, NN	3	Haare, Haar
 stehn	NN	3	stehn
-Neuigkeit	NN	3	Neuigkeit
 gehören	RP, VBN, VB	3	gehört, gehöre
 Hochwohlgeborne	NN	3	Hochwohlgeborne
 wem	WP	3	wem
@@ -280,6 +284,7 @@ Rechnung	NN	3	Rechnung
 sollst	WRB, RB	3	sollst
 ziehen	VB	3	zieht, ziehn
 Kopf	NN, NNS	3	Kopf, Köpfe
+Neuigkeit	NN	3	Neuigkeit
 hintertreiben	VB	3	hintertreiben
 Zuckerbretzeln	NN	3	Zuckerbretzeln
 langen	VB, VBN	3	lange
@@ -316,6 +321,7 @@ Rechte	NN	2	Rechte
 Stelzfuss	NN	2	Stelzfuß
 Ware	NN, NNS	2	Ware, Waren
 Corinna	NNP, NN	2	Corinna
+brauchen	VB	2	brauchen, braucht
 stets	RB	2	stets
 heissen	VB	2	heißen
 Gebackensherumträger	NN	2	Gebackensherumträger
@@ -385,11 +391,13 @@ Leuten	NN	2	Leuten
 missbrauchen	VB	2	mißbrauchen
 Gesellschaft	NN	2	Gesellschaft
 ärgern	VB	2	ärgern
+Stärke	NN	2	Stärke
 halt	RP, VB	2	halt, halten
 Torheit	NN	2	Torheit
 halb	JJ	2	halbe, halben
 versichre	NN	2	versichre
 Schmaus	NN	2	Schmaus, Schmause
+kann	VB	2	kann
 wollensen	MD	2	wollens
 Inhalte	NN	2	Inhalte
 behalten	VB, VBN	2	behalte, behalten
@@ -408,10 +416,12 @@ Punkte	NN	2	Punkte
 Weise	NN, NNP	2	Weise
 dachts	RB	2	dachts
 altem	NN	2	altem
+Kann	NNP, NN	2	Kann
 1724	CD	2	1724
 besorge	NN	2	besorge
 verdammt	JJ	2	verdammter, verdammte
 sichs	NN	2	sichs
+wäre	VB, RB	2	wäre
 trotzen	VB	2	trotzen
 plötzlich	JJ	2	plötzlich
 lehren	VB	2	lehren
@@ -423,6 +433,7 @@ unschuldiges	PRP$	2	unschuldiges
 Neu	JJ, NN	2	Neues
 besondre	NN	2	besondre
 wärst	NN	2	wärst
+habe	RB	2	habe
 nötigen	VBN, VB	2	nötig, nötigen
 fein	JJ	2	feinen, fein
 abfinden	VB	2	abfinden
@@ -433,6 +444,8 @@ Exempel	NN	2	Exempel
 Gelde	NN	2	Gelde
 dreissig	CD	2	dreißig
 antragen	NN	2	antragen
+laut	JJ	2	lauter, lautem
+manch	JJ	2	manchem, manchen
 leid	JJ	2	leid
 Gnade	NNS	2	Gnaden
 stelle	NN	2	stelle
@@ -459,6 +472,7 @@ Mittel	NN	2	Mittel
 werter	NN	2	werter
 Wege	NN	2	Wege
 notwendig	JJ	2	notwendig
+oft	RB	2	oft
 Freiheit	NN	2	Freiheit
 Hören	NN	2	Hören
 Stande	NN	2	Stande
@@ -473,6 +487,7 @@ Beistand	NN	2	Beistand
 künftig	JJ	2	künftig, künftigen
 tanzen	VB	2	tanzen
 finden	VB	2	finden, gefunden
+bin	JJ, VB	2	bin
 fürchte	NN	2	fürchte
 Schämen	NN	2	Schämen
 rechten	NN	2	rechten
@@ -497,6 +512,7 @@ verstehens	NN	2	verstehens
 schön	JJ	2	schönes, schön
 Nase	NN	2	Nase
 Beschreibung	NN	2	Beschreibung
+danken	VB	2	danken
 Verstand	NN	2	Verstand
 tief	JJ	2	tief, tiefer
 ausdrücken	VB	2	ausdrücken
@@ -509,7 +525,6 @@ bekennen	VB	2	bekannt, bekennen
 reizende	NN	2	reizende
 Narr	NN	2	Narr
 Rede	NN, JJ	2	Rede
-Stärke	NN	2	Stärke
 hättest	WRB	2	hättest
 seiner	PRP$	2	seiner
 vorhin	RB	2	vorhin
@@ -533,7 +548,6 @@ Tanzen	NN	2	Tanzen
 zanken	NN	2	zanken
 alleine	NN	2	alleine
 schw	JJ	2	schwer
-oft	RB	2	oft
 unterschiedene	NN	2	unterschiedene
 Gelegenheit	NN	2	Gelegenheit
 Gabe	NN	2	Gabe
@@ -563,6 +577,7 @@ Platz	NN	1	Platz
 vergessen	VBN	1	vergessen
 jemals	RB	1	jemals
 vertraut	JJ	1	vertraut
+pflegen	VB	1	pflegt
 Wörtchen	NN	1	Wörtchen
 desperat	NN	1	desperat
 angewanden	VBN	1	angewandt
@@ -591,6 +606,7 @@ wertester	NN	1	wertester
 arme	JJ	1	arme
 verflossen	NN	1	verflossen
 holt	VB	1	holte
+muss	RB	1	muß
 90	CD	1	90
 bissgen	NN	1	bißgen
 bringe	VB	1	bringe
@@ -635,6 +651,8 @@ Dutzend	NN	1	Dutzend
 Spitzenmanne	NN	1	Spitzenmanne
 Schande	NN	1	Schande
 probiert	NN	1	probiert
+Hahn	NN	1	Hahn
+währen	VB	1	währen
 Unvergleichlicher	NN	1	Unvergleichlicher
 Madame	NN	1	Madame
 Fenstern	NN	1	Fenstern
@@ -643,7 +661,6 @@ Köpfchen	NN	1	Köpfchen
 feurige	NN	1	feurige
 frei	JJ	1	frei
 Bauch	NN	1	Bauch
-brauchen	VB	1	brauchen
 weniger	RP	1	weniger
 verruckt	NN	1	verruckt
 verschont	NN	1	verschont
@@ -669,6 +686,7 @@ Gang	NN	1	Gang
 Sei	NN	1	Sei
 Holla	NN	1	Holla
 galante	NN	1	galante
+Käse	NN	1	Käse
 Säkulumen	NN	1	Säkulum
 leugnen	VB	1	leugnen
 hingehen	NNP	1	hingehen
@@ -686,6 +704,7 @@ Verbindung	NN	1	Verbindung
 sollens	NN	1	sollens
 schenken	VBN	1	geschenkt
 sagt	RB	1	sagt
+Bin	NN	1	Bin
 Plunder	NN	1	Plunder
 schmeckte	NN	1	schmeckte
 Wenns	NN	1	Wenns
@@ -762,6 +781,7 @@ Herausgehen	NN	1	Herausgehen
 gewinnen	RP	1	gewonnen
 Gar	NN	1	Gar
 sitzen	VB	1	sitzen
+sechzehn	CD	1	sechzehn
 beschweren	VB	1	beschweren
 Sagen	NN	1	Sagen
 vorteilhafte	NN	1	vorteilhafte
@@ -774,11 +794,11 @@ drucken	VB	1	drucken
 Vogel	NN	1	Vogel
 Gedulden	NN	1	Gedulden
 schwarz	JJ	1	schwarzer
+Ton	NN	1	Ton
 Arm	NNS	1	Arme
 darzu	RB	1	darzu
 mannbares	NN	1	mannbares
 ekel	NN	1	ekel
-Stell	NN	1	Stelle
 Ewr	NN	1	Ewr
 verwünschte	NN	1	verwünschte
 Quark	NN	1	Quark
@@ -798,6 +818,7 @@ Topp	NN	1	Topp
 geschieht	JJ	1	geschieht
 hübsch	JJ	1	hübsch
 ohnedem	RB	1	ohnedem
+war	VB	1	war
 nähme	NN	1	nähme
 liesse	NN	1	ließe
 leiden	VB	1	leiden
@@ -834,6 +855,7 @@ Grossmut	NN	1	Großmut
 Wen	NN	1	Wen
 Wem	NN	1	Wem
 zukünftig	JJ	1	zukünftigen
+faulen	NN	1	faulen
 Wahl	NN	1	Wahl
 unterbringe	NN	1	unterbringe
 Tag	NN	1	Tag
@@ -882,6 +904,7 @@ Männersucht	NN	1	Männersucht
 Sapienti	NN	1	Sapienti
 Krame	NN	1	Krame
 zwölfte	CD	1	zwölfte
+tummeln	NN	1	tummeln
 Korbe	NN	1	Korbe
 Jungf	JJ	1	Jungfer
 hoffen	VB	1	hoffe
@@ -896,7 +919,6 @@ vorenthalten	NN	1	vorenthalten
 Warten	NN	1	Warten
 Unwissenheit	NN	1	Unwissenheit
 Probe	NN	1	Probe
-unbesonnene	NN	1	unbesonnene
 ausgäbst	NN	1	ausgäbst
 bedenkst	NN	1	bedenkst
 Gelegenheien	NN	1	Gelegenheiten
@@ -932,7 +954,7 @@ ehlich	JJ	1	ehlichen
 zittre	NN	1	zittre
 unvernünftiges	NN	1	unvernünftiges
 unvernünftiger	NN	1	unvernünftiger
-währen	VB	1	währen
+dünkt	NNP	1	dünkt
 Post	NN	1	Post
 Omen	NN	1	Omen
 treib	VB	1	treiben
@@ -957,12 +979,14 @@ sau	JJ	1	sauer
 sat	NN	1	sat
 Rechthaberin	JJ	1	Rechthaberin
 gehörige	NN	1	gehörige
+Reifrock	NN	1	Reifrock
 Name	NN	1	Name
 Cabinetstückchen	VB	1	Cabinetstückchen
 falle	NN	1	falle
 verdienen	VB	1	verdient
 Brunette	NN	1	Brunette
 Erinnern	NN	1	Erinnern
+Vetters	NN	1	Vetters
 lernen	VB	1	lernen
 wunderbar	JJ	1	wunderbar
 Weg	NN	1	Weg
@@ -979,7 +1003,6 @@ Diensten	NN	1	Diensten
 wüsstest	NN	1	wüßtest
 bekümmern	NN	1	bekümmern
 merken	VB	1	merkt
-Aufzugs	NN	1	Aufzugs
 süsse	NN	1	süße
 geh	NN	1	geh
 Männern	JJ	1	Männern
@@ -988,6 +1011,7 @@ Zumal	RB	1	Zumal
 Tochtermann	NNP	1	Tochtermann
 erkundigen	VB	1	erkundigen
 lebhaft	JJ	1	lebhafte
+schreien	VB	1	schreit
 einst	WRB	1	einst
 Ecke	JJ	1	Ecke
 Wache	NN	1	Wache
@@ -1004,6 +1028,7 @@ mans	JJ	1	mans
 Glücke	NN	1	Glücke
 beklagen	VB	1	beklagen
 zerlappte	NN	1	zerlappte
+stinken	VB	1	stinken
 jemanden	NN	1	jemanden
 einfallen	VB	1	einfallen
 beissenden	NN	1	beißenden
@@ -1012,13 +1037,14 @@ Kehren	NN	1	Kehren
 Grobheit	NN	1	Grobheit
 erlösen	VB	1	erlösen
 Kannst	NN	1	Kannst
-Raserei	NN	1	Raserei
+Stich	NN	1	Stich
 Ohrfeige	NN	1	Ohrfeige
 500	CD	1	500
 Verbeugung	NN	1	Verbeugung
 Schuldhausen	NN	1	Schuldhausen
 einfinden	VB	1	einfinden
 Unmöglich	JJ	1	Unmöglich
+Tatzen	NN	1	Tatzen
 Intressen	NN	1	Intressen
 Vorhaben	NN	1	Vorhaben
 Ernsthaften	NN	1	Ernsthaften
@@ -1028,7 +1054,7 @@ krank	JJ	1	krank
 Dennen	RB	1	Denn
 nächst	JJ	1	nächste
 Anstiften	JJ	1	Anstiften
-Dokumente	NN	1	Dokumente
+muntern	JJ	1	muntern
 Erwägung	NN	1	Erwägung
 Mund	NN	1	Mund
 besitze	NN	1	besitze
@@ -1040,6 +1066,7 @@ anderwärts	NN	1	anderwärts
 Erzeigen	NN	1	Erzeigen
 seufzet	NN	1	seufzet
 poetisch	JJ	1	poetisch
+Diesen	NN	1	Diesen
 Abend	NN	1	Abend
 Zeile	NN	1	Zeile
 erzeugen	VBN	1	erzeugt
@@ -1078,13 +1105,17 @@ mannhafter	NN	1	mannhafter
 deutlichen	NN	1	deutlichen
 Vaterland	NN	1	Vaterland
 Gefiel	NN	1	Gefiel
+stark	JJ	1	stark
+Raserei	NN	1	Raserei
 Zweck	NN	1	Zweck
 Schuldmann	NNP	1	Schuldmann
 Widerstehen	NN	1	Widerstehen
 aufgesetzt	NN	1	aufgesetzt
 eingehen	VB	1	eingehen
+Füss	NNS	1	Füße
 schönes	NN	1	schönes
 nützlicher	JJ	1	nützlicher
+Sollte	VB	1	Sollte
 geirrt	NN	1	geirrt
 erlangt	VB	1	erlangt
 erinnern	VB	1	erinnern
@@ -1095,6 +1126,7 @@ Freiersmann	NNP	1	Freiersmann
 satyrischem	NN	1	satyrischem
 sagst	NN	1	sagst
 vorsagen	RP	1	vorsagt
+Darf	NN	1	Darf
 Edelmannen	NN	1	Edelmannen
 Beschwerlichkeiten	NN	1	Beschwerlichkeiten
 Gottes	NN	1	Gottes
@@ -1117,19 +1149,18 @@ steckten	NN	1	steckten
 vorhinen	JJ	1	vorhin
 Rücken	NN	1	Rücken
 glaube	VB	1	glaube
-laut	JJ	1	lauter
 Feinheit	NN	1	Feinheit
 teu	JJ	1	teuer
 unterstehen	NN	1	unterstehen
 Liebhaber	NN	1	Liebhaber
 beständige	NN	1	beständige
-manch	JJ	1	manchem
 Türe	NN	1	Türe
 Lehre	NN	1	Lehre
 Körper	NN	1	Körper
 Freunden	NN	1	Freunden
 heben	VB	1	hebt
 treffen	VB	1	treffen
+Schafbock	NN	1	Schafbock
 übern	NN	1	übern
 Gedulde	NN	1	Gedulde
 Pfui	NN	1	Pfui
@@ -1163,6 +1194,7 @@ willens	JJ	1	willens
 Schlingel	NN	1	Schlingel
 vorläufig	JJ	1	vorläufig
 gehabt	NN	1	gehabt
+Laus	NN	1	Laus
 dreimal	RB	1	dreimal
 Übergänge	NN	1	Übergänge
 mitzuteilen	NN	1	mitzuteilen
@@ -1185,6 +1217,7 @@ Lumpenhund	NN	1	Lumpenhund
 erlauben	VB	1	erlauben
 Mut	NN	1	Mut
 abzuhelfen	VB	1	abzuhelfen
+Henne	NN	1	Henne
 schimpfen	VB	1	schimpfen
 bedeuten	VB	1	bedeuten
 fasste	NN	1	faßte
@@ -1230,15 +1263,16 @@ unrecht	JJ	1	unrecht
 Adlicher	NN	1	Adlicher
 vorige	NN	1	vorige
 hitzig	JJ	1	hitzig
+Ist	RB	1	Ist
 theologisch-polemisch-poetisch	JJ	1	theologisch-polemisch-poetischen
 Ratschlägen	NN	1	Ratschlägen
-werden.ende	NN	1	werden.Ende
 Verächter	NN	1	Verächter
 Geldborgern	NN	1	Geldborgern
 Klügste	NN	1	Klügste
 unserer	PRP$	1	unserer
 Bedingungen	NN	1	Bedingungen
 antworen	VB	1	antworten
+Hat	NN	1	Hat
 hervortut	NN	1	hervortut
 Immern	VB	1	Immer
 Titel	NN	1	Titel
@@ -1311,6 +1345,7 @@ Zeiten	NN	1	Zeiten
 Weibchen	NN	1	Weibchen
 Schamröte	NN	1	Schamröte
 Beredsamkeit	NN	1	Beredsamkeit
+Kommt	NN	1	Kommt
 Redens	NN	1	Redens
 Erbe	NNS	1	Erben
 Denken	NN	1	Denken
@@ -1318,6 +1353,7 @@ Zufall	NN	1	Zufall
 Armingen	NN	1	Armingen
 Ehemänner	NN	1	Ehemänner
 Wahrlich	JJ	1	Wahrlich
+Bemühen	NN	1	Bemühen
 hinter	IN	1	hinter
 verderbst	NN	1	verderbst
 dümmer	NN	1	dümmer
@@ -1360,6 +1396,7 @@ Kerlen	NN	1	Kerlen
 goldnes	JJ	1	goldnes
 erteilen	VB	1	erteilt
 gottloses	JJ	1	gottloses
+floh	NN	1	floh
 jüngst	NN	1	jüngst
 Gewissers	NN	1	Gewissers
 eurer	NN	1	eurer
@@ -1375,6 +1412,7 @@ letzt	JJ	1	letzten
 Halse	NN	1	Halse
 Stückgen	JJ	1	Stückgen
 höflicher	NN	1	höflicher
+könnte	VB	1	könnte
 Familie	NN	1	Familie
 Ergebene	NN	1	Ergebene
 Anno	NN	1	Anno
@@ -1414,6 +1452,7 @@ vergraben	VB	1	vergraben
 Sachse	NNS	1	Sachsen
 Worinne	NN	1	Worinne
 Taufschein	NN	1	Taufschein
+lammen	NN	1	lammen
 Zahn	NNS	1	Zähne
 erbaulichem	NN	1	erbaulichem
 treffe	NN	1	treffe
@@ -1422,7 +1461,6 @@ fortpflanzen	VB	1	fortpflanzen
 darinn	JJ	1	darinne
 verschwendrisch	JJ	1	verschwendrischen
 dafüren	VB	1	dafür
-danken	VB	1	danken
 Erklärung	NN	1	Erklärung
 rechtschaffner	JJ	1	rechtschaffner
 hätten	RB	1	hätten
@@ -1474,7 +1512,8 @@ zufried	JJ	1	zufrieden
 einbilden	NN	1	einbilden
 lebendig	JJ	1	lebendig
 Forderungen	NN	1	Forderungen
-überraschen	RB	1	überrascht
+überraschen	VBN	1	überrascht
+unbesonnene	NN	1	unbesonnene
 Belieben	NN	1	Belieben
 ichs	NN	1	ichs
 Zorn	NN	1	Zorn
@@ -1514,7 +1553,7 @@ wichtig	JJ	1	wichtigen
 bessern	VB	1	bessern
 packen	VB	1	packen
 fünfhundert	CD	1	fünfhundert
-Vetters	NN	1	Vetters
+wird	RB	1	wird
 Begegnet	NN	1	Begegnet
 allzusehr	NN	1	allzusehr
 Frommen	NN	1	Frommen
@@ -1527,6 +1566,7 @@ Rolle	NN	1	Rolle
 vergebens	RB	1	vergebens
 Viertens	NN	1	Viertens
 Anfällen	NN	1	Anfällen
+möchte	RB	1	möchte
 Anteil	NN	1	Anteil
 beschwerst	NN	1	beschwerst
 Achsel	NN	1	Achsel
@@ -1536,6 +1576,7 @@ Los	JJ	1	Loser
 Hört	NN	1	Hört
 widersetzen	NN	1	widersetzen
 scherzen	VB	1	scherzen
+Dokumente	NN	1	Dokumente
 Valer	NN	1	Valer
 Kaufen	NN	1	Kaufen
 Antecedens	NN	1	Antecedens

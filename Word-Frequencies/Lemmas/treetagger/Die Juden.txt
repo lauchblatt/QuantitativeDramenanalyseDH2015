@@ -1,6 +1,6 @@
 Title: Die Juden
-Number of all lemmas: 3258
-Nummber of different lemmas: 1366
+Number of all lemmas: 3266
+Nummber of different lemmas: 1371
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	73	Herren, Herrn, Herr
@@ -225,6 +225,7 @@ angenehm	ADJA, ADJD	3	angenehmen, angenehme, angenehmer
 Räuber	NN	3	Räuber
 anfangen	VVINF, VVPP	3	anfangen, angefangen
 erhalten	VVINF, VVFIN, VVPP	3	erhalten, erhält
+diese	PDS	3	diese, Diese, dieser
 belieben	VVFIN	3	belieben, Belieben, beliebten
 stehlen	VVINF, VVPP	3	stehlen, gestohlen
 Zweifel	NN	3	Zweifel
@@ -417,6 +418,7 @@ Vaterland	NN	2	Vaterlande
 essen	VVINF	2	essen
 ehe	KOUS	2	ehe
 erinnern	VVFIN	2	erinnerte, Erinnern
+am	PTKA	2	am
 halber	APPO	2	halber
 zanken	VVINF	2	zanken
 Spiel	NN	2	Spiel
@@ -584,7 +586,7 @@ Person	NN	1	Person
 er|es	PPER	1	Ihm
 Gewinst	NN	1	Gewinst
 lohnen	VVFIN	1	lohnt
-Rache	NN	1	Rache
+trotz	APPR	1	Trotz
 Umwenden	NN	1	Umwenden
 sterben	VVPP	1	gestorben
 Termin	NN	1	Termin
@@ -620,6 +622,7 @@ Ernste	NN	1	Ernste
 angehen	VVFIN	1	angeht
 unnötig	ADJA	1	unnötige
 Schuldige	NN	1	Schuldigen
+einen	VVINF	1	einen
 Pistol	NN	1	Pistol
 gefährlich	ADJA	1	gefährlichen
 tot	ADJD	1	tot
@@ -650,6 +653,7 @@ durchkommen	VVIZU	1	durchzukommen
 visitieren	VVFIN	1	visitieren
 Fuß	NN	1	Fuß
 Miene	NN	1	Miene
+Macht	NN	1	Macht
 mitten	ADV	1	mitten
 ausgeben	VVFIN	1	ausgibt
 weswegen	PWAV	1	weswegen
@@ -769,6 +773,7 @@ Bibel	NN	1	Bibel
 aufsetzen	VVINF	1	aufsetzen
 beurlauben	VVINF	1	beurlauben
 gescheuter	ADJA	1	gescheuter
+Rache	NN	1	Rache
 Lustspiel	NN	1	Lustspielen
 Kriegsdienst	NN	1	Kriegsdiensten
 hochadelichen	ADJA	1	hochadelichen

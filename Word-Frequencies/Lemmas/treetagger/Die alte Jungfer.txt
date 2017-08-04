@@ -1,6 +1,6 @@
 Title: Die alte Jungfer
-Number of all lemmas: 3360
-Nummber of different lemmas: 1296
+Number of all lemmas: 3369
+Nummber of different lemmas: 1301
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	84	Herr, Herren, Herrn
@@ -120,6 +120,7 @@ lang	ADJA, ADJD	6	lange, lang, länger
 Mensch	NN	6	Mensch, Menschen
 Vermögen	NN	5	Vermögen
 brauchen	VVFIN	5	brauche, brauchst, brauchen, braucht
+Neue	NN	5	Neues
 paar	PIS, PIAT	5	Paar
 kurz	ADJD	5	kurz, Kurz
 24	CARD	5	24
@@ -634,6 +635,7 @@ Lied	NN	1	Lieder
 Text	NN	1	Text
 anderswo	ADV	1	anderswo
 erschlagen	VVFIN	1	erschlage
+trotz	APPR	1	trotz
 bekümmern	VVFIN	1	bekümmern
 unmöglich	ADJD	1	Unmöglich
 laß	ADJD	1	Laß
@@ -655,7 +657,6 @@ zielen	VVFIN	1	ziele
 Korbe	NN	1	Korbe
 widerrufst	VVFIN	1	widerrufst
 fortpflanzen	VVINF	1	fortpflanzen
-geschehn	VVFIN	1	geschehn
 gekrönt	ADJA	1	gekrönten
 spitzbübisch	ADJD	1	spitzbübisch
 hoffen	VVFIN	1	hoffe
@@ -695,12 +696,14 @@ Jawort	NN	1	Jawort
 Gutheit	NN	1	Gutheit
 Wille	NN	1	Wille
 Alter	NN	1	Alter
+ältern	VVINF	1	ältern
 Antwort	NN	1	Antwort
 Rekompenz	NN	1	Rekompenz
 abgewinnen	VVPP	1	abgewonnen
 gesund	ADJD	1	gesund
 tragen	VVINF	1	tragen
 Sinn	NN	1	Sinne
+entkommen	VVINF	1	entkommen
 17	CARD	1	17
 eingeständig	ADJD	1	eingeständig
 diejenigen	PDAT	1	diejenigen
@@ -716,6 +719,7 @@ not	PTKVZ	1	not
 irre	PTKVZ	1	irre
 erzeugen	VVFIN	1	erzeugt
 Woche	NN	1	Woche
+geschehn	VVFIN	1	geschehn
 Titel	NN	1	Titel
 rechtschaffner	ADJA	1	rechtschaffner
 erwerben	VVPP	1	erworben
@@ -798,6 +802,7 @@ darnach	ADV	1	darnach
 Schalkhaften	NN	1	Schalkhaften
 Quere	NN	1	Quere
 beschlagen	VVPP	1	beschlagen
+einen	ADJA	1	einen
 einziehen	VVPP	1	eingezogen
 Topp	NN	1	Topp
 währen	VVINF	1	währen
@@ -881,7 +886,6 @@ Cabinetstückchen	VVFIN	1	Cabinetstückchen
 ansehnlich	ADJA	1	ansehnlichen
 Tochter	NN	1	Tochter
 schreien	VVFIN	1	schreit
-<UNKNOWN>	VVINF	1	ältern
 Adlichen	NN	1	Adlichen
 Intressen	NN	1	Intressen
 überirdisch	ADJA	1	überirdische
@@ -964,7 +968,7 @@ fangen	VVFIN	1	fängst
 glühend	ADJA	1	glühende
 einst	ADV	1	einst
 Zeile	NN	1	Zeile
-entkommen	VVINF	1	entkommen
+diese	PDS	1	dieses
 Ecke	NN	1	Ecke
 allzusehr	VVFIN	1	allzusehr
 Wache	NN	1	Wache
@@ -1260,6 +1264,7 @@ erinnern	VVINF	1	erinnern
 vors	APPRART	1	vors
 Valer	NE	1	Valer
 unterbringen	VVFIN	1	unterbringe
+am	PTKA	1	am
 Ehemann	NN	1	Ehemänner
 verführst	VVFIN	1	verführst
 kleiden	VVPP	1	gekleidet

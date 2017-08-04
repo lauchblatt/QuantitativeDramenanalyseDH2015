@@ -1,6 +1,6 @@
 Title: Nathan der Weise
-Number of all tokens: 11670
-Nummber of different tokens: 4440
+Number of all tokens: 11840
+Nummber of different tokens: 4466
 
 Token	Frequency
 wohl	134
@@ -39,6 +39,7 @@ Wohl	30
 Al-Hafi	30
 kömmt	29
 freilich	29
+wollen	28
 wenig	28
 wahr	28
 eben	28
@@ -52,6 +53,7 @@ Patriarchen	26
 Tempelherr	26
 Menschen	26
 selber	25
+kein	25
 Ritter	25
 Euer	25
 Allein	24
@@ -63,6 +65,7 @@ Schwester	23
 wissen	23
 Juden	23
 Engel	23
+weiter	23
 Geh	23
 könnt	22
 Sei	22
@@ -76,6 +79,7 @@ sagen	21
 Mensch	21
 Tochter	20
 hätt	20
+meinen	20
 Komm	20
 Christ	20
 Herz	19
@@ -103,6 +107,7 @@ Hand	16
 Ring	16
 wollt	16
 guter	16
+geben	15
 sprechen	15
 lieben	15
 Feuer	15
@@ -254,6 +259,7 @@ stehn	8
 Händen	8
 jeden	8
 Natur	8
+scheinen	8
 erste	8
 leicht	8
 Himmel	8
@@ -277,6 +283,7 @@ Grund	7
 Tugend	7
 borgen	7
 Ende	7
+folgen	7
 Freunde	7
 dünkt	7
 wüßte	7
@@ -296,6 +303,7 @@ Gutes	7
 mußt	7
 nämliche	7
 nennen	7
+Kein	7
 Mutter	7
 Hab	7
 klug	7
@@ -330,6 +338,7 @@ Schuld	6
 Kloster	6
 Gehört	6
 ihrem	6
+dürfen	6
 Ists	6
 Tränen	6
 Wem	6
@@ -477,6 +486,7 @@ voll	5
 schön	5
 Sonst	5
 möcht	5
+halten	5
 großen	5
 erkennen	5
 große	5
@@ -567,6 +577,7 @@ Entschluß	4
 ohn	4
 Libanon	4
 Briefchen	4
+all	4
 treibt	4
 Tod	4
 schweig	4
@@ -683,7 +694,6 @@ stellt	3
 hoff	3
 Reichtum	3
 dächte	3
-Wink	3
 zweiten	3
 beßrer	3
 Leidenschaft	3
@@ -788,6 +798,7 @@ Wißt	3
 geboten	3
 Warte	3
 geboren	3
+Weiter	3
 Traun	3
 hierher	3
 wohin	3
@@ -844,6 +855,7 @@ Persisch	3
 ruft	3
 Blumen	3
 Kamele	3
+Gebt	3
 rief	3
 Gefallen	3
 Gesicht	3
@@ -898,7 +910,6 @@ Kundschaft	3
 bessern	3
 setzen	3
 still	3
-Gebt	3
 nennst	3
 Gesetz	3
 sparen	3
@@ -916,6 +927,7 @@ verlernen	3
 Mags	3
 womit	3
 Lebens	3
+Wink	3
 gegeben	3
 Genannt	3
 Gelder	3
@@ -1011,6 +1023,7 @@ hinauf	2
 Woran	2
 Wand	2
 schleunig	2
+solch	2
 laufe	2
 höchstens	2
 erschaffen	2
@@ -1296,6 +1309,7 @@ wärmster	2
 Vorbei	2
 Nenn	2
 alter	2
+Befinden	2
 Verschlingen	2
 zerstreut	2
 würdet	2
@@ -1382,6 +1396,7 @@ Bote	2
 fürchte	2
 Buße	2
 Gelernt	2
+mögen	2
 Zusammen	2
 begnadigt	2
 schützen	2
@@ -1530,6 +1545,7 @@ schenkte	2
 Arme	2
 unterschlagen	2
 Wohltat	2
+Sorgen	2
 setz	2
 Bösewicht	2
 allgemeine	2
@@ -1550,6 +1566,7 @@ gesetzt	2
 Reichtums	2
 gelesen	2
 neidisch	2
+ander	2
 hiervon	2
 Todes	2
 Wirds	2
@@ -1715,7 +1732,6 @@ Vorteile	1
 schäm	1
 Vätern	1
 unterhalten	1
-gesund	1
 unbegreiflich	1
 vertraue	1
 befehl	1
@@ -1741,6 +1757,8 @@ Wunsches	1
 unterstützen	1
 könntest	1
 versprechen	1
+Bestehen	1
+All	1
 Winkel	1
 Junger	1
 Stunde	1
@@ -1922,6 +1940,7 @@ menschlich	1
 Besinnen	1
 Schnell	1
 eingeplaudert	1
+keimt	1
 Fuß	1
 Sinns	1
 gestand	1
@@ -1971,7 +1990,7 @@ eingebornen	1
 Transports	1
 Schutze	1
 sinken	1
-Filze	1
+gelten	1
 Christentume	1
 Beleidigte	1
 Gewandtheit	1
@@ -2057,7 +2076,7 @@ nachgewirkt	1
 Trank	1
 betäubt	1
 nennens	1
-sagtet	1
+Ruf	1
 angelangt	1
 sendet	1
 fürs	1
@@ -2250,6 +2269,7 @@ Bauer	1
 offen	1
 ausgeworfen	1
 woher	1
+Eidam	1
 Kräfte	1
 Voll	1
 Versprach	1
@@ -2296,6 +2316,7 @@ möglicher	1
 verwünschten	1
 wolltest	1
 aufgehalten	1
+angeraten	1
 Erinnert	1
 reiche	1
 dicht	1
@@ -2503,6 +2524,7 @@ entscheiden	1
 Bestand	1
 Häuser	1
 Geistlicher	1
+gesund	1
 Neues	1
 Geistlichen	1
 unterrichtet	1
@@ -2652,7 +2674,7 @@ schießt	1
 entkömmst	1
 hingeworfen	1
 Naschwerk	1
-angeraten	1
+stiegt	1
 Gipfelchen	1
 roter	1
 Wochen	1
@@ -2686,7 +2708,7 @@ Silberstoff	1
 Darunter	1
 würdger	1
 auszuschlagen	1
-Sicher	1
+Geben	1
 bittern	1
 edeln	1
 Erbarmte	1
@@ -2841,7 +2863,7 @@ Ankunft	1
 nähmst	1
 anließ	1
 Geleiten	1
-keimt	1
+bieten	1
 Ginnistan	1
 Menschenmäkelei	1
 eingestimmt	1
@@ -2937,6 +2959,7 @@ Handelsleute	1
 verschieden	1
 nisten	1
 Künste	1
+Sicher	1
 beschworen	1
 empfinden	1
 verschränkten	1
@@ -3205,6 +3228,7 @@ gelogen	1
 Alter	1
 ungefälligsten	1
 belauschen	1
+Filze	1
 Anblick	1
 Stein	1
 bedürftig	1
@@ -3237,7 +3261,7 @@ verehret	1
 geholt	1
 Bessern	1
 niederwirft	1
-Pfleg	1
+Folgen	1
 Menschenhaß	1
 gespielt	1
 Gesprochen	1
@@ -3303,7 +3327,6 @@ vernehmlich	1
 Erröten	1
 staunt	1
 trifft	1
-Abtritt	1
 bunten	1
 Laffe	1
 Rechten	1
@@ -3629,6 +3652,7 @@ folglich	1
 vergelten	1
 traft	1
 auserwählte	1
+sorgen	1
 Herrlich	1
 unrecht	1
 hineingestoßen	1
@@ -3906,11 +3930,12 @@ Lebendigen	1
 Schlechten	1
 eingehüllt	1
 gegriffnen	1
+Glatteis	1
 vergißt	1
 Geschwinder	1
 Erregt	1
 hindern	1
-Messer	1
+Abtritt	1
 hadern	1
 Zurüstungen	1
 wagte	1
@@ -3919,7 +3944,6 @@ Ordensregeln	1
 Wovor	1
 fett	1
 Stachel	1
-Eidam	1
 merklich	1
 schwärzesten	1
 eigentlicher	1
@@ -3986,6 +4010,7 @@ eifersüchtig	1
 Junge	1
 teile	1
 klar	1
+liegen	1
 Borgen	1
 solchem	1
 wartet	1
@@ -4091,6 +4116,7 @@ Weigerungen	1
 Pilger	1
 Trau	1
 Zufall	1
+Pfleg	1
 Gunst	1
 Syrien	1
 käme	1
@@ -4104,7 +4130,6 @@ abzuzwacken	1
 stehen	1
 Worts	1
 Heuchlerin	1
-Ruf	1
 hm	1
 Rande	1
 blühen	1
@@ -4124,7 +4149,7 @@ Siedelei	1
 lebet	1
 handle	1
 Eröffnen	1
-stiegt	1
+Meinen	1
 Prüfung	1
 größre	1
 abgemessen	1
@@ -4156,6 +4181,7 @@ bezaubert	1
 fremde	1
 Händchen	1
 erträglichern	1
+Messer	1
 kauftet	1
 bestechen	1
 schicke	1
@@ -4341,6 +4367,7 @@ Subtilitäten	1
 Gnüge	1
 betäuben	1
 erziehn	1
+sagtet	1
 plumpen	1
 Zange	1
 Verwiesen	1
@@ -4361,7 +4388,6 @@ langer	1
 Mamelucken	1
 Altars	1
 getötet	1
-Glatteis	1
 allererst	1
 Almosen	1
 auszuweichen	1

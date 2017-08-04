@@ -1,6 +1,6 @@
 Title: Der Schatz
-Number of all lemmas: 4090
-Nummber of different lemmas: 1418
+Number of all lemmas: 4099
+Nummber of different lemmas: 1421
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	105	Herr, Herrn
@@ -120,6 +120,7 @@ allein	ADV	7	allein, Allein
 wahrhaftig	ADJD	6	Wahrhaftig, wahrhaftig
 Barschaft	NN	6	Barschaft
 vierzig	CARD	6	vierzig
+Herz	NN	6	Herz, Herzens, Herzen
 Streich	NN	6	Streiche, Streich
 alsdann	VVFIN, ADJD, VVIMP	6	alsdann
 Ha	NE	6	Ha
@@ -127,7 +128,6 @@ zählen	VVPP, VVINF, VVFIN	6	gezählt, zählen, zählt
 gehören	VVFIN	6	gehört, gehören
 Vorsprecher	NN	6	Vorsprecher
 selber	ADV	6	selber
-Herz	NN	6	Herz, Herzens, Herzen
 einzig	ADJA, ADJD	6	einzige, einzigen, einzig, einziger
 zwanzig	CARD	6	zwanzig
 endlich	ADV	6	endlich, Endlich
@@ -145,6 +145,7 @@ Frage	NN	5	Frage
 Ware	NN	5	Waren
 brauchen	VVFIN, VVINF	5	brauchte, brauche, brauchen
 Fuß	NN	5	Fuße, Füßen
+diese	PDS	5	diese, Dieses, dieser, dieses
 Geschlecht	NN	5	Geschlechts, Geschlechte, Geschlechter, Geschlecht
 Zweifel	NN	5	Zweifel
 nie	ADV	5	nie, Nie
@@ -278,6 +279,7 @@ verzeihen	VVFIN, VVIMP	3	verzeihen, Verzeih, Verzeihen
 Spitzbube	NN	3	Spitzbuben, Spitzbube
 fein	ADJD	3	fein
 Arm|Arme	NN	3	Arme
+am	PTKA	3	Am, am
 gleichwohl	KOUS, ADV	3	gleichwohl
 Spiel	NN	3	Spiele
 wohin	PWAV	3	Wohin, wohin
@@ -624,6 +626,7 @@ anstehen	VVINF	1	anstehen
 sterben	VVPP	1	gestorben
 Termin	NN	1	Termin
 satt	ADJD	1	satt
+Neue	NN	1	Neues
 A	NN	1	A
 mieten	VVINF	1	mieten
 hüten	VVFIN	1	hüte
@@ -637,10 +640,10 @@ Wolf	NE	1	Wolf
 herausziehen	VVINF	1	herausziehen
 stinkend	ADJA	1	stinkenden
 bisher	ADV	1	bisher
-<UNKNOWN>	NN	1	Stirne
 Klotz	NE	1	Klotz
 anhängen	VVPP	1	angehangen
 Lunte	NN	1	Lunte
+Stirne	NN	1	Stirne
 abwehren	VVIZU	1	abzuwehren
 Holz	NN	1	Holz
 geliebt	ADJA	1	geliebten
