@@ -17,10 +17,12 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
+	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump()
 
-	lexiconHandler.combineSentimentLexica("treetagger")
+	#lexiconHandler.combineSentimentLexica("treetagger")
+	#lexiconHandler.createOutputCombinedLexicon()
+	lexiconHandler.createAllFilesCombinedLexicon()
 
 class Lexicon_Handler:
 
@@ -149,6 +151,83 @@ class Lexicon_Handler:
 					newLexiconKeysLemmas.append(key)
 
 		return newLexiconKeysLemmas
+
+	
+	def createAllFilesCombinedLexicon(self):
+		self.createSentimentDictFileCombinedLexiconTokens("treetagger")
+		self.createSentimentDictFileCombinedLexiconLemmas("treetagger")
+		self.createSentimentDictFileCombinedLexiconLemmas("textblob")
+
+	def createSentimentDictFileCombinedLexiconTokens(self, processor):
+		self.combineSentimentLexica(processor)
+		self.createOutputCombinedLexicon(self._sentimentDict, processor, "Tokens")
+
+	def createSentimentDictFileCombinedLexiconLemmas(self, processor):
+		self.combineSentimentLexica(processor)
+		self.createOutputCombinedLexicon(self._sentimentDictLemmas, processor, "Lemmas")
+
+	def createOutputCombinedLexicon(self, sentimentDict, processor, tokensOrLemmas):
+		if(tokensOrLemmas == "Tokens"):
+			outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon.txt", "w")
+		elif(tokensOrLemmas == "Lemmas"):
+			outputFile = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CombinedLexicon.txt", "w")
+		
+		sentiments = ["sentiWS", "nrcPositive", "nrcNegative", "anger", "anticipation",\
+		"disgust", "fear", "joy", "sadness", "surprise", "trust", "emotion", "arousel",\
+		 "cdPositive", "cdNegative", "cdNeutral", "gpcPositive", "gpcNegative", "gpcNeutral"]
+		firstLine = "\t".join(sentiments)
+		outputFile.write(firstLine + "\n")
+
+		for word in sentimentDict:
+			sentimentGroups = sentimentDict[word]
+			values = self.getValuesOfCombinedLexiconByWord(sentimentGroups)
+			valueString = "\t".join(str(x) for x in values)
+			lineString = word + "\t" + valueString + "\n"
+			outputFile.write(lineString)
+		outputFile.close()
+	
+	def getValuesOfCombinedLexiconByWord(self, sentimentGroups):
+		values = []
+		if("sentiWS" in sentimentGroups): 
+			values.append(sentimentGroups["sentiWS"])
+		else:
+			values.append(0)
+
+		if("nrc" in sentimentGroups):
+			values.append(sentimentGroups["nrc"]["positive"])
+			values.append(sentimentGroups["nrc"]["negative"])
+			values.append(sentimentGroups["nrc"]["anger"])
+			values.append(sentimentGroups["nrc"]["anticipation"])
+			values.append(sentimentGroups["nrc"]["disgust"])
+			values.append(sentimentGroups["nrc"]["fear"])
+			values.append(sentimentGroups["nrc"]["joy"])
+			values.append(sentimentGroups["nrc"]["sadness"])
+			values.append(sentimentGroups["nrc"]["surprise"])
+			values.append(sentimentGroups["nrc"]["trust"])
+		else:
+			values += 10 * [0]
+
+		if("bawl" in sentimentGroups):
+			values.append(sentimentGroups["bawl"]["emotion"])
+			values.append(sentimentGroups["bawl"]["arousel"])
+		else:
+			values += 2 * [0]
+
+		if("cd" in sentimentGroups):
+			values.append(sentimentGroups["cd"]["positive"])
+			values.append(sentimentGroups["cd"]["negative"])
+			values.append(sentimentGroups["cd"]["neutral"])
+		else:
+			values += 3 * [0]
+
+		if("gpc" in sentimentGroups):
+			values.append(sentimentGroups["gpc"]["positive"])
+			values.append(sentimentGroups["gpc"]["negative"])
+			values.append(sentimentGroups["gpc"]["neutral"])
+		else:
+			values += 3 * [0]
+
+		return values
 
 if __name__ == "__main__":
     main()
