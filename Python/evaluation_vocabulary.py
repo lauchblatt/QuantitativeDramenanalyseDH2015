@@ -12,12 +12,12 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	evaluation = Evaluation_LexiconVsVocabulary()
-	#evaluation.init("../Word-Frequencies/Lemmas/textblob/EntireCorpus.txt", "NRC", "textblob")
+	#evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "NRC", "treetagger")
 	
 	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/treetagger/", "NRC", "treetagger")
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	#evaluation.writeResultOutput("../Evaluation/NRC/Textblob-LemmasLemmasEntireCorpus.txt", result)
+	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
 	evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
@@ -31,6 +31,7 @@ class Evaluation_LexiconVsVocabulary:
 		self._lexiconLemmas = {}
 
 		self._vocabulary = None
+		self._processor = ""
 	
 	def init(self, vocPath, lexiconName, processor):
 		self._vocabulary = self.readVocabulary(vocPath)
@@ -41,6 +42,7 @@ class Evaluation_LexiconVsVocabulary:
 		lexiconHandler.initSingleDict(lexiconName, processor)
 
 		self._lexiconName = unicode(lexiconName)
+		self._processor = unicode(processor)
 		self._lexicon = lexiconHandler._sentimentDict
 		self._lexiconLemmas = lexiconHandler._sentimentDictLemmas
 
@@ -61,10 +63,7 @@ class Evaluation_LexiconVsVocabulary:
 			vocPath = vocFolder + "/" + filename
 			self.init(vocPath, lexiconName, processor)
 			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
-			print(results[0]._recognizedPercentage)
-			print(results[1]._recognizedPercentage)
 			outputPath = "../Evaluation/" + lexiconName + "/" + processor + "/"
-			print self._vocabulary._type
 			crossFolder1 = "TokensLexiconVS" + self._vocabulary._type + "Vocabulary/"
 			crossFolder2 = "LemmasLexiconVS" + self._vocabulary._type + "Vocabulary/"
 			name1 = lexiconName + "-TokensVS-" + self._vocabulary._name + "-" + self._vocabulary._type
@@ -84,22 +83,27 @@ class Evaluation_LexiconVsVocabulary:
 		return results
 
 	def evaluateLexiconLemmasVsVocabulary(self):
-		result = self.evaluateLexiconVsVocabulary(self._lexiconLemmas)
+		result = self.evaluateLexiconVsVocabulary(self._lexiconLemmas, "Lemmas")
 		return result
 
 	def evaluateLexiconTokensVsVocabulary(self):
-		result = self.evaluateLexiconVsVocabulary(self._lexicon)
+		result = self.evaluateLexiconVsVocabulary(self._lexicon, "Tokens")
 		return result
 	
-	def evaluateLexiconVsVocabulary(self, lexicon):
+	def evaluateLexiconVsVocabulary(self, lexicon, lemmasOrTokens):
 		recognized = self.getRecognizedWordsOfVocabulary(lexicon)
 		recognizedPercentage = self.getRecognizedPercentage(recognized, self._vocabulary._words)
-
+		relativeRecognizedPercentage = self.getRelativeRecognizedPercentage(recognized, \
+			self._vocabulary._wordsWithInformationDict, self._vocabulary._absoluteLength)
+		print(relativeRecognizedPercentage)
+		
 		result = Evaluation_Result_Vocabulary()
 		result._nameOfLexicon = self._lexiconName
 		result._lexicon = lexicon
+		result._lemmasOrTokens = lemmasOrTokens
 		result._recognized = recognized
 		result._recognizedPercentage = recognizedPercentage
+		result._relativeRecognizedPercentage = relativeRecognizedPercentage
 
 		return result
 
@@ -126,10 +130,26 @@ class Evaluation_LexiconVsVocabulary:
 
 		return (float(float(len(recognized))/float(len(vocabularyList))))
 
-	def getWordDifferencesOfRecognizedLexiconWords(self, recognized1, recognized2):
-		in1MissingIn2 = []
-		in2MissingIn1 = []
+	def getRelativeRecognizedPercentage(self, recognized, wordsWithInformation, absoluteLength):
+		recognizedFrequency = 0
+		for recWord in recognized:
+			upperWord = recWord[:1].upper() + recWord[1:]
+			lowerWord = recWord.lower()
+			if recWord in wordsWithInformation:
+				keyWord = recWord
+			elif upperWord in wordsWithInformation:
+				keyWord = upperWord
+			elif lowerWord in wordsWithInformation:
+				keyWord = lowerWord
+			#print keyWord
+			#print int(wordsWithInformation[keyWord][1])
+			if(self._vocabulary._type == "Tokens"):
+				recognizedFrequency = recognizedFrequency + int(wordsWithInformation[keyWord][0])
+			elif(self._vocabulary._type == "Lemmas"):
+				recognizedFrequency = recognizedFrequency + int(wordsWithInformation[keyWord][1])
+			#print recognizedFrequency
 
+		return float(recognizedFrequency)/float(absoluteLength)
 
 	def readVocabulary(self, path):
 		vocabulary = Vocabulary(path)
@@ -140,12 +160,15 @@ class Evaluation_LexiconVsVocabulary:
 	def writeResultOutput(self, path, result):
 		outputFile = open(path, 'w')
 
-		outputFile.write(result._nameOfLexicon + " IN " + self._vocabulary._name)
+		outputFile.write(result._nameOfLexicon + " " + result._lemmasOrTokens + " IN " \
+			+ self._vocabulary._name + " " + self._vocabulary._type)
 		outputFile.write("\n\n")
 		outputFile.write("Length of Lexicon: " + str(len(result._lexicon)))
-		outputFile.write("\nLength of Vocabulary: " + str(len(self._vocabulary._words)))
+		outputFile.write("\nLength of Vocabulary (Different Words): " + str(len(self._vocabulary._words)))
 		outputFile.write("\nRecognized Words: " + str(len(result._recognized)))
 		outputFile.write("\nRecognized Percentage: " + str(result._recognizedPercentage))
+		outputFile.write("\nAbsolute Length of Vocabulary (All Words): " + str(self._vocabulary._absoluteLength))
+		outputFile.write("\nRelative Recognized Percentage: " + str(result._relativeRecognizedPercentage))
 
 		outputFile.write("\n\nRecognized Words:\n\n")
 		for word in result._recognized:
@@ -171,6 +194,7 @@ class Vocabulary:
 
 		self._wordsWithInformationDict = {}
 		self._words = []
+		self._absoluteLength = 0
 
 		self.init(path)
 
@@ -181,26 +205,32 @@ class Vocabulary:
 
 		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
 		self._type = path.split("/")[-4]
-		print ("hello World")
-		print self._name
 		print self._type
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")
 			word = unicode(wordsWithInformation[0])
-			information = wordsWithInformation.pop(0)
+			wordsWithInformation.pop(0)
+			if(self._type == "Tokens"):
+				wordFrequency = int(wordsWithInformation[0])
+				self._absoluteLength = self._absoluteLength + wordFrequency
+			elif(self._type == "Lemmas"):
+				wordFrequency = int(wordsWithInformation[1])
+				self._absoluteLength = self._absoluteLength + wordFrequency
 
-			self._wordsWithInformationDict[word] = information
+			self._wordsWithInformationDict[word] = wordsWithInformation
 			self._words.append(word)
 
 class Evaluation_Result_Vocabulary:
 
 	def __init__(self):
 		self._nameOfLexicon = ""
+		self._lemmasOrTokens = ""
 		self._lexicon = {}
 
 		self._recognizedWords = None
 		self._recognizedPercentage = 0.0
+		self._relativeRecognizedPercentage = 0.0
 
 if __name__ == "__main__":
     main()
