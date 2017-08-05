@@ -16,8 +16,25 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	
+	"""
 	tcc = Test_Corpus_Creator()
+	tcc.initSpeechesCorpus()
+	newSpeech1 = tcc.getSpecificCorpusSpeechByDramaAndNumber("Der junge Gelehrte", 50, 49)
+	newSpeech2 = tcc.getSpecificCorpusSpeechByDramaAndNumber("Minna von Barnhelm, oder das Soldatenglück", 1066, 128)
+	print newSpeech1._speech._text
+	print newSpeech2._speech._text
+
+	tch = Test_Corpus_Handler()
+	tch.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
+	tcc._testCorpusSpeeches = tch._testCorpusSpeeches
+	tcc._testCorpusSpeeches[48] = newSpeech1
+	tcc._testCorpusSpeeches[127] = newSpeech2
+
+	tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/UPDATED-switch-test-corpus-6-test.txt")
+	tcc.saveTestCorpusAsPickle("../Evaluation/Test-Korpus/UPDATED-switch-test-corpus-6.p")
+	"""
+
+
 
 	"""
 	tcc.createNewTestCorpus()
@@ -26,7 +43,9 @@ def main():
 	
 	"""
 	tch = Test_Corpus_Handler()
-	tch.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/switch-test-corpus-6.p")
+
+	tch.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/UPDATED-switch-test-corpus-6.p")
+
 	tch.writeInfoPerLine()
 	#tcr.calcTestCorpusMetrics()
 	#tcc.switchSpecificSpeechesOfTestCorpusByDramaNumber(10, tcr._testCorpusSpeeches)
@@ -97,7 +116,7 @@ class Test_Corpus_Handler:
 
 	def saveTestCorpusAsPickle(self, path):
 		pickle.dump(self._testCorpusSpeeches, open(path, "wb" ))
-	
+
 	def calcTestCorpusMetrics(self):
 		wordLengths = []
 		for corpusSpeech in self._testCorpusSpeeches:
@@ -257,8 +276,9 @@ class Test_Corpus_Creator:
 		dramas = []
 		path = "../Lessing-Dramen/"	
 
-		for filename in os.listdir(path):		
-			dpp = Drama_Pre_Processing()
+		for filename in os.listdir(path):
+			#Processor should basically not matter		
+			dpp = Drama_Pre_Processing("textblob")
 			dramaModel = dpp.preProcess(path + filename)
 			dramaTitle = dramaModel._title
 			print(path+filename)
@@ -305,7 +325,17 @@ class Test_Corpus_Creator:
 			titleFilteredSpeechesTuple = (dramaTitle, filteredSpeechesPerDrama)
 			self._filteredSpeechesCorpusPerDrama.append(titleFilteredSpeechesTuple)
 
-
+	def getSpecificCorpusSpeechByDramaAndNumber(self, drama, number, ID):
+		
+		dramaSpeeches = []
+		for speeches in self._speechesCorpusPerDrama:
+			if(speeches[0] == drama):
+				dramaSpeeches = speeches[1]
+		speech = [x for x in dramaSpeeches if x._speech._subsequentNumber == number]
+		newSpeech = speech[0]
+		newSpeech._id = ID
+		newSpeech.setPositionInfo()
+		return newSpeech
 
 class Test_Corpus_Speech:
 
