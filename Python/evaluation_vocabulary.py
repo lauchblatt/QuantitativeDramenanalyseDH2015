@@ -12,12 +12,13 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	evaluation = Evaluation_LexiconVsVocabulary()
-	evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "NRC", "treetagger")
+	evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "CombinedLexicon", "treetagger")
 	
-	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/treetagger/", "NRC", "treetagger")
-	result = evaluation.evaluateLexiconLemmasVsVocabulary()
+	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/treetagger/", "CombinedLexicon", "treetagger")
+	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
+	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
+	#evaluation.evaluateLexicon("CombinedLexicon")
 	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
@@ -46,11 +47,23 @@ class Evaluation_LexiconVsVocabulary:
 		self._lexicon = lexiconHandler._sentimentDict
 		self._lexiconLemmas = lexiconHandler._sentimentDictLemmas
 
+	def evaluateLexicon(self, lexicon):
+		processors = ["treetagger", "textblob"]
+		for processor in processors:
+			#First evaluation against token-vocs
+			self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
+				, lexicon, processor)
+			# then evaluation against lemmma-vocs
+			self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/" + processor + "/" \
+				, lexicon, processor)
+
+
 	def evaluateAll(self):
 		processors = ["treetagger", "textblob"]
-		lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC"]
+		lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC", "CombinedLexicon"]
 		for processor in processors:
 			for lexicon in lexicons:
+				print processor + " " + lexicon
 				#First evaluation against token-vocs
 				self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
 					, lexicon, processor)
@@ -95,7 +108,7 @@ class Evaluation_LexiconVsVocabulary:
 		recognizedPercentage = self.getRecognizedPercentage(recognized, self._vocabulary._words)
 		relativeRecognizedPercentage = self.getRelativeRecognizedPercentage(recognized, \
 			self._vocabulary._wordsWithInformationDict, self._vocabulary._absoluteLength)
-		print(relativeRecognizedPercentage)
+		#print(relativeRecognizedPercentage)
 		
 		result = Evaluation_Result_Vocabulary()
 		result._nameOfLexicon = self._lexiconName
@@ -122,6 +135,7 @@ class Evaluation_LexiconVsVocabulary:
 				upperWord = word[:1].upper() + word[1:]
 				lowerWord = word.lower()
 				if(upperWord in lexicon or lowerWord in lexicon):
+					#print word
 					recognized.append(word)
 
 		return recognized
@@ -205,9 +219,6 @@ class Vocabulary:
 
 		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
 		self._type = path.split("/")[-3]
-		print path
-		print self._type
-		print self._name
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")

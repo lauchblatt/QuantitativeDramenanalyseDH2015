@@ -22,7 +22,7 @@ def main():
 
 	#lexiconHandler.combineSentimentLexica("treetagger")
 	#lexiconHandler.createOutputCombinedLexicon()
-	lexiconHandler.createAllFilesCombinedLexicon()
+	#lexiconHandler.createAllFilesCombinedLexicon()
 
 class Lexicon_Handler:
 
@@ -42,6 +42,8 @@ class Lexicon_Handler:
 			self.initCD(processor)
 		elif (lexicon == "GPC"):
 			self.initGPC(processor)
+		elif (lexicon == "CombinedLexicon"):
+			self.combineSentimentLexica(processor)
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 	
