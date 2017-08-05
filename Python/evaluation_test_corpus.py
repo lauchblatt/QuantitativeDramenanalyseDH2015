@@ -10,7 +10,7 @@ import pickle
 from drama_parser import *
 from sa_pre_processing import *
 from statistic_functions import *
-from sentiment_analysis import *
+from sa_sentiment_analysis import *
 
 def main():
 	reload(sys)

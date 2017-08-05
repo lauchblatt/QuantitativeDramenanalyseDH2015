@@ -17,6 +17,13 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
+	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
+	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
+	#lexiconHandler.combineSentimentLexica("treetagger")
+	lexiconHandler.createSimpleOutputCombinedLexicon()
+	print(len(lexiconHandler._sentimentDict))
+	print(len(lexiconHandler._sentimentDictLemmas))
+
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump()
 
@@ -119,8 +126,6 @@ class Lexicon_Handler:
 
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
-		print(len(self._sentimentDict))
-		print(len(self._sentimentDictLemmas))
 
 	def readAndReturnLexiconKeyDumps(self, processor):
 		lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysTokens.p", "rb"))
@@ -188,6 +193,15 @@ class Lexicon_Handler:
 			outputFile.write(lineString)
 		outputFile.close()
 	
+	def createSimpleOutputCombinedLexicon(self):
+		outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens.txt", "w")
+		# Doesnt matter which processor to choose
+		self.combineSentimentLexica("treetagger")
+		for word in self._sentimentDict:
+			lineString = word + "\n"
+			outputFile.write(lineString)
+		outputFile.close()
+
 	def getValuesOfCombinedLexiconByWord(self, sentimentGroups):
 		values = []
 		if("sentiWS" in sentimentGroups): 
