@@ -4,7 +4,7 @@ import collections
 import locale
 import sys
 from drama_parser import *
-from language_processor import *
+from lp_language_processor import *
 import pickle
 
 def main():

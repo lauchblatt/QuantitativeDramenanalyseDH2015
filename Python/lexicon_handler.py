@@ -5,11 +5,11 @@ import re
 import collections
 import locale
 import sys
-from sentiWS import *
-from nrc import *
-from bawl import *
-from clematide_dictionary import *
-from german_polarity_clues import *
+from lexicon_sentiWS import *
+from lexicon_nrc import *
+from lexicon_bawl import *
+from lexicon_clematide_dictionary import *
+from lexicon_german_polarity_clues import *
 import pickle
 
 def main():
