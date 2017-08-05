@@ -46,6 +46,7 @@ class CD:
 		for line in lines:
 			info = line.split(" ")
 			word = info[0]
+			# catch Phrases
 			word = word.replace("_", " ")
 			sentiment = info[1]
 			sentimentInfo = sentiment.split("=")

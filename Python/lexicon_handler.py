@@ -19,8 +19,14 @@ def main():
 	lexiconHandler = Lexicon_Handler()
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
-	#lexiconHandler.combineSentimentLexica("treetagger")
-	lexiconHandler.createSimpleOutputCombinedLexicon()
+	lexiconHandler.combineSentimentLexica("treetagger")
+	words = []
+	for word in lexiconHandler._sentimentDict:
+		if(len(word.split(" ")) > 1):
+			words.append(word)
+			print word
+	print len(words)
+	#lexiconHandler.createSimpleOutputCombinedLexicon()
 	print(len(lexiconHandler._sentimentDict))
 	print(len(lexiconHandler._sentimentDictLemmas))
 
@@ -194,13 +200,42 @@ class Lexicon_Handler:
 		outputFile.close()
 	
 	def createSimpleOutputCombinedLexicon(self):
-		outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens.txt", "w")
+		outputFile11 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens1-1.txt", "w")
+		outputFile12 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens1-2.txt", "w")
+		outputFile21 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens2-1.txt", "w")
+		outputFile22 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens2-2.txt", "w")
+		
 		# Doesnt matter which processor to choose
 		self.combineSentimentLexica("treetagger")
-		for word in self._sentimentDict:
+		keyList = list(self._sentimentDict.keys())
+		partOne = keyList[:len(keyList)/2]
+		partTwo = keyList[len(keyList)/2:]
+
+		partOneOne = partOne[:len(partOne)/2]
+		partOneTwo = partOne[len(partOne)/2:]
+
+		partTwoOne = partTwo[:len(partTwo)/2]
+		partTwoTwo = partTwo[len(partTwo)/2:]
+		
+		for word in partOneOne:
 			lineString = word + "\n"
-			outputFile.write(lineString)
-		outputFile.close()
+			outputFile11.write(lineString)
+		outputFile11.close()
+		
+		for word in partOneTwo:
+			lineString = word + "\n"
+			outputFile12.write(lineString)
+		outputFile12.close()
+
+		for word in partTwoOne:
+			lineString = word + "\n"
+			outputFile21.write(lineString)
+		outputFile21.close()
+
+		for word in partTwoTwo:
+			lineString = word + "\n"
+			outputFile22.write(lineString)
+		outputFile22.close()
 
 	def getValuesOfCombinedLexiconByWord(self, sentimentGroups):
 		values = []
