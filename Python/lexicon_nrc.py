@@ -32,7 +32,7 @@ class NRC:
 		self.initNRC()
 		self.extendLexiconNRCDTA()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas-DTAExtended.txt")
-		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText)
+		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
