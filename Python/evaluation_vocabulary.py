@@ -13,14 +13,12 @@ def main():
 
 	evaluation = Evaluation_LexiconVsVocabulary()
 
-	#evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "CombinedLexicon", "treetagger")
+	evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "SentiWS-DTAExtended", "treetagger")
 	
 	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/treetagger/", "CombinedLexicon", "treetagger")
-	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
+	result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("SentiWS-DTAExtended", "treetagger")
+	evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
 	#evaluation.evaluateLexicon("SentiWS-DTAExtended")
 	#evaluation.evaluateAll()
 
@@ -126,13 +124,17 @@ class Evaluation_LexiconVsVocabulary:
 	def getRecognizedWordsOfVocabulary(self, lexicon):
 		words = self._vocabulary._words
 		recognized = self.getRecognizedWords(lexicon, self._vocabulary._words)
-
+		print recognized
 		return recognized
 
 	def getRecognizedWords(self, lexicon, vocabularyList):
 		recognized = []
+		if (u"Heirat" in lexicon):
+			print lexicon[u"Heirat"]
+
 		for word in vocabularyList:
 			if(word in lexicon):
+				print word
 				recognized.append(word)
 			else:
 				upperWord = word[:1].upper() + word[1:]

@@ -43,8 +43,16 @@ class Senti_WS:
 	def readAndInitSentiWSAndLemmasDTA(self, processor):
 		self.initSentiWS()
 		self.extendLexiconSentiWSDTA()
-		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas-DTAExtended.txt")
-		self._sentimentDictLemmas = self.getSentimentDictSentiWS(sentDictText)
+		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas-DTAExtended.txt")
+		sentimentDict = {}
+
+		for line in sentimentDictText:
+			wordAndValue = line.split("\t")
+			word = wordAndValue[0]
+			value = float(wordAndValue[1].rstrip())
+			sentimentDict[unicode(word)] = value
+
+		self._sentimentDictLemmas = sentimentDict
 
 	def initSentiWS (self):
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Negative.txt")

@@ -18,8 +18,12 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("CD-DTAExtended", "treetagger")
+	lexiconHandler.initSingleDict("SentiWS-DTAExtended", "treetagger")
 	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
+	for key in lexiconHandler._sentimentDictLemmas:
+		print key
+	if(u"Heirat" in lexiconHandler._sentimentDictLemmas):
+		print lexiconHandler._sentimentDictLemmas[u"Heirat"]
 	print(len(lexiconHandler._sentimentDict))
 	print(len(lexiconHandler._sentimentDictLemmas))
 	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
