@@ -5,37 +5,32 @@ import re
 import collections
 import locale
 import sys
-from lexicon_sentiWS import *
-from lexicon_nrc import *
-from lexicon_bawl import *
-from lexicon_clematide_dictionary import *
-from lexicon_german_polarity_clues import *
 import pickle
+from lexicon_bawl import *
+from lexicon_german_polarity_clues import *
+from lexicon_clematide_dictionary import *
+from lexicon_nrc import *
+from lexicon_sentiWS import *
+
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
-	lexiconHandler.combineSentimentLexica("treetagger")
-	words = []
-	for word in lexiconHandler._sentimentDict:
-		if(len(word.split(" ")) > 1):
-			words.append(word)
-			print word
-	print len(words)
-	#lexiconHandler.createSimpleOutputCombinedLexicon()
+	lexiconHandler.initSingleDict("NRC-DTAExtended", "treetagger")
+	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
 	print(len(lexiconHandler._sentimentDict))
 	print(len(lexiconHandler._sentimentDictLemmas))
-
+	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
+	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
+	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump()
-
-	#lexiconHandler.combineSentimentLexica("treetagger")
-	#lexiconHandler.createOutputCombinedLexicon()
-	#lexiconHandler.createAllFilesCombinedLexicon()
+	#lexiconHandler.resetAllFiles()
+	#lexiconHandler.createSimpleOutputCombinedLexicon()
+	#print(len(lexiconHandler._sentimentDict))
+	#print(len(lexiconHandler._sentimentDictLemmas))
+	#lexiconHandler.combineSentimentLexica("textblob")
 
 class Lexicon_Handler:
 
@@ -43,50 +38,76 @@ class Lexicon_Handler:
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 		self._sentimentDicts = ["SentiWS", "NRC", "Bawl", "CD", "GPC"]
+		self._sentimentDictsDTAExtended = ["SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended"]
 
 	def initSingleDict (self, lexicon, processor):
 		if (lexicon == "SentiWS"):
-			self.initSentiWS(processor)
+			self.initSentiWS(processor, False)
 		elif (lexicon == "NRC"):
-			self.initNrc(processor)
+			self.initNrc(processor, False)
 		elif (lexicon == "Bawl"):
-			self.initBawl(processor)
+			self.initBawl(processor, False)
 		elif (lexicon == "CD"):
-			self.initCD(processor)
+			self.initCD(processor, False)
 		elif (lexicon == "GPC"):
-			self.initGPC(processor)
+			self.initGPC(processor, False)
+		elif (lexicon == "SentiWS-DTAExtended"):
+			self.initSentiWS(processor, True)
+		elif (lexicon == "NRC-DTAExtended"):
+			self.initNrc(processor, True)
+		elif (lexicon == "Bawl-DTAExtended"):
+			self.initBawl(processor, True)
+		elif (lexicon == "CD-DTAExtended"):
+			self.initCD(processor, True)
+		elif (lexicon == "GPC-DTAExtended"):
+			self.initGPC(processor, True)
 		elif (lexicon == "CombinedLexicon"):
 			self.combineSentimentLexica(processor)
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 	
-	def initSentiWS(self, processor):
+	def initSentiWS(self, processor, DTAExtended):
 		sentiWS = Senti_WS()
-		sentiWS.readAndInitSentiWSAndLemmas(processor)
+		if(DTAExtended):
+			sentiWS.readAndInitSentiWSAndLemmasDTA(processor)
+		else:
+			sentiWS.readAndInitSentiWSAndLemmas(processor)
 		self._sentimentDict = sentiWS._sentimentDict
 		self._sentimentDictLemmas = sentiWS._sentimentDictLemmas
 
-	def initNrc(self, processor):
+	def initNrc(self, processor, DTAExtended):
 		nrc = NRC()
-		nrc.readAndInitNRCAndLemmas(processor)
+		if(DTAExtended):
+			nrc.readAndInitNRCAndLemmasDTA(processor)
+		else:
+			nrc.readAndInitNRCAndLemmas(processor)
 		self._sentimentDict = nrc._sentimentDict
 		self._sentimentDictLemmas = nrc._sentimentDictLemmas
 
-	def initBawl(self, processor):
+	def initBawl(self, processor, DTAExtended):
 		bawl = Bawl()
-		bawl.readAndInitBawlAndLemmas(processor)
+		if(DTAExtended):
+			bawl.readAndInitBawlAndLemmasDTA(processor)
+		else:
+			bawl.readAndInitBawlAndLemmas(processor)
 		self._sentimentDict = bawl._sentimentDict
 		self._sentimentDictLemmas = bawl._sentimentDictLemmas
 
-	def initCD(self, processor):
+	def initCD(self, processor, DTAExtended):
 		cd = CD()
-		cd.readAndInitCDAndLemmas(processor)
+		if(DTAExtended):
+			cd.readAndInitCDAndLemmasDTA(processor)
+		else:
+			cd.readAndInitCDAndLemmas(processor)
 		self._sentimentDict = cd._sentimentDict
 		self._sentimentDictLemmas = cd._sentimentDictLemmas
 
-	def initGPC(self, processor):
+	def initGPC(self, processor, DTAExtended):
 		gpc = German_Polarity_Clues()
-		gpc.readAndInitGPCAndLemmas(processor)
+		if(DTAExtended):
+			gpc.readAndInitGPCAndLemmasDTA(processor)
+		else:
+			gpc.readAndInitGPCAndLemmas(processor)
 		self._sentimentDict = gpc._sentimentDict
 		self._sentimentDictLemmas = gpc._sentimentDictLemmas
 
@@ -166,6 +187,14 @@ class Lexicon_Handler:
 		return newLexiconKeysLemmas
 
 	
+	def resetAllFiles(self):
+		self.combineSentimentLexiconsKeysAndDump("treetagger")
+		print("dump treetagger keys")
+		self.combineSentimentLexiconsKeysAndDump("textblob")
+		print("dump textblob keys")
+		self.createAllFilesCombinedLexicon()
+		print("combinedlexicon Files")
+
 	def createAllFilesCombinedLexicon(self):
 		self.createSentimentDictFileCombinedLexiconTokens("treetagger")
 		self.createSentimentDictFileCombinedLexiconLemmas("treetagger")
@@ -181,7 +210,7 @@ class Lexicon_Handler:
 
 	def createOutputCombinedLexicon(self, sentimentDict, processor, tokensOrLemmas):
 		if(tokensOrLemmas == "Tokens"):
-			outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon.txt", "w")
+			outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-Token.txt", "w")
 		elif(tokensOrLemmas == "Lemmas"):
 			outputFile = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CombinedLexicon.txt", "w")
 		
@@ -200,10 +229,10 @@ class Lexicon_Handler:
 		outputFile.close()
 	
 	def createSimpleOutputCombinedLexicon(self):
-		outputFile11 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens1-1.txt", "w")
-		outputFile12 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens1-2.txt", "w")
-		outputFile21 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens2-1.txt", "w")
-		outputFile22 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-SimpleTokens2-2.txt", "w")
+		outputFile11 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexiconGroups/CombinedLexicon-SimpleTokens1-1.txt", "w")
+		outputFile12 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexiconGroups/CombinedLexicon-SimpleTokens1-2.txt", "w")
+		outputFile21 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexiconGroups/CombinedLexicon-SimpleTokens2-1.txt", "w")
+		outputFile22 = open("../SentimentAnalysis/TransformedLexicons/CombinedLexiconGroups/CombinedLexicon-SimpleTokens2-2.txt", "w")
 		
 		# Doesnt matter which processor to choose
 		self.combineSentimentLexica("treetagger")

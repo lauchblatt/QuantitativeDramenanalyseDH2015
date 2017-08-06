@@ -6,13 +6,19 @@ import collections
 import locale
 import sys
 from lp_language_processor import *
+from lexicon_dta_enhancement import *
+from lexicon_bawl import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
 	sentiWs = Senti_WS()
-	sentiWs.createSentimentDictFileSentiWSLemmas("treetagger")
+	#sentiWs.createSentimentDictFileSentiWSLemmas("treetagger")
+	#sentiWs.createExtendedOutputDTA()
+	bawl = Bawl()
+	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
+	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
 
 class Senti_WS:
 
@@ -33,6 +39,12 @@ class Senti_WS:
 			sentimentDict[unicode(word)] = value
 
 		self._sentimentDictLemmas = sentimentDict
+
+	def readAndInitSentiWSAndLemmasDTA(self, processor):
+		self.initSentiWS()
+		self.extendLexiconSentiWSDTA()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas-DTAExtended.txt")
+		self._sentimentDictLemmas = self.getSentimentDictSentiWS(sentDictText)
 
 	def initSentiWS (self):
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Negative.txt")
@@ -76,7 +88,7 @@ class Senti_WS:
 
 		return sentimentDict
 
-	def lemmatizeDict(self, processor):
+	def lemmatizeDictSentiWS(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		print("start Lemmatisation")
@@ -98,7 +110,7 @@ class Senti_WS:
 		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
-	def createOutput(self, sentimentDict, dataName):
+	def createOutputSentiWS(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 
 		for word in sentimentDict:
@@ -112,15 +124,35 @@ class Senti_WS:
 		else:
 			return oldScore
 
+	def createExtendedOutputDTA(self):
+		self.initSentiWS()
+		print("###")
+		print(len(self._sentimentDict))
+		self.extendLexiconSentiWSDTA()
+		print("###")
+		print(len(self._sentimentDict))
+		self.createOutputSentiWS(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Token-DTAExtended")
+		self.lemmatizeDictSentiWS("treetagger")
+		print("###")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputSentiWS(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/SentiWS-Lemmas-DTAExtended")
+		self.lemmatizeDictSentiWS("textblob")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputSentiWS(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/SentiWS-Lemmas-DTAExtended")
+
+	def extendLexiconSentiWSDTA(self):
+		dta = DTA_Handler()
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+
 	def createSentimentDictFileSentiWSToken(self):
 		self.initSentiWS()
-		self.createOutput(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-TokenTest")
+		self.createOutputSentiWS(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-TokenTest")
 		
 	
 	def createSentimentDictFileSentiWSLemmas(self, processor):
 		self.initSentiWS()
-		self.lemmatizeDict(processor)
-		self.createOutput(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas")
+		self.lemmatizeDictSentiWS(processor)
+		self.createOutputSentiWS(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas")
 
 if __name__ == "__main__":
     main()

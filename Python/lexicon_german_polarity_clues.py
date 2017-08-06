@@ -6,15 +6,18 @@ import collections
 import locale
 import sys
 from lp_language_processor import *
+from lexicon_dta_enhancement import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
+	gpc.createExtendedOutputDTA()
+	#gpc.resetAllFiles()
 	#gpc.createSentimentDictFileGPCToken()
 	#gpc.createSentimentDictFileGPCLemmas("treetagger")
-	gpc.readAndInitGPCAndLemmas("treetagger")
+	#gpc.readAndInitGPCAndLemmas("treetagger")
 	"""
 	gpc.initGPC()
 	gpc.lemmatizeDictGPC()
@@ -41,6 +44,22 @@ class German_Polarity_Clues:
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
+	def readAndInitGPCAndLemmasDTA(self, processor):
+		self.initGPC()
+		self.extendLexiconGPCDTA()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/GPC-Lemmas-DTAExtended.txt")
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/GPC-Lemmas.txt")
+		sentimentDict = {}
+		lines = sentDictText.readlines()[1:]
+		for line in lines:
+			wordAndValues = line.split("\t")
+			sentiments = {}
+			sentiments["positive"] = int(wordAndValues[1])
+			sentiments["negative"] = int(wordAndValues[2])
+			sentiments["neutral"] = int(wordAndValues[3])
+			sentimentDict[unicode((wordAndValues)[0])] = sentiments
+		self._sentimentDictLemmas = sentimentDict
+
 	def initGPC(self):
 
 		sentDictTextNegative = open("../SentimentAnalysis/GermanPolarityClues/GermanPolarityClues-Negative-220311.tsv")
@@ -50,6 +69,26 @@ class German_Polarity_Clues:
 		sentimentDict = self.getSentimentDictGPC(sentDictTextNegative, sentDictTextNeutral, sentDictTextPositive)
 		self._sentimentDict = sentimentDict
 		self.removeNeutralWordsFromGPC()
+		self.handleSpecialCases()
+		self.removePhrasesFromSentimentDict()
+
+	def removePhrasesFromSentimentDict(self):
+		for word, sentiments in self._sentimentDict.items():
+			if(len(word.split(" ")) > 1):
+				del self._sentimentDict[word]
+
+	def handleSpecialCases(self):
+		for word, sentiments in self._sentimentDict.items():
+			if(word.endswith(":")):
+				del self._sentimentDict[word]
+				self._sentimentDict[unicode(word.rstrip(":"))] = sentiments
+			if(word.endswith("-")):
+				del self._sentimentDict[word]
+			if("/" in word):
+				del self._sentimentDict[word]
+				specialWords = word.split("/")
+				for specialWord in specialWords:
+					self._sentimentDict[unicode(specialWord)] = sentiments
 
 	def getSentimentDictGPC(self, textNegative, textNeutral, textPositive):
 		linesNegative = textNegative.readlines()
@@ -185,6 +224,31 @@ class German_Polarity_Clues:
 			line = "\n" + word + "\t" + str(info["positive"]) + "\t" + str(info["negative"]) + "\t" + str(info["neutral"])
 			outputFile.write(line)
 		outputFile.close()
+
+	def createExtendedOutputDTA(self):
+		self.initGPC()
+		print("###")
+		print(len(self._sentimentDict))
+		self.extendLexiconGPCDTA()
+		print("###")
+		print(len(self._sentimentDict))
+		self.createOutputGPC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/GPC-Token-DTAExtended")
+		self.lemmatizeDictGPC("treetagger")
+		print("###")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/GPC-Lemmas-DTAExtended")
+		self.lemmatizeDictGPC("textblob")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/GPC-Lemmas-DTAExtended")
+
+	def extendLexiconGPCDTA(self):
+		dta = DTA_Handler()
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+
+	def resetAllFiles(self):
+		self.createSentimentDictFileGPCToken()
+		self.createSentimentDictFileGPCLemmas("treetagger")
+		self.createSentimentDictFileGPCLemmas("textblob")
 
 	def createSentimentDictFileGPCToken(self):
 		self.initGPC()

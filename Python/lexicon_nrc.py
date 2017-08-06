@@ -6,13 +6,16 @@ import collections
 import locale
 import sys
 from lp_language_processor import *
+from lexicon_dta_enhancement import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
 	nrc = NRC()
-	nrc.createSentimentDictFileNRCLemmas("treetagger")
+	#nrc.resetAllFiles()
+	#nrc.createSentimentDictFileNRCLemmas("treetagger")
+	nrc.createExtendedOutputDTA()
 
 class NRC:
 
@@ -25,12 +28,29 @@ class NRC:
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas.txt")
 		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
+	def readAndInitNRCAndLemmasDTA(self, processor):
+		self.initNRC()
+		self.extendLexiconNRCDTA()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas-DTAExtended.txt")
+		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText)
+
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
 		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
 
-		#self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
+		self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
+		self.handleSpecialCases()
 		self._sentimentDict = self.removeTotalZerosFromNRC(self._sentimentDict)
+
+	def handleSpecialCases(self):
+		for word in self._sentimentDict.keys():
+			if(word.endswith("-")):
+				del self._sentimentDict[word]
+			# wegen leugnen,
+			if(word.endswith(",")):
+				self._sentimentDict[word.rstrip(",")] = self._sentimentDict[word]
+				del self._sentimentDict[word]
+				
 
 	def getSentimentDictNRC(self, sentimentDictText, isLemmas):
 		columnSub = 0
@@ -69,14 +89,13 @@ class NRC:
 		
 		return nrcSentimentDict
 
-	def lemmatizeDictNrc(self, processor):
+	def lemmatizeDictNRC(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
 		print("start Lemmatisation")
 		
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp._processor.getLemma(word)
-			print lemma
 			
 			if lemma in newSentimentDict:
 				newSentiments = value
@@ -162,6 +181,31 @@ class NRC:
 					words.append(word)
 		for word in doubles:
 			print(word)
+
+	def createExtendedOutputDTA(self):
+		self.initNRC()
+		print("###")
+		print(len(self._sentimentDict))
+		self.extendLexiconNRCDTA()
+		print("###")
+		print(len(self._sentimentDict))
+		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Token-DTAExtended")
+		self.lemmatizeDictNRC("treetagger")
+		print("###")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/NRC-Lemmas-DTAExtended")
+		self.lemmatizeDictNRC("textblob")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/NRC-Lemmas-DTAExtended")
+
+	def extendLexiconNRCDTA(self):
+		dta = DTA_Handler()
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+
+	def resetAllFiles(self):
+		self.createSentimentDictFileNRCToken()
+		self.createSentimentDictFileNRCLemmas("treetagger")
+		self.createSentimentDictFileNRCLemmas("textblob")
 
 	def createSentimentDictFileNRCToken(self):
 		self.initNRC()

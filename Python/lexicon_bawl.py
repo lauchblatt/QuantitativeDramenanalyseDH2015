@@ -5,7 +5,9 @@ import re
 import collections
 import locale
 import sys
+from lexicon_handler import *
 from lp_language_processor import *
+from lexicon_clematide_dictionary import *
 
 def main():
 	reload(sys)
@@ -13,16 +15,31 @@ def main():
 
 	bawl = Bawl()
 	#bawl.createSentimentDictFileBawlLemmas("treetagger")
-	bawl.readAndInitBawlAndLemmas("treetagger")
+	#bawl.readAndInitBawlAndLemmas("treetagger")
+	#bawl.createExtendedOutputDTA()
+	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
+	lexiconHandler = Lexicon_Handler()
+	lexiconHandler.initSingleDict("SentiWS-DTAExtended", "treetagger")
+
+	print(len(bawl._sentimentDict))
+	print(len(bawl._sentimentDictLemmas))
 
 class Bawl:
+
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
 	def readAndInitBawlAndLemmas(self, processor):
+		dta = DTA_Handler()
 		self.initBawl()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/Bawl-Lemmas.txt")
+		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
+
+	def readAndInitBawlAndLemmasDTA(self, processor):
+		self.initBawl()
+		self.extendLexiconBawlDTA()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/Bawl-Lemmas-DTAExtended.txt")
 		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
 
 	def initBawl(self):
@@ -80,9 +97,30 @@ class Bawl:
 			outputFile.write(line)
 		outputFile.close()
 
+	def createExtendedOutputDTA(self):
+		self.initBawl()
+		print("###")
+		print(len(self._sentimentDict))
+		self.extendLexiconBawlDTA()
+		print("###")
+		print(len(self._sentimentDict))
+		self.createOutputBawl(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/Bawl-Token-DTAExtended")
+		self.lemmatizeDictBawl("treetagger")
+		print("###")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/Bawl-Lemmas-DTAExtended")
+		self.lemmatizeDictBawl("textblob")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/Bawl-Lemmas-DTAExtended")
+
+	def extendLexiconBawlDTA(self):
+		dta = DTA_Handler()
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+
 	def createSentimentDictFileBawlToken(self):
 		self.initBawl()
 		self.createOutputBawl(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/Bawl-Token")
+
 
 	def createSentimentDictFileBawlLemmas(self, processor):
 		self.initBawl()

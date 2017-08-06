@@ -12,13 +12,16 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	evaluation = Evaluation_LexiconVsVocabulary()
-	evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "CombinedLexicon", "treetagger")
+
+	#evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "CombinedLexicon", "treetagger")
 	
 	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/treetagger/", "CombinedLexicon", "treetagger")
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	#evaluation.evaluateLexicon("CombinedLexicon")
+	lexiconHandler = Lexicon_Handler()
+	lexiconHandler.initSingleDict("SentiWS-DTAExtended", "treetagger")
+	#evaluation.evaluateLexicon("SentiWS-DTAExtended")
 	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:

@@ -9,7 +9,6 @@ Unzuverlässigkeit	0	1.0	0
 Abbau	0	1.0	0
 nieder	0	0.7	0
 Disziplinlosigkeit	0	1.0	0
-körperlich Beeinträchtigung	0	1.0	0
 unverantwortbar	0	1.0	0
 schwärmen	1.0	0	0
 Optimierungsvorschlag	0.7	0	0
@@ -113,7 +112,6 @@ Mittelohrentzündung	0	1.0	0
 abwinken	0	0.7	0
 Trost	1.0	0	0
 Verzückung	1.0	0	0
-zart besaiten	0	1.0	0
 Verfügungsgewalt	0	0.7	0
 Ächtung	0	1.0	0
 Gesundheitsreform	1.0	0	0
@@ -122,7 +120,7 @@ vertrauensvoll	1.0	0	0
 Phlegma	0	1.0	0
 Dunkelziffer	0	0.7	0
 falsch	0	1.0	0
-Antrag	0.7	0	1.0
+Antrag	0.7	0	0
 verhängnisvoll	0	1.0	0
 Spleen	0	0.7	0
 Brillanz	1.0	0	0
@@ -152,7 +150,6 @@ begütigen	1.0	0	0
 Behaglichkeit	0.7	0	0
 Unbekümmertheit	0	1.0	0
 dahinsiechen	0	1.0	0
-richtig stellen	0.7	0	0
 Landeerlaubnis	0.7	0	0
 Gemeinschaftsgeist	1.0	0	0
 Untugend	0	1.0	0
@@ -163,7 +160,6 @@ beißen	0	0.7	0
 unauffindbar	0	0.7	0
 übertreten	0	1.0	0
 widerrufen	0	1.0	0
-kirchlich Hochzeit	0.7	0	0
 herzlos	0	1.0	0
 Antrittsbesuch	0.7	0	0
 bedachtsam	0.7	0	0
@@ -365,7 +361,6 @@ Masochismus	0	1.0	0
 entmutigen	0	1.0	0
 Zigarettenabhängigkeit	0	1.0	0
 gönnen	1.0	0	0
-inner Kampf	0	0.7	0
 überordnen	0.7	0	0
 Glaubwürdigkeit	0.7	0	0
 unergiebig	0	1.0	0
@@ -432,7 +427,6 @@ Nachlässigkeit	0	0.7	0
 liberal	0.7	0	0
 habilitieren	0.7	0	0
 Verfemung	0	1.0	0
-gut gelaunt	1.0	0	0
 leer	0	1.0	0
 dickfellig	1.0	0	0
 schonungslos	0	0.7	0
@@ -543,7 +537,7 @@ Glut	0.7	0	0
 waghalsig	0.7	0	0
 Inzest	0	1.0	0
 Überernährung	0	1.0	0
-dulden	1.0	0.7	0
+dulden	1.0	0	0
 maulen	0	1.0	0
 stolz	1.0	0	0
 nonchalent	0.7	0	0
@@ -582,7 +576,7 @@ Herzbeschwerde	0	1.0	0
 grinsen	1.0	0	0
 unumschränkt	0.7	0	0
 nörgelig	0	1.0	0
-bescheiden	1.0	1.0	0
+bescheiden	1.0	0	0
 wohlig	0.7	0	0
 Rechtsfrieden	0.7	0	0
 hohn	0	1.0	0
@@ -638,7 +632,6 @@ Entziehungskur	0.7	0	0
 erdrückend	0	1.0	0
 pfiffig	0.7	0	0
 disziplinlos	0	1.0	0
-gut auflegen	1.0	0	0
 Klaustrophobie	0	1.0	0
 alarmieren	0	1.0	0
 freimütig	1.0	0	0
@@ -676,7 +669,6 @@ Verlassenheit	0	1.0	0
 Hysterie	0	1.0	0
 Redlichkeit	1.0	0	0
 unentschuldbar	0	1.0	0
-Furcht erregend	0	1.0	0
 Internierung	0	1.0	0
 tabuisieren	0	0.7	0
 unattraktiv	0	1.0	0
@@ -721,14 +713,12 @@ Verlegenheit	0	1.0	0
 unerfreulich	0	1.0	0
 fassungslos	0	1.0	0
 Berufsunfähigkeit	0	0.7	0
-huldigen	1.0	1.0	0
+huldigen	1.0	0	0
 versäumen	0	0.7	0
 irritierend	0	1.0	0
-gerade stehen	0	1.0	0
 Kriegsgräuel	0	0.7	0
 Eleganz	1.0	0	0
 Abschlachten	0	1.0	0
-Dank sagen	0.7	0	0
 Glücksgefühl	1.0	0	0
 verdammen	0	1.0	0
 freundschaftlich	1.0	0	0
@@ -753,7 +743,6 @@ bezichtigen	0	1.0	0
 ölig	0	0.7	0
 demütigend	0	1.0	0
 folgenreich	0	1.0	0
-schwarz sehen	0	0.7	0
 frieren	0	1.0	0
 Versicherungsbetrug	0	1.0	0
 weihen	0	0.7	0
@@ -792,7 +781,7 @@ selbstschädigend	0	1.0	0
 nationalistisch	0	1.0	0
 hartherzig	0	1.0	0
 Gier	0	1.0	0
-Schwäche	0.7	1.0	0
+Schwäche	0.7	0	0
 deprimierend	0	1.0	0
 Durchtriebenheit	0	1.0	0
 erheitern	1.0	0	0
@@ -906,7 +895,7 @@ Dienstunfähigkeit	0	0.7	0
 Einzigartigkeit	0.7	0	0
 Kriegsverbrechen	0	0.7	0
 Beule	0	0.7	0
-spindeldürr	0	0.7	0
+beschuldigen	0	1.0	0
 schizophren	0	1.0	0
 Schandtat	0	0.7	0
 Instandsetzung	1.0	0	0
@@ -1047,7 +1036,6 @@ Leichtheit	0.7	0	0
 feige	0	1.0	0
 befremdlich	0	1.0	0
 zufriedenstellend	1.0	0	0
-wohl tun	0.7	0	0
 Kriminalität	0	1.0	0
 verblüffen	1.0	0	0
 Wohltätigkeitsveranstaltung	0.7	0	0
@@ -1093,7 +1081,6 @@ Keil	0	0.7	0
 schinden	0	1.0	0
 Verwaltungsreform	1.0	0	0
 störrisch	0	1.0	0
-Gewinn bringend	1.0	0	0
 aussichtsreich	1.0	0	0
 bürgen	0.7	0	0
 durchhalten	0.7	0	0
@@ -1141,7 +1128,7 @@ Truppenreduzierung	0	0.7	0
 vertrauenserweckend	1.0	0	0
 bannen	1.0	0	0
 schwänzen	0	0.7	0
-Schrecken erregend	0	1.0	0
+rechtsextremistisch	0	1.0	0
 Zivilcourage	1.0	0	0
 Ausführlichkeit	0.7	0	0
 kichern	1.0	0	0
@@ -1189,7 +1176,7 @@ Erbrechen	0	1.0	0
 erhaben	1.0	0	0
 verbrennen	0	0.7	0
 Dankgefühl	1.0	0	0
-kunstfertig	1.0	0	0
+achthaben	0	1.0	0
 Schmiergeldzahlung	0	1.0	0
 Lesenswert	1.0	0	0
 Fußpilz	0	0.7	0
@@ -1198,7 +1185,6 @@ Strafpredigt	0	1.0	0
 Desorganisation	0	1.0	0
 lustlos	0	0.7	0
 Unrealisierbarkeit	0	0.7	0
-verloren gehen	0	0.7	0
 beleidigen	0	1.0	0
 Privileg	0.7	0	0
 Unehrlichkeit	0	1.0	0
@@ -1259,14 +1245,13 @@ inhaltsleer	0	0.7	0
 Arbeitsverweigerung	0	0.7	0
 Penetranz	0	1.0	0
 Wissensdurst	1.0	0	0
-voll fressen	0	0.7	0
 trübselig	0	1.0	0
 Bravo	0.7	0	0
 Wehe	0	1.0	0
 tuberkular	0	1.0	0
 erwärmen	1.0	0	0
 Fußerkrankung	0	0.7	0
-tonangebend	0.7	1.0	0
+tonangebend	0.7	0	0
 wissbegierig	1.0	0	0
 behumpsen	0	0.7	0
 Hebung	0.7	0	0
@@ -1280,7 +1265,6 @@ Langeweile	0	1.0	0
 hinwegsetzen	0	0.7	0
 tiefbewegen	1.0	0	0
 Einmaligkeit	0.7	0	0
-bewaffnet Kampf	0	0.7	0
 erkälten	0	1.0	0
 Clinch	0	0.7	0
 abrackern	0	1.0	0
@@ -1441,7 +1425,7 @@ interessieren	1.0	0	0
 Arbeitsuntauglichkeit	0	1.0	0
 tief	0	1.0	0
 Schlampigkeit	0	1.0	0
-fett	0.7	0.7	0
+fett	0.7	0	0
 genehm	1.0	0	0
 erstaunen	1.0	0	0
 anpassungsfähig	1.0	0	0
@@ -1466,7 +1450,6 @@ Schuss	0	1.0	0
 eintönig	0	1.0	0
 Pfiff	1.0	0	0
 Demontage	0	1.0	0
-multipel Persönlichkeitsspaltung	0	1.0	0
 Reisethrombose	0	1.0	0
 Typhus	0	1.0	0
 Ausdauer	0.7	0	0
@@ -1494,7 +1477,6 @@ Kriminalitätsrate	0	1.0	0
 unverhohlen	0	0.7	0
 Teufelswerk	0	1.0	0
 Vertragsbruch	0	0.7	0
-voll stopfen	0	0.7	0
 unentwegt	0.7	0	0
 schwindeln	0	1.0	0
 brotlos	0	0.7	0
@@ -1528,6 +1510,7 @@ tiefgreifend	1.0	0	0
 anschnauben	0	1.0	0
 redegewandt	1.0	0	0
 umgestalten	0.7	0	0
+Despotie	0	1.0	0
 lebendig	0.7	0	0
 wirklichkeitsfremd	0	1.0	0
 schurigeln	0	1.0	0
@@ -1552,11 +1535,10 @@ Leichtfertigkeit	0	0.7	0
 Muff	0	0.7	0
 herablassend	0	0.7	0
 vorsorglich	0.7	0	0
-aushalten	0.7	0.7	0
+aushalten	0.7	0	0
 sträuben	0	1.0	0
 träge	0	0.7	0
 Mittelmäßigkeit	0	0.7	0
-taub werden	0	1.0	0
 Straßenschlacht	0	0.7	0
 schädigen	0	1.0	0
 Bezogenheit	0.7	0	0
@@ -1705,7 +1687,6 @@ sorglos	1.0	0	0
 frenetisch	0.7	0	0
 Besetzung	0	0.7	0
 Nagelpilz	0	0.7	0
-golden Hochzeit	0.7	0	0
 hochbegabt	1.0	0	0
 verzeihend	0.7	0	0
 Allergie	0	1.0	0
@@ -1719,7 +1700,6 @@ Vergeltungsschlag	0	1.0	0
 Minderwertigkeitsgefühl	0	1.0	0
 beanstanden	0	1.0	0
 Spurensicherung	0.7	0	0
-tief traurig	0	1.0	0
 Solidaritätsaktion	0.7	0	0
 vergällen	0	1.0	0
 Gemächlichkeit	0.7	0	0
@@ -1731,7 +1711,6 @@ sympathisieren	1.0	0	0
 unwirklich	0	1.0	0
 Darmpilz	0	0.7	0
 beseufzen	0	1.0	0
-sitzen bleiben	0	0.7	0
 Todessehensucht	0	1.0	0
 Segen	0.7	0	0
 Bodensanierung	1.0	0	0
@@ -1748,7 +1727,6 @@ Unausgeglichenheit	0	1.0	0
 Untauglichkeit	0	0.7	0
 Intimität	1.0	0	0
 Gelähmtheit	0	1.0	0
-überbelasten	0	0.7	0
 verschüchtern	0	0.7	0
 Trübsinnigkeit	0	1.0	0
 genialisch	1.0	0	0
@@ -1803,7 +1781,6 @@ verfolgen	0	1.0	0
 Erschöpfungszustand	0	1.0	0
 mangelfrei	0.7	0	0
 unverfügbar	0	0.7	0
-tief bewegen	1.0	0	0
 schmachvoll	0	1.0	0
 pikant	0	1.0	0
 Fälschen	0	1.0	0
@@ -1876,7 +1853,6 @@ kaprizieren	0	0.7	0
 Abkanzelung	0	1.0	0
 einwickeln	0	0.7	0
 Prahlerei	0	1.0	0
-in Frage stellen	0	0.7	0
 Scham	0	1.0	0
 Militärschlag	0	1.0	0
 vermeintlich	0	1.0	0
@@ -1948,7 +1924,6 @@ inakzeptabel	0	1.0	0
 Wortgefecht	0	0.7	0
 Einkommen	0.7	0	0
 ungeheuer	0	1.0	0
-ungerechtfertigt	0	1.0	0
 eigenmächtig	0	1.0	0
 Lebensmüdigkeit	0	1.0	0
 Restauration	0.7	0	0
@@ -1973,7 +1948,7 @@ Sakrileg	0	0.7	0
 Unmöglichkeit	0	1.0	0
 gebührenfrei	0.7	0	0
 entschuldigen	1.0	0	0
-laden	0.7	1.0	0
+laden	0.7	0	0
 unterschieben	0	1.0	0
 angenehm	1.0	0	0
 indiskret	0	0.7	0
@@ -1985,7 +1960,7 @@ außergewöhnlich	1.0	0	0
 überschäumend	1.0	0	0
 abwenden	1.0	0	0
 lächeln	1.0	0	0
-stichhaltig	1.0	0	0
+Messerstich	0	0.7	0
 boykottieren	0	1.0	0
 Absturzursache	0	0.7	0
 Ausländerfreundlichkeit	1.0	0	0
@@ -2071,12 +2046,11 @@ Verkalkung	0	1.0	0
 sportbegeistert	1.0	0	0
 gedankenverloren	0	0.7	0
 ängstigen	0	1.0	0
-fest	0.7	0.7	0
+fest	0.7	0	0
 zänkisch	0	1.0	0
-hysterisch Anfall	0	1.0	0
 Vulkanausbruch	0	1.0	0
 sinnvoll	1.0	0	0
-lautstark	0	0.7	0
+Notbremse	0	1.0	0
 linkslastig	0	1.0	0
 Anpassungsfähigkeit	0.7	0	0
 sadistisch	0	1.0	0
@@ -2093,11 +2067,11 @@ furios	0.7	0	0
 unausgewogen	0	1.0	0
 Hörbehinderung	0	1.0	0
 Zweifel	0	1.0	0
-Androhung	0	1.0	0
+Flugsicherung	0.7	0	0
 erproben	1.0	0	0
 patent	0.7	0	0
 bösartig	0	1.0	0
-vernünftig	1.0	0	0
+überbelasten	0	0.7	0
 Reichsgründung	0.7	0	0
 Trunkenheit	0	1.0	0
 Aufstieg	0.7	0	0
@@ -2128,7 +2102,7 @@ Kammersprengung	0	1.0	0
 beklemmend	0	1.0	0
 vielversprechend	1.0	0	0
 gewinnen	1.0	0	0
-Geier	0.7	0.7	0
+Geier	0.7	0	0
 klasse	1.0	0	0
 weise	1.0	0	0
 auszehren	0	0.7	0
@@ -2156,7 +2130,6 @@ griesgrämig	0	1.0	0
 hoffnungsfroh	1.0	0	0
 Qualitätsverbesserung	0.7	0	0
 Verbundenheitsgefühl	1.0	0	0
-hochleben lassen	1.0	0	0
 hochnäsig	0	0.7	0
 Entscheidungsgewalt	0.7	0	0
 schlagkräftig	1.0	0	0
@@ -2175,7 +2148,7 @@ preisgünstig	1.0	0	0
 Abschießen	0	1.0	0
 versieben	0	0.7	0
 tyrannisieren	0	1.0	0
-verschweigen	1.0	1.0	0
+verschweigen	1.0	0	0
 niederschlagen	0	0.7	0
 Korrektheit	1.0	0	0
 Fahrlässigkeit	0	0.7	0
@@ -2196,7 +2169,7 @@ lukrativ	1.0	0	0
 fälschen	0	1.0	0
 putzmunter	1.0	0	0
 autonom	0.7	0	0
-Menschenrecht	0.7	0	1.0
+Menschenrecht	0.7	0	0
 oll	0	1.0	0
 Ausgebranntheit	0	1.0	0
 einfügen	0.7	0	0
@@ -2232,7 +2205,6 @@ Denkzettel	0	1.0	0
 entlassen	0	0.7	0
 aufdringlich	0	0.7	0
 belächeln	0	1.0	0
-zufrieden geben	1.0	0	0
 förderungswürdig	1.0	0	0
 Spamming	0	1.0	0
 Optimierung	0.7	0	0
@@ -2271,7 +2243,7 @@ gut	1.0	0	0
 Aussatz	0	1.0	0
 testieren	0.7	0	0
 Folter	0	0.7	0
-kümmern	0.7	1.0	0
+kümmern	0.7	0	0
 verstümmeln	0	1.0	0
 Brandursache	0	0.7	0
 beurlauben	0	0.7	0
@@ -2288,10 +2260,9 @@ goutieren	0.7	0	0
 Technologiefeindlichkeit	0	1.0	0
 verunglimpfen	0	1.0	0
 Gängelung	0	0.7	0
-zufrieden stellen	0.7	0	0
 erdulden	0	1.0	0
 beglücken	1.0	0	0
-weitsichtig	1.0	0.7	0
+weitsichtig	1.0	0	0
 einladend	0.7	0	0
 protzig	0	1.0	0
 brüskieren	0	1.0	0
@@ -2304,7 +2275,7 @@ Falschaussage	0	1.0	0
 Aufsässigkeit	0	1.0	0
 bange	0	0.7	0
 ramponieren	0	0.7	0
-körperlich Wohlgefühl	1.0	0	0
+verbergen	0	0.7	0
 Sterilität	0	0.7	0
 verkneifen	0	1.0	0
 Aufstand	0	0.7	0
@@ -2366,7 +2337,7 @@ beeindruckend	1.0	0	0
 Konsilidieren	1.0	0	0
 Wärmeverlust	0	1.0	0
 fernhalten	0	1.0	0
-Berufsausbildung	1.0	0	1.0
+Berufsausbildung	1.0	0	0
 gedeihen	0.7	0	0
 einstecken	1.0	0	0
 magersüchtig	0	1.0	0
@@ -2390,9 +2361,9 @@ erobern	1.0	0	0
 weitreisen	1.0	0	0
 spielen	0	1.0	0
 Perversion	0	1.0	0
-Schiss	0	1.0	0
+Jugendkriminalität	0	1.0	0
 hochfliegend	0	0.7	0
-zufrieden sein	1.0	0	0
+satanisch	0	1.0	0
 plärren	0	1.0	0
 reinlich	0.7	0	0
 stimulierend	0	0.7	0
@@ -2404,7 +2375,6 @@ Postreform	1.0	0	0
 füllig	0.7	0	0
 taktvoll	1.0	0	0
 Malaria	0	1.0	0
-schlecht stellen	0	0.7	0
 sachgemäß	1.0	0	0
 Propagierung	1.0	0	0
 Fremdenfeindlichkeit	0	1.0	0
@@ -2419,14 +2389,12 @@ nervös	0	1.0	0
 Langmut	0.7	0	0
 Feldverweis	0	1.0	0
 Gegnerschaft	0	1.0	0
-Diabetes mellitus	0	1.0	0
 planvoll	1.0	0	0
 kunstvoll	1.0	0	0
 fortjagen	0	1.0	0
 Sklaverei	0	1.0	0
 Geschwulst	0	1.0	0
 Zwischenruf	0	0.7	0
-autistisch Störung	0	1.0	0
 frigide	0	0.7	0
 Rückenschmerz	0	1.0	0
 Zurschaustellung	0	1.0	0
@@ -2441,7 +2409,7 @@ vorziehen	0.7	0	0
 normalisieren	1.0	0	0
 Nahostkonflikt	0	0.7	0
 Fraktur	0	1.0	0
-Feuer	0.7	1.0	0
+Feuer	0.7	0	0
 dröge	0	1.0	0
 schlecht	0	1.0	0
 hochstilisieren	0	0.7	0
@@ -2451,19 +2419,16 @@ Hilfestellung	0.7	0	0
 Bekenntnis	0.7	0	0
 freuen	1.0	0	0
 Tortur	0	1.0	0
-cholerisch Anfall	0	1.0	0
 Sühne	0.7	0	0
 Maloche	0	1.0	0
-krumm nehmen	0	1.0	0
 tugendlich	1.0	0	0
 arbeitswillig	0.7	0	0
 Entrüstung	0	1.0	0
-Angst machen	0	1.0	0
 taktieren	0	0.7	0
-vornehm	0.7	0.7	0
+vornehm	0.7	0	0
 wehrlos	0	0.7	0
 Ekel	0	1.0	0
-leiden	0.7	1.0	0
+leiden	0.7	0	0
 Hetze	0	0.7	0
 Besänftigung	0.7	0	0
 Eheschließung	0.7	0	0
@@ -2473,7 +2438,6 @@ Verwerflichkeit	0	1.0	0
 Muskelfaserriss	0	0.7	0
 verheilen	1.0	0	0
 Abfallentsorgung	0	1.0	0
-lustig machen	0	1.0	0
 preußisch	1.0	0	0
 Furcht	0	1.0	0
 wacker	1.0	0	0
@@ -2616,13 +2580,11 @@ vorverurteilen	0	1.0	0
 ohnmächtig	0	1.0	0
 ertragreich	1.0	0	0
 legitim	1.0	0	0
-tiefgehend	1.0	0	0
 Sauerei	0	1.0	0
 Hochschulausbildung	1.0	0	0
 verpacken	0	0.7	0
 Gleichheitsgrundsatz	0.7	0	0
 familiengerecht	1.0	0	0
-gefangen nehmen	0	1.0	0
 unzurechnungsfähig	0	1.0	0
 Vietnamkrieg	0	1.0	0
 schwankend	0	0.7	0
@@ -2694,7 +2656,6 @@ Drogenabhängigkeit	0	1.0	0
 Ungezwungenheit	0.7	0	0
 müde	0	1.0	0
 priorisieren	0.7	0	0
-übel gesinnt	0	1.0	0
 Wutausbruch	0	1.0	0
 ehrerbietend	1.0	0	0
 methodisch	0.7	0	0
@@ -2797,6 +2758,7 @@ drohen	0	1.0	0
 trösten	1.0	0	0
 Geräuschkulisse	0	0.7	0
 mobben	0	1.0	0
+Teamfähigkeit	1.0	0	0
 großzügig	0.7	0	0
 ablehnend	0	1.0	0
 Ermessensspielraum	0.7	0	0
@@ -2818,7 +2780,6 @@ fesselnd	0.7	0	0
 Hinterziehung	0	0.7	0
 hell	0.7	0	0
 maßvoll	1.0	0	0
-heilig Krieg	0	1.0	0
 Dankempfindung	1.0	0	0
 Artrose	0	1.0	0
 Hektik	0	1.0	0
@@ -2851,12 +2812,10 @@ Begeisterung	1.0	0	0
 ernsthaft	0.7	0	0
 heiter	1.0	0	0
 festigen	1.0	0	0
-Venia legendi	1.0	0	0
 makaber	0	1.0	0
 bescheißen	0	1.0	0
 aufhetzen	0	1.0	0
 abweisend	0	1.0	0
-blind werden	0	1.0	0
 versklaven	0	1.0	0
 Marter	0	1.0	0
 renommieren	1.0	0	0
@@ -2893,19 +2852,18 @@ menschenscheu	0	0.7	0
 durchfallen	0	0.7	0
 Blutverlust	0	0.7	0
 Zufriedenheit	1.0	0	0
-grau erregend	0	1.0	0
 Regeneration	0.7	0	0
 standesgemäß	1.0	0	0
 Kaffeesucht	0	1.0	0
 Unglücksursache	0	0.7	0
 fürsorglich	1.0	0	0
 Vergebung	0.7	0	0
-Einnahme	0.7	0.7	0
+Einnahme	0.7	0	0
 unentschlossen	0	0.7	0
 ungehalten	0	1.0	0
 geistreich	1.0	0	0
 expressiv	1.0	0	0
-Übermut	1.0	0.7	0
+Übermut	1.0	0	0
 schmerzvoll	0	1.0	0
 Vernichtungskrieg	0	1.0	0
 Lähmung	0	1.0	0
@@ -3021,7 +2979,6 @@ Gewichtsproblem	0	1.0	0
 stinkreich	0.7	0	0
 leimen	0	0.7	0
 kündigen	0	0.7	0
-psychisch krank	0	1.0	0
 anmachen	0	1.0	0
 Mindeststrafe	0	1.0	0
 bewegen	0.7	0	0
@@ -3040,7 +2997,7 @@ MS	0	1.0	0
 erschreckend	0	1.0	0
 staatsfeindlich	0	1.0	0
 Männerhass	0	1.0	0
-Nachrüstung	0.7	1.0	0
+Nachrüstung	0.7	0	0
 elefantös	0.7	0	0
 Sehbehinderung	0	0.7	0
 Scheidenpilz	0	0.7	0
@@ -3052,7 +3009,7 @@ Nachsorgekur	0.7	0	0
 nekrophil	0	1.0	0
 aufwerten	0.7	0	0
 kommunistenfrei	0	0.7	0
-direkt sagen	0.7	0	0
+Hochgenuss	1.0	0	0
 wahrheitsgemäß	1.0	0	0
 prunkvoll	1.0	0	0
 Führungspersönlichkeit	0.7	0	0
@@ -3086,7 +3043,7 @@ blasphemieren	0	1.0	0
 mögen	1.0	0	0
 schmähen	0	1.0	0
 umsorgen	0.7	0	0
-sorgen	0.7	1.0	0
+sorgen	0.7	0	0
 Reinlichkeit	1.0	0	0
 zufügen	0	0.7	0
 Razzia	0	0.7	0
@@ -3179,7 +3136,7 @@ lügen	0	1.0	0
 Not	0	1.0	0
 reizen	0	1.0	0
 Standfestigkeit	1.0	0	0
-Biss	1.0	0.7	0
+Biss	1.0	0	0
 verkehrstauglich	1.0	0	0
 unterqualifizieren	0	1.0	0
 Abschotten	0	0.7	0
@@ -3310,7 +3267,7 @@ Kokainmissbrauch	0	1.0	0
 Antipathie	0	1.0	0
 temperamentvoll	0.7	0	0
 Anfälligkeit	0	0.7	0
-Befremden	0	0.7	0
+Reha-Kur	0.7	0	0
 aufbauschen	0	1.0	0
 bestätigen	0.7	0	0
 filminteressiert	1.0	0	0
@@ -3398,7 +3355,6 @@ berechtigen	1.0	0	0
 Gelehrsamkeit	0.7	0	0
 Fitness	1.0	0	0
 Badekur	0.7	0	0
-inner Konflikt	0	0.7	0
 Durchsetzungskraft	0.7	0	0
 grau	0	0.7	0
 benzen	0	0.7	0
@@ -3429,7 +3385,7 @@ Gefühlstiefe	1.0	0	0
 deformieren	0	1.0	0
 dagegenhalten	0	1.0	0
 anfechten	0	1.0	0
-suchen	1.0	1.0	0
+suchen	1.0	0	0
 Lob	1.0	0	0
 Lebenslust	1.0	0	0
 Überdruss	0	1.0	0
@@ -3443,13 +3399,11 @@ heimlich	0	0.7	0
 wüten	1.0	0	0
 widerwärtig	0	1.0	0
 einschnappen	0	1.0	0
-voll spucken	0	0.7	0
 kränklich	0	1.0	0
 Petersilienhochzeit	0.7	0	0
 großspurig	0	1.0	0
 pünktlich	1.0	0	0
 rührselig	0	1.0	0
-gut betucht	0.7	0	0
 reizvoll	1.0	0	0
 menschenunwürdig	0	1.0	0
 Anmut	1.0	0	0
@@ -3462,14 +3416,13 @@ logisch	1.0	0	0
 Ölembargo	0	1.0	0
 Armbruch	0	1.0	0
 durchstehen	0.7	0	0
-graduieren werden	0.7	0	0
+verführbar	0	0.7	0
 fallbezogen	0.7	0	0
 ironisch	0	0.7	0
 brüllen	0	1.0	0
 losbrüllen	0	1.0	0
 hochkarätig	1.0	0	0
 Engagement	1.0	0	0
-verführbar	0	0.7	0
 ziehen	0	0.7	0
 bestürzen	0	1.0	0
 aufwendig	0	1.0	0
@@ -3481,7 +3434,7 @@ Zweifelhaftigkeit	0	0.7	0
 frusten	0	1.0	0
 drängen	0	0.7	0
 Rechtshilfe	0.7	0	0
-unerschrocken	1.0	0.7	0
+unerschrocken	1.0	0	0
 verlernen	0	0.7	0
 abheben	0	0.7	0
 Preisreform	1.0	0	0
@@ -3500,7 +3453,6 @@ unanfechtbar	0.7	0	0
 Studium	1.0	0	0
 Wirtschaftsebargo	0	1.0	0
 versiert	1.0	0	0
-acht haben	0	1.0	0
 Sabotage	0	0.7	0
 Bergung	1.0	0	0
 Lebensfreude	1.0	0	0
@@ -3518,7 +3470,6 @@ versagen	0	1.0	0
 geizig	0	0.7	0
 Prinzipientreue	0.7	0	0
 quittieren	0.7	0	0
-Not leidend	0	0.7	0
 neppen	0	0.7	0
 auskugeln	0	0.7	0
 Leuchtkraft	0.7	0	0
@@ -3573,7 +3524,6 @@ hereinlegen	0	0.7	0
 Tarnung	0	1.0	0
 Zufälligkeit	0	0.7	0
 loben	1.0	0	0
-wohl formen	1.0	0	0
 Explosion	0	1.0	0
 auserlesen	1.0	0	0
 Bioterrorismus	0	0.7	0
@@ -3592,6 +3542,7 @@ scheiden	0	0.7	0
 Vorbildfunktion	0.7	0	0
 Zielstrebigkeit	1.0	0	0
 Kontaktfreude	0.7	0	0
+Appeal	1.0	0	0
 schmuck	0.7	0	0
 Fremdherrschaft	0	0.7	0
 hetzerisch	0	1.0	0
@@ -3668,7 +3619,6 @@ inadäquat	0	1.0	0
 Übertretung	0	0.7	0
 sticheln	0	1.0	0
 ausweglos	0	1.0	0
-schwarz malen	0	0.7	0
 Lungenkrankheit	0	1.0	0
 mitfühlend	1.0	0	0
 rostfrei	0.7	0	0
@@ -3700,7 +3650,6 @@ Arbeitsunfähigkeit	0	1.0	0
 bangen	0	1.0	0
 Abschreckung	0	0.7	0
 Reduktionskur	0.7	0	0
-<UNKNOWN>	1.0	1.0	0
 missfällig	0	1.0	0
 überraschend	0.7	0	0
 Wechselbad	0.7	0	0
@@ -3740,7 +3689,7 @@ austricksen	0	0.7	0
 unehrlich	0	1.0	0
 verscheißern	0	1.0	0
 jähzornig	0	1.0	0
-Bequemlichkeit	0.7	0.7	0
+Bequemlichkeit	0.7	0	0
 Ehrlosigkeit	0	1.0	0
 auseinanderdriften	0	0.7	0
 Lampenfieber	0	1.0	0
@@ -3783,7 +3732,7 @@ Nutzlosigkeit	0	1.0	0
 verschärfen	0	0.7	0
 verkrüppeln	0	0.7	0
 Betriebsamkeit	0.7	0	0
-Verhüllung	0	1.0	0
+Lichtblick	1.0	0	0
 Anschlag	0	0.7	0
 mitverantworten	1.0	0	0
 impotent	0	0.7	0
@@ -3804,7 +3753,7 @@ Hautunreinheit	0	0.7	0
 Gewaltlosigkeit	0.7	0	0
 Verantwortung	1.0	0	0
 exzellent	1.0	0	0
-Hochgenuss	1.0	0	0
+zurückstecken	0.7	0	0
 ansprechend	0.7	0	0
 undemokratisch	0	1.0	0
 schenken	0.7	0	0
@@ -3844,7 +3793,7 @@ Ruf	0	0.7	0
 Wettbewerbsfähigkeit	0.7	0	0
 Einkommenserhöhung	0.7	0	0
 ideologiefrei	0.7	0	0
-fein schneiden	0.7	0	0
+ausruhen	0.7	0	0
 erküren	1.0	0	0
 verzücken	1.0	0	0
 fürchten	0	1.0	0
@@ -3868,7 +3817,6 @@ Landesverrat	0	1.0	0
 Vergeltungsmaßnahme	0	1.0	0
 humoristisch	0.7	0	0
 entwürdigen	0	1.0	0
-Schmuggel	0	0.7	0
 Zurechtweisung	0	1.0	0
 atomenergiefrei	0.7	0	0
 Laune	0	1.0	0
@@ -3912,12 +3860,11 @@ Neubildung	0.7	0	0
 Nahkampf	0	0.7	0
 Schönheitssinn	1.0	0	0
 Betriebsspionage	0	0.7	0
-körperlich behindern	0	1.0	0
+stichhaltig	1.0	0	0
 gesinnt	0.7	0	0
 ekelhaft	0	1.0	0
 unannehmbar	0	1.0	0
 unfair	0	1.0	0
-leid tragend	0	1.0	0
 Blitzkrieg	0	1.0	0
 human	1.0	0	0
 Überschreitung	0	0.7	0
@@ -3930,7 +3877,7 @@ hedonistisch	0	0.7	0
 Schlaffheit	0	0.7	0
 herumtreiben	0	1.0	0
 Rechtlosigkeit	0	0.7	0
-Leidenschaft	1.0	1.0	0
+Leidenschaft	1.0	0	0
 pathologisch	0	1.0	0
 kameradschaftlich	1.0	0	0
 Stabilisierung	1.0	0	0
@@ -3942,7 +3889,7 @@ erblinden	0	1.0	0
 graduieren	0.7	0	0
 beschwören	1.0	0	0
 ehrenvoll	1.0	0	0
-Beliebigkeit	1.0	0.7	0
+Beliebigkeit	1.0	0	0
 Giftgasattentat	0	0.7	0
 blühend	0.7	0	0
 Angeberei	0	1.0	0
@@ -3954,7 +3901,6 @@ Unbedarftheit	0	1.0	0
 misstrauisch	0	1.0	0
 ausspucken	0	0.7	0
 niedrig	0	0.7	0
-grau Star	0	0.7	0
 Zugzwang	0	0.7	0
 Großherzigkeit	1.0	0	0
 Ahndung	0	1.0	0
@@ -3976,13 +3922,12 @@ Heilkraft	0.7	0	0
 Unverletzlichkeit	0.7	0	0
 vorliebnehmen	1.0	0	0
 down	0	0.7	0
-Jugendkriminalität	0	1.0	0
+Schiss	0	1.0	0
 lieblos	0	1.0	0
 Hochzeit	0.7	0	0
 stinklangweilig	0	1.0	0
 präzisieren	0.7	0	0
 Sportlichkeit	0.7	0	0
-gut Mut	1.0	0	0
 zusammenbrechen	0	0.7	0
 Drogenentzug	0.7	0	0
 Nachbesserung	0.7	0	0
@@ -4028,13 +3973,11 @@ indigniert	0	1.0	0
 regenerieren	0.7	0	0
 unbeschwert	1.0	0	0
 mild	1.0	0	0
-manische Depression	0	1.0	0
 ratlos	0	1.0	0
 quälen	0	1.0	0
 innig	1.0	0	0
 nachsagen	0	1.0	0
 desinteressiert	0	1.0	0
-Neuerung	0.7	0	0
 staatskonform	1.0	0	0
 keck	0.7	0	0
 verständnislos	0	0.7	0
@@ -4125,7 +4068,6 @@ Radikalisierung	0	1.0	0
 Titelverteidigung	0.7	0	0
 simulieren	0	0.7	0
 überschätzen	0	0.7	0
-schief liegen	0	0.7	0
 abschalten	0.7	0	0
 verlottern	0	1.0	0
 borniert	0	1.0	0
@@ -4143,20 +4085,19 @@ zubilligen	0.7	0	0
 fremdgehen	0	0.7	0
 böse	0	1.0	0
 untröstlich	0	1.0	0
-unrealistisch	0	1.0	0
+misstrauen	0	1.0	0
 natürlich	0.7	0	0
 Mahnung	0	1.0	0
 konstruktiv	1.0	0	0
 rauslassen	0	1.0	0
 Entmündigung	0	1.0	0
-beschuldigen	0	1.0	0
+ungerechtfertigt	0	1.0	0
 gelackmeiert	0	1.0	0
 Verbleib	0.7	0	0
 trotzig	0	0.7	0
 redebegabt	1.0	0	0
 irre	0	1.0	0
 unselig	0	1.0	0
-daneben liegen	0	0.7	0
 Prägnanz	0.7	0	0
 lustbetont	1.0	0	0
 erbeben	0	1.0	0
@@ -4221,12 +4162,11 @@ erbitten	0.7	0	0
 Makellosigkeit	1.0	0	0
 libidonös	0	1.0	0
 Schrecken	0	1.0	0
-nichts sagend	0	1.0	0
+Schmuggel	0	0.7	0
 seelenlos	0	1.0	0
 wahnsinnig	0	1.0	0
 Hörgenuss	1.0	0	0
 Fußmassage	0.7	0	0
-ausruhen	0.7	0	0
 adeln	0.7	0	0
 Strafmaßnahme	0	1.0	0
 paradiesisch	1.0	0	0
@@ -4239,7 +4179,6 @@ normal	0.7	0	0
 Glanzlicht	0.7	0	0
 Heiserkeit	0	0.7	0
 Unrast	0	1.0	0
-orthopädisch Krankheit	0	1.0	0
 nachempfinden	1.0	0	0
 Morphiumsucht	0	1.0	0
 wissensdurstig	1.0	0	0
@@ -4272,12 +4211,12 @@ Störung	0	1.0	0
 Befreiung	1.0	0	0
 Gehbehinderung	0	1.0	0
 erzürnen	0	1.0	0
+überarbeiten	0	0.7	0
 Gefühlsarmut	0	1.0	0
 entzünden	0	1.0	0
 Unternehmungslust	1.0	0	0
 Leukämie	0	1.0	0
 Mordfall	0	0.7	0
-göttlich Gnade	0.7	0	0
 Maulkorb	0	0.7	0
 Zahnschmerz	0	1.0	0
 Urlaubsanspruch	0.7	0	0
@@ -4286,7 +4225,7 @@ freien	0.7	0	0
 heiser	0	0.7	0
 pädophil	0	1.0	0
 behutsam	0.7	0	0
-umschmeicheln	0.7	0.7	0
+umschmeicheln	0.7	0	0
 anderslautend	0	1.0	0
 aristokratisch	0.7	0	0
 resistent	1.0	0	0
@@ -4301,7 +4240,6 @@ Abneigung	0	1.0	0
 Physiotherapie	0.7	0	0
 unordentlich	0	1.0	0
 öden	0	1.0	0
-übel wollend	0	1.0	0
 gefräßig	0	1.0	0
 Schlichtung	0.7	0	0
 rigoros	0	1.0	0
@@ -4326,7 +4264,7 @@ Hokuspokus	0	1.0	0
 begehrlich	0	1.0	0
 offenherzig	1.0	0	0
 Sachzwang	0	0.7	0
-Einstellung	0.7	0	1.0
+Einstellung	0.7	0	0
 Innovationspolitik	0.7	0	0
 sabotieren	0	0.7	0
 nutzbringend	1.0	0	0
@@ -4374,8 +4312,7 @@ fettleibig	0	0.7	0
 Beständigkeit	1.0	0	0
 Geradlinigkeit	0.7	0	0
 schießen	0	1.0	0
-mitleid erregend	0	1.0	0
-grün Star	0	0.7	0
+Sprengung	0	1.0	0
 Engstirnigkeit	0	1.0	0
 Eintönigkeit	0	1.0	0
 verstockt	0	1.0	0
@@ -4405,7 +4342,7 @@ gesichtslos	0	0.7	0
 tölpelhaft	0	1.0	0
 Erhalt	0.7	0	0
 auspumpen	0	1.0	0
-doll	0.7	1.0	0
+doll	0.7	0	0
 Gestaltungskraft	0.7	0	0
 gradlinig	1.0	0	0
 perspektivreich	1.0	0	0
@@ -4421,7 +4358,7 @@ Erheiterung	1.0	0	0
 Ruhestörung	0	0.7	0
 bewusstlos	0	1.0	0
 ausbaden	0	0.7	0
-auseinander leben	0	1.0	0
+Nacht-und-Nebel-Aktion	0	0.7	0
 verlockend	1.0	0	0
 Purismus	0.7	0	0
 Verkommenheit	0	1.0	0
@@ -4500,9 +4437,8 @@ verschleimen	0	1.0	0
 Bedrohung	0	1.0	0
 winzig	0	0.7	0
 wohlformen	1.0	0	0
-Anwendung	0.7	0	1.0
+Anwendung	0.7	0	0
 jämmerlich	0	1.0	0
-nicht sesshaft	0	1.0	0
 Wassermangel	0	1.0	0
 Bewegungstherapie	0.7	0	0
 kompromissbereit	0.7	0	0
@@ -4515,7 +4451,7 @@ untauglich	0	1.0	0
 empörend	0	1.0	0
 knickerig	0	0.7	0
 Importverbot	0	1.0	0
-dummdreist	0	0.7	0
+verelenden	0	1.0	0
 Annehmlichkeit	0.7	0	0
 Affront	0	1.0	0
 richtig	1.0	0	0
@@ -4553,7 +4489,7 @@ standardisieren	0.7	0	0
 Ermordung	0	0.7	0
 verzweifeln	0	1.0	0
 Apologie	0.7	0	0
-absprechen	0.7	0.7	0
+absprechen	0.7	0	0
 eingestehen	0.7	0	0
 Wut	0	1.0	0
 besitzen	0	1.0	0
@@ -4590,7 +4526,6 @@ Nichterfüllung	0	1.0	0
 ausschweifend	0	1.0	0
 niveaulos	0	0.7	0
 verdonnern	0	1.0	0
-historisch Krieg	0	1.0	0
 zuversichtlich	1.0	0	0
 Boshaftigkeit	0	1.0	0
 maliziös	0	1.0	0
@@ -4616,7 +4551,6 @@ Spielwitz	1.0	0	0
 unsympatisch	0	1.0	0
 ambitionieren	0.7	0	0
 mitteilsam	1.0	0	0
-silbern Hochzeit	0.7	0	0
 keimfrei	0.7	0	0
 Ausweglosigkeit	0	1.0	0
 Feuerzauber	0	1.0	0
@@ -4648,7 +4582,7 @@ Konzession	0.7	0	0
 unbesiegt	1.0	0	0
 schimpfen	0	1.0	0
 AIDS	0	1.0	0
-hart	0.7	0.7	0
+hart	0.7	0	0
 zugestehen	0.7	0	0
 prunkhaft	1.0	0	0
 Verantwortungslosigkeit	0	1.0	0
@@ -4662,11 +4596,10 @@ rechtsradikal	0	1.0	0
 Artilleriefeuer	0	1.0	0
 Geschwätzigkeit	0	0.7	0
 Fähigkeit	0.7	0	0
-zuwider sein	0	1.0	0
 ahnden	0	1.0	0
 poltern	0	1.0	0
 staatsmännisch	0.7	0	0
-Propaganda	1.0	0.7	0
+Propaganda	1.0	0	0
 Besserung	0.7	0	0
 Neuerwerbung	0.7	0	0
 pedantisch	0	0.7	0
@@ -4737,16 +4670,13 @@ Fehlerlosigkeit	1.0	0	0
 Fortschrittlichkeit	0.7	0	0
 Niedertracht	0	1.0	0
 Paradoxie	0	1.0	0
-schlecht gelaunt	0	1.0	0
 schnüffeln	0	1.0	0
 hilflos	0	1.0	0
 Rüstung	0	1.0	0
 lamentieren	0	1.0	0
 Gewehrschuss	0	1.0	0
-Sprengung	0	1.0	0
 erlaucht	1.0	0	0
 Händel	0	0.7	0
-quer stellen	0	1.0	0
 Freude	1.0	0	0
 Großmut	1.0	0	0
 mulmig	0	1.0	0
@@ -4765,7 +4695,7 @@ düpieren	0	0.7	0
 Schwächung	0	1.0	0
 Ohnmacht	0	1.0	0
 originalgetreu	1.0	0	0
-plakativ	1.0	1.0	0
+plakativ	1.0	0	0
 Kaderschmiede	0.7	0	0
 Lehrerbetreuung	0	1.0	0
 Chaos	0	1.0	0
@@ -4804,7 +4734,6 @@ abstinent	0.7	0	0
 Milchschorf	0	0.7	0
 pfleglich	0.7	0	0
 Unbestimmtheit	0	1.0	0
-seelisch behindern	0	1.0	0
 Stabilisieren	1.0	0	0
 Drogeneinnahme	0	1.0	0
 Befriedung	0.7	0	0
@@ -4856,7 +4785,6 @@ desillusionieren	0	1.0	0
 treuelos	0	1.0	0
 kampfeslustig	0	1.0	0
 krisengeschüttelt	1.0	0	0
-kirchlich Trauung	0.7	0	0
 bevormunden	0	1.0	0
 mickrig	0	1.0	0
 ausdrucksvoll	1.0	0	0
@@ -4881,7 +4809,6 @@ vergewaltigen	0	1.0	0
 wurmen	0	1.0	0
 anarchisch	0	1.0	0
 handgreiflich	0	1.0	0
-geistig behindern	0	1.0	0
 anfechtbar	0	0.7	0
 Mandelentzündung	0	1.0	0
 alarmierend	0	1.0	0
@@ -4889,7 +4816,6 @@ entgleisen	0	1.0	0
 Zankapfel	0	0.7	0
 verderben	0	1.0	0
 bedauern	0	1.0	0
-Messerstich	0	0.7	0
 Provinzialiät	0	0.7	0
 Vergnügtheit	1.0	0	0
 Unverfrorenheit	0	1.0	0
@@ -4933,7 +4859,6 @@ Widerstandskraft	0.7	0	0
 freigeben	0.7	0	0
 gespensterhaft	0	1.0	0
 fallen|gefallen	0.7	0	0
-hoch begabt	1.0	0	0
 widerstandslos	0	1.0	0
 beängstigend	0	1.0	0
 Totschlag	0	0.7	0
@@ -4980,7 +4905,6 @@ Sprechstörung	0	1.0	0
 Exhibitionismus	0	1.0	0
 Zuchtlosigkeit	0	1.0	0
 Beweisnot	0	1.0	0
-Nacht-und-Nebel-Aktion	0	0.7	0
 anrüchig	0	1.0	0
 Wiedergutmachung	0.7	0	0
 Nymphomanie	0	1.0	0
@@ -5037,13 +4961,11 @@ gründlich	1.0	0	0
 fronen	0	0.7	0
 Lungenkrebs	0	1.0	0
 Mineralölsteuererhöhung	0.7	0	0
-habilitieren werden	0.7	0	0
 vergnügen	1.0	0	0
 angstfrei	1.0	0	0
 bildungsfern	0	0.7	0
 Arbeitskampf	0	0.7	0
 Neurose	0	1.0	0
-übel nehmen	0	1.0	0
 Gebietsreform	1.0	0	0
 klar	1.0	0	0
 Sentimentalität	0	1.0	0
@@ -5093,7 +5015,6 @@ honett	1.0	0	0
 Bauchschuss	0	1.0	0
 Kurzschlusshandlung	0	1.0	0
 Unbeliebtheit	0	1.0	0
-geheim halten	0	0.7	0
 Selbstbetrug	0	1.0	0
 Angebot	0.7	0	0
 vertrauensfördernd	1.0	0	0
@@ -5241,7 +5162,7 @@ davonjagen	0	1.0	0
 verbessern	0.7	0	0
 theaterbegeistert	1.0	0	0
 charismatisch	1.0	0	0
-erschüttern	0.7	0.7	0
+erschüttern	0.7	0	0
 uneinsichtig	0	0.7	0
 Pornographie	0	0.7	0
 Hoffnung	1.0	0	0
@@ -5282,7 +5203,6 @@ unangekündigt	0	0.7	0
 aussichtslos	0	0.7	0
 freudig	1.0	0	0
 Eruption	0	1.0	0
-Diamantene Hochzeit	0.7	0	0
 Kraft	0.7	0	0
 Betulichkeit	0.7	0	0
 smart	0.7	0	0
@@ -5295,7 +5215,6 @@ kampflos	0	1.0	0
 vaterlandslos	0	0.7	0
 Bombardement	0	1.0	0
 Überängstlichkeit	0	1.0	0
-kriminell Handlung	0	0.7	0
 leidgeprüft	0	1.0	0
 hintertreiben	0	0.7	0
 kumpelhaft	0.7	0	0
@@ -5325,7 +5244,6 @@ lebenslustig	1.0	0	0
 Abwiegelung	0.7	0	0
 Vergewaltigung	0	0.7	0
 widerwillig	0	0.7	0
-Besorgnis	0	1.0	0
 ergiebig	1.0	0	0
 Missgunst	0	1.0	0
 Philanthropie	1.0	0	0
@@ -5352,14 +5270,11 @@ kalt	0	0.7	0
 Herzensangelegenheit	0.7	0	0
 kostenintensiv	0	1.0	0
 verärgern	0	1.0	0
-Sympathie erweckend	1.0	0	0
 Kapitalverbrechen	0	1.0	0
 Inspiriertheit	1.0	0	0
 dekorativ	0.7	0	0
 grotesk	0	1.0	0
 Wesensverwandtschaft	1.0	0	0
-mulmig Gefühl	0	1.0	0
-fertig machen	0	1.0	0
 Gammeloutfit	0	0.7	0
 unfruchtbar	0	1.0	0
 Rechtmäßigkeit	0.7	0	0
@@ -5378,7 +5293,7 @@ derb	0	1.0	0
 verrucht	0	1.0	0
 Stöhnen	0	0.7	0
 Krebserkrankung	0	1.0	0
-Notbremse	0	1.0	0
+lautstark	0	0.7	0
 Blessur	0	0.7	0
 Beinschuss	0	1.0	0
 Verbüßung	0.7	0	0
@@ -5413,15 +5328,14 @@ Wirkungslosigkeit	0	0.7	0
 Zerstrittenheit	0	1.0	0
 gütlich	1.0	0	0
 delirieren	0	1.0	0
-Lichtblick	1.0	0	0
+Verhüllung	0	1.0	0
 herausekeln	0	1.0	0
 sündhaft	0	1.0	0
 Bergarbeiterstreik	0	0.7	0
 erquicklich	1.0	0	0
 Fehlbildung	0	1.0	0
 Zerlegung	0	1.0	0
-Reha-Kur	0.7	0	0
-neu gestalten	0.7	0	0
+Befremden	0	0.7	0
 berichtigen	0.7	0	0
 überzeugen	1.0	0	0
 bejubeln	1.0	0	0
@@ -5443,7 +5357,7 @@ sonnig	0.7	0	0
 Abnutzungserscheinung	0	1.0	0
 Gefälligkeit	0.7	0	0
 zukunftsweisend	1.0	0	0
-verelenden	0	1.0	0
+dummdreist	0	0.7	0
 Cholera	0	1.0	0
 peinigend	0	0.7	0
 berüchtigt	0	1.0	0
@@ -5460,7 +5374,7 @@ sicher	1.0	0	0
 Selbstmordanschlag	0	0.7	0
 unausgeglichen	0	0.7	0
 beunruhigend	0	1.0	0
-Teamfähigkeit	1.0	0	0
+Neuerung	0.7	0	0
 reformieren	0.7	0	0
 Goldhochzeit	0.7	0	0
 autoritär	0	1.0	0
@@ -5476,7 +5390,7 @@ Paradoxon	0	0.7	0
 Echtheit	1.0	0	0
 Regierungsgewalt	0	0.7	0
 Schweinerei	0	1.0	0
-Flugsicherung	0.7	0	0
+Androhung	0	1.0	0
 eng	1.0	0	0
 Gradlinigkeit	0.7	0	0
 Zwist	0	0.7	0
@@ -5501,7 +5415,7 @@ erbarmungslos	0	0.7	0
 hinterlistig	0	1.0	0
 Impotenz	0	0.7	0
 bewegend	0.7	0	0
-überarbeiten	0	0.7	0
+vernünftig	1.0	0	0
 Amnesie	0	1.0	0
 Gemeinnützigkeit	0.7	0	0
 zuknöpfen	0	0.7	0
@@ -5523,7 +5437,6 @@ abreagieren	0	1.0	0
 sprachbegabt	1.0	0	0
 kerngesund	1.0	0	0
 Verkehrsdelikt	0	0.7	0
-Maul- und Klauenseuche	0	0.7	0
 Foul	0	1.0	0
 Exaktheit	1.0	0	0
 Terroranschlag	0	0.7	0
@@ -5590,7 +5503,6 @@ Beunruhigung	0	1.0	0
 Offensive	0	1.0	0
 enträtseln	0.7	0	0
 Gerechtigkeitsgefühl	1.0	0	0
-gut Gewissen	1.0	0	0
 Sinnverwirrung	0	1.0	0
 ehren	1.0	0	0
 Revanche	0	1.0	0
@@ -5620,7 +5532,6 @@ angestammt	1.0	0	0
 Befangenheit	0	1.0	0
 sinnig	1.0	0	0
 dürftig	0	0.7	0
-quer legen	0	1.0	0
 absolut	0.7	0	0
 Lieblingsmusik	1.0	0	0
 Gallenstein	0	0.7	0
@@ -5649,7 +5560,6 @@ sättigen	1.0	0	0
 Leistungssteigerung	0.7	0	0
 plagen	0	1.0	0
 Parteienverdrossenheit	0	1.0	0
-militärisch Schlag	0	1.0	0
 milliardenschwer	0.7	0	0
 repressionsfrei	1.0	0	0
 durchknallen	0	0.7	0
@@ -5658,10 +5568,9 @@ verbürgen	0.7	0	0
 lädieren	0	1.0	0
 fehlinterpretieren	0	1.0	0
 glorifizieren	1.0	0	0
-Angst erregend	0	1.0	0
+tiefgehend	1.0	0	0
 petzen	0	1.0	0
 anpöbeln	0	1.0	0
-ungut Gefühl	0	1.0	0
 Verachtung	0	1.0	0
 Demagogie	0	0.7	0
 authentisieren	0.7	0	0
@@ -5689,7 +5598,6 @@ verwachsen	0	1.0	0
 Seelenheil	0.7	0	0
 Nepotismus	0	1.0	0
 Frevel	0	0.7	0
-Verlust bringend	0	1.0	0
 Rachgier	0	1.0	0
 Verfassungsreform	1.0	0	0
 unliebsam	0	1.0	0
@@ -5739,10 +5647,10 @@ garantieren	0.7	0	0
 brennen	0	0.7	0
 Zusammenbruch	0	1.0	0
 Vereinsamung	0	0.7	0
-verschießen	0.7	1.0	0
+verschießen	0.7	0	0
 verladen	0	0.7	0
 unterfordern	0	1.0	0
-komisch	1.0	1.0	0
+komisch	1.0	0	0
 Neueinstellung	0.7	0	0
 Gleichheitssatz	0.7	0	0
 volltrunken	0	1.0	0
@@ -5751,15 +5659,15 @@ Persönlichkeitsstörung	0	1.0	0
 Hochrüstung	0	1.0	0
 bequem	0.7	0	0
 gierig	0	1.0	0
-giften	0	1.0	0
+spindeldürr	0	0.7	0
 endgeil	1.0	0	0
 apart	1.0	0	0
-gut stellen	0.7	0	0
+giften	0	1.0	0
 zärtlich	1.0	0	0
 aufkratzen	0	0.7	0
 Attentat	0	0.7	0
 begehren	0.7	0	0
-schwarz	0.7	0.7	0
+schwarz	0.7	0	0
 Schuldgefühl	0	1.0	0
 Abreibung	0	1.0	0
 mediterran	0.7	0	0
@@ -5816,8 +5724,7 @@ entfallen	0	0.7	0
 geheimhalten	0	0.7	0
 apathisch	0	1.0	0
 behindertengerecht	1.0	0	0
-sexuell Missbrauch	0	0.7	0
-Erfolg versprechend	1.0	0	0
+Uneinigkeit	0	0.7	0
 Völkermord	0	1.0	0
 übelnehmen	0	1.0	0
 quietschvergnügt	1.0	0	0
@@ -5866,7 +5773,7 @@ kreativ	1.0	0	0
 Brauchbarkeit	0.7	0	0
 undogmatisch	0.7	0	0
 Kitsch	0	1.0	0
-auseinander driften	0	1.0	0
+verschmähen	0	0.7	0
 aufhetzend	0	1.0	0
 lobpreisen	1.0	0	0
 weisungsbefugt	1.0	0	0
@@ -5999,7 +5906,6 @@ Verhaftung	0	0.7	0
 Selbstbeweihräucherung	1.0	0	0
 tiefsinnig	1.0	0	0
 Koffeinsucht	0	1.0	0
-gut tun	0.7	0	0
 Heiligkeit	0.7	0	0
 entgegenkommen	0.7	0	0
 Donnerwetter	0	1.0	0
@@ -6111,7 +6017,6 @@ Ineffizienz	0	0.7	0
 Fleißigkeit	1.0	0	0
 sühnen	0	1.0	0
 merkwürdig	0	1.0	0
-negativ Besitz	0	0.7	0
 Nutznießung	1.0	0	0
 abtun	0	0.7	0
 dementieren	0	0.7	0
@@ -6127,14 +6032,12 @@ labil	0	1.0	0
 verehrungswürdig	1.0	0	0
 Protzerei	0	1.0	0
 Claustrophobie	0	1.0	0
-geil	0.7	0.7	0
+geil	0.7	0	0
 befriedigen	0.7	0	0
-körperlich beeinträchtigen	0	1.0	0
 eitel	0	1.0	0
 abtrotzen	0	1.0	0
 kaltblütig	0	1.0	0
 bitterböse	0	1.0	0
-Bange machen	0	1.0	0
 Foulelfmeter	0	1.0	0
 exemplarisch	0.7	0	0
 Begeisterungsfähigkeit	1.0	0	0
@@ -6163,7 +6066,7 @@ unvernünftig	0	1.0	0
 Unnachgiebigkeit	0	1.0	0
 Gesundheitsvorsorge	0.7	0	0
 Entzugserscheinung	0	1.0	0
-Verteidigung	0.7	0	1.0
+Verteidigung	0.7	0	0
 optimistisch	1.0	0	0
 bezückend	1.0	0	0
 keuchen	0	0.7	0
@@ -6180,7 +6083,6 @@ anstandslos	0	1.0	0
 hirnlos	0	1.0	0
 ungerecht	0	1.0	0
 bombastisch	1.0	0	0
-Uneinigkeit	0	0.7	0
 Charakterlosigkeit	0	1.0	0
 Haftentlassung	0.7	0	0
 durchsetzungsfähig	1.0	0	0
@@ -6196,7 +6098,6 @@ zerbeulen	0	0.7	0
 Siebenmeter	0	1.0	0
 fadenscheinig	0	1.0	0
 Kur	0.7	0	0
-vorlieb nehmen	1.0	0	0
 Tiefenanalyse	0.7	0	0
 Terror	0	1.0	0
 Krebsvorsorge	0.7	0	0
@@ -6294,7 +6195,6 @@ Kontaktarmut	0	0.7	0
 anstacheln	0	1.0	0
 anlasten	0	1.0	0
 unkompliziert	0.7	0	0
-Vertrauen erweckend	1.0	0	0
 einreden	0	0.7	0
 Täuschungsmanöver	0	0.7	0
 Sprachlosigkeit	0	1.0	0
@@ -6373,7 +6273,6 @@ Adaptivität	0.7	0	0
 Unglück	0	1.0	0
 Trübsinn	0	1.0	0
 Katerstimmung	0	1.0	0
-zurückstecken	0.7	0	0
 spitzen	1.0	0	0
 Gereiztheit	0	1.0	0
 abscheulich	0	1.0	0
@@ -6381,7 +6280,6 @@ verbittern	0	1.0	0
 Zwanghaftigkeit	0	1.0	0
 Geschäftigkeit	0.7	0	0
 andersartig	0	1.0	0
-froh stimmen	1.0	0	0
 unzweckmäßig	0	1.0	0
 bestimmen	0	0.7	0
 menschenfeindlich	0	1.0	0
@@ -6393,7 +6291,6 @@ glimpflich	1.0	0	0
 Unberechenbarkeit	0	0.7	0
 kalkulierbar	0.7	0	0
 aufpeitschen	0	1.0	0
-Pfeifersches Drüsenfieber	0	1.0	0
 Hoffnungsfunke	1.0	0	0
 gemütsvoll	1.0	0	0
 löblich	0.7	0	0
@@ -6409,7 +6306,6 @@ täuschend	0	1.0	0
 Anreicherung	0.7	0	0
 aufsässig	0	0.7	0
 Unternehmungsgeist	1.0	0	0
-gut geraten|raten	1.0	0	0
 ungestört	0.7	0	0
 Rat	1.0	0	0
 abstoßen	0	1.0	0
@@ -6434,7 +6330,6 @@ leichtfertig	0	1.0	0
 Neugier	0.7	0	0
 vernachlässigen	0	1.0	0
 Niedergeschlagenheit	0	1.0	0
-Gewähr leisten	0.7	0	0
 Plausibilität	0.7	0	0
 Seelenregung	1.0	0	0
 Ufersicherung	0.7	0	0
@@ -6454,7 +6349,6 @@ unerreicht	1.0	0	0
 Bedarf	0.7	0	0
 Warnstreik	0	0.7	0
 frech	0	1.0	0
-verschmähen	0	0.7	0
 entheiligen	0	1.0	0
 schaudern	0	1.0	0
 Pocke	0	1.0	0
@@ -6494,7 +6388,6 @@ bedrohen	0	1.0	0
 unrecht	0	1.0	0
 Herzinfarkt	0	1.0	0
 Exportverbot	0	1.0	0
-acht geben	0	1.0	0
 Rüge	0	1.0	0
 ausharren	0.7	0	0
 gehaltvoll	1.0	0	0
@@ -6582,7 +6475,6 @@ verniedlichen	0	1.0	0
 quengelig	0	1.0	0
 fortschicken	0	0.7	0
 Abbitte	0.7	0	0
-verbergen	0	0.7	0
 Sündenerlass	0.7	0	0
 geradlinig	1.0	0	0
 Muffe	0	1.0	0
@@ -6621,7 +6513,7 @@ kollabieren	0	0.7	0
 tadelnswert	0	0.7	0
 Spielsucht	0	1.0	0
 robust	0.7	0	0
-Ergreifung	0.7	0.7	0
+Ergreifung	0.7	0	0
 schizoid	0	1.0	0
 solide	0.7	0	0
 Verleugnung	0	0.7	0
@@ -6630,7 +6522,7 @@ bespucken	0	1.0	0
 beteuern	1.0	0	0
 persönlichkeitsgespalten	0	1.0	0
 spätsommerlich	0.7	0	0
-hinnehmen	1.0	0.7	0
+hinnehmen	1.0	0	0
 Häuserkampf	0	0.7	0
 übervorteilen	0	0.7	0
 Trauma	0	1.0	0
@@ -6643,7 +6535,6 @@ Preisauftrieb	0.7	0	0
 Drogensucht	0	1.0	0
 neugestalten	0.7	0	0
 Schlamperei	0	0.7	0
-schlecht Gewissen	0	1.0	0
 weigern	0	1.0	0
 Arbeitsplatzverlust	0	1.0	0
 suizidgefährdet	0	0.7	0
@@ -6686,7 +6577,7 @@ Exkurs	0	0.7	0
 Drecksarbeit	0	1.0	0
 deprimieren	0	1.0	0
 Schusswechsel	0	0.7	0
-misstrauen	0	1.0	0
+unrealistisch	0	1.0	0
 Aufwärtsentwicklung	0.7	0	0
 erdreisten	0	0.7	0
 Anämie	0	1.0	0
@@ -6724,7 +6615,6 @@ verschorfen	0	1.0	0
 verschmitzt	0.7	0	0
 undurchdringlich	0	0.7	0
 irregulär	0	1.0	0
-durcheinander bringen	0	1.0	0
 Duell	0	0.7	0
 Gutmütigkeit	1.0	0	0
 ungewollt	0	0.7	0
@@ -6835,24 +6725,21 @@ unfehlbar	1.0	0	0
 Liebedienerei	1.0	0	0
 Überfall	0	0.7	0
 Medienspektakel	0.7	0	0
-Aufsehen erregend	0.7	0	0
 heil	1.0	0	0
 Garbe	0	1.0	0
 abrechnen	0	1.0	0
 Klimax	0.7	0	0
 übertölpeln	0	0.7	0
 aufrecht	1.0	0	0
-promovieren werden	0.7	0	0
+Besorgnis	0	1.0	0
 Holzeinschlag	0	1.0	0
 unverdrossen	0.7	0	0
 vortäuschen	0	1.0	0
 introvertiert	0	1.0	0
 schmeicheln	1.0	0	0
-multipel Sklerose	0	1.0	0
 quengeln	0	1.0	0
 mogeln	0	0.7	0
 vorbeugend	0.7	0	0
-rechtsextremistisch	0	1.0	0
 seltsam	0	1.0	0
 mauscheln	0	0.7	0
 hindern	0	0.7	0
@@ -6884,7 +6771,6 @@ gewissenlos	0	1.0	0
 Unverkäuflichkeit	0	0.7	0
 Verschrobenheit	0	0.7	0
 Naturschutzaktion	1.0	0	0
-ekeln erregend	0	1.0	0
 triezen	0	1.0	0
 Abgebrühtheit	0	1.0	0
 trainieren	0.7	0	0
@@ -6978,7 +6864,7 @@ anreichern	0.7	0	0
 totalitär	0	1.0	0
 Endbearbeitung	0.7	0	0
 Naturrecht	0.7	0	0
-verantworten	1.0	0.7	0
+verantworten	1.0	0	0
 verschmerzen	1.0	0	0
 Martyrium	0	1.0	0
 fies	0	1.0	0
@@ -7013,7 +6899,6 @@ Belagerung	0	0.7	0
 Ladungssicherung	0.7	0	0
 ausweisen	0.7	0	0
 Truppenbetreuung	0	1.0	0
-psychisch Störung	0	1.0	0
 wohlhabend	0.7	0	0
 Theatralik	0	0.7	0
 setzen	0.7	0	0
@@ -7022,7 +6907,6 @@ putzig	0.7	0	0
 kaltschnäuzig	0	1.0	0
 Akuratheit	1.0	0	0
 Inhumanität	0	1.0	0
-sexuell Belästigung	0	0.7	0
 angstvoll	0	0.7	0
 misshandeln	0	1.0	0
 durchkreuzen	0	0.7	0
@@ -7042,7 +6926,6 @@ Wertlosigkeit	0	1.0	0
 erholungsbedürftig	0	1.0	0
 Optimum	1.0	0	0
 Irritation	0	1.0	0
-schwarz arbeiten	0	0.7	0
 Betriebsgenehmigung	1.0	0	0
 dement	0	1.0	0
 Feingefühl	1.0	0	0
@@ -7055,6 +6938,7 @@ Preiserhöhung	0.7	0	0
 verschlagen	0	1.0	0
 Krieg	0	1.0	0
 besänftigen	1.0	0	0
+krampfig	0	0.7	0
 ausdrucksstark	1.0	0	0
 Inplausibilität	0	0.7	0
 Magersucht	0	1.0	0
@@ -7069,7 +6953,6 @@ schwanzgesteuert	0	0.7	0
 Beobachtungsgabe	1.0	0	0
 genesen	1.0	0	0
 Treue	1.0	0	0
-auf Zack	1.0	0	0
 Kopfweh	0	1.0	0
 wild	0	1.0	0
 Unterversorgung	0	0.7	0
@@ -7093,7 +6976,6 @@ astronomisch	0	0.7	0
 Mordtat	0	0.7	0
 Wohltat	0.7	0	0
 Verausgabung	0	1.0	0
-leid tun	0	1.0	0
 tauglich	0.7	0	0
 Machterhaltung	0.7	0	0
 Genervtheit	0	1.0	0
@@ -7110,13 +6992,12 @@ anheitern	0	1.0	0
 sterbenslangweilig	0	1.0	0
 Rotsperre	0	1.0	0
 Glückseligkeit	1.0	0	0
-helfen	0.7	1.0	0
+helfen	0.7	0	0
 niederhalten	0	1.0	0
 bekiffen	0	0.7	0
 liebevoll	1.0	0	0
 ehrenwert	1.0	0	0
 unmanierlich	0	1.0	0
-eisern Hochzeit	0.7	0	0
 Grundrecht	0	1.0	0
 Mitschuld	0	1.0	0
 heldenhaft	0.7	0	0
@@ -7154,7 +7035,6 @@ Unabsetzbarkeit	0	0.7	0
 begießen	0	0.7	0
 Gemeinschaftssinn	1.0	0	0
 neidisch	0	1.0	0
-satanisch	0	1.0	0
 gutgemeint	0.7	0	0
 qualifizieren	1.0	0	0
 Zahnhalsentzündung	0	1.0	0
@@ -7187,7 +7067,7 @@ Eifer	1.0	0	0
 Berufserkrankung	0	1.0	0
 klischeehaft	0	1.0	0
 studieren	0.7	0	0
-krampfig	0	0.7	0
+kunstfertig	1.0	0	0
 Alkoholabhängigkeit	0	1.0	0
 billig	1.0	0	0
 Altbausanierung	1.0	0	0

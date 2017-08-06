@@ -6,12 +6,14 @@ import collections
 import locale
 import sys
 from lp_language_processor import *
+from lexicon_dta_enhancement import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	cd = CD()
-	cd.createSentimentDictFileCDLemmas("treetagger")
+	cd.createExtendedOutputDTA()
+
 
 class CD:
 	def __init__(self):
@@ -32,12 +34,23 @@ class CD:
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
+	def readAndInitCDAndLemmasDTA(self, processor):
+		self.initCD()
+		self.extendLexiconCDDTA()
+		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CD-Lemmas-DTAExtended.txt")
+		self._sentimentDictLemmas = self.getSentimentDictCD(sentDictText)
+
 	def initCD(self):
 		sentDictText = open("../SentimentAnalysis/CD/cd.txt")
 		sentimentDict = self.getSentimentDictCD(sentDictText)
 		self._sentimentDict = sentimentDict
-
+		self.removePhrasesFromSentimentDict()
 		self._sentimentDict = self.removeNeutralWordsFromCD(self._sentimentDict)
+		
+	def removePhrasesFromSentimentDict(self):
+		for word,sentiments in self._sentimentDict.items():
+			if(len(word.split(" ")) > 1):
+				del self._sentimentDict[word]
 
 	def getSentimentDictCD(self, sentimentDictText):
 		lines = sentimentDictText.readlines()
@@ -68,7 +81,7 @@ class CD:
 
 			# against current choose one sentiment-Belegung
 			if(unicode(word) in sentimentDict):
-				sentiments = self.getHigherSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)])
+				sentiments = self.getBetterSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)])
 				infoPerWord = sentiments
 			
 			sentimentDict[unicode(word)] = infoPerWord
@@ -82,7 +95,7 @@ class CD:
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp._processor.getLemma(word)
 			if lemma in newSentimentDict:			
-				sentiments = self.getHigherSentimentValuesCD(value, newSentimentDict[lemma])
+				sentiments = self.getBetterSentimentValuesCD(value, newSentimentDict[lemma])
 				newSentimentDict[lemma] = sentiments
 			else:
 				newSentimentDict[lemma] = value
@@ -119,6 +132,20 @@ class CD:
 		sentiments["neutral"] = self.getHigherSentimentValue(newSentiments["neutral"], oldSentiments["neutral"])
 		return sentiments
 
+	def getBetterSentimentValuesCD(self, newSentiments, oldSentiments):
+		# if somethin is neutral take the other
+		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
+		if(highestSentimentValues["positive"] != 0):
+			highestSentimentValues["neutral"] = 0
+			highestSentimentValues["negative"] = 0
+			return highestSentimentValues
+		else:
+			if(highestSentimentValues["negative"] != 0):
+				highestSentimentValues["neutral"] = 0
+				return highestSentimentValues
+			else:
+				return highestSentimentValues
+
 	def getSentimentCD(self, sentiments):
 		if(sentiments["positive"] != 0):
 			return "POS"
@@ -133,6 +160,31 @@ class CD:
 		else:
 			return oldScore
 	
+	def createExtendedOutputDTA(self):
+		self.initCD()
+		print("###")
+		print(len(self._sentimentDict))
+		self.extendLexiconCDDTA()
+		print("###")
+		print(len(self._sentimentDict))
+		self.createOutputCD(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/CD-Token-DTAExtended")
+		self.lemmatizeDictCD("treetagger")
+		print("###")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/CD-Lemmas-DTAExtended")
+		self.lemmatizeDictCD("textblob")
+		print(len(self._sentimentDictLemmas))
+		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/CD-Lemmas-DTAExtended")
+
+	def extendLexiconCDDTA(self):
+		dta = DTA_Handler()
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+
+	def resetAllFiles(self):
+		self.createSentimentDictFileCDToken()
+		self.createSentimentDictFileCDLemmas("treetagger")
+		self.createSentimentDictFileCDLemmas("textblob")
+
 	def createSentimentDictFileCDToken(self):
 		self.initCD()
 		self.createOutputCD(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/CD-Token")

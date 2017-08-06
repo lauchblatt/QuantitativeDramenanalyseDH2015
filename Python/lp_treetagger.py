@@ -117,7 +117,11 @@ class Tree_Tagger:
 		lemmas = []
 		for tagTabSeperated in tagsTabSeperated:
 			tags = tagTabSeperated.split("\t")
-			lemma = tags[2]
+			# For word the treetagger doesnt work with
+			if(len(tags) == 1):
+				lemma = tags[0]
+			else:
+				lemma = tags[2]
 			if(lemma == "<UNKNOWN>"):
 				lemma = tags[0]
 			lemmas.append(lemma)
