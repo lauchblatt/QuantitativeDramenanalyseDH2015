@@ -38,7 +38,16 @@ class CD:
 		self.initCD()
 		self.extendLexiconCDDTA()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CD-Lemmas-DTAExtended.txt")
-		self._sentimentDictLemmas = self.getSentimentDictCD(sentDictText)
+		sentimentDict = {}
+		lines = sentDictText.readlines()[1:]
+		for line in lines:
+			wordAndValues = line.split("\t")
+			sentiments = {}
+			sentiments["positive"] = float(wordAndValues[1])
+			sentiments["negative"] = float(wordAndValues[2])
+			sentiments["neutral"] = float(wordAndValues[3])
+			sentimentDict[unicode((wordAndValues)[0])] = sentiments
+		self._sentimentDictLemmas = sentimentDict
 
 	def initCD(self):
 		sentDictText = open("../SentimentAnalysis/CD/cd.txt")
