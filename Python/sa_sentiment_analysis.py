@@ -25,12 +25,12 @@ def main():
 	
 class Sentiment_Analyzer:
 
-	def __init__(self, lemmaModeOn, processor):
+	def __init__(self, lemmaModeOn, lexicon, processor):
 
 		self._sentimentDict = {}
 		self._lemmaModeOn = lemmaModeOn
 
-		self.initLexicons(processor)
+		self.initLexicons(lexicon, processor)
 	
 	def attachAllSentimentInfoToDrama(self, dramaModel):
 		self.attachSentimentBearingWordsToDrama(dramaModel)
@@ -39,7 +39,7 @@ class Sentiment_Analyzer:
 		self.attachSentimentRelationsToSpeaker(dramaModel)
 		return dramaModel
 
-	def initLexicons(self, processor):
+	def initLexicons(self, lexicon, processor):
 		
 		"""
 		self._languageProcessor = Language_Processor()
@@ -54,7 +54,7 @@ class Sentiment_Analyzer:
 		self._bawl = lexiconHandlerBawl._sentimentDictLemmas
 		"""
 		lexiconHandler = Lexicon_Handler()
-		lexiconHandler.combineSentimentLexica(processor)
+		lexiconHandler.initSingleDict(lexicon, processor)
 		sentimentDictTokens = lexiconHandler._sentimentDict
 		sentimentDictLemmas = lexiconHandler._sentimentDictLemmas
 		if(self._lemmaModeOn):

@@ -19,7 +19,7 @@ def main():
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	evaluation.evaluateLexicon("NRC-DTAExtended")
+	evaluation.evaluateLexicon("CombinedLexicon-DTAExtended")
 	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:

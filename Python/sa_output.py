@@ -15,14 +15,14 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	processor = Drama_Pre_Processing("textblob")
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/textblob/Philotas.p")
+	processor = Drama_Pre_Processing("treetagger")
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Damon, oder die wahre Freundschaft.p")
 	
-	sa = Sentiment_Analyzer(True, "textblob")
+	sa = Sentiment_Analyzer(True, "CombinedLexicon-DTAExtended", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("Lemmas/textblob/Philotas", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("testo", sentimentExtendedDramaModel)
 	
 
 class Sentiment_Output_Generator:

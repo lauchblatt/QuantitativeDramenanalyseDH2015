@@ -18,10 +18,11 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
+	lexiconHandler.resetAllFiles()
 	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger")
 
 	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger",)
-	lexiconHandler.createAllFilesCombinedLexicon(True)
+	#lexiconHandler.createAllFilesCombinedLexicon(True)
 	#lexiconHandler.readAndReturnLexiconKeyDumps("textblob", "SimpleCombination")
 	#lexiconHandler.resetAllFiles()
 	#lexiconHandler.initSingleDict("CombinedLexicon", "treetagger")
@@ -69,10 +70,11 @@ class Lexicon_Handler:
 			self.initGPC(processor, True)
 		elif (lexicon == "CombinedLexicon"):
 			self.combineSentimentLexica(processor, False)
-		elif (lexicon == "CombinedLexiconDTAExtended"):
+		elif (lexicon == "CombinedLexicon-DTAExtended"):
 			self.combineSentimentLexica(processor, True)
 		else:
-			return("Kein korrekter Lexikonname wurde übergeben")
+			print ("Kein korrekte Lexikonname wurde übergeben.")
+			return ("Kein korrekter Lexikonname wurde übergeben.")
 	
 	def initSentiWS(self, processor, DTAExtended):
 		sentiWS = Senti_WS()
