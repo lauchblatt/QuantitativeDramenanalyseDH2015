@@ -18,7 +18,7 @@ def main():
 	processor = Drama_Pre_Processing("treetagger")
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Damon, oder die wahre Freundschaft.p")
 	
-	sa = Sentiment_Analyzer(True, "CombinedLexicon-DTAExtended", "treetagger")
+	sa = Sentiment_Analyzer(True, "CombinedLexicon", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()

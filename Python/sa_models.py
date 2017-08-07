@@ -45,6 +45,11 @@ class Sentiment_Metrics:
 
 	def initMetrics(self):
 		self._metricsTotal["polaritySentiWS"] = 0
+		self._metricsTotal["positiveSentiWS"] = 0
+		self._metricsTotal["negativeSentiWS"] = 0
+		self._metricsTotal["positiveSentiWSDichotom"] = 0
+		self._metricsTotal["negativeSentiWSDichotom"] = 0
+		self._metricsTotal["polaritySentiWSDichotom"] = 0
 
 		self._metricsTotal["positiveNrc"] = 0
 		self._metricsTotal["negativeNrc"] = 0
@@ -61,12 +66,22 @@ class Sentiment_Metrics:
 
 		self._metricsTotal["emotion"] = 0
 		self._metricsTotal["arousel"] = 0
+		self._metricsTotal["positiveBawl"] = 0
+		self._metricsTotal["negativeBawl"] = 0
+		
+		self._metricsTotal["positiveBawlDichotom"] = 0
+		self._metricsTotal["negativeBawlDichotom"] = 0
+		self._metricsTotal["polarityBawlDichotom"] = 0
 
 		#CD
 		self._metricsTotal["positiveCd"] = 0
 		self._metricsTotal["negativeCd"] = 0
 		self._metricsTotal["neutralCd"] = 0
 		self._metricsTotal["polarityCd"] = 0
+
+		self._metricsTotal["positiveCDDichotom"] = 0
+		self._metricsTotal["negativeCDDichotom"] = 0
+		self._metricsTotal["polarityCDDichotom"] = 0
 
 		#GPC
 		self._metricsTotal["positiveGpc"] = 0
@@ -104,6 +119,8 @@ class Sentiment_Bearing_Word:
 	def __init__(self):
 		#SentiWSData
 		self._polaritySentiWS = 0
+		self._positiveSentiWSDichotom = 0
+		self._negativeSentiWSDichotom = 0
 
 		#NRCData
 		self._positiveNrc = 0
@@ -120,11 +137,15 @@ class Sentiment_Bearing_Word:
 		#Bawl
 		self._emotion = 0.0
 		self._arousel = 0.0
+		self._positiveBawlDichotom = 0
+		self._negativeBawlDichotom = 0
 
 		#CD
 		self._positiveCd = 0
 		self._negativeCd = 0
 		self._neutralCd = 0
+		self._positiveCDDichotom = 0
+		self._negativeCDDichotom = 0
 
 		#GPC
 		self._positiveGpc = 0
@@ -139,6 +160,8 @@ class Sentiment_Bearing_Word:
 	def setAllSentiments(self, sentiments):
 		if("sentiWS" in sentiments):
 			self._polaritySentiWS = sentiments["sentiWS"]
+			if(self._polaritySentiWS > 0): self._positiveSentiWSDichotom = 1
+			if(self._polaritySentiWS < 0): self._negativeSentiWSDichotom = 1
 		
 		if("nrc" in sentiments):
 			self._positiveNrc = sentiments["nrc"]["positive"]
@@ -156,10 +179,16 @@ class Sentiment_Bearing_Word:
 			self._emotion = sentiments["bawl"]["emotion"]
 			self._arousel = sentiments["bawl"]["arousel"]
 
+			if(self._emotion > 0): self._positiveBawlDichotom = 1
+			if(self._emotion < 0): self._negativeBawlDichotom = 1
+
 		if("cd" in sentiments):
 			self._positiveCd = sentiments["cd"]["positive"]
 			self._negativeCd = sentiments["cd"]["negative"]
 			self._neutralCd = sentiments["cd"]["neutral"]
+
+			if(self._positiveCd > 0): self._positiveCDDichotom = 1
+			if(self._negativeCd > 0): self._negativeCDDichotom = 1
 
 		if("gpc" in sentiments):
 			self._positiveGpc = sentiments["gpc"]["positive"]

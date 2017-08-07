@@ -46,7 +46,11 @@ class Sentiment_Calculator:
 	def calcTotalMetrics(self):
 
 		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = sum(word._polaritySentiWS for word in self._sentimentBearingWords)
-		
+		self._sentimentMetrics._metricsTotal["positiveSentiWSDichotom"] = sum(word._positiveSentiWSDichotom for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeSentiWSDichotom"] = sum(word._negativeSentiWSDichotom for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polaritySentiWSDichotom"] = self._sentimentMetrics._metricsTotal["positiveSentiWSDichotom"] \
+		- self._sentimentMetrics._metricsTotal["negativeSentiWSDichotom"]
+
 		self._sentimentMetrics._metricsTotal["positiveNrc"] = sum(word._positiveNrc for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["negativeNrc"]  = sum(word._negativeNrc for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityNrc"] = self._sentimentMetrics._metricsTotal["positiveNrc"] - self._sentimentMetrics._metricsTotal["negativeNrc"]
@@ -62,16 +66,39 @@ class Sentiment_Calculator:
 
 		self._sentimentMetrics._metricsTotal["emotion"] = sum(word._emotion for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["arousel"] = sum(word._arousel for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["positiveBawlDichotom"] = sum(word._positiveBawlDichotom for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeBawlDichotom"] = sum(word._negativeBawlDichotom for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polarityBawlDichotom"] = self._sentimentMetrics._metricsTotal["positiveBawlDichotom"] \
+		- self._sentimentMetrics._metricsTotal["negativeBawlDichotom"]
+
 
 		self._sentimentMetrics._metricsTotal["positiveCd"] = sum(word._positiveCd for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["negativeCd"] = sum(word._negativeCd for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["neutralCd"] = sum(word._neutralCd for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityCd"] = self._sentimentMetrics._metricsTotal["positiveCd"] - self._sentimentMetrics._metricsTotal["negativeCd"]
+		self._sentimentMetrics._metricsTotal["positiveCDDichotom"] = sum(word._positiveCDDichotom for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeCDDichotom"] = sum(word._negativeCDDichotom for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polarityCDDichotom"] = self._sentimentMetrics._metricsTotal["positiveCDDichotom"] \
+		- self._sentimentMetrics._metricsTotal["negativeCDDichotom"]
+		
 
 		self._sentimentMetrics._metricsTotal["positiveGpc"] = sum(word._positiveGpc for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["negativeGpc"] = sum(word._negativeGpc for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["neutralGpc"] = sum(word._neutralGpc for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityGpc"] = self._sentimentMetrics._metricsTotal["positiveGpc"] - self._sentimentMetrics._metricsTotal["negativeGpc"]
+
+		self.calcMissingPosNegMetrics()
+
+	def calcMissingPosNegMetrics(self):
+		self._sentimentMetrics._metricsTotal["positiveSentiWS"] = sum(word._polaritySentiWS for word\
+		 in self._sentimentBearingWords if word._polaritySentiWS > 0)
+		self._sentimentMetrics._metricsTotal["negativeSentiWS"] = abs(sum(word._polaritySentiWS for word\
+		 in self._sentimentBearingWords if word._polaritySentiWS < 0))
+
+		self._sentimentMetrics._metricsTotal["positiveBawl"] = sum(word._emotion for word\
+		 in self._sentimentBearingWords if word._emotion > 0)
+		self._sentimentMetrics._metricsTotal["negativeBawl"] = abs(sum(word._emotion for word\
+		 in self._sentimentBearingWords if word._emotion < 0))
 
 if __name__ == "__main__":
     main()
