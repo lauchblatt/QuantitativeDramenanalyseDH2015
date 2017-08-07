@@ -13,13 +13,13 @@ def main():
 
 	evaluation = Evaluation_LexiconVsVocabulary()
 
-	evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "SentiWS-DTAExtended", "treetagger")
+	#evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "SentiWS-DTAExtended", "treetagger")
 	
 	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/treetagger/", "CombinedLexicon", "treetagger")
-	result = evaluation.evaluateLexiconLemmasVsVocabulary()
+	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
-	evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	#evaluation.evaluateLexicon("SentiWS-DTAExtended")
+	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
+	evaluation.evaluateLexicon("NRC-DTAExtended")
 	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
@@ -51,6 +51,7 @@ class Evaluation_LexiconVsVocabulary:
 	def evaluateLexicon(self, lexicon):
 		processors = ["treetagger", "textblob"]
 		for processor in processors:
+			print processor + " " + lexicon
 			#First evaluation against token-vocs
 			self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
 				, lexicon, processor)
@@ -107,8 +108,10 @@ class Evaluation_LexiconVsVocabulary:
 	def evaluateLexiconVsVocabulary(self, lexicon, lemmasOrTokens):
 		recognized = self.getRecognizedWordsOfVocabulary(lexicon)
 		recognizedPercentage = self.getRecognizedPercentage(recognized, self._vocabulary._words)
-		relativeRecognizedPercentage = self.getRelativeRecognizedPercentage(recognized, \
+		relativeInfo = self.getRelativeRecognizedPercentage(recognized, \
 			self._vocabulary._wordsWithInformationDict, self._vocabulary._absoluteLength)
+		relativeRecognizedFrequency = relativeInfo[0]
+		relativeRecognizedPercentage = relativeInfo[1]
 		#print(relativeRecognizedPercentage)
 		
 		result = Evaluation_Result_Vocabulary()
@@ -116,6 +119,7 @@ class Evaluation_LexiconVsVocabulary:
 		result._lexicon = lexicon
 		result._lemmasOrTokens = lemmasOrTokens
 		result._recognized = recognized
+		result._relativeRecognizedFrequency = relativeRecognizedFrequency
 		result._recognizedPercentage = recognizedPercentage
 		result._relativeRecognizedPercentage = relativeRecognizedPercentage
 
@@ -124,17 +128,12 @@ class Evaluation_LexiconVsVocabulary:
 	def getRecognizedWordsOfVocabulary(self, lexicon):
 		words = self._vocabulary._words
 		recognized = self.getRecognizedWords(lexicon, self._vocabulary._words)
-		print recognized
 		return recognized
 
 	def getRecognizedWords(self, lexicon, vocabularyList):
 		recognized = []
-		if (u"Heirat" in lexicon):
-			print lexicon[u"Heirat"]
-
 		for word in vocabularyList:
 			if(word in lexicon):
-				print word
 				recognized.append(word)
 			else:
 				upperWord = word[:1].upper() + word[1:]
@@ -167,8 +166,8 @@ class Evaluation_LexiconVsVocabulary:
 			elif(self._vocabulary._type == "Lemmas"):
 				recognizedFrequency = recognizedFrequency + int(wordsWithInformation[keyWord][1])
 			#print recognizedFrequency
-
-		return float(recognizedFrequency)/float(absoluteLength)
+		relativeInfo = (recognizedFrequency, (float(recognizedFrequency)/float(absoluteLength)))
+		return relativeInfo
 
 	def readVocabulary(self, path):
 		vocabulary = Vocabulary(path)
@@ -184,10 +183,11 @@ class Evaluation_LexiconVsVocabulary:
 		outputFile.write("\n\n")
 		outputFile.write("Length of Lexicon: " + str(len(result._lexicon)))
 		outputFile.write("\nLength of Vocabulary (Different Words): " + str(len(self._vocabulary._words)))
-		outputFile.write("\nRecognized Words: " + str(len(result._recognized)))
-		outputFile.write("\nRecognized Percentage: " + str(result._recognizedPercentage))
-		outputFile.write("\nAbsolute Length of Vocabulary (All Words): " + str(self._vocabulary._absoluteLength))
-		outputFile.write("\nRelative Recognized Percentage: " + str(result._relativeRecognizedPercentage))
+		outputFile.write("\nRecognized Words (Different Words): " + str(len(result._recognized)))
+		outputFile.write("\nRecognized Percentage (Different Words): " + str(result._recognizedPercentage))
+		outputFile.write("\nLength of Vocabulary (All Words): " + str(self._vocabulary._absoluteLength))
+		outputFile.write("\nRecognized Words (All Words): " + str(result._relativeRecognizedFrequency))
+		outputFile.write("\nRecognized Percentage (All Words): " + str(result._relativeRecognizedPercentage))
 
 		outputFile.write("\n\nRecognized Words:\n\n")
 		for word in result._recognized:
@@ -248,6 +248,7 @@ class Evaluation_Result_Vocabulary:
 
 		self._recognizedWords = None
 		self._recognizedPercentage = 0.0
+		self._relativeRecognizedFrequency = 0
 		self._relativeRecognizedPercentage = 0.0
 
 if __name__ == "__main__":
