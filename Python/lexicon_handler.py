@@ -18,17 +18,19 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("SentiWS-DTAExtended", "treetagger")
+	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger")
+
+	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger",)
+	lexiconHandler.createAllFilesCombinedLexicon(True)
+	#lexiconHandler.readAndReturnLexiconKeyDumps("textblob", "SimpleCombination")
+	#lexiconHandler.resetAllFiles()
+	#lexiconHandler.initSingleDict("CombinedLexicon", "treetagger")
 	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
-	for key in lexiconHandler._sentimentDictLemmas:
-		print key
-	if(u"Heirat" in lexiconHandler._sentimentDictLemmas):
-		print lexiconHandler._sentimentDictLemmas[u"Heirat"]
-	print(len(lexiconHandler._sentimentDict))
-	print(len(lexiconHandler._sentimentDictLemmas))
+	#print(len(lexiconHandler._sentimentDict))
+	#print(len(lexiconHandler._sentimentDictLemmas))
 	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
 	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump("treetagger")
+	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob", "DTAExtendedCombination")
 	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
 	#lexiconHandler.resetAllFiles()
 	#lexiconHandler.createSimpleOutputCombinedLexicon()
@@ -66,7 +68,9 @@ class Lexicon_Handler:
 		elif (lexicon == "GPC-DTAExtended"):
 			self.initGPC(processor, True)
 		elif (lexicon == "CombinedLexicon"):
-			self.combineSentimentLexica(processor)
+			self.combineSentimentLexica(processor, False)
+		elif (lexicon == "CombinedLexiconDTAExtended"):
+			self.combineSentimentLexica(processor, True)
 		else:
 			return("Kein korrekter Lexikonname wurde übergeben")
 	
@@ -115,25 +119,29 @@ class Lexicon_Handler:
 		self._sentimentDict = gpc._sentimentDict
 		self._sentimentDictLemmas = gpc._sentimentDictLemmas
 
-	def combineSentimentLexica(self, processor):
-		keys = self.readAndReturnLexiconKeyDumps(processor)
+	def combineSentimentLexica(self, processor, CDExtended):
+		if(CDExtended):
+			version = "DTAExtendedCombination"
+		else:
+			version = "SimpleCombination"
+		print version + " " + processor
+		keys = self.readAndReturnLexiconKeyDumps(processor, version)
 		lexiconKeysTokens = keys[0]
 		lexiconKeysLemma = keys[1]
+		#print(len(lexiconKeysTokens))
+		#print(len(lexiconKeysLemma))
+		lexicons = {}
+
+		if(CDExtended):
+			lexicons = self.getLexiconsCDExtended(processor)
+		else:
+			lexicons = self.getSimpleLexicons(processor)
 		
-		sentiWS = Senti_WS()
-		sentiWS.readAndInitSentiWSAndLemmas(processor)
-
-		nrc = NRC()
-		nrc.readAndInitNRCAndLemmas(processor)
-
-		bawl = Bawl()
-		bawl.readAndInitBawlAndLemmas(processor)
-
-		cd = CD()
-		cd.readAndInitCDAndLemmas(processor)
-
-		gpc = German_Polarity_Clues()
-		gpc.readAndInitGPCAndLemmas(processor)
+		sentiWS = lexicons["sentiWS"]
+		nrc = lexicons["nrc"]
+		bawl = lexicons["bawl"]
+		cd = lexicons["cd"]
+		gpc = lexicons["gpc"]
 
 		combinedLexiconTokens = {}
 		combinedLexiconLemmas = {}
@@ -158,65 +166,133 @@ class Lexicon_Handler:
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
 
-	def readAndReturnLexiconKeyDumps(self, processor):
-		lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysTokens.p", "rb"))
-		lexiconKeysLemmas = pickle.load(open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysLemmas.p", "rb"))
+	def getSimpleLexicons(self, processor):
+		lexicons = {}
+		sentiWS = Senti_WS()
+		sentiWS.readAndInitSentiWSAndLemmas(processor)
+		lexicons["sentiWS"] = sentiWS
+
+		nrc = NRC()
+		nrc.readAndInitNRCAndLemmas(processor)
+		lexicons["nrc"] = nrc
+
+		bawl = Bawl()
+		bawl.readAndInitBawlAndLemmas(processor)
+		lexicons["bawl"] = bawl
+
+		cd = CD()
+		cd.readAndInitCDAndLemmas(processor)
+		lexicons["cd"] = cd
+
+		gpc = German_Polarity_Clues()
+		gpc.readAndInitGPCAndLemmas(processor)
+		lexicons["gpc"] = gpc
+
+		return lexicons
+
+	def getLexiconsCDExtended(self, processor):
+		lexicons = {}
+		sentiWS = Senti_WS()
+		sentiWS.readAndInitSentiWSAndLemmasDTA(processor)
+		lexicons["sentiWS"] = sentiWS
+
+		nrc = NRC()
+		nrc.readAndInitNRCAndLemmasDTA(processor)
+		lexicons["nrc"] = nrc
+
+		bawl = Bawl()
+		bawl.readAndInitBawlAndLemmasDTA(processor)
+		lexicons["bawl"] = bawl
+
+		cd = CD()
+		cd.readAndInitCDAndLemmasDTA(processor)
+		lexicons["cd"] = cd
+
+		gpc = German_Polarity_Clues()
+		gpc.readAndInitGPCAndLemmasDTA(processor)
+		lexicons["gpc"] = gpc
+
+		return lexicons
+
+	def readAndReturnLexiconKeyDumps(self, processor, version):
+		lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/" + version + "/" + processor + "/combinedLexiconKeysTokens.p", "rb"))
+		lexiconKeysLemmas = pickle.load(open("Dumps/LexiconKeys/" + version + "/" + processor + "/combinedLexiconKeysLemmas.p", "rb"))
 		return (lexiconKeysTokens, lexiconKeysLemmas)
 
-	def combineSentimentLexiconsKeysAndDump(self, processor):
-		newLexiconKeysTokens = self.getCombinedLexiconKeysTokens(processor)
-		newLexiconKeysLemmas = self.getCombinedLexiconKeysLemmas(processor)
-		pickle.dump(newLexiconKeysTokens, open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysTokens.p", "wb" ))
-		pickle.dump(newLexiconKeysLemmas, open("Dumps/LexiconKeys/" + processor + "/combinedLexiconKeysLemmas.p", "wb" ))
+	def combineSentimentLexiconsKeysAndDump(self, processor, version):
+		sentimentDictsStrings = []
+		if(version == "DTAExtendedCombination"):
+			sentimentDictsStrings = self._sentimentDictsDTAExtended
+		else:
+			sentimentDictsStrings = self._sentimentDicts
+		newLexiconKeysTokens = self.getCombinedLexiconKeysTokens(processor, sentimentDictsStrings)
+		newLexiconKeysLemmas = self.getCombinedLexiconKeysLemmas(processor, sentimentDictsStrings)
 
-	def getCombinedLexiconKeysTokens(self, processor):
-		newLexiconKeysTokens = []
-		for dictString in self._sentimentDicts:
+		pickle.dump(newLexiconKeysTokens, open("Dumps/LexiconKeys/"+ version + "/" + processor + "/combinedLexiconKeysTokens.p", "wb" ))
+		pickle.dump(newLexiconKeysLemmas, open("Dumps/LexiconKeys/"+ version + "/" + processor + "/combinedLexiconKeysLemmas.p", "wb" ))
+
+	def getCombinedLexiconKeysTokens(self, processor, sentimentDictStrings):
+		newLexiconKeysTokens = {}
+		for dictString in sentimentDictStrings:
+			print dictString
 			self.initSingleDict(dictString, processor)
-			
-			for key in self._sentimentDict:
-				if(not(key in newLexiconKeysTokens)):
-					newLexiconKeysTokens.append(key)
+			newLexiconKeysTokens.update(self._sentimentDict)
 
-		return newLexiconKeysTokens
+		print len(newLexiconKeysTokens.keys())
+		return newLexiconKeysTokens.keys()
 
-	def getCombinedLexiconKeysLemmas(self, processor):
-		newLexiconKeysLemmas = []
-		for dictString in self._sentimentDicts:
+	def getCombinedLexiconKeysLemmas(self, processor, sentimentDictStrings):
+		newLexiconKeysLemmas = {}
+		for dictString in sentimentDictStrings:
 			self.initSingleDict(dictString, processor)
-			for key in self._sentimentDictLemmas:
-				if(not(key in newLexiconKeysLemmas)):
-					newLexiconKeysLemmas.append(key)
+			newLexiconKeysLemmas.update(self._sentimentDictLemmas)
 
-		return newLexiconKeysLemmas
+		print len(newLexiconKeysLemmas.keys())
+		return newLexiconKeysLemmas.keys()
 
 	
 	def resetAllFiles(self):
-		self.combineSentimentLexiconsKeysAndDump("treetagger")
+		self.resetAllFilesStandard()
+		self.resetAllFilesDTAExtended()
+
+	def resetAllFilesStandard(self):
+		self.combineSentimentLexiconsKeysAndDump("treetagger", "SimpleCombination")
 		print("dump treetagger keys")
-		self.combineSentimentLexiconsKeysAndDump("textblob")
+		self.combineSentimentLexiconsKeysAndDump("textblob", "SimpleCombination")
 		print("dump textblob keys")
-		self.createAllFilesCombinedLexicon()
+		self.createAllFilesCombinedLexicon(False)
 		print("combinedlexicon Files")
 
-	def createAllFilesCombinedLexicon(self):
-		self.createSentimentDictFileCombinedLexiconTokens("treetagger")
-		self.createSentimentDictFileCombinedLexiconLemmas("treetagger")
-		self.createSentimentDictFileCombinedLexiconLemmas("textblob")
+	def resetAllFilesDTAExtended(self):
+		self.combineSentimentLexiconsKeysAndDump("treetagger", "DTAExtendedCombination")
+		print("dump treetagger keys")
+		self.combineSentimentLexiconsKeysAndDump("textblob", "DTAExtendedCombination")
+		print("dump textblob keys")
+		self.createAllFilesCombinedLexicon(True)
+		print("combinedlexicon Files")
 
-	def createSentimentDictFileCombinedLexiconTokens(self, processor):
-		self.combineSentimentLexica(processor)
-		self.createOutputCombinedLexicon(self._sentimentDict, processor, "Tokens")
+	def createAllFilesCombinedLexicon(self, DTAExtended):
+		self.createSentimentDictFileCombinedLexiconTokens("treetagger", DTAExtended)
+		self.createSentimentDictFileCombinedLexiconLemmas("treetagger", DTAExtended)
+		self.createSentimentDictFileCombinedLexiconLemmas("textblob", DTAExtended)
 
-	def createSentimentDictFileCombinedLexiconLemmas(self, processor):
-		self.combineSentimentLexica(processor)
-		self.createOutputCombinedLexicon(self._sentimentDictLemmas, processor, "Lemmas")
+	def createSentimentDictFileCombinedLexiconTokens(self, processor, DTAExtended):
+		self.combineSentimentLexica(processor, DTAExtended)
+		self.createOutputCombinedLexicon(self._sentimentDict, processor, "Tokens", DTAExtended)
 
-	def createOutputCombinedLexicon(self, sentimentDict, processor, tokensOrLemmas):
+	def createSentimentDictFileCombinedLexiconLemmas(self, processor, DTAExtended):
+		self.combineSentimentLexica(processor, DTAExtended)
+		self.createOutputCombinedLexicon(self._sentimentDictLemmas, processor, "Lemmas", DTAExtended)
+
+	def createOutputCombinedLexicon(self, sentimentDict, processor, tokensOrLemmas, DTAExtended):
+		if(DTAExtended):
+			add = "DTAExtended"
+		else:
+			add = ""
 		if(tokensOrLemmas == "Tokens"):
-			outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon-Token.txt", "w")
+			outputFile = open("../SentimentAnalysis/TransformedLexicons/CombinedLexicon" + add + "-Token.txt", "w")
 		elif(tokensOrLemmas == "Lemmas"):
-			outputFile = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CombinedLexicon.txt", "w")
+			outputFile = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CombinedLexicon" + add + "-Lemmas.txt", "w")
 		
 		sentiments = ["sentiWS", "nrcPositive", "nrcNegative", "anger", "anticipation",\
 		"disgust", "fear", "joy", "sadness", "surprise", "trust", "emotion", "arousel",\
