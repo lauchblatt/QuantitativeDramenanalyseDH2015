@@ -21,7 +21,7 @@ class Sentiment_Calculator:
 
 		self._normalisationFactorLength = normalisationFactorLength
 		
-		self._normalisationFactorLexcionSBWs = {}
+		self._normalisationFactorLexiconSBWs = {}
 	
 	def calcMetrics(self):
 		self.calcTotalMetrics()
@@ -48,12 +48,15 @@ class Sentiment_Calculator:
 			normalisationFactorCd = normalisationFactorCd + sbw._cdOccurence
 			normalisationFactorGpc = normalisationFactorGpc + sbw._gpcOccurence
 		
-		self._normalisationFactorLexcionSBWs["sentiWS"] = normalisationFactorSentiWS
-		self._normalisationFactorLexcionSBWs["nrcPolarity"] = normalisationFactorNrcPolarity
-		self._normalisationFactorLexcionSBWs["nrcEmotion"] = normalisationFactorNrcEmotion
-		self._normalisationFactorLexcionSBWs["bawl"] = normalisationFactorBawl
-		self._normalisationFactorLexcionSBWs["Cd"] = normalisationFactorCd
-		self._normalisationFactorLexcionSBWs["Gpc"] = normalisationFactorGpc
+		self._normalisationFactorLexiconSBWs["sentiWS"] = normalisationFactorSentiWS
+		self._normalisationFactorLexiconSBWs["nrcPolarity"] = normalisationFactorNrcPolarity
+		self._normalisationFactorLexiconSBWs["nrcEmotion"] = normalisationFactorNrcEmotion
+		self._normalisationFactorLexiconSBWs["bawl"] = normalisationFactorBawl
+		self._normalisationFactorLexiconSBWs["Cd"] = normalisationFactorCd
+		self._normalisationFactorLexiconSBWs["Gpc"] = normalisationFactorGpc
+
+		self._normalisationFactorLexiconSBWs["Combined"] = self._sentimentMetrics._metricsTotal["positiveCombined"] + \
+		+ self._sentimentMetrics._metricsTotal["negativeCombined"]
 
 
 	def calcSentimentRatio(self):
@@ -66,7 +69,7 @@ class Sentiment_Calculator:
 
 	def calcAllSpecificSBWsNormalisedMetrics(self):
 		for lexicon, names in self._sentimentMetrics._names.items():
-			self.calcSpecificSBWsNormalisedMetrics(names, self._normalisationFactorLexcionSBWs[lexicon])
+			self.calcSpecificSBWsNormalisedMetrics(names, self._normalisationFactorLexiconSBWs[lexicon])
 
 	def calcSpecificSBWsNormalisedMetrics(self, names, normalisationFactor):
 		if normalisationFactor is 0:

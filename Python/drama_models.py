@@ -230,6 +230,8 @@ class ConfigurationModel:
         self._lengthInWords = 0
 
         self._subsequentNumber = -1
+        self._speaker= {}
+
 
     # calculates speech statistics for configuration
     def calc_speeches_statistics(self):

@@ -120,6 +120,8 @@ positiveGpc: 0.393866985265
 negativeGpc: 0.606133014735
 neutralGpc: 0.0
 polarityGpc: -0.21226602947
+positiveCombined: 0.693406593407
+negativeCombined: 0.306593406593
 
 Sentiment Ratio: 
 44.942450914
@@ -244,6 +246,8 @@ positiveGpc: 0.393866985265
 negativeGpc: 0.606133014735
 neutralGpc: 0.0
 polarityGpc: -0.21226602947
+positiveCombined: 0.693406593407
+negativeCombined: 0.306593406593
 
 Sentiment Ratio: 
 44.942450914
@@ -369,6 +373,8 @@ positiveGpc: 0.384422110553
 negativeGpc: 0.615577889447
 neutralGpc: 0.0
 polarityGpc: -0.231155778894
+positiveCombined: 0.807339449541
+negativeCombined: 0.192660550459
 
 Sentiment Ratio: 
 44.8685326548
@@ -493,6 +499,8 @@ positiveGpc: 0.35
 negativeGpc: 0.65
 neutralGpc: 0.0
 polarityGpc: -0.3
+positiveCombined: 0.6
+negativeCombined: 0.4
 
 Sentiment Ratio: 
 48.6111111111
@@ -656,6 +664,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 50.0
@@ -786,6 +796,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 42.8571428571
@@ -923,6 +935,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 30.7692307692
@@ -1055,6 +1069,8 @@ positiveGpc: 0.473684210526
 negativeGpc: 0.526315789474
 neutralGpc: 0.0
 polarityGpc: -0.0526315789474
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 44.776119403
@@ -1213,6 +1229,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 66.6666666667
@@ -1343,6 +1361,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -1479,6 +1499,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 33.3333333333
@@ -1609,6 +1631,8 @@ positiveGpc: 0.105263157895
 negativeGpc: 0.894736842105
 neutralGpc: 0.0
 polarityGpc: -0.789473684211
+positiveCombined: 0.375
+negativeCombined: 0.625
 
 Sentiment Ratio: 
 56.9444444444
@@ -1778,6 +1802,8 @@ positiveGpc: 0.238095238095
 negativeGpc: 0.761904761905
 neutralGpc: 0.0
 polarityGpc: -0.52380952381
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 36.4705882353
@@ -1937,6 +1963,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 27.2727272727
@@ -2068,6 +2096,8 @@ positiveGpc: 0.555555555556
 negativeGpc: 0.444444444444
 neutralGpc: 0.0
 polarityGpc: 0.111111111111
+positiveCombined: 0.8
+negativeCombined: 0.2
 
 Sentiment Ratio: 
 37.037037037
@@ -2206,6 +2236,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 28.5714285714
@@ -2336,6 +2368,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 20.0
@@ -2465,6 +2499,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 33.3333333333
@@ -2595,6 +2631,8 @@ positiveGpc: 0.416666666667
 negativeGpc: 0.583333333333
 neutralGpc: 0.0
 polarityGpc: -0.166666666667
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 50.0
@@ -2740,6 +2778,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 21.0526315789
@@ -2872,6 +2912,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 0.0
@@ -3000,6 +3042,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 100.0
@@ -3129,6 +3173,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 44.4444444444
@@ -3261,6 +3307,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 36.3636363636
@@ -3393,6 +3441,8 @@ positiveGpc: 0.371428571429
 negativeGpc: 0.628571428571
 neutralGpc: 0.0
 polarityGpc: -0.257142857143
+positiveCombined: 0.875
+negativeCombined: 0.125
 
 Sentiment Ratio: 
 43.5185185185
@@ -3568,6 +3618,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 60.0
@@ -3699,6 +3751,8 @@ positiveGpc: 0.647058823529
 negativeGpc: 0.352941176471
 neutralGpc: 0.0
 polarityGpc: 0.294117647059
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 46.3414634146
@@ -3846,6 +3900,8 @@ positiveGpc: 0.42
 negativeGpc: 0.58
 neutralGpc: 0.0
 polarityGpc: -0.16
+positiveCombined: 0.866666666667
+negativeCombined: 0.133333333333
 
 Sentiment Ratio: 
 55.7522123894
@@ -4037,6 +4093,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 80.0
@@ -4173,6 +4231,8 @@ positiveGpc: 0.363636363636
 negativeGpc: 0.636363636364
 neutralGpc: 0.0
 polarityGpc: -0.272727272727
+positiveCombined: 0.727272727273
+negativeCombined: 0.272727272727
 
 Sentiment Ratio: 
 51.3157894737
@@ -4340,6 +4400,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 100.0
@@ -4469,6 +4531,8 @@ positiveGpc: 0.44
 negativeGpc: 0.56
 neutralGpc: 0.0
 polarityGpc: -0.12
+positiveCombined: 0.9
+negativeCombined: 0.1
 
 Sentiment Ratio: 
 53.2258064516
@@ -4630,6 +4694,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 40.0
@@ -4760,6 +4826,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 25.0
@@ -4890,6 +4958,8 @@ positiveGpc: 0.375
 negativeGpc: 0.625
 neutralGpc: 0.0
 polarityGpc: -0.25
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 41.1764705882
@@ -5053,6 +5123,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 36.3636363636
@@ -5185,6 +5257,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 33.3333333333
@@ -5319,6 +5393,8 @@ positiveGpc: 0.428571428571
 negativeGpc: 0.571428571429
 neutralGpc: 0.0
 polarityGpc: -0.142857142857
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 39.2
@@ -5496,6 +5572,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -5627,6 +5705,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 20.0
@@ -5759,6 +5839,8 @@ positiveGpc: 0.365558912387
 negativeGpc: 0.634441087613
 neutralGpc: 0.0
 polarityGpc: -0.268882175227
+positiveCombined: 0.729166666667
+negativeCombined: 0.270833333333
 
 Sentiment Ratio: 
 45.0459652707
@@ -5883,6 +5965,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 30.7692307692
@@ -6015,6 +6099,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 36.3636363636
@@ -6147,6 +6233,8 @@ positiveGpc: 0.51724137931
 negativeGpc: 0.48275862069
 neutralGpc: 0.0
 polarityGpc: 0.0344827586207
+positiveCombined: 0.9
+negativeCombined: 0.1
 
 Sentiment Ratio: 
 40.0
@@ -6311,6 +6399,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -6448,6 +6538,8 @@ positiveGpc: 0.351351351351
 negativeGpc: 0.648648648649
 neutralGpc: 0.0
 polarityGpc: -0.297297297297
+positiveCombined: 0.625
+negativeCombined: 0.375
 
 Sentiment Ratio: 
 49.4623655914
@@ -6622,6 +6714,8 @@ positiveGpc: 0.227272727273
 negativeGpc: 0.772727272727
 neutralGpc: 0.0
 polarityGpc: -0.545454545455
+positiveCombined: 0.8
+negativeCombined: 0.2
 
 Sentiment Ratio: 
 43.4782608696
@@ -6780,6 +6874,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 0.857142857143
+negativeCombined: 0.142857142857
 
 Sentiment Ratio: 
 51.9480519481
@@ -6948,6 +7044,8 @@ positiveGpc: 0.75
 negativeGpc: 0.25
 neutralGpc: 0.0
 polarityGpc: 0.5
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 39.2857142857
@@ -7087,6 +7185,8 @@ positiveGpc: 0.291666666667
 negativeGpc: 0.708333333333
 neutralGpc: 0.0
 polarityGpc: -0.416666666667
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 58.0
@@ -7244,6 +7344,8 @@ positiveGpc: 0.428571428571
 negativeGpc: 0.571428571429
 neutralGpc: 0.0
 polarityGpc: -0.142857142857
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 33.3333333333
@@ -7385,6 +7487,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 25.8064516129
@@ -7521,6 +7625,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 33.3333333333
@@ -7651,6 +7757,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 43.3333333333
@@ -7805,6 +7913,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -7940,6 +8050,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.6
+negativeCombined: 0.4
 
 Sentiment Ratio: 
 39.6825396825
@@ -8093,6 +8205,8 @@ positiveGpc: 0.458333333333
 negativeGpc: 0.541666666667
 neutralGpc: 0.0
 polarityGpc: -0.0833333333333
+positiveCombined: 0.6
+negativeCombined: 0.4
 
 Sentiment Ratio: 
 49.2063492063
@@ -8252,6 +8366,8 @@ positiveGpc: 0.37037037037
 negativeGpc: 0.62962962963
 neutralGpc: 0.0
 polarityGpc: -0.259259259259
+positiveCombined: 0.583333333333
+negativeCombined: 0.416666666667
 
 Sentiment Ratio: 
 46.8085106383
@@ -8446,6 +8562,8 @@ positiveGpc: 0.428571428571
 negativeGpc: 0.571428571429
 neutralGpc: 0.0
 polarityGpc: -0.142857142857
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -8581,6 +8699,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 44.5945945946
@@ -8742,6 +8862,8 @@ positiveGpc: 0.461538461538
 negativeGpc: 0.538461538462
 neutralGpc: 0.0
 polarityGpc: -0.0769230769231
+positiveCombined: 0.333333333333
+negativeCombined: 0.666666666667
 
 Sentiment Ratio: 
 56.0
@@ -8885,6 +9007,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 40.5797101449
@@ -9009,6 +9133,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 40.5797101449
@@ -9166,6 +9292,8 @@ positiveGpc: 0.391304347826
 negativeGpc: 0.608695652174
 neutralGpc: 0.0
 polarityGpc: -0.217391304348
+positiveCombined: 0.706666666667
+negativeCombined: 0.293333333333
 
 Sentiment Ratio: 
 46.0767946578
@@ -9290,6 +9418,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 22.2222222222
@@ -9420,6 +9550,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 33.3333333333
@@ -9550,6 +9682,8 @@ positiveGpc: 0.315789473684
 negativeGpc: 0.684210526316
 neutralGpc: 0.0
 polarityGpc: -0.368421052632
+positiveCombined: 0.571428571429
+negativeCombined: 0.428571428571
 
 Sentiment Ratio: 
 53.488372093
@@ -9701,6 +9835,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 11.1111111111
@@ -9830,6 +9966,8 @@ positiveGpc: 0.38
 negativeGpc: 0.62
 neutralGpc: 0.0
 polarityGpc: -0.24
+positiveCombined: 0.6
+negativeCombined: 0.4
 
 Sentiment Ratio: 
 48.8888888889
@@ -10024,6 +10162,8 @@ positiveGpc: 0.2
 negativeGpc: 0.8
 neutralGpc: 0.0
 polarityGpc: -0.6
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 50.0
@@ -10158,6 +10298,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 75.0
@@ -10292,6 +10434,8 @@ positiveGpc: 0.411764705882
 negativeGpc: 0.588235294118
 neutralGpc: 0.0
 polarityGpc: -0.176470588235
+positiveCombined: 0.714285714286
+negativeCombined: 0.285714285714
 
 Sentiment Ratio: 
 52.0833333333
@@ -10445,6 +10589,8 @@ positiveGpc: 0.3125
 negativeGpc: 0.6875
 neutralGpc: 0.0
 polarityGpc: -0.375
+positiveCombined: 0.588235294118
+negativeCombined: 0.411764705882
 
 Sentiment Ratio: 
 48.0916030534
@@ -10636,6 +10782,8 @@ positiveGpc: 0.571428571429
 negativeGpc: 0.428571428571
 neutralGpc: 0.0
 polarityGpc: 0.142857142857
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 52.9411764706
@@ -10773,6 +10921,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 12.5
@@ -10902,6 +11052,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 60.0
@@ -11033,6 +11185,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.857142857143
+negativeCombined: 0.142857142857
 
 Sentiment Ratio: 
 64.0625
@@ -11202,6 +11356,8 @@ positiveGpc: 0.394736842105
 negativeGpc: 0.605263157895
 neutralGpc: 0.0
 polarityGpc: -0.210526315789
+positiveCombined: 0.733333333333
+negativeCombined: 0.266666666667
 
 Sentiment Ratio: 
 50.0
@@ -11377,6 +11533,8 @@ positiveGpc: 0.222222222222
 negativeGpc: 0.777777777778
 neutralGpc: 0.0
 polarityGpc: -0.555555555556
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 56.0
@@ -11519,6 +11677,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -11649,6 +11809,8 @@ positiveGpc: 0.363636363636
 negativeGpc: 0.636363636364
 neutralGpc: 0.0
 polarityGpc: -0.272727272727
+positiveCombined: 0.625
+negativeCombined: 0.375
 
 Sentiment Ratio: 
 37.6470588235
@@ -11809,6 +11971,8 @@ positiveGpc: 0.555555555556
 negativeGpc: 0.444444444444
 neutralGpc: 0.0
 polarityGpc: 0.111111111111
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 47.8260869565
@@ -11948,6 +12112,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.692307692308
+negativeCombined: 0.307692307692
 
 Sentiment Ratio: 
 41.095890411
@@ -12106,6 +12272,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 100.0
@@ -12235,6 +12403,8 @@ positiveGpc: 0.509433962264
 negativeGpc: 0.490566037736
 neutralGpc: 0.0
 polarityGpc: 0.0188679245283
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 39.6226415094
@@ -12426,6 +12596,8 @@ positiveGpc: 0.375
 negativeGpc: 0.625
 neutralGpc: 0.0
 polarityGpc: -0.25
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 44.6428571429
@@ -12579,6 +12751,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 31.8181818182
@@ -12714,6 +12888,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 0.7
+negativeCombined: 0.3
 
 Sentiment Ratio: 
 45.0549450549
@@ -12883,6 +13059,8 @@ positiveGpc: 0.285714285714
 negativeGpc: 0.714285714286
 neutralGpc: 0.0
 polarityGpc: -0.428571428571
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -13019,6 +13197,8 @@ positiveGpc: 0.6
 negativeGpc: 0.4
 neutralGpc: 0.0
 polarityGpc: 0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 42.8571428571
@@ -13153,6 +13333,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 42.5
@@ -13299,6 +13481,8 @@ positiveGpc: 0.338636363636
 negativeGpc: 0.661363636364
 neutralGpc: 0.0
 polarityGpc: -0.322727272727
+positiveCombined: 0.580838323353
+negativeCombined: 0.419161676647
 
 Sentiment Ratio: 
 43.7081161579
@@ -13423,6 +13607,8 @@ positiveGpc: 0.166666666667
 negativeGpc: 0.833333333333
 neutralGpc: 0.0
 polarityGpc: -0.666666666667
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 24.1379310345
@@ -13558,6 +13744,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 23.0769230769
@@ -13689,6 +13877,8 @@ positiveGpc: 0.252873563218
 negativeGpc: 0.747126436782
 neutralGpc: 0.0
 polarityGpc: -0.494252873563
+positiveCombined: 0.513513513514
+negativeCombined: 0.486486486486
 
 Sentiment Ratio: 
 49.7942386831
@@ -13938,6 +14128,8 @@ positiveGpc: 0.285714285714
 negativeGpc: 0.714285714286
 neutralGpc: 0.0
 polarityGpc: -0.428571428571
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 50.0
@@ -14079,6 +14271,8 @@ positiveGpc: 0.47619047619
 negativeGpc: 0.52380952381
 neutralGpc: 0.0
 polarityGpc: -0.047619047619
+positiveCombined: 0.636363636364
+negativeCombined: 0.363636363636
 
 Sentiment Ratio: 
 46.7741935484
@@ -14236,6 +14430,8 @@ positiveGpc: 0.2
 negativeGpc: 0.8
 neutralGpc: 0.0
 polarityGpc: -0.6
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 53.3333333333
@@ -14372,6 +14568,8 @@ positiveGpc: 0.555555555556
 negativeGpc: 0.444444444444
 neutralGpc: 0.0
 polarityGpc: 0.111111111111
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 36.3636363636
@@ -14512,6 +14710,8 @@ positiveGpc: 0.421052631579
 negativeGpc: 0.578947368421
 neutralGpc: 0.0
 polarityGpc: -0.157894736842
+positiveCombined: 0.625
+negativeCombined: 0.375
 
 Sentiment Ratio: 
 46.1538461538
@@ -14688,6 +14888,8 @@ positiveGpc: 0.242424242424
 negativeGpc: 0.757575757576
 neutralGpc: 0.0
 polarityGpc: -0.515151515152
+positiveCombined: 0.583333333333
+negativeCombined: 0.416666666667
 
 Sentiment Ratio: 
 47.619047619
@@ -14856,6 +15058,8 @@ positiveGpc: 0.142857142857
 negativeGpc: 0.857142857143
 neutralGpc: 0.0
 polarityGpc: -0.714285714286
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 36.0
@@ -14993,6 +15197,8 @@ positiveGpc: 0.36
 negativeGpc: 0.64
 neutralGpc: 0.0
 polarityGpc: -0.28
+positiveCombined: 0.6
+negativeCombined: 0.4
 
 Sentiment Ratio: 
 43.4210526316
@@ -15154,6 +15360,8 @@ positiveGpc: 0.25
 negativeGpc: 0.75
 neutralGpc: 0.0
 polarityGpc: -0.5
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 44.4444444444
@@ -15286,6 +15494,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 33.8028169014
@@ -15438,6 +15648,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 20.0
@@ -15567,6 +15779,8 @@ positiveGpc: 0.28125
 negativeGpc: 0.71875
 neutralGpc: 0.0
 polarityGpc: -0.4375
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 42.5287356322
@@ -15732,6 +15946,8 @@ positiveGpc: 0.3
 negativeGpc: 0.7
 neutralGpc: 0.0
 polarityGpc: -0.4
+positiveCombined: 0.25
+negativeCombined: 0.75
 
 Sentiment Ratio: 
 63.1578947368
@@ -15872,6 +16088,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 0.0
@@ -16000,6 +16218,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 35.0
@@ -16135,6 +16355,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 23.0769230769
@@ -16266,6 +16488,8 @@ positiveGpc: 0.25
 negativeGpc: 0.75
 neutralGpc: 0.0
 polarityGpc: -0.5
+positiveCombined: 0.4
+negativeCombined: 0.6
 
 Sentiment Ratio: 
 50.0
@@ -16410,6 +16634,8 @@ positiveGpc: 0.230769230769
 negativeGpc: 0.769230769231
 neutralGpc: 0.0
 polarityGpc: -0.538461538462
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 39.5348837209
@@ -16555,6 +16781,8 @@ positiveGpc: 0.545454545455
 negativeGpc: 0.454545454545
 neutralGpc: 0.0
 polarityGpc: 0.0909090909091
+positiveCombined: 0.333333333333
+negativeCombined: 0.666666666667
 
 Sentiment Ratio: 
 50.0
@@ -16699,6 +16927,8 @@ positiveGpc: 0.375
 negativeGpc: 0.625
 neutralGpc: 0.0
 polarityGpc: -0.25
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 56.0975609756
@@ -16850,6 +17080,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 22.2222222222
@@ -16984,6 +17216,8 @@ positiveGpc: 0.3125
 negativeGpc: 0.6875
 neutralGpc: 0.0
 polarityGpc: -0.375
+positiveCombined: 0.545454545455
+negativeCombined: 0.454545454545
 
 Sentiment Ratio: 
 51.2195121951
@@ -17154,6 +17388,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 50.0
@@ -17285,6 +17521,8 @@ positiveGpc: 0.222222222222
 negativeGpc: 0.777777777778
 neutralGpc: 0.0
 polarityGpc: -0.555555555556
+positiveCombined: 0.333333333333
+negativeCombined: 0.666666666667
 
 Sentiment Ratio: 
 35.7142857143
@@ -17423,6 +17661,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.75
+negativeCombined: 0.25
 
 Sentiment Ratio: 
 52.0
@@ -17564,6 +17804,8 @@ positiveGpc: 0.666666666667
 negativeGpc: 0.333333333333
 neutralGpc: 0.0
 polarityGpc: 0.333333333333
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 28.2051282051
@@ -17703,6 +17945,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 26.6666666667
@@ -17835,6 +18079,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -17969,6 +18215,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 33.3333333333
@@ -18102,6 +18350,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 36.3636363636
@@ -18235,6 +18485,8 @@ positiveGpc: 0.395833333333
 negativeGpc: 0.604166666667
 neutralGpc: 0.0
 polarityGpc: -0.208333333333
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 45.9854014599
@@ -18359,6 +18611,8 @@ positiveGpc: 0.395833333333
 negativeGpc: 0.604166666667
 neutralGpc: 0.0
 polarityGpc: -0.208333333333
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 45.9854014599
@@ -18614,6 +18868,8 @@ positiveGpc: 0.461126005362
 negativeGpc: 0.538873994638
 neutralGpc: 0.0
 polarityGpc: -0.0777479892761
+positiveCombined: 0.755555555556
+negativeCombined: 0.244444444444
 
 Sentiment Ratio: 
 43.9182915506
@@ -18738,6 +18994,8 @@ positiveGpc: 0.6
 negativeGpc: 0.4
 neutralGpc: 0.0
 polarityGpc: 0.2
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 33.3333333333
@@ -18879,6 +19137,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 37.5
@@ -19010,6 +19270,8 @@ positiveGpc: 0.388888888889
 negativeGpc: 0.611111111111
 neutralGpc: 0.0
 polarityGpc: -0.222222222222
+positiveCombined: 0.636363636364
+negativeCombined: 0.363636363636
 
 Sentiment Ratio: 
 45.0980392157
@@ -19161,6 +19423,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 42.8571428571
@@ -19292,6 +19556,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 40.9090909091
@@ -19438,6 +19704,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 0.0
@@ -19566,6 +19834,8 @@ positiveGpc: 0.769230769231
 negativeGpc: 0.230769230769
 neutralGpc: 0.0
 polarityGpc: 0.538461538462
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 42.8571428571
@@ -19709,6 +19979,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 42.8571428571
@@ -19840,6 +20112,8 @@ positiveGpc: 0.354838709677
 negativeGpc: 0.645161290323
 neutralGpc: 0.0
 polarityGpc: -0.290322580645
+positiveCombined: 0.5625
+negativeCombined: 0.4375
 
 Sentiment Ratio: 
 40.625
@@ -20007,6 +20281,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 63.6363636364
@@ -20142,6 +20418,8 @@ positiveGpc: 0.354838709677
 negativeGpc: 0.645161290323
 neutralGpc: 0.0
 polarityGpc: -0.290322580645
+positiveCombined: 0.818181818182
+negativeCombined: 0.181818181818
 
 Sentiment Ratio: 
 53.2467532468
@@ -20311,6 +20589,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 50.0
@@ -20448,6 +20728,8 @@ positiveGpc: 0.636363636364
 negativeGpc: 0.363636363636
 neutralGpc: 0.0
 polarityGpc: 0.272727272727
+positiveCombined: 0.857142857143
+negativeCombined: 0.142857142857
 
 Sentiment Ratio: 
 36.170212766
@@ -20593,6 +20875,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 33.3333333333
@@ -20722,6 +21006,8 @@ positiveGpc: 0.472727272727
 negativeGpc: 0.527272727273
 neutralGpc: 0.0
 polarityGpc: -0.0545454545455
+positiveCombined: 0.8
+negativeCombined: 0.2
 
 Sentiment Ratio: 
 43.2098765432
@@ -20920,6 +21206,8 @@ positiveGpc: 0.444444444444
 negativeGpc: 0.555555555556
 neutralGpc: 0.0
 polarityGpc: -0.111111111111
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 52.6315789474
@@ -21058,6 +21346,8 @@ positiveGpc: 0.533333333333
 negativeGpc: 0.466666666667
 neutralGpc: 0.0
 polarityGpc: 0.0666666666667
+positiveCombined: 0.9375
+negativeCombined: 0.0625
 
 Sentiment Ratio: 
 44.7368421053
@@ -21220,6 +21510,8 @@ positiveGpc: 0.285714285714
 negativeGpc: 0.714285714286
 neutralGpc: 0.0
 polarityGpc: -0.428571428571
+positiveCombined: 0.25
+negativeCombined: 0.75
 
 Sentiment Ratio: 
 32.2580645161
@@ -21358,6 +21650,8 @@ positiveGpc: 0.5625
 negativeGpc: 0.4375
 neutralGpc: 0.0
 polarityGpc: 0.125
+positiveCombined: 0.8125
+negativeCombined: 0.1875
 
 Sentiment Ratio: 
 39.6226415094
@@ -21528,6 +21822,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 57.1428571429
@@ -21660,6 +21956,8 @@ positiveGpc: 0.6
 negativeGpc: 0.4
 neutralGpc: 0.0
 polarityGpc: 0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -21817,6 +22115,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.333333333333
+negativeCombined: 0.666666666667
 
 Sentiment Ratio: 
 50.0
@@ -21954,6 +22254,8 @@ positiveGpc: 0.375
 negativeGpc: 0.625
 neutralGpc: 0.0
 polarityGpc: -0.25
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 43.4782608696
@@ -22122,6 +22424,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 33.3333333333
@@ -22254,6 +22558,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.6
+negativeCombined: 0.4
 
 Sentiment Ratio: 
 55.7692307692
@@ -22412,6 +22718,8 @@ positiveGpc: 0.409090909091
 negativeGpc: 0.590909090909
 neutralGpc: 0.0
 polarityGpc: -0.181818181818
+positiveCombined: 0.571428571429
+negativeCombined: 0.428571428571
 
 Sentiment Ratio: 
 50.8670520231
@@ -22536,6 +22844,8 @@ positiveGpc: 0.409090909091
 negativeGpc: 0.590909090909
 neutralGpc: 0.0
 polarityGpc: -0.181818181818
+positiveCombined: 0.571428571429
+negativeCombined: 0.428571428571
 
 Sentiment Ratio: 
 50.8670520231
@@ -22753,6 +23063,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0.518518518519
+negativeCombined: 0.481481481481
 
 Sentiment Ratio: 
 52.5
@@ -22877,6 +23189,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 20.0
@@ -23006,6 +23320,8 @@ positiveGpc: 0.315789473684
 negativeGpc: 0.684210526316
 neutralGpc: 0.0
 polarityGpc: -0.368421052632
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 62.5
@@ -23159,6 +23475,8 @@ positiveGpc: 0.166666666667
 negativeGpc: 0.833333333333
 neutralGpc: 0.0
 polarityGpc: -0.666666666667
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 60.0
@@ -23293,6 +23611,8 @@ positiveGpc: 0.363636363636
 negativeGpc: 0.636363636364
 neutralGpc: 0.0
 polarityGpc: -0.272727272727
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 66.6666666667
@@ -23433,6 +23753,8 @@ positiveGpc: 0.428571428571
 negativeGpc: 0.571428571429
 neutralGpc: 0.0
 polarityGpc: -0.142857142857
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 47.0588235294
@@ -23569,6 +23891,8 @@ positiveGpc: 0.3125
 negativeGpc: 0.6875
 neutralGpc: 0.0
 polarityGpc: -0.375
+positiveCombined: 0.4
+negativeCombined: 0.6
 
 Sentiment Ratio: 
 50.0
@@ -23718,6 +24042,8 @@ positiveGpc: 0.2
 negativeGpc: 0.8
 neutralGpc: 0.0
 polarityGpc: -0.6
+positiveCombined: 0.333333333333
+negativeCombined: 0.666666666667
 
 Sentiment Ratio: 
 70.0
@@ -23860,6 +24186,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 33.3333333333
@@ -23989,6 +24317,8 @@ positiveGpc: 0.444444444444
 negativeGpc: 0.555555555556
 neutralGpc: 0.0
 polarityGpc: -0.111111111111
+positiveCombined: 0.333333333333
+negativeCombined: 0.666666666667
 
 Sentiment Ratio: 
 38.4615384615
@@ -24127,6 +24457,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 60.0
@@ -24258,6 +24590,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 28.5714285714
@@ -24391,6 +24725,8 @@ positiveGpc: 0.459649122807
 negativeGpc: 0.540350877193
 neutralGpc: 0.0
 polarityGpc: -0.080701754386
+positiveCombined: 0.725663716814
+negativeCombined: 0.274336283186
 
 Sentiment Ratio: 
 43.673012318
@@ -24515,6 +24851,8 @@ positiveGpc: 0.428571428571
 negativeGpc: 0.571428571429
 neutralGpc: 0.0
 polarityGpc: -0.142857142857
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 32.2580645161
@@ -24653,6 +24991,8 @@ positiveGpc: 0.4375
 negativeGpc: 0.5625
 neutralGpc: 0.0
 polarityGpc: -0.125
+positiveCombined: 0.777777777778
+negativeCombined: 0.222222222222
 
 Sentiment Ratio: 
 45.2830188679
@@ -24805,6 +25145,8 @@ positiveGpc: 0.6
 negativeGpc: 0.4
 neutralGpc: 0.0
 polarityGpc: 0.2
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 38.4615384615
@@ -24938,6 +25280,8 @@ positiveGpc: 0.533333333333
 negativeGpc: 0.466666666667
 neutralGpc: 0.0
 polarityGpc: 0.0666666666667
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 43.9024390244
@@ -25084,6 +25428,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 36.3636363636
@@ -25216,6 +25562,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 80.0
@@ -25348,6 +25696,8 @@ positiveGpc: 0.461538461538
 negativeGpc: 0.538461538462
 neutralGpc: 0.0
 polarityGpc: -0.0769230769231
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 47.3684210526
@@ -25494,6 +25844,8 @@ positiveGpc: 0.4
 negativeGpc: 0.6
 neutralGpc: 0.0
 polarityGpc: -0.2
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 63.6363636364
@@ -25629,6 +25981,8 @@ positiveGpc: 0.612903225806
 negativeGpc: 0.387096774194
 neutralGpc: 0.0
 polarityGpc: 0.225806451613
+positiveCombined: 0.866666666667
+negativeCombined: 0.133333333333
 
 Sentiment Ratio: 
 43.4343434343
@@ -25800,6 +26154,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 31.25
@@ -25933,6 +26289,8 @@ positiveGpc: 0.583333333333
 negativeGpc: 0.416666666667
 neutralGpc: 0.0
 polarityGpc: 0.166666666667
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 37.5
@@ -26079,6 +26437,8 @@ positiveGpc: 0.461538461538
 negativeGpc: 0.538461538462
 neutralGpc: 0.0
 polarityGpc: -0.0769230769231
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 44.7368421053
@@ -26224,6 +26584,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 0.0
@@ -26352,6 +26714,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 0.0
@@ -26480,6 +26844,8 @@ positiveGpc: 0.25
 negativeGpc: 0.75
 neutralGpc: 0.0
 polarityGpc: -0.5
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 43.2432432432
@@ -26624,6 +26990,8 @@ positiveGpc: 0.441176470588
 negativeGpc: 0.558823529412
 neutralGpc: 0.0
 polarityGpc: -0.117647058824
+positiveCombined: 0.730769230769
+negativeCombined: 0.269230769231
 
 Sentiment Ratio: 
 50.5555555556
@@ -26843,6 +27211,8 @@ positiveGpc: 0
 negativeGpc: 0
 neutralGpc: 0
 polarityGpc: 0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 40.0
@@ -26975,6 +27345,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 37.5
@@ -27106,6 +27478,8 @@ positiveGpc: 1.0
 negativeGpc: 0.0
 neutralGpc: 0.0
 polarityGpc: 1.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 16.6666666667
@@ -27235,6 +27609,8 @@ positiveGpc: 0.285714285714
 negativeGpc: 0.714285714286
 neutralGpc: 0.0
 polarityGpc: -0.428571428571
+positiveCombined: 0.25
+negativeCombined: 0.75
 
 Sentiment Ratio: 
 47.8260869565
@@ -27374,6 +27750,8 @@ positiveGpc: 0.314285714286
 negativeGpc: 0.685714285714
 neutralGpc: 0.0
 polarityGpc: -0.371428571429
+positiveCombined: 0.428571428571
+negativeCombined: 0.571428571429
 
 Sentiment Ratio: 
 46.0
@@ -27548,6 +27926,8 @@ positiveGpc: 0.333333333333
 negativeGpc: 0.666666666667
 neutralGpc: 0.0
 polarityGpc: -0.333333333333
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 40.0
@@ -27680,6 +28060,8 @@ positiveGpc: 0.6
 negativeGpc: 0.4
 neutralGpc: 0.0
 polarityGpc: 0.2
+positiveCombined: 0.833333333333
+negativeCombined: 0.166666666667
 
 Sentiment Ratio: 
 38.2978723404
@@ -27826,6 +28208,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 28.5714285714
@@ -27956,6 +28340,8 @@ positiveGpc: 0.25
 negativeGpc: 0.75
 neutralGpc: 0.0
 polarityGpc: -0.5
+positiveCombined: 0.5
+negativeCombined: 0.5
 
 Sentiment Ratio: 
 39.1304347826
@@ -28093,6 +28479,8 @@ positiveGpc: 0.8
 negativeGpc: 0.2
 neutralGpc: 0.0
 polarityGpc: 0.6
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 37.5
@@ -28227,6 +28615,8 @@ positiveGpc: 0.25
 negativeGpc: 0.75
 neutralGpc: 0.0
 polarityGpc: -0.5
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 30.0
@@ -28362,6 +28752,8 @@ positiveGpc: 0.369565217391
 negativeGpc: 0.630434782609
 neutralGpc: 0.0
 polarityGpc: -0.260869565217
+positiveCombined: 0.737451737452
+negativeCombined: 0.262548262548
 
 Sentiment Ratio: 
 45.7095018836
@@ -29583,6 +29975,8 @@ positiveGpc: 0.42471042471
 negativeGpc: 0.57528957529
 neutralGpc: 0.0
 polarityGpc: -0.150579150579
+positiveCombined: 0.75641025641
+negativeCombined: 0.24358974359
 
 Sentiment Ratio: 
 43.1472081218
@@ -30052,6 +30446,8 @@ positiveGpc: 0.378585086042
 negativeGpc: 0.621414913958
 neutralGpc: 0.0
 polarityGpc: -0.242829827916
+positiveCombined: 0.558375634518
+negativeCombined: 0.441624365482
 
 Sentiment Ratio: 
 46.2041884817
@@ -30887,6 +31283,8 @@ positiveGpc: 0.359223300971
 negativeGpc: 0.640776699029
 neutralGpc: 0.0
 polarityGpc: -0.281553398058
+positiveCombined: 0.634020618557
+negativeCombined: 0.365979381443
 
 Sentiment Ratio: 
 44.581440623
@@ -31703,6 +32101,8 @@ positiveGpc: 0.492227979275
 negativeGpc: 0.507772020725
 neutralGpc: 0.0
 polarityGpc: -0.0155440414508
+positiveCombined: 0.813186813187
+negativeCombined: 0.186813186813
 
 Sentiment Ratio: 
 43.3713784021
@@ -32326,6 +32726,8 @@ positiveGpc: 0.348122866894
 negativeGpc: 0.651877133106
 neutralGpc: 0.0
 polarityGpc: -0.303754266212
+positiveCombined: 0.714285714286
+negativeCombined: 0.285714285714
 
 Sentiment Ratio: 
 45.2380952381
@@ -32835,6 +33237,8 @@ positiveGpc: 0.0
 negativeGpc: 1.0
 neutralGpc: 0.0
 polarityGpc: -1.0
+positiveCombined: 0.0
+negativeCombined: 1.0
 
 Sentiment Ratio: 
 27.2727272727
@@ -32970,6 +33374,8 @@ positiveGpc: 0.381578947368
 negativeGpc: 0.618421052632
 neutralGpc: 0.0
 polarityGpc: -0.236842105263
+positiveCombined: 0.838235294118
+negativeCombined: 0.161764705882
 
 Sentiment Ratio: 
 46.439628483
@@ -33399,6 +33805,8 @@ positiveGpc: 0.390070921986
 negativeGpc: 0.609929078014
 neutralGpc: 0.0
 polarityGpc: -0.219858156028
+positiveCombined: 0.71
+negativeCombined: 0.29
 
 Sentiment Ratio: 
 45.8590852905
@@ -33899,6 +34307,8 @@ positiveGpc: 0.394904458599
 negativeGpc: 0.605095541401
 neutralGpc: 0.0
 polarityGpc: -0.210191082803
+positiveCombined: 0.763157894737
+negativeCombined: 0.236842105263
 
 Sentiment Ratio: 
 41.4634146341
@@ -34232,6 +34642,8 @@ positiveGpc: 0.571428571429
 negativeGpc: 0.428571428571
 neutralGpc: 0.0
 polarityGpc: 0.142857142857
+positiveCombined: 0.666666666667
+negativeCombined: 0.333333333333
 
 Sentiment Ratio: 
 35.8974358974
@@ -34389,6 +34801,8 @@ positiveGpc: 0.444444444444
 negativeGpc: 0.555555555556
 neutralGpc: 0.0
 polarityGpc: -0.111111111111
+positiveCombined: 0.774193548387
+negativeCombined: 0.225806451613
 
 Sentiment Ratio: 
 49.5412844037
@@ -34626,6 +35040,8 @@ positiveGpc: 0.384615384615
 negativeGpc: 0.615384615385
 neutralGpc: 0.0
 polarityGpc: -0.230769230769
+positiveCombined: 0.659090909091
+negativeCombined: 0.340909090909
 
 Sentiment Ratio: 
 48.1012658228
@@ -34945,6 +35361,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 50.0
@@ -35082,6 +35500,8 @@ positiveGpc: 0.38431372549
 negativeGpc: 0.61568627451
 neutralGpc: 0.0
 polarityGpc: -0.23137254902
+positiveCombined: 0.530612244898
+negativeCombined: 0.469387755102
 
 Sentiment Ratio: 
 44.6726572529
@@ -35559,6 +35979,8 @@ positiveGpc: 0.357723577236
 negativeGpc: 0.642276422764
 neutralGpc: 0.0
 polarityGpc: -0.284552845528
+positiveCombined: 0.509433962264
+negativeCombined: 0.490566037736
 
 Sentiment Ratio: 
 47.3372781065
@@ -35848,6 +36270,8 @@ positiveGpc: 0.335260115607
 negativeGpc: 0.664739884393
 neutralGpc: 0.0
 polarityGpc: -0.329479768786
+positiveCombined: 0.5859375
+negativeCombined: 0.4140625
 
 Sentiment Ratio: 
 44.4227005871
@@ -36431,6 +36855,8 @@ positiveGpc: 0.389705882353
 negativeGpc: 0.610294117647
 neutralGpc: 0.0
 polarityGpc: -0.220588235294
+positiveCombined: 0.686274509804
+negativeCombined: 0.313725490196
 
 Sentiment Ratio: 
 45.4767726161
@@ -36746,6 +37172,8 @@ positiveGpc: 0.4375
 negativeGpc: 0.5625
 neutralGpc: 0.0
 polarityGpc: -0.125
+positiveCombined: 0.777777777778
+negativeCombined: 0.222222222222
 
 Sentiment Ratio: 
 45.2830188679
@@ -36899,6 +37327,8 @@ positiveGpc: 0.529411764706
 negativeGpc: 0.470588235294
 neutralGpc: 0.0
 polarityGpc: 0.0588235294118
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 40.350877193
@@ -37051,6 +37481,8 @@ positiveGpc: 0.495774647887
 negativeGpc: 0.504225352113
 neutralGpc: 0.0
 polarityGpc: -0.00845070422535
+positiveCombined: 0.804597701149
+negativeCombined: 0.195402298851
 
 Sentiment Ratio: 
 43.8104448743
@@ -37633,6 +38065,8 @@ positiveGpc: 0.5
 negativeGpc: 0.5
 neutralGpc: 0.0
 polarityGpc: 0.0
+positiveCombined: 0
+negativeCombined: 0
 
 Sentiment Ratio: 
 28.5714285714
@@ -37764,6 +38198,8 @@ positiveGpc: 0.448275862069
 negativeGpc: 0.551724137931
 neutralGpc: 0.0
 polarityGpc: -0.103448275862
+positiveCombined: 1.0
+negativeCombined: 0.0
 
 Sentiment Ratio: 
 39.7959183673

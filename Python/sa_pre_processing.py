@@ -4,6 +4,7 @@ import collections
 import locale
 import sys
 from drama_parser import *
+from drama_models import *
 from lp_language_processor import *
 import pickle
 
@@ -13,7 +14,16 @@ def main():
 
 	dpp = Drama_Pre_Processing("treetagger")
 	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
-	dpp.preProcessAndDumpAllDramas()
+	#dpp.preProcessAndDumpAllDramas()
+	dpp.preProcess("../Lessing-Dramen/less-Damon_k.xml")
+	"""
+	dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Misogyn.p")
+	for speaker in dpp._dramaModel._speakers:
+		print speaker._name
+		for speech in speaker._speeches:
+			print speech._textAsLanguageInfo
+	"""
+
 
 class Drama_Pre_Processing:
 
@@ -53,8 +63,31 @@ class Drama_Pre_Processing:
 		self.initDramaModel(path)
 		self.attachPositionsToSpeechesAndConfs()
 		self.attachPreOccuringSpeakersToSpeeches()
+		self.createSpeakersPerConfAndAct()
 		self.attachLengthInWordsToStructuralElements()
+
 		return self._dramaModel
+
+	def createSpeakersPerConfAndAct(self):
+		for act in self._dramaModel._acts:
+			actSpeeches = act.get_speeches_act()
+			act._actSpeakers = {}
+			for appearingSpeaker in act._appearing_speakers:
+				actSpeakerSpeeches = [speech for speech in actSpeeches if speech._speaker == appearingSpeaker] 
+				actSpeaker = SpeakerModel()
+				actSpeaker._name = appearingSpeaker
+				actSpeaker._speeches = actSpeakerSpeeches
+				act._actSpeakers[appearingSpeaker] = actSpeaker
+
+			for conf in act._configurations:
+				conf._confSpeakers = {}
+				for confAppearingSpeaker in conf._appearing_speakers:
+					confSpeakerSpeeches = [speech for speech in conf._speeches if speech._speaker == confAppearingSpeaker]
+					confSpeaker = SpeakerModel()
+					confSpeaker._name = confAppearingSpeaker
+					confSpeaker._speeches = confSpeakerSpeeches
+					conf._confSpeakers[confAppearingSpeaker] = confSpeaker
+
 
 	def preProcessAndLemmatize(self, path):
 		self.preProcess(path)
