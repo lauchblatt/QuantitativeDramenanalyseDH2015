@@ -18,7 +18,10 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.resetAllFiles()
+	lexiconHandler.initSingleDict("CombinedLexicon", "textblob")
+	lexiconHandler.getPolarityDifferences()
+	#print(len(lexiconHandler._sentimentDict))
+	#print(len(lexiconHandler._sentimentDictLemmas))
 	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger")
 
 	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger",)
@@ -285,6 +288,73 @@ class Lexicon_Handler:
 	def createSentimentDictFileCombinedLexiconLemmas(self, processor, DTAExtended):
 		self.combineSentimentLexica(processor, DTAExtended)
 		self.createOutputCombinedLexicon(self._sentimentDictLemmas, processor, "Lemmas", DTAExtended)
+
+	def getPolarityDifferences(self):
+		differences = 0
+		positiveDifferences = 0
+		negativeDifferences = 0
+		for word in self._sentimentDictLemmas:
+			polaritiesPositive = {}
+			polaritiesNegative = {}
+
+			sentiments = self._sentimentDictLemmas[word]
+			if("sentiWS" in sentiments):
+				if(sentiments["sentiWS"] > 0):
+					polaritiesPositive["sentiWS"] = 1
+					polaritiesNegative["sentiWS"] = 0
+				else:
+					polaritiesPositive["sentiWS"] = 0
+					polaritiesNegative["sentiWS"] = 1
+			
+			if("bawl" in sentiments):
+				if(sentiments["bawl"]["emotion"] > 0):
+					polaritiesPositive["bawl"] = 1
+					polaritiesNegative["bawl"] = 0
+				if(sentiments["bawl"]["emotion"] < 0):
+					polaritiesPositive["bawl"] = 0
+					polaritiesNegative["bawl"] = 1
+			
+			if("nrc" in sentiments):
+				if(sentiments["nrc"]["positive"] > 0):
+					polaritiesPositive["nrc"] = 1
+					polaritiesNegative["nrc"] = 0
+				if(sentiments["nrc"]["negative"] > 0):
+					polaritiesPositive["nrc"] = 0
+					polaritiesNegative["nrc"] = 1
+
+			if("gpc" in sentiments):
+				polaritiesPositive["gpc"] = sentiments["gpc"]["positive"]
+				polaritiesNegative["gpc"] = sentiments["gpc"]["negative"]
+
+			if("cd" in sentiments):
+				if(sentiments["cd"]["positive"] > 0):
+					polaritiesPositive["cd"] = 1
+					polaritiesNegative["cd"] = 0
+				if(sentiments["cd"]["negative"] > 0):
+					polaritiesPositive["cd"] = 0
+					polaritiesNegative["cd"] = 1
+			
+			allZerosPositive = all(value == 0 for value in polaritiesPositive.values())
+			allOnesPositive = all(value == 1 for value in polaritiesPositive.values())
+
+			allZerosNegative = all(value == 0 for value in polaritiesNegative.values())
+			allOnesNegative = all(value == 1 for value in polaritiesNegative.values())
+			"""
+			if(not(allZerosPositive or allOnesPositive)):
+				positiveDifferences = positiveDifferences + 1
+				print word
+				print sentiments
+				print polaritiesPositive.items()
+			"""
+				
+			#"""
+			if(not(allZerosNegative or allOnesNegative)):
+				negativeDifferences = negativeDifferences + 1
+				print word
+				print sentiments
+				print polaritiesNegative.items()
+			#"""
+		print "Anzahl der Abweichungen bezüglich Polarität: " + str(negativeDifferences)
 
 	def createOutputCombinedLexicon(self, sentimentDict, processor, tokensOrLemmas, DTAExtended):
 		if(DTAExtended):

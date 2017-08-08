@@ -110,7 +110,7 @@ bewachen	0	0	0	0	0	0	0	0	0	1
 annehmen	0	0	0	0	0	0	0	0	0	1
 Unterbrechung	0	1	1	0	0	1	0	0	1	0
 Amphetamine	0	1	0	0	1	0	0	0	0	0
-Überfluss	1	1	0	1	1	0	1	0	0	1
+Überfluss	1	0	0	1	1	0	1	0	0	1
 Schmerz	0	1	0	0	0	1	0	1	0	0
 Verzögerung	0	1	1	0	1	1	0	1	0	0
 glaubwürdig	1	0	0	0	0	0	0	0	0	1
@@ -130,7 +130,7 @@ lokalisieren	0	0	0	1	0	0	0	0	0	0
 speien	0	0	0	0	1	0	0	0	0	0
 unlogisch	0	1	0	0	0	0	0	0	0	0
 schwindlig	0	1	0	0	0	0	0	0	0	0
-Becher	1	1	1	0	0	1	0	1	0	0
+Becher	1	0	1	0	0	1	0	1	0	0
 anfällig	0	1	0	0	0	0	0	0	0	0
 Vorteil	1	0	0	0	0	0	0	0	0	0
 Fahnenflucht	0	1	0	0	0	0	0	0	0	0
@@ -212,7 +212,7 @@ rückwärts	0	1	0	0	1	0	0	0	0	0
 Intellekt	1	0	0	0	0	0	0	0	0	0
 Aufständische	0	1	0	0	0	0	0	0	0	0
 Rivalität	0	1	1	0	0	0	0	0	0	0
-Bock	1	1	0	0	0	1	0	0	1	0
+Bock	1	0	0	0	0	1	0	0	1	0
 erschlagen	0	1	1	0	0	0	0	0	0	0
 spät	0	1	0	0	0	0	0	1	0	0
 Rache	0	1	1	1	0	1	0	0	1	0
@@ -271,7 +271,7 @@ Fieber	0	0	0	0	0	1	0	0	0	0
 standhaft	1	0	0	0	0	0	0	0	0	1
 eskalieren	0	1	1	0	0	0	0	0	0	0
 Optimismus	1	0	0	1	0	0	1	0	1	1
-Prahlerei	1	1	0	0	0	0	0	0	0	0
+Prahlerei	0	1	0	0	0	0	0	0	0	0
 Fälschung	0	1	1	0	0	0	0	0	0	0
 grün	1	0	0	0	0	0	1	0	0	1
 Erleichterung	1	0	0	0	0	0	0	0	0	0
@@ -280,7 +280,7 @@ lax	0	1	0	0	0	0	0	1	0	0
 Lauschangriff	0	1	0	0	0	0	0	0	0	0
 unterstützen	1	0	0	0	0	0	0	0	0	0
 versprechen	1	0	0	0	0	0	1	0	0	1
-hervorragend	1	1	0	0	0	0	1	0	0	0
+hervorragend	1	0	0	0	0	0	0	0	0	0
 persönlich	0	0	0	0	0	0	0	0	0	1
 Bandit	0	1	0	0	0	0	0	0	0	0
 Chowder	1	0	0	0	0	0	0	0	0	0
@@ -290,7 +290,7 @@ Erleuchtung	1	0	0	0	0	0	1	0	1	1
 authentisch	1	0	0	0	0	0	1	0	0	1
 kampflustig	0	1	1	0	0	1	0	0	0	0
 Vergänglichkeit	0	0	0	0	0	0	0	1	1	0
-erzwingen	1	1	1	0	0	1	0	0	0	0
+erzwingen	1	0	1	0	0	1	0	0	0	0
 Tarif	0	1	1	0	1	0	0	0	0	0
 letztlich	1	0	0	1	0	0	0	0	0	0
 schneiden	0	1	1	1	0	1	0	1	0	0
@@ -383,7 +383,7 @@ verzögern	0	1	0	0	1	1	0	1	0	0
 eingeweiht	0	1	0	0	0	0	0	0	0	1
 festhalten	0	1	0	0	0	0	0	0	0	0
 Herstellung	0	1	0	0	0	0	0	0	0	1
-Einfluss	1	1	0	0	0	0	0	0	0	0
+Einfluss	1	0	0	0	0	0	0	0	0	0
 Lücke	0	1	0	0	0	0	0	0	0	0
 Peinlichkeit	0	1	0	0	1	0	0	0	0	0
 Beitrag	1	0	0	0	0	0	0	0	0	1
@@ -425,7 +425,7 @@ Massage	1	0	0	0	0	0	1	0	0	0
 beißen	0	1	0	0	0	0	0	0	0	0
 Widerspruch	0	1	0	0	0	0	0	0	0	0
 unversöhnlich	0	1	1	0	0	1	0	1	0	0
-Parade	1	1	0	1	0	1	1	0	1	0
+Parade	1	0	0	1	0	1	1	0	1	0
 Spielplatz	1	0	0	1	0	0	1	0	1	1
 verwesen	0	1	0	0	1	0	0	1	0	0
 vorbereiten	1	0	0	1	0	0	0	0	0	1
@@ -449,7 +449,7 @@ blasphemisch	0	1	1	0	1	0	0	0	0	0
 armselig	0	1	0	0	1	0	0	1	0	0
 Geisel	0	1	1	0	0	1	0	0	0	0
 Erbschaft	1	0	0	1	0	0	1	0	1	1
-Einkommen	1	1	0	1	0	0	1	1	0	1
+Einkommen	1	0	0	1	0	0	1	1	0	1
 hässlich	0	1	0	0	1	0	0	0	0	0
 mürrisch	0	1	1	0	1	0	0	1	0	0
 elend	0	1	1	0	1	1	0	1	0	0
@@ -763,7 +763,7 @@ Sauberkeit	1	0	0	0	0	0	0	0	0	0
 selig	1	0	0	0	0	0	1	0	0	0
 Anbetung	1	0	0	1	0	1	1	0	0	1
 Geschirr	0	1	0	0	0	1	0	0	0	0
-umgeben	1	1	0	1	0	0	0	0	0	0
+umgeben	1	0	0	1	0	0	0	0	0	0
 Schule	0	0	0	0	0	0	0	0	0	1
 Schuld	0	1	1	0	1	0	0	0	0	0
 Geschöpf	0	1	0	0	1	1	0	0	0	0
@@ -839,7 +839,7 @@ Ausgabe	0	0	0	1	0	0	0	0	0	0
 Geselle	0	0	0	0	0	0	0	0	0	1
 Schande	0	1	1	0	1	0	0	1	0	0
 Verein	0	0	0	0	0	0	0	0	0	1
-Erdöl	1	1	0	0	1	0	0	0	0	0
+Erdöl	1	0	0	0	1	0	0	0	0	0
 Reichtum	1	0	0	0	0	0	1	0	0	1
 Nonne	0	1	0	0	0	0	0	0	0	1
 materiell	1	0	0	0	0	0	0	0	0	0
@@ -909,7 +909,7 @@ abwechslungsreich	1	0	0	0	0	0	0	0	0	0
 gierig	0	1	0	0	1	0	0	0	0	0
 Leidenschaft	1	0	0	1	0	0	1	0	0	1
 Wertschätzung	1	0	0	0	0	0	1	1	0	1
-Abgeschiedenheit	1	1	0	0	0	1	0	0	0	0
+Abgeschiedenheit	1	0	0	0	0	1	0	0	0	0
 unter	0	1	1	0	0	1	0	1	0	0
 lebhaft	1	0	0	0	0	0	1	0	0	0
 Annäherung	0	0	0	1	0	0	0	0	0	0
@@ -1001,7 +1001,7 @@ erschöpfen	0	1	0	0	0	0	0	1	0	0
 Rückseite	0	1	0	0	0	0	0	0	0	0
 beklagenswert	0	1	1	0	1	1	0	1	0	0
 Formalität	0	0	0	0	0	0	0	0	0	1
-intensiv	1	1	1	0	1	1	1	0	1	1
+intensiv	1	0	1	0	1	1	1	0	1	1
 kotzen	0	0	0	0	1	0	0	0	0	0
 Korrektheit	0	0	0	0	0	0	0	0	0	1
 duftend	1	0	0	0	0	0	0	0	0	0
@@ -1012,7 +1012,7 @@ Schub	0	1	1	0	0	0	0	0	0	0
 bizarr	0	1	0	0	0	0	0	0	1	0
 qualvoll	0	1	0	0	0	1	0	0	0	0
 Unterhändler	1	0	0	0	0	0	0	0	0	0
-Allmacht	1	1	0	0	0	1	0	0	0	0
+Allmacht	1	0	0	0	0	1	0	0	0	0
 Cholera	0	1	0	0	1	1	0	1	0	0
 Experiment	0	0	0	1	0	0	0	0	1	0
 Anker	1	0	0	0	0	0	0	0	0	0
@@ -1089,7 +1089,7 @@ Schwachheit	0	1	0	0	0	0	0	1	0	0
 prüfen	0	1	0	1	0	0	0	0	0	0
 Vorsitzende	1	0	0	0	0	0	0	0	0	1
 Kassierer	0	0	0	0	0	0	0	0	0	1
-liberal	1	1	0	0	0	0	0	0	0	0
+liberal	1	0	0	0	0	0	0	0	0	0
 Gewürz	1	0	0	0	0	0	0	0	0	0
 Insolvenz	0	1	0	0	0	1	0	1	1	0
 Erdrutsch	0	1	0	0	0	1	0	1	0	0
@@ -1105,7 +1105,7 @@ apathisch	0	1	0	0	0	0	0	1	0	0
 Freistellung	1	0	0	0	0	0	0	0	0	0
 unbezwingbar	1	0	0	0	0	1	0	0	0	0
 Verfasser	1	0	0	0	0	0	0	0	0	1
-Schauspiel	1	1	0	0	0	0	0	0	0	0
+Schauspiel	1	0	0	0	0	0	0	0	0	0
 ermahnen	1	0	0	0	0	0	0	0	0	0
 Kiefer	0	1	0	0	0	0	0	1	0	0
 Uneinigkeit	0	1	1	0	0	0	0	1	0	0
@@ -1144,7 +1144,7 @@ Pferd	0	0	0	0	0	0	0	0	0	1
 Advent	1	0	0	1	0	0	1	0	0	1
 Angina	0	1	0	0	0	1	0	0	0	0
 trennen	0	1	0	0	0	0	0	1	0	0
-Hebamme	1	1	0	1	0	0	1	0	0	1
+Hebamme	1	0	0	1	0	0	1	0	0	1
 Kompass	0	0	0	0	0	0	0	0	0	1
 Phantasie	1	0	0	1	0	0	1	0	0	0
 Exil	0	1	1	0	0	1	0	1	0	0
@@ -1208,7 +1208,7 @@ Inaktivität	0	1	0	0	0	0	0	0	0	0
 schlagen	0	1	1	0	0	1	0	1	1	0
 auswerfen	0	1	0	0	0	0	0	0	0	0
 prozesssüchtig	0	1	1	0	1	0	0	0	0	0
-Flucht	1	1	0	1	0	1	0	0	0	0
+Flucht	1	0	0	1	0	1	0	0	0	0
 aufblasen	0	1	0	0	0	0	0	0	0	0
 gut	1	0	0	1	0	0	1	0	1	1
 Attraktivität	1	0	0	0	0	0	0	0	0	0
@@ -1285,7 +1285,7 @@ Zwangslage	0	1	0	0	0	1	0	0	0	0
 Verbesserung	1	0	0	0	0	0	1	0	0	1
 schwachsinnig	0	1	0	0	0	0	0	0	0	0
 extra	1	0	0	0	0	0	0	0	0	0
-Umgehung	1	1	0	0	0	0	0	0	0	0
+Umgehung	1	0	0	0	0	0	0	0	0	0
 Stundung	0	1	0	0	0	0	0	0	0	0
 sumpfig	0	1	0	0	1	1	0	0	0	0
 Ratte	0	1	0	0	1	1	0	0	0	0
@@ -1308,7 +1308,7 @@ verhandeln	1	0	0	0	0	0	0	0	0	1
 lächerlich	0	1	1	0	1	0	0	0	0	0
 unpassend	0	1	1	0	1	0	0	1	0	0
 Unterlegenheit	0	1	0	0	0	0	0	0	0	0
-vielfältig	1	1	0	0	0	0	0	0	0	0
+vielfältig	1	0	0	0	0	0	0	0	0	0
 bender	0	1	0	0	0	0	0	0	0	0
 Dieb	0	1	1	0	1	1	0	1	1	0
 Feld	1	0	0	0	0	0	0	0	0	0
@@ -1363,7 +1363,7 @@ Argument	0	1	1	0	0	0	0	0	0	0
 Schusswaffe	0	1	1	0	0	1	0	0	0	0
 Vlies	0	1	1	0	1	0	0	1	0	0
 tummeln	1	0	0	0	0	0	1	0	0	0
-Lord	1	1	0	0	1	0	0	0	0	1
+Lord	1	0	0	0	1	0	0	0	0	1
 vorzüglich	1	0	0	0	0	0	0	0	0	0
 eklatant	0	1	1	0	1	0	0	0	0	0
 rostfrei	1	0	0	0	0	0	0	0	0	0
@@ -1407,7 +1407,7 @@ ineffektiv	0	1	0	0	1	0	0	0	0	0
 Vorwurf	0	1	1	0	1	0	0	1	0	0
 Heldentum	1	0	0	1	0	0	1	0	1	1
 Trick	0	1	0	0	0	0	0	0	1	0
-sofort	1	1	0	1	0	0	0	0	0	0
+sofort	1	0	0	1	0	0	0	0	0	0
 verhören	0	0	0	0	0	1	0	0	0	0
 spannend	1	0	0	1	0	0	1	0	1	0
 Unwissenheit	0	1	0	0	0	0	0	0	0	0
@@ -1445,7 +1445,7 @@ still	1	0	0	0	0	0	1	0	0	0
 tolerieren	0	1	1	0	0	0	0	1	0	0
 Klappe	0	1	0	0	0	0	0	0	0	0
 schmuggeln	0	1	0	0	0	1	0	0	0	0
-bescheiden	1	1	0	0	1	0	0	1	0	0
+bescheiden	1	0	0	0	0	0	0	0	0	1
 verschwenderisch	1	0	0	0	0	0	0	0	0	0
 Galgen	0	1	1	0	0	1	0	1	0	0
 entscheiden	0	1	0	0	0	1	0	0	0	0
@@ -1548,7 +1548,7 @@ einflussreich	1	0	0	0	0	0	0	0	0	1
 Homosexualität	0	1	0	0	0	0	0	0	0	0
 Zusammenhalt	0	0	0	0	0	0	0	0	0	1
 widerlich	0	1	1	0	1	1	0	0	0	0
-faszinieren	1	1	0	0	0	0	1	0	0	0
+faszinieren	1	0	0	0	0	0	1	0	0	0
 Intuition	1	0	0	0	0	0	0	0	0	1
 Vampir	0	1	1	0	1	1	0	0	0	0
 beschriften	1	0	0	1	0	0	0	0	0	1
@@ -1613,7 +1613,7 @@ turbulent	0	1	1	0	0	1	0	0	0	0
 schlecht	0	1	1	0	1	1	0	1	0	0
 liebenswert	1	0	0	0	0	0	1	0	0	1
 Endokarditis	0	0	0	0	0	1	0	1	0	0
-Flirt	1	1	0	1	0	0	1	0	1	1
+Flirt	1	0	0	1	0	0	1	0	1	1
 unreif	0	1	0	1	0	0	0	0	0	0
 Busted	0	1	1	0	0	1	0	0	0	0
 Instabilität	0	1	0	0	1	1	0	0	0	0
@@ -1697,7 +1697,7 @@ unverwüstlich	1	0	0	0	0	0	0	0	0	1
 Gemeinde	1	0	0	0	0	0	0	0	0	1
 Diakon	0	0	0	0	0	0	0	0	0	1
 Fußball	1	0	0	1	0	0	1	0	0	0
-Ausbruch	1	1	1	0	0	1	1	1	1	0
+Ausbruch	0	1	1	0	0	1	0	0	1	0
 dolor	0	1	0	0	0	0	0	1	0	0
 ausschließen	0	1	0	0	1	0	0	1	0	0
 Hysterie	0	1	0	0	0	1	0	0	0	0
@@ -1721,7 +1721,7 @@ perfekt	1	0	0	1	0	0	1	0	0	1
 Wahrzeichen	0	0	0	0	0	0	0	0	0	1
 König	1	0	0	0	0	0	0	0	0	0
 verbeißen	1	0	0	0	0	0	0	0	0	0
-behandeln	1	1	1	1	1	1	1	1	1	1
+behandeln	1	0	1	1	1	1	1	1	1	1
 Konflikt	0	1	1	0	0	1	0	1	0	0
 Kompatibilität	1	0	0	0	0	0	0	0	0	0
 Fessel|Fesseln	0	1	0	0	0	0	0	0	0	0
@@ -1795,7 +1795,7 @@ Verdächtige	0	1	0	0	0	1	0	0	0	0
 Impfung	0	0	0	1	0	0	0	0	0	1
 ächten	0	1	0	0	0	0	0	0	0	0
 Leier	1	0	0	0	0	0	1	0	0	0
-Zitat	1	1	0	1	0	0	0	0	1	0
+Zitat	1	0	0	1	0	0	0	0	1	0
 Ferment	0	1	0	1	0	0	0	0	0	0
 Scharfsinn	1	0	0	0	0	0	0	0	0	0
 Herzwurm	0	0	0	0	1	0	0	0	0	0
@@ -1893,7 +1893,7 @@ husten	0	1	0	0	1	0	0	0	0	0
 Neuling	0	0	0	0	0	1	0	0	1	0
 Jammern	0	1	0	0	0	1	0	1	0	0
 Karkasse	0	1	0	0	1	1	0	1	0	0
-Infiltration	1	1	0	0	0	0	0	0	0	0
+Infiltration	1	0	0	0	0	0	0	0	0	0
 Gold	1	0	0	0	0	0	0	0	0	0
 anschließen	1	0	0	0	0	0	0	0	0	0
 verloben	1	0	0	1	0	0	1	0	0	1
@@ -1901,7 +1901,7 @@ tatsächlich	1	0	0	0	0	0	0	0	0	0
 bewölken	0	0	0	0	0	0	0	1	0	0
 ungeordnet	0	1	0	0	0	0	0	0	0	0
 Herr	1	0	0	0	0	0	0	0	0	1
-endlos	1	1	1	0	0	1	1	1	0	1
+endlos	1	0	1	0	0	1	1	1	0	1
 unbeabsichtigt	0	1	0	0	0	0	0	0	1	0
 Trauerfall	0	1	0	0	0	0	0	1	0	0
 Wortschatz	1	0	0	0	0	0	0	0	0	0
@@ -1936,7 +1936,7 @@ Tagebuch	1	0	0	0	0	0	1	0	0	1
 besorgt	0	0	0	0	0	1	0	1	0	0
 ahnungslos	0	1	0	0	0	0	0	0	0	0
 Admiral	1	0	0	0	0	0	0	0	0	1
-Ruhestand	1	1	0	1	0	1	1	1	0	1
+Ruhestand	1	0	0	1	0	1	1	1	0	1
 sauer	0	1	0	0	1	0	0	0	0	0
 stornieren	0	1	0	0	0	0	0	1	0	0
 enteignen	0	1	1	0	0	1	0	1	0	0
@@ -1971,11 +1971,11 @@ nachsichtig	1	0	0	0	0	0	0	0	0	0
 Versuchung	0	1	0	0	0	0	0	0	0	0
 fahrlässig	0	1	0	0	0	0	0	0	0	0
 keuchen	0	0	0	0	0	0	0	0	1	0
-bewaffnen	1	1	1	0	0	1	0	0	0	0
+bewaffnen	1	0	1	0	0	1	0	0	0	0
 Höflichkeit	1	0	0	0	0	0	0	0	0	0
 Eisen	1	0	0	0	0	0	0	0	0	1
 Bumerang	0	0	0	1	0	0	0	0	0	1
-abhängig	1	1	0	0	0	0	0	0	0	1
+abhängig	1	0	0	0	0	0	0	0	0	1
 Kaskade	1	0	0	0	0	0	0	0	0	0
 Hersteller	1	0	0	0	0	0	0	0	0	0
 Schuldverschreibung	0	0	0	1	0	0	0	0	0	0
@@ -2091,7 +2091,7 @@ formativ	1	0	0	0	0	0	0	0	0	1
 unaufhörlich	0	1	0	0	0	0	0	0	0	0
 unbezahlt	0	1	1	0	0	0	0	1	0	0
 erstaunlich	1	0	0	0	0	0	1	0	1	0
-bergauf	1	1	0	1	0	1	0	0	0	0
+bergauf	1	0	0	1	0	1	0	0	0	0
 Unbeholfenheit	0	1	0	0	1	1	0	1	0	0
 gesund	1	0	0	0	0	0	1	0	0	0
 explodieren	0	1	1	0	0	1	0	1	1	0
@@ -2108,7 +2108,7 @@ fürchtend	0	1	0	0	0	1	0	0	0	0
 widerwärtig	0	1	0	0	1	0	0	0	0	0
 Haushalt	0	0	0	0	0	0	0	0	0	1
 Ring|Ringen	0	1	0	0	0	0	0	0	0	0
-Revolution	1	1	1	1	0	1	0	1	1	0
+Revolution	1	0	1	1	0	1	0	1	1	0
 Freizeit	1	0	0	1	0	0	1	0	1	1
 robust	1	0	0	0	0	0	0	0	0	0
 widerspenstig	0	1	1	0	0	0	0	0	0	0
@@ -2294,7 +2294,7 @@ Mücke	0	1	1	0	1	0	0	0	0	0
 Diskontinuität	0	1	0	0	1	1	0	1	0	0
 Braut	1	0	0	1	0	0	1	0	0	1
 Schwindel	0	1	0	0	0	1	0	0	0	0
-ausgelassen	1	1	1	1	0	0	1	0	0	0
+ausgelassen	1	0	1	1	0	0	1	0	0	0
 anstacheln	0	1	1	1	0	1	0	0	0	0
 Mühle	0	0	0	1	0	0	0	0	0	0
 tödlich	0	1	1	0	1	1	0	1	0	0
@@ -2331,7 +2331,7 @@ Analphabet	0	1	0	0	1	0	0	0	0	0
 Babysitter	0	0	0	0	0	0	0	0	0	1
 Hure	0	1	0	0	1	0	0	0	0	0
 bestätigend	1	0	0	0	0	0	0	0	0	0
-Rücken	1	1	1	0	0	0	0	0	0	0
+Rücken	1	0	1	0	0	0	0	0	0	0
 Zufallstreffer	0	0	0	0	0	0	0	0	1	0
 laut	0	1	1	0	0	0	0	0	0	0
 zystisch	0	0	0	0	1	0	0	0	0	0
@@ -2486,7 +2486,7 @@ einziehen	0	1	0	0	0	0	0	0	0	0
 Gefasel	0	1	0	0	1	0	0	0	0	0
 harmlos	1	0	0	0	0	0	0	0	0	0
 Ruhe	1	0	0	0	0	0	1	0	0	1
-erotisch	1	1	0	1	0	0	1	0	1	1
+erotisch	1	0	0	1	0	0	1	0	1	1
 Kindergarten	1	0	0	0	0	0	1	0	0	1
 Schwemme	0	1	0	0	1	0	0	0	0	0
 Geliebte	0	1	1	0	1	0	0	0	0	0
@@ -2558,7 +2558,7 @@ heiraten	1	0	0	1	0	1	1	0	1	1
 Countdown	0	0	0	1	0	0	0	0	0	0
 akzeptabel	1	0	0	0	0	0	0	0	0	0
 Instandhaltung	0	0	0	0	0	0	0	0	0	1
-unbeweglich	1	1	0	0	0	0	0	0	0	1
+unbeweglich	1	0	0	0	0	0	0	0	0	1
 Rechtswidrigkeit	0	1	1	0	1	1	0	0	0	0
 beschleunigen	0	0	0	1	0	0	0	0	0	0
 Neger	0	1	0	0	0	0	0	1	0	0
@@ -2595,7 +2595,7 @@ fleischlich	0	1	0	0	0	0	0	0	0	0
 baufällig	0	1	0	0	1	0	0	1	0	0
 regulieren	1	0	0	0	0	0	0	0	0	0
 Sporn	0	0	0	0	0	1	0	0	0	0
-unerwartet	1	1	0	1	0	1	1	0	1	0
+unerwartet	1	0	0	1	0	1	1	0	1	0
 Würfelspiel	0	0	0	1	0	0	0	0	0	0
 Nachfrage	0	1	1	0	0	0	0	0	0	0
 gnadenlos	0	1	0	0	0	1	0	0	0	0
@@ -2742,7 +2742,7 @@ Hundehütte	0	0	0	0	0	0	0	1	0	0
 Erdbeben	0	1	1	0	0	1	0	1	1	0
 Rückgang	0	1	0	0	0	0	0	0	0	0
 Frage	1	0	0	0	0	0	0	0	0	0
-dominieren	1	1	1	0	0	1	0	0	0	0
+dominieren	1	0	1	0	0	1	0	0	0	0
 Motiv	1	0	0	0	0	0	0	0	0	0
 Dispersion	0	1	0	0	0	0	0	0	0	0
 Einbrecher	0	1	0	0	1	1	0	0	0	0
@@ -2761,7 +2761,7 @@ deportieren	0	1	0	0	0	1	0	1	0	0
 Abführmittel	0	1	0	0	1	1	0	0	0	0
 Diamant	1	0	0	0	0	0	1	0	0	0
 Orchester	1	0	1	0	0	0	1	1	0	1
-Mutter	1	1	0	1	0	0	1	1	0	1
+Mutter	1	0	0	1	0	0	1	1	0	1
 begierig	1	0	0	1	0	0	1	0	1	1
 tragisch	0	1	0	0	0	0	0	0	0	0
 reiben	0	1	1	0	0	0	0	0	0	0
@@ -2818,7 +2818,7 @@ albern	0	1	0	0	0	0	1	0	0	0
 Stipendium	1	0	0	0	0	0	1	0	0	0
 Erfolg	1	0	0	1	0	0	1	0	0	0
 genießen	1	0	0	1	0	0	1	0	0	1
-Hedonismus	1	1	0	0	0	0	1	0	0	0
+Hedonismus	1	0	0	0	0	0	1	0	0	0
 Kapitän	1	0	0	0	0	0	0	0	0	0
 Verrat	0	1	1	0	1	1	0	0	1	0
 Zyanid	0	1	0	0	0	1	0	0	0	0
@@ -2877,7 +2877,7 @@ Schwangerschaft	0	1	0	0	1	0	0	0	0	0
 Helm	1	0	0	0	0	1	0	0	0	0
 necken	0	1	1	1	0	0	0	1	0	0
 bejahend	1	0	0	0	0	0	0	0	0	1
-List	1	1	0	0	0	0	0	0	0	0
+List	0	1	0	0	0	0	0	0	0	0
 Gedenken	1	0	0	1	0	0	1	0	0	0
 Bedeutungslosigkeit	0	1	0	0	0	0	0	0	0	0
 verfrüht	0	0	0	0	0	0	0	0	1	0
@@ -2997,7 +2997,7 @@ Luxus	1	0	0	0	0	0	1	0	0	0
 Freundschaft	1	0	0	0	0	0	1	0	0	1
 Textvorschlag	0	1	0	0	0	0	0	0	0	0
 Flansch	0	0	0	0	0	0	0	0	0	1
-Überrest	1	1	0	0	1	1	0	0	0	1
+Überrest	1	0	0	0	1	1	0	0	0	1
 Schikane	0	1	0	1	0	0	0	0	1	1
 Spieler	0	1	0	1	0	0	0	0	1	0
 energisch	1	0	0	0	0	0	0	0	0	0
@@ -3075,7 +3075,7 @@ Inflation	0	1	0	0	0	1	0	0	0	0
 beschäftigen	1	0	0	1	0	0	1	0	0	1
 mörderisch	0	1	1	0	1	1	0	1	1	0
 ätherisch	0	0	0	0	0	1	0	0	0	0
-Mitschuld	1	1	0	0	0	0	0	0	0	0
+Mitschuld	1	0	0	0	0	0	0	0	0	0
 Klumpen	0	0	0	0	1	0	0	0	0	0
 Schätzchen	1	0	0	0	0	0	0	0	0	0
 zaubern	0	0	0	1	0	0	0	0	1	0
@@ -3179,7 +3179,7 @@ beenden	0	1	0	0	0	0	0	1	0	0
 verwickeln	0	1	1	0	0	0	0	0	0	0
 Gouvernante	0	0	0	0	0	0	0	0	0	1
 tränenreich	0	0	0	0	1	1	0	1	0	0
-Abstimmung	1	1	1	1	0	0	1	1	1	1
+Abstimmung	1	0	0	1	0	0	0	0	0	1
 Funk	0	1	0	0	0	0	0	1	0	0
 kriechen	0	1	0	0	1	1	0	1	0	0
 Publikum	0	0	0	1	0	0	0	0	0	0
@@ -3266,7 +3266,7 @@ Heulen	0	1	1	0	1	1	0	1	1	0
 Faktum	1	0	0	0	0	0	0	0	0	1
 Aura	1	0	0	0	0	0	0	0	0	0
 Geschrei	0	1	1	1	1	0	0	0	1	0
-Berühmtheit	1	1	1	1	1	0	1	0	1	1
+Berühmtheit	1	0	0	0	0	0	0	0	0	0
 Kontamination	0	1	0	0	1	0	0	0	0	0
 erfreuen	1	0	0	1	0	0	1	0	1	0
 Vernichtung	0	1	1	0	0	1	0	1	0	0
@@ -3342,7 +3342,7 @@ sportlich	1	0	0	0	0	0	0	0	0	0
 Ritter	1	0	0	0	0	0	0	0	0	0
 Chor	1	0	0	0	0	0	1	0	0	1
 aga	1	0	0	0	0	1	0	0	0	1
-Balsam	1	1	0	1	0	0	1	0	0	0
+Balsam	1	0	0	0	0	0	0	0	0	0
 Radar	0	0	0	0	0	0	0	0	0	1
 Greifvogel	0	1	0	0	0	1	0	0	0	0
 strafbar	0	1	0	0	0	1	0	1	0	0
@@ -3412,7 +3412,7 @@ Triumph	1	0	0	1	0	0	1	0	0	0
 Regisseur	1	0	0	0	0	0	0	0	0	1
 strukturell	0	0	0	0	0	0	0	0	0	1
 Impfstoff	1	0	0	0	0	0	0	0	0	0
-Hagel	1	1	0	0	0	0	0	0	0	1
+Hagel	1	0	0	0	0	0	0	0	0	1
 Blitz	0	0	1	0	0	1	0	0	1	0
 Tier	0	1	1	0	0	1	0	1	0	0
 Abszess	0	1	0	0	0	0	0	1	0	0
@@ -3597,7 +3597,7 @@ intelligent	1	0	0	0	0	0	0	0	0	1
 aufhellen	1	0	0	0	0	0	1	0	1	1
 interessieren	1	0	0	0	1	0	0	1	0	0
 Kabel	0	0	0	0	0	0	0	0	1	0
-Teenageralter	1	1	0	0	0	0	0	0	0	0
+Teenageralter	1	0	0	0	0	0	0	0	0	0
 Opposition	0	1	1	0	0	0	0	0	0	0
 lesbar	1	0	0	0	0	0	0	0	0	0
 Herausforderung	0	1	1	0	0	1	0	0	0	0
@@ -3629,11 +3629,11 @@ gebührenpflichtig	0	1	0	0	0	1	0	1	0	0
 Folge	0	0	0	1	0	0	0	0	0	0
 Kampf	0	1	1	0	0	1	0	1	0	0
 verlangen	0	0	0	1	0	0	0	0	0	0
-Bücherwurm	1	1	0	0	0	0	0	0	0	0
+Bücherwurm	1	0	0	0	0	0	0	0	0	0
 glanzlos	0	1	0	0	0	0	0	0	0	0
 Bohrloch	0	1	0	0	0	0	0	0	0	0
 spöttisch	0	1	1	0	1	0	0	1	0	0
-hoch	1	1	0	1	0	1	1	0	1	0
+hoch	0	1	0	0	0	0	0	0	0	0
 Müll	0	1	0	0	1	0	0	1	0	0
 Versklavung	0	1	0	0	0	0	0	0	0	0
 verteidigen	1	0	0	0	0	0	0	0	0	1
@@ -3667,7 +3667,7 @@ Schuss	0	1	1	0	0	1	0	1	1	0
 schändlich	0	1	1	0	1	0	0	0	0	0
 gewaltsam	0	1	1	0	0	1	0	0	0	0
 tadellos	1	0	0	0	0	0	0	0	0	1
-Gewicht	1	1	0	1	1	1	1	1	1	1
+Gewicht	1	0	0	1	0	1	0	0	0	0
 Ernüchterung	0	1	1	0	1	0	0	1	0	0
 Haltbarkeit	1	0	0	0	0	0	0	0	0	1
 Anweisung	1	0	0	0	0	0	0	0	0	1
@@ -3708,7 +3708,7 @@ Fehlverhalten	0	1	1	0	1	0	0	1	0	0
 Waschlappen	0	1	0	0	0	0	0	0	0	0
 Unwohlsein	0	1	0	0	0	0	0	1	0	0
 schwach	0	1	0	0	0	0	0	1	0	0
-bekennen	1	1	0	0	0	0	0	0	0	1
+bekennen	1	0	0	0	0	0	0	0	0	1
 Gewehr	0	1	1	0	0	1	0	0	0	0
 Kühnheit	0	1	0	0	0	0	0	0	0	0
 burke	0	1	1	0	1	1	0	1	0	0
@@ -3877,7 +3877,7 @@ absurd	0	1	0	0	0	0	0	0	0	0
 Wächter	1	0	0	0	0	1	0	0	0	1
 Krise	0	1	0	0	0	0	0	0	0	0
 Kündigung	0	1	0	0	0	0	0	1	0	0
-mütterlich	1	1	0	1	0	0	0	0	0	0
+mütterlich	1	0	0	1	0	0	0	0	0	0
 stetig	0	0	0	0	0	0	0	0	1	1
 entscheidend	1	0	0	0	0	0	0	0	0	1
 leuchten	1	0	0	1	0	0	1	0	0	1
@@ -3976,7 +3976,7 @@ Naturforscher	1	0	0	0	0	0	0	0	0	0
 Geist	0	1	0	0	0	1	0	1	0	0
 Ausgelassenheit	1	0	0	0	0	0	1	0	0	0
 verhindern	0	0	0	0	0	1	0	0	0	0
-Gefühl	1	1	1	1	1	1	1	1	1	1
+Gefühl	0	1	0	0	0	0	0	0	0	0
 Delegierte	1	0	0	0	0	0	0	0	0	1
 Epilepsie	0	1	0	0	0	0	0	0	0	0
 ken	1	0	0	0	0	0	0	0	0	0
@@ -4049,7 +4049,7 @@ zungenfertig	0	1	0	0	0	0	0	0	0	0
 segnen	1	0	0	1	0	0	1	0	0	1
 Kreuzigung	0	1	1	0	1	1	0	1	0	0
 Gespräch	1	0	0	0	0	0	0	0	0	0
-Spitze	1	1	1	0	0	1	0	1	0	1
+Spitze	0	0	0	0	0	1	0	0	0	0
 Liebe	1	0	0	1	0	0	1	0	0	1
 Neutralität	0	0	0	0	0	0	0	0	0	1
 Fondant	0	1	0	0	0	0	0	0	0	0
@@ -4392,7 +4392,7 @@ Fermentation	0	0	0	1	0	0	0	0	0	0
 keuchend	0	1	0	0	0	1	0	0	0	0
 Gewalt	0	1	1	0	0	1	0	1	0	0
 Loyalität	1	0	0	0	0	0	0	0	0	1
-Intervention	1	1	0	0	0	0	0	1	0	0
+Intervention	1	0	0	0	0	0	0	1	0	0
 Reihe	0	1	1	0	0	0	0	0	0	0
 eindeutig	0	0	0	0	0	0	0	0	0	1
 wiederkehrend	0	0	0	1	0	0	0	0	0	0

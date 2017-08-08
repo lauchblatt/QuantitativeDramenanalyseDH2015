@@ -13,9 +13,16 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	nrc = NRC()
-	#nrc.resetAllFiles()
+	nrc.resetAllFiles()
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
-	nrc.createExtendedOutputDTA()
+	#nrc.createExtendedOutputDTA()
+	#nrc.readAndInitNRCAndLemmas("treetagger")
+	"""
+	for word in nrc._sentimentDict:
+		sentiments = nrc._sentimentDict[word]
+		if(sentiments["negative"] == 1):
+			print word
+	"""
 
 class NRC:
 
@@ -41,6 +48,13 @@ class NRC:
 		self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
 		self.handleSpecialCases()
 		self._sentimentDict = self.removeTotalZerosFromNRC(self._sentimentDict)
+		self.replaceRemainingDoublePolarities()
+
+	def replaceRemainingDoublePolarities(self):
+		for word in self._sentimentDict:
+			sentiments = self._sentimentDict[word]
+			if(sentiments["positive"] == 1 and sentiments["negative"] == 1):
+				self._sentimentDict[word]["negative"] = 0
 
 	def handleSpecialCases(self):
 		for word in self._sentimentDict.keys():
@@ -111,6 +125,14 @@ class NRC:
 	def getHigherSentimentsValueNrc(self, newSentiments, oldSentiments):
 		newSentimentsScore = 0
 		oldSentimentsScore = 0
+		doublePolarityNew = (newSentiments["positive"] == 1 and newSentiments["negative"] == 1)
+		doublePolarityOld = (oldSentiments["positive"] == 1 and oldSentiments["negative"] == 1)
+		isNeutralNew = all(value == 0 for value in newSentiments.values())
+		isNeutralOld = all(value == 0 for value in oldSentiments.values())
+		if(doublePolarityNew == True and doublePolarityOld == False and isNeutralOld == False):
+			return oldSentiments
+		if(doublePolarityOld == True and doublePolarityNew == False and isNeutralNew == False):
+			return newSentiments
 
 		for sentiment in newSentiments:
 			newSentimentsScore = newSentimentsScore + newSentiments[sentiment]
@@ -213,7 +235,7 @@ class NRC:
 
 	def createSentimentDictFileNRCLemmas(self, processor):
 		self.initNRC()
-		self.lemmatizeDictNrc(processor)
+		self.lemmatizeDictNRC(processor)
 		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas")
 
 if __name__ == "__main__":

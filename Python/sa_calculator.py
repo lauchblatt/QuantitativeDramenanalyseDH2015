@@ -130,6 +130,10 @@ class Sentiment_Calculator:
 		self._sentimentMetrics._metricsTotal["neutralGpc"] = sum(word._neutralGpc for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityGpc"] = self._sentimentMetrics._metricsTotal["positiveGpc"] - self._sentimentMetrics._metricsTotal["negativeGpc"]
 
+		self._sentimentMetrics._metricsTotal["positiveCombined"] = sum(word._positiveCombined for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeCombined"] = sum(word._negativeCombined for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polarityCombined"] = self._sentimentMetrics._metricsTotal["positiveCombined"] - self._sentimentMetrics._metricsTotal["negativeCombined"]
+
 		self.calcMissingPosNegMetrics()
 
 	def calcMissingPosNegMetrics(self):

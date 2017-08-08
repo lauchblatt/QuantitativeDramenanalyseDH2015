@@ -1,0 +1,40 @@
+dup
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+dup
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+dup
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}
+dup
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+dup
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 1}
+dup
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+wup
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}
+dup
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 0}
+dup
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 1}
+wup
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+dup
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+wup
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}
+wup
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 1}
+[Finished in 0.7s]

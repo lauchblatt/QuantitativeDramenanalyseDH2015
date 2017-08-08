@@ -42,7 +42,7 @@ class Sentiment_Metrics:
 		self._metricsTotal = OrderedDict([])
 		self._metricsNormalised = OrderedDict([])
 		self._metricsNormalisedSBWs = OrderedDict([])
-		self._names = {}
+		self._names = OrderedDict([])
 		self._sentimentRatio = 0
 
 	def initMetrics(self):
@@ -102,6 +102,9 @@ class Sentiment_Metrics:
 		self._metricsTotal["neutralGpc"] = 0
 		self._metricsTotal["polarityGpc"] = 0
 		self._names["Gpc"] = ["positiveGpc", "negativeGpc","neutralGpc", "polarityGpc"]
+
+		self._metricsTotal["positiveCombined"] = 0
+		self._metricsTotal["negativeCombined"] = 0
 
 
 	def printAllInfo(self, lengthInWords):
@@ -182,6 +185,9 @@ class Sentiment_Bearing_Word:
 
 		self._gpcOccurence = 0
 
+		self._positiveCombined = 0
+		self._negativeCombined = 0
+
 		#Language Data
 		self._token = ""
 		self._lemma = ""
@@ -244,6 +250,29 @@ class Sentiment_Bearing_Word:
 			self._negativeGpc = sentiments["gpc"]["negative"]
 			self._neutralGpc = sentiments["gpc"]["neutral"]
 
+		self.setCombinedPosNeg()
+
+
+	def setCombinedPosNeg(self):
+		positivities = [self._positiveSentiWSDichotom, self._positiveNrc, self._positiveBawlDichotom,\
+		self._positiveCDDichotom, self._positiveGpc]
+		zerosPos = [x for x in positivities if x == 0]
+		onesPos = [x for x in positivities if x == 1]
+		print self._lemma
+		print positivities
+		if(len(onesPos) > len(zerosPos)):
+			self._positiveCombined = 1
+		print self._positiveCombined
+		
+		negativities = [self._negativeSentiWSDichotom, self._negativeNrc, self._negativeBawlDichotom,\
+		self._negativeCDDichotom, self._negativeGpc]
+		zerosNeg = [x for x in negativities if x == 0]
+		onesNeg =[x for x in negativities if x == 1]
+		
+		print negativities
+		if(len(onesNeg) > len(zerosNeg)):
+			self._negativeCombined = 1
+		print self._negativeCombined
 
 	def printAllInformation(self):
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"

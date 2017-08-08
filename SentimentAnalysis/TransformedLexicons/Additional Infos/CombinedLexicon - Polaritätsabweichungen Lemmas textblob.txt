@@ -1,0 +1,1652 @@
+kurios
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+befreit
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+zahlen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.558823529, 'arousel': 2.35}}
+[('nrc', 0), ('bawl', 1)]
+auffallend
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Bedürfnis
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.382352941, 'arousel': 3.476190476}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 0), ('gpc', 1)]
+Ältere
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': -0.0048}
+[('nrc', 0), ('sentiWS', 1)]
+Orgie
+{'bawl': {'emotion': 0.3, 'arousel': 4.222222222}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Übertragung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+schreckenerregend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+verherrlichen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}, 'sentiWS': -0.0048, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 1), ('cd', 0)]
+schlassen
+{'sentiWS': -0.211, 'bawl': {'emotion': -0.617647059, 'arousel': 2.333333333}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('bawl', 1), ('gpc', 0)]
+abwerben
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Bemänteln
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+gleiten
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Impfung
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.1, 'arousel': 2.833333333}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+Anspruch
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Schaffte
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Beherrschte
+{'sentiWS': 0.4635, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+weihen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Verschulden
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+überholen
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Revolution
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0048, 'bawl': {'emotion': 0.470588235, 'arousel': 4.0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('sentiWS', 1), ('bawl', 0), ('cd', 1)]
+folgenschw
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+Energielos
+{'sentiWS': -0.3037, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Anfahren
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Verbissen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+blenden
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+erbarmen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Wilde
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+extravagant
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Kredit
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -1.235294118, 'arousel': 3.277777778}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('bawl', 1), ('gpc', 1)]
+dämpfen
+{'sentiWS': -0.0411, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Bestürzen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+wundern
+{'sentiWS': 0.0741, 'bawl': {'emotion': -0.1, 'arousel': 2.833333333}}
+[('sentiWS', 0), ('bawl', 1)]
+geständig
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+greifen
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.088235294, 'arousel': 2.133333333}}
+[('nrc', 1), ('bawl', 0)]
+sorglos
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.3, 'arousel': 2.526315789}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+Fassungslos
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+treten
+{'bawl': {'emotion': -1.117647059, 'arousel': 2.631578947}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Birke
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 1.2, 'arousel': 1.421052632}}
+[('nrc', 1), ('bawl', 0)]
+Polizist
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 1}, 'bawl': {'emotion': -0.3, 'arousel': 3.588235294}}
+[('nrc', 0), ('bawl', 1)]
+tragen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': 0.117647059, 'arousel': 1.894736842}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+Kritische
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+angeben
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': -1.382352941, 'arousel': 2.761904762}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 1), ('gpc', 1)]
+Diskussion
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.029411765, 'arousel': 3.368421053}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('bawl', 0), ('gpc', 1)]
+Flucht
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0048, 'bawl': {'emotion': -1.529411765, 'arousel': 3.888888889}}
+[('nrc', 0), ('sentiWS', 1), ('bawl', 1)]
+Zitrone
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.8, 'arousel': 2.789473684}}
+[('nrc', 1), ('bawl', 0)]
+verpflichten
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 0)]
+Dämpfte
+{'sentiWS': -0.0411, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Arretierung
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Enträtseln
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Enträtselt
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Kaufrausch
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Anteilnahme
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+verschwenderisch
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('sentiWS', 1), ('cd', 1), ('gpc', 1)]
+Fabel
+{'bawl': {'emotion': 1.45, 'arousel': 2.052631579}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+erledigen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.088235294, 'arousel': 3.0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('bawl', 0), ('gpc', 1)]
+spielen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.705882353, 'arousel': 3.052631579}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+gesorgt
+{'sentiWS': 0.2234, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Feuer
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.05, 'arousel': 3.722222222}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+Ente
+{'bawl': {'emotion': 0.91, 'arousel': 2.41}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Krieger
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Stütze
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+Instandsetzung
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Bärendienst
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 0)]
+unglaublich
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.3698, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('sentiWS', 0), ('gpc', 0)]
+klatschen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1)]
+bereuen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': -0.6, 'arousel': 2.789473684}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1), ('bawl', 1), ('gpc', 0)]
+unveränderlich
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Aufbruch
+{'bawl': {'emotion': 0.9, 'arousel': 3.238095238}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('bawl', 0), ('cd', 1)]
+Verschwiegen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+beständig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Schwamm
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.14, 'arousel': 1.95}}
+[('nrc', 1), ('bawl', 0)]
+Empathie
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Anwidern
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': -2.0, 'arousel': 3.526315789}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 1), ('gpc', 1)]
+Besitz
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+zufügen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 1)]
+Scherz
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.9, 'arousel': 3.25}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('bawl', 0), ('gpc', 0)]
+Freier
+{'sentiWS': 0.004, 'bawl': {'emotion': -1.1, 'arousel': 3.444444444}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('bawl', 1), ('gpc', 1)]
+untrennbar
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+betreten
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Unbegründet
+{'sentiWS': -0.4923, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+schlagfertig
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Resistent
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+herrschen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -1.911764706, 'arousel': 3.285714286}}
+[('nrc', 0), ('bawl', 1)]
+Präsident
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.882352941, 'arousel': 2.952380952}}
+[('nrc', 0), ('bawl', 1)]
+bestechen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}, 'sentiWS': -0.0048, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('sentiWS', 1), ('cd', 1)]
+Aufgabe
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.411764706, 'arousel': 2.777777778}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+Beflissen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+tierisch
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.1135}
+[('nrc', 1), ('sentiWS', 0)]
+Tricksen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Rebell
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.15, 'arousel': 4.0}}
+[('nrc', 1), ('bawl', 0)]
+Infiltration
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048}
+[('nrc', 0), ('sentiWS', 1)]
+ablassen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0)]
+Kette
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.45, 'arousel': 2.833333333}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+unantastbar
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Einstellung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0)]
+Delirieren
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Entwirren
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+gering
+{'sentiWS': -0.6621, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+erregen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+befreien
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'bawl': {'emotion': 1.941176471, 'arousel': 3.222222222}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 0), ('bawl', 0), ('gpc', 1)]
+furchtlos
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 1), ('gpc', 0)]
+eingehen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'bawl': {'emotion': 0.029411765, 'arousel': 2.19047619}}
+[('nrc', 1), ('sentiWS', 1), ('bawl', 0)]
+trinken
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.424242424, 'arousel': 2.523809524}}
+[('nrc', 1), ('bawl', 0)]
+kaufen
+{'bawl': {'emotion': 0.823529412, 'arousel': 3.157894737}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('bawl', 0), ('cd', 1)]
+Aufgekratzt
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+abgeschwächt
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Justiz
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': 0.1, 'arousel': 3.333333333}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Futter
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.85, 'arousel': 2.368421053}}
+[('nrc', 1), ('bawl', 0)]
+Schmachten
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+nützen
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+einstellen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'bawl': {'emotion': 0.352941176, 'arousel': 2.238095238}}
+[('nrc', 1), ('sentiWS', 1), ('bawl', 0)]
+knusprig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+abschlassen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Autorität
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.970588235, 'arousel': 3.631578947}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('bawl', 1), ('gpc', 1)]
+Führer
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -2.176470588, 'arousel': 3.888888889}}
+[('nrc', 0), ('bawl', 1)]
+feinfühlig
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Erschüttert
+{'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+Ausgelassenheit
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1), ('gpc', 0)]
+bewilligen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Entbindung
+{'sentiWS': -0.0048, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0)]
+nachgeben
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Austricksen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+anspruchsvoll
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.2216, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('sentiWS', 0), ('gpc', 0)]
+Ahnung
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.7, 'arousel': 3.0}}
+[('nrc', 1), ('bawl', 0)]
+Dachs
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.45, 'arousel': 2.5}}
+[('nrc', 1), ('bawl', 0)]
+vornehmen
+{'bawl': {'emotion': 0.647058824, 'arousel': 2.523809524}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('bawl', 0), ('cd', 1)]
+Heide
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 1.0, 'arousel': 1.611111111}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+verdrängen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.3468, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+drücken
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': -0.176470588, 'arousel': 2.714285714}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('bawl', 1), ('gpc', 0)]
+denkwürdig
+{'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 0)]
+Bock
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Scharfe
+{'sentiWS': 0.2248, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Epos
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+endlos
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 1}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Übergross
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Lehre
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': 0.65, 'arousel': 2.80952381}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('bawl', 0), ('cd', 1)]
+zurückhalten
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0048, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0)]
+ziehen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': -0.294117647, 'arousel': 1.842105263}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1), ('bawl', 1), ('gpc', 1)]
+Zartheit
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+unbeweglich
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1), ('gpc', 1)]
+unersetzlich
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Übermut
+{'bawl': {'emotion': -0.1, 'arousel': 3.722222222}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+Affe
+{'bawl': {'emotion': 1.0, 'arousel': 3.0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+necken
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.6, 'arousel': 2.842105263}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('bawl', 0), ('cd', 1)]
+Entbinden
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+sichtbar
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Duldung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+jugendlich
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Prallen
+{'sentiWS': 0.09, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Ratgeber
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 1}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Gefühl
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 2.205882353, 'arousel': 3.111111111}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('bawl', 0), ('gpc', 0)]
+hängen
+{'bawl': {'emotion': -0.823529412, 'arousel': 2.526315789}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Spannung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.8, 'arousel': 3.285714286}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 0), ('gpc', 1)]
+Zureden
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Verwöhnt
+{'sentiWS': 0.3571, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 1)]
+Teuerung
+{'sentiWS': -0.322, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+eingeweiht
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 0)]
+Beschwichtigung
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Krisengeschüttelt
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Band
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+arbeiten
+{'bawl': {'emotion': -0.058823529, 'arousel': 2.684210526}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Harmlosigkeit
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+unempfindlich
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Bitte
+{'bawl': {'emotion': 0.65, 'arousel': 2.857142857}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+besetzen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.617647059, 'arousel': 2.666666667}}
+[('nrc', 0), ('bawl', 1)]
+Überschwenglichkeit
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+kritisch
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Kraft
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': 1.382352941, 'arousel': 3.0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0), ('bawl', 0), ('gpc', 0)]
+Pastor
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.65, 'arousel': 2.19047619}}
+[('nrc', 0), ('bawl', 1)]
+Demut
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.9, 'arousel': 3.047619048}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 0), ('bawl', 1), ('gpc', 0)]
+Lektion
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.4, 'arousel': 2.941176471}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('bawl', 1), ('cd', 1)]
+Meise
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.6, 'arousel': 1.857142857}}
+[('nrc', 1), ('bawl', 0)]
+Schwäche
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.5035, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': -0.852941176, 'arousel': 2.904761905}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0), ('bawl', 1), ('gpc', 1)]
+melancholisch
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+Spiel
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.4, 'arousel': 2.388888889}}
+[('nrc', 1), ('bawl', 0)]
+Gnade
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 1.0, 'arousel': 2.25}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+Schrot
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+abhängig
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('sentiWS', 1), ('cd', 1), ('gpc', 1)]
+begierig
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+gratis
+{'bawl': {'emotion': 1.5, 'arousel': 2.611111111}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Begünstigung
+{'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 0)]
+flehen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+predigen
+{'bawl': {'emotion': -0.4, 'arousel': 2.5}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+konsequent
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Begierde
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': 0.2, 'arousel': 3.722222222}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('bawl', 0), ('gpc', 0)]
+Hagel
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -1.1, 'arousel': 3.0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('bawl', 1), ('gpc', 1)]
+Würdigte
+{'sentiWS': 0.2056, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+ultimativ
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+liegen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.823529412, 'arousel': 2.238095238}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('bawl', 0), ('gpc', 0)]
+Schmerzhafte
+{'sentiWS': -0.3182, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Gewicht
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': -0.970588235, 'arousel': 3.333333333}}
+[('nrc', 0), ('bawl', 1)]
+frenetisch
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 1)]
+Abfahrt
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.3, 'arousel': 3.117647059}}
+[('nrc', 1), ('bawl', 0)]
+laufen
+{'bawl': {'emotion': 0.764705882, 'arousel': 2.047619048}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+überschäumend
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Angabe
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+geschätzt
+{'sentiWS': 0.1175, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Klingel
+{'bawl': {'emotion': 0.14, 'arousel': 2.73}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Kobold
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.6, 'arousel': 2.473684211}}
+[('nrc', 1), ('bawl', 0)]
+Spasshaft
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+fertigen
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Ermahnen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('sentiWS', 1), ('cd', 1), ('gpc', 1)]
+Wache
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.7, 'arousel': 2.315789474}}
+[('nrc', 0), ('bawl', 1)]
+Boden
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.05, 'arousel': 1.555555556}}
+[('nrc', 1), ('bawl', 0)]
+exaltiert
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Nadel
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.55, 'arousel': 2.857142857}}
+[('nrc', 0), ('bawl', 1)]
+festlegen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': -0.441176471, 'arousel': 2.368421053}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 1), ('gpc', 0)]
+abweisend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Ausbesserung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Feuerte
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+felsenfest
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+umfassend
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 0), ('gpc', 1)]
+Koalition
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.617647059, 'arousel': 2.285714286}}
+[('nrc', 0), ('bawl', 1)]
+Dusche
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.7, 'arousel': 2.1875}}
+[('nrc', 1), ('bawl', 0)]
+flaumig
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+possierlich
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Ausnahme
+{'bawl': {'emotion': 0.205882353, 'arousel': 2.944444444}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Vorbote
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+gestehen
+{'bawl': {'emotion': -0.058823529, 'arousel': 3.142857143}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+überwältigen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0)]
+Unglaubhaft
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Intimität
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+sparen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'bawl': {'emotion': -0.264705882, 'arousel': 2.263157895}}
+[('nrc', 0), ('sentiWS', 0), ('bawl', 1)]
+krass
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': -0.1603, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+beichen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+mieten
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.4, 'arousel': 2.5}}
+[('nrc', 0), ('bawl', 1)]
+Matte
+{'sentiWS': -0.0048, 'bawl': {'emotion': 0.15, 'arousel': 1.722222222}}
+[('sentiWS', 1), ('bawl', 0)]
+Rettung
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}, 'sentiWS': 0.0707, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Bequemlichkeit
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('gpc', 1)]
+Verwaltung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -1.117647059, 'arousel': 2.523809524}}
+[('nrc', 0), ('bawl', 1)]
+massiv
+{'sentiWS': 0.004, 'bawl': {'emotion': -0.1, 'arousel': 3.15}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('bawl', 1), ('cd', 1)]
+knackig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Streich
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.1, 'arousel': 2.944444444}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+Skurril
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Ruf
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Laune
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'sentiWS': 0.1085, 'bawl': {'emotion': 0.6, 'arousel': 3.157894737}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('sentiWS', 0), ('bawl', 0), ('cd', 1)]
+Rudel
+{'bawl': {'emotion': -0.15, 'arousel': 2.277777778}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Entzug
+{'bawl': {'emotion': -1.7, 'arousel': 3.444444444}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+Bauer
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': 0.15, 'arousel': 1.833333333}}
+[('nrc', 1), ('bawl', 0)]
+Haustier
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.2, 'arousel': 2.222222222}}
+[('nrc', 1), ('bawl', 0)]
+beherrschen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+revanchieren
+{'sentiWS': 0.004, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1)]
+Ausgrabung
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Rinde
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.35, 'arousel': 1.888888889}}
+[('nrc', 1), ('bawl', 0)]
+Soldat
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -1.5, 'arousel': 3.875}}
+[('nrc', 0), ('bawl', 1)]
+Verfahren
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': -0.558823529, 'arousel': 2.607142857}}
+[('nrc', 0), ('bawl', 1)]
+billig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.2842, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0)]
+auflösen
+{'sentiWS': -0.0412, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+wagen
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+wollen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.764705882, 'arousel': 2.523809524}}
+[('nrc', 1), ('bawl', 0)]
+Unterscheidung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+voll
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Entschädigung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 0), ('gpc', 1)]
+schläfrig
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+bemühen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Wein
+{'sentiWS': -0.1651, 'bawl': {'emotion': 1.8, 'arousel': 2.333333333}}
+[('sentiWS', 1), ('bawl', 0)]
+Ovation
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+unerschütterlich
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Esel
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.05, 'arousel': 2.73}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('bawl', 0), ('gpc', 1)]
+fett
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 1)]
+Kreuz
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.5, 'arousel': 2.421052632}}
+[('nrc', 1), ('bawl', 0)]
+Bestürzte
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Ferse
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.2, 'arousel': 2.125}}
+[('nrc', 1), ('bawl', 0)]
+gewaltig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+eng
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 1)]
+Polizei
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 1}, 'bawl': {'emotion': -0.2, 'arousel': 3.166666667}}
+[('nrc', 0), ('bawl', 1)]
+Herr
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.294117647, 'arousel': 2.555555556}}
+[('nrc', 0), ('bawl', 1)]
+pfeifen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+üppig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.201, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0), ('gpc', 0)]
+ausmachen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+begehren
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Lautstark
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 1)]
+hart
+{'sentiWS': -0.1483, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+Zurückhaltung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+würdigen
+{'sentiWS': 0.2056, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 1.176470588, 'arousel': 2.894736842}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+Intervenieren
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+setzen
+{'bawl': {'emotion': 0.235294118, 'arousel': 1.952380952}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Abwiegeln
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+vorzeitig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.3462, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('sentiWS', 1), ('gpc', 0)]
+Verzeihung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('gpc', 1)]
+Beisteuer
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Adel
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.3, 'arousel': 2.555555556}}
+[('nrc', 0), ('bawl', 1)]
+niedlich
+{'sentiWS': 0.0987, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 1.0, 'arousel': 1.789473684}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+Stein
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.23, 'arousel': 2.0}}
+[('nrc', 1), ('bawl', 0)]
+sehnen
+{'bawl': {'emotion': -0.8, 'arousel': 3.315789474}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+Amnestie
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+aufziehen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Achtung
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': 0.6, 'arousel': 3.619047619}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('bawl', 0), ('gpc', 1)]
+Beharrlichkeit
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('gpc', 1)]
+hungrig
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+Kühnheit
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 1)]
+Tier
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 1.117647059, 'arousel': 2.611111111}}
+[('nrc', 1), ('bawl', 0)]
+tolerieren
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0)]
+Anstehen
+{'bawl': {'emotion': -0.9, 'arousel': 2.473684211}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Moral
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 1, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'bawl': {'emotion': -0.1, 'arousel': 2.555555556}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 0), ('sentiWS', 0), ('bawl', 1), ('gpc', 0)]
+Ablösung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Mitschuld
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Verband
+{'sentiWS': 0.004, 'bawl': {'emotion': -1.18, 'arousel': 2.95}}
+[('sentiWS', 0), ('bawl', 1)]
+energisch
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+abschwächen
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Manieriert
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1)]
+Gewitter
+{'bawl': {'emotion': 0.6, 'arousel': 3.631578947}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Ernsthaftigkeit
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Wort
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.764705882, 'arousel': 2.0}}
+[('nrc', 1), ('bawl', 0)]
+Gelächter
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('gpc', 1)]
+süchtig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.0845}
+[('nrc', 1), ('sentiWS', 0)]
+Umfang
+{'bawl': {'emotion': 0.15, 'arousel': 2.35}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+gesättigt
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0)]
+gedemütigt
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 1), ('gpc', 1)]
+herzzerreissend
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+steuern
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Anruf
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': 1.35, 'arousel': 2.833333333}}
+[('nrc', 1), ('bawl', 0)]
+Erbarmen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+dringen
+{'sentiWS': -0.3516, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': -1.323529412, 'arousel': 3.933333333}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 1), ('cd', 1), ('bawl', 1), ('gpc', 0)]
+unerhört
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 1)]
+Drache
+{'bawl': {'emotion': 0.4, 'arousel': 3.444444444}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+bitten
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.382352941, 'arousel': 2.619047619}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('bawl', 0), ('cd', 0)]
+Drama
+{'bawl': {'emotion': 0.1, 'arousel': 3.888888889}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Widerstand
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.205882353, 'arousel': 3.210526316}}
+[('nrc', 1), ('bawl', 0)]
+erbitten
+{'bawl': {'emotion': -0.2, 'arousel': 2.722222222}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+Bedenken
+{'bawl': {'emotion': 0.176470588, 'arousel': 2.722222222}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+überwältigt
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.0578}
+[('nrc', 1), ('sentiWS', 0)]
+präventiv
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 0)]
+Pause
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.15, 'arousel': 1.380952381}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+strahlen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.2092, 'bawl': {'emotion': 2.2, 'arousel': 2.555555556}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 0), ('bawl', 0), ('gpc', 1)]
+Belastbarkeit
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Korrektur
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+überholt
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+sehen
+{'bawl': {'emotion': 2.0, 'arousel': 2.263157895}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Kiefer
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.6, 'arousel': 1.842105263}}
+[('nrc', 1), ('bawl', 0)]
+protzig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 1)]
+hochfliegend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+unerreichbar
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('gpc', 1)]
+offensichtlich
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 0), ('gpc', 1)]
+Wollust
+{'bawl': {'emotion': 1.1, 'arousel': 3.722222222}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('bawl', 0), ('cd', 1)]
+Geblendet
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Protest
+{'sentiWS': -0.3564, 'bawl': {'emotion': 0.088235294, 'arousel': 3.666666667}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 1), ('bawl', 0), ('gpc', 1)]
+schönen
+{'sentiWS': 0.0081, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+überschreiten
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('sentiWS', 1), ('cd', 1), ('gpc', 1)]
+unerwartet
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0349, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 1), ('gpc', 1)]
+Unbedarft
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Lauter
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Tabak
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.3, 'arousel': 2.722222222}}
+[('nrc', 1), ('bawl', 0)]
+abgehärtet
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Disziplin
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.0611}
+[('nrc', 1), ('sentiWS', 0)]
+stinkreich
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+fühlen
+{'bawl': {'emotion': 2.0, 'arousel': 3.473684211}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Versuch
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.2, 'arousel': 2.555555556}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+schwachsinnig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('cd', 1), ('gpc', 0)]
+sorgen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.2234, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Unempfindlichkeit
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+dauern
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': -0.235294118, 'arousel': 2.047619048}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('bawl', 1), ('gpc', 0)]
+Nützte
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+reizen
+{'bawl': {'emotion': -0.4, 'arousel': 3.8}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+umwerfend
+{'sentiWS': 0.1991, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+herzergreifend
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Mama
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 2.3, 'arousel': 2.388888889}}
+[('nrc', 1), ('bawl', 0)]
+weisen
+{'sentiWS': 0.2244, 'bawl': {'emotion': 0.382352941, 'arousel': 2.19047619}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('bawl', 0), ('gpc', 1)]
+raffiniert
+{'sentiWS': 0.004, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1)]
+wüten
+{'sentiWS': -0.0048, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0)]
+grossspurig
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 1)]
+verkehrt
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+wecken
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.6, 'arousel': 2.947368421}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 0), ('bawl', 1), ('gpc', 0)]
+Beihilfe
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.5, 'arousel': 3.19047619}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('bawl', 0), ('gpc', 1)]
+Unbefangenheit
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Junge
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.8, 'arousel': 2.80952381}}
+[('nrc', 1), ('bawl', 0)]
+Urteil
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.15, 'arousel': 3.222222222}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Bund
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+Mitleid
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.0, 'arousel': 3.0}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Entschuldigung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('gpc', 1)]
+Verherrlichung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048}
+[('nrc', 0), ('sentiWS', 1)]
+fertig
+{'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 0)]
+Sühnen
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Verwöhnen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.3571}
+[('nrc', 1), ('sentiWS', 0)]
+gestrahlt
+{'sentiWS': 0.2092, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Ansprüche
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+begehrlich
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+teilen
+{'bawl': {'emotion': 1.205882353, 'arousel': 2.526315789}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Neigung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.4, 'arousel': 2.4375}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 0), ('gpc', 1)]
+Vulkan
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.2, 'arousel': 3.684210526}}
+[('nrc', 1), ('bawl', 0)]
+gesetzt
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Überreste
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 1}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+verschlingen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+Schadenfreude
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Blitz
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.5, 'arousel': 3.904761905}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Faden
+{'sentiWS': -0.0048, 'bawl': {'emotion': 0.2, 'arousel': 1.8}}
+[('sentiWS', 1), ('bawl', 0)]
+Führung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': 0.004, 'bawl': {'emotion': -0.470588235, 'arousel': 2.444444444}}
+[('nrc', 0), ('sentiWS', 0), ('bawl', 1)]
+kämpferisch
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Nachbar
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.1, 'arousel': 2.375}}
+[('nrc', 0), ('bawl', 1)]
+Weitsichtigkeit
+{'sentiWS': 0.004, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1)]
+entschädigen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+Befremden
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+schmeichelhaft
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1), ('gpc', 0)]
+Androhen
+{'sentiWS': -0.0048, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0)]
+Puppe
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.45, 'arousel': 2.0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+widmen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': 1.147058824, 'arousel': 2.105263158}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('bawl', 0), ('gpc', 0)]
+verteidigen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Satz
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 0.264705882, 'arousel': 1.888888889}}
+[('nrc', 1), ('bawl', 0)]
+Erregung
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Vorsicht
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004, 'bawl': {'emotion': 0.2, 'arousel': 4.058823529}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('sentiWS', 0), ('bawl', 0), ('gpc', 1)]
+Liaison
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.0, 'arousel': 3.166666667}}
+[('nrc', 1), ('bawl', 0)]
+dramatisch
+{'sentiWS': -0.3656, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0)]
+Andrang
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+schmerzhaft
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.3182, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+lässig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.2095, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0)]
+zivil
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+ewig
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Staunen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+lebhaft
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.2146, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+Trieb
+{'bawl': {'emotion': 0.1, 'arousel': 4.105263158}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Bändigen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+bombastisch
+{'sentiWS': 0.2053, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+sentimental
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Bedarf
+{'bawl': {'emotion': -0.264705882, 'arousel': 2.352941176}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('bawl', 1), ('cd', 0)]
+elektrisch
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Bergung
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+angreifbar
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Hammer
+{'sentiWS': 0.004, 'bawl': {'emotion': -0.32, 'arousel': 3.0}}
+[('sentiWS', 0), ('bawl', 1)]
+leck
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+hären
+{'sentiWS': -0.0446, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Entlassung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0048, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 1), ('cd', 0)]
+ausweisen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+aufgeregt
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 1}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 1), ('gpc', 1)]
+Rolle
+{'bawl': {'emotion': 0.25, 'arousel': 2.111111111}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Ungeahnt
+{'sentiWS': 0.004, 'bawl': {'emotion': -0.1, 'arousel': 2.833333333}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('bawl', 1), ('gpc', 1)]
+Schein
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Wuchern
+{'bawl': {'emotion': -1.6, 'arousel': 3.529411765}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+auslassen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+weichen
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': -0.764705882, 'arousel': 2.0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 1), ('gpc', 1)]
+belegen
+{'bawl': {'emotion': -0.058823529, 'arousel': 2.285714286}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+beharren
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+billigen
+{'sentiWS': -0.2842, 'bawl': {'emotion': -0.4, 'arousel': 2.222222222}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('bawl', 1), ('cd', 0)]
+Abgeschiedenheit
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1), ('gpc', 1)]
+nüchtern
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Glut
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.5, 'arousel': 3.052631579}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('bawl', 0), ('gpc', 1)]
+wohlig
+{'sentiWS': 0.32, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+explosiv
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+sagen
+{'bawl': {'emotion': 0.676470588, 'arousel': 2.210526316}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+erzwingen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Papagei
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.55, 'arousel': 3.18}}
+[('nrc', 1), ('bawl', 0)]
+Ekstase
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 2.0, 'arousel': 4.5}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+tollkühn
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Rechtfertigte
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Geringem
+{'sentiWS': -0.6621, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+schwindelerregend
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+gefertigt
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Hartnäckigkeit
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+stechen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': -1.4, 'arousel': 3.566666667}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('bawl', 1), ('gpc', 0)]
+Balken
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.3, 'arousel': 2.111111111}}
+[('nrc', 1), ('bawl', 0)]
+pittoresk
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Beileid
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': -2.0, 'arousel': 3.1875}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('bawl', 1), ('gpc', 1)]
+Schwein
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.59, 'arousel': 2.77}}
+[('nrc', 1), ('bawl', 0)]
+abschelten
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+springen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+Einfalt
+{'bawl': {'emotion': -1.2, 'arousel': 2.555555556}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Einfall
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}, 'bawl': {'emotion': 1.5, 'arousel': 3.058823529}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 1), ('bawl', 0), ('cd', 1)]
+schneidend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Kuriosität
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Vertrag
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'bawl': {'emotion': -0.382352941, 'arousel': 2.722222222}}
+[('nrc', 1), ('sentiWS', 0), ('bawl', 1)]
+Anhängen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+behaupten
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.323529412, 'arousel': 2.380952381}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('bawl', 1), ('gpc', 0)]
+stimulierend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Verständnis
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Pardon
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+schwerwiegend
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('sentiWS', 1), ('gpc', 0)]
+Whisky
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.4, 'arousel': 2.666666667}}
+[('nrc', 1), ('bawl', 0)]
+berechnend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Beschneidung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.3313}
+[('nrc', 0), ('sentiWS', 1)]
+Witz
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0)]
+Defensive
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+Unverhofft
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Ausgeflippt
+{'sentiWS': 0.0756, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1)]
+Überarbeiten
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1)]
+Besetzung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 0), ('cd', 1)]
+hoch
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0), ('gpc', 0)]
+treiben
+{'bawl': {'emotion': -0.088235294, 'arousel': 2.785714286}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Peinigen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+Reue
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 0.1, 'arousel': 2.944444444}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('cd', 1), ('bawl', 0), ('gpc', 1)]
+aufwendig
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 1)]
+Debatte
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.911764706, 'arousel': 3.142857143}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('bawl', 1), ('gpc', 1)]
+feuern
+{'sentiWS': -0.0048, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+Verantwortung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0)]
+Schale
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0048, 'bawl': {'emotion': 0.65, 'arousel': 1.473684211}}
+[('nrc', 1), ('sentiWS', 1), ('bawl', 0)]
+Autarkie
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+ernst
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+durstig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0)]
+Turm
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.27, 'arousel': 2.64}}
+[('nrc', 1), ('bawl', 0)]
+schmerzlos
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+begegnen
+{'bawl': {'emotion': 1.382352941, 'arousel': 3.142857143}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Ältesten
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'sentiWS': -0.0048}
+[('nrc', 0), ('sentiWS', 1)]
+Moor
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.3, 'arousel': 2.777777778}}
+[('nrc', 1), ('bawl', 0)]
+lenken
+{'bawl': {'emotion': -0.029411765, 'arousel': 2.333333333}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+Propaganda
+{'sentiWS': -0.4893, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0), ('gpc', 1)]
+entsagend
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+enthalten
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': -0.352941176, 'arousel': 2.19047619}}
+[('nrc', 0), ('bawl', 1)]
+Rüstung
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1)]
+Entwirrt
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+dominieren
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 1), ('gpc', 1)]
+Rückhaltlos
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Ernst
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 0), ('cd', 1), ('gpc', 1)]
+förmlich
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Intervention
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.1975}
+[('nrc', 0), ('sentiWS', 1)]
+Aufregung
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0386, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 1), ('gpc', 1)]
+Ultimativen
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+berauschend
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.0809, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 0), ('gpc', 0)]
+hartnäckig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 1), ('sentiWS', 0), ('gpc', 1)]
+peinigend
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+Sorglosigkeit
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('nrc', 1), ('sentiWS', 0), ('cd', 1), ('gpc', 1)]
+demütig
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': -0.0048, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 1), ('gpc', 1)]
+Überzeugung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('sentiWS', 0), ('gpc', 0)]
+Fesselung
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+urkomisch
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('cd', 0), ('gpc', 1)]
+schwarz
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 0.3, 'arousel': 1.947368421}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('bawl', 0), ('cd', 0)]
+Unausgebildet
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+lösen
+{'sentiWS': 0.004, 'bawl': {'emotion': 1.058823529, 'arousel': 2.631578947}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('bawl', 0), ('gpc', 1)]
+Zufluchtsort
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+vorsichtig
+{'nrc': {'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 1}, 'sentiWS': 0.2313, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 0), ('sentiWS', 0), ('cd', 0), ('gpc', 1)]
+kämpfen
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'sentiWS': -0.3467, 'bawl': {'emotion': -0.647058824, 'arousel': 3.761904762}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('sentiWS', 1), ('bawl', 1), ('gpc', 0)]
+Ausreden
+{'bawl': {'emotion': 0.3, 'arousel': 2.263157895}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+überschwänglich
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+feudal
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Waffel
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.95, 'arousel': 2.27}}
+[('nrc', 1), ('bawl', 0)]
+Schicker
+{'sentiWS': 0.3372, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('sentiWS', 0), ('cd', 1)]
+Pille
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -0.6, 'arousel': 3.523809524}}
+[('nrc', 0), ('bawl', 1)]
+Offizier
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}, 'bawl': {'emotion': -1.352941176, 'arousel': 2.944444444}}
+[('nrc', 0), ('bawl', 1)]
+kümmern
+{'sentiWS': 0.2016, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'bawl': {'emotion': 1.323529412, 'arousel': 1.857142857}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 0), ('cd', 0), ('bawl', 0), ('gpc', 1)]
+Geliebte
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.2315, 'bawl': {'emotion': 1.5, 'arousel': 3.777777778}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('sentiWS', 0), ('bawl', 0), ('gpc', 0)]
+unbezahlbar
+{'sentiWS': 0.004, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 0), ('cd', 1), ('gpc', 0)]
+Rutsche
+{'sentiWS': -0.0048, 'bawl': {'emotion': 1.18, 'arousel': 3.32}}
+[('sentiWS', 1), ('bawl', 0)]
+passen
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+unendlich
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('gpc', 1)]
+übermässig
+{'sentiWS': -0.1844, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('sentiWS', 1), ('cd', 1), ('gpc', 0)]
+Gegensatz
+{'bawl': {'emotion': 0.029411765, 'arousel': 3.066666667}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Entlastung
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004}
+[('nrc', 1), ('sentiWS', 0)]
+schaffen
+{'nrc': {'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'sentiWS': 0.004, 'bawl': {'emotion': 0.970588235, 'arousel': 2.761904762}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('nrc', 0), ('sentiWS', 0), ('bawl', 0), ('gpc', 1)]
+Geheimnis
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 0, 'trust': 0}, 'bawl': {'emotion': 1.117647059, 'arousel': 3.80952381}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+Angeheitert
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('cd', 1), ('gpc', 0)]
+ergeben
+{'bawl': {'emotion': -0.529411765, 'arousel': 2.45}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('bawl', 1), ('gpc', 0)]
+sanktionieren
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+schweben
+{'bawl': {'emotion': 0.8, 'arousel': 2.210526316}, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('bawl', 0), ('gpc', 1)]
+schlicht
+{'sentiWS': -0.623, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': 0.0, 'arousel': 1.666666667}, 'cd': {'positive': 0.7, 'neutral': 0.0, 'negative': 0.0}}
+[('sentiWS', 1), ('cd', 0), ('gpc', 0)]
+umgekehrt
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+zufällig
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}}
+[('nrc', 1), ('gpc', 0)]
+Verträumt
+{'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 0.7}}
+[('cd', 1), ('gpc', 0)]
+wild
+{'nrc': {'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'cd': {'positive': 0.0, 'neutral': 0.0, 'negative': 1.0}}
+[('nrc', 1), ('cd', 1), ('gpc', 0)]
+Wortgewandt
+{'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('cd', 0), ('gpc', 1)]
+gewagt
+{'sentiWS': 0.004, 'gpc': {'positive': 0, 'neutral': 0, 'negative': 1}}
+[('sentiWS', 0), ('gpc', 1)]
+Lust
+{'nrc': {'anticipation': 1, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}, 'gpc': {'positive': 1, 'neutral': 0, 'negative': 0}, 'bawl': {'emotion': 2.1, 'arousel': 3.666666667}, 'cd': {'positive': 1.0, 'neutral': 0.0, 'negative': 0.0}}
+[('nrc', 1), ('cd', 0), ('bawl', 0), ('gpc', 0)]
+Anzahl der Abweichungen bezüglich Polarität: 550
+[Finished in 2.4s]
