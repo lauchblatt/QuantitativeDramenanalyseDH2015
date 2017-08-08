@@ -82,10 +82,17 @@ class Sentiment_Output_Generator:
 		for metric in unit._sentimentMetrics._metricsTotal:
 			metricValuePair = metric + ": " + str(unit._sentimentMetrics._metricsTotal[metric])
 			info = info + metricValuePair +"\n"
+		
 		info = info + "\n" + "Normalised Values: " + "\n"
 		for metric in unit._sentimentMetrics._metricsNormalised:
 			metricValuePair = metric + ": " + str(unit._sentimentMetrics._metricsNormalised[metric])
 			info = info + metricValuePair + "\n"
+
+		info = info + "\n" + "Normalised by Length of Sentiment Bearing Words Values: " + "\n"
+		for metric in unit._sentimentMetrics._metricsNormalisedSBWs:
+			metricValuePair = metric + ": " + str(unit._sentimentMetrics._metricsNormalisedSBWs[metric])
+			info = info + metricValuePair + "\n"
+
 		info = info + "\n" + "Sentiment Ratio: " + "\n"
 		info = info + str(unit._sentimentMetrics._sentimentRatio)
 		return info

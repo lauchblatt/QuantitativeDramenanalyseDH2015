@@ -20,12 +20,42 @@ class Sentiment_Calculator:
 		self._sentimentMetrics.initMetrics()
 
 		self._normalisationFactorLength = normalisationFactorLength
+		
+		self._normalisationFactorLexcionSBWs = {}
 	
 	def calcMetrics(self):
 		self.calcTotalMetrics()
 		self.calcNormalisedMetrics()
 		self.calcSentimentRatio()
+
+		self.setSpecificLexiconSBWsNormalisationMetrics()
+		self.calcAllSpecificSBWsNormalisedMetrics()
 	
+	def setSpecificLexiconSBWsNormalisationMetrics(self):
+		#TODO some are missing
+		normalisationFactorSentiWS = 0
+		normalisationFactorNrcPolarity = 0
+		normalisationFactorNrcEmotion = 0
+		normalisationFactorBawl = 0
+		normalisationFactorCd = 0
+		normalisationFactorGpc = 0
+
+		for sbw in self._sentimentBearingWords:
+			normalisationFactorSentiWS = normalisationFactorSentiWS + sbw._sentiWSOccurence
+			normalisationFactorNrcPolarity = normalisationFactorNrcPolarity + sbw._nrcPolarityOccurence
+			normalisationFactorNrcEmotion = normalisationFactorNrcEmotion + sbw._nrcEmotionOccurence
+			normalisationFactorBawl = normalisationFactorBawl + sbw._bawlOccurence
+			normalisationFactorCd = normalisationFactorCd + sbw._cdOccurence
+			normalisationFactorGpc = normalisationFactorGpc + sbw._gpcOccurence
+		
+		self._normalisationFactorLexcionSBWs["sentiWS"] = normalisationFactorSentiWS
+		self._normalisationFactorLexcionSBWs["nrcPolarity"] = normalisationFactorNrcPolarity
+		self._normalisationFactorLexcionSBWs["nrcEmotion"] = normalisationFactorNrcEmotion
+		self._normalisationFactorLexcionSBWs["bawl"] = normalisationFactorBawl
+		self._normalisationFactorLexcionSBWs["Cd"] = normalisationFactorCd
+		self._normalisationFactorLexcionSBWs["Gpc"] = normalisationFactorGpc
+
+
 	def calcSentimentRatio(self):
 		if self._normalisationFactorLength is 0:
 			sentimentRatio = 0
@@ -33,6 +63,19 @@ class Sentiment_Calculator:
 			sentimentRatio = float(len(self._sentimentBearingWords))/float(self._normalisationFactorLength)
 			sentimentRatioPercent = sentimentRatio*100
 			self._sentimentMetrics._sentimentRatio = sentimentRatioPercent
+
+	def calcAllSpecificSBWsNormalisedMetrics(self):
+		for lexicon, names in self._sentimentMetrics._names.items():
+			self.calcSpecificSBWsNormalisedMetrics(names, self._normalisationFactorLexcionSBWs[lexicon])
+
+	def calcSpecificSBWsNormalisedMetrics(self, names, normalisationFactor):
+		if normalisationFactor is 0:
+			for name in names:
+				self._sentimentMetrics._metricsNormalisedSBWs[name] = 0
+		else:
+			for name in names:
+				self._sentimentMetrics._metricsNormalisedSBWs[name] = \
+				float(self._sentimentMetrics._metricsTotal[name])/normalisationFactor
 
 	def calcNormalisedMetrics(self):
 		if self._normalisationFactorLength is 0:
