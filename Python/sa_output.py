@@ -14,18 +14,35 @@ from sa_sentiment_analysis import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-
-	processor = Drama_Pre_Processing("treetagger")
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Damon, oder die wahre Freundschaft.p")
 	
-	sa = Sentiment_Analyzer(True, "CombinedLexicon", "treetagger")
+	processor = Drama_Pre_Processing("treetagger")
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
+	
+	sa = Sentiment_Analyzer(True, "CombinedLexicon-DTAExtended", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("testo", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("testo2", sentimentExtendedDramaModel)
+	
+	#sog = Sentiment_Output_Generator()
+	#sog.processAndCreateTxtOutputMutlipleDramas()
 	
 
 class Sentiment_Output_Generator:
+
+	def __init__(self):
+
+		self._lpProcessors = ["treetagger", "textblob"]
+
+	def processAndCreateTxtOutputMutlipleDramas(self):
+		for processor in self._lpProcessors:
+			folder = "Dumps/ProcessedDramas/" + processor
+			for filename in os.listdir(folder):
+				dpp = Drama_Pre_Processing(processor)
+				dramaModel = dpp.readDramaModelFromDump(folder + "/" + filename)
+				sa = Sentiment_Analyzer(False, "CombinedLexicon-DTAExtended", processor)
+				sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
+				self.createTxtOutputSingleDrama("DTAExtended/tokens" + "/" + filename, sentimentExtendedDramaModel)
 
 	def createTxtOutputSingleDrama(self, name, dramaModel):
 		outputFile = open("../SentimentAnalysis/SA-Output/" + name +".txt", "w")
