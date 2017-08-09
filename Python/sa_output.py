@@ -51,7 +51,7 @@ class Sentiment_Output_Generator:
 		outputFile.write("Sentiments for entire #DRAMA: " + "\n\n")
 		dramaInformation = self.getMetrics(dramaModel)
 		outputFile.write(dramaInformation)
-
+		"""
 		for act in dramaModel._acts:
 			outputFile.write("\n\nSentiments for entire #ACT " + str(act._number) + ":\n\n")
 			actInformation = self.getMetrics(act)
@@ -93,15 +93,37 @@ class Sentiment_Output_Generator:
 
 			#sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(speaker)
 			#outputFile.write(sentimentBearingWordsInformation)
-
+		outputFile.write("\n\n#SENTIMENT-RELATION DRAMA: ")
 		for speaker in dramaModel._speakers:
 			for sentimentRelation in speaker._sentimentRelations:
 				outputFile.write("\n\n#SENTIMENT-RELATION " + speaker._name + " --> " + sentimentRelation._targetSpeaker + ":\n\n")
 				sentimentInformation = self.getMetrics(sentimentRelation)
 				outputFile.write(sentimentInformation)
 
-				sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(sentimentRelation)
-				outputFile.write(sentimentBearingWordsInformation)
+				#sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(sentimentRelation)
+				#outputFile.write(sentimentBearingWordsInformation)
+		"""
+		for act in dramaModel._acts:
+			outputFile.write("\n\n#SENTIMENT-RELATION PER ACT " + str(act._number) + ":")
+			for name in act._actSpeakers:
+				speaker = act._actSpeakers[name]
+				for sentimentRelation in speaker._sentimentRelations:
+					#print ("BOING")
+					outputFile.write("\n\n#SENTIMENT-RELATION " + speaker._name + " --> " + sentimentRelation._targetSpeaker + ":\n\n")
+					sentimentInformation = self.getMetrics(sentimentRelation)
+					outputFile.write(sentimentInformation)
+
+			for conf in act._configurations:
+				outputFile.write("\n\n#SENTIMENT-RELATION PER CONFIGURATION " + str(conf._number) + ":")
+				for name in conf._confSpeakers:
+					speaker = conf._confSpeakers[name]
+					for sentimentRelation in speaker._sentimentRelations:
+						outputFile.write("\n\n#SENTIMENT-RELATION " + speaker._name + " --> " + sentimentRelation._targetSpeaker + ":\n\n")
+						sentimentInformation = self.getMetrics(sentimentRelation)
+						outputFile.write(sentimentInformation)
+						sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(sentimentRelation)
+						outputFile.write(sentimentBearingWordsInformation)
+
 
 		outputFile.close()
 

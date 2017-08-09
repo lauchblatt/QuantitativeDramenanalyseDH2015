@@ -101,6 +101,17 @@ class Sentiment_Analyzer:
 		for speaker in dramaModel._speakers:
 			sentimentRelations = self.createSentimentRelationsForSpeaker(speaker)
 			speaker._sentimentRelations = sentimentRelations
+		for act in dramaModel._acts:
+			for name in act._actSpeakers:
+				speaker = act._actSpeakers[name]
+				sentimentRelations = self.createSentimentRelationsForSpeaker(speaker)
+				speaker._sentimentRelations = sentimentRelations
+			for conf in act._configurations:
+				for name in conf._confSpeakers:
+					speaker = conf._confSpeakers[name]
+					sentimentRelations = self.createSentimentRelationsForSpeaker(speaker)
+					speaker._sentimentRelations = sentimentRelations
+
 
 	def createSentimentRelationsForSpeaker(self, speaker):
 		originSpeaker = speaker._name

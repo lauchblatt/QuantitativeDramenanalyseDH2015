@@ -146,6 +146,7 @@ class Drama_Pre_Processing:
 			# Reset every speaker when new act starts
 			preOccuringSpeaker = ""
 			for conf in act._configurations:
+				#TODO Maybe?
 				for speech in conf._speeches:
 					speech._preOccuringSpeaker = preOccuringSpeaker
 					preOccuringSpeaker = speech._speaker
