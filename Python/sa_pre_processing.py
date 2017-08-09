@@ -15,7 +15,18 @@ def main():
 	dpp = Drama_Pre_Processing("treetagger")
 	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
 	#dpp.preProcessAndDumpAllDramas()
-	dpp.preProcess("../Lessing-Dramen/less-Damon_k.xml")
+	dpp.preProcess("../Lessing-Dramen/less-Emilia_t.xml")
+	for act in dpp._dramaModel._acts:
+		print("Akt")
+		for name in act._actSpeakers:
+			print name
+			print act._actSpeakers[name]._lengthInWords
+		
+		for conf in act._configurations:
+			print "Szene" + " " + str(conf._subsequentNumber)
+			for name in conf._confSpeakers:
+				print name
+				print conf._confSpeakers[name]._lengthInWords
 	"""
 	dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Misogyn.p")
 	for speaker in dpp._dramaModel._speakers:
@@ -122,6 +133,21 @@ class Drama_Pre_Processing:
 			for speech in speaker._speeches:
 				speakerLength = speakerLength + speech._lengthInWords
 			speaker._lengthInWords = speakerLength
+		
+		for act in self._dramaModel._acts:
+			for name in act._actSpeakers:
+				currentSpeakerActLength = 0
+				speaker = act._actSpeakers[name]
+				for speech in speaker._speeches:
+					currentSpeakerActLength = currentSpeakerActLength + speech._lengthInWords
+				speaker._lengthInWords = currentSpeakerActLength
+			for conf in act._configurations:
+				for name in conf._confSpeakers:
+					speaker = conf._confSpeakers[name] 
+					currentSpeakerConfLength = 0
+					for speech in speaker._speeches:
+						currentSpeakerConfLength = currentSpeakerConfLength + speech._lengthInWords
+					speaker._lengthInWords = currentSpeakerConfLength
 
 	def attachPreOccuringSpeakersToSpeeches(self):
 		preOccuringSpeaker = ""

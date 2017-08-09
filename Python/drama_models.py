@@ -182,6 +182,8 @@ class ActModel:
         self._sentimentMetrics = None
         self._lengthInWords = 0
 
+        self._actSpeakers = {}
+
     # returns all speeches for the act
     def get_speeches_act(self):
         speeches_in_act = []
@@ -230,7 +232,7 @@ class ConfigurationModel:
         self._lengthInWords = 0
 
         self._subsequentNumber = -1
-        self._speaker= {}
+        self._confSpeakers = {}
 
 
     # calculates speech statistics for configuration
