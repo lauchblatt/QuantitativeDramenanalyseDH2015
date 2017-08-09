@@ -18,7 +18,7 @@ def main():
 	processor = Drama_Pre_Processing("treetagger")
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
 	
-	sa = Sentiment_Analyzer(True, "CombinedLexicon-DTAExtended", "treetagger")
+	sa = Sentiment_Analyzer(True, "CombinedLexicon", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
@@ -56,10 +56,28 @@ class Sentiment_Output_Generator:
 			outputFile.write("\n\nSentiments for entire #ACT " + str(act._number) + ":\n\n")
 			actInformation = self.getMetrics(act)
 			outputFile.write(actInformation)
+			
+			outputFile.write("\n\nSentiments for #SPEAKERSPERACT: " + str(act._number) + ":")
+			for name in act._actSpeakers:
+				speaker = act._actSpeakers[name]
+				outputFile.write("\n\nSentiments for #SPEAKERPERACT " + speaker._name +"\n\n")
+				speakerInformation = self.getMetrics(speaker)
+				outputFile.write(speakerInformation)
+
 			for conf in act._configurations:
 				outputFile.write("\n\nSentiments for entire #CONFIGURATION " + str(conf._subsequentNumber) + ":\n\n")
 				confInformation = self.getMetrics(conf)
 				outputFile.write(confInformation)
+				
+				outputFile.write("\n\nSentiments for #SPEAKERSPERCONFIGURATION " + str(conf._number) + ":")
+				for name in conf._confSpeakers:
+					speaker = conf._confSpeakers[name]
+					outputFile.write("\n\nSentiments for #SPEAKERPERCONFIGURATION " + speaker._name +"\n\n")
+					speakerInformation = self.getMetrics(speaker)
+					outputFile.write(speakerInformation)
+					sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(speaker)
+					outputFile.write(sentimentBearingWordsInformation)
+
 				for speech in conf._speeches:
 					outputFile.write("\n\nSentiments for #SPEECH " + str(speech._subsequentNumber) + ":\n\n")
 					speechInformation = self.getMetrics(speech)
@@ -73,8 +91,8 @@ class Sentiment_Output_Generator:
 			speakerInformation = self.getMetrics(speaker)
 			outputFile.write(speakerInformation)
 
-			sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(speaker)
-			outputFile.write(sentimentBearingWordsInformation)
+			#sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(speaker)
+			#outputFile.write(sentimentBearingWordsInformation)
 
 		for speaker in dramaModel._speakers:
 			for sentimentRelation in speaker._sentimentRelations:

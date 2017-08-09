@@ -16,12 +16,18 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	processor = Drama_Pre_Processing()
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/Nathan der Weise.p")
+	processor = Drama_Pre_Processing("treetagger")
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Nathan der Weise.p")
 	
-	sa = Sentiment_Analyzer(True)
+	sa = Sentiment_Analyzer(True, "CombinedLexicon", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	
+	"""
+	for act in sentimentExtendedDramaModel._acts:
+		for name in act._actSpeakers:
+			speaker = act._actSpeakers[name]
+			for speech in speaker._speeches:
+				print speech._sentimentBearingWords
+	"""
 	
 class Sentiment_Analyzer:
 
@@ -84,6 +90,12 @@ class Sentiment_Analyzer:
 			self.attachSentimentMetricsToUnit(speaker)
 			print("Speaker")
 			#speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
+		for act in dramaModel._acts:
+			for name in act._actSpeakers:
+				self.attachSentimentMetricsToUnit(act._actSpeakers[name])
+			for conf in act._configurations:
+				for name in conf._confSpeakers:
+					self.attachSentimentMetricsToUnit(conf._confSpeakers[name])
 
 	def attachSentimentRelationsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
@@ -155,6 +167,22 @@ class Sentiment_Analyzer:
 			for speech in speaker._speeches:
 				sentimentBearingWordsSpeaker.extend(speech._sentimentBearingWords)
 			speaker._sentimentBearingWords = sentimentBearingWordsSpeaker
+
+		for act in dramaModel._acts:
+			for name in act._actSpeakers:
+				speaker = act._actSpeakers[name]
+				sentimentBearingWordsSpeaker = []
+				for speech in speaker._speeches:
+					sentimentBearingWordsSpeaker.extend(speech._sentimentBearingWords)
+				speaker._sentimentBearingWords = sentimentBearingWordsSpeaker
+
+			for conf in act._configurations:
+				for name in conf._confSpeakers:
+					speaker = conf._confSpeakers[name]
+					sentimentBearingWordsSpeaker = []
+					for speech in speaker._speeches:
+						sentimentBearingWordsSpeaker.extend(speech._sentimentBearingWords)
+					speaker._sentimentBearingWords = sentimentBearingWordsSpeaker
 
 	def getSentimentBearingWordsSpeech(self, textAsLanguageInfo):				
 		sentimentBearingWords = self.getSentimentBearingWords(textAsLanguageInfo)

@@ -6,6 +6,7 @@ import sys
 from drama_parser import *
 from drama_models import *
 from lp_language_processor import *
+from sa_sentiment_analysis import *
 import pickle
 
 def main():
@@ -14,19 +15,8 @@ def main():
 
 	dpp = Drama_Pre_Processing("treetagger")
 	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
-	#dpp.preProcessAndDumpAllDramas()
-	dpp.preProcess("../Lessing-Dramen/less-Emilia_t.xml")
-	for act in dpp._dramaModel._acts:
-		print("Akt")
-		for name in act._actSpeakers:
-			print name
-			print act._actSpeakers[name]._lengthInWords
-		
-		for conf in act._configurations:
-			print "Szene" + " " + str(conf._subsequentNumber)
-			for name in conf._confSpeakers:
-				print name
-				print conf._confSpeakers[name]._lengthInWords
+	dpp.preProcessAndDumpAllDramas()
+	#dpp.preProcessAndLemmatize("../Lessing-Dramen/less-Emilia_t.xml")
 	"""
 	dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Misogyn.p")
 	for speaker in dpp._dramaModel._speakers:
