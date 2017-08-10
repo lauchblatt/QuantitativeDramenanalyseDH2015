@@ -37,8 +37,15 @@ class Sentiment_Output_Generator:
 
 	def generateJSONFromDrama (self, outputFile, dramaModel):
 		output = open(outputFile, "w")
-		print dramaModel._sentimentMetrics._metricsTotal
-		jsonData = json.dumps(dramaModel._sentimentMetrics._metricsTotal, indent=2)
+		dramaData = OrderedDict([])
+		dramaData['title'] = dramaModel._title
+		dramaData['author'] = dramaModel._author
+		dramaData['date'] = dramaModel._date
+		dramaData['type'] = dramaModel._type
+		dramaData['lengthInWords'] = dramaModel._lengthInWords
+		dramaData['lengthSentimentBearingWords'] = len(dramaModel._sentimentBearingWords)
+		dramaData['sentimentMetricsBasic'] = dramaModel._sentimentMetrics.returnAllBasicMetricsLists()
+		jsonData = json.dumps(dramaData, indent=2)
 		output.write(jsonData)
 		output.close()
 
