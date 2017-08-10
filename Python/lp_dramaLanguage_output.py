@@ -13,9 +13,14 @@ def main():
 
 	dlOutput = DramaLanguage_Output()
 	dlOutput.setLanguageProcessor("treetagger")
-	#dlOutput.processEntireCorpusAndGenereateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
+	dlOutput.test()
 
-	dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test6")
+	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/")
+	#dlOutput.processEntireCorpusAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/EntireCorpus2.txt")
+
+	#dlOutput.processEntireCorpusAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
+
+	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test6")
 	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
 	#dlOutput = DramaLanguage_Output()
 	#dlOutput.generateOutputForAllDramas()
@@ -112,15 +117,15 @@ class DramaLanguage_Output:
 	def generateEntireCorpusOutput(self):
 		originpath = "../Lessing-Dramen/"
 		self.setLanguageProcessor("treetagger")
-		self.processEntireCorpusAndGenereateOutputTokens(originpath, "../Word-Frequencies/Tokens/treetagger/EntireCorpus.txt")
-		self.processEntireCorpusAndGenereateOutputLemmas(originpath, "../Word-Frequencies/Lemmas/treetagger/EntireCorpus.txt")
+		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/Tokens/treetagger/EntireCorpus.txt")
+		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/Lemmas/treetagger/EntireCorpus.txt")
 
 		self.setLanguageProcessor("textblob")
-		self.processEntireCorpusAndGenereateOutputTokens(originpath, "../Word-Frequencies/Tokens/textblob/EntireCorpus.txt")
-		self.processEntireCorpusAndGenereateOutputLemmas(originpath, "../Word-Frequencies/Lemmas/textblob/EntireCorpus.txt")
+		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/Tokens/textblob/EntireCorpus.txt")
+		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/Lemmas/textblob/EntireCorpus.txt")
 
 
-	def processEntireCorpusAndGenereateOutputTokens(self, originpath, outputPath):
+	def processEntireCorpusAndGenerateOutputTokens(self, originpath, outputPath):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextTokens(totalText)
 		self._lp.removeStopwordsFromTokens()
@@ -134,7 +139,7 @@ class DramaLanguage_Output:
 		outputFile.close()
 		print("Output ready...")
 
-	def processEntireCorpusAndGenereateOutputLemmas(self, originpath, outputPath):
+	def processEntireCorpusAndGenerateOutputLemmas(self, originpath, outputPath):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextFully(totalText)
 		self._lp.removeStopWordsFromLemmas()
@@ -167,6 +172,11 @@ class DramaLanguage_Output:
 		fdist = FreqDist(wordList)
 		frequencies = fdist.most_common()
 		return frequencies
+
+	def writeStopwordsLowerAndUpper(self):
+		inputFile = open("new_stopwords.txt")
+		for line in inputFile:
+			inputFile.write(line)
 
 if __name__ == "__main__":
     main()

@@ -15,11 +15,17 @@ def main():
 
 	bawl = Bawl()
 	#bawl.createSentimentDictFileBawlLemmas("treetagger")
-	#bawl.readAndInitBawlAndLemmas("treetagger")
+	bawl.readAndInitBawlAndLemmas("treetagger")
 	#bawl.createExtendedOutputDTA()
 	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
-	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("SentiWS-DTAExtended", "treetagger")
+
+	LP = Language_Processor("treetagger")
+	lp = LP._processor
+	lp.initStopWords()
+	stopWordsInLexicon = [word for word in lp._stopwords \
+	 if (word in bawl._sentimentDict or (word[:1].upper() + word[1:]) in bawl._sentimentDict)]
+	print (len(lp._stopwords))
+	print stopWordsInLexicon
 
 	print(len(bawl._sentimentDict))
 	print(len(bawl._sentimentDictLemmas))

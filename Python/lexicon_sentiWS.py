@@ -14,11 +14,20 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	sentiWs = Senti_WS()
+	sentiWs.readAndInitSentiWSAndLemmas("treetagger")
 	#sentiWs.createSentimentDictFileSentiWSLemmas("treetagger")
 	#sentiWs.createExtendedOutputDTA()
-	bawl = Bawl()
 	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
 	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
+	LP = Language_Processor("treetagger")
+	lp = LP._processor
+	lp.initStopWords()
+	stopWordsInLexicon = [word for word in lp._stopwords \
+	 if (word in sentiWs._sentimentDict or (word[:1].upper() + word[1:]) in sentiWs._sentimentDict)]
+	print (len(lp._stopwords))
+	print stopWordsInLexicon
+	for word in stopWordsInLexicon:
+		print word
 
 class Senti_WS:
 

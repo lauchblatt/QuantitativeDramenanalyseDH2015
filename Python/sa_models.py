@@ -40,7 +40,7 @@ class Sentiment_Metrics:
 	
 	def __init__(self):
 		self._metricsTotal = OrderedDict([])
-		self._metricsNormalised = OrderedDict([])
+		self._metricsNormalisedLengthInWords = OrderedDict([])
 		self._metricsNormalisedSBWs = OrderedDict([])
 		
 		self._names = OrderedDict([])
@@ -108,6 +108,13 @@ class Sentiment_Metrics:
 		self._metricsTotal["negativeCombined"] = 0
 		self._names["Combined"] = ["positiveCombined", "negativeCombined"]
 
+	def returnAllBasicMetricsLists(self):
+		self._metricsTotal = OrderedDict([])
+		self._metricsNormalisedLengthInWords = OrderedDict([])
+		self._metricsNormalisedSBWs = OrderedDict([])
+		basicMetrics = OrderedDict([])
+		basicMetrics["metricsTotal"] = self._metricsTotal
+		basicMetrics["metricsNormalised"] = self._metricsNormalisedLengthInWords
 
 	def printAllInfo(self, lengthInWords):
 		print("Total Values: ")
@@ -118,7 +125,7 @@ class Sentiment_Metrics:
 
 		print("Normalised Values: ")
 		print("Length in Words: " + str(lengthInWords))
-		for metric,value in self._metricsNormalised.items():
+		for metric,value in self._metricsNormalisedLengthInWords.items():
 			item = metric + ": " + str(value)
 			print item,
 		print("\n")

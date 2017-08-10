@@ -13,7 +13,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
-	gpc.createExtendedOutputDTA()
+	gpc.readAndInitGPCAndLemmas("treetagger")
 	#gpc.resetAllFiles()
 	#gpc.createSentimentDictFileGPCToken()
 	#gpc.createSentimentDictFileGPCLemmas("treetagger")
@@ -24,6 +24,15 @@ def main():
 	print(len(gpc._sentimentDict))
 	print(len(gpc._sentimentDictLemmas))
 	"""
+	LP = Language_Processor("treetagger")
+	lp = LP._processor
+	lp.initStopWords()
+	stopWordsInLexicon = [word for word in lp._stopwords \
+	 if (word in gpc._sentimentDict or (word[:1].upper() + word[1:]) in gpc._sentimentDict)]
+	print (len(lp._stopwords))
+	print stopWordsInLexicon
+	for word in stopWordsInLexicon:
+		print word
 
 class German_Polarity_Clues:
 	def __init__(self):

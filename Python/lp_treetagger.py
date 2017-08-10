@@ -179,7 +179,7 @@ class Tree_Tagger:
 		return newText
 
 	def initStopWords(self):
-		stopwords_text = open("stopwords_german.txt")
+		stopwords_text = open("new_stopwords.txt")
 		for line in stopwords_text:
 			stopword = unicode(line.strip())
 			self._stopwords.append(stopword)

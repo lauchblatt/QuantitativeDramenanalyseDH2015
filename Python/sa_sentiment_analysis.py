@@ -21,13 +21,6 @@ def main():
 	
 	sa = Sentiment_Analyzer(True, "CombinedLexicon", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	"""
-	for act in sentimentExtendedDramaModel._acts:
-		for name in act._actSpeakers:
-			speaker = act._actSpeakers[name]
-			for speech in speaker._speeches:
-				print speech._sentimentBearingWords
-	"""
 	
 class Sentiment_Analyzer:
 

@@ -83,11 +83,11 @@ class Sentiment_Calculator:
 	def calcNormalisedMetrics(self):
 		if self._normalisationFactorLength is 0:
 			for metric in self._sentimentMetrics._metricsTotal:
-				self._sentimentMetrics._metricsNormalised[metric] = 0
+				self._sentimentMetrics._metricsNormalisedLengthInWords[metric] = 0
 		else:
 			for metric in self._sentimentMetrics._metricsTotal:
 				metricTotal = self._sentimentMetrics._metricsTotal[metric]
-				self._sentimentMetrics._metricsNormalised[metric] = float(metricTotal)/self._normalisationFactorLength
+				self._sentimentMetrics._metricsNormalisedLengthInWords[metric] = float(metricTotal)/self._normalisationFactorLength
 
 	def calcTotalMetrics(self):
 

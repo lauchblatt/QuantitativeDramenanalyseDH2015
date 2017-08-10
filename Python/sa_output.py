@@ -22,7 +22,8 @@ def main():
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("testo2", sentimentExtendedDramaModel)
+	sog.generateJSONFromDrama("../SentimentAnalysis/json-test.json", sentimentExtendedDramaModel)
+	#sog.createTxtOutputSingleDrama("testo2", sentimentExtendedDramaModel)
 	
 	#sog = Sentiment_Output_Generator()
 	#sog.processAndCreateTxtOutputMutlipleDramas()
@@ -33,6 +34,13 @@ class Sentiment_Output_Generator:
 	def __init__(self):
 
 		self._lpProcessors = ["treetagger", "textblob"]
+
+	def generateJSONFromDrama (self, outputFile, dramaModel):
+		output = open(outputFile, "w")
+		print dramaModel._sentimentMetrics._metricsTotal
+		jsonData = json.dumps(dramaModel._sentimentMetrics._metricsTotal, indent=2)
+		output.write(jsonData)
+		output.close()
 
 	def processAndCreateTxtOutputMutlipleDramas(self):
 		for processor in self._lpProcessors:
@@ -51,7 +59,7 @@ class Sentiment_Output_Generator:
 		outputFile.write("Sentiments for entire #DRAMA: " + "\n\n")
 		dramaInformation = self.getMetrics(dramaModel)
 		outputFile.write(dramaInformation)
-		"""
+		#"""
 		for act in dramaModel._acts:
 			outputFile.write("\n\nSentiments for entire #ACT " + str(act._number) + ":\n\n")
 			actInformation = self.getMetrics(act)
@@ -102,7 +110,7 @@ class Sentiment_Output_Generator:
 
 				#sentimentBearingWordsInformation = self.getSentimentBearingWordsInformation(sentimentRelation)
 				#outputFile.write(sentimentBearingWordsInformation)
-		"""
+		#"""
 		for act in dramaModel._acts:
 			outputFile.write("\n\n#SENTIMENT-RELATION PER ACT " + str(act._number) + ":")
 			for name in act._actSpeakers:
@@ -141,8 +149,8 @@ class Sentiment_Output_Generator:
 			info = info + metricValuePair +"\n"
 		
 		info = info + "\n" + "Normalised Values: " + "\n"
-		for metric in unit._sentimentMetrics._metricsNormalised:
-			metricValuePair = metric + ": " + str(unit._sentimentMetrics._metricsNormalised[metric])
+		for metric in unit._sentimentMetrics._metricsNormalisedLengthInWords:
+			metricValuePair = metric + ": " + str(unit._sentimentMetrics._metricsNormalisedLengthInWords[metric])
 			info = info + metricValuePair + "\n"
 
 		info = info + "\n" + "Normalised by Length of Sentiment Bearing Words Values: " + "\n"

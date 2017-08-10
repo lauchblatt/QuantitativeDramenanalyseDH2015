@@ -13,16 +13,25 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	nrc = NRC()
-	nrc.resetAllFiles()
+	#nrc.resetAllFiles()
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
 	#nrc.createExtendedOutputDTA()
-	#nrc.readAndInitNRCAndLemmas("treetagger")
+	nrc.readAndInitNRCAndLemmas("treetagger")
 	"""
 	for word in nrc._sentimentDict:
 		sentiments = nrc._sentimentDict[word]
 		if(sentiments["negative"] == 1):
 			print word
 	"""
+	LP = Language_Processor("treetagger")
+	lp = LP._processor
+	lp.initStopWords()
+	stopWordsInLexicon = [word for word in lp._stopwords \
+	 if (word in nrc._sentimentDict or (word[:1].upper() + word[1:]) in nrc._sentimentDict)]
+	print (len(lp._stopwords))
+	print stopWordsInLexicon
+	for word in stopWordsInLexicon:
+		print word
 
 class NRC:
 

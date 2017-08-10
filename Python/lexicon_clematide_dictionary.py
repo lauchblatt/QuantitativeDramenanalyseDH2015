@@ -12,7 +12,15 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	cd = CD()
-	cd.createExtendedOutputDTA()
+	cd.readAndInitCDAndLemmas("treetagger")
+
+	LP = Language_Processor("treetagger")
+	lp = LP._processor
+	lp.initStopWords()
+	stopWordsInLexicon = [word for word in lp._stopwords \
+	 if (word in cd._sentimentDict or (word[:1].upper() + word[1:]) in cd._sentimentDict)]
+	print (len(lp._stopwords))
+	print stopWordsInLexicon
 
 
 class CD:

@@ -12,6 +12,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	lp = Language_Processor("treetagger")
+	lp.initStopWords()
 
 class Language_Processor:
 
