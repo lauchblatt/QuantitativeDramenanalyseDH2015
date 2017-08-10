@@ -45,9 +45,42 @@ class Sentiment_Output_Generator:
 		dramaData['lengthInWords'] = dramaModel._lengthInWords
 		dramaData['lengthSentimentBearingWords'] = len(dramaModel._sentimentBearingWords)
 		dramaData['sentimentMetricsBasic'] = dramaModel._sentimentMetrics.returnAllBasicMetricsLists()
+		
+		dramaData['speakers'] = self.getSentimentInfoFromSpeakers(dramaModel._speakers)
+
+		dramaData['acts'] = self.getSentimentInfoFromActs(dramaModel)
 		jsonData = json.dumps(dramaData, indent=2)
 		output.write(jsonData)
 		output.close()
+
+	def getSentimentInfoFromActs(self, dramaModel):
+		actsData = []
+		for act in dramaModel._acts:
+			actData = OrderedDict({})
+			actData['number'] = act._number
+			actData['numberOfSpeeches'] = len(act.get_speeches_act())
+			actData['lengthInWords'] = act._lengthInWords
+			actData['appearing_speakers'] = act._appearing_speakers
+			actData['lengthSentimentBearingWords'] = len(act._sentimentBearingWords)
+			actData['sentimentMetricsBasic'] = act._sentimentMetrics.returnAllBasicMetricsLists()
+
+			actData['speakers'] = self.getSentimentInfoFromSpeakers(act._actSpeakers.values())
+			actsData.append(actData)
+		return actsData
+
+	def getSentimentInfoFromSpeakers(self, speakers):
+		speakersData = []
+		for speaker in speakers:
+			speakerData = OrderedDict({})
+			speakerData['name'] = speaker._name
+			speakerData['numberOfSpeeches'] = len(speaker._speeches)
+			speakerData['lengthInWords'] = speaker._lengthInWords
+			speakerData['lengthSentimentBearingWords'] = len(speaker._sentimentBearingWords)
+			speakerData['sentimentMetricsBasic'] = speaker._sentimentMetrics.returnAllBasicMetricsLists()
+			speakersData.append(speakerData)
+
+		return speakersData
+
 
 	def processAndCreateTxtOutputMutlipleDramas(self):
 		for processor in self._lpProcessors:
