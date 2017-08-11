@@ -60,11 +60,15 @@ class Sentiment_Output_Generator:
 			actData['number'] = act._number
 			actData['numberOfSpeeches'] = len(act.get_speeches_act())
 			actData['lengthInWords'] = act._lengthInWords
-			actData['appearing_speakers'] = act._appearing_speakers
+			actData['appearingSpeakers'] = act._appearing_speakers
 			actData['lengthSentimentBearingWords'] = len(act._sentimentBearingWords)
 			actData['sentimentMetricsBasic'] = act._sentimentMetrics.returnAllBasicMetricsLists()
 
 			actData['speakers'] = self.getSentimentInfoFromSpeakers(act._actSpeakers.values())
+			configurationsData = []
+			for conf in act._configurations:
+				configurationsData.append(self.getSentimentInfoFromConf(act._configurations))
+			actData['configurations'] = configurationsData
 			actsData.append(actData)
 		return actsData
 
@@ -77,9 +81,39 @@ class Sentiment_Output_Generator:
 			speakerData['lengthInWords'] = speaker._lengthInWords
 			speakerData['lengthSentimentBearingWords'] = len(speaker._sentimentBearingWords)
 			speakerData['sentimentMetricsBasic'] = speaker._sentimentMetrics.returnAllBasicMetricsLists()
+			speakerData['sentimentRelations'] = self.getSentimentRelationsInfo(speaker)
 			speakersData.append(speakerData)
 
 		return speakersData
+
+	def getSentimentRelationsInfo(self, speaker):
+		srsData = []
+		for sr in speaker._sentimentRelations:
+			srData = OrderedDict({})
+			srData["originSpeaker"] = sr._originSpeaker
+			srData['targetSpeaker'] = sr._targetSpeaker
+			srData['numberOfSpeeches'] = len(sr._speeches)
+			srData['lengthInWords'] = sr._lengthInWords
+			srData['lengthSentimentBearingWords'] = len(sr._sentimentBearingWords)
+			srData['sentimentMetricsBasic'] = sr._sentimentMetrics.returnAllBasicMetricsLists()
+			srsData.append(srData)
+		return srsData
+
+	def getSentimentInfoFromConf(self, confs):
+		confsData = []
+		for conf in confs:
+			confData = OrderedDict({})
+			confData['number'] = conf._number
+			confData['subsequentNumber'] = conf._subsequentNumber
+			confData['numberOfSpeeches'] = len(conf._speeches)
+			confData['lengthInWords'] = conf._lengthInWords
+			confData['appearingSpeakers'] = conf._appearing_speakers
+			confData['lengthSentimentBearingWords'] = len(conf._sentimentBearingWords)
+			confData['sentimentMetricsBasic'] = conf._sentimentMetrics.returnAllBasicMetricsLists()
+			confData['speakers'] = self.getSentimentInfoFromSpeakers(conf._confSpeakers.values())
+			confsData.append(confData)
+		
+		return confsData
 
 
 	def processAndCreateTxtOutputMutlipleDramas(self):
