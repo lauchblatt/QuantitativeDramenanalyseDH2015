@@ -19,7 +19,7 @@ def main():
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	evaluation.evaluateLexicon("CombinedLexicon-DTAExtended")
+	evaluation.evaluateLexicon("CD")
 	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
@@ -67,11 +67,12 @@ class Evaluation_LexiconVsVocabulary:
 			for lexicon in lexicons:
 				print processor + " " + lexicon
 				#First evaluation against token-vocs
-				self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
+				resultsVsTokens = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
 					, lexicon, processor)
 				# then evaluation against lemmma-vocs
-				self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/" + processor + "/" \
+				resultsVsLemmas = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/" + processor + "/" \
 					, lexicon, processor)
+				
 
 	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName, processor):
 		for filename in os.listdir(vocFolder):
@@ -86,11 +87,17 @@ class Evaluation_LexiconVsVocabulary:
 
 			outputPathTokens = outputPath + crossFolder1 + name1 + ".txt"
 			outputPathLemmas = outputPath + crossFolder2 + name2 + ".txt"
-			
+			outputPathFolderTokens = outputPath + crossFolder1
+			outputPathFolderLemmas = outputPath + crossFolder2
+
 			self.writeResultOutput(outputPathTokens, results[0])
 			self.writeResultOutput(outputPathLemmas, results[1])
 
+			return (results[0], results[1])
 
+	def writeResultTable(self, outputFolder, results):
+		for result in results
+	
 	def evaluateLexiconTokensAndLemmasVsVocabulary(self):
 		results = []
 		results.append(self.evaluateLexiconTokensVsVocabulary())
@@ -176,6 +183,7 @@ class Evaluation_LexiconVsVocabulary:
 
 	
 	def writeResultOutput(self, path, result):
+		
 		outputFile = open(path, 'w')
 
 		outputFile.write(result._nameOfLexicon + " " + result._lemmasOrTokens + " IN " \

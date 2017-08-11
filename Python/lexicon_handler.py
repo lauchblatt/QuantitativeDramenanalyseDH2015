@@ -129,6 +129,8 @@ class Lexicon_Handler:
 			version = "DTAExtendedCombination"
 		else:
 			version = "SimpleCombination"
+		print version
+		print processor
 		print version + " " + processor
 		keys = self.readAndReturnLexiconKeyDumps(processor, version)
 		lexiconKeysTokens = keys[0]
