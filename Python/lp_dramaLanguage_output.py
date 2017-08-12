@@ -13,18 +13,18 @@ def main():
 
 	dlOutput = DramaLanguage_Output()
 	dlOutput.setLanguageProcessor("treetagger")
-	dlOutput.test()
+	#dlOutput.test()
 
-	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/")
-	#dlOutput.processEntireCorpusAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/EntireCorpus2.txt")
+	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/", False)
+	dlOutput.processEntireCorpusAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/EntireCorpus-withoutStopwords-noFrequNumbers1.txt", False)
 
 	#dlOutput.processEntireCorpusAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
 
 	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test6")
 	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
 	#dlOutput = DramaLanguage_Output()
-	#dlOutput.generateOutputForAllDramas()
-	#dlOutput.generateEntireCorpusOutput()
+	#dlOutput.generateOutputForAllDramas(True)
+	#dlOutput.generateEntireCorpusOutput(True)
 
 class DramaLanguage_Output:
 
@@ -37,53 +37,70 @@ class DramaLanguage_Output:
 		lp = Language_Processor(processor)
 		self._lp = lp._processor
 
-	def generateOutputForEverything(self):
-		self.generateOutputForAllDramas()
-		self.generateEntireCorpusOutput()
+	def generateOutputForEverything(self, withStopwords):
+		self.generateOutputForAllDramas(withStopwords)
+		self.generateEntireCorpusOutput(withStopwords)
 
-	def generateOutputForAllDramas(self):
+	def generateOutputForAllDramas(self, withStopwords):
 		processors = ["treetagger", "textblob"]
 		for processor in processors:
+			inBetweenFolder = ""
+			if(withStopwords):
+				inBetweenFolder = "WithStopwords"
+			else:
+				inBetweenFolder = "WithoutStopwords"
 			self.setLanguageProcessor(processor)
-			self.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/Tokens/" + processor + "/")
-			self.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/" + processor + "/")
+			self.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/" + inBetweenFolder + "/Tokens/" + processor + "/", withStopwords)
+			self.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/" + inBetweenFolder + "/Lemmas/" + processor + "/", withStopwords)
 
-	def generateWordFrequenciesOutputTokens(self, inputPath, outputPath):
+	def generateWordFrequenciesOutputTokens(self, inputPath, outputPath, withStopwords):
 		self._lp.processSingleDramaTokens(inputPath)
-		self._lp.removeStopwordsFromTokens()
-		wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
+		tokens = []
+		if(withStopwords):
+			wordFrequencies = self.calcWordFrequencies(self._lp._tokens)
+			tokens = self._lp._tokens
+		else:
+			self._lp.removeStopwordsFromTokens()
+			wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
+			tokens = self._lp._tokensWithoutStopwords
 
 		outputFile = open(outputPath + ".txt", "w")
-		self.writeOutputTokens(outputFile, wordFrequencies)
+		self.writeOutputTokens(outputFile, wordFrequencies, tokens)
 		
 		outputFile.close()
 		print("Output ready...")
 
-	def writeOutputTokens(self, outputFile, wordFrequencies):
+	def writeOutputTokens(self, outputFile, wordFrequencies, tokens):
 		outputFile.write("Title: " + self._lp._currentDramaName + "\n")
-		outputFile.write("Number of all tokens: " + str(len(self._lp._tokensWithoutStopwords)) + "\n")
+		outputFile.write("Number of all tokens: " + str(len(tokens)) + "\n")
 		outputFile.write("Nummber of different tokens: " + str(len(wordFrequencies)) + "\n\n")
 
 		outputFile.write("Token" +"\t" + "Frequency" + "\n")
 		for frequ in wordFrequencies:
 			token = frequ[0]
+			#outputFile.write(token + "\n")
 			outputFile.write(token + "\t" + str(frequ[1]) + "\n")
 		return outputFile
 
-	def generateWordFrequenciesOutputLemmas(self, inputPath, outputPath):
+	def generateWordFrequenciesOutputLemmas(self, inputPath, outputPath, withStopwords):
 		self._lp.processSingleDrama(inputPath)
-		self._lp.removeStopWordsFromLemmas()
+		lemmas = []
+		if(withStopwords):
+			wordFrequencies = self.calcWordFrequencies(self._lp._lemmas)
+			lemmas = self._lp._lemmas
+		else:
+			self._lp.removeStopWordsFromLemmas()
+			wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
+			lemmas = self._lp._lemmasWithoutStopwords
+
 		outputFile = open(outputPath + ".txt", "w")
-		print len(self._lp._lemmas)
-		print len(self._lp._lemmasWithoutStopwords)
-		wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
-		self.writeOutputLemmas(outputFile, wordFrequencies)
+		self.writeOutputLemmas(outputFile, wordFrequencies, lemmas)
 		outputFile.close()
 		print("Output ready...")
 
-	def writeOutputLemmas(self, outputFile, wordFrequencies):
+	def writeOutputLemmas(self, outputFile, wordFrequencies, lemmas):
 		outputFile.write("Title: " + self._lp._currentDramaName + "\n") 
-		outputFile.write("Number of all lemmas: " + str(len(self._lp._lemmasWithoutStopwords)) + "\n")
+		outputFile.write("Number of all lemmas: " + str(len(lemmas)) + "\n")
 		outputFile.write("Nummber of different lemmas: " + str(len(wordFrequencies)) + "\n\n")
 
 		outputFile.write("Lemma" + "\t" + "POS" + "\t" + "Frequency" + "\t" + "Tokens" +"\n")
@@ -94,7 +111,7 @@ class DramaLanguage_Output:
 			outputFile.write(str(lemma) + "\t" + ', '.join(POS) + "\t" + str(frequ[1]) + "\t" + ', '.join(tokens) + "\n")
 		return outputFile
 
-	def processMultipleDramasAndGenerateOutputTokens(self, originpath, resultpath):
+	def processMultipleDramasAndGenerateOutputTokens(self, originpath, resultpath, withStopwords):
 		parser = DramaParser()
 
 		for filename in os.listdir(originpath):
@@ -102,9 +119,9 @@ class DramaLanguage_Output:
 			dramaModel = parser.parse_xml(originpath + filename)
 			print("DramaModel ready...")
 			title = dramaModel._title
-			self.generateWordFrequenciesOutputTokens(originpath + filename, resultpath + title)
+			self.generateWordFrequenciesOutputTokens(originpath + filename, resultpath + title, withStopwords)
 
-	def processMultipleDramasAndGenerateOutputLemmas(self, originpath, resultpath):
+	def processMultipleDramasAndGenerateOutputLemmas(self, originpath, resultpath, withStopwords):
 		parser = DramaParser()
 
 		for filename in os.listdir(originpath):
@@ -112,44 +129,59 @@ class DramaLanguage_Output:
 			dramaModel = parser.parse_xml(originpath + filename)
 			print("DramaModel ready...")
 			title = dramaModel._title
-			self.generateWordFrequenciesOutputLemmas(originpath + filename, resultpath + title)
+			self.generateWordFrequenciesOutputLemmas(originpath + filename, resultpath + title, withStopwords)
 
-	def generateEntireCorpusOutput(self):
+	def generateEntireCorpusOutput(self, withStopwords):
 		originpath = "../Lessing-Dramen/"
+		inBetweenFolder = ""
+		if(withStopwords):
+			inBetweenFolder = "WithStopwords"
+		else:
+			inBetweenFolder = "WithoutStopwords"
 		self.setLanguageProcessor("treetagger")
-		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/Tokens/treetagger/EntireCorpus.txt")
-		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/Lemmas/treetagger/EntireCorpus.txt")
+		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Tokens/treetagger/EntireCorpus.txt", withStopwords)
+		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Lemmas/treetagger/EntireCorpus.txt", withStopwords)
 
 		self.setLanguageProcessor("textblob")
-		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/Tokens/textblob/EntireCorpus.txt")
-		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/Lemmas/textblob/EntireCorpus.txt")
+		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Tokens/textblob/EntireCorpus.txt", withStopwords)
+		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Lemmas/textblob/EntireCorpus.txt", withStopwords)
 
 
-	def processEntireCorpusAndGenerateOutputTokens(self, originpath, outputPath):
+	def processEntireCorpusAndGenerateOutputTokens(self, originpath, outputPath, withStopwords):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextTokens(totalText)
-		self._lp.removeStopwordsFromTokens()
+		tokens = []
+		
 		self._lp._currentDramaName = "EntireCorpus-Tokens"
-
-		wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
+		if(withStopwords):
+			wordFrequencies = self.calcWordFrequencies(self._lp._tokens)
+			tokens = self._lp._tokens
+		else:
+			self._lp.removeStopwordsFromTokens()
+			wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
+			tokens = self._lp._tokensWithoutStopwords
 
 		outputFile = open(outputPath, "w")
-		self.writeOutputTokens(outputFile, wordFrequencies)
+		self.writeOutputTokens(outputFile, wordFrequencies, tokens)
 		
 		outputFile.close()
 		print("Output ready...")
 
-	def processEntireCorpusAndGenerateOutputLemmas(self, originpath, outputPath):
+	def processEntireCorpusAndGenerateOutputLemmas(self, originpath, outputPath, withStopwords):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextFully(totalText)
-		self._lp.removeStopWordsFromLemmas()
-
 		self._lp._currentDramaName = "EntireCorpus-Lemmas"
-
-		wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
+		lemmas = []
+		if(withStopwords):
+			wordFrequencies = self.calcWordFrequencies(self._lp._lemmas)
+			lemmas = self._lp._lemmas
+		else:
+			self._lp.removeStopWordsFromLemmas()
+			wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
+			lemmas = self._lp._lemmasWithoutStopwords
 
 		outputFile = open(outputPath, "w")
-		self.writeOutputLemmas(outputFile, wordFrequencies)
+		self.writeOutputLemmas(outputFile, wordFrequencies, lemmas)
 		
 		outputFile.close()
 		print("Output ready...")

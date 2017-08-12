@@ -19,17 +19,20 @@ def main():
 	processor = Drama_Pre_Processing("treetagger")
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Nathan der Weise.p")
 	
-	sa = Sentiment_Analyzer(True, "CombinedLexicon", "treetagger")
+	sa = Sentiment_Analyzer(True, False, "CombinedLexicon", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	
 class Sentiment_Analyzer:
 
-	def __init__(self, lemmaModeOn, lexicon, processor):
+	def __init__(self, removeStopwords, lemmaModeOn, lexicon, processor):
 
 		self._sentimentDict = {}
 		self._lemmaModeOn = lemmaModeOn
+		self._removeStopwords = removeStopwords
+		self._stopwords = []
 
 		self.initLexicons(lexicon, processor)
+		self.initStopWords(processor)
 	
 	def attachAllSentimentInfoToDrama(self, dramaModel):
 		self.attachSentimentBearingWordsToDrama(dramaModel)
@@ -37,6 +40,19 @@ class Sentiment_Analyzer:
 		self.attachSentimentMetricsToSpeaker(dramaModel)
 		self.attachSentimentRelationsToSpeaker(dramaModel)
 		return dramaModel
+
+	def initStopWords(self, processor):
+		if(self._removeStopwords):
+			lp = Language_Processor(processor)
+			lp.setProcessor(processor)
+
+			lp._processor.initStopWords()
+			if(self._lemmaModeOn):
+				self._stopwords = lp._processor._stopwords_lemmatized
+			else:
+				self._stopwords = lp._processor._stopwords
+		else:
+			self._stopwords = []
 
 	def initLexicons(self, lexicon, processor):
 		
@@ -222,16 +238,21 @@ class Sentiment_Analyzer:
 			else:
 				word = languageInfo[1][0]
 			
-			if (self.isSentimentBearingWord(word)):
+			if (self.isSentimentBearingWordAndNotStopword(word)):
 				sentimentBearingWord = self.getSentimentBearingWord(languageInfo, word)
 				sentimentBearingWords.append(sentimentBearingWord)
 
 		return sentimentBearingWords
 
-	def isSentimentBearingWord(self, word):
+	def isSentimentBearingWordAndNotStopword(self, word):
+		if(word == "der"):
+			print (word in self._stopwords)
+		if(word in self._stopwords):
+			return False
 		upperWord = word[:1].upper() + word[1:]
 		lowerWord = word.lower()
 
+		# Groß- und Kleinschreibung sinnvoll?
 		if(upperWord in self._sentimentDict or lowerWord in self._sentimentDict):
 			return True
 		else:

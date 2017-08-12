@@ -27,8 +27,8 @@ def main():
 	LP = Language_Processor("treetagger")
 	lp = LP._processor
 	lp.initStopWords()
-	stopWordsInLexicon = [word for word in lp._stopwords \
-	 if (word in gpc._sentimentDict or (word[:1].upper() + word[1:]) in gpc._sentimentDict)]
+	stopWordsInLexicon = [word for word in gpc._sentimentDict \
+	 if (word in lp._stopwords)]
 	print (len(lp._stopwords))
 	print stopWordsInLexicon
 	for word in stopWordsInLexicon:

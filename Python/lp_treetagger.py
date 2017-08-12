@@ -17,7 +17,8 @@ def main():
 	text = "Das ist ein schöner Tag. Das ist ein großer, aber schwerer Erfolg"
 	text = "Hund"
 	tt = Tree_Tagger()
-	tt.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
+	tt.initStopWords()
+	#tt.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
 	#tt.processTextFully(text)
 
 
@@ -179,7 +180,8 @@ class Tree_Tagger:
 		return newText
 
 	def initStopWords(self):
-		stopwords_text = open("new_stopwords.txt")
+		stopwords_text = open("../Stopwords/stopwords_solr_enhanced_upperAndTitle.txt")
+		noStopwords = open("../Stopwords/noStopwords_enhanced.txt")
 		for line in stopwords_text:
 			stopword = unicode(line.strip())
 			self._stopwords.append(stopword)
@@ -187,7 +189,6 @@ class Tree_Tagger:
 			tags = tagsTabSeperated[0].split("\t")
 			stopword_lemmatized = tags[2]
 			#print stopword_lemmatized
-
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
 	def removeStopWordsFromLemmas(self):
@@ -201,7 +202,7 @@ class Tree_Tagger:
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 
 	def removeStopwordsFromLemmasList(self, wordList):
-		newList = [word for word in wordList if not (word.lower() in self._stopwords_lemmatized or word.title() in self._stopwords_lemmatized)]
+		newList = [word for word in wordList if not (word in self._stopwords_lemmatized)]
 		return newList
 		"""
 		for stopword in self._stopwords_lemmatized:
@@ -213,7 +214,7 @@ class Tree_Tagger:
 		"""
 
 	def removeStopwordsFromTokensList(self, wordList):
-		newList = [word for word in wordList if not (word.lower() in self._stopwords or word.title() in self._stopwords)]
+		newList = [word for word in wordList if not (word in self._stopwords)]
 		return newList
 		
 		"""

@@ -22,10 +22,12 @@ def main():
 	LP = Language_Processor("treetagger")
 	lp = LP._processor
 	lp.initStopWords()
-	stopWordsInLexicon = [word for word in lp._stopwords \
-	 if (word in bawl._sentimentDict or (word[:1].upper() + word[1:]) in bawl._sentimentDict)]
+	stopWordsInLexicon = [word for word in bawl._sentimentDict \
+	 if (word in lp._stopwords)]
 	print (len(lp._stopwords))
 	print stopWordsInLexicon
+	for word in stopWordsInLexicon:
+		print word
 
 	print(len(bawl._sentimentDict))
 	print(len(bawl._sentimentDictLemmas))

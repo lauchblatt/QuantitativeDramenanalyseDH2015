@@ -18,8 +18,9 @@ def main():
 	lp = LP._processor
 	lp.initStopWords()
 	stopWordsInLexicon = [word for word in lp._stopwords \
-	 if (word in cd._sentimentDict or (word[:1].upper() + word[1:]) in cd._sentimentDict)]
-	print (len(lp._stopwords))
+	 if (word in cd._sentimentDict)]
+	for word in stopWordsInLexicon:
+		print word
 	print stopWordsInLexicon
 
 
