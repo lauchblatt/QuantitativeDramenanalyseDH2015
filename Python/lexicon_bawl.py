@@ -14,7 +14,9 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
-	bawl.createExtendedOutputDTA()
+	mat = bawl.test2()
+	bawl.fleiss_kappa(mat)
+	#bawl.createExtendedOutputDTA()
 	#bawl.createSentimentDictFileBawlLemmas("treetagger")
 	#bawl.resetAllFiles()
 	#bawl.createExtendedOutputDTA()
@@ -25,6 +27,82 @@ class Bawl:
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
+
+	def fleiss_kappa(self, matrix):
+		raters = 5
+		N = len(matrix)
+		categories = len(matrix[0])
+		allRates = N*raters
+		print allRates
+		pjs = []
+		i = 0
+		while(i < categories):
+			colSum = 0
+			for line in matrix:
+				colSum = colSum + line[i]
+			pjs.append(float(float(colSum)/allRates))
+			i = i + 1
+		Pis = []
+		for line in matrix:
+			squares = [item * item for item in line]
+			squaresSum = sum(squares)
+			result = (float(squaresSum - raters))/float(raters * (raters - 1))
+			Pis.append(result)
+		sumPis = sum(Pis)
+		P_ = float(sumPis)/N
+		squaresPjs = [item * item for item in pjs]
+		P_e = sum(squaresPjs)
+		fleiss_kappa = (P_ - P_e)/(1 - P_e)
+		return fleiss_kappa
+
+
+	def test(self):
+		datei = open("zahlen.txt")
+		for line in datei:
+			number = int(line.strip())
+
+			if(number == 1 or number == 2):
+				number = 1
+			elif(number == 3):
+				number = 2
+			elif(number == 4):
+				number = 3
+			elif(number == 5 or number == 6):
+				number = 4
+			print number
+
+	def test2(self):
+		data = open("blub.txt")
+		lines = []
+		for line in data:
+			numbers = line.split("\t")
+			numbers = [number.strip() for number in numbers]
+			a1 = 0
+			a2 = 0
+			a3 = 0
+			a4 = 0
+			a5 = 0
+			a6 = 0
+			for number in numbers:
+				if(number == "1"):
+					a1 += 1
+				elif(number == "2"):
+					a2 += 1
+				elif(number == "3"):
+					a3 += 1
+				elif(number == "4"):
+					a4 += 1
+				elif(number == "5"):
+					a5 += 1
+				elif(number == "6"):
+					a6 += 1
+			output = "\t".join([str(a1), str(a2), str(a3), str(a4), str(a5), str(a6)])
+			#print output
+			line = [a1, a2, a3, a4, a5, a6]
+			lines.append(line)
+		return lines
+
+
 
 	def readAndInitBawlAndLemmas(self, processor):
 		dta = DTA_Handler()
