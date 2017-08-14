@@ -18,29 +18,9 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("CombinedLexicon", "textblob")
-	lexiconHandler.getPolarityDifferences()
-	#print(len(lexiconHandler._sentimentDict))
-	#print(len(lexiconHandler._sentimentDictLemmas))
-	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger")
-
-	#lexiconHandler.initSingleDict("CombinedLexiconDTAExtended", "treetagger",)
-	#lexiconHandler.createAllFilesCombinedLexicon(True)
-	#lexiconHandler.readAndReturnLexiconKeyDumps("textblob", "SimpleCombination")
-	#lexiconHandler.resetAllFiles()
-	#lexiconHandler.initSingleDict("CombinedLexicon", "treetagger")
-	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
-	#print(len(lexiconHandler._sentimentDict))
-	#print(len(lexiconHandler._sentimentDictLemmas))
-	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
-	#lexiconHandler.initSingleDict("Bawl-DTAExtended", "treetagger")
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob", "DTAExtendedCombination")
-	#lexiconHandler.combineSentimentLexiconsKeysAndDump("textblob")
-	#lexiconHandler.resetAllFiles()
-	#lexiconHandler.createSimpleOutputCombinedLexicon()
-	#print(len(lexiconHandler._sentimentDict))
-	#print(len(lexiconHandler._sentimentDictLemmas))
-	#lexiconHandler.combineSentimentLexica("textblob")
+	lexiconHandler.initSingleDict("CombinedLexicon", "treetagger")
+	print len(lexiconHandler._sentimentDict)
+	print len(lexiconHandler._sentimentDictLemmas)
 
 class Lexicon_Handler:
 

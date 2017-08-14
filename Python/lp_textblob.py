@@ -14,7 +14,9 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	#lp = Language_Processor()
+	tb = Text_Blob()
+	tb.initStopWords()
+	print (len(tb._stopwords))
 
 	#lp.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Test/")
 	
@@ -42,8 +44,6 @@ class Text_Blob:
 
 		self._currentDramaName = ""
 		self._tokensWithoutStopwords = []
-		
-		self.initStopWords()
 
 	def processText(self, plainText):
 		self._plainText = plainText
@@ -198,9 +198,10 @@ class Text_Blob:
 		return False
 	
 	def initStopWords(self):
-		stopwords_text = open("stopwords_german.txt")
+		stopwords_text = open("../Stopwords/FinalStopwordLists/stopwords_fullyEnhancedFilteredBySelfAdjustedNoStopwords.txt")
 		for line in stopwords_text:
 			self._stopwords.append(unicode(line.strip()))
+			print unicode(line.strip())
 			stopword_lemmatized = TextBlobDE(line.strip()).words.lemmatize()[0]
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
@@ -215,7 +216,7 @@ class Text_Blob:
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 
 	def removeStopwordsFromLemmasList(self, wordList):
-		newList = [word for word in wordList if not (word.lower() in self._stopwords_lemmatized or word.title() in self._stopwords_lemmatized)]
+		newList = [word for word in wordList if not (word in self._stopwords_lemmatized)]
 		return newList
 
 		"""
@@ -228,7 +229,7 @@ class Text_Blob:
 		"""
 
 	def removeStopwordsFromTokensList(self, wordList):
-		newList = [word for word in wordList if not (word.lower() in self._stopwords or word.title() in self._stopwords)]
+		newList = [word for word in wordList if not (word in self._stopwords)]
 		return newList
 
 		"""

@@ -14,23 +14,11 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
+	bawl.createExtendedOutputDTA()
 	#bawl.createSentimentDictFileBawlLemmas("treetagger")
-	bawl.readAndInitBawlAndLemmas("treetagger")
+	#bawl.resetAllFiles()
 	#bawl.createExtendedOutputDTA()
 	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
-
-	LP = Language_Processor("treetagger")
-	lp = LP._processor
-	lp.initStopWords()
-	stopWordsInLexicon = [word for word in bawl._sentimentDict \
-	 if (word in lp._stopwords)]
-	print (len(lp._stopwords))
-	print stopWordsInLexicon
-	for word in stopWordsInLexicon:
-		print word
-
-	print(len(bawl._sentimentDict))
-	print(len(bawl._sentimentDictLemmas))
 
 class Bawl:
 
@@ -54,6 +42,16 @@ class Bawl:
 		sentDictText = open("../SentimentAnalysis/Bawl-R/bawl-r-wc.txt")
 		sentimentDict = self.getSentimentDictBawl(sentDictText)
 		self._sentimentDict = sentimentDict
+		self.removeNeutralWords()
+
+	def removeNeutralWords(self):
+		wordsToDel = []
+		for word in self._sentimentDict:
+			if(self._sentimentDict[word]["emotion"] == 0):
+				wordsToDel.append(word)
+
+		for word in wordsToDel:
+			del self._sentimentDict[word]
 
 	def getSentimentDictBawl(self, sentimentDictText):
 		lines = sentimentDictText.readlines()[1:]
@@ -83,16 +81,25 @@ class Bawl:
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp._processor.getLemma(word)		
 			if lemma in newSentimentDict:
-				#could be a method
-				newAbsolute = abs(value["emotion"]) + abs(value["arousel"])
-				oldAbsolute = abs(newSentimentDict[lemma]["emotion"]) + abs(newSentimentDict[lemma]["arousel"])
-				if(newAbsolute > oldAbsolute):
-					newSentimentDict[lemma] = value
+				#reduction to only emotion, because its most important
+				newSentimentDict[lemma] = self.getBetterValues(value, newSentimentDict[lemma])
 			else:
 				newSentimentDict[lemma] = value
 		
 		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
+
+	def getBetterValues(self, newValues, oldValues):
+		newEmotion = abs(newValues["emotion"])
+		newArousel = newValues["arousel"]
+		oldEmotion = abs(oldValues["emotion"])
+		oldArousel = oldValues["arousel"]
+		if(newEmotion > oldEmotion):
+			return newValues
+		elif(newArousel > oldArousel):
+			return newValues
+		return oldValues
+
 
 	def createOutputBawl(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
@@ -120,6 +127,11 @@ class Bawl:
 		self.lemmatizeDictBawl("textblob")
 		print(len(self._sentimentDictLemmas))
 		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/Bawl-Lemmas-DTAExtended")
+
+	def resetAllFiles(self):
+		self.createSentimentDictFileBawlToken()
+		self.createSentimentDictFileBawlLemmas("treetagger")
+		self.createSentimentDictFileBawlLemmas("textblob")
 
 	def extendLexiconBawlDTA(self):
 		dta = DTA_Handler()

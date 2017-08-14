@@ -180,8 +180,7 @@ class Tree_Tagger:
 		return newText
 
 	def initStopWords(self):
-		stopwords_text = open("../Stopwords/FinalStopwordLists/stopwords_solr_fully_enhanced_withTop100.txt")
-		stopwordsInLexicon = open("../Stopwords/selfAdjustedNoStopwords.txt")
+		stopwords_text = open("../Stopwords/FinalStopwordLists/stopwords_fullyEnhancedFilteredBySelfAdjustedNoStopwords.txt")
 		for line in stopwords_text:
 			stopword = unicode(line.strip())
 			self._stopwords.append(stopword)
@@ -190,15 +189,7 @@ class Tree_Tagger:
 			stopword_lemmatized = tags[2]
 			#print stopword_lemmatized
 			self._stopwords_lemmatized.append(stopword_lemmatized)
-		filteredStopwords = []
-		for line in stopwordsInLexicon:
-			word = unicode(line.strip())
-			filteredStopwords.append(word)
-
-		for word in self._stopwords:
-			if (not(word in filteredStopwords)):
-				print word
-
+			
 	def removeStopWordsFromLemmas(self):
 		self.initStopWords()
 		lemmasCopy = list(self._lemmas)

@@ -17,21 +17,7 @@ def main():
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
 	#nrc.createExtendedOutputDTA()
 	nrc.readAndInitNRCAndLemmas("treetagger")
-	"""
-	for word in nrc._sentimentDict:
-		sentiments = nrc._sentimentDict[word]
-		if(sentiments["negative"] == 1):
-			print word
-	"""
-	LP = Language_Processor("treetagger")
-	lp = LP._processor
-	lp.initStopWords()
-	stopWordsInLexicon = [word for word in lp._stopwords \
-	 if (word in nrc._sentimentDict)]
-	print (len(lp._stopwords))
-	print stopWordsInLexicon
-	for word in stopWordsInLexicon:
-		print word
+	print(len(nrc._sentimentDict))
 
 class NRC:
 
