@@ -14,8 +14,9 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
-	mat = bawl.test2()
-	bawl.fleiss_kappa(mat)
+	bawl.test()
+	#mat = bawl.test2()
+	#bawl.fleiss_kappa(mat)
 	#bawl.createExtendedOutputDTA()
 	#bawl.createSentimentDictFileBawlLemmas("treetagger")
 	#bawl.resetAllFiles()
