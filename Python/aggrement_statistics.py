@@ -8,6 +8,7 @@ import sys
 from lexicon_handler import *
 from lp_language_processor import *
 from lexicon_clematide_dictionary import *
+from k_alpha import *
 
 def main():
 	reload(sys)
@@ -16,7 +17,10 @@ def main():
 	#matrix = [[0,0,0,0,14],[0,2,6,4,2],[0,0,3,5,6],[0,3,9,2,0],[2,2,8,1,1],[7,7,0,0,0],[3,2,6,3,0],[2,5,3,2,2],[6,5,2,1,0],[0,2,2,3,7]]
 	#matrix = [[5, 0], [5, 0], [0, 5], [5, 0], [5, 0], [5, 0]]
 	ag = Agreement_Statistics()
-	ag.printAllInfo("../Agreement-Daten/zorn.txt", "../Agreement-Daten/zorn_sortiert.txt", 2, 0)
+	print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
+	#matrix = ag.getTwoDMatrix("../Agreement-Daten/ekel.txt")
+	#print krippendorff_alpha(matrix, nominal_metric, missing_items="*")
+	#ag.printAllInfo("../Agreement-Daten/zorn.txt", "../Agreement-Daten/zorn_sortiert.txt", 2, 0)
 	#ag.calcFleissCappaForAllDramas(2,1)
 	#ag.calcFleissCappaForLengths("../Agreement-Daten/angst_sortiert.txt", 2, 0)
 	#ag.getAvgPercentsForAllDramas("../Agreement-Daten/angst.txt")
@@ -86,6 +90,18 @@ class Agreement_Statistics:
 		fleiss_kappa = (P_ - P_e)/(1 - P_e)
 		return fleiss_kappa
 
+	def getTwoDMatrix(self, path):
+		data = open(path)
+		lines = data.readlines()
+		twoDMatrix = []
+		for line in lines:
+			numbers = line.split("\t")
+			numbers = [number.strip() for number in numbers]
+			twoDMatrix.append(numbers)
+		twoDMatrix = zip(*twoDMatrix)
+		twoDMatrix = [list(unit) for unit in twoDMatrix]
+		return twoDMatrix
+
 	def getAgreementMatrixFromData(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
@@ -115,6 +131,27 @@ class Agreement_Statistics:
 		#print totalAgreements
 		percent = str(float(totalAgreements)/len(agreementMatrix)).replace(".", ",")
 		return (totalAgreements, percent)
+
+	def calcKAlphaForAllDramas(self, path):
+		matrix = self.getTwoDMatrix(path)
+		dramas = []
+		dramas.append([row[0:6] for row in matrix])
+		dramas.append([row[6:26] for row in matrix])
+		dramas.append([row[26:54] for row in matrix])
+		dramas.append([row[54:68] for row in matrix])
+		dramas.append([row[68:80] for row in matrix])
+		dramas.append([row[80:92] for row in matrix])
+		dramas.append([row[92:102] for row in matrix])
+		dramas.append([row[102:122] for row in matrix])
+		dramas.append([row[122:146] for row in matrix])
+		dramas.append([row[146:166] for row in matrix])
+		dramas.append([row[166:194] for row in matrix])
+		dramas.append([row[194:200] for row in matrix])
+		
+		kAlphas = []
+		for dramaMatrix in dramas:
+			kAlphas.append(krippendorff_alpha(dramaMatrix, nominal_metric, missing_items="*"))
+		return kAlphas
 
 	def calcFleissCappaAndTotalAgreementForAllDramas(self, path, categories, startValue):
 		data = open(path)
