@@ -24,7 +24,7 @@ def main():
 	
 	#ag.getMajorityData("../Agreement-Daten/polaritaet_standard.txt", 6, 1)
 
-	ag.printAllInfo("../Agreement-Daten/polaritaet_reduziert.txt", "../Agreement-Daten/polaritaet_reduziert_sortiert.txt", 6, 1)
+	ag.printAllInfo("../Agreement-Daten/zorn.txt", "../Agreement-Daten/zorn_sortiert.txt", 4, 1)
 	
 	#ag.calcFleissCappaForAllDramas(2,1)
 	#ag.calcFleissCappaForLengths("../Agreement-Daten/angst_sortiert.txt", 2, 0)
@@ -45,13 +45,10 @@ class Agreement_Statistics:
 		self._sentimentDict = {}
 
 	def printAllInfo(self, pathNormal, pathToSorted, categories, startValue):
-		fleissKappaAndTotalAgreementData = self.calcFleissCappaAndTotalAgreementForAllDramas(pathNormal, categories, startValue)
-		fleissKappas = fleissKappaAndTotalAgreementData[0]
-		totalAgreementsData= fleissKappaAndTotalAgreementData[1]
+		fleissKappas = self.calcFleissKappasForAllDramas(pathNormal, categories, startValue)
 		averages = self.getAvgPercentsForAllDramas(pathNormal)
 		kAlphas = self.calcKAlphaForAllDramas(pathNormal)
 		majorityData = self.getMajorityDataDramas(pathNormal, categories, startValue)
-		print majorityData
 
 		i = 0
 		while(i < len(fleissKappas)):
@@ -63,9 +60,7 @@ class Agreement_Statistics:
 			 averages[i][0], averages[i][1]])
 			i += 1
 		
-		fleissKappaAndTotalAgreementData = self.calcFleissCappaAndTotalAgreementForAllLengths(pathToSorted, categories, startValue)
-		fleissKappas = fleissKappaAndTotalAgreementData[0]
-		totalAgreementsData= fleissKappaAndTotalAgreementData[1]
+		fleissKappas = self.calcFleissKappasLengths(pathToSorted, categories, startValue)
 		averages = self.getAvgPercentsForLengths(pathToSorted)
 		kAlphas = self.calcKAlphaForLengths(pathToSorted)
 		majorityData = self.getMajorityDataLengths(pathToSorted, categories, startValue)
@@ -139,6 +134,7 @@ class Agreement_Statistics:
 
 			output = "\t".join([str(x) for x in counters])
 			matrixRows.append(counters)
+		
 		return matrixRows
 
 	def calcMajorityData(self, matrix, categories, startValue):
@@ -161,8 +157,7 @@ class Agreement_Statistics:
 			if (numbers.count(2) == 1 and not(realMajority)):
 				#print(numbers)
 				smallMaj += 1
-			if (numbers.count(1) == categories):
-				print numbers
+
 		fivesPercent = str(float(fives)/len(matrix)).replace(".", ",")
 		foursPercent = str(float(fours)/len(matrix)).replace(".", ",")
 		threesPercent = str(float(threes)/len(matrix)).replace(".", ",")
@@ -221,6 +216,7 @@ class Agreement_Statistics:
 			twoDMatrix.append(numbers)
 		twoDMatrix = zip(*twoDMatrix)
 		twoDMatrix = [list(unit) for unit in twoDMatrix]
+
 		return twoDMatrix
 
 	def getNumberAndPercentsOfTotalAgreements(self, agreementMatrix):
@@ -270,7 +266,7 @@ class Agreement_Statistics:
 		kAlphas = [str(item).replace(".", ",") for item in kAlphas]
 		return kAlphas
 
-	def calcFleissCappaAndTotalAgreementForAllDramas(self, path, categories, startValue):
+	def calcFleissKappasForAllDramas(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
 		matrixRows = []
@@ -289,32 +285,14 @@ class Agreement_Statistics:
 		dramaLines.append(lines[194:200])
 		dramaLines.append(lines)
 		fleissKappas = []
-		totalAgreementData = []
 
 		for lines in dramaLines:
-			matrixRows = []
-			for line in lines:
-				numbers = line.split("\t")
-				numbers = [int(number.strip()) for number in numbers]
-				counters = []
-				i = 0
-				while (i < categories):
-					counters.append(0)
-					i = i + 1
-				for number in numbers:
-					columnToIncrease = number - startValue
-					counters[columnToIncrease] += 1
-
-				output = "\t".join([str(x) for x in counters])
-				matrixRows.append(counters)
+			matrixRows = self.getAgreementMatrixFromData(lines, categories, startValue)
 			fleissKappas.append((str(self.fleissKappa(matrixRows))).replace(".", ","))
-			numberAndPercents = self.getNumberAndPercentsOfTotalAgreements(matrixRows)
-			totalAgreementData.append(numberAndPercents)
-			#print numberAndPercents[0]
-			#print str(numberAndPercents[1]).replace(".", ",")
-		return (fleissKappas, totalAgreementData)
 
-	def calcFleissCappaAndTotalAgreementForAllLengths(self, path, categories, startValue):
+		return fleissKappas
+
+	def calcFleissKappasLengths(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
 		matrixRows = []
@@ -324,28 +302,11 @@ class Agreement_Statistics:
 		dramaLines.append(lines[0:61])
 		dramaLines.append(lines[61:200])
 		fleissKappas = []
-		totalAgreementData = []
 
 		for lines in dramaLines:
-			matrixRows = []
-			for line in lines:
-				numbers = line.split("\t")
-				numbers = [int(number.strip()) for number in numbers]
-				counters = []
-				i = 0
-				while (i < categories):
-					counters.append(0)
-					i = i + 1
-				for number in numbers:
-					columnToIncrease = number - startValue
-					counters[columnToIncrease] += 1
-
-				output = "\t".join([str(x) for x in counters])
-				matrixRows.append(counters)
+			matrixRows = self.getAgreementMatrixFromData(lines, categories, startValue)
 			fleissKappas.append((str(self.fleissKappa(matrixRows))).replace(".", ","))
-			numberAndPercents = self.getNumberAndPercentsOfTotalAgreements(matrixRows)
-			totalAgreementData.append(numberAndPercents)
-		return (fleissKappas, totalAgreementData)
+		return fleissKappas
 
 	def getAvgPercentsForAllDramas(self, path):
 		data = open(path)
