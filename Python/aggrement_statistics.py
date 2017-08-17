@@ -17,10 +17,15 @@ def main():
 	#matrix = [[0,0,0,0,14],[0,2,6,4,2],[0,0,3,5,6],[0,3,9,2,0],[2,2,8,1,1],[7,7,0,0,0],[3,2,6,3,0],[2,5,3,2,2],[6,5,2,1,0],[0,2,2,3,7]]
 	#matrix = [[5, 0], [5, 0], [0, 5], [5, 0], [5, 0], [5, 0]]
 	ag = Agreement_Statistics()
-	print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
+	#print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
 	#matrix = ag.getTwoDMatrix("../Agreement-Daten/ekel.txt")
 	#print krippendorff_alpha(matrix, nominal_metric, missing_items="*")
-	#ag.printAllInfo("../Agreement-Daten/zorn.txt", "../Agreement-Daten/zorn_sortiert.txt", 2, 0)
+	#
+	
+	#ag.getMajorityData("../Agreement-Daten/polaritaet_standard.txt", 6, 1)
+
+	ag.printAllInfo("../Agreement-Daten/polaritaet_reduziert.txt", "../Agreement-Daten/polaritaet_reduziert_sortiert.txt", 6, 1)
+	
 	#ag.calcFleissCappaForAllDramas(2,1)
 	#ag.calcFleissCappaForLengths("../Agreement-Daten/angst_sortiert.txt", 2, 0)
 	#ag.getAvgPercentsForAllDramas("../Agreement-Daten/angst.txt")
@@ -44,23 +49,131 @@ class Agreement_Statistics:
 		fleissKappas = fleissKappaAndTotalAgreementData[0]
 		totalAgreementsData= fleissKappaAndTotalAgreementData[1]
 		averages = self.getAvgPercentsForAllDramas(pathNormal)
+		kAlphas = self.calcKAlphaForAllDramas(pathNormal)
+		majorityData = self.getMajorityDataDramas(pathNormal, categories, startValue)
+		print majorityData
+
 		i = 0
 		while(i < len(fleissKappas)):
-			print "\t".join([str(fleissKappas[i]), str(totalAgreementsData[i][0]),\
-			 str(totalAgreementsData[i][1]), averages[i][0], averages[i][1]])
+			print "\t".join([str(fleissKappas[i]), kAlphas[i],\
+			 majorityData[i][0], majorityData[i][1], majorityData[i][2], majorityData[i][3], \
+			 majorityData[i][4], majorityData[i][5], majorityData[i][6], majorityData[i][7], \
+			 majorityData[i][8], majorityData[i][9], majorityData[i][10], majorityData[i][11], \
+			 averages[i][0], averages[i][1]])
 			i += 1
 		
 		fleissKappaAndTotalAgreementData = self.calcFleissCappaAndTotalAgreementForAllLengths(pathToSorted, categories, startValue)
 		fleissKappas = fleissKappaAndTotalAgreementData[0]
 		totalAgreementsData= fleissKappaAndTotalAgreementData[1]
 		averages = self.getAvgPercentsForLengths(pathToSorted)
+		kAlphas = self.calcKAlphaForLengths(pathToSorted)
+		majorityData = self.getMajorityDataLengths(pathToSorted, categories, startValue)
 
 		i = 0
 		print ("\n".rstrip())
 		while(i < len(fleissKappas)):
-			print "\t".join([str(fleissKappas[i]), str(totalAgreementsData[i][0]),\
-			 str(totalAgreementsData[i][1]), averages[i][0], averages[i][1]])
-			i += 1
+			print "\t".join([str(fleissKappas[i]), kAlphas[i],\
+			 majorityData[i][0], majorityData[i][1], majorityData[i][2], majorityData[i][3], \
+			 majorityData[i][4], majorityData[i][5], majorityData[i][6], majorityData[i][7], \
+			 majorityData[i][8], majorityData[i][9], majorityData[i][10], majorityData[i][11], \
+			 averages[i][0], averages[i][1]])
+			i += 1 
+
+	def getMajorityDataLengths(self, path, categories, startValue):
+		data = open(path)
+		lines = data.readlines()
+		dramaLines = []
+		dramaLines.append(lines[0:101])
+		dramaLines.append(lines[101:200])
+		dramaLines.append(lines[0:61])
+		dramaLines.append(lines[61:200])
+		dramaLines.append(lines)
+
+		data = []
+		for dramaLine in dramaLines:
+			matrix = self.getAgreementMatrixFromData(dramaLine, categories, startValue)
+			majorityData = self.calcMajorityData(matrix, categories, startValue)
+			data.append(majorityData)
+		return data
+
+	def getMajorityDataDramas(self, path, categories, startValue):
+		data = open(path)
+		lines = data.readlines()
+		dramaLines = []
+		dramaLines.append(lines[0:6])
+		dramaLines.append(lines[6:26])
+		dramaLines.append(lines[26:54])
+		dramaLines.append(lines[54:68])
+		dramaLines.append(lines[68:80])
+		dramaLines.append(lines[80:92])
+		dramaLines.append(lines[92:102])
+		dramaLines.append(lines[102:122])
+		dramaLines.append(lines[122:146])
+		dramaLines.append(lines[146:166])
+		dramaLines.append(lines[166:194])
+		dramaLines.append(lines[194:200])
+		dramaLines.append(lines)
+
+		data = []
+		for dramaLine in dramaLines:
+			matrix = self.getAgreementMatrixFromData(dramaLine, categories, startValue)
+			majorityData = self.calcMajorityData(matrix, categories, startValue)
+			data.append(majorityData)
+		return data
+
+	def getAgreementMatrixFromData(self, lines, categories, startValue):
+		matrixRows = []
+		for line in lines:
+			numbers = line.split("\t")
+			numbers = [int(number.strip()) for number in numbers]
+			counters = []
+			i = 0
+			while (i < categories):
+				counters.append(0)
+				i = i + 1
+			for number in numbers:
+				columnToIncrease = number - startValue
+				counters[columnToIncrease] += 1
+
+			output = "\t".join([str(x) for x in counters])
+			matrixRows.append(counters)
+		return matrixRows
+
+	def calcMajorityData(self, matrix, categories, startValue):
+		fives = 0
+		fours = 0
+		threes = 0
+		smallMaj = 0
+		for numbers in matrix:
+			realMajority = False
+			for number in numbers:
+				if(number == 5):
+					fives += 1
+					realMajority = True
+				elif(number == 4):
+					fours += 1
+					realMajority = True
+				elif(number == 3):
+					threes += 1
+					realMajority = True
+			if (numbers.count(2) == 1 and not(realMajority)):
+				#print(numbers)
+				smallMaj += 1
+			if (numbers.count(1) == categories):
+				print numbers
+		fivesPercent = str(float(fives)/len(matrix)).replace(".", ",")
+		foursPercent = str(float(fours)/len(matrix)).replace(".", ",")
+		threesPercent = str(float(threes)/len(matrix)).replace(".", ",")
+		smallMajPercent = str(float(smallMaj)/len(matrix)).replace(".", ",")
+		majorities = fives + fours + threes
+		allMajorities = fives + fours + threes + smallMaj
+		majoritiesPercent = str(float(majorities)/len(matrix)).replace(".", ",")
+		allMajoritiesPercent = str(float(allMajorities)/len(matrix)).replace(".", ",")
+
+		allData = [str(fives), fivesPercent, str(fours), foursPercent, str(threes),\
+		 threesPercent, str(majorities), majoritiesPercent, str(smallMaj),\
+		  smallMajPercent, str(allMajorities), allMajoritiesPercent]
+		return allData
 
 	def fleissKappa(self, matrix):
 		raters = 5
@@ -90,6 +203,7 @@ class Agreement_Statistics:
 		fleiss_kappa = (P_ - P_e)/(1 - P_e)
 		return fleiss_kappa
 
+	#Transposed Matrix for KAlpha
 	def getTwoDMatrix(self, path):
 		data = open(path)
 		lines = data.readlines()
@@ -101,26 +215,6 @@ class Agreement_Statistics:
 		twoDMatrix = zip(*twoDMatrix)
 		twoDMatrix = [list(unit) for unit in twoDMatrix]
 		return twoDMatrix
-
-	def getAgreementMatrixFromData(self, path, categories, startValue):
-		data = open(path)
-		lines = data.readlines()
-		matrixRows = []
-		for line in lines:
-			numbers = line.split("\t")
-			numbers = [int(number.strip()) for number in numbers]
-			counters = []
-			i = 0
-			while (i < categories):
-				counters.append(0)
-				i = i + 1
-			for number in numbers:
-				columnToIncrease = number - startValue
-				counters[columnToIncrease] += 1
-
-			output = "\t".join([str(x) for x in counters])
-			matrixRows.append(counters)
-		return matrixRows
 
 	def getNumberAndPercentsOfTotalAgreements(self, agreementMatrix):
 		totalAgreements = 0
@@ -147,10 +241,26 @@ class Agreement_Statistics:
 		dramas.append([row[146:166] for row in matrix])
 		dramas.append([row[166:194] for row in matrix])
 		dramas.append([row[194:200] for row in matrix])
+		dramas.append(matrix)
 		
 		kAlphas = []
 		for dramaMatrix in dramas:
 			kAlphas.append(krippendorff_alpha(dramaMatrix, nominal_metric, missing_items="*"))
+		kAlphas = [str(item).replace(".", ",") for item in kAlphas]
+		return kAlphas
+
+	def calcKAlphaForLengths(self, path):
+		matrix = self.getTwoDMatrix(path)
+		lengths = []
+		lengths.append([row[0:101] for row in matrix])
+		lengths.append([row[101:200] for row in matrix])
+		lengths.append([row[0:61] for row in matrix])
+		lengths.append([row[61:200] for row in matrix])
+		
+		kAlphas = []
+		for dramaMatrix in lengths:
+			kAlphas.append(krippendorff_alpha(dramaMatrix, nominal_metric, missing_items="*"))
+		kAlphas = [str(item).replace(".", ",") for item in kAlphas]
 		return kAlphas
 
 	def calcFleissCappaAndTotalAgreementForAllDramas(self, path, categories, startValue):
