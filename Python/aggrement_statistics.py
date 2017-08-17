@@ -58,7 +58,8 @@ class Agreement_Statistics:
 			print "\t".join([str(fleissKappas[i]), kAlphas[i],\
 			 majorityData[i][0], majorityData[i][1], majorityData[i][2], majorityData[i][3], \
 			 majorityData[i][4], majorityData[i][5], majorityData[i][6], majorityData[i][7], \
-			 majorityData[i][8], majorityData[i][9], majorityData[i][10], majorityData[i][11], \
+			 majorityData[i][8], majorityData[i][9], majorityData[i][10], majorityData[i][11],\
+			 majorityData[i][12], majorityData[i][13],\
 			 averages[i][0], averages[i][1]])
 			i += 1
 		
@@ -75,7 +76,8 @@ class Agreement_Statistics:
 			print "\t".join([str(fleissKappas[i]), kAlphas[i],\
 			 majorityData[i][0], majorityData[i][1], majorityData[i][2], majorityData[i][3], \
 			 majorityData[i][4], majorityData[i][5], majorityData[i][6], majorityData[i][7], \
-			 majorityData[i][8], majorityData[i][9], majorityData[i][10], majorityData[i][11], \
+			 majorityData[i][8], majorityData[i][9], majorityData[i][10], majorityData[i][11],\
+			 majorityData[i][12], majorityData[i][13],\
 			 averages[i][0], averages[i][1]])
 			i += 1 
 
@@ -165,13 +167,18 @@ class Agreement_Statistics:
 		foursPercent = str(float(fours)/len(matrix)).replace(".", ",")
 		threesPercent = str(float(threes)/len(matrix)).replace(".", ",")
 		smallMajPercent = str(float(smallMaj)/len(matrix)).replace(".", ",")
+		
+		fiveFours = fives + fours
 		majorities = fives + fours + threes
 		allMajorities = fives + fours + threes + smallMaj
+		
+		fiveFoursPercent = str((float(fiveFours))/len(matrix)).replace(".", ",")
 		majoritiesPercent = str(float(majorities)/len(matrix)).replace(".", ",")
 		allMajoritiesPercent = str(float(allMajorities)/len(matrix)).replace(".", ",")
 
-		allData = [str(fives), fivesPercent, str(fours), foursPercent, str(threes),\
-		 threesPercent, str(majorities), majoritiesPercent, str(smallMaj),\
+		allData = [str(fives), fivesPercent, str(fours), foursPercent,\
+		str(fiveFours), fiveFoursPercent,\
+		 str(threes), threesPercent, str(majorities), majoritiesPercent, str(smallMaj),\
 		  smallMajPercent, str(allMajorities), allMajoritiesPercent]
 		return allData
 
