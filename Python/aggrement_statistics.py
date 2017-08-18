@@ -17,6 +17,7 @@ def main():
 	#matrix = [[0,0,0,0,14],[0,2,6,4,2],[0,0,3,5,6],[0,3,9,2,0],[2,2,8,1,1],[7,7,0,0,0],[3,2,6,3,0],[2,5,3,2,2],[6,5,2,1,0],[0,2,2,3,7]]
 	#matrix = [[5, 0], [5, 0], [0, 5], [5, 0], [5, 0], [5, 0]]
 	ag = Agreement_Statistics()
+	ag.printPolVsNonPol("../Agreement-Daten/polaritaet_dreifach.txt")
 	#print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
 	#matrix = ag.getTwoDMatrix("../Agreement-Daten/ekel.txt")
 	#print krippendorff_alpha(matrix, nominal_metric, missing_items="*")
@@ -24,20 +25,8 @@ def main():
 	
 	#ag.getMajorityData("../Agreement-Daten/polaritaet_standard.txt", 6, 1)
 
-	ag.printAllInfo("../Agreement-Daten/zorn.txt", "../Agreement-Daten/zorn_sortiert.txt", 4, 1)
-	
-	#ag.calcFleissCappaForAllDramas(2,1)
-	#ag.calcFleissCappaForLengths("../Agreement-Daten/angst_sortiert.txt", 2, 0)
-	#ag.getAvgPercentsForAllDramas("../Agreement-Daten/angst.txt")
-	#ag.getAvgPercentsForLengths("../Agreement-Daten/angst_sortiert.txt")
-	#ag.getAgreementMatrixFromData("../Agreement-Daten/zorn.txt", 2, 0)
-	#matrix = ag.getAgreementMatrixFromData("../Agreement-Daten/polaritaet_dichotom.txt",2,1)
-	#ag.getNumberAndPercentsOfTotalAgreements(matrix)
-	#matrix = ag.getAgreementMatrixFromData(6, 1)
-	#print(str(ag.fleissKappa(matrix))).replace(".", ",")
-	#ag.calcFleissCappaForAllDramas("../Agreement-Daten/angst.txt", 2, 0)
+	#ag.printAllInfo("../Agreement-Daten/polaritaet_dreifach.txt", "../Agreement-Daten/polaritaet_dreifach_sortiert.txt", 3, 1)
 
-	#print (ag.fleissKappa(matrix))
 
 class Agreement_Statistics:
 
@@ -117,6 +106,11 @@ class Agreement_Statistics:
 			majorityData = self.calcMajorityData(matrix, categories, startValue)
 			data.append(majorityData)
 		return data
+
+	def getAgreementMatrixFromPath(self, path, categories, startValue):
+		data = open(path)
+		lines = data.readlines()
+		return self.getAgreementMatrixFromData(lines, categories, startValue)
 
 	def getAgreementMatrixFromData(self, lines, categories, startValue):
 		matrixRows = []
@@ -386,6 +380,53 @@ class Agreement_Statistics:
 		#print str(totalAvg).replace(".", ",")
 		return (str(totalAvg).replace(".", ","), str(totalAvgPercent).replace(".", ","))
 
+
+	def getEmotionPresenceByParticipant(self, path):
+		data = open(path)
+		emotionsPresents = []
+		for line in data:
+			numbersString = line.split("\t")
+			numbers = [int(number.strip()) for number in numbersString]
+			if(self.emotionPresent(numbers)):
+				emotionsPresents.append(1)
+			else:
+				emotionsPresents.append(0)
+		return emotionsPresents
+
+	def emotionPresent(self, numbers):
+		if(1 in numbers):
+			return True
+		else:
+			return False
+
+	def printPolVsNonPol(self, path):
+		data = open(path)
+		lines = data.readlines()
+		matrix = self.getAgreementMatrixFromData(lines, 3, 1)
+		polMajorities = self.getPolVsNonPol(matrix)
+
+		for item in polMajorities:
+			print item
+
+	def getMajorityPolDichotom(self, agreementMatrix):
+		
+
+	def getPolVsNonPolDreifach(self, agreementMatrix):
+		polMajorities = []
+		noPolMaj = 0
+		for row in agreementMatrix:
+			if(row[0] > 2):
+				polMajorities.append(1)
+			elif(row[1] > 2):
+				polMajorities.append(2)
+				noPolMaj += 1
+			elif(row[2] > 2):
+				polMajorities.append(3)
+			else:
+				polMajorities.append(-1)
+				noPolMaj += 1
+		print noPolMaj
+		return polMajorities
 
 	def compareListsAndReturnPercent(self, list1, list2):
 		i = 0
