@@ -17,7 +17,7 @@ def main():
 	#matrix = [[0,0,0,0,14],[0,2,6,4,2],[0,0,3,5,6],[0,3,9,2,0],[2,2,8,1,1],[7,7,0,0,0],[3,2,6,3,0],[2,5,3,2,2],[6,5,2,1,0],[0,2,2,3,7]]
 	#matrix = [[5, 0], [5, 0], [0, 5], [5, 0], [5, 0], [5, 0]]
 	ag = Agreement_Statistics()
-	ag.printPolVsNonPol("../Agreement-Daten/polaritaet_dreifach.txt")
+	ag.getMajorityPolReduced("../Agreement-Daten/polaritaet_reduziert.txt")
 	#print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
 	#matrix = ag.getTwoDMatrix("../Agreement-Daten/ekel.txt")
 	#print krippendorff_alpha(matrix, nominal_metric, missing_items="*")
@@ -399,6 +399,20 @@ class Agreement_Statistics:
 		else:
 			return False
 
+	def getMajorityEmotionPresent(self, path):
+		data = open(path)
+		lines = data.readlines()
+		matrix = self.getAgreementMatrixFromData(lines, 2, 0)
+		emoMajorities = []
+
+		for row in matrix:
+			if(row[0] > 2):
+				emoMajorities.append(0)
+				print row[0]
+			elif(row[1] > 2):
+				emoMajorities.append(1)
+				print row[1]
+
 	def printPolVsNonPol(self, path):
 		data = open(path)
 		lines = data.readlines()
@@ -408,24 +422,102 @@ class Agreement_Statistics:
 		for item in polMajorities:
 			print item
 
-	def getMajorityPolDichotom(self, agreementMatrix):
-		
-
-	def getPolVsNonPolDreifach(self, agreementMatrix):
+	def getMajorityPolReduced(self, path):
+		data = open(path)
+		lines = data.readlines()
+		matrix = self.getAgreementMatrixFromData(lines, 4, 1)
 		polMajorities = []
-		noPolMaj = 0
-		for row in agreementMatrix:
+
+		for row in matrix:
 			if(row[0] > 2):
 				polMajorities.append(1)
+				print row[0]
 			elif(row[1] > 2):
 				polMajorities.append(2)
-				noPolMaj += 1
+				print row[1]
 			elif(row[2] > 2):
 				polMajorities.append(3)
+				print row[2]
+			elif(row[3] > 2):
+				polMajorities.append(4)
+				print row[3]
+			elif(row.count(2) == 1):
+				polMajorities.append(row.index(2) + 1)
+				print "2"
 			else:
 				polMajorities.append(-1)
-				noPolMaj += 1
-		print noPolMaj
+				print "-1"
+
+		return polMajorities
+
+	def getMajorityPolStandard(self, path):
+		data = open(path)
+		lines = data.readlines()
+		matrix = self.getAgreementMatrixFromData(lines, 6, 1)
+		polMajorities = []
+		
+		for row in matrix:
+			if(row[0] > 2):
+				polMajorities.append(1)
+				print row[0]
+			elif(row[1] > 2):
+				polMajorities.append(2)
+				print row[1]
+			elif(row[2] > 2):
+				polMajorities.append(3)
+				print row[2]
+			elif(row[3] > 2):
+				polMajorities.append(4)
+				print row[3]
+			elif(row[4] > 2):
+				polMajorities.append(5)
+				print row[4]
+			elif(row[5] > 2):
+				polMajorities.append(6)
+				print row[5]
+			elif(row.count(2) == 1):
+				polMajorities.append(row.index(2) + 1)
+				print "2"
+			else:
+				polMajorities.append(-1)
+				print "-1"
+
+		return polMajorities
+
+	def getMajorityPolDichotom(self, path):
+		data = open(path)
+		lines = data.readlines()
+		matrix = self.getAgreementMatrixFromData(lines, 2, 1)
+		polMajorities = []
+
+		for row in matrix:
+			if(row[0] > 2):
+				polMajorities.append(1)
+				print row[0]
+			elif(row[1] > 2):
+				polMajorities.append(2)
+				print row[1]
+		return polMajorities
+
+	def getMajorityPolDreifach(self, path):
+		data = open(path)
+		lines = data.readlines()
+		matrix = self.getAgreementMatrixFromData(lines, 3, 1)
+
+		polMajorities = []
+		for row in matrix:
+			if(row[0] > 2):
+				polMajorities.append(1)
+				print row[0]
+			elif(row[1] > 2):
+				polMajorities.append(2)
+				print row[1]
+			elif(row[2] > 2):
+				polMajorities.append(3)
+				print row[2]
+			else:
+				polMajorities.append(-1)
+				print "-1"
 		return polMajorities
 
 	def compareListsAndReturnPercent(self, list1, list2):
