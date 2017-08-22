@@ -106,7 +106,8 @@ class Sentiment_Metrics:
 
 		self._metricsTotal["positiveCombined"] = 0
 		self._metricsTotal["negativeCombined"] = 0
-		self._names["Combined"] = ["positiveCombined", "negativeCombined"]
+		self._metricsTotal["polarityCombined"] = 0
+		self._names["Combined"] = ["positiveCombined", "negativeCombined", "polarityCombined"]
 
 	def returnAllBasicMetricsLists(self):
 		basicMetrics = OrderedDict([])
@@ -121,14 +122,12 @@ class Sentiment_Metrics:
 		for metric,value in self._metricsTotal.items():
 			item = metric + ": " + str(value)
 			print item,
-		print("\n")
 
 		print("Normalised Values: ")
 		print("Length in Words: " + str(lengthInWords))
 		for metric,value in self._metricsNormalisedLengthInWords.items():
 			item = metric + ": " + str(value)
 			print item,
-		print("\n")
 
 		print("Sentiment Ratio: " + str(self._sentimentRatio))
 

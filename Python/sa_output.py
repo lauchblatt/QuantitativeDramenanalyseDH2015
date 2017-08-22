@@ -22,9 +22,9 @@ def main():
 	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)
 	dpp = Drama_Pre_Processing("treetagger")
 	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Freigeist.p")
-	sa = Sentiment_Analyzer(True, False, "CombinedLexicon", "treetagger")
+	sa = Sentiment_Analyzer(False, True, "CombinedLexicon", "treetagger")
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	sog.createTxtOutputSingleDrama("stopword-removal.txt", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("anotherTest.txt", sentimentExtendedDramaModel)
 	
 	#sog = Sentiment_Output_Generator()
 	#sog.processAndCreateTxtOutputMutlipleDramas()
