@@ -72,65 +72,6 @@ def main():
 	#tcc._testCorpusSpeeches = tcr._testCorpusSpeeches
 	#tcc.createTxtOutputForTestCorpus("../Evaluation/Test-Korpus/test-corpus2.txt")
 
-
-class Test_Corpus_Handler:
-	def __init__(self):
-		self._testCorpusSpeeches = []
-
-		self._average = -1
-		self._median = -1
-		self._max = -1
-		self._min = -1
-
-	def attachLanguageInfoToTestCorpus(self):
-		languageProcessor = Language_Processor()
-		for corpusSpeech in self._testCorpusSpeeches:
-			languageProcessor.processText(corpusSpeech._speech._text)
-			lemmaInformation = languageProcessor._lemmasWithLanguageInfo
-			corpusSpeech._speech._textAsLanguageInfo = lemmaInformation
-
-	def readAndInitTestCorpusFromPickle(self,path):
-		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
-
-	def writeInfoPerLine(self):
-		outputFile = open("../Evaluation/Test-Korpus/test-corpus-infoLines", "w")
-		for corpusSpeech in self._testCorpusSpeeches:
-			info = [corpusSpeech._id, corpusSpeech._dramaTitle,\
-			corpusSpeech._actNumber, corpusSpeech._confNumber,\
-			corpusSpeech._speech._numberInAct, corpusSpeech._speech._numberInConf,\
-			corpusSpeech._speech._subsequentNumber,corpusSpeech._speech._speaker,\
-			corpusSpeech._speech._lengthInWords]
-			infoString = ("\t").join(str(x) for x in info)
-			outputFile.write(infoString + "\n")
-		outputFile.close()
-
-	def writeLengths(self, path):
-		wordLengths = []
-		for corpusSpeech in self._testCorpusSpeeches:
-			wordLengths.append(corpusSpeech._speech._lengthInWords)
-		outputFile = open(path, "w")
-		wordLengths.sort()
-		for length in wordLengths:
-			outputFile.write(str(length) + "\n")
-		outputFile.close()
-
-	def saveTestCorpusAsPickle(self, path):
-		pickle.dump(self._testCorpusSpeeches, open(path, "wb" ))
-
-	def calcTestCorpusMetrics(self):
-		wordLengths = []
-		for corpusSpeech in self._testCorpusSpeeches:
-			wordLengths.append(corpusSpeech._speech._lengthInWords)
-		self._average = average(wordLengths)
-		self._median = median(wordLengths)
-		self._min = custom_min(wordLengths)
-		self._max = custom_max(wordLengths)
-
-		print(self._average)
-		print(self._median)
-		print(self._min)
-		print(self._max)
-
 class Test_Corpus_Creator:
 
 	def __init__(self):
@@ -143,6 +84,9 @@ class Test_Corpus_Creator:
 		self._partsPerDrama = [3, 10, 14, 7, 6, 6, 5, 10, 12, 10, 14, 3]
 		self._testCorpusSizeFactor = 2
 
+	def readAndInitTestCorpusFromPickle(self,path):
+		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
+
 	def createNewTestCorpus(self):
 		self.initSpeechesCorpus()
 		self.setTestCorpus()
@@ -153,6 +97,19 @@ class Test_Corpus_Creator:
 	def saveTestCorpusAsPickle(self, path):
 		pickle.dump(self._testCorpusSpeeches, open(path, "wb" ))
 	
+	def saveTestCorpusWithLanguageInfoAsPickle(self, path):
+		processors = ["treetagger", "textblob"]
+		for processor in processors:
+			self.attachLanguageInfoToTestCorpus(processor)
+			saveTestCorpusAsPickle(path + "_" + processor)
+
+	def attachLanguageInfoToTestCorpus(self, processor):
+		languageProcessor = Language_Processor(processor)
+		for corpusSpeech in self._testCorpusSpeeches:
+			languageProcessor.processText(corpusSpeech._speech._text)
+			lemmaInformation = languageProcessor._lemmasWithLanguageInfo
+			corpusSpeech._speech._textAsLanguageInfo = lemmaInformation
+
 	def createTxtOutputForTestCorpus(self, path):
 		outputFile = open(path, "w")
 		text = ""
@@ -357,6 +314,57 @@ class Test_Corpus_Speech:
 		self._positionInfo = str(self._actNumber) + ".Akt, " + str(self._confNumber) + \
 		".Szene, " + str(self._speechNumberInConf) + ".Replik" + ", Drama-Nummer: " + str(self._speech._subsequentNumber) + \
 		", ID:" + str(self._id)
+
+class Test_Corpus_Handler:
+	def __init__(self):
+		self._testCorpusSpeeches = []
+
+		self._average = -1
+		self._median = -1
+		self._max = -1
+		self._min = -1
+
+	def readAndInitTestCorpusFromPickle(self,path):
+		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
+
+	def writeInfoPerLine(self):
+		outputFile = open("../Evaluation/Test-Korpus/test-corpus-infoLines", "w")
+		for corpusSpeech in self._testCorpusSpeeches:
+			info = [corpusSpeech._id, corpusSpeech._dramaTitle,\
+			corpusSpeech._actNumber, corpusSpeech._confNumber,\
+			corpusSpeech._speech._numberInAct, corpusSpeech._speech._numberInConf,\
+			corpusSpeech._speech._subsequentNumber,corpusSpeech._speech._speaker,\
+			corpusSpeech._speech._lengthInWords]
+			infoString = ("\t").join(str(x) for x in info)
+			outputFile.write(infoString + "\n")
+		outputFile.close()
+
+	def writeLengths(self, path):
+		wordLengths = []
+		for corpusSpeech in self._testCorpusSpeeches:
+			wordLengths.append(corpusSpeech._speech._lengthInWords)
+		outputFile = open(path, "w")
+		wordLengths.sort()
+		for length in wordLengths:
+			outputFile.write(str(length) + "\n")
+		outputFile.close()
+
+	def saveTestCorpusAsPickle(self, path):
+		pickle.dump(self._testCorpusSpeeches, open(path, "wb" ))
+
+	def calcTestCorpusMetrics(self):
+		wordLengths = []
+		for corpusSpeech in self._testCorpusSpeeches:
+			wordLengths.append(corpusSpeech._speech._lengthInWords)
+		self._average = average(wordLengths)
+		self._median = median(wordLengths)
+		self._min = custom_min(wordLengths)
+		self._max = custom_max(wordLengths)
+
+		print(self._average)
+		print(self._median)
+		print(self._min)
+		print(self._max)
 
 
 if __name__ == "__main__":

@@ -17,7 +17,8 @@ def main():
 	#matrix = [[0,0,0,0,14],[0,2,6,4,2],[0,0,3,5,6],[0,3,9,2,0],[2,2,8,1,1],[7,7,0,0,0],[3,2,6,3,0],[2,5,3,2,2],[6,5,2,1,0],[0,2,2,3,7]]
 	#matrix = [[5, 0], [5, 0], [0, 5], [5, 0], [5, 0], [5, 0]]
 	ag = Agreement_Statistics()
-	ag.getMajorityPolReduced("../Agreement-Daten/polaritaet_reduziert.txt")
+	#ag.test("problem.txt")
+	#ag.getMajorityPolReduced("../Agreement-Daten/polaritaet_reduziert.txt")
 	#print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
 	#matrix = ag.getTwoDMatrix("../Agreement-Daten/ekel.txt")
 	#print krippendorff_alpha(matrix, nominal_metric, missing_items="*")
@@ -25,13 +26,25 @@ def main():
 	
 	#ag.getMajorityData("../Agreement-Daten/polaritaet_standard.txt", 6, 1)
 
-	#ag.printAllInfo("../Agreement-Daten/polaritaet_dreifach.txt", "../Agreement-Daten/polaritaet_dreifach_sortiert.txt", 3, 1)
+	ag.printAllInfo("../Agreement-Daten/polaritaet_dichotom.txt", "../Agreement-Daten/polaritaet_dichotom_sortiert.txt", 2, 1)
 
 
 class Agreement_Statistics:
 
 	def __init__(self):
 		self._sentimentDict = {}
+
+	def test(self, path):
+		data = open(path)
+		lines = data.readlines()
+		i = 0
+		for line in lines:
+			numbers = line.split("\t")
+			numbers = [int(number.strip()) for number in numbers]
+			if(numbers[0] == 1 and numbers[1] == 2):
+				print ("---")
+				print str(i+1)
+			i += 1
 
 	def printAllInfo(self, pathNormal, pathToSorted, categories, startValue):
 		fleissKappas = self.calcFleissKappasForAllDramas(pathNormal, categories, startValue)
