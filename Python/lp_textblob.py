@@ -45,6 +45,8 @@ class Text_Blob:
 		self._currentDramaName = ""
 		self._tokensWithoutStopwords = []
 
+		self._stopwordLists = ["standard_list", "enhanced_list", "enhanced_filtered_list"]
+
 	def processText(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
@@ -197,21 +199,21 @@ class Text_Blob:
 				return True
 		return False
 	
-	def initStopWords(self):
-		stopwords_text = open("../Stopwords/FinalStopwordLists/stopwords_fullyEnhancedFilteredBySelfAdjustedNoStopwords.txt")
+	def initStopWords(self, listname):
+		stopwords_text = open("../Stopwords/MainStopwordLists/" + listname + ".txt")
 		for line in stopwords_text:
 			self._stopwords.append(unicode(line.strip()))
 			#print unicode(line.strip())
 			stopword_lemmatized = TextBlobDE(line.strip()).words.lemmatize()[0]
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
-	def removeStopWordsFromLemmas(self):
-		self.initStopWords()
+	def removeStopWordsFromLemmas(self, listname):
+		self.initStopWords(listname)
 		lemmasCopy = list(self._lemmas)
 		self._lemmasWithoutStopwords = self.removeStopwordsFromLemmasList(lemmasCopy)
 	
 	def removeStopwordsFromTokens(self):
-		self.initStopWords()
+		self.initStopWords(listname)
 		tokensCopy = list(self._tokens)
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 

@@ -46,6 +46,8 @@ class Tree_Tagger:
 		self._currentDramaName = ""
 		self._tokensWithoutStopwords = []
 
+		self._stopwordLists = ["standard_list", "enhanced_list", "enhanced_filtered_list"]
+
 		self._tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
 
 	def processText(self, plainText):
@@ -179,8 +181,8 @@ class Tree_Tagger:
 
 		return newText
 
-	def initStopWords(self):
-		stopwords_text = open("../Stopwords/FinalStopwordLists/stopwords_fullyEnhancedFilteredBySelfAdjustedNoStopwords.txt")
+	def initStopWords(self, listname):
+		stopwords_text = open("../Stopwords/MainStopwordLists/" + listname + ".txt")
 		for line in stopwords_text:
 			stopword = unicode(line.strip())
 			self._stopwords.append(stopword)
@@ -190,13 +192,13 @@ class Tree_Tagger:
 			#print stopword_lemmatized
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 			
-	def removeStopWordsFromLemmas(self):
-		self.initStopWords()
+	def removeStopWordsFromLemmas(self, listname):
+		self.initStopWords(listname)
 		lemmasCopy = list(self._lemmas)
 		self._lemmasWithoutStopwords = self.removeStopwordsFromLemmasList(lemmasCopy)
 	
-	def removeStopwordsFromTokens(self):
-		self.initStopWords()
+	def removeStopwordsFromTokens(self, listname):
+		self.initStopWords(listname)
 		tokensCopy = list(self._tokens)
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)
 

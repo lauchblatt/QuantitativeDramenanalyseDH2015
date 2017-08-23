@@ -19,20 +19,21 @@ def main():
 	processor = Drama_Pre_Processing("treetagger")
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Nathan der Weise.p")
 	
-	sa = Sentiment_Analyzer(True, False, "CombinedLexicon", "treetagger")
+	sa = Sentiment_Analyzer(True,"textblob", True, "standard_list", False)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	
 class Sentiment_Analyzer:
 
-	def __init__(self, removeStopwords, lemmaModeOn, lexicon, processor):
+	def __init__(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
 
 		self._sentimentDict = {}
 		self._lemmaModeOn = lemmaModeOn
-		self._removeStopwords = removeStopwords
+		self._caseSensitive = caseSensitive
+		self._removeStopwords = False
 		self._stopwords = []
 
-		self.initLexicons(lexicon, processor)
-		self.initStopWords(processor)
+		self.initLexicons(DTAExtension, processor)
+		self.initStopWords(processor, stopwordList)
 	
 	def attachAllSentimentInfoToDrama(self, dramaModel):
 		self.attachSentimentBearingWordsToDrama(dramaModel)
@@ -41,12 +42,15 @@ class Sentiment_Analyzer:
 		self.attachSentimentRelationsToSpeaker(dramaModel)
 		return dramaModel
 
-	def initStopWords(self, processor):
+	def initStopWords(self, processor, stopwordList):
+		if(stopwordList != None and stopwordList != ""):
+			self._removeStopwords = True
+
 		if(self._removeStopwords):
 			lp = Language_Processor(processor)
 			lp.setProcessor(processor)
 
-			lp._processor.initStopWords()
+			lp._processor.initStopWords(stopwordList)
 			if(self._lemmaModeOn):
 				self._stopwords = lp._processor._stopwords_lemmatized
 			else:
@@ -54,7 +58,7 @@ class Sentiment_Analyzer:
 		else:
 			self._stopwords = []
 
-	def initLexicons(self, lexicon, processor):
+	def initLexicons(self, DTAExtension, processor):
 		
 		"""
 		self._languageProcessor = Language_Processor()
@@ -68,7 +72,13 @@ class Sentiment_Analyzer:
 		lexiconHandlerBawl.initSingleDict("Bawl")
 		self._bawl = lexiconHandlerBawl._sentimentDictLemmas
 		"""
+		lexicon = ""
 		lexiconHandler = Lexicon_Handler()
+		if(DTAExtension):
+			lexicon = "CombinedLexicon-DTAExtended"
+		else:
+			lexicon = "CombinedLexicon"
+
 		lexiconHandler.initSingleDict(lexicon, processor)
 		sentimentDictTokens = lexiconHandler._sentimentDict
 		sentimentDictLemmas = lexiconHandler._sentimentDictLemmas
@@ -245,18 +255,23 @@ class Sentiment_Analyzer:
 		return sentimentBearingWords
 
 	def isSentimentBearingWordAndNotStopword(self, word):
-		if(word == "der"):
-			print (word in self._stopwords)
+
 		if(word in self._stopwords):
 			return False
-		upperWord = word[:1].upper() + word[1:]
-		lowerWord = word.lower()
+		
+		if(self._caseSensitive):
+			if(word in self._sentimentDict):
+				return True
+			else:
+				return False
+		else:	
+			upperWord = word[:1].upper() + word[1:]
+			lowerWord = word.lower()
 
-		# Groß- und Kleinschreibung sinnvoll?
-		if(upperWord in self._sentimentDict or lowerWord in self._sentimentDict):
-			return True
-		else:
-			return False
+			if(upperWord in self._sentimentDict or lowerWord in self._sentimentDict):
+				return True
+			else:
+				return False
 
 
 if __name__ == "__main__":
