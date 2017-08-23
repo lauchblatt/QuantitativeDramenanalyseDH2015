@@ -23,7 +23,7 @@ def main():
 	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
 	"""
 
-	tce.createOutputAllMajorMetricsForSinglePolarity("polaritySentiWS")
+	tce.createOutputAllMajorMetricsForSinglePolarity("polarityGpc")
 
 class Test_Corpus_Evaluation:
 	def __init__(self):
@@ -35,12 +35,14 @@ class Test_Corpus_Evaluation:
 	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
-		DTAExtensions = [False, True]
-		processors = ["treetagger", "textblob"]
+		DTAExtensions = [False]
+		processors = ["treetagger"]
 		lemmaModes = [False, True]
-		stopwordLists = [None, "standard_list", "enhanced_list", "enhanced_filtered_list"]
+		stopwordLists = [None]
+		#stopwordLists = [None, "standard_list", "enhanced_list", "enhanced_filtered_list"]
 		caseSensitives = [False, True]
 		doneCombinations = []
+		nameResultTuples = []
 
 		for DTAExtension in DTAExtensions:
 			for lemmaModeOn in lemmaModes:
@@ -52,10 +54,29 @@ class Test_Corpus_Evaluation:
 							if(not(name in doneCombinations)):
 								self.initTestCorpus("Dumps/TestCorpus/testCorpus_" + processor + ".p")
 								self.attachSentimentInfoOnTestCorpus(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
-								self.comparePolarityMetricWithBenchmark(polarityMetric)
-								path = self.getMainPath(polarityMetric)
+								result = self.comparePolarityMetricWithBenchmark(polarityMetric)
+								nameResultTuple = (name, result)
+								nameResultTuples.append(nameResultTuple)
 								doneCombinations.append(name)
 								print name
+
+		names = [item[0] for item in nameResultTuples]
+		results = [item[1].getMajorMetrics() for item in nameResultTuples]
+		i = 0
+		for name in names:
+			results[i] = [name] + results[i]
+			i += 1
+		resultNames = ["CombinationType", "accuracy", "recallPositive", "precisionPositive", "F-MeasurePositive",\
+		"recallNegative", "precisionNegative", "F-MeasureNegative"]
+		firstLine = "\t".join(resultNames)
+		rows = ""
+		for result in results:
+			row = "\t".join(str(item) for item in result)
+			rows = rows + row + "\n"
+		output = firstLine + "\n" + rows
+		output = output.replace(".", ",")
+
+		print output
 
 	def getMainPath(self, polarityMetric):
 		path = "../Test-Korpus-Evaluation/Evaluation-Results/" + polarityMetric + "/"
@@ -74,9 +95,9 @@ class Test_Corpus_Evaluation:
 		else:
 			name = name + stopwordList + "_"
 		if(caseSensitive):
-			name = name + "caseSensitive.txt"
+			name = name + "caseSensitive"
 		else:
-			name = name + "caseInSensitive.txt"
+			name = name + "caseInSensitive"
 		return name
 
 	def attachSentimentInfoOnTestCorpus(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
@@ -132,6 +153,7 @@ class Test_Corpus_Evaluation:
 		print(result._fMeasurePositive)
 		print(result._fMeasureNegative)
 		"""
+		return result
 
 	def initPolarityBenchmark(self, pathToBenchmark):
 		polarityBenchmark = []
@@ -219,7 +241,7 @@ class Comparison_Result_Polarity:
 		for row in self._crosstable:
 			outputLine = [str(item) for item in row]
 			outputLine = "\t".join(outputLine)
-			#print outputLine
+			print outputLine
 
 	def updateAllTruePolarities(self):
 		self._allTruePolarities = self._truePositives + self._trueNegatives
