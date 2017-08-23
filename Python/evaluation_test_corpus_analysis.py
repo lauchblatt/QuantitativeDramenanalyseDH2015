@@ -16,10 +16,14 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	tce = Test_Corpus_Evaluation()
+	"""
 	tce.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
-	tce.attachSentimentInfoOnTestCorpus(False, True, "CombinedLexicon", "textblob")
+	tce.attachSentimentInfoOnTestCorpus(True, "treetagger", False, None, True)
 	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
+	"""
+
+	tce.createOutputAllMajorMetricsForSinglePolarity("polaritySentiWS")
 
 class Test_Corpus_Evaluation:
 	def __init__(self):
@@ -28,8 +32,55 @@ class Test_Corpus_Evaluation:
 		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom"\
 		"polarityCd", "polarityCdDichotom", "polarityGpc", "polarityCombined"]
 
-	def attachSentimentInfoOnTestCorpus(self, removeStopwords, lemmaModeOn, lexicon, processor):
-		sa = Sentiment_Analyzer(removeStopwords, lemmaModeOn, lexicon, processor)
+	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
+		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
+
+		DTAExtensions = [False, True]
+		processors = ["treetagger", "textblob"]
+		lemmaModes = [False, True]
+		stopwordLists = [None, "standard_list", "enhanced_list", "enhanced_filtered_list"]
+		caseSensitives = [False, True]
+		doneCombinations = []
+
+		for DTAExtension in DTAExtensions:
+			for lemmaModeOn in lemmaModes:
+				for processor in processors:
+					for stopwordList in stopwordLists:
+						for caseSensitive in caseSensitives:
+							#To remove automatic Duplicates
+							name = self.getCombinationName(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+							if(not(name in doneCombinations)):
+								self.initTestCorpus("Dumps/TestCorpus/testCorpus_" + processor + ".p")
+								self.attachSentimentInfoOnTestCorpus(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+								self.comparePolarityMetricWithBenchmark(polarityMetric)
+								path = self.getMainPath(polarityMetric)
+								doneCombinations.append(name)
+								print name
+
+	def getMainPath(self, polarityMetric):
+		path = "../Test-Korpus-Evaluation/Evaluation-Results/" + polarityMetric + "/"
+		return path 
+
+	def getCombinationName(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
+		name = ""
+		if(DTAExtension):
+			name = name + "dtaExtended_"
+		if(not lemmaModeOn):
+			name = name + "tokens_"
+		else:
+			name = name + processor + "_"
+		if(stopwordList is None):
+			name = name + "noStopwordList_"
+		else:
+			name = name + stopwordList + "_"
+		if(caseSensitive):
+			name = name + "caseSensitive.txt"
+		else:
+			name = name + "caseInSensitive.txt"
+		return name
+
+	def attachSentimentInfoOnTestCorpus(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
+		sa = Sentiment_Analyzer(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 
 		for testCorpusSpeech in self._testCorpusSpeeches:
 			textAsLanguageInfo = testCorpusSpeech._speech._textAsLanguageInfo
@@ -71,6 +122,8 @@ class Test_Corpus_Evaluation:
 		result.setCrossTable()
 		result.printCrossTable()
 		result.calcMeasurements()
+
+		"""
 		print(result._accuracy)
 		print(result._recallPositive)
 		print(result._recallNegative)
@@ -78,7 +131,7 @@ class Test_Corpus_Evaluation:
 		print(result._precisionNegative)
 		print(result._fMeasurePositive)
 		print(result._fMeasureNegative)
-
+		"""
 
 	def initPolarityBenchmark(self, pathToBenchmark):
 		polarityBenchmark = []
@@ -125,6 +178,10 @@ class Comparison_Result_Polarity:
 
 		self.init(polarityBenchmark)
 
+	def getMajorMetrics(self):
+		return [self._accuracy, self._recallPositive, self._precisionPositive, self._fMeasurePositive,\
+		self._recallNegative, self._precisionNegative, self._fMeasureNegative]
+
 	def calcMeasurements(self):
 		self.setRecall()
 		self.setPrecision()
@@ -144,8 +201,6 @@ class Comparison_Result_Polarity:
 
 	def setPrecision(self):
 		self._precisionPositive = float(self._truePositives)/float(self._truePositives + self._allFalsePositives)
-		print self._trueNegatives
-		print self._allFalseNegatives
 		self._precisionNegative = float(self._trueNegatives)/float(self._trueNegatives + self._allFalseNegatives)
 
 	def setAccuracy(self):
@@ -154,15 +209,17 @@ class Comparison_Result_Polarity:
 
 	def setCrossTable(self):
 		headline = ["Actual Class", "Predicted Negative", "Predicted Positive"]
-		line1 = ["Negatives", self._testCorpusNegatives, self._trueNegatives, self._allFalsePositives]
-		line2 = ["Positives", self._testCorpusPositives, self._allFalseNegatives, self._truePositives]
-		self._crosstable = [headline, line1, line2]
+		line1 = ["Negatives", self._trueNegatives, self._allFalsePositives, self._testCorpusNegatives]
+		line2 = ["Positives", self._allFalseNegatives, self._truePositives, self._testCorpusPositives]
+		line3 = ["Sum", self._allFalseNegatives+self._trueNegatives,\
+		self._allFalsePositives+self._truePositives, self._testCorpusLength]
+		self._crosstable = [headline, line1, line2, line3]
 
 	def printCrossTable(self):
 		for row in self._crosstable:
 			outputLine = [str(item) for item in row]
 			outputLine = "\t".join(outputLine)
-			print outputLine
+			#print outputLine
 
 	def updateAllTruePolarities(self):
 		self._allTruePolarities = self._truePositives + self._trueNegatives
