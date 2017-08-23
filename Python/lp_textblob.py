@@ -201,7 +201,7 @@ class Text_Blob:
 		stopwords_text = open("../Stopwords/FinalStopwordLists/stopwords_fullyEnhancedFilteredBySelfAdjustedNoStopwords.txt")
 		for line in stopwords_text:
 			self._stopwords.append(unicode(line.strip()))
-			print unicode(line.strip())
+			#print unicode(line.strip())
 			stopword_lemmatized = TextBlobDE(line.strip()).words.lemmatize()[0]
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 
