@@ -31,18 +31,20 @@ class Test_Corpus_Evaluation:
 		self._polarityBenchmark = []
 		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom"\
 		"polarityCd", "polarityCdDichotom", "polarityGpc", "polarityCombined"]
+		self._evaluationInfo = OrderedDict({})
 
-	def getMajorResultsOfAllCombinationsForSingleMetric(self, polarityMetric):
+	def setEvaluationInfoOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
 		DTAExtensions = [False]
 		processors = ["treetagger"]
 		lemmaModes = [False, True]
-		#stopwordLists = [None]
-		stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
+		stopwordLists = [None]
+		#stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
 		caseSensitives = [False, True]
 		doneCombinations = []
 		nameResultTuples = []
+		self._evaluationInfo[polarityMetric] = {}
 
 		for DTAExtension in DTAExtensions:
 			for lemmaModeOn in lemmaModes:
@@ -55,15 +57,23 @@ class Test_Corpus_Evaluation:
 								self.initTestCorpus("Dumps/TestCorpus/testCorpus_" + processor + ".p")
 								self.attachSentimentInfoOnTestCorpus(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 								result = self.comparePolarityMetricWithBenchmark(polarityMetric)
-								nameResultTuple = (name, result)
-								nameResultTuples.append(nameResultTuple)
+								currentSpeeches = []
+								currentSpeeches.extend(self._testCorpusSpeeches)
+								self._evaluationInfo[polarityMetric][name] = (result, currentSpeeches)
+								print name
 								doneCombinations.append(name)
-		return nameResultTuples
+
+	def getMajorResultsOfAllCombinationsForSingleMetric(self, polarityMetric):
+		print("bla")
 
 	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
-		nameResultTuples = self.getMajorResultsOfAllCombinationsForSingleMetric(polarityMetric)
-		names = [item[0] for item in nameResultTuples]
-		results = [item[1].getMajorMetrics() for item in nameResultTuples]
+		self.setEvaluationInfoOfAllCombinationsForSingleMetric(polarityMetric)
+
+		names = self._evaluationInfo[polarityMetric].keys()
+		results = []
+		for name in names:
+			results.append(self._evaluationInfo[polarityMetric][name][0])
+		results = [item.getMajorMetrics() for item in results]
 		i = 0
 		rows = []
 		for name in names:
@@ -119,7 +129,6 @@ class Test_Corpus_Evaluation:
 
 		for testCorpusSpeech in self._testCorpusSpeeches:
 			textAsLanguageInfo = testCorpusSpeech._speech._textAsLanguageInfo
-			print textAsLanguageInfo
 			testCorpusSpeech._speech._sentimentBearingWords = sa.getSentimentBearingWordsSpeech(textAsLanguageInfo)
 			sa.attachSentimentMetricsToUnit(testCorpusSpeech._speech)
 
