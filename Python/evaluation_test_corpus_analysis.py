@@ -22,8 +22,8 @@ def main():
 	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
 	"""
-
-	tce.createOutputAllMajorMetricsForSinglePolarity("polarityGpc")
+	tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityGpc")
+	tce.createOutputDetailInfoOfCombination("polarityGpc", "noExtension_tokens_noStopwordList_caseInSensitive")
 
 class Test_Corpus_Evaluation:
 	def __init__(self):
@@ -32,6 +32,9 @@ class Test_Corpus_Evaluation:
 		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom"\
 		"polarityCd", "polarityCdDichotom", "polarityGpc", "polarityCombined"]
 		self._evaluationInfo = OrderedDict({})
+
+		self._correspondingSBWMetriccs = {}
+		self.initCorrespondingSBWMetrics()
 
 	def setEvaluationInfoOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
@@ -63,12 +66,14 @@ class Test_Corpus_Evaluation:
 								print name
 								doneCombinations.append(name)
 
-	def getMajorResultsOfAllCombinationsForSingleMetric(self, polarityMetric):
-		print("bla")
+	def createOutputDetailInfoOfCombination(self, polarityMetric, name):
+		evaInfo = self._evaluationInfo[polarityMetric][name]
+		corpusSpeeches = evaInfo[1]
+
+		for cSpeech in corpusSpeeches:
+			print cSpeech._speech._sentimentBearingWords
 
 	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
-		self.setEvaluationInfoOfAllCombinationsForSingleMetric(polarityMetric)
-
 		names = self._evaluationInfo[polarityMetric].keys()
 		results = []
 		for name in names:
@@ -282,6 +287,17 @@ class Comparison_Result_Polarity:
 				self._testCorpusNegatives += 1
 			if(item == 2):
 				self._testCorpusPositives += 1
+
+	def initCorrespondingSBWMetrics(self):
+		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom"\
+		"polarityCd", "polarityCdDichotom", "polarityGpc", "polarityCombined"]
+		self._correspondingSBWMetrics["polaritySentiWS"] = ["_polaritySentiWS"]
+		self._correspondingSBWMetrics["polaritySentiWSDichotom"] = ["_positiveSentiWSDichotom", "_negativeSentiWSDichotom"]
+		self._correspondingSBWMetrics["polarityNrc"] = ["_positiveNrc", "_negativeNrc"]
+		self._correspondingSBWMetrics["emotion"] = ["_emotion"]
+		self._correspondingSBWMetrics["polarityCd"] = ["_positiveCd", "_negativeCd"]
+		self._correspondingSBWMetrics["polarityCdDichotom"] = ["_positiveCDDichotom", "_negativeCDDichotom"]
+		self._correspondingSBWMetrics["polarityGpc"] = ["_positiveGpc", "_negativeGpc"]
 
 if __name__ == "__main__":
     main()
