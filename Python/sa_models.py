@@ -289,7 +289,7 @@ class Sentiment_Bearing_Word:
 		print info
 
 	def returnInfoAsString(self):
-		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
+		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "): "
 		sentiWs = str(self._polaritySentiWS)
 		nrc = ", ".join(str(x) for x in [self._positiveNrc,self._negativeNrc,
 		self._anger,self._anticipation,self._disgust,self._fear,self._joy,self._sadness,self._surprise,self._trust])
@@ -297,6 +297,15 @@ class Sentiment_Bearing_Word:
 		cd = ", ".join([str(self._positiveCd), str(self._negativeCd), str(self._neutralCd)])
 		gpc = ", ".join([str(self._positiveGpc), str(self._negativeGpc), str(self._neutralGpc)])
 		info = info + sentiWs + " | " + nrc + " | " + bawl + " | " + cd + " | " + gpc
+		return info
+
+	def returnSpecificInfoAsString(self, metricNames):
+		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "): "
+		metricValues = []
+		for metricName in metricNames:
+			metricValues.append(getattr(self, metricName))
+		metricValuesAsString = ", ".join([str(item) for item in metricValues])
+		info = info + metricValuesAsString
 		return info
 
 if __name__ == "__main__":
