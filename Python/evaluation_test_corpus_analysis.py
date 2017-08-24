@@ -63,17 +63,23 @@ class Test_Corpus_Evaluation:
 		names = [item[0] for item in nameResultTuples]
 		results = [item[1].getMajorMetrics() for item in nameResultTuples]
 		i = 0
+		rows = []
 		for name in names:
-			results[i] = [name] + results[i]
+			info = name.split("_")
+			nameAndInfo = [name]
+			nameAndInfo.extend(info)
+			nameAndInfo.extend(results[i])
+			rows.append(nameAndInfo)
 			i += 1
-		resultNames = ["CombinationType", "accuracy", "recallPositive", "precisionPositive", "F-MeasurePositive",\
+		resultNames = ["CombinationType", "DTAExtension", "Lemmatization", "Stopwords",\
+		"CaseSensitivity", "accuracy", "recallPositive", "precisionPositive", "F-MeasurePositive",\
 		"recallNegative", "precisionNegative", "F-MeasureNegative"]
 		firstLine = "\t".join(resultNames)
-		rows = ""
-		for result in results:
-			row = "\t".join(str(item) for item in result)
-			rows = rows + row + "\n"
-		output = firstLine + "\n" + rows
+		rowsString = ""
+		for row in rows:
+			rowString = "\t".join(str(item) for item in row)
+			rowsString = rowsString + rowString + "\n"
+		output = firstLine + "\n" + rowsString.rstrip()
 		output = output.replace(".", ",")
 
 		print output
@@ -86,6 +92,8 @@ class Test_Corpus_Evaluation:
 		name = ""
 		if(DTAExtension):
 			name = name + "dtaExtended_"
+		else:
+			name = name + "noExtension_"
 		if(not lemmaModeOn):
 			name = name + "tokens_"
 		else:
