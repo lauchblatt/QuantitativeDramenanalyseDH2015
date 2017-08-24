@@ -45,7 +45,7 @@ class Text_Blob:
 		self._currentDramaName = ""
 		self._tokensWithoutStopwords = []
 
-		self._stopwordLists = ["standard_list", "enhanced_list", "enhanced_filtered_list"]
+		self._stopwordLists = ["standardList", "enhancedList", "enhancedFilteredList"]
 
 	def processText(self, plainText):
 		self._plainText = plainText

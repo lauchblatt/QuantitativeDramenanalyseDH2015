@@ -32,14 +32,14 @@ class Test_Corpus_Evaluation:
 		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom"\
 		"polarityCd", "polarityCdDichotom", "polarityGpc", "polarityCombined"]
 
-	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
+	def getMajorResultsOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
 		DTAExtensions = [False]
 		processors = ["treetagger"]
 		lemmaModes = [False, True]
-		stopwordLists = [None]
-		#stopwordLists = [None, "standard_list", "enhanced_list", "enhanced_filtered_list"]
+		#stopwordLists = [None]
+		stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
 		caseSensitives = [False, True]
 		doneCombinations = []
 		nameResultTuples = []
@@ -58,8 +58,10 @@ class Test_Corpus_Evaluation:
 								nameResultTuple = (name, result)
 								nameResultTuples.append(nameResultTuple)
 								doneCombinations.append(name)
-								print name
+		return nameResultTuples
 
+	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
+		nameResultTuples = self.getMajorResultsOfAllCombinationsForSingleMetric(polarityMetric)
 		names = [item[0] for item in nameResultTuples]
 		results = [item[1].getMajorMetrics() for item in nameResultTuples]
 		i = 0
@@ -82,7 +84,11 @@ class Test_Corpus_Evaluation:
 		output = firstLine + "\n" + rowsString.rstrip()
 		output = output.replace(".", ",")
 
-		print output
+		outputPath = "../Evaluation/Test-Korpus-Evaluation/Evaluation-Results/" + polarityMetric + "/" + \
+		polarityMetric + "_majorMetrics.tsv"
+		outputFile = open(outputPath, "w")
+		outputFile.write(output)
+		outputFile.close()
 
 	def getMainPath(self, polarityMetric):
 		path = "../Test-Korpus-Evaluation/Evaluation-Results/" + polarityMetric + "/"
@@ -113,6 +119,7 @@ class Test_Corpus_Evaluation:
 
 		for testCorpusSpeech in self._testCorpusSpeeches:
 			textAsLanguageInfo = testCorpusSpeech._speech._textAsLanguageInfo
+			print textAsLanguageInfo
 			testCorpusSpeech._speech._sentimentBearingWords = sa.getSentimentBearingWordsSpeech(textAsLanguageInfo)
 			sa.attachSentimentMetricsToUnit(testCorpusSpeech._speech)
 
@@ -149,7 +156,7 @@ class Test_Corpus_Evaluation:
 		result.updateAllTruePolarities()
 		result.updateFalsePolarities()
 		result.setCrossTable()
-		result.printCrossTable()
+		#result.printCrossTable()
 		result.calcMeasurements()
 
 		"""

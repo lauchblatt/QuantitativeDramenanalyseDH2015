@@ -1,0 +1,17 @@
+CombinationType	DTAExtension	Lemmatization	Stopwords	CaseSensitivity	accuracy	recallPositive	precisionPositive	F-MeasurePositive	recallNegative	precisionNegative	F-MeasureNegative
+noExtension_tokens_noStopwordList_caseInSensitive	noExtension	tokens	noStopwordList	caseInSensitive	0,64	0,409836065574	0,409836065574	0,409836065574	0,741007194245	0,741007194245	0,741007194245
+noExtension_tokens_noStopwordList_caseSensitive	noExtension	tokens	noStopwordList	caseSensitive	0,64	0,344262295082	0,396226415094	0,368421052632	0,769784172662	0,727891156463	0,748251748252
+noExtension_tokens_standardList_caseInSensitive	noExtension	tokens	standardList	caseInSensitive	0,51	0,737704918033	0,354330708661	0,478723404255	0,410071942446	0,780821917808	0,537735849057
+noExtension_tokens_standardList_caseSensitive	noExtension	tokens	standardList	caseSensitive	0,52	0,737704918033	0,36	0,483870967742	0,424460431655	0,786666666667	0,551401869159
+noExtension_tokens_enhancedList_caseInSensitive	noExtension	tokens	enhancedList	caseInSensitive	0,535	0,459016393443	0,318181818182	0,375838926174	0,568345323741	0,705357142857	0,629482071713
+noExtension_tokens_enhancedList_caseSensitive	noExtension	tokens	enhancedList	caseSensitive	0,505	0,459016393443	0,297872340426	0,361290322581	0,525179856115	0,688679245283	0,595918367347
+noExtension_tokens_enhancedFilteredList_caseInSensitive	noExtension	tokens	enhancedFilteredList	caseInSensitive	0,535	0,606557377049	0,349056603774	0,443113772455	0,503597122302	0,744680851064	0,600858369099
+noExtension_tokens_enhancedFilteredList_caseSensitive	noExtension	tokens	enhancedFilteredList	caseSensitive	0,525	0,606557377049	0,342592592593	0,437869822485	0,489208633094	0,739130434783	0,588744588745
+noExtension_treetagger_noStopwordList_caseInSensitive	noExtension	treetagger	noStopwordList	caseInSensitive	0,695	0,16393442623	0,5	0,246913580247	0,928057553957	0,716666666667	0,808777429467
+noExtension_treetagger_noStopwordList_caseSensitive	noExtension	treetagger	noStopwordList	caseSensitive	0,69	0,16393442623	0,47619047619	0,243902439024	0,920863309353	0,715083798883	0,805031446541
+noExtension_treetagger_standardList_caseInSensitive	noExtension	treetagger	standardList	caseInSensitive	0,525	0,737704918033	0,362903225806	0,486486486486	0,431654676259	0,789473684211	0,558139534884
+noExtension_treetagger_standardList_caseSensitive	noExtension	treetagger	standardList	caseSensitive	0,52	0,737704918033	0,36	0,483870967742	0,424460431655	0,786666666667	0,551401869159
+noExtension_treetagger_enhancedList_caseInSensitive	noExtension	treetagger	enhancedList	caseInSensitive	0,505	0,459016393443	0,297872340426	0,361290322581	0,525179856115	0,688679245283	0,595918367347
+noExtension_treetagger_enhancedList_caseSensitive	noExtension	treetagger	enhancedList	caseSensitive	0,495	0,44262295082	0,287234042553	0,348387096774	0,517985611511	0,679245283019	0,587755102041
+noExtension_treetagger_enhancedFilteredList_caseInSensitive	noExtension	treetagger	enhancedFilteredList	caseInSensitive	0,55	0,524590163934	0,344086021505	0,415584415584	0,561151079137	0,728971962617	0,634146341463
+noExtension_treetagger_enhancedFilteredList_caseSensitive	noExtension	treetagger	enhancedFilteredList	caseSensitive	0,53	0,508196721311	0,326315789474	0,397435897436	0,539568345324	0,714285714286	0,614754098361

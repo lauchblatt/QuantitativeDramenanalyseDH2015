@@ -46,7 +46,7 @@ class Tree_Tagger:
 		self._currentDramaName = ""
 		self._tokensWithoutStopwords = []
 
-		self._stopwordLists = ["standard_list", "enhanced_list", "enhanced_filtered_list"]
+		self._stopwordLists = ["standardList", "enhancedList", "enhancedFilteredList"]
 
 		self._tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
 
