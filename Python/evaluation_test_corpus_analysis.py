@@ -22,15 +22,17 @@ def main():
 	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
 	"""
-	tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityBawlDichotom")
-	tce.createOutputDetailInfoOfCombination("polarityBawlDichotom", "noExtension_tokens_noStopwordList_caseInSensitive")
+	tce.createAllOutputsOfAllMetrics()
+	#tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityBawlDichotom")
+	#tce.createOutputAllMajorMetricsForSinglePolarity("polarityBawlDichotom")
+	#tce.createOutputDetailInfoOfAllCombinations("polarityBawlDichotom")
 
 class Test_Corpus_Evaluation:
 	def __init__(self):
 		self._testCorpusSpeeches = []
 		self._polarityBenchmark = []
-		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom"\
-		"polarityCd", "polarityCdDichotom", "polarityGpc", "polarityCombined"]
+		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
+		"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}
@@ -44,14 +46,14 @@ class Test_Corpus_Evaluation:
 		self._correspondingSBWMetrics["emotion"] = ["_emotion"]
 		self._correspondingSBWMetrics["polarityBawlDichotom"] = ["_positiveBawlDichotom", "_negativeBawlDichotom"]
 		self._correspondingSBWMetrics["polarityCd"] = ["_positiveCd", "_negativeCd"]
-		self._correspondingSBWMetrics["polarityCdDichotom"] = ["_positiveCDDichotom", "_negativeCDDichotom"]
+		self._correspondingSBWMetrics["polarityCDDichotom"] = ["_positiveCDDichotom", "_negativeCDDichotom"]
 		self._correspondingSBWMetrics["polarityGpc"] = ["_positiveGpc", "_negativeGpc"]
 		self._correspondingSBWMetrics["polarityCombined"] = ["_positiveCombined", "_negativeCombined"]
 
 	def getLexiconByMetric(self, polarityMetric):
 		if(polarityMetric == "polaritySentiWS" or polarityMetric == "polaritySentiWSDichotom"):
 			return "sentiWS"
-		elif(polarityMetric == "polarityCd" or polarityMetric == "polarityCdDichotom"):
+		elif(polarityMetric == "polarityCd" or polarityMetric == "polarityCDDichotom"):
 			return "Cd"
 		elif(polarityMetric == "emotion" or polarityMetric == "polarityBawlDichotom"):
 			return "bawl"
@@ -92,7 +94,35 @@ class Test_Corpus_Evaluation:
 								print name
 								doneCombinations.append(name)
 
+	def createAllOutputsOfAllMetrics(self):
+		for polarityMetric in self._polarityNames:
+			self.setEvaluationInfoOfAllCombinationsForSingleMetric(polarityMetric)
+			self.createOutputAllMajorMetricsForSinglePolarity(polarityMetric)
+			self.createOutputDetailInfoOfAllCombinations(polarityMetric)
+
+	def createOutputDetailInfoOfAllCombinations(self, polarityMetric):
+		for combination in self._evaluationInfo[polarityMetric]:
+			self.createOutputDetailInfoOfCombination(polarityMetric, combination)
+
 	def createOutputDetailInfoOfCombination(self, polarityMetric, name):
+		path = "../Evaluation/Test-Korpus-Evaluation/Evaluation-Results/" + polarityMetric + "/" + name + ".txt"
+		output = self.getOutputDetailInfoOfCombination(polarityMetric, name)
+		outputFile = open(path, "w")
+		outputFile.write(output)
+		outputFile.close()
+
+	def getOutputDetailInfoOfCombination(self, polarityMetric, name):
+		resultInfo = self._evaluationInfo[polarityMetric][name][0]
+		majorMetrics = resultInfo.getMajorMetrics()
+		majorMetricsNames = resultInfo._majorMetricNames
+		majorMetricsInfo = "Main Metrics:\n"
+		i = 0
+		while(i < len(majorMetricsNames)):
+			majorMetricsInfo = majorMetricsInfo + majorMetricsNames[i] + ": " + str(majorMetrics[i]) + "\n"
+			i += 1
+
+		crossTable = resultInfo.getCrossTableAsString()
+
 		evaInfo = self._evaluationInfo[polarityMetric][name]
 		corpusSpeeches = evaInfo[1]
 		relevantSBWMetrics = self._correspondingSBWMetrics[polarityMetric]
@@ -109,6 +139,9 @@ class Test_Corpus_Evaluation:
 
 		speechInfo = []
 		
+		predictions = resultInfo._predictions
+
+		i = 0
 		for cSpeech in corpusSpeeches:
 			speechHeadline = cSpeech._positionInfo
 			totalMetrics = cSpeech._speech._sentimentMetrics._metricsTotal
@@ -118,6 +151,7 @@ class Test_Corpus_Evaluation:
 				metricLines = metricLines + line + "\n"
 			metricInfoPerSpeech = speechHeadline + "\n" + metricLines
 			#print metricInfoPerSpeech
+			predictionInfo = self.getPredictionInfo(predictions[i], self._polarityBenchmark[i])
 
 			sbwInfoPerSpeech = "" + headlineSBWs + "\n"
 
@@ -129,20 +163,33 @@ class Test_Corpus_Evaluation:
 						isRelevant = True
 				if(isRelevant):
 					sbwInfoPerSpeech = sbwInfoPerSpeech + (sbw.returnSpecificInfoAsString(relevantSBWMetrics)) + "\n"
-			infoPerSpeech = metricInfoPerSpeech + "\n" + sbwInfoPerSpeech
+			boundary = "-------------------------------------\n"
+			infoPerSpeech = metricInfoPerSpeech + "\n" + predictionInfo + "\n\n" + sbwInfoPerSpeech
 			speechInfo.append(infoPerSpeech)
-		
+			i += 1
+
 		allSpeechesInfo = "\n".join(speechInfo)
-		output = allSpeechesInfo
+		output = name + "\n\n" + majorMetricsInfo + "\n" + crossTable + "\n" + allSpeechesInfo
 		
-		print output
+		#print output
+		return output
+
+	def getPredictionInfo(self, prediction, benchmark):
+		if(prediction == 1 and benchmark == 1):
+			return "Prediction: NEGATIVE, Benchmark: NEGATIVE --> True"
+		elif(prediction == 1 and benchmark == 2):
+			return "Prediction: NEGATIVE, Benchmark: POSITIVE --> False"
+		elif(prediction == 2 and benchmark == 2):
+			return "Prediction: POSITIVE, Benchmark: POSITIVE --> True"
+		elif(prediction == 2 and benchmark == 1):
+			return "Prediction: POSITIVE, Benchmark: NEGATIVE --> False"
 
 	def createOutputAllMajorMetricsForSinglePolarity(self, polarityMetric):
 		names = self._evaluationInfo[polarityMetric].keys()
 		results = []
 		for name in names:
 			results.append(self._evaluationInfo[polarityMetric][name][0])
-		results = [item.getMajorMetrics() for item in results]
+		results = [item.getMajorMetricsAndCrossTableCells() for item in results]
 		i = 0
 		rows = []
 		for name in names:
@@ -154,7 +201,8 @@ class Test_Corpus_Evaluation:
 			i += 1
 		resultNames = ["CombinationType", "DTAExtension", "Lemmatization", "Stopwords",\
 		"CaseSensitivity", "accuracy", "recallPositive", "precisionPositive", "F-MeasurePositive",\
-		"recallNegative", "precisionNegative", "F-MeasureNegative"]
+		"recallNegative", "precisionNegative", "F-MeasureNegative", "recallAverage", "precisionAverage", "F-MeasureAverage",\
+		"truePositives", "falsePositives", "trueNegatives", "falseNegatives"]
 		firstLine = "\t".join(resultNames)
 		rowsString = ""
 		for row in rows:
@@ -219,16 +267,22 @@ class Test_Corpus_Evaluation:
 			#print benchmark
 			if(polarity < 0 and benchmark == 1):
 				result._trueNegatives += 1
+				result._predictions.append(1)
 			elif(polarity > 0 and benchmark == 2):
 				result._truePositives += 1
+				result._predictions.append(2)
 			elif(polarity < 0 and benchmark == 2):
 				result._falseNegatives += 1
+				result._predictions.append(1)
 			elif(polarity > 0 and benchmark == 1):
 				result._falsePositives += 1
+				result._predictions.append(2)
 			elif(polarity == 0 and benchmark == 1):
 				result._falsePositivesAsZeros += 1
+				result._predictions.append(2)
 			elif(polarity == 0 and benchmark == 2):
 				result._falseNegativesAsZeros += 1
+				result._predictions.append(1)
 			i += 1
 		
 		result.updateAllTruePolarities()
@@ -266,6 +320,8 @@ class Test_Corpus_Evaluation:
 class Comparison_Result_Polarity:
 	
 	def __init__(self, polarityBenchmark):
+		self._predictions = []
+
 		self._testCorpusLength = 0
 		self._testCorpusPositives = 0
 		self._testCorpusNegatives = 0
@@ -291,17 +347,40 @@ class Comparison_Result_Polarity:
 		self._fMeasurePositive = 0
 		self._fMeasureNegative = 0
 
+		self._recallAverage = 0
+		self._precisionAverage = 0
+		self._fMeasureAverage = 0
+
+		self._majorMetricNames = []
+
+		self.initMajorMetricNames()
 		self.init(polarityBenchmark)
+
+	def getMajorMetricsAndCrossTableCells(self):
+		majorMetrics = self.getMajorMetrics()
+		majorMetrics.extend([self._truePositives, self._allFalsePositives, self._trueNegatives, self._allFalseNegatives])
+		return majorMetrics
+
+	def initMajorMetricNames(self):
+		self._majorMetricNames = ["accuracy", "Recall Positive", "Precision Positive", "F-Measure Positive",\
+		"Recall Negative", "Precision Negative", "F-Measure Negative", "Recall Average", "Precision Average", "F-Measure Average"]
 
 	def getMajorMetrics(self):
 		return [self._accuracy, self._recallPositive, self._precisionPositive, self._fMeasurePositive,\
-		self._recallNegative, self._precisionNegative, self._fMeasureNegative]
+		self._recallNegative, self._precisionNegative, self._fMeasureNegative, self._recallAverage, self._precisionAverage,\
+		self._fMeasureAverage]
 
 	def calcMeasurements(self):
 		self.setRecall()
 		self.setPrecision()
 		self.setAccuracy()
 		self.setfMeasures()
+		self.setAverages()
+
+	def setAverages(self):
+		self._precisionAverage = (self._precisionPositive + self._precisionNegative)/2
+		self._recallAverage = (self._recallPositive + self._recallNegative)/2
+		self._fMeasureAverage = (self._fMeasurePositive + self._fMeasureNegative)/2
 
 	def setfMeasures(self):
 		self._fMeasurePositive = \
@@ -330,11 +409,15 @@ class Comparison_Result_Polarity:
 		self._allFalsePositives+self._truePositives, self._testCorpusLength]
 		self._crosstable = [headline, line1, line2, line3]
 
-	def printCrossTable(self):
+	def getCrossTableAsString(self):
+		outputLines = ""
 		for row in self._crosstable:
 			outputLine = [str(item) for item in row]
 			outputLine = "\t".join(outputLine)
-			print outputLine
+			outputLines = outputLines + outputLine + "\n"
+			#print outputLine
+		return outputLines
+
 
 	def updateAllTruePolarities(self):
 		self._allTruePolarities = self._truePositives + self._trueNegatives
