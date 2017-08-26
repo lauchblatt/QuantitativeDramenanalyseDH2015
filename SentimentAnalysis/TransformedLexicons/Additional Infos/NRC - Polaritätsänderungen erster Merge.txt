@@ -1,0 +1,55 @@
+NRC 
+
+Balsam
+Prahlerei
+Berühmtheit
+List
+Gefühl
+bescheiden
+Ausbruch
+höchste
+Spitze
+saftig
+hervorragend
+Abstimmung
+Gewicht
+
+Balsam
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Prahlerei
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Berühmtheit
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 1, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}
+List
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Gefühl
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 1}
+bescheiden
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Ausbruch
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}
+{'anticipation': 0, 'positive': 0, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 1, 'fear': 1, 'trust': 0}
+höchste
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 0}
+Spitze
+{'anticipation': 0, 'positive': 0, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 0, 'anger': 1, 'surprise': 0, 'fear': 1, 'trust': 1}
+saftig
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+hervorragend
+{'anticipation': 0, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+{'anticipation': 0, 'positive': 1, 'negative': 1, 'sadness': 0, 'disgust': 0, 'joy': 1, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 0}
+Abstimmung
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 0, 'joy': 1, 'anger': 1, 'surprise': 1, 'fear': 0, 'trust': 1}
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'trust': 1}
+Gewicht
+{'anticipation': 1, 'positive': 1, 'negative': 1, 'sadness': 1, 'disgust': 1, 'joy': 1, 'anger': 0, 'surprise': 1, 'fear': 1, 'trust': 1}
+{'anticipation': 1, 'positive': 1, 'negative': 0, 'sadness': 0, 'disgust': 0, 'joy': 0, 'anger': 0, 'surprise': 0, 'fear': 1, 'trust': 0}

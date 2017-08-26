@@ -12,16 +12,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	cd = CD()
-	cd.readAndInitCDAndLemmas("treetagger")
-
-	LP = Language_Processor("treetagger")
-	lp = LP._processor
-	lp.initStopWords()
-	stopWordsInLexicon = [word for word in lp._stopwords \
-	 if (word in cd._sentimentDict)]
-	for word in stopWordsInLexicon:
-		print word
-	print stopWordsInLexicon
+	cd.initCD()
 
 
 class CD:
@@ -99,7 +90,7 @@ class CD:
 
 			# against current choose one sentiment-Belegung
 			if(unicode(word) in sentimentDict):
-				sentiments = self.getBetterSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)])
+				sentiments = self.getBetterSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)], word)
 				infoPerWord = sentiments
 			
 			sentimentDict[unicode(word)] = infoPerWord
@@ -150,18 +141,35 @@ class CD:
 		sentiments["neutral"] = self.getHigherSentimentValue(newSentiments["neutral"], oldSentiments["neutral"])
 		return sentiments
 
-	def getBetterSentimentValuesCD(self, newSentiments, oldSentiments):
+	def getBetterSentimentValuesCD(self, newSentiments, oldSentiments, word):
 		# if somethin is neutral take the other
 		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
+		polarityChange = False
+		if(highestSentimentValues["positive"] != 0 and highestSentimentValues["negative"] != 0):
+			polarityChange = True
+			print word
+
 		if(highestSentimentValues["positive"] != 0):
 			highestSentimentValues["neutral"] = 0
 			highestSentimentValues["negative"] = 0
+			if (polarityChange):
+				print oldSentiments
+				print newSentiments
+				print highestSentimentValues
 			return highestSentimentValues
 		else:
 			if(highestSentimentValues["negative"] != 0):
 				highestSentimentValues["neutral"] = 0
+				if (polarityChange):
+					print oldSentiments
+					print newSentiments
+					print highestSentimentValues
 				return highestSentimentValues
 			else:
+				if (polarityChange):
+					print oldSentiments
+					print newSentiments
+					print highestSentimentValues
 				return highestSentimentValues
 
 	def getSentimentCD(self, sentiments):

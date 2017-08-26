@@ -16,8 +16,8 @@ def main():
 	#nrc.resetAllFiles()
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
 	#nrc.createExtendedOutputDTA()
-	nrc.readAndInitNRCAndLemmas("treetagger")
-	print(len(nrc._sentimentDict))
+	nrc.initNRC()
+	nrc.lemmatizeDictNRC("treetagger")
 
 class NRC:
 
@@ -124,6 +124,7 @@ class NRC:
 		doublePolarityOld = (oldSentiments["positive"] == 1 and oldSentiments["negative"] == 1)
 		isNeutralNew = all(value == 0 for value in newSentiments.values())
 		isNeutralOld = all(value == 0 for value in oldSentiments.values())
+
 		if(doublePolarityNew == True and doublePolarityOld == False and isNeutralOld == False):
 			return oldSentiments
 		if(doublePolarityOld == True and doublePolarityNew == False and isNeutralNew == False):
