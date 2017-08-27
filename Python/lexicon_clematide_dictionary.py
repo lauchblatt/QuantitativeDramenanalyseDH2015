@@ -12,7 +12,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	cd = CD()
-	cd.initCD()
+	cd.resetAllFiles()
 
 
 class CD:
@@ -88,7 +88,7 @@ class CD:
 			else:
 				infoPerWord["neutral"] = 0
 
-			# against current choose one sentiment-Belegung
+			
 			if(unicode(word) in sentimentDict):
 				sentiments = self.getBetterSentimentValuesCD(infoPerWord, sentimentDict[unicode(word)], word)
 				infoPerWord = sentiments
@@ -104,7 +104,7 @@ class CD:
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp._processor.getLemma(word)
 			if lemma in newSentimentDict:			
-				sentiments = self.getBetterSentimentValuesCD(value, newSentimentDict[lemma])
+				sentiments = self.getBetterSentimentValuesCD(value, newSentimentDict[lemma], lemma)
 				newSentimentDict[lemma] = sentiments
 			else:
 				newSentimentDict[lemma] = value
@@ -144,33 +144,21 @@ class CD:
 	def getBetterSentimentValuesCD(self, newSentiments, oldSentiments, word):
 		# if somethin is neutral take the other
 		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
-		polarityChange = False
-		if(highestSentimentValues["positive"] != 0 and highestSentimentValues["negative"] != 0):
-			polarityChange = True
-			print word
 
-		if(highestSentimentValues["positive"] != 0):
-			highestSentimentValues["neutral"] = 0
-			highestSentimentValues["negative"] = 0
-			if (polarityChange):
-				print oldSentiments
-				print newSentiments
-				print highestSentimentValues
-			return highestSentimentValues
-		else:
-			if(highestSentimentValues["negative"] != 0):
+		polarityChange = (highestSentimentValues["positive"] != 0 and highestSentimentValues["negative"] != 0)
+		neutralityChange = (highestSentimentValues["neutral"] != 0 \
+			and (highestSentimentValues["positive"] != 0 or highestSentimentValues["negative"] != 0))
+		if(highestSentimentValues["positive"] != 0 or highestSentimentValues["negative"] != 0):
+			if(highestSentimentValues["positive"] >= highestSentimentValues["negative"]):
+				highestSentimentValues["negative"] = 0
 				highestSentimentValues["neutral"] = 0
-				if (polarityChange):
-					print oldSentiments
-					print newSentiments
-					print highestSentimentValues
 				return highestSentimentValues
 			else:
-				if (polarityChange):
-					print oldSentiments
-					print newSentiments
-					print highestSentimentValues
+				highestSentimentValues["positive"] = 0
+				highestSentimentValues["neutral"] = 0
 				return highestSentimentValues
+		else:
+			return highestSentimentValues
 
 	def getSentimentCD(self, sentiments):
 		if(sentiments["positive"] != 0):

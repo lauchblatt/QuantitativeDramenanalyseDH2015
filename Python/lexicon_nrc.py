@@ -16,8 +16,7 @@ def main():
 	#nrc.resetAllFiles()
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
 	#nrc.createExtendedOutputDTA()
-	nrc.initNRC()
-	nrc.lemmatizeDictNRC("treetagger")
+	nrc.resetAllFiles()
 
 class NRC:
 
