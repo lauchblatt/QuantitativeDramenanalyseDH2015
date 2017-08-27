@@ -13,26 +13,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
-	gpc.readAndInitGPCAndLemmas("treetagger")
-	#gpc.resetAllFiles()
-	#gpc.createSentimentDictFileGPCToken()
-	#gpc.createSentimentDictFileGPCLemmas("treetagger")
-	#gpc.readAndInitGPCAndLemmas("treetagger")
-	"""
 	gpc.initGPC()
-	gpc.lemmatizeDictGPC()
-	print(len(gpc._sentimentDict))
-	print(len(gpc._sentimentDictLemmas))
-	"""
-	LP = Language_Processor("treetagger")
-	lp = LP._processor
-	lp.initStopWords()
-	stopWordsInLexicon = [word for word in gpc._sentimentDict \
-	 if (word in lp._stopwords)]
-	print (len(lp._stopwords))
-	print stopWordsInLexicon
-	for word in stopWordsInLexicon:
-		print word
+	gpc.lemmatizeDictGPC("textblob")
 
 class German_Polarity_Clues:
 	def __init__(self):
@@ -176,7 +158,7 @@ class German_Polarity_Clues:
 					print("Gewählter Wert:")
 					print(self.getChosenValues(value, newSentimentDict[lemma]))
 					"""
-					chosenValues = self.getChosenValues(value, newSentimentDict[lemma])
+					chosenValues = self.getChosenValues(value, newSentimentDict[lemma], lemma)
 					newSentimentDict[lemma] = chosenValues
 			else:
 				newSentimentDict[lemma] = value
@@ -184,11 +166,12 @@ class German_Polarity_Clues:
 		print ("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
-	def getChosenValues(self, newValues, oldValues):
+	def getChosenValues(self, newValues, oldValues, word):
 		if(newValues["neutral"] > oldValues["neutral"]):
 			return oldValues
 		else:
 			if(newValues["positive"] > oldValues["positive"]):
+				print word
 				return newValues
 			else:
 				return oldValues
