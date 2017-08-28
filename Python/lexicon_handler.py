@@ -19,7 +19,9 @@ def main():
 
 	lexiconHandler = Lexicon_Handler()
 	
-	lexiconHandler.resetAllFilesStandard()
+	lexiconHandler.initSingleDict("CombinedLexicon-DTAExtended", "textblob")
+	print(len(lexiconHandler._sentimentDict))
+	print(len(lexiconHandler._sentimentDictLemmas))
 
 class Lexicon_Handler:
 
@@ -51,9 +53,9 @@ class Lexicon_Handler:
 		elif (lexicon == "GPC-DTAExtended"):
 			self.initGPC(processor, True)
 		elif (lexicon == "CombinedLexicon"):
-			self.combineSentimentLexica(processor, False)
+			self.readCombinedLexiconsDump(processor, False)
 		elif (lexicon == "CombinedLexicon-DTAExtended"):
-			self.combineSentimentLexica(processor, True)
+			self.readCombinedLexiconsDump(processor, True)
 		else:
 			print ("Kein korrekte Lexikonname wurde übergeben.")
 			return ("Kein korrekter Lexikonname wurde übergeben.")
@@ -153,6 +155,37 @@ class Lexicon_Handler:
 
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
+
+	def readCombinedLexiconsDump(self, processor, DTAExtended):
+		#lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/" + version + "/" + processor + "/combinedLexiconKeysTokens.p", "rb"))
+
+		dtaExtended = ""
+		if(DTAExtended):
+			dtaExtended = "DTAExtended"
+		pathTokens = "Dumps/CombinedLexicons" + dtaExtended + "/" + processor + "/CombinedLexicon"\
+		 + dtaExtended + "-" + processor + "-Tokens.p"
+		pathLemmas = "Dumps/CombinedLexicons" + dtaExtended + "/" + processor + "/CombinedLexicon"\
+		 + dtaExtended + "-" + processor + "-Lemmas.p"
+
+		self._sentimentDict = pickle.load(open(pathTokens, "rb"))
+		self._sentimentDictLemmas = pickle.load(open(pathLemmas, "rb"))
+
+	def dumpCombinedLexicons(self):
+		self.combineSentimentLexica("treetagger", False)
+		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexicons/treetagger/CombinedLexicon-treetagger-Tokens.p", "wb"))
+		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexicons/treetagger/CombinedLexicon-treetagger-Lemmas.p", "wb"))
+		
+		self.combineSentimentLexica("textblob", False)
+		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexicons/textblob/CombinedLexicon-textblob-Tokens.p", "wb"))
+		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexicons/textblob/CombinedLexicon-textblob-Lemmas.p", "wb"))
+
+		self.combineSentimentLexica("treetagger", True)
+		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexiconsDTAExtended/treetagger/CombinedLexiconDTAExtended-treetagger-Tokens.p", "wb"))
+		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexiconsDTAExtended/treetagger/CombinedLexiconDTAExtended-treetagger-Lemmas.p", "wb"))
+		
+		self.combineSentimentLexica("textblob", True)
+		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Tokens.p", "wb"))
+		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Lemmas.p", "wb"))
 
 	def getSimpleLexicons(self, processor):
 		lexicons = {}

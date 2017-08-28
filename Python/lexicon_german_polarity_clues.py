@@ -13,7 +13,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
-	gpc.resetAllFiles()
+	gpc.createExtendedOutputDTA()
 
 class German_Polarity_Clues:
 	def __init__(self):
@@ -232,7 +232,7 @@ class German_Polarity_Clues:
 
 	def extendLexiconGPCDTA(self):
 		dta = DTA_Handler()
-		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "GPC")
 
 	def resetAllFiles(self):
 		self.createSentimentDictFileGPCToken()

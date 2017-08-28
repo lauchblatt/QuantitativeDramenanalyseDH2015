@@ -14,7 +14,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
-	bawl.resetAllFiles()
+	bawl.createExtendedOutputDTA()
 	#mat = bawl.test2()
 	#bawl.fleiss_kappa(mat)
 	#bawl.createExtendedOutputDTA()
@@ -146,7 +146,7 @@ class Bawl:
 
 	def extendLexiconBawlDTA(self):
 		dta = DTA_Handler()
-		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "Bawl")
 
 	def createSentimentDictFileBawlToken(self):
 		self.initBawl()

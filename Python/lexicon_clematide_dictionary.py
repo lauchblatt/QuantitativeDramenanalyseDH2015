@@ -12,7 +12,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	cd = CD()
-	cd.resetAllFiles()
+	cd.createExtendedOutputDTA()
 
 
 class CD:
@@ -192,7 +192,7 @@ class CD:
 
 	def extendLexiconCDDTA(self):
 		dta = DTA_Handler()
-		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "CD")
 
 	def resetAllFiles(self):
 		self.createSentimentDictFileCDToken()

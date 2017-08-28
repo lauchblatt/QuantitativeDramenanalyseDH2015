@@ -13,9 +13,9 @@ def main():
 
 	dta = DTA_Handler()
 	la = Lexicon_Handler()
-	la.initSingleDict("SentiWS", "treetagger")
+	la.initSingleDict("NRC", "treetagger")
 	sentimentDict = la._sentimentDict
-	dta.extendSentimentDictDTA(sentimentDict, "SentiWS")
+	dta.extendSentimentDictDTA(sentimentDict, "NRC")
 
 class DTA_Handler:
 	
@@ -34,9 +34,17 @@ class DTA_Handler:
 				synonyms = self._wordSynonymsDict[word]
 				for synonym in synonyms:
 					#already unicode
+						# Bei doppelungen
 						if synonym in sentimentDict:
+							#checken ob das Wort in der Originalmenge war, dann bitte nicht ändern
 							if(not(synonym in copy)):
 								betterValues = self.getBetterValues(lexiconName, sentiments, sentimentDict[synonym])
+								"""
+								print synonym
+								print sentimentDict[synonym]
+								print sentiments
+								print betterValues
+								"""
 								sentimentDict[synonym] = betterValues
 						else:
 							sentimentDict[synonym] = sentiments
@@ -104,14 +112,20 @@ class DTA_Handler:
 			else:
 				return oldValues
 
+	def getHigherSentimentValueCD(self, newScore, oldScore):
+		if(abs(newScore) > abs(oldScore)):
+			return newScore
+		else:
+			return oldScore
+
 	def getHigherSentimentValuesCD(self, newSentiments, oldSentiments):
 		sentiments = {}
-		sentiments["positive"] = self.getHigherSentimentValue(newSentiments["positive"], oldSentiments["positive"])
-		sentiments["negative"] = self.getHigherSentimentValue(newSentiments["negative"], oldSentiments["negative"])
-		sentiments["neutral"] = self.getHigherSentimentValue(newSentiments["neutral"], oldSentiments["neutral"])
+		sentiments["positive"] = self.getHigherSentimentValueCD(newSentiments["positive"], oldSentiments["positive"])
+		sentiments["negative"] = self.getHigherSentimentValueCD(newSentiments["negative"], oldSentiments["negative"])
+		sentiments["neutral"] = self.getHigherSentimentValueCD(newSentiments["neutral"], oldSentiments["neutral"])
 		return sentiments
 
-	def getBetterValuesCD(self, newSentiments, oldSentiments, word):
+	def getBetterValuesCD(self, newSentiments, oldSentiments):
 		# if somethin is neutral take the other
 		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
 

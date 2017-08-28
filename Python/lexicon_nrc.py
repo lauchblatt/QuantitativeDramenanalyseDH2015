@@ -16,7 +16,7 @@ def main():
 	#nrc.resetAllFiles()
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
 	#nrc.createExtendedOutputDTA()
-	nrc.resetAllFiles()
+	nrc.createExtendedOutputDTA()
 
 class NRC:
 
@@ -217,7 +217,7 @@ class NRC:
 
 	def extendLexiconNRCDTA(self):
 		dta = DTA_Handler()
-		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict)
+		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "NRC")
 
 	def resetAllFiles(self):
 		self.createSentimentDictFileNRCToken()
