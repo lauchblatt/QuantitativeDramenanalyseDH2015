@@ -18,9 +18,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	lexiconHandler = Lexicon_Handler()
-	lexiconHandler.initSingleDict("CombinedLexicon", "treetagger")
-	print len(lexiconHandler._sentimentDict)
-	print len(lexiconHandler._sentimentDictLemmas)
+	
+	lexiconHandler.resetAllFilesStandard()
 
 class Lexicon_Handler:
 

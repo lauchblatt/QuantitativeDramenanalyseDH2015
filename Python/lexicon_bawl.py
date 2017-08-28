@@ -14,8 +14,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	bawl = Bawl()
-	bawl.initBawl()
-	bawl.lemmatizeDictBawl("textblob")
+	bawl.resetAllFiles()
 	#mat = bawl.test2()
 	#bawl.fleiss_kappa(mat)
 	#bawl.createExtendedOutputDTA()
@@ -76,7 +75,9 @@ class Bawl:
 			infoPerWord = {}
 			infoPerWord["emotion"] = float(info[1].replace(",", "."))
 			infoPerWord["arousel"] = float(info[2].replace(",", "."))
+
 			sentimentDict[unicode(word)] = infoPerWord
+		
 		return sentimentDict
 
 	def lemmatizeDictBawl(self, processor):
@@ -102,8 +103,12 @@ class Bawl:
 
 		if(newEmotion > oldEmotion):
 			return newValues
+		elif(oldEmotion > newEmotion):
+			return oldValues
 		elif(newArousel > oldArousel):
 			return newValues
+		elif(oldArousel > newArousel):
+			return oldValues
 		return oldValues
 
 

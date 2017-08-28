@@ -13,11 +13,9 @@ def main():
 
 	dta = DTA_Handler()
 	la = Lexicon_Handler()
-	la.initSingleDict("NRC", "treetagger")
+	la.initSingleDict("SentiWS", "treetagger")
 	sentimentDict = la._sentimentDict
-	print (len(sentimentDict))
-	sentimentDict = dta.extendSentimentDictDTA(sentimentDict)
-	print(len(sentimentDict))
+	dta.extendSentimentDictDTA(sentimentDict, "SentiWS")
 
 class DTA_Handler:
 	
@@ -25,43 +23,63 @@ class DTA_Handler:
 		
 		self._wordSynonymsDict = {}
 
-	def extendSentimentDictDTA(self, sentimentDict):
+	def extendSentimentDictDTA(self, sentimentDict, lexiconName):
 		self.setWordSynonymsFromDTA()
+		keys = sentimentDict.keys()
+		copy = {}
+		copy.update(sentimentDict)
 		for word in sentimentDict.keys():
 			if(word in self._wordSynonymsDict):
 				sentiments = sentimentDict[word]
 				synonyms = self._wordSynonymsDict[word]
 				for synonym in synonyms:
-						sentimentDict[synonym] = sentiments
+					#already unicode
+						if synonym in sentimentDict:
+							if(not(synonym in copy)):
+								betterValues = self.getBetterValues(lexiconName, sentiments, sentimentDict[synonym])
+								sentimentDict[synonym] = betterValues
+						else:
+							sentimentDict[synonym] = sentiments
 
 		return sentimentDict
 
 	def getBetterValues(self, lexicon, newValues, oldValues):
 		["SentiWS", "NRC", "Bawl", "CD", "GPC"]
 		if(lexicon == "SentiWS"):
-			return self.getBetterValueSentiWS(newValues, oldValues)
-		elif("NRC"):
-			return self.getBetterValuesNRC(newValues, oldValues)
+			return self.getBetterValuesSentiWS(newValues, oldValues)
+		elif(lexicon == "NRC"):
+			return self.getBetterValuesNrc(newValues, oldValues)
 		elif(lexicon == "Bawl"):
-			return self.geBetterValuesBawl(newValues, oldValues)
+			return self.getBetterValuesBawl(newValues, oldValues)
 		elif(lexicon == "CD"):
 			return self.getBetterValuesCD(newValues, oldValues)
 		elif(lexicon == "GPC"):
 			return self.getBetterValuesGPC(newValues, oldValues)
 
-	def getBetterValueSentiWS(self, newValue, oldValue):
-		if(abs(newValue) > abs(oldValue)):
-			return newValue
-		else:
-			return oldValue
+	def getBetterValuesBawl(self, newValues, oldValues):
+		newEmotion = abs(newValues["emotion"])
+		newArousel = newValues["arousel"]
+		oldEmotion = abs(oldValues["emotion"])
+		oldArousel = oldValues["arousel"]
 
-	def getBetterValuesNRC(self, newSentiments, oldSentiments):
+		if(newEmotion > oldEmotion):
+			return newValues
+		elif(oldEmotion > newEmotion):
+			return oldValues
+		elif(newArousel > oldArousel):
+			return newValues
+		elif(oldArousel > newArousel):
+			return oldValues
+		return oldValues
+
+	def getBetterValuesNrc(self, newSentiments, oldSentiments):
 		newSentimentsScore = 0
 		oldSentimentsScore = 0
 		doublePolarityNew = (newSentiments["positive"] == 1 and newSentiments["negative"] == 1)
 		doublePolarityOld = (oldSentiments["positive"] == 1 and oldSentiments["negative"] == 1)
 		isNeutralNew = all(value == 0 for value in newSentiments.values())
 		isNeutralOld = all(value == 0 for value in oldSentiments.values())
+
 		if(doublePolarityNew == True and doublePolarityOld == False and isNeutralOld == False):
 			return oldSentiments
 		if(doublePolarityOld == True and doublePolarityNew == False and isNeutralNew == False):
@@ -77,31 +95,6 @@ class DTA_Handler:
 		else:
 			return oldSentiments
 
-	def getBetterValuesBawl(self, newValues, oldValues):
-		newEmotion = abs(newValues["emotion"])
-		newArousel = newValues["arousel"]
-		oldEmotion = abs(oldValues["emotion"])
-		oldArousel = oldValues["arousel"]
-		if(newEmotion > oldEmotion):
-			return newValues
-		elif(newArousel > oldArousel):
-			return newValues
-		return oldValues
-
-	def getBetterValuesCD(self, newValues, oldValues):
-		# if somethin is neutral take the other
-		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
-		if(highestSentimentValues["positive"] != 0):
-			highestSentimentValues["neutral"] = 0
-			highestSentimentValues["negative"] = 0
-			return highestSentimentValues
-		else:
-			if(highestSentimentValues["negative"] != 0):
-				highestSentimentValues["neutral"] = 0
-				return highestSentimentValues
-			else:
-				return highestSentimentValues
-
 	def getBetterValuesGPC(self, newValues, oldValues):
 		if(newValues["neutral"] > oldValues["neutral"]):
 			return oldValues
@@ -110,6 +103,38 @@ class DTA_Handler:
 				return newValues
 			else:
 				return oldValues
+
+	def getHigherSentimentValuesCD(self, newSentiments, oldSentiments):
+		sentiments = {}
+		sentiments["positive"] = self.getHigherSentimentValue(newSentiments["positive"], oldSentiments["positive"])
+		sentiments["negative"] = self.getHigherSentimentValue(newSentiments["negative"], oldSentiments["negative"])
+		sentiments["neutral"] = self.getHigherSentimentValue(newSentiments["neutral"], oldSentiments["neutral"])
+		return sentiments
+
+	def getBetterValuesCD(self, newSentiments, oldSentiments, word):
+		# if somethin is neutral take the other
+		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
+
+		polarityChange = (highestSentimentValues["positive"] != 0 and highestSentimentValues["negative"] != 0)
+		neutralityChange = (highestSentimentValues["neutral"] != 0 \
+			and (highestSentimentValues["positive"] != 0 or highestSentimentValues["negative"] != 0))
+		if(highestSentimentValues["positive"] != 0 or highestSentimentValues["negative"] != 0):
+			if(highestSentimentValues["positive"] >= highestSentimentValues["negative"]):
+				highestSentimentValues["negative"] = 0
+				highestSentimentValues["neutral"] = 0
+				return highestSentimentValues
+			else:
+				highestSentimentValues["positive"] = 0
+				highestSentimentValues["neutral"] = 0
+				return highestSentimentValues
+		else:
+			return highestSentimentValues
+
+	def getBetterValuesSentiWS(self, newScore, oldScore):
+		if(abs(newScore) > abs(oldScore)):
+			return newScore
+		else:
+			return oldScore
 
 	def setWordSynonymsFromDTA(self):
 		currentWord = ""

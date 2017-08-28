@@ -13,8 +13,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
-	gpc.initGPC()
-	gpc.lemmatizeDictGPC("textblob")
+	gpc.resetAllFiles()
 
 class German_Polarity_Clues:
 	def __init__(self):
@@ -162,7 +161,6 @@ class German_Polarity_Clues:
 					newSentimentDict[lemma] = chosenValues
 			else:
 				newSentimentDict[lemma] = value
-		print i
 		print ("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
@@ -171,7 +169,6 @@ class German_Polarity_Clues:
 			return oldValues
 		else:
 			if(newValues["positive"] > oldValues["positive"]):
-				print word
 				return newValues
 			else:
 				return oldValues
