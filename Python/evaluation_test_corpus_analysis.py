@@ -19,9 +19,9 @@ def main():
 	#tce.getNumberOfPolarityChangedWordsInSBWs()
 	
 	tce.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
-	tce.attachSentimentInfoOnTestCorpus(True, "treetagger", False, "standardList", True)
+	tce.attachSentimentInfoOnTestCorpus(False, "treetagger", True, None, False)
 	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
-	tce.comparePolarityMetricWithBenchmark("polarityBawlDichotom")
+	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
 	
 	#tce.createAllOutputsOfAllMetrics()
 	#tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityBawlDichotom")
