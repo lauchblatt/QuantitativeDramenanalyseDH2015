@@ -16,13 +16,14 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	tce = Test_Corpus_Evaluation()
-	"""
+	#tce.getNumberOfPolarityChangedWordsInSBWs()
+	
 	tce.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
-	tce.attachSentimentInfoOnTestCorpus(True, "treetagger", False, None, True)
+	tce.attachSentimentInfoOnTestCorpus(True, "treetagger", False, "standardList", True)
 	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
-	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
-	"""
-	tce.createAllOutputsOfAllMetrics()
+	tce.comparePolarityMetricWithBenchmark("polarityBawlDichotom")
+	
+	#tce.createAllOutputsOfAllMetrics()
 	#tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityBawlDichotom")
 	#tce.createOutputAllMajorMetricsForSinglePolarity("polarityBawlDichotom")
 	#tce.createOutputDetailInfoOfAllCombinations("polarityBawlDichotom")
@@ -38,6 +39,47 @@ class Test_Corpus_Evaluation:
 		self._correspondingSBWMetrics = {}
 
 		self.initCorrespondingSBWMetrics()
+
+	def getNumberOfPolarityChangedWordsInSBWs(self):
+		sbws = self.getAllSentimentBearingWords()
+		words = self.getPolarityChangeWords()
+		foundWords = []
+		for sbw in sbws:
+			if sbw._token in words:
+				foundWords.append(sbw._token)
+		
+		noDupSbws = []
+		noDupFoundWords = []
+		for sbw in sbws:
+			if sbw._token not in noDupSbws:
+				noDupSbws.append(sbw._token)
+		for word in foundWords:
+			if word not in noDupFoundWords:
+				noDupFoundWords.append(word)
+
+		print len(foundWords)
+		print len(sbws)
+		print float(len(foundWords))/float(len(sbws))
+		print len(noDupFoundWords)
+		print len(noDupSbws)
+		print float(len(noDupFoundWords))/float(len(noDupSbws))
+
+	def getPolarityChangeWords(self):
+		data = open("PolarityChangeWords-Tokens.txt")
+		words = []
+		for line in data:
+			words.append(unicode(line.strip()))
+		return words
+
+	def getAllSentimentBearingWords(self):
+		#self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive
+		self.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
+		self.attachSentimentInfoOnTestCorpus(False, "treetagger", False, None, False)
+		allSbws = []
+		for corpusSpeech in self._testCorpusSpeeches:
+			sbws = corpusSpeech._speech._sentimentBearingWords
+			allSbws.extend(sbws)
+		return allSbws
 
 	def initCorrespondingSBWMetrics(self):
 		self._correspondingSBWMetrics["polaritySentiWS"] = ["_polaritySentiWS"]
@@ -290,8 +332,8 @@ class Test_Corpus_Evaluation:
 		result.setCrossTable()
 		#result.printCrossTable()
 		result.calcMeasurements()
-
-		"""
+		print (result.getCrossTableAsString())
+		#"""
 		print(result._accuracy)
 		print(result._recallPositive)
 		print(result._recallNegative)
@@ -299,7 +341,7 @@ class Test_Corpus_Evaluation:
 		print(result._precisionNegative)
 		print(result._fMeasurePositive)
 		print(result._fMeasureNegative)
-		"""
+		#"""
 		return result
 
 	def initPolarityBenchmark(self, pathToBenchmark):
