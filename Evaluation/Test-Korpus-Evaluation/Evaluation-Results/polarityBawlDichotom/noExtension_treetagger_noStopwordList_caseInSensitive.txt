@@ -294,9 +294,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (nennst, nennen, VVFIN): 1, 0
 
 5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
-emotion: 44.010588233
-arousel: 143.525311688
-positiveBawl: 56.722352939
+emotion: 44.587058821
+arousel: 142.577943266
+positiveBawl: 57.298823527
 negativeBawl: 12.711764706
 positiveBawlDichotom: 45
 negativeBawlDichotom: 9
@@ -629,9 +629,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (fragen, fragen, VVINF): 1, 0
 
 3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
-emotion: 10.226007129
-arousel: 35.319323308
-positiveBawl: 13.60836007
+emotion: 10.990713011
+arousel: 34.133859648
+positiveBawl: 14.373065952
 negativeBawl: 3.382352941
 positiveBawlDichotom: 12
 negativeBawlDichotom: 2
@@ -713,9 +713,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (meinest, meinen, VVFIN): 1, 0
 
 3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
-emotion: 1.05
-arousel: 5.263157895
-positiveBawl: 1.05
+emotion: 1.338235294
+arousel: 4.789473684
+positiveBawl: 1.338235294
 negativeBawl: 0
 positiveBawlDichotom: 2
 negativeBawlDichotom: 0
@@ -876,9 +876,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (sprechen, sprechen, VVINF): 1, 0
 
 2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
-emotion: -0.2
-arousel: 12.271929825
-positiveBawl: 2.2
+emotion: 0.088235294
+arousel: 11.798245614
+positiveBawl: 2.488235294
 negativeBawl: 2.4
 positiveBawlDichotom: 2
 negativeBawlDichotom: 2
@@ -1113,9 +1113,9 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (lebendiges, lebendig, ADJA): 1, 0
 
 3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
-emotion: 7.16352941
-arousel: 84.391729323
-positiveBawl: 20.92235294
+emotion: 8.116470586
+arousel: 82.968170425
+positiveBawl: 21.875294116
 negativeBawl: 13.75882353
 positiveBawlDichotom: 24
 negativeBawlDichotom: 12
@@ -1308,9 +1308,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (gelten, gelten, VVINF): 1, 0
 
 1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
-emotion: 7.464705882
-arousel: 32.117794486
-positiveBawl: 11.764705882
+emotion: 7.94117647
+arousel: 31.406015037
+positiveBawl: 12.24117647
 negativeBawl: 4.3
 positiveBawlDichotom: 9
 negativeBawlDichotom: 3
@@ -1394,9 +1394,9 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (soll, sollen, VMFIN): 0, 1
 
 2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
-emotion: 9.8
-arousel: 25.052975575
-positiveBawl: 10.094117647
+emotion: 10.088235294
+arousel: 24.579291364
+positiveBawl: 10.382352941
 negativeBawl: 0.294117647
 positiveBawlDichotom: 8
 negativeBawlDichotom: 1
@@ -1646,9 +1646,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (sagen, sagen, VVINF): 1, 0
 
 1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
-emotion: -0.888235294
-arousel: 24.177527151
-positiveBawl: 2.805882353
+emotion: -0.6
+arousel: 23.70384294
+positiveBawl: 3.094117647
 negativeBawl: 3.694117647
 positiveBawlDichotom: 6
 negativeBawlDichotom: 3
@@ -1668,9 +1668,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (ziehen, ziehen, VVINF): 0, 1
 
 1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
-emotion: 7.20882353
-arousel: 34.437176274
-positiveBawl: 9.844117648
+emotion: 7.497058824
+arousel: 33.963492063
+positiveBawl: 10.132352942
 negativeBawl: 2.635294118
 positiveBawlDichotom: 9
 negativeBawlDichotom: 4
@@ -1694,9 +1694,9 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (saure, sauer, ADJA): 0, 1
 
 1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
-emotion: 15.917647058
-arousel: 59.205513784
-positiveBawl: 19.417647058
+emotion: 16.870588234
+arousel: 57.781954886
+positiveBawl: 20.370588234
 negativeBawl: 3.5
 positiveBawlDichotom: 19
 negativeBawlDichotom: 4
@@ -1823,9 +1823,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (sagen, sagen, VVINF): 1, 0
 
 2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
-emotion: 9.819875222
-arousel: 46.161285567
-positiveBawl: 16.943404634
+emotion: 10.772816398
+arousel: 44.737726669
+positiveBawl: 17.89634581
 negativeBawl: 7.123529412
 positiveBawlDichotom: 13
 negativeBawlDichotom: 4
@@ -1927,9 +1927,9 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (Stärke, Stärke, NN): 1, 0
 
 3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
-emotion: 3.876470588
-arousel: 15.177109441
-positiveBawl: 5.376470588
+emotion: 4.164705882
+arousel: 14.70342523
+positiveBawl: 5.664705882
 negativeBawl: 1.5
 positiveBawlDichotom: 5
 negativeBawlDichotom: 1
@@ -2498,9 +2498,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Dolch, Dolch, NN): 0, 1
 
 4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
-emotion: 2.947058824
-arousel: 12.886591478
-positiveBawl: 3.647058824
+emotion: 3.9
+arousel: 11.46303258
+positiveBawl: 4.6
 negativeBawl: 0.7
 positiveBawlDichotom: 4
 negativeBawlDichotom: 1
@@ -2661,9 +2661,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Herz, Herz, NN): 1, 0
 
 4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
-emotion: 4.735294118
-arousel: 30.212197159
-positiveBawl: 9.011764706
+emotion: 5.023529412
+arousel: 29.738512948
+positiveBawl: 9.3
 negativeBawl: 4.276470588
 positiveBawlDichotom: 6
 negativeBawlDichotom: 4
@@ -3262,9 +3262,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (müssen, müssen, VMINF): 0, 1
 
 3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
-emotion: 15.688235294
-arousel: 40.89807853
-positiveBawl: 17.688235294
+emotion: 15.976470588
+arousel: 40.424394319
+positiveBawl: 17.976470588
 negativeBawl: 2.0
 positiveBawlDichotom: 15
 negativeBawlDichotom: 1
@@ -3399,9 +3399,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Tod, Tod, NN): 0, 1
 
 3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
-emotion: 28.292513371
-arousel: 121.707894737
-positiveBawl: 39.604278077
+emotion: 28.580748665
+arousel: 121.234210526
+positiveBawl: 39.892513371
 negativeBawl: 11.311764706
 positiveBawlDichotom: 36
 negativeBawlDichotom: 8
@@ -3494,9 +3494,9 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (Wohltat, Wohltat, NN): 1, 0
 
 4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
-emotion: 7.35882353
-arousel: 31.67209691
-positiveBawl: 10.741176471
+emotion: 7.935294118
+arousel: 30.724728488
+positiveBawl: 11.317647059
 negativeBawl: 3.382352941
 positiveBawlDichotom: 8
 negativeBawlDichotom: 3
@@ -3602,9 +3602,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (vergeben, vergeben, VVINF): 1, 0
 
 2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
-emotion: 3.529411765
-arousel: 45.219715956
-positiveBawl: 13.411764706
+emotion: 4.005882353
+arousel: 44.507936507
+positiveBawl: 13.888235294
 negativeBawl: 9.882352941
 positiveBawlDichotom: 8
 negativeBawlDichotom: 7
@@ -4143,9 +4143,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Gott, Gott, NN): 1, 0
 
 1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
-emotion: 21.98235294
-arousel: 49.532151458
-positiveBawl: 21.98235294
+emotion: 22.270588234
+arousel: 49.058467247
+positiveBawl: 22.270588234
 negativeBawl: 0
 positiveBawlDichotom: 18
 negativeBawlDichotom: 0
@@ -4174,9 +4174,9 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (sagen, sagen, VVINF): 1, 0
 
 1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
-emotion: -0.535294117
-arousel: 28.049289892
-positiveBawl: 5.335294118
+emotion: -0.058823529
+arousel: 27.337510443
+positiveBawl: 5.811764706
 negativeBawl: 5.870588235
 positiveBawlDichotom: 5
 negativeBawlDichotom: 5
@@ -4246,9 +4246,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Augen, Auge, NN): 1, 0
 
 2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
-emotion: 7.052941176
-arousel: 20.775689225
-positiveBawl: 8.470588235
+emotion: 7.34117647
+arousel: 20.302005014
+positiveBawl: 8.758823529
 negativeBawl: 1.417647059
 positiveBawlDichotom: 6
 negativeBawlDichotom: 2
@@ -4314,9 +4314,9 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (sterben, sterben, VVINF): 0, 1
 
 1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
-emotion: 1.885294118
-arousel: 11.614035087
-positiveBawl: 2.585294118
+emotion: 2.173529412
+arousel: 11.140350876
+positiveBawl: 2.873529412
 negativeBawl: 0.7
 positiveBawlDichotom: 3
 negativeBawlDichotom: 1

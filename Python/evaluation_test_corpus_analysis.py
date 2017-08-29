@@ -18,12 +18,14 @@ def main():
 	tce = Test_Corpus_Evaluation()
 	#tce.getNumberOfPolarityChangedWordsInSBWs()
 	
+	"""
 	tce.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
 	tce.attachSentimentInfoOnTestCorpus(False, "treetagger", True, None, False)
 	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
+	"""
 	
-	#tce.createAllOutputsOfAllMetrics()
+	tce.createAllOutputsOfAllMetrics()
 	#tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityBawlDichotom")
 	#tce.createOutputAllMajorMetricsForSinglePolarity("polarityBawlDichotom")
 	#tce.createOutputDetailInfoOfAllCombinations("polarityBawlDichotom")
@@ -32,8 +34,9 @@ class Test_Corpus_Evaluation:
 	def __init__(self):
 		self._testCorpusSpeeches = []
 		self._polarityBenchmark = []
-		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
-		"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
+		#self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
+		#"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
+		self._polarityNames = ["polarityBawlDichotom"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}
@@ -109,15 +112,15 @@ class Test_Corpus_Evaluation:
 	def setEvaluationInfoOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
-		DTAExtensions = [False]
-		processors = ["treetagger"]
+		DTAExtensions = [False, True]
+		processors = ["treetagger", "textblob"]
 		lemmaModes = [False, True]
-		stopwordLists = [None]
-		#stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
+		#stopwordLists = [None, "standardList"]
+		stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
 		caseSensitives = [False, True]
 		doneCombinations = []
 		nameResultTuples = []
-		self._evaluationInfo[polarityMetric] = {}
+		self._evaluationInfo[polarityMetric] = OrderedDict({})
 
 		for DTAExtension in DTAExtensions:
 			for lemmaModeOn in lemmaModes:
