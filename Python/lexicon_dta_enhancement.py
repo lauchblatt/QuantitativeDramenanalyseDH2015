@@ -12,10 +12,17 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dta = DTA_Handler()
+	dta.createOutputWordSynonymsDTA()
+	la = Lexicon_Handler()
+	la.initSingleDict("SentiWS", "treetagger")
+	sentimentDict = la._sentimentDict
+	dta.createOutputWordSynonymsDTAForLexicon(sentimentDict, "SentiWS")
+	"""
 	la = Lexicon_Handler()
 	la.initSingleDict("NRC", "treetagger")
 	sentimentDict = la._sentimentDict
 	dta.extendSentimentDictDTA(sentimentDict, "NRC")
+	"""
 
 class DTA_Handler:
 	
@@ -51,8 +58,15 @@ class DTA_Handler:
 
 		return sentimentDict
 
-	def getBetterValues(self, lexicon, newValues, oldValues):
-		["SentiWS", "NRC", "Bawl", "CD", "GPC"]
+	def getBetterValues(self, lexicon, newValues, oldValues, word):
+		"""
+		for key in newValues:
+			if (newValues[key] != oldValues[key]):
+				print word
+				pass
+		"""
+		if(newValues != oldValues):
+			print word
 		if(lexicon == "SentiWS"):
 			return self.getBetterValuesSentiWS(newValues, oldValues)
 		elif(lexicon == "NRC"):
@@ -81,6 +95,7 @@ class DTA_Handler:
 		return oldValues
 
 	def getBetterValuesNrc(self, newSentiments, oldSentiments):
+
 		newSentimentsScore = 0
 		oldSentimentsScore = 0
 		doublePolarityNew = (newSentiments["positive"] == 1 and newSentiments["negative"] == 1)
@@ -155,8 +170,8 @@ class DTA_Handler:
 		synonyms = []
 		wordSynonymsDict = {}
 		
-		for filename in os.listdir("../SentimentAnalysis/DTA-Output/"):
-			outputFile = open("../SentimentAnalysis/DTA-Output/" + filename) 
+		for filename in os.listdir("../SentimentAnalysis/DTA-Output/FetchedDTAData/"):
+			outputFile = open("../SentimentAnalysis/DTA-Output/FetchedDTAData/" + filename) 
 		 	for line in outputFile:
 		 		if (not line.startswith("\t")):
 		 			word = line.strip()
@@ -176,6 +191,42 @@ class DTA_Handler:
 		 				synonyms.append(unicode(synonym))
 
 		self._wordSynonymsDict = wordSynonymsDict
+
+	def createOutputWordSynonymsDTA(self):
+		self.setWordSynonymsFromDTA()
+		data = open("../SentimentAnalysis/DTA-Output/AdditionalInfo/DTA-Word-Synonyms-Dict.txt", "w")
+		for word in self._wordSynonymsDict:
+			data.write(unicode(word) + "\n")
+			for synonym in self._wordSynonymsDict[word]:
+				data.write("\t" + unicode(synonym) + "\n")
+		data.close()
+
+	def createOutputWordSynonymsDTAForLexicon(self, sentimentDict, lexiconName):
+		self.setWordSynonymsFromDTA()
+		keys = sentimentDict.keys()
+		copy = {}
+		copy.update(sentimentDict)
+		data = open("../SentimentAnalysis/DTA-Output/AdditionalInfo/" + lexiconName + "-DTA-Word-Synonyms-Dict.txt", "w")
+		for word in sentimentDict.keys():
+			if(word in self._wordSynonymsDict):
+				data.write(word + "\n")
+				sentiments = sentimentDict[word]
+				data.write(str(sentiments) + "\n")
+				synonyms = self._wordSynonymsDict[word]
+				for synonym in synonyms:
+						if synonym in sentimentDict:
+							if(not(synonym in copy)):
+								betterValues = self.getBetterValues(lexiconName, sentiments, sentimentDict[synonym], synonym)
+								data.write("\t" + synonym + "\n")
+								data.write("\t" + str(betterValues) + "\n")
+								sentimentDict[synonym] = betterValues
+						else:
+							data.write("\t" + synonym + "\n")
+							data.write("\t" + str(sentiments) + "\n")
+							sentimentDict[synonym] = sentiments
+
+		data.close()
+
 
 if __name__ == "__main__":
     main()

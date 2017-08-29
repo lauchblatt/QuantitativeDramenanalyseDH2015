@@ -231,10 +231,10 @@ class Sentiment_Analyzer:
 			upperWord = word[:1].upper() + word[1:]
 			lowerWord = word.lower()
 			if(lowerWord in self._sentimentDict):
-				sentimentBearingWord._token = lowerWord
+				#sentimentBearingWord._token = lowerWord
 				allSentiments = self._sentimentDict[lowerWord]
 			if(upperWord in self._sentimentDict):
-				sentimentBearingWord._token = upperWord
+				#sentimentBearingWord._token = upperWord
 				allSentiments = self._sentimentDict[upperWord]
 
 		sentimentBearingWord.setAllSentiments(allSentiments)
