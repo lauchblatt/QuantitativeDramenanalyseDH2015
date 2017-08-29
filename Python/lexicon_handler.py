@@ -22,6 +22,7 @@ def main():
 	lexiconHandler.initSingleDict("CombinedLexicon-DTAExtended", "textblob")
 	print(len(lexiconHandler._sentimentDict))
 	print(len(lexiconHandler._sentimentDictLemmas))
+	print lexiconHandler._sentimentDict[unicode("gerecht")]
 
 class Lexicon_Handler:
 
