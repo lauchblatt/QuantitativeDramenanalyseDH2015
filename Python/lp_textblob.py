@@ -15,8 +15,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	tb = Text_Blob()
-	tb.initStopWords()
-	print (len(tb._stopwords))
+	tb.processText(" recht ")
+	print tb._lemmas
 
 	#lp.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Test/")
 	

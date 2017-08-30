@@ -61,7 +61,7 @@ class Senti_WS:
 
 		for word in sentimentDictPositiv:
 			if(word in sentimentDictNegative):
-				higherSentiment = self.getHigherSentimentValue(sentimentDictPositiv[word], sentimentDictNegative[word])
+				higherSentiment = self.getHigherSentimentValue(sentimentDictPositiv[word], sentimentDictNegative[word], word)
 				sentimentDictNegative[word] = higherSentiment
 			else:
 				sentimentDictNegative[word] = sentimentDictPositiv[word]
@@ -78,7 +78,7 @@ class Senti_WS:
 			number = float(tabSplit[1].rstrip())
 
 			if(unicode(firstWord) in sentimentDict):
-				higherSentiment = self.getHigherSentimentValue(number, sentimentDict[unicode(firstWord)])
+				higherSentiment = self.getHigherSentimentValue(number, sentimentDict[unicode(firstWord)], firstWord)
 				sentimentDict[unicode(firstWord)] = higherSentiment
 			else:
 				sentimentDict[unicode(firstWord)] = number
@@ -91,7 +91,7 @@ class Senti_WS:
 					flex = flex.rstrip()
 
 					if(unicode(flex) in sentimentDict):
-						higherSentiment = self.getHigherSentimentValue(number, sentimentDict[unicode(flex)])
+						higherSentiment = self.getHigherSentimentValue(number, sentimentDict[unicode(flex)], flex)
 						sentimentDict[unicode(flex)] = higherSentiment
 					else:
 						sentimentDict[unicode(flex)] = number
@@ -106,16 +106,21 @@ class Senti_WS:
 		
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp._processor.getLemma(word)
+			print word
+			print lemma
 			
 			if lemma in newSentimentDict:
 				newScore = value
 				oldScore = newSentimentDict[lemma]
-				
-				higherScore = self.getHigherSentimentValue(newScore, oldScore)
+				print oldScore
+				print newScore
+				higherScore = self.getHigherSentimentValue(newScore, oldScore, lemma)
+				print higherScore
 				oldToken = lemmaTokenPairs[lemma]
 				newSentimentDict[lemma] = higherScore
 			else:
 				newSentimentDict[lemma] = value
+				print value
 				lemmaTokenPairs[lemma] = word
 		
 		print("Lemmatisation finished")
@@ -129,7 +134,7 @@ class Senti_WS:
 
 		outputFile.close()
 
-	def getHigherSentimentValue(self, newScore, oldScore):
+	def getHigherSentimentValue(self, newScore, oldScore, word):
 		if(abs(newScore) > abs(oldScore)):
 			return newScore
 		else:
@@ -160,7 +165,10 @@ class Senti_WS:
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "SentiWS")
 		print len(self._sentimentDict)
-		print self._sentimentDict[unicode("recht")]
+		print self._sentimentDict["recht"]
+		self.lemmatizeDictSentiWS("textblob")
+		print len(self._sentimentDictLemmas)
+		print self._sentimentDictLemmas["recht"]
 
 	def createSentimentDictFileSentiWSToken(self):
 		self.initSentiWS()

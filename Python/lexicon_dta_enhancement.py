@@ -66,8 +66,10 @@ class DTA_Handler:
 				print word
 				pass
 		"""
+		"""
 		if(newValues != oldValues):
 			print word
+		"""
 		if(lexicon == "SentiWS"):
 			return self.getBetterValuesSentiWS(newValues, oldValues)
 		elif(lexicon == "NRC"):
