@@ -22,7 +22,8 @@ def main():
 	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)
 	dpp = Drama_Pre_Processing("treetagger")
 	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Freigeist.p")
-	sa = Sentiment_Analyzer(False, True, "CombinedLexicon", "treetagger")
+	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+	sa = Sentiment_Analyzer(False, "treetagger", False, None, True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	sog.createTxtOutputSingleDrama("anotherTest.txt", sentimentExtendedDramaModel)
 	
@@ -285,7 +286,9 @@ class Sentiment_Output_Generator:
 		info = ("\n\nSentiment Bearing Words: \n")
 		info = info + "(Token, Lemma, POS), polaritySentiWS | nrcPositive, nrcNegative,"\
 		 + "anger, anticipation, disgust, fear, joy, sadness, surprise, trust | emotion, arousel"\
-		 + "positiveCd, negativeCd, neutralCd | positiveGpc, negativeGpc, neutralGpc\n"
+		 + "positiveCd, negativeCd, neutralCd | positiveGpc, negativeGpc,"\
+		 + "neutralGpc | clearlyPositiveCombined, clearlyNegativeCombined | " \
+		 + "positiveCombined | negativeCombined\n"
 		
 		for sentimentBearingWord in unit._sentimentBearingWords:
 			wordInfo = sentimentBearingWord.returnInfoAsString()

@@ -1,0 +1,3898 @@
+dtaExtended_treetagger_standardList_caseInSensitive
+
+Main Metrics:
+accuracy: 0.55
+Recall Positive: 0.868852459016
+Precision Positive: 0.392592592593
+F-Measure Positive: 0.540816326531
+Recall Negative: 0.410071942446
+Precision Negative: 0.876923076923
+F-Measure Negative: 0.558823529412
+Recall Average: 0.639462200731
+Precision Average: 0.634757834758
+F-Measure Average: 0.549819927971
+
+Actual Class	Predicted Negative	Predicted Positive
+Negatives	57	82	139
+Positives	8	53	61
+Sum	65	135	200
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 93, ID:1
+positiveCd: 12.5
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: 10.1
+positiveCDDichotom: 14
+negativeCDDichotom: 3
+polarityCDDichotom: 11
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(trauen, trauen, VVFIN): 0.7, 0.0
+(Scham, Scham, NN): 0.0, 1.0
+(gesteh, gesteh, VVFIN): 0.7, 0.0
+(schwach, schwach, ADJD): 0.0, 0.7
+(edel, edel, ADJD): 1.0, 0.0
+(wahr, wahr, ADJD): 1.0, 0.0
+(zittere, zittern, VVFIN): 0.0, 0.7
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(harten, hart, ADJA): 0.7, 0.0
+(auszuhalten, aushalten, VVIZU): 0.7, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(Sanftmut, Sanftmut, NN): 1.0, 0.0
+(Freundes, Freund, NN): 1.0, 0.0
+(verzeihen, verzeihen, VVINF): 0.7, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+
+1.Akt, 10.Szene, 21.Replik, Drama-Nummer: 177, ID:2
+positiveCd: 7.8
+negativeCd: 5.8
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 9
+negativeCDDichotom: 7
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verzeihen, verzeihen, VVINF): 0.7, 0.0
+(Verzeihungen, Verzeihungen, NN): 0.7, 0.0
+(verziehen, verzeihen, VVPP): 0.7, 0.0
+(Bleiben, bleiben, VVFIN): 0.7, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+(begangen, begehen, VVPP): 0.0, 1.0
+(erzürnet, erzürnet, NE): 0.0, 1.0
+(schlage, schlagen, VVFIN): 0.0, 0.7
+(vergessen, vergessen, VVINF): 0.0, 0.7
+(trennen, trennen, VVINF): 0.0, 0.7
+(unglücklichste, unglücklich, ADJA): 0.0, 1.0
+(Freund, Freund, NN): 1.0, 0.0
+(finden, finden, VVINF): 1.0, 0.0
+(verlassen, verlassen, VVPP): 0.0, 0.7
+(suchen, suchen, VVINF): 1.0, 0.0
+
+1.Akt, 4.Szene, 21.Replik, Drama-Nummer: 79, ID:3
+positiveCd: 12.8
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 12.1
+positiveCDDichotom: 14
+negativeCDDichotom: 1
+polarityCDDichotom: 13
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sehen, sehen, VVFIN): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(Liebster, lieb, ADJA): 1.0, 0.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(genug, genug, ADV): 0.7, 0.0
+(Lassen, lassen, VVFIN): 0.7, 0.0
+(gegeben, geben, VVPP): 1.0, 0.0
+(Vermögens, Vermögen, NN): 0.7, 0.0
+(Vergnügen, Vergnügen, NN): 1.0, 0.0
+(sehen, sehen, VVINF): 1.0, 0.0
+(Glück, Glück, NN): 1.0, 0.0
+(beschieden, bescheiden, VVPP): 1.0, 0.0
+(verpflichtet, verpflichten, VVPP): 1.0, 0.0
+(Vermögen, Vermögen, NN): 0.7, 0.0
+
+1.Akt, 1.Szene, 5.Replik, Drama-Nummer: 5, ID:4
+positiveCd: 7.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 7.0
+positiveCDDichotom: 8
+negativeCDDichotom: 1
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(munter, munter, ADJD): 1.0, 0.0
+(gäbe, geben, VVFIN): 1.0, 0.0
+(getan, tun, VVPP): 0.0, 0.7
+(wohl, wohl, ADV): 1.0, 0.0
+(vernünftigsten, vernünftig, ADJA): 1.0, 0.0
+(größte, groß, ADJA): 0.7, 0.0
+(Vergnügen, Vergnügen, NN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+
+1.Akt, 4.Szene, 19.Replik, Drama-Nummer: 77, ID:5
+positiveCd: 8.4
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 6.4
+positiveCDDichotom: 9
+negativeCDDichotom: 2
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(standhafte, standhaft, ADJA): 1.0, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+(läßt, lassen, VVFIN): 0.7, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(gesetzt, setzen, VVPP): 0.7, 0.0
+(schadet, schaden, VVFIN): 0.0, 1.0
+(Herr, Herr, NN): 1.0, 0.0
+(Lust, Lust, NN): 1.0, 0.0
+(Herrn, Herr, NN): 1.0, 0.0
+(unglücklich, unglücklich, ADJD): 0.0, 1.0
+
+1.Akt, 10.Szene, 4.Replik, Drama-Nummer: 160, ID:6
+positiveCd: 3.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 3
+negativeCDDichotom: 0
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glücklichsten, glücklich, ADJA): 1.0, 0.0
+(wirklich, wirklich, ADJD): 1.0, 0.0
+(kostbare, kostbar, ADJA): 1.0, 0.0
+
+3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
+positiveCd: 4.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 4.0
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Bitte, Bitte, NN): 1.0, 0.0
+(nähere, nah, ADJA): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+
+1.Akt, 5.Szene, 15.Replik, Drama-Nummer: 122, ID:8
+positiveCd: 1.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Unglück, Unglück, NN): 0.0, 1.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(sehen, sehen, VVINF): 1.0, 0.0
+
+3.Akt, 2.Szene, 10.Replik, Drama-Nummer: 365, ID:9
+positiveCd: 3.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(lieber, lieb, ADJA): 1.0, 0.0
+(Schmerzen, Schmerz, NN): 0.0, 1.0
+(Erlauben, erlauben, VVFIN): 1.0, 0.0
+(bitten, bitten, VVINF): 1.0, 0.0
+(verziehen, verzeihen, VVPP): 0.7, 0.0
+
+4.Akt, 3.Szene, 22.Replik, Drama-Nummer: 542, ID:10
+positiveCd: 3.4
+negativeCd: 1.4
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 4
+negativeCDDichotom: 2
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Taten, Tat, NN): 0.0, 0.7
+(vorsichtig, vorsichtig, ADJD): 0.7, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(handeln, handeln, VVINF): 0.0, 0.7
+(vorsichtig, vorsichtig, ADJD): 0.7, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+
+4.Akt, 7.Szene, 11.Replik, Drama-Nummer: 590, ID:11
+positiveCd: 4.0
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 4
+negativeCDDichotom: 3
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+(Glück, Glück, NN): 1.0, 0.0
+(entzücken, entzücken, VVINF): 1.0, 0.0
+(Unglück, Unglück, NN): 0.0, 1.0
+(betaure, betaure, VVFIN): 0.0, 1.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(unanständig, unanständig, ADJD): 0.0, 1.0
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 186, ID:12
+positiveCd: 0.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 0
+negativeCDDichotom: 1
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(böse, böse, ADJD): 0.0, 1.0
+
+5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
+positiveCd: 25.2
+negativeCd: 15.9
+neutralCd: 0.0
+polarityCd: 9.3
+positiveCDDichotom: 27
+negativeCDDichotom: 18
+polarityCDDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glauben, glauben, VVINF): 1.0, 0.0
+(glauben, glauben, VVINF): 1.0, 0.0
+(genug, genug, ADV): 0.7, 0.0
+(gegeben, geben, VVPP): 1.0, 0.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(Zwang, Zwang, NN): 0.0, 0.7
+(antut, antun, VVFIN): 0.0, 0.7
+(lieben, lieben, VVINF): 1.0, 0.0
+(liebte, lieben, VVFIN): 1.0, 0.0
+(Unabhängigkeit, Unabhängigkeit, NN): 0.7, 0.0
+(tyrannisieren, tyrannisieren, VVINF): 0.0, 1.0
+(zwingen, zwingen, VVINF): 0.0, 1.0
+(hilft, helfen, VVFIN): 0.0, 1.0
+(Beruhigung, Beruhigung, NN): 0.7, 0.0
+(finden, finden, VVINF): 1.0, 0.0
+(erbarmte, erbarmen, VVFIN): 1.0, 0.0
+(erbarmte, erbarmen, VVFIN): 1.0, 0.0
+(Neigung, Neigung, NN): 1.0, 0.0
+(Vergnügen, Vergnügen, NN): 1.0, 0.0
+(ohnmächtig, ohnmächtig, ADJD): 0.0, 1.0
+(unwürdig, unwürdig, ADJD): 0.0, 1.0
+(unwürdig, unwürdig, ADJD): 0.0, 1.0
+(Freund, Freund, NN): 1.0, 0.0
+(Glück, Glück, NN): 1.0, 0.0
+(genug, genug, ADV): 0.7, 0.0
+(richtige, richtig, ADJA): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(wohl, wohl, ADV): 1.0, 0.0
+(lieber, lieb, ADJD): 1.0, 0.0
+(Wahn, Wahn, NN): 0.0, 1.0
+(aufgeben, aufgeben, VVINF): 0.0, 0.7
+(liebenswürdig, liebenswürdig, ADJD): 1.0, 0.0
+(fand, finden, VVFIN): 1.0, 0.0
+(einbilden, einbilden, VVINF): 0.0, 1.0
+(verderbt, verderben, VVFIN): 0.0, 1.0
+(sann, sinnen, VVFIN): 0.7, 0.0
+(besten, gut, ADJA): 1.0, 0.0
+(gefährliche, gefährlich, ADJA): 0.0, 1.0
+(ansehen, ansehen, VVINF): 1.0, 0.0
+(allein, allein, ADV): 0.0, 0.7
+(ließ, lassen, VVFIN): 0.7, 0.0
+(Abschreckungen, Abschreckungen, NN): 0.0, 0.7
+(verlassen, verlassen, VVPP): 0.0, 0.7
+(gezwungen, zwingen, VVPP): 0.0, 1.0
+(gönne, gönnen, VVFIN): 1.0, 0.0
+
+1.Akt, 5.Szene, 40.Replik, Drama-Nummer: 147, ID:14
+positiveCd: 2.0
+negativeCd: 5.0
+neutralCd: 0.0
+polarityCd: -3.0
+positiveCDDichotom: 2
+negativeCDDichotom: 5
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Recht, Recht, NN): 1.0, 0.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+(ungerechtes, ungerecht, ADJA): 0.0, 1.0
+(spielen, spielen, VVFIN): 0.0, 1.0
+(murre, murren, VVFIN): 0.0, 1.0
+(taubes, taub, ADJA): 0.0, 1.0
+(blinden, blind, ADJA): 0.0, 1.0
+
+2.Akt, 3.Szene, 21.Replik, Drama-Nummer: 246, ID:15
+positiveCd: 2.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(artiges, artig, ADJA): 1.0, 0.0
+(Kompliment, Kompliment, NN): 1.0, 0.0
+(besitzen, besitzen, VVFIN): 0.0, 1.0
+(irren, irren, VVINF): 0.0, 1.0
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 161, ID:16
+positiveCd: 3.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(mag, mögen, VMFIN): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(Heirat, Heirat, NN): 0.7, 0.0
+(versprechen, versprechen, VVFIN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+
+5.Akt, 1.Szene, 40.Replik, Drama-Nummer: 699, ID:17
+positiveCd: 2.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 0.3
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(arg, arg, ADJD): 0.0, 1.0
+(Herr, Herr, NN): 1.0, 0.0
+(hintergehen, hintergehen, VVFIN): 0.0, 0.7
+(erstaunlichste, erstaunlich, ADJA): 1.0, 0.0
+
+2.Akt, 3.Szene, 23.Replik, Drama-Nummer: 248, ID:18
+positiveCd: 6.0
+negativeCd: 7.7
+neutralCd: 0.0
+polarityCd: -1.7
+positiveCDDichotom: 6
+negativeCDDichotom: 8
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(schlecht, schlecht, ADJD): 0.0, 1.0
+(Weise, Weise, NN): 1.0, 0.0
+(leiden, leiden, VVINF): 0.0, 1.0
+(gering, gering, ADJD): 0.0, 0.7
+(geschätzt, schätzen, VVPP): 1.0, 0.0
+(leiden, leiden, VVINF): 0.0, 1.0
+(ansieht, ansehen, VVFIN): 1.0, 0.0
+(Vergnügen, Vergnügen, NN): 1.0, 0.0
+(sehen, sehen, VVINF): 1.0, 0.0
+(gottlose, gottlos, ADJA): 0.0, 1.0
+(verfallen, verfallen, VVPP): 0.0, 1.0
+(Herr, Herr, NN): 1.0, 0.0
+(zerstreut, zerstreuen, VVFIN): 0.0, 1.0
+(unruhig, unruhig, ADJD): 0.0, 1.0
+
+4.Akt, 9.Szene, 3.Replik, Drama-Nummer: 644, ID:19
+positiveCd: 2.7
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 3
+negativeCDDichotom: 2
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(frei, frei, ADJD): 0.7, 0.0
+(versprach, versprechen, VVFIN): 1.0, 0.0
+(Bedenklichkeiten, Bedenklichkeit, NN): 0.0, 0.7
+(gefunden, finden, VVPP): 1.0, 0.0
+(abzusagen, absagen, VVIZU): 0.0, 1.0
+
+3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
+positiveCd: 2.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(hetzen, hetzen, VVINF): 0.0, 0.7
+(Herr, Herr, NN): 1.0, 0.0
+(bekannt, bekannt, ADJD): 0.7, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+
+1.Akt, 1.Szene, 4.Replik, Drama-Nummer: 4, ID:21
+positiveCd: 1.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bestürzen, bestürzen, VVINF): 0.0, 1.0
+(Gut, gut, ADJD): 1.0, 0.0
+
+4.Akt, 1.Szene, 23.Replik, Drama-Nummer: 504, ID:22
+positiveCd: 2.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wirklich, wirklich, ADJD): 1.0, 0.0
+(unschuldige, unschuldig, ADJA): 1.0, 0.0
+(eifersüchtig, eifersüchtig, ADJD): 0.0, 1.0
+
+2.Akt, 1.Szene, 17.Replik, Drama-Nummer: 179, ID:23
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gute, gut, ADJA): 1.0, 0.0
+(verdrießlich, verdrießlich, ADJD): 0.0, 1.0
+(verachten, verachten, VVINF): 0.0, 1.0
+
+3.Akt, 5.Szene, 32.Replik, Drama-Nummer: 421, ID:24
+positiveCd: 3.0
+negativeCd: 5.4
+neutralCd: 0.0
+polarityCd: -2.4
+positiveCDDichotom: 3
+negativeCDDichotom: 6
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(demütigen, demütig, ADJA): 0.0, 1.0
+(kriechenden, kriechend, ADJA): 0.0, 0.7
+(niederträchtigen, niederträchtig, ADJA): 0.0, 1.0
+(Schmeichelei, Schmeichelei, NN): 1.0, 0.0
+(ehrlichsten, ehrlich, ADJA): 1.0, 0.0
+(versichert, versichern, VVPP): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(wehmütigen, wehmütig, ADJA): 0.0, 1.0
+(Verwirrung, Verwirrung, NN): 0.0, 1.0
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 549, ID:25
+positiveCd: 4.8
+negativeCd: 4.4
+neutralCd: 0.0
+polarityCd: 0.4
+positiveCDDichotom: 6
+negativeCDDichotom: 5
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bösen, böse, ADJA): 0.0, 1.0
+(Allein, allein, ADV): 0.0, 0.7
+(Begierde, Begierde, NN): 0.0, 1.0
+(genug, genug, ADV): 0.7, 0.0
+(beliebt, beliebt, ADJD): 0.7, 0.0
+(lebhaftes, lebhaft, ADJA): 0.7, 0.0
+(natürlich, natürlich, ADV): 0.7, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(grausam, grausam, ADJD): 0.0, 1.0
+(Verbrechen, Verbrechen, NN): 0.0, 0.7
+(Schmeichelei, Schmeichelei, NN): 1.0, 0.0
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:26
+positiveCd: 4.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 4.7
+positiveCDDichotom: 5
+negativeCDDichotom: 0
+polarityCDDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gesehen, sehen, VVPP): 1.0, 0.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(fragen, fragen, VVINF): 0.7, 0.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+
+3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
+positiveCd: 3.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glaube, glauben, VVFIN): 1.0, 0.0
+(gäbe, geben, VVFIN): 1.0, 0.0
+(sieht, sehen, VVFIN): 1.0, 0.0
+(bleiben, bleiben, VVINF): 0.7, 0.0
+(Not, Not, NN): 0.0, 1.0
+
+2.Akt, 14.Szene, 9.Replik, Drama-Nummer: 574, ID:28
+positiveCd: 1.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Liebe, Liebe, NN): 1.0, 0.0
+(Kriege, Krieg, NN): 0.0, 1.0
+
+1.Akt, 4.Szene, 12.Replik, Drama-Nummer: 117, ID:29
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verschlagen, verschlagen, VVPP): 0.0, 1.0
+(fremde, fremd, ADJA): 0.0, 1.0
+(Wahrheit, Wahrheit, NN): 1.0, 0.0
+
+1.Akt, 6.Szene, 68.Replik, Drama-Nummer: 210, ID:30
+positiveCd: 1.0
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: -1.7
+positiveCDDichotom: 1
+negativeCDDichotom: 3
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(vergehen, vergehen, VVINF): 0.0, 1.0
+(Kopfe, Kopf, NN): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+
+3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
+positiveCd: 1.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glaubst, glauben, VVFIN): 1.0, 0.0
+(vermögend, vermögend, ADJD): 0.7, 0.0
+(wann, wann, PWAV): 0.0, 1.0
+
+1.Akt, 1.Szene, 14.Replik, Drama-Nummer: 14, ID:32
+positiveCd: 3.4
+negativeCd: 5.0
+neutralCd: 0.0
+polarityCd: -1.6
+positiveCDDichotom: 4
+negativeCDDichotom: 5
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(böse, böse, ADJD): 0.0, 1.0
+(lesen, lesen, VVFIN): 0.7, 0.0
+(fürchterliche, fürchterlich, ADJA): 0.0, 1.0
+(lesen, lesen, VVINF): 0.7, 0.0
+(Wann, wann, PWAV): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+(wies, weisen, VVFIN): 1.0, 0.0
+(verführt, verführen, VVFIN): 0.0, 1.0
+(böse, böse, ADJA): 0.0, 1.0
+
+3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
+positiveCd: 3.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 3
+negativeCDDichotom: 0
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(besser, gut, ADJD): 1.0, 0.0
+(magst, mögen, VMFIN): 1.0, 0.0
+(sehen, sehen, VVINF): 1.0, 0.0
+
+3.Akt, 15.Szene, 6.Replik, Drama-Nummer: 887, ID:34
+positiveCd: 2.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Tun, tun, VVFIN): 0.0, 0.7
+(lieber, lieb, ADJD): 1.0, 0.0
+(geraten, geraten|raten, VVPP): 1.0, 0.0
+
+3.Akt, 17.Szene, 3.Replik, Drama-Nummer: 1000, ID:35
+positiveCd: 2.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.7
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bleiben, bleiben, VVINF): 0.7, 0.0
+(verwehren, verwehren, VVINF): 0.0, 1.0
+(klug, klug, ADJD): 1.0, 0.0
+(geboren, gebären, VVPP): 1.0, 0.0
+
+1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
+positiveCd: 0.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 0
+negativeCDDichotom: 1
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Kopfe, Kopf, NN): 0.0, 1.0
+
+3.Akt, 1.Szene, 33.Replik, Drama-Nummer: 623, ID:37
+positiveCd: 2.7
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 3
+negativeCDDichotom: 2
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(leer, leer, ADJD): 0.0, 1.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(wann, wann, PWAV): 0.0, 1.0
+(behülflich, behülflich, ADJD): 1.0, 0.0
+(allerliebstes, allerlieb, ADJA): 1.0, 0.0
+
+2.Akt, 11.Szene, 49.Replik, Drama-Nummer: 539, ID:38
+positiveCd: 2.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(möchte, mögen, VMFIN): 1.0, 0.0
+(stärksten, stark, ADJA): 1.0, 0.0
+(Verschlagenheit, Verschlagenheit, NN): 0.0, 1.0
+
+3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
+positiveCd: 0.7
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Ungewißheit, Ungewissheit, NN): 0.0, 1.0
+(verziehen, verzeihen, VVPP): 0.7, 0.0
+(getan, tun, VVPP): 0.0, 0.7
+
+2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
+positiveCd: 2.0
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: -0.7
+positiveCDDichotom: 2
+negativeCDDichotom: 3
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glaubt, glauben, VVFIN): 1.0, 0.0
+(wirklich, wirklich, ADJD): 1.0, 0.0
+(böse, böse, ADJA): 0.0, 1.0
+(Tat, Tat, NN): 0.0, 0.7
+(schlimme, schlimm, ADJA): 0.0, 1.0
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 646, ID:41
+positiveCd: 5.0
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: 2.6
+positiveCDDichotom: 5
+negativeCDDichotom: 3
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wahr, wahr, ADJD): 1.0, 0.0
+(Kopf, Kopf, NN): 0.0, 1.0
+(Herr, Herr, NN): 1.0, 0.0
+(klüger, klug, ADJD): 1.0, 0.0
+(sticht, stechen, VVFIN): 0.0, 0.7
+(wohl, wohl, ADV): 1.0, 0.0
+(finden, finden, VVINF): 1.0, 0.0
+(bringen, bringen, VVINF): 0.0, 0.7
+
+2.Akt, 12.Szene, 4.Replik, Drama-Nummer: 545, ID:42
+positiveCd: 7.1
+negativeCd: 7.4
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 8
+negativeCDDichotom: 8
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Kopf, Kopf, NN): 0.0, 1.0
+(setzen, setzen, VVINF): 0.7, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(nützliche, nützlich, ADJA): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(schämen, schämen, VVINF): 0.0, 1.0
+(schämen, schämen, VVINF): 0.0, 1.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(geschätzt, schätzen, VVPP): 1.0, 0.0
+(ekel, ekeln, VVIMP): 0.0, 1.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(geholfen, helfen, VVPP): 0.0, 1.0
+(höchsten, hoch, ADJA): 0.7, 0.0
+(Köpfe, Kopf, NN): 0.0, 1.0
+(originellen, originell, ADJA): 1.0, 0.0
+(hintergehen, hintergehen, VVINF): 0.0, 0.7
+
+3.Akt, 14.Szene, 11.Replik, Drama-Nummer: 864, ID:43
+positiveCd: 0.7
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: -1.7
+positiveCDDichotom: 1
+negativeCDDichotom: 3
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(allein, allein, ADV): 0.0, 0.7
+(lassen, lassen, VVINF): 0.7, 0.0
+(ruft, rufen, VVFIN): 0.0, 0.7
+(fertig, fertig, ADJD): 0.0, 1.0
+
+3.Akt, 15.Szene, 69.Replik, Drama-Nummer: 950, ID:44
+positiveCd: 4.4
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: 1.4
+positiveCDDichotom: 5
+negativeCDDichotom: 3
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(fern, fern, APPR): 1.0, 0.0
+(fremden, fremd, ADJA): 0.0, 1.0
+(sehen, sehen, VVINF): 1.0, 0.0
+(zugeben, zugeben, VVINF): 0.7, 0.0
+(häßliche, hässlich, ADJA): 0.0, 1.0
+(prächtigen, prächtig, ADJA): 1.0, 0.0
+(Maßregeln, Maßregel, NN): 0.0, 1.0
+(ergreifen, ergreifen, VVINF): 0.7, 0.0
+
+2.Akt, 1.Szene, 12.Replik, Drama-Nummer: 264, ID:45
+positiveCd: 2.0
+negativeCd: 5.0
+neutralCd: 0.0
+polarityCd: -3.0
+positiveCDDichotom: 2
+negativeCDDichotom: 5
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(liebt, lieben, VVFIN): 1.0, 0.0
+(Kummer, Kummer, NN): 0.0, 1.0
+(Wann, wann, PWAV): 0.0, 1.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(taub, taub, ADJD): 0.0, 1.0
+(wann, wann, PWAV): 0.0, 1.0
+(mißtrauischen, misstrauisch, ADJA): 0.0, 1.0
+
+3.Akt, 13.Szene, 9.Replik, Drama-Nummer: 846, ID:46
+positiveCd: 5.1
+negativeCd: 4.7
+neutralCd: 0.0
+polarityCd: 0.4
+positiveCDDichotom: 6
+negativeCDDichotom: 5
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Siehst, sehen, VVFIN): 1.0, 0.0
+(Taube, Taube, NN): 0.0, 1.0
+(Schlimmste, Schlimmste, NN): 0.0, 1.0
+(Taube, Taube, NN): 0.0, 1.0
+(gefallen, fallen|gefallen, VVPP): 0.7, 0.0
+(versprochene, versprochen, ADJA): 1.0, 0.0
+(verloren, verlieren, VVPP): 0.0, 0.7
+(gnädigen, gnädig, ADJA): 0.7, 0.0
+(Pack, Pack, NN): 0.7, 0.0
+(lehren, lehren, VVFIN): 1.0, 0.0
+(unglücklich, unglücklich, ADJD): 0.0, 1.0
+
+3.Akt, 15.Szene, 90.Replik, Drama-Nummer: 971, ID:47
+positiveCd: 6.4
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 5.4
+positiveCDDichotom: 7
+negativeCDDichotom: 1
+polarityCDDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(arme, arm, ADJA): 0.0, 1.0
+(Hebt, heben, VVFIN): 0.7, 0.0
+(Beste, Beste, NN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(blieben, bleiben, VVFIN): 0.7, 0.0
+(gefunden, finden, VVPP): 1.0, 0.0
+(glänzen, glänzen, VVINF): 1.0, 0.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+
+1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
+positiveCd: 5.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 4.3
+positiveCDDichotom: 5
+negativeCDDichotom: 1
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Gut, gut, ADJD): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(recht, recht, ADJD): 1.0, 0.0
+(allerliebstes, allerlieb, ADJA): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(Lust, Lust, NN): 1.0, 0.0
+
+1.Akt, 2.Szene, 5.Replik, Drama-Nummer: 50, ID:49
+positiveCd: 6.1
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: 3.4
+positiveCDDichotom: 7
+negativeCDDichotom: 3
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(warne, warnen, VVFIN): 0.0, 0.7
+(gefährlich, gefährlich, ADJD): 0.0, 1.0
+(guten, gut, ADJA): 1.0, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+(sähe, sehen, VVFIN): 1.0, 0.0
+(tote, tot, ADJA): 0.0, 1.0
+(genug, genug, ADV): 0.7, 0.0
+(gelesen, lesen, VVPP): 0.7, 0.0
+(lebendiges, lebendig, ADJA): 0.7, 0.0
+
+3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
+positiveCd: 7.1
+negativeCd: 4.4
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 8
+negativeCDDichotom: 5
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Lauter, laut, ADJD): 1.0, 0.0
+(dumme, dumm, ADJA): 0.0, 1.0
+(Kopf, Kopf, NN): 0.0, 1.0
+(bewegt, bewegen, VVFIN): 0.7, 0.0
+(redte, redte, VVFIN): 1.0, 0.0
+(läßt, lassen, VVFIN): 0.7, 0.0
+(tut, tun, VVFIN): 0.0, 0.7
+(wohl, wohl, ADV): 1.0, 0.0
+(genug, genug, ADV): 0.7, 0.0
+(fluchen, fluchen, VVINF): 0.0, 1.0
+(bringe, bringen, VVFIN): 0.0, 0.7
+(suchen, suchen, VVINF): 1.0, 0.0
+(rechte, rechen, VVFIN): 1.0, 0.0
+
+1.Akt, 4.Szene, 5.Replik, Drama-Nummer: 110, ID:51
+positiveCd: 1.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Schade, schade, ADJD): 0.0, 1.0
+(guter, gut, ADJA): 1.0, 0.0
+
+1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
+positiveCd: 0
+negativeCd: 0
+neutralCd: 0
+polarityCd: 0
+positiveCDDichotom: 0
+negativeCDDichotom: 0
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+
+3.Akt, 18.Szene, 3.Replik, Drama-Nummer: 1010, ID:53
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Drohungen, Drohung, NN): 0.0, 1.0
+(fremden, fremd, ADJA): 0.0, 1.0
+(Recht, Recht, NN): 1.0, 0.0
+
+1.Akt, 6.Szene, 70.Replik, Drama-Nummer: 212, ID:54
+positiveCd: 2.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sehe, sehen, VVFIN): 1.0, 0.0
+(nötig, nötig, ADJD): 0.0, 1.0
+(ehrlichen, ehrlich, ADJA): 1.0, 0.0
+
+1.Akt, 3.Szene, 2.Replik, Drama-Nummer: 59, ID:55
+positiveCd: 1.7
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 3
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(Anfall, Anfall, NN): 0.0, 1.0
+(Heiraten, Heirat|Heiraten, NN): 0.7, 0.0
+(Helfen, helfen, VVFIN): 0.0, 1.0
+(bringen, bringen, VVINF): 0.0, 0.7
+
+1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+
+2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
+positiveCd: 1.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.7
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(ließ, lassen, VVFIN): 0.7, 0.0
+(gewonnen, gewinnen, VVPP): 1.0, 0.0
+
+1.Akt, 6.Szene, 14.Replik, Drama-Nummer: 148, ID:58
+positiveCd: 4.0
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 4
+negativeCDDichotom: 3
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wahrhaftig, wahrhaftig, ADJD): 1.0, 0.0
+(Koller, Koller, NN): 0.0, 1.0
+(geringsten, gering, ADJA): 0.0, 0.7
+(gesehen, sehen, VVPP): 1.0, 0.0
+(gebe, geben, VVFIN): 1.0, 0.0
+(angenehm, angenehm, ADJD): 1.0, 0.0
+(unangenehm, unangenehm, ADJD): 0.0, 1.0
+
+1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
+positiveCd: 3.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(vortrefflich, vortrefflich, ADJD): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(schlechte, schlecht, ADJA): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+
+1.Akt, 6.Szene, 15.Replik, Drama-Nummer: 149, ID:60
+positiveCd: 3.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.7
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(Wohltat, Wohltat, NN): 0.7, 0.0
+(lieber, lieb, ADJA): 1.0, 0.0
+
+3.Akt, 4.Szene, 14.Replik, Drama-Nummer: 390, ID:61
+positiveCd: 8.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 7.3
+positiveCDDichotom: 8
+negativeCDDichotom: 1
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(wahr, wahr, ADJD): 1.0, 0.0
+(schönern, schönern, NN): 1.0, 0.0
+(finden, finden, VVINF): 1.0, 0.0
+(Herrn, Herr, NN): 1.0, 0.0
+(sehen, sehen, VVFIN): 1.0, 0.0
+(recht, recht, ADJD): 1.0, 0.0
+(Zwang, Zwang, NN): 0.0, 0.7
+(stärker, stark, ADJD): 1.0, 0.0
+
+1.Akt, 6.Szene, 24.Replik, Drama-Nummer: 158, ID:62
+positiveCd: 4.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Erlauben, erlauben, VVFIN): 1.0, 0.0
+(Freundin, Freundin, NN): 1.0, 0.0
+(Vollkommenheiten, Vollkommenheiten, NN): 1.0, 0.0
+(besitzen, besitzen, VVFIN): 0.0, 1.0
+(lieben, lieben, VVINF): 1.0, 0.0
+
+2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
+positiveCd: 4.7
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: 2.3
+positiveCDDichotom: 5
+negativeCDDichotom: 3
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(abgewiesen, abweisen, VVPP): 0.0, 1.0
+(Antrag, Antrag, NN): 0.7, 0.0
+(getan, tun, VVPP): 0.0, 0.7
+(finden, finden, VVINF): 1.0, 0.0
+(Vertrauen, Vertrauen, NN): 1.0, 0.0
+(glaubt, glauben, VVFIN): 1.0, 0.0
+(bringe, bringen, VVFIN): 0.0, 0.7
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 369, ID:64
+positiveCd: 4.4
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 4.4
+positiveCDDichotom: 5
+negativeCDDichotom: 0
+polarityCDDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(hart, hart, ADJD): 0.7, 0.0
+(Freiheit, Freiheit, NN): 1.0, 0.0
+(vorziehe, vorziehen, VVFIN): 0.7, 0.0
+(gesucht, suchen, VVPP): 1.0, 0.0
+(liebe, lieben, VVFIN): 1.0, 0.0
+
+2.Akt, 2.Szene, 18.Replik, Drama-Nummer: 210, ID:65
+positiveCd: 1.0
+negativeCd: 3.7
+neutralCd: 0.0
+polarityCd: -2.7
+positiveCDDichotom: 1
+negativeCDDichotom: 4
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Eifersüchtig, eifersüchtig, ADJD): 0.0, 1.0
+(eifersüchtig, eifersüchtig, ADJD): 0.0, 1.0
+(Hoffnung, Hoffnung, NN): 1.0, 0.0
+(verloren, verlieren, VVPP): 0.0, 0.7
+(neidisch, neidisch, ADJD): 0.0, 1.0
+
+3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sah, sehen, VVFIN): 1.0, 0.0
+
+2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
+positiveCd: 1.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.7
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(fragen, fragen, VVFIN): 0.7, 0.0
+(wirklich, wirklich, ADJD): 1.0, 0.0
+
+1.Akt, 4.Szene, 7.Replik, Drama-Nummer: 98, ID:68
+positiveCd: 2.7
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 3
+negativeCDDichotom: 3
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(eigensinnigen, eigensinnig, ADJA): 0.0, 1.0
+(Wahne, Wahn, NN): 0.0, 1.0
+(abbringen, abbringen, VVINF): 0.0, 1.0
+(bestätigen, bestätigen, VVFIN): 0.7, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(liebste, lieb, ADJA): 1.0, 0.0
+
+1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
+positiveCd: 0
+negativeCd: 0
+neutralCd: 0
+polarityCd: 0
+positiveCDDichotom: 0
+negativeCDDichotom: 0
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+
+1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
+positiveCd: 0
+negativeCd: 0
+neutralCd: 0
+polarityCd: 0
+positiveCDDichotom: 0
+negativeCDDichotom: 0
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:71
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(lieb, lieb, ADJD): 1.0, 0.0
+
+1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
+positiveCd: 2.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(besser, gut, ADJD): 1.0, 0.0
+(finden, finden, VVINF): 1.0, 0.0
+
+1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
+positiveCd: 4.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 4.0
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+(besten, gut, ADJA): 1.0, 0.0
+(Freund, Freund, NN): 1.0, 0.0
+
+1.Akt, 3.Szene, 36.Replik, Drama-Nummer: 110, ID:74
+positiveCd: 2.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(zog, ziehen, VVFIN): 0.0, 0.7
+(lieber, lieb, ADJA): 1.0, 0.0
+(sehe, sehen, VVFIN): 1.0, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+
+1.Akt, 3.Szene, 103.Replik, Drama-Nummer: 177, ID:75
+positiveCd: 2.4
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -0.6
+positiveCDDichotom: 3
+negativeCDDichotom: 3
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gutes, gut, ADJA): 1.0, 0.0
+(kriegten, kriegen, VVFIN): 0.0, 1.0
+(frech, frech, ADJD): 0.0, 1.0
+(genug, genug, ADV): 0.7, 0.0
+(genug, genug, ADV): 0.7, 0.0
+(Lügen, Lüge|Lügen, NN): 0.0, 1.0
+
+1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
+positiveCd: 1.7
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 3
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glauben, glauben, VVINF): 1.0, 0.0
+(vergeben, vergeben, VVINF): 0.7, 0.0
+(begehst, begehst, VVFIN): 0.0, 1.0
+(Strafe, Strafe, NN): 0.0, 1.0
+(ziehen, ziehen, VVINF): 0.0, 0.7
+
+1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
+positiveCd: 3.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 3
+negativeCDDichotom: 2
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glaube, glauben, VVFIN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(erlaubt, erlauben, VVPP): 1.0, 0.0
+(armer, arm, ADJA): 0.0, 1.0
+(saure, sauer, ADJA): 0.0, 0.7
+
+1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
+positiveCd: 7.4
+negativeCd: 4.7
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 8
+negativeCDDichotom: 5
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(geben, geben, VVFIN): 1.0, 0.0
+(guten, gut, ADJA): 1.0, 0.0
+(Rat, Rat, NN): 1.0, 0.0
+(verborgen, verbergen, VVPP): 0.0, 0.7
+(kriege, kriegen, VVFIN): 0.0, 1.0
+(her, her, APZR): 1.0, 0.0
+(Wahrheit, Wahrheit, NN): 1.0, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(gebe, geben, VVFIN): 1.0, 0.0
+(verleumden, verleumden, VVINF): 0.0, 1.0
+(freigebig, freigebig, ADJD): 0.7, 0.0
+(armen, arm, ADJA): 0.0, 1.0
+(betrogen, betrügen, VVPP): 0.0, 1.0
+
+1.Akt, 1.Szene, 67.Replik, Drama-Nummer: 67, ID:79
+positiveCd: 4.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 3.7
+positiveCDDichotom: 5
+negativeCDDichotom: 1
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Neigung, Neigung, NN): 1.0, 0.0
+(reifern, reifern, ADJA): 0.7, 0.0
+(schöne, schön, ADJA): 1.0, 0.0
+(satt, satt, ADJD): 1.0, 0.0
+(beste, gut, ADJA): 1.0, 0.0
+(Schuld, Schuld, NN): 0.0, 1.0
+
+1.Akt, 1.Szene, 58.Replik, Drama-Nummer: 58, ID:80
+positiveCd: 2.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 0.3
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(arm, arm, ADJD): 0.0, 1.0
+(allein, allein, ADV): 0.0, 0.7
+(reich, reich, ADJD): 1.0, 0.0
+
+2.Akt, 2.Szene, 6.Replik, Drama-Nummer: 164, ID:81
+positiveCd: 3.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.7
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Wahrheit, Wahrheit, NN): 1.0, 0.0
+(höflicher, höflich, ADJD): 1.0, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
+positiveCd: 1.7
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Freund, Freund, NN): 1.0, 0.0
+(Narr, Narr, NN): 0.0, 1.0
+(wichtigsten, wichtig, ADJA): 0.7, 0.0
+(stören, stören, VVINF): 0.0, 1.0
+
+2.Akt, 2.Szene, 14.Replik, Drama-Nummer: 172, ID:83
+positiveCd: 1.0
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -2.0
+positiveCDDichotom: 1
+negativeCDDichotom: 3
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(beschwerst, beschwerst, VVFIN): 0.0, 1.0
+(Schuld, Schuld, NN): 0.0, 1.0
+(gab, geben, VVFIN): 1.0, 0.0
+(lächerlich, lächerlich, ADJD): 0.0, 1.0
+
+2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
+positiveCd: 2.7
+negativeCd: 9.1
+neutralCd: 0.0
+polarityCd: -6.4
+positiveCDDichotom: 3
+negativeCDDichotom: 10
+polarityCDDichotom: -7
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Übel, Übel, NN): 0.0, 1.0
+(gesungen, singen, VVPP): 0.0, 0.7
+(Tat, Tat, NN): 0.0, 0.7
+(großen, groß, ADJA): 0.7, 0.0
+(Dichter, Dichter, NN): 0.0, 0.7
+(unglücklich, unglücklich, ADJD): 0.0, 1.0
+(böse, böse, ADJA): 0.0, 1.0
+(Tod, Tod, NN): 0.0, 1.0
+(krank, krank, ADJD): 0.0, 1.0
+(acht, acht, CARD): 1.0, 0.0
+(sterben, sterben, VVINF): 0.0, 1.0
+(lieben, lieb, ADJA): 1.0, 0.0
+(Unglücke, Unglück, NN): 0.0, 1.0
+
+2.Akt, 2.Szene, 24.Replik, Drama-Nummer: 182, ID:85
+positiveCd: 3.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 3
+negativeCDDichotom: 0
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bessern, bessern, VVINF): 1.0, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+(Glück, Glück, NN): 1.0, 0.0
+
+3.Akt, 5.Szene, 4.Replik, Drama-Nummer: 334, ID:86
+positiveCd: 3.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sahen, sehen, VVFIN): 1.0, 0.0
+(Lehre, Lehre, NN): 0.0, 1.0
+(geben, geben, VVINF): 1.0, 0.0
+(ansieht, ansehen, VVFIN): 1.0, 0.0
+
+3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
+positiveCd: 1.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: -0.7
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+(allein, allein, ADV): 0.0, 0.7
+(verführst, verführst, VVFIN): 0.0, 1.0
+
+2.Akt, 6.Szene, 17.Replik, Drama-Nummer: 255, ID:88
+positiveCd: 4.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(vortrefflich, vortrefflich, ADJD): 1.0, 0.0
+(besitze, besitzen, VVFIN): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+(besten, gut, ADJD): 1.0, 0.0
+(unschuldiges, unschuldig, ADJA): 1.0, 0.0
+
+3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
+positiveCd: 2.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Zweifel, Zweifel, NN): 0.0, 1.0
+(geirrt, irren, VVPP): 0.0, 1.0
+(lieber, lieb, ADJA): 1.0, 0.0
+(glaube, glauben, VVFIN): 1.0, 0.0
+
+3.Akt, 7.Szene, 23.Replik, Drama-Nummer: 380, ID:90
+positiveCd: 2.7
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 3
+negativeCDDichotom: 2
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(heißt, heißen, VVFIN): 0.7, 0.0
+(schuldig, schuldig, ADJD): 0.0, 1.0
+(wahr, wahr, ADJD): 1.0, 0.0
+(liebe, lieb, ADJA): 1.0, 0.0
+(bezahlen, bezahlen, VVINF): 0.0, 1.0
+
+1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
+positiveCd: 2.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herrn, Herr, NN): 1.0, 0.0
+(Schlag, Schlag, NN): 0.0, 0.7
+(gesehen, sehen, VVPP): 1.0, 0.0
+
+1.Akt, 1.Szene, 22.Replik, Drama-Nummer: 22, ID:92
+positiveCd: 2.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(lieber, lieb, ADJA): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+
+1.Akt, 4.Szene, 8.Replik, Drama-Nummer: 56, ID:93
+positiveCd: 5.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 3.3
+positiveCDDichotom: 5
+negativeCDDichotom: 2
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(geraten, geraten|raten, VVPP): 1.0, 0.0
+(einbilden, einbilden, VVINF): 0.0, 1.0
+(allerliebstes, allerlieb, ADJA): 1.0, 0.0
+(wenig, wenig, ADV): 0.0, 0.7
+(wahr, wahr, ADJD): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(Reife, Reife, NN): 1.0, 0.0
+
+1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
+positiveCd: 1.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: -0.7
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bestimmt, bestimmen, VVPP): 0.0, 0.7
+(weisen, weisen, VVINF): 1.0, 0.0
+(unbequemsten, unbequem, ADJA): 0.0, 1.0
+
+1.Akt, 16.Szene, 4.Replik, Drama-Nummer: 268, ID:95
+positiveCd: 1.0
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -2.0
+positiveCDDichotom: 1
+negativeCDDichotom: 3
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(einfältig, einfältig, ADJD): 0.0, 1.0
+(höflich, höflich, ADJD): 1.0, 0.0
+(unverschämt, unverschämt, ADJD): 0.0, 1.0
+(grob, grob, ADJD): 0.0, 1.0
+
+1.Akt, 2.Szene, 25.Replik, Drama-Nummer: 35, ID:96
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gut, gut, ADJD): 1.0, 0.0
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 70, ID:97
+positiveCd: 2.7
+negativeCd: 6.0
+neutralCd: 0.0
+polarityCd: -3.3
+positiveCDDichotom: 3
+negativeCDDichotom: 6
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(spotten, spotten, VVINF): 0.0, 1.0
+(Ernst, Ernst, NE): 0.0, 1.0
+(gesetzt, setzen, VVPP): 0.7, 0.0
+(irrte, irren, VVFIN): 0.0, 1.0
+(Herr, Herr, NN): 1.0, 0.0
+(liebenswürdig, liebenswürdig, ADJD): 1.0, 0.0
+(entsetzlich, entsetzlich, ADJD): 0.0, 1.0
+(entsetzlich, entsetzlich, ADJD): 0.0, 1.0
+(zornig, zornig, ADJD): 0.0, 1.0
+
+1.Akt, 8.Szene, 4.Replik, Drama-Nummer: 122, ID:98
+positiveCd: 4.7
+negativeCd: 3.7
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 5
+negativeCDDichotom: 4
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(klug, klug, ADJD): 1.0, 0.0
+(verzeihen, verzeihen, VVFIN): 0.7, 0.0
+(sehe, sehen, VVFIN): 1.0, 0.0
+(Tat, Tat, NN): 0.0, 0.7
+(Komplimente, Kompliment, NN): 1.0, 0.0
+(Furcht, Furcht, NN): 0.0, 1.0
+(grob, grob, ADJD): 0.0, 1.0
+(begehen, begehen, VVINF): 0.0, 1.0
+(möge, mögen, VMFIN): 1.0, 0.0
+
+1.Akt, 2.Szene, 9.Replik, Drama-Nummer: 19, ID:99
+positiveCd: 6.0
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: 3.3
+positiveCDDichotom: 6
+negativeCDDichotom: 3
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(beschweren, beschweren, VVINF): 0.0, 1.0
+(nötig, nötig, ADJD): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+(guten, gut, ADJA): 1.0, 0.0
+(Herrn, Herr, NN): 1.0, 0.0
+(bringen, bringen, VVINF): 0.0, 0.7
+(wohl, wohl, ADV): 1.0, 0.0
+(besser, gut, ADJD): 1.0, 0.0
+
+1.Akt, 18.Szene, 18.Replik, Drama-Nummer: 310, ID:100
+positiveCd: 1.0
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -2.0
+positiveCDDichotom: 1
+negativeCDDichotom: 3
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(besorge, besorgen, VVFIN): 0.0, 1.0
+(geirrt, irren, VVPP): 0.0, 1.0
+(trugen, tragen, VVFIN): 0.0, 1.0
+(Wahrheit, Wahrheit, NN): 1.0, 0.0
+
+1.Akt, 9.Szene, 9.Replik, Drama-Nummer: 149, ID:101
+positiveCd: 4.4
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 3.4
+positiveCDDichotom: 5
+negativeCDDichotom: 1
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(übel, übel, ADJD): 0.0, 1.0
+(Herr, Herr, NN): 1.0, 0.0
+(gefallen, fallen|gefallen, VVPP): 0.7, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(bitte, bitten, VVFIN): 1.0, 0.0
+(zufrieden, zufrieden, ADJD): 1.0, 0.0
+
+1.Akt, 22.Szene, 19.Replik, Drama-Nummer: 370, ID:102
+positiveCd: 5.0
+negativeCd: 3.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 5
+negativeCDDichotom: 4
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gegeben, geben, VVPP): 1.0, 0.0
+(Vergeltung, Vergeltung, NN): 0.0, 1.0
+(bitte, bitten, VVFIN): 1.0, 0.0
+(verborgen, verbergen, VVPP): 0.0, 0.7
+(schäme, schämen, VVFIN): 0.0, 1.0
+(Neigung, Neigung, NN): 1.0, 0.0
+(Abneigung, Abneigung, NN): 0.0, 1.0
+(Freundschaft, Freundschaft, NN): 1.0, 0.0
+(unschätzbar, unschätzbar, ADJD): 1.0, 0.0
+
+1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(schönen, schön, ADJA): 1.0, 0.0
+
+3.Akt, 2.Szene, 18.Replik, Drama-Nummer: 408, ID:104
+positiveCd: 2.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(getrauet, getrauet, VVFIN): 0.7, 0.0
+(billiger, billig, ADJD): 1.0, 0.0
+
+5.Akt, 5.Szene, 39.Replik, Drama-Nummer: 766, ID:105
+positiveCd: 5.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 5.0
+positiveCDDichotom: 5
+negativeCDDichotom: 0
+polarityCDDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Recht, Recht, NN): 1.0, 0.0
+(Recht, Recht, NN): 1.0, 0.0
+(lieber, lieb, ADJD): 1.0, 0.0
+(wahr, wahr, ADJD): 1.0, 0.0
+(sehen, sehen, VVFIN): 1.0, 0.0
+
+4.Akt, 5.Szene, 42.Replik, Drama-Nummer: 623, ID:106
+positiveCd: 3.7
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 4
+negativeCDDichotom: 3
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(natürlich, natürlich, ADV): 0.7, 0.0
+(Kopf, Kopf, NN): 0.0, 1.0
+(gesehen, sehen, VVPP): 1.0, 0.0
+(guter, gut, ADJA): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(Bosheit, Bosheit, NN): 0.0, 1.0
+(schlecht, schlecht, ADJD): 0.0, 1.0
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 574, ID:107
+positiveCd: 16.8
+negativeCd: 8.4
+neutralCd: 0.0
+polarityCd: 8.4
+positiveCDDichotom: 18
+negativeCDDichotom: 9
+polarityCDDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wahr, wahr, ADJD): 1.0, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(verachtet, verachten, VVPP): 0.0, 1.0
+(lieben, lieben, VVINF): 1.0, 0.0
+(Trotze, Trotz, NN): 0.0, 1.0
+(ekel, ekeln, VVIMP): 0.0, 1.0
+(Lachen, lachen, VVINF): 1.0, 0.0
+(lachen, lachen, VVINF): 1.0, 0.0
+(gestrengen, gestrengen, ADJA): 0.0, 0.7
+(Herrn, Herr, NN): 1.0, 0.0
+(guter, gut, ADJA): 1.0, 0.0
+(Laune, Laune, NN): 0.0, 1.0
+(lach, lachen, VVIMP): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(sonderbarer, sonderbar, ADJA): 0.0, 1.0
+(lustig, lustig, ADJD): 1.0, 0.0
+(närrisch, närrisch, ADJD): 0.0, 1.0
+(lachen, lachen, VVFIN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(gestrenge, gestrenge, ADJA): 0.0, 0.7
+(Herr, Herr, NN): 1.0, 0.0
+(arme, arm, ADJA): 0.0, 1.0
+(Ernsthaft, ernsthaft, ADJD): 0.7, 0.0
+(lachen, lachen, VVFIN): 1.0, 0.0
+
+2.Akt, 6.Szene, 31.Replik, Drama-Nummer: 247, ID:108
+positiveCd: 2.0
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: -0.4
+positiveCDDichotom: 2
+negativeCDDichotom: 3
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bessern, bessern, VVFIN): 1.0, 0.0
+(unterwerfe, unterwerfen, VVFIN): 0.0, 0.7
+(Verschweigen, Verschweigen, NN): 0.0, 0.7
+(Unruhe, Unruhe, NN): 0.0, 1.0
+(lieber, lieb, ADJD): 1.0, 0.0
+
+4.Akt, 7.Szene, 9.Replik, Drama-Nummer: 652, ID:109
+positiveCd: 0.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 0
+negativeCDDichotom: 1
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(unglückliche, unglücklich, ADJA): 0.0, 1.0
+
+3.Akt, 5.Szene, 11.Replik, Drama-Nummer: 451, ID:110
+positiveCd: 14.2
+negativeCd: 14.8
+neutralCd: 0.0
+polarityCd: -0.6
+positiveCDDichotom: 16
+negativeCDDichotom: 16
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(beschämt, beschämen, VVPP): 0.0, 1.0
+(verdiene, verdienen, VVFIN): 1.0, 0.0
+(stummen, stumm, ADJA): 0.0, 1.0
+(Vorwurf, Vorwurf, NN): 0.0, 1.0
+(Betragen, Betragen, NN): 0.0, 1.0
+(rechtfertigen, rechtfertigen, VVINF): 1.0, 0.0
+(entschuldigen, entschuldigen, VVFIN): 1.0, 0.0
+(Verzeihen, verzeihen, VVFIN): 0.7, 0.0
+(beunruhigen, beunruhigen, VVINF): 0.0, 1.0
+(Vorteil, Vorteil, NN): 0.7, 0.0
+(sprachlose, sprachlos, ADJA): 0.0, 0.7
+(Bestürzung, Bestürzung, NN): 0.0, 0.7
+(genugsam, genugsam, ADV): 0.7, 0.0
+(bestraft, bestrafen, VVPP): 0.0, 1.0
+(Hoffnung, Hoffnung, NN): 1.0, 0.0
+(verschwindet, verschwinden, VVFIN): 0.0, 0.7
+(Glück, Glück, NN): 1.0, 0.0
+(sehen, sehen, VVINF): 1.0, 0.0
+(günstigen, günstig, ADJA): 1.0, 0.0
+(Glückes, Glückes, NN): 1.0, 0.0
+(wunderbarsten, wunderbar, ADJA): 1.0, 0.0
+(Gnade, Gnade, NN): 0.7, 0.0
+(allein, allein, ADV): 0.0, 0.7
+(beleidigen, beleidigen, VVINF): 0.0, 1.0
+(kränke, kränken, VVFIN): 0.0, 1.0
+(Mißtrauen, Misstrauen, NN): 0.0, 1.0
+(zweifeln, zweifeln, VVFIN): 0.0, 1.0
+(unumschränktesten, unumschränktesten, ADJA): 0.7, 0.0
+(Gewalt, Gewalt, NN): 0.0, 1.0
+(bedürfen, bedürfen, VVINF): 0.7, 0.0
+(billigen, billigen, VVINF): 1.0, 0.0
+(Sträuben, Sträuben, NN): 0.0, 1.0
+
+4.Akt, 7.Szene, 15.Replik, Drama-Nummer: 658, ID:111
+positiveCd: 0.7
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -2.3
+positiveCDDichotom: 1
+negativeCDDichotom: 3
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(genug, genug, ADV): 0.7, 0.0
+(verwundet, verwunden, VVPP): 0.0, 1.0
+(verwundet, verwunden, VVPP): 0.0, 1.0
+(tot, tot, ADJD): 0.0, 1.0
+
+5.Akt, 5.Szene, 9.Replik, Drama-Nummer: 736, ID:112
+positiveCd: 2.0
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: -0.4
+positiveCDDichotom: 2
+negativeCDDichotom: 3
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Schönheit, Schönheit, NN): 1.0, 0.0
+(Hoffnung, Hoffnung, NN): 1.0, 0.0
+(unversöhnlich, unversöhnlich, ADJD): 0.0, 1.0
+(einzureden, einreden, VVIZU): 0.0, 0.7
+(Bringen, bringen, VVFIN): 0.0, 0.7
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 782, ID:113
+positiveCd: 5.7
+negativeCd: 2.1
+neutralCd: 0.0
+polarityCd: 3.6
+positiveCDDichotom: 6
+negativeCDDichotom: 3
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Strenge, Strenge, NN): 0.0, 0.7
+(unbescholtene, unbescholten, ADJA): 1.0, 0.0
+(besondere, besonder, ADJA): 1.0, 0.0
+(gebracht, bringen, VVPP): 0.0, 0.7
+(alleranständigste, alleranständigste, ADJA): 1.0, 0.0
+(Widerspruch, Widerspruch, NN): 0.0, 0.7
+(würdigsten, würdig, ADJA): 1.0, 0.0
+(bürgen, bürgen, VVINF): 0.7, 0.0
+(wirklich, wirklich, ADJD): 1.0, 0.0
+
+5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
+positiveCd: 1.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Lasterhaften, Lasterhafte, NN): 0.0, 1.0
+(geben, geben, VVFIN): 1.0, 0.0
+
+4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
+positiveCd: 0.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Unfalle, Unfalle, NN): 0.0, 1.0
+(Gnade, Gnade, NN): 0.7, 0.0
+
+4.Akt, 8.Szene, 14.Replik, Drama-Nummer: 686, ID:116
+positiveCd: 0.7
+negativeCd: 1.4
+neutralCd: 0.0
+polarityCd: -0.7
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Furchtsamste, Furchtsamste, NN): 0.0, 0.7
+(mächtig, mächtig, ADJD): 0.7, 0.0
+(geringsten, gering, ADJA): 0.0, 0.7
+
+3.Akt, 1.Szene, 31.Replik, Drama-Nummer: 384, ID:117
+positiveCd: 3.8
+negativeCd: 4.4
+neutralCd: 0.0
+polarityCd: -0.6
+positiveCDDichotom: 5
+negativeCDDichotom: 5
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(anvertrauet, anvertrauet, VVFIN): 0.7, 0.0
+(verlassen, verlassen, VVINF): 0.0, 0.7
+(hart, hart, ADJD): 0.7, 0.0
+(Wagen, Wagen, NN): 0.7, 0.0
+(angefallen, anfallen, VVPP): 0.0, 1.0
+(gestürzt, stürzen, VVPP): 0.0, 1.0
+(Handgemenges, Handgemenge, NN): 0.0, 1.0
+(geraten, geraten|raten, VVPP): 1.0, 0.0
+(ergreifen, ergreifen, VVINF): 0.7, 0.0
+(bringen, bringen, VVINF): 0.0, 0.7
+
+3.Akt, 1.Szene, 9.Replik, Drama-Nummer: 362, ID:118
+positiveCd: 0.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(töricht, töricht, ADJD): 0.0, 1.0
+(Großen, Große, NN): 0.7, 0.0
+
+5.Akt, 7.Szene, 9.Replik, Drama-Nummer: 798, ID:119
+positiveCd: 1.7
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(besser, gut, ADJD): 1.0, 0.0
+(tot, tot, ADJD): 0.0, 1.0
+(tot, tot, ADJD): 0.0, 1.0
+(Lassen, lassen, VVFIN): 0.7, 0.0
+
+4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
+positiveCd: 1.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(heißen, heißen, VVINF): 0.7, 0.0
+(geben, geben, VVFIN): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+
+2.Akt, 4.Szene, 5.Replik, Drama-Nummer: 197, ID:121
+positiveCd: 10.4
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: 7.7
+positiveCDDichotom: 11
+negativeCDDichotom: 3
+polarityCDDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verlieren, verlieren, VVFIN): 0.0, 0.7
+(Armen, Arm|Arme, NN): 0.0, 1.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(Vergnügen, Vergnügen, NN): 1.0, 0.0
+(Glücke, Glücke, NN): 1.0, 0.0
+(möchtest, mögen, VMFIN): 1.0, 0.0
+(Argwohn, Argwohn, NN): 0.0, 1.0
+(anständige, anständig, ADJA): 1.0, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+(bewog, bewegen, VVFIN): 0.7, 0.0
+(bleiben, bleiben, VVINF): 0.7, 0.0
+(fern, fern, APPR): 1.0, 0.0
+(herzlich, herzlich, ADJD): 1.0, 0.0
+(liebet, lieben, VVFIN): 1.0, 0.0
+
+4.Akt, 7.Szene, 16.Replik, Drama-Nummer: 659, ID:122
+positiveCd: 0.0
+negativeCd: 3.4
+neutralCd: 0.0
+polarityCd: -3.4
+positiveCDDichotom: 0
+negativeCDDichotom: 4
+polarityCDDichotom: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Tot, tot, ADJD): 0.0, 1.0
+(tot, tot, ADJD): 0.0, 1.0
+(bringen, bringen, VVINF): 0.0, 0.7
+(brechen, brechen, VVFIN): 0.0, 0.7
+
+4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
+positiveCd: 6.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 4.3
+positiveCDDichotom: 6
+negativeCDDichotom: 2
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(glücklicher, glücklich, ADJD): 1.0, 0.0
+(unglücklicher, unglücklich, ADJD): 0.0, 1.0
+(wahre, wahr, ADJA): 1.0, 0.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(glaube, glauben, VVFIN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(verkennen, verkennen, VVINF): 0.0, 0.7
+
+1.Akt, 3.Szene, 18.Replik, Drama-Nummer: 63, ID:124
+positiveCd: 2.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 3
+negativeCDDichotom: 0
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(höflicher, höflich, ADJD): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(lassen, lassen, VVFIN): 0.7, 0.0
+
+3.Akt, 7.Szene, 46.Replik, Drama-Nummer: 615, ID:125
+positiveCd: 4.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 4.0
+positiveCDDichotom: 5
+negativeCDDichotom: 1
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(besser, gut, ADJD): 1.0, 0.0
+(bleiben, bleiben, VVINF): 0.7, 0.0
+(lieber, lieb, ADJA): 1.0, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+(tu, tun, VVFIN): 0.0, 0.7
+
+3.Akt, 2.Szene, 60.Replik, Drama-Nummer: 504, ID:126
+positiveCd: 2.7
+negativeCd: 4.4
+neutralCd: 0.0
+polarityCd: -1.7
+positiveCDDichotom: 3
+negativeCDDichotom: 5
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herrn, Herr, NN): 1.0, 0.0
+(Schulden, Schuld, NN): 0.0, 1.0
+(infame, infam, ADJA): 0.0, 1.0
+(Gewalt, Gewalt, NN): 0.0, 1.0
+(höher, hoch, ADJD): 0.7, 0.0
+(anzeigend, anzeigend, ADJD): 0.0, 0.7
+(brachte, bringen, VVFIN): 0.0, 0.7
+(guten, gut, ADJA): 1.0, 0.0
+
+5.Akt, 9.Szene, 30.Replik, Drama-Nummer: 1019, ID:127
+positiveCd: 2.0
+negativeCd: 3.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 2
+negativeCDDichotom: 3
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verächtlich, verächtlich, ADJD): 0.0, 1.0
+(schämet, schämet, VVFIN): 0.0, 1.0
+(Glück, Glück, NN): 1.0, 0.0
+(blinden, blind, ADJA): 0.0, 1.0
+(Zärtlichkeit, Zärtlichkeit, NN): 1.0, 0.0
+
+5.Akt, 11.Szene, 22.Replik, Drama-Nummer: 1066, ID:128
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(liebe, lieben, VVFIN): 1.0, 0.0
+
+4.Akt, 6.Szene, 62.Replik, Drama-Nummer: 873, ID:129
+positiveCd: 8.7
+negativeCd: 4.4
+neutralCd: 0.0
+polarityCd: 4.3
+positiveCDDichotom: 9
+negativeCDDichotom: 5
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Unglück, Unglück, NN): 0.0, 1.0
+(sehen, sehen, VVFIN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(Unglück, Unglück, NN): 0.0, 1.0
+(uneigennützig, uneigennützig, ADJD): 1.0, 0.0
+(lieben, lieben, VVINF): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(offenherziger, offenherziger, ADJD): 1.0, 0.0
+(Mitleid, Mitleid, NN): 1.0, 0.0
+(gewähret, gewähret, NE): 0.7, 0.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(versagt, versagen, VVPP): 0.0, 1.0
+(langsam, langsam, ADJD): 0.0, 0.7
+(zieht, zeihen|ziehen, VVFIN): 0.0, 0.7
+
+4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
+positiveCd: 1.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+(übel, übel, ADJD): 0.0, 1.0
+(anböte, anbieten, VVFIN): 0.7, 0.0
+
+4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Beste, Beste, NN): 1.0, 0.0
+
+2.Akt, 9.Szene, 29.Replik, Drama-Nummer: 433, ID:132
+positiveCd: 5.4
+negativeCd: 2.7
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 6
+negativeCDDichotom: 3
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(unglücklich, unglücklich, ADJD): 0.0, 1.0
+(Vernunft, Vernunft, NN): 1.0, 0.0
+(vergessen, vergessen, VVINF): 0.0, 0.7
+(befiehlt, befehlen, VVFIN): 0.0, 1.0
+(große, groß, ADJA): 0.7, 0.0
+(Vernunft, Vernunft, NN): 1.0, 0.0
+(lassen, lassen, VVFIN): 0.7, 0.0
+(vernünftig, vernünftig, ADJD): 1.0, 0.0
+(Vernunft, Vernunft, NN): 1.0, 0.0
+
+3.Akt, 4.Szene, 7.Replik, Drama-Nummer: 531, ID:133
+positiveCd: 5.0
+negativeCd: 3.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 5
+negativeCDDichotom: 4
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Erschrecke, erschrecken, VVFIN): 0.0, 1.0
+(sehe, sehen, VVFIN): 1.0, 0.0
+(hübsch, hübsch, ADJD): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(fremd, fremd, ADJD): 0.0, 1.0
+(hübsche, hübsch, ADJA): 1.0, 0.0
+(fremde, fremd, ADJA): 0.0, 1.0
+(gewarnet, gewarnet, NE): 0.0, 0.7
+(Acht, Acht, NN): 1.0, 0.0
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 573, ID:134
+positiveCd: 4.7
+negativeCd: 2.4
+neutralCd: 0.0
+polarityCd: 2.3
+positiveCDDichotom: 5
+negativeCDDichotom: 3
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(getan, tun, VVPP): 0.0, 0.7
+(bedanken, bedanken, VVINF): 0.7, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(lieb, lieb, ADJD): 1.0, 0.0
+(gezogen, ziehen, VVPP): 0.0, 0.7
+(wies, weisen, VVFIN): 1.0, 0.0
+(hülfe, helfen, VVFIN): 0.0, 1.0
+
+3.Akt, 2.Szene, 29.Replik, Drama-Nummer: 473, ID:135
+positiveCd: 6.1
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 6.1
+positiveCDDichotom: 7
+negativeCDDichotom: 0
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gestehen, gestehen, VVINF): 0.7, 0.0
+(gute, gut, ADJA): 1.0, 0.0
+(tüchtige, tüchtig, ADJA): 0.7, 0.0
+(lassen, lassen, VVINF): 0.7, 0.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(fände, finden, VVFIN): 1.0, 0.0
+
+5.Akt, 13.Szene, 3.Replik, Drama-Nummer: 1098, ID:136
+positiveCd: 1.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(liebe, lieben, VVFIN): 1.0, 0.0
+
+2.Akt, 1.Szene, 2.Replik, Drama-Nummer: 198, ID:137
+positiveCd: 2.1
+negativeCd: 4.7
+neutralCd: 0.0
+polarityCd: -2.6
+positiveCDDichotom: 3
+negativeCDDichotom: 5
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verzweifelten, verzweifelt, ADJA): 0.0, 1.0
+(großen, groß, ADJA): 0.7, 0.0
+(schlafen, schlafen, VVINF): 0.0, 0.7
+(schreien, schreien, VVINF): 0.0, 1.0
+(mauen, mauen, VVINF): 0.0, 1.0
+(fluchen, fluchen, VVINF): 0.0, 1.0
+(Ruhe, Ruhe, NN): 0.7, 0.0
+(gnädiges, gnädig, ADJA): 0.7, 0.0
+
+5.Akt, 9.Szene, 18.Replik, Drama-Nummer: 1007, ID:138
+positiveCd: 2.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.7
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(weise, weisen, VVFIN): 1.0, 0.0
+(große, groß, ADJA): 0.7, 0.0
+(unbescholtene, unbescholten, ADJA): 1.0, 0.0
+(Kopf, Kopf, NN): 0.0, 1.0
+
+1.Akt, 6.Szene, 6.Replik, Drama-Nummer: 102, ID:139
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sterbe, sterben, VVFIN): 0.0, 1.0
+(beschwor, beschwören, VVFIN): 1.0, 0.0
+(Schuld, Schuld, NN): 0.0, 1.0
+
+4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
+positiveCd: 2.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Freund, Freund, NN): 1.0, 0.0
+(Gutes, Gute, NN): 1.0, 0.0
+(brennet, brennet, VVFIN): 0.0, 0.7
+
+5.Akt, 9.Szene, 6.Replik, Drama-Nummer: 995, ID:141
+positiveCd: 8.1
+negativeCd: 5.8
+neutralCd: 0.0
+polarityCd: 2.3
+positiveCDDichotom: 9
+negativeCDDichotom: 7
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(lieber, lieb, ADJA): 1.0, 0.0
+(tue, tun, VVFIN): 0.0, 0.7
+(Handel, Handel, NN): 0.0, 0.7
+(besorgt, besorgt, ADJD): 0.0, 1.0
+(Vorteil, Vorteil, NN): 0.7, 0.0
+(aufgekläret, aufgekläret, VVPP): 0.7, 0.0
+(unterrichtet, unterrichten, VVPP): 0.7, 0.0
+(unschuldig, unschuldig, ADJD): 1.0, 0.0
+(auszuliefern, ausliefern, VVIZU): 0.0, 0.7
+(bezahlen, bezahlen, VVINF): 0.0, 1.0
+(befohlen, befehlen, VVPP): 0.0, 1.0
+(niedergeschlagen, niederschlagen, VVPP): 0.0, 0.7
+(Gesundheit, Gesundheit, NN): 1.0, 0.0
+(erlaubet, erlaubet, VVFIN): 1.0, 0.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 450, ID:142
+positiveCd: 8.4
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 8.4
+positiveCDDichotom: 9
+negativeCDDichotom: 0
+polarityCDDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gut, gut, ADJD): 1.0, 0.0
+(läßt, lassen, VVFIN): 0.7, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(bitten, bitten, VVINF): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(läßt, lassen, VVFIN): 0.7, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+(bitten, bitten, VVFIN): 1.0, 0.0
+(bitte, bitten, VVFIN): 1.0, 0.0
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 19, ID:143
+positiveCd: 2.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.7
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herr, Herr, NN): 1.0, 0.0
+(Gift, Gift, NN): 0.0, 1.0
+(schwören, schwören, VVINF): 1.0, 0.0
+(nüchtern, nüchtern, VVINF): 0.7, 0.0
+
+4.Akt, 6.Szene, 37.Replik, Drama-Nummer: 848, ID:144
+positiveCd: 0.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -2.0
+positiveCDDichotom: 0
+negativeCDDichotom: 2
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Arm, Arm, NN): 0.0, 1.0
+(fremden, fremd, ADJA): 0.0, 1.0
+
+1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
+positiveCd: 2.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 3
+negativeCDDichotom: 0
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Freund, Freund, NN): 1.0, 0.0
+(Empfehl, Empfehl, NN): 1.0, 0.0
+(heißt, heißen, VVFIN): 0.7, 0.0
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 220, ID:146
+positiveCd: 3.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.7
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gnädiges, gnädig, ADJA): 0.7, 0.0
+(Treue, Treue, NN): 1.0, 0.0
+(Beständigkeit, Beständigkeit, NN): 1.0, 0.0
+(Herr, Herr, NN): 1.0, 0.0
+
+3.Akt, 3.Szene, 19.Replik, Drama-Nummer: 317, ID:147
+positiveCd: 2.4
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 1.4
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(aufrichtiges, aufrichtig, ADJA): 1.0, 0.0
+(väterlichen, väterlich, ADJA): 0.7, 0.0
+(Gewalt, Gewalt, NN): 0.0, 1.0
+(väterlichen, väterlich, ADJA): 0.7, 0.0
+
+2.Akt, 3.Szene, 6.Replik, Drama-Nummer: 142, ID:148
+positiveCd: 5.7
+negativeCd: 4.1
+neutralCd: 0.0
+polarityCd: 1.6
+positiveCDDichotom: 6
+negativeCDDichotom: 5
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Liebe, Liebe, NN): 1.0, 0.0
+(Entzücken, Entzücken, NN): 1.0, 0.0
+(Unglückliche, Unglückliche, NN): 0.0, 1.0
+(Sehen, sehen, VVFIN): 1.0, 0.0
+(sehen, sehen, VVFIN): 1.0, 0.0
+(Freude, Freude, NN): 1.0, 0.0
+(Tränen, Träne|Tränen, NN): 0.0, 0.7
+(süßesten, süß, ADJA): 0.7, 0.0
+(Wollust, Wollust, NN): 0.0, 1.0
+(Tränen, Träne|Tränen, NN): 0.0, 0.7
+(trocknet, trocknen, VVFIN): 0.0, 0.7
+
+2.Akt, 4.Szene, 24.Replik, Drama-Nummer: 195, ID:149
+positiveCd: 17.4
+negativeCd: 10.1
+neutralCd: 0.0
+polarityCd: 7.3
+positiveCDDichotom: 18
+negativeCDDichotom: 11
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gesehen, sehen, VVPP): 1.0, 0.0
+(wahres, wahr, ADJA): 1.0, 0.0
+(Erbarmen, Erbarmen, NN): 1.0, 0.0
+(Miß, Miss, NN): 0.0, 1.0
+(wahres, wahr, ADJA): 1.0, 0.0
+(Erbarmen, Erbarmen, NN): 1.0, 0.0
+(eigennütziges, eigennützig, ADJA): 0.0, 1.0
+(Erbarmen, Erbarmen, NN): 1.0, 0.0
+(verführen, verführen, VVINF): 0.0, 1.0
+(ruhten, ruhen, VVFIN): 0.7, 0.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+(Leidenschaft, Leidenschaft, NN): 1.0, 0.0
+(entschuldigen, entschuldigen, VVINF): 1.0, 0.0
+(Allein, allein, ADV): 0.0, 0.7
+(raubten, rauben, VVFIN): 0.0, 1.0
+(rechtschaffnen, rechtschaffnen, ADJA): 0.7, 0.0
+(bitter, bitter, ADJD): 0.0, 1.0
+(Lust, Lust, NN): 1.0, 0.0
+(stärksten, stark, ADJA): 1.0, 0.0
+(trennten, trennen, VVFIN): 0.0, 0.7
+(verantworten, verantworten, VVINF): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+(Geben, geben, VVFIN): 1.0, 0.0
+(weinenden, weinend, ADJA): 0.0, 1.0
+(schicken, schicken, VVFIN): 1.0, 0.0
+(leichtgläubige, leichtgläubig, ADJA): 0.0, 0.7
+(beschimpft, beschimpfen, VVPP): 0.0, 1.0
+(öde, öde, ADJD): 0.0, 1.0
+
+3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
+positiveCd: 7.7
+negativeCd: 8.4
+neutralCd: 0.0
+polarityCd: -0.7
+positiveCDDichotom: 8
+negativeCDDichotom: 9
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Miß, Miss, NN): 0.0, 1.0
+(verzeihen, verzeihen, VVFIN): 0.7, 0.0
+(glaube, glauben, VVFIN): 1.0, 0.0
+(betrogen, betrügen, VVPP): 0.0, 1.0
+(betriegt, betriegt, VVFIN): 0.0, 1.0
+(Miß, Miss, NN): 0.0, 1.0
+(guten, gut, ADJA): 1.0, 0.0
+(betriegt, betriegt, VVFIN): 0.0, 1.0
+(nahe, nahe, PTKVZ): 1.0, 0.0
+(Miß, Miss, NN): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+(gute, gut, ADJA): 1.0, 0.0
+(entschuldigt, entschuldigen, VVFIN): 1.0, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(guten, gut, ADJA): 1.0, 0.0
+(bringen, bringen, VVINF): 0.0, 0.7
+(tragen, tragen, VVINF): 0.0, 1.0
+
+3.Akt, 2.Szene, 2.Replik, Drama-Nummer: 282, ID:151
+positiveCd: 1.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.0
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(unruhig, unruhig, ADJD): 0.0, 1.0
+(lieben, lieben, VVINF): 1.0, 0.0
+
+5.Akt, 7.Szene, 3.Replik, Drama-Nummer: 653, ID:152
+positiveCd: 9.4
+negativeCd: 13.7
+neutralCd: 0.0
+polarityCd: -4.3
+positiveCDDichotom: 10
+negativeCDDichotom: 14
+polarityCDDichotom: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Gefährlich, gefährlich, ADJD): 0.0, 1.0
+(krank, krank, ADJD): 0.0, 1.0
+(Angst, Angst, NN): 0.0, 1.0
+(unglücklichen, unglücklich, ADJA): 0.0, 1.0
+(unglücklichern, unglücklichern, ADJA): 0.0, 1.0
+(Laß, lassen, VVIMP): 0.7, 0.0
+(Beste, Beste, NN): 1.0, 0.0
+(hoffen, hoffen, VVINF): 0.7, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(finde, finden, VVFIN): 1.0, 0.0
+(gute, gut, ADJA): 1.0, 0.0
+(abzufertigen, abfertigen, VVIZU): 0.0, 1.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+(tot, tot, ADJD): 0.0, 1.0
+(stirbt, sterben, VVFIN): 0.0, 1.0
+(entfernet, entfernet, VVFIN): 0.0, 0.7
+(Glaube, Glaube, NN): 1.0, 0.0
+(Todes, Tod, NN): 0.0, 1.0
+(Todes, Tod, NN): 0.0, 1.0
+(bitter, bitter, ADJD): 0.0, 1.0
+(unangenehme, unangenehm, ADJA): 0.0, 1.0
+(Unempfindlich, unempfindlich, ADJD): 1.0, 0.0
+(untröstlich, untröstlich, ADJD): 0.0, 1.0
+(bezeigen, bezeigen, VVINF): 1.0, 0.0
+
+2.Akt, 4.Szene, 7.Replik, Drama-Nummer: 178, ID:153
+positiveCd: 6.4
+negativeCd: 3.4
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 7
+negativeCDDichotom: 4
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(seufzet, seufzet, VVFIN): 0.0, 0.7
+(helfen, helfen, VVINF): 0.0, 1.0
+(lassen, lassen, VVFIN): 0.7, 0.0
+(seufzen, seufzen, VVINF): 0.0, 0.7
+(sieht, sehen, VVFIN): 1.0, 0.0
+(sieht, sehen, VVFIN): 1.0, 0.0
+(sieht, sehen, VVFIN): 1.0, 0.0
+(bittet, bitten, VVFIN): 1.0, 0.0
+(Möchte, mögen, VMFIN): 1.0, 0.0
+(gewähren, gewähren, VVINF): 0.7, 0.0
+(versagte, versagen, VVFIN): 0.0, 1.0
+
+3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
+positiveCd: 2.0
+negativeCd: 4.4
+neutralCd: 0.0
+polarityCd: -2.4
+positiveCDDichotom: 2
+negativeCDDichotom: 5
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bringst, bringen, VVFIN): 0.0, 0.7
+(bringst, bringen, VVFIN): 0.0, 0.7
+(Tode, Tod, NN): 0.0, 1.0
+(vortrefflichste, vortrefflich, ADJA): 1.0, 0.0
+(beste, gut, ADJA): 1.0, 0.0
+(Elende, elend, ADJA): 0.0, 1.0
+(Tod, Tod, NN): 0.0, 1.0
+
+3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
+positiveCd: 18.3
+negativeCd: 12.9
+neutralCd: 0.0
+polarityCd: 5.4
+positiveCDDichotom: 21
+negativeCDDichotom: 15
+polarityCDDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(trennen, trennen, VVINF): 0.0, 0.7
+(Hartes, Harte, NN): 0.7, 0.0
+(siehst, sehen, VVFIN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(Unwillen, Unwille, NN): 0.0, 1.0
+(gesichert, sichern, VVPP): 1.0, 0.0
+(größten, groß, ADJA): 0.7, 0.0
+(Unglücke, Unglück, NN): 0.0, 1.0
+(begangen, begehen, VVPP): 0.0, 1.0
+(gefährlichen, gefährlich, ADJA): 0.0, 1.0
+(Verbindlichkeit, Verbindlichkeit, NN): 1.0, 0.0
+(glaubte, glauben, VVFIN): 1.0, 0.0
+(natürlich, natürlich, ADV): 0.7, 0.0
+(dankbare, dankbar, ADJA): 1.0, 0.0
+(bezeigte, bezeigen, VVFIN): 1.0, 0.0
+(natürlich, natürlich, ADV): 0.7, 0.0
+(ließ, lassen, VVFIN): 0.7, 0.0
+(Höherm, Höherm, NN): 0.7, 0.0
+(genug, genug, ADV): 0.7, 0.0
+(Liebe, Liebe, NN): 1.0, 0.0
+(geringste, gering, ADJA): 0.0, 0.7
+(Unglück, Unglück, NN): 0.0, 1.0
+(wohl, wohl, ADV): 1.0, 0.0
+(getan, tun, VVPP): 0.0, 0.7
+(vergeben, vergeben, VVINF): 0.7, 0.0
+(unerbittlich, unerbittlich, ADJD): 0.0, 0.7
+(überlegte, überlegen, VVFIN): 1.0, 0.0
+(allein, allein, ADV): 0.0, 0.7
+(Strenge, Strenge, NN): 0.0, 0.7
+(verhindert, verhindern, VVPP): 0.0, 1.0
+(glücklich, glücklich, ADJD): 1.0, 0.0
+(schätzen, schätzen, VVINF): 1.0, 0.0
+(aufgeben, aufgeben, VVINF): 0.0, 0.7
+(Begierden, Begierde, NN): 0.0, 1.0
+(gelassen, lassen, VVPP): 0.7, 0.0
+(fesselnden, fesselnd, ADJA): 0.0, 1.0
+
+4.Akt, 8.Szene, 70.Replik, Drama-Nummer: 580, ID:156
+positiveCd: 3.0
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(reizend, reizend, ADJD): 1.0, 0.0
+(frohlocken, frohlocken, VVINF): 1.0, 0.0
+(Miß, Miss, NN): 0.0, 1.0
+(bitten, bitten, VVINF): 1.0, 0.0
+
+4.Akt, 8.Szene, 20.Replik, Drama-Nummer: 530, ID:157
+positiveCd: 4.4
+negativeCd: 3.4
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 5
+negativeCDDichotom: 4
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(tut, tun, VVFIN): 0.0, 0.7
+(leid, leid, ADJD): 0.0, 1.0
+(verkannt, verkennen, VVPP): 0.0, 0.7
+(Miß, Miss, NN): 0.0, 1.0
+(setze, setzen, VVFIN): 0.7, 0.0
+(nähere, nah, ADJA): 1.0, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+(Wohltat, Wohltat, NN): 0.7, 0.0
+(ansehen, ansehen, VVINF): 1.0, 0.0
+
+4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
+positiveCd: 5.7
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 3.7
+positiveCDDichotom: 6
+negativeCDDichotom: 2
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bessere, gut, ADJA): 1.0, 0.0
+(glaubten, glauben, VVFIN): 1.0, 0.0
+(untröstlich, untröstlich, ADJD): 0.0, 1.0
+(glauben, glauben, VVINF): 1.0, 0.0
+(Miß, messen|missen, VVIMP): 0.0, 1.0
+(rege, rege, ADJD): 0.7, 0.0
+(beste, gut, ADJA): 1.0, 0.0
+(lieben, lieben, VVINF): 1.0, 0.0
+
+4.Akt, 8.Szene, 38.Replik, Drama-Nummer: 548, ID:159
+positiveCd: 9.2
+negativeCd: 3.1
+neutralCd: 0.0
+polarityCd: 6.1
+positiveCDDichotom: 11
+negativeCDDichotom: 4
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Mangels, Mangel, NN): 0.0, 1.0
+(Vermögen, Vermögen, NN): 0.7, 0.0
+(gesucht, suchen, VVPP): 1.0, 0.0
+(eifriger, eifrig, ADJD): 0.7, 0.0
+(glücklich, glücklich, ADJD): 1.0, 0.0
+(reichen, reich, ADJA): 1.0, 0.0
+(vornehmen, vornehm, ADJA): 0.7, 0.0
+(Antrag, Antrag, NN): 0.7, 0.0
+(setzen, setzen, VVINF): 0.7, 0.0
+(versprach, versprechen, VVFIN): 1.0, 0.0
+(Geringste, Geringste, NN): 0.0, 0.7
+(tun, tun, VVINF): 0.0, 0.7
+(zärtlichsten, zärtlich, ADJA): 1.0, 0.0
+(vorgezogen, vorziehen, VVPP): 0.7, 0.0
+(gleichgültigen, gleichgültig, ADJA): 0.0, 0.7
+
+2.Akt, 1.Szene, 7.Replik, Drama-Nummer: 117, ID:160
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verhärten, verhärten, VVINF): 0.0, 1.0
+(zürnen, zürnen, VVFIN): 0.0, 1.0
+(lieber, lieb, ADJD): 1.0, 0.0
+
+5.Akt, 10.Szene, 14.Replik, Drama-Nummer: 684, ID:161
+positiveCd: 1.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verehren, verehren, VVINF): 1.0, 0.0
+(Laß, lassen, VVIMP): 0.7, 0.0
+(teurer, teuer, ADJD): 0.0, 1.0
+
+1.Akt, 7.Szene, 2.Replik, Drama-Nummer: 54, ID:162
+positiveCd: 0.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(beunruhige, beunruhigen, VVFIN): 0.0, 1.0
+(vergeben, vergeben, VVINF): 0.7, 0.0
+
+2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
+positiveCd: 4.0
+negativeCd: 4.9
+neutralCd: 0.0
+polarityCd: -0.9
+positiveCDDichotom: 4
+negativeCDDichotom: 7
+polarityCDDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verlassen, verlassen, VVFIN): 0.0, 0.7
+(verlassen, verlassen, VVPP): 0.0, 0.7
+(vermißt, vermissen, VVPP): 0.0, 0.7
+(vermissen, vermissen, VVINF): 0.0, 0.7
+(liebten, lieben, VVFIN): 1.0, 0.0
+(Verläßt, verlassen, VVFIN): 0.0, 0.7
+(liebt, lieben, VVFIN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(lieben, lieben, VVINF): 1.0, 0.0
+(verlassen, verlassen, VVINF): 0.0, 0.7
+(verlassen, verlassen, VVPP): 0.0, 0.7
+
+5.Akt, 10.Szene, 3.Replik, Drama-Nummer: 673, ID:164
+positiveCd: 4.0
+negativeCd: 5.4
+neutralCd: 0.0
+polarityCd: -1.4
+positiveCDDichotom: 4
+negativeCDDichotom: 6
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sehen, sehen, VVINF): 1.0, 0.0
+(Miß, Miss, NN): 0.0, 1.0
+(Trost, Trost, NN): 1.0, 0.0
+(Verzweiflung, Verzweiflung, NN): 0.0, 1.0
+(allein, allein, ADV): 0.0, 0.7
+(bringt, bringen, VVFIN): 0.0, 0.7
+(Unglücklicher, unglücklich, ADJA): 0.0, 1.0
+(schrecklichen, schrecklich, ADJA): 0.0, 1.0
+(gerächet, gerächet, ADJD): 1.0, 0.0
+(sehen, sehen, VVINF): 1.0, 0.0
+
+5.Akt, 2.Szene, 7.Replik, Drama-Nummer: 601, ID:165
+positiveCd: 0.7
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Genug, genug, ADV): 0.7, 0.0
+(Angst, Angst, NN): 0.0, 1.0
+
+3.Akt, 3.Szene, 15.Replik, Drama-Nummer: 313, ID:166
+positiveCd: 4.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 4.7
+positiveCDDichotom: 5
+negativeCDDichotom: 0
+polarityCDDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(sehen, sehen, VVINF): 1.0, 0.0
+(vermag, vermag, VVFIN): 0.7, 0.0
+(versprach, versprechen, VVFIN): 1.0, 0.0
+(Freude, Freude, NN): 1.0, 0.0
+(Freude, Freude, NN): 1.0, 0.0
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 1148, ID:167
+positiveCd: 2.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 3
+negativeCDDichotom: 1
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Liebe, Liebe, NN): 1.0, 0.0
+(läßt, lassen, VVFIN): 0.7, 0.0
+(unterschlagen, unterschlagen, VVINF): 0.0, 0.7
+(wohl, wohl, ADV): 1.0, 0.0
+
+4.Akt, 7.Szene, 39.Replik, Drama-Nummer: 1008, ID:168
+positiveCd: 2.7
+negativeCd: 3.4
+neutralCd: 0.0
+polarityCd: -0.7
+positiveCDDichotom: 3
+negativeCDDichotom: 4
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Wohl, wohl, ADV): 1.0, 0.0
+(laßt, lassen, VVFIN): 0.7, 0.0
+(Tat, Tat, NN): 0.0, 0.7
+(Liebe, Liebe, NN): 1.0, 0.0
+(fremde, fremd, ADJA): 0.0, 1.0
+(tötet, töten, VVFIN): 0.0, 1.0
+(Verlieren, Verlieren, NN): 0.0, 0.7
+
+5.Akt, 6.Szene, 52.Replik, Drama-Nummer: 1213, ID:169
+positiveCd: 7.4
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 6.4
+positiveCDDichotom: 8
+negativeCDDichotom: 1
+polarityCDDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Göttlichen, Göttliche, NN): 0.7, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(Wunder, wund, ADJA): 0.0, 1.0
+(beschwor, beschwören, VVFIN): 1.0, 0.0
+(wahren, wahr, ADJA): 1.0, 0.0
+(Mitleids, Mitleid, NN): 1.0, 0.0
+(beschwor, beschwören, VVFIN): 1.0, 0.0
+(erbarmen, erbarmen, VVINF): 1.0, 0.0
+(Vergeben, Vergeben, NN): 0.7, 0.0
+
+5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
+positiveCd: 1.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 0.3
+positiveCDDichotom: 1
+negativeCDDichotom: 1
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(allein, allein, ADV): 0.0, 0.7
+(gelehrt, lehren, VVPP): 1.0, 0.0
+
+3.Akt, 7.Szene, 22.Replik, Drama-Nummer: 693, ID:171
+positiveCd: 7.1
+negativeCd: 4.0
+neutralCd: 0.0
+polarityCd: 3.1
+positiveCDDichotom: 8
+negativeCDDichotom: 4
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(harret, harren, VVFIN): 0.7, 0.0
+(Besitzt, besitzen, VVFIN): 0.0, 1.0
+(beliebt, beliebt, ADJD): 0.7, 0.0
+(angenehm, angenehm, ADJD): 1.0, 0.0
+(falschen, falsch, ADJA): 0.0, 1.0
+(lieben, lieben, VVFIN): 1.0, 0.0
+(liebt, lieben, VVFIN): 1.0, 0.0
+(Betrogene, betrogen, ADJA): 0.0, 1.0
+(echt, echt, ADJD): 1.0, 0.0
+(echte, echt, ADJA): 1.0, 0.0
+(Verlust, Verlust, NN): 0.0, 1.0
+(ließ, lassen, VVFIN): 0.7, 0.0
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 580, ID:172
+positiveCd: 2.7
+negativeCd: 4.0
+neutralCd: 0.0
+polarityCd: -1.3
+positiveCDDichotom: 3
+negativeCDDichotom: 4
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Kummers, Kummer, NE): 0.0, 1.0
+(Laune, Laune, NN): 0.0, 1.0
+(übel, übel, ADJD): 0.0, 1.0
+(hieß, heißen, VVFIN): 0.7, 0.0
+(empfindlich, empfindlich, ADJD): 0.0, 1.0
+(rächen, rächen, VVINF): 1.0, 0.0
+(besser, gut, ADJD): 1.0, 0.0
+
+1.Akt, 2.Szene, 15.Replik, Drama-Nummer: 72, ID:173
+positiveCd: 1.4
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 0.4
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Tode, Tod, NN): 0.0, 1.0
+(frei, frei, ADJD): 0.7, 0.0
+(freiwillig, freiwillig, ADJD): 0.7, 0.0
+
+3.Akt, 5.Szene, 20.Replik, Drama-Nummer: 665, ID:174
+positiveCd: 0.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: -1.7
+positiveCDDichotom: 0
+negativeCDDichotom: 2
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Zweifel, Zweifel, NN): 0.0, 1.0
+(unverhohlen, unverhohlen, ADJD): 0.0, 0.7
+
+4.Akt, 7.Szene, 31.Replik, Drama-Nummer: 1000, ID:175
+positiveCd: 1.7
+negativeCd: 5.2
+neutralCd: 0.0
+polarityCd: -3.5
+positiveCDDichotom: 2
+negativeCDDichotom: 7
+polarityCDDichotom: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(guter, gut, ADJA): 1.0, 0.0
+(Fürsprach, Fürsprach, NN): 0.7, 0.0
+(Haß, Hass, NN): 0.0, 1.0
+(Tat, Tat, NN): 0.0, 0.7
+(Tat, Tat, NN): 0.0, 0.7
+(Allein, allein, ADV): 0.0, 0.7
+(Allein, allein, PTKVZ): 0.0, 0.7
+(allein, allein, ADV): 0.0, 0.7
+(Taten, Tat, NN): 0.0, 0.7
+
+2.Akt, 5.Szene, 37.Replik, Drama-Nummer: 487, ID:176
+positiveCd: 3.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 3
+negativeCDDichotom: 0
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(freuen, freuen, VVINF): 1.0, 0.0
+(heitre, heiter, ADJA): 1.0, 0.0
+(Ferne, Ferne, NN): 1.0, 0.0
+
+1.Akt, 4.Szene, 10.Replik, Drama-Nummer: 179, ID:177
+positiveCd: 7.4
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 5.7
+positiveCDDichotom: 8
+negativeCDDichotom: 2
+polarityCDDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Schickt, schicken, VVFIN): 1.0, 0.0
+(Gib, geben, VVIMP): 1.0, 0.0
+(Acht, Acht, NN): 1.0, 0.0
+(betreten, betreten, VVINF): 0.0, 0.7
+(laden, laden, VVINF): 0.0, 1.0
+(läßt, lassen, VVFIN): 0.7, 0.0
+(laß, laß, ADJD): 0.7, 0.0
+(bitten, bitten, VVINF): 1.0, 0.0
+(herzlich, herzlich, ADJD): 1.0, 0.0
+(bitten, bitten, VVINF): 1.0, 0.0
+
+3.Akt, 3.Szene, 6.Replik, Drama-Nummer: 609, ID:178
+positiveCd: 0.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -2.0
+positiveCDDichotom: 0
+negativeCDDichotom: 2
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Unruh, Unruh, NN): 0.0, 1.0
+(vergelten, vergelten, VVINF): 0.0, 1.0
+
+1.Akt, 5.Szene, 65.Replik, Drama-Nummer: 246, ID:179
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(gebildet, bilden, VVPP): 1.0, 0.0
+(widerspricht, widersprechen, VVFIN): 0.0, 1.0
+(Erregt, erregen, VVFIN): 0.0, 1.0
+
+5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
+positiveCd: 2.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(geborner, geborner, ADJA): 1.0, 0.0
+(her, her, PTKVZ): 1.0, 0.0
+
+4.Akt, 7.Szene, 40.Replik, Drama-Nummer: 1009, ID:181
+positiveCd: 3.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 3.7
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(bedacht, bedachen, VVFIN): 0.7, 0.0
+(anzuraten, anraten, VVIZU): 1.0, 0.0
+(guter, gut, ADJA): 1.0, 0.0
+(angeraten, anraten, VVPP): 1.0, 0.0
+
+4.Akt, 4.Szene, 45.Replik, Drama-Nummer: 922, ID:182
+positiveCd: 2.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 1.3
+positiveCDDichotom: 2
+negativeCDDichotom: 1
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Woll, Woll, VVFIN): 1.0, 0.0
+(tolerante, tolerant, ADJA): 1.0, 0.0
+(bringen, bringen, VVINF): 0.0, 0.7
+
+4.Akt, 5.Szene, 6.Replik, Drama-Nummer: 937, ID:183
+positiveCd: 5.4
+negativeCd: 1.0
+neutralCd: 0.0
+polarityCd: 4.4
+positiveCDDichotom: 6
+negativeCDDichotom: 1
+polarityCDDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(hübschen, hübsch, ADJA): 1.0, 0.0
+(willkommen, willkommen, ADJD): 1.0, 0.0
+(hübsche, hübsch, ADJA): 1.0, 0.0
+(Genug, genug, ADV): 0.7, 0.0
+(Launen, Laune, NN): 0.0, 1.0
+(weichen, weich, ADJA): 0.7, 0.0
+(geben, geben, VVINF): 1.0, 0.0
+
+3.Akt, 5.Szene, 15.Replik, Drama-Nummer: 660, ID:184
+positiveCd: 4.4
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: 2.7
+positiveCDDichotom: 5
+negativeCDDichotom: 2
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(genug, genug, ADV): 0.7, 0.0
+(trockene, trocken, ADJA): 0.0, 0.7
+(Vernunft, Vernunft, NN): 1.0, 0.0
+(ekelt, ekeln, VVFIN): 0.0, 1.0
+(Laß, lassen, VVIMP): 0.7, 0.0
+(Aufrichtig, aufrichtig, ADJD): 1.0, 0.0
+(aufrichtig, aufrichtig, ADJD): 1.0, 0.0
+
+3.Akt, 10.Szene, 53.Replik, Drama-Nummer: 809, ID:185
+positiveCd: 2.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(fähig, fähig, ADJD): 1.0, 0.0
+(finden, finden, VVINF): 1.0, 0.0
+
+3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
+positiveCd: 0
+negativeCd: 0
+neutralCd: 0
+polarityCd: 0
+positiveCDDichotom: 0
+negativeCDDichotom: 0
+polarityCDDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+
+4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
+positiveCd: 4.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 3.3
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(tun, tun, VVINF): 0.0, 0.7
+(Dank, Dank, NN): 1.0, 0.0
+(Besondern, Besondern, NN): 1.0, 0.0
+(Dank, dank, APPR): 1.0, 0.0
+(Beteuern, Beteuern, NN): 1.0, 0.0
+
+5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
+positiveCd: 1.7
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -0.3
+positiveCDDichotom: 2
+negativeCDDichotom: 2
+polarityCDDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(verstoßt, verstoßt, VVFIN): 0.0, 1.0
+(gebt, geben, VVFIN): 1.0, 0.0
+(Verstoßt, Verstoßt, VVFIN): 0.0, 1.0
+(lassen, lassen, VVINF): 0.7, 0.0
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
+positiveCd: 11.0
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 10.3
+positiveCDDichotom: 11
+negativeCDDichotom: 1
+polarityCDDichotom: 10
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+(wies, weisen, VVFIN): 1.0, 0.0
+(wohl, wohl, ADV): 1.0, 0.0
+(lieber, lieb, ADJD): 1.0, 0.0
+(glauben, glauben, VVINF): 1.0, 0.0
+(liebt, lieben, VVFIN): 1.0, 0.0
+(lieben, lieben, VVINF): 1.0, 0.0
+(Pflegen, pflegen, VVFIN): 1.0, 0.0
+(verlorner, verlorner, NN): 0.0, 0.7
+(weise, weisen, VVFIN): 1.0, 0.0
+(verdienen, verdienen, VVINF): 1.0, 0.0
+(Glauben, Glaube, NN): 1.0, 0.0
+
+1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
+positiveCd: 5.1
+negativeCd: 3.7
+neutralCd: 0.0
+polarityCd: 1.4
+positiveCDDichotom: 6
+negativeCDDichotom: 4
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Herrn, Herr, NN): 1.0, 0.0
+(verübeln, verübeln, VVINF): 0.0, 1.0
+(Beste, Beste, NN): 1.0, 0.0
+(Feste, Fest, NN): 0.7, 0.0
+(ungeheuern, ungeheuer, ADJA): 0.0, 1.0
+(vorsichtger, vorsichtger, NE): 0.7, 0.0
+(Heer, Heer, NN): 1.0, 0.0
+(Kriegs, Krieg, NN): 0.0, 1.0
+(bestreitet, bestreiten, VVFIN): 0.0, 0.7
+(Feste, Fest, NN): 0.7, 0.0
+
+2.Akt, 5.Szene, 34.Replik, Drama-Nummer: 484, ID:191
+positiveCd: 0.0
+negativeCd: 1.7
+neutralCd: 0.0
+polarityCd: -1.7
+positiveCDDichotom: 0
+negativeCDDichotom: 2
+polarityCDDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(schäme, schämen, VVFIN): 0.0, 1.0
+(verkannt, verkennen, VVPP): 0.0, 0.7
+
+2.Akt, 1.Szene, 21.Replik, Drama-Nummer: 303, ID:192
+positiveCd: 3.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: 1.0
+positiveCDDichotom: 3
+negativeCDDichotom: 2
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(wohl, wohl, ADV): 1.0, 0.0
+(liebes, lieb, ADJA): 1.0, 0.0
+(Schuld, Schuld, NN): 0.0, 1.0
+(besser, gut, ADJD): 1.0, 0.0
+(spielen, spielen, VVINF): 0.0, 1.0
+
+5.Akt, 7.Szene, 7.Replik, Drama-Nummer: 1223, ID:193
+positiveCd: 4.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 4.0
+positiveCDDichotom: 4
+negativeCDDichotom: 0
+polarityCDDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(mag, mögen, VMFIN): 1.0, 0.0
+(Gerechtigkeit, Gerechtigkeit, NN): 1.0, 0.0
+(Güte, Güte, NN): 1.0, 0.0
+(bewundern, bewundern, VVINF): 1.0, 0.0
+
+2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
+positiveCd: 3.7
+negativeCd: 0.7
+neutralCd: 0.0
+polarityCd: 3.0
+positiveCDDichotom: 4
+negativeCDDichotom: 1
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Ruf, Ruf, NN): 0.0, 0.7
+(gut, gut, ADJD): 1.0, 0.0
+(lieber, lieb, ADJD): 1.0, 0.0
+(glauben, glauben, VVINF): 1.0, 0.0
+(sehn, sehnen, VVIMP): 0.7, 0.0
+
+1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
+positiveCd: 0.7
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 0.7
+positiveCDDichotom: 1
+negativeCDDichotom: 0
+polarityCDDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Sachte, Sachte, NN): 0.7, 0.0
+
+1.Akt, 5.Szene, 61.Replik, Drama-Nummer: 101, ID:196
+positiveCd: 5.0
+negativeCd: 6.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 5
+negativeCDDichotom: 6
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Lob, Lob, NN): 1.0, 0.0
+(Nachteile, Nachteil, NN): 0.0, 1.0
+(Schwur, Schwur, NN): 1.0, 0.0
+(möge, mögen, VMFIN): 1.0, 0.0
+(möge, mögen, VMFIN): 1.0, 0.0
+(Tod, Tod, NN): 0.0, 1.0
+(Schande, Schande, NN): 0.0, 1.0
+(Schande, Schande, NN): 0.0, 1.0
+(möge, mögen, VMFIN): 1.0, 0.0
+(Spott, Spott, NN): 0.0, 1.0
+(sterben, sterben, VVINF): 0.0, 1.0
+
+1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
+positiveCd: 2.0
+negativeCd: 0.0
+neutralCd: 0.0
+polarityCd: 2.0
+positiveCDDichotom: 2
+negativeCDDichotom: 0
+polarityCDDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Glaube, glauben, VVFIN): 1.0, 0.0
+(gut, gut, ADJD): 1.0, 0.0
+
+1.Akt, 8.Szene, 45.Replik, Drama-Nummer: 180, ID:198
+positiveCd: 1.0
+negativeCd: 2.0
+neutralCd: 0.0
+polarityCd: -1.0
+positiveCDDichotom: 1
+negativeCDDichotom: 2
+polarityCDDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(stirbt, sterben, VVFIN): 0.0, 1.0
+(beweine, beweine, NN): 0.0, 1.0
+(wunderbarer, wunderbar, ADJA): 1.0, 0.0
+
+1.Akt, 5.Szene, 24.Replik, Drama-Nummer: 64, ID:199
+positiveCd: 6.7
+negativeCd: 3.1
+neutralCd: 0.0
+polarityCd: 3.6
+positiveCDDichotom: 7
+negativeCDDichotom: 4
+polarityCDDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(lieber, lieb, ADJA): 1.0, 0.0
+(laß, laß, ADJD): 0.7, 0.0
+(Gib, geben, VVIMP): 1.0, 0.0
+(rauhe, rauh, ADJA): 0.0, 0.7
+(zärtliche, zärtlich, ADJA): 1.0, 0.0
+(ersticke, ersticken, VVFIN): 0.0, 1.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+(besten, gut, ADJA): 1.0, 0.0
+(möchte, mögen, VMFIN): 1.0, 0.0
+(Wildheit, Wildheit, NN): 0.0, 0.7
+(wenig, wenig, ADV): 0.0, 0.7
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 94, ID:200
+positiveCd: 2.7
+negativeCd: 8.1
+neutralCd: 0.0
+polarityCd: -5.4
+positiveCDDichotom: 3
+negativeCDDichotom: 9
+polarityCDDichotom: -6
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveCd, _negativeCd
+(Genug, genug, ADV): 0.7, 0.0
+(tun, tun, VVINF): 0.0, 0.7
+(Feuer, Feuer, NN): 0.0, 1.0
+(stürzen, stürzen, VVINF): 0.0, 1.0
+(Befiehl, befehlen, VVIMP): 0.0, 1.0
+(lieber, lieb, ADJA): 1.0, 0.0
+(Freund, Freund, NE): 1.0, 0.0
+(befiehl, befehlen, VVIMP): 0.0, 1.0
+(tu, tun, VVFIN): 0.0, 0.7
+(Verbrechen, Verbrechen, NN): 0.0, 0.7
+(begehen, begehen, VVINF): 0.0, 1.0
+(schaudert, schaudern, VVFIN): 0.0, 1.0

@@ -196,6 +196,9 @@ class Sentiment_Bearing_Word:
 		self._positiveCombined = 0
 		self._negativeCombined = 0
 
+		self._clearlyPositiveCombined = 0
+		self._clearlyNegativeCombined = 0
+
 		#Language Data
 		self._token = ""
 		self._lemma = ""
@@ -258,17 +261,31 @@ class Sentiment_Bearing_Word:
 			self._negativeGpc = sentiments["gpc"]["negative"]
 			self._neutralGpc = sentiments["gpc"]["neutral"]
 
-		self.setCombinedPosNeg()
+		self.setClearlyCombinedPolarities()
+		self.setCombinedPolarities()
 
+	def setCombinedPolarities(self):
+		positivities = [self._positiveSentiWSDichotom, self._positiveNrc, self._positiveBawlDichotom,\
+		self._positiveCDDichotom, self._positiveGpc]
+		onesPos = [x for x in positivities if x == 1]
+		
+		negativities = [self._negativeSentiWSDichotom, self._negativeNrc, self._negativeBawlDichotom,\
+		self._negativeCDDichotom, self._negativeGpc]
+		onesNeg =[x for x in negativities if x == 1]
 
-	def setCombinedPosNeg(self):
+		if(len(onesPos) > len(onesNeg)):
+			self._positiveCombined = 1
+		elif(len(onesNeg) > len(onesPos)):
+			self._negativeCombined = 1
+
+	def setClearlyCombinedPolarities(self):
 		positivities = [self._positiveSentiWSDichotom, self._positiveNrc, self._positiveBawlDichotom,\
 		self._positiveCDDichotom, self._positiveGpc]
 		zerosPos = [x for x in positivities if x == 0]
 		onesPos = [x for x in positivities if x == 1]
 
 		if(len(onesPos) > len(zerosPos)):
-			self._positiveCombined = 1
+			self._clearlyPositiveCombined = 1
 		
 		negativities = [self._negativeSentiWSDichotom, self._negativeNrc, self._negativeBawlDichotom,\
 		self._negativeCDDichotom, self._negativeGpc]
@@ -276,7 +293,10 @@ class Sentiment_Bearing_Word:
 		onesNeg =[x for x in negativities if x == 1]
 		
 		if(len(onesNeg) > len(zerosNeg)):
-			self._negativeCombined = 1
+			self._clearlyNegativeCombined = 1
+
+	def getNumberOfPositives(self):
+		print("TODO")
 
 	def printAllInformation(self):
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
@@ -285,6 +305,7 @@ class Sentiment_Bearing_Word:
 		bawl = ",".join([str(self._emotion), str(self._arousel)])
 		cd = ",".join([str(self._positiveCd), str(self._negativeCd), str(self._neutralCd)])
 		gpc = ",".join([str(self._positiveGpc), str(self._negativeGpc), str(self._neutralGpc)])
+
 		info = info + " " + sentiments + " " + bawl
 		print info
 
@@ -296,7 +317,10 @@ class Sentiment_Bearing_Word:
 		bawl = ", ".join([str(self._emotion), str(self._arousel)])
 		cd = ", ".join([str(self._positiveCd), str(self._negativeCd), str(self._neutralCd)])
 		gpc = ", ".join([str(self._positiveGpc), str(self._negativeGpc), str(self._neutralGpc)])
-		info = info + sentiWs + " | " + nrc + " | " + bawl + " | " + cd + " | " + gpc
+		clearlyCombined = ",".join([str(self._clearlyPositiveCombined), str(self._clearlyNegativeCombined)])
+		combined = ",".join([str(self._positiveCombined), str(self._negativeCombined)])
+		info = info + sentiWs + " | " + nrc + " | " + bawl + " | " + cd + " | " + gpc + " | " + clearlyCombined \
+		+ " | " + combined
 		return info
 
 	def returnSpecificInfoAsString(self, metricNames):

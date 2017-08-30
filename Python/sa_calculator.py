@@ -5,6 +5,7 @@ import re
 import collections
 import locale
 import sys
+import math
 from sa_models import *
 
 def main():
@@ -91,7 +92,7 @@ class Sentiment_Calculator:
 
 	def calcTotalMetrics(self):
 
-		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = sum(word._polaritySentiWS for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = math.fsum(word._polaritySentiWS for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["positiveSentiWSDichotom"] = sum(word._positiveSentiWSDichotom for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["negativeSentiWSDichotom"] = sum(word._negativeSentiWSDichotom for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polaritySentiWSDichotom"] = self._sentimentMetrics._metricsTotal["positiveSentiWSDichotom"] \
@@ -110,16 +111,16 @@ class Sentiment_Calculator:
 		self._sentimentMetrics._metricsTotal["surprise"] = sum(word._surprise for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["trust"] = sum(word._trust for word in self._sentimentBearingWords)
 
-		self._sentimentMetrics._metricsTotal["emotion"] = sum(word._emotion for word in self._sentimentBearingWords)
-		self._sentimentMetrics._metricsTotal["arousel"] = sum(word._arousel for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["emotion"] = math.fsum(word._emotion for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["arousel"] = math.fsum(word._arousel for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["positiveBawlDichotom"] = sum(word._positiveBawlDichotom for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["negativeBawlDichotom"] = sum(word._negativeBawlDichotom for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityBawlDichotom"] = self._sentimentMetrics._metricsTotal["positiveBawlDichotom"] \
 		- self._sentimentMetrics._metricsTotal["negativeBawlDichotom"]
 
 
-		self._sentimentMetrics._metricsTotal["positiveCd"] = sum(word._positiveCd for word in self._sentimentBearingWords)
-		self._sentimentMetrics._metricsTotal["negativeCd"] = sum(word._negativeCd for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["positiveCd"] = math.fsum(word._positiveCd for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["negativeCd"] = math.fsum(word._negativeCd for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["neutralCd"] = sum(word._neutralCd for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityCd"] = self._sentimentMetrics._metricsTotal["positiveCd"] - self._sentimentMetrics._metricsTotal["negativeCd"]
 		self._sentimentMetrics._metricsTotal["positiveCDDichotom"] = sum(word._positiveCDDichotom for word in self._sentimentBearingWords)
@@ -136,6 +137,10 @@ class Sentiment_Calculator:
 		self._sentimentMetrics._metricsTotal["positiveCombined"] = sum(word._positiveCombined for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["negativeCombined"] = sum(word._negativeCombined for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["polarityCombined"] = self._sentimentMetrics._metricsTotal["positiveCombined"] - self._sentimentMetrics._metricsTotal["negativeCombined"]
+
+		self._sentimentMetrics._metricsTotal["clearlyPositiveCombined"] = sum(word._clearlyPositiveCombined for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["clearlyNegativeCombined"] = sum(word._clearlyNegativeCombined for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["clearlyPolarityCombined"] = self._sentimentMetrics._metricsTotal["clearlyPositiveCombined"] - self._sentimentMetrics._metricsTotal["clearlyNegativeCombined"]
 
 		self.calcMissingPosNegMetrics()
 
