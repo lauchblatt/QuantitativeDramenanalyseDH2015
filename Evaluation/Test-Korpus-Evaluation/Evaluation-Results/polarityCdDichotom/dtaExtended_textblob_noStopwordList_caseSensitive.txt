@@ -1378,10 +1378,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (neidisch, neidisch, JJ): 0, 1
 
 3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -3826,10 +3826,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (fähig, fähig, JJ): 1, 0
 
 3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0

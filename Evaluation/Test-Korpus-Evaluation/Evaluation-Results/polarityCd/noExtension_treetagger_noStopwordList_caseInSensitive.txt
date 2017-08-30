@@ -408,10 +408,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (abzusagen, absagen, VVIZU): 0.0, 1.0
 
 3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -672,10 +672,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (geboren, gebären, VVPP): 1.0, 0.0
 
 1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -955,10 +955,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (guter, gut, ADJA): 1.0, 0.0
 
 1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1178,10 +1178,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (neidisch, neidisch, ADJD): 0.0, 1.0
 
 3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1224,10 +1224,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (liebste, lieb, ADJA): 1.0, 0.0
 
 1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2013,10 +2013,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (wirklich, wirklich, ADJD): 1.0, 0.0
 
 5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2105,10 +2105,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (Lassen, lassen, VVFIN): 0.7, 0.0
 
 4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2294,10 +2294,10 @@ Prediction: NEGATIVE, Benchmark: POSITIVE --> False
 (übel, übel, ADJD): 0.0, 1.0
 
 4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2449,10 +2449,10 @@ Prediction: NEGATIVE, Benchmark: POSITIVE --> False
 (Schuld, Schuld, NN): 0.0, 1.0
 
 4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2535,10 +2535,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (fremden, fremd, ADJA): 0.0, 1.0
 
 1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -3217,10 +3217,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (Erregt, erregen, VVFIN): 0.0, 1.0
 
 5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -3313,10 +3313,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (fähig, fähig, ADJD): 1.0, 0.0
 
 3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0

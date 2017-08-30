@@ -1061,7 +1061,7 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (bringen, bringen, VB): 1, 0
 
 1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -1294,7 +1294,7 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Sein, Sein, PRP$): 1, 0
 
 1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -3353,7 +3353,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (widerspricht, widerspricht, NN): 0, 1
 
 5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0

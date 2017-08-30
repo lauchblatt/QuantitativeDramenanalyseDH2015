@@ -1114,8 +1114,8 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (treiben, treiben, VVFIN): 0, 1
 
 1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
-emotion: 0
-arousel: 0
+emotion: 0.0
+arousel: 0.0
 positiveBawl: 0
 negativeBawl: 0
 positiveBawlDichotom: 0
@@ -2906,8 +2906,8 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Galle, Galle, NN): 0, 1
 
 5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
-emotion: 0
-arousel: 0
+emotion: 0.0
+arousel: 0.0
 positiveBawl: 0
 negativeBawl: 0
 positiveBawlDichotom: 0
@@ -3024,8 +3024,8 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (Fällen, Fall|Fällen, NN): 0, 1
 
 5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
-emotion: 0
-arousel: 0
+emotion: 0.0
+arousel: 0.0
 positiveBawl: 0
 negativeBawl: 0
 positiveBawlDichotom: 0

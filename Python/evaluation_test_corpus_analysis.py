@@ -36,7 +36,7 @@ class Test_Corpus_Evaluation:
 		self._polarityBenchmark = []
 		#self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
 		#"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
-		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom"]
+		self._polarityNames = ["polarityCDDichotom"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}

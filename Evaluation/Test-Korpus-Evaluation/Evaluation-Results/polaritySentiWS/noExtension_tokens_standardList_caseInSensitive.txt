@@ -135,7 +135,7 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (Geschenk, Geschenk, NN): 0.4792
 
 3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -640,7 +640,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (schwerer, schwer, ADJD): -0.0048
 
 3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -783,7 +783,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (glänzen, glänzen, VVINF): 0.3397
 
 1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -905,7 +905,7 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (rechte, recht|rechts, ADJA): 0.004
 
 1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -917,7 +917,7 @@ Prediction: NEGATIVE, Benchmark: POSITIVE --> False
 (Token, Lemma, POS): _polaritySentiWS
 
 2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -1070,7 +1070,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (fallen, fallen, VVINF): -0.2153
 
 2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -1098,7 +1098,7 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (liebste, lieb, ADJA): 0.1131
 
 1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -1378,7 +1378,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (stoßen, stoßen, VVINF): -0.3563
 
 3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -1824,7 +1824,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (haften, haften, VVFIN): -0.0048
 
 5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -2078,7 +2078,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (langsam, langsam, ADJD): -0.0167
 
 4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -2739,7 +2739,7 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Anspruch, Anspruch, NN): 0.004
 
 5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -2888,7 +2888,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (gefallen, gefallen, VVINF): 0.2578
 
 5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -2987,7 +2987,7 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (kleinen, klein, ADJA): -0.2715
 
 4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -2999,7 +2999,7 @@ Prediction: NEGATIVE, Benchmark: POSITIVE --> False
 (Token, Lemma, POS): _polaritySentiWS
 
 5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0
@@ -3106,7 +3106,7 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (lieber, lieb, ADJD): 0.1131
 
 1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
-polaritySentiWS: 0
+polaritySentiWS: 0.0
 positiveSentiWS: 0
 negativeSentiWS: 0
 positiveSentiWSDichotom: 0

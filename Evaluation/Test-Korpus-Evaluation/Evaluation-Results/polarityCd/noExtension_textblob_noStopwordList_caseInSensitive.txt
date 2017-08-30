@@ -567,10 +567,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (böse, bös, JJ): 0.0, 1.0
 
 3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -611,10 +611,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (klug, klug, JJ): 1.0, 0.0
 
 1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -872,10 +872,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (guter, gut, JJ): 1.0, 0.0
 
 1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1092,10 +1092,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (neidisch, neidisch, JJ): 0.0, 1.0
 
 3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1134,10 +1134,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (gut, gut, JJ): 1.0, 0.0
 
 1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1175,10 +1175,10 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (lieb, lieb, JJ): 1.0, 0.0
 
 1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1188,10 +1188,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Token, Lemma, POS): _positiveCd, _negativeCd
 
 1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1329,10 +1329,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (Wahrheit, Wahrheit, NN): 1.0, 0.0
 
 3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1469,10 +1469,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (bezahlen, bezahlen, VB): 0.0, 1.0
 
 1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1518,10 +1518,10 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (Reife, Reife, NN): 1.0, 0.0
 
 1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1669,10 +1669,10 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (unschätzbar, unschätzbar, PRP$): 1.0, 0.0
 
 1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1870,10 +1870,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (wirklich, wirklich, JJ): 1.0, 0.0
 
 5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -1957,10 +1957,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (tot, tot, JJ): 0.0, 1.0
 
 4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2136,10 +2136,10 @@ Prediction: NEGATIVE, Benchmark: POSITIVE --> False
 (übel, übel, JJ): 0.0, 1.0
 
 4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2280,10 +2280,10 @@ Prediction: NEGATIVE, Benchmark: POSITIVE --> False
 (Schuld, Schuld, NN): 0.0, 1.0
 
 4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2539,10 +2539,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (versagte, versagen, VB): 0.0, 1.0
 
 3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -2976,10 +2976,10 @@ Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
 (Erregt, Erregen, VB): 0.0, 1.0
 
 5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -3068,10 +3068,10 @@ Prediction: POSITIVE, Benchmark: NEGATIVE --> False
 (fähig, fähig, JJ): 1.0, 0.0
 
 3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
@@ -3097,10 +3097,10 @@ Prediction: POSITIVE, Benchmark: POSITIVE --> True
 (Beteuern, Beteuern, NN): 1.0, 0.0
 
 5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
-positiveCd: 0
-negativeCd: 0
+positiveCd: 0.0
+negativeCd: 0.0
 neutralCd: 0
-polarityCd: 0
+polarityCd: 0.0
 positiveCDDichotom: 0
 negativeCDDichotom: 0
 polarityCDDichotom: 0
