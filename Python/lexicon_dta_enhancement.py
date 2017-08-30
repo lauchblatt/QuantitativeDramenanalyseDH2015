@@ -45,12 +45,13 @@ class DTA_Handler:
 						if synonym in sentimentDict:
 							#checken ob das Wort in der Originalmenge war, dann bitte nicht ändern
 							if(not(synonym in copy)):
-								betterValues = self.getBetterValues(lexiconName, sentiments, sentimentDict[synonym])
+								betterValues = self.getBetterValues(lexiconName, sentiments, sentimentDict[synonym], synonym)
 								"""
-								print synonym
-								print sentimentDict[synonym]
-								print sentiments
-								print betterValues
+								if(synonym == "recht"):
+									print synonym
+									print sentimentDict[synonym]
+									print sentiments
+									print betterValues
 								"""
 								sentimentDict[synonym] = betterValues
 						else:

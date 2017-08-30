@@ -14,7 +14,8 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	sentiWs = Senti_WS()
-	sentiWs.createExtendedOutputDTA()
+	sentiWs.initSentiWS()
+	sentiWs.extendLexiconSentiWSDTA()
 
 class Senti_WS:
 
@@ -158,6 +159,8 @@ class Senti_WS:
 	def extendLexiconSentiWSDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "SentiWS")
+		print len(self._sentimentDict)
+		print self._sentimentDict[unicode("recht")]
 
 	def createSentimentDictFileSentiWSToken(self):
 		self.initSentiWS()
