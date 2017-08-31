@@ -109,6 +109,11 @@ class Sentiment_Metrics:
 		self._metricsTotal["polarityCombined"] = 0
 		self._names["Combined"] = ["positiveCombined", "negativeCombined", "polarityCombined"]
 
+		self._metricsTotal["clearlyPositiveCombined"] = 0
+		self._metricsTotal["clearlyNegativeCombined"] = 0
+		self._metricsTotal["clearlyPolarityCombined"] = 0
+		self._names["Combined-Clearly"] = ["clearlyPositiveCombined", "clearlyNegativeCombined", "clearlyPolarityCombined"]
+
 	def returnAllBasicMetricsLists(self):
 		basicMetrics = OrderedDict([])
 		basicMetrics["metricsTotal"] = self._metricsTotal
@@ -116,6 +121,27 @@ class Sentiment_Metrics:
 		basicMetrics["metricsNormalisedSBWs"] = self._metricsNormalisedSBWs
 
 		return basicMetrics
+
+	def returnBestMetricsDict(self):
+		names = []
+		names.extend(self._names["sentiWS"])
+		names.extend(self._names["nrcEmotion"])
+
+		metrics = OrderedDict([])
+		metricsTotal = OrderedDict([])
+		metricsNormalisedLengthInWords = OrderedDict([])
+		metricsNormalisedSBWs = OrderedDict([])
+
+		for name in names:
+			metricsTotal[name] = self._metricsTotal[name]
+			metricsNormalisedLengthInWords[name] = self._metricsNormalisedLengthInWords[name]
+			metricsNormalisedSBWs[name] = self._metricsNormalisedSBWs[name]
+		metrics["metricsTotal"] = metricsTotal
+		metrics["metricsNormalisedLengthInWords"] = metricsNormalisedLengthInWords
+		metrics["metricsNormalisedSBWs"] = metricsNormalisedSBWs
+		
+		return metrics
+
 
 	def printAllInfo(self, lengthInWords):
 		print("Total Values: ")
@@ -277,6 +303,27 @@ class Sentiment_Bearing_Word:
 			self._positiveCombined = 1
 		elif(len(onesNeg) > len(onesPos)):
 			self._negativeCombined = 1
+		elif(len(onesNeg) == len(onesPos)):
+			if(self._positiveSentiWSDichotom > self._negativeSentiWSDichotom):
+				self._positiveCombined = 1
+			elif(self._positiveSentiWSDichotom < self._negativeSentiWSDichotom):
+				self._negativeCombined = 1
+			elif(self._positiveCDDichotom > self._negativeCDDichotom):
+				self._positiveCombined = 1
+			elif(self._positiveCDDichotom < self._negativeCDDichotom):
+				self._negativeCombined = 1
+			elif(self._positiveGpc > self._negativeGpc):
+				self._positiveCombined = 1
+			elif(self._positiveGpc < self._negativeGpc):
+				self._negativeCombined = 1
+			elif(self._positiveNrc > self._negativeNrc):
+				self._positiveCombined = 1
+			elif(self._positiveNrc < self._negativeNrc):
+				self._negativeCombined = 1
+			elif(self._positiveBawlDichotom > self._negativeBawlDichotom):
+				self._positiveCombined = 1
+			elif(self._positiveBawlDichotom < self._negativeBawlDichotom):
+				self._negativeCombined = 1
 
 	def setClearlyCombinedPolarities(self):
 		positivities = [self._positiveSentiWSDichotom, self._positiveNrc, self._positiveBawlDichotom,\

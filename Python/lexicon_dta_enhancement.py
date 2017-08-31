@@ -81,6 +81,7 @@ class DTA_Handler:
 		elif(lexicon == "GPC"):
 			return self.getBetterValuesGPC(newValues, oldValues)
 
+	# which is greater?
 	def getBetterValuesBawl(self, newValues, oldValues):
 		newEmotion = abs(newValues["emotion"])
 		newArousel = newValues["arousel"]
@@ -97,6 +98,7 @@ class DTA_Handler:
 			return oldValues
 		return oldValues
 
+	# which has more values
 	def getBetterValuesNrc(self, newSentiments, oldSentiments):
 
 		newSentimentsScore = 0
@@ -121,6 +123,7 @@ class DTA_Handler:
 		else:
 			return oldSentiments
 
+	# the positive...
 	def getBetterValuesGPC(self, newValues, oldValues):
 		if(newValues["neutral"] > oldValues["neutral"]):
 			return oldValues
@@ -143,6 +146,7 @@ class DTA_Handler:
 		sentiments["neutral"] = self.getHigherSentimentValueCD(newSentiments["neutral"], oldSentiments["neutral"])
 		return sentiments
 
+	# the positive
 	def getBetterValuesCD(self, newSentiments, oldSentiments):
 		# if somethin is neutral take the other
 		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
@@ -162,6 +166,7 @@ class DTA_Handler:
 		else:
 			return highestSentimentValues
 
+	# which is greater
 	def getBetterValuesSentiWS(self, newScore, oldScore):
 		if(abs(newScore) > abs(oldScore)):
 			return newScore

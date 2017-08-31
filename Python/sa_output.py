@@ -16,17 +16,19 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	sog = Sentiment_Output_Generator()
-	#sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../SentimentAnalysis/JSON-Output/Tokens/allDramas.json",\
-	# "treetagger", True)
+	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../justEmilia.json",\
+	 True, "treetagger", True, None, True)
 	#sog.generateJSONFileForSingleDrama("Dumps/ProcessedDramas/treetagger/Der Freigeist.p",\
 	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)
+	"""
 	dpp = Drama_Pre_Processing("treetagger")
-	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Freigeist.p")
+	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 	sa = Sentiment_Analyzer(False, "treetagger", False, None, True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	sog.createTxtOutputSingleDrama("anotherTest.txt", sentimentExtendedDramaModel)
-	
+	"""
 	#sog = Sentiment_Output_Generator()
 	#sog.processAndCreateTxtOutputMutlipleDramas()
 	
@@ -37,9 +39,9 @@ class Sentiment_Output_Generator:
 
 		self._lpProcessors = ["treetagger", "textblob"]
 
-	def generateJSONFileForAllDramas(self, dramaDumpsFolder, outputFile, processor, lemmaModeOn):
+	def generateJSONFileForAllDramas(self, dramaDumpsFolder, outputFile, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
 		dramasData = self.generateSentimentInfoForAllDrama(dramaDumpsFolder + processor + "/",\
-		 outputFile, processor, lemmaModeOn)
+		 outputFile, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 		self.generateJSON(outputFile, dramasData)
 
 	def generateJSONFileForSingleDrama(self, dramaDumpPath, outputFolder, processor, lemmaModeOn):
@@ -51,18 +53,21 @@ class Sentiment_Output_Generator:
 		self.generateJSON(outputFolder + "Tokens/" + dramaModel._title + ".json", dramaData)
 
 	def generateJSON(self, outputPath, data):
-		jsonData = json.dumps(data, indent=2)
-		output = open(outputPath, "w")
-		output.write(jsonData)
-		output.close()
+		#jsonData = json.dumps(data, indent=2)
+		#output = open(outputPath, "w")
+		with open(outputPath, 'w') as f:
+			json.dump(data, f, indent=2)
 
-	def generateSentimentInfoForAllDrama(self, dramaDumpsFolder, outputFile, processor, lemmaModeOn):
+	def generateSentimentInfoForAllDrama(self, dramaDumpsFolder, outputFile, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
 		dramasData = []
 		for filename in os.listdir(dramaDumpsFolder):
 			dramaPath = dramaDumpsFolder + filename
 			dpp = Drama_Pre_Processing(processor)
 			dramaModel = dpp.readDramaModelFromDump(dramaPath)
-			sa = Sentiment_Analyzer(lemmaModeOn, "CombinedLexicon", processor)
+
+			# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+			sa = Sentiment_Analyzer(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+			
 			sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 			dramaInfo = self.getSentimentInfoFromDrama(sentimentExtendedDramaModel)
 			dramasData.append(dramaInfo)
@@ -76,7 +81,7 @@ class Sentiment_Output_Generator:
 		dramaData['type'] = dramaModel._type
 		dramaData['lengthInWords'] = dramaModel._lengthInWords
 		dramaData['lengthSentimentBearingWords'] = len(dramaModel._sentimentBearingWords)
-		dramaData['sentimentMetricsBasic'] = dramaModel._sentimentMetrics.returnAllBasicMetricsLists()
+		dramaData['sentimentMetricsBasic'] = dramaModel._sentimentMetrics.returnBestMetricsDict()
 		
 		dramaData['speakers'] = self.getSentimentInfoFromSpeakers(dramaModel._speakers)
 
@@ -94,7 +99,7 @@ class Sentiment_Output_Generator:
 			actData['lengthInWords'] = act._lengthInWords
 			actData['appearingSpeakers'] = act._appearing_speakers
 			actData['lengthSentimentBearingWords'] = len(act._sentimentBearingWords)
-			actData['sentimentMetricsBasic'] = act._sentimentMetrics.returnAllBasicMetricsLists()
+			actData['sentimentMetricsBasic'] = act._sentimentMetrics.returnBestMetricsDict()
 
 			actData['speakers'] = self.getSentimentInfoFromSpeakers(act._actSpeakers.values())
 			configurationsData = []
@@ -112,7 +117,7 @@ class Sentiment_Output_Generator:
 			speakerData['numberOfSpeeches'] = len(speaker._speeches)
 			speakerData['lengthInWords'] = speaker._lengthInWords
 			speakerData['lengthSentimentBearingWords'] = len(speaker._sentimentBearingWords)
-			speakerData['sentimentMetricsBasic'] = speaker._sentimentMetrics.returnAllBasicMetricsLists()
+			speakerData['sentimentMetricsBasic'] = speaker._sentimentMetrics.returnBestMetricsDict()
 			speakerData['sentimentRelations'] = self.getSentimentRelationsInfo(speaker)
 			speakersData.append(speakerData)
 
@@ -127,7 +132,7 @@ class Sentiment_Output_Generator:
 			srData['numberOfSpeeches'] = len(sr._speeches)
 			srData['lengthInWords'] = sr._lengthInWords
 			srData['lengthSentimentBearingWords'] = len(sr._sentimentBearingWords)
-			srData['sentimentMetricsBasic'] = sr._sentimentMetrics.returnAllBasicMetricsLists()
+			srData['sentimentMetricsBasic'] = sr._sentimentMetrics.returnBestMetricsDict()
 			srsData.append(srData)
 		return srsData
 
@@ -141,7 +146,7 @@ class Sentiment_Output_Generator:
 			confData['lengthInWords'] = conf._lengthInWords
 			confData['appearingSpeakers'] = conf._appearing_speakers
 			confData['lengthSentimentBearingWords'] = len(conf._sentimentBearingWords)
-			confData['sentimentMetricsBasic'] = conf._sentimentMetrics.returnAllBasicMetricsLists()
+			confData['sentimentMetricsBasic'] = conf._sentimentMetrics.returnBestMetricsDict()
 			confData['speakers'] = self.getSentimentInfoFromSpeakers(conf._confSpeakers.values())
 			confData['speeches'] = self.getSentimentInfoFromSpeeches(conf._speeches)
 			confsData.append(confData)
@@ -158,7 +163,7 @@ class Sentiment_Output_Generator:
 			speechData['lengthInWords'] = speech._lengthInWords
 			speechData['speaker'] = speech._speaker
 			speechData['lengthSentimentBearingWords'] = len(speech._sentimentBearingWords)
-			speechData['sentimentMetricsBasic'] = speech._sentimentMetrics.returnAllBasicMetricsLists()
+			speechData['sentimentMetricsBasic'] = speech._sentimentMetrics.returnBestMetricsDict()
 			speechesData.append(speechData)
 		return speechesData
 

@@ -36,7 +36,7 @@ class Test_Corpus_Evaluation:
 		self._polarityBenchmark = []
 		#self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
 		#"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
-		self._polarityNames = ["polarityCDDichotom"]
+		self._polarityNames = ["polarityCombined"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}
@@ -94,6 +94,7 @@ class Test_Corpus_Evaluation:
 		self._correspondingSBWMetrics["polarityCDDichotom"] = ["_positiveCDDichotom", "_negativeCDDichotom"]
 		self._correspondingSBWMetrics["polarityGpc"] = ["_positiveGpc", "_negativeGpc"]
 		self._correspondingSBWMetrics["polarityCombined"] = ["_positiveCombined", "_negativeCombined"]
+		self._correspondingSBWMetrics["clearlyPolarityCombined"] = ["_clearlyPositiveCombined", "_clearlyNegativeCombined"]
 
 	def getLexiconByMetric(self, polarityMetric):
 		if(polarityMetric == "polaritySentiWS" or polarityMetric == "polaritySentiWSDichotom"):
@@ -108,11 +109,14 @@ class Test_Corpus_Evaluation:
 			return "Gpc"
 		elif(polarityMetric == "polarityCombined"):
 			return "Combined"
+		elif(polarityMetric == "clearlyPolarityCombined"):
+			return "Combined-Clearly"
 
 	def setEvaluationInfoOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
 		DTAExtensions = [False, True]
+		#DTAExtensions = [False]
 		processors = ["treetagger", "textblob"]
 		lemmaModes = [False, True]
 		#stopwordLists = [None, "standardList"]

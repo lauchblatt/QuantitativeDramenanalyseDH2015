@@ -58,6 +58,9 @@ class Sentiment_Calculator:
 
 		self._normalisationFactorLexiconSBWs["Combined"] = self._sentimentMetrics._metricsTotal["positiveCombined"] + \
 		+ self._sentimentMetrics._metricsTotal["negativeCombined"]
+		#TODO
+		self._normalisationFactorLexiconSBWs["Combined-Clearly"] = self._sentimentMetrics._metricsTotal["clearlyPositiveCombined"] + \
+		+ self._sentimentMetrics._metricsTotal["clearlyNegativeCombined"]
 
 
 	def calcSentimentRatio(self):
