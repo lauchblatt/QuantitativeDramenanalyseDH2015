@@ -1,24 +1,49 @@
 ActsScenes.ActsScenesView = function(){
 	var that = {};
-	var metricsForActs = []
+	var metricsForActs = [];
+	var actsProportionData = {};
 
-	var init = function(metricsActs){
-		metricsForActs = metricsActs
+	var init = function(metricsActs, proportionDataForActs){
+		metricsForActs = metricsActs;
+		actsProportionData = proportionDataForActs;
+		console.log(actsProportionData);
 		initListener()
+		drawPieChartAct(1, "normalisedSBWs", "polarityCount")
 	};
 
 	var initListener = function(){
-		$("#selection-act-bar-metric").change(renderActBars);
-		$("#selection-act-bar-normalisation").change(renderActBars);
+		$("#selection-act-bar-metric").change(renderActsBars);
+		$("#selection-act-bar-normalisation").change(renderActsBars);
 	};
 
-	var renderActBars = function(){
+	var renderActsPieChart = function(){
+
+	};
+
+	var drawPieChartAct = function(actNumber, proportionType, metricName){
+		var data = new google.visualization.DataTable();
+		data.addColumn("string", "Category");
+		data.addColumn("number", "Count");
+
+        data.addRows(actsProportionData[actNumber][proportionType][metricName]);
+        var options = {
+		  height: 600,
+      		width: 1000,
+      		chartArea:{width:'70%',height:'75%'},
+          	title: 'Sentiment-Anteile pro Akt',
+          	is3D: true,
+        	};
+        var chart = new google.visualization.PieChart(document.getElementById('chart-div-act-pie'))
+        chart.draw(data, options)
+	};
+
+	var renderActsBars = function(){
 		metricSelection = $("#selection-act-bar-metric").val();
 		normalisationSelection = $("#selection-act-bar-normalisation").val()
 		metric = transformGermanMetric(metricSelection);
-		normalisation = transformGermanMetric(normalisationSelection)
-		metrics = getActsMetricsByName(normalisation, metric)
-		drawBarChartAct(normalisationSelection, metricSelection, metrics)
+		normalisation = transformGermanMetric(normalisationSelection);
+		metrics = getActsMetricsByName(normalisation, metric);
+		drawBarChartAct(normalisationSelection, metricSelection, metrics);
 	};
 
 	//Loop to render all Graphs for Scenes dynamically
@@ -151,7 +176,7 @@ ActsScenes.ActsScenesView = function(){
 	};
 
 	that.init = init;
-	that.render = render;
+	that.renderActsBars = renderActsBars;
 
 	return that;
 };

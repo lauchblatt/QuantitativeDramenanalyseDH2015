@@ -113,7 +113,33 @@
 
 					<div id="chart-div-act"></div>
 					<button class="btn btn-primary png-download" id="download-png-act-bar">Download PNG</button>
+				</div>
 
+				<a href="#acts-pie" name="acts-pie"><h3>Kreisdiagramm - Sentiment-Anteile pro Akt</h3></a>
+				<div class="box">
+					<div class="form-group dropdown-form" id="form-acts-pie-number">
+						  <label for="sel1">Akt:</label>
+						  <select class="form-control" id="selection-acts-pie-number">
+						    	
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-acts-pie-metric">
+					  <label for="sel1">Sentiment-Metric:</label>
+					  <select class="form-control" id="selection-acts-pie-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Emotionen</option>
+					  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-acts-pie-type">
+						  <label for="sel1">Anteil:</label>
+						  <select class="form-control" id="selection-acts-pie-type">
+							    <option>Anteil an Sentiment-Tragenden Wörtern</option>
+							    <option>Anteil an allen Wörtern</option>
+						  </select>
+					</div>
+					<div id="chart-div-act-pie"></div>
+				</div>
 					<a href="#scene-statistic" name="scene-statistic"><h3>Balkendiagramm - Szenen-Statistik</h3></a>
 					<div class="box">
 						<div class="form-group dropdown-form" id="form-scenes">
