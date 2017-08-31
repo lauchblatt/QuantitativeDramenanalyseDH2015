@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dramensammlung - Analyse</title>	
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/multipledrama.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div id="loading" class="container">
+			<div id="loading-spinner">
+				<span class="glyphicon glyphicon-repeat glyphicon-repeat-animate loading-button" id="loading-spinner-img">
+				</span>
+				<div id="loading-text">Daten werden berechnet. Dies kann einige Sekunden dauern...</div>
+			</div>
+		</div>
+		<div class="container" id="maincontent">
+			<div class="container" id="header">
+				<div id="logo-wrapper">
+					<a href="./index.html" ><img id="logo" src="./img/logo.png" title="Katharsis"></img></a>
+				</div>
+				<div id="header-wrapper">
+					<h1 class="page-header" id="headerLine">Dramensammlung - Analyse</h1>
+				</div>
+			</div>
+
+
+			<div id="quicklinks">
+				<div><a href="#collection-speech-distribution">Replikenverteilung - Kurvendiagramm</a></div>
+				<div><a href="#collection-scatter-plot">Epochenverlauf - Streudiagramm</a></div>
+				<div><a href="#collection-author">Autorenvergleich - Balkendiagramm</a></div>
+				<div><a href="#collection-type">Typvergleich - Balkendiagramm</a></div>
+			</div>
+
+
+			<div id="selected-dramas-wrapper">
+				<p>
+					<h3>Für den Vergleich ausgewählte Dramen<span class="glyphicon glyphicon-triangle-bottom"></span><span class="glyphicon glyphicon-triangle-top"></span></h3>
+				</p>
+				<table class="table table-striped" id="selected-dramas">
+					<thead>
+						<tr class="header-row">
+						    <th class="table-header-col">Titel</th>
+						    <th class="table-header-col">Autor</th>
+						    <th class="table-header-col">Typ</th>
+					    	<th class="table-header-col">Jahr</th>
+					    	<th class="table-header-col">Zahl der Repliken</th>
+						</tr>
+					</thead>
+					<tbody id="table-tbody">
+					</tbody>
+				</table>
+
+			</div>
+
+			<a href="#collection-speech-distribution" name="collection-speech-distribution"><h3>Replikenverteilung - Kurvendiagramm</h3></a>
+			<div class="box">
+				<div class="form-group dropdown-form" id="form-speech-distribution">
+					  <label for="selection-speech-distribution">Verteilungstyp:</label>
+					  <select class="form-control" id="selection-speech-distribution">
+					  	<option>Relativ</option>
+					  	<option>Absolut</option>
+					    
+					  </select>
+				</div>
+				<div class="form-group dropdown-form" id="form-speech-compare">
+					  <label for="selection-speech-compare">Vergleich:</label>
+					  <select class="form-control" id="selection-speech-compare">
+					  	<option>Kein Vergleich</option>
+					  	<option>Autor</option>
+					    <option>Typ</option>
+					    
+					  </select>
+				</div>
+				<div id="curve-dashbord">
+					<div id="curve-controls"></div>
+					<div id="curve-chart"></div>
+				</div>
+				<button class="btn btn-primary png-download" id="download-png-curve">Download PNG</button>
+			</div>
+			<a href="#collection-scatter-plot" name="collection-scatter-plot"><h3>Epochenverlauf - Streudiagramm</h3></a>
+			<div class="box">
+				<div class="form-group dropdown-form" id="form-year">
+						  <label for="selection-year">Parameter:</label>
+						  <select class="form-control" id="selection-year">
+						    <option>Szenenanzahl</option>
+						    <option>Replikenanzahl</option>
+						    <option>Sprecheranzahl</option>
+						    <option>Konfigurationsdichte</option>
+						    <option>Durchschnittliche Replikenlänge</option>
+						    <option>Median Replikenlänge</option>
+						    <option>Maximum Replikenlänge</option>
+						    <option>Minimum Replikenlänge</option>
+						  </select>
+				</div>
+			
+
+				<div class="form-group dropdown-form" id="form-year-compare">
+					  <label for="selection-year-compare">Vergleich:</label>
+					  <select class="form-control" id="selection-year-compare">
+					  	<option>Kein Vergleich</option>
+					  	<option>Autor</option>
+					    <option>Typ</option>
+					    
+					  </select>
+				</div>
+				<div id="dashbord-year">
+					
+					<div id="controls-year2"></div>
+					<div id="chart-div-year"></div>
+					<div id="controls-year1"></div>
+				</div>
+				<button class="btn btn-primary png-download" id="download-png-year">Download PNG</button>
+			</div>
+			
+			<a href="#collection-author" name="collection-author"><h3>Autorenvergleich - Balkendiagramm</h3></a>
+			<div class="box-hard container">
+				<div class="form-group dropdown-form" id="form-author">
+						  <label for="selection-author">Parameter:</label>
+						  <select class="form-control" id="selection-author">
+						    <option>Szenenanzahl</option>
+						    <option>Replikenanzahl</option>
+						    <option>Sprecheranzahl</option>
+						    <option>Konfigurationsdichte</option>
+						    <option>Durchschnittliche Replikenlänge</option>
+						    <option>Median Replikenlänge</option>
+						    <option>Maximum Replikenlänge</option>
+						    <option>Minimum Replikenlänge</option>
+						  </select>
+					</div>
+				<div id="dashbord-author">
+					<div id="filter-author"></div>
+					<div id="chart-author"></div>
+				</div>
+				<button class="btn btn-primary png-download" id="download-png-author">Download PNG</button>
+			</div>
+
+			<a href="#collection-type" name="collection-type"><h3>Typvergleich - Balkendiagramm</h3></a>
+			<div class="box-hard container">
+				<div class="form-group dropdown-form" id="form-category">
+						  <label for="selection-category">Parameter:</label>
+						  <select class="form-control" id="selection-category">
+						    <option>Szenenanzahl</option>
+						    <option>Replikenanzahl</option>
+						    <option>Sprecheranzahl</option>
+						    <option>Konfigurationsdichte</option>
+						    <option>Durchschnittliche Replikenlänge</option>
+						    <option>Median Replikenlänge</option>
+						    <option>Maximum Replikenlänge</option>
+						    <option>Minimum Replikenlänge</option>
+						  </select>
+					</div>
+				<div id="chart-category"></div>
+				<button class="btn btn-primary png-download" id="download-png-category">Download PNG</button>
+			</div>
+
+		</div>
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript"></script>
+
+		<script type="text/javascript" src="js/MultipleDramas/MultipleDramas.js"></script>
+		<script type="text/javascript" src="js/MultipleDramas/MultipleDramasModel.js"></script>
+		<script type="text/javascript" src="js/MultipleDramas/YearView.js"></script>
+		<script type="text/javascript" src="js/MultipleDramas/AuthorView.js"></script>
+		<script type="text/javascript" src="js/MultipleDramas/CategoryView.js"></script>
+		<script type="text/javascript" src="js/MultipleDramas/LineCurveView.js"></script>
+		<script type="text/javascript" src="js/MultipleDramas/MultipleDramaController.js"></script>
+
+		<script>
+				$(function() {
+					MultipleDramas.init();
+				});
+			</script>
+	</body>
+</html>

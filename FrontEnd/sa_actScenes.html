@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sentiment Analysis Akt-Szenen-Analyse</title>	
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="css/sa_actsScenes.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<div id="maincontent">
+			<div class="container overhead">
+				<div class="" id="header">
+						<div id="logo-wrapper">
+							<a href="./index.html" ><img id="logo" src="./img/logo.png" title="Katharsis"></img></a>
+						</div>
+						<div id="header-wrapper">
+							<h1 id="dramaTitle" class="page-header"></h1>
+							<h2 id="dramaAuthor"></h2>
+						</div>
+				</div>
+			
+
+			<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+
+					      	<li ><a id="link-overall" href="#" class="links">Übersicht <span class="sr-only">(current)</span></a></li>
+
+					      	<li><a href="#" id="link-matrix" class="links">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
+
+					        <li class="dropdown superactive">
+					          <a href="" id="link-drama" class="links" role="button" aria-expanded="false">
+					          	Drama-Akt-Szenen-Analyse<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#" id="link-drama-actSceneAnalysis">Akt-Szenen-Tabelle</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-drama-actStatistic">Balkendiagramm - Akt-Statistik</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-drama-sceneStatistic">Balkendiagramm - Szenen-Statistik</a></li>
+					          </ul>
+					        </li>
+
+					        <li class="dropdown">
+					          <a id="link-speakers" class="links" href="#" role="button" aria-expanded="false">
+					          	Sprecher-Analyse<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#" id="link-speaker-table">Sprecher-Tabelle</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-speeches-dominance">Kreisdiagramm - Replikendominanz</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-speaker-statistic">Balkendiagramm - Sprecher-Statistik</a></li>
+					            <li class="divider"></li>
+					            <li><a href="#" id="link-speaker-relations">Sprecher-Relationen</a></li>
+					          </ul>
+					        </li>
+
+					        <li class="dropdown">
+					          <a href="#" id="link-speeches" class="links" role="button" aria-expanded="false">
+					          	Replikenverteilung<span class="caret"></span></a>
+					          <ul class="dropdown-menu" role="menu">
+					            <li><a href="#" id="link-histogram">Replikenverteilung - Histogramm</a></li>
+					            <li class="divider" ></li>
+					            <li><a href="#" id="link-curve-diagram">Replikenverteilung - Kurvendiagramm</a></li>
+					          </ul>
+					        </li>
+
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+
+			<div class="container">
+
+				<!--<div id="act-graph">-->
+				<a href="#act-statistic" name="act-statistic"><h3>Balkendiagramm - Akt-Statistik</h3></a>
+				<div class="box">
+					<div class="form-group dropdown-form" id="form-act">
+					  <label for="sel1">Parameter:</label>
+					  <select class="form-control" id="selection-act">
+					    <option>Szenen</option>
+					    <option>Sprecher</option>
+					    <option>Repliken</option>
+					    <option>Durchschnittliche Replikenlänge</option>
+					    <option>Median Replikenlänge</option>
+					    <option>Maximum Replikenlänge</option>
+					    <option>Minimum Replikenlänge</option>
+					  </select>
+					</div>
+
+					<div id="chart-div-act"></div>
+					<button class="btn btn-primary png-download" id="download-png-act">Download PNG</button>
+				</div>
+			</div>
+		</div><!-- maincontent -->
+
+		<script src="js/libs/jquery-1.11.2.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenes.js"></script>
+		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesModel.js"></script>
+		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesView.js"></script>
+		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesController.js"></script>
+
+
+
+		<script>
+				$(function() {
+					ActsScenes.init();
+					console.log("Hello World")
+				});
+		</script>
+	</body>
+</html>
