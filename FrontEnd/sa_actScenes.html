@@ -80,23 +80,71 @@
 			<div class="container">
 
 				<!--<div id="act-graph">-->
-				<a href="#act-statistic" name="act-statistic"><h3>Balkendiagramm - Akt-Statistik</h3></a>
+				<a href="#act-statistic" name="act-statistic"><h3>Verlaufsdiagramm - Sentiments pro Akt</h3></a>
 				<div class="box">
-					<div class="form-group dropdown-form" id="form-act">
-					  <label for="sel1">Parameter:</label>
-					  <select class="form-control" id="selection-act">
-					    <option>Szenen</option>
-					    <option>Sprecher</option>
-					    <option>Repliken</option>
-					    <option>Durchschnittliche Replikenlänge</option>
-					    <option>Median Replikenlänge</option>
-					    <option>Maximum Replikenlänge</option>
-					    <option>Minimum Replikenlänge</option>
+					<div class="form-group dropdown-form" id="form-act1">
+					  <label for="sel1">Sentiment-Metrik:</label>
+					  <select class="form-control" id="selection-act-bar-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Positiv (gewichtet)</option>
+						    <option>Negativ (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Positiv (Wortanzahl)</option>
+						    <option>Negativ (Wortanzahl)</option>
+						    <option>Zorn</option>
+						    <option>Erwartung</option>
+						    <option>Ekel</option>
+						    <option>Angst</option>
+						    <option>Freude</option>
+						    <option>Traurigkeit</option>
+						    <option>Überraschung</option>
+						    <option>Vertrauen</option>
+					  </select>
+					</div>
+
+					<div class="form-group dropdown-form" id="form-act2">
+					  <label for="sel1">Normalisierung:</label>
+					  <select class="form-control" id="selection-act-bar-normalisation">
+					    	<option>Absolut</option>
+						    <option>Normalisiert an Anzahl aller Wörter</option>
+						    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
 					  </select>
 					</div>
 
 					<div id="chart-div-act"></div>
-					<button class="btn btn-primary png-download" id="download-png-act">Download PNG</button>
+					<button class="btn btn-primary png-download" id="download-png-act-bar">Download PNG</button>
+
+					<a href="#scene-statistic" name="scene-statistic"><h3>Balkendiagramm - Szenen-Statistik</h3></a>
+					<div class="box">
+						<div class="form-group dropdown-form" id="form-scenes">
+							  <label for="sel1">Sentiment-Variablen:</label>
+							  <select class="form-control" id="selection-scenesPerAct-bar-metric">
+							    <option>Polarität (gewichtet)</option>
+							    <option>Positiv (gewichtet)</option>
+							    <option>Negativ (gewichtet)</option>
+							    <option>Polarität (Wortanzahl)</option>
+							    <option>Positiv (Wortanzahl)</option>
+							    <option>Negativ (Wortanzahl)</option>
+							    <option>Zorn</option>
+							    <option>Erwartung</option>
+							    <option>Ekel</option>
+							    <option>Angst</option>
+							    <option>Freude</option>
+							    <option>Traurigkeit</option>
+							    <option>Überraschung</option>
+							    <option>Vertrauen</option>
+							  </select>
+						</div>
+						<div class="form-group dropdown-form" id="form-act2">
+						  <label for="sel1">Normalisierung:</label>
+						  <select class="form-control" id="selection-scenesPerAct-bar-normalisation">
+						    	<option>Absolut</option>
+							    <option>Normalisiert an Anzahl aller Wörter</option>
+							    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+						  </select>
+						</div>
+						<div id="charts-scenes"></div>
+					</div>
 				</div>
 			</div>
 		</div><!-- maincontent -->
@@ -106,10 +154,12 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
+		<script type="text/javascript" src="json/justEmilia.json"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenes.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesModel.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesView.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesController.js"></script>
+
 
 
 
