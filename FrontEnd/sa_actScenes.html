@@ -79,8 +79,30 @@
 
 			<div class="container">
 
+				<a href="#drama-pie" name="drama-pie"><h3>Kreisdiagramm - Sentiment-Anteile im Drama</h3></a>
+				<div class="box">
+
+					<div class="form-group dropdown-form" id="form-drama-pie-metric">
+					  <label for="sel1">Sentiment-Metric:</label>
+					  <select class="form-control" id="selection-drama-pie-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Emotionen</option>
+						    <option>Emotion vorhanden</option>
+					  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-drama-pie-type">
+						  <label for="sel1">Verteilung:</label>
+						  <select class="form-control" id="selection-drama-pie-type">
+							    <option>Verteilung von Sentiment-Tragenden Wörtern</option>
+							    <option>Verteilung von allen Wörtern</option>
+						  </select>
+					</div>
+					<div id="chart-div-drama-pie"></div>
+				</div>
+
 				<!--<div id="act-graph">-->
-				<a href="#act-statistic" name="act-statistic"><h3>Verlaufsdiagramm - Sentiments pro Akt</h3></a>
+				<a href="#act-statistic" name="act-statistic"><h3>Verlaufsdiagramm - Sentiments im Drama pro Akt</h3></a>
 				<div class="box">
 					<div class="form-group dropdown-form" id="form-act1">
 					  <label for="sel1">Sentiment-Metrik:</label>
@@ -130,6 +152,7 @@
 					    	<option>Polarität (gewichtet)</option>
 						    <option>Polarität (Wortanzahl)</option>
 						    <option>Emotionen</option>
+						    <option>Emotion vorhanden</option>
 					  </select>
 					</div>
 					<div class="form-group dropdown-form" id="form-acts-pie-type">
@@ -141,7 +164,7 @@
 					</div>
 					<div id="chart-div-act-pie"></div>
 				</div>
-					<a href="#scene-statistic" name="scene-statistic"><h3>Balkendiagramm - Szenen-Statistik</h3></a>
+					<a href="#scene-statistic" name="scene-statistic"><h3>Verlaufsdiagramme - Sentiments in Szenen pro Akt</h3></a>
 					<div class="box">
 						<div class="form-group dropdown-form" id="form-scenes">
 							  <label for="sel1">Sentiment-Variablen:</label>
@@ -160,6 +183,7 @@
 							    <option>Traurigkeit</option>
 							    <option>Überraschung</option>
 							    <option>Vertrauen</option>
+							    <option>Emotion vorhanden</option>
 							  </select>
 						</div>
 						<div class="form-group dropdown-form" id="form-act2">
@@ -172,6 +196,109 @@
 						</div>
 						<div id="charts-scenes"></div>
 					</div>
+
+				<a href="#scenes-pie" name="scenes-pie"><h3>Kreisdiagramm - Sentiment-Anteile pro Szene</h3></a>
+				<div class="box">
+					<div class="form-group dropdown-form" id="form-scenes-act-pie-number">
+						  <label for="sel1">Akt:</label>
+						  <select class="form-control" id="selection-scenes-act-pie-number">
+						    	
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-scenes-pie-number">
+						  <label for="sel1">Szene:</label>
+						  <select class="form-control" id="selection-scenes-pie-number">
+						    	
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-scenes-pie-metric">
+					  <label for="sel1">Sentiment-Metric:</label>
+					  <select class="form-control" id="selection-scenes-pie-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Emotionen</option>
+						    <option>Emotion vorhanden</option>
+					  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-scenes-pie-type">
+						  <label for="sel1">Verteilung:</label>
+						  <select class="form-control" id="selection-scenes-pie-type">
+							    <option>Verteilung von Sentiment-Tragenden Wörtern</option>
+							    <option>Verteilung von allen Wörtern</option>
+						  </select>
+					</div>
+					<div id="chart-div-scenes-pie"></div>
+				</div>
+
+				<a href="#dramaScenes" name="dramaScenes"><h3>Verlaufsdiagramm - Repliken im Dramenverlauf</h3></a>
+					<div class="box">
+						<div class="form-group dropdown-form" id="form-dramaScenes">
+							  <label for="sel1">Sentiment-Variablen:</label>
+							  <select class="form-control" id="selection-dramaScenes-line-metric">
+							    <option>Polarität (gewichtet)</option>
+							    <option>Positiv (gewichtet)</option>
+							    <option>Negativ (gewichtet)</option>
+							    <option>Polarität (Wortanzahl)</option>
+							    <option>Positiv (Wortanzahl)</option>
+							    <option>Negativ (Wortanzahl)</option>
+							    <option>Zorn</option>
+							    <option>Erwartung</option>
+							    <option>Ekel</option>
+							    <option>Angst</option>
+							    <option>Freude</option>
+							    <option>Traurigkeit</option>
+							    <option>Überraschung</option>
+							    <option>Vertrauen</option>
+							    <option>Emotion vorhanden</option>
+							  </select>
+						</div>
+						<div class="form-group dropdown-form" id="form-act2">
+						  <label for="sel1">Normalisierung:</label>
+						  <select class="form-control" id="selection-dramaScenes-line-type">
+						    	<option>Absolut</option>
+						    	<option>Normalisiert an Anzahl aller Wörter</option>
+							    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+						  </select>
+						</div>
+						<div id="chart-div-dramaScenes-line"></div>
+					</div>
+
+					<a href="#speeches" name="speeches"><h3>Verlaufsdiagramm - Repliken</h3></a>
+					<div class="box">
+						<div class="form-group dropdown-form" id="form-dramaSpeeches">
+							  <label for="sel1">Sentiment-Variablen:</label>
+							  <select class="form-control" id="selection-dramaSpeeches-line-metric">
+							    <option>Polarität (gewichtet)</option>
+							    <option>Positiv (gewichtet)</option>
+							    <option>Negativ (gewichtet)</option>
+							    <option>Polarität (Wortanzahl)</option>
+							    <option>Positiv (Wortanzahl)</option>
+							    <option>Negativ (Wortanzahl)</option>
+							    <option>Zorn</option>
+							    <option>Erwartung</option>
+							    <option>Ekel</option>
+							    <option>Angst</option>
+							    <option>Freude</option>
+							    <option>Traurigkeit</option>
+							    <option>Überraschung</option>
+							    <option>Vertrauen</option>
+							    <option>Emotion vorhanden</option>
+							  </select>
+						</div>
+						<div class="form-group dropdown-form" id="form-act2">
+						  <label for="sel1">Normalisierung:</label>
+						  <select class="form-control" id="selection-dramaSpeeches-line-type">
+						    	<option>Absolut</option>
+						    	<option>Normalisiert an Anzahl aller Wörter</option>
+							    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+						  </select>
+						</div>
+						<div id="dashbord-speeches-lineChart">
+							<div id="filter-speeches-lineChart"></div>
+							<div id="chart-speeches-lineChart"></div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div><!-- maincontent -->
@@ -182,10 +309,14 @@
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 		<script type="text/javascript" src="json/justEmilia2.json"></script>
+		<script type="text/javascript" src="js/Globals/global.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenes.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesModel.js"></script>
+		<script type="text/javascript" src="js/SA_ActsScenes/DramaView.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesView.js"></script>
 		<script type="text/javascript" src="js/SA_ActsScenes/ActsScenesController.js"></script>
+		<script type="text/javascript" src="js/SA_ActsScenes/ScenesView.js"></script>
+		<script type="text/javascript" src="js/SA_ActsScenes/SpeechesView.js"></script>
 
 
 
