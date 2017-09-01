@@ -14,9 +14,11 @@ ActsScenes.ActsScenesModel = function(){
 		
 		for(i = 0; i < drama.acts.length; i++){
 			metricsActs.push(drama.acts[i].sentimentMetricsBasic)
+			metricsScenesPerAct = [];
 			for(j = 0; j < drama.acts[i].configurations.length; j++){
-				metricsScenes.push(drama.acts[i].configurations[j].sentimentMetricsBasic)
+				metricsScenesPerAct.push(drama.acts[i].configurations[j].sentimentMetricsBasic);
 			}
+			metricsScenes.push(metricsScenesPerAct);
 		}
 		initRowsProportionsActs(drama.acts);
 	};
@@ -44,7 +46,6 @@ ActsScenes.ActsScenesModel = function(){
 		proportionData["normalisedSBWs"]["polaritySentiWSDichotom"] = polarityCount;
 		proportionData["normalisedSBWs"]["emotions"] = emotion;
 
-		console.log(polarityCount)
 		
 		var noPolarityWords = unit.lengthInWords - 
 		(metricsUnit.positiveSentiWSDichotom + metricsUnit.negativeSentiWSDichotom);
@@ -57,8 +58,6 @@ ActsScenes.ActsScenesModel = function(){
 		proportionData["normalisedAllWords"] = {};
 		proportionData["normalisedAllWords"]["polaritySentiWSDichotom"] = polarityCountCopy;
 		proportionData["normalisedAllWords"]["emotions"] = emotionCopy;
-		
-		console.log(polarityCountCopy)
 
 		return proportionData;
 

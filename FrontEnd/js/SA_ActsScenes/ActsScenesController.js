@@ -20,12 +20,14 @@ ActsScenes.ActsScenesController = function(){
 	var continueInit = function(){
 		actsScenesModel.init();
 		var metricsActs = actsScenesModel.getMetricsActs();
-		var actsProportionData = actsScenesModel.getActsProportionData()
+		var actsProportionData = actsScenesModel.getActsProportionData();
+		var metricsScenes = actsScenesModel.getMetricsScenes();
 		
-		actsScenesView.init(metricsActs, actsProportionData);
+		actsScenesView.init(metricsActs, actsProportionData, metricsScenes);
 		
 		actsScenesView.renderActsBars();
 		actsScenesView.renderActPieChart();
+		actsScenesView.renderScenesPerActBars();
 	};
 
 	that.init = init;
