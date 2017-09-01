@@ -113,6 +113,7 @@ class Sentiment_Calculator:
 		self._sentimentMetrics._metricsTotal["sadness"] = sum(word._sadness for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["surprise"] = sum(word._surprise for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["trust"] = sum(word._trust for word in self._sentimentBearingWords)
+		self._sentimentMetrics._metricsTotal["emotionPresent"] = sum(word._nrcEmotionOccurence for word in self._sentimentBearingWords)
 
 		self._sentimentMetrics._metricsTotal["emotion"] = math.fsum(word._emotion for word in self._sentimentBearingWords)
 		self._sentimentMetrics._metricsTotal["arousel"] = math.fsum(word._arousel for word in self._sentimentBearingWords)

@@ -21,8 +21,11 @@ ActsScenes.ActsScenesController = function(){
 		actsScenesModel.init();
 		var metricsActs = actsScenesModel.getMetricsActs();
 		var actsProportionData = actsScenesModel.getActsProportionData()
+		
 		actsScenesView.init(metricsActs, actsProportionData);
-		actsScenesView.renderActsBars()
+		
+		actsScenesView.renderActsBars();
+		actsScenesView.renderActPieChart();
 	};
 
 	that.init = init;

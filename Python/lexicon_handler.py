@@ -19,10 +19,10 @@ def main():
 
 	lexiconHandler = Lexicon_Handler()
 	
-	lexiconHandler.initSingleDict("CombinedLexicon-DTAExtended", "textblob")
-	print(len(lexiconHandler._sentimentDict))
-	print(len(lexiconHandler._sentimentDictLemmas))
-	print lexiconHandler._sentimentDict[unicode("gerecht")]
+	#lexiconHandler.initSingleDict("CombinedLexicon-DTAExtended", "textblob")
+	#lexiconHandler.resetAllFilesDTAExtended()
+	lexiconHandler.readCombinedLexiconsDump("textblob", True)
+
 
 class Lexicon_Handler:
 
@@ -170,20 +170,22 @@ class Lexicon_Handler:
 
 		self._sentimentDict = pickle.load(open(pathTokens, "rb"))
 		self._sentimentDictLemmas = pickle.load(open(pathLemmas, "rb"))
+		print len(self._sentimentDict)
+		print len(self._sentimentDictLemmas)
 
 	def dumpCombinedLexicons(self):
 		self.combineSentimentLexica("treetagger", False)
 		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexicons/treetagger/CombinedLexicon-treetagger-Tokens.p", "wb"))
 		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexicons/treetagger/CombinedLexicon-treetagger-Lemmas.p", "wb"))
-		
+		print("...")
 		self.combineSentimentLexica("textblob", False)
 		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexicons/textblob/CombinedLexicon-textblob-Tokens.p", "wb"))
 		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexicons/textblob/CombinedLexicon-textblob-Lemmas.p", "wb"))
-
+		print("...")
 		self.combineSentimentLexica("treetagger", True)
 		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexiconsDTAExtended/treetagger/CombinedLexiconDTAExtended-treetagger-Tokens.p", "wb"))
 		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexiconsDTAExtended/treetagger/CombinedLexiconDTAExtended-treetagger-Lemmas.p", "wb"))
-		
+		print("...")
 		self.combineSentimentLexica("textblob", True)
 		pickle.dump(self._sentimentDict, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Tokens.p", "wb"))
 		pickle.dump(self._sentimentDictLemmas, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Lemmas.p", "wb"))

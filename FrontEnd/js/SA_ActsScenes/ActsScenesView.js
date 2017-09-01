@@ -6,21 +6,42 @@ ActsScenes.ActsScenesView = function(){
 	var init = function(metricsActs, proportionDataForActs){
 		metricsForActs = metricsActs;
 		actsProportionData = proportionDataForActs;
-		console.log(actsProportionData);
+
+		initNumberOfActs(actsProportionData.length)
 		initListener()
-		drawPieChartAct(1, "normalisedSBWs", "polarityCount")
+
+	};
+
+	var initNumberOfActs = function(numberOfActs){
+		$select = $("#selection-acts-pie-number");
+		for(i = 0; i < numberOfActs; i++){
+			option = $("<option></option>")
+			actNumber = i + 1;
+			option.text(actNumber.toString() + " .Akt");
+			$select.append(option);
+		}
 	};
 
 	var initListener = function(){
 		$("#selection-act-bar-metric").change(renderActsBars);
 		$("#selection-act-bar-normalisation").change(renderActsBars);
+
+		$("#selection-acts-pie-number").change(renderActPieChart);
+		$("#selection-acts-pie-metric").change(renderActPieChart);
+		$("#selection-acts-pie-type").change(renderActPieChart);
 	};
 
-	var renderActsPieChart = function(){
-
+	var renderActPieChart = function(){
+		var actNumber = $("#selection-acts-pie-number").val();
+		var metric = $("#selection-acts-pie-metric").val();
+		var type = $("#selection-acts-pie-type").val();
+		actNumber = parseInt(actNumber) - 1;
+		metric = transformGermanMetric(metric);
+		type = transformGermanMetric(type);
+		drawActPieChart(actNumber, type, metric);
 	};
 
-	var drawPieChartAct = function(actNumber, proportionType, metricName){
+	var drawActPieChart = function(actNumber, proportionType, metricName){
 		var data = new google.visualization.DataTable();
 		data.addColumn("string", "Category");
 		data.addColumn("number", "Count");
@@ -117,7 +138,6 @@ ActsScenes.ActsScenesView = function(){
 	};
 
 	var transformGermanMetric = function(name){
-		console.log(name)
 		switch(name) {
 		    case "Polarität (gewichtet)":
 		        return "polaritySentiWS";
@@ -161,6 +181,9 @@ ActsScenes.ActsScenesView = function(){
 		    case "Vertrauen":
 		        return "trust";
 		        break;
+		    case "Emotion vorhanden":
+		    	return "emotionPresent";
+		    	break;
 		    case "Absolut":
 		        return "metricsTotal";
 		        break;
@@ -170,6 +193,15 @@ ActsScenes.ActsScenesView = function(){
 		    case "Normalisiert an Sentiment-Tragenden Wörtern":
 		        return "metricsNormalisedSBWs";
 		        break;
+		    case "Emotionen":
+		    	return "emotions";
+		    	break;
+		    case "Verteilung von Sentiment-Tragenden Wörtern":
+		    	return "normalisedSBWs";
+		    	break;
+		    case "Verteilung von allen Wörtern":
+		    	return "normalisedAllWords";
+		    	break;
 		    default:
 		        console.log("ERROR")
 		    }
@@ -177,6 +209,7 @@ ActsScenes.ActsScenesView = function(){
 
 	that.init = init;
 	that.renderActsBars = renderActsBars;
+	that.renderActPieChart = renderActPieChart;
 
 	return that;
 };

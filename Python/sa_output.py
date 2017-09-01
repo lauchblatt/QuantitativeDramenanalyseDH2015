@@ -17,15 +17,18 @@ def main():
 
 	sog = Sentiment_Output_Generator()
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
-	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../justEmilia.json",\
+	#"""
+	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../justEmilia2.json",\
 	 True, "treetagger", True, None, True)
+	#"""
 	#sog.generateJSONFileForSingleDrama("Dumps/ProcessedDramas/treetagger/Der Freigeist.p",\
 	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)
 	"""
 	dpp = Drama_Pre_Processing("treetagger")
 	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
-	sa = Sentiment_Analyzer(False, "treetagger", False, None, True)
+
+	sa = Sentiment_Analyzer(True, "treetagger", True, None, True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	sog.createTxtOutputSingleDrama("anotherTest.txt", sentimentExtendedDramaModel)
 	"""
@@ -103,8 +106,7 @@ class Sentiment_Output_Generator:
 
 			actData['speakers'] = self.getSentimentInfoFromSpeakers(act._actSpeakers.values())
 			configurationsData = []
-			for conf in act._configurations:
-				configurationsData.append(self.getSentimentInfoFromConf(act._configurations))
+			configurationsData.extend(self.getSentimentInfoFromConf(act._configurations))
 			actData['configurations'] = configurationsData
 			actsData.append(actData)
 		return actsData

@@ -106,21 +106,16 @@ class Senti_WS:
 		
 		for word,value in self._sentimentDict.iteritems():
 			lemma = lp._processor.getLemma(word)
-			print word
-			print lemma
 			
 			if lemma in newSentimentDict:
 				newScore = value
 				oldScore = newSentimentDict[lemma]
-				print oldScore
-				print newScore
+
 				higherScore = self.getHigherSentimentValue(newScore, oldScore, lemma)
-				print higherScore
 				oldToken = lemmaTokenPairs[lemma]
 				newSentimentDict[lemma] = higherScore
 			else:
 				newSentimentDict[lemma] = value
-				print value
 				lemmaTokenPairs[lemma] = word
 		
 		print("Lemmatisation finished")
@@ -147,28 +142,17 @@ class Senti_WS:
 
 	def createExtendedOutputDTA(self):
 		self.initSentiWS()
-		print("###")
-		print(len(self._sentimentDict))
 		self.extendLexiconSentiWSDTA()
-		print("###")
-		print(len(self._sentimentDict))
 		self.createOutputSentiWS(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/SentiWS-Token-DTAExtended")
 		self.lemmatizeDictSentiWS("treetagger")
-		print("###")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputSentiWS(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/SentiWS-Lemmas-DTAExtended")
 		self.lemmatizeDictSentiWS("textblob")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputSentiWS(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/SentiWS-Lemmas-DTAExtended")
 
 	def extendLexiconSentiWSDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "SentiWS")
-		print len(self._sentimentDict)
-		print self._sentimentDict["recht"]
 		self.lemmatizeDictSentiWS("textblob")
-		print len(self._sentimentDictLemmas)
-		print self._sentimentDictLemmas["recht"]
 
 	def createSentimentDictFileSentiWSToken(self):
 		self.initSentiWS()

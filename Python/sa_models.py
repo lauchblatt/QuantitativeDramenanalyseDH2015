@@ -58,7 +58,7 @@ class Sentiment_Metrics:
 
 		self._metricsTotal["positiveNrc"] = 0
 		self._metricsTotal["negativeNrc"] = 0
-		self._metricsTotal["polarityNrc"] = 0
+		self._metricsTotal["polarityNrc"] = 0		
 		self._names["nrcPolarity"] = ["positiveNrc", "negativeNrc", "polarityNrc"]
 
 		self._metricsTotal["anger"] = 0
@@ -69,8 +69,9 @@ class Sentiment_Metrics:
 		self._metricsTotal["sadness"] = 0
 		self._metricsTotal["surprise"] = 0
 		self._metricsTotal["trust"] = 0
+		self._metricsTotal["emotionPresent"] = 0
 		self._names["nrcEmotion"] = ["anger", "anticipation", "disgust", "fear", "joy", "sadness",\
-		"surprise", "trust"]
+		"surprise", "trust", "emotionPresent"]
 
 		self._metricsTotal["emotion"] = 0
 		self._metricsTotal["arousel"] = 0
