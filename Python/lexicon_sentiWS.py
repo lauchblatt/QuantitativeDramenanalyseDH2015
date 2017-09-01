@@ -152,7 +152,6 @@ class Senti_WS:
 	def extendLexiconSentiWSDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "SentiWS")
-		self.lemmatizeDictSentiWS("textblob")
 
 	def createSentimentDictFileSentiWSToken(self):
 		self.initSentiWS()
