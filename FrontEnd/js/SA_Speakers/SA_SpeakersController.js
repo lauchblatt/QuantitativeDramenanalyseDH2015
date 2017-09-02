@@ -5,12 +5,14 @@ SA_Speakers.SA_SpeakersController = function(){
 	var singleSpeakerView = null;
 	var speakersComparisonView = null;
 	var speakersActsView = null;
+	var speakersScenesView = null;
 
 	var init = function(){
 		speakersModel = SA_Speakers.SA_SpeakersModel();
 		singleSpeakerView = SA_Speakers.SingleSpeakerView();
 		speakersComparisonView = SA_Speakers.SpeakersComparisonView();
 		speakersActsView = SA_Speakers.SpeakersActsView();
+		speakersScenesView = SA_Speakers.SpeakersScenesView();
 		initGoogleCharts();
 	};
 
@@ -32,6 +34,7 @@ SA_Speakers.SA_SpeakersController = function(){
 		var scenesSpeakersMetrics = speakersModel.getScenesSpeakersMetrics();
 
 		var speakerMetricsPerAct = speakersModel.getSpeakerMetricsPerAct();
+		var speakerMetricsPerScene = speakersModel.getSpeakerMetricsPerScene();
 
 		singleSpeakerView.init();
 		singleSpeakerView.initSingleProportions(dramaSpeakersProportions, actsSpeakersProportions, scenesSpeakersProportions);
@@ -43,6 +46,9 @@ SA_Speakers.SA_SpeakersController = function(){
 
 		speakersActsView.init(speakerMetricsPerAct);
 		speakersActsView.renderSpeakersActBars();
+
+		speakersScenesView.init(speakerMetricsPerScene);
+		speakersScenesView.renderSpeakersScenesLine();
 
 	};
 

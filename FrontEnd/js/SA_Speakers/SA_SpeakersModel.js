@@ -44,14 +44,14 @@ SA_Speakers.SA_SpeakersModel = function(){
 				}else{
 					speakerMetricsPerAct[currentName].push(null);
 				}
-
+				speakerMetricsPerScene[currentName][k] = []
 				for(var l = 0; l < drama.acts[k].configurations.length; l++){
 					var currentScene = drama.acts[k].configurations[l];
 					if(nameInSpeakers(currentScene.appearingSpeakers, currentName)){
 						var speakerSceneMetrics = getSpeakerMetricsByName(currentScene.speakers, currentName);
-						speakerMetricsPerScene[currentName].push(speakerSceneMetrics);
+						speakerMetricsPerScene[currentName][k].push(speakerSceneMetrics);
 					}else{
-						speakerMetricsPerScene[currentName].push(null);
+						speakerMetricsPerScene[currentName][k].push(null);
 					}
 				}
 			}
@@ -149,6 +149,10 @@ SA_Speakers.SA_SpeakersModel = function(){
 		return speakerMetricsPerAct;
 	};
 
+	var getSpeakerMetricsPerScene = function(){
+		return speakerMetricsPerScene
+	}
+
 	that.init = init;
 	that.getDramaSpeakersProportions = getDramaSpeakersProportions;
 	that.getActsSpeakersProportions = getActsSpeakersProportions;
@@ -158,6 +162,7 @@ SA_Speakers.SA_SpeakersModel = function(){
 	that.getActsSpeakersMetrics = getActsSpeakersMetrics;
 	that.getScenesSpeakersMetrics = getScenesSpeakersMetrics;
 	that.getSpeakerMetricsPerAct = getSpeakerMetricsPerAct;
+	that.getSpeakerMetricsPerScene = getSpeakerMetricsPerScene;
 
 	return that;
 };
