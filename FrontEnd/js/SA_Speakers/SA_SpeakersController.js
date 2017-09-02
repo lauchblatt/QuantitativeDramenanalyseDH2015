@@ -4,11 +4,13 @@ SA_Speakers.SA_SpeakersController = function(){
 	var speakersModel = null;
 	var singleSpeakerView = null;
 	var speakersComparisonView = null;
+	var speakersActsView = null;
 
 	var init = function(){
 		speakersModel = SA_Speakers.SA_SpeakersModel();
 		singleSpeakerView = SA_Speakers.SingleSpeakerView();
 		speakersComparisonView = SA_Speakers.SpeakersComparisonView();
+		speakersActsView = SA_Speakers.SpeakersActsView();
 		initGoogleCharts();
 	};
 
@@ -25,11 +27,22 @@ SA_Speakers.SA_SpeakersController = function(){
 		var actsSpeakersProportions = speakersModel.getActsSpeakersProportions();
 		var scenesSpeakersProportions = speakersModel.getScenesSpeakersProportions();
 
+		var dramaSpeakersMetrics = speakersModel.getDramaSpeakersMetrics();
+		var actsSpeakersMetrics = speakersModel.getActsSpeakersMetrics();
+		var scenesSpeakersMetrics = speakersModel.getScenesSpeakersMetrics();
+
+		var speakerMetricsPerAct = speakersModel.getSpeakerMetricsPerAct();
+
 		singleSpeakerView.init();
 		singleSpeakerView.initSingleProportions(dramaSpeakersProportions, actsSpeakersProportions, scenesSpeakersProportions);
 		singleSpeakerView.renderSpeakerPieChart();
 
 		speakersComparisonView.init();
+		speakersComparisonView.initMetrics(dramaSpeakersMetrics, actsSpeakersMetrics, scenesSpeakersMetrics);
+		speakersComparisonView.renderSpeakersComparisonBarChart();
+
+		speakersActsView.init(speakerMetricsPerAct);
+
 	};
 
 	that.init = init;
