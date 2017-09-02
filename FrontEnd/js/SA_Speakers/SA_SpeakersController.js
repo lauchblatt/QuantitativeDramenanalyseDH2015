@@ -42,6 +42,7 @@ SA_Speakers.SA_SpeakersController = function(){
 		speakersComparisonView.renderSpeakersComparisonBarChart();
 
 		speakersActsView.init(speakerMetricsPerAct);
+		speakersActsView.renderSpeakersActBars();
 
 	};
 
