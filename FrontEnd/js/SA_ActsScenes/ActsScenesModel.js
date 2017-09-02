@@ -63,46 +63,6 @@ ActsScenes.ActsScenesModel = function(){
 		}
 	};
 
-	var getProportionDataOfUnit = function(unit){
-		var metricsUnit = unit.sentimentMetricsBasic.metricsTotal;
-		var polarityWeighted = [["Positiv", metricsUnit.positiveSentiWS], ["Negativ", metricsUnit.negativeSentiWS]];
-		var polarityCount = [["Positiv", metricsUnit.positiveSentiWSDichotom],
-		["Negativ", metricsUnit.negativeSentiWSDichotom]];
-		var emotion = [["Zorn", metricsUnit.anger], ["Erwartung", metricsUnit.anticipation], 
-		["Ekel", metricsUnit.disgust], ["Angst", metricsUnit.fear], ["Freude", metricsUnit.joy],
-		["Traurigkeit", metricsUnit.sadness], ["Überraschung", metricsUnit.surprise],
-		["Vertrauen", metricsUnit.trust]];
-		var emotionPresent = [["Emotion vorhanden", metricsUnit.emotionPresent]];
-
-		var proportionData = {}
-		proportionData["normalisedSBWs"] = {};
-		proportionData["normalisedSBWs"]["polaritySentiWS"] = polarityWeighted;
-		proportionData["normalisedSBWs"]["polaritySentiWSDichotom"] = polarityCount;
-		proportionData["normalisedSBWs"]["emotions"] = emotion;
-		proportionData["normalisedSBWs"]["emotionPresent"] = emotionPresent
-
-		
-		var noPolarityWords = unit.lengthInWords - 
-		(metricsUnit.positiveSentiWSDichotom + metricsUnit.negativeSentiWSDichotom);
-		var noEmotionWords = unit.lengthInWords - metricsUnit.emotionPresent;
-
-		var polarityCountCopy = polarityCount.slice();
-		var emotionCopy = emotion.slice();
-		var emotionPresentCopy = emotionPresent.slice();
-
-		polarityCountCopy.push(["Keine Polarität", noPolarityWords]);
-		emotionCopy.push(["Keine Emotion", noEmotionWords]);
-		emotionPresentCopy.push(["Keine Emotion", noEmotionWords]);
-
-		proportionData["normalisedAllWords"] = {};
-		proportionData["normalisedAllWords"]["polaritySentiWSDichotom"] = polarityCountCopy;
-		proportionData["normalisedAllWords"]["emotions"] = emotionCopy;
-		proportionData["normalisedAllWords"]["emotionPresent"] = emotionPresentCopy;
-
-		return proportionData;
-
-	};
-
 	var getMetricsActs = function(){
 		return metricsActs;
 	};
