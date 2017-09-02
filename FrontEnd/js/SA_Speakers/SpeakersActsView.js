@@ -37,7 +37,6 @@ SA_Speakers.SpeakersActsView = function(){
 
 	var getSpeakerActsMetrics = function(metricName, normalisation, speaker){
 		var speakerMetrics = metricsForSpeakerPerActs[speaker];
-		console.log(metricsForSpeakerPerActs[speaker]);
 		var metrics = [];
 		for(i = 0; i < speakerMetrics.length; i++){
 			if(speakerMetrics[i] == null){
