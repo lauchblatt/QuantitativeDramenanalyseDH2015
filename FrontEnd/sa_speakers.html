@@ -120,6 +120,45 @@
 
 				</div>
 
+				<a href="#speakersScenesPerAct-statistic" name="speakersScenesPerAct"><h3>Verlaufsdiagramme - Sprecher-Sentiments in Szenen pro Akt</h3></a>
+					<div class="box">
+						<div class="form-group dropdown-form" id="form-speakersScenesPerAct-bar">
+							  <label for="sel1">Sprecher:</label>
+							  <select class="form-control" id="selection-speakersScenesPerAct-bar">
+							  </select>
+						</div>
+						<div class="form-group dropdown-form" id="form-scenes">
+							  <label for="sel1">Sentiment-Variablen:</label>
+							  <select class="form-control" id="selection-speakersScenesPerAct-bar-metric">
+							    <option>Polarität (gewichtet)</option>
+							    <option>Positiv (gewichtet)</option>
+							    <option>Negativ (gewichtet)</option>
+							    <option>Polarität (Wortanzahl)</option>
+							    <option>Positiv (Wortanzahl)</option>
+							    <option>Negativ (Wortanzahl)</option>
+							    <option>Zorn</option>
+							    <option>Erwartung</option>
+							    <option>Ekel</option>
+							    <option>Angst</option>
+							    <option>Freude</option>
+							    <option>Traurigkeit</option>
+							    <option>Überraschung</option>
+							    <option>Vertrauen</option>
+							    <option>Emotion vorhanden</option>
+							  </select>
+						</div>
+						<div class="form-group dropdown-form" id="form-act2">
+						  <label for="sel1">Normalisierung:</label>
+						  <select class="form-control" id="selection-speakersScenesPerAct-bar-normalisation">
+						    	<option>Absolut</option>
+						    	<option>Normalisiert an Anzahl aller Wörter</option>
+							    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+						  </select>
+						</div>
+						<div id="charts-speakersScenesPerAct-bar"></div>
+					</div>
+
+
 				<a href="#speakerScenes" name="speakerScenes"><h3>Verlaufsdiagramm - Szenen im Dramenverlauf pro Sprecher</h3></a>
 					<div class="box">
 						<div class="form-group dropdown-form" id="form-speakersScenes-speaker-bar">

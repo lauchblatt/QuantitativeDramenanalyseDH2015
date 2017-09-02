@@ -49,6 +49,7 @@ SA_Speakers.SA_SpeakersController = function(){
 
 		speakersScenesView.init(speakerMetricsPerScene);
 		speakersScenesView.renderSpeakersScenesLine();
+		speakersScenesView.renderScenesPerActBars();
 
 	};
 

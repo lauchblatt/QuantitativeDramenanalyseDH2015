@@ -40,7 +40,7 @@ SA_Speakers.SpeakersActsView = function(){
 		var metrics = [];
 		for(i = 0; i < speakerMetrics.length; i++){
 			if(speakerMetrics[i] == null){
-				metrics.push([(i+1), 0, "tritt nicht auf"]);
+				metrics.push([(i+1), 0, "kein Auftritt"]);
 			}else{
 				var metric = speakerMetrics[i][normalisation][metricName];
 				metrics.push([(i+1), metric, (Math.round(metric * 10000) / 10000).toString()]);
