@@ -8,7 +8,7 @@ SA_Relations.RelationsDramaView = function(){
 	var init = function(dramaRelationsMetrics){
 		initListener();
 		metricsForDramaRelations = dramaRelationsMetrics;
-		console.log(metricsForDramaRelations);
+		
 		renderSpeakerDropDown();
 		renderCheckboxes();
 
@@ -38,24 +38,17 @@ SA_Relations.RelationsDramaView = function(){
 				chosenTargets.push(target);
 			}
 		}
-		console.log(chosenTargets);
 	};
 
 	var renderCheckboxes = function(){
 		chosenSpeaker = $("#selection-relationsDrama-speaker").val();
 		checkboxes = $("#checkboxes-dramaRelations");
 		checkboxes.empty();
-		var i = 0;
 		for(var target in metricsForDramaRelations[chosenSpeaker]){
-			if(i == 0){
-				checkbox = $('<div class="checkbox"><label><input class="checkboxes-dramaRelations" checked type="checkbox" value="' + target + 
-				'">' + target + '</label></div>');
-			}else{
-				checkbox = $('<div class="checkbox"><label><input class="checkboxes-dramaRelations" type="checkbox" value="' + target + 
-				'">' + target + '</label></div>');
-			}			
-			i = i +1;
-			checkbox.change(setChosenTargets);
+			checkbox = $('<div class="checkbox"><label><input class="checkboxes-dramaRelations" checked type="checkbox" value="' + target + 
+			'">' + target + '</label></div>');
+
+			checkbox.change(renderRelationsDrama);
 			checkboxes.append(checkbox);
 		}
 
@@ -78,15 +71,56 @@ SA_Relations.RelationsDramaView = function(){
 
 		var metric = transformGermanMetric(metricSelection);
 		var normalisation = transformGermanMetric(normalisationSelection);
-		//var metrics = getRelationsActsMetrics(metric, normalisation, speakerSelection);
-		//drawSpeakersActBarsChart(normalisationSelection, metricSelection, speakerSelection, metrics);
+		var metrics = getRelationsDramaMetrics(metric, normalisation, speakerSelection);
+		drawRelationsDramaBarsChart(metricSelection, normalisationSelection, speakerSelection, metrics);
 	};
 
-	var getRelationsDramaMetrics = function(){
+	var getRelationsDramaMetrics = function(metricName, typeName, speakerName){
+		var metrics = []
 
+		for(var i = 0; i < chosenTargets.length; i++){
+			var metric = metricsForDramaRelations[speakerName][chosenTargets[i]][typeName][metricName];
+			metrics.push([chosenTargets[i], metric, (Math.round(metric * 10000) / 10000).toString()]);
+		}
+		return metrics;
+	};
+
+	var drawRelationsDramaBarsChart = function(germanMetric, germanType, speakerName, metrics){
+		var vAxisTitle = germanMetric + " - " + germanType;
+		var data = new google.visualization.DataTable();
+		data.addColumn("string", "TargetSpeaker")
+		data.addColumn("number", germanMetric)
+		data.addColumn({type:'string', role:'annotation'})
+
+        data.addRows(metrics);
+        
+        var options = {title:'Beziehungs-Sentiments - ' + speakerName + ' : ' + vAxisTitle,
+        			   height: 600,
+        			   width: 1130,
+        			   chartArea:{width:'70%',height:'75%'},
+				        hAxis: {
+        			   	title: 'Sprecher-Beziehung'
+        			   },
+        			   vAxis: {
+        			   	title: vAxisTitle,
+        			   	baseline: 0,
+        			   },
+                   	   animation: {
+                   	   	duration: 700,
+                   	   	startup: true
+                   	   }};
+        
+        var formatter = new google.visualization.NumberFormat(
+    		{fractionDigits: 6});
+		formatter.format(data, 1); // Apply formatter to second column
+
+        var chart = new google.visualization.ColumnChart(document.getElementById("chart-div-relationsDrama"));
+
+        chart.draw(data, options);
 	};
 
 	that.init = init;
+	that.renderRelationsDrama = renderRelationsDrama;
 
 	return that;
 };

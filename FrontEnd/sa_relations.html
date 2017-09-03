@@ -79,7 +79,7 @@
 
 			<div class="container">
 
-				<a href="#relationsAct-statistic" name="relationsActs-statistic"><h3>Verlaufsdiagramm - Sprecher-Beziehungs-Sentiments pro Akt</h3></a>
+				<a href="#relationsDrama" name="relationsDrama"><h3>Sprecher-Beziehungs-Sentiments im Drama</h3></a>
 				<div class="box">
 					<div class="form-group dropdown-form" id="form-relationsDrama">
 						  <label for="sel1">Sprecher:</label>
@@ -119,11 +119,59 @@
 					<div>
 						<div id="checkboxes-dramaRelations">
 						</div>
-					<div>
+					</div>
 
 					<div id="chart-div-relationsDrama"></div>
 
 				</div>
+
+				<a href="#relationsActs-statistic" name="relationsActs-statistic"><h3>Sprecher-Beziehungs-Sentiments pro Akt</h3></a>
+				<div class="box">
+					<div class="form-group dropdown-form" id="form-relationsActs">
+						  <label for="sel1">Sprecher:</label>
+						  <select class="form-control" id="selection-relationsActs-speaker">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-act1">
+					  <label for="sel1">Sentiment-Metrik:</label>
+					  <select class="form-control" id="selection-relationsActs-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Positiv (gewichtet)</option>
+						    <option>Negativ (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Positiv (Wortanzahl)</option>
+						    <option>Negativ (Wortanzahl)</option>
+						    <option>Zorn</option>
+						    <option>Erwartung</option>
+						    <option>Ekel</option>
+						    <option>Angst</option>
+						    <option>Freude</option>
+						    <option>Traurigkeit</option>
+						    <option>Überraschung</option>
+						    <option>Vertrauen</option>
+						    <option>Emotion vorhanden</option>
+					  </select>
+					</div>
+
+					<div class="form-group dropdown-form" id="form-act2">
+					  <label for="sel1">Normalisierung:</label>
+					  <select class="form-control" id="selection-relationsActs-normalisation">
+					    	<option>Absolut</option>
+						    <option>Normalisiert an Anzahl aller Wörter</option>
+						    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+					  </select>
+					</div>
+
+					<div>
+						<div id="checkboxes-actsRelations">
+						</div>
+					</div>
+
+					<div id="chart-div-relationsActs"></div>
+
+				</div>
+
+
 
 				</div>
 			</div>
@@ -140,6 +188,7 @@
 		<script type="text/javascript" src="js/SA_Relations/RelationsController.js"></script>
 		<script type="text/javascript" src="js/SA_Relations/RelationsModel.js"></script>
 		<script type="text/javascript" src="js/SA_Relations/RelationsDramaView.js"></script>
+		<script type="text/javascript" src="js/SA_Relations/RelationsActsView.js"></script>
 
 		<script>
 				$(function() {
