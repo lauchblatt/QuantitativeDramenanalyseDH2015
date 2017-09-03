@@ -171,6 +171,52 @@
 
 				</div>
 
+				<a href="#relationsScenes-statistic" name="relationsScenes-statistic"><h3>Sprecher-Beziehungs-Sentiments pro Szene</h3></a>
+				<div class="box">
+					<div class="form-group dropdown-form" id="form-relationsScenes">
+						  <label for="sel1">Sprecher:</label>
+						  <select class="form-control" id="selection-relationsScenes-speaker">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-act1">
+					  <label for="sel1">Sentiment-Metrik:</label>
+					  <select class="form-control" id="selection-relationsScenes-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Positiv (gewichtet)</option>
+						    <option>Negativ (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Positiv (Wortanzahl)</option>
+						    <option>Negativ (Wortanzahl)</option>
+						    <option>Zorn</option>
+						    <option>Erwartung</option>
+						    <option>Ekel</option>
+						    <option>Angst</option>
+						    <option>Freude</option>
+						    <option>Traurigkeit</option>
+						    <option>Überraschung</option>
+						    <option>Vertrauen</option>
+						    <option>Emotion vorhanden</option>
+					  </select>
+					</div>
+
+					<div class="form-group dropdown-form" id="form-act2">
+					  <label for="sel1">Normalisierung:</label>
+					  <select class="form-control" id="selection-relationsScenes-normalisation">
+					    	<option>Absolut</option>
+						    <option>Normalisiert an Anzahl aller Wörter</option>
+						    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+					  </select>
+					</div>
+
+					<div>
+						<div id="checkboxes-scenesRelations">
+						</div>
+					</div>
+
+					<div id="chart-div-relationsScenes"></div>
+
+				</div>
+
 
 
 				</div>
@@ -189,6 +235,7 @@
 		<script type="text/javascript" src="js/SA_Relations/RelationsModel.js"></script>
 		<script type="text/javascript" src="js/SA_Relations/RelationsDramaView.js"></script>
 		<script type="text/javascript" src="js/SA_Relations/RelationsActsView.js"></script>
+		<script type="text/javascript" src="js/SA_Relations/RelationsScenesView.js"></script>
 
 		<script>
 				$(function() {

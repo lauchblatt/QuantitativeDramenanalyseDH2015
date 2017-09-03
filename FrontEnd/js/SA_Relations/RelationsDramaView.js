@@ -8,7 +8,7 @@ SA_Relations.RelationsDramaView = function(){
 	var init = function(dramaRelationsMetrics){
 		initListener();
 		metricsForDramaRelations = dramaRelationsMetrics;
-		
+
 		renderSpeakerDropDown();
 		renderCheckboxes();
 
@@ -16,8 +16,8 @@ SA_Relations.RelationsDramaView = function(){
 
 	var initListener = function(){
 
-		$("#selection-relationsDrama-metric").change(renderTargetsAndRelationsDrama);
-		$("#selection-relationsDrama-normalisation").change(renderTargetsAndRelationsDrama);
+		$("#selection-relationsDrama-metric").change(renderRelationsDrama);
+		$("#selection-relationsDrama-normalisation").change(renderRelationsDrama);
 		$("#selection-relationsDrama-speaker").change(renderTargetsAndRelationsDrama);
 
 	};

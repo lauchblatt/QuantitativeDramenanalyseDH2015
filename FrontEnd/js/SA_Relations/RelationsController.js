@@ -4,11 +4,13 @@ SA_Relations.RelationsController = function(){
 	var relationsModel = null;
 	var dramaView = null;
 	var actsView = null;
+	var scenesView = null;
 
 	var init = function(){
 		relationsModel = SA_Relations.RelationsModel();
 		dramaView = SA_Relations.RelationsDramaView();
 		actsView = SA_Relations.RelationsActsView();
+		scenesView = SA_Relations.RelationsScenesView();
 
 		initGoogleCharts();
 	};

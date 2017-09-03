@@ -18,8 +18,8 @@ SA_Relations.RelationsActsView = function(){
 
 	var initListener = function(){
 
-		$("#selection-relationsActs-metric").change(renderTargetsAndRelationsActs);
-		$("#selection-relationsActs-normalisation").change(renderTargetsAndRelationsActs);
+		$("#selection-relationsActs-metric").change(renderRelationsActs);
+		$("#selection-relationsActs-normalisation").change(renderRelationsActs);
 		$("#selection-relationsActs-speaker").change(renderTargetsAndRelationsActs);
 
 	};
@@ -74,7 +74,6 @@ SA_Relations.RelationsActsView = function(){
 		var metric = transformGermanMetric(metricSelection);
 		var normalisation = transformGermanMetric(normalisationSelection);
 		var metrics = getRelationsActsMetrics(metric, normalisation, speakerSelection);
-		console.log(metrics);
 		drawRelationsActsChart(metricSelection, normalisationSelection, speakerSelection, metrics);
 	};
 
