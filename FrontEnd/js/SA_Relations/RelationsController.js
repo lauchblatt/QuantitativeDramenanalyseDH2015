@@ -26,12 +26,16 @@ SA_Relations.RelationsController = function(){
 		relationsModel.init();
 		var dramaRelationsMetrics = relationsModel.getDramaRelationsMetrics();
 		var actsRelationsMetrics = relationsModel.getActsRelationsMetrics();
+		var scenesRelationsMetrics = relationsModel.getScenesRelationsMetrics();
 		var numberOfActs = relationsModel.getNumberOfActs();
+		var scenesPerAct = relationsModel.getNumberOfScenesPerAct();
 
 		dramaView.init(dramaRelationsMetrics);
 		dramaView.renderRelationsDrama();
 		actsView.init(actsRelationsMetrics, numberOfActs);
 		actsView.renderRelationsActs();
+		scenesView.init(scenesRelationsMetrics, scenesPerAct);
+		scenesView.renderRelationsScenes();
 
 	};
 
