@@ -5,6 +5,10 @@ SA_Relations.RelationsModel = function(){
 	var actsRelationsMetrics = {};
 	var scenesRelationsMetrics = {};
 
+	var dramaRelationsProportions = {};
+	var actsRelationsProportions = [];
+	var scenesRelationsProportions = [];
+
 	var numberOfActs = 0;
 	var numberOfScenes = 0;
 	var numberOfScenesPerAct = [];
@@ -23,9 +27,79 @@ SA_Relations.RelationsModel = function(){
 		
 		initActsRelationsMetrics(drama);
 		initScenesRelationsMetrics(drama);
-		console.log("Hello");
-		console.log(scenesRelationsMetrics);
 		
+		//console.log(dramaRelationsMetrics);
+		//console.log(actsRelationsMetrics);
+		//console.log(scenesRelationsMetrics);
+
+		initDramaRelationsProportions(drama);
+		initActsRelationsProportions(drama);
+		initScenesRelationsProportions(drama);
+		console.log(dramaRelationsProportions);
+		console.log(actsRelationsProportions);
+		console.log(scenesRelationsProportions);
+		
+	};
+
+	var initScenesRelationsProportions = function(drama){
+		var relationsPerActList = [];
+		for(var i = 0; i < drama.acts.length; i++){
+				relationsPerActList[i] = [];
+				var currentAct = drama.acts[i];
+				for(var k = 0; k < currentAct.configurations.length; k++){
+					var relationsPerConf = {};
+					var currentConf = currentAct.configurations[k];
+					var currentSpeakers = currentConf.speakers;
+					for(var l = 0; l < currentSpeakers.length; l++){
+						var sentimentRelations = currentSpeakers[l].sentimentRelations;
+						var currentSpeaker = currentSpeakers[l]["name"];
+						relationsPerConf[currentSpeaker] = {};
+						for(var m = 0; m < sentimentRelations.length; m++){
+							var currentRelation = sentimentRelations[m];
+							var target = currentRelation.targetSpeaker;
+							var metrics = getProportionDataOfUnit(currentRelation);
+							relationsPerConf[currentSpeaker][target] = metrics;
+					}
+					relationsPerActList[i].push(relationsPerConf);
+				}	
+			}
+		}
+		scenesRelationsProportions = relationsPerActList;
+
+	};
+
+	var initActsRelationsProportions = function(drama){
+		for(var i = 0; i < drama.acts.length; i++){
+			var speakers = drama.acts[i].speakers;
+			var relationsPerAct = {};
+			for(var j = 0; j < speakers.length; j++){
+				var currentSpeaker = speakers[j]["name"];
+				relationsPerAct[currentSpeaker] = {};
+				var sentimentRelations = speakers[j].sentimentRelations;
+				for(var k = 0; k < sentimentRelations.length; k++){
+					var currentRelation = sentimentRelations[k];
+					var target = currentRelation.targetSpeaker;
+					var metrics = getProportionDataOfUnit(currentRelation);
+					relationsPerAct[currentSpeaker][target] = metrics
+				}
+			}
+			actsRelationsProportions.push(relationsPerAct);
+		}
+	};
+
+	var initDramaRelationsProportions = function(drama){
+		var speakers = drama.speakers;
+		for(var i = 0; i < speakers.length; i++){
+			var currentSpeaker = speakers[i]["name"]
+			dramaRelationsProportions[currentSpeaker] = {};
+			var sentimentRelations = speakers[i].sentimentRelations;
+			for(var j = 0; j < sentimentRelations.length; j++){
+				var currentRelation = sentimentRelations[j];
+				var target = currentRelation.targetSpeaker;
+				var metrics = getProportionDataOfUnit(currentRelation);
+				dramaRelationsProportions[currentSpeaker][target] = metrics;
+			}
+		}
 	};
 
 	var setNumberOfScenesAndActs = function(drama){

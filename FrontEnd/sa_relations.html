@@ -217,7 +217,47 @@
 
 				</div>
 
+				<a href="#relations-pie" name="relations-pie"><h3>Kreisdiagramm - Sentiment-Anteile von Sprecherbeziehungen</h3></a>
+				<div class="box">
 
+					<div class="form-group dropdown-form" id="form-relations-act-pie-number">
+						  <label for="sel1">Drama-Akt:</label>
+						  <select class="form-control" id="selection-relations-act-pie-number">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-relations-scene-pie-number">
+						  <label for="sel1">Akt-Szene:</label>
+						  <select class="form-control" id="selection-relations-scene-pie-number">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-relations-originSpeaker-pie">
+						  <label for="sel1">Ausgangs-Sprecher:</label>
+						  <select class="form-control" id="selection-relations-originSpeaker-pie">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-relations-targetSpeaker-pie">
+						  <label for="sel1">Ziel-Sprecher:</label>
+						  <select class="form-control" id="selection-relations-targetSpeaker-pie">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-relations-pie-metric">
+					  <label for="sel1">Sentiment-Metric:</label>
+					  <select class="form-control" id="selection-relations-pie-metric">
+					    	<option>Polarität (gewichtet)</option>
+						    <option>Polarität (Wortanzahl)</option>
+						    <option>Emotionen</option>
+						    <option>Emotion vorhanden</option>
+					  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-relations-pie-type">
+						  <label for="sel1">Verteilung:</label>
+						  <select class="form-control" id="selection-relations-pie-type">
+							    <option>Verteilung von Sentiment-Tragenden Wörtern</option>
+							    <option>Verteilung von allen Wörtern</option>
+						  </select>
+					</div>
+					<div id="chart-div-relations-pie"></div>
+				</div>
 
 				</div>
 			</div>

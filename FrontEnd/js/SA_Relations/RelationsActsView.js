@@ -92,7 +92,6 @@ SA_Relations.RelationsActsView = function(){
 			}
 			metrics.push(row);
 		}
-		console.log(metrics);
 		return metrics;
 	};
 
