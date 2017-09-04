@@ -2,6 +2,7 @@ SA_Speakers.SpeakersScenesView = function(){
 	var that = {};
 	var metricsForSpeakerPerScenes = {};
 	var chosenSpeakersScenesPerAct = [];
+	var chosenSpeakersScenes = [];
 	var numberOfActs = 0;
 	var numberOfScenesPerAct = [];
 
@@ -9,8 +10,8 @@ SA_Speakers.SpeakersScenesView = function(){
 		metricsForSpeakerPerScenes = speakerScenesMetrics;
 		initListener();
 		initNumberOfActsAndScenes();
-		renderSpeakerDropDown();
-		renderCheckboxes();
+		renderCheckboxesScenesPerAct();
+		renderCheckboxesScenes();
 
 	};
 
@@ -35,14 +36,6 @@ SA_Speakers.SpeakersScenesView = function(){
 
 	};
 
-	var renderSpeakerDropDown = function(){
-		var $speakerSelect = $("#selection-speakersScenes-speaker-line");
-		for (var speaker in metricsForSpeakerPerScenes){
-			var $select1 = $("<option>" + speaker + "</option>");
-			$speakerSelect.append($select1);
-		}	
-	};
-
 	var setChosenSpeakersScenesPerAct = function(){
 		chosenSpeakersScenesPerAct = [];
 		var checkboxes = ($(".checkboxes-scenesPerActSpeakers"));
@@ -55,7 +48,19 @@ SA_Speakers.SpeakersScenesView = function(){
 		}
 	};
 
-	var renderCheckboxes = function(){
+	var setChosenSpeakersScenes = function(){
+		chosenSpeakersScenes = [];
+		var checkboxes = ($(".checkboxes-scenesSpeakers"));
+		for(i = 0; i < checkboxes.length; i++){
+			var isChecked = ($(checkboxes[i]).is(':checked'));
+			if(isChecked){
+				var speaker = $(checkboxes[i]).val();
+				chosenSpeakersScenes.push(speaker);
+			}
+		}
+	};
+
+	var renderCheckboxesScenesPerAct = function(){
 		checkboxes = $("#checkboxes-scenesPerActSpeakers");
 		checkboxes.empty();
 		var i = 0;
@@ -71,6 +76,26 @@ SA_Speakers.SpeakersScenesView = function(){
 			}
 			i = 1;
 			checkbox.change(renderScenesPerActBars);
+			checkboxes.append(checkbox);
+		}
+	};
+
+	var renderCheckboxesScenes = function(){
+		checkboxes = $("#checkboxes-scenesSpeakers");
+		checkboxes.empty();
+		var i = 0;
+		for(var speaker in metricsForSpeakerPerScenes){
+			checkbox = $('<div class="checkbox"><label><input class="checkboxes-scenesSpeakers" type="checkbox" value="' + speaker + 
+			'">' + speaker + '</label></div>');
+			if(i == 0){
+				checkbox = $('<div class="checkbox"><label><input class="checkboxes-scenesSpeakers" checked type="checkbox" value="' + speaker + 
+				'">' + speaker + '</label></div>');
+			}else{
+				checkbox = $('<div class="checkbox"><label><input class="checkboxes-scenesSpeakers" type="checkbox" value="' + speaker + 
+			'">' + speaker + '</label></div>');
+			}
+			i = 1;
+			checkbox.change(renderSpeakersScenesLine);
 			checkboxes.append(checkbox);
 		}
 	};
@@ -100,9 +125,15 @@ SA_Speakers.SpeakersScenesView = function(){
 					
 					if(metricsForSpeakerPerScenes[speaker][i][j] == null){
 						row.push(0);
+						if(chosenSpeakersScenesPerAct.length == 1){
+						row.push("kein Auftritt");
+					}
 					}else{
 						var metric = metricsForSpeakerPerScenes[speaker][i][j][normalisation][metricName];
 						row.push(metric);
+						if(chosenSpeakersScenesPerAct.length == 1){
+						row.push((Math.round(metric * 10000) / 10000).toString())
+						}
 					}
 				}
 				rows.push(row);
@@ -153,6 +184,9 @@ SA_Speakers.SpeakersScenesView = function(){
 		data.addColumn("number", "Scene-Number");
 		for(var i = 0; i < chosenSpeakersScenesPerAct.length; i++){
 			data.addColumn("number", chosenSpeakersScenesPerAct[i]);
+			if(chosenSpeakersScenesPerAct.length == 1){
+				data.addColumn({type:'string', role:'annotation'})
+			}
 		}
 		
 		//data.addColumn({type:'string', role:'annotation', 'p': {'html': true}});
@@ -204,16 +238,40 @@ SA_Speakers.SpeakersScenesView = function(){
 
 
 	var renderSpeakersScenesLine = function(){
-		var metricSelection = $("#selection-speakerScenes-line-metric").val();
 		var normalisationSelection = $("#selection-speakerScenes-line-type").val()
-		var speakerSelection = $("#selection-speakersScenes-speaker-line").val()
+		var metricSelection = $("#selection-speakerScenes-line-metric").val()
+
 		var metric = transformGermanMetric(metricSelection);
 		var normalisation = transformGermanMetric(normalisationSelection);
-		var metrics = getSpeakerScenesMetrics(metric, normalisation, speakerSelection);
+		setChosenSpeakersScenes();
+		var metrics = getSpeakerScenesMetrics(metric, normalisation);
 		
-		drawSpeakersScenesLineChart(metricSelection, normalisationSelection, speakerSelection, metrics);
+		drawSpeakersScenesLineChart(metricSelection, normalisationSelection, metrics);
 	};
 
+	var getSpeakerScenesMetrics = function(metricName, typeName){
+		var rows = [];
+		for(var i = 0; i < numberOfActs; i++){
+			for(var j = 0; j < numberOfScenesPerAct[i]; j++){
+				var row = [];
+				var sceneName = (i+1).toString() + ". Akt, " + (j+1).toString() + " .Szene";
+				row.push(sceneName);
+				for(var k = 0; k < chosenSpeakersScenes.length; k++){
+					var speakerMetrics = metricsForSpeakerPerScenes[chosenSpeakersScenes[k]];
+					var currentMetric = speakerMetrics[i][j];
+					if(currentMetric == null){
+						row.push(0);
+					}else{
+						row.push(currentMetric[typeName][metricName]);
+					}
+				}
+				rows.push(row);
+			}
+		}
+		return rows;
+	};
+
+	/**
 	var getSpeakerScenesMetrics = function(metricName, normalisation, speakerName){
 		var speakerMetricsActs = metricsForSpeakerPerScenes[speakerName];
 		var metrics = [];
@@ -231,29 +289,22 @@ SA_Speakers.SpeakersScenesView = function(){
 		}
 		return metrics;
 	};
+	**/
 
-	var drawSpeakersScenesLineChart = function(germanMetric, germanType, speakerName, metrics){
+	var drawSpeakersScenesLineChart = function(germanMetric, germanType, metrics){
 		var vAxisTitle = germanMetric + " - " + germanType;
 		var data = new google.visualization.DataTable();
 		data.addColumn("string", "sceneName")
-		data.addColumn("number", germanMetric)
+		for(var i = 0; i < chosenSpeakersScenes.length; i++){
+			data.addColumn("number", chosenSpeakersScenes[i]);
+		}
+		
         data.addRows(metrics);
 
-        var options = {title:'Szenen-Verlauf - ' + speakerName + ": " + vAxisTitle,
+        var options = {title:'Szenen-Verlauf: ' + vAxisTitle,
         			   height: 600,
         			   width: 1130,
         			   chartArea:{width:'70%',height:'75%'},
-        			    trendlines: {
-				          0: {
-				          	tooltip: false,
-				            type: 'polynomial',
-				            color: 'green',
-				            lineWidth: 3,
-				            opacity: 0.3,
-				            showR2: false,
-				            visibleInLegend: false
-				          }
-				        },
 				        hAxis: {
         			   	title: 'Szenen',
         			   	slantedText: false
@@ -269,15 +320,17 @@ SA_Speakers.SpeakersScenesView = function(){
 
         var formatter = new google.visualization.NumberFormat(
     		{fractionDigits: 6});
-		formatter.format(data, 1);
-        
+        for(var j = 0; j < chosenSpeakersScenes.length; j++){
+        	formatter.format(data, (j+1));
+        }
+		
         var dashboard = new google.visualization.Dashboard(document.getElementById('dashbord-speakersScenes'));
 
         var lineChartSpeechesSlider = new google.visualization.ControlWrapper({
           'controlType': 'NumberRangeFilter',
           'containerId': 'filter-speakersScenes',
           'options': {
-            'filterColumnLabel': germanMetric
+            'filterColumnLabel': chosenSpeakersScenes[0]
           }
         });
 
