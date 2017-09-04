@@ -35,9 +35,6 @@ SA_Relations.RelationsModel = function(){
 		initDramaRelationsProportions(drama);
 		initActsRelationsProportions(drama);
 		initScenesRelationsProportions(drama);
-		console.log(dramaRelationsProportions);
-		console.log(actsRelationsProportions);
-		console.log(scenesRelationsProportions);
 		
 	};
 
@@ -46,6 +43,7 @@ SA_Relations.RelationsModel = function(){
 		for(var i = 0; i < drama.acts.length; i++){
 				relationsPerActList[i] = [];
 				var currentAct = drama.acts[i];
+				
 				for(var k = 0; k < currentAct.configurations.length; k++){
 					var relationsPerConf = {};
 					var currentConf = currentAct.configurations[k];
@@ -53,16 +51,18 @@ SA_Relations.RelationsModel = function(){
 					for(var l = 0; l < currentSpeakers.length; l++){
 						var sentimentRelations = currentSpeakers[l].sentimentRelations;
 						var currentSpeaker = currentSpeakers[l]["name"];
-						relationsPerConf[currentSpeaker] = {};
+						var relationsPerSpeaker = {};
 						for(var m = 0; m < sentimentRelations.length; m++){
 							var currentRelation = sentimentRelations[m];
 							var target = currentRelation.targetSpeaker;
 							var metrics = getProportionDataOfUnit(currentRelation);
-							relationsPerConf[currentSpeaker][target] = metrics;
-					}
-					relationsPerActList[i].push(relationsPerConf);
-				}	
+							relationsPerSpeaker[target] = metrics;
+						}
+						relationsPerConf[currentSpeaker] = relationsPerSpeaker;
+				}
+				relationsPerActList[i].push(relationsPerConf);	
 			}
+			
 		}
 		scenesRelationsProportions = relationsPerActList;
 
@@ -211,6 +211,18 @@ SA_Relations.RelationsModel = function(){
 		return numberOfScenesPerAct;
 	};
 
+	var getDramaRelationsProportions = function(){
+		return dramaRelationsProportions;
+	};
+
+	var getActsRelationsProportions = function(){
+		return actsRelationsProportions;
+	};
+
+	var getScenesRelationsProportions = function(){
+		return scenesRelationsProportions;
+	};
+
 	that.init = init;
 	that.getDramaRelationsMetrics = getDramaRelationsMetrics;
 	that.getActsRelationsMetrics = getActsRelationsMetrics;
@@ -218,6 +230,10 @@ SA_Relations.RelationsModel = function(){
 	that.getNumberOfActs = getNumberOfActs;
 	that.getNumberOfScenes = getNumberOfScenes;
 	that.getNumberOfScenesPerAct = getNumberOfScenesPerAct;
+	
+	that.getDramaRelationsProportions = getDramaRelationsProportions;
+	that.getActsRelationsProportions = getActsRelationsProportions;
+	that.getScenesRelationsProportions = getScenesRelationsProportions; 
 
 	return that;
 };

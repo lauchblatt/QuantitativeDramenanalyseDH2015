@@ -5,12 +5,14 @@ SA_Relations.RelationsController = function(){
 	var dramaView = null;
 	var actsView = null;
 	var scenesView = null;
+	var proportionsView = null;
 
 	var init = function(){
 		relationsModel = SA_Relations.RelationsModel();
 		dramaView = SA_Relations.RelationsDramaView();
 		actsView = SA_Relations.RelationsActsView();
 		scenesView = SA_Relations.RelationsScenesView();
+		proportionsView = SA_Relations.RelationsProportionsView();
 
 		initGoogleCharts();
 	};
@@ -30,12 +32,18 @@ SA_Relations.RelationsController = function(){
 		var numberOfActs = relationsModel.getNumberOfActs();
 		var scenesPerAct = relationsModel.getNumberOfScenesPerAct();
 
+		var dramaProportions = relationsModel.getDramaRelationsProportions();
+		var actsProportions = relationsModel.getActsRelationsProportions();
+		var scenesProportions = relationsModel.getScenesRelationsProportions();
+
 		dramaView.init(dramaRelationsMetrics);
 		dramaView.renderRelationsDrama();
 		actsView.init(actsRelationsMetrics, numberOfActs);
 		actsView.renderRelationsActs();
 		scenesView.init(scenesRelationsMetrics, scenesPerAct);
 		scenesView.renderRelationsScenes();
+		proportionsView.init(dramaProportions, actsProportions, scenesProportions);
+		proportionsView.renderRelationsPieChart();
 
 	};
 
