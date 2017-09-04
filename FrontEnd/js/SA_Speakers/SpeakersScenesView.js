@@ -318,28 +318,37 @@ SA_Speakers.SpeakersScenesView = function(){
                    	   	startup: true
                    	   }};
 
-        var formatter = new google.visualization.NumberFormat(
-    		{fractionDigits: 6});
-        for(var j = 0; j < chosenSpeakersScenes.length; j++){
-        	formatter.format(data, (j+1));
-        }
-		
         var dashboard = new google.visualization.Dashboard(document.getElementById('dashbord-speakersScenes'));
-
-        var lineChartSpeechesSlider = new google.visualization.ControlWrapper({
-          'controlType': 'NumberRangeFilter',
-          'containerId': 'filter-speakersScenes',
-          'options': {
-            'filterColumnLabel': chosenSpeakersScenes[0]
-          }
-        });
+        
 
         var lineChart = new google.visualization.ChartWrapper({
           'chartType': 'LineChart',
           'containerId': 'chart-speakersScenes',
           'options': options
         });
-        dashboard.bind(lineChartSpeechesSlider, lineChart);
+
+        var formatter = new google.visualization.NumberFormat(
+    		{fractionDigits: 6});
+       	$(".filter").remove();
+        for(var j = 0; j < chosenSpeakersScenes.length; j++){
+        	formatter.format(data, (j+1));
+        	var g = document.createElement('div');
+			g.id = 'filter-speakersScenes-' + chosenSpeakersScenes[j];
+			$(g).addClass("filter");
+        	
+        	$("#dashbord-speakersScenes").prepend(g);
+        	
+        	var lineChartSpeechesSlider = new google.visualization.ControlWrapper({
+          		'controlType': 'NumberRangeFilter',
+          		'containerId': g.id,
+          		'options': {
+            	'filterColumnLabel': chosenSpeakersScenes[j]
+         	 	}
+         	 	
+        	});
+        	dashboard.bind(lineChartSpeechesSlider, lineChart);
+        }
+        
         dashboard.draw(data);
 	};
 
