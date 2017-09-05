@@ -56,6 +56,11 @@ table {
  	background-color: #3C8F6D;
  }
 
+ .dramaSelection{
+ 	font-size: 1.4em;
+ 	margin-top: 1%;
+ }
+
 .links {
 	color: black !important;
 }

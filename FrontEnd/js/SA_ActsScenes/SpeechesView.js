@@ -45,6 +45,12 @@ ActsScenes.SpeechesView = function(){
         var options = {title:'Repliken-Verlauf (ganzes Drama): ' + vAxisTitle,
         			   height: 600,
         			   width: 1130,
+        			   explorer: { 
+					        actions: ['dragToZoom', 'rightClickToReset'],
+					        axis: 'horizontal',
+					        keepInBounds: true,
+					        maxZoomIn: 10.0
+						},
         			   chartArea:{width:'80%',height:'75%'},
         			    trendlines: {
 				          0: {
@@ -58,16 +64,13 @@ ActsScenes.SpeechesView = function(){
 				          }
 				        },
 				        hAxis: {
-        			   	title: 'Repliken'
+        			   	title: 'Repliken',
+        			   	format: ' '
         			   },
         			   vAxis: {
         			   	title: vAxisTitle,
-        			   	baseline: 0,
-        			   },
-                   	   animation: {
-                   	   	duration: 700,
-                   	   	startup: true
-                   	   }};
+        			   }
+        			};
 
         var formatter = new google.visualization.NumberFormat(
     		{fractionDigits: 6});

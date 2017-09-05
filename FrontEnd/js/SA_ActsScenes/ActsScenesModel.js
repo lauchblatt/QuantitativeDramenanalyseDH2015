@@ -13,8 +13,8 @@ ActsScenes.ActsScenesModel = function(){
 	};
 
 	var initData = function(){
-		console.log(sa_data);
-		var drama = sa_data[0];
+		var drama = sa_chosenDrama;
+		console.log(sa_chosenDrama);
 		
 		for(i = 0; i < drama.acts.length; i++){
 			metricsActs.push(drama.acts[i].sentimentMetricsBasic)
