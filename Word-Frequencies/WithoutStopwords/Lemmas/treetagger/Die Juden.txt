@@ -1,28 +1,45 @@
 Title: Die Juden
-Number of all lemmas: 3266
-Nummber of different lemmas: 1371
+Number of all lemmas: 3814
+Nummber of different lemmas: 1427
 
 Lemma	POS	Frequency	Tokens
 Herr	NN	73	Herren, Herrn, Herr
 wissen	VVINF, VVFIN, VVPP	43	wissen, weiß, Wißt, wüßten, wüßte, Wissen, wußte, gewußt
 sagen	VVPP, VVFIN, VVINF	40	gesagt, sagt, sagen, sage, Sagen, sagte
+lassen	VVINF, VVFIN, VVPP, VVIMP	39	lassen, ließ, Lassen, gelassen, Laß, lasse, läßt
 gut	ADJD, ADJA	34	gut, guter, besser, guten, gute, Gut, Besser, Besten, besten, gutem
+O	NN	34	O
+ja	ADV, PTKANT	33	ja, Ja
 sehen	VVFIN, VVIMP, VVPP, VVINF	32	sieht, sieh, gesehen, sahen, sehen, sehe, seht, Sehe
+tun	VVFIN, VVPP, VVINF	31	tu, getan, tun, tut, täte
+schon	ADV	31	schon, Schon
+gehen	VVFIN, VVIMP, VVINF	31	geht, geh, gingen, Geht, gehe, gehen, ginge, Gehen, Gehet, ging
 wohl	ADV	30	wohl
+kommen	VVPP, VVINF, VVFIN, VVIMP	29	gekommen, kommen, Kommen, kam, kämen, kommt, komm, Kommt, Komm
 glauben	VVFIN, VVIMP, VVINF, VVPP	29	glaube, glauben, glaub, glaubt, geglaubt, glaubte, Glauben
 Dose	NN	26	Dose
+nein	PTKANT	26	nein, Nein
 Jude	NN	24	Juden, Jude
+ganz	ADV, ADJA	24	Ganz, ganz, ganzen, ganze, ganzer, ganzes
+mögen	VMFIN	23	mag, mögen, möchte, möge
 gewiss	ADJD, ADJA	20	gewiß, Gewiß, gewissen, Gewisse, Gewisser, gewisser
 nehmen	VVFIN, VVPP, VVINF	20	nimmt, nehme, genommen, nehmen, Nehmen
+viele	PIAT, PIS	20	viel, vielem, viele, vieles
+wer	PWS	20	Wen, Wem, wer, Wer, wem
+geben	VVINF, VVIMP, VVFIN, VVPP	19	geben, gib, gibt, Geben, gegeben, Gibt
 Vogt	NN	19	Vogt
 wenige	PIS, PIAT	19	wenigem, wenig, wenige, weniger, wenigen
+bleiben	VVPP, VVFIN, VVINF	19	geblieben, bleiben, blieben, blieb, bleibe
 Freund	NN	19	Freund, Freunde
 wahr	ADJD	18	wahr
+mehr	ADV, PIAT	18	mehr
 ehrlich	ADJA	17	ehrlichen, ehrlicher, ehrliches, ehrlichsten
 Hand	NN	16	Hand, Händen, Hände
 denken	VVFIN, VVINF	16	denkst, denken, dächte, denke, dachte
+gleich	PTKVZ, ADJD, ADJA	16	gleich, gleichen
 vielleicht	ADV	15	Vielleicht, vielleicht
 gar	ADV	15	gar
+warum	PWAV	15	warum, Warum
 allein	ADV, PTKVZ	15	allein, Allein
 fragen	VVINF, VVFIN, VVPP	14	fragen, fragt, fragst, fragte, gefragt
 eben	ADV	14	eben
@@ -30,24 +47,25 @@ ei	NE	13	Ei, ei
 Mann	NN	13	Mann
 lieb	ADJA, ADJD	12	lieben, liebe, lieber, Lieber
 hören	VVINF, VVIMP, VVFIN	12	hören, hör, höre, hört, Hören
-unser	PPOSAT	12	unsrer, unserm, Unser, unser, unsere
-euer	PPOSAT	12	Eurem, Euren, Euer, Eure
 Lisette	NE	11	Lisette
+bringen	VVINF, VVFIN, VVPP	11	bringen, bringt, brächte, brachte, gebracht
 Bart	NN	11	Bärte, Bart, Bärten
 Papa	NN	11	Papa
+halten	VVINF, VVFIN	11	halten, hält, halte, hielt
 stehen	VVFIN	11	steht, stehen
 ha	NE	11	ha
+wegen	APPO, APPR	11	wegen
 finden	VVFIN, VVPP, VVINF	10	fand, finden, gefunden
 Leute	NN	10	Leute, Leuten
 Kerl	NN	10	Kerle, Kerl
 ach	ITJ	10	Ach
 Bediente	NN	10	Bedienten, Bedienter
 Uhr	NN	9	Uhr
+dafür	PAV	9	dafür
 Geschenk	NN	9	Geschenken, Geschenk, Geschenke
 erst	ADV, ADJA	9	erst, erste
 bitten	VVFIN, VVINF, VVPP	9	bitten, bitte, gebeten
 reden	VVINF, VVFIN	9	reden, rede
-sonst	ADV	9	sonst, Sonst
 Freundschaft	NN	9	Freundschaft
 setzen	VVFIN, VVPP, VVINF	9	setzt, gesetzt, Setzen, setzen, Gesetzt
 bald	ADV	9	bald
@@ -60,10 +78,12 @@ fort	PTKVZ, ADV	8	fort, Fort
 Tag	NN	8	Tage, Tag, Tagen
 groß	ADJD, ADJA	8	groß, großer, größte, großes, große, großen
 kömmt	VVFIN, ADJA	8	kömmt
+beide	PIS, PIAT	8	beide, beides, beiden
 gern	ADV	8	gern
 Glück	NN	8	Glück, Glücks
 Wahrheit	NN	8	Wahrheit
 Diener	NN	8	Diener
+davon	PAV, PTKVZ	8	davon
 Seite	NN	7	Seite
 beinahe	ADV	7	beinahe, Beinahe
 Geier	NN, NE	7	Geier
@@ -79,6 +99,7 @@ irren	VVFIN, VVPP, VVINF	7	irrte, irren, geirrt
 Umstand	NN	7	Umstände, Umständen
 klug	ADJD, ADJA	7	klüger, klug, kluges
 Gott	NN	7	Gott
+weit	ADJD	7	weitesten, weit
 lang	ADJD	7	länger, lang
 befehlen	VVPP, VVINF, VVFIN	7	befohlen, befehlen
 ichs	ADJD	7	ichs
@@ -86,6 +107,7 @@ Christ	NN, NE	7	Christen, Christ
 entdecken	VVFIN, VVINF, VVPP	7	entdecken, entdeckt, entdecke
 Mensch	NN	7	Menschen, Mensch
 schämen	VVFIN, VVINF, VVPP	6	schäme, schämen, geschämt
+dürfen	VMFIN	6	dürfte, darf, dürfen, dürften
 nu	ITJ	6	nu, Nu
 Vermögen	NN	6	Vermögen
 lange	ADV	6	lange
@@ -101,6 +123,7 @@ fallen	VVFIN, VVINF	6	falle, fallen
 meinig	PPOSS	6	meinige, meinigen
 dumm	ADJA, ADJD	6	dummer, dumm
 sitzen	VVINF, VVFIN	6	sitzen, sitze
+nah	ADJA, ADJD	6	nahen, näher, nahes
 böse	ADJD, ADJA	6	böse
 suchen	VVFIN, VVINF	6	suche, suchen, sucht
 Liebe	NN	6	Liebe
@@ -108,6 +131,7 @@ Wohltat	NN	6	Wohltaten, Wohltat
 annehmen	VVPP, VVIZU, VVINF	5	angenommen, anzunehmen, annehmen
 gottlos	ADJA	5	gottlosen, gottlose, gottloses, gottloser
 sicher	ADJD, ADJA	5	sichrer, sichersten, sicher, sichere
+wann	PWAV	5	wann
 Frage	NN	5	Frage
 laufen	VVFIN, VVPP	5	liefen, läuft, gelaufen, laufe, laufen
 gestehn	VVINF, VVFIN, ADJD	5	gestehn
@@ -115,7 +139,6 @@ schenken	VVPP, VVINF	5	geschenkt, schenken
 klein	ADJA, ADJD	5	kleine, klein, kleinen
 gehn	VVINF, ADJD, VVFIN	5	gehn
 ertappen	VVPP, VVFIN	5	ertappt, ertappte
-genug	ADV	5	genug, Genug
 wenig	ADV	5	wenig
 verschweigen	VVPP, VVINF	5	verschwiegen, verschweigen
 Volk	NN	5	Volk, Völker, Volke
@@ -123,12 +146,13 @@ Volk	NN	5	Volk, Völker, Volke
 verstehen	VVPP, VVFIN	5	verstanden, versteht, verstehe
 hurtig	ADJD	5	Hurtig, hurtig, hurtiger
 kurz	ADJA, ADJD	5	kurzem, kurzen, kurzer, Kurz
+befinden	VVPP, VVINF, VVFIN	5	befunden, befinden, befindet, befinde
 wert	ADJD	5	wert
 Name	NN	5	Namen
 lernen	VVINF, VVPP, VVFIN	5	lernen, gelernt, lerne
-Weg	NN	5	Wege, Weg
 Grobheit	NN	5	Grobheit
 Nu	NN	5	Nu
+her	PTKVZ	5	her
 Ehre	NN	5	Ehre
 begleiten	VVINF, VVPP	5	begleiten, begleitet
 Mühe	NN	5	Mühe
@@ -137,23 +161,26 @@ Dienst	NN	5	Dienste, Diensten
 leicht	ADJD	5	leicht, leichter
 lügen	VVINF, VVFIN, VVPP	5	lügen, log, gelogen, lögen
 wenigstens	ADV	5	wenigstens
+liegen	VVFIN, VVPP	5	liegt, gelegen
 reißen	VVPP, VVINF, VVFIN	5	gerissen, reißen, riß
 Spaß	NN	5	Spaß
 vorhin	ADV	5	Vorhin, vorhin
 Ernst	NE	5	Ernst
 etwa	ADV	5	etwa
 zeigen	VVINF, VVFIN, VVPP	5	zeigen, zeigt, gezeigt, Zeigt
+ab	PTKVZ	5	ab
+genug	ADV	5	genug, Genug
 Auge	NN	5	Augen, Auge
 Vermutung	NN	5	Vermutung, Vermutungen
 freilich	ADV	5	freilich
 jung	ADJA, ADJD	5	junge, jung, junger, jungen
-kaum	ADV	4	kaum
 übel	ADJD	4	übel
 Rede|Reden	NN	4	Reden
 Gedanke	NN	4	Gedanken
 verraten	VVPP, VVFIN	4	verraten, verratet, verrate, verrieten
 Garten	NN	4	Garten
 Tochter	NN	4	Tochter
+sprechen	VVFIN, VVINF	4	Sprechen, sprechen
 lieben	VVFIN	4	liebe
 Krumm	NN, NE	4	Krumm
 leiden	VVINF	4	leiden
@@ -166,6 +193,7 @@ Martin	NE	4	Martin
 Unglück	NN	4	Unglücke, Unglück
 antworten	VVINF	4	antworten
 merken	VVINF, VVFIN, VVPP	4	merken, merke, gemerkt, Merken
+je	ADV, APPR, KOUS	4	Je, je
 Sache	NN	4	Sache, Sachen
 dergleichen	PIS	4	dergleichen
 Abreise	NN	4	Abreise
@@ -194,16 +222,20 @@ unschuldig	ADJD	4	unschuldig
 heute	ADV	4	heute
 Ding	NN	4	Dinger, Ding, Dingen, Dinge
 verlassen	VVFIN, VVINF, VVPP	4	verließen, verlassen
+scheinen	VVFIN	4	scheinen, scheint
+darauf	PAV	4	darauf
 Frauenzimmers	NN	4	Frauenzimmers
 Himmel	NN	4	Himmel
 Leben	NN	4	Leben, Lebens
 liebenswürdig	ADJA, ADJD	4	liebenswürdigen, liebenswürdig, liebenswürdigste
 verlangen	VVINF, VVFIN	4	verlangen, verlange
 Gefahr	NN	4	Gefahr
+kaum	ADV	4	kaum
 verbinden	VVFIN, VVINF	4	verband, verbinden, Verbinde
 allezeit	ADV	4	allezeit
 greifen	VVINF, VVFIN, VVPP	4	greifen, griff, gegriffen
 zwei	CARD	4	zwei, Zwei
+daran	PAV	4	daran
 übrig	ADJA	4	übrigen, übrige
 anfallen	VVPP, VVFIN	3	angefallen, anfiele
 vergessen	VVFIN, VVIMP	3	vergißt, Vergiß, Vergessen
@@ -225,9 +257,9 @@ angenehm	ADJA, ADJD	3	angenehmen, angenehme, angenehmer
 Räuber	NN	3	Räuber
 anfangen	VVINF, VVPP	3	anfangen, angefangen
 erhalten	VVINF, VVFIN, VVPP	3	erhalten, erhält
-diese	PDS	3	diese, Diese, dieser
 belieben	VVFIN	3	belieben, Belieben, beliebten
 stehlen	VVINF, VVPP	3	stehlen, gestohlen
+desto	KON	3	desto, Desto
 Zweifel	NN	3	Zweifel
 Fasson	NN	3	Fasson
 niemals	ADV	3	niemals
@@ -241,6 +273,7 @@ Unrecht	NN	3	Unrecht
 Verdrüßlichkeiten	NN	3	Verdrüßlichkeiten
 grob	ADJD	3	grob
 Wohltäter	NN	3	Wohltäters, Wohltäter
+immer	ADV	3	immer
 erweisen	VVPP, VVINF	3	erwiesen, erweisen
 schuldig	ADJD	3	schuldig
 ähnlich	ADJA, ADJD	3	ähnlicher, ähnlich
@@ -259,7 +292,6 @@ Mantelsäcke	NN	3	Mantelsäcke
 einander	PRF	3	einander
 schimpfen	VVFIN, VVINF	3	schimpft, Schimpft, schimpfen
 ah	ITJ	3	Ah
-Dose|Dosis	NN	3	Dosen
 schätzen	VVFIN, VVINF	3	Schätzen, schätzen, schätze
 Exempel	NN	3	Exempel
 Stunde|Stunden	NN	3	Stunden
@@ -267,6 +299,7 @@ empfindlich	ADJD	3	empfindlich
 wohin	PWAV	3	Wohin, wohin
 Reise	NN	3	Reise
 leid	ADJD	3	leid
+meist	ADV, PIAT	3	meist, meisten, meiste
 alsdann	VVFIN, ADJD	3	alsdann
 aufs	APPRART	3	aufs, Aufs
 verlieren	VVPP, VVFIN	3	verloren, verliert
@@ -280,6 +313,7 @@ bedenken	VVINF, VVFIN	3	bedenken, bedenke, Bedenken
 Hunger	NN	3	Hunger
 abpacken	VVINF	3	abpacken
 Durst	NN	3	Durst
+Ja	NN	3	Ja
 Kind	NN	3	Kind, Kindes
 bewegen	VVFIN, VVINF	3	bewog, bewegen
 erkenntlich	ADJD	3	erkenntlich
@@ -288,7 +322,6 @@ fällen	VVPP	3	gefällt
 stellen	VVINF, VVFIN	3	stellen, stellt, stelle
 redt	ADJD	3	redt
 weinen	VVFIN	3	weinen, weine, weint
-hinter	APPR	3	hinter
 allgemein	ADJA, ADJD	3	allgemeine, allgemeiner, allgemein
 verfahren	VVPP, VVFIN	3	verfahren, verfährt
 Frauenzimmer	NN	3	Frauenzimmer
@@ -300,17 +333,20 @@ zornig	ADJD	3	zornig
 schön	ADJA	3	schöne
 Gut	NN	3	Gut, Gütern
 paar	PIAT	3	Paar
+hoch	ADJA, ADJD	3	höchste, höher
 Mannsperson	NN	3	Mannspersonen, Mannsperson
 zugehen	VVPP, VVINF, VVFIN	3	zugegangen, zugehen, zuging
 heraus	PTKVZ	3	heraus
 gedenken	VVFIN, VVINF	3	gedenke, gedenken
 dahin	PAV	3	dahin
+wichtig	ADJD, ADJA	3	wichtig, wichtigen, wichtigere
 umbringen	VVINF	3	umbringen
 überlegen	VVFIN	3	Überlegen, überlegen
 drum	PAV	3	Drum
 wild	ADJA, ADJD	3	wilde, wild
 Verwirrung	NN	3	Verwirrung, Verwirrungen
 oft	ADV	3	oft
+Dose|Dosis	NN	3	Dosen
 höflich	ADJD	3	höflicher, Höflich, höflich
 wünschen	VVINF, VVIMP	3	wünschen, wünsch
 zweifeln	VVINF, VVFIN	3	zweifeln, zweifle
@@ -320,9 +356,11 @@ jemals	ADV	2	jemals
 träumen	VVFIN	2	Träumt, Träumen
 recht|rechts	ADJA	2	rechten, rechte
 Straßenräuber	NN	2	Straßenräuber, Straßenräubern
+neu	ADJA	2	neuen, neue
 satteln	VVINF, VVPP	2	satteln, gesattelt
 bezahlen	VVINF	2	bezahlen
 Mangel	NN	2	Mangel
+erfreuen	VVFIN, VVINF	2	erfreut, erfreuen
 Gleiche	NN	2	Gleiches, Gleichem
 Acht	NN	2	Acht
 Mantelsack	NN	2	Mantelsack
@@ -333,6 +371,7 @@ Neugierde	NN	2	Neugierde
 Hülfe	NN	2	Hülfe
 antreffen	VVFIN, VVPP	2	antrifft, angetroffen
 schade	ADJD	2	Schade
+eigen	ADJA	2	eigner, eignen
 verbindlich	ADJD	2	verbindlich
 Antrag	NN	2	Antrag
 Arm|Arme	NN	2	Armen, Arme
@@ -346,7 +385,6 @@ wohlbestallt	ADJA	2	wohlbestallter
 bedanken	VVINF	2	bedanken
 sollens	VVFIN	2	sollens
 verschaffen	VVINF, VVFIN	2	verschaffen, verschaffte
-weiter	ADV	2	weiter
 bekannt	ADJD, ADJA	2	bekannt, bekannter
 brav	ADJD, ADJA	2	brav, braver
 Neugierigkeit	NN	2	Neugierigkeit
@@ -359,13 +397,13 @@ Genugtuung	NN	2	Genugtuung
 erzählen	VVINF, VVFIN	2	erzählen, Erzählen
 wenden	VVFIN	2	wendet
 ordentlich	ADJA, ADJD	2	ordentliche, ordentlicher
+dankbar	ADJD	2	dankbar
 schließen	VVINF, VVFIN	2	schließen
 ohngefähr	ADJD	2	ohngefähr
 gefällig	ADJA, ADJD	2	gefällige, gefällig
 Eigenschaft	NN	2	Eigenschaften
 gewinnen	VVPP	2	gewonnen
 Anerbieten	NN	2	Anerbieten
-dankbar	ADJD	2	dankbar
 Schulze	NE	2	Schulze
 Art	NN	2	Art
 zärtlich	ADJA	2	zärtliche, zärtlichen
@@ -410,6 +448,7 @@ Glücke	NN	2	Glücke
 darin	PAV	2	darin
 verdammt	ADJA	2	verdammte, verdammten
 zugleich	ADV	2	zugleich
+dabei	PAV	2	dabei
 Verfahren	NN	2	Verfahren, Verfahrens
 hungern	VVFIN	2	hungert
 Fremde	NN	2	Fremden
@@ -418,7 +457,7 @@ Vaterland	NN	2	Vaterlande
 essen	VVINF	2	essen
 ehe	KOUS	2	ehe
 erinnern	VVFIN	2	erinnerte, Erinnern
-am	PTKA	2	am
+sobald	KOUS	2	Sobald, sobald
 halber	APPO	2	halber
 zanken	VVINF	2	zanken
 Spiel	NN	2	Spiel
@@ -428,6 +467,7 @@ notwendig	ADJD	2	notwendig
 beschuldigen	VVPP	2	beschuldigt
 erfahren	VVINF, VVFIN	2	erfahren, erfährt
 Bitte|Bitten	NN	2	Bitten
+Kommen	NN	2	Kommen
 hinein	PTKVZ	2	hinein
 Menschenliebe	NN	2	Menschenliebe
 Unvorsichtigkeit	NN	2	Unvorsichtigkeit
@@ -439,7 +479,7 @@ besitzen	VVFIN	2	besitzt, besäßen
 rächen	VVINF	2	rächen
 darum	PAV	2	Darum, darum
 Gewissen	NN	2	Gewissen
-Strick	NN	2	Stricke
+längst	ADV	2	längst
 Adel	NN	2	Adel
 heran	PTKVZ	2	heran
 rasend	ADJD	2	rasend
@@ -492,6 +532,7 @@ fallen|gefallen	VVPP	2	gefallen
 Duell	NN	2	Duells, Duell
 dringen	VVFIN	2	dringen, drang
 verwirren	VVPP, VVFIN	2	verwirrt
+letzt	ADJA	2	letzten, letzte
 umwenden	VVINF	2	umwenden
 wohnen	VVPP	2	gewohnt
 Not	NN	2	Not
@@ -505,6 +546,7 @@ Frankreich	NE	2	Frankreich
 Land	NN	2	Lande
 begreifen	VVFIN, VVIMP	2	begreife, begreif
 empfehlen	VVINF, VVFIN	2	empfehlen, empfehle
+ziemlich	ADV	2	ziemlich
 rechtschaffnen	ADJA	2	rechtschaffnen
 eins	CARD	2	eins
 Reisende	NN	2	Reisende
@@ -512,7 +554,6 @@ wundern	VVFIN	2	wundern, Wundern
 Sau	NN	2	Säue
 Kompliment	NN	2	Komplimente
 vorwerfen	VVIZU, VVINF	2	vorzuwerfen, vorwerfen
-erfreuen	VVFIN, VVINF	2	erfreut, erfreuen
 Griff	NN	2	Griff, Griffe
 umsonst	ADV	2	umsonst
 Rede	NN	2	Rede
@@ -530,12 +571,11 @@ Kenner	NN	2	Kenner
 zumuten	VVINF	2	zumuten
 vergebens	ADV	2	vergebens
 Physiognomie	NN	2	Physiognomie
-längst	ADV	2	längst
+Strick	NN	2	Stricke
 halbpart	ADJD	2	halbpart
 Liebesantrag	NN	2	Liebesantrag
 beschreiben	VVINF, VVFIN	2	beschreiben, beschreibt
 Tasche	NN	2	Tasche
-weg	PTKVZ	2	weg
 treffen|triefen	VVPP	2	getroffen
 Ihrigen	NN	2	Ihrigen
 Frühstück	NN	2	Frühstück
@@ -572,9 +612,11 @@ Untersuchung	NN	1	Untersuchung
 toll	ADJD	1	toll
 Zeug	NN	1	Zeug
 drei	CARD	1	drei
+vorher	ADV	1	vorher
 wirds	VVFIN	1	wirds
 ungefähr	ADJD	1	ungefähr
 Eigennützige	NN	1	Eigennützige
+anstatt	KOUI	1	anstatt
 ungekünsteltste	ADJA	1	ungekünsteltste
 allzeit	ADV	1	allzeit
 gewissenhaft	ADJD	1	gewissenhaft
@@ -583,12 +625,12 @@ unleidlich	ADJD	1	unleidlich
 drauf	PAV	1	drauf
 wars	NE	1	wars
 Person	NN	1	Person
-er|es	PPER	1	Ihm
 Gewinst	NN	1	Gewinst
 lohnen	VVFIN	1	lohnt
 trotz	APPR	1	Trotz
 Umwenden	NN	1	Umwenden
 sterben	VVPP	1	gestorben
+wirklich	ADJA	1	wirkliche
 Termin	NN	1	Termin
 hundert	CARD	1	hundert
 Junge	NN	1	Jungen
@@ -622,7 +664,6 @@ Ernste	NN	1	Ernste
 angehen	VVFIN	1	angeht
 unnötig	ADJA	1	unnötige
 Schuldige	NN	1	Schuldigen
-einen	VVINF	1	einen
 Pistol	NN	1	Pistol
 gefährlich	ADJA	1	gefährlichen
 tot	ADJD	1	tot
@@ -647,7 +688,6 @@ taumeln	VVFIN	1	taumelt
 Einfall	NN	1	Einfall
 erfolgen	VVFIN	1	erfolgt
 Ungelegenheit	NN	1	Ungelegenheit
-Verklagen	NN	1	Verklagen
 einladen	VVINF	1	einladen
 durchkommen	VVIZU	1	durchzukommen
 visitieren	VVFIN	1	visitieren
@@ -669,8 +709,9 @@ hiesig	ADJA	1	hiesige
 inne	PTKVZ	1	inne
 schreiben	VVFIN	1	schreiben
 Alfanzereien	NN	1	Alfanzereien
-zuviele	PIS	1	zuviel
+aussinnen	VVPP	1	ausgesonnen
 fangen	VVFIN	1	fangen
+Lassen	NN	1	Lassen
 allzugewissenhaften	NN	1	allzugewissenhaften
 Philosophie	NN	1	Philosophie
 Ausflucht	NN	1	Ausflucht
@@ -690,6 +731,7 @@ fest	ADJD	1	fest
 Liebste	NN	1	Liebsten
 boshafterer	ADJA	1	boshafterer
 Schutzengel	NE	1	Schutzengel
+bezeugen	VVFIN	1	bezeugte
 gewöhnen	VVINF	1	gewöhnen
 Scherz	NN	1	Scherze
 Niesen	NN	1	Niesen
@@ -702,16 +744,15 @@ Portion	NN	1	Portion
 Grobian	NN	1	Grobian
 ankommen	VVPP	1	angekommen
 Verlauf	NN	1	Verlauf
-beschweren	VVINF	1	beschweren
 geschmeidig	ADJD	1	geschmeidiger
 übern	APPRART	1	übern
-Wollte	VVFIN	1	Wollte
+französisch	ADJA	1	französische
 besehn	VVINF	1	besehn
 offnen	ADJA	1	offnen
 Tugend	NN	1	Tugend
-bezeugen	VVFIN	1	bezeugte
 Anfange	NN	1	Anfange
 durstet	ADJD	1	durstet
+beschweren	VVINF	1	beschweren
 Haufe	NN	1	Haufen
 stoßen	VVFIN	1	stößt
 Stolz	NN	1	Stolz
@@ -725,6 +766,7 @@ Abendmahlzeit	NN	1	Abendmahlzeit
 sinnreich	ADJD	1	sinnreich
 Quark	NN	1	Quark
 stiften	VVFIN	1	stiften
+mehrere	PIS	1	mehrere
 binden	VVINF	1	binden
 Bräutigam	NN	1	Bräutigam
 Religionspunkt	NN	1	Religionspunkt
@@ -749,7 +791,7 @@ Loch	NN	1	Loch
 bedienen	VVINF	1	bedienen
 Abschiedsformeln	NN	1	Abschiedsformeln
 Vogte	NN	1	Vogte
-toppen	VVIMP	1	Topp
+leer	ADJD	1	leer
 Freundin	NN	1	Freundin
 Hund	NN	1	Hund
 Geringe	NN	1	Geringes
@@ -802,8 +844,8 @@ Essenszeit	NN	1	Essenszeit
 ängstlich	ADJA	1	ängstliches
 Reisebibliothek	NN	1	Reisebibliothek
 verdienstliches	ADJA	1	verdienstliches
-französisch	ADJA	1	französische
 ausplaudern	VVINF	1	ausplaudern
+mal	ADV	1	mal
 ärgern	VVFIN	1	ärgert
 Vormittag	NN	1	Vormittag
 st	VVFIN	1	st
@@ -835,6 +877,7 @@ Meineid	NN	1	Meineid
 Anstalt	NN	1	Anstalt
 Warens	ADV	1	Warens
 einnehmender	ADJD	1	einnehmender
+völlig	ADJA	1	völligen
 behalten	VVFIN	1	behaltet
 Entleibte	NN	1	Entleibte
 Atem	NN	1	Atem
@@ -849,6 +892,7 @@ freuen	VVFIN	1	freue
 beschämen	VVFIN	1	beschämen
 unterdessen	ADV	1	unterdessen
 erkundigen	VVINF	1	erkundigen
+bestehen	VVFIN	1	besteht
 ansichtig	ADV	1	ansichtig
 Größe	NN	1	Größe
 unvollkommen	ADJD	1	unvollkommen
@@ -882,10 +926,11 @@ Abneigung	NN	1	Abneigung
 versichern	VVFIN	1	versichere
 erwischen	VVFIN	1	erwischt
 Mädel	NN	1	Mädel
-Werk	NN	1	Werk
 brauchen|gebrauchen	VVPP	1	gebraucht
 Erlauben	NN	1	Erlauben
+entweder	KON	1	Entweder
 teuer	ADJA	1	teuerster
+Werk	NN	1	Werk
 sichs	NE	1	sichs
 gleichviel	ADV	1	gleichviel
 hintertreiben	VVINF	1	hintertreiben
@@ -913,6 +958,7 @@ Unbekannte	NN	1	Unbekannten
 Befehl	NN	1	Befehl
 berichten	VVPP	1	berichtet
 Ankunft	NN	1	Ankunft
+bieten	VVFIN	1	biete
 frühmorgens	ADV	1	frühmorgens
 Abend	NN	1	Abends
 Hehler	NN	1	Hehler
@@ -925,6 +971,7 @@ verstehn	VVFIN	1	verstehn
 Nacht	NN	1	Nacht
 vergelten	VVINF	1	vergelten
 Geschwindigkeit	NN	1	Geschwindigkeit
+toppen	VVIMP	1	Topp
 bloß	ADJA	1	bloße
 Dummheit	NN	1	Dummheit
 schmelzen	VVINF	1	schmelzen
@@ -945,7 +992,6 @@ venia	NE	1	venia
 rühmen	VVINF	1	rühmen
 erwachen	VVINF	1	erwachen
 zürnen	VVFIN	1	zürnen
-aussinnen	VVPP	1	ausgesonnen
 stark	ADJD	1	stark
 Schönheit	NN	1	Schönheit
 beleidigt	ADJD	1	beleidigt
@@ -956,12 +1002,15 @@ Gedränge	NN	1	Gedränge
 eingehen	VVINF	1	eingehen
 Gehülfe	NN	1	Gehülfe
 Verfolgung	NN	1	Verfolgung
+fügen	VVFIN	1	fügen
 erlangt	ADJA	1	erlangtes
 vors	APPRART	1	vors
 melancholisch	ADJA	1	melancholische
 pfui	ITJ	1	Pfui
 gelinde	ADJD	1	gelinder
-sodann	ADV	1	Sodann
+hinzu	PTKVZ	1	hinzu
+eigentlich	ADV	1	eigentlich
+gesetzt	ADJD	1	Gesetzt
 dunkel	ADJD	1	dunkel
 Sacke	NN	1	Sacke
 anderns	ADV	1	anderns
@@ -1028,8 +1077,10 @@ Heldengedichten	NN	1	Heldengedichten
 fünfzig	CARD	1	fünfzig
 Erde	NN	1	Erde
 nachgewünscht	VVPP	1	nachgewünscht
+bestimmen	VVPP	1	bestimmt
 vermag	VVFIN	1	vermag
 Alter	NN	1	Alter
+Gesetzchen	NN	1	Gesetzchen
 Handelschaft	NN	1	Handelschaft
 Ers	ADJD	1	Ers
 aufpacken	VVFIN	1	aufpacken
@@ -1060,9 +1111,9 @@ wofür	PWAV	1	wofür
 Dämmerung	NN	1	Dämmerung
 subtil	ADJD	1	subtil
 Laffe	NN	1	Laffe
-jen	PDS	1	jene
 gereiset	VVFIN	1	gereiset
 Breslau	NE	1	Breslau
+darüber	PAV	1	darüber
 leiblich	ADJA	1	leiblichen
 Straße	NN	1	Straßen
 dank	APPR	1	Dank
@@ -1101,6 +1152,7 @@ Gesichtsbildung	NN	1	Gesichtsbildung
 verlohne	VVFIN	1	verlohne
 Katze	NN	1	Katze
 Schulzen	NN	1	Schulzen
+Nein	NN	1	Nein
 Neid	NN	1	Neid
 drängen	VVFIN	1	drängte
 schmeißen	VVFIN	1	schmeißt
@@ -1151,9 +1203,10 @@ Heldentat	NN	1	Heldentaten
 hinten	ADV	1	hinten
 Kutscher	NN	1	Kutscher
 offenbar	ADJD	1	offenbar
+Verklagen	NN	1	Verklagen
 funfzig	CARD	1	funfzig
-fügen	VVFIN	1	fügen
-Ohr	NN	1	Ohren
+allerdings	ADV	1	allerdings
+daraus	PAV	1	daraus
 verderben	VVFIN	1	verderbt
 Baron	NN	1	Baron
 verursachen	VVFIN	1	verursachte
@@ -1165,6 +1218,7 @@ hochmütig	ADJA	1	hochmütige
 ausschütten	VVINF	1	ausschütten
 Feind	NN	1	Feinden
 Heirat|Heiraten	NN	1	Heiraten
+nachdenkend	ADJD	1	nachdenkend
 Anwesenheit	NN	1	Anwesenheit
 kürzen	VVFIN	1	kürzen
 Böse	NN	1	Bösem
@@ -1177,7 +1231,6 @@ holen	VVIMP	1	hol
 Ausnahme	NN	1	Ausnahme
 Ohrwürmchen	NN	1	Ohrwürmchen
 witzig	ADJA	1	witzige
-Gesetzchen	NN	1	Gesetzchen
 belohnen	VVPP	1	belohnt
 wiederkommen	VVINF	1	wiederkommen
 erkenntliches	ADJA	1	erkenntliches
@@ -1187,6 +1240,7 @@ Nötige	NN	1	Nötige
 abgehen	VVFIN	1	abgehen
 Blitz	NN	1	Blitz
 Kunst	NN	1	Kunst
+Statt	NN	1	Statt
 Zimmermann	NE	1	Zimmermann
 Pflicht	NN	1	Pflicht
 gestehen	VVINF	1	gestehen
@@ -1194,6 +1248,7 @@ betaure	VVFIN	1	betaure
 Bedenken	NN	1	Bedenken
 prahlen	VVINF	1	prahlen
 unzulänglich	ADJD	1	unzulänglich
+dienstwilliger	ADJA	1	dienstwilliger
 Wichtigers	NN	1	Wichtigers
 neunmalen	ADJA	1	neunmalen
 anbeten	VVINF	1	anbeten
@@ -1214,7 +1269,6 @@ danken	VVINF	1	danken
 hindern	VVFIN	1	hindert
 Erklärung	NN	1	Erklärung
 Roman	NN	1	Roman
-nachdenkend	ADJD	1	nachdenkend
 erstaunen	VVINF	1	erstaunen
 heiß	ADJD	1	heiß
 zeitig	ADJD	1	zeitig
@@ -1263,6 +1317,7 @@ unhöflich	ADJD	1	unhöflich
 Glas	NN	1	Gläser
 ists	VVFIN	1	ists
 zurück	PTKVZ	1	zurück
+zuviele	PIS	1	zuviel
 herausfallen	VVFIN	1	herausfiele
 adieu	ADV	1	Adieu
 durchdringet	VVFIN	1	durchdringet
@@ -1300,6 +1355,7 @@ verhindern	VVPP	1	verhindert
 ken	VVINF	1	ken
 sparen	VVFIN	1	sparen
 verkappt	ADJA	1	verkappten
+gleichen	VVFIN	1	glichen
 verkaufen	VVINF	1	verkaufen
 Knecht	NN	1	Knecht
 Lot	NN	1	Lot
@@ -1312,7 +1368,6 @@ Gespräch	NN	1	Gespräch
 Stadt	NN	1	Städten
 Flasche	NN	1	Flaschen
 moralisieren	VVINF	1	moralisieren
-leer	ADJD	1	leer
 Kalender	NN	1	Kalender
 nütze	ADV	1	nütze
 ziehen	VVINF	1	ziehen
@@ -1339,13 +1394,13 @@ besehen	VVFIN	1	besehe
 Gelegenheit	NN	1	Gelegenheit
 ersuchen	VVFIN	1	ersuche
 Küsschen	NN	1	Küßchen
-dienstwilliger	ADJA	1	dienstwilliger
+Ohr	NN	1	Ohren
 Anverwandte	NN	1	Anverwandten
 letztemal	ADV	1	letztemal
 denken|gedenken	VVPP	1	gedacht
 erpicht	ADJD	1	erpicht
 ausgestellet	ADJD	1	ausgestellet
-gesetzt	ADJD	1	Gesetzt
+sodann	ADV	1	Sodann
 Geld	NN	1	Geld
 Besorgnis	NN	1	Besorgnis
 Grund	NN	1	Grunde
@@ -1374,3 +1429,4 @@ Landwein	NN	1	Landwein
 Besaufen	NN	1	Besaufen
 Ausschweifung	NN	1	Ausschweifungen
 vertreiben	VVINF	1	vertreiben
+außerdem	ADV	1	außerdem

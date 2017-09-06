@@ -12,19 +12,24 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dlOutput = DramaLanguage_Output()
-	dlOutput.setLanguageProcessor("treetagger")
+	"""
+	dlOutput.setLanguageProcessor("textblob")
+	dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Emilia_t.xml",\
+	 "../Word-Frequencies/testo", False, "standardList");
 	#dlOutput.test()
+	"""
+	
 
 	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/", False)
-	dlOutput.processEntireCorpusAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/EntireCorpus-withoutStopwords-noFrequNumbers1.txt", False)
+	#dlOutput.processEntireCorpusAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/EntireCorpus-withoutStopwords-noFrequNumbers1.txt", False)
 
 	#dlOutput.processEntireCorpusAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
 
 	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test6")
 	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
 	#dlOutput = DramaLanguage_Output()
-	#dlOutput.generateOutputForAllDramas(True)
-	#dlOutput.generateEntireCorpusOutput(True)
+	#dlOutput.generateOutputForAllDramas(False, "standardList")
+	dlOutput.generateEntireCorpusOutput(False, "standardList")
 
 class DramaLanguage_Output:
 
@@ -41,7 +46,7 @@ class DramaLanguage_Output:
 		self.generateOutputForAllDramas(withStopwords)
 		self.generateEntireCorpusOutput(withStopwords)
 
-	def generateOutputForAllDramas(self, withStopwords):
+	def generateOutputForAllDramas(self, withStopwords, stopWordList):
 		processors = ["treetagger", "textblob"]
 		for processor in processors:
 			inBetweenFolder = ""
@@ -50,17 +55,19 @@ class DramaLanguage_Output:
 			else:
 				inBetweenFolder = "WithoutStopwords"
 			self.setLanguageProcessor(processor)
-			self.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/" + inBetweenFolder + "/Tokens/" + processor + "/", withStopwords)
-			self.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/" + inBetweenFolder + "/Lemmas/" + processor + "/", withStopwords)
+			self.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/" \
+				+ inBetweenFolder + "/Tokens/" + processor + "/", withStopwords, stopWordList)
+			self.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/" \
+				+ inBetweenFolder + "/Lemmas/" + processor + "/", withStopwords, stopWordList)
 
-	def generateWordFrequenciesOutputTokens(self, inputPath, outputPath, withStopwords):
+	def generateWordFrequenciesOutputTokens(self, inputPath, outputPath, withStopwords, stopWordList):
 		self._lp.processSingleDramaTokens(inputPath)
 		tokens = []
 		if(withStopwords):
 			wordFrequencies = self.calcWordFrequencies(self._lp._tokens)
 			tokens = self._lp._tokens
 		else:
-			self._lp.removeStopwordsFromTokens()
+			self._lp.removeStopwordsFromTokens(stopWordList)
 			wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
 			tokens = self._lp._tokensWithoutStopwords
 
@@ -82,14 +89,14 @@ class DramaLanguage_Output:
 			outputFile.write(token + "\t" + str(frequ[1]) + "\n")
 		return outputFile
 
-	def generateWordFrequenciesOutputLemmas(self, inputPath, outputPath, withStopwords):
+	def generateWordFrequenciesOutputLemmas(self, inputPath, outputPath, withStopwords, stopWordList):
 		self._lp.processSingleDrama(inputPath)
 		lemmas = []
 		if(withStopwords):
 			wordFrequencies = self.calcWordFrequencies(self._lp._lemmas)
 			lemmas = self._lp._lemmas
 		else:
-			self._lp.removeStopWordsFromLemmas()
+			self._lp.removeStopWordsFromLemmas(stopWordList)
 			wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
 			lemmas = self._lp._lemmasWithoutStopwords
 
@@ -111,7 +118,7 @@ class DramaLanguage_Output:
 			outputFile.write(str(lemma) + "\t" + ', '.join(POS) + "\t" + str(frequ[1]) + "\t" + ', '.join(tokens) + "\n")
 		return outputFile
 
-	def processMultipleDramasAndGenerateOutputTokens(self, originpath, resultpath, withStopwords):
+	def processMultipleDramasAndGenerateOutputTokens(self, originpath, resultpath, withStopwords, stopWordList):
 		parser = DramaParser()
 
 		for filename in os.listdir(originpath):
@@ -119,9 +126,9 @@ class DramaLanguage_Output:
 			dramaModel = parser.parse_xml(originpath + filename)
 			print("DramaModel ready...")
 			title = dramaModel._title
-			self.generateWordFrequenciesOutputTokens(originpath + filename, resultpath + title, withStopwords)
+			self.generateWordFrequenciesOutputTokens(originpath + filename, resultpath + title, withStopwords, stopWordList)
 
-	def processMultipleDramasAndGenerateOutputLemmas(self, originpath, resultpath, withStopwords):
+	def processMultipleDramasAndGenerateOutputLemmas(self, originpath, resultpath, withStopwords, stopWordList):
 		parser = DramaParser()
 
 		for filename in os.listdir(originpath):
@@ -129,9 +136,9 @@ class DramaLanguage_Output:
 			dramaModel = parser.parse_xml(originpath + filename)
 			print("DramaModel ready...")
 			title = dramaModel._title
-			self.generateWordFrequenciesOutputLemmas(originpath + filename, resultpath + title, withStopwords)
+			self.generateWordFrequenciesOutputLemmas(originpath + filename, resultpath + title, withStopwords, stopWordList)
 
-	def generateEntireCorpusOutput(self, withStopwords):
+	def generateEntireCorpusOutput(self, withStopwords, stopWordList):
 		originpath = "../Lessing-Dramen/"
 		inBetweenFolder = ""
 		if(withStopwords):
@@ -139,15 +146,19 @@ class DramaLanguage_Output:
 		else:
 			inBetweenFolder = "WithoutStopwords"
 		self.setLanguageProcessor("treetagger")
-		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Tokens/treetagger/EntireCorpus.txt", withStopwords)
-		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Lemmas/treetagger/EntireCorpus.txt", withStopwords)
+		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/" +\
+		 inBetweenFolder + "/Tokens/treetagger/EntireCorpus.txt", withStopwords, stopWordList)
+		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/" + \
+			inBetweenFolder + "/Lemmas/treetagger/EntireCorpus.txt", withStopwords, stopWordList)
 
 		self.setLanguageProcessor("textblob")
-		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Tokens/textblob/EntireCorpus.txt", withStopwords)
-		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/" + inBetweenFolder + "/Lemmas/textblob/EntireCorpus.txt", withStopwords)
+		self.processEntireCorpusAndGenerateOutputTokens(originpath, "../Word-Frequencies/" \
+			+ inBetweenFolder + "/Tokens/textblob/EntireCorpus.txt", withStopwords, stopWordList)
+		self.processEntireCorpusAndGenerateOutputLemmas(originpath, "../Word-Frequencies/" + \
+			inBetweenFolder + "/Lemmas/textblob/EntireCorpus.txt", withStopwords, stopWordList)
 
 
-	def processEntireCorpusAndGenerateOutputTokens(self, originpath, outputPath, withStopwords):
+	def processEntireCorpusAndGenerateOutputTokens(self, originpath, outputPath, withStopwords, stopWordList):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextTokens(totalText)
 		tokens = []
@@ -157,7 +168,7 @@ class DramaLanguage_Output:
 			wordFrequencies = self.calcWordFrequencies(self._lp._tokens)
 			tokens = self._lp._tokens
 		else:
-			self._lp.removeStopwordsFromTokens()
+			self._lp.removeStopwordsFromTokens(stopWordList)
 			wordFrequencies = self.calcWordFrequencies(self._lp._tokensWithoutStopwords)
 			tokens = self._lp._tokensWithoutStopwords
 
@@ -167,7 +178,7 @@ class DramaLanguage_Output:
 		outputFile.close()
 		print("Output ready...")
 
-	def processEntireCorpusAndGenerateOutputLemmas(self, originpath, outputPath, withStopwords):
+	def processEntireCorpusAndGenerateOutputLemmas(self, originpath, outputPath, withStopwords, stopWordList):
 		totalText = self.getEntireCorpus(originpath)
 		self._lp.processTextFully(totalText)
 		self._lp._currentDramaName = "EntireCorpus-Lemmas"
@@ -176,7 +187,7 @@ class DramaLanguage_Output:
 			wordFrequencies = self.calcWordFrequencies(self._lp._lemmas)
 			lemmas = self._lp._lemmas
 		else:
-			self._lp.removeStopWordsFromLemmas()
+			self._lp.removeStopWordsFromLemmas(stopWordList)
 			wordFrequencies = self.calcWordFrequencies(self._lp._lemmasWithoutStopwords)
 			lemmas = self._lp._lemmasWithoutStopwords
 

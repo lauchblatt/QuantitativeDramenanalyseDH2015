@@ -206,13 +206,15 @@ class Text_Blob:
 			#print unicode(line.strip())
 			stopword_lemmatized = TextBlobDE(line.strip()).words.lemmatize()[0]
 			self._stopwords_lemmatized.append(stopword_lemmatized)
+			self._stopwords_lemmatized.extend(self._stopwords)
+			self._stopwords_lemmatized = list(set(self._stopwords_lemmatized))
 
 	def removeStopWordsFromLemmas(self, listname):
 		self.initStopWords(listname)
 		lemmasCopy = list(self._lemmas)
 		self._lemmasWithoutStopwords = self.removeStopwordsFromLemmasList(lemmasCopy)
 	
-	def removeStopwordsFromTokens(self):
+	def removeStopwordsFromTokens(self, listname):
 		self.initStopWords(listname)
 		tokensCopy = list(self._tokens)
 		self._tokensWithoutStopwords = self.removeStopwordsFromTokensList(tokensCopy)

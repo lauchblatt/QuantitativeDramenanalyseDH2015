@@ -191,6 +191,8 @@ class Tree_Tagger:
 			stopword_lemmatized = tags[2]
 			#print stopword_lemmatized
 			self._stopwords_lemmatized.append(stopword_lemmatized)
+			self._stopwords_lemmatized.extend(self._stopwords)
+			self._stopwords_lemmatized = list(set(self._stopwords_lemmatized))
 			
 	def removeStopWordsFromLemmas(self, listname):
 		self.initStopWords(listname)
