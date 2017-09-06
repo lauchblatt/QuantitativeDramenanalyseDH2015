@@ -63,6 +63,89 @@ var transformGermanMetric = function(name){
 		    case "Verteilung von allen Wörtern":
 		    	return "normalisedAllWords";
 		    	break;
+		    case "Polaritäten (gewichtet)":
+		    	return "polarityWeighted";
+		    	break;
+		    case "Polaritäten (Wortanzahl)":
+		    	return "polarityCount";
+		    	break;
+		    default:
+		    	console.log(name);
+		        console.log("ERROR")
+		    }
+	};
+
+var transformEnglishMetric = function(name){
+		switch(name) {
+		    case "polaritySentiWS":
+		        return "Polarität (gewichtet)";
+		        break;
+		    case "polaritySentiWSDichotom":
+		        return "Polarität (Wortanzahl)";
+		        break;
+		    case "positiveSentiWS":
+		        return "Positiv (gewichtet)";
+		        break;
+		    case "positiveSentiWSDichotom":
+		        return "Positiv (Wortanzahl)";
+		        break;
+		    case "negativeSentiWS":
+		        return "Negativ (gewichtet)";
+		        break;
+		    case "negativeSentiWSDichotom":
+		        return "Negativ (Wortanzahl)";
+		        break;
+		    case "anger":
+		        return "Zorn";
+		        break;
+		    case "anticipation":
+		        return "Erwartung";
+		        break;
+		    case "disgust":
+		        return "Ekel";
+		        break;
+		    case "fear":
+		        return "Angst";
+		        break;
+		    case "joy":
+		        return "Freude";
+		        break;
+		    case "sadness":
+		        return "Traurigkeit";
+		        break;
+		    case "surprise":
+		        return "Überraschung";
+		        break;
+		    case "trust":
+		        return "Vertrauen";
+		        break;
+		    case "emotionPresent":
+		    	return "Emotion vorhanden";
+		    	break;
+		    case "metricsTotal":
+		        return "Absolut";
+		        break;
+		    case "metricsNormalisedLengthInWords":
+		        return "Normalisiert an Anzahl aller Wörter";
+		        break;
+		    case "metricsNormalisedSBWs":
+		        return "Normalisiert an Sentiment-Tragenden Wörtern";
+		        break;
+		    case "emotions":
+		    	return "Emotionen";
+		    	break;
+		    case "normalisedSBWs":
+		    	return "Verteilung von Sentiment-Tragenden Wörtern";
+		    	break;
+		    case "normalisedAllWords":
+		    	return "Verteilung von allen Wörtern";
+		    	break;
+		    case "polarityWeighted":
+		    	return "Polaritäten (gewichtet)";
+		    	break;
+		    case "polarityCount":
+		    	return "Polaritäten (Wortanzahl)";
+		    	break;
 		    default:
 		    	console.log(name);
 		        console.log("ERROR")
@@ -108,3 +191,48 @@ var getProportionDataOfUnit = function(unit){
 		return proportionData;
 
 	};
+
+var getStructuredBasicData = function(unit){
+	var metricsTotal = unit.sentimentMetricsBasic.metricsTotal;
+	var metricsNormalisedSBWs = unit.sentimentMetricsBasic.metricsNormalisedSBWs;
+	var metricsNormalisedLengthInWords = unit.sentimentMetricsBasic.metricsNormalisedLengthInWords;
+
+	var basicData = {};
+	basicData["metricsTotal"] = {};
+	basicData["metricsNormalisedSBWs"] = {};
+	basicData["metricsNormalisedLengthInWords"] = {};
+
+	basicData["metricsTotal"]["polarityWeighted"] = {};
+	basicData["metricsTotal"]["polarityCount"] = {};
+	basicData["metricsTotal"]["emotions"] = {};
+
+	basicData["metricsNormalisedSBWs"]["polarityWeighted"] = {};
+	basicData["metricsNormalisedSBWs"]["polarityCount"] = {};
+	basicData["metricsNormalisedSBWs"]["emotions"] = {};
+
+	basicData["metricsNormalisedLengthInWords"]["polarityWeighted"] = {};
+	basicData["metricsNormalisedLengthInWords"]["polarityCount"] = {};
+	basicData["metricsNormalisedLengthInWords"]["emotions"] = {};
+
+	var emotionNames = ["anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"];
+	var polarityWeightedNames = ["positiveSentiWS", "polaritySentiWS", "negativeSentiWS"];
+	var polarityCountNames = ["positiveSentiWSDichotom", "polaritySentiWSDichotom", "negativeSentiWSDichotom"];
+
+	for (var i = 0; i < emotionNames.length; i++){
+		basicData["metricsTotal"]["emotions"][emotionNames[i]] = metricsTotal[emotionNames[i]];
+		basicData["metricsNormalisedSBWs"]["emotions"][emotionNames[i]] = metricsNormalisedSBWs [emotionNames[i]];
+		basicData["metricsNormalisedLengthInWords"]["emotions"][emotionNames[i]] = metricsNormalisedLengthInWords[emotionNames[i]];
+	}
+	for (var i = 0; i < polarityWeightedNames.length; i++){
+		basicData["metricsTotal"]["polarityWeighted"][polarityWeightedNames[i]] = metricsTotal[polarityWeightedNames[i]];
+		basicData["metricsNormalisedSBWs"]["polarityWeighted"][polarityWeightedNames[i]] = metricsNormalisedSBWs [polarityWeightedNames[i]];
+		basicData["metricsNormalisedLengthInWords"]["polarityWeighted"][polarityWeightedNames[i]] = metricsNormalisedLengthInWords[polarityWeightedNames[i]];
+	}
+	for (var i = 0; i < polarityCountNames.length; i++){
+		basicData["metricsTotal"]["polarityCount"][polarityCountNames[i]] = metricsTotal[polarityCountNames[i]];
+		basicData["metricsNormalisedSBWs"]["polarityCount"][polarityCountNames[i]] = metricsNormalisedSBWs [polarityCountNames[i]];
+		basicData["metricsNormalisedLengthInWords"]["polarityCount"][polarityCountNames[i]] = metricsNormalisedLengthInWords[polarityCountNames[i]];
+	}
+
+	return basicData;
+};	

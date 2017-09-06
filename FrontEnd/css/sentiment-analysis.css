@@ -18,6 +18,11 @@ table {
 	display: block;
 }
 
+.tooltip-test {
+	padding: 5px;
+	font-size: 1.3em;
+}
+
 .checkbox {
 	display: inline-block;
 	margin-right: 2%;

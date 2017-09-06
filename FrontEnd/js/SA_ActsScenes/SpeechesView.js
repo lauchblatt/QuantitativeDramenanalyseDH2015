@@ -4,8 +4,8 @@ ActsScenes.SpeechesView = function(){
 
 	var init = function(speechesData){
 		metricsForSpeeches = speechesData;
-		console.log(metricsForSpeeches);
 		initListener();
+		console.log(metricsForSpeeches);
 	};
 
 	var initListener = function(){
@@ -28,18 +28,37 @@ ActsScenes.SpeechesView = function(){
 
 	var getMetricPairs = function(type, metric){
 		var metricPairs = []
-		for(i = 0; i < metricsForSpeeches.length; i++){
-			pair = [i, metricsForSpeeches[i][type][metric]];
+		for(i = 0; i < metricsForSpeeches.length; i++){		
+			var metricValue = metricsForSpeeches[i][type][metric];
+			var metricName = transformEnglishMetric(metric);
+			var tooltiptext = getSpeechTooltip(metricsForSpeeches[i], metricValue, metricName);
+			pair = [i, metricValue, tooltiptext];
 			metricPairs.push(pair);
 		}
 		return metricPairs;
 	};
 
+	var getSpeechTooltip = function(metric, metricValue, metricName){
+		var divBegin = "<div class='tooltip-test'>"
+		var act = metric.act + ". Akt, ";
+		var scene = metric.conf + ". Szene, ";
+		var speech = metric.numberInConf + ". Replik";
+		var numberInDrama = metric.subsequentNumber + ". Replik im Drama";
+		var structureInfo = "<b>" + act + scene + speech + "</b>";
+		var speakerInfo = "Sprecher: " + metric.speaker;
+		var valueInfo = metricName + ": <b>" + (Math.round(metricValue * 10000) / 10000).toString() + "</b>";
+
+		var text  = divBegin + structureInfo + "<br>" + numberInDrama + "<br>" + speakerInfo + "<br>" + valueInfo + "</div>";
+
+		return text;
+	};
+
 	var drawSpeechesLineChart = function(metricPairs, germanMetric, germanType){
 		var vAxisTitle = germanMetric + " - " + germanType;
 		var data = new google.visualization.DataTable();
-		data.addColumn("number", "numberOfSpeech")
-		data.addColumn("number", germanMetric)
+		data.addColumn("number", "numberOfSpeech");
+		data.addColumn("number", germanMetric);
+		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}})
         data.addRows(metricPairs);
 
         var options = {title:'Repliken-Verlauf (ganzes Drama): ' + vAxisTitle,
@@ -51,6 +70,7 @@ ActsScenes.SpeechesView = function(){
 					        keepInBounds: true,
 					        maxZoomIn: 10.0
 						},
+						tooltip: {isHtml: true},
         			   chartArea:{width:'80%',height:'75%'},
         			    trendlines: {
 				          0: {

@@ -8,6 +8,8 @@ ActsScenes.ActsScenesModel = function(){
 	var scenesProportionData = [];
 	var metricsSpeeches = [];
 
+	var basicDramaData = {};
+
 	var init = function(){
 		initData();
 	};
@@ -31,6 +33,9 @@ ActsScenes.ActsScenesModel = function(){
 					metricsOfSpeech.subsequentNumber = speech.subsequentNumber;
 					metricsOfSpeech.numberInConf = speech.numberInConf;
 					metricsOfSpeech.numberInAct = speech.numberInAct;
+					metricsOfSpeech.act = i+1;
+					metricsOfSpeech.conf = j+1;
+					metricsOfSpeech.speaker = speech.speaker;
 					metricsSpeeches.push(metricsOfSpeech);
 				}
 			}
@@ -39,6 +44,11 @@ ActsScenes.ActsScenesModel = function(){
 		initRowsProportionsDrama(drama);
 		initRowsProportionsActs(drama.acts);
 		initRowsProportionsScenes(drama.acts);
+		initBasicDramaData(drama);
+	};
+
+	var initBasicDramaData = function(drama){
+		basicDramaData = getStructuredBasicData(drama);
 	};
 
 	var initRowsProportionsDrama = function(drama){
@@ -91,6 +101,10 @@ ActsScenes.ActsScenesModel = function(){
 		return metricsSpeeches;
 	};
 
+	var getBasicDramaData = function(){
+		return basicDramaData;
+	};
+
 	that.init = init;
 	that.getMetricsActs = getMetricsActs;
 	that.getMetricsScenes = getMetricsScenes;
@@ -99,6 +113,7 @@ ActsScenes.ActsScenesModel = function(){
 	that.getScenesProportionData = getScenesProportionData;
 	that.getPureMetricsScenes = getPureMetricsScenes;
 	that.getMetricsSpeeches = getMetricsSpeeches;
+	that.getBasicDramaData = getBasicDramaData;
 
 	return that;
 };

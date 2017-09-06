@@ -6,6 +6,7 @@ ActsScenes.ActsScenesController = function(){
 	var dramaView = null;
 	var scenesView = null;
 	var speechesView = null;
+	var basicDramaView = null;
 
 	var init = function(){
 		actsScenesModel = ActsScenes.ActsScenesModel();
@@ -13,6 +14,7 @@ ActsScenes.ActsScenesController = function(){
 		dramaView = ActsScenes.DramaView();
 		scenesView = ActsScenes.ScenesView();
 		speechesView = ActsScenes.SpeechesView();
+		basicDramaView = ActsScenes.BasicDramaView();
 		initGoogleCharts();
 	};
 
@@ -32,11 +34,13 @@ ActsScenes.ActsScenesController = function(){
 		var scenesProportionData = actsScenesModel.getScenesProportionData();
 		var pureMetricsScenes = actsScenesModel.getPureMetricsScenes();
 		var metricsSpeeches = actsScenesModel.getMetricsSpeeches();
+		var basicDramaData = actsScenesModel.getBasicDramaData();
 		
 		dramaView.init(dramaProportionData);
 		actsScenesView.init(metricsActs, actsProportionData, metricsScenes);
 		scenesView.init(pureMetricsScenes, scenesProportionData);
 		speechesView.init(metricsSpeeches);
+		basicDramaView.init(basicDramaData);
 		
 		dramaView.renderDramaPieChart();
 		actsScenesView.renderActsBars();
@@ -45,6 +49,7 @@ ActsScenes.ActsScenesController = function(){
 		scenesView.renderScenesPieChart();
 		scenesView.renderScenesLineChart();
 		speechesView.renderSpeechesLineChart();
+		basicDramaView.renderDramaBars();
 	};
 
 	that.init = init;
