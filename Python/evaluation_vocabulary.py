@@ -19,8 +19,8 @@ def main():
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	evaluation.evaluateLexicon("Bawl")
-	#evaluation.evaluateAll()
+	#evaluation.evaluateLexicon("CombinedLexicon")
+	evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
 
@@ -70,7 +70,9 @@ class Evaluation_LexiconVsVocabulary:
 
 	def evaluateAll(self):
 		processors = ["treetagger", "textblob"]
-		lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC", "CombinedLexicon"]
+		#lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC", "CombinedLexicon",\
+		#"SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended", "CombinedLexicon-DTAExtended"]
+		lexicons = ["SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended", "CombinedLexicon-DTAExtended"]
 		for processor in processors:
 			for lexicon in lexicons:
 				print processor + " " + lexicon
@@ -92,7 +94,6 @@ class Evaluation_LexiconVsVocabulary:
 	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName, processor, withStopwords):
 		print vocFolder
 		for filename in os.listdir(vocFolder):
-			print filename
 			vocPath = vocFolder + filename
 			self.init(vocPath, lexiconName, processor)
 			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
@@ -258,7 +259,6 @@ class Vocabulary:
 		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
 		self._type = path.split("/")[-3]
 		self._withStopwords = path.split("/")[-4]
-		print(self._withStopwords)
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")
