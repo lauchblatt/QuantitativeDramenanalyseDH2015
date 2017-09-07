@@ -19,7 +19,7 @@ def main():
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	evaluation.evaluateLexicon("CD")
+	evaluation.evaluateLexicon("Bawl")
 	#evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
@@ -52,12 +52,20 @@ class Evaluation_LexiconVsVocabulary:
 		processors = ["treetagger", "textblob"]
 		for processor in processors:
 			print processor + " " + lexicon
-			#First evaluation against token-vocs
-			self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
-				, lexicon, processor)
-			# then evaluation against lemmma-vocs
-			self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/" + processor + "/" \
-				, lexicon, processor)
+			#First evaluation against token-vocs with stopwords
+			resultsVsTokens = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithStopwords/Tokens/" \
+				+ processor + "/", lexicon, processor, True)
+			# then evaluation against lemmma-vocs with stopwords
+			resultsVsLemmas = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithStopwords/Lemmas/" + processor + "/" \
+				, lexicon, processor, True)
+
+			#First evaluation against token-vocs without stopwords
+			resultsVsTokens = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithoutStopwords/Tokens/" + processor + "/" \
+				, lexicon, processor, False)
+			# then evaluation against lemmma-vocs without stopwords
+			resultsVsLemmas = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithoutStopwords/Lemmas/" + processor + "/" \
+				, lexicon, processor, False)
+
 
 
 	def evaluateAll(self):
@@ -66,20 +74,36 @@ class Evaluation_LexiconVsVocabulary:
 		for processor in processors:
 			for lexicon in lexicons:
 				print processor + " " + lexicon
-				#First evaluation against token-vocs
-				resultsVsTokens = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Tokens/" + processor + "/" \
-					, lexicon, processor)
-				# then evaluation against lemmma-vocs
-				resultsVsLemmas = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/" + processor + "/" \
-					, lexicon, processor)
+				#First evaluation against token-vocs with stopwords
+				resultsVsTokens = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithStopwords/Tokens/" \
+					+ processor + "/", lexicon, processor, True)
+				# then evaluation against lemmma-vocs with stopwords
+				resultsVsLemmas = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithStopwords/Lemmas/" + processor + "/" \
+					, lexicon, processor, True)
+
+				#First evaluation against token-vocs without stopwords
+				resultsVsTokens = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithoutStopwords/Tokens/" + processor + "/" \
+					, lexicon, processor, False)
+				# then evaluation against lemmma-vocs without stopwords
+				resultsVsLemmas = self.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/WithoutStopwords/Lemmas/" + processor + "/" \
+					, lexicon, processor, False)
 				
 
-	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName, processor):
+	def evaluateLexiconTokensAndLemmasVsMultipleVocabularies(self, vocFolder, lexiconName, processor, withStopwords):
+		print vocFolder
 		for filename in os.listdir(vocFolder):
+			print filename
 			vocPath = vocFolder + filename
 			self.init(vocPath, lexiconName, processor)
 			results = self.evaluateLexiconTokensAndLemmasVsVocabulary()
-			outputPath = "../Evaluation/" + lexiconName + "/" + processor + "/"
+			stopwordPath = ""
+
+			if(withStopwords):
+				stopwordPath = "WithStopwords"
+			else:
+				stopwordPath = "WithoutStopwords"
+
+			outputPath = "../Evaluation/Vocabulary-Evaluation/" + lexiconName + "/" + stopwordPath + "/" + processor + "/"
 			crossFolder1 = "TokensLexiconVS" + self._vocabulary._type + "Vocabulary/"
 			crossFolder2 = "LemmasLexiconVS" + self._vocabulary._type + "Vocabulary/"
 			name1 = lexiconName + "-TokensVS-" + self._vocabulary._name + "-" + self._vocabulary._type
@@ -93,10 +117,10 @@ class Evaluation_LexiconVsVocabulary:
 			self.writeResultOutput(outputPathTokens, results[0])
 			self.writeResultOutput(outputPathLemmas, results[1])
 
-			return (results[0], results[1])
+			#return (results[0], results[1])
 
 	def writeResultTable(self, outputFolder, results):
-		for result in results
+		print("TODO");
 	
 	def evaluateLexiconTokensAndLemmasVsVocabulary(self):
 		results = []
@@ -187,7 +211,7 @@ class Evaluation_LexiconVsVocabulary:
 		outputFile = open(path, 'w')
 
 		outputFile.write(result._nameOfLexicon + " " + result._lemmasOrTokens + " IN " \
-			+ self._vocabulary._name + " " + self._vocabulary._type)
+			+ self._vocabulary._name + " " + self._vocabulary._type + " " + self._vocabulary._withStopwords)
 		outputFile.write("\n\n")
 		outputFile.write("Length of Lexicon: " + str(len(result._lexicon)))
 		outputFile.write("\nLength of Vocabulary (Different Words): " + str(len(self._vocabulary._words)))
@@ -218,6 +242,7 @@ class Vocabulary:
 	def __init__(self, path):
 		self._name = ""
 		self._type = ""
+		self._withStopwords = ""
 
 		self._wordsWithInformationDict = {}
 		self._words = []
@@ -232,6 +257,8 @@ class Vocabulary:
 
 		self._name = unicode(path.split("/")[-1].replace(".txt", "").decode("cp1252"))
 		self._type = path.split("/")[-3]
+		self._withStopwords = path.split("/")[-4]
+		print(self._withStopwords)
 
 		for line in lines:
 			wordsWithInformation = line.split("\t")

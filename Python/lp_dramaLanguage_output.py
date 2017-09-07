@@ -29,7 +29,7 @@ def main():
 	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
 	#dlOutput = DramaLanguage_Output()
 	#dlOutput.generateOutputForAllDramas(False, "standardList")
-	dlOutput.generateEntireCorpusOutput(False, "standardList")
+	#dlOutput.generateEntireCorpusOutput(False, "standardList")
 
 class DramaLanguage_Output:
 
