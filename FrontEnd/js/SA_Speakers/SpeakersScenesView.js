@@ -140,7 +140,6 @@ SA_Speakers.SpeakersScenesView = function(){
 			}
 			acts.push(rows);
 		}
-		console.log(acts);
 		return acts;
 	};
 

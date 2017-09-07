@@ -19,7 +19,7 @@ def main():
 	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
 
 	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	#evaluation.evaluateLexicon("CombinedLexicon")
+	#evaluation.evaluateLexicon("CD")
 	evaluation.evaluateAll()
 
 class Evaluation_LexiconVsVocabulary:
@@ -69,9 +69,7 @@ class Evaluation_LexiconVsVocabulary:
 
 
 	def evaluateAll(self):
-		processors = ["treetagger", "textblob"]
-		#lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC", "CombinedLexicon",\
-		#"SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended", "CombinedLexicon-DTAExtended"]
+		processors = ["textblob"]
 		lexicons = ["Combined-DTAExtended"]
 		for processor in processors:
 			for lexicon in lexicons:

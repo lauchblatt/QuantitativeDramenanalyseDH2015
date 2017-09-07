@@ -10,6 +10,7 @@ SA_Speakers.SA_SpeakersModel = function(){
 
 	var speakerMetricsPerAct = {};
 	var speakerMetricsPerScene = {};
+	var speechesMetrics = {};
 
 	var basicDramaSpeakersData = {};
 
@@ -25,11 +26,52 @@ SA_Speakers.SA_SpeakersModel = function(){
 		initSingleSpeakerProportions(drama);
 		initSpeakerCourseMetrics(drama);
 		initBasicDramaSpeakersData(drama);
+		initSpeechesMetrics(drama);
 		
 	};
 
+	var initSpeechesMetrics = function(drama){
+
+		for(var i = 0; i < drama.speakers.length; i++){
+			speechesMetrics[drama.speakers[i]["name"]] = [];
+		}
+
+		for(var i = 0; i < drama.acts.length; i++){
+			for(var j = 0; j < drama.acts[i].configurations.length; j++){
+				for(var k = 0; k < drama.acts[i].configurations[j].speeches.length; k++){
+						var speech = drama.acts[i].configurations[j].speeches[k];
+						
+						for(var speaker in speechesMetrics){
+							if(speaker == speech.speaker){
+								var metric = {};
+								metric.numberInAct = speech.numberInAct;
+								metric.numberInConf = speech.numberInConf;
+								metric.subsequentNumber = speech.subsequentNumber;
+								metric.act = i+1;
+								metric.conf = j+1;
+								metric.speaker = speech.speaker;
+								metric.sentimentMetricsBasic = speech.sentimentMetricsBasic;
+								speechesMetrics[speaker].push(metric);
+							}else{
+								var metric = {};
+								metric.numberInAct = speech.numberInAct;
+								metric.numberInConf = speech.numberInConf;
+								metric.subsequentNumber = speech.subsequentNumber;
+								metric.act = i+1;
+								metric.conf = j+1;
+								metric.speaker = speech.speaker;
+								metric.sentimentMetricsBasic = null;
+								speechesMetrics[speaker].push(metric);
+							}
+						}
+					}
+
+			}
+		}
+	};
+
 	var initBasicDramaSpeakersData = function(drama){
-		for(var = 0; i < drama.speakers.length; i++){
+		for(var i = 0; i < drama.speakers.length; i++){
 			var speaker = drama.speakers[i]["name"];
 			var data = getStructuredBasicData(drama.speakers[i]);
 			basicDramaSpeakersData[speaker] = data;
@@ -168,6 +210,10 @@ SA_Speakers.SA_SpeakersModel = function(){
 		return basicDramaSpeakersData;
 	};
 
+	var getSpeechesMetrics = function(){
+		return speechesMetrics;
+	}
+
 	that.init = init;
 	that.getDramaSpeakersProportions = getDramaSpeakersProportions;
 	that.getActsSpeakersProportions = getActsSpeakersProportions;
@@ -178,7 +224,8 @@ SA_Speakers.SA_SpeakersModel = function(){
 	that.getScenesSpeakersMetrics = getScenesSpeakersMetrics;
 	that.getSpeakerMetricsPerAct = getSpeakerMetricsPerAct;
 	that.getSpeakerMetricsPerScene = getSpeakerMetricsPerScene;
-	that.getBasicDramaSpeakersData = getBasicDramaSpeakersData
+	that.getBasicDramaSpeakersData = getBasicDramaSpeakersData;
+	that.getSpeechesMetrics = getSpeechesMetrics;
 
 	return that;
 };

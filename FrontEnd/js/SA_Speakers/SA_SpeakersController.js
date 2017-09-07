@@ -7,6 +7,7 @@ SA_Speakers.SA_SpeakersController = function(){
 	var speakersActsView = null;
 	var speakersScenesView = null;
 	var basicDramaSpeakersView = null;
+	var speakersSpeechesView = null;
 
 	var init = function(){
 		speakersModel = SA_Speakers.SA_SpeakersModel();
@@ -15,6 +16,7 @@ SA_Speakers.SA_SpeakersController = function(){
 		speakersActsView = SA_Speakers.SpeakersActsView();
 		speakersScenesView = SA_Speakers.SpeakersScenesView();
 		basicDramaSpeakersView  = SA_Speakers.BasicDramaSpeakersView();
+		speakersSpeechesView = SA_Speakers.SpeakersSpeechesView();
 		initGoogleCharts();
 	};
 
@@ -37,6 +39,8 @@ SA_Speakers.SA_SpeakersController = function(){
 
 		var speakerMetricsPerAct = speakersModel.getSpeakerMetricsPerAct();
 		var speakerMetricsPerScene = speakersModel.getSpeakerMetricsPerScene();
+		var basicDramaSpeakersData = speakersModel.getBasicDramaSpeakersData();
+		var speechesData = speakersModel.getSpeechesMetrics();
 
 		singleSpeakerView.init();
 		singleSpeakerView.initSingleProportions(dramaSpeakersProportions, actsSpeakersProportions, scenesSpeakersProportions);
@@ -52,6 +56,12 @@ SA_Speakers.SA_SpeakersController = function(){
 		speakersScenesView.init(speakerMetricsPerScene);
 		speakersScenesView.renderSpeakersScenesLine();
 		speakersScenesView.renderScenesPerActBars();
+
+		basicDramaSpeakersView.init(basicDramaSpeakersData);
+		basicDramaSpeakersView.renderDramaSpeakerBars();
+
+		speakersSpeechesView.init(speechesData);
+		speakersSpeechesView.renderSpeechesLineChart();
 
 	};
 
