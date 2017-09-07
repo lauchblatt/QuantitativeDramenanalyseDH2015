@@ -72,7 +72,7 @@ class Evaluation_LexiconVsVocabulary:
 		processors = ["treetagger", "textblob"]
 		#lexicons = ["SentiWS", "NRC", "Bawl", "CD", "GPC", "CombinedLexicon",\
 		#"SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended", "CombinedLexicon-DTAExtended"]
-		lexicons = ["SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended", "CombinedLexicon-DTAExtended"]
+		lexicons = ["Combined-DTAExtended"]
 		for processor in processors:
 			for lexicon in lexicons:
 				print processor + " " + lexicon

@@ -6,6 +6,7 @@ SA_Speakers.SA_SpeakersController = function(){
 	var speakersComparisonView = null;
 	var speakersActsView = null;
 	var speakersScenesView = null;
+	var basicDramaSpeakersView = null;
 
 	var init = function(){
 		speakersModel = SA_Speakers.SA_SpeakersModel();
@@ -13,6 +14,7 @@ SA_Speakers.SA_SpeakersController = function(){
 		speakersComparisonView = SA_Speakers.SpeakersComparisonView();
 		speakersActsView = SA_Speakers.SpeakersActsView();
 		speakersScenesView = SA_Speakers.SpeakersScenesView();
+		basicDramaSpeakersView  = SA_Speakers.BasicDramaSpeakersView();
 		initGoogleCharts();
 	};
 

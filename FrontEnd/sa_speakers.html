@@ -53,6 +53,34 @@
 
 			<div class="container">
 
+				<a href="#basicDramaSpeakers-statistic" name="basicDramaSpeakers-statistic"><h3>Sentiments im ganzen Drama</h3></a>
+				<div class="box">
+					<div class="form-group dropdown-form" id="form-basicDramaSpeakers-speaker-bar">
+						  <label for="sel1">Sprecher:</label>
+						  <select class="form-control" id="selection-basicDramaSpeakers-speaker-bar">
+						  </select>
+					</div>
+					<div class="form-group dropdown-form" id="form-basicDramaSpeakers">
+					  <label for="sel1">Sentiment-Metriken:</label>
+					  <select class="form-control" id="selection-basicDramaSpeakers-bar-metric">
+					    	<option>Polaritäten (gewichtet)</option>
+						    <option>Polaritäten (Wortanzahl)</option>
+						    <option>Emotionen </option>
+					  </select>
+					</div>
+
+					<div class="form-group dropdown-form" id="form-basicDramaSpeakers">
+					  <label for="sel1">Normalisierung:</label>
+					  <select class="form-control" id="selection-basicDramaSpeakers-bar-normalisation">
+					    	<option>Absolut</option>
+						    <option>Normalisiert an Anzahl aller Wörter</option>
+						    <option>Normalisiert an Sentiment-Tragenden Wörtern</option>
+					  </select>
+					</div>
+
+					<div id="chart-div-basicDrama"></div>
+				</div>
+
 				<a href="#speakersAct-statistic" name="speakersActs-statistic"><h3>Verlaufsdiagramm - Sprecher-Sentiments pro Akt</h3></a>
 				<div class="box">
 					<div>
