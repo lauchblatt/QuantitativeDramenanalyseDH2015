@@ -82,9 +82,10 @@ SA_Speakers.SpeakersSpeechesView = function(){
 				if(sentimentMetricsBasic != null){
 					metricValue = sentimentMetricsBasic[type][metric];
 				}
-				//var metricName = transformEnglishMetric(metric);
-				//var tooltiptext = getSpeechTooltip(metricsForSpeeches[chosenSpeakers[j]], metricValue, metricName)
+				var metricName = transformEnglishMetric(metric);
+				var tooltiptext = getSpeechTooltip(speakerMetrics, metricValue, metricName, chosenSpeakers[j]);
 				row.push(metricValue);
+				row.push(tooltiptext);
 			}
 			metrics.push(row);
 		}
@@ -92,7 +93,12 @@ SA_Speakers.SpeakersSpeechesView = function(){
 
 	};
 
-	var getSpeechTooltip = function(metric, metricValue, metricName){
+	var getSpeechTooltip = function(metric, metricValue, metricName, speakerName){
+		var sentimentMetricsBasic = metric.sentimentMetricsBasic;
+		var additionalInfo = "";
+		if(sentimentMetricsBasic == null){
+			additionalInfo = speakerName + " ist nicht Sprecher";
+		}
 		var divBegin = "<div class='tooltip-test'>"
 		var act = metric.act + ". Akt, ";
 		var scene = metric.conf + ". Szene, ";
@@ -101,6 +107,9 @@ SA_Speakers.SpeakersSpeechesView = function(){
 		var structureInfo = "<b>" + act + scene + speech + "</b>";
 		var speakerInfo = "Sprecher: " + metric.speaker;
 		var valueInfo = metricName + ": <b>" + (Math.round(metricValue * 10000) / 10000).toString() + "</b>";
+		if(sentimentMetricsBasic == null){
+			valueInfo = additionalInfo;
+		}
 
 		var text  = divBegin + structureInfo + "<br>" + numberInDrama + "<br>" + speakerInfo + "<br>" + valueInfo + "</div>";
 
@@ -113,6 +122,7 @@ SA_Speakers.SpeakersSpeechesView = function(){
 		data.addColumn("number", "numberOfSpeech");
 		for(var i = 0; i < chosenSpeakers.length; i++){
 			data.addColumn("number", chosenSpeakers[i]);
+			data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}})
 		}
 		
 		//data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}})
@@ -127,7 +137,7 @@ SA_Speakers.SpeakersSpeechesView = function(){
 					        keepInBounds: true,
 					        maxZoomIn: 10.0
 						},
-						//tooltip: {isHtml: true},
+						tooltip: {isHtml: true},
         			   chartArea:{width:'80%',height:'75%'},
 				        hAxis: {
         			   	title: 'Repliken',
