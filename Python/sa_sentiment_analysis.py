@@ -227,6 +227,7 @@ class Sentiment_Analyzer:
 		#print word
 		if(word in self._sentimentDict):
 			allSentiments = self._sentimentDict[word]
+
 		else:
 			upperWord = word[:1].upper() + word[1:]
 			lowerWord = word.lower()

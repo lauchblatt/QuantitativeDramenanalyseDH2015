@@ -42,6 +42,7 @@ SA_Speakers.SA_SpeakersController = function(){
 		var basicDramaSpeakersData = speakersModel.getBasicDramaSpeakersData();
 		var speechesData = speakersModel.getSpeechesMetrics();
 
+		$("#mainpage").show();
 		singleSpeakerView.init();
 		singleSpeakerView.initSingleProportions(dramaSpeakersProportions, actsSpeakersProportions, scenesSpeakersProportions);
 		singleSpeakerView.renderSpeakerPieChart();
@@ -63,6 +64,7 @@ SA_Speakers.SA_SpeakersController = function(){
 		speakersSpeechesView.init(speechesData);
 		speakersSpeechesView.renderSpeechesLineChart();
 
+		$("#mainpage").hide();
 		$("#mainpage").fadeIn();
 
 	};

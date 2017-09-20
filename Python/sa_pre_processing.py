@@ -13,7 +13,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dpp = Drama_Pre_Processing("treetagger")
+	dpp = Drama_Pre_Processing("textblob")
 	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
 	dpp.preProcessAndDumpAllDramas()
 	#dpp.preProcessAndLemmatize("../Lessing-Dramen/less-Emilia_t.xml")

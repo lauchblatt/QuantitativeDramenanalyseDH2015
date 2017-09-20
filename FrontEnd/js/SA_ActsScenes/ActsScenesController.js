@@ -36,6 +36,7 @@ ActsScenes.ActsScenesController = function(){
 		var metricsSpeeches = actsScenesModel.getMetricsSpeeches();
 		var basicDramaData = actsScenesModel.getBasicDramaData();
 		
+		$("#mainpage").show();
 		dramaView.init(dramaProportionData);
 		actsScenesView.init(metricsActs, actsProportionData, metricsScenes);
 		scenesView.init(pureMetricsScenes, scenesProportionData);
@@ -51,6 +52,7 @@ ActsScenes.ActsScenesController = function(){
 		speechesView.renderSpeechesLineChart();
 		basicDramaView.renderDramaBars();
 
+		$("#mainpage").hide();
 		$("#mainpage").fadeIn();
 	};
 

@@ -18,19 +18,19 @@ def main():
 	sog = Sentiment_Output_Generator()
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 	#"""
-	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas.json",\
-	 True, "treetagger", True, None, True)
+	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas4.json",\
+	 True, "textblob", True, None, True)
 	#"""
 	#sog.generateJSONFileForSingleDrama("Dumps/ProcessedDramas/treetagger/Der Freigeist.p",\
 	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)
 	"""
-	dpp = Drama_Pre_Processing("treetagger")
-	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
+	dpp = Drama_Pre_Processing("textblob")
+	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/textblob/Emilia Galotti.p")
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 
-	sa = Sentiment_Analyzer(True, "treetagger", True, None, True)
+	sa = Sentiment_Analyzer(True, "textblob", True, None, True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	sog.createTxtOutputSingleDrama("anotherTest.txt", sentimentExtendedDramaModel)
+	sog.createTxtOutputSingleDrama("textblobTest.txt", sentimentExtendedDramaModel)
 	"""
 	#sog = Sentiment_Output_Generator()
 	#sog.processAndCreateTxtOutputMutlipleDramas()
@@ -72,6 +72,7 @@ class Sentiment_Output_Generator:
 			sa = Sentiment_Analyzer(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 			
 			sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
+
 			dramaInfo = self.getSentimentInfoFromDrama(sentimentExtendedDramaModel)
 			dramasData.append(dramaInfo)
 		return dramasData
