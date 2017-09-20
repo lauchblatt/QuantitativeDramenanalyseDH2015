@@ -16,7 +16,7 @@ def main():
 	#nrc.resetAllFiles()
 	#nrc.createSentimentDictFileNRCLemmas("treetagger")
 	#nrc.createExtendedOutputDTA()
-	nrc.createExtendedOutputDTA()
+	nrc.initNRC();
 
 class NRC:
 
@@ -38,6 +38,9 @@ class NRC:
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
 		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
+		for word in self._sentimentDict:
+			if(self._sentimentDict[word]["positive"] == 1 and self._sentimentDict[word]["negative"] == 1):
+				print word
 
 		self._sentimentDict = self.removePhrasesFromNRC(self._sentimentDict)
 		self.handleSpecialCases()

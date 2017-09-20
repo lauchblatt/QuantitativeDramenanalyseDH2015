@@ -50,6 +50,8 @@ ActsScenes.ActsScenesController = function(){
 		scenesView.renderScenesLineChart();
 		speechesView.renderSpeechesLineChart();
 		basicDramaView.renderDramaBars();
+
+		$("#mainpage").fadeIn();
 	};
 
 	that.init = init;

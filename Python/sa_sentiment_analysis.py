@@ -19,7 +19,7 @@ def main():
 	processor = Drama_Pre_Processing("treetagger")
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Nathan der Weise.p")
 	
-	sa = Sentiment_Analyzer(True,"textblob", True, "standard_list", False)
+	sa = Sentiment_Analyzer(True,"textblob", True, "standardList", False)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	
 class Sentiment_Analyzer:

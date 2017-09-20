@@ -13,7 +13,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	gpc = German_Polarity_Clues()
-	gpc.createExtendedOutputDTA()
+	gpc.initGPC()
 
 class German_Polarity_Clues:
 	def __init__(self):
@@ -99,6 +99,8 @@ class German_Polarity_Clues:
 			infoPerWord["neutral"] = 0
 			sentimentDictNegative[unicode(info[0])] = infoPerWord
 			sentimentDictNegative[unicode(info[1])] = infoPerWord
+			print unicode(info[0])
+			print unicode(info[1])
 		
 		for line in linesPositive:
 			info = line.split("\t")
@@ -118,12 +120,15 @@ class German_Polarity_Clues:
 			sentimentDictNeutral[unicode(info[0])] = infoPerWord
 			sentimentDictNeutral[unicode(info[1])] = infoPerWord
 
+		print(sentimentDictNeutral["der"])
+		print(sentimentDictNegative["der"])
 		sentimentDictNegative = self.removePositiveDoubles(sentimentDictNegative, sentimentDictPositive)
 		sentimentDictNeutral = self.removeNeutralDoubles(sentimentDictNeutral, sentimentDictPositive, sentimentDictNegative)
 		sentimentDict = {}
 		sentimentDict.update(sentimentDictNegative)
 		sentimentDict.update(sentimentDictPositive)
 		sentimentDict.update(sentimentDictNeutral)
+		print(sentimentDict["der"])
 
 		return sentimentDict
 

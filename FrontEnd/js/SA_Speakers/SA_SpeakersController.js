@@ -63,6 +63,8 @@ SA_Speakers.SA_SpeakersController = function(){
 		speakersSpeechesView.init(speechesData);
 		speakersSpeechesView.renderSpeechesLineChart();
 
+		$("#mainpage").fadeIn();
+
 	};
 
 	that.init = init;

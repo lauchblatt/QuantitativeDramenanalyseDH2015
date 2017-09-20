@@ -16,13 +16,35 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dca = Drama_Corpus_Analyzer()
-	dca.calcMetricsForSingleDrama("")
+	dca.calcMetricsForEntireCorpus("Dumps/ProcessedDramas/treetagger/")
 
 class Drama_Corpus_Analyzer:
 	
 	def __init__(self):
 		self._speeches = []
 		self._speechesLengths = []
+
+	def calcMetricsForEntireCorpus(self, path):
+
+		for filename in os.listdir(path):
+			dpp = Drama_Pre_Processing("treetagger")
+			dramaModel = dpp.readDramaModelFromDump(path + filename)
+			for act in dramaModel._acts:
+				for conf in act._configurations:
+					for speech in conf._speeches:
+						self._speeches.append(speech)
+						self._speechesLengths.append(speech._lengthInWords)
+
+		avg = average(self._speechesLengths)
+		med = median(self._speechesLengths)
+		maximum = custom_max(self._speechesLengths)
+		minimum = custom_min(self._speechesLengths)
+		print(len(self._speeches))
+		print avg
+		print med
+		print maximum
+		print minimum
+
 
 	def calcMetricsForSingleDrama(self, path):
 		dpp = Drama_Pre_Processing()

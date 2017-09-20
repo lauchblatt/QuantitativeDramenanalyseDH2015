@@ -35,7 +35,7 @@ SA_Relations.RelationsController = function(){
 		var dramaProportions = relationsModel.getDramaRelationsProportions();
 		var actsProportions = relationsModel.getActsRelationsProportions();
 		var scenesProportions = relationsModel.getScenesRelationsProportions();
-
+		$("#mainpage").show();
 		dramaView.init(dramaRelationsMetrics);
 		dramaView.renderRelationsDrama();
 		actsView.init(actsRelationsMetrics, numberOfActs);
@@ -44,6 +44,9 @@ SA_Relations.RelationsController = function(){
 		scenesView.renderRelationsScenes();
 		proportionsView.init(dramaProportions, actsProportions, scenesProportions);
 		proportionsView.renderRelationsPieChart();
+		$("#mainpage").hide();
+		$("#mainpage").fadeIn();
+		
 
 	};
 

@@ -12,7 +12,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	cd = CD()
-	cd.createExtendedOutputDTA()
+	cd.initCD()
 
 
 class CD:
@@ -81,12 +81,15 @@ class CD:
 				infoPerWord["positive"] = 0
 			if(sentimentInfo[0] == "NEG"):
 				infoPerWord["negative"] = float(sentimentInfo[1])
+				
 			else:
 				infoPerWord["negative"] = 0
 			if(sentimentInfo[0] == "NEU"):
 				infoPerWord["neutral"] = float(sentimentInfo[1])
+				print word
 			else:
 				infoPerWord["neutral"] = 0
+
 
 			
 			if(unicode(word) in sentimentDict):

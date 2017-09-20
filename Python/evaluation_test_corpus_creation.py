@@ -16,9 +16,10 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	tcc = Test_Corpus_Creator()
-	tcc.readAndInitTestCorpusFromPickle("../Evaluation/Test-Korpus/UPDATED-switch-test-corpus-6.p")
-	tcc.saveTestCorpusWithLanguageInfoAsPickle("Dumps/TestCorpus/testCorpus")
+	tch = Test_Corpus_Handler()
+	tch.readAndInitTestCorpusFromPickle("Dumps/TestCorpus/test/testCorpus_textblob.p")
+	##tcc.saveTestCorpusWithLanguageInfoAsPickle("Dumps/TestCorpus/testCorpus")
+	tch.calcTestCorpusMetrics()
 
 	"""
 	sa = Sentiment_Analyzer(False)

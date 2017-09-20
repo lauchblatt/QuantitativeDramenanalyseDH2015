@@ -23,6 +23,10 @@ table {
 	font-size: 1.3em;
 }
 
+#mainpage {
+	display: none;
+}
+
 .checkbox {
 	display: inline-block;
 	margin-right: 2%;
