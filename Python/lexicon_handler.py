@@ -21,13 +21,13 @@ def main():
 	
 	#lexiconHandler.initSingleDict("CombinedLexicon-DTAExtended", "textblob")
 	#lexiconHandler.resetAllFilesDTAExtended()
-	lexiconHandler.readCombinedLexiconsDump("textblob", False)
+	#lexiconHandler.readCombinedLexiconsDump("textblob", False)
 
-	"""
+	#"""
 	lexiconHandler.combineSentimentLexica("textblob", True)
 	pickle.dump(lexiconHandler._sentimentDict, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Tokens.p", "wb"))
 	pickle.dump(lexiconHandler._sentimentDictLemmas, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Lemmas.p", "wb"))
-	"""
+	#"""
 
 class Lexicon_Handler:
 

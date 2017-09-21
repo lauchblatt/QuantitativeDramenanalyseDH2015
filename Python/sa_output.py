@@ -18,7 +18,7 @@ def main():
 	sog = Sentiment_Output_Generator()
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 	#"""
-	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas4.json",\
+	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas5.json",\
 	 True, "textblob", True, None, True)
 	#"""
 	#sog.generateJSONFileForSingleDrama("Dumps/ProcessedDramas/treetagger/Der Freigeist.p",\
