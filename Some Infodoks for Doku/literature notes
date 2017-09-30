@@ -1,0 +1,40 @@
+Generelle Notizen:
+
+- Mangel an SA-Lexika in nicht englischen Sprachen (Marchetti et al. 2014)
+- Mehrheitsvoting (5 Bewerter; Marchetti et al., 2014)
+- Marchetti auch --> Crowd als Benchmark, aber nicht die Übereinstimmung, sondern die Leistung von Laien
+- social media can be as low as 0321 in Marchetti et al. (2014) --> Agreement-Daten
+- 11 Prozent des Gesamtkorpus (Marchetti et al. 2014)
+
+- Alm & Sproat --> Gefühl aus der Sicht des Fühlers --> Ziel, Ausbildung für Annotatoren
+- Alm & Sproat --> Differenziertes Annotationsschema
+- Alm, Roth & Sproat --> Majorite als Baseline für ML
+
+- Kafka Paper --> Motivation, dass Emotionen relevant in literarischen Texten sind
+
+- SentiWS, GermanSentiSpin Evaluation bei Momtazi
+- Momtazi nennt den Lexikon-Ansatz auch regelbasiert
+- Klein/Großschreibung bei Klinger et al. (Kafka paper)
+- Annotationsverhalten für Emotionen Klinger et al. (Kafka paper)
+
+- Lehmann, Mittelbach, Schmaier wie ein Paper?
+
+- Anpassungen des DramaParsers
+
+- Regieanweisungen in/vor Repliken ?
+
+- bosco et al. (2014) unterscheiden zwischen Zustimmungsmehrheiten
+
+- warum emotionen?
+
+- Bosco et al. (2014) nehmen nur repliken weiter die eher übereinstimmung haben
+
+- keine uneindeutige/unbekannt gruppe; keine künstliche Konstruktion von binären Annotationen
+
+- Vorteil von Fragebogen ist subjektiv haltbare Infos zur Herausforderungen und Problemen zu erhalten
+
+- Inferenzstatistik erwähnen
+
+- Kreuzdiagrammme 
+
+- sentiWS Hinweis, dass es keine Evaluationskorpora gibt
