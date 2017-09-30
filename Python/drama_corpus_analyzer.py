@@ -24,6 +24,32 @@ class Drama_Corpus_Analyzer:
 		self._speeches = []
 		self._speechesLengths = []
 
+	def calcMetricsForSingleDramas(self, path):
+		for filename in os.listdir(path):
+			dpp = Drama_Pre_Processing("treetagger")
+			dramaModel = dpp.readDramaModelFromDump(path + filename)
+			speeches = []
+			speechesLengths = []
+			lengthInWords = 0
+			for act in dramaModel._acts:
+				for conf in act._configurations:
+					for speech in conf._speeches:
+						speeches.append(speech)
+						speechesLengths.append(speech._lengthInWords)
+						lengthInWords = lengthInWords + speech._lengthInWords
+			print(dramaModel._title)
+			avg = average(speechesLengths)
+			med = median(speechesLengths)
+			maximum = custom_max(speechesLengths)
+			minimum = custom_min(speechesLengths)
+			print(len(speeches))
+			print avg
+			print med
+			print maximum
+			print minimum
+			print lengthInWords
+
+
 	def calcMetricsForEntireCorpus(self, path):
 
 		for filename in os.listdir(path):
