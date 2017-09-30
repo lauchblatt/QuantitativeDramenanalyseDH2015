@@ -36,7 +36,7 @@ class Test_Corpus_Evaluation:
 		self._polarityBenchmark = []
 		#self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
 		#"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
-		self._polarityNames = ["polaritySentiWS"]
+		self._polarityNames = ["clearlyPolarityCombined"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}
@@ -115,12 +115,12 @@ class Test_Corpus_Evaluation:
 	def setEvaluationInfoOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
-		#DTAExtensions = [False, True]
-		DTAExtensions = [False]
+		DTAExtensions = [False, True]
+		#DTAExtensions = [False]
 		processors = ["treetagger", "textblob"]
-		lemmaModes = ["bothLemma", "textLemma", "noLemma"]
-		stopwordLists = [None, "standardList"]
-		#stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
+		lemmaModes = [ "noLemma", "textLemma", "bothLemma"]
+		#stopwordLists = [None, "standardList"]
+		stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
 		caseSensitives = [False, True]
 		doneCombinations = []
 		nameResultTuples = []
@@ -281,7 +281,7 @@ class Test_Corpus_Evaluation:
 			name = name + "tokens_noLemma_"
 		else:
 			if(lemmaMode == "bothLemma"):
-				name = name + processor + "_lemmaBoth" + "_"
+				name = name + processor + "_bothLemma" + "_"
 			elif(lemmaMode == "textLemma"):
 				name = name + processor + "_textLemma" + "_"
 		if(stopwordList is None):

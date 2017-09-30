@@ -1,0 +1,2767 @@
+dtaExtended_tokens_noLemma_enhancedList_caseSensitive
+
+Main Metrics:
+accuracy: 0.455
+Recall Positive: 0.524590163934
+Precision Positive: 0.285714285714
+F-Measure Positive: 0.369942196532
+Recall Negative: 0.424460431655
+Precision Negative: 0.670454545455
+F-Measure Negative: 0.519823788546
+Recall Average: 0.474525297795
+Precision Average: 0.478084415584
+F-Measure Average: 0.444882992539
+
+Actual Class	Predicted Negative	Predicted Positive
+Negatives	59	80	139
+Positives	29	32	61
+Sum	88	112	200
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 93, ID:1
+positiveNrc: 8
+negativeNrc: 3
+polarityNrc: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(wertester, wertester, ADJA): 1, 0
+(Voll, voll, ADJD): 0, 1
+(schwach, schwach, ADJD): 0, 1
+(edel, edel, ADJD): 1, 0
+(Erfüllung, Erfüllung, NN): 1, 0
+(unmöglich, unmöglich, ADJD): 0, 1
+(voraus, voraus, PTKVZ): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+(Tugend, Tugend, NN): 1, 0
+(Freundes, Freund, NN): 1, 0
+(Gelegenheit, Gelegenheit, NN): 1, 0
+
+1.Akt, 10.Szene, 21.Replik, Drama-Nummer: 177, ID:2
+positiveNrc: 2
+negativeNrc: 9
+polarityNrc: -7
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Verzeihungen, Verzeihungen, NN): 1, 0
+(gedient, dienen, VVPP): 0, 1
+(schlage, schlagen, VVFIN): 0, 1
+(vergessen, vergessen, VVINF): 0, 1
+(trennen, trennen, VVINF): 0, 1
+(notwendig, notwendig, ADJD): 0, 1
+(unglücklichste, unglücklich, ADJA): 0, 1
+(schwer, schwer, ADJD): 0, 1
+(finden, finden, VVINF): 1, 0
+(Fehlers, Fehler, NN): 0, 1
+(verlassen, verlassen, VVPP): 0, 1
+
+1.Akt, 4.Szene, 21.Replik, Drama-Nummer: 79, ID:3
+positiveNrc: 9
+negativeNrc: 0
+polarityNrc: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(leicht, leicht, ADJD): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+(Geldern, Geld, NN): 1, 0
+(Teil, Teil, NN): 1, 0
+(Vermögens, Vermögen, NN): 1, 0
+(beschieden, bescheiden, VVPP): 1, 0
+(verpflichtet, verpflichten, VVPP): 1, 0
+(Vermögen, Vermögen, NN): 1, 0
+
+1.Akt, 1.Szene, 5.Replik, Drama-Nummer: 5, ID:4
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(munter, munter, ADJD): 1, 0
+(Arbeit, Arbeit, NN): 1, 0
+(dienen, dienen, VVINF): 0, 1
+(dient, dienen, VVFIN): 0, 1
+(Dienen, Dienen, NN): 0, 1
+(Scherz, Scherz, NN): 0, 1
+
+1.Akt, 4.Szene, 19.Replik, Drama-Nummer: 77, ID:5
+positiveNrc: 4
+negativeNrc: 3
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(standhafte, standhaft, ADJA): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(Wissen, wissen, VVFIN): 1, 0
+(mal, mal, ADV): 0, 1
+(Lust, Lust, NN): 0, 1
+(Summe, Summe, NN): 1, 0
+(unglücklich, unglücklich, ADJD): 0, 1
+
+1.Akt, 10.Szene, 4.Replik, Drama-Nummer: 160, ID:6
+positiveNrc: 5
+negativeNrc: 1
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(glücklichsten, glücklich, ADJA): 1, 0
+(erklären, erklären, VVINF): 1, 0
+(Himmel, Himmel, NN): 1, 0
+(gewollt, gewollt, ADJD): 0, 1
+(kostbare, kostbar, ADJA): 1, 0
+(Geschenk, Geschenk, NN): 1, 0
+
+3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Erklärung, Erklärung, NN): 1, 0
+
+1.Akt, 5.Szene, 15.Replik, Drama-Nummer: 122, ID:8
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Unglück, Unglück, NN): 0, 1
+
+3.Akt, 2.Szene, 10.Replik, Drama-Nummer: 365, ID:9
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Schmerzen, Schmerz, NN): 0, 1
+(erwarten, erwarten, VVINF): 1, 0
+(bitten, bitten, VVINF): 0, 1
+
+4.Akt, 3.Szene, 22.Replik, Drama-Nummer: 542, ID:10
+positiveNrc: 5
+negativeNrc: 2
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Reden, Rede|Reden, NN): 1, 0
+(vorsichtig, vorsichtig, ADJD): 1, 0
+(vorsichtig, vorsichtig, ADJD): 1, 0
+(Heiligste, Heiligste, NN): 1, 0
+(Tugend, Tugend, NN): 1, 0
+(Spotte, Spotte, NN): 0, 1
+(ausgesetzt, aussetzen, VVPP): 0, 1
+
+4.Akt, 7.Szene, 11.Replik, Drama-Nummer: 590, ID:11
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Unglück, Unglück, NN): 0, 1
+(gewürzt, würzen, VVPP): 1, 0
+(betaure, betaure, VVFIN): 0, 1
+(verderbliche, verderblich, ADJA): 0, 1
+(Macht, Macht, NN): 1, 0
+(unanständig, unanständig, ADJD): 0, 1
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 186, ID:12
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(böse, böse, ADJD): 0, 1
+(flüchtige, flüchtig, ADJA): 0, 1
+
+5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
+positiveNrc: 14
+negativeNrc: 15
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mühe, Mühe, NN): 0, 1
+(Gelegenheit, Gelegenheit, NN): 1, 0
+(Zwang, Zwang, NN): 0, 1
+(liebte, lieben, VVFIN): 1, 0
+(Gründe, Grund, NN): 1, 0
+(Unabhängigkeit, Unabhängigkeit, NN): 1, 0
+(behaupten, behaupten, VVINF): 0, 1
+(zwingen, zwingen, VVINF): 0, 1
+(hilft, helfen, VVFIN): 1, 0
+(Märtyrer, Märtyrer, NN): 0, 1
+(finden, finden, VVINF): 1, 0
+(unterdrückte, unterdrücken, VVFIN): 0, 1
+(widerstehen, widerstehen, VVINF): 0, 1
+(richtige, richtig, ADJA): 1, 0
+(Wahn, Wahn, NN): 0, 1
+(aufgeben, aufgeben, VVINF): 0, 1
+(liebenswürdig, liebenswürdig, ADJD): 1, 0
+(fand, finden, VVFIN): 1, 0
+(unmöglich, unmöglich, ADJD): 0, 1
+(einbilden, einbilden, VVINF): 0, 1
+(verderbt, verderben, VVFIN): 0, 1
+(besten, gut, ADJA): 1, 0
+(Art, Art, NN): 1, 0
+(gefährliche, gefährlich, ADJA): 0, 1
+(ansehen, ansehen, VVINF): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+(gezwungen, zwingen, VVPP): 0, 1
+(Grund, Grund, NN): 1, 0
+(Mehr, mehr, ADV): 1, 0
+
+1.Akt, 5.Szene, 40.Replik, Drama-Nummer: 147, ID:14
+positiveNrc: 1
+negativeNrc: 11
+polarityNrc: -10
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(rasend, rasend, ADJD): 0, 1
+(Streiche, Streich, NN): 0, 1
+(gedenke, gedenken, VVFIN): 1, 0
+(ungerechtes, ungerecht, ADJA): 0, 1
+(Schicksal, Schicksal, NN): 0, 1
+(spielen, spielen, VVFIN): 0, 1
+(wen, wer, PWS): 0, 1
+(murre, murren, VVFIN): 0, 1
+(taubes, taub, ADJA): 0, 1
+(blinden, blind, ADJA): 0, 1
+(schwer, schwer, ADJD): 0, 1
+(fällt, fallen|fällen, VVFIN): 0, 1
+
+2.Akt, 3.Szene, 21.Replik, Drama-Nummer: 246, ID:15
+positiveNrc: 4
+negativeNrc: 0
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(machten, machen, VVFIN): 1, 0
+(Kompliment, Kompliment, NN): 1, 0
+(gemacht, machen, VVPP): 1, 0
+(besitzen, besitzen, VVFIN): 1, 0
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 161, ID:16
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Vorstellungen, Vorstellung, NN): 1, 0
+(versprechen, versprechen, VVFIN): 1, 0
+
+5.Akt, 1.Szene, 40.Replik, Drama-Nummer: 699, ID:17
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(arg, arg, ADJD): 0, 1
+(erstaunlichste, erstaunlich, ADJA): 1, 0
+(Art, Art, NN): 1, 0
+
+2.Akt, 3.Szene, 23.Replik, Drama-Nummer: 248, ID:18
+positiveNrc: 2
+negativeNrc: 10
+polarityNrc: -8
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(ziemlich, ziemlich, ADV): 1, 0
+(schlecht, schlecht, ADJD): 0, 1
+(Weise, Weise, NN): 0, 1
+(leiden, leiden, VVINF): 0, 1
+(leiden, leiden, VVINF): 0, 1
+(gedacht, denken|gedenken, VVPP): 1, 0
+(gottlose, gottlos, ADJA): 0, 1
+(ungläubigen, ungläubig, ADJA): 0, 1
+(verfallen, verfallen, VVPP): 0, 1
+(Hören, hören, VVFIN): 0, 1
+(zerstreut, zerstreuen, VVFIN): 0, 1
+(unruhig, unruhig, ADJD): 0, 1
+
+4.Akt, 9.Szene, 3.Replik, Drama-Nummer: 644, ID:19
+positiveNrc: 4
+negativeNrc: 0
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(frei, frei, ADJD): 1, 0
+(Summe, Summe, NN): 1, 0
+(Geldes, Geld, NN): 1, 0
+(gefunden, finden, VVPP): 1, 0
+
+3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(bekannt, bekannt, ADJD): 1, 0
+(Dorn, Dorn, NN): 0, 1
+
+1.Akt, 1.Szene, 4.Replik, Drama-Nummer: 4, ID:21
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Fragen, Frage, NN): 1, 0
+(Gut, gut, ADJD): 1, 0
+(Art, Art, NN): 1, 0
+
+4.Akt, 1.Szene, 23.Replik, Drama-Nummer: 504, ID:22
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(unschuldige, unschuldig, ADJA): 1, 0
+
+2.Akt, 1.Szene, 17.Replik, Drama-Nummer: 179, ID:23
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gute, gut, ADJA): 1, 0
+(Haupt, Haupt, NN): 1, 0
+(verachten, verachten, VVINF): 0, 1
+
+3.Akt, 5.Szene, 32.Replik, Drama-Nummer: 421, ID:24
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(demütigen, demütig, ADJA): 0, 1
+(ehrlichsten, ehrlich, ADJA): 1, 0
+(versichert, versichern, VVPP): 1, 0
+(Mühe, Mühe, NN): 0, 1
+(Verwirrung, Verwirrung, NN): 0, 1
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 549, ID:25
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(bösen, böse, ADJA): 0, 1
+(lebhaftes, lebhaft, ADJA): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+(grausam, grausam, ADJD): 0, 1
+(Verbrechen, Verbrechen, NN): 0, 1
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:26
+positiveNrc: 4
+negativeNrc: 0
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Freundschaft, Freundschaft, NN): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+(Wissen, wissen, VVFIN): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+
+3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
+positiveNrc: 1
+negativeNrc: 5
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(ißt, essen, VVFIN): 1, 0
+(trinken, trinken, VVINF): 0, 1
+(liegt, liegen, VVFIN): 0, 1
+(Worte, Wort, NN): 0, 1
+(Not, Not, NN): 0, 1
+(murmeln, murmeln, VVINF): 0, 1
+
+2.Akt, 14.Szene, 9.Replik, Drama-Nummer: 574, ID:28
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Kriege, Krieg, NN): 0, 1
+(Abendessen, Abendessen, NN): 1, 0
+(fasten, fasten, VVINF): 0, 1
+
+1.Akt, 4.Szene, 12.Replik, Drama-Nummer: 117, ID:29
+positiveNrc: 3
+negativeNrc: 3
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(ziemlich, ziemlich, ADV): 1, 0
+(verschlagen, verschlagen, VVPP): 0, 1
+(Bescheidenheit, Bescheidenheit, NN): 1, 0
+(fremde, fremd, ADJA): 0, 1
+(Wahrheit, Wahrheit, NN): 1, 0
+(Hören, hören, VVFIN): 0, 1
+
+1.Akt, 6.Szene, 68.Replik, Drama-Nummer: 210, ID:30
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(vergehen, vergehen, VVINF): 0, 1
+(ers, ers, ADJD): 0, 1
+
+3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(wann, wann, PWAV): 0, 1
+
+1.Akt, 1.Szene, 14.Replik, Drama-Nummer: 14, ID:32
+positiveNrc: 8
+negativeNrc: 4
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Ernste, Ernste, NN): 1, 0
+(böse, böse, ADJD): 0, 1
+(lesen, lesen, VVFIN): 1, 0
+(Stern, Stern, NN): 1, 0
+(verstehen, verstehen, VVFIN): 1, 0
+(lesen, lesen, VVINF): 1, 0
+(Wann, wann, PWAV): 0, 1
+(wies, weisen, VVFIN): 1, 0
+(lernen, lernen, VVINF): 1, 0
+(verführt, verführen, VVFIN): 0, 1
+(böse, böse, ADJA): 0, 1
+(lernen, lernen, VVINF): 1, 0
+
+3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+3.Akt, 15.Szene, 6.Replik, Drama-Nummer: 887, ID:34
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Verse, Vers, NN): 0, 1
+(unmöglich, unmöglich, ADJD): 0, 1
+
+3.Akt, 17.Szene, 3.Replik, Drama-Nummer: 1000, ID:35
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(kaum, kaum, ADV): 0, 1
+
+1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(heiraten, heiraten, VVINF): 1, 0
+
+3.Akt, 1.Szene, 33.Replik, Drama-Nummer: 623, ID:37
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(leer, leer, ADJD): 0, 1
+(wann, wann, PWAV): 0, 1
+
+2.Akt, 11.Szene, 49.Replik, Drama-Nummer: 539, ID:38
+positiveNrc: 3
+negativeNrc: 1
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(stärksten, stark, ADJA): 1, 0
+(schwerer, schwer, ADJD): 0, 1
+(junger, jung, ADJA): 1, 0
+(Gelehrter, Gelehrte, NN): 1, 0
+
+3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Ernste, Ernste, NE): 1, 0
+(Jungfer, Jungfer, NN): 0, 1
+(böse, böse, ADJA): 0, 1
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 646, ID:41
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mönch, Mönch, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(Weiß, weiß, ADJD): 1, 0
+
+2.Akt, 12.Szene, 4.Replik, Drama-Nummer: 545, ID:42
+positiveNrc: 9
+negativeNrc: 5
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(erwarten, erwarten, VVINF): 1, 0
+(Vorurteil, Vorurteil, NN): 0, 1
+(geschickt, geschickt, ADJD): 1, 0
+(nützliche, nützlich, ADJA): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+(wert, wert, ADJD): 1, 0
+(ekel, ekeln, VVIMP): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(geholfen, helfen, VVPP): 1, 0
+(höchsten, hoch, ADJA): 0, 1
+(Grad, Grad, NN): 1, 0
+(mittelmäßigen, mittelmäßig, ADJA): 0, 1
+(Genies, Genie, NN): 1, 0
+(Geistern, Geist, NN): 0, 1
+
+3.Akt, 14.Szene, 11.Replik, Drama-Nummer: 864, ID:43
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Verse, Vers, NN): 0, 1
+(Gelegenheit, Gelegenheit, NN): 1, 0
+
+3.Akt, 15.Szene, 69.Replik, Drama-Nummer: 950, ID:44
+positiveNrc: 4
+negativeNrc: 2
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Verfasser, Verfasser, NN): 1, 0
+(schaffe, schaffen, VVFIN): 1, 0
+(Arbeit, Arbeit, NN): 1, 0
+(fremden, fremd, ADJA): 0, 1
+(häßliche, hässlich, ADJA): 0, 1
+(Mach, machen, VVIMP): 1, 0
+
+2.Akt, 1.Szene, 12.Replik, Drama-Nummer: 264, ID:45
+positiveNrc: 1
+negativeNrc: 5
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(liebt, lieben, VVFIN): 1, 0
+(Verdacht, Verdacht, NN): 0, 1
+(fehlte, fehlen, VVFIN): 0, 1
+(Wann, wann, PWAV): 0, 1
+(taub, taub, ADJD): 0, 1
+(wann, wann, PWAV): 0, 1
+
+3.Akt, 13.Szene, 9.Replik, Drama-Nummer: 846, ID:46
+positiveNrc: 6
+negativeNrc: 5
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Henker, Henker, NN): 0, 1
+(Taube, Taube, NN): 1, 0
+(Taube, Taube, NN): 1, 0
+(Belohnung, Belohnung, NN): 1, 0
+(Alten, alt, ADJA): 1, 0
+(verloren, verlieren, VVPP): 0, 1
+(gnädigen, gnädig, ADJA): 1, 0
+(Teufel, Teufel, NN): 0, 1
+(Jungfer, Jungfer, NN): 0, 1
+(lehren, lehren, VVFIN): 1, 0
+(unglücklich, unglücklich, ADJD): 0, 1
+
+3.Akt, 15.Szene, 90.Replik, Drama-Nummer: 971, ID:47
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Zeitung, Zeitung, NN): 1, 0
+(gefunden, finden, VVPP): 1, 0
+(junges, jung, ADJA): 1, 0
+
+1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Gut, gut, ADJD): 1, 0
+(Lust, Lust, NN): 0, 1
+
+1.Akt, 2.Szene, 5.Replik, Drama-Nummer: 50, ID:49
+positiveNrc: 5
+negativeNrc: 2
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(warne, warnen, VVFIN): 0, 1
+(gefährlich, gefährlich, ADJD): 0, 1
+(guten, gut, ADJA): 1, 0
+(Jugend, Jugend, NN): 1, 0
+(still, still, ADJD): 1, 0
+(beschaffen, beschaffen, VVINF): 1, 0
+(lebendiges, lebendig, ADJA): 1, 0
+
+3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
+positiveNrc: 1
+negativeNrc: 6
+polarityNrc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Lauter, laut, ADJD): 0, 1
+(dumme, dumm, ADJA): 0, 1
+(Streiche, Streich, NN): 0, 1
+(redte, redte, VVFIN): 1, 0
+(liegen, liegen, PTKVZ): 0, 1
+(fluchen, fluchen, VVINF): 0, 1
+(liegen, liegen, VVINF): 0, 1
+
+1.Akt, 4.Szene, 5.Replik, Drama-Nummer: 110, ID:51
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(albern, albern, ADJD): 0, 1
+(guter, gut, ADJA): 1, 0
+
+1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(heiraten, heiraten, VVINF): 1, 0
+
+3.Akt, 18.Szene, 3.Replik, Drama-Nummer: 1010, ID:53
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(fremden, fremd, ADJA): 0, 1
+(Ländern, Land, NN): 1, 0
+
+1.Akt, 6.Szene, 70.Replik, Drama-Nummer: 212, ID:54
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Hülfe, Hülfe, NN): 1, 0
+(Gauner, Gauner, NN): 0, 1
+(ehrlichen, ehrlich, ADJA): 1, 0
+
+1.Akt, 3.Szene, 2.Replik, Drama-Nummer: 59, ID:55
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Heiraten, Heirat|Heiraten, NN): 1, 0
+(Helfen, helfen, VVFIN): 1, 0
+
+1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gewonnen, gewinnen, VVPP): 1, 0
+
+1.Akt, 6.Szene, 14.Replik, Drama-Nummer: 148, ID:58
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(leichter, leicht, ADJD): 1, 0
+(führen, führen, VVINF): 1, 0
+(angenehm, angenehm, ADJD): 1, 0
+
+1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Willst, wollen, VMFIN): 0, 1
+(liegt, liegen, VVFIN): 0, 1
+(schlechte, schlecht, ADJA): 0, 1
+(erfahren, erfahren, VVINF): 1, 0
+(erfahren, erfahren, VVPP): 1, 0
+
+1.Akt, 6.Szene, 15.Replik, Drama-Nummer: 149, ID:60
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(klein, klein, ADJD): 0, 1
+(zweideutig, zweideutig, ADJD): 0, 1
+(Danksagung, Danksagung, NN): 1, 0
+
+3.Akt, 4.Szene, 14.Replik, Drama-Nummer: 390, ID:61
+positiveNrc: 3
+negativeNrc: 1
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(schönern, schönern, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(Zwang, Zwang, NN): 0, 1
+(stärker, stark, ADJD): 1, 0
+
+1.Akt, 6.Szene, 24.Replik, Drama-Nummer: 158, ID:62
+positiveNrc: 4
+negativeNrc: 0
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(voraus, voraus, PTKVZ): 1, 0
+(Freundin, Freundin, NN): 1, 0
+(Bruders, Bruder, NN): 1, 0
+(besitzen, besitzen, VVFIN): 1, 0
+
+2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
+positiveNrc: 6
+negativeNrc: 1
+polarityNrc: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mache, machen, VVFIN): 1, 0
+(Art, Art, NN): 1, 0
+(schwer, schwer, ADJD): 0, 1
+(Art, Art, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(Vertrauen, Vertrauen, NN): 1, 0
+(zusammen, zusammen, ADV): 1, 0
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 369, ID:64
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Freiheit, Freiheit, NN): 1, 0
+(ändern, ändern, VVINF): 1, 0
+(liebe, lieben, VVFIN): 1, 0
+
+2.Akt, 2.Szene, 18.Replik, Drama-Nummer: 210, ID:65
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Hoffnung, Hoffnung, NN): 1, 0
+(verloren, verlieren, VVPP): 0, 1
+(neidisch, neidisch, ADJD): 0, 1
+
+3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Verdacht, Verdacht, NN): 0, 1
+(fallen, fallen, VVINF): 0, 1
+
+2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Jungfer, Jungfer, NN): 0, 1
+
+1.Akt, 4.Szene, 7.Replik, Drama-Nummer: 98, ID:68
+positiveNrc: 1
+negativeNrc: 3
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Wahne, Wahn, NN): 0, 1
+(bestätigen, bestätigen, VVFIN): 1, 0
+(unmöglich, unmöglich, ADJD): 0, 1
+(treiben, treiben, VVFIN): 0, 1
+
+1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:71
+positiveNrc: 4
+negativeNrc: 2
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mädchen, Mädchen, NN): 1, 0
+(jung, jung, ADJD): 1, 0
+(jung, jung, ADJD): 1, 0
+(alt, alt, ADJD): 0, 1
+(Kinder, Kind, NN): 1, 0
+(alt, alt, ADJD): 0, 1
+
+1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Danksagung, Danksagung, NN): 1, 0
+(geschafft, schaffen, VVPP): 1, 0
+(finden, finden, VVINF): 1, 0
+
+1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(besten, gut, ADJA): 1, 0
+
+1.Akt, 3.Szene, 36.Replik, Drama-Nummer: 110, ID:74
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(zog, ziehen, VVFIN): 0, 1
+(gewissen, gewiss, ADJA): 1, 0
+(entdecken, entdecken, VVINF): 1, 0
+(Warten, Warte|Warten, NN): 0, 1
+(klein, klein, ADJD): 0, 1
+
+1.Akt, 3.Szene, 103.Replik, Drama-Nummer: 177, ID:75
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gutes, gut, ADJA): 1, 0
+(Lügen, Lüge|Lügen, NN): 0, 1
+
+1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
+positiveNrc: 3
+negativeNrc: 4
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Streich, Streich, NN): 0, 1
+(machst, machen, VVFIN): 1, 0
+(vergeben, vergeben, VVINF): 1, 0
+(kleinste, klein, ADJA): 0, 1
+(Ausschweifung, Ausschweifung, NN): 0, 1
+(Strafe, Strafe, NN): 0, 1
+(ziehen, ziehen, VVINF): 1, 0
+
+1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
+positiveNrc: 2
+negativeNrc: 2
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Himmel, Himmel, NN): 1, 0
+(Schicksal, Schicksal, NN): 0, 1
+(Lohn, Lohn, NN): 1, 0
+(saure, sauer, ADJA): 0, 1
+
+1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
+positiveNrc: 6
+negativeNrc: 5
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(guten, gut, ADJA): 1, 0
+(Rat, Rat, NN): 1, 0
+(verborgen, verbergen, VVPP): 0, 1
+(her, her, APZR): 1, 0
+(Wahrheit, Wahrheit, NN): 1, 0
+(gelegen, liegen, VVPP): 0, 1
+(liegen, liegen, VVINF): 0, 1
+(verleumden, verleumden, VVINF): 0, 1
+(Gewissen, Gewissen, NN): 1, 0
+(Kinder, Kind, NN): 1, 0
+(betrogen, betrügen, VVPP): 0, 1
+
+1.Akt, 1.Szene, 67.Replik, Drama-Nummer: 67, ID:79
+positiveNrc: 4
+negativeNrc: 3
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(reifern, reifern, ADJA): 1, 0
+(ändern, ändern, VVINF): 1, 0
+(schöne, schön, ADJA): 1, 0
+(beste, gut, ADJA): 1, 0
+(fehlt, fehlen, VVFIN): 0, 1
+(Schuld, Schuld, NN): 0, 1
+(fallen, fallen, VVINF): 0, 1
+
+1.Akt, 1.Szene, 58.Replik, Drama-Nummer: 58, ID:80
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Verdiensten, Verdienst, NN): 1, 0
+(reich, reich, ADJD): 1, 0
+
+2.Akt, 2.Szene, 6.Replik, Drama-Nummer: 164, ID:81
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Wahrheit, Wahrheit, NN): 1, 0
+(höflicher, höflich, ADJD): 1, 0
+(dringend, dringend, ADJD): 0, 1
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Narr, Narr, NN): 0, 1
+(wichtigsten, wichtig, ADJA): 1, 0
+(stören, stören, VVINF): 0, 1
+
+2.Akt, 2.Szene, 14.Replik, Drama-Nummer: 172, ID:83
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(beschwerst, beschwerst, VVFIN): 0, 1
+(rede, reden, VVFIN): 1, 0
+(Schuld, Schuld, NN): 0, 1
+(rede, reden, VVFIN): 1, 0
+(lächerlich, lächerlich, ADJD): 0, 1
+(wolltest, wollen, VMFIN): 0, 1
+
+2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
+positiveNrc: 5
+negativeNrc: 10
+polarityNrc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Jugend, Jugend, NN): 1, 0
+(Übel, Übel, NN): 0, 1
+(gesungen, singen, VVPP): 1, 0
+(Kunst, Kunst, NN): 1, 0
+(unglücklich, unglücklich, ADJD): 0, 1
+(böse, böse, ADJA): 0, 1
+(liegt, liegen, VVFIN): 0, 1
+(Tod, Tod, NN): 0, 1
+(krank, krank, ADJD): 0, 1
+(liegt, liegen, VVFIN): 0, 1
+(entschließen, entschließen, VVINF): 1, 0
+(sterben, sterben, VVINF): 0, 1
+(Jungfern, Jungfer, NN): 0, 1
+(Unglücke, Unglück, NN): 0, 1
+(Geschlecht, Geschlecht, NN): 1, 0
+
+2.Akt, 2.Szene, 24.Replik, Drama-Nummer: 182, ID:85
+positiveNrc: 3
+negativeNrc: 2
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Stoff, Stoff, NN): 1, 0
+(bessern, bessern, VVINF): 1, 0
+(notwendig, notwendig, ADJD): 0, 1
+(Wahl, Wahl, NN): 1, 0
+(Wen, wer, PWS): 0, 1
+
+3.Akt, 5.Szene, 4.Replik, Drama-Nummer: 334, ID:86
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Schneider, Schneider, NE): 0, 1
+
+3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verführst, verführst, VVFIN): 0, 1
+
+2.Akt, 6.Szene, 17.Replik, Drama-Nummer: 255, ID:88
+positiveNrc: 4
+negativeNrc: 0
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(besitze, besitzen, VVFIN): 1, 0
+(Stärke, Stärke, NN): 1, 0
+(besten, gut, ADJD): 1, 0
+(unschuldiges, unschuldig, ADJA): 1, 0
+
+3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Zweifel, Zweifel, NN): 0, 1
+
+3.Akt, 7.Szene, 23.Replik, Drama-Nummer: 380, ID:90
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(schuldig, schuldig, ADJD): 0, 1
+(liebe, lieb, ADJA): 1, 0
+
+1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Jungfer, Jungfer, NN): 0, 1
+(Schlag, Schlag, NN): 0, 1
+
+1.Akt, 1.Szene, 22.Replik, Drama-Nummer: 22, ID:92
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verfahren, verfahren, VVPP): 1, 0
+
+1.Akt, 4.Szene, 8.Replik, Drama-Nummer: 56, ID:93
+positiveNrc: 6
+negativeNrc: 3
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Scherze, Scherz, NN): 0, 1
+(Frühstück, Frühstück, NN): 1, 0
+(einbilden, einbilden, VVINF): 0, 1
+(Ernste, Ernste, NN): 1, 0
+(Macht, machen, VVFIN): 1, 0
+(junge, jung, ADJA): 1, 0
+(Kind, Kind, NN): 1, 0
+(klein, klein, ADJD): 0, 1
+(gewissen, gewiss, ADJA): 1, 0
+
+1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
+positiveNrc: 2
+negativeNrc: 2
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(wollten, wollen, VMFIN): 0, 1
+(mitten, mitten, ADV): 1, 0
+(weisen, weisen, VVINF): 1, 0
+(unbequemsten, unbequem, ADJA): 0, 1
+
+1.Akt, 16.Szene, 4.Replik, Drama-Nummer: 268, ID:95
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(höflich, höflich, ADJD): 1, 0
+(unverschämt, unverschämt, ADJD): 0, 1
+
+1.Akt, 2.Szene, 25.Replik, Drama-Nummer: 35, ID:96
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 70, ID:97
+positiveNrc: 3
+negativeNrc: 3
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(wollten, wollen, VMFIN): 0, 1
+(Ernst, Ernst, NE): 1, 0
+(liebenswürdig, liebenswürdig, ADJD): 1, 0
+(entsetzlich, entsetzlich, ADJD): 0, 1
+(entsetzlich, entsetzlich, ADJD): 0, 1
+(gedenken, gedenken, VVINF): 1, 0
+
+1.Akt, 8.Szene, 4.Replik, Drama-Nummer: 122, ID:98
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Diener, Diener, NN): 0, 1
+(Bitten, Bitte|Bitten, NN): 0, 1
+(Komplimente, Kompliment, NN): 1, 0
+
+1.Akt, 2.Szene, 9.Replik, Drama-Nummer: 19, ID:99
+positiveNrc: 1
+negativeNrc: 4
+polarityNrc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Dienen, Dienen, NN): 0, 1
+(beschweren, beschweren, VVINF): 0, 1
+(Wollten, wollen, VMFIN): 0, 1
+(guten, gut, ADJA): 1, 0
+(wollten, wollen, VMFIN): 0, 1
+
+1.Akt, 18.Szene, 18.Replik, Drama-Nummer: 310, ID:100
+positiveNrc: 2
+negativeNrc: 2
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(trugen, tragen, VVFIN): 0, 1
+(entdecken, entdecken, VVINF): 1, 0
+(Wahrheit, Wahrheit, NN): 1, 0
+(Mörder, Mörder, NN): 0, 1
+
+1.Akt, 9.Szene, 9.Replik, Drama-Nummer: 149, ID:101
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(übel, übel, ADJD): 0, 1
+(bitte, bitten, VVFIN): 0, 1
+(zufrieden, zufrieden, ADJD): 1, 0
+
+1.Akt, 22.Szene, 19.Replik, Drama-Nummer: 370, ID:102
+positiveNrc: 2
+negativeNrc: 5
+polarityNrc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Vergeltung, Vergeltung, NN): 0, 1
+(bitte, bitten, VVFIN): 0, 1
+(allgemein, allgemein, ADJD): 1, 0
+(verborgen, verbergen, VVPP): 0, 1
+(Abneigung, Abneigung, NN): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(wolle, wollen, VMFIN): 0, 1
+
+1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
+positiveNrc: 3
+negativeNrc: 1
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(schönen, schön, ADJA): 1, 0
+(Malen, Mal|Malen, NN): 0, 1
+(Gräfin, Gräfin, NN): 1, 0
+(entschließen, entschließen, VVINF): 1, 0
+
+3.Akt, 2.Szene, 18.Replik, Drama-Nummer: 408, ID:104
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(billiger, billig, ADJD): 0, 1
+
+5.Akt, 5.Szene, 39.Replik, Drama-Nummer: 766, ID:105
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+4.Akt, 5.Szene, 42.Replik, Drama-Nummer: 623, ID:106
+positiveNrc: 6
+negativeNrc: 3
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Bräutigam, Bräutigam, NN): 1, 0
+(guter, gut, ADJA): 1, 0
+(ziemlich, ziemlich, ADV): 1, 0
+(zusammen, zusammen, PTKVZ): 1, 0
+(zusammen, zusammen, ADV): 1, 0
+(verstehen, verstehen, VVFIN): 1, 0
+(Bosheit, Bosheit, NN): 0, 1
+(schlecht, schlecht, ADJD): 0, 1
+(Vorsicht, Vorsicht, NN): 0, 1
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 574, ID:107
+positiveNrc: 8
+negativeNrc: 5
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Wunder, Wunder, NN): 1, 0
+(verachtet, verachten, VVPP): 0, 1
+(ekel, ekeln, VVIMP): 0, 1
+(Lachen, lachen, VVINF): 1, 0
+(lachen, lachen, VVINF): 1, 0
+(guter, gut, ADJA): 1, 0
+(Laune, Laune, NN): 0, 1
+(Prinzen, Prinz, NN): 1, 0
+(lieset, lieset, VVFIN): 0, 1
+(lachen, lachen, VVFIN): 1, 0
+(Geschöpfe, Geschöpf, NN): 0, 1
+(Ernsthaft, ernsthaft, ADJD): 1, 0
+(lachen, lachen, VVFIN): 1, 0
+
+2.Akt, 6.Szene, 31.Replik, Drama-Nummer: 247, ID:108
+positiveNrc: 3
+negativeNrc: 1
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mutter, Mutter, NN): 1, 0
+(bessern, bessern, VVFIN): 1, 0
+(erführe, erfahren, VVFIN): 1, 0
+(spät, spät, ADJD): 0, 1
+
+4.Akt, 7.Szene, 9.Replik, Drama-Nummer: 652, ID:109
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Kind, Kind, NN): 1, 0
+(unglückliche, unglücklich, ADJA): 0, 1
+(Kind, Kind, NN): 1, 0
+
+3.Akt, 5.Szene, 11.Replik, Drama-Nummer: 451, ID:110
+positiveNrc: 14
+negativeNrc: 13
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(beschämt, beschämen, VVPP): 0, 1
+(verdiene, verdienen, VVFIN): 1, 0
+(Vorwurf, Vorwurf, NN): 0, 1
+(entschuldigen, entschuldigen, VVFIN): 1, 0
+(Schwachheit, Schwachheit, NN): 0, 1
+(Vorteil, Vorteil, NN): 1, 0
+(erwarten, erwarten, VVINF): 1, 0
+(Bestürzung, Bestürzung, NN): 0, 1
+(bestraft, bestrafen, VVPP): 0, 1
+(ehe, ehe, KOUS): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(ewig, ewig, ADJD): 1, 0
+(verschwindet, verschwinden, VVFIN): 0, 1
+(günstigen, günstig, ADJA): 1, 0
+(Glückes, Glückes, NN): 1, 0
+(erklären, erklären, VVFIN): 1, 0
+(wunderbarsten, wunderbar, ADJA): 1, 0
+(Verurteilung, Verurteilung, NN): 0, 1
+(erklären, erklären, VVFIN): 1, 0
+(Gnade, Gnade, NN): 1, 0
+(flehen, flehen, VVINF): 1, 0
+(beleidigen, beleidigen, VVINF): 0, 1
+(Mißtrauen, Misstrauen, NN): 0, 1
+(Gewalt, Gewalt, NN): 0, 1
+(falle, fallen, VVFIN): 0, 1
+(warten, warten, VVINF): 0, 1
+(billigen, billigen, VVINF): 0, 1
+
+4.Akt, 7.Szene, 15.Replik, Drama-Nummer: 658, ID:111
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(tot, tot, ADJD): 0, 1
+
+5.Akt, 5.Szene, 9.Replik, Drama-Nummer: 736, ID:112
+positiveNrc: 3
+negativeNrc: 1
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Schönheit, Schönheit, NN): 1, 0
+(Kloster, Kloster, NN): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(unversöhnlich, unversöhnlich, ADJD): 0, 1
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 782, ID:113
+positiveNrc: 7
+negativeNrc: 3
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Gefängnis, Gefängnis, NN): 0, 1
+(Strenge, Strenge, NN): 0, 1
+(Achtung, Achtung, NN): 1, 0
+(Tugend, Tugend, NN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(vereinigen, vereinigen, VVINF): 1, 0
+(besondere, besonder, ADJA): 1, 0
+(alleranständigste, alleranständigste, ADJA): 1, 0
+(Widerspruch, Widerspruch, NN): 0, 1
+(würdigsten, würdig, ADJA): 1, 0
+
+5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Himmels, Himmel, NN): 1, 0
+(Dolch, Dolch, NN): 0, 1
+
+4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(läge, liegen, VVFIN): 0, 1
+(Prinzen, Prinz, NN): 1, 0
+(Unfalle, Unfalle, NN): 0, 1
+(Verdacht, Verdacht, NN): 0, 1
+(liegt, liegen, VVFIN): 0, 1
+(Gnade, Gnade, NN): 1, 0
+
+4.Akt, 8.Szene, 14.Replik, Drama-Nummer: 686, ID:116
+positiveNrc: 8
+negativeNrc: 0
+polarityNrc: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Art, Art, NN): 1, 0
+(Geschlechts, Geschlecht, NN): 1, 0
+(Eindrücke, Eindruck, NN): 1, 0
+(mächtig, mächtig, ADJD): 1, 0
+(findend, findend, ADJD): 1, 0
+(hält, halten, VVFIN): 1, 0
+(Prinzen, Prinz, NN): 1, 0
+(Mache, Mache, NN): 1, 0
+
+3.Akt, 1.Szene, 31.Replik, Drama-Nummer: 384, ID:117
+positiveNrc: 4
+negativeNrc: 6
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Ausführung, Ausführung, NN): 0, 1
+(verlassen, verlassen, VVINF): 0, 1
+(Teil, Teil, NN): 1, 0
+(plündern, plündern, VVINF): 0, 1
+(Teil, Teil, NN): 1, 0
+(Hülfe, Hülfe, NN): 1, 0
+(Handgemenges, Handgemenge, NN): 0, 1
+(Teile, Teil, NN): 1, 0
+(Schein, Schein, NN): 0, 1
+(wolle, wollen, VMFIN): 0, 1
+
+3.Akt, 1.Szene, 9.Replik, Drama-Nummer: 362, ID:118
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(voraus, voraus, ADV): 1, 0
+(töricht, töricht, ADJD): 0, 1
+(voraus, voraus, ADV): 1, 0
+
+5.Akt, 7.Szene, 9.Replik, Drama-Nummer: 798, ID:119
+positiveNrc: 1
+negativeNrc: 3
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Graf, Graf, NN): 1, 0
+(tot, tot, ADJD): 0, 1
+(tot, tot, ADJD): 0, 1
+(fliehen, fliehen, VVINF): 0, 1
+
+4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+2.Akt, 4.Szene, 5.Replik, Drama-Nummer: 197, ID:121
+positiveNrc: 7
+negativeNrc: 1
+polarityNrc: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verlieren, verlieren, VVFIN): 0, 1
+(Glücke, Glücke, NN): 1, 0
+(alten, alt, ADJA): 1, 0
+(Nähe, Nähe, NN): 1, 0
+(anständige, anständig, ADJA): 1, 0
+(Erziehung, Erziehung, NN): 1, 0
+(herzlich, herzlich, ADJD): 1, 0
+(liebet, lieben, VVFIN): 1, 0
+
+4.Akt, 7.Szene, 16.Replik, Drama-Nummer: 659, ID:122
+positiveNrc: 0
+negativeNrc: 3
+polarityNrc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Tot, tot, ADJD): 0, 1
+(tot, tot, ADJD): 0, 1
+(wollten, wollen, VMFIN): 0, 1
+
+4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(glücklicher, glücklich, ADJD): 1, 0
+(unglücklicher, unglücklich, ADJD): 0, 1
+(wahre, wahr, ADJA): 1, 0
+
+1.Akt, 3.Szene, 18.Replik, Drama-Nummer: 63, ID:124
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(höflicher, höflich, ADJD): 1, 0
+(verfahren, verfahren, VVPP): 1, 0
+
+3.Akt, 7.Szene, 46.Replik, Drama-Nummer: 615, ID:125
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Interessen, Interesse, NN): 1, 0
+(Interessen, Interesse, NN): 1, 0
+
+3.Akt, 2.Szene, 60.Replik, Drama-Nummer: 504, ID:126
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(machte, machen, VVFIN): 1, 0
+(Schulden, Schuld, NN): 0, 1
+(Streiche, Streich, NN): 0, 1
+(Gewalt, Gewalt, NN): 0, 1
+(höher, hoch, ADJD): 0, 1
+(guten, gut, ADJA): 1, 0
+
+5.Akt, 9.Szene, 30.Replik, Drama-Nummer: 1019, ID:127
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verächtlich, verächtlich, ADJD): 0, 1
+(blinden, blind, ADJA): 0, 1
+(Zärtlichkeit, Zärtlichkeit, NN): 1, 0
+
+5.Akt, 11.Szene, 22.Replik, Drama-Nummer: 1066, ID:128
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(liebe, lieben, VVFIN): 1, 0
+(Scherz, Scherz, NN): 0, 1
+(getrieben, treiben, VVPP): 0, 1
+
+4.Akt, 6.Szene, 62.Replik, Drama-Nummer: 873, ID:129
+positiveNrc: 1
+negativeNrc: 3
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Unglück, Unglück, NN): 0, 1
+(Unglück, Unglück, NN): 0, 1
+(gewähret, gewähret, NE): 1, 0
+(zieht, zeihen|ziehen, VVFIN): 0, 1
+
+4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Ernste, Ernste, NN): 1, 0
+(übel, übel, ADJD): 0, 1
+
+4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(hält, halten, VVFIN): 1, 0
+
+2.Akt, 9.Szene, 29.Replik, Drama-Nummer: 433, ID:132
+positiveNrc: 1
+negativeNrc: 3
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(unglücklich, unglücklich, ADJD): 0, 1
+(vergessen, vergessen, VVINF): 0, 1
+(Ehrerbietung, Ehrerbietung, NN): 1, 0
+(notwendig, notwendig, ADJD): 0, 1
+
+3.Akt, 4.Szene, 7.Replik, Drama-Nummer: 531, ID:133
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(hübsch, hübsch, ADJD): 1, 0
+(fremd, fremd, ADJD): 0, 1
+(hübsche, hübsch, ADJA): 1, 0
+(fremde, fremd, ADJA): 0, 1
+(gewarnet, gewarnet, NE): 0, 1
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 573, ID:134
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(aufgehoben, aufheben, VVPP): 0, 1
+(aufheben, aufheben, VVINF): 0, 1
+(gezogen, ziehen, VVPP): 0, 1
+(wies, weisen, VVFIN): 1, 0
+(gestohlen, stehlen, VVPP): 0, 1
+(hülfe, helfen, VVFIN): 1, 0
+
+3.Akt, 2.Szene, 29.Replik, Drama-Nummer: 473, ID:135
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gute, gut, ADJA): 1, 0
+(tüchtige, tüchtig, ADJA): 1, 0
+(fände, finden, VVFIN): 1, 0
+
+5.Akt, 13.Szene, 3.Replik, Drama-Nummer: 1098, ID:136
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(liebe, lieben, VVFIN): 1, 0
+(umarmend, umarmend, ADJD): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+
+2.Akt, 1.Szene, 2.Replik, Drama-Nummer: 198, ID:137
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verzweifelten, verzweifelt, ADJA): 0, 1
+(Korporals, Korporals, NN): 0, 1
+(schreien, schreien, VVINF): 0, 1
+(fluchen, fluchen, VVINF): 0, 1
+(Ruhe, Ruhe, NN): 1, 0
+(gnädiges, gnädig, ADJA): 1, 0
+
+5.Akt, 9.Szene, 18.Replik, Drama-Nummer: 1007, ID:138
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(weise, weisen, VVFIN): 1, 0
+
+1.Akt, 6.Szene, 6.Replik, Drama-Nummer: 102, ID:139
+positiveNrc: 0
+negativeNrc: 4
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(abreisen, abreisen, VVINF): 0, 1
+(Schuldner, Schuldner, NN): 0, 1
+(sterbe, sterben, VVFIN): 0, 1
+(Schuld, Schuld, NN): 0, 1
+
+4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Gutes, Gute, NN): 1, 0
+(gewählt, wählen, VVPP): 1, 0
+
+5.Akt, 9.Szene, 6.Replik, Drama-Nummer: 995, ID:141
+positiveNrc: 5
+negativeNrc: 1
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(lieset, lieset, VVFIN): 0, 1
+(machte, machen, VVFIN): 1, 0
+(Vorteil, Vorteil, NN): 1, 0
+(unschuldig, unschuldig, ADJD): 1, 0
+(erkläret, erkläret, VVFIN): 1, 0
+(König, König, NN): 1, 0
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 450, ID:142
+positiveNrc: 0
+negativeNrc: 3
+polarityNrc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(bitten, bitten, VVINF): 0, 1
+(bitten, bitten, VVFIN): 0, 1
+(bitte, bitten, VVFIN): 0, 1
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 19, ID:143
+positiveNrc: 2
+negativeNrc: 2
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mache, machen, VVFIN): 1, 0
+(Mühe, Mühe, NN): 0, 1
+(Gift, Gift, NN): 0, 1
+(schwören, schwören, VVINF): 1, 0
+
+4.Akt, 6.Szene, 37.Replik, Drama-Nummer: 848, ID:144
+positiveNrc: 0
+negativeNrc: 3
+polarityNrc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mohr, Mohr, NN): 0, 1
+(Mohr, Mohr, NN): 0, 1
+(fremden, fremd, ADJA): 0, 1
+
+1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(überflüssige, überflüssig, ADJA): 0, 1
+(Höflichkeit, Höflichkeit, NN): 1, 0
+(Macht, machen, VVFIN): 1, 0
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 220, ID:146
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gnädiges, gnädig, ADJA): 1, 0
+(Treue, Treue, NN): 1, 0
+
+3.Akt, 3.Szene, 19.Replik, Drama-Nummer: 317, ID:147
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(aufrichtiges, aufrichtig, ADJA): 1, 0
+(Gewalt, Gewalt, NN): 0, 1
+(Kind, Kind, NN): 1, 0
+
+2.Akt, 3.Szene, 6.Replik, Drama-Nummer: 142, ID:148
+positiveNrc: 3
+negativeNrc: 3
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Unglückliche, Unglückliche, NN): 0, 1
+(Freude, Freude, NN): 1, 0
+(Tränen, Träne|Tränen, NN): 0, 1
+(Kinder, Kind, NN): 1, 0
+(süßesten, süß, ADJA): 1, 0
+(Tränen, Träne|Tränen, NN): 0, 1
+
+2.Akt, 4.Szene, 24.Replik, Drama-Nummer: 195, ID:149
+positiveNrc: 17
+negativeNrc: 12
+polarityNrc: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Grund, Grund, NN): 1, 0
+(entdeckt, entdecken, VVPP): 1, 0
+(wahres, wahr, ADJA): 1, 0
+(wahres, wahr, ADJA): 1, 0
+(getrieben, treiben, VVPP): 0, 1
+(langen, lang, ADJA): 0, 1
+(Geschlechte, Geschlecht, NN): 1, 0
+(Kunst, Kunst, NN): 1, 0
+(verführen, verführen, VVINF): 0, 1
+(junges, jung, ADJA): 1, 0
+(machten, machen, VVFIN): 1, 0
+(erreichten, erreichen, VVFIN): 1, 0
+(Leidenschaft, Leidenschaft, NN): 1, 0
+(entschuldigen, entschuldigen, VVINF): 1, 0
+(alten, alt, ADJA): 1, 0
+(Kind, Kind, NN): 1, 0
+(raubten, rauben, VVFIN): 0, 1
+(Grabe, Grab, NN): 0, 1
+(schwer, schwer, ADJD): 0, 1
+(machten, machen, VVFIN): 1, 0
+(Lust, Lust, NN): 0, 1
+(stärksten, stark, ADJA): 1, 0
+(Banden, Bande, NN): 0, 1
+(trennten, trennen, VVFIN): 0, 1
+(Fehler, Fehler, NN): 0, 1
+(Alter, Alter, NN): 1, 0
+(Stütze, Stütze, NN): 0, 1
+(schicken, schicken, VVFIN): 1, 0
+(leichtgläubige, leichtgläubig, ADJA): 0, 1
+
+3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
+positiveNrc: 7
+negativeNrc: 4
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(alten, alt, ADJA): 1, 0
+(betrogen, betrügen, VVPP): 0, 1
+(betriegt, betriegt, VVFIN): 0, 1
+(guten, gut, ADJA): 1, 0
+(betriegt, betriegt, VVFIN): 0, 1
+(alter, alt, ADJA): 1, 0
+(gute, gut, ADJA): 1, 0
+(entschuldigt, entschuldigen, VVFIN): 1, 0
+(guten, gut, ADJA): 1, 0
+(alten, alt, ADJA): 1, 0
+(tragen, tragen, VVINF): 0, 1
+
+3.Akt, 2.Szene, 2.Replik, Drama-Nummer: 282, ID:151
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(unruhig, unruhig, ADJD): 0, 1
+
+5.Akt, 7.Szene, 3.Replik, Drama-Nummer: 653, ID:152
+positiveNrc: 5
+negativeNrc: 14
+polarityNrc: -9
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Gefährlich, gefährlich, ADJD): 0, 1
+(krank, krank, ADJD): 0, 1
+(Angst, Angst, NN): 0, 1
+(unglücklichen, unglücklich, ADJA): 0, 1
+(unglücklichern, unglücklichern, ADJA): 0, 1
+(abreisen, abreisen, VVINF): 0, 1
+(Willst, wollen, VMFIN): 0, 1
+(warten, warten, VVINF): 0, 1
+(finde, finden, VVFIN): 1, 0
+(gute, gut, ADJA): 1, 0
+(tot, tot, ADJD): 0, 1
+(betäubten, betäubt, ADJA): 0, 1
+(leicht, leicht, ADJD): 1, 0
+(stirbt, sterben, VVFIN): 0, 1
+(alter, alt, ADJA): 1, 0
+(entfernet, entfernet, VVFIN): 0, 1
+(Glaube, Glaube, NN): 1, 0
+(Todes, Tod, NN): 0, 1
+(Todes, Tod, NN): 0, 1
+
+2.Akt, 4.Szene, 7.Replik, Drama-Nummer: 178, ID:153
+positiveNrc: 4
+negativeNrc: 2
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(fehlt, fehlen, VVFIN): 0, 1
+(helfen, helfen, VVINF): 1, 0
+(Himmel, Himmel, NN): 1, 0
+(bittet, bitten, VVFIN): 0, 1
+(Himmel, Himmel, NN): 1, 0
+(gewähren, gewähren, VVINF): 1, 0
+
+3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Tode, Tod, NN): 0, 1
+(beste, gut, ADJA): 1, 0
+(Tod, Tod, NN): 0, 1
+
+3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
+positiveNrc: 15
+negativeNrc: 11
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Geliebten, Geliebte, NN): 0, 1
+(trennen, trennen, VVINF): 0, 1
+(gesichert, sichern, VVPP): 1, 0
+(Fehler, Fehler, NN): 0, 1
+(Unglücke, Unglück, NN): 0, 1
+(gefährlichen, gefährlich, ADJA): 0, 1
+(lernen, lernen, VVINF): 1, 0
+(dankbare, dankbar, ADJA): 1, 0
+(Aufmerksamkeit, Aufmerksamkeit, NN): 1, 0
+(Achtung, Achtung, NN): 1, 0
+(Achtung, Achtung, NN): 1, 0
+(treiben, treiben, VVINF): 0, 1
+(Geschicklichkeit, Geschicklichkeit, NN): 1, 0
+(ehe, ehe, KOUS): 1, 0
+(ehe, ehe, KOUS): 1, 0
+(Unglück, Unglück, NN): 0, 1
+(vergeben, vergeben, VVINF): 1, 0
+(unerbittlich, unerbittlich, ADJD): 0, 1
+(überlegte, überlegen, VVFIN): 1, 0
+(späte, spät, ADJA): 0, 1
+(Strenge, Strenge, NN): 0, 1
+(Flucht, Flucht, NN): 1, 0
+(glücklich, glücklich, ADJD): 1, 0
+(Mädchens, Mädchen, NN): 1, 0
+(aufgeben, aufgeben, VVINF): 0, 1
+(Künste, Kunst, NN): 1, 0
+
+4.Akt, 8.Szene, 70.Replik, Drama-Nummer: 580, ID:156
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(bitten, bitten, VVINF): 0, 1
+
+4.Akt, 8.Szene, 20.Replik, Drama-Nummer: 530, ID:157
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Schicksale, Schicksal, NN): 0, 1
+(ewig, ewig, ADJD): 1, 0
+(ansehen, ansehen, VVINF): 1, 0
+
+4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
+positiveNrc: 5
+negativeNrc: 0
+polarityNrc: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(bessere, gut, ADJA): 1, 0
+(Stille, Stille, NN): 1, 0
+(Vorstellungen, Vorstellung, NN): 1, 0
+(beste, gut, ADJA): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+
+4.Akt, 8.Szene, 38.Replik, Drama-Nummer: 548, ID:159
+positiveNrc: 6
+negativeNrc: 4
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Mangels, Mangel, NN): 0, 1
+(Vermögen, Vermögen, NN): 1, 0
+(eifriger, eifrig, ADJD): 1, 0
+(glücklich, glücklich, ADJD): 1, 0
+(reichen, reich, ADJA): 1, 0
+(vornehmen, vornehm, ADJA): 1, 0
+(Überfluß, Überfluss, NN): 1, 0
+(voll, voll, ADJD): 0, 1
+(Gefühls, Gefühl, NN): 0, 1
+(Hütte, Hütte, NN): 0, 1
+
+2.Akt, 1.Szene, 7.Replik, Drama-Nummer: 117, ID:160
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(rasen, rasen, VVINF): 0, 1
+
+5.Akt, 10.Szene, 14.Replik, Drama-Nummer: 684, ID:161
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verehren, verehren, VVINF): 1, 0
+(umarmen, umarmen, VVFIN): 1, 0
+
+1.Akt, 7.Szene, 2.Replik, Drama-Nummer: 54, ID:162
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(vergeben, vergeben, VVINF): 1, 0
+(Klagen, Klage|Klagen, NN): 0, 1
+
+2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
+positiveNrc: 3
+negativeNrc: 7
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(liege, liegen, VVFIN): 0, 1
+(verlassen, verlassen, VVFIN): 0, 1
+(ewig, ewig, ADJD): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+(kleine, klein, ADJA): 0, 1
+(liebten, lieben, VVFIN): 1, 0
+(Verläßt, verlassen, VVFIN): 0, 1
+(liebt, lieben, VVFIN): 1, 0
+(verlassen, verlassen, VVINF): 0, 1
+(verlassen, verlassen, VVPP): 0, 1
+
+5.Akt, 10.Szene, 3.Replik, Drama-Nummer: 673, ID:164
+positiveNrc: 2
+negativeNrc: 6
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Trost, Trost, NN): 1, 0
+(Hülfe, Hülfe, NN): 1, 0
+(Verzweiflung, Verzweiflung, NN): 0, 1
+(wen, wer, PWS): 0, 1
+(Unglücklicher, unglücklich, ADJA): 0, 1
+(schrecklichen, schrecklich, ADJA): 0, 1
+(spät, spät, ADJD): 0, 1
+(spät, spät, ADJD): 0, 1
+
+5.Akt, 2.Szene, 7.Replik, Drama-Nummer: 601, ID:165
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Art, Art, NN): 1, 0
+(Angst, Angst, NN): 0, 1
+
+3.Akt, 3.Szene, 15.Replik, Drama-Nummer: 313, ID:166
+positiveNrc: 3
+negativeNrc: 0
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Geschäfte, Geschäft, NN): 1, 0
+(Freude, Freude, NN): 1, 0
+(Freude, Freude, NN): 1, 0
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 1148, ID:167
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(klein, klein, ADJD): 0, 1
+
+4.Akt, 7.Szene, 39.Replik, Drama-Nummer: 1008, ID:168
+positiveNrc: 2
+negativeNrc: 4
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(fremde, fremd, ADJA): 0, 1
+(Mädchen, Mädchen, NN): 1, 0
+(band, binden, VVFIN): 1, 0
+(tötet, töten, VVFIN): 0, 1
+(Verlieren, Verlieren, NN): 0, 1
+(Vorsicht, Vorsicht, NN): 0, 1
+
+5.Akt, 6.Szene, 52.Replik, Drama-Nummer: 1213, ID:169
+positiveNrc: 5
+negativeNrc: 0
+polarityNrc: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Wunder, wund, ADJA): 1, 0
+(wahren, wahr, ADJA): 1, 0
+(Vergeben, Vergeben, NN): 1, 0
+(entdecken, entdecken, VVINF): 1, 0
+(Kirch, Kirch, NN): 1, 0
+
+5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
+positiveNrc: 2
+negativeNrc: 0
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Weiß, wissen, VVFIN): 1, 0
+(gelehrt, lehren, VVPP): 1, 0
+
+3.Akt, 7.Szene, 22.Replik, Drama-Nummer: 693, ID:171
+positiveNrc: 6
+negativeNrc: 8
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(schafft, schaffen, VVFIN): 1, 0
+(weis, weis, PTKVZ): 1, 0
+(Besitzt, besitzen, VVFIN): 1, 0
+(angenehm, angenehm, ADJD): 1, 0
+(Entscheiden, Entscheid|Entscheiden, NN): 0, 1
+(falschen, falsch, ADJA): 0, 1
+(wen, wer, PWS): 0, 1
+(Macht, machen, VVFIN): 1, 0
+(liebt, lieben, VVFIN): 1, 0
+(Betrogene, betrogen, ADJA): 0, 1
+(echt, echt, ADJD): 0, 1
+(echte, echt, ADJA): 0, 1
+(verloren, verloren, PTKVZ): 0, 1
+(Verlust, Verlust, NN): 0, 1
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 580, ID:172
+positiveNrc: 0
+negativeNrc: 4
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Galle, Galle, NN): 0, 1
+(Laune, Laune, NN): 0, 1
+(übel, übel, ADJD): 0, 1
+(Torheit, Torheit, NN): 0, 1
+
+1.Akt, 2.Szene, 15.Replik, Drama-Nummer: 72, ID:173
+positiveNrc: 2
+negativeNrc: 2
+polarityNrc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gefangner, gefangner, ADJA): 0, 1
+(gewissen, gewiss, ADJA): 1, 0
+(Tode, Tod, NN): 0, 1
+(frei, frei, ADJD): 1, 0
+
+3.Akt, 5.Szene, 20.Replik, Drama-Nummer: 665, ID:174
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Zweifel, Zweifel, NN): 0, 1
+(Feinde, Feind, NN): 0, 1
+
+4.Akt, 7.Szene, 31.Replik, Drama-Nummer: 1000, ID:175
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(guter, gut, ADJA): 1, 0
+(Haß, Hass, NN): 0, 1
+(Grab, Grab, NN): 0, 1
+(Eitelkeit, Eitelkeit, NN): 0, 1
+(frommen, fromm, ADJA): 1, 0
+
+2.Akt, 5.Szene, 37.Replik, Drama-Nummer: 487, ID:176
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(heitre, heiter, ADJA): 1, 0
+
+1.Akt, 4.Szene, 10.Replik, Drama-Nummer: 179, ID:177
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Schickt, schicken, VVFIN): 1, 0
+(ungern, ungern, ADV): 0, 1
+(bitten, bitten, VVINF): 0, 1
+(herzlich, herzlich, ADJD): 1, 0
+(bitten, bitten, VVINF): 0, 1
+
+3.Akt, 3.Szene, 6.Replik, Drama-Nummer: 609, ID:178
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(gemacht, machen, VVPP): 1, 0
+
+1.Akt, 5.Szene, 65.Replik, Drama-Nummer: 246, ID:179
+positiveNrc: 4
+negativeNrc: 3
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Bruders, Bruder, NN): 1, 0
+(Form, Form, NN): 1, 0
+(gebildet, bilden, VVPP): 1, 0
+(unterdrücken, unterdrücken, VVINF): 0, 1
+(widerspricht, widersprechen, VVFIN): 0, 1
+(Erregt, erregen, VVFIN): 1, 0
+(Galle, Galle, NN): 0, 1
+
+5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(her, her, PTKVZ): 1, 0
+
+4.Akt, 7.Szene, 40.Replik, Drama-Nummer: 1009, ID:181
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(guter, gut, ADJA): 1, 0
+
+4.Akt, 4.Szene, 45.Replik, Drama-Nummer: 922, ID:182
+positiveNrc: 2
+negativeNrc: 1
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(wolle, wollen, VMFIN): 0, 1
+(entdeckt, entdecken, VVPP): 1, 0
+(entdeckt, entdecken, VVPP): 1, 0
+
+4.Akt, 5.Szene, 6.Replik, Drama-Nummer: 937, ID:183
+positiveNrc: 4
+negativeNrc: 2
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(hübschen, hübsch, ADJA): 1, 0
+(hübsche, hübsch, ADJA): 1, 0
+(Rede, Rede, NN): 1, 0
+(Fehlern, Fehler, NN): 0, 1
+(Launen, Laune, NN): 0, 1
+(Mädchen, Mädchen, NN): 1, 0
+
+3.Akt, 5.Szene, 15.Replik, Drama-Nummer: 660, ID:184
+positiveNrc: 3
+negativeNrc: 1
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Bescheidenheit, Bescheidenheit, NN): 1, 0
+(trockene, trocken, ADJA): 0, 1
+(Aufrichtig, aufrichtig, ADJD): 1, 0
+(aufrichtig, aufrichtig, ADJD): 1, 0
+
+3.Akt, 10.Szene, 53.Replik, Drama-Nummer: 809, ID:185
+positiveNrc: 1
+negativeNrc: 0
+polarityNrc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(finden, finden, VVINF): 1, 0
+
+3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Ritter, Ritter, NE): 1, 0
+(kleinen, klein, ADJA): 0, 1
+(Stacheln, Stachel, NN): 0, 1
+
+4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Besondern, Besondern, NN): 1, 0
+(Fällen, Fall|Fällen, NN): 0, 1
+
+5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
+positiveNrc: 0
+negativeNrc: 2
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(verstoßt, verstoßt, VVFIN): 0, 1
+(Verstoßt, Verstoßt, VVFIN): 0, 1
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
+positiveNrc: 10
+negativeNrc: 3
+polarityNrc: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Unglaublich, unglaublich, ADJD): 0, 1
+(wies, weisen, VVFIN): 1, 0
+(liebt, lieben, VVFIN): 1, 0
+(jüngern, jüngern, ADJA): 1, 0
+(alter, alt, ADJA): 1, 0
+(Eindruck, Eindruck, NN): 1, 0
+(verlorner, verlorner, NN): 0, 1
+(Unglaubliche, Unglaubliche, NN): 0, 1
+(weise, weisen, VVFIN): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(verdienen, verdienen, VVINF): 1, 0
+(Glauben, Glaube, NN): 1, 0
+
+1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
+positiveNrc: 5
+negativeNrc: 3
+polarityNrc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Feste, Fest, NN): 1, 0
+(liegt, liegen, VVFIN): 0, 1
+(Summen, Summe|Summen, NN): 1, 0
+(vorsichtger, vorsichtger, NE): 1, 0
+(Heer, Heer, NN): 1, 0
+(Kriegs, Krieg, NN): 0, 1
+(Feste, Fest, NN): 1, 0
+(kaum, kaum, ADV): 0, 1
+
+2.Akt, 5.Szene, 34.Replik, Drama-Nummer: 484, ID:191
+positiveNrc: 0
+negativeNrc: 0
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+
+2.Akt, 1.Szene, 21.Replik, Drama-Nummer: 303, ID:192
+positiveNrc: 1
+negativeNrc: 2
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Schuld, Schuld, NN): 0, 1
+(spielen, spielen, VVINF): 0, 1
+(lernen, lernen, VVINF): 1, 0
+
+5.Akt, 7.Szene, 7.Replik, Drama-Nummer: 1223, ID:193
+positiveNrc: 4
+negativeNrc: 0
+polarityNrc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(ewiger, ewig, ADJA): 1, 0
+(Gerechtigkeit, Gerechtigkeit, NN): 1, 0
+(Güte, Güte, NN): 1, 0
+(bewundern, bewundern, VVINF): 1, 0
+
+2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
+positiveNrc: 1
+negativeNrc: 1
+polarityNrc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(vermieden, vermeiden, VVPP): 0, 1
+(allgemeine, allgemein, ADJA): 1, 0
+
+1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
+positiveNrc: 0
+negativeNrc: 1
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Papagei, Papagei, NN): 0, 1
+
+1.Akt, 5.Szene, 61.Replik, Drama-Nummer: 101, ID:196
+positiveNrc: 6
+negativeNrc: 8
+polarityNrc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Lob, Lob, NN): 1, 0
+(Nachteile, Nachteil, NN): 0, 1
+(Ändere, ändern, VVFIN): 1, 0
+(Schwur, Schwur, NN): 1, 0
+(ändere, ändern, VVFIN): 1, 0
+(Feiger, Feiger, NN): 0, 1
+(Tod, Tod, NN): 0, 1
+(Schande, Schande, NN): 0, 1
+(wählen, wählen, VVINF): 1, 0
+(Schande, Schande, NN): 0, 1
+(wählen, wählen, VVINF): 1, 0
+(Spott, Spott, NN): 0, 1
+(ungern, ungern, ADV): 0, 1
+(sterben, sterben, VVINF): 0, 1
+
+1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
+positiveNrc: 5
+negativeNrc: 2
+polarityNrc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Stahl, Stahl, NN): 0, 1
+(Arbeit, Arbeit, NN): 1, 0
+(Glaube, glauben, VVFIN): 1, 0
+(Stahl, Stahl, NN): 0, 1
+(König, König, NN): 1, 0
+(männlichen, männlich, ADJA): 1, 0
+(Helm, Helm, NN): 1, 0
+
+1.Akt, 8.Szene, 45.Replik, Drama-Nummer: 180, ID:198
+positiveNrc: 2
+negativeNrc: 3
+polarityNrc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(stirbt, sterben, VVFIN): 0, 1
+(Verräter, Verräter, NN): 0, 1
+(König, König, NE): 1, 0
+(Feind, Feind, NN): 0, 1
+(wunderbarer, wunderbar, ADJA): 1, 0
+
+1.Akt, 5.Szene, 24.Replik, Drama-Nummer: 64, ID:199
+positiveNrc: 7
+negativeNrc: 1
+polarityNrc: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Himmel, Himmel, NN): 1, 0
+(Held, Held, NN): 1, 0
+(Kind, Kind, NN): 1, 0
+(Soldat, Soldat, NN): 1, 0
+(Kind, Kind, NN): 1, 0
+(besten, gut, ADJA): 1, 0
+(Tapferkeit, Tapferkeit, NN): 1, 0
+(Wildheit, Wildheit, NN): 0, 1
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 94, ID:200
+positiveNrc: 0
+negativeNrc: 4
+polarityNrc: -4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveNrc, _negativeNrc
+(Willst, wollen, VMFIN): 0, 1
+(Feuer, Feuer, NN): 0, 1
+(kleiner, klein, ADJA): 0, 1
+(Verbrechen, Verbrechen, NN): 0, 1

@@ -1,0 +1,4149 @@
+dtaExtended_textblob_bothLemma_noStopwordList_caseSensitive
+
+Main Metrics:
+accuracy: 0.67
+Recall Positive: 0.606557377049
+Precision Positive: 0.46835443038
+F-Measure Positive: 0.528571428571
+Recall Negative: 0.697841726619
+Precision Negative: 0.801652892562
+F-Measure Negative: 0.746153846154
+Recall Average: 0.652199551834
+Precision Average: 0.635003661471
+F-Measure Average: 0.637362637363
+
+Actual Class	Predicted Negative	Predicted Positive
+Negatives	97	42	139
+Positives	24	37	61
+Sum	121	79	200
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 93, ID:1
+polaritySentiWS: -0.4208
+positiveSentiWS: 2.2071
+negativeSentiWS: 2.6279
+positiveSentiWSDichotom: 14
+negativeSentiWSDichotom: 7
+polaritySentiWSDichotom: 7
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Scham, Scham, NN): -0.4829
+(schwach, schwach, JJ): -0.9206
+(edel, edel, JJ): 0.2235
+(wahr, wahr, RB): 0.2176
+(Erfüllung, Erfüllung, NN): 0.004
+(unmöglich, unmöglich, JJ): -0.3559
+(Freundschaft, Freundschaft, NN): 0.2059
+(harten, hart, JJ): -0.1483
+(ist, sein, VB): 0.2176
+(gut, gut, JJ): 0.3716
+(ist, sein, VB): 0.2176
+(Freund, Freund, NN): 0.2198
+(verbunden, verbinden, VBN): -0.0048
+(ist, sein, VB): 0.2176
+(Pflicht, Pflicht, NN): -0.3577
+(Freundes, Freundes, NN): 0.0116
+(verzeihen, verzeihen, VB): 0.004
+(Pflicht, Pflicht, NN): -0.3577
+(geben, geben, VB): 0.0747
+(möglich, möglich, JJ): 0.004
+(ist, sein, VB): 0.2176
+
+1.Akt, 10.Szene, 21.Replik, Drama-Nummer: 177, ID:2
+polaritySentiWS: -1.4022
+positiveSentiWS: 1.607
+negativeSentiWS: 3.0092
+positiveSentiWSDichotom: 12
+negativeSentiWSDichotom: 8
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(verzeihen, verzeihen, VB): 0.004
+(wäre, sein, VBN): 0.2176
+(ist, sein, VB): 0.2176
+(verziehen, verziehen, VB): 0.004
+(Freund, Freund, NN): 0.2198
+(nicht, nicht, RB): -0.4902
+(Freund, Freund, NN): 0.2198
+(nicht, nicht, RB): -0.4902
+(trennen, trennen, VB): -0.5033
+(sein, sein, VB): 0.2176
+(weiß, weeissen, VB): -0.0048
+(schwer, schw, JJ): -0.0048
+(ist, sein, VB): 0.2176
+(Freund, Freund, NN): 0.2198
+(will, wollen, MD): 0.004
+(ersten, erst, JJ): 0.0612
+(Fehlers, Fehlers, NN): -0.6752
+(suchen, suchen, VB): -0.3505
+(erhalten, erhalten, VB): 0.004
+
+1.Akt, 4.Szene, 21.Replik, Drama-Nummer: 79, ID:3
+polaritySentiWS: 0.6114
+positiveSentiWS: 1.8318
+negativeSentiWS: 1.2204
+positiveSentiWSDichotom: 13
+negativeSentiWSDichotom: 7
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(vollkommen, vollkomm, JJ): 0.0945
+(gut, gut, JJ): 0.3716
+(sein, sein, VB): 0.2176
+(leicht, leicht, JJ): 0.004
+(tun, tun, VB): -0.1683
+(leicht, leicht, JJ): 0.004
+(machen, machen, VB): 0.004
+(Liebster, Liebst, JJ): 0.2315
+(Freundschaft, Freundschaft, NN): 0.2059
+(genau, genau, RB): 0.004
+(verbunden, verbinden, RP): -0.0048
+(wir, wir, JJ): -0.1841
+(verbunden, verbinden, VBN): -0.0048
+(wir, wir, PRP): -0.1841
+(gegeben, geben, VBN): 0.0747
+(danken, danken, VB): 0.191
+(Vergnügen, Vergnügen, NN): 0.1838
+(Glück, Glück, NN): 0.2452
+(wir, wir, PRP): -0.1841
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 1.Szene, 5.Replik, Drama-Nummer: 5, ID:4
+polaritySentiWS: -1.235
+positiveSentiWS: 0.4014
+negativeSentiWS: 1.6364
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(weiß, weeissen, VB): -0.0048
+(getan, tun, VB): -0.1683
+(leider, leider, RB): -0.4787
+(ist, sein, VB): 0.2176
+(Vergnügen, Vergnügen, NN): 0.1838
+(stellt, stellen, VB): -0.4944
+
+1.Akt, 4.Szene, 19.Replik, Drama-Nummer: 77, ID:5
+polaritySentiWS: 0.8528
+positiveSentiWS: 1.1634
+negativeSentiWS: 0.3106
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(Freund, Freund, NN): 0.2198
+(leicht, leicht, JJ): 0.004
+(er, er, PRP): 0.0612
+(bestehen, bestehen, VB): 0.004
+(Wissen, Wissen, NN): 0.004
+(weiß, weeissen, VB): -0.0048
+(sind, sein, VBN): 0.2176
+(weiß, weeissen, VB): -0.0048
+(unglücklich, unglücklich, JJ): -0.301
+(gewesen, sein, VBN): 0.2176
+(sein, sein, VB): 0.2176
+
+1.Akt, 10.Szene, 4.Replik, Drama-Nummer: 160, ID:6
+polaritySentiWS: 0.8477
+positiveSentiWS: 0.8477
+negativeSentiWS: 0
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(für, für, IN): 0.004
+(erklären, erklären, VB): 0.004
+(sei, sein, VB): 0.2176
+(erst, erst, RB): 0.0612
+(für, für, IN): 0.004
+(kostbare, kostbar, JJ): 0.0777
+(Geschenk, Geschenk, NN): 0.4792
+
+3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
+polaritySentiWS: -0.4203
+positiveSentiWS: 0.0747
+negativeSentiWS: 0.495
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(weiß, weeissen, VB): -0.0048
+(nicht, nicht, RB): -0.4902
+(geben, geben, VB): 0.0747
+
+1.Akt, 5.Szene, 15.Replik, Drama-Nummer: 122, ID:8
+polaritySentiWS: -0.9382
+positiveSentiWS: 0.2365
+negativeSentiWS: 1.1747
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(Unglück, Unglück, NN): -0.5004
+(lassen, lassen, VB): 0.2325
+(wollen, wollen, MD): 0.004
+(wir, wir, PRP): -0.1841
+
+3.Akt, 2.Szene, 10.Replik, Drama-Nummer: 365, ID:9
+polaritySentiWS: -0.0481
+positiveSentiWS: 0.4611
+negativeSentiWS: 0.5092
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Wir, wir, PRP): -0.1841
+(lieber, lieb, JJ): 0.2315
+(Schmerzen, Schmerz, NNS): -0.3251
+(führe, führen, VB): 0.004
+(verziehen, verziehen, VB): 0.004
+(will, wollen, MD): 0.004
+(sein, sein, VB): 0.2176
+
+4.Akt, 3.Szene, 22.Replik, Drama-Nummer: 542, ID:10
+polaritySentiWS: 0.0163
+positiveSentiWS: 2.2141
+negativeSentiWS: 2.1978
+positiveSentiWSDichotom: 11
+negativeSentiWSDichotom: 9
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(sind, sein, VB): 0.2176
+(ersten, erst, JJ): 0.0612
+(Taten, Taten, NN): -0.1683
+(ihre, ihre, PRP$): -0.0048
+(vorsichtig, vorsichtig, JJ): 0.2313
+(gut, gut, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+(ist, sein, JJ): 0.2176
+(vorsichtig, vorsichtig, JJ): 0.2313
+(gut, gut, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+(ihr, ihr, PRP): -0.0048
+(Heiligste, Heiligste, NN): 0.0727
+(sein, sein, VB): 0.2176
+(Pflicht, Pflicht, NN): -0.3577
+(Anständigkeit, Anständigkeit, NN): 0.004
+(ist, sein, VB): 0.2176
+(ihrem, ihrem, PRP$): -0.0048
+(Spotte, Spotte, NN): -0.3357
+(ausgesetzt, ausgesetzt, RP): -0.3413
+
+4.Akt, 7.Szene, 11.Replik, Drama-Nummer: 590, ID:11
+polaritySentiWS: -0.9291
+positiveSentiWS: 0.4235
+negativeSentiWS: 1.3526
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Glück, Glück, NN): 0.2452
+(nicht, nicht, RB): -0.4902
+(Unglück, Unglück, NN): -0.5004
+(Liebe, Liebe, NN): 0.1131
+(ihre, ihre, PRP$): -0.0048
+(verderbliche, verderblich, JJ): -0.3131
+(Macht, Macht, NN): 0.004
+(er, er, JJ): 0.0612
+(unanständig, unanständig, JJ): -0.0441
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 186, ID:12
+polaritySentiWS: -0.4151
+positiveSentiWS: 0.008
+negativeSentiWS: 0.4231
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(böse, bös, JJ): -0.4183
+(machen, machen, VB): 0.004
+(ihre, ihre, PRP$): -0.0048
+(Gründlichkeit, Gründlichkeit, NN): 0.004
+
+5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
+polaritySentiWS: -2.8343
+positiveSentiWS: 4.5212
+negativeSentiWS: 7.3555
+positiveSentiWSDichotom: 34
+negativeSentiWSDichotom: 21
+polaritySentiWSDichotom: 13
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(glauben, glauben, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(glauben, glauben, VB): 0.004
+(Mühe, Mühe, NN): -0.0048
+(gegeben, geben, VB): 0.0747
+(Liebe, Liebe, NN): 0.1131
+(Zwang, Zwang, JJ): -0.0721
+(wollte, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(Unabhängigkeit, Unabhängigkeit, NN): 0.004
+(Verstande, Verstande, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(zwingen, zwingen, VB): -0.4975
+(hilft, helfen, VB): 0.373
+(Überlegungen, Überlegungen, NN): 0.004
+(machen, machen, VB): 0.004
+(weiß, weeissen, VB): -0.0048
+(Beruhigung, Beruhigung, NN): 0.004
+(wachsende, wachsend, JJ): 0.3607
+(nicht, nicht, RB): -0.4902
+(Vergnügen, Vergnügen, NN): 0.1838
+(war, sein, VB): 0.2176
+(ihrer, ihrer, PRP$): -0.0048
+(unwürdig, unwürdig, JJ): -0.7312
+(ist, sein, VB): 0.2176
+(unwürdig, unwürdig, JJ): -0.7312
+(er, er, PRP): 0.0612
+(ist, sein, VB): 0.2176
+(Freund, Freund, NN): 0.2198
+(sein, sein, PRP$): 0.2176
+(Glück, Glück, NN): 0.2452
+(ihren, ihren, PRP$): -0.0048
+(sein, sein, VB): 0.2176
+(gelassen, gelass, JJ): 0.2325
+(wäre, sein, VB): 0.2176
+(tun, tun, VB): -0.1683
+(lieber, lieb, JJ): 0.2315
+(Sinne, Sinne, NN): 0.004
+(aufgeben, aufgeben, VB): -0.2098
+(liebenswürdig, liebenswürdig, JJ): 0.2001
+(unmöglich, unmöglich, JJ): -0.3559
+(er, er, JJ): 0.0612
+(sei, sein, VB): 0.2176
+(besten, best, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+(gefährliche, gefährlich, JJ): -0.6366
+(ansehen, ansehen, PRP$): 0.004
+(Abschreckungen, Abschreckungen, NN): -0.0048
+(nicht, nicht, RB): -0.4902
+(gezwungen, zwingen, VBN): -0.4975
+(wünscht, wünschen, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+
+1.Akt, 5.Szene, 40.Replik, Drama-Nummer: 147, ID:14
+polaritySentiWS: -0.7864
+positiveSentiWS: 0.4477
+negativeSentiWS: 1.2341
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Recht, Recht, NN): 0.004
+(möchte, mögen, VB): 0.345
+(rasend, rasend, JJ): -0.0048
+(spielen, spielen, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(blinden, blind, JJ): -0.1978
+(schwer, schw, JJ): -0.0048
+(fällt, fällen, VB): -0.5365
+(Leben, Leben, NN): 0.0947
+
+2.Akt, 3.Szene, 21.Replik, Drama-Nummer: 246, ID:15
+polaritySentiWS: 0.3475
+positiveSentiWS: 0.3523
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(machten, machen, VB): 0.004
+(Kompliment, Kompliment, NN): 0.3323
+(gemacht, machen, VB): 0.004
+(Verstande, Verstande, NN): 0.004
+(besitzen, besitzen, VB): 0.004
+(gewaltig, gewaltig, JJ): 0.004
+(irren, irren, VB): -0.0048
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 161, ID:16
+polaritySentiWS: -0.2895
+positiveSentiWS: 0.369
+negativeSentiWS: 0.6585
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(mag, mögen, VB): 0.345
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(will, wollen, MD): 0.004
+(tun, tun, VB): -0.1683
+(will, wollen, MD): 0.004
+(Heirat, Heirat, NN): 0.004
+(will, wollen, MD): 0.004
+(versprechen, versprechen, VB): 0.004
+
+5.Akt, 1.Szene, 40.Replik, Drama-Nummer: 699, ID:17
+polaritySentiWS: -0.4511
+positiveSentiWS: 0.2216
+negativeSentiWS: 0.6727
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(arg, arg, RB): -0.1825
+(nicht, nicht, RB): -0.4902
+(erstaunlichste, erstaunlichst, JJ): 0.004
+
+2.Akt, 3.Szene, 23.Replik, Drama-Nummer: 248, ID:18
+polaritySentiWS: -1.9137
+positiveSentiWS: 1.3634
+negativeSentiWS: 3.2771
+positiveSentiWSDichotom: 15
+negativeSentiWSDichotom: 9
+polaritySentiWSDichotom: 6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Verstand, Verstand, NN): 0.0957
+(er, er, PRP): 0.0612
+(will, wollen, MD): 0.004
+(ist, sein, VB): 0.2176
+(schlecht, schlecht, JJ): -0.7706
+(Weise, Weise, NN): 0.2244
+(leiden, leiden, VB): -0.1596
+(gering, gering, JJ): -0.6621
+(geschätzt, schätzen, VBN): 0.1175
+(nicht, nicht, RB): -0.4902
+(leiden, leiden, VB): -0.1596
+(weiß, weeissen, VB): -0.0048
+(für, für, IN): 0.004
+(ansieht, ansehen, VB): 0.004
+(für, für, IN): 0.004
+(sind, sein, JJ): 0.2176
+(Vergnügen, Vergnügen, NN): 0.1838
+(machen, machen, VB): 0.004
+(ist, sein, VB): 0.2176
+(gedacht, gedenken, VBN): 0.004
+(für, für, IN): 0.004
+(verfallen, verfallen, VB): -0.4849
+(nicht, nicht, RB): -0.4902
+(unruhig, unruhig, JJ): -0.0551
+
+4.Akt, 9.Szene, 3.Replik, Drama-Nummer: 644, ID:19
+polaritySentiWS: 0.4432
+positiveSentiWS: 0.4432
+negativeSentiWS: 0
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(frei, frei, JJ): 0.004
+(sein, sein, VB): 0.2176
+(wollen, wollen, MD): 0.004
+(ist, sein, VB): 0.2176
+
+3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
+polaritySentiWS: 0.4392
+positiveSentiWS: 0.4392
+negativeSentiWS: 0
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(bekannt, bekennen, VBN): 0.004
+(ist, sein, VB): 0.2176
+
+1.Akt, 1.Szene, 4.Replik, Drama-Nummer: 4, ID:21
+polaritySentiWS: -0.0899
+positiveSentiWS: 0.5892
+negativeSentiWS: 0.6791
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wir, wir, PRP): -0.1841
+(nicht, nicht, RB): -0.4902
+(sind, sein, VB): 0.2176
+(Gut, Gut, NN): 0.3716
+(wissen, wissen, VB): -0.0048
+
+4.Akt, 1.Szene, 23.Replik, Drama-Nummer: 504, ID:22
+polaritySentiWS: 0.2208
+positiveSentiWS: 0.2256
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(weiß, weeissen, VB): -0.0048
+(war, sein, VB): 0.2176
+(unschuldige, unschuldige, PRP$): 0.004
+(machen, machen, VB): 0.004
+
+2.Akt, 1.Szene, 17.Replik, Drama-Nummer: 179, ID:23
+polaritySentiWS: 0.7972
+positiveSentiWS: 0.8068
+negativeSentiWS: 0.0096
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(gute, gut, JJ): 0.3716
+(ist, sein, VB): 0.2176
+(verdrießlich, verdriesslich, JJ): -0.0048
+(sein, sein, PRP$): 0.2176
+(verachten, verachten, VB): -0.0048
+
+3.Akt, 5.Szene, 32.Replik, Drama-Nummer: 421, ID:24
+polaritySentiWS: -0.7796
+positiveSentiWS: 0.2256
+negativeSentiWS: 1.0052
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(demütigen, demütigen, VB): -0.0048
+(kriechenden, kriechend, NN): -0.0048
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(vermehren, vermehren, VB): 0.004
+(tun, tun, VB): -0.1683
+(Mühe, Mühe, NN): -0.0048
+(sei, sein, VB): 0.2176
+(Verwirrung, Verwirrung, NN): -0.3323
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 549, ID:25
+polaritySentiWS: -0.0704
+positiveSentiWS: 1.5494
+negativeSentiWS: 1.6198
+positiveSentiWSDichotom: 11
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: 5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(ihr, ihr, PRP): -0.0048
+(wären, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(gefallen, gefallen, VB): 0.2578
+(war, sein, VB): 0.2176
+(beliebt, beliebt, JJ): 0.2172
+(machen, machen, VB): 0.004
+(für, für, IN): 0.004
+(lebhaftes, lebhaft, JJ): 0.2146
+(grausam, grausam, JJ): -0.625
+(sein, sein, VB): 0.2176
+(ihr, ihr, PRP): -0.0048
+(ihr, ihr, PRP): -0.0048
+(für, für, IN): 0.004
+(danken, danken, PRP$): 0.191
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:26
+polaritySentiWS: 0.3571
+positiveSentiWS: 0.8473
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(Freundschaft, Freundschaft, NN): 0.2059
+(Freundschaft, Freundschaft, NN): 0.2059
+(Wissen, Wissen, NN): 0.004
+(fragen, fragen, RB): 0.004
+(Freundschaft, Freundschaft, NN): 0.2059
+(ist, sein, VB): 0.2176
+
+3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
+polaritySentiWS: -0.2433
+positiveSentiWS: 0.4704
+negativeSentiWS: 0.7137
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(glaube, glauben, VB): 0.004
+(er, er, PRP): 0.0612
+(weiß, weeissen, VB): -0.0048
+(er, er, JJ): 0.0612
+(er, er, PRP): 0.0612
+(er, er, PRP): 0.0612
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(genauer, genauer, IN): 0.004
+(Not, Not, NN): -0.2187
+
+2.Akt, 14.Szene, 9.Replik, Drama-Nummer: 574, ID:28
+polaritySentiWS: -0.2057
+positiveSentiWS: 0.3307
+negativeSentiWS: 0.5364
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Liebe, Liebe, NN): 0.1131
+(Kriege, Krieg, NNS): -0.5364
+(sind, sein, VB): 0.2176
+
+1.Akt, 4.Szene, 12.Replik, Drama-Nummer: 117, ID:29
+polaritySentiWS: -0.4557
+positiveSentiWS: 0.5284
+negativeSentiWS: 0.9841
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(sind, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(wären, sein, VB): 0.2176
+(wollen, wollen, MD): 0.004
+(Bescheidenheit, Bescheidenheit, NN): 0.0852
+(fremde, fremd, JJ): -0.4939
+(Wahrheit, Wahrheit, NN): 0.004
+
+1.Akt, 6.Szene, 68.Replik, Drama-Nummer: 210, ID:30
+polaritySentiWS: -0.7122
+positiveSentiWS: 0.1304
+negativeSentiWS: 0.8426
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(er, er, JJ): 0.0612
+(erst, erst, RB): 0.0612
+(für, für, IN): 0.004
+(wir, wir, PRP): -0.1841
+(tun, tun, VBN): -0.1683
+
+3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
+polaritySentiWS: -0.2686
+positiveSentiWS: 0.2216
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(glaubst, glauben, VB): 0.004
+(bin, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 1.Szene, 14.Replik, Drama-Nummer: 14, ID:32
+polaritySentiWS: 0.3416
+positiveSentiWS: 2.0095
+negativeSentiWS: 1.6679
+positiveSentiWSDichotom: 13
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(ist, sein, VB): 0.2176
+(böse, bös, JJ): -0.4183
+(lesen, lesen, VB): 0.2325
+(für, für, IN): 0.004
+(für, für, IN): 0.004
+(ist, sein, VB): 0.2176
+(verstehen, verstehen, VB): 0.0957
+(fürchterliche, fürchterlich, JJ): -0.3363
+(lesen, lesen, VB): 0.2325
+(nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(weiß, weeissen, VB): -0.0048
+(wies, weisen, VB): 0.2244
+(lernen, lernen, VB): 0.2492
+(wollen, wollen, MD): 0.004
+(böse, bös, JJ): -0.4183
+(lernen, lernen, VB): 0.2492
+
+3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
+polaritySentiWS: 0.4051
+positiveSentiWS: 0.5892
+negativeSentiWS: 0.1841
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(besser, besser, RB): 0.3716
+(wir, wir, PRP): -0.1841
+(sind, sein, VB): 0.2176
+
+3.Akt, 15.Szene, 6.Replik, Drama-Nummer: 887, ID:34
+polaritySentiWS: -1.3294
+positiveSentiWS: 0.2315
+negativeSentiWS: 1.5609
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Tun, Tun, NN): -0.1683
+(lieber, lieb, JJ): 0.2315
+(nicht, nicht, RB): -0.4902
+(unmöglich, unmöglich, JJ): -0.3559
+(finster, finst, JJ): -0.0515
+(nicht, nicht, RB): -0.4902
+(wissen, wissen, VB): -0.0048
+
+3.Akt, 17.Szene, 3.Replik, Drama-Nummer: 1000, ID:35
+polaritySentiWS: 0.5183
+positiveSentiWS: 1.006
+negativeSentiWS: 0.4877
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(bin, sein, VB): 0.2176
+(gewesen, sein, VBN): 0.2176
+(Dummheit, Dummheit, NN): -0.4877
+(klug, klug, JJ): 0.3532
+(sein, sein, VB): 0.2176
+
+1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
+polaritySentiWS: -0.3646
+positiveSentiWS: 0.1304
+negativeSentiWS: 0.495
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(weiß, weeissen, VB): -0.0048
+(er, er, JJ): 0.0612
+(nicht, nicht, RB): -0.4902
+(heiraten, heiraten, VB): 0.004
+(wollte, wollen, MD): 0.004
+
+3.Akt, 1.Szene, 33.Replik, Drama-Nummer: 623, ID:37
+polaritySentiWS: -0.8958
+positiveSentiWS: 0.2937
+negativeSentiWS: 1.1895
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(nicht, nicht, RB): -0.4902
+(leer, lee, JJ): -0.025
+(lassen, lassen, VB): 0.2325
+(wir, wir, PRP): -0.1841
+(nicht, nicht, RB): -0.4902
+
+2.Akt, 11.Szene, 49.Replik, Drama-Nummer: 539, ID:38
+polaritySentiWS: 0.0724
+positiveSentiWS: 0.5626
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(möchte, mögen, VB): 0.345
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+
+3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
+polaritySentiWS: -0.6545
+positiveSentiWS: 0.004
+negativeSentiWS: 0.6585
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(verziehen, verziehen, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(getan, getan, VBN): -0.1683
+
+2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
+polaritySentiWS: -1.0637
+positiveSentiWS: 0.004
+negativeSentiWS: 1.0677
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(glaubt, glauben, VB): 0.004
+(böse, bös, JJ): -0.4183
+(schlimme, schlimm, JJ): -0.6494
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 646, ID:41
+polaritySentiWS: -0.1894
+positiveSentiWS: 0.726
+negativeSentiWS: 0.9154
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(wahr, wahr, RP): 0.2176
+(wir, wir, PRP): -0.1841
+(zerbrochen, zerbrechen, VB): -0.0522
+(ist, sein, VB): 0.2176
+(wir, wir, PRP): -0.1841
+(er, er, PRP): 0.0612
+(will, wollen, MD): 0.004
+(Weiß, Weiss, NN): -0.0048
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(bringen, bringen, VB): 0.004
+
+2.Akt, 12.Szene, 4.Replik, Drama-Nummer: 545, ID:42
+polaritySentiWS: -0.2339
+positiveSentiWS: 2.3465
+negativeSentiWS: 2.5804
+positiveSentiWSDichotom: 16
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 12
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(will, wollen, MD): 0.004
+(sind, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(Vorurteil, Vorurteil, NN): -0.6261
+(lassen, lassen, VB): 0.2325
+(geschickt, schicken, VBN): 0.3372
+(machen, machen, VB): 0.004
+(nützliche, nützlich, JJ): 0.2302
+(tun, tun, VB): -0.1683
+(schämen, schämen, VB): -0.893
+(schämen, schämen, VB): -0.893
+(Freundschaft, Freundschaft, NN): 0.2059
+(wert, wert, RB): 0.004
+(geschätzt, schätzen, VBN): 0.1175
+(Freundschaft, Freundschaft, NN): 0.2059
+(sein, sein, VB): 0.2176
+(höchsten, höchst, JJ): 0.004
+(gewesen, sein, VBN): 0.2176
+(bin, sein, VB): 0.2176
+(Genies, Genie, NNS): 0.0697
+
+3.Akt, 14.Szene, 11.Replik, Drama-Nummer: 864, ID:43
+polaritySentiWS: 0.473
+positiveSentiWS: 1.0134
+negativeSentiWS: 0.5404
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(machen, machen, VB): 0.004
+(wir, wir, PRP): -0.1841
+(lassen, lassen, VB): 0.2325
+(er, er, PRP): 0.0612
+(gestoßen, gestossen, RP): -0.3563
+(er, er, PRP): 0.0612
+(er, er, PRP): 0.0612
+(fertig, fertig, JJ): 0.3757
+(ist, sein, VB): 0.2176
+
+3.Akt, 15.Szene, 69.Replik, Drama-Nummer: 950, ID:44
+polaritySentiWS: -0.9286
+positiveSentiWS: 0.004
+negativeSentiWS: 0.9326
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(fremden, fremden, PRP$): -0.4939
+(zugeben, zugeben, VB): 0.004
+(häßliche, hässlich, JJ): -0.4387
+
+2.Akt, 1.Szene, 12.Replik, Drama-Nummer: 264, ID:45
+polaritySentiWS: -1.7478
+positiveSentiWS: 0.4292
+negativeSentiWS: 2.177
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(Verdacht, Verdacht, NN): -0.8074
+(fehlte, fehlen, VB): -0.5365
+(ihren, ihren, PRP$): -0.0048
+(vollkommen, vollkomm, JJ): 0.0945
+(machen, machen, VB): 0.004
+(ihr, ihr, PRP): -0.0048
+(Liebe, Liebe, NN): 0.1131
+(sein, sein, VB): 0.2176
+(mißtrauischen, misstrauisch, JJ): -0.3333
+
+3.Akt, 13.Szene, 9.Replik, Drama-Nummer: 846, ID:46
+polaritySentiWS: 0.5142
+positiveSentiWS: 1.5926
+negativeSentiWS: 1.0784
+positiveSentiWSDichotom: 13
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(wir, wir, PRP): -0.1841
+(ist, sein, VB): 0.2176
+(Schlimmste, Schlimmste, NN): -0.1705
+(ist, sein, VB): 0.2176
+(wollen, wollen, MD): 0.004
+(bin, sein, VB): 0.2176
+(Weiche, Weiche, NN): 0.3591
+(gefallen, gefallen, RP): 0.2578
+(Belohnung, Belohnung, NN): 0.0813
+(Alten, Alten, NN): -0.0048
+(verloren, verlor, JJ): -0.393
+(Profit, Profit, NN): 0.004
+(machen, machen, VB): 0.004
+(ist, sein, VBN): 0.2176
+(Pack, Pack, NN): 0.004
+(will, wollen, MD): 0.004
+(lehren, lehren, VB): -0.025
+(unglücklich, unglücklich, JJ): -0.301
+(machen, machen, VB): 0.004
+
+3.Akt, 15.Szene, 90.Replik, Drama-Nummer: 971, ID:47
+polaritySentiWS: 1.0563
+positiveSentiWS: 1.0563
+negativeSentiWS: 0
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Beste, Beste, NN): 0.3716
+(glänzen, glänzen, VB): 0.3397
+(möchte, mögen, VB): 0.345
+
+1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
+polaritySentiWS: 0.2065
+positiveSentiWS: 0.3796
+negativeSentiWS: 0.1731
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Gut, Gut, NN): 0.3716
+(will, wollen, MD): 0.004
+(tun, tun, VB): -0.1683
+(recht, recht, NN): 0.004
+(weiß, weeissen, VB): -0.0048
+
+1.Akt, 2.Szene, 5.Replik, Drama-Nummer: 50, ID:49
+polaritySentiWS: 0.2054
+positiveSentiWS: 2.3264
+negativeSentiWS: 2.121
+positiveSentiWSDichotom: 10
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(war, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(gefährlich, gefährlich, JJ): -0.6366
+(guten, gut, JJ): 0.3716
+(Freund, Freund, NN): 0.2198
+(still, still, JJ): 0.3398
+(Ärgernis, Ärgernis, NN): -0.3357
+(geben, geben, VB): 0.0747
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(bin, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(tote, tot, JJ): -0.1683
+(gelesen, lesen, VB): 0.2325
+
+3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
+polaritySentiWS: -2.12
+positiveSentiWS: 1.745
+negativeSentiWS: 3.865
+positiveSentiWSDichotom: 13
+negativeSentiWSDichotom: 11
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(dumme, dumm, JJ): -0.5901
+(er, er, JJ): 0.0612
+(stößt, stössen, VB): -0.3563
+(läßt, lässen, VB): 0.2325
+(tut, tun, VB): -0.1683
+(er, er, PRP): 0.0612
+(Wein, Wein, NN): -0.1651
+(will, wollen, MD): 0.004
+(fährt, fahren, VB): 0.3281
+(er, er, PRP): 0.0612
+(er, er, PRP): 0.0612
+(nicht, nicht, RB): -0.4902
+(bringe, bringen, VB): 0.004
+(suchen, suchen, VB): -0.3505
+(rechten, rechen, VB): -0.3489
+(rechte, rechen, VB): -0.3489
+(er, er, PRP): 0.0612
+(ist, sein, VB): 0.2176
+(rechte, rechen, VB): -0.3489
+(ist, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(rechte, rechen, VB): -0.3489
+(rechte, rechen, VB): -0.3489
+
+1.Akt, 4.Szene, 5.Replik, Drama-Nummer: 110, ID:51
+polaritySentiWS: -0.396
+positiveSentiWS: 0.5892
+negativeSentiWS: 0.9852
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(Schade, Schade, RP): -0.0048
+(guter, gut, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
+polaritySentiWS: 0.0692
+positiveSentiWS: 0.0692
+negativeSentiWS: 0
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(wollte, wollen, MD): 0.004
+(heiraten, heiraten, VB): 0.004
+
+3.Akt, 18.Szene, 3.Replik, Drama-Nummer: 1010, ID:53
+polaritySentiWS: -0.7721
+positiveSentiWS: 0.2216
+negativeSentiWS: 0.9937
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Ihre, ihre, PRP$): -0.0048
+(Drohungen, Drohung, NNS): -0.0048
+(sind, sein, VB): 0.2176
+(fremden, fremden, PRP$): -0.4939
+(Recht, Recht, NN): 0.004
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 6.Szene, 70.Replik, Drama-Nummer: 212, ID:54
+polaritySentiWS: 0.0254
+positiveSentiWS: 0.4942
+negativeSentiWS: 0.4688
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Hülfe, Hülfe, NN): 0.373
+(nötig, nötigen, VBN): -0.0048
+(Gauner, Gauner, NN): -0.4592
+(weiß, weeissen, VB): -0.0048
+(ehrlichen, ehrlich, JJ): 0.1212
+
+1.Akt, 3.Szene, 2.Replik, Drama-Nummer: 59, ID:55
+polaritySentiWS: -0.3409
+positiveSentiWS: 0.008
+negativeSentiWS: 0.3489
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Heiraten, Heirat, NNS): 0.004
+(rechte, rechen, VB): -0.3489
+(bringen, bringen, VB): 0.004
+
+1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
+polaritySentiWS: 0.6528
+positiveSentiWS: 0.6528
+negativeSentiWS: 0
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(sein, sein, VB): 0.2176
+(sein, sein, VB): 0.2176
+(sind, sein, VB): 0.2176
+
+2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
+polaritySentiWS: 0.6757
+positiveSentiWS: 0.6757
+negativeSentiWS: 0
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ließ, lassen, VB): 0.2325
+(gewonnen, gewinnen, VBN): 0.004
+(wäre, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(für, für, IN): 0.004
+
+1.Akt, 6.Szene, 14.Replik, Drama-Nummer: 148, ID:58
+polaritySentiWS: 0.1934
+positiveSentiWS: 1.1575
+negativeSentiWS: 0.9641
+positiveSentiWSDichotom: 8
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Koller, Koller, NN): 0.004
+(ist, sein, VB): 0.2176
+(leichter, leicht, JJ): 0.004
+(wissen, wissen, VB): -0.0048
+(nicht, nicht, RB): -0.4902
+(führen, führen, VB): 0.004
+(sein, sein, VB): 0.2176
+(will, wollen, MD): 0.004
+(angenehm, angenehm, JJ): 0.4887
+(unangenehm, unangenehm, JJ): -0.4691
+(ist, sein, VB): 0.2176
+
+1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
+polaritySentiWS: -0.3638
+positiveSentiWS: 0.897
+negativeSentiWS: 1.2608
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(gut, gut, JJ): 0.3716
+(sein, sein, VB): 0.2176
+(schlechte, schlecht, JJ): -0.7706
+(er, er, PRP): 0.0612
+(erfahren, erfahren, VB): 0.0927
+(er, er, PRP): 0.0612
+(erfahren, erfahren, RP): 0.0927
+
+1.Akt, 6.Szene, 15.Replik, Drama-Nummer: 149, ID:60
+polaritySentiWS: -0.3494
+positiveSentiWS: 0.2395
+negativeSentiWS: 0.5889
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Wohltat, Wohltat, NN): 0.004
+(klein, klein, JJ): -0.2715
+(zweideutig, zweideutig, JJ): -0.3174
+(machen, machen, VB): 0.004
+(lieber, lieb, JJ): 0.2315
+
+3.Akt, 4.Szene, 14.Replik, Drama-Nummer: 390, ID:61
+polaritySentiWS: -0.1599
+positiveSentiWS: 0.7513
+negativeSentiWS: 0.9112
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(wahr, wahr, RP): 0.2176
+(recht, rechen, VB): -0.3489
+(vollkommen, vollkomm, JJ): 0.0945
+(Zwang, Zwang, NN): -0.0721
+(stärker, stärk, JJ): 0.004
+
+1.Akt, 6.Szene, 24.Replik, Drama-Nummer: 158, ID:62
+polaritySentiWS: 0.6534
+positiveSentiWS: 0.6582
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Erlauben, erlauben, VB): 0.004
+(Freundin, Freundin, NN): 0.6502
+(ihres, ihres, PRP$): -0.0048
+(besitzen, besitzen, VB): 0.004
+
+2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
+polaritySentiWS: 0.2524
+positiveSentiWS: 1.4107
+negativeSentiWS: 1.1583
+positiveSentiWSDichotom: 11
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Mache, Mache, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(abgewiesen, abweisen, VBN): -0.0048
+(für, für, IN): 0.004
+(getan, tun, VBN): -0.1683
+(war, sein, VB): 0.2176
+(schwer, schw, JJ): -0.0048
+(nicht, nicht, RB): -0.4902
+(besonders, besonders, RB): 0.5391
+(für, für, IN): 0.004
+(Erfahrung, Erfahrung, NN): 0.004
+(Vertrauen, Vertrauen, NN): 0.3512
+(glaubt, glauben, VB): 0.004
+(erste, erst, JJ): 0.0612
+(ist, sein, VB): 0.2176
+(bringe, bringen, VB): 0.004
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 369, ID:64
+polaritySentiWS: -0.703
+positiveSentiWS: 0.2908
+negativeSentiWS: 0.9938
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(hart, hart, JJ): -0.1483
+(Freiheit, Freiheit, NN): 0.004
+(ersten, erst, JJ): 0.0612
+(Befehl, Befehl, NN): -0.0048
+(will, wollen, MD): 0.004
+(Willen, Willen, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(gesucht, suchen, VBN): -0.3505
+
+2.Akt, 2.Szene, 18.Replik, Drama-Nummer: 210, ID:65
+polaritySentiWS: 0.2412
+positiveSentiWS: 0.639
+negativeSentiWS: 0.3978
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(sein, sein, VB): 0.2176
+(Hoffnung, Hoffnung, NN): 0.2038
+(verloren, verlieren, VBN): -0.393
+(sein, sein, VB): 0.2176
+(neidisch, neidisch, JJ): -0.0048
+
+3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
+polaritySentiWS: -1.3443
+positiveSentiWS: 0.1686
+negativeSentiWS: 1.5129
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(vollkommen, vollkomm, JJ): 0.0945
+(wundern, wundern, VB): 0.0741
+(nicht, nicht, RB): -0.4902
+(Verdacht, Verdacht, NN): -0.8074
+(fallen, fallen, VB): -0.2153
+
+2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
+polaritySentiWS: -0.4631
+positiveSentiWS: 0.2256
+negativeSentiWS: 0.6887
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(fragen, fragen, VB): 0.004
+(weiß, weeissen, VB): -0.0048
+(nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(wir, wir, PRP): -0.1841
+(weiß, weeissen, VB): -0.0048
+(ihr, ihr, PRP): -0.0048
+(wollen, wollen, MD): 0.004
+
+1.Akt, 4.Szene, 7.Replik, Drama-Nummer: 98, ID:68
+polaritySentiWS: -0.276
+positiveSentiWS: 0.5701
+negativeSentiWS: 0.8461
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(bestätigen, bestätigen, VB): 0.0854
+(unmöglich, unmöglich, JJ): -0.3559
+(gut, gut, JJ): 0.3716
+(liebste, liebst, NN): 0.1131
+
+1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
+polaritySentiWS: -0.6432
+positiveSentiWS: 1.3176
+negativeSentiWS: 1.9608
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wollen, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(sind, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(sein, sein, VB): 0.2176
+(waren, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(sind, sein, VB): 0.2176
+(wollen, wollen, MD): 0.004
+(sein, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(waren, sein, VB): 0.2176
+
+1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
+polaritySentiWS: -0.4902
+positiveSentiWS: 0
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 0
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:71
+polaritySentiWS: 1.1019
+positiveSentiWS: 1.1019
+negativeSentiWS: 0
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(lieb, lieb, JJ): 0.2315
+(sein, sein, VB): 0.2176
+(bin, sein, VB): 0.2176
+(wäre, sein, VB): 0.2176
+(wären, sein, VB): 0.2176
+
+1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
+polaritySentiWS: -0.1186
+positiveSentiWS: 0.3716
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(besser, besser, RB): 0.3716
+
+1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
+polaritySentiWS: 0.329
+positiveSentiWS: 0.8192
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(Freund, Freund, NN): 0.2198
+(will, wollen, MD): 0.004
+(für, für, TO): 0.004
+(besten, best, JJ): 0.3716
+(Freund, Freund, NN): 0.2198
+
+1.Akt, 3.Szene, 36.Replik, Drama-Nummer: 110, ID:74
+polaritySentiWS: 0.2
+positiveSentiWS: 0.6556
+negativeSentiWS: 0.4556
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(führte, führen, VB): 0.004
+(er, er, PRP): 0.0612
+(lieber, lieb, JJ): 0.2315
+(klein, klein, JJ): -0.2715
+(wollen, wollen, MD): 0.004
+(wir, wir, PRP): -0.1841
+(erst, erst, RB): 0.0612
+(lassen, lassen, VB): 0.2325
+
+1.Akt, 3.Szene, 103.Replik, Drama-Nummer: 177, ID:75
+polaritySentiWS: 0.0327
+positiveSentiWS: 0.2216
+negativeSentiWS: 0.1889
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(wir, wir, PRP): -0.1841
+(für, für, IN): 0.004
+(frech, frech, JJ): -0.0048
+(wäre, sein, VB): 0.2176
+
+1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
+polaritySentiWS: -0.2515
+positiveSentiWS: 0.02
+negativeSentiWS: 0.2715
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(glauben, glauben, VB): 0.004
+(will, wollen, MD): 0.004
+(machst, machst, RP): 0.004
+(vergeben, vergeben, VBN): 0.004
+(kleinste, kleinst, JJ): -0.2715
+(für, für, IN): 0.004
+
+1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
+polaritySentiWS: 0.6429
+positiveSentiWS: 1.1023
+negativeSentiWS: 0.4594
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(glaube, glauben, VB): 0.004
+(er, er, PRP): 0.0612
+(bin, sein, VB): 0.2176
+(neuen, neu, JJ): 0.004
+(wünschen, wünschen, VB): 0.004
+(ist, sein, VB): 0.2176
+(erlaubt, erlauben, VB): 0.004
+(armer, arm, JJ): -0.4546
+(Lohn, Lohn, NN): 0.5859
+(für, für, IN): 0.004
+(saure, saur, JJ): -0.0048
+
+1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
+polaritySentiWS: -1.9441
+positiveSentiWS: 1.4088
+negativeSentiWS: 3.3529
+positiveSentiWSDichotom: 11
+negativeSentiWSDichotom: 7
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(geben, geben, VB): 0.0747
+(guten, gut, JJ): 0.3716
+(Rat, Rat, NN): 0.004
+(ist, sein, VB): 0.2176
+(Wahrheit, Wahrheit, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(lassen, lassen, VB): 0.2325
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(neuen, neu, JJ): 0.004
+(verleumden, verleumden, VB): -0.4473
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(sein, sein, PRP$): 0.2176
+(er, er, PRP): 0.0612
+(armen, arm, JJ): -0.4546
+
+1.Akt, 1.Szene, 67.Replik, Drama-Nummer: 67, ID:79
+polaritySentiWS: -0.8265
+positiveSentiWS: 1.3841
+negativeSentiWS: 2.2106
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wäre, sein, VB): 0.2176
+(wollte, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(satt, satt, JJ): 0.3557
+(wäre, sein, VB): 0.2176
+(beste, best, JJ): 0.3716
+(fehlt, fehlen, VB): -0.5365
+(Schuld, Schuld, NN): -0.9686
+(fallen, fallen, VB): -0.2153
+
+1.Akt, 1.Szene, 58.Replik, Drama-Nummer: 58, ID:80
+polaritySentiWS: -0.2924
+positiveSentiWS: 0.3463
+negativeSentiWS: 0.6387
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Verdiensten, Verdiensten, NN): 0.004
+(wir, wir, PRP): -0.1841
+(arm, arm, JJ): -0.4546
+(reich, reich, JJ): 0.1247
+(sein, sein, VB): 0.2176
+
+2.Akt, 2.Szene, 6.Replik, Drama-Nummer: 164, ID:81
+polaritySentiWS: -0.3077
+positiveSentiWS: 0.2365
+negativeSentiWS: 0.5442
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Wahrheit, Wahrheit, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(lassen, lassen, VB): 0.2325
+(Hast, Hast, NN): -0.054
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
+polaritySentiWS: -0.4059
+positiveSentiWS: 0.606
+negativeSentiWS: 1.0119
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Freund, Freund, NN): 0.2198
+(macht, machen, VB): 0.004
+(kurz, kurz, JJ): -0.3439
+(Narr, Narr, NN): -0.335
+(wichtigsten, wichtigst, JJ): 0.3822
+(stören, stören, VB): -0.333
+
+2.Akt, 2.Szene, 14.Replik, Drama-Nummer: 172, ID:83
+polaritySentiWS: -1.3708
+positiveSentiWS: 0.7315
+negativeSentiWS: 2.1023
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(war, sein, VB): 0.2176
+(Schuld, Schuld, NN): -0.9686
+(gab, geben, VB): 0.0747
+(ist, sein, VB): 0.2176
+(lächerlich, lächerlich, JJ): -0.6435
+(wolltest, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(war, sein, VB): 0.2176
+
+2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
+polaritySentiWS: -2.0244
+positiveSentiWS: 1.4793
+negativeSentiWS: 3.5037
+positiveSentiWSDichotom: 8
+negativeSentiWSDichotom: 10
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(Übel, Übel, NN): -0.4895
+(großen, gross, JJ): 0.3694
+(ihre, ihre, PRP$): -0.0048
+(unglücklich, unglücklich, JJ): -0.301
+(sind, sein, VB): 0.2176
+(böse, bös, JJ): -0.4183
+(Tod, Tod, NN): -0.1683
+(krank, krank, JJ): -0.4694
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(sterben, sterben, VB): -0.0539
+(lieben, lieb, JJ): 0.2315
+(ist, sein, VB): 0.2176
+(sind, sein, VB): 0.2176
+(Unglücke, Unglücke, NN): -0.5004
+(erschaffen, erschaffen, VB): 0.004
+(verdammte, verdammt, NN): -0.6079
+
+2.Akt, 2.Szene, 24.Replik, Drama-Nummer: 182, ID:85
+polaritySentiWS: 0.9735
+positiveSentiWS: 0.9783
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(bessern, bessern, VB): 0.3716
+(geben, geben, VB): 0.0747
+(ist, sein, VB): 0.2176
+(ihr, ihr, PRP): -0.0048
+(Glück, Glück, NN): 0.2452
+(wünschen, wünschen, VB): 0.004
+(will, wollen, MD): 0.004
+
+3.Akt, 5.Szene, 4.Replik, Drama-Nummer: 334, ID:86
+polaritySentiWS: -0.2986
+positiveSentiWS: 0.0827
+negativeSentiWS: 0.3813
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(stoßen, stossen, VB): -0.3563
+(für, für, IN): 0.004
+(Lehre, Lehre, NN): -0.025
+(geben, geben, VB): 0.0747
+(ansieht, ansehen, VB): 0.004
+
+3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
+polaritySentiWS: 0.2128
+positiveSentiWS: 0.2176
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(sind, sein, VB): 0.2176
+(weiß, weeissen, VB): -0.0048
+
+2.Akt, 6.Szene, 17.Replik, Drama-Nummer: 255, ID:88
+polaritySentiWS: 0.5972
+positiveSentiWS: 0.5972
+negativeSentiWS: 0
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Stärke, Stärke, NN): 0.004
+(besten, best, JJ): 0.3716
+(unschuldiges, unschuldiges, PRP$): 0.004
+(sein, sein, VB): 0.2176
+
+3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
+polaritySentiWS: 0.042
+positiveSentiWS: 0.2355
+negativeSentiWS: 0.1935
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Zweifel, Zweifel, NN): -0.1935
+(lieber, lieb, JJ): 0.2315
+(glaube, glauben, VB): 0.004
+
+3.Akt, 7.Szene, 23.Replik, Drama-Nummer: 380, ID:90
+polaritySentiWS: -0.2606
+positiveSentiWS: 1.0264
+negativeSentiWS: 1.287
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(heißt, heeissen, VB): 0.3557
+(für, für, IN): 0.004
+(bin, sein, VB): 0.2176
+(schuldig, schuldig, JJ): -0.7968
+(nicht, nicht, RB): -0.4902
+(wahr, wahr, RP): 0.2176
+(liebe, lieb, JJ): 0.2315
+
+1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
+polaritySentiWS: -0.0314
+positiveSentiWS: 0.004
+negativeSentiWS: 0.0354
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(weiß, weeissen, VB): -0.0048
+(Schlag, Schlag, NN): -0.0306
+(für, für, IN): 0.004
+
+1.Akt, 1.Szene, 22.Replik, Drama-Nummer: 22, ID:92
+polaritySentiWS: 0.2506
+positiveSentiWS: 0.4491
+negativeSentiWS: 0.1985
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(lieber, lieb, JJ): 0.2315
+(ihr, ihr, PRP): -0.0048
+(wirst, wirst, WRB): -0.1841
+(wissen, wissen, VB): -0.0048
+(ist, sein, VB): 0.2176
+(ihr, ihr, PRP): -0.0048
+
+1.Akt, 4.Szene, 8.Replik, Drama-Nummer: 56, ID:93
+polaritySentiWS: 0.2053
+positiveSentiWS: 0.967
+negativeSentiWS: 0.7617
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wollen, wollen, MD): 0.004
+(Macht, Macht, NN): 0.004
+(ist, sein, VB): 0.2176
+(klein, klein, JJ): -0.2715
+(sein, sein, VB): 0.2176
+(wahr, wahr, RP): 0.2176
+(nicht, nicht, RB): -0.4902
+(Reife, Reife, NN): 0.0886
+(ist, sein, VB): 0.2176
+
+1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
+polaritySentiWS: 0.4223
+positiveSentiWS: 0.446
+negativeSentiWS: 0.0237
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(wollten, wollen, MD): 0.004
+(weisen, weisen, VB): 0.2244
+(unbequemsten, unbequemst, NN): -0.0237
+
+1.Akt, 16.Szene, 4.Replik, Drama-Nummer: 268, ID:95
+polaritySentiWS: -0.1662
+positiveSentiWS: 0.718
+negativeSentiWS: 0.8842
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(war, sein, VB): 0.2176
+(einfältig, einfältig, JJ): -0.1858
+(höflich, höflich, JJ): 0.004
+(ist, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(grob, grob, JJ): -0.3495
+(ist, sein, VB): 0.2176
+(rechte, rechen, VB): -0.3489
+
+1.Akt, 2.Szene, 25.Replik, Drama-Nummer: 35, ID:96
+polaritySentiWS: 0.2176
+positiveSentiWS: 0.8108
+negativeSentiWS: 0.5932
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(finster, finst, JJ): -0.0515
+(gewesen, sein, VBN): 0.2176
+(ist, sein, VB): 0.2176
+(Finstern, Finstern, NN): -0.0515
+(nicht, nicht, RB): -0.4902
+(gut, gut, JJ): 0.3716
+(zielen, zielen, VB): 0.004
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 70, ID:97
+polaritySentiWS: -0.7016
+positiveSentiWS: 0.4377
+negativeSentiWS: 1.1393
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wollten, wollen, MD): 0.004
+(will, wollen, MD): 0.004
+(für, für, IN): 0.004
+(bin, sein, VB): 0.2176
+(liebenswürdig, liebenswürdig, JJ): 0.2001
+(entsetzlich, entsetzlich, JJ): -0.477
+(entsetzlich, entsetzlich, JJ): -0.477
+(zornig, zornigen, VBN): -0.1853
+(neuen, neu, JJ): 0.004
+(gedenken, gedenken, VB): 0.004
+
+1.Akt, 8.Szene, 4.Replik, Drama-Nummer: 122, ID:98
+polaritySentiWS: -0.3614
+positiveSentiWS: 1.4697
+negativeSentiWS: 1.8311
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(klug, klug, JJ): 0.3532
+(verzeihen, verzeihen, VB): 0.004
+(Komplimente, Komplimente, NN): 0.3323
+(nicht, nicht, RB): -0.4902
+(Furcht, Furcht, NN): -0.5012
+(grob, grob, JJ): -0.3495
+(sein, sein, VB): 0.2176
+(möge, mögen, VB): 0.345
+
+1.Akt, 2.Szene, 9.Replik, Drama-Nummer: 19, ID:99
+polaritySentiWS: 1.3716
+positiveSentiWS: 1.9419
+negativeSentiWS: 0.5703
+positiveSentiWSDichotom: 12
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(beschweren, beschweren, VB): -0.0413
+(nötig, nötig, JJ): -0.0048
+(ist, sein, VB): 0.2176
+(wissen, wissen, VB): -0.0048
+(macht, machen, VB): 0.004
+(wäre, sein, VB): 0.2176
+(guten, gut, JJ): 0.3716
+(Leben, Leben, NN): 0.0947
+(bringen, bringen, VB): 0.004
+(wollten, wollen, MD): 0.004
+(sein, sein, PRP$): 0.2176
+(abnehmen, abnehmen, VB): -0.0292
+(wäre, sein, VB): 0.2176
+(besser, besser, RB): 0.3716
+(gewesen, sein, VBN): 0.2176
+
+1.Akt, 18.Szene, 18.Replik, Drama-Nummer: 310, ID:100
+polaritySentiWS: -0.16
+positiveSentiWS: 0.3302
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(Bedenken, Bedenken, NN): 0.004
+(will, wollen, MD): 0.004
+(Wahrheit, Wahrheit, NN): 0.004
+(eignen, eignen, VB): 0.1006
+
+1.Akt, 9.Szene, 9.Replik, Drama-Nummer: 149, ID:101
+polaritySentiWS: 0.1587
+positiveSentiWS: 1.3225
+negativeSentiWS: 1.1638
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(übel, übel, JJ): -0.4895
+(wir, wir, JJ): -0.1841
+(gefallen, gefallen, VB): 0.2578
+(lassen, lassen, RB): 0.2325
+(machen, machen, VB): 0.004
+(bin, sein, VBN): 0.2176
+(zufrieden, zufried, JJ): 0.393
+(ist, sein, VB): 0.2176
+
+1.Akt, 22.Szene, 19.Replik, Drama-Nummer: 370, ID:102
+polaritySentiWS: 0.4495
+positiveSentiWS: 1.2814
+negativeSentiWS: 0.8319
+positiveSentiWSDichotom: 10
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(gegeben, geben, VBN): 0.0747
+(Vergeltung, Vergeltung, NN): -0.3369
+(nicht, nicht, RB): -0.4902
+(Abneigung, Abneigung, NN): -0.0048
+(Freundschaft, Freundschaft, NN): 0.2059
+(er, er, PRP): 0.0612
+(sei, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(wolle, wollen, MD): 0.004
+(ist, sein, VB): 0.2176
+(unschätzbar, unschätzbar, PRP$): 0.004
+(gewesen, sein, VBN): 0.2176
+
+1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
+polaritySentiWS: -0.2605
+positiveSentiWS: 0.2297
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(schönen, schönen, PRP$): 0.0081
+(sind, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(entschließen, entschlassen, VB): 0.004
+
+3.Akt, 2.Szene, 18.Replik, Drama-Nummer: 408, ID:104
+polaritySentiWS: 0.1995
+positiveSentiWS: 0.6568
+negativeSentiWS: 0.4573
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wissen, wissen, VB): -0.0048
+(bin, sein, VB): 0.2176
+(tun, tun, VB): -0.1683
+(für, für, IN): 0.004
+(sein, sein, VB): 0.2176
+(billiger, billig, JJ): -0.2842
+(bin, sein, VB): 0.2176
+
+5.Akt, 5.Szene, 39.Replik, Drama-Nummer: 766, ID:105
+polaritySentiWS: 0.4571
+positiveSentiWS: 0.4571
+negativeSentiWS: 0
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Recht, Recht, NN): 0.004
+(Recht, Recht, NN): 0.004
+(lieber, lieb, JJ): 0.2315
+(wahr, wahr, RP): 0.2176
+
+4.Akt, 5.Szene, 42.Replik, Drama-Nummer: 623, ID:106
+polaritySentiWS: -0.3624
+positiveSentiWS: 0.7501
+negativeSentiWS: 1.1125
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(ihr, ihr, PRP): -0.0048
+(guter, gut, JJ): 0.3716
+(verstehen, verstehen, VB): 0.0957
+(Bosheit, Bosheit, NN): -0.3371
+(schlecht, schlecht, JJ): -0.7706
+(Vorsicht, Vorsicht, NN): 0.004
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 574, ID:107
+polaritySentiWS: -0.1051
+positiveSentiWS: 2.0889
+negativeSentiWS: 2.194
+positiveSentiWSDichotom: 17
+negativeSentiWSDichotom: 7
+polaritySentiWSDichotom: 10
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Nicht, nicht, RB): -0.4902
+(wahr, wahr, RP): 0.2176
+(bin, sein, VB): 0.2176
+(lassen, lassen, VB): 0.2325
+(lassen, lassen, VBN): 0.2325
+(lassen, lassen, VBN): 0.2325
+(Wunder, Wunder, NN): 0.0741
+(Trotze, Trotze, NN): -0.0048
+(will, wollen, MD): 0.004
+(ist, sein, VB): 0.2176
+(Lachen, Lachen, NN): 0.0135
+(lachen, lachen, VB): 0.0135
+(guter, gut, JJ): 0.3716
+(Laune, Laune, NN): 0.1085
+(erhalten, erhalten, VB): 0.004
+(er, er, PRP): 0.0612
+(nicht, nicht, RB): -0.4902
+(er, er, PRP): 0.0612
+(närrisch, närrisch, JJ): -0.0443
+(lachen, lachen, VB): 0.0135
+(nicht, nicht, RB): -0.4902
+(wir, wir, JJ): -0.1841
+(nicht, nicht, RB): -0.4902
+(lachen, lachen, VB): 0.0135
+
+2.Akt, 6.Szene, 31.Replik, Drama-Nummer: 247, ID:108
+polaritySentiWS: -0.2592
+positiveSentiWS: 0.4368
+negativeSentiWS: 0.696
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wissen, wissen, VB): -0.0048
+(bessern, bessern, PRP$): 0.3716
+(er, er, JJ): 0.0612
+(nicht, nicht, RB): -0.4902
+(Unruhe, Unruhe, NN): -0.201
+(vermehren, vermehren, VB): 0.004
+
+4.Akt, 7.Szene, 9.Replik, Drama-Nummer: 652, ID:109
+polaritySentiWS: -0.356
+positiveSentiWS: 0.4352
+negativeSentiWS: 0.7912
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wäre, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(unglückliche, unglücklich, JJ): -0.301
+(ist, sein, VB): 0.2176
+
+3.Akt, 5.Szene, 11.Replik, Drama-Nummer: 451, ID:110
+polaritySentiWS: -4.9683
+positiveSentiWS: 1.268
+negativeSentiWS: 6.2363
+positiveSentiWSDichotom: 17
+negativeSentiWSDichotom: 17
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(bin, sein, VB): 0.2176
+(beschämt, beschämt, JJ): -0.0048
+(Vorwurf, Vorwurf, NN): -0.5095
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(rechtfertigen, rechtfertig, VB): 0.004
+(beunruhigen, beunruhigen, VB): -0.3221
+(Vorteil, Vorteil, NN): 0.004
+(Bestürzung, Bestürzung, NN): -0.0048
+(nicht, nicht, RB): -0.4902
+(bestraft, bestrafen, RP): -0.4811
+(Hoffnung, Hoffnung, NN): 0.2038
+(verschwindet, verschwinden, VB): -0.3588
+(Glück, Glück, NN): 0.2452
+(für, für, IN): 0.004
+(günstigen, günstig, JJ): 0.0946
+(Glückes, Glückes, NN): 0.2452
+(erklären, erklären, VB): 0.004
+(für, für, IN): 0.004
+(Verurteilung, Verurteilung, NN): -0.0048
+(erklären, erklären, VB): 0.004
+(Gnade, Gnade, NN): 0.004
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(beleidigen, beleidigen, VB): -0.6076
+(nicht, nicht, RB): -0.4902
+(Mißtrauen, Misstrauen, NN): -0.4778
+(zweifeln, zweifeln, VB): -0.1935
+(Gewalt, Gewalt, NN): -0.5363
+(Schutzes, Schutzes, NN): 0.004
+(warten, warten, VB): 0.004
+(billigen, billigen, VB): -0.2842
+(führt, führen, VB): 0.004
+(nicht, nicht, RB): -0.4902
+
+4.Akt, 7.Szene, 15.Replik, Drama-Nummer: 658, ID:111
+polaritySentiWS: -0.2749
+positiveSentiWS: 0.2216
+negativeSentiWS: 0.4965
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wissen, wissen, VB): -0.0048
+(wissen, wissen, VB): -0.0048
+(wollen, wollen, MD): 0.004
+(verwundet, verwunden, VBN): -0.3186
+(ist, sein, VB): 0.2176
+(tot, tot, JJ): -0.1683
+
+5.Akt, 5.Szene, 9.Replik, Drama-Nummer: 736, ID:112
+polaritySentiWS: 0.5404
+positiveSentiWS: 0.5404
+negativeSentiWS: 0
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Schönheit, Schönheit, NN): 0.3286
+(Hoffnung, Hoffnung, NN): 0.2038
+(machen, machen, VB): 0.004
+(wollen, wollen, MD): 0.004
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 782, ID:113
+polaritySentiWS: -0.3639
+positiveSentiWS: 0.016
+negativeSentiWS: 0.3799
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Strenge, Strenge, NN): -0.0048
+(gebracht, bringen, VBN): 0.004
+(weiß, weeissen, VB): -0.0048
+(Widerspruch, Widerspruch, NN): -0.3655
+(will, wollen, MD): 0.004
+(will, wollen, MD): 0.004
+(für, für, IN): 0.004
+(haften, haften, VB): -0.0048
+
+5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
+polaritySentiWS: -0.0992
+positiveSentiWS: 0.391
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(willen, willen, IN): 0.004
+(nicht, nicht, RB): -0.4902
+(Leben, Leben, NN): 0.0947
+(ist, sein, VB): 0.2176
+(geben, geben, VB): 0.0747
+
+4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
+polaritySentiWS: -0.743
+positiveSentiWS: 0.0692
+negativeSentiWS: 0.8122
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Unfalle, Unfalle, NN): -0.0048
+(sichtbarer, sichtbar, JJ): 0.004
+(Verdacht, Verdacht, NN): -0.8074
+(er, er, PRP): 0.0612
+(Gnade, Gnade, NN): 0.004
+
+4.Akt, 8.Szene, 14.Replik, Drama-Nummer: 686, ID:116
+polaritySentiWS: -0.6003
+positiveSentiWS: 0.7361
+negativeSentiWS: 1.3364
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(Entschlossenste, Entschlossenste, NN): 0.004
+(ersten, erst, JJ): 0.0612
+(mächtig, mächtig, JJ): 0.2277
+(geringsten, geringst, NN): -0.6621
+(Überlegung, Überlegung, NN): 0.004
+(Mache, Mache, NN): 0.004
+(wir, wir, JJ): -0.1841
+
+3.Akt, 1.Szene, 31.Replik, Drama-Nummer: 384, ID:117
+polaritySentiWS: 0.0123
+positiveSentiWS: 1.3206
+negativeSentiWS: 1.3083
+positiveSentiWSDichotom: 10
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(sein, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(hart, hart, JJ): -0.1483
+(Wagen, Wagen, NN): 0.004
+(ist, sein, VB): 0.2176
+(gestürzt, stürzen, VBN): -0.6316
+(sein, sein, VB): 0.2176
+(Hülfe, Hülfe, NN): 0.373
+(Handgemenges, Handgemenges, NN): -0.3174
+(er, er, PRP): 0.0612
+(retten, retten, VB): 0.004
+(wolle, wollen, MD): 0.004
+(Schloß, Schloss, NN): -0.211
+(bringen, bringen, VB): 0.004
+
+3.Akt, 1.Szene, 9.Replik, Drama-Nummer: 362, ID:118
+polaritySentiWS: 0.332
+positiveSentiWS: 0.8126
+negativeSentiWS: 0.4806
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(wissen, wissen, VB): -0.0048
+(töricht, töricht, JJ): -0.471
+(bereit, bereit, JJ): 0.004
+(ist, sein, VB): 0.2176
+(für, für, IN): 0.004
+(Großen, Grossen, NN): 0.3694
+(wissen, wissen, VB): -0.0048
+(sein, sein, VB): 0.2176
+
+5.Akt, 7.Szene, 9.Replik, Drama-Nummer: 798, ID:119
+polaritySentiWS: 0.3473
+positiveSentiWS: 0.868
+negativeSentiWS: 0.5207
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(besser, besser, RP): 0.3716
+(tot, tot, JJ): -0.1683
+(ist, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(tot, tot, JJ): -0.1683
+(ist, sein, VB): 0.2176
+(wir, wir, PRP): -0.1841
+
+4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
+polaritySentiWS: -0.2329
+positiveSentiWS: 0.4304
+negativeSentiWS: 0.6633
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(heißen, heeissen, VB): 0.3557
+(geben, geben, VB): 0.0747
+(ihr, ihr, PRP): -0.0048
+(nicht, nicht, RB): -0.4902
+(tun, tun, VB): -0.1683
+
+2.Akt, 4.Szene, 5.Replik, Drama-Nummer: 197, ID:121
+polaritySentiWS: -0.0833
+positiveSentiWS: 1.2785
+negativeSentiWS: 1.3618
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 8
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(verlieren, verlieren, VB): -0.393
+(Armen, Armen, NN): -0.4546
+(Liebe, Liebe, NN): 0.1131
+(wissen, wissen, VB): -0.0048
+(Vergnügen, Vergnügen, NN): 0.1838
+(ihr, ihr, PRP): -0.0048
+(nicht, nicht, RB): -0.4902
+(ihrem, ihrem, PRP$): -0.0048
+(Glücke, Glücke, NN): 0.2452
+(möchtest, mögen, VB): 0.345
+(erneuern, erneuern, VB): 0.004
+(Nähe, Nähe, NN): 0.0911
+(war, sein, VB): 0.2176
+(geben, geben, VB): 0.0747
+(ihr, ihr, PRP): -0.0048
+(euch, euch, PRP): -0.0048
+(herzlich, herzlich, JJ): 0.004
+
+4.Akt, 7.Szene, 16.Replik, Drama-Nummer: 659, ID:122
+polaritySentiWS: -0.8144
+positiveSentiWS: 0.3213
+negativeSentiWS: 1.1357
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Tot, tot, JJ): -0.1683
+(tot, tot, JJ): -0.1683
+(ist, sein, VB): 0.2176
+(wollten, wollen, MD): 0.004
+(Verstand, Verstand, NN): 0.0957
+(bringen, bringen, VB): 0.004
+(brechen, brechen, VB): -0.7991
+
+4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
+polaritySentiWS: 0.529
+positiveSentiWS: 0.529
+negativeSentiWS: 0
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(machen, machen, VB): 0.004
+(will, wollen, MD): 0.004
+(wahre, wahr, JJ): 0.2176
+(Liebe, Liebe, NN): 0.1131
+(glaube, glauben, VB): 0.004
+(Ehre, Ehre, NN): 0.0732
+(Liebe, Liebe, NN): 0.1131
+
+1.Akt, 3.Szene, 18.Replik, Drama-Nummer: 63, ID:124
+polaritySentiWS: 0.5458
+positiveSentiWS: 0.5458
+negativeSentiWS: 0
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(sein, sein, VB): 0.2176
+(verstehe, verstehen, VB): 0.0957
+(lassen, lassen, VB): 0.2325
+
+3.Akt, 7.Szene, 46.Replik, Drama-Nummer: 615, ID:125
+polaritySentiWS: 0.9066
+positiveSentiWS: 0.9114
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 8
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(will, wollen, MD): 0.004
+(wissen, wissen, VB): -0.0048
+(besser, besser, RP): 0.3716
+(will, wollen, MD): 0.004
+(lieber, lieb, JJ): 0.2315
+(sein, sein, VB): 0.2176
+(Interessen, Interessen, NN): 0.004
+(geben, geben, VB): 0.0747
+(Interessen, Interessen, NN): 0.004
+
+3.Akt, 2.Szene, 60.Replik, Drama-Nummer: 504, ID:126
+polaritySentiWS: -0.9909
+positiveSentiWS: 0.514
+negativeSentiWS: 1.5049
+positiveSentiWSDichotom: 8
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(machte, machen, VB): 0.004
+(Schulden, Schulden, NN): -0.9686
+(er, er, JJ): 0.0612
+(Gewalt, Gewalt, NN): -0.5363
+(höher, höh, JJ): 0.004
+(wollte, wollen, MD): 0.004
+(anzeigend, anzeigen, VB): 0.004
+(er, er, PRP): 0.0612
+(brachte, bringen, VB): 0.004
+(guten, gut, JJ): 0.3716
+
+5.Akt, 9.Szene, 30.Replik, Drama-Nummer: 1019, ID:127
+polaritySentiWS: -0.4539
+positiveSentiWS: 0.5634
+negativeSentiWS: 1.0173
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(eignen, eignen, RB): 0.1006
+(verächtlich, verächtlichen, VBN): -0.3245
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(ihr, ihr, PRP): -0.0048
+(Glück, Glück, NN): 0.2452
+(blinden, blind, JJ): -0.1978
+
+5.Akt, 11.Szene, 22.Replik, Drama-Nummer: 1066, ID:128
+polaritySentiWS: 0.2927
+positiveSentiWS: 0.2927
+negativeSentiWS: 0
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(liebe, lieb, JJ): 0.2315
+(er, er, PRP): 0.0612
+
+4.Akt, 6.Szene, 62.Replik, Drama-Nummer: 873, ID:129
+polaritySentiWS: -0.9766
+positiveSentiWS: 1.373
+negativeSentiWS: 2.3496
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wäre, sein, VB): 0.2176
+(Unglück, Unglück, NN): -0.5004
+(will, wollen, MD): 0.004
+(Unglück, Unglück, NN): -0.5004
+(nicht, nicht, RB): -0.4902
+(lieben, lieb, NN): 0.2315
+(gut, gut, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+(gewesen, sein, VBN): 0.2176
+(bin, sein, VB): 0.2176
+(Liebe, Liebe, NN): 0.1131
+(versagt, versagen, RP): -0.3517
+(langsam, langsam, JJ): -0.0167
+
+4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
+polaritySentiWS: -0.4283
+positiveSentiWS: 0.0612
+negativeSentiWS: 0.4895
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, JJ): 0.0612
+(übel, übel, JJ): -0.4895
+
+4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
+polaritySentiWS: 0.3464
+positiveSentiWS: 0.3756
+negativeSentiWS: 0.0292
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Beste, Beste, NN): 0.3716
+(für, für, IN): 0.004
+(abnehmen, abnehmen, VB): -0.0292
+
+2.Akt, 9.Szene, 29.Replik, Drama-Nummer: 433, ID:132
+polaritySentiWS: 0.6055
+positiveSentiWS: 1.3967
+negativeSentiWS: 0.7912
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(unglücklich, unglücklich, JJ): -0.301
+(Vernunft, Vernunft, NN): 0.004
+(bin, sein, VB): 0.2176
+(große, gross, JJ): 0.3694
+(Vernunft, Vernunft, NN): 0.004
+(für, für, IN): 0.004
+(lassen, lassen, VB): 0.2325
+(vernünftig, vernünftig, JJ): 0.3436
+(Vernunft, Vernunft, NN): 0.004
+(ist, sein, VB): 0.2176
+
+3.Akt, 4.Szene, 7.Replik, Drama-Nummer: 531, ID:133
+polaritySentiWS: -0.2982
+positiveSentiWS: 1.361
+negativeSentiWS: 1.6592
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Erschrecke, Erschrecke, NN): -0.1812
+(nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(hübsch, hübsch, JJ): 0.4629
+(ist, sein, VB): 0.2176
+(fremd, fremd, JJ): -0.4939
+(hübsche, hübsch, JJ): 0.4629
+(fremde, fremd, JJ): -0.4939
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 573, ID:134
+polaritySentiWS: 0.5482
+positiveSentiWS: 1.7059
+negativeSentiWS: 1.1577
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(getan, tun, VBN): -0.1683
+(wollte, wollen, MD): 0.004
+(gut, gut, JJ): 0.3716
+(gewesen, sein, VBN): 0.2176
+(wäre, sein, VB): 0.2176
+(lieb, lieb, JJ): 0.2315
+(sind, sein, VB): 0.2176
+(neu, neu, JJ): 0.004
+(weiß, weeissen, VB): -0.0048
+(wies, weisen, RB): 0.2244
+(ist, sein, VB): 0.2176
+(gestohlen, stehlen, VBN): -0.4944
+(nicht, nicht, RB): -0.4902
+
+3.Akt, 2.Szene, 29.Replik, Drama-Nummer: 473, ID:135
+polaritySentiWS: 0.5993
+positiveSentiWS: 0.6041
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(gute, gut, VB): 0.3716
+(lassen, lassen, VB): 0.2325
+(wissen, wissen, RB): -0.0048
+
+5.Akt, 13.Szene, 3.Replik, Drama-Nummer: 1098, ID:136
+polaritySentiWS: 0.5715
+positiveSentiWS: 0.5715
+negativeSentiWS: 0
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(bin, sein, VB): 0.2176
+(liebe, lieb, JJ): 0.2315
+(er, er, PRP): 0.0612
+(erst, erst, RB): 0.0612
+
+2.Akt, 1.Szene, 2.Replik, Drama-Nummer: 198, ID:137
+polaritySentiWS: 0.5553
+positiveSentiWS: 1.0927
+negativeSentiWS: 0.5374
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(großen, gross, JJ): 0.3694
+(schlafen, schlafen, VB): -0.0472
+(nicht, nicht, RB): -0.4902
+(wäre, sein, VB): 0.2176
+(Ruhe, Ruhe, NN): 0.5017
+(gnädiges, gnädig, NN): 0.004
+
+5.Akt, 9.Szene, 18.Replik, Drama-Nummer: 1007, ID:138
+polaritySentiWS: 0.3984
+positiveSentiWS: 0.8886
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(weise, weis, JJ): 0.2244
+(große, gross, JJ): 0.3694
+(Ehre, Ehre, NN): 0.0732
+(wollen, wollen, MD): 0.004
+
+1.Akt, 6.Szene, 6.Replik, Drama-Nummer: 102, ID:139
+polaritySentiWS: -1.9438
+positiveSentiWS: 0.1264
+negativeSentiWS: 2.0702
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(Willen, Willen, NN): 0.004
+(kurz, kurz, JJ): -0.3439
+(Ende, Ende, NN): -0.2088
+(er, er, JJ): 0.0612
+(Schuldner, Schuldner, NN): -0.0048
+(sterbe, sterben, VB): -0.0539
+(Schuld, Schuld, NN): -0.9686
+(ersten, erst, JJ): 0.0612
+
+4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
+polaritySentiWS: 0.5976
+positiveSentiWS: 1.0878
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Er, er, PRP): 0.0612
+(ist, sein, VB): 0.2176
+(Freund, Freund, NN): 0.2198
+(Gutes, Gutes, NN): 0.3716
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+
+5.Akt, 9.Szene, 6.Replik, Drama-Nummer: 995, ID:141
+polaritySentiWS: 1.0363
+positiveSentiWS: 1.5843
+negativeSentiWS: 0.548
+positiveSentiWSDichotom: 13
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Gefalle, Gefalle, NN): 0.2578
+(lieber, lieb, JJ): 0.2315
+(wissen, wissen, VB): -0.0048
+(Ehre, Ehre, NN): 0.0732
+(besorgt, besorgt, JJ): -0.0482
+(machte, machen, VB): 0.004
+(Vorteil, Vorteil, NN): 0.004
+(war, sein, VB): 0.2176
+(sein, sein, PRP$): 0.2176
+(für, für, IN): 0.004
+(unschuldig, unschuldig, JJ): 0.004
+(befohlen, befehlen, VB): -0.0048
+(Gesundheit, Gesundheit, NN): 0.004
+(erlaubet, erlauben, VB): 0.004
+(möchte, mögen, VB): 0.345
+(nicht, nicht, RB): -0.4902
+(bin, sein, VB): 0.2176
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 450, ID:142
+polaritySentiWS: 1.1532
+positiveSentiWS: 1.6434
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(gut, gut, JJ): 0.3716
+(sein, sein, VB): 0.2176
+(läßt, lässen, VB): 0.2325
+(gut, gut, JJ): 0.3716
+(sein, sein, VB): 0.2176
+(läßt, lässen, VB): 0.2325
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 19, ID:143
+polaritySentiWS: -0.6199
+positiveSentiWS: 0.2256
+negativeSentiWS: 0.8455
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Mache, Mache, NN): 0.004
+(Mühe, Mühe, NN): -0.0048
+(Gift, Gift, NN): -0.3505
+(will, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(bin, sein, VB): 0.2176
+
+4.Akt, 6.Szene, 37.Replik, Drama-Nummer: 848, ID:144
+polaritySentiWS: -0.6697
+positiveSentiWS: 0.2788
+negativeSentiWS: 0.9485
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, PRP): 0.0612
+(Arm, Arm, NN): -0.4546
+(sein, sein, PRP$): 0.2176
+(fremden, fremden, PRP$): -0.4939
+
+1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
+polaritySentiWS: -0.2844
+positiveSentiWS: 0.2358
+negativeSentiWS: 0.5202
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Freund, Freund, NN): 0.2198
+(Auftrag, Auftrag, NN): 0.004
+(überflüssige, überflüssig, JJ): -0.5154
+(Höflichkeit, Höflichkeit, NN): 0.004
+(Macht, Macht, NN): 0.004
+(ihr, ihr, PRP): -0.0048
+(Empfehl, Empfehl, NN): 0.004
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 220, ID:146
+polaritySentiWS: 0.5702
+positiveSentiWS: 0.5702
+negativeSentiWS: 0
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Treue, Treue, NN): 0.3526
+(wäre, sein, VB): 0.2176
+
+3.Akt, 3.Szene, 19.Replik, Drama-Nummer: 317, ID:147
+polaritySentiWS: -0.2455
+positiveSentiWS: 0.2908
+negativeSentiWS: 0.5363
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, JJ): 0.0612
+(Rechte, Rechte, NN): 0.004
+(Gewalt, Gewalt, NN): -0.5363
+(wollen, wollen, MD): 0.004
+(für, für, IN): 0.004
+(sind, sein, VB): 0.2176
+
+2.Akt, 3.Szene, 6.Replik, Drama-Nummer: 142, ID:148
+polaritySentiWS: 0.3479
+positiveSentiWS: 0.8477
+negativeSentiWS: 0.4998
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Liebe, Liebe, NN): 0.1131
+(Entzücken, Entzücken, NN): 0.0844
+(Freude, Freude, NN): 0.6502
+(ihre, ihre, PRP$): -0.0048
+(euch, euch, PRP): -0.0048
+(nicht, nicht, RB): -0.4902
+
+2.Akt, 4.Szene, 24.Replik, Drama-Nummer: 195, ID:149
+polaritySentiWS: -0.6304
+positiveSentiWS: 2.3358
+negativeSentiWS: 2.9662
+positiveSentiWSDichotom: 18
+negativeSentiWSDichotom: 11
+polaritySentiWSDichotom: 7
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wahres, wahr, JJ): 0.2176
+(Miß, Miss, NN): -0.0048
+(fühlt, fühlen, VB): 0.004
+(ist, sein, VB): 0.2176
+(Überlegenheit, Überlegenheit, NN): 0.004
+(Erfahrung, Erfahrung, NN): 0.004
+(machten, machen, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(möchte, mögen, VB): 0.345
+(Leidenschaft, Leidenschaft, NN): 0.004
+(sein, sein, PRP$): 0.2176
+(schwer, schw, JJ): -0.0048
+(bitter, bitt, JJ): -0.3394
+(machten, machen, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(Fehler, Fehler, NN): -0.6752
+(gut, gut, JJ): 0.3716
+(möglich, möglich, JJ): 0.004
+(ist, sein, VB): 0.2176
+(gut, gut, JJ): 0.3716
+(machen, machen, VB): 0.004
+(Alter, Alter, NN): -0.0048
+(Stütze, Stütze, NN): 0.004
+(schicken, schicken, VB): 0.3372
+(leichtgläubige, leichtgläubig, JJ): -0.0048
+(ihr, ihr, PRP): -0.0048
+(nicht, nicht, RB): -0.4902
+(öde, öde, JJ): -0.457
+(machen, machen, VB): 0.004
+
+3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
+polaritySentiWS: 0.7745
+positiveSentiWS: 1.4522
+negativeSentiWS: 0.6777
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Miß, Miss, NN): -0.0048
+(verzeihen, verzeihen, VB): 0.004
+(glaube, glauben, VB): 0.004
+(Leben, Leben, NN): 0.0947
+(Miß, Miss, NN): -0.0048
+(guten, gut, JJ): 0.3716
+(nahe, nahe, RP): 0.2267
+(Miß, Miss, NN): -0.0048
+(weiß, weeissen, VB): -0.0048
+(gute, gut, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+(tun, tun, VB): -0.1683
+(guten, gut, JJ): 0.3716
+(bringen, bringen, VB): 0.004
+(will, wollen, MD): 0.004
+
+3.Akt, 2.Szene, 2.Replik, Drama-Nummer: 282, ID:151
+polaritySentiWS: -0.3688
+positiveSentiWS: 0.6667
+negativeSentiWS: 1.0355
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(bin, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(unruhig, unruhig, JJ): -0.0551
+(gewesen, sein, VBN): 0.2176
+(nicht, nicht, RB): -0.4902
+(lieben, lieb, VB): 0.2315
+
+5.Akt, 7.Szene, 3.Replik, Drama-Nummer: 653, ID:152
+polaritySentiWS: -4.6158
+positiveSentiWS: 2.7108
+negativeSentiWS: 7.3266
+positiveSentiWSDichotom: 17
+negativeSentiWSDichotom: 19
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Gefährlich, gefährlich, JJ): -0.6366
+(krank, krank, JJ): -0.4694
+(Angst, Angst, NN): -0.514
+(fühle, fühlen, VB): 0.004
+(unglücklichen, unglücklich, JJ): -0.301
+(Beste, Beste, NN): 0.3716
+(hoffen, hoffen, VB): 0.2318
+(warten, warten, VB): 0.004
+(gute, gut, JJ): 0.3716
+(möchte, mögen, VB): 0.345
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(tot, tot, JJ): -0.1683
+(leicht, leicht, JJ): 0.004
+(stirbt, sterben, VB): -0.0539
+(nicht, nicht, RB): -0.4902
+(sein, sein, PRP$): 0.2176
+(Glaube, Glaube, NN): 0.004
+(Annäherungen, Annäherungen, NN): 0.004
+(Todes, Todes, NN): -0.0697
+(sind, sein, VB): 0.2176
+(sind, sein, VB): 0.2176
+(Annäherungen, Annäherungen, NN): 0.004
+(Todes, Todes, NN): -0.0697
+(bitter, bitt, JJ): -0.3394
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(unangenehme, unangenehm, JJ): -0.4691
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(untröstlich, untröstlich, JJ): -0.3139
+
+2.Akt, 4.Szene, 7.Replik, Drama-Nummer: 178, ID:153
+polaritySentiWS: -1.505
+positiveSentiWS: 1.0379
+negativeSentiWS: 2.5429
+positiveSentiWSDichotom: 10
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Er, er, PRP): 0.0612
+(fehlt, fehlen, VB): -0.5365
+(wir, wir, PRP): -0.1841
+(nicht, nicht, RB): -0.4902
+(helfen, helfen, VB): 0.373
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(lassen, lassen, VB): 0.2325
+(er, er, PRP): 0.0612
+(er, er, PRP): 0.0612
+(wünscht, wünschen, VB): 0.004
+(er, er, PRP): 0.0612
+(er, er, PRP): 0.0612
+(er, er, PRP): 0.0612
+(er, er, JJ): 0.0612
+(versagte, versagen, VB): -0.3517
+
+3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
+polaritySentiWS: 0.7345
+positiveSentiWS: 1.0244
+negativeSentiWS: 0.2899
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Tode, Tode, NN): -0.0697
+(ist, sein, VB): 0.2176
+(beste, best, JJ): 0.3716
+(ist, sein, VB): 0.2176
+(bin, sein, VB): 0.2176
+(Elende, Elende, NN): -0.0519
+(Tod, Tod, NN): -0.1683
+
+3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
+polaritySentiWS: -2.5001
+positiveSentiWS: 3.154
+negativeSentiWS: 5.6541
+positiveSentiWSDichotom: 27
+negativeSentiWSDichotom: 17
+polaritySentiWSDichotom: 10
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Geliebten, Geliebten, NN): 0.2315
+(trennen, trennen, VB): -0.5033
+(Hartes, Hartes, NN): -0.1483
+(nicht, nicht, RB): -0.4902
+(er, er, JJ): 0.0612
+(ist, sein, VB): 0.2176
+(Fehler, Fehler, NN): -0.6752
+(Unglücke, Unglücke, NN): -0.5004
+(gefährlichen, gefährlich, JJ): -0.6366
+(nicht, nicht, RB): -0.4902
+(lernen, lernen, VB): 0.2492
+(glaubte, glauben, VBN): 0.004
+(war, sein, VB): 0.2176
+(dankbare, dankbar, JJ): 0.0854
+(Aufmerksamkeit, Aufmerksamkeit, NN): 0.004
+(für, für, IN): 0.004
+(war, sein, VB): 0.2176
+(ließ, lassen, VB): 0.2325
+(Höherm, Höherm, NN): 0.004
+(Geschicklichkeit, Geschicklichkeit, NN): 0.004
+(Liebe, Liebe, NN): 0.1131
+(Unglück, Unglück, NN): -0.5004
+(war, sein, VB): 0.2176
+(getan, tun, VBN): -0.1683
+(vergeben, vergeben, VBN): 0.004
+(wollte, wollen, MD): 0.004
+(unerbittlich, unerbittlich, JJ): -0.3318
+(sein, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+(Strenge, Strenge, NN): -0.0048
+(ihre, ihre, PRP$): -0.0048
+(Flucht, Flucht, NN): -0.0048
+(bin, sein, VB): 0.2176
+(glücklich, glücklich, JJ): 0.115
+(schätzen, schätzen, VB): 0.1175
+(machen, machen, VB): 0.004
+(weiß, weeissen, VB): -0.0048
+(er, er, PRP): 0.0612
+(aufgeben, aufgeben, VB): -0.2098
+(wollen, wollen, MD): 0.004
+(gelassen, lassen, VBN): 0.2325
+(versteht, verstehen, VB): 0.0957
+
+4.Akt, 8.Szene, 70.Replik, Drama-Nummer: 580, ID:156
+polaritySentiWS: -0.1907
+positiveSentiWS: 0.3043
+negativeSentiWS: 0.495
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ist, sein, VB): 0.2176
+(für, für, IN): 0.004
+(reizend, reizend, JJ): 0.0787
+(frohlocken, frohlocken, VB): 0.004
+(Miß, Miss, NN): -0.0048
+(nicht, nicht, RB): -0.4902
+
+4.Akt, 8.Szene, 20.Replik, Drama-Nummer: 530, ID:157
+polaritySentiWS: -0.3752
+positiveSentiWS: 0.3083
+negativeSentiWS: 0.6835
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(tut, tun, VB): -0.1683
+(leid, leid, JJ): -0.5056
+(Miß, Miss, NN): -0.0048
+(geben, geben, VB): 0.0747
+(wollte, wollen, MD): 0.004
+(verbinden, verbinden, VB): -0.0048
+(bereit, bereit, JJ): 0.004
+(wäre, sein, VB): 0.2176
+(Wohltat, Wohltat, NN): 0.004
+(ansehen, ansehen, VB): 0.004
+
+4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
+polaritySentiWS: 1.2254
+positiveSentiWS: 1.5441
+negativeSentiWS: 0.3187
+positiveSentiWSDichotom: 8
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(bessere, besser, JJ): 0.3716
+(glaubten, glauben, VB): 0.004
+(untröstlich, untröstlich, JJ): -0.3139
+(sein, sein, VB): 0.2176
+(Stille, Stille, NN): 0.3398
+(glauben, glauben, VB): 0.004
+(Miß, Miss, NN): -0.0048
+(machen, machen, VB): 0.004
+(beste, best, JJ): 0.3716
+(lieben, lieb, JJ): 0.2315
+
+4.Akt, 8.Szene, 38.Replik, Drama-Nummer: 548, ID:159
+polaritySentiWS: -0.2452
+positiveSentiWS: 0.9357
+negativeSentiWS: 1.1809
+positiveSentiWSDichotom: 12
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 9
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(gesucht, suchen, VBN): -0.3505
+(eifriger, eifrig, JJ): 0.004
+(wünschten, wünschen, VB): 0.004
+(glücklich, glücklich, JJ): 0.115
+(machen, machen, VB): 0.004
+(reichen, reichen, VB): 0.1247
+(war, sein, VB): 0.2176
+(Überfluß, Überfluss, NN): 0.004
+(er, er, PRP): 0.0612
+(war, sein, VB): 0.2176
+(Geringste, Geringste, NN): -0.6621
+(er, er, PRP): 0.0612
+(ersten, erst, JJ): 0.0612
+(er, er, JJ): 0.0612
+(tun, tun, VBN): -0.1683
+
+2.Akt, 1.Szene, 7.Replik, Drama-Nummer: 117, ID:160
+polaritySentiWS: -0.4258
+positiveSentiWS: 0.0692
+negativeSentiWS: 0.495
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(er, er, JJ): 0.0612
+(nicht, nicht, RB): -0.4902
+(rasen, rasen, VB): -0.0048
+(fühle, fühlen, VB): 0.004
+(wollte, wollen, MD): 0.004
+
+5.Akt, 10.Szene, 14.Replik, Drama-Nummer: 684, ID:161
+polaritySentiWS: -0.2131
+positiveSentiWS: 0.7673
+negativeSentiWS: 0.9804
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(bin, sein, VB): 0.2176
+(bin, sein, VB): 0.2176
+(Willen, Willen, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(verehren, verehren, VB): 0.3281
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 7.Szene, 2.Replik, Drama-Nummer: 54, ID:162
+polaritySentiWS: -0.3525
+positiveSentiWS: 0.004
+negativeSentiWS: 0.3565
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(vergeben, vergeben, VB): 0.004
+(Klagen, Klage, NNS): -0.3565
+
+2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
+polaritySentiWS: -1.428
+positiveSentiWS: 0.008
+negativeSentiWS: 1.436
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(kleine, klein, JJ): -0.2715
+(wir, wir, PRP): -0.1841
+(nicht, nicht, RB): -0.4902
+(wünschte, wünschen, VB): 0.004
+(will, wollen, MD): 0.004
+
+5.Akt, 10.Szene, 3.Replik, Drama-Nummer: 673, ID:164
+polaritySentiWS: -0.4284
+positiveSentiWS: 0.8868
+negativeSentiWS: 1.3152
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 6
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Miß, Miss, NN): -0.0048
+(Trost, Trost, NN): 0.0706
+(Hülfe, Hülfe, NN): 0.373
+(Verzweiflung, Verzweiflung, NN): -0.0048
+(bringt, bringen, VB): 0.004
+(Unglücklicher, Unglücklicher, NN): -0.301
+(sind, sein, VB): 0.2176
+(schrecklichen, schrecklich, JJ): -0.0242
+(nicht, nicht, RB): -0.4902
+(retten, retten, VB): 0.004
+(nicht, nicht, RB): -0.4902
+(sein, sein, VB): 0.2176
+
+5.Akt, 2.Szene, 7.Replik, Drama-Nummer: 601, ID:165
+polaritySentiWS: -0.9438
+positiveSentiWS: 0.0652
+negativeSentiWS: 1.009
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(er, er, PRP): 0.0612
+(weiß, weeissen, VB): -0.0048
+(für, für, IN): 0.004
+(Angst, Angst, NN): -0.514
+
+3.Akt, 3.Szene, 15.Replik, Drama-Nummer: 313, ID:166
+polaritySentiWS: 1.3004
+positiveSentiWS: 1.3004
+negativeSentiWS: 0
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Freude, Freude, NN): 0.6502
+(Freude, Freude, NN): 0.6502
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 1148, ID:167
+polaritySentiWS: -0.6887
+positiveSentiWS: 0.5632
+negativeSentiWS: 1.2519
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(Liebe, Liebe, NN): 0.1131
+(nicht, nicht, RB): -0.4902
+(läßt, lässen, VB): 0.2325
+(sei, sein, VB): 0.2176
+(klein, klein, JJ): -0.2715
+
+4.Akt, 7.Szene, 39.Replik, Drama-Nummer: 1008, ID:168
+polaritySentiWS: -0.6361
+positiveSentiWS: 0.3576
+negativeSentiWS: 0.9937
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(macht, machen, VB): 0.004
+(macht, macht, VB): -0.0048
+(laßt, lasst, WRB): 0.2325
+(nicht, nicht, RB): -0.4902
+(Liebe, Liebe, NN): 0.1131
+(fremde, fremd, JJ): -0.4939
+(ihr, ihr, PRP): -0.0048
+(neue, neu, JJ): 0.004
+(Vorsicht, Vorsicht, NN): 0.004
+
+5.Akt, 6.Szene, 52.Replik, Drama-Nummer: 1213, ID:169
+polaritySentiWS: 0.2901
+positiveSentiWS: 0.2997
+negativeSentiWS: 0.0096
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Wunder, Wunder, NN): 0.0741
+(wahren, wahren, PRP$): 0.2176
+(ihr, ihr, PRP): -0.0048
+(ihre, ihre, PRP$): -0.0048
+(für, für, IN): 0.004
+(Anspruch, Anspruch, NN): 0.004
+
+5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
+polaritySentiWS: 0.0564
+positiveSentiWS: 0.0612
+negativeSentiWS: 0.0048
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 0
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Weiß, Weiss, NN): -0.0048
+(er, er, PRP): 0.0612
+
+3.Akt, 7.Szene, 22.Replik, Drama-Nummer: 693, ID:171
+polaritySentiWS: -2.9755
+positiveSentiWS: 1.6399
+negativeSentiWS: 4.6154
+positiveSentiWSDichotom: 13
+negativeSentiWSDichotom: 15
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(ihr, ihr, PRP): -0.0048
+(schafft, schaffen, VB): 0.004
+(weis, weis, NN): 0.2244
+(euch, euch, PRP): -0.0048
+(ihr, ihr, PRP): -0.0048
+(lösen, lösen, VB): 0.004
+(bin, sein, VB): 0.2176
+(ihr, ihr, PRP): -0.0048
+(rechte, rechen, VB): -0.3489
+(rechte, rechen, VB): -0.3489
+(Besitzt, Besitzt, NN): 0.004
+(beliebt, beliebt, JJ): 0.2172
+(machen, machen, VB): 0.004
+(angenehm, angenehm, JJ): 0.4887
+(falschen, falsch, JJ): -0.7618
+(nicht, nicht, RB): -0.4902
+(lieben, lieb, JJ): 0.2315
+(euch, euch, PRP): -0.0048
+(Macht, Macht, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(ihr, ihr, PRP): -0.0048
+(Betrogene, Betrogene, NN): -0.743
+(nicht, nicht, RB): -0.4902
+(verloren, verlor, JJ): -0.393
+(Verlust, Verlust, NN): -0.5204
+(ließ, lassen, VB): 0.2325
+(für, für, IN): 0.004
+(machen, machen, VB): 0.004
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 580, ID:172
+polaritySentiWS: -0.017
+positiveSentiWS: 0.8358
+negativeSentiWS: 0.8528
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Laune, Laune, NN): 0.1085
+(übel, übel, JJ): -0.4895
+(Torheit, Torheit, NN): -0.0048
+(ihr, ihr, PRP): -0.0048
+(hieß, hassen, VB): 0.3557
+(rächen, rächen, VB): -0.3489
+(besser, bessern, VB): 0.3716
+(ihr, ihr, PRP): -0.0048
+
+1.Akt, 2.Szene, 15.Replik, Drama-Nummer: 72, ID:173
+polaritySentiWS: -0.2035
+positiveSentiWS: 0.0772
+negativeSentiWS: 0.2807
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(schließt, schlassen, VB): -0.211
+(für, für, IN): 0.004
+(er, er, PRP): 0.0612
+(Tode, Tode, NN): -0.0697
+(frei, frei, JJ): 0.004
+(freiwillig, freiwillig, JJ): 0.004
+(retten, retten, VB): 0.004
+
+3.Akt, 5.Szene, 20.Replik, Drama-Nummer: 665, ID:174
+polaritySentiWS: -1.1838
+positiveSentiWS: 0.004
+negativeSentiWS: 1.1878
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wirst, wirst, WRB): -0.1841
+(Zweifel, Zweifel, NN): -0.1935
+(wissen, wissen, VB): -0.0048
+(wollen, wollen, MD): 0.004
+(Feinde, Feind, NNS): -0.8054
+
+4.Akt, 7.Szene, 31.Replik, Drama-Nummer: 1000, ID:175
+polaritySentiWS: -0.0861
+positiveSentiWS: 0.5932
+negativeSentiWS: 0.6793
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Ihr, ihr, PRP$): -0.0048
+(guter, gut, JJ): 0.3716
+(sein, sein, VB): 0.2176
+(Haß, Hass, NN): -0.5014
+(Erheben, Erheb, NN): 0.004
+(wissen, wissen, VB): -0.0048
+(Taten, Taten, NN): -0.1683
+
+2.Akt, 5.Szene, 37.Replik, Drama-Nummer: 487, ID:176
+polaritySentiWS: 0.2876
+positiveSentiWS: 0.4986
+negativeSentiWS: 0.211
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Sind, sein, VB): 0.2176
+(freuen, freuen, VB): 0.2198
+(schließt, schlassen, VB): -0.211
+(erst, erst, RB): 0.0612
+
+1.Akt, 4.Szene, 10.Replik, Drama-Nummer: 179, ID:177
+polaritySentiWS: -0.7399
+positiveSentiWS: 0.2405
+negativeSentiWS: 0.9804
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(wollen, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(laß, lass, JJ): 0.2325
+(herzlich, herzlich, JJ): 0.004
+
+3.Akt, 3.Szene, 6.Replik, Drama-Nummer: 609, ID:178
+polaritySentiWS: -0.692
+positiveSentiWS: 0.004
+negativeSentiWS: 0.696
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Unruh, Unruh, NN): -0.201
+(vergelten, vergelten, VB): -0.0048
+(gemacht, machen, VBN): 0.004
+(nicht, nicht, RB): -0.4902
+
+1.Akt, 5.Szene, 65.Replik, Drama-Nummer: 246, ID:179
+polaritySentiWS: -1.4825
+positiveSentiWS: 0.4754
+negativeSentiWS: 1.9579
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(weiß, weeissen, VB): -0.0048
+(wäre, sein, VB): 0.2176
+(unterdrücken, unterdrücken, VB): -0.4825
+(gefallen, gefallen, VB): 0.2578
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+
+5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
+polaritySentiWS: -0.21
+positiveSentiWS: 0.7752
+negativeSentiWS: 0.9852
+positiveSentiWSDichotom: 5
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(sei, sein, VB): 0.2176
+(ihr, ihr, PRP): -0.0048
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(war, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+(war, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+
+4.Akt, 7.Szene, 40.Replik, Drama-Nummer: 1009, ID:181
+polaritySentiWS: 0.3716
+positiveSentiWS: 0.3716
+negativeSentiWS: 0
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(guter, gut, JJ): 0.3716
+
+4.Akt, 4.Szene, 45.Replik, Drama-Nummer: 922, ID:182
+polaritySentiWS: -0.0518
+positiveSentiWS: 0.4432
+negativeSentiWS: 0.495
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(wolle, wollen, MD): 0.004
+(nicht, nicht, RB): -0.4902
+(ist, sein, VB): 0.2176
+(ist, sein, VB): 0.2176
+(bringen, bringen, VB): 0.004
+(wissen, wissen, VB): -0.0048
+
+4.Akt, 5.Szene, 6.Replik, Drama-Nummer: 937, ID:183
+polaritySentiWS: 0.0421
+positiveSentiWS: 1.6977
+negativeSentiWS: 1.6556
+positiveSentiWSDichotom: 9
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(möglicher, möglich, JJ): 0.004
+(war, sein, VB): 0.2176
+(hübschen, hübsch, JJ): 0.4629
+(willkommen, willkomm, JJ): 0.004
+(hübsche, hübsch, JJ): 0.4629
+(nicht, nicht, RB): -0.4902
+(will, wollen, MD): 0.004
+(Fehlern, Fehlern, NN): -0.6752
+(Launen, Laune, NNS): 0.1085
+(weichen, weichen, PRP$): 0.3591
+(geben, geben, VB): 0.0747
+(nicht, nicht, RB): -0.4902
+
+3.Akt, 5.Szene, 15.Replik, Drama-Nummer: 660, ID:184
+polaritySentiWS: 0.0932
+positiveSentiWS: 0.0932
+negativeSentiWS: 0
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(Bescheidenheit, Bescheidenheit, NN): 0.0852
+(Vernunft, Vernunft, NN): 0.004
+(aufrichtig, aufrichtig, JJ): 0.004
+
+3.Akt, 10.Szene, 53.Replik, Drama-Nummer: 809, ID:185
+polaritySentiWS: 0.0375
+positiveSentiWS: 0.2216
+negativeSentiWS: 0.1841
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(bin, sein, VB): 0.2176
+(fähig, fähig, JJ): 0.004
+(wir, wir, JJ): -0.1841
+
+3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
+polaritySentiWS: -0.7617
+positiveSentiWS: 0
+negativeSentiWS: 0.7617
+positiveSentiWSDichotom: 0
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(kleinen, klein, JJ): -0.2715
+
+4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
+polaritySentiWS: -1.5213
+positiveSentiWS: 0.1639
+negativeSentiWS: 1.6852
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(tun, tun, VB): -0.1683
+(erst, erst, RB): 0.0612
+(nicht, nicht, RB): -0.4902
+(Besondern, Besondern, NN): 0.004
+(für, für, IN): 0.004
+(Leben, Leben, NN): 0.0947
+(nicht, nicht, RB): -0.4902
+(Fällen, Fällen, NN): -0.5365
+
+5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
+polaritySentiWS: -0.6194
+positiveSentiWS: 0.2325
+negativeSentiWS: 0.8519
+positiveSentiWSDichotom: 1
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(ihr, ihr, PRP): -0.0048
+(ihren, ihren, PRP$): -0.0048
+(Verstoßt, Verstosst, NN): -0.3521
+(lassen, lassen, VB): 0.2325
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
+polaritySentiWS: 0.6029
+positiveSentiWS: 2.5637
+negativeSentiWS: 1.9608
+positiveSentiWSDichotom: 14
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: 10
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(wies, weisen, VB): 0.2244
+(lieber, lieb, JJ): 0.2315
+(Unglaublichers, Unglaublichers, NN): 0.3698
+(glauben, glauben, VB): 0.004
+(sein, sein, PRP$): 0.2176
+(nicht, nicht, RB): -0.4902
+(besonders, besonders, RB): 0.5391
+(lieben, lieb, JJ): 0.2315
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(weise, weis, JJ): 0.2244
+(für, für, IN): 0.004
+(Wunder, Wunder, NN): 0.0741
+(Wunder, Wunder, NN): 0.0741
+(verdienen, verdienen, VB): 0.3612
+(will, wollen, MD): 0.004
+(Glauben, Glauben, NN): 0.004
+
+1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
+polaritySentiWS: -0.1858
+positiveSentiWS: 0.8408
+negativeSentiWS: 1.0266
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(Beste, Beste, NN): 0.3716
+(Feste, Feste, NN): 0.2346
+(Kriegs, Kriegs, JJ): -0.5364
+(Feste, Feste, NN): 0.2346
+
+2.Akt, 5.Szene, 34.Replik, Drama-Nummer: 484, ID:191
+polaritySentiWS: 0.0
+positiveSentiWS: 0
+negativeSentiWS: 0
+positiveSentiWSDichotom: 0
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+
+2.Akt, 1.Szene, 21.Replik, Drama-Nummer: 303, ID:192
+polaritySentiWS: -0.1673
+positiveSentiWS: 1.2915
+negativeSentiWS: 1.4588
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 2
+polaritySentiWSDichotom: 4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(sein, sein, VB): 0.2176
+(liebes, lieb, JJ): 0.2315
+(Schuld, Schuld, NN): -0.9686
+(ist, sein, VB): 0.2176
+(nicht, nicht, RB): -0.4902
+(besser, besser, RB): 0.3716
+(spielen, spielen, VB): 0.004
+(lernen, lernen, VB): 0.2492
+
+5.Akt, 7.Szene, 7.Replik, Drama-Nummer: 1223, ID:193
+polaritySentiWS: -2.094
+positiveSentiWS: 0.357
+negativeSentiWS: 2.451
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(mag, mögen, VB): 0.345
+(nicht, nicht, RB): -0.4902
+(Gerechtigkeit, Gerechtigkeit, NN): 0.004
+(Güte, Güte, NN): 0.004
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(bewundern, bewundern, VB): 0.004
+
+2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
+polaritySentiWS: -1.4214
+positiveSentiWS: 0.8899
+negativeSentiWS: 2.3113
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 5
+polaritySentiWSDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(gesucht, suchen, VBN): -0.3505
+(gut, gut, JJ): 0.3716
+(nicht, nicht, RB): -0.4902
+(lieber, lieb, JJ): 0.2315
+(glauben, glauben, VB): 0.004
+(wollte, wollen, MD): 0.004
+(ist, sein, VB): 0.2176
+(er, er, PRP): 0.0612
+
+1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
+polaritySentiWS: -0.3293
+positiveSentiWS: 0.1609
+negativeSentiWS: 0.4902
+positiveSentiWSDichotom: 3
+negativeSentiWSDichotom: 1
+polaritySentiWSDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(versteht, verstehen, VB): 0.0957
+(nicht, nicht, RB): -0.4902
+(er, er, PRP): 0.0612
+(will, wollen, MD): 0.004
+
+1.Akt, 5.Szene, 61.Replik, Drama-Nummer: 101, ID:196
+polaritySentiWS: -0.3896
+positiveSentiWS: 1.9432
+negativeSentiWS: 2.3328
+positiveSentiWSDichotom: 7
+negativeSentiWSDichotom: 8
+polaritySentiWSDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Lob, Lob, NN): 0.7246
+(Nachteile, Nachteil, NNS): -0.8102
+(nicht, nicht, RB): -0.4902
+(möge, mögen, VB): 0.345
+(Feiger, Feiger, NN): -0.4649
+(er, er, PRP): 0.0612
+(möge, mögen, VB): 0.345
+(er, er, PRP): 0.0612
+(Tod, Tod, NN): -0.1683
+(Schande, Schande, NN): -0.0048
+(Schande, Schande, NN): -0.0048
+(er, er, PRP): 0.0612
+(möge, mögen, VB): 0.345
+(Spott, Spott, NN): -0.3357
+(sterben, sterben, VB): -0.0539
+
+1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
+polaritySentiWS: 0.6889
+positiveSentiWS: 0.6889
+negativeSentiWS: 0
+positiveSentiWSDichotom: 4
+negativeSentiWSDichotom: 0
+polaritySentiWSDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(verstehe, verstehen, VB): 0.0957
+(Glaube, Glaube, NN): 0.004
+(ist, sein, VB): 0.2176
+(gut, gut, JJ): 0.3716
+
+1.Akt, 8.Szene, 45.Replik, Drama-Nummer: 180, ID:198
+polaritySentiWS: -0.9001
+positiveSentiWS: 0.7846
+negativeSentiWS: 1.6847
+positiveSentiWSDichotom: 2
+negativeSentiWSDichotom: 4
+polaritySentiWSDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(Er, er, PRP): 0.0612
+(stirbt, sterben, VB): -0.0539
+(Verräter, Verräter, NN): -0.3352
+(Feind, Feind, NN): -0.8054
+(nicht, nicht, RB): -0.4902
+(wunderbarer, wunderbar, JJ): 0.7234
+
+1.Akt, 5.Szene, 24.Replik, Drama-Nummer: 64, ID:199
+polaritySentiWS: 0.059
+positiveSentiWS: 1.5296
+negativeSentiWS: 1.4706
+positiveSentiWSDichotom: 6
+negativeSentiWSDichotom: 3
+polaritySentiWSDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _polaritySentiWS
+(nicht, nicht, RB): -0.4902
+(lieber, lieb, JJ): 0.2315
+(laß, lass, JJ): 0.2325
+(nicht, nicht, RB): -0.4902
+(möchte, mögen, VB): 0.345
+(nicht, nicht, RB): -0.4902
+(besten, best, JJ): 0.3716
+(möchte, mögen, VB): 0.345
+(für, für, IN): 0.004
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 94, ID:200
+polaritySentiWS: -1.8696
+positiveSentiWS: 0.7361
+negativeSentiWS: 2.6057
+positiveSentiWSDichotom: 16
+negativeSentiWSDichotom: 11
+polaritySentiWSDichotom: 5
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _polaritySentiWS
+(will, wollen, MD): 0.004
+(will, wollen, MD): 0.004
+(will, wollen, MD): 0.004
+(er, er, PRP): 0.0612
+(erst, erst, RB): 0.0612
+(erst, erst, RB): 0.0612
+(weiß, weeissen, VB): -0.0048
+(nicht, nicht, RB): -0.4902
+(nicht, nicht, RB): -0.4902
+(wissen, wissen, VB): -0.0048
+(er, er, PRP): 0.0612
+(nicht, nicht, RB): -0.4902
+(wissen, wissen, VB): -0.0048
+(weiß, weeissen, VB): -0.0048
+(will, wollen, MD): 0.004
+(tun, tun, VB): -0.1683
+(für, für, IN): 0.004
+(Feuer, Feuer, NN): -0.0445
+(für, für, IN): 0.004
+(stürzen, stürzen, VB): -0.6316
+(lieber, lieb, JJ): 0.2315
+(kleiner, klein, JJ): -0.2715
+(Freund, Freund, NN): 0.2198
+(will, wollen, MD): 0.004
+(für, für, IN): 0.004
+(will, wollen, MD): 0.004
+(will, wollen, MD): 0.004

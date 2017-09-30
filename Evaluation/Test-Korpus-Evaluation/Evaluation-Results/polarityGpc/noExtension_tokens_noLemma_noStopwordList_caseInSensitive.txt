@@ -1,0 +1,3990 @@
+noExtension_tokens_noLemma_noStopwordList_caseInSensitive
+
+Main Metrics:
+accuracy: 0.64
+Recall Positive: 0.409836065574
+Precision Positive: 0.409836065574
+F-Measure Positive: 0.409836065574
+Recall Negative: 0.741007194245
+Precision Negative: 0.741007194245
+F-Measure Negative: 0.741007194245
+Recall Average: 0.575421629909
+Precision Average: 0.575421629909
+F-Measure Average: 0.575421629909
+
+Actual Class	Predicted Negative	Predicted Positive
+Negatives	103	36	139
+Positives	36	25	61
+Sum	139	61	200
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 93, ID:1
+positiveGpc: 14
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(viel, viele, PIS): 1, 0
+(Voll, voll, ADJD): 1, 0
+(Scham, Scham, NN): 0, 1
+(schwach, schwach, ADJD): 0, 1
+(edel, edel, ADJD): 1, 0
+(wahr, wahr, ADJD): 1, 0
+(Erfüllung, Erfüllung, NN): 1, 0
+(unmöglich, unmöglich, ADJD): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(harten, hart, ADJA): 0, 1
+(Versuch, Versuch, NN): 0, 1
+(Tugend, Tugend, NN): 1, 0
+(gut, gut, ADJD): 1, 0
+(dafür, dafür, PAV): 1, 0
+(Freund, Freund, NN): 1, 0
+(wohl, wohl, ADV): 1, 0
+(verbunden, verbinden, VVPP): 1, 0
+(Pflicht, Pflicht, NN): 0, 1
+(dem, die, PRELS): 0, 1
+(Pflicht, Pflicht, NN): 0, 1
+(wenig, wenige, PIAT): 0, 1
+(Gelegenheit, Gelegenheit, NN): 1, 0
+(nur, nur, ADV): 0, 1
+(möglich, möglich, ADJD): 1, 0
+
+1.Akt, 10.Szene, 21.Replik, Drama-Nummer: 177, ID:2
+positiveGpc: 10
+negativeGpc: 15
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PIS): 0, 1
+(Ja, ja, ADV): 1, 0
+(ja, ja, ADV): 1, 0
+(alles, alle, PIS): 1, 0
+(Freund, Freund, NN): 1, 0
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, ART): 0, 1
+(Freund, Freund, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(aus, aus, PTKVZ): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(alles, alle, PIS): 1, 0
+(trennen, trennen, VVINF): 0, 1
+(notwendig, notwendig, ADJD): 0, 1
+(der, die, ART): 0, 1
+(sein, sein, VAINF): 0, 1
+(schwer, schwer, ADJD): 0, 1
+(Freund, Freund, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+(suchen, suchen, VVINF): 0, 1
+(keinen, keine, PIAT): 0, 1
+(erhalten, erhalten, VVPP): 1, 0
+
+1.Akt, 4.Szene, 21.Replik, Drama-Nummer: 79, ID:3
+positiveGpc: 20
+negativeGpc: 9
+neutralGpc: 0
+polarityGpc: 11
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sehen, sehen, VVFIN): 0, 1
+(geht, gehen, VVFIN): 1, 0
+(gut, gut, ADJD): 1, 0
+(sein, sein, PPOSAT): 0, 1
+(treten, treten, VVFIN): 1, 0
+(Wucher, Wucher, NN): 0, 1
+(leicht, leicht, ADJD): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+(genau, genau, ADJD): 1, 0
+(genug, genug, ADV): 1, 0
+(verbunden, verbunden, ADJD): 1, 0
+(dem, die, ART): 0, 1
+(mehr, mehr, ADV): 1, 0
+(verbunden, verbinden, VVPP): 1, 0
+(würde, werden, VAFIN): 1, 0
+(Lassen, lassen, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(danken, danken, VVINF): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Vergnügen, Vergnügen, NN): 1, 0
+(sehen, sehen, VVINF): 0, 1
+(was, was, PWS): 0, 1
+(Glück, Glück, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(verpflichtet, verpflichten, VVPP): 1, 0
+(dem, die, ART): 0, 1
+(Notwendigkeit, Notwendigkeit, NN): 0, 1
+
+1.Akt, 1.Szene, 5.Replik, Drama-Nummer: 5, ID:4
+positiveGpc: 8
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+(geht, gehen, VVFIN): 1, 0
+(munter, munter, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(viel, viele, PIAT): 1, 0
+(wer, wer, PWS): 0, 1
+(was, was, PWS): 0, 1
+(leider, leider, ADV): 0, 1
+(wohl, wohl, ADV): 1, 0
+(größte, groß, ADJA): 1, 0
+(Vergnügen, Vergnügen, NN): 1, 0
+(Scherz, Scherz, NN): 1, 0
+(Was, was, PWS): 0, 1
+
+1.Akt, 4.Szene, 19.Replik, Drama-Nummer: 77, ID:5
+positiveGpc: 5
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(Freund, Freund, NN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(wohl, wohl, ADV): 1, 0
+(schwerlich, schwerlich, ADJD): 0, 1
+(bestehen, bestehen, PTKVZ): 1, 0
+(gesetzt, setzen, VVPP): 0, 1
+(nichts, nichts, PIS): 0, 1
+(was, was, PIS): 0, 1
+(Lust, Lust, NN): 1, 0
+(nichts, nichts, PIS): 0, 1
+(unglücklich, unglücklich, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+
+1.Akt, 10.Szene, 4.Replik, Drama-Nummer: 160, ID:6
+positiveGpc: 5
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(für, für, APPR): 1, 0
+(unter, unter, APPR): 0, 1
+(Der, die, ART): 0, 1
+(Himmel, Himmel, NN): 1, 0
+(erst, erst, ADV): 1, 0
+(für, für, APPR): 1, 0
+(halten, halten, VVINF): 1, 0
+
+3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
+positiveGpc: 1
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Bitte, Bitte, NN): 0, 1
+(wohl, wohl, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 5.Szene, 15.Replik, Drama-Nummer: 122, ID:8
+positiveGpc: 1
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(Unglück, Unglück, NN): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(sehen, sehen, VVINF): 0, 1
+
+3.Akt, 2.Szene, 10.Replik, Drama-Nummer: 365, ID:9
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(halten, halten, VVFIN): 1, 0
+(lieber, lieb, ADJA): 1, 0
+(nur, nur, ADV): 0, 1
+(sein, sein, VAINF): 0, 1
+
+4.Akt, 3.Szene, 22.Replik, Drama-Nummer: 542, ID:10
+positiveGpc: 5
+negativeGpc: 15
+neutralGpc: 0
+polarityGpc: -10
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ach, ach, ITJ): 0, 1
+(Reden, Rede|Reden, NN): 0, 1
+(der, die, ART): 0, 1
+(vorsichtig, vorsichtig, ADJD): 0, 1
+(gut, gut, ADJD): 1, 0
+(der, die, PRELS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(vorsichtig, vorsichtig, ADJD): 0, 1
+(gut, gut, ADJD): 1, 0
+(reden, reden, VVINF): 0, 1
+(nichts, nichts, PIS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PRELS): 0, 1
+(der, die, ART): 0, 1
+(sein, sein, VAINF): 0, 1
+(Pflicht, Pflicht, NN): 0, 1
+(Tugend, Tugend, NN): 1, 0
+(Anständigkeit, Anständigkeit, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(ausgesetzt, aussetzen, VVPP): 0, 1
+
+4.Akt, 7.Szene, 11.Replik, Drama-Nummer: 590, ID:11
+positiveGpc: 7
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(wohl, wohl, ADV): 1, 0
+(kein, keine, PIAT): 0, 1
+(Glück, Glück, NN): 1, 0
+(entzücken, entzücken, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Unglück, Unglück, NN): 0, 1
+(würde, werden, VAFIN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(alle, alle, PIAT): 1, 0
+(Macht, Macht, NN): 1, 0
+(unanständig, unanständig, ADJD): 0, 1
+(reden, reden, VVINF): 0, 1
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 186, ID:12
+positiveGpc: 0
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(böse, böse, ADJD): 0, 1
+(der, die, ART): 0, 1
+
+5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
+positiveGpc: 36
+negativeGpc: 41
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(viel, viele, PIS): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Mühe, Mühe, NN): 0, 1
+(genug, genug, ADV): 1, 0
+(Hochachtung, Hochachtung, NN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(eben, eben, ADV): 1, 0
+(Gelegenheit, Gelegenheit, NN): 1, 0
+(sehr, sehr, ADV): 1, 0
+(deutlich, deutlich, ADJD): 1, 0
+(Zwang, Zwang, NN): 0, 1
+(lieben, lieben, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Herz, Herz, NN): 1, 0
+(keine, keine, PIAT): 0, 1
+(Unabhängigkeit, Unabhängigkeit, NN): 1, 0
+(dem, die, ART): 0, 1
+(behaupten, behaupten, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(zwingen, zwingen, VVINF): 0, 1
+(was, was, PWS): 0, 1
+(gewiß, gewiss, ADJD): 1, 0
+(keine, keine, PIAT): 0, 1
+(Beruhigung, Beruhigung, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(unterdrückte, unterdrücken, VVFIN): 0, 1
+(Neigung, Neigung, NN): 0, 1
+(gegen, gegen, APPR): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Vergnügen, Vergnügen, NN): 1, 0
+(ohnmächtig, ohnmächtig, ADJD): 0, 1
+(war, sein, VAFIN): 0, 1
+(der, die, PRELS): 0, 1
+(der, die, PRELS): 0, 1
+(eben, eben, ADV): 1, 0
+(unwürdig, unwürdig, ADJD): 0, 1
+(unwürdig, unwürdig, ADJD): 0, 1
+(Freund, Freund, NN): 1, 0
+(würde, werden, VAFIN): 1, 0
+(sein, sein, PPOSAT): 0, 1
+(Glück, Glück, NN): 1, 0
+(sein, sein, VAINF): 0, 1
+(gelassen, gelassen, ADJD): 1, 0
+(genug, genug, ADV): 1, 0
+(alles, alle, PIS): 1, 0
+(alles, alle, PIS): 1, 0
+(oben, oben, ADV): 1, 0
+(hin, hin, PTKVZ): 0, 1
+(würde, werden, VAFIN): 1, 0
+(wohl, wohl, ADV): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(verleugnen, verleugnen, VVINF): 0, 1
+(Wahn, Wahn, NN): 0, 1
+(aufgeben, aufgeben, VVINF): 0, 1
+(liebenswürdig, liebenswürdig, ADJD): 1, 0
+(fand, finden, VVFIN): 1, 0
+(unmöglich, unmöglich, ADJD): 0, 1
+(verderbt, verderben, VVFIN): 0, 1
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Hinderung, Hinderung, NN): 0, 1
+(ansehen, ansehen, VVINF): 1, 0
+(kam, kommen, VVFIN): 1, 0
+(nur, nur, ADV): 0, 1
+(allein, allein, ADV): 0, 1
+(ließ, lassen, VVFIN): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(würde, werden, VAFIN): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(gezwungen, zwingen, VVPP): 0, 1
+(der, die, PRELS): 0, 1
+(alles, alle, PIS): 1, 0
+(was, was, PRELS): 0, 1
+(Mehr, mehr, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(sagen, sagen, VVINF): 0, 1
+
+1.Akt, 5.Szene, 40.Replik, Drama-Nummer: 147, ID:14
+positiveGpc: 2
+negativeGpc: 7
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(hast, haben, VAFIN): 0, 1
+(Recht, Recht, NN): 1, 0
+(rasend, rasend, ADJD): 0, 1
+(alle, alle, PIS): 1, 0
+(Schicksal, Schicksal, NN): 0, 1
+(spielen, spielen, VVFIN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, PRELS): 0, 1
+(schwer, schwer, ADJD): 0, 1
+
+2.Akt, 3.Szene, 21.Replik, Drama-Nummer: 246, ID:15
+positiveGpc: 0
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(pfui, pfui, ITJ): 0, 1
+(nichts, nichts, PIS): 0, 1
+(dem, die, ART): 0, 1
+(gewaltig, gewaltig, ADJD): 0, 1
+(irren, irren, VVINF): 0, 1
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 161, ID:16
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(wohl, wohl, ADV): 1, 0
+(dem, die, ART): 0, 1
+
+5.Akt, 1.Szene, 40.Replik, Drama-Nummer: 699, ID:17
+positiveGpc: 0
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(arg, arg, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+2.Akt, 3.Szene, 23.Replik, Drama-Nummer: 248, ID:18
+positiveGpc: 13
+negativeGpc: 12
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Verstand, Verstand, NN): 1, 0
+(viel, viel, ADV): 1, 0
+(gewiß, gewiss, ADJD): 1, 0
+(schlecht, schlecht, ADJD): 0, 1
+(sehr, sehr, ADV): 1, 0
+(Weise, Weise, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(nur, nur, ADV): 0, 1
+(gering, gering, ADJD): 1, 0
+(geschätzt, schätzen, VVPP): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(für, für, APPR): 1, 0
+(was, was, PRELS): 0, 1
+(für, für, APPR): 1, 0
+(nichts, nichts, PIS): 0, 1
+(aus, aus, APPR): 0, 1
+(keiner, keine, PIAT): 0, 1
+(Vergnügen, Vergnügen, NN): 1, 0
+(sehr, sehr, ADV): 1, 0
+(sehen, sehen, VVINF): 0, 1
+(was, was, PRELS): 0, 1
+(für, für, APPR): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(unruhig, unruhig, ADJD): 0, 1
+
+4.Akt, 9.Szene, 3.Replik, Drama-Nummer: 644, ID:19
+positiveGpc: 2
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(frei, frei, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+(alles, alle, PIS): 1, 0
+
+3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
+positiveGpc: 2
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+(ja, ja, ADV): 1, 0
+(Dorn, Dorn, NN): 0, 1
+
+1.Akt, 1.Szene, 4.Replik, Drama-Nummer: 4, ID:21
+positiveGpc: 4
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Alle, alle, PIAT): 1, 0
+(Fragen, Frage, NN): 1, 0
+(bestürzen, bestürzen, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Gut, gut, ADJD): 1, 0
+
+4.Akt, 1.Szene, 23.Replik, Drama-Nummer: 504, ID:22
+positiveGpc: 1
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+(war, sein, VAFIN): 0, 1
+(nichts, nichts, PIS): 0, 1
+(der, die, PRELS): 0, 1
+(nur, nur, ADV): 0, 1
+(eifersüchtig, eifersüchtig, ADJD): 0, 1
+
+2.Akt, 1.Szene, 17.Replik, Drama-Nummer: 179, ID:23
+positiveGpc: 1
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(was, was, PIS): 0, 1
+(gute, gut, ADJA): 1, 0
+(zanken, zanken, VVINF): 0, 1
+(verdrießlich, verdrießlich, ADJD): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(verachten, verachten, VVINF): 0, 1
+
+3.Akt, 5.Szene, 32.Replik, Drama-Nummer: 421, ID:24
+positiveGpc: 2
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(demütigen, demütig, ADJA): 0, 1
+(Schmeichelei, Schmeichelei, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(dem, die, ART): 0, 1
+(Mühe, Mühe, NN): 0, 1
+(umsonst, umsonst, ADV): 1, 0
+(Verwirrung, Verwirrung, NN): 0, 1
+(weiden, weiden, VVFIN): 0, 1
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 549, ID:25
+positiveGpc: 12
+negativeGpc: 9
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(Allein, allein, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Begierde, Begierde, NN): 1, 0
+(weniger, weniger, ADV): 0, 1
+(deutlich, deutlich, ADJD): 1, 0
+(genug, genug, ADV): 1, 0
+(würde, werden, VAFIN): 1, 0
+(war, sein, VAFIN): 0, 1
+(der, die, ART): 0, 1
+(beliebt, beliebt, ADJD): 1, 0
+(für, für, APPR): 1, 0
+(sehr, sehr, ADV): 1, 0
+(natürlich, natürlich, ADV): 1, 0
+(wohl, wohl, ADV): 1, 0
+(grausam, grausam, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+(für, für, APPR): 1, 0
+(Schmeichelei, Schmeichelei, NN): 1, 0
+(danken, danken, VVINF): 1, 0
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:26
+positiveGpc: 5
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Eben, eben, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(Freundschaft, Freundschaft, NN): 1, 0
+(unter, unter, APPR): 0, 1
+(fragen, fragen, VVINF): 1, 0
+(was, was, PRELS): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+
+3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
+positiveGpc: 1
+negativeGpc: 13
+neutralGpc: 0
+polarityGpc: -12
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Der, die, ART): 0, 1
+(reden, reden, VVINF): 0, 1
+(wer, wer, PWS): 0, 1
+(was, was, PIS): 0, 1
+(alles, alle, PIAT): 1, 0
+(dem, die, ART): 0, 1
+(dem, die, ART): 0, 1
+(Backen, Backe|Backen, NN): 0, 1
+(dem, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(müssen, müssen, VMFIN): 0, 1
+(dem, die, ART): 0, 1
+(Not, Not, NN): 0, 1
+
+2.Akt, 14.Szene, 9.Replik, Drama-Nummer: 574, ID:28
+positiveGpc: 3
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(reden, reden, VVFIN): 0, 1
+(alle, alle, PIAT): 1, 0
+(Der, die, PDS): 0, 1
+(der, die, ART): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(Besonders, besonders, ADV): 1, 0
+(reden, reden, VVINF): 0, 1
+(reden, reden, VVINF): 0, 1
+(keine, keine, PIAT): 0, 1
+
+1.Akt, 4.Szene, 12.Replik, Drama-Nummer: 117, ID:29
+positiveGpc: 4
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(würde, werden, VAFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(ja, ja, ADV): 1, 0
+(aus, aus, APPR): 0, 1
+(Bescheidenheit, Bescheidenheit, NN): 1, 0
+(Wahrheit, Wahrheit, NN): 1, 0
+(dem, die, ART): 0, 1
+(der, die, PRELS): 0, 1
+(nur, nur, ADV): 0, 1
+
+1.Akt, 6.Szene, 68.Replik, Drama-Nummer: 210, ID:30
+positiveGpc: 4
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Kurz, kurz, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(erst, erst, ADV): 1, 0
+(für, für, APPR): 1, 0
+(was, was, PWS): 0, 1
+(wohl, wohl, ADV): 1, 0
+(reden, reden, VVINF): 0, 1
+
+3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
+positiveGpc: 1
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Kurz, kurz, ADJD): 0, 1
+(der, die, ART): 0, 1
+(reden, reden, VVINF): 0, 1
+(vermögend, vermögend, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 1.Szene, 14.Replik, Drama-Nummer: 14, ID:32
+positiveGpc: 8
+negativeGpc: 12
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(böse, böse, ADJD): 0, 1
+(sagen, sagen, VVFIN): 0, 1
+(nur, nur, ADV): 0, 1
+(was, was, PWS): 0, 1
+(für, für, APPR): 1, 0
+(Stern, Stern, NN): 1, 0
+(was, was, PRELS): 0, 1
+(für, für, APPR): 1, 0
+(verstehen, verstehen, VVFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Ach, ach, ITJ): 0, 1
+(ja, ja, ADV): 1, 0
+(wohl, wohl, ADV): 1, 0
+(wies, weisen, VVFIN): 0, 1
+(geht, gehen, VVFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(Endlich, endlich, ADV): 0, 1
+(verführt, verführen, VVFIN): 0, 1
+(der, die, ART): 0, 1
+(böse, böse, ADJA): 0, 1
+
+3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(gewiß, gewiss, ADJD): 1, 0
+(besser, gut, ADJD): 1, 0
+(gehen, gehen, VVINF): 1, 0
+(nur, nur, ADV): 0, 1
+(sehen, sehen, VVINF): 0, 1
+
+3.Akt, 15.Szene, 6.Replik, Drama-Nummer: 887, ID:34
+positiveGpc: 2
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(lieber, lieb, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(unmöglich, unmöglich, ADJD): 0, 1
+(geraten, geraten|raten, VVPP): 1, 0
+(finster, finster, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PRELS): 0, 1
+
+3.Akt, 17.Szene, 3.Replik, Drama-Nummer: 1000, ID:35
+positiveGpc: 4
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(überdrüssig, überdrüssig, ADJD): 0, 1
+(der, die, ART): 0, 1
+(Grobheit, Grobheit, NN): 0, 1
+(Dummheit, Dummheit, NN): 0, 1
+(alle, alle, PIAT): 1, 0
+(klug, klug, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+(kaum, kaum, ADV): 0, 1
+(alle, alle, PIAT): 1, 0
+(gleichen, gleich, ADJA): 1, 0
+
+1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
+positiveGpc: 1
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+3.Akt, 1.Szene, 33.Replik, Drama-Nummer: 623, ID:37
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(würde, werden, VAFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(leer, leer, ADJD): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+2.Akt, 11.Szene, 49.Replik, Drama-Nummer: 539, ID:38
+positiveGpc: 3
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+(ja, ja, ADV): 1, 0
+(niemand, niemand, PIS): 0, 1
+(fangen, fangen, VVINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Einsicht, Einsicht, NN): 1, 0
+
+3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
+positiveGpc: 0
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ungewißheit, Ungewissheit, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Jungfer, Jungfer, NN): 0, 1
+(böse, böse, ADJA): 0, 1
+(der, die, ART): 0, 1
+(viel, viele, PIAT): 1, 0
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 646, ID:41
+positiveGpc: 4
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(wahr, wahr, ADJD): 1, 0
+(wohl, wohl, ADV): 1, 0
+(finden, finden, VVINF): 1, 0
+(Schnitt, Schnitt, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Gehen, gehen, VVFIN): 1, 0
+(nur, nur, ADV): 0, 1
+(bringen, bringen, VVINF): 0, 1
+
+2.Akt, 12.Szene, 4.Replik, Drama-Nummer: 545, ID:42
+positiveGpc: 10
+negativeGpc: 19
+neutralGpc: 0
+polarityGpc: -9
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(setzen, setzen, VVINF): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(Kenntnis, Kenntnis, NN): 1, 0
+(der, die, ART): 0, 1
+(geschickt, geschickt, ADJD): 1, 0
+(dem, die, ART): 0, 1
+(Was, was, PWS): 0, 1
+(mehr, mehr, ADV): 1, 0
+(ja, ja, ADV): 1, 0
+(endlich, endlich, ADV): 0, 1
+(schämen, schämen, VVINF): 0, 1
+(müssen, müssen, VMINF): 0, 1
+(schämen, schämen, VVINF): 0, 1
+(müssen, müssen, VMINF): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(wert, wert, ADJD): 1, 0
+(geschätzt, schätzen, VVPP): 0, 1
+(ekel, ekeln, VVIMP): 0, 1
+(der, die, ART): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(sein, sein, VAINF): 0, 1
+(was, was, PWS): 0, 1
+(Umsonst, umsonst, ADV): 1, 0
+(der, die, ART): 0, 1
+(umsonst, umsonst, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(nur, nur, ADV): 0, 1
+(unter, unter, APPR): 0, 1
+(der, die, ART): 0, 1
+
+3.Akt, 14.Szene, 11.Replik, Drama-Nummer: 864, ID:43
+positiveGpc: 5
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(müssen, müssen, VMFIN): 0, 1
+(allein, allein, ADV): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(Gelegenheit, Gelegenheit, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(aus, aus, APPR): 0, 1
+(der, die, ART): 0, 1
+(nur, nur, ADV): 0, 1
+(gewiß, gewiss, ADJD): 1, 0
+(fertig, fertig, ADJD): 1, 0
+
+3.Akt, 15.Szene, 69.Replik, Drama-Nummer: 950, ID:44
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+(fern, fern, APPR): 1, 0
+(der, die, ART): 0, 1
+(hast, haben, VAFIN): 0, 1
+(sehen, sehen, VVINF): 0, 1
+
+2.Akt, 1.Szene, 12.Replik, Drama-Nummer: 264, ID:45
+positiveGpc: 3
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: -7
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Verdacht, Verdacht, NN): 0, 1
+(fehlte, fehlen, VVFIN): 0, 1
+(Kummer, Kummer, NN): 0, 1
+(viel, viele, PIS): 1, 0
+(gegen, gegen, APPR): 0, 1
+(der, die, ART): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(taub, taub, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+(koste, kosen|kosten, VVFIN): 0, 1
+(ach, ach, ITJ): 0, 1
+
+3.Akt, 13.Szene, 9.Replik, Drama-Nummer: 846, ID:46
+positiveGpc: 4
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: -7
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(ankommen, ankommen, VVINF): 1, 0
+(der, die, ART): 0, 1
+(was, was, PWS): 0, 1
+(fangen, fangen, VVINF): 0, 1
+(der, die, ART): 0, 1
+(deutlicher, deutlich, ADJD): 1, 0
+(reden, reden, VVINF): 0, 1
+(Belohnung, Belohnung, NN): 1, 0
+(dem, die, ART): 0, 1
+(verloren, verlieren, VVPP): 0, 1
+(Teufel, Teufel, NN): 0, 1
+(Jungfer, Jungfer, NN): 0, 1
+(lehren, lehren, VVFIN): 1, 0
+(unglücklich, unglücklich, ADJD): 0, 1
+
+3.Akt, 15.Szene, 90.Replik, Drama-Nummer: 971, ID:47
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Der, die, ART): 0, 1
+(nur, nur, ADV): 0, 1
+(gern, gern, ADV): 1, 0
+(glänzen, glänzen, VVINF): 1, 0
+
+1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
+positiveGpc: 4
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Gut, gut, ADJD): 1, 0
+(nur, nur, ADV): 0, 1
+(recht, recht, ADJD): 1, 0
+(wohl, wohl, ADV): 1, 0
+(Lust, Lust, NN): 1, 0
+
+1.Akt, 2.Szene, 5.Replik, Drama-Nummer: 50, ID:49
+positiveGpc: 5
+negativeGpc: 13
+neutralGpc: 0
+polarityGpc: -8
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(war, sein, VAFIN): 0, 1
+(Ja, ja, ADV): 1, 0
+(dem, die, ART): 0, 1
+(gefährlich, gefährlich, ADJD): 0, 1
+(Freund, Freund, NN): 1, 0
+(der, die, PRELS): 0, 1
+(Jugend, Jugend, NN): 1, 0
+(kein, keine, PIAT): 0, 1
+(Ärgernis, Ärgernis, NN): 0, 1
+(dem, die, PDS): 0, 1
+(würde, werden, VAFIN): 1, 0
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(der, die, PRELS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(hast, haben, VAFIN): 0, 1
+(genug, genug, ADV): 1, 0
+
+3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
+positiveGpc: 7
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Lauter, laut, ADJD): 0, 1
+(der, die, ART): 0, 1
+(dem, die, ART): 0, 1
+(bewegt, bewegen, VVFIN): 1, 0
+(dem, die, ART): 0, 1
+(liegen, liegen, PTKVZ): 1, 0
+(nichts, nichts, PIS): 0, 1
+(der, die, ART): 0, 1
+(laufen, laufen, VVINF): 0, 1
+(wohl, wohl, ADV): 1, 0
+(genug, genug, ADV): 1, 0
+(fluchen, fluchen, VVINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(suchen, suchen, VVINF): 0, 1
+(dem, die, ART): 0, 1
+(liegen, liegen, VVINF): 1, 0
+(Ja, ja, ADV): 1, 0
+(alle, alle, PIAT): 1, 0
+
+1.Akt, 4.Szene, 5.Replik, Drama-Nummer: 110, ID:51
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(albern, albern, ADJD): 0, 1
+(eben, eben, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
+positiveGpc: 1
+negativeGpc: 0
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(mehr, mehr, ADV): 1, 0
+
+3.Akt, 18.Szene, 3.Replik, Drama-Nummer: 1010, ID:53
+positiveGpc: 2
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(umsonst, umsonst, ADV): 1, 0
+(Recht, Recht, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 6.Szene, 70.Replik, Drama-Nummer: 212, ID:54
+positiveGpc: 0
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nötig, nötig, ADJD): 0, 1
+(Gauner, Gauner, NN): 0, 1
+
+1.Akt, 3.Szene, 2.Replik, Drama-Nummer: 59, ID:55
+positiveGpc: 1
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(kommen, kommen, VVFIN): 1, 0
+(Anfall, Anfall, NN): 0, 1
+(bringen, bringen, VVINF): 0, 1
+
+1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sein, sein, VAINF): 0, 1
+(wohl, wohl, ADV): 1, 0
+(sein, sein, VAINF): 0, 1
+(erkennen, erkennen, VVINF): 1, 0
+(aus, aus, APPR): 0, 1
+
+2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
+positiveGpc: 3
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Hängen, Hang|Hängen, NN): 1, 0
+(ließ, lassen, VVFIN): 0, 1
+(Ja, ja, PTKANT): 1, 0
+(was, was, PWS): 0, 1
+(für, für, APPR): 1, 0
+(Bedingung, Bedingung, NN): 0, 1
+
+1.Akt, 6.Szene, 14.Replik, Drama-Nummer: 148, ID:58
+positiveGpc: 4
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(wahrhaftig, wahrhaftig, ADJD): 1, 0
+(Koller, Koller, NN): 0, 1
+(Plappermaul, Plappermaul, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(dem, die, ART): 0, 1
+(dem, die, ART): 0, 1
+(führen, führen, VVINF): 1, 0
+(los, los, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+(angenehm, angenehm, ADJD): 1, 0
+(unangenehm, unangenehm, ADJD): 0, 1
+(viel, viele, PIS): 1, 0
+
+1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
+positiveGpc: 7
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(vortrefflich, vortrefflich, ADJD): 1, 0
+(ausführen, ausführen, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(gut, gut, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+(keine, keine, PIAT): 0, 1
+(schlechte, schlecht, ADJA): 0, 1
+(erfahren, erfahren, VVINF): 1, 0
+(sehr, sehr, ADV): 1, 0
+(erfahren, erfahren, VVPP): 1, 0
+(wohl, wohl, ADV): 1, 0
+
+1.Akt, 6.Szene, 15.Replik, Drama-Nummer: 149, ID:60
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(wohl, wohl, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(klein, klein, ADJD): 0, 1
+(Danksagung, Danksagung, NN): 1, 0
+(lieber, lieb, ADJA): 1, 0
+
+3.Akt, 4.Szene, 14.Replik, Drama-Nummer: 390, ID:61
+positiveGpc: 4
+negativeGpc: 9
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(wahr, wahr, ADJD): 1, 0
+(schwerlich, schwerlich, ADJD): 0, 1
+(finden, finden, VVINF): 1, 0
+(dem, die, ART): 0, 1
+(sehen, sehen, VVFIN): 0, 1
+(nur, nur, ADV): 0, 1
+(recht, recht, ADJD): 1, 0
+(eben, eben, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(Zwang, Zwang, NN): 0, 1
+(der, die, ART): 0, 1
+
+1.Akt, 6.Szene, 24.Replik, Drama-Nummer: 158, ID:62
+positiveGpc: 3
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nur, nur, ADV): 0, 1
+(eben, eben, ADV): 1, 0
+(sehr, sehr, ADV): 1, 0
+(lieben, lieben, VVINF): 1, 0
+
+2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
+positiveGpc: 6
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(würde, werden, VAFIN): 1, 0
+(für, für, APPR): 1, 0
+(war, sein, VAFIN): 0, 1
+(schwer, schwer, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(finden, finden, VVINF): 1, 0
+(besonders, besonders, ADV): 1, 0
+(für, für, APPR): 1, 0
+(Vertrauen, Vertrauen, NN): 1, 0
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 369, ID:64
+positiveGpc: 1
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(hart, hart, ADJD): 0, 1
+(Freiheit, Freiheit, NN): 1, 0
+(sagen, sagen, VVINF): 0, 1
+(dem, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+2.Akt, 2.Szene, 18.Replik, Drama-Nummer: 210, ID:65
+positiveGpc: 2
+negativeGpc: 7
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Eifersüchtig, eifersüchtig, ADJD): 0, 1
+(eifersüchtig, eifersüchtig, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+(alle, alle, PIAT): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(verloren, verlieren, VVPP): 0, 1
+(nichts, nichts, PIS): 0, 1
+(sein, sein, VAINF): 0, 1
+(neidisch, neidisch, ADJD): 0, 1
+
+3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
+positiveGpc: 0
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sah, sehen, VVFIN): 0, 1
+(nur, nur, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Verdacht, Verdacht, NN): 0, 1
+(fallen, fallen, VVINF): 0, 1
+
+2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
+positiveGpc: 1
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Jungfer, Jungfer, NN): 0, 1
+(fragen, fragen, VVFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PWS): 0, 1
+(was, was, PRELS): 0, 1
+
+1.Akt, 4.Szene, 7.Replik, Drama-Nummer: 98, ID:68
+positiveGpc: 5
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(ernstlich, ernstlich, ADJD): 0, 1
+(abbringen, abbringen, VVINF): 0, 1
+(unmöglich, unmöglich, ADJD): 0, 1
+(gut, gut, ADJD): 1, 0
+(gehen, gehen, VVINF): 1, 0
+(gegen, gegen, APPR): 0, 1
+(treiben, treiben, VVFIN): 1, 0
+(viel, viel, ADV): 1, 0
+(weit, weit, ADJD): 1, 0
+
+1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
+positiveGpc: 1
+negativeGpc: 16
+neutralGpc: 0
+polarityGpc: -15
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(geht, gehen, VVFIN): 1, 0
+(Sein, sein, VAINF): 0, 1
+(wer, wer, PWS): 0, 1
+(nur, nur, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, ART): 0, 1
+(der, die, PRELS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, ART): 0, 1
+(der, die, PRELS): 0, 1
+(der, die, ART): 0, 1
+(sein, sein, VAINF): 0, 1
+(der, die, PRELS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
+positiveGpc: 1
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(sagen, sagen, VVFIN): 0, 1
+(alles, alle, PIS): 1, 0
+(was, was, PRELS): 0, 1
+(nur, nur, ADV): 0, 1
+(kein, keine, PIAT): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:71
+positiveGpc: 4
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(dem, die, ART): 0, 1
+(eben, eben, ADV): 1, 0
+(lieb, lieb, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+(jung, jung, ADJD): 1, 0
+(jung, jung, ADJD): 1, 0
+(alt, alt, ADJD): 0, 1
+(alt, alt, ADJD): 0, 1
+
+1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
+positiveGpc: 5
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Danksagung, Danksagung, NN): 1, 0
+(alle, alle, PIAT): 1, 0
+(Ewigkeit, Ewigkeit, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(besser, gut, ADJD): 1, 0
+(finden, finden, VVINF): 1, 0
+
+1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
+positiveGpc: 4
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Freund, Freund, NN): 1, 0
+(für, für, APPR): 1, 0
+(Freund, Freund, NN): 1, 0
+(halten, halten, VVINF): 1, 0
+
+1.Akt, 3.Szene, 36.Replik, Drama-Nummer: 110, ID:74
+positiveGpc: 5
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(eben, eben, ADV): 1, 0
+(dem, die, ART): 0, 1
+(zog, ziehen, VVFIN): 0, 1
+(führte, führen, VVFIN): 1, 0
+(lieber, lieb, ADJA): 1, 0
+(Warten, Warte|Warten, NN): 0, 1
+(klein, klein, ADJD): 0, 1
+(erst, erst, ADV): 1, 0
+(lassen, lassen, VVINF): 1, 0
+
+1.Akt, 3.Szene, 103.Replik, Drama-Nummer: 177, ID:75
+positiveGpc: 3
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(für, für, APPR): 1, 0
+(der, die, PRELS): 0, 1
+(frech, frech, ADJD): 0, 1
+(genug, genug, ADV): 1, 0
+(genug, genug, ADV): 1, 0
+(Lügen, Lüge|Lügen, NN): 0, 1
+(sagen, sagen, VVINF): 0, 1
+
+1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
+positiveGpc: 2
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nur, nur, ADV): 0, 1
+(Streich, Streich, NN): 0, 1
+(nichts, nichts, PIS): 0, 1
+(Ausschweifung, Ausschweifung, NN): 0, 1
+(Strafe, Strafe, NN): 0, 1
+(für, für, APPR): 1, 0
+(alle, alle, PIAT): 1, 0
+(ziehen, ziehen, VVINF): 0, 1
+
+1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
+positiveGpc: 6
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(kam, kommen, VVFIN): 1, 0
+(Himmel, Himmel, NN): 1, 0
+(kam, kommen, VVFIN): 1, 0
+(großmütig, großmütig, ADJD): 1, 0
+(Schicksal, Schicksal, NN): 0, 1
+(der, die, ART): 0, 1
+(sagen, sagen, VVFIN): 0, 1
+(erlaubt, erlauben, VVPP): 1, 0
+(für, für, APPR): 1, 0
+
+1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
+positiveGpc: 8
+negativeGpc: 16
+neutralGpc: 0
+polarityGpc: -8
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sagen, sagen, VVINF): 0, 1
+(Wahrheit, Wahrheit, NN): 1, 0
+(sagen, sagen, VVINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(ausreden, ausreden, VVINF): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(gelegen, liegen, VVPP): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(liegen, liegen, VVINF): 1, 0
+(sagen, sagen, VVINF): 0, 1
+(dem, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(gern, gern, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(verleumden, verleumden, VVINF): 0, 1
+(würde, werden, VAFIN): 1, 0
+(freigebig, freigebig, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(sagte, sagen, VVFIN): 0, 1
+(betrogen, betrügen, VVPP): 0, 1
+
+1.Akt, 1.Szene, 67.Replik, Drama-Nummer: 67, ID:79
+positiveGpc: 3
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(reden, reden, VVINF): 0, 1
+(nur, nur, ADV): 0, 1
+(Neigung, Neigung, NN): 0, 1
+(satt, satt, ADJD): 1, 0
+(dem, die, PRELS): 0, 1
+(der, die, ART): 0, 1
+(würde, werden, VAFIN): 1, 0
+(alle, alle, PIAT): 1, 0
+(Schuld, Schuld, NN): 0, 1
+(fallen, fallen, VVINF): 0, 1
+
+1.Akt, 1.Szene, 58.Replik, Drama-Nummer: 58, ID:80
+positiveGpc: 3
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(alle, alle, PIAT): 1, 0
+(arm, arm, ADJD): 0, 1
+(würde, werden, VAFIN): 1, 0
+(allein, allein, ADV): 0, 1
+(reich, reich, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+
+2.Akt, 2.Szene, 6.Replik, Drama-Nummer: 164, ID:81
+positiveGpc: 3
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Wahrheit, Wahrheit, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(sehr, sehr, ADV): 1, 0
+(dringend, dringend, ADJD): 0, 1
+(Hast, haben, VAFIN): 0, 1
+(nichts, nichts, PIAT): 0, 1
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Freund, Freund, NN): 1, 0
+(was, was, PIS): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(macht, machen, VVFIN): 1, 0
+(kurz, kurz, ADJD): 0, 1
+(stören, stören, VVINF): 0, 1
+
+2.Akt, 2.Szene, 14.Replik, Drama-Nummer: 172, ID:83
+positiveGpc: 2
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: -8
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(viel, viel, ADV): 1, 0
+(war, sein, VAFIN): 0, 1
+(Schuld, Schuld, NN): 0, 1
+(wenig, wenige, PIS): 0, 1
+(viel, viele, PIS): 1, 0
+(wenig, wenige, PIS): 0, 1
+(lächerlich, lächerlich, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PIAT): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(Was, was, PWS): 0, 1
+(war, sein, VAFIN): 0, 1
+
+2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
+positiveGpc: 5
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Eben, eben, ADV): 1, 0
+(Jugend, Jugend, NN): 1, 0
+(eben, eben, ADV): 1, 0
+(Übel, Übel, NN): 0, 1
+(der, die, ART): 0, 1
+(unter, unter, APPR): 0, 1
+(unglücklich, unglücklich, ADJD): 0, 1
+(böse, böse, ADJA): 0, 1
+(krank, krank, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Ach, ach, ITJ): 0, 1
+(lieben, lieb, ADJA): 1, 0
+(gewiß, gewiss, ADJD): 1, 0
+(der, die, ART): 0, 1
+(Ach, ach, ITJ): 0, 1
+(verdammte, verdammt, ADJA): 0, 1
+
+2.Akt, 2.Szene, 24.Replik, Drama-Nummer: 182, ID:85
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(bessern, bessern, VVINF): 1, 0
+(notwendig, notwendig, ADJD): 0, 1
+(der, die, ART): 0, 1
+(Glück, Glück, NN): 1, 0
+
+3.Akt, 5.Szene, 4.Replik, Drama-Nummer: 334, ID:86
+positiveGpc: 2
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(stoßen, stoßen, VVINF): 0, 1
+(für, für, APPR): 1, 0
+(mehr, mehr, ADV): 1, 0
+
+3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(reden, reden, VVINF): 0, 1
+(geschiedene, geschieden, ADJA): 0, 1
+(hin, hin, APZR): 0, 1
+(wohl, wohl, ADV): 1, 0
+(alle, alle, PIS): 1, 0
+(allein, allein, ADV): 0, 1
+
+2.Akt, 6.Szene, 17.Replik, Drama-Nummer: 255, ID:88
+positiveGpc: 4
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(vortrefflich, vortrefflich, ADJD): 1, 0
+(dem, die, ART): 0, 1
+(eben, eben, ADV): 1, 0
+(Stärke, Stärke, NN): 1, 0
+(wohl, wohl, ADV): 1, 0
+(sein, sein, VAINF): 0, 1
+(Nicht, nicht, PTKNEG): 0, 1
+
+3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
+positiveGpc: 1
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Zweifel, Zweifel, NN): 0, 1
+(lieber, lieb, ADJA): 1, 0
+
+3.Akt, 7.Szene, 23.Replik, Drama-Nummer: 380, ID:90
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(viel, viele, PIS): 1, 0
+(für, für, APPR): 1, 0
+(schuldig, schuldig, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(wahr, wahr, ADJD): 1, 0
+
+1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Jungfer, Jungfer, NN): 0, 1
+(Schlag, Schlag, NN): 0, 1
+(nie, nie, ADV): 0, 1
+(für, für, APPR): 1, 0
+
+1.Akt, 1.Szene, 22.Replik, Drama-Nummer: 22, ID:92
+positiveGpc: 3
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(lieber, lieb, ADJA): 1, 0
+(wenig, wenige, PIS): 0, 1
+(ja, ja, ADV): 1, 0
+(wohl, wohl, ADV): 1, 0
+
+1.Akt, 4.Szene, 8.Replik, Drama-Nummer: 56, ID:93
+positiveGpc: 4
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(geraten, geraten|raten, VVPP): 1, 0
+(reden, reden, VVINF): 0, 1
+(Macht, machen, VVFIN): 1, 0
+(aufgeräumt, aufräumen, VVPP): 1, 0
+(Nur, nur, ADV): 0, 1
+(wenig, wenige, PIS): 0, 1
+(klein, klein, ADJD): 0, 1
+(wenig, wenig, ADV): 0, 1
+(sein, sein, VAINF): 0, 1
+(Nicht, nicht, PTKNEG): 0, 1
+(wahr, wahr, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Der, die, ART): 0, 1
+(sehr, sehr, ADV): 1, 0
+(weisen, weisen, VVINF): 0, 1
+(dem, die, ART): 0, 1
+
+1.Akt, 16.Szene, 4.Replik, Drama-Nummer: 268, ID:95
+positiveGpc: 1
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(war, sein, VAFIN): 0, 1
+(der, die, ART): 0, 1
+(einfältig, einfältig, ADJD): 0, 1
+(höflich, höflich, ADJD): 1, 0
+(unverschämt, unverschämt, ADJD): 0, 1
+(grob, grob, ADJD): 0, 1
+
+1.Akt, 2.Szene, 25.Replik, Drama-Nummer: 35, ID:96
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nur, nur, ADV): 0, 1
+(finster, finster, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(gut, gut, ADJD): 1, 0
+(zielen, zielen, VVINF): 1, 0
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 70, ID:97
+positiveGpc: 2
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: -8
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(spotten, spotten, VVINF): 0, 1
+(für, für, APPR): 1, 0
+(Ernst, Ernst, NE): 0, 1
+(gesetzt, setzen, VVPP): 0, 1
+(wenig, wenige, PIS): 0, 1
+(liebenswürdig, liebenswürdig, ADJD): 1, 0
+(entsetzlich, entsetzlich, ADJD): 0, 1
+(entsetzlich, entsetzlich, ADJD): 0, 1
+(zornig, zornig, ADJD): 0, 1
+(dem, die, ART): 0, 1
+
+1.Akt, 8.Szene, 4.Replik, Drama-Nummer: 122, ID:98
+positiveGpc: 2
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(klug, klug, ADJD): 1, 0
+(der, die, ART): 0, 1
+(mehr, mehr, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(aus, aus, APPR): 0, 1
+(Furcht, Furcht, NN): 0, 1
+(grob, grob, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+(Grobheit, Grobheit, NN): 0, 1
+
+1.Akt, 2.Szene, 9.Replik, Drama-Nummer: 19, ID:99
+positiveGpc: 6
+negativeGpc: 9
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(dem, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Knecht, Knecht, NN): 0, 1
+(der, die, PRELS): 0, 1
+(nötig, nötig, ADJD): 0, 1
+(macht, machen, VVFIN): 1, 0
+(wohl, wohl, ADV): 1, 0
+(gern, gern, ADV): 1, 0
+(viel, viele, PIAT): 1, 0
+(bringen, bringen, VVINF): 0, 1
+(nur, nur, ADV): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(abnehmen, abnehmen, VVINF): 0, 1
+(wohl, wohl, ADV): 1, 0
+(besser, gut, ADJD): 1, 0
+
+1.Akt, 18.Szene, 18.Replik, Drama-Nummer: 310, ID:100
+positiveGpc: 4
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Bedenken, Bedenken, NN): 0, 1
+(alles, alle, PIS): 1, 0
+(anwenden, anwenden, VVFIN): 1, 0
+(hinter, hinter, APPR): 0, 1
+(Wahrheit, Wahrheit, NN): 1, 0
+(kommen, kommen, VVINF): 1, 0
+(Mörder, Mörder, NN): 0, 1
+
+1.Akt, 9.Szene, 9.Replik, Drama-Nummer: 149, ID:101
+positiveGpc: 2
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(übel, übel, ADJD): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(bitte, bitten, VVFIN): 0, 1
+(keine, keine, PIAT): 0, 1
+(zufrieden, zufrieden, ADJD): 1, 0
+(was, was, PRELS): 0, 1
+
+1.Akt, 22.Szene, 19.Replik, Drama-Nummer: 370, ID:102
+positiveGpc: 4
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(umsonst, umsonst, ADV): 1, 0
+(der, die, ART): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Vergeltung, Vergeltung, NN): 0, 1
+(bitte, bitten, VVFIN): 0, 1
+(nichts, nichts, PIS): 0, 1
+(weniger, weniger, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Neigung, Neigung, NN): 0, 1
+(Abneigung, Abneigung, NN): 0, 1
+(gegen, gegen, APPR): 0, 1
+(Freundschaft, Freundschaft, NN): 1, 0
+(wer, wer, PWS): 0, 1
+(unschätzbar, unschätzbar, ADJD): 1, 0
+
+1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
+positiveGpc: 1
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(schönen, schön, ADJA): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(alle, alle, PIAT): 1, 0
+
+3.Akt, 2.Szene, 18.Replik, Drama-Nummer: 408, ID:104
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(was, was, PIS): 0, 1
+(Was, was, PWS): 0, 1
+(für, für, APPR): 1, 0
+(keine, keine, PIAT): 0, 1
+(sein, sein, VAINF): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+
+5.Akt, 5.Szene, 39.Replik, Drama-Nummer: 766, ID:105
+positiveGpc: 5
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Recht, Recht, NN): 1, 0
+(Recht, Recht, NN): 1, 0
+(Ja, ja, ADV): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(Nicht, nicht, PTKNEG): 0, 1
+(wahr, wahr, ADJD): 1, 0
+(sehen, sehen, VVFIN): 0, 1
+
+4.Akt, 5.Szene, 42.Replik, Drama-Nummer: 623, ID:106
+positiveGpc: 3
+negativeGpc: 12
+neutralGpc: 0
+polarityGpc: -9
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(natürlich, natürlich, ADV): 1, 0
+(aus, aus, APPR): 0, 1
+(der, die, ART): 0, 1
+(müssen, müssen, VMINF): 0, 1
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(was, was, PRELS): 0, 1
+(was, was, PRELS): 0, 1
+(nur, nur, ADV): 0, 1
+(verstehen, verstehen, VVFIN): 1, 0
+(Bosheit, Bosheit, NN): 0, 1
+(der, die, ART): 0, 1
+(eben, eben, ADV): 1, 0
+(schlecht, schlecht, ADJD): 0, 1
+(Vorsicht, Vorsicht, NN): 0, 1
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 574, ID:107
+positiveGpc: 21
+negativeGpc: 15
+neutralGpc: 0
+polarityGpc: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Nicht, nicht, PTKNEG): 0, 1
+(wahr, wahr, ADJD): 1, 0
+(Ja, ja, PTKANT): 1, 0
+(ja, ja, ADV): 1, 0
+(lassen, lassen, VVINF): 1, 0
+(pfui, pfui, ITJ): 0, 1
+(lassen, lassen, VVINF): 1, 0
+(lassen, lassen, VVINF): 1, 0
+(wohl, wohl, ADV): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(der, die, ART): 0, 1
+(lieben, lieben, VVINF): 1, 0
+(eben, eben, ADV): 1, 0
+(ekel, ekeln, VVIMP): 0, 1
+(der, die, PRELS): 0, 1
+(Lachen, lachen, VVINF): 1, 0
+(nichts, nichts, PIS): 0, 1
+(der, die, ART): 0, 1
+(erhalten, erhalten, VVINF): 1, 0
+(Ach, ach, ITJ): 0, 1
+(ja, ja, ADV): 1, 0
+(wohl, wohl, ADV): 1, 0
+(dem, die, ART): 0, 1
+(kommen, kommen, VVINF): 1, 0
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Sehr, sehr, ADV): 1, 0
+(lustig, lustig, ADJD): 1, 0
+(sehr, sehr, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(ja, ja, ADV): 1, 0
+(wohl, wohl, ADV): 1, 0
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(dürfen, dürfen, VMINF): 1, 0
+
+2.Akt, 6.Szene, 31.Replik, Drama-Nummer: 247, ID:108
+positiveGpc: 5
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(gern, gern, ADV): 1, 0
+(bessern, bessern, VVFIN): 1, 0
+(der, die, ART): 0, 1
+(Würde, Würde, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(spät, spät, ADJD): 0, 1
+(Unruhe, Unruhe, NN): 0, 1
+(lieber, lieb, ADJD): 1, 0
+(nichts, nichts, PIS): 0, 1
+(dem, die, ART): 0, 1
+(Herzen, Herz, NN): 1, 0
+
+4.Akt, 7.Szene, 9.Replik, Drama-Nummer: 652, ID:109
+positiveGpc: 0
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+
+3.Akt, 5.Szene, 11.Replik, Drama-Nummer: 451, ID:110
+positiveGpc: 13
+negativeGpc: 36
+neutralGpc: 0
+polarityGpc: -23
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(beschämt, beschämen, VVPP): 0, 1
+(Ja, ja, PTKANT): 1, 0
+(Vorwurf, Vorwurf, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(rechtfertigen, rechtfertigen, VVINF): 1, 0
+(entschuldigen, entschuldigen, VVFIN): 1, 0
+(beunruhigen, beunruhigen, VVINF): 0, 1
+(dem, die, PRELS): 0, 1
+(keinen, keine, PIAT): 0, 1
+(Vorteil, Vorteil, NN): 1, 0
+(Bestürzung, Bestürzung, NN): 0, 1
+(der, die, PRELS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, PRELS): 0, 1
+(alle, alle, PIS): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(ewig, ewig, ADJD): 0, 1
+(Glück, Glück, NN): 1, 0
+(sehen, sehen, VVINF): 0, 1
+(für, für, APPR): 1, 0
+(für, für, APPR): 1, 0
+(Aufschub, Aufschub, NN): 0, 1
+(Verurteilung, Verurteilung, NN): 0, 1
+(Gnade, Gnade, NN): 0, 1
+(flehen, flehen, VVINF): 0, 1
+(dürfen, dürfen, VMINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(allein, allein, ADV): 0, 1
+(Kein, keine, PIAT): 0, 1
+(kein, keine, PIAT): 0, 1
+(beleidigen, beleidigen, VVINF): 0, 1
+(Nur, nur, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Nur, nur, ADV): 0, 1
+(zweifeln, zweifeln, VVFIN): 0, 1
+(keinen, keine, PIAT): 0, 1
+(der, die, ART): 0, 1
+(Gewalt, Gewalt, NN): 0, 1
+(Nur, nur, ADV): 0, 1
+(falle, fallen, VVFIN): 0, 1
+(nie, nie, ADV): 0, 1
+(gegen, gegen, APPR): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(kommen, kommen, VVFIN): 1, 0
+(warten, warten, VVINF): 0, 1
+(mehr, mehr, ADV): 1, 0
+(führt, führen, VVFIN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Sträuben, Sträuben, NN): 0, 1
+
+4.Akt, 7.Szene, 15.Replik, Drama-Nummer: 658, ID:111
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(der, die, PRELS): 0, 1
+(genug, genug, ADV): 1, 0
+(Nur, nur, ADV): 0, 1
+
+5.Akt, 5.Szene, 9.Replik, Drama-Nummer: 736, ID:112
+positiveGpc: 3
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(viel, viele, PIAT): 1, 0
+(Schönheit, Schönheit, NN): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(gegen, gegen, APPR): 0, 1
+(unversöhnlich, unversöhnlich, ADJD): 0, 1
+(dem, die, ART): 0, 1
+(niemand, niemand, PIS): 0, 1
+(Bringen, bringen, VVFIN): 0, 1
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 782, ID:113
+positiveGpc: 7
+negativeGpc: 12
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Kein, keine, PIAT): 0, 1
+(Gefängnis, Gefängnis, NN): 0, 1
+(Strenge, Strenge, NN): 0, 1
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(Achtung, Achtung, NN): 0, 1
+(gegen, gegen, APPR): 0, 1
+(Tugend, Tugend, NN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(Keinen, keine, PIAT): 0, 1
+(Widerspruch, Widerspruch, NN): 0, 1
+(der, die, ART): 0, 1
+(Aufsicht, Aufsicht, NN): 0, 1
+(der, die, ART): 0, 1
+(für, für, APPR): 1, 0
+(gehen, gehen, VVFIN): 1, 0
+(weit, weit, ADJD): 1, 0
+(weit, weit, ADJD): 1, 0
+(mehr, mehr, ADV): 1, 0
+
+5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
+positiveGpc: 1
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(alles, alle, PIS): 1, 0
+(was, was, PRELS): 0, 1
+
+4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
+positiveGpc: 0
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(Verdacht, Verdacht, NN): 0, 1
+(dem, die, ART): 0, 1
+(Gnade, Gnade, NN): 0, 1
+
+4.Akt, 8.Szene, 14.Replik, Drama-Nummer: 686, ID:116
+positiveGpc: 4
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(nie, nie, ADV): 0, 1
+(mächtig, mächtig, ADJD): 1, 0
+(der, die, ART): 0, 1
+(alles, alle, PIS): 1, 0
+(alles, alle, PIS): 1, 0
+(nur, nur, ADV): 0, 1
+
+3.Akt, 1.Szene, 31.Replik, Drama-Nummer: 384, ID:117
+positiveGpc: 3
+negativeGpc: 13
+neutralGpc: 0
+polarityGpc: -10
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nur, nur, ADV): 0, 1
+(sein, sein, VAINF): 0, 1
+(verlassen, verlassen, VVINF): 0, 1
+(Der, die, ART): 0, 1
+(geht, gehen, VVFIN): 1, 0
+(hart, hart, ADJD): 0, 1
+(der, die, ART): 0, 1
+(aus, aus, APPR): 0, 1
+(dem, die, ART): 0, 1
+(sein, sein, VAINF): 0, 1
+(Schein, Schein, NN): 1, 0
+(geraten, geraten|raten, VVPP): 1, 0
+(bringen, bringen, VVINF): 0, 1
+(Abrede, Abrede, NN): 0, 1
+(Was, was, PWS): 0, 1
+(sagen, sagen, VVFIN): 0, 1
+
+3.Akt, 1.Szene, 9.Replik, Drama-Nummer: 362, ID:118
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(töricht, töricht, ADJD): 0, 1
+(bereit, bereit, ADJD): 1, 0
+(für, für, APPR): 1, 0
+(erkenntlich, erkenntlich, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+
+5.Akt, 7.Szene, 9.Replik, Drama-Nummer: 798, ID:119
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(besser, gut, ADJD): 1, 0
+(der, die, ART): 0, 1
+(was, was, PWS): 0, 1
+(Lassen, lassen, VVFIN): 1, 0
+
+4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
+positiveGpc: 1
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(bloß, bloß, ADJD): 0, 1
+(gehen, gehen, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+2.Akt, 4.Szene, 5.Replik, Drama-Nummer: 197, ID:121
+positiveGpc: 7
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(verlieren, verlieren, VVFIN): 0, 1
+(der, die, ART): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(Vergnügen, Vergnügen, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Argwohn, Argwohn, NN): 0, 1
+(erneuern, erneuern, VVINF): 1, 0
+(mehr, mehr, ADV): 1, 0
+(der, die, ART): 0, 1
+(mehr, mehr, ADV): 1, 0
+(war, sein, VAFIN): 0, 1
+(Notwendigkeit, Notwendigkeit, NN): 0, 1
+(was, was, PRELS): 0, 1
+(der, die, ART): 0, 1
+(fern, fern, APPR): 1, 0
+(der, die, PRELS): 0, 1
+(herzlich, herzlich, ADJD): 1, 0
+
+4.Akt, 7.Szene, 16.Replik, Drama-Nummer: 659, ID:122
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Abrede, Abrede, NN): 0, 1
+(Verstand, Verstand, NN): 1, 0
+(bringen, bringen, VVINF): 0, 1
+(brechen, brechen, VVFIN): 0, 1
+(Herz, Herz, NN): 1, 0
+
+4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
+positiveGpc: 4
+negativeGpc: 0
+neutralGpc: 0
+polarityGpc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Liebe, Liebe, NN): 1, 0
+(viel, viele, PIAT): 1, 0
+(Ehre, Ehre, NN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+
+1.Akt, 3.Szene, 18.Replik, Drama-Nummer: 63, ID:124
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sein, sein, VAINF): 0, 1
+(Gehen, gehen, VVFIN): 1, 0
+(nur, nur, ADV): 0, 1
+(lassen, lassen, VVFIN): 1, 0
+
+3.Akt, 7.Szene, 46.Replik, Drama-Nummer: 615, ID:125
+positiveGpc: 6
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(ja, ja, ADV): 1, 0
+(besser, gut, ADJD): 1, 0
+(was, was, PRELS): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(aus, aus, APZR): 0, 1
+(sein, sein, VAINF): 0, 1
+(müssen, müssen, VMFIN): 0, 1
+(Interessen, Interesse, NN): 1, 0
+(ja, ja, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(der, die, ART): 0, 1
+(Interessen, Interesse, NN): 1, 0
+
+3.Akt, 2.Szene, 60.Replik, Drama-Nummer: 504, ID:126
+positiveGpc: 3
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(hing, hängen, VVFIN): 1, 0
+(kam, kommen, VVFIN): 1, 0
+(niemals, niemals, ADV): 0, 1
+(Schulden, Schuld, NN): 0, 1
+(Kurz, Kurz, NE): 0, 1
+(der, die, ART): 0, 1
+(Gewalt, Gewalt, NN): 0, 1
+(Hängen, Hang|Hängen, NN): 1, 0
+(brachte, bringen, VVFIN): 0, 1
+
+5.Akt, 9.Szene, 30.Replik, Drama-Nummer: 1019, ID:127
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(verächtlich, verächtlich, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Glück, Glück, NN): 1, 0
+(der, die, ART): 0, 1
+(Zärtlichkeit, Zärtlichkeit, NN): 1, 0
+
+5.Akt, 11.Szene, 22.Replik, Drama-Nummer: 1066, ID:128
+positiveGpc: 4
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Scherz, Scherz, NN): 1, 0
+(weit, weit, ADJD): 1, 0
+(getrieben, treiben, VVPP): 1, 0
+(ja, ja, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+
+4.Akt, 6.Szene, 62.Replik, Drama-Nummer: 873, ID:129
+positiveGpc: 7
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(gewiß, gewiss, ADJD): 1, 0
+(Unglück, Unglück, NN): 0, 1
+(sehen, sehen, VVFIN): 0, 1
+(Unglück, Unglück, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(uneigennützig, uneigennützig, ADJD): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(Eben, eben, ADV): 1, 0
+(gut, gut, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(würde, werden, VAFIN): 1, 0
+(Mitleid, Mitleid, NN): 0, 1
+(was, was, PRELS): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(langsam, langsam, ADJD): 0, 1
+
+4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(wohl, wohl, ADV): 1, 0
+(übel, übel, ADJD): 0, 1
+(würde, werden, VAFIN): 1, 0
+
+4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(was, was, PWS): 0, 1
+(der, die, ART): 0, 1
+(für, für, APPR): 1, 0
+(gleichen, gleich, ADJA): 1, 0
+(abnehmen, abnehmen, VVINF): 0, 1
+
+2.Akt, 9.Szene, 29.Replik, Drama-Nummer: 433, ID:132
+positiveGpc: 11
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Rechthaber, Rechthaber, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(unglücklich, unglücklich, ADJD): 0, 1
+(der, die, ART): 0, 1
+(Vernunft, Vernunft, NN): 1, 0
+(Notwendigkeit, Notwendigkeit, NN): 0, 1
+(große, groß, ADJA): 1, 0
+(Liebhaberin, Liebhaberin, NN): 1, 0
+(Vernunft, Vernunft, NN): 1, 0
+(sehr, sehr, ADV): 1, 0
+(viel, viele, PIAT): 1, 0
+(Ehrerbietung, Ehrerbietung, NN): 1, 0
+(für, für, APPR): 1, 0
+(Notwendigkeit, Notwendigkeit, NN): 0, 1
+(lassen, lassen, VVFIN): 1, 0
+(vernünftig, vernünftig, ADJD): 1, 0
+(Vernunft, Vernunft, NN): 1, 0
+(notwendig, notwendig, ADJD): 0, 1
+(Notwendigkeit, Notwendigkeit, NN): 0, 1
+
+3.Akt, 4.Szene, 7.Replik, Drama-Nummer: 531, ID:133
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(hübsch, hübsch, ADJD): 1, 0
+(wohl, wohl, ADV): 1, 0
+(fremd, fremd, ADJD): 0, 1
+(müssen, müssen, VMFIN): 0, 1
+(dem, die, ART): 0, 1
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 573, ID:134
+positiveGpc: 5
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(ja, ja, PTKANT): 1, 0
+(nur, nur, ADV): 0, 1
+(gut, gut, ADJD): 1, 0
+(wohl, wohl, ADV): 1, 0
+(lieb, lieb, ADJD): 1, 0
+(aufheben, aufheben, VVINF): 0, 1
+(neu, neu, ADJD): 1, 0
+(Wer, wer, PWS): 0, 1
+(wies, weisen, VVFIN): 0, 1
+(nichts, nichts, PIS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+3.Akt, 2.Szene, 29.Replik, Drama-Nummer: 473, ID:135
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(gute, gut, ADJA): 1, 0
+(lassen, lassen, VVINF): 1, 0
+(behalten, behalten, VVINF): 0, 1
+(was, was, PRELS): 0, 1
+(Sein, sein, PPOSAT): 0, 1
+
+5.Akt, 13.Szene, 3.Replik, Drama-Nummer: 1098, ID:136
+positiveGpc: 1
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(was, was, PWS): 0, 1
+(erst, erst, ADV): 1, 0
+
+2.Akt, 1.Szene, 2.Replik, Drama-Nummer: 198, ID:137
+positiveGpc: 1
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Wer, wer, PWS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(schreien, schreien, VVINF): 0, 1
+(fluchen, fluchen, VVINF): 0, 1
+(nichts, nichts, PIS): 0, 1
+(weniger, wenige, PIS): 0, 1
+(Ruhe, Ruhe, NN): 1, 0
+
+5.Akt, 9.Szene, 18.Replik, Drama-Nummer: 1007, ID:138
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(weise, weisen, VVFIN): 1, 0
+(große, groß, ADJA): 1, 0
+(der, die, ART): 0, 1
+(Ehre, Ehre, NN): 1, 0
+
+1.Akt, 6.Szene, 6.Replik, Drama-Nummer: 102, ID:139
+positiveGpc: 0
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(kurz, kurz, ADJD): 0, 1
+(Ende, Ende, NN): 0, 1
+(Schuld, Schuld, NN): 0, 1
+(der, die, ART): 0, 1
+
+4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Freund, Freund, NN): 1, 0
+(viel, viele, PIAT): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+
+5.Akt, 9.Szene, 6.Replik, Drama-Nummer: 995, ID:141
+positiveGpc: 11
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(lieber, lieb, ADJA): 1, 0
+(heim, heim, PTKVZ): 1, 0
+(der, die, ART): 0, 1
+(der, die, PRELS): 0, 1
+(Ehre, Ehre, NN): 1, 0
+(besorgt, besorgt, ADJD): 0, 1
+(Vorteil, Vorteil, NN): 1, 0
+(war, sein, VAFIN): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(für, für, APPR): 1, 0
+(mehr, mehr, ADV): 1, 0
+(unschuldig, unschuldig, ADJD): 1, 0
+(alles, alle, PIS): 1, 0
+(was, was, PRELS): 0, 1
+(niedergeschlagen, niederschlagen, VVPP): 0, 1
+(Gesundheit, Gesundheit, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(gern, gern, ADV): 1, 0
+(Bravour, Bravour, NN): 1, 0
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 450, ID:142
+positiveGpc: 2
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(gut, gut, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+(gut, gut, ADJD): 1, 0
+(sein, sein, VAINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(bitte, bitten, VVFIN): 0, 1
+(was, was, PIS): 0, 1
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 19, ID:143
+positiveGpc: 0
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(keine, keine, PIAT): 0, 1
+(Mühe, Mühe, NN): 0, 1
+(Der, die, ART): 0, 1
+(Gift, Gift, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nüchtern, nüchtern, VVINF): 0, 1
+
+4.Akt, 6.Szene, 37.Replik, Drama-Nummer: 848, ID:144
+positiveGpc: 2
+negativeGpc: 7
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(ja, ja, ADV): 1, 0
+(sagen, sagen, VVFIN): 0, 1
+(kam, kommen, VVFIN): 1, 0
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(kein, keine, PIAT): 0, 1
+(Arm, Arm, NN): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(Blut, Blut, NN): 0, 1
+
+1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Freund, Freund, NN): 1, 0
+(Höflichkeit, Höflichkeit, NN): 1, 0
+(Herrschaft, Herrschaft, NN): 0, 1
+(Macht, machen, VVFIN): 1, 0
+(Herrschaft, Herrschaft, NN): 0, 1
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 220, ID:146
+positiveGpc: 3
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sehr, sehr, ADV): 1, 0
+(der, die, ART): 0, 1
+(Treue, Treue, NN): 1, 0
+(Beständigkeit, Beständigkeit, NN): 1, 0
+(gegen, gegen, APPR): 0, 1
+(der, die, ART): 0, 1
+
+3.Akt, 3.Szene, 19.Replik, Drama-Nummer: 317, ID:147
+positiveGpc: 1
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(Gewalt, Gewalt, NN): 0, 1
+(gegen, gegen, APPR): 0, 1
+(brauchen, brauchen, VVINF): 0, 1
+(für, für, APPR): 1, 0
+(nur, nur, ADV): 0, 1
+(der, die, ART): 0, 1
+
+2.Akt, 3.Szene, 6.Replik, Drama-Nummer: 142, ID:148
+positiveGpc: 5
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(mehr, mehr, PIAT): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(mehr, mehr, PIAT): 1, 0
+(Entzücken, Entzücken, NN): 1, 0
+(Ach, ach, ITJ): 0, 1
+(weniger, weniger, ADV): 0, 1
+(Sehen, sehen, VVFIN): 0, 1
+(sehen, sehen, VVFIN): 0, 1
+(Freude, Freude, NN): 1, 0
+(rollen, rollen, VVFIN): 0, 1
+(der, die, ART): 0, 1
+(ach, ach, ITJ): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+2.Akt, 4.Szene, 24.Replik, Drama-Nummer: 195, ID:149
+positiveGpc: 13
+negativeGpc: 23
+neutralGpc: 0
+polarityGpc: -10
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(mehr, mehr, ADV): 1, 0
+(Erbarmen, Erbarmen, NN): 0, 1
+(gegen, gegen, APPR): 0, 1
+(Erbarmen, Erbarmen, NN): 0, 1
+(Erbarmen, Erbarmen, NN): 0, 1
+(viel, viel, ADV): 1, 0
+(weit, weit, ADJD): 1, 0
+(getrieben, treiben, VVPP): 1, 0
+(der, die, PRELS): 0, 1
+(der, die, ART): 0, 1
+(verführen, verführen, VVINF): 0, 1
+(gegen, gegen, APPR): 0, 1
+(Überlegenheit, Überlegenheit, NN): 1, 0
+(Verstellung, Verstellung, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, ART): 0, 1
+(Leidenschaft, Leidenschaft, NN): 1, 0
+(entschuldigen, entschuldigen, VVINF): 1, 0
+(Allein, allein, ADV): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(schwer, schwer, ADJD): 0, 1
+(bitter, bitter, ADJD): 0, 1
+(Lust, Lust, NN): 1, 0
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Fehler, Fehler, NN): 0, 1
+(gut, gut, ADJD): 1, 0
+(weit, weit, ADJD): 1, 0
+(möglich, möglich, ADJD): 1, 0
+(gut, gut, ADJD): 1, 0
+(dem, die, ART): 0, 1
+(Alter, Alter, NN): 0, 1
+(schicken, schicken, VVFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(öde, öde, ADJD): 0, 1
+(müssen, müssen, VMINF): 0, 1
+
+3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
+positiveGpc: 10
+negativeGpc: 12
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ach, ach, ITJ): 0, 1
+(Ja, ja, ADV): 1, 0
+(gewiß, gewiss, ADJD): 1, 0
+(betrogen, betrügen, VVPP): 0, 1
+(Wer, wer, PWS): 0, 1
+(aus, aus, APPR): 0, 1
+(der, die, PDS): 0, 1
+(ja, ja, ADV): 1, 0
+(kein, keine, PIAT): 0, 1
+(alter, alt, ADJA): 0, 1
+(geht, gehen, VVFIN): 1, 0
+(nahe, nahe, PTKVZ): 1, 0
+(wohl, wohl, ADV): 1, 0
+(gute, gut, ADJA): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PWS): 0, 1
+(bringen, bringen, VVINF): 0, 1
+(gehen, gehen, VVINF): 1, 0
+(weit, weit, ADJD): 1, 0
+(tragen, tragen, VVINF): 0, 1
+(nie, nie, ADV): 0, 1
+(kommen, kommen, VVINF): 1, 0
+
+3.Akt, 2.Szene, 2.Replik, Drama-Nummer: 282, ID:151
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(unruhig, unruhig, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(lieben, lieben, VVINF): 1, 0
+
+5.Akt, 7.Szene, 3.Replik, Drama-Nummer: 653, ID:152
+positiveGpc: 7
+negativeGpc: 30
+neutralGpc: 0
+polarityGpc: -23
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Gefährlich, gefährlich, ADJD): 0, 1
+(krank, krank, ADJD): 0, 1
+(mehr, mehr, ADV): 1, 0
+(aus, aus, APPR): 0, 1
+(der, die, ART): 0, 1
+(Angst, Angst, NN): 0, 1
+(dem, die, ART): 0, 1
+(der, die, ART): 0, 1
+(wohl, wohl, ADV): 1, 0
+(warten, warten, VVINF): 0, 1
+(gute, gut, ADJA): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(leicht, leicht, ADJD): 1, 0
+(alter, alt, ADJA): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(weit, weit, ADJD): 1, 0
+(mehr, mehr, ADV): 1, 0
+(sein, sein, PPOSAT): 0, 1
+(was, was, PRELS): 0, 1
+(bitter, bitter, ADJD): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Ach, ach, ITJ): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Ach, ach, ITJ): 0, 1
+(alle, alle, PIAT): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Unempfindlich, unempfindlich, ADJD): 0, 1
+(der, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(sein, sein, VAINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(untröstlich, untröstlich, ADJD): 0, 1
+
+2.Akt, 4.Szene, 7.Replik, Drama-Nummer: 178, ID:153
+positiveGpc: 9
+negativeGpc: 7
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(ja, ja, ADV): 1, 0
+(Was, was, PWS): 0, 1
+(Können, können, VMFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(lassen, lassen, VVFIN): 1, 0
+(Ach, ach, ITJ): 0, 1
+(Himmel, Himmel, NN): 1, 0
+(Was, was, PWS): 0, 1
+(Was, was, PWS): 0, 1
+(Himmel, Himmel, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(gewähren, gewähren, VVINF): 1, 0
+(alles, alle, PIS): 1, 0
+(dafür, dafür, PAV): 1, 0
+
+3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
+positiveGpc: 0
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(was, was, PWS): 0, 1
+(dem, die, ART): 0, 1
+(hin, hin, ADV): 0, 1
+(der, die, ART): 0, 1
+(der, die, ART): 0, 1
+(hin, hin, ADV): 0, 1
+
+3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
+positiveGpc: 21
+negativeGpc: 34
+neutralGpc: 0
+polarityGpc: -13
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ach, ach, ITJ): 0, 1
+(dem, die, ART): 0, 1
+(trennen, trennen, VVINF): 0, 1
+(würde, werden, VAFIN): 1, 0
+(sehr, sehr, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(wohl, wohl, ADV): 1, 0
+(gegen, gegen, APPR): 0, 1
+(gesichert, sichern, VVPP): 1, 0
+(Fehler, Fehler, NN): 0, 1
+(würde, werden, VAFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(gegen, gegen, APPR): 0, 1
+(war, sein, VAFIN): 0, 1
+(natürlich, natürlich, ADV): 1, 0
+(Aufmerksamkeit, Aufmerksamkeit, NN): 1, 0
+(für, für, APPR): 1, 0
+(Achtung, Achtung, NN): 0, 1
+(war, sein, VAFIN): 0, 1
+(eben, eben, ADV): 1, 0
+(natürlich, natürlich, ADV): 1, 0
+(Achtung, Achtung, NN): 0, 1
+(ließ, lassen, VVFIN): 0, 1
+(treiben, treiben, VVINF): 1, 0
+(Geschicklichkeit, Geschicklichkeit, NN): 1, 0
+(genug, genug, ADV): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(geringste, gering, ADJA): 0, 1
+(Unglück, Unglück, NN): 0, 1
+(war, sein, VAFIN): 0, 1
+(wohl, wohl, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(alles, alle, PIS): 1, 0
+(unerbittlich, unerbittlich, ADJD): 0, 1
+(gegen, gegen, APPR): 0, 1
+(sein, sein, VAINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(gegen, gegen, APPR): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(allein, allein, ADV): 0, 1
+(sein, sein, VAINF): 0, 1
+(Strenge, Strenge, NN): 0, 1
+(würde, werden, VAFIN): 1, 0
+(glücklich, glücklich, ADJD): 1, 0
+(schätzen, schätzen, VVINF): 1, 0
+(aus, aus, APPR): 0, 1
+(dem, die, ART): 0, 1
+(Verführer, Verführer, NN): 0, 1
+(nur, nur, ADV): 0, 1
+(wer, wer, PWS): 0, 1
+(aufgeben, aufgeben, VVINF): 0, 1
+(nichts, nichts, PIS): 0, 1
+(mehr, mehr, ADV): 1, 0
+(gelassen, lassen, VVPP): 1, 0
+(wenig, wenige, PIS): 0, 1
+
+4.Akt, 8.Szene, 70.Replik, Drama-Nummer: 580, ID:156
+positiveGpc: 5
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(für, für, APPR): 1, 0
+(viel, viel, ADV): 1, 0
+(reizend, reizend, ADJD): 1, 0
+(nur, nur, ADV): 0, 1
+(frohlocken, frohlocken, VVINF): 1, 0
+(Erkennen, erkennen, VVFIN): 1, 0
+(der, die, PRELS): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+4.Akt, 8.Szene, 20.Replik, Drama-Nummer: 530, ID:157
+positiveGpc: 3
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(leid, leid, ADJD): 0, 1
+(würde, werden, VAFIN): 1, 0
+(ewig, ewig, ADJD): 0, 1
+(bereit, bereit, ADJD): 1, 0
+(ansehen, ansehen, VVINF): 1, 0
+
+4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(untröstlich, untröstlich, ADJD): 0, 1
+(sein, sein, VAINF): 0, 1
+(der, die, ART): 0, 1
+(ja, ja, ADV): 1, 0
+(keine, keine, PIAT): 0, 1
+(lieben, lieben, VVINF): 1, 0
+
+4.Akt, 8.Szene, 38.Replik, Drama-Nummer: 548, ID:159
+positiveGpc: 7
+negativeGpc: 13
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Mangels, Mangel, NN): 0, 1
+(nichts, nichts, PIS): 0, 1
+(glücklich, glücklich, ADJD): 1, 0
+(Unter, unter, APPR): 0, 1
+(reichen, reich, ADJA): 1, 0
+(trat, treten, VVFIN): 1, 0
+(Sein, sein, PPOSAT): 0, 1
+(war, sein, VAFIN): 0, 1
+(ernstlich, ernstlich, ADJD): 0, 1
+(der, die, ART): 0, 1
+(Überfluß, Überfluss, NN): 1, 0
+(setzen, setzen, VVINF): 0, 1
+(war, sein, VAFIN): 0, 1
+(Geringste, Geringste, NN): 0, 1
+(stützte, stützen, VVFIN): 1, 0
+(der, die, ART): 0, 1
+(keiner, keine, PIAT): 0, 1
+(sondern, sondern, KON): 0, 1
+(voll, voll, ADJD): 1, 0
+(würde, werden, VAFIN): 1, 0
+
+2.Akt, 1.Szene, 7.Replik, Drama-Nummer: 117, ID:160
+positiveGpc: 1
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(dagegen, dagegen, PAV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(lieber, lieb, ADJD): 1, 0
+
+5.Akt, 10.Szene, 14.Replik, Drama-Nummer: 684, ID:161
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sehr, sehr, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(verehren, verehren, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 7.Szene, 2.Replik, Drama-Nummer: 54, ID:162
+positiveGpc: 1
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sehr, sehr, ADV): 1, 0
+(dem, die, ART): 0, 1
+
+2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
+positiveGpc: 4
+negativeGpc: 12
+neutralGpc: 0
+polarityGpc: -8
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(verlassen, verlassen, VVFIN): 0, 1
+(ewig, ewig, ADJD): 0, 1
+(verlassen, verlassen, VVPP): 0, 1
+(War, sein, VAFIN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(kleine, klein, ADJA): 0, 1
+(Ewigkeit, Ewigkeit, NN): 1, 0
+(ja, ja, ADV): 1, 0
+(wohl, wohl, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(lieben, lieben, VVINF): 1, 0
+(nie, nie, ADV): 0, 1
+(verlassen, verlassen, VVINF): 0, 1
+(Nie, nie, ADV): 0, 1
+(nie, nie, ADV): 0, 1
+(verlassen, verlassen, VVPP): 0, 1
+
+5.Akt, 10.Szene, 3.Replik, Drama-Nummer: 673, ID:164
+positiveGpc: 4
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sehen, sehen, VVINF): 0, 1
+(Trost, Trost, NN): 1, 0
+(Verzweiflung, Verzweiflung, NN): 0, 1
+(allein, allein, ADV): 0, 1
+(gekommen, kommen, VVPP): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(spät, spät, ADJD): 0, 1
+(nur, nur, ADV): 0, 1
+(sehen, sehen, VVINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(spät, spät, ADJD): 0, 1
+(gekommen, kommen, VVPP): 1, 0
+(sein, sein, VAINF): 0, 1
+
+5.Akt, 2.Szene, 7.Replik, Drama-Nummer: 601, ID:165
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Genug, genug, ADV): 1, 0
+(was, was, PRELS): 0, 1
+(für, für, APPR): 1, 0
+(Angst, Angst, NN): 0, 1
+(Unvorsichtigkeit, Unvorsichtigkeit, NN): 0, 1
+
+3.Akt, 3.Szene, 15.Replik, Drama-Nummer: 313, ID:166
+positiveGpc: 4
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+(nur, nur, ADV): 0, 1
+(mehr, mehr, ADV): 1, 0
+(sehen, sehen, VVINF): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(Freude, Freude, NN): 1, 0
+(Freude, Freude, NN): 1, 0
+(Betrübnis, Betrübnis, NN): 0, 1
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 1148, ID:167
+positiveGpc: 2
+negativeGpc: 8
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(nichts, nichts, PIS): 0, 1
+(nichts, nichts, PIAT): 0, 1
+(klein, klein, ADJD): 0, 1
+(keinen, keine, PIAT): 0, 1
+(halt, halt, ADV): 0, 1
+(wohl, wohl, ADV): 1, 0
+(was, was, PRELS): 0, 1
+
+4.Akt, 7.Szene, 39.Replik, Drama-Nummer: 1008, ID:168
+positiveGpc: 5
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Wohl, wohl, ADV): 1, 0
+(was, was, PRELS): 0, 1
+(macht, machen, VVFIN): 1, 0
+(macht, machen, VVFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(nur, nur, ADV): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(band, binden, VVFIN): 1, 0
+(der, die, ART): 0, 1
+(Verlieren, Verlieren, NN): 0, 1
+(Vorsicht, Vorsicht, NN): 0, 1
+
+5.Akt, 6.Szene, 52.Replik, Drama-Nummer: 1213, ID:169
+positiveGpc: 3
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(wohl, wohl, ADV): 1, 0
+(Wunder, wund, ADJA): 1, 0
+(erbarmen, erbarmen, VVINF): 0, 1
+(Was, was, PWS): 0, 1
+(für, für, APPR): 1, 0
+(Anspruch, Anspruch, NN): 0, 1
+
+5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
+positiveGpc: 1
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(allein, allein, ADV): 0, 1
+(aus, aus, APPR): 0, 1
+(dem, die, ART): 0, 1
+(sagen, sagen, VVINF): 0, 1
+(gelehrt, lehren, VVPP): 1, 0
+
+3.Akt, 7.Szene, 22.Replik, Drama-Nummer: 693, ID:171
+positiveGpc: 11
+negativeGpc: 17
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Der, die, ART): 0, 1
+(Nicht, nicht, PTKNEG): 0, 1
+(Rätsel, Rätsel, NN): 0, 1
+(lösen, lösen, VVINF): 0, 1
+(der, die, ART): 0, 1
+(halt, halt, ADV): 0, 1
+(ja, ja, ADV): 1, 0
+(der, die, ART): 0, 1
+(beliebt, beliebt, ADJD): 1, 0
+(angenehm, angenehm, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(lieben, lieben, VVFIN): 1, 0
+(Macht, machen, VVFIN): 1, 0
+(wirken, wirken, VVFIN): 1, 0
+(nur, nur, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nur, nur, ADV): 0, 1
+(alle, alle, PIAT): 1, 0
+(alle, alle, PIAT): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(echt, echt, ADJD): 1, 0
+(Der, die, ART): 0, 1
+(verloren, verloren, PTKVZ): 0, 1
+(Verlust, Verlust, NN): 0, 1
+(bergen, bergen, VVINF): 1, 0
+(ließ, lassen, VVFIN): 0, 1
+(der, die, ART): 0, 1
+(für, für, APPR): 1, 0
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 580, ID:172
+positiveGpc: 1
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(Galle, Galle, NN): 0, 1
+(übel, übel, ADJD): 0, 1
+(rächen, rächen, VVINF): 0, 1
+(nur, nur, ADV): 0, 1
+(besser, gut, ADJD): 1, 0
+
+1.Akt, 2.Szene, 15.Replik, Drama-Nummer: 72, ID:173
+positiveGpc: 5
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(für, für, APPR): 1, 0
+(eben, eben, ADV): 1, 0
+(War, sein, VAFIN): 0, 1
+(kein, keine, PIAT): 0, 1
+(nur, nur, ADV): 0, 1
+(kein, keine, PIAT): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+(keiner, keine, PIS): 0, 1
+(frei, frei, ADJD): 1, 0
+(freiwillig, freiwillig, ADJD): 1, 0
+
+3.Akt, 5.Szene, 20.Replik, Drama-Nummer: 665, ID:174
+positiveGpc: 0
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Zweifel, Zweifel, NN): 0, 1
+(Was, was, PWS): 0, 1
+(dem, die, ART): 0, 1
+(Der, die, PRELS): 0, 1
+
+4.Akt, 7.Szene, 31.Replik, Drama-Nummer: 1000, ID:175
+positiveGpc: 3
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: -8
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(sein, sein, VAINF): 0, 1
+(gegen, gegen, APPR): 0, 1
+(Erheben, Erheben, NN): 1, 0
+(Nur, nur, ADV): 0, 1
+(nie, nie, ADV): 0, 1
+(Eitelkeit, Eitelkeit, NN): 0, 1
+(Allein, allein, ADV): 0, 1
+(Der, die, ART): 0, 1
+(Einfalt, Einfalt, NN): 1, 0
+(Allein, allein, PTKVZ): 0, 1
+(allein, allein, ADV): 0, 1
+(was, was, PRELS): 0, 1
+(der, die, ART): 0, 1
+(Für, für, APPR): 1, 0
+
+2.Akt, 5.Szene, 37.Replik, Drama-Nummer: 487, ID:176
+positiveGpc: 1
+negativeGpc: 1
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nur, nur, ADV): 0, 1
+(erst, erst, ADV): 1, 0
+
+1.Akt, 4.Szene, 10.Replik, Drama-Nummer: 179, ID:177
+positiveGpc: 2
+negativeGpc: 7
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(eile, eilen, VVFIN): 0, 1
+(der, die, ART): 0, 1
+(nur, nur, ADV): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(betreten, betreten, VVINF): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(ungern, ungern, ADV): 0, 1
+(der, die, ART): 0, 1
+(herzlich, herzlich, ADJD): 1, 0
+
+3.Akt, 3.Szene, 6.Replik, Drama-Nummer: 609, ID:178
+positiveGpc: 0
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Unruh, Unruh, NN): 0, 1
+(nur, nur, ADV): 0, 1
+(Nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+1.Akt, 5.Szene, 65.Replik, Drama-Nummer: 246, ID:179
+positiveGpc: 6
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: -5
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(gewiß, gewiss, ADJD): 1, 0
+(nur, nur, ADV): 0, 1
+(gebildet, bilden, VVPP): 1, 0
+(dem, die, PDS): 0, 1
+(nichts, nichts, PIS): 0, 1
+(Was, was, PWS): 0, 1
+(dem, die, PDS): 0, 1
+(unterdrücken, unterdrücken, VVINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+(Erregt, erregen, VVFIN): 1, 0
+(Galle, Galle, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+(geht, gehen, VVFIN): 1, 0
+
+5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
+positiveGpc: 0
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Aus, aus, APPR): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Was, was, PWS): 0, 1
+(war, sein, VAFIN): 0, 1
+(war, sein, VAFIN): 0, 1
+
+4.Akt, 7.Szene, 40.Replik, Drama-Nummer: 1009, ID:181
+positiveGpc: 3
+negativeGpc: 0
+neutralGpc: 0
+polarityGpc: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Eben, eben, ADV): 1, 0
+(bedacht, bedachen, VVFIN): 1, 0
+(viel, viele, PIS): 1, 0
+
+4.Akt, 4.Szene, 45.Replik, Drama-Nummer: 922, ID:182
+positiveGpc: 0
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Der, die, ART): 0, 1
+(hinter, hinter, APPR): 0, 1
+(bringen, bringen, VVINF): 0, 1
+
+4.Akt, 5.Szene, 6.Replik, Drama-Nummer: 937, ID:183
+positiveGpc: 2
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nichts, nichts, PIS): 0, 1
+(war, sein, VAFIN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(gern, gern, ADV): 1, 0
+(Genug, genug, ADV): 1, 0
+(weichen, weich, ADJA): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+
+3.Akt, 5.Szene, 15.Replik, Drama-Nummer: 660, ID:184
+positiveGpc: 6
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(der, die, ART): 0, 1
+(Bescheidenheit, Bescheidenheit, NN): 1, 0
+(genug, genug, ADV): 1, 0
+(nur, nur, ADV): 0, 1
+(Vernunft, Vernunft, NN): 1, 0
+(kommen, kommen, VVINF): 1, 0
+(Aufrichtig, aufrichtig, ADJD): 1, 0
+(aufrichtig, aufrichtig, ADJD): 1, 0
+
+3.Akt, 10.Szene, 53.Replik, Drama-Nummer: 809, ID:185
+positiveGpc: 2
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Nicht, nicht, PTKNEG): 0, 1
+(fähig, fähig, ADJD): 1, 0
+(nur, nur, ADV): 0, 1
+(dem, die, ART): 0, 1
+(finden, finden, VVINF): 1, 0
+
+3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Stacheln, Stachel, NN): 0, 1
+(Herz, Herz, NN): 1, 0
+(sehr, sehr, ADV): 1, 0
+
+4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
+positiveGpc: 7
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Was, was, PWS): 0, 1
+(erst, erst, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Dank, Dank, NN): 1, 0
+(Dank, dank, APPR): 1, 0
+(für, für, APPR): 1, 0
+(Beteuern, Beteuern, NN): 1, 0
+(Stand, Stand, NN): 1, 0
+(Charakter, Charakter, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+
+5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
+positiveGpc: 2
+negativeGpc: 2
+neutralGpc: 0
+polarityGpc: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(Nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(lassen, lassen, VVINF): 1, 0
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
+positiveGpc: 16
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Unglaublich, unglaublich, ADJD): 1, 0
+(wohl, wohl, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(wies, weisen, VVFIN): 0, 1
+(wohl, wohl, ADV): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(Der, die, PRELS): 0, 1
+(sein, sein, PPOSAT): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(besonders, besonders, ADV): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(Pflegen, pflegen, VVFIN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(alter, alt, ADJA): 0, 1
+(Eindruck, Eindruck, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Unglaubliche, Unglaubliche, NN): 1, 0
+(weise, weisen, VVFIN): 1, 0
+(für, für, APPR): 1, 0
+(Kein, keine, PIAT): 0, 1
+(Wunder, Wunder, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(nur, nur, ADV): 0, 1
+(verdienen, verdienen, VVINF): 1, 0
+(sagen, sagen, VVINF): 0, 1
+
+1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
+positiveGpc: 4
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(dem, die, ART): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(eben, eben, ADV): 1, 0
+(sehr, sehr, ADV): 1, 0
+(Der, die, ART): 0, 1
+(Feste, Fest, NN): 1, 0
+(der, die, PRELS): 0, 1
+(Feste, Fest, NN): 1, 0
+(nur, nur, ADV): 0, 1
+(kaum, kaum, ADV): 0, 1
+
+2.Akt, 5.Szene, 34.Replik, Drama-Nummer: 484, ID:191
+positiveGpc: 1
+negativeGpc: 0
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Ja, ja, PTKANT): 1, 0
+
+2.Akt, 1.Szene, 21.Replik, Drama-Nummer: 303, ID:192
+positiveGpc: 2
+negativeGpc: 4
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(wohl, wohl, ADV): 1, 0
+(sein, sein, VAINF): 0, 1
+(Schuld, Schuld, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(besser, gut, ADJD): 1, 0
+(spielen, spielen, VVINF): 0, 1
+
+5.Akt, 7.Szene, 7.Replik, Drama-Nummer: 1223, ID:193
+positiveGpc: 3
+negativeGpc: 5
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Gerechtigkeit, Gerechtigkeit, NN): 1, 0
+(Güte, Güte, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(bewundern, bewundern, VVINF): 1, 0
+
+2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
+positiveGpc: 4
+negativeGpc: 6
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Der, die, ART): 0, 1
+(Ruf, Ruf, NN): 1, 0
+(viel, viel, ADV): 1, 0
+(gut, gut, ADJD): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(lieber, lieb, ADJD): 1, 0
+(dem, die, ART): 0, 1
+
+1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(nicht, nicht, PTKNEG): 0, 1
+(was, was, PRELS): 0, 1
+(alles, alle, PIS): 1, 0
+(was, was, PRELS): 0, 1
+
+1.Akt, 5.Szene, 61.Replik, Drama-Nummer: 101, ID:196
+positiveGpc: 1
+negativeGpc: 7
+neutralGpc: 0
+polarityGpc: -6
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Kein, keine, PIAT): 0, 1
+(Lob, Lob, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Schande, Schande, NN): 0, 1
+(Schande, Schande, NN): 0, 1
+(Spott, Spott, NN): 0, 1
+(der, die, ART): 0, 1
+(ungern, ungern, ADV): 0, 1
+
+1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
+positiveGpc: 4
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(mehr, mehr, ADV): 1, 0
+(der, die, ART): 0, 1
+(gut, gut, ADJD): 1, 0
+(Der, die, ART): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Helm, Helm, NN): 1, 0
+(gespalten, spalten, VVPP): 0, 1
+
+1.Akt, 8.Szene, 45.Replik, Drama-Nummer: 180, ID:198
+positiveGpc: 1
+negativeGpc: 3
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(Verräter, Verräter, NN): 0, 1
+(Feind, Feind, NN): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(halten, halten, VVINF): 1, 0
+
+1.Akt, 5.Szene, 24.Replik, Drama-Nummer: 64, ID:199
+positiveGpc: 8
+negativeGpc: 10
+neutralGpc: 0
+polarityGpc: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(dem, die, ART): 0, 1
+(Himmel, Himmel, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(Held, Held, NN): 1, 0
+(sagen, sagen, VVINF): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(der, die, ART): 0, 1
+(Herzen, Herz, NN): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(Tapferkeit, Tapferkeit, NN): 1, 0
+(für, für, APPR): 1, 0
+(Wildheit, Wildheit, NN): 0, 1
+(halten, halten, VVINF): 1, 0
+(der, die, PRELS): 0, 1
+(nur, nur, ADV): 0, 1
+(wenig, wenig, ADV): 0, 1
+(ja, ja, ADV): 1, 0
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 94, ID:200
+positiveGpc: 13
+negativeGpc: 11
+neutralGpc: 0
+polarityGpc: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveGpc, _negativeGpc
+(hast, haben, VAFIN): 0, 1
+(Ja, ja, ADV): 1, 0
+(alles, alle, PIS): 1, 0
+(sagen, sagen, VVINF): 0, 1
+(erst, erst, ADV): 1, 0
+(erst, erst, ADV): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(brauch, brauchen, VVIMP): 1, 0
+(nicht, nicht, PTKNEG): 0, 1
+(nicht, nicht, PTKNEG): 0, 1
+(Genug, genug, ADV): 1, 0
+(alles, alle, PIS): 1, 0
+(was, was, PWS): 0, 1
+(nichts, nichts, PIS): 0, 1
+(nichts, nichts, PIS): 0, 1
+(für, für, APPR): 1, 0
+(Feuer, Feuer, NN): 0, 1
+(für, für, APPR): 1, 0
+(nur, nur, ADV): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(kleiner, klein, ADJA): 0, 1
+(Freund, Freund, NE): 1, 0
+(alles, alle, PIS): 1, 0
+(für, für, APPR): 1, 0

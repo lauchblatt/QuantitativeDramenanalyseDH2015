@@ -1,0 +1,4742 @@
+dtaExtended_treetagger_textLemma_noStopwordList_caseInSensitive
+
+Main Metrics:
+accuracy: 0.34
+Recall Positive: 0.901639344262
+Precision Positive: 0.303867403315
+F-Measure Positive: 0.454545454545
+Recall Negative: 0.0935251798561
+Precision Negative: 0.684210526316
+F-Measure Negative: 0.164556962025
+Recall Average: 0.497582262059
+Precision Average: 0.494038964815
+F-Measure Average: 0.309551208285
+
+Actual Class	Predicted Negative	Predicted Positive
+Negatives	13	126	139
+Positives	6	55	61
+Sum	19	181	200
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 93, ID:1
+emotion: 10.894117646
+arousel: 44.600459482
+positiveBawl: 15.952941175
+negativeBawl: 5.058823529
+positiveBawlDichotom: 11
+negativeBawlDichotom: 6
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Scham, Scham, NN): 0, 1
+(gesteh, gesteh, VVFIN): 0, 1
+(schwach, schwach, ADJD): 0, 1
+(befinde, befinden, VVFIN): 1, 0
+(Gedanken, Gedanke, NN): 1, 0
+(wahr, wahr, ADJD): 1, 0
+(Erfüllung, Erfüllung, NN): 1, 0
+(zittere, zittern, VVFIN): 0, 1
+(vorstelle, vorstellen, VVFIN): 1, 0
+(Versuch, Versuch, NN): 1, 0
+(Tugend, Tugend, NN): 1, 0
+(Freund, Freund, NN): 1, 0
+(verbunden, verbinden, VVPP): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(Pflicht, Pflicht, NN): 0, 1
+(Freundes, Freund, NN): 1, 0
+(Pflicht, Pflicht, NN): 0, 1
+
+1.Akt, 10.Szene, 21.Replik, Drama-Nummer: 177, ID:2
+emotion: 15.735294116
+arousel: 56.637426898
+positiveBawl: 24.36470588
+negativeBawl: 8.629411764
+positiveBawlDichotom: 16
+negativeBawlDichotom: 7
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(gedient, dienen, VVPP): 0, 1
+(alles, alle, PIS): 1, 0
+(Bleiben, bleiben, VVFIN): 1, 0
+(Freund, Freund, NN): 1, 0
+(Mensch, Mensch, NN): 1, 0
+(Freund, Freund, NN): 1, 0
+(schlage, schlagen, VVFIN): 0, 1
+(alles, alle, PIS): 1, 0
+(alles, alle, PIS): 1, 0
+(vergessen, vergessen, VVINF): 0, 1
+(trennen, trennen, VVINF): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(Freund, Freund, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(man, man, PIS): 1, 0
+(Fehlers, Fehler, NN): 0, 1
+(wegen, wegen, APPO): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+(man, man, PIS): 1, 0
+(Lebens, Leben, NN): 1, 0
+(suchen, suchen, VVINF): 0, 1
+(erhalten, erhalten, VVPP): 1, 0
+
+1.Akt, 4.Szene, 21.Replik, Drama-Nummer: 79, ID:3
+emotion: 32.664705883
+arousel: 74.132753452
+positiveBawl: 36.382352942
+negativeBawl: 3.717647059
+positiveBawlDichotom: 27
+negativeBawlDichotom: 3
+polarityBawlDichotom: 24
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sehen, sehen, VVFIN): 1, 0
+(geht, gehen, VVFIN): 1, 0
+(Versuchen, versuchen, VVFIN): 1, 0
+(bekommen, bekommen, VVINF): 1, 0
+(treten, treten, VVFIN): 0, 1
+(allem, alle, PIS): 1, 0
+(können, können, VMFIN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(machen, machen, VVINF): 1, 0
+(können, können, VMINF): 1, 0
+(sagten, sagen, VVFIN): 1, 0
+(Liebster, lieb, ADJA): 1, 0
+(verbunden, verbunden, ADJD): 1, 0
+(mehr, mehr, ADV): 1, 0
+(verbunden, verbinden, VVPP): 1, 0
+(Geldern, Geld, NN): 1, 0
+(treffen, treffen, VVINF): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Teil, Teil, NN): 1, 0
+(Vermögens, Vermögen, NN): 1, 0
+(danken, danken, VVINF): 1, 0
+(Sollten, sollen, VMFIN): 0, 1
+(mehr, mehr, ADV): 1, 0
+(gewuchert, wuchern, VVPP): 0, 1
+(Händen, Hand, NN): 1, 0
+(sehen, sehen, VVINF): 1, 0
+(Glück, Glück, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Vermögen, Vermögen, NN): 1, 0
+
+1.Akt, 1.Szene, 5.Replik, Drama-Nummer: 5, ID:4
+emotion: 5.51764706
+arousel: 45.69611529
+positiveBawl: 11.617647059
+negativeBawl: 6.099999999
+positiveBawlDichotom: 10
+negativeBawlDichotom: 8
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(geht, gehen, VVFIN): 1, 0
+(munter, munter, ADJD): 1, 0
+(Arbeit, Arbeit, NN): 1, 0
+(wer, wer, PWS): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(man, man, PIS): 1, 0
+(dienen, dienen, VVINF): 0, 1
+(muß, müssen, VMFIN): 0, 1
+(man, man, PIS): 1, 0
+(dient, dienen, VVFIN): 0, 1
+(man, man, PIS): 1, 0
+(Dienen, Dienen, NN): 0, 1
+(kann, können, VMFIN): 1, 0
+(Scherz, Scherz, NN): 1, 0
+(Seite, Seite, NN): 1, 0
+(stellt, stellen, VVFIN): 0, 1
+(Herr, Herr, NN): 0, 1
+(Herr, Herr, NN): 0, 1
+
+1.Akt, 4.Szene, 19.Replik, Drama-Nummer: 77, ID:5
+emotion: 11.315882354
+arousel: 41.918613202
+positiveBawl: 14.992352942
+negativeBawl: 3.676470588
+positiveBawlDichotom: 11
+negativeBawlDichotom: 5
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Freund, Freund, NN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(Herr, Herr, NN): 0, 1
+(bestehen, bestehen, PTKVZ): 1, 0
+(gesetzt, setzen, VVPP): 1, 0
+(schadet, schaden, VVFIN): 0, 1
+(Wissen, wissen, VVFIN): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(mal, mal, ADV): 1, 0
+(Lust, Lust, NN): 1, 0
+(versuchten, versuchen, VVFIN): 1, 0
+(Herrn, Herr, NN): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(Schiff, Schiff, NN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+
+1.Akt, 10.Szene, 4.Replik, Drama-Nummer: 160, ID:6
+emotion: 7.614705882
+arousel: 10.922175537
+positiveBawl: 7.614705882
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Himmel, Himmel, NN): 1, 0
+(gewollt, gewollt, ADJD): 1, 0
+(Geschenk, Geschenk, NN): 1, 0
+(Herzens, Herz, NN): 1, 0
+
+3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
+emotion: 3.479411765
+arousel: 8.050125313
+positiveBawl: 3.479411765
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Bitte, Bitte, NN): 1, 0
+(nähere, nah, ADJA): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+
+1.Akt, 5.Szene, 15.Replik, Drama-Nummer: 122, ID:8
+emotion: 1.882352941
+arousel: 15.664160402
+positiveBawl: 3.882352941
+negativeBawl: 2.0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sollte, sollen, VMFIN): 0, 1
+(sagen, sagen, VVINF): 1, 0
+(sollte, sollen, VMFIN): 0, 1
+(rennen, rennen, VVINF): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+(sehen, sehen, VVINF): 1, 0
+
+3.Akt, 2.Szene, 10.Replik, Drama-Nummer: 365, ID:9
+emotion: 3.905882353
+arousel: 20.632832081
+positiveBawl: 5.7
+negativeBawl: 1.794117647
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(lange, lange, ADV): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(Schmerzen, Schmerz, NN): 0, 1
+(erwarten, erwarten, VVINF): 1, 0
+(Erlauben, erlauben, VVFIN): 1, 0
+(bitten, bitten, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(begleiten, begleiten, VVINF): 1, 0
+
+4.Akt, 3.Szene, 22.Replik, Drama-Nummer: 542, ID:10
+emotion: 5.8
+arousel: 36.890142022
+positiveBawl: 9.576470588
+negativeBawl: 3.776470588
+positiveBawlDichotom: 8
+negativeBawlDichotom: 6
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Anfänge, Anfang, NN): 1, 0
+(Taten, Tat, NN): 0, 1
+(kann, können, VMFIN): 1, 0
+(man, man, PIS): 1, 0
+(vermuten, vermuten, VVINF): 0, 1
+(Zunge, Zunge, NN): 1, 0
+(Welt, Welt, NN): 1, 0
+(sollte, sollen, VMFIN): 0, 1
+(Pflicht, Pflicht, NN): 0, 1
+(Tugend, Tugend, NN): 1, 0
+(Religion, Religion, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(Spotte, Spotte, NN): 0, 1
+(ausgesetzt, aussetzen, VVPP): 0, 1
+
+4.Akt, 7.Szene, 11.Replik, Drama-Nummer: 590, ID:11
+emotion: 7.788235294
+arousel: 22.857769422
+positiveBawl: 10.170588235
+negativeBawl: 2.382352941
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(könnte, können, VMFIN): 1, 0
+(Glück, Glück, NN): 1, 0
+(betaure, betaure, VVFIN): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(alle, alle, PIAT): 1, 0
+(Macht, Macht, NN): 1, 0
+(kann, können, VMFIN): 1, 0
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 186, ID:12
+emotion: 3.582352942
+arousel: 17.598997494
+positiveBawl: 5.964705883
+negativeBawl: 2.382352941
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(seh, seh, FM): 1, 0
+(man, man, PIS): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(machen, machen, VVINF): 1, 0
+(Sprache, Sprache, NN): 1, 0
+(sollst, sollen, VMFIN): 0, 1
+(nennst, nennen, VVFIN): 1, 0
+
+5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
+emotion: 56.481176468
+arousel: 169.476815445
+positiveBawl: 71.269411762
+negativeBawl: 14.788235294
+positiveBawlDichotom: 56
+negativeBawlDichotom: 10
+polarityBawlDichotom: 46
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(glauben, glauben, VVINF): 1, 0
+(glauben, glauben, VVINF): 1, 0
+(Mühe, Mühe, NN): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(verwandeln, verwandeln, VVINF): 1, 0
+(Zwang, Zwang, NN): 0, 1
+(wollte, wollen, VMFIN): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(liebte, lieben, VVFIN): 1, 0
+(Herz, Herz, NN): 1, 0
+(nimmt, nehmen, VVFIN): 1, 0
+(Gründe, Grund, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Verstande, Verstand, NN): 1, 0
+(behaupten, behaupten, VVINF): 0, 1
+(Man, man, PIS): 1, 0
+(kann, können, VMFIN): 1, 0
+(zwingen, zwingen, VVINF): 0, 1
+(hilft, helfen, VVFIN): 1, 0
+(machen, machen, VVINF): 1, 0
+(man, man, PIS): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(man, man, PIS): 1, 0
+(finden, finden, VVINF): 1, 0
+(kann, können, VMFIN): 1, 0
+(wachsende, wachsend, ADJA): 1, 0
+(Neigung, Neigung, NN): 1, 0
+(Person, Person, NN): 1, 0
+(länger, lang, ADJD): 1, 0
+(sahe, sahe, VVFIN): 1, 0
+(ging, gehen, VVFIN): 1, 0
+(Mann, Mann, NN): 1, 0
+(Freund, Freund, NN): 1, 0
+(Glück, Glück, NN): 1, 0
+(Augen, Auge, NN): 1, 0
+(Blicke, Blick, NN): 1, 0
+(betrachtet, betrachten, VVFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(Glas, Glas, NN): 1, 0
+(Meinungen, Meinung, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(Sinne, Sinn, NN): 1, 0
+(Wahn, Wahn, NN): 0, 1
+(aufgeben, aufgeben, VVINF): 0, 1
+(fand, finden, VVFIN): 1, 0
+(konnte, können, VMFIN): 1, 0
+(Mittel, Mittel, NN): 1, 0
+(sollten, sollen, VMFIN): 0, 1
+(kam, kommen, VVFIN): 1, 0
+(Absicht, Absicht, NN): 1, 0
+(allein, allein, ADV): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(weiteres, weit, ADJA): 1, 0
+(Wort, Wort, NN): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+(Person, Person, NN): 1, 0
+(wegen, wegen, APPO): 1, 0
+(gezwungen, zwingen, VVPP): 0, 1
+(Grund, Grund, NN): 1, 0
+(Seelen, Seele, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(wünscht, wünschen, VVFIN): 1, 0
+(Mehr, mehr, ADV): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+
+1.Akt, 5.Szene, 40.Replik, Drama-Nummer: 147, ID:14
+emotion: 4.74117647
+arousel: 33.698756695
+positiveBawl: 9.04117647
+negativeBawl: 4.3
+positiveBawlDichotom: 8
+negativeBawlDichotom: 5
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(möchte, mögen, VMFIN): 1, 0
+(alle, alle, PIS): 1, 0
+(Streiche, Streich, NN): 1, 0
+(gedenke, gedenken, VVFIN): 1, 0
+(Schicksal, Schicksal, NN): 0, 1
+(spielen, spielen, VVFIN): 1, 0
+(aufhört, aufhören, VVFIN): 0, 1
+(wen, wer, PWS): 0, 1
+(murre, murren, VVFIN): 0, 1
+(taubes, taub, ADJA): 0, 1
+(Zufall, Zufall, NN): 1, 0
+(Absicht, Absicht, NN): 1, 0
+(Leben, Leben, NN): 1, 0
+
+2.Akt, 3.Szene, 21.Replik, Drama-Nummer: 246, ID:15
+emotion: 0.988235295
+arousel: 13.58437761
+positiveBawl: 3.370588236
+negativeBawl: 2.382352941
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(machten, machen, VVFIN): 1, 0
+(gemacht, machen, VVPP): 1, 0
+(müßte, müssen, VMFIN): 0, 1
+(Verstande, Verstand, NN): 1, 0
+(sollte, sollen, VMFIN): 0, 1
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 161, ID:16
+emotion: 6.285294116
+arousel: 28.49231412
+positiveBawl: 7.549999998
+negativeBawl: 1.264705882
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Schweig, schweigen, VVIMP): 0, 1
+(mag, mögen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Heirat, Heirat, NN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Zinsen, Zins, NN): 0, 1
+(Zinsen, Zins, NN): 0, 1
+(treffe, treffen, VVFIN): 1, 0
+
+5.Akt, 1.Szene, 40.Replik, Drama-Nummer: 699, ID:17
+emotion: 0.741176471
+arousel: 11.790142021
+positiveBawl: 2.5
+negativeBawl: 1.758823529
+positiveBawlDichotom: 2
+negativeBawlDichotom: 3
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(arg, arg, ADJD): 0, 1
+(Länger, lang, ADJD): 1, 0
+(kann, können, VMFIN): 1, 0
+(schweigen, schweigen, VVINF): 0, 1
+(Herr, Herr, NN): 0, 1
+
+2.Akt, 3.Szene, 23.Replik, Drama-Nummer: 248, ID:18
+emotion: 9.964349376
+arousel: 62.4588137
+positiveBawl: 20.20258467
+negativeBawl: 10.238235294
+positiveBawlDichotom: 16
+negativeBawlDichotom: 7
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Verstand, Verstand, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(schlecht, schlecht, ADJD): 0, 1
+(steht, stehen, VVFIN): 1, 0
+(Weise, Weise, NN): 0, 1
+(richten, richten, VVINF): 0, 1
+(kann, können, VMFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(leiden, leiden, VVINF): 0, 1
+(geschätzt, schätzen, VVPP): 1, 0
+(kann, können, VMFIN): 1, 0
+(leiden, leiden, VVINF): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(Absicht, Absicht, NN): 1, 0
+(Männern, Mann, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(kann, können, VMFIN): 1, 0
+(man, man, PIS): 1, 0
+(sehen, sehen, VVINF): 1, 0
+(Irrtümer, Irrtum, NN): 0, 1
+(Leute, Leute, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Herr, Herr, NN): 0, 1
+
+4.Akt, 9.Szene, 3.Replik, Drama-Nummer: 644, ID:19
+emotion: 6.764705882
+arousel: 20.772347534
+positiveBawl: 7.864705882
+negativeBawl: 1.1
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(frei, frei, ADJD): 0, 1
+(Geldes, Geld, NN): 1, 0
+(aufnehmen, aufnehmen, VVINF): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+(Anfangs, Anfang, NN): 1, 0
+(gefunden, finden, VVPP): 1, 0
+(komme, kommen, VVFIN): 1, 0
+(alles, alle, PIS): 1, 0
+
+3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
+emotion: -1.870588235
+arousel: 16.685463661
+positiveBawl: 1.5
+negativeBawl: 3.370588235
+positiveBawlDichotom: 2
+negativeBawlDichotom: 4
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(muß, müssen, VMFIN): 0, 1
+(hetzen, hetzen, VVINF): 0, 1
+(Herr, Herr, NN): 0, 1
+(bekannt, bekannt, ADJD): 1, 0
+(Herr, Herr, NN): 0, 1
+(Augen, Auge, NN): 1, 0
+
+1.Akt, 1.Szene, 4.Replik, Drama-Nummer: 4, ID:21
+emotion: 4.497058824
+arousel: 8.701754386
+positiveBawl: 4.497058824
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Alle, alle, PIAT): 1, 0
+(Fragen, Frage, NN): 1, 0
+(wissen, wissen, VVFIN): 1, 0
+(kennen, kennen, VVFIN): 1, 0
+
+4.Akt, 1.Szene, 23.Replik, Drama-Nummer: 504, ID:22
+emotion: 1.205882354
+arousel: 12.31829574
+positiveBawl: 3.264705883
+negativeBawl: 2.058823529
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(weiß, wissen, VVFIN): 1, 0
+(weiter, weiter, ADV): 1, 0
+(auszusetzen, aussetzen, VVIZU): 0, 1
+(machen, machen, VVINF): 1, 0
+(mußte, müssen, VMFIN): 0, 1
+
+2.Akt, 1.Szene, 17.Replik, Drama-Nummer: 179, ID:23
+emotion: 4.2
+arousel: 6.982873851
+positiveBawl: 4.2
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(könnten, können, VMFIN): 1, 0
+(Schwestern, Schwester, NN): 1, 0
+(man, man, PIS): 1, 0
+
+3.Akt, 5.Szene, 32.Replik, Drama-Nummer: 421, ID:24
+emotion: 4.402941176
+arousel: 27.642021722
+positiveBawl: 7.120588235
+negativeBawl: 2.717647059
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(meinen, meinen, VVFIN): 1, 0
+(Miene, Miene, NN): 1, 0
+(solle, sollen, VMFIN): 0, 1
+(Nein, nein, PTKANT): 0, 1
+(will, wollen, VMFIN): 1, 0
+(ehrlichsten, ehrlich, ADJA): 1, 0
+(Gesichte, Gesicht, NN): 1, 0
+(versichert, versichern, VVPP): 1, 0
+(Mühe, Mühe, NN): 0, 1
+(umsonst, umsonst, ADV): 1, 0
+(Augen, Auge, NN): 1, 0
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 549, ID:25
+emotion: 3.276470588
+arousel: 36.207518797
+positiveBawl: 10.305882353
+negativeBawl: 7.029411765
+positiveBawlDichotom: 9
+negativeBawlDichotom: 4
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(will, wollen, VMFIN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(Allein, allein, ADV): 0, 1
+(Begierde, Begierde, NN): 1, 0
+(gefallen, gefallen, VVINF): 1, 0
+(beliebt, beliebt, ADJD): 1, 0
+(machen, machen, VVINF): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+(Wollen, wollen, VMFIN): 1, 0
+(grausam, grausam, ADJD): 0, 1
+(Verbrechen, Verbrechen, NN): 0, 1
+(danken, danken, VVINF): 1, 0
+(sollten, sollen, VMFIN): 0, 1
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:26
+emotion: 4.088235294
+arousel: 12.644110277
+positiveBawl: 5.470588235
+negativeBawl: 1.382352941
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(gesehen, sehen, VVPP): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Wissen, wissen, VVFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(fragen, fragen, VVINF): 1, 0
+
+3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
+emotion: 12.314242423
+arousel: 40.988913951
+positiveBawl: 16.296595364
+negativeBawl: 3.982352941
+positiveBawlDichotom: 14
+negativeBawlDichotom: 3
+polarityBawlDichotom: 11
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(ißt, essen, VVFIN): 1, 0
+(glaube, glauben, VVFIN): 1, 0
+(wer, wer, PWS): 0, 1
+(trinken, trinken, VVINF): 1, 0
+(könnte, können, VMFIN): 1, 0
+(alles, alle, PIAT): 1, 0
+(liegt, liegen, VVFIN): 1, 0
+(Teller, Teller, NN): 1, 0
+(Auge, Auge, NN): 1, 0
+(sieht, sehen, VVFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+(Worte, Wort, NN): 1, 0
+(müssen, müssen, VMFIN): 0, 1
+(sitzen, sitzen, VVINF): 1, 0
+(bleiben, bleiben, VVINF): 1, 0
+(man, man, PIS): 1, 0
+(Not, Not, NN): 0, 1
+
+2.Akt, 14.Szene, 9.Replik, Drama-Nummer: 574, ID:28
+emotion: 4.344117647
+arousel: 20.432957392
+positiveBawl: 8.244117647
+negativeBawl: 3.9
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(alle, alle, PIAT): 1, 0
+(spricht, sprechen, VVFIN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(Kriege, Krieg, NN): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(Mittage, Mittag, NN): 1, 0
+(Abend, Abend, NN): 1, 0
+(Uhr, Uhr, NN): 1, 0
+
+1.Akt, 4.Szene, 12.Replik, Drama-Nummer: 117, ID:29
+emotion: 3.117647058
+arousel: 10.192982456
+positiveBawl: 3.94117647
+negativeBawl: 0.823529412
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wollen, wollen, VMFIN): 1, 0
+(betrachten, betrachten, VVFIN): 1, 0
+(hängt, hängen, VVFIN): 0, 1
+(Wahrheit, Wahrheit, NN): 1, 0
+
+1.Akt, 6.Szene, 68.Replik, Drama-Nummer: 210, ID:30
+emotion: 3.329411764
+arousel: 21.801169592
+positiveBawl: 5.711764705
+negativeBawl: 2.382352941
+positiveBawlDichotom: 7
+negativeBawlDichotom: 2
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Bücher, Buch, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(weiter, weiter, ADV): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(vergehen, vergehen, VVINF): 0, 1
+(mehr, mehr, ADV): 1, 0
+(nehmen, nehmen, VVINF): 1, 0
+(genommen, nehmen, VVPP): 1, 0
+(meinest, meinen, VVFIN): 1, 0
+
+3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
+emotion: -0.961764706
+arousel: 8.622807017
+positiveBawl: 1.338235294
+negativeBawl: 2.3
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Sache, Sache, NN): 1, 0
+(glaubst, glauben, VVFIN): 1, 0
+(wann, wann, PWAV): 0, 1
+
+1.Akt, 1.Szene, 14.Replik, Drama-Nummer: 14, ID:32
+emotion: 14.185294117
+arousel: 51.564745194
+positiveBawl: 18.038235294
+negativeBawl: 3.852941177
+positiveBawlDichotom: 16
+negativeBawlDichotom: 4
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Lenk, lenken, VVIMP): 0, 1
+(sagen, sagen, VVFIN): 1, 0
+(Buch, Buch, NN): 1, 0
+(Stern, Stern, NN): 1, 0
+(verstehen, verstehen, VVFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+(Mensch, Mensch, NN): 1, 0
+(Wann, wann, PWAV): 0, 1
+(Fausts, Faust, NE): 0, 1
+(man, man, PIS): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(wies, weisen, VVFIN): 1, 0
+(Leuten, Leute, NN): 1, 0
+(geht, gehen, VVFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(lernen, lernen, VVINF): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+(Geist, Geist, NN): 1, 0
+(hexen, hexen, VVINF): 0, 1
+(lernen, lernen, VVINF): 1, 0
+
+3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
+emotion: 6.14117647
+arousel: 11.98128655
+positiveBawl: 6.14117647
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(gehen, gehen, VVINF): 1, 0
+(wandern, wandern, VVFIN): 1, 0
+(Paar, Paar, NN): 1, 0
+(magst, mögen, VMFIN): 1, 0
+(sehen, sehen, VVINF): 1, 0
+
+3.Akt, 15.Szene, 6.Replik, Drama-Nummer: 887, ID:34
+emotion: 8.305882353
+arousel: 12.347953217
+positiveBawl: 8.305882353
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(lieber, lieb, ADJD): 1, 0
+(können, können, VMFIN): 1, 0
+(man, man, PIS): 1, 0
+(man, man, PIS): 1, 0
+(wissen, wissen, VVINF): 1, 0
+
+3.Akt, 17.Szene, 3.Replik, Drama-Nummer: 1000, ID:35
+emotion: 3.247058824
+arousel: 12.527568921
+positiveBawl: 5.147058824
+negativeBawl: 1.9
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(länger, lang, ADJD): 1, 0
+(bleiben, bleiben, VVINF): 1, 0
+(Dummheit, Dummheit, NN): 0, 1
+(alle, alle, PIAT): 1, 0
+(alle, alle, PIAT): 1, 0
+(Geist, Geist, NN): 1, 0
+
+1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
+emotion: 4.176470588
+arousel: 8.979949875
+positiveBawl: 4.176470588
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(weiß, wissen, VVFIN): 1, 0
+(heiraten, heiraten, VVINF): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+
+3.Akt, 1.Szene, 33.Replik, Drama-Nummer: 623, ID:37
+emotion: 6.54117647
+arousel: 16.570175437
+positiveBawl: 8.84117647
+negativeBawl: 2.3
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wann, wann, PWAV): 0, 1
+(Geld, Geld, NN): 1, 0
+(Geld, Geld, NN): 1, 0
+(könnten, können, VMFIN): 1, 0
+(allerliebstes, allerlieb, ADJA): 1, 0
+(Paar, Paar, NN): 1, 0
+
+2.Akt, 11.Szene, 49.Replik, Drama-Nummer: 539, ID:38
+emotion: 5.69090909
+arousel: 27.827527151
+positiveBawl: 7.720320855
+negativeBawl: 2.029411765
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(möchte, mögen, VMFIN): 1, 0
+(platzen, platzen, VVINF): 0, 1
+(stärksten, stark, ADJA): 1, 0
+(Beweis, Beweis, NN): 1, 0
+(niemand, niemand, PIS): 0, 1
+(fangen, fangen, VVINF): 0, 1
+(junger, jung, ADJA): 1, 0
+(wegen, wegen, APPR): 1, 0
+(Einsicht, Einsicht, NN): 1, 0
+(wegen, wegen, APPR): 1, 0
+
+3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
+emotion: 1.5
+arousel: 8.070175439
+positiveBawl: 2.882352941
+negativeBawl: 1.382352941
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(kann, können, VMFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(sprechen, sprechen, VVINF): 1, 0
+
+2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
+emotion: 0.088235294
+arousel: 11.798245614
+positiveBawl: 2.488235294
+negativeBawl: 2.4
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(glaubt, glauben, VVFIN): 1, 0
+(Frau, Frau, NN): 1, 0
+(Tat, Tat, NN): 0, 1
+(schlimme, schlimm, ADJA): 0, 1
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 646, ID:41
+emotion: 2.158823528
+arousel: 17.976232248
+positiveBawl: 3.852941175
+negativeBawl: 1.694117647
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wahr, wahr, ADJD): 1, 0
+(Herr, Herr, NN): 0, 1
+(sticht, stechen, VVFIN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(finden, finden, VVINF): 1, 0
+(Gehen, gehen, VVFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+
+2.Akt, 12.Szene, 4.Replik, Drama-Nummer: 545, ID:42
+emotion: 14.355525848
+arousel: 74.189341001
+positiveBawl: 22.9614082
+negativeBawl: 8.605882352
+positiveBawlDichotom: 22
+negativeBawlDichotom: 8
+polarityBawlDichotom: 14
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(will, wollen, VMFIN): 1, 0
+(erwarten, erwarten, VVINF): 1, 0
+(Bücher, Buch, NN): 1, 0
+(Seite, Seite, NN): 1, 0
+(gelegt, legen, VVPP): 1, 0
+(setzen, setzen, VVINF): 1, 0
+(man, man, PIS): 1, 0
+(Kenntnis, Kenntnis, NN): 1, 0
+(Welt, Welt, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(müsse, müssen, VMFIN): 0, 1
+(Staate, Staat, NN): 0, 1
+(Dienste, Dienst, NN): 0, 1
+(leisten, leisten, VVINF): 1, 0
+(kann, können, VMFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(müssen, müssen, VMINF): 0, 1
+(müssen, müssen, VMINF): 0, 1
+(wert, wert, ADJD): 1, 0
+(geschätzt, schätzen, VVPP): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(man, man, PIS): 1, 0
+(geholfen, helfen, VVPP): 1, 0
+(Umsonst, umsonst, ADV): 1, 0
+(aller, alle, PIAT): 1, 0
+(umsonst, umsonst, ADV): 1, 0
+(Genies, Genie, NN): 1, 0
+(Geistern, Geist, NN): 1, 0
+(mußte, müssen, VMFIN): 0, 1
+(Larve, Larve, NN): 0, 1
+
+3.Akt, 14.Szene, 11.Replik, Drama-Nummer: 864, ID:43
+emotion: 2.976470589
+arousel: 24.075313282
+positiveBawl: 6.923529412
+negativeBawl: 3.947058823
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(machen, machen, VVFIN): 1, 0
+(Komm, kommen, VVIMP): 1, 0
+(müssen, müssen, VMFIN): 0, 1
+(allein, allein, ADV): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Stube, Stube, NN): 1, 0
+(gestoßen, stoßen, VVPP): 0, 1
+(Komm, kommen, VVIMP): 1, 0
+(ruft, rufen, VVFIN): 1, 0
+(Haus, Haus, NN): 1, 0
+
+3.Akt, 15.Szene, 69.Replik, Drama-Nummer: 950, ID:44
+emotion: 4.267647059
+arousel: 28.450710108
+positiveBawl: 7.267647059
+negativeBawl: 3.0
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(vorstellen, vorstellen, VVINF): 1, 0
+(sollte, sollen, VMFIN): 0, 1
+(schaffe, schaffen, VVFIN): 1, 0
+(Soll, sollen, VMFIN): 0, 1
+(Arbeit, Arbeit, NN): 1, 0
+(Händen, Hand, NN): 1, 0
+(sehen, sehen, VVINF): 1, 0
+(Soll, sollen, VMFIN): 0, 1
+(zugeben, zugeben, VVINF): 1, 0
+(Mach, machen, VVIMP): 1, 0
+(ergreifen, ergreifen, VVINF): 1, 0
+
+2.Akt, 1.Szene, 12.Replik, Drama-Nummer: 264, ID:45
+emotion: 1.770588236
+arousel: 38.580408742
+positiveBawl: 12.200000001
+negativeBawl: 10.429411765
+positiveBawlDichotom: 6
+negativeBawlDichotom: 6
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(liebt, lieben, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Verdacht, Verdacht, NN): 0, 1
+(fehlte, fehlen, VVFIN): 0, 1
+(Kummer, Kummer, NN): 0, 1
+(machen, machen, VVINF): 1, 0
+(Wann, wann, PWAV): 0, 1
+(wüßten, wissen, VVFIN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(taub, taub, ADJD): 0, 1
+(wann, wann, PWAV): 0, 1
+(wüßten, wissen, VVFIN): 1, 0
+
+3.Akt, 13.Szene, 9.Replik, Drama-Nummer: 846, ID:46
+emotion: 4.346470588
+arousel: 48.845394368
+positiveBawl: 12.117058823
+negativeBawl: 7.770588235
+positiveBawlDichotom: 14
+negativeBawlDichotom: 5
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Henker, Henker, NN): 0, 1
+(Siehst, sehen, VVFIN): 1, 0
+(Taube, Taube, NN): 1, 0
+(weg, weg, PTKVZ): 1, 0
+(Taube, Taube, NN): 1, 0
+(fangen, fangen, VVINF): 0, 1
+(wollen, wollen, VMFIN): 1, 0
+(Nase, Nase, NN): 1, 0
+(Weiche, Weiche, NN): 1, 0
+(verloren, verlieren, VVPP): 0, 1
+(aller, alle, PIAT): 1, 0
+(Profit, Profit, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(Teufel, Teufel, NN): 0, 1
+(Will, wollen, VMFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(Leute, Leute, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+
+3.Akt, 15.Szene, 90.Replik, Drama-Nummer: 971, ID:47
+emotion: 8.976470588
+arousel: 29.851294904
+positiveBawl: 10.652941176
+negativeBawl: 1.676470588
+positiveBawlDichotom: 10
+negativeBawlDichotom: 2
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Brief, Brief, NN): 1, 0
+(man, man, PIS): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(kömmt, kömmt, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(blieben, bleiben, VVFIN): 1, 0
+(Zeitung, Zeitung, NN): 1, 0
+(gefunden, finden, VVPP): 1, 0
+(Man, man, PIS): 1, 0
+(nennt, nennen, VVFIN): 1, 0
+(junges, jung, ADJA): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+
+1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
+emotion: 10.652941177
+arousel: 17.760651631
+positiveBawl: 10.652941177
+negativeBawl: 0
+positiveBawlDichotom: 7
+negativeBawlDichotom: 0
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(will, wollen, VMFIN): 1, 0
+(kenne, kennen, VVFIN): 1, 0
+(Sohn, Sohn, NN): 1, 0
+(allerliebstes, allerlieb, ADJA): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(kennst, kennen, VVFIN): 1, 0
+(Lust, Lust, NN): 1, 0
+
+1.Akt, 2.Szene, 5.Replik, Drama-Nummer: 50, ID:49
+emotion: 9.297058823
+arousel: 38.065629763
+positiveBawl: 15.279411764
+negativeBawl: 5.982352941
+positiveBawlDichotom: 10
+negativeBawlDichotom: 4
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(meinet, meinet, VVFIN): 1, 0
+(warne, warnen, VVFIN): 0, 1
+(Freund, Freund, NN): 1, 0
+(Jugend, Jugend, NN): 1, 0
+(still, still, ADJD): 1, 0
+(man, man, PIS): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Ärgernis, Ärgernis, NN): 0, 1
+(Mann, Mann, NN): 1, 0
+(man, man, PIS): 1, 0
+(sähe, sehen, VVFIN): 1, 0
+(tote, tot, ADJA): 0, 1
+(Bücher, Buch, NN): 1, 0
+(lebendiges, lebendig, ADJA): 1, 0
+
+3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
+emotion: 10.134117646
+arousel: 87.153634085
+positiveBawl: 22.12235294
+negativeBawl: 11.988235294
+positiveBawlDichotom: 25
+negativeBawlDichotom: 13
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Lauter, laut, ADJD): 0, 1
+(Streiche, Streich, NN): 1, 0
+(Gabel, Gabel, NN): 1, 0
+(Teller, Teller, NN): 1, 0
+(hängt, hängen, VVFIN): 0, 1
+(bewegt, bewegen, VVFIN): 1, 0
+(Maul, Maul, NN): 0, 1
+(Stuhle, Stuhl, NN): 1, 0
+(stößt, stoßen, VVFIN): 0, 1
+(liegen, liegen, PTKVZ): 1, 0
+(Wein, Wein, NN): 1, 0
+(laufen, laufen, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(fährt, fahren, VVFIN): 1, 0
+(spricht, sprechen, VVFIN): 1, 0
+(geplaudert, plaudern, VVPP): 1, 0
+(Buch, Buch, NN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(suchen, suchen, VVINF): 0, 1
+(Tische, Tisch, NN): 1, 0
+(Hand, Hand, NN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(liegen, liegen, VVINF): 1, 0
+(Hand, Hand, NN): 1, 0
+(rechte, rechen, VVFIN): 0, 1
+(Hand, Hand, NN): 1, 0
+(meint, meinen, VVFIN): 1, 0
+(Trete, treten, VVFIN): 0, 1
+(Hand, Hand, NN): 1, 0
+(trete, treten, VVFIN): 0, 1
+(trete, treten, VVFIN): 0, 1
+(trete, treten, VVFIN): 0, 1
+(Tritt, treten, VVFIN): 0, 1
+(alle, alle, PIAT): 1, 0
+(Seiten, Seite, NN): 1, 0
+(Tisches, Tisch, NN): 1, 0
+(Sage, sagen, VVFIN): 1, 0
+(Hand, Hand, NN): 1, 0
+
+1.Akt, 4.Szene, 5.Replik, Drama-Nummer: 110, ID:51
+emotion: -0.788235294
+arousel: 9.020885547
+positiveBawl: 1.205882353
+negativeBawl: 1.994117647
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(spricht, sprechen, VVFIN): 1, 0
+(albern, albern, ADJD): 0, 1
+(Schade, schade, ADJD): 0, 1
+
+1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
+emotion: 6.405882352
+arousel: 13.979949875
+positiveBawl: 6.405882352
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(ward, werd, VVFIN): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Frau, Frau, NN): 1, 0
+(heiraten, heiraten, VVINF): 1, 0
+
+3.Akt, 18.Szene, 3.Replik, Drama-Nummer: 1010, ID:53
+emotion: -2.299999999
+arousel: 22.225342769
+positiveBawl: 2.535294118
+negativeBawl: 4.835294117
+positiveBawlDichotom: 4
+negativeBawlDichotom: 4
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Drohungen, Drohung, NN): 0, 1
+(umsonst, umsonst, ADV): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(zeigen, zeigen, VVINF): 1, 0
+(Vaterland, Vaterland, NN): 0, 1
+(verlangen, verlangen, VVFIN): 1, 0
+(Frau, Frau, NN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+
+1.Akt, 6.Szene, 70.Replik, Drama-Nummer: 212, ID:54
+emotion: 9.747058824
+arousel: 23.819298246
+positiveBawl: 11.097058824
+negativeBawl: 1.35
+positiveBawlDichotom: 8
+negativeBawlDichotom: 1
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sehe, sehen, VVFIN): 1, 0
+(Hülfe, Hülfe, NN): 1, 0
+(Gauner, Gauner, NN): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(man, man, PIS): 1, 0
+(kömmt, kömmt, VVFIN): 1, 0
+(weiter, weiter, PTKVZ): 1, 0
+(ehrlichen, ehrlich, ADJA): 1, 0
+(Leuten, Leute, NN): 1, 0
+
+1.Akt, 3.Szene, 2.Replik, Drama-Nummer: 59, ID:55
+emotion: 4.594117648
+arousel: 18.908103592
+positiveBawl: 6.588235295
+negativeBawl: 1.994117647
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Kommen, kommen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(Sohn, Sohn, NN): 1, 0
+(Anfall, Anfall, NN): 0, 1
+(bekommen, bekommen, VVINF): 1, 0
+(Helfen, helfen, VVFIN): 1, 0
+
+1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
+emotion: 4.911764706
+arousel: 13.213032582
+positiveBawl: 5.911764706
+negativeBawl: 1.0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(soll, sollen, VMFIN): 0, 1
+(Man, man, PIS): 1, 0
+(erkennen, erkennen, VVINF): 1, 0
+(können, können, VMINF): 1, 0
+(Familie, Familie, NN): 1, 0
+
+2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
+emotion: 0.764705882
+arousel: 5.789473684
+positiveBawl: 1.676470588
+negativeBawl: 0.911764706
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(gewonnen, gewinnen, VVPP): 1, 0
+(Bedingung, Bedingung, NN): 0, 1
+
+1.Akt, 6.Szene, 14.Replik, Drama-Nummer: 148, ID:58
+emotion: 10.715294117
+arousel: 32.135948204
+positiveBawl: 13.127058823
+negativeBawl: 2.411764706
+positiveBawlDichotom: 10
+negativeBawlDichotom: 3
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Pferd, Pferd, NN): 1, 0
+(bekömmt, bekömmt, VVFIN): 1, 0
+(leichter, leicht, ADJD): 1, 0
+(aufzuhalten, aufhalten, VVIZU): 0, 1
+(sollst, sollen, VMFIN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(gesehen, sehen, VVPP): 1, 0
+(Bruder, Bruder, NN): 1, 0
+(Bruder, Bruder, NN): 1, 0
+(sollst, sollen, VMFIN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+(gelten, gelten, VVINF): 1, 0
+
+1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
+emotion: 7.464705882
+arousel: 32.117794486
+positiveBawl: 11.764705882
+negativeBawl: 4.3
+positiveBawlDichotom: 9
+negativeBawlDichotom: 3
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(kannst, können, VMFIN): 1, 0
+(Willst, wollen, VMFIN): 1, 0
+(liegt, liegen, VVFIN): 1, 0
+(schlechte, schlecht, ADJA): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(erfahren, erfahren, VVINF): 1, 0
+(Wort, Wort, NN): 1, 0
+(sprichst, sprechen, VVFIN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(erfahren, erfahren, VVPP): 1, 0
+(Lebe, leben, VVFIN): 1, 0
+(Bruder, Bruder, NN): 1, 0
+
+1.Akt, 6.Szene, 15.Replik, Drama-Nummer: 149, ID:60
+emotion: 7.952941177
+arousel: 15.620760234
+positiveBawl: 8.511764706
+negativeBawl: 0.558823529
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Herr, Herr, NN): 0, 1
+(Vater, Vater, NN): 1, 0
+(Wohltat, Wohltat, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(schweige, schweigen, VVFIN): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(Bruder, Bruder, NN): 1, 0
+
+3.Akt, 4.Szene, 14.Replik, Drama-Nummer: 390, ID:61
+emotion: 11.929411763
+arousel: 34.719548872
+positiveBawl: 14.617647057
+negativeBawl: 2.688235294
+positiveBawlDichotom: 10
+negativeBawlDichotom: 3
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(kann, können, VMFIN): 1, 0
+(Meinung, Meinung, NN): 1, 0
+(Herr, Herr, NN): 0, 1
+(Vater, Vater, NN): 1, 0
+(wahr, wahr, ADJD): 1, 0
+(man, man, PIS): 1, 0
+(Wuchs, Wuchs, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(Herrn, Herr, NN): 0, 1
+(sehen, sehen, VVFIN): 1, 0
+(Wuchs, Wuchs, NN): 1, 0
+(Zwang, Zwang, NN): 0, 1
+(stärker, stark, ADJD): 1, 0
+
+1.Akt, 6.Szene, 24.Replik, Drama-Nummer: 158, ID:62
+emotion: 9.405882353
+arousel: 20.405916753
+positiveBawl: 10.405882353
+negativeBawl: 1.0
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Erlauben, erlauben, VVFIN): 1, 0
+(sag, sagen, VVIMP): 1, 0
+(Schwester, Schwester, NN): 1, 0
+(Freundin, Freundin, NN): 1, 0
+(betrachten, betrachten, VVINF): 1, 0
+(Bruders, Bruder, NN): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(soll, sollen, VMFIN): 0, 1
+
+2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
+emotion: 11.288235294
+arousel: 26.968180253
+positiveBawl: 11.582352941
+negativeBawl: 0.294117647
+positiveBawlDichotom: 9
+negativeBawlDichotom: 1
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Mache, machen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(man, man, PIS): 1, 0
+(Antrag, Antrag, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(Mann, Mann, NN): 1, 0
+(Erfahrung, Erfahrung, NN): 1, 0
+(Vertrauen, Vertrauen, NN): 1, 0
+(glaubt, glauben, VVFIN): 1, 0
+(Paar, Paar, NN): 1, 0
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 369, ID:64
+emotion: 13.464705882
+arousel: 34.560860485
+positiveBawl: 15.523529411
+negativeBawl: 2.058823529
+positiveBawlDichotom: 10
+negativeBawlDichotom: 2
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(nehme, nehmen, VVFIN): 1, 0
+(Freiheit, Freiheit, NN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(Befehl, Befehl, NN): 0, 1
+(Bruder, Bruder, NN): 1, 0
+(reisen, reisen, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+(Willen, Wille, NN): 1, 0
+(man, man, PIS): 1, 0
+(gesucht, suchen, VVPP): 0, 1
+(liebe, lieben, VVFIN): 1, 0
+
+2.Akt, 2.Szene, 18.Replik, Drama-Nummer: 210, ID:65
+emotion: 4.517647059
+arousel: 26.277777777
+positiveBawl: 9.176470588
+negativeBawl: 4.658823529
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Nein, nein, PTKANT): 0, 1
+(man, man, PIS): 1, 0
+(man, man, PIS): 1, 0
+(alle, alle, PIAT): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(verloren, verlieren, VVPP): 0, 1
+(man, man, PIS): 1, 0
+(kann, können, VMFIN): 1, 0
+(weiter, weiter, ADV): 1, 0
+(neidisch, neidisch, ADJD): 0, 1
+
+3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
+emotion: -1.24117647
+arousel: 13.961152882
+positiveBawl: 2.0
+negativeBawl: 3.24117647
+positiveBawlDichotom: 1
+negativeBawlDichotom: 4
+polarityBawlDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sah, sehen, VVFIN): 1, 0
+(wundern, wundern, VVINF): 0, 1
+(muß, müssen, VMFIN): 0, 1
+(Verdacht, Verdacht, NN): 0, 1
+(fallen, fallen, VVINF): 0, 1
+
+2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
+emotion: 7.864705882
+arousel: 17.854218882
+positiveBawl: 7.864705882
+negativeBawl: 0
+positiveBawlDichotom: 7
+negativeBawlDichotom: 0
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Tochter, Tochter, NN): 1, 0
+(fragen, fragen, VVFIN): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(wetten, wetten, VVFIN): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(melden, melden, VVINF): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+
+1.Akt, 4.Szene, 7.Replik, Drama-Nummer: 98, ID:68
+emotion: 3.694117647
+arousel: 23.169172933
+positiveBawl: 7.082352941
+negativeBawl: 3.388235294
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Wahne, Wahn, NN): 0, 1
+(sollten, sollen, VMFIN): 0, 1
+(bestätigen, bestätigen, VVFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+(gehen, gehen, VVINF): 1, 0
+(liebste, lieb, ADJA): 1, 0
+(Schwester, Schwester, NN): 1, 0
+(treiben, treiben, VVFIN): 0, 1
+(weit, weit, ADJD): 1, 0
+
+1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
+emotion: 1.905882352
+arousel: 18.308270678
+positiveBawl: 3.505882352
+negativeBawl: 1.6
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(geht, gehen, VVFIN): 1, 0
+(wer, wer, PWS): 0, 1
+(wollen, wollen, VMINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+(Anfangs, Anfang, NN): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+
+1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
+emotion: 4.935294117
+arousel: 11.198830409
+positiveBawl: 4.935294117
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sagen, sagen, VVFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(Frau, Frau, NN): 1, 0
+(gehört, gehören, VVFIN): 1, 0
+(Geld, Geld, NN): 1, 0
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:71
+emotion: 8.6
+arousel: 15.633667503
+positiveBawl: 8.6
+negativeBawl: 0
+positiveBawlDichotom: 6
+negativeBawlDichotom: 0
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Mädchen, Mädchen, NN): 1, 0
+(lieb, lieb, ADJD): 1, 0
+(jung, jung, ADJD): 1, 0
+(jung, jung, ADJD): 1, 0
+(könnte, können, VMFIN): 1, 0
+(Kinder, Kind, NN): 1, 0
+
+1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
+emotion: 6.699999999
+arousel: 11.580618211
+positiveBawl: 6.699999999
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(geschafft, schaffen, VVPP): 1, 0
+(alle, alle, PIAT): 1, 0
+(Ewigkeit, Ewigkeit, NN): 1, 0
+(finden, finden, VVINF): 1, 0
+(können, können, VMINF): 1, 0
+
+1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
+emotion: 8.941176469
+arousel: 16.061821221
+positiveBawl: 9.235294116
+negativeBawl: 0.294117647
+positiveBawlDichotom: 6
+negativeBawlDichotom: 1
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Sage, sagen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(Nenne, nennen, VVFIN): 1, 0
+(Freund, Freund, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Lebens, Leben, NN): 1, 0
+(Freund, Freund, NN): 1, 0
+
+1.Akt, 3.Szene, 36.Replik, Drama-Nummer: 110, ID:74
+emotion: 10.508823529
+arousel: 22.652798664
+positiveBawl: 10.802941176
+negativeBawl: 0.294117647
+positiveBawlDichotom: 9
+negativeBawlDichotom: 1
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Tage, Tag, NN): 1, 0
+(zog, ziehen, VVFIN): 0, 1
+(Seite, Seite, NN): 1, 0
+(Hause, Haus, NN): 1, 0
+(sprach, sprechen, VVFIN): 1, 0
+(lieber, lieb, ADJA): 1, 0
+(entdecken, entdecken, VVINF): 1, 0
+(sehe, sehen, VVFIN): 1, 0
+(gehn, gehn, VVFIN): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+
+1.Akt, 3.Szene, 103.Replik, Drama-Nummer: 177, ID:75
+emotion: 0.426470588
+arousel: 7.289891395
+positiveBawl: 0.926470588
+negativeBawl: 0.5
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Seite, Seite, NN): 1, 0
+(kriegten, kriegen, VVFIN): 0, 1
+(sagen, sagen, VVINF): 1, 0
+
+1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
+emotion: 0.8
+arousel: 27.592731829
+positiveBawl: 4.494117647
+negativeBawl: 3.694117647
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(glauben, glauben, VVINF): 1, 0
+(Steh, stehen, VVIMP): 1, 0
+(will, wollen, VMFIN): 1, 0
+(versuchen, versuchen, VVINF): 1, 0
+(Streich, Streich, NN): 1, 0
+(machst, machen, VVFIN): 1, 0
+(vergeben, vergeben, VVINF): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(Strafe, Strafe, NN): 0, 1
+(alle, alle, PIAT): 1, 0
+(ziehen, ziehen, VVINF): 0, 1
+
+1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
+emotion: 6.997058824
+arousel: 36.177777777
+positiveBawl: 10.132352942
+negativeBawl: 3.135294118
+positiveBawlDichotom: 9
+negativeBawlDichotom: 5
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(glaube, glauben, VVFIN): 1, 0
+(kam, kommen, VVFIN): 1, 0
+(Himmel, Himmel, NN): 1, 0
+(Herr, Herr, NN): 0, 1
+(kam, kommen, VVFIN): 1, 0
+(Schicksal, Schicksal, NN): 0, 1
+(wünschen, wünschen, VVINF): 1, 0
+(sollte, sollen, VMFIN): 0, 1
+(sagen, sagen, VVFIN): 1, 0
+(erlaubt, erlauben, VVPP): 1, 0
+(Bedienter, Bediente, NN): 0, 1
+(Lohn, Lohn, NN): 1, 0
+(sieben, sieben, CARD): 1, 0
+(saure, sauer, ADJA): 0, 1
+
+1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
+emotion: 17.423529411
+arousel: 64.427736007
+positiveBawl: 21.217647058
+negativeBawl: 3.794117647
+positiveBawlDichotom: 20
+negativeBawlDichotom: 5
+polarityBawlDichotom: 15
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Geld, Geld, NN): 1, 0
+(kriege, kriegen, VVFIN): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(sagen, sagen, VVINF): 1, 0
+(her, her, APZR): 0, 1
+(bekommen, bekommen, VVPP): 1, 0
+(Soll, sollen, VMFIN): 0, 1
+(Wahrheit, Wahrheit, NN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(ausreden, ausreden, VVINF): 1, 0
+(Taler, Taler, NN): 1, 0
+(gelegen, liegen, VVPP): 1, 0
+(mehr, mehr, ADV): 1, 0
+(liegen, liegen, VVINF): 1, 0
+(könnte, können, VMFIN): 1, 0
+(Soll, sollen, VMFIN): 0, 1
+(sagen, sagen, VVINF): 1, 0
+(Geld, Geld, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Leute, Leute, NN): 1, 0
+(nehmen, nehmen, VVFIN): 1, 0
+(sprächen, sprechen, VVFIN): 1, 0
+(Gewissen, Gewissen, NN): 1, 0
+(sagte, sagen, VVFIN): 1, 0
+(Kinder, Kind, NN): 1, 0
+
+1.Akt, 1.Szene, 67.Replik, Drama-Nummer: 67, ID:79
+emotion: 4.24117647
+arousel: 26.820457393
+positiveBawl: 8.529411764
+negativeBawl: 4.288235294
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Sohn, Sohn, NN): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+(Wort, Wort, NN): 1, 0
+(Neigung, Neigung, NN): 1, 0
+(könnte, können, VMFIN): 1, 0
+(Gesicht, Gesicht, NN): 1, 0
+(satt, satt, ADJD): 1, 0
+(fehlt, fehlen, VVFIN): 0, 1
+(alle, alle, PIAT): 1, 0
+(Schuld, Schuld, NN): 0, 1
+(fallen, fallen, VVINF): 0, 1
+
+1.Akt, 1.Szene, 58.Replik, Drama-Nummer: 58, ID:80
+emotion: 2.05882353
+arousel: 14.657309942
+positiveBawl: 4.152941177
+negativeBawl: 2.094117647
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Herr, Herr, NN): 0, 1
+(Verdiensten, Verdienst, NN): 1, 0
+(ginge, gehen, VVFIN): 1, 0
+(alle, alle, PIAT): 1, 0
+(allein, allein, ADV): 0, 1
+(reich, reich, ADJD): 1, 0
+
+2.Akt, 2.Szene, 6.Replik, Drama-Nummer: 164, ID:81
+emotion: 2.558823529
+arousel: 11.397660819
+positiveBawl: 3.852941176
+negativeBawl: 1.294117647
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Sollte, sollen, VMFIN): 0, 1
+(Wahrheit, Wahrheit, NN): 1, 0
+(erzählen, erzählen, VVINF): 1, 0
+(Herr, Herr, NN): 0, 1
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
+emotion: 0.24117647
+arousel: 15.764411028
+positiveBawl: 3.970588235
+negativeBawl: 3.729411765
+positiveBawlDichotom: 3
+negativeBawlDichotom: 3
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Freund, Freund, NN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(macht, machen, VVFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Narr, Narr, NN): 0, 1
+(stören, stören, VVINF): 0, 1
+
+2.Akt, 2.Szene, 14.Replik, Drama-Nummer: 172, ID:83
+emotion: 2.14117647
+arousel: 13.083542189
+positiveBawl: 3.84117647
+negativeBawl: 1.7
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(man, man, PIS): 1, 0
+(Schuld, Schuld, NN): 0, 1
+(man, man, PIS): 1, 0
+(wolltest, wollen, VMFIN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+
+2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
+emotion: 9.19634581
+arousel: 52.140817731
+positiveBawl: 18.143404634
+negativeBawl: 8.947058824
+positiveBawlDichotom: 14
+negativeBawlDichotom: 5
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Lieder, Lied, NN): 1, 0
+(Jugend, Jugend, NN): 1, 0
+(Übel, Übel, NN): 0, 1
+(gesungen, singen, VVPP): 1, 0
+(gehöre, gehören, VVFIN): 1, 0
+(Tat, Tat, NN): 0, 1
+(Dichter, Dichter, NN): 1, 0
+(Kunst, Kunst, NN): 1, 0
+(liegt, liegen, VVFIN): 1, 0
+(Hause, Haus, NN): 1, 0
+(Tod, Tod, NN): 0, 1
+(krank, krank, ADJD): 0, 1
+(liegt, liegen, VVFIN): 1, 0
+(acht, acht, CARD): 1, 0
+(Tage, Tag, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(sterben, sterben, VVINF): 0, 1
+(lieben, lieb, ADJA): 1, 0
+(Welt, Welt, NN): 1, 0
+
+2.Akt, 2.Szene, 24.Replik, Drama-Nummer: 182, ID:85
+emotion: 3.811764706
+arousel: 24.465497077
+positiveBawl: 6.794117647
+negativeBawl: 2.982352941
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sollte, sollen, VMFIN): 0, 1
+(könnte, können, VMFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Wahl, Wahl, NN): 1, 0
+(Glück, Glück, NN): 1, 0
+(wünschen, wünschen, VVINF): 1, 0
+(Wen, wer, PWS): 0, 1
+(will, wollen, VMFIN): 1, 0
+(nehmen, nehmen, VVINF): 1, 0
+
+3.Akt, 5.Szene, 4.Replik, Drama-Nummer: 334, ID:86
+emotion: 6.779411765
+arousel: 20.344193819
+positiveBawl: 8.926470588
+negativeBawl: 2.147058823
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(können, können, VMFIN): 1, 0
+(stoßen, stoßen, VVINF): 0, 1
+(sahen, sehen, VVFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Lehre, Lehre, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Menschen, Mensch, NN): 1, 0
+(man, man, PIS): 1, 0
+
+3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
+emotion: 3.944117646
+arousel: 22.143400167
+positiveBawl: 7.744117646
+negativeBawl: 3.8
+positiveBawlDichotom: 7
+negativeBawlDichotom: 2
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Wort, Wort, NN): 1, 0
+(geschiedene, geschieden, ADJA): 0, 1
+(Leute, Leute, NN): 1, 0
+(kannst, können, VMFIN): 1, 0
+(willst, wollen, VMFIN): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(alle, alle, PIS): 1, 0
+(allein, allein, ADV): 0, 1
+(meinen, meinen, VVFIN): 1, 0
+
+2.Akt, 6.Szene, 17.Replik, Drama-Nummer: 255, ID:88
+emotion: 1.794117647
+arousel: 3.0
+positiveBawl: 1.794117647
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Stärke, Stärke, NN): 1, 0
+
+3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
+emotion: 4.164705882
+arousel: 14.70342523
+positiveBawl: 5.664705882
+negativeBawl: 1.5
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Zweifel, Zweifel, NN): 0, 1
+(Namen, Name, NN): 1, 0
+(lieber, lieb, ADJA): 1, 0
+(Mann, Mann, NN): 1, 0
+(glaube, glauben, VVFIN): 1, 0
+(Namens, Name, NN): 1, 0
+
+3.Akt, 7.Szene, 23.Replik, Drama-Nummer: 380, ID:90
+emotion: 6.149999999
+arousel: 17.833333334
+positiveBawl: 6.679411764
+negativeBawl: 0.529411765
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(heißt, heißen, VVFIN): 1, 0
+(nehmen, nehmen, VVINF): 1, 0
+(Taler, Taler, NN): 1, 0
+(wahr, wahr, ADJD): 1, 0
+(liebe, lieb, ADJA): 1, 0
+(Frau, Frau, NN): 1, 0
+(willst, wollen, VMFIN): 1, 0
+(bezahlen, bezahlen, VVINF): 0, 1
+
+1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
+emotion: 2.135294118
+arousel: 11.104427737
+positiveBawl: 4.029411765
+negativeBawl: 1.894117647
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(weiß, wissen, VVFIN): 1, 0
+(Herrn, Herr, NN): 0, 1
+(Schlag, Schlag, NN): 0, 1
+(gesehen, sehen, VVPP): 1, 0
+
+1.Akt, 1.Szene, 22.Replik, Drama-Nummer: 22, ID:92
+emotion: 5.241265598
+arousel: 19.13011696
+positiveBawl: 7.182442068
+negativeBawl: 1.94117647
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(mußt, müssen, VMFIN): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(Mann, Mann, NN): 1, 0
+(verfahren, verfahren, VVPP): 0, 1
+(Beispiele, Beispiel, NN): 1, 0
+(wissen, wissen, VVINF): 1, 0
+(man, man, PIS): 1, 0
+(Sachen, Sache, NN): 1, 0
+
+1.Akt, 4.Szene, 8.Replik, Drama-Nummer: 56, ID:93
+emotion: 9.176470588
+arousel: 34.187969924
+positiveBawl: 11.723529411
+negativeBawl: 2.547058823
+positiveBawlDichotom: 10
+negativeBawlDichotom: 4
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Scherze, Scherz, NN): 1, 0
+(nehmen, nehmen, VVINF): 1, 0
+(kann, können, VMFIN): 1, 0
+(wollen, wollen, VMINF): 1, 0
+(Macht, machen, VVFIN): 1, 0
+(junge, jung, ADJA): 1, 0
+(Fräulein, Fräulein, NN): 0, 1
+(allerliebstes, allerlieb, ADJA): 1, 0
+(Kind, Kind, NN): 1, 0
+(wenig, wenig, ADV): 0, 1
+(sollte, sollen, VMFIN): 0, 1
+(wahr, wahr, ADJD): 1, 0
+(Herr, Herr, NN): 0, 1
+(Reife, Reife, NN): 1, 0
+
+1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
+emotion: 0.15
+arousel: 14.45989975
+positiveBawl: 2.220588235
+negativeBawl: 2.070588235
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(bestimmt, bestimmen, VVPP): 0, 1
+(wollten, wollen, VMFIN): 1, 0
+(mitten, mitten, ADV): 1, 0
+(Winter, Winter, NN): 1, 0
+(weisen, weisen, VVINF): 1, 0
+(unbequemsten, unbequem, ADJA): 0, 1
+
+1.Akt, 16.Szene, 4.Replik, Drama-Nummer: 268, ID:95
+emotion: -0.4
+arousel: 2.736842105
+positiveBawl: 0
+negativeBawl: 0.4
+positiveBawlDichotom: 0
+negativeBawlDichotom: 1
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Larve, Larve, NN): 0, 1
+
+1.Akt, 2.Szene, 25.Replik, Drama-Nummer: 35, ID:96
+emotion: 2.435294117
+arousel: 10.441520468
+positiveBawl: 3.435294117
+negativeBawl: 1.0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(meine, meinen, VVFIN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(man, man, PIS): 1, 0
+(können, können, VMINF): 1, 0
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 70, ID:97
+emotion: 4.617647058
+arousel: 31.185930514
+positiveBawl: 6.611764705
+negativeBawl: 1.994117647
+positiveBawlDichotom: 9
+negativeBawlDichotom: 3
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sagen, sagen, VVINF): 1, 0
+(wollten, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(aufnehmen, aufnehmen, VVINF): 1, 0
+(gesetzt, setzen, VVPP): 1, 0
+(Herr, Herr, NN): 0, 1
+(man, man, PIS): 1, 0
+(gesagt, sagen, VVPP): 1, 0
+(sage, sagen, VVFIN): 1, 0
+(zornig, zornig, ADJD): 0, 1
+(Abreise, Abreise, NN): 0, 1
+(gedenken, gedenken, VVINF): 1, 0
+
+1.Akt, 8.Szene, 4.Replik, Drama-Nummer: 122, ID:98
+emotion: 1.835294117
+arousel: 20.236549709
+positiveBawl: 5.564705882
+negativeBawl: 3.729411765
+positiveBawlDichotom: 3
+negativeBawlDichotom: 4
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Diener, Diener, NN): 0, 1
+(sehe, sehen, VVFIN): 1, 0
+(Tat, Tat, NN): 0, 1
+(mehr, mehr, ADV): 1, 0
+(ergebe, ergeben, VVFIN): 0, 1
+(Furcht, Furcht, NN): 0, 1
+(möge, mögen, VMFIN): 1, 0
+
+1.Akt, 2.Szene, 9.Replik, Drama-Nummer: 19, ID:99
+emotion: 5.482352941
+arousel: 30.986633251
+positiveBawl: 9.04117647
+negativeBawl: 3.558823529
+positiveBawlDichotom: 7
+negativeBawlDichotom: 5
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Dienen, Dienen, NN): 0, 1
+(Herr, Herr, NN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(bedienen, bedienen, VVINF): 0, 1
+(muß, müssen, VMFIN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(macht, machen, VVFIN): 1, 0
+(Wollten, wollen, VMFIN): 1, 0
+(Herrn, Herr, NN): 0, 1
+(Leben, Leben, NN): 1, 0
+(wollten, wollen, VMFIN): 1, 0
+(Geld, Geld, NN): 1, 0
+
+1.Akt, 18.Szene, 18.Replik, Drama-Nummer: 310, ID:100
+emotion: 9.405882353
+arousel: 26.510359231
+positiveBawl: 10.405882353
+negativeBawl: 1.0
+positiveBawlDichotom: 10
+negativeBawlDichotom: 1
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Augen, Auge, NN): 1, 0
+(trugen, tragen, VVFIN): 1, 0
+(Bedenken, Bedenken, NN): 1, 0
+(entdecken, entdecken, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(gehn, gehn, VVINF): 1, 0
+(alles, alle, PIS): 1, 0
+(Wahrheit, Wahrheit, NN): 1, 0
+(kommen, kommen, VVINF): 1, 0
+(Sollte, sollen, VMFIN): 0, 1
+(Hause, Haus, NN): 1, 0
+
+1.Akt, 9.Szene, 9.Replik, Drama-Nummer: 149, ID:101
+emotion: 0.288235294
+arousel: 14.645363408
+positiveBawl: 2.405882353
+negativeBawl: 2.117647059
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(übel, übel, ADJD): 0, 1
+(nehmen, nehmen, VVINF): 1, 0
+(Herr, Herr, NN): 0, 1
+(bitte, bitten, VVFIN): 1, 0
+(machen, machen, VVFIN): 1, 0
+(allem, alle, PIS): 1, 0
+
+1.Akt, 22.Szene, 19.Replik, Drama-Nummer: 370, ID:102
+emotion: 10.208823529
+arousel: 40.147608605
+positiveBawl: 12.794117647
+negativeBawl: 2.585294118
+positiveBawlDichotom: 12
+negativeBawlDichotom: 4
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(umsonst, umsonst, ADV): 1, 0
+(Gott, Gott, NN): 1, 0
+(Väter, Vater, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(brauche, brauchen, VVFIN): 0, 1
+(aller, alle, PIAT): 1, 0
+(bitte, bitten, VVFIN): 1, 0
+(Volke, Volk, NN): 1, 0
+(urteilen, urteilen, VVINF): 0, 1
+(Religion, Religion, NN): 1, 0
+(Nein, nein, PTKANT): 0, 1
+(sahe, sahe, VVFIN): 1, 0
+(Neigung, Neigung, NN): 1, 0
+(Menschen, Mensch, NN): 1, 0
+(wer, wer, PWS): 0, 1
+(wolle, wollen, VMFIN): 1, 0
+
+1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
+emotion: 5.499999999
+arousel: 12.554302422
+positiveBawl: 5.499999999
+negativeBawl: 0
+positiveBawlDichotom: 6
+negativeBawlDichotom: 0
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Damen, Dame, NN): 1, 0
+(alle, alle, PIAT): 1, 0
+(Tage, Tag, NN): 1, 0
+(Monaten, Monat, NN): 1, 0
+(können, können, VMINF): 1, 0
+(sitzen, sitzen, VVINF): 1, 0
+
+3.Akt, 2.Szene, 18.Replik, Drama-Nummer: 408, ID:104
+emotion: 1.747058824
+arousel: 9.760233919
+positiveBawl: 2.441176471
+negativeBawl: 0.694117647
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Herr, Herr, NN): 0, 1
+(wissen, wissen, VVFIN): 1, 0
+(billiger, billig, ADJD): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+
+5.Akt, 5.Szene, 39.Replik, Drama-Nummer: 766, ID:105
+emotion: 5.773529411
+arousel: 11.361528823
+positiveBawl: 5.773529411
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(verändert, verändern, VVFIN): 1, 0
+(Sache, Sache, NN): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(wahr, wahr, ADJD): 1, 0
+(sehen, sehen, VVFIN): 1, 0
+
+4.Akt, 5.Szene, 42.Replik, Drama-Nummer: 623, ID:106
+emotion: 10.741176471
+arousel: 45.495540323
+positiveBawl: 14.717647059
+negativeBawl: 3.976470588
+positiveBawlDichotom: 14
+negativeBawlDichotom: 3
+polarityBawlDichotom: 11
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Welt, Welt, NN): 1, 0
+(müssen, müssen, VMINF): 0, 1
+(Halle, Halle, NN): 1, 0
+(langes, lang, ADJA): 1, 0
+(gesprochen, sprechen, VVPP): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(gesehen, sehen, VVPP): 1, 0
+(gehört, gehören, VVFIN): 1, 0
+(gesprochen, sprechen, VVPP): 1, 0
+(Herr, Herr, NN): 0, 1
+(gehört, gehören, VVFIN): 1, 0
+(trifft, treffen, VVFIN): 1, 0
+(Zufall, Zufall, NN): 1, 0
+(verstehen, verstehen, VVFIN): 1, 0
+(Menschen, Mensch, NN): 1, 0
+(schlecht, schlecht, ADJD): 0, 1
+(Vorsicht, Vorsicht, NN): 1, 0
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 574, ID:107
+emotion: 28.985294118
+arousel: 75.338241435
+positiveBawl: 32.926470589
+negativeBawl: 3.941176471
+positiveBawlDichotom: 21
+negativeBawlDichotom: 7
+polarityBawlDichotom: 14
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wahr, wahr, ADJD): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(kann, können, VMFIN): 1, 0
+(Mann, Mann, NN): 1, 0
+(Ding, Ding, NN): 0, 1
+(lieben, lieben, VVINF): 1, 0
+(Trotze, Trotz, NN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(Mann, Mann, NN): 1, 0
+(Lachen, lachen, VVINF): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(lachen, lachen, VVINF): 1, 0
+(Herrn, Herr, NN): 0, 1
+(Laune, Laune, NN): 1, 0
+(erhalten, erhalten, VVINF): 1, 0
+(lach, lachen, VVIMP): 1, 0
+(Zufall, Zufall, NN): 1, 0
+(schreibe, schreiben, VVFIN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(kommen, kommen, VVINF): 1, 0
+(Brief, Brief, NN): 1, 0
+(lieset, lieset, VVFIN): 0, 1
+(kömmt, kömmt, VVFIN): 1, 0
+(Zufall, Zufall, NN): 1, 0
+(lachen, lachen, VVFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(lachen, lachen, VVFIN): 1, 0
+
+2.Akt, 6.Szene, 31.Replik, Drama-Nummer: 247, ID:108
+emotion: 12.011497327
+arousel: 22.881370093
+positiveBawl: 13.311497327
+negativeBawl: 1.3
+positiveBawlDichotom: 8
+negativeBawlDichotom: 1
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wissen, wissen, VVFIN): 1, 0
+(Mutter, Mutter, NN): 1, 0
+(Einsichten, Einsicht, NN): 1, 0
+(allem, alle, PIS): 1, 0
+(erführe, erfahren, VVFIN): 1, 0
+(gesprochen, sprechen, VVPP): 1, 0
+(Unruhe, Unruhe, NN): 0, 1
+(lieber, lieb, ADJD): 1, 0
+(Herzen, Herz, NN): 1, 0
+
+4.Akt, 7.Szene, 9.Replik, Drama-Nummer: 652, ID:109
+emotion: 5.276470588
+arousel: 7.166666666
+positiveBawl: 5.276470588
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Tochter, Tochter, NN): 1, 0
+(Kind, Kind, NN): 1, 0
+(Kind, Kind, NN): 1, 0
+
+3.Akt, 5.Szene, 11.Replik, Drama-Nummer: 451, ID:110
+emotion: 17.473529412
+arousel: 97.428780281
+positiveBawl: 30.864705881
+negativeBawl: 13.391176469
+positiveBawlDichotom: 23
+negativeBawlDichotom: 14
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(verdiene, verdienen, VVFIN): 1, 0
+(stummen, stumm, ADJA): 0, 1
+(Vorwurf, Vorwurf, NN): 0, 1
+(Betragen, Betragen, NN): 0, 1
+(sollen, sollen, VMFIN): 0, 1
+(Vorteil, Vorteil, NN): 1, 0
+(erwarten, erwarten, VVINF): 1, 0
+(ward, werd, VVFIN): 1, 0
+(könnt, können, VMFIN): 1, 0
+(Zufall, Zufall, NN): 1, 0
+(ehe, ehe, KOUS): 1, 0
+(alle, alle, PIS): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(Glück, Glück, NN): 1, 0
+(sehen, sehen, VVINF): 1, 0
+(sprechen, sprechen, VVINF): 1, 0
+(könnt, können, VMFIN): 1, 0
+(Zufall, Zufall, NN): 1, 0
+(Glückes, Glückes, NN): 1, 0
+(Gnade, Gnade, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Beben, Beben, NN): 0, 1
+(Fräulein, Fräulein, NN): 0, 1
+(allein, allein, ADV): 0, 1
+(Blicke, Blick, NN): 1, 0
+(Wort, Wort, NN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(Gewalt, Gewalt, NN): 0, 1
+(falle, fallen, VVFIN): 0, 1
+(Schutzes, Schutz, NN): 1, 0
+(bedürfen, bedürfen, VVINF): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(Fräulein, Fräulein, NN): 0, 1
+(kommen, kommen, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(billigen, billigen, VVINF): 0, 1
+(Folgen, folgen, VVFIN): 0, 1
+
+4.Akt, 7.Szene, 15.Replik, Drama-Nummer: 658, ID:111
+emotion: 2.323529412
+arousel: 12.023809525
+positiveBawl: 4.823529412
+negativeBawl: 2.5
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wissen, wissen, VVFIN): 1, 0
+(wissen, wissen, VVINF): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+(tot, tot, ADJD): 0, 1
+
+5.Akt, 5.Szene, 9.Replik, Drama-Nummer: 736, ID:112
+emotion: 7.335294117
+arousel: 22.170008354
+positiveBawl: 9.435294117
+negativeBawl: 2.1
+positiveBawlDichotom: 7
+negativeBawlDichotom: 2
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(soll, sollen, VMFIN): 0, 1
+(Kloster, Kloster, NN): 1, 0
+(Hoffnung, Hoffnung, NN): 1, 0
+(Welt, Welt, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(Vater, Vater, NN): 1, 0
+(niemand, niemand, PIS): 0, 1
+(Tochter, Tochter, NN): 1, 0
+(wollen, wollen, VMINF): 1, 0
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 782, ID:113
+emotion: 4.470588235
+arousel: 59.142857145
+positiveBawl: 13.864705882
+negativeBawl: 9.394117647
+positiveBawlDichotom: 15
+negativeBawlDichotom: 8
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Wort, Wort, NN): 1, 0
+(Gefängnis, Gefängnis, NN): 0, 1
+(Strenge, Strenge, NN): 0, 1
+(Gesetze, Gesetz, NN): 0, 1
+(Achtung, Achtung, NN): 1, 0
+(Tugend, Tugend, NN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(Haus, Haus, NN): 1, 0
+(Kanzlers, Kanzler, NN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Damen, Dame, NN): 1, 0
+(übergeben, übergeben, VVINF): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(gehen, gehen, VVFIN): 1, 0
+(weit, weit, ADJD): 1, 0
+(weit, weit, ADJD): 1, 0
+(mehr, mehr, ADV): 1, 0
+(verlangen, verlangen, VVFIN): 1, 0
+(kennen, kennen, VVFIN): 1, 0
+(Kanzler, Kanzler, NN): 0, 1
+
+5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
+emotion: 10.432352941
+arousel: 18.285964913
+positiveBawl: 11.732352941
+negativeBawl: 1.3
+positiveBawlDichotom: 6
+negativeBawlDichotom: 1
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Himmels, Himmel, NN): 1, 0
+(willen, willen, APPO): 1, 0
+(Vater, Vater, NN): 1, 0
+(Leben, Leben, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(Vater, Vater, NN): 1, 0
+(Dolch, Dolch, NN): 0, 1
+
+4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
+emotion: 0.597058824
+arousel: 17.124686716
+positiveBawl: 3.647058824
+negativeBawl: 3.05
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(läge, liegen, VVFIN): 1, 0
+(Unfalle, Unfalle, NN): 0, 1
+(Verdacht, Verdacht, NN): 0, 1
+(trifft, treffen, VVFIN): 1, 0
+(liegt, liegen, VVFIN): 1, 0
+(Gnade, Gnade, NN): 1, 0
+
+4.Akt, 8.Szene, 14.Replik, Drama-Nummer: 686, ID:116
+emotion: 8.923529412
+arousel: 24.364440512
+positiveBawl: 10.011764706
+negativeBawl: 1.088235294
+positiveBawlDichotom: 10
+negativeBawlDichotom: 1
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(mehr, mehr, ADV): 1, 0
+(kennest, kennen, VVFIN): 1, 0
+(Eindrücke, Eindruck, NN): 1, 0
+(alles, alle, PIS): 1, 0
+(findend, findend, ADJD): 1, 0
+(alles, alle, PIS): 1, 0
+(gefaßt, gefaßt, ADJD): 1, 0
+(Entfernung, Entfernung, NN): 0, 1
+(spricht, sprechen, VVFIN): 1, 0
+(Tone, Ton, NN): 1, 0
+(Mache, Mache, NN): 1, 0
+
+3.Akt, 1.Szene, 31.Replik, Drama-Nummer: 384, ID:117
+emotion: 7.379999998
+arousel: 55.340401002
+positiveBawl: 13.397647057
+negativeBawl: 6.017647059
+positiveBawlDichotom: 15
+negativeBawlDichotom: 6
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(können, können, VMFIN): 1, 0
+(Leuten, Leute, NN): 1, 0
+(verlassen, verlassen, VVINF): 0, 1
+(kann, können, VMFIN): 1, 0
+(Weg, Weg, NN): 1, 0
+(geht, gehen, VVFIN): 1, 0
+(Teil, Teil, NN): 1, 0
+(Wagen, Wagen, NN): 1, 0
+(angefallen, anfallen, VVPP): 0, 1
+(Teil, Teil, NN): 1, 0
+(Bedienten, Bediente, NN): 0, 1
+(gestürzt, stürzen, VVPP): 0, 1
+(Hülfe, Hülfe, NN): 1, 0
+(Teile, Teil, NN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(Bedienter, Bediente, NN): 0, 1
+(ergreifen, ergreifen, VVINF): 1, 0
+(retten, retten, VVINF): 1, 0
+(wolle, wollen, VMFIN): 1, 0
+(Schloß, Schloss, NN): 1, 0
+(sagen, sagen, VVFIN): 1, 0
+
+3.Akt, 1.Szene, 9.Replik, Drama-Nummer: 362, ID:118
+emotion: 5.65882353
+arousel: 18.500000001
+positiveBawl: 7.65882353
+negativeBawl: 2.0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(man, man, PIS): 1, 0
+(sollt, sollen, VMFIN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(man, man, PIS): 1, 0
+(man, man, PIS): 1, 0
+(sollt, sollen, VMFIN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+
+5.Akt, 7.Szene, 9.Replik, Drama-Nummer: 798, ID:119
+emotion: -2.9
+arousel: 11.000000001
+positiveBawl: 2.1
+negativeBawl: 5.0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(tot, tot, ADJD): 0, 1
+(tot, tot, ADJD): 0, 1
+(Vater, Vater, NN): 1, 0
+
+4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
+emotion: 1.5
+arousel: 8.277360068
+positiveBawl: 1.529411765
+negativeBawl: 0.029411765
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(gehen, gehen, VVINF): 1, 0
+(heißen, heißen, VVINF): 1, 0
+(Weiter, weiter, ADV): 1, 0
+(Dinge, Ding, NN): 0, 1
+
+2.Akt, 4.Szene, 5.Replik, Drama-Nummer: 197, ID:121
+emotion: 23.576470588
+arousel: 49.649707603
+positiveBawl: 26.964705882
+negativeBawl: 3.388235294
+positiveBawlDichotom: 15
+negativeBawlDichotom: 3
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(nennst, nennen, VVFIN): 1, 0
+(verlieren, verlieren, VVFIN): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(wissen, wissen, VVINF): 1, 0
+(Glücke, Glücke, NN): 1, 0
+(möchtest, mögen, VMFIN): 1, 0
+(Argwohn, Argwohn, NN): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Welt, Welt, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Nähe, Nähe, NN): 1, 0
+(Tochter, Tochter, NN): 1, 0
+(bewog, bewegen, VVFIN): 1, 0
+(Stadt, Stadt, NN): 0, 1
+(bleiben, bleiben, VVINF): 1, 0
+(Manne, Mann, NN): 1, 0
+(Vater, Vater, NN): 1, 0
+(liebet, lieben, VVFIN): 1, 0
+
+4.Akt, 7.Szene, 16.Replik, Drama-Nummer: 659, ID:122
+emotion: 0.04117647
+arousel: 22.500000001
+positiveBawl: 6.364705882
+negativeBawl: 6.323529412
+positiveBawlDichotom: 4
+negativeBawlDichotom: 3
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Tot, tot, ADJD): 0, 1
+(tot, tot, ADJD): 0, 1
+(Frau, Frau, NN): 1, 0
+(wollten, wollen, VMFIN): 1, 0
+(Verstand, Verstand, NN): 1, 0
+(brechen, brechen, VVFIN): 0, 1
+(Herz, Herz, NN): 1, 0
+
+4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
+emotion: 5.582352941
+arousel: 31.702798662
+positiveBawl: 9.858823529
+negativeBawl: 4.276470588
+positiveBawlDichotom: 7
+negativeBawlDichotom: 4
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Nein, nein, PTKANT): 0, 1
+(muß, müssen, VMFIN): 0, 1
+(machen, machen, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(wahre, wahr, ADJA): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(glaube, glauben, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(Ehre, Ehre, NN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(sollten, sollen, VMFIN): 0, 1
+
+1.Akt, 3.Szene, 18.Replik, Drama-Nummer: 63, ID:124
+emotion: 2.000000001
+arousel: 15.058688388
+positiveBawl: 3.352941177
+negativeBawl: 1.352941176
+positiveBawlDichotom: 3
+negativeBawlDichotom: 3
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(verfahren, verfahren, VVPP): 0, 1
+(verstehe, verstehen, VVFIN): 1, 0
+(Gehen, gehen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(Bedienten, Bediente, NN): 0, 1
+(sprechen, sprechen, VVINF): 1, 0
+
+3.Akt, 7.Szene, 46.Replik, Drama-Nummer: 615, ID:125
+emotion: 10.917647059
+arousel: 51.625062657
+positiveBawl: 15.326470588
+negativeBawl: 4.408823529
+positiveBawlDichotom: 14
+negativeBawlDichotom: 6
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Herr, Herr, NN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(folgen, folgen, VVINF): 0, 1
+(wissen, wissen, VVFIN): 1, 0
+(gehört, gehören, VVFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(bleiben, bleiben, VVINF): 1, 0
+(lieber, lieb, ADJA): 1, 0
+(nehmen, nehmen, VVFIN): 1, 0
+(Geld, Geld, NN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Sache, Sache, NN): 1, 0
+(müssen, müssen, VMFIN): 0, 1
+(Geld, Geld, NN): 1, 0
+(Menge, Menge, NN): 0, 1
+(bekommen, bekommen, VVINF): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+(Interessen, Interesse, NN): 1, 0
+(Interessen, Interesse, NN): 1, 0
+(wegen, wegen, APPO): 1, 0
+
+3.Akt, 2.Szene, 60.Replik, Drama-Nummer: 504, ID:126
+emotion: 4.735294117
+arousel: 36.737259814
+positiveBawl: 10.252941176
+negativeBawl: 5.517647059
+positiveBawlDichotom: 10
+negativeBawlDichotom: 4
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(hing, hängen, VVFIN): 0, 1
+(Mensch, Mensch, NN): 1, 0
+(kam, kommen, VVFIN): 1, 0
+(Hause, Haus, NN): 1, 0
+(machte, machen, VVFIN): 1, 0
+(Herrn, Herr, NN): 0, 1
+(Namen, Name, NN): 1, 0
+(Schulden, Schuld, NN): 0, 1
+(Streiche, Streich, NN): 1, 0
+(sahe, sahe, VVFIN): 1, 0
+(aller, alle, PIAT): 1, 0
+(Gewalt, Gewalt, NN): 0, 1
+(wollte, wollen, VMFIN): 1, 0
+(Weg, Weg, NN): 1, 0
+
+5.Akt, 9.Szene, 30.Replik, Drama-Nummer: 1019, ID:127
+emotion: 4.641176472
+arousel: 18.282539683
+positiveBawl: 7.023529413
+negativeBawl: 2.382352941
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Tone, Ton, NN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(muß, müssen, VMFIN): 0, 1
+(Augen, Auge, NN): 1, 0
+(Glück, Glück, NN): 1, 0
+(Mannes, Mann, NN): 1, 0
+(verdanken, verdanken, VVINF): 1, 0
+
+5.Akt, 11.Szene, 22.Replik, Drama-Nummer: 1066, ID:128
+emotion: 3.867647059
+arousel: 17.565538848
+positiveBawl: 5.105882353
+negativeBawl: 1.238235294
+positiveBawlDichotom: 3
+negativeBawlDichotom: 3
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(liebe, lieben, VVFIN): 1, 0
+(folgen, folgen, VVINF): 0, 1
+(sollen, sollen, VMFIN): 0, 1
+(Scherz, Scherz, NN): 1, 0
+(weit, weit, ADJD): 1, 0
+(getrieben, treiben, VVPP): 0, 1
+
+4.Akt, 6.Szene, 62.Replik, Drama-Nummer: 873, ID:129
+emotion: 8.358823529
+arousel: 28.246031748
+positiveBawl: 11.682352941
+negativeBawl: 3.323529412
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sehen, sehen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(will, wollen, VMFIN): 1, 0
+(Man, man, PIS): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(lieben, lieben, VVINF): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(versagt, versagen, VVPP): 0, 1
+(Ring, Ring, NN): 1, 0
+(Finger, Finger, NN): 1, 0
+
+4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
+emotion: 0.14117647
+arousel: 9.736842105
+positiveBawl: 1.964705882
+negativeBawl: 1.823529412
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Mann, Mann, NN): 1, 0
+(übel, übel, ADJD): 0, 1
+(nehmen, nehmen, VVINF): 1, 0
+(anböte, anbieten, VVFIN): 1, 0
+
+4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
+emotion: 0.982352941
+arousel: 8.277777778
+positiveBawl: 2.364705882
+negativeBawl: 1.382352941
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(muß, müssen, VMFIN): 0, 1
+(Geld, Geld, NN): 1, 0
+(Will, wollen, VMFIN): 1, 0
+
+2.Akt, 9.Szene, 29.Replik, Drama-Nummer: 433, ID:132
+emotion: 4.294117648
+arousel: 20.082539682
+positiveBawl: 6.529411765
+negativeBawl: 2.235294117
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(nennen, nennen, VVINF): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+(geschwiegen, schweigen, VVPP): 0, 1
+(Sprache, Sprache, NN): 1, 0
+(Vernunft, Vernunft, NN): 1, 0
+(vergessen, vergessen, VVINF): 0, 1
+(Vernunft, Vernunft, NN): 1, 0
+(Vernunft, Vernunft, NN): 1, 0
+
+3.Akt, 4.Szene, 7.Replik, Drama-Nummer: 531, ID:133
+emotion: 4.244117647
+arousel: 20.962823727
+positiveBawl: 5.826470588
+negativeBawl: 1.582352941
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sehe, sehen, VVFIN): 1, 0
+(Leute, Leute, NN): 1, 0
+(müssen, müssen, VMFIN): 0, 1
+(gewarnet, gewarnet, NE): 0, 1
+(nehm, nehm, VVFIN): 1, 0
+(Manne, Mann, NN): 1, 0
+(Acht, Acht, NN): 1, 0
+(zeigend, zeigend, ADJD): 1, 0
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 573, ID:134
+emotion: 9.4
+arousel: 38.381787803
+positiveBawl: 14.347058823
+negativeBawl: 4.947058823
+positiveBawlDichotom: 10
+negativeBawlDichotom: 5
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wollte, wollen, VMFIN): 1, 0
+(lieb, lieb, ADJD): 1, 0
+(länger, lang, ADJD): 1, 0
+(könnten, können, VMFIN): 1, 0
+(gezogen, ziehen, VVPP): 0, 1
+(kennen, kennen, VVFIN): 1, 0
+(Wer, wer, PWS): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(wies, weisen, VVFIN): 1, 0
+(könnten, können, VMFIN): 1, 0
+(gestohlen, stehlen, VVPP): 0, 1
+(müßten, müssen, VMFIN): 0, 1
+(ersetzen, ersetzen, VVINF): 0, 1
+(hülfe, helfen, VVFIN): 1, 0
+(kann, können, VMFIN): 1, 0
+
+3.Akt, 2.Szene, 29.Replik, Drama-Nummer: 473, ID:135
+emotion: 4.161764706
+arousel: 19.753550544
+positiveBawl: 5.897058823
+negativeBawl: 1.735294117
+positiveBawlDichotom: 4
+negativeBawlDichotom: 3
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(muß, müssen, VMFIN): 0, 1
+(gestehen, gestehen, VVINF): 0, 1
+(Leute, Leute, NN): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+(wissen, wissen, VVINF): 1, 0
+(Herr, Herr, NN): 0, 1
+(fände, finden, VVFIN): 1, 0
+
+5.Akt, 13.Szene, 3.Replik, Drama-Nummer: 1098, ID:136
+emotion: 6.229411765
+arousel: 9.055555556
+positiveBawl: 6.229411765
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(liebe, lieben, VVFIN): 1, 0
+(umarmend, umarmend, ADJD): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+
+2.Akt, 1.Szene, 2.Replik, Drama-Nummer: 198, ID:137
+emotion: 5.838823529
+arousel: 24.896441103
+positiveBawl: 8.556470588
+negativeBawl: 2.717647059
+positiveBawlDichotom: 6
+negativeBawlDichotom: 4
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Wer, wer, PWS): 0, 1
+(kann, können, VMFIN): 1, 0
+(Städten, Stadt, NN): 0, 1
+(schlafen, schlafen, VVINF): 1, 0
+(Katzen, Katze, NN): 1, 0
+(schreien, schreien, VVINF): 0, 1
+(Nacht, Nacht, NN): 1, 0
+(Ruhe, Ruhe, NN): 1, 0
+(Tasse, Tasse, NN): 1, 0
+(Fräulein, Fräulein, NN): 0, 1
+
+5.Akt, 9.Szene, 18.Replik, Drama-Nummer: 1007, ID:138
+emotion: 1.444117646
+arousel: 29.689390142
+positiveBawl: 4.517647058
+negativeBawl: 3.073529412
+positiveBawlDichotom: 5
+negativeBawlDichotom: 6
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Nein, nein, PTKANT): 0, 1
+(gemeint, meinen, VVPP): 1, 0
+(weise, weisen, VVFIN): 1, 0
+(Welt, Welt, NN): 1, 0
+(Ehre, Ehre, NN): 1, 0
+(folgen, folgen, VVINF): 0, 1
+(wollen, wollen, VMINF): 1, 0
+(braucht, brauchen, VVFIN): 0, 1
+(verlaufen, verlaufen, VVFIN): 0, 1
+(Fräulein, Fräulein, NN): 0, 1
+(geworfen, werfen, VVPP): 0, 1
+
+1.Akt, 6.Szene, 6.Replik, Drama-Nummer: 102, ID:139
+emotion: -0.894117648
+arousel: 24.009816208
+positiveBawl: 4.170588235
+negativeBawl: 5.064705883
+positiveBawlDichotom: 3
+negativeBawlDichotom: 5
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Willen, Wille, NN): 1, 0
+(vollziehen, vollziehen, VVINF): 0, 1
+(erinnerte, erinnern, VVFIN): 1, 0
+(Ende, Ende, NN): 0, 1
+(sterbe, sterben, VVFIN): 0, 1
+(Schuld, Schuld, NN): 0, 1
+(verkauft, verkaufen, VVPP): 0, 1
+(komme, kommen, VVFIN): 1, 0
+
+4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
+emotion: 6.294117646
+arousel: 28.016081872
+positiveBawl: 9.011764705
+negativeBawl: 2.717647059
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Freund, Freund, NN): 1, 0
+(gehört, gehören, VVFIN): 1, 0
+(brennet, brennet, VVFIN): 0, 1
+(Mann, Mann, NN): 1, 0
+(kennen, kennen, VVINF): 1, 0
+(Erbin, Erbin, NN): 1, 0
+(gewählt, wählen, VVPP): 1, 0
+(kömmt, kömmt, VVFIN): 1, 0
+(Vormund, Vormund, NN): 0, 1
+(Vater, Vater, NN): 1, 0
+(übergeben, übergeben, VVINF): 0, 1
+
+5.Akt, 9.Szene, 6.Replik, Drama-Nummer: 995, ID:141
+emotion: 16.705882353
+arousel: 65.159189642
+positiveBawl: 22.294117647
+negativeBawl: 5.588235294
+positiveBawlDichotom: 19
+negativeBawlDichotom: 7
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Gefalle, Gefalle, NN): 1, 0
+(geschieht, geschehen, VVFIN): 1, 0
+(Herr, Herr, NN): 0, 1
+(nimmt, nehmen, VVFIN): 1, 0
+(Brief, Brief, NN): 1, 0
+(lieset, lieset, VVFIN): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(wissen, wissen, VVINF): 1, 0
+(Ehre, Ehre, NN): 1, 0
+(besorgt, besorgt, ADJD): 0, 1
+(machte, machen, VVFIN): 1, 0
+(Vorteil, Vorteil, NN): 1, 0
+(Bruder, Bruder, NN): 1, 0
+(Nähern, Näher, NN): 1, 0
+(Zeugnis, Zeugnis, NN): 0, 1
+(mehr, mehr, ADV): 1, 0
+(bezahlen, bezahlen, VVINF): 0, 1
+(alles, alle, PIS): 1, 0
+(Rechnungen, Rechnung, NN): 0, 1
+(Meldet, melden, VVFIN): 1, 0
+(Gesundheit, Gesundheit, NN): 1, 0
+(erlaubet, erlaubet, VVFIN): 1, 0
+(Dienste, Dienst, NN): 0, 1
+(nehmen, nehmen, VVINF): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+(Mann, Mann, NN): 1, 0
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 450, ID:142
+emotion: -2.029411765
+arousel: 21.126148706
+positiveBawl: 1.147058823
+negativeBawl: 3.176470588
+positiveBawlDichotom: 3
+negativeBawlDichotom: 5
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(soll, sollen, VMFIN): 0, 1
+(Herr, Herr, NN): 0, 1
+(bitten, bitten, VVINF): 1, 0
+(übergeben, übergeben, VVFIN): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(Herr, Herr, NN): 0, 1
+(bitten, bitten, VVFIN): 1, 0
+(bitte, bitten, VVFIN): 1, 0
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 19, ID:143
+emotion: -2.811764706
+arousel: 19.550125314
+positiveBawl: 1.5
+negativeBawl: 4.311764706
+positiveBawlDichotom: 2
+negativeBawlDichotom: 5
+polarityBawlDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Mache, machen, VVFIN): 1, 0
+(Mühe, Mühe, NN): 0, 1
+(Herr, Herr, NN): 0, 1
+(Tropfen, Tropfen, NN): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(Gift, Gift, NN): 0, 1
+(will, wollen, VMFIN): 1, 0
+
+4.Akt, 6.Szene, 37.Replik, Drama-Nummer: 848, ID:144
+emotion: -0.347058822
+arousel: 26.05764411
+positiveBawl: 2.594117647
+negativeBawl: 2.941176469
+positiveBawlDichotom: 4
+negativeBawlDichotom: 6
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sagen, sagen, VVFIN): 1, 0
+(Fräulein, Fräulein, NN): 0, 1
+(kam, kommen, VVFIN): 1, 0
+(Mohr, Mohr, NN): 1, 0
+(Dienste, Dienst, NN): 0, 1
+(Mohr, Mohr, NN): 1, 0
+(Vaterland, Vaterland, NN): 0, 1
+(vermietete, vermieten, VVFIN): 0, 1
+(Blut, Blut, NN): 0, 1
+(Staate, Staat, NN): 0, 1
+
+1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
+emotion: 2.111764705
+arousel: 26.164786968
+positiveBawl: 6.994117647
+negativeBawl: 4.882352942
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Freund, Freund, NN): 1, 0
+(Auftrag, Auftrag, NN): 1, 0
+(gehört, gehören, VVFIN): 1, 0
+(Herrschaft, Herrschaft, NN): 0, 1
+(erkenne, erkennen, VVFIN): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(Macht, machen, VVFIN): 1, 0
+(Empfehl, Empfehl, NN): 1, 0
+(heißt, heißen, VVFIN): 1, 0
+(Herrschaft, Herrschaft, NN): 0, 1
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 220, ID:146
+emotion: 1.352941177
+arousel: 8.111111112
+positiveBawl: 2.0
+negativeBawl: 0.647058823
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Fräulein, Fräulein, NN): 0, 1
+(Treue, Treue, NN): 1, 0
+(Herr, Herr, NN): 0, 1
+
+3.Akt, 3.Szene, 19.Replik, Drama-Nummer: 317, ID:147
+emotion: -0.370588236
+arousel: 12.138680033
+positiveBawl: 2.564705882
+negativeBawl: 2.935294118
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Gewalt, Gewalt, NN): 0, 1
+(Kind, Kind, NN): 1, 0
+(brauchen, brauchen, VVINF): 0, 1
+(wollen, wollen, VMFIN): 1, 0
+
+2.Akt, 3.Szene, 6.Replik, Drama-Nummer: 142, ID:148
+emotion: 20.982352941
+arousel: 31.057963537
+positiveBawl: 20.982352941
+negativeBawl: 0
+positiveBawlDichotom: 11
+negativeBawlDichotom: 0
+polarityBawlDichotom: 11
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(mehr, mehr, PIAT): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(mehr, mehr, PIAT): 1, 0
+(kann, können, VMFIN): 1, 0
+(fühle, fühlen, VVFIN): 1, 0
+(Sehen, sehen, VVFIN): 1, 0
+(sehen, sehen, VVFIN): 1, 0
+(Freude, Freude, NN): 1, 0
+(Kinder, Kind, NN): 1, 0
+(Wollust, Wollust, NN): 1, 0
+(Hand, Hand, NN): 1, 0
+
+2.Akt, 4.Szene, 24.Replik, Drama-Nummer: 195, ID:149
+emotion: 31.070588236
+arousel: 121.05267335
+positiveBawl: 44.65
+negativeBawl: 13.579411764
+positiveBawlDichotom: 34
+negativeBawlDichotom: 11
+polarityBawlDichotom: 23
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Grund, Grund, NN): 1, 0
+(Herzens, Herz, NN): 1, 0
+(gesehen, sehen, VVPP): 1, 0
+(entdeckt, entdecken, VVPP): 1, 0
+(mehr, mehr, ADV): 1, 0
+(wahres, wahr, ADJA): 1, 0
+(Miß, Miss, NN): 0, 1
+(fühlt, fühlen, VVFIN): 1, 0
+(sage, sagen, VVFIN): 1, 0
+(wahres, wahr, ADJA): 1, 0
+(weit, weit, ADJD): 1, 0
+(getrieben, treiben, VVPP): 0, 1
+(Mann, Mann, NN): 1, 0
+(langen, lang, ADJA): 1, 0
+(Kunst, Kunst, NN): 1, 0
+(junges, jung, ADJA): 1, 0
+(Erfahrung, Erfahrung, NN): 1, 0
+(machten, machen, VVFIN): 1, 0
+(Zweck, Zweck, NN): 0, 1
+(erreichten, erreichen, VVFIN): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+(können, können, VMFIN): 1, 0
+(Allein, allein, ADV): 0, 1
+(Vater, Vater, NN): 1, 0
+(Kind, Kind, NN): 1, 0
+(Schritte, Schritt, NN): 1, 0
+(Grabe, Grab, NN): 0, 1
+(bitter, bitter, ADJD): 0, 1
+(machten, machen, VVFIN): 1, 0
+(Lust, Lust, NN): 1, 0
+(wegen, wegen, APPO): 1, 0
+(stärksten, stark, ADJA): 1, 0
+(Natur, Natur, NN): 1, 0
+(trennten, trennen, VVFIN): 0, 1
+(können, können, VMFIN): 1, 0
+(Machen, machen, VVFIN): 1, 0
+(Fehler, Fehler, NN): 0, 1
+(weit, weit, ADJD): 1, 0
+(machen, machen, VVINF): 1, 0
+(weinenden, weinend, ADJA): 0, 1
+(Alter, Alter, NN): 0, 1
+(Tochter, Tochter, NN): 1, 0
+(Haus, Haus, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(müssen, müssen, VMINF): 0, 1
+
+3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
+emotion: 12.294117647
+arousel: 55.099832917
+positiveBawl: 18.894117647
+negativeBawl: 6.6
+positiveBawlDichotom: 17
+negativeBawlDichotom: 4
+polarityBawlDichotom: 13
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Miß, Miss, NN): 0, 1
+(glaube, glauben, VVFIN): 1, 0
+(Leben, Leben, NN): 1, 0
+(Wer, wer, PWS): 0, 1
+(Miß, Miss, NN): 0, 1
+(Absicht, Absicht, NN): 1, 0
+(geht, gehen, VVFIN): 1, 0
+(nahe, nahe, PTKVZ): 1, 0
+(Miß, Miss, NN): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(Absicht, Absicht, NN): 1, 0
+(konnte, können, VMFIN): 1, 0
+(Vater, Vater, NN): 1, 0
+(Brief, Brief, NN): 1, 0
+(kann, können, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(gehen, gehen, VVINF): 1, 0
+(weit, weit, ADJD): 1, 0
+(tragen, tragen, VVINF): 1, 0
+(Augen, Auge, NN): 1, 0
+(kommen, kommen, VVINF): 1, 0
+
+3.Akt, 2.Szene, 2.Replik, Drama-Nummer: 282, ID:151
+emotion: 3.9
+arousel: 13.546365915
+positiveBawl: 5.5
+negativeBawl: 1.6
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Nein, nein, PTKANT): 0, 1
+(Könnten, können, VMFIN): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(Geheimnisse, Geheimnis, NN): 1, 0
+
+5.Akt, 7.Szene, 3.Replik, Drama-Nummer: 653, ID:152
+emotion: 7.755882352
+arousel: 99.389348373
+positiveBawl: 29.049999999
+negativeBawl: 21.294117647
+positiveBawlDichotom: 23
+negativeBawlDichotom: 13
+polarityBawlDichotom: 10
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(krank, krank, ADJD): 0, 1
+(schließe, schließen, VVFIN): 0, 1
+(mehr, mehr, ADV): 1, 0
+(Angst, Angst, NN): 0, 1
+(fühle, fühlen, VVFIN): 1, 0
+(Briefe, Brief, NN): 1, 0
+(Vater, Vater, NN): 1, 0
+(müßtest, müssen, VMFIN): 0, 1
+(hoffen, hoffen, VVINF): 1, 0
+(Willst, wollen, VMFIN): 1, 0
+(finde, finden, VVFIN): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+(Stande, Stand, NN): 1, 0
+(Hand, Hand, NN): 1, 0
+(hängt, hängen, VVFIN): 0, 1
+(tot, tot, ADJD): 0, 1
+(Seite, Seite, NN): 1, 0
+(leicht, leicht, ADJD): 1, 0
+(stirbt, sterben, VVFIN): 0, 1
+(Mann, Mann, NN): 1, 0
+(kannst, können, VMFIN): 1, 0
+(Auftritte, Auftritt, NN): 1, 0
+(weit, weit, ADJD): 1, 0
+(mehr, mehr, ADV): 1, 0
+(entfernet, entfernet, VVFIN): 0, 1
+(Glaube, Glaube, NN): 1, 0
+(empfinde, empfinden, VVFIN): 1, 0
+(Todes, Tod, NN): 0, 1
+(Todes, Tod, NN): 0, 1
+(bitter, bitter, ADJD): 0, 1
+(Kehre, kehren, VVFIN): 0, 1
+(alle, alle, PIAT): 1, 0
+(kann, können, VMFIN): 1, 0
+(konnte, können, VMFIN): 1, 0
+(Mensch, Mensch, NN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+
+2.Akt, 4.Szene, 7.Replik, Drama-Nummer: 178, ID:153
+emotion: 14.158823528
+arousel: 45.013784462
+positiveBawl: 21.135294117
+negativeBawl: 6.976470589
+positiveBawlDichotom: 13
+negativeBawlDichotom: 5
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(seufzet, seufzet, VVFIN): 0, 1
+(fehlt, fehlen, VVFIN): 0, 1
+(Können, können, VMFIN): 1, 0
+(helfen, helfen, VVINF): 1, 0
+(seufzen, seufzen, VVINF): 0, 1
+(sieht, sehen, VVFIN): 1, 0
+(Nein, nein, PTKANT): 0, 1
+(sieht, sehen, VVFIN): 1, 0
+(weg, weg, PTKVZ): 1, 0
+(sieht, sehen, VVFIN): 1, 0
+(Himmel, Himmel, NN): 1, 0
+(wünscht, wünschen, VVFIN): 1, 0
+(bittet, bitten, VVFIN): 1, 0
+(Himmel, Himmel, NN): 1, 0
+(Möchte, mögen, VMFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(alles, alle, PIS): 1, 0
+(versagte, versagen, VVFIN): 0, 1
+
+3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
+emotion: -0.182352941
+arousel: 25.485964914
+positiveBawl: 7.517647059
+negativeBawl: 7.7
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Gott, Gott, NN): 1, 0
+(Nachricht, Nachricht, NN): 1, 0
+(Tode, Tod, NN): 0, 1
+(Vaters, Vater, NN): 1, 0
+(Mann, Mann, NN): 1, 0
+(Vater, Vater, NN): 1, 0
+(Elende, elend, ADJA): 0, 1
+(Tod, Tod, NN): 0, 1
+
+3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
+emotion: 31.357219253
+arousel: 135.237969925
+positiveBawl: 44.557219253
+negativeBawl: 13.2
+positiveBawlDichotom: 39
+negativeBawlDichotom: 11
+polarityBawlDichotom: 28
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Geliebten, Geliebte, NN): 1, 0
+(Tochter, Tochter, NN): 1, 0
+(trennen, trennen, VVINF): 0, 1
+(könnte, können, VMFIN): 1, 0
+(angeht, angehen, VVFIN): 1, 0
+(siehst, sehen, VVFIN): 1, 0
+(gesichert, sichern, VVPP): 1, 0
+(Fehler, Fehler, NN): 0, 1
+(Mann, Mann, NN): 1, 0
+(kennen, kennen, VVINF): 1, 0
+(lernen, lernen, VVINF): 1, 0
+(wegen, wegen, APPR): 1, 0
+(glaubte, glauben, VVFIN): 1, 0
+(Hause, Haus, NN): 1, 0
+(Achtung, Achtung, NN): 1, 0
+(Tochter, Tochter, NN): 1, 0
+(mußte, müssen, VMFIN): 0, 1
+(Mensch, Mensch, NN): 1, 0
+(Achtung, Achtung, NN): 1, 0
+(treiben, treiben, VVINF): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(verwandeln, verwandeln, VVINF): 1, 0
+(ehe, ehe, KOUS): 1, 0
+(ehe, ehe, KOUS): 1, 0
+(geschehen, geschehen, VVPP): 1, 0
+(alles, alle, PIS): 1, 0
+(vergeben, vergeben, VVINF): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+(überlegte, überlegen, VVFIN): 1, 0
+(allein, allein, ADV): 0, 1
+(könnte, können, VMFIN): 1, 0
+(Strenge, Strenge, NN): 0, 1
+(Flucht, Flucht, NN): 0, 1
+(verhindert, verhindern, VVPP): 0, 1
+(muß, müssen, VMFIN): 0, 1
+(schätzen, schätzen, VVINF): 1, 0
+(Sohn, Sohn, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+(kann, können, VMFIN): 1, 0
+(wer, wer, PWS): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(Mädchens, Mädchen, NN): 1, 0
+(wegen, wegen, APPO): 1, 0
+(aufgeben, aufgeben, VVINF): 0, 1
+(wollen, wollen, VMFIN): 1, 0
+(Begierden, Begierde, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(verlangen, verlangen, VVFIN): 1, 0
+(Künste, Kunst, NN): 1, 0
+(versteht, verstehen, VVFIN): 1, 0
+
+4.Akt, 8.Szene, 70.Replik, Drama-Nummer: 580, ID:156
+emotion: -1.782352941
+arousel: 15.784126985
+positiveBawl: 1.617647059
+negativeBawl: 3.4
+positiveBawlDichotom: 2
+negativeBawlDichotom: 3
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(reizend, reizend, ADJD): 0, 1
+(sollte, sollen, VMFIN): 0, 1
+(Erkennen, erkennen, VVFIN): 1, 0
+(Miß, Miss, NN): 0, 1
+(bitten, bitten, VVINF): 1, 0
+
+4.Akt, 8.Szene, 20.Replik, Drama-Nummer: 530, ID:157
+emotion: 3.682352941
+arousel: 30.089390142
+positiveBawl: 8.123529412
+negativeBawl: 4.441176471
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(leid, leid, ADJD): 0, 1
+(Gedanken, Gedanke, NN): 1, 0
+(Miß, Miss, NN): 0, 1
+(setze, setzen, VVFIN): 1, 0
+(nähere, nah, ADJA): 1, 0
+(Nachricht, Nachricht, NN): 1, 0
+(man, man, PIS): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+(Schicksale, Schicksal, NN): 0, 1
+(verbinden, verbinden, VVINF): 1, 0
+(Wohltat, Wohltat, NN): 1, 0
+
+4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
+emotion: 7.935294118
+arousel: 30.724728488
+positiveBawl: 11.317647059
+negativeBawl: 3.382352941
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Meinung, Meinung, NN): 1, 0
+(glaubten, glauben, VVFIN): 1, 0
+(müßte, müssen, VMFIN): 0, 1
+(sollten, sollen, VMFIN): 0, 1
+(glauben, glauben, VVINF): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(machen, machen, VVINF): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+(Mann, Mann, NN): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(kann, können, VMFIN): 1, 0
+
+4.Akt, 8.Szene, 38.Replik, Drama-Nummer: 548, ID:159
+emotion: 16.164705883
+arousel: 56.734648509
+positiveBawl: 20.241176471
+negativeBawl: 4.076470588
+positiveBawlDichotom: 17
+negativeBawlDichotom: 4
+polarityBawlDichotom: 13
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Mangels, Mangel, NN): 0, 1
+(Vermögen, Vermögen, NN): 1, 0
+(ward, werd, VVFIN): 1, 0
+(Personen, Person, NN): 1, 0
+(gesucht, suchen, VVPP): 0, 1
+(eifriger, eifrig, ADJD): 1, 0
+(wünschten, wünschen, VVFIN): 1, 0
+(machen, machen, VVINF): 1, 0
+(reichen, reich, ADJA): 1, 0
+(vornehmen, vornehm, ADJA): 1, 0
+(trat, treten, VVFIN): 0, 1
+(Antrag, Antrag, NN): 1, 0
+(setzen, setzen, VVINF): 1, 0
+(stützte, stützen, VVFIN): 1, 0
+(weg, weg, PTKVZ): 1, 0
+(Gefühls, Gefühl, NN): 1, 0
+(Palaste, Palaste, NN): 1, 0
+(geliebten, geliebt, ADJA): 1, 0
+(Person, Person, NN): 1, 0
+(leben, leben, VVINF): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+
+2.Akt, 1.Szene, 7.Replik, Drama-Nummer: 117, ID:160
+emotion: 3.964705882
+arousel: 11.164160402
+positiveBawl: 4.964705882
+negativeBawl: 1.0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sollte, sollen, VMFIN): 0, 1
+(fühle, fühlen, VVFIN): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+(lieber, lieb, ADJD): 1, 0
+
+5.Akt, 10.Szene, 14.Replik, Drama-Nummer: 684, ID:161
+emotion: 8.576470588
+arousel: 22.053508772
+positiveBawl: 10.676470588
+negativeBawl: 2.1
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Vater, Vater, NN): 1, 0
+(Willen, Wille, NN): 1, 0
+(Tochter, Tochter, NN): 1, 0
+(sollte, sollen, VMFIN): 0, 1
+(umarmen, umarmen, VVFIN): 1, 0
+(Sohn, Sohn, NN): 1, 0
+(teurer, teuer, ADJD): 0, 1
+(konnte, können, VMFIN): 1, 0
+
+1.Akt, 7.Szene, 2.Replik, Drama-Nummer: 54, ID:162
+emotion: 0.2
+arousel: 2.368421053
+positiveBawl: 0.2
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(vergeben, vergeben, VVINF): 1, 0
+
+2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
+emotion: 5.929411765
+arousel: 49.997493734
+positiveBawl: 15.811764706
+negativeBawl: 9.882352941
+positiveBawlDichotom: 10
+negativeBawlDichotom: 7
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(liege, liegen, VVFIN): 1, 0
+(verlassen, verlassen, VVFIN): 0, 1
+(verlassen, verlassen, VVPP): 0, 1
+(Ewigkeit, Ewigkeit, NN): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+(gesagt, sagen, VVPP): 1, 0
+(liebten, lieben, VVFIN): 1, 0
+(Verläßt, verlassen, VVFIN): 0, 1
+(man, man, PIS): 1, 0
+(man, man, PIS): 1, 0
+(liebt, lieben, VVFIN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(lieben, lieben, VVINF): 1, 0
+(wünschte, wünschen, VVFIN): 1, 0
+(verlassen, verlassen, VVINF): 0, 1
+(will, wollen, VMFIN): 1, 0
+(verlassen, verlassen, VVPP): 0, 1
+
+5.Akt, 10.Szene, 3.Replik, Drama-Nummer: 673, ID:164
+emotion: 11.991176471
+arousel: 55.165204679
+positiveBawl: 19.991176471
+negativeBawl: 8.0
+positiveBawlDichotom: 14
+negativeBawlDichotom: 6
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sollt, sollen, VMFIN): 0, 1
+(sehen, sehen, VVINF): 1, 0
+(Nein, nein, PTKANT): 0, 1
+(Miß, Miss, NN): 0, 1
+(komme, kommen, VVFIN): 1, 0
+(Trost, Trost, NN): 1, 0
+(Hülfe, Hülfe, NN): 1, 0
+(allein, allein, ADV): 0, 1
+(wen, wer, PWS): 0, 1
+(seh, seh, XY): 1, 0
+(Vater, Vater, NN): 1, 0
+(Szene, Szene, NN): 1, 0
+(gekommen, kommen, VVPP): 1, 0
+(kamen, kommen, VVFIN): 1, 0
+(kommen, kommen, VVFIN): 1, 0
+(Tochter, Tochter, NN): 1, 0
+(retten, retten, VVINF): 1, 0
+(sehen, sehen, VVINF): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+(gekommen, kommen, VVPP): 1, 0
+
+5.Akt, 2.Szene, 7.Replik, Drama-Nummer: 601, ID:165
+emotion: 1.105882353
+arousel: 9.784461153
+positiveBawl: 3.705882353
+negativeBawl: 2.6
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(können, können, VMINF): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(Angst, Angst, NN): 0, 1
+
+3.Akt, 3.Szene, 15.Replik, Drama-Nummer: 313, ID:166
+emotion: 11.788235294
+arousel: 24.069143448
+positiveBawl: 12.788235294
+negativeBawl: 1.0
+positiveBawlDichotom: 8
+negativeBawlDichotom: 1
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(nehmen, nehmen, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(sehen, sehen, VVINF): 1, 0
+(können, können, VMINF): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+(Freude, Freude, NN): 1, 0
+(verwandeln, verwandeln, VVFIN): 1, 0
+(Freude, Freude, NN): 1, 0
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 1148, ID:167
+emotion: 4.84117647
+arousel: 10.263157895
+positiveBawl: 4.84117647
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Sagt, sagen, VVFIN): 1, 0
+(Liebe, Liebe, NN): 1, 0
+(sagt, sagen, VVFIN): 1, 0
+(Namen, Name, NN): 1, 0
+
+4.Akt, 7.Szene, 39.Replik, Drama-Nummer: 1008, ID:168
+emotion: 4.247058825
+arousel: 40.364755023
+positiveBawl: 10.011764707
+negativeBawl: 5.764705882
+positiveBawlDichotom: 10
+negativeBawlDichotom: 4
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(macht, machen, VVFIN): 1, 0
+(macht, machen, VVFIN): 1, 0
+(länger, lang, ADJD): 1, 0
+(Tat, Tat, NN): 0, 1
+(Liebe, Liebe, NN): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+(band, binden, VVFIN): 1, 0
+(Gedanke, Gedanke, NN): 1, 0
+(tötet, töten, VVFIN): 0, 1
+(sieben, sieben, CARD): 1, 0
+(Verlieren, Verlieren, NN): 0, 1
+(soll, sollen, VMFIN): 0, 1
+(Händen, Hand, NN): 1, 0
+(Vorsicht, Vorsicht, NN): 1, 0
+
+5.Akt, 6.Szene, 52.Replik, Drama-Nummer: 1213, ID:169
+emotion: 1.911764706
+arousel: 15.389849624
+positiveBawl: 3.294117647
+negativeBawl: 1.382352941
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Gebet, Gebet, NN): 1, 0
+(wahren, wahr, ADJA): 1, 0
+(Vergeben, Vergeben, NN): 1, 0
+(entdecken, entdecken, VVINF): 1, 0
+(müsse, müssen, VMFIN): 0, 1
+(Kirch, Kirch, NN): 1, 0
+
+5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
+emotion: 2.582352941
+arousel: 10.064035088
+positiveBawl: 4.382352941
+negativeBawl: 1.8
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Weiß, wissen, VVFIN): 1, 0
+(allein, allein, ADV): 0, 1
+(könnte, können, VMFIN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+
+3.Akt, 7.Szene, 22.Replik, Drama-Nummer: 693, ID:171
+emotion: 28.329411767
+arousel: 86.366198832
+positiveBawl: 35.629411766
+negativeBawl: 7.299999999
+positiveBawlDichotom: 26
+negativeBawlDichotom: 7
+polarityBawlDichotom: 19
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Richter, Richter, NN): 0, 1
+(sprach, sprechen, VVFIN): 1, 0
+(Vater, Vater, NN): 1, 0
+(schafft, schaffen, VVFIN): 1, 0
+(Stuhle, Stuhl, NN): 1, 0
+(lösen, lösen, VVINF): 1, 0
+(Ring, Ring, NN): 1, 0
+(Ring, Ring, NN): 1, 0
+(beliebt, beliebt, ADJD): 1, 0
+(machen, machen, VVINF): 1, 0
+(Gott, Gott, NN): 1, 0
+(Menschen, Mensch, NN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Ringe, Ring, NN): 1, 0
+(können, können, VMINF): 1, 0
+(wen, wer, PWS): 0, 1
+(lieben, lieben, VVFIN): 1, 0
+(Macht, machen, VVFIN): 1, 0
+(sagt, sagen, VVFIN): 1, 0
+(schweigt, schweigen, VVFIN): 0, 1
+(Ringe, Ring, NN): 1, 0
+(wirken, wirken, VVFIN): 1, 0
+(liebt, lieben, VVFIN): 1, 0
+(alle, alle, PIAT): 1, 0
+(Ringe, Ring, NN): 1, 0
+(alle, alle, PIAT): 1, 0
+(Ring, Ring, NN): 1, 0
+(ging, gehen, VVFIN): 1, 0
+(verloren, verloren, PTKVZ): 0, 1
+(Verlust, Verlust, NN): 0, 1
+(ersetzen, ersetzen, VVINF): 0, 1
+(Vater, Vater, NN): 1, 0
+(machen, machen, VVINF): 1, 0
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 580, ID:172
+emotion: -4.3
+arousel: 28.734504768
+positiveBawl: 2.882352941
+negativeBawl: 7.182352941
+positiveBawlDichotom: 4
+negativeBawlDichotom: 6
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Kummers, Kummer, NE): 0, 1
+(Galle, Galle, NN): 0, 1
+(Laune, Laune, NN): 1, 0
+(übel, übel, ADJD): 0, 1
+(Torheit, Torheit, NN): 0, 1
+(Zung, Zung, NN): 1, 0
+(hieß, heißen, VVFIN): 1, 0
+(rächen, rächen, VVINF): 0, 1
+(vertreten, vertreten, VVINF): 0, 1
+(willst, wollen, VMFIN): 1, 0
+
+1.Akt, 2.Szene, 15.Replik, Drama-Nummer: 72, ID:173
+emotion: 2.464705882
+arousel: 23.739766082
+positiveBawl: 6.982352941
+negativeBawl: 4.517647059
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(schließt, schließen, VVFIN): 0, 1
+(Vater, Vater, NN): 1, 0
+(Kömmt, Kömmt, NN): 1, 0
+(Tode, Tod, NN): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+(frei, frei, ADJD): 0, 1
+(retten, retten, VVINF): 1, 0
+(können, können, VMINF): 1, 0
+
+3.Akt, 5.Szene, 20.Replik, Drama-Nummer: 665, ID:174
+emotion: 0.029411764
+arousel: 15.15
+positiveBawl: 3.676470588
+negativeBawl: 3.647058824
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Zweifel, Zweifel, NN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+(Wege, Weg, NN): 1, 0
+(Feinde, Feind, NN): 0, 1
+
+4.Akt, 7.Szene, 31.Replik, Drama-Nummer: 1000, ID:175
+emotion: 1.535294116
+arousel: 67.588596491
+positiveBawl: 15.317647057
+negativeBawl: 13.782352941
+positiveBawlDichotom: 14
+negativeBawlDichotom: 11
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Bruder, Bruder, NN): 1, 0
+(müßt, müssen, VMFIN): 0, 1
+(Erheben, Erheben, NN): 1, 0
+(sollten, sollen, VMFIN): 0, 1
+(wegen, wegen, APPR): 1, 0
+(Tat, Tat, NN): 0, 1
+(wegen, wegen, APPR): 1, 0
+(Tat, Tat, NN): 0, 1
+(sollt, sollen, VMFIN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(Nehmt, nehmen, VVFIN): 1, 0
+(Grab, Grab, NN): 0, 1
+(versucht, versuchen, VVPP): 1, 0
+(erzählen, erzählen, VVINF): 1, 0
+(Allein, allein, ADV): 0, 1
+(erzähl, erzählen, VVIMP): 1, 0
+(frommen, fromm, ADJA): 1, 0
+(Einfalt, Einfalt, NN): 0, 1
+(Allein, allein, PTKVZ): 0, 1
+(erzähl, erzählen, VVIMP): 1, 0
+(allein, allein, ADV): 0, 1
+(Versteht, verstehen, VVFIN): 1, 0
+(Mensch, Mensch, NN): 1, 0
+(Taten, Tat, NN): 0, 1
+(kann, können, VMFIN): 1, 0
+
+2.Akt, 5.Szene, 37.Replik, Drama-Nummer: 487, ID:176
+emotion: 4.505882353
+arousel: 10.458897243
+positiveBawl: 5.123529412
+negativeBawl: 0.617647059
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(freuen, freuen, VVINF): 1, 0
+(heitre, heiter, ADJA): 1, 0
+(schließt, schließen, VVFIN): 0, 1
+(Kennt, kennen, VVFIN): 1, 0
+
+1.Akt, 4.Szene, 10.Replik, Drama-Nummer: 179, ID:177
+emotion: 10.78235294
+arousel: 30.66750209
+positiveBawl: 10.78235294
+negativeBawl: 0
+positiveBawlDichotom: 13
+negativeBawlDichotom: 0
+polarityBawlDichotom: 13
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Kamele, Kamel, NN): 1, 0
+(Gestiegen, Gestiegen, NN): 1, 0
+(Geh, gehen, VVIMP): 1, 0
+(meld, meld, VVFIN): 1, 0
+(Acht, Acht, NN): 1, 0
+(Haus, Haus, NN): 1, 0
+(wollen, wollen, VMFIN): 1, 0
+(kömmt, kömmt, VVFIN): 1, 0
+(Vater, Vater, NN): 1, 0
+(Geh, gehen, VVIMP): 1, 0
+(sag, sagen, VVIMP): 1, 0
+(bitten, bitten, VVINF): 1, 0
+(bitten, bitten, VVINF): 1, 0
+
+3.Akt, 3.Szene, 6.Replik, Drama-Nummer: 609, ID:178
+emotion: 0.711764706
+arousel: 11.223057643
+positiveBawl: 2.411764706
+negativeBawl: 1.7
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(könnt, können, VMFIN): 1, 0
+(Unruh, Unruh, NN): 0, 1
+(all, all, FM): 0, 1
+(gemacht, machen, VVPP): 1, 0
+
+1.Akt, 5.Szene, 65.Replik, Drama-Nummer: 246, ID:179
+emotion: 18.576470588
+arousel: 38.180438843
+positiveBawl: 20.176470588
+negativeBawl: 1.6
+positiveBawlDichotom: 15
+negativeBawlDichotom: 1
+polarityBawlDichotom: 14
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(weiß, wissen, VVFIN): 1, 0
+(Natur, Natur, NN): 1, 0
+(Bruders, Bruder, NN): 1, 0
+(Form, Form, NN): 1, 0
+(gebildet, bilden, VVPP): 1, 0
+(Seele, Seele, NN): 1, 0
+(könnt, können, VMFIN): 1, 0
+(gefallen, gefallen, VVINF): 1, 0
+(Natur, Natur, NN): 1, 0
+(Gott, Gott, NN): 1, 0
+(Werken, Werk, NN): 1, 0
+(Geht, gehen, VVFIN): 1, 0
+(Bruder, Bruder, NN): 1, 0
+(Galle, Galle, NN): 0, 1
+(Geht, gehen, VVFIN): 1, 0
+(geht, gehen, VVFIN): 1, 0
+
+5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
+emotion: 1.805882353
+arousel: 5.222222223
+positiveBawl: 2.1
+negativeBawl: 0.294117647
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Vater, Vater, NN): 1, 0
+(her, her, PTKVZ): 0, 1
+
+4.Akt, 7.Szene, 40.Replik, Drama-Nummer: 1009, ID:181
+emotion: 1.1
+arousel: 2.833333333
+positiveBawl: 1.1
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Geist, Geist, NN): 1, 0
+
+4.Akt, 4.Szene, 45.Replik, Drama-Nummer: 922, ID:182
+emotion: 8.164705883
+arousel: 18.923809524
+positiveBawl: 9.164705883
+negativeBawl: 1.0
+positiveBawlDichotom: 6
+negativeBawlDichotom: 1
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Woll, Woll, VVFIN): 1, 0
+(wolle, wollen, VMFIN): 1, 0
+(entdeckt, entdecken, VVPP): 1, 0
+(tolerante, tolerant, ADJA): 1, 0
+(entdeckt, entdecken, VVPP): 1, 0
+(wissen, wissen, VVFIN): 1, 0
+(sollen, sollen, VMFIN): 0, 1
+
+4.Akt, 5.Szene, 6.Replik, Drama-Nummer: 937, ID:183
+emotion: 9.217647059
+arousel: 33.830513786
+positiveBawl: 12.2
+negativeBawl: 2.982352941
+positiveBawlDichotom: 12
+negativeBawlDichotom: 2
+polarityBawlDichotom: 10
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Rede, Rede, NN): 1, 0
+(ging, gehen, VVFIN): 1, 0
+(Man, man, PIS): 1, 0
+(spricht, sprechen, VVFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(allen, alle, PIAT): 1, 0
+(Fehlern, Fehler, NN): 0, 1
+(allen, alle, PIAT): 1, 0
+(Launen, Laune, NN): 1, 0
+(weichen, weich, ADJA): 1, 0
+(Herzens, Herz, NN): 1, 0
+(Mädchen, Mädchen, NN): 1, 0
+(muß, müssen, VMFIN): 0, 1
+(Meinst, meinen, VVFIN): 1, 0
+
+3.Akt, 5.Szene, 15.Replik, Drama-Nummer: 660, ID:184
+emotion: 4.538235294
+arousel: 12.456140351
+positiveBawl: 4.538235294
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Man, man, PIS): 1, 0
+(Vernunft, Vernunft, NN): 1, 0
+(erwartet, erwarten, VVPP): 1, 0
+(Sache, Sache, NN): 1, 0
+(kommen, kommen, VVINF): 1, 0
+
+3.Akt, 10.Szene, 53.Replik, Drama-Nummer: 809, ID:185
+emotion: 4.617647058
+arousel: 10.403508772
+positiveBawl: 4.617647058
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(sprechen, sprechen, VVINF): 1, 0
+(begegnet, begegnen, VVPP): 1, 0
+(sagt, sagen, VVFIN): 1, 0
+(finden, finden, VVINF): 1, 0
+
+3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
+emotion: 1.25
+arousel: 11.674603175
+positiveBawl: 3.25
+negativeBawl: 2.0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Ritter, Ritter, NE): 1, 0
+(Herz, Herz, NN): 1, 0
+(geworfen, werfen, VVPP): 0, 1
+(Geschadet, Geschadet, NN): 0, 1
+
+4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
+emotion: 8.141176471
+arousel: 18.329991647
+positiveBawl: 8.905882353
+negativeBawl: 0.764705882
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Dank, Dank, NN): 1, 0
+(Dank, dank, APPR): 1, 0
+(Leben, Leben, NN): 1, 0
+(Stand, Stand, NN): 1, 0
+(Charakter, Charakter, NN): 1, 0
+(steht, stehen, VVFIN): 1, 0
+(allen, alle, PIAT): 1, 0
+(Diensten, Dienst, NN): 0, 1
+
+5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
+emotion: 3.3
+arousel: 5.166666667
+positiveBawl: 3.3
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(mehr, mehr, ADV): 1, 0
+(Gott, Gott, NN): 1, 0
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
+emotion: 25.617647058
+arousel: 65.622377023
+positiveBawl: 27.470588234
+negativeBawl: 1.852941176
+positiveBawlDichotom: 22
+negativeBawlDichotom: 2
+polarityBawlDichotom: 20
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(wies, weisen, VVFIN): 1, 0
+(geschieht, geschehen, VVFIN): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(glauben, glauben, VVINF): 1, 0
+(liebt, lieben, VVFIN): 1, 0
+(jüngern, jüngern, ADJA): 1, 0
+(Bruder, Bruder, NN): 1, 0
+(lieben, lieben, VVINF): 1, 0
+(können, können, VMINF): 1, 0
+(Pflegen, pflegen, VVFIN): 1, 0
+(Gesichter, Gesicht, NN): 1, 0
+(Eindruck, Eindruck, NN): 1, 0
+(verlorner, verlorner, NN): 0, 1
+(Wirkt, wirken, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(weise, weisen, VVFIN): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Wunder, Wunder, NN): 1, 0
+(Bedürf, Bedürf, NN): 0, 1
+(verdienen, verdienen, VVINF): 1, 0
+(will, wollen, VMFIN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(Glauben, Glaube, NN): 1, 0
+
+1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
+emotion: 4.758823529
+arousel: 41.538011697
+positiveBawl: 10.923529411
+negativeBawl: 6.164705882
+positiveBawlDichotom: 9
+negativeBawlDichotom: 6
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Wills, Will, NE): 1, 0
+(Herrn, Herr, NN): 0, 1
+(kömmt, kömmt, VVFIN): 1, 0
+(Feste, Fest, NN): 1, 0
+(nennt, nennen, VVFIN): 1, 0
+(liegt, liegen, VVFIN): 1, 0
+(ungeheuern, ungeheuer, ADJA): 0, 1
+(Vater, Vater, NN): 1, 0
+(Heer, Heer, NN): 0, 1
+(Kriegs, Krieg, NN): 0, 1
+(bestreitet, bestreiten, VVFIN): 0, 1
+(verfügt, verfügen, VVFIN): 0, 1
+(Wegen, Weg, NN): 1, 0
+(Feste, Fest, NN): 1, 0
+(begleitet, begleiten, VVPP): 1, 0
+
+2.Akt, 5.Szene, 34.Replik, Drama-Nummer: 484, ID:191
+emotion: 2.705882353
+arousel: 4.277777778
+positiveBawl: 2.705882353
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Gott, Gott, NN): 1, 0
+(Hand, Hand, NN): 1, 0
+
+2.Akt, 1.Szene, 21.Replik, Drama-Nummer: 303, ID:192
+emotion: 4.682352941
+arousel: 14.053884711
+positiveBawl: 6.382352941
+negativeBawl: 1.7
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(kann, können, VMFIN): 1, 0
+(liebes, lieb, ADJA): 1, 0
+(Schuld, Schuld, NN): 0, 1
+(spielen, spielen, VVINF): 1, 0
+(lernen, lernen, VVINF): 1, 0
+
+5.Akt, 7.Szene, 7.Replik, Drama-Nummer: 1223, ID:193
+emotion: 3.088235294
+arousel: 7.318713451
+positiveBawl: 3.088235294
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(steh, stehen, VVIMP): 1, 0
+(mag, mögen, VMFIN): 1, 0
+(Augen, Auge, NN): 1, 0
+
+2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
+emotion: 5.04117647
+arousel: 24.302005014
+positiveBawl: 8.758823529
+negativeBawl: 3.717647059
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(vermieden, vermeiden, VVPP): 0, 1
+(gesucht, gesucht, ADJD): 0, 1
+(kennen, kennen, VVINF): 1, 0
+(sprach, sprechen, VVFIN): 1, 0
+(lieber, lieb, ADJD): 1, 0
+(glauben, glauben, VVINF): 1, 0
+(wollte, wollen, VMFIN): 1, 0
+(sehn, sehnen, VVIMP): 0, 1
+(Lebens, Leben, NN): 1, 0
+
+1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
+emotion: 8.55
+arousel: 14.934803676
+positiveBawl: 8.55
+negativeBawl: 0
+positiveBawlDichotom: 6
+negativeBawlDichotom: 0
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Papagei, Papagei, NN): 1, 0
+(versteht, verstehen, VVFIN): 1, 0
+(man, man, PIS): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Vater, Vater, NN): 1, 0
+(alles, alle, PIS): 1, 0
+
+1.Akt, 5.Szene, 61.Replik, Drama-Nummer: 101, ID:196
+emotion: 4.176470586
+arousel: 51.807189543
+positiveBawl: 15.099999998
+negativeBawl: 10.923529412
+positiveBawlDichotom: 11
+negativeBawlDichotom: 6
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Lob, Lob, NN): 1, 0
+(Nachteile, Nachteil, NN): 0, 1
+(Vaters, Vater, NN): 1, 0
+(Komm, kommen, VVIMP): 1, 0
+(Wort, Wort, NN): 1, 0
+(möge, mögen, VMFIN): 1, 0
+(Sohn, Sohn, NN): 1, 0
+(möge, mögen, VMFIN): 1, 0
+(Tod, Tod, NN): 0, 1
+(Schande, Schande, NN): 0, 1
+(wählen, wählen, VVINF): 1, 0
+(Schande, Schande, NN): 0, 1
+(wählen, wählen, VVINF): 1, 0
+(möge, mögen, VMFIN): 1, 0
+(Spott, Spott, NN): 0, 1
+(leben, leben, VVFIN): 1, 0
+(sterben, sterben, VVINF): 0, 1
+
+1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
+emotion: 5.773529412
+arousel: 16.47368421
+positiveBawl: 6.473529412
+negativeBawl: 0.7
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(verstehe, verstehen, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(Arbeit, Arbeit, NN): 1, 0
+(Glaube, glauben, VVFIN): 1, 0
+(mehr, mehr, ADV): 1, 0
+(gespalten, spalten, VVPP): 0, 1
+
+1.Akt, 8.Szene, 45.Replik, Drama-Nummer: 180, ID:198
+emotion: -2.294117648
+arousel: 10.942397661
+positiveBawl: 1.676470588
+negativeBawl: 3.970588236
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(stirbt, sterben, VVFIN): 0, 1
+(Feind, Feind, NN): 0, 1
+(kann, können, VMFIN): 1, 0
+
+1.Akt, 5.Szene, 24.Replik, Drama-Nummer: 64, ID:199
+emotion: 21.164705882
+arousel: 50.489494571
+positiveBawl: 25.697058823
+negativeBawl: 4.532352941
+positiveBawlDichotom: 15
+negativeBawlDichotom: 4
+polarityBawlDichotom: 11
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(Himmel, Himmel, NN): 1, 0
+(mußt, müssen, VMFIN): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(Held, Held, NN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(Kind, Kind, NN): 1, 0
+(Soldat, Soldat, NN): 0, 1
+(Kind, Kind, NN): 1, 0
+(Man, man, PIS): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+(Herzen, Herz, NN): 1, 0
+(man, man, PIS): 1, 0
+(möchte, mögen, VMFIN): 1, 0
+(Vater, Vater, NN): 1, 0
+(Vater, Vater, NN): 1, 0
+(Sohnes, Sohn, NN): 1, 0
+(wenig, wenig, ADV): 0, 1
+(Hitze, Hitze, NN): 0, 1
+(kennst, kennen, VVFIN): 1, 0
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 94, ID:200
+emotion: 22.744117642
+arousel: 85.789891398
+positiveBawl: 29.861764702
+negativeBawl: 7.11764706
+positiveBawlDichotom: 27
+negativeBawlDichotom: 7
+polarityBawlDichotom: 20
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _positiveBawlDichotom, _negativeBawlDichotom
+(will, wollen, VMFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(will, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Vater, Vater, NN): 1, 0
+(sagen, sagen, VVINF): 1, 0
+(auslösen, auslösen, VVINF): 1, 0
+(soll, sollen, VMFIN): 0, 1
+(weiß, wissen, VVFIN): 1, 0
+(brauch, brauchen, VVIMP): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(braucht, brauchen, VVFIN): 0, 1
+(wissen, wissen, VVINF): 1, 0
+(weiß, wissen, VVFIN): 1, 0
+(willst, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(alles, alle, PIS): 1, 0
+(willst, wollen, VMFIN): 1, 0
+(Willst, wollen, VMFIN): 1, 0
+(Soll, sollen, VMFIN): 0, 1
+(Soll, sollen, VMFIN): 0, 1
+(Feuer, Feuer, NN): 1, 0
+(rennen, rennen, VVINF): 1, 0
+(stürzen, stürzen, VVINF): 0, 1
+(lieber, lieb, ADJA): 1, 0
+(Freund, Freund, NE): 1, 0
+(alles, alle, PIS): 1, 0
+(sage, sagen, VVFIN): 1, 0
+(Wort, Wort, NN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(Verbrechen, Verbrechen, NN): 0, 1
+(willst, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0
+(will, wollen, VMFIN): 1, 0

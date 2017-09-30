@@ -1,0 +1,4328 @@
+dtaExtended_textblob_textLemma_standardList_caseSensitive
+
+Main Metrics:
+accuracy: 0.425
+Recall Positive: 0.901639344262
+Precision Positive: 0.335365853659
+F-Measure Positive: 0.488888888889
+Recall Negative: 0.215827338129
+Precision Negative: 0.833333333333
+F-Measure Negative: 0.342857142857
+Recall Average: 0.558733341196
+Precision Average: 0.584349593496
+F-Measure Average: 0.415873015873
+
+Actual Class	Predicted Negative	Predicted Positive
+Negatives	30	109	139
+Positives	6	55	61
+Sum	36	164	200
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 93, ID:1
+emotion: 7.964705881
+arousel: 43.460108604
+positiveBawl: 13.92352941
+negativeBawl: 5.958823529
+positiveBawlDichotom: 10
+negativeBawlDichotom: 7
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Scham, Scham, NN): -1.3
+(gesteh, gesteh, NN): -0.058823529
+(schwach, schwach, JJ): -1.6
+(befinde, befinden, VB): 0.323529412
+(Gedanken, Gedanke, NNS): 1.5
+(wahr, wahr, RB): 0.558823529
+(Erfüllung, Erfüllung, NN): 2.058823529
+(zittere, zittere, NN): -1.5
+(vorstelle, vorstelle, NN): 1.558823529
+(Versuch, Versuch, NN): 0.2
+(Tugend, Tugend, NN): 1.4
+(Freund, Freund, NN): 2.558823529
+(verbunden, verbinden, VBN): 1.205882353
+(Pflicht, Pflicht, NN): -0.3
+(Freundes, Freundes, NN): 2.558823529
+(Pflicht, Pflicht, NN): -0.3
+(wenig, wenig, IN): -0.9
+
+1.Akt, 10.Szene, 21.Replik, Drama-Nummer: 177, ID:2
+emotion: 6.941176469
+arousel: 42.66917293
+positiveBawl: 15.570588233
+negativeBawl: 8.629411764
+positiveBawlDichotom: 9
+negativeBawlDichotom: 7
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(gedient, gedient, NN): -1.088235294
+(Bleiben, Bleiben, VB): 0.823529412
+(Freund, Freund, NN): 2.558823529
+(Mensch, Mensch, NN): 1.6
+(Freund, Freund, NN): 2.558823529
+(schlage, schlage, NN): -1.911764706
+(vergessen, vergessen, RP): -0.970588235
+(trennen, trennen, VB): -1.5
+(Freund, Freund, NN): 2.558823529
+(finden, finden, VB): 1.352941176
+(Fehlers, Fehlers, NN): -1.6
+(wegen, wegen, TO): 0.882352941
+(verlassen, verlassen, VB): -1.5
+(Lebens, Lebens, NN): 2.382352941
+(suchen, suchen, VB): -0.058823529
+(erhalten, erhalten, VB): 0.852941176
+
+1.Akt, 4.Szene, 21.Replik, Drama-Nummer: 79, ID:3
+emotion: 27.882352942
+arousel: 66.29942012
+positiveBawl: 31.600000001
+negativeBawl: 3.717647059
+positiveBawlDichotom: 23
+negativeBawlDichotom: 3
+polarityBawlDichotom: 20
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(sehen, sehen, VB): 2.0
+(geht, gehen, VB): 0.411764706
+(Versuchen, Versuchen, NN): 0.2
+(bekommen, bekommen, VB): 1.029411765
+(treten, treten, VB): -1.117647059
+(leicht, leicht, JJ): 0.8
+(leicht, leicht, JJ): 0.8
+(sagten, sagten, NN): 0.676470588
+(Liebster, Liebst, JJ): 2.705882353
+(verbunden, verbinden, RP): 1.205882353
+(mehr, mehr, RB): 1.8
+(verbunden, verbinden, VBN): 1.205882353
+(Geldern, Geldern, NN): 1.6
+(treffen, treffen, VB): 1.0
+(mehr, mehr, IN): 1.8
+(Teil, Teil, NN): 0.382352941
+(Vermögens, Vermögens, NN): 1.323529412
+(danken, danken, VB): 1.911764706
+(Sollten, Sollten, NN): -1.0
+(mehr, mehr, IN): 1.8
+(gewuchert, gewuchert, NN): -1.6
+(Händen, Händen, NN): 1.205882353
+(sehen, sehen, VB): 2.0
+(Glück, Glück, NN): 2.617647059
+(mehr, mehr, RB): 1.8
+(Vermögen, Vermögen, NN): 1.323529412
+
+1.Akt, 1.Szene, 5.Replik, Drama-Nummer: 5, ID:4
+emotion: -3.488235293
+arousel: 29.915413535
+positiveBawl: 2.611764706
+negativeBawl: 6.099999999
+positiveBawlDichotom: 4
+negativeBawlDichotom: 8
+polarityBawlDichotom: -4
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _emotion
+(geht, gehen, VB): 0.411764706
+(Arbeit, Arbeit, NN): 0.05
+(wer, wer, WP): -0.6
+(dienen, dienen, VB): -1.088235294
+(muß, mussen, VB): -1.382352941
+(dient, dienen, VB): -1.088235294
+(Dienen, Dienen, NN): -1.088235294
+(Scherz, Scherz, NN): 1.9
+(Seite, Seite, NN): 0.25
+(stellt, stellen, VB): -0.264705882
+(Herr, Herr, NN): -0.294117647
+(Herr, Herr, JJ): -0.294117647
+
+1.Akt, 4.Szene, 19.Replik, Drama-Nummer: 77, ID:5
+emotion: 8.057058824
+arousel: 31.029724312
+positiveBawl: 10.733529412
+negativeBawl: 2.676470588
+positiveBawlDichotom: 8
+negativeBawlDichotom: 4
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Freund, Freund, NN): 2.558823529
+(leicht, leicht, JJ): 0.8
+(Herr, Herr, NN): -0.294117647
+(bestehen, bestehen, VB): 1.0
+(gesetzt, setzen, RP): 0.235294118
+(schadet, schadet, VB): -1.794117647
+(Wissen, Wissen, NN): 2.029411765
+(Herr, Herr, NN): -0.294117647
+(mal, mal, IN): 1.1
+(Lust, Lust, NN): 2.1
+(Herrn, Herrn, NN): -0.294117647
+(Schiff, Schiff, NN): 0.91
+
+1.Akt, 10.Szene, 4.Replik, Drama-Nummer: 160, ID:6
+emotion: 7.614705882
+arousel: 10.922175537
+positiveBawl: 7.614705882
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Himmel, Himmel, NN): 2.25
+(gewollt, gewollt, NN): 0.764705882
+(Geschenk, Geschenk, NN): 2.3
+(Herzens, Herzens, NN): 2.3
+
+3.Akt, 5.Szene, 12.Replik, Drama-Nummer: 401, ID:7
+emotion: 1.45
+arousel: 5.383458646
+positiveBawl: 1.45
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Bitte, Bitte, NN): 0.65
+(nähere, näher, JJ): 0.8
+
+1.Akt, 5.Szene, 15.Replik, Drama-Nummer: 122, ID:8
+emotion: 3.117647059
+arousel: 7.140350878
+positiveBawl: 3.117647059
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sagen, sagen, VB): 0.676470588
+(rennen, rennen, VB): 0.441176471
+(sehen, sehen, VB): 2.0
+
+3.Akt, 2.Szene, 10.Replik, Drama-Nummer: 365, ID:9
+emotion: 3.141176471
+arousel: 18.109022557
+positiveBawl: 4.935294118
+negativeBawl: 1.794117647
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(lange, lange, RB): -0.058823529
+(lieber, lieb, JJ): 2.2
+(Schmerzen, Schmerz, NNS): -1.735294118
+(erwarten, erwarten, VB): 0.470588235
+(Erlauben, Erlauben, NN): 0.647058824
+(bitten, bitten, VB): 0.382352941
+(begleiten, begleiten, VB): 1.235294118
+
+4.Akt, 3.Szene, 22.Replik, Drama-Nummer: 542, ID:10
+emotion: 2.95882353
+arousel: 30.056077695
+positiveBawl: 5.735294118
+negativeBawl: 2.776470588
+positiveBawlDichotom: 6
+negativeBawlDichotom: 5
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Reden, Reden, NN): 0.235294118
+(Anfänge, Anfänge, NN): 0.8
+(Taten, Taten, NN): -0.5
+(vermuten, vermuten, VB): -0.1
+(Zunge, Zunge, NN): 0.9
+(Welt, Welt, NN): 1.9
+(Pflicht, Pflicht, NN): -0.3
+(Tugend, Tugend, NN): 1.4
+(Religion, Religion, NN): 0.5
+(Spotte, Spotte, NN): -1.2
+(ausgesetzt, ausgesetzt, RP): -0.676470588
+
+4.Akt, 7.Szene, 11.Replik, Drama-Nummer: 590, ID:11
+emotion: 3.235294118
+arousel: 16.050751879
+positiveBawl: 5.617647059
+negativeBawl: 2.382352941
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Glück, Glück, NN): 2.617647059
+(betaure, betaure, NN): -1.0
+(Liebe, Liebe, NN): 2.9
+(muß, mussen, VB): -1.382352941
+(Macht, Macht, NN): 0.1
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 186, ID:12
+emotion: 1.647058824
+arousel: 12.683792816
+positiveBawl: 4.029411765
+negativeBawl: 2.382352941
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(seh, seh, PRP$): 2.0
+(muß, mussen, VB): -1.382352941
+(Sprache, Sprache, NN): 1.735294118
+(sollst, sollst, RP): -1.0
+(nennst, nennen, VB): 0.294117647
+
+5.Akt, 3.Szene, 57.Replik, Drama-Nummer: 763, ID:13
+emotion: 39.669411763
+arousel: 130.383958303
+positiveBawl: 52.657647057
+negativeBawl: 12.988235294
+positiveBawlDichotom: 40
+negativeBawlDichotom: 9
+polarityBawlDichotom: 31
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(glauben, glauben, VB): 1.088235294
+(glauben, glauben, VB): 1.088235294
+(Mühe, Mühe, NN): -0.117647059
+(Liebe, Liebe, NN): 2.9
+(verwandeln, verwandeln, VB): 1.147058824
+(Zwang, Zwang, JJ): -2.1
+(lieben, lieben, RB): 2.705882353
+(liebte, liebte, NN): 2.705882353
+(Herz, Herz, NN): 2.3
+(nimmt, nehmen, VB): 0.088235294
+(Gründe, Gründe, NN): 0.5
+(Verstande, Verstande, NN): 1.9
+(behaupten, behaupten, VB): -0.323529412
+(zwingen, zwingen, VB): -2.088235294
+(hilft, helfen, VB): 2.0
+(finden, finden, VB): 1.352941176
+(wachsende, wachsend, JJ): 1.264705882
+(Neigung, Neigung, NN): 0.4
+(Person, Person, NN): 0.5
+(sahe, sahe, NN): 2.0
+(ging, gehen, VB): 0.411764706
+(Mann, Mann, NN): 1.2
+(Freund, Freund, NN): 2.558823529
+(Glück, Glück, NN): 2.617647059
+(Augen, Augen, NN): 1.117647059
+(Blicke, Blicke, NNP): 1.264705882
+(betrachtet, betrachten, VB): 0.676470588
+(Glas, Glas, NN): 0.64
+(Meinungen, Meinung, NNS): 1.5
+(lieber, lieb, JJ): 2.2
+(Sinne, Sinne, NN): 1.8
+(Wahn, Wahn, NN): -2.3
+(aufgeben, aufgeben, VB): -1.470588235
+(fand, finden, VB): 1.352941176
+(Mittel, Mittel, NN): 0.088235294
+(sollten, sollten, NN): -1.0
+(kam, kommen, VB): 1.117647059
+(Absicht, Absicht, NN): 0.6
+(kommen, kommen, VB): 1.117647059
+(Wort, Wort, NN): 0.764705882
+(verlassen, verlassen, VB): -1.5
+(Person, Person, NN): 0.5
+(wegen, wegen, RB): 0.882352941
+(gezwungen, zwingen, VBN): -2.088235294
+(Grund, Grund, NN): 0.5
+(Seelen, Seeln, VB): 1.8
+(wünscht, wünschen, VB): 1.529411765
+(Mehr, Mehr, NN): 1.8
+(sagen, sagen, VB): 0.676470588
+
+1.Akt, 5.Szene, 40.Replik, Drama-Nummer: 147, ID:14
+emotion: 3.435294117
+arousel: 32.039608825
+positiveBawl: 7.84117647
+negativeBawl: 4.405882353
+positiveBawlDichotom: 7
+negativeBawlDichotom: 5
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(möchte, mögen, VB): 1.764705882
+(Streiche, Streich, JJ): 0.1
+(gedenke, gedenke, NN): 0.588235294
+(Schicksal, Schicksal, NN): -0.441176471
+(spielen, spielen, VB): 1.705882353
+(aufhört, aufhört, NN): -0.558823529
+(murre, murre, NN): -1.0
+(taubes, taubes, NN): -1.7
+(Zufall, Zufall, NN): 0.7
+(Absicht, Absicht, NN): 0.6
+(fällt, fällen, VB): -0.705882353
+(Leben, Leben, NN): 2.382352941
+
+2.Akt, 3.Szene, 21.Replik, Drama-Nummer: 246, ID:15
+emotion: 1.9
+arousel: 2.722222222
+positiveBawl: 1.9
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Verstande, Verstande, NN): 1.9
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 161, ID:16
+emotion: 3.226470588
+arousel: 18.397076024
+positiveBawl: 4.49117647
+negativeBawl: 1.264705882
+positiveBawlDichotom: 4
+negativeBawlDichotom: 3
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Schweig, schweig, JJ): -0.264705882
+(mag, mögen, VB): 1.764705882
+(Heirat, Heirat, NN): 1.05
+(sagen, sagen, VB): 0.676470588
+(Zinsen, Zins, NNS): -0.5
+(Zinsen, Zins, NNS): -0.5
+(treffe, treffe, NN): 1.0
+
+5.Akt, 1.Szene, 40.Replik, Drama-Nummer: 699, ID:17
+emotion: -1.758823529
+arousel: 6.815204678
+positiveBawl: 0
+negativeBawl: 1.758823529
+positiveBawlDichotom: 0
+negativeBawlDichotom: 3
+polarityBawlDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(arg, arg, RB): -1.2
+(schweigen, schweigen, VB): -0.264705882
+(Herr, Herr, NN): -0.294117647
+
+2.Akt, 3.Szene, 23.Replik, Drama-Nummer: 248, ID:18
+emotion: -0.406238859
+arousel: 45.546115288
+positiveBawl: 9.831996435
+negativeBawl: 10.238235294
+positiveBawlDichotom: 9
+negativeBawlDichotom: 7
+polarityBawlDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Verstand, Verstand, NN): 1.9
+(schlecht, schlecht, JJ): -2.3
+(steht, stehen, VB): 0.205882353
+(Weise, Weise, NN): -1.85
+(richten, richten, VB): -0.852941176
+(leiden, leiden, VB): -1.941176471
+(geschätzt, schätzen, VBN): 0.787878788
+(leiden, leiden, VB): -1.941176471
+(Absicht, Absicht, NN): 0.6
+(Männern, Männern, NN): 1.2
+(gedacht, gedenken, VBN): 0.588235294
+(sehen, sehen, RB): 2.0
+(Irrtümer, Irrtümer, NN): -1.058823529
+(Leute, Leute, NN): 0.75
+(mehr, mehr, RB): 1.8
+(Herr, Herr, NN): -0.294117647
+
+4.Akt, 9.Szene, 3.Replik, Drama-Nummer: 644, ID:19
+emotion: 4.8
+arousel: 16.915204677
+positiveBawl: 5.9
+negativeBawl: 1.1
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(frei, frei, JJ): -1.1
+(Geldes, Geldes, NN): 1.6
+(aufnehmen, aufnehmen, VB): 1.029411765
+(Anfangs, Anfangs, JJ): 0.8
+(gefunden, finden, VBN): 1.352941176
+(komme, kommen, VB): 1.117647059
+
+3.Akt, 5.Szene, 5.Replik, Drama-Nummer: 394, ID:20
+emotion: -1.870588235
+arousel: 16.685463661
+positiveBawl: 1.5
+negativeBawl: 3.370588235
+positiveBawlDichotom: 2
+negativeBawlDichotom: 4
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(muß, mussen, VB): -1.382352941
+(hetzen, hetzen, VB): -1.4
+(Herr, Herr, NN): -0.294117647
+(bekannt, bekennen, VBN): 0.382352941
+(Herr, Herr, NN): -0.294117647
+(Augen, Augen, NN): 1.117647059
+
+1.Akt, 1.Szene, 4.Replik, Drama-Nummer: 4, ID:21
+emotion: 3.823529412
+arousel: 7.416040101
+positiveBawl: 3.823529412
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Fragen, Fragen, NN): 0.676470588
+(wissen, wissen, VB): 2.029411765
+(kennen, kennen, VB): 1.117647059
+
+4.Akt, 1.Szene, 23.Replik, Drama-Nummer: 504, ID:22
+emotion: -2.058823529
+arousel: 4.862155389
+positiveBawl: 0
+negativeBawl: 2.058823529
+positiveBawlDichotom: 0
+negativeBawlDichotom: 2
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(auszusetzen, auszusetzen, NN): -0.676470588
+(mußte, mussen, VB): -1.382352941
+
+2.Akt, 1.Szene, 17.Replik, Drama-Nummer: 179, ID:23
+emotion: 1.323529412
+arousel: 1.857142857
+positiveBawl: 1.323529412
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Schwestern, Schwestern, NN): 1.323529412
+
+3.Akt, 5.Szene, 32.Replik, Drama-Nummer: 421, ID:24
+emotion: 3.079411765
+arousel: 22.802422724
+positiveBawl: 5.797058824
+negativeBawl: 2.717647059
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Miene, Miene, NN): 0.55
+(solle, solle, NN): -1.0
+(Nein, Nein, NN): -1.6
+(ehrlichsten, ehrlichsten, NN): 2.2
+(Gesichte, Gesichte, NN): 1.0
+(versichert, versichert, NN): 0.529411765
+(Mühe, Mühe, NN): -0.117647059
+(umsonst, umsonst, JJ): 0.4
+(Augen, Augen, NN): 1.117647059
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 549, ID:25
+emotion: 1.011764706
+arousel: 28.63358396
+positiveBawl: 8.041176471
+negativeBawl: 7.029411765
+positiveBawlDichotom: 6
+negativeBawlDichotom: 4
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sagen, sagen, VB): 0.676470588
+(Allein, Allein, NN): -1.8
+(Begierde, Begierde, NN): 0.2
+(gefallen, gefallen, VB): 1.529411765
+(beliebt, beliebt, JJ): 2.4
+(Mädchen, Mädchen, NN): 1.323529412
+(grausam, grausam, JJ): -2.2
+(Verbrechen, Verbrechen, NN): -2.029411765
+(danken, danken, PRP$): 1.911764706
+(sollten, sollten, NN): -1.0
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:26
+emotion: 4.323529412
+arousel: 12.300300753
+positiveBawl: 5.705882353
+negativeBawl: 1.382352941
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(oft, ofen, VBN): 1.0
+(gesehen, sehen, VB): 2.0
+(Wissen, Wissen, NN): 2.029411765
+(muß, mussen, VB): -1.382352941
+(fragen, fragen, RB): 0.676470588
+
+3.Akt, 1.Szene, 12.Replik, Drama-Nummer: 602, ID:27
+emotion: 7.943654188
+arousel: 28.983483709
+positiveBawl: 10.543654188
+negativeBawl: 2.6
+positiveBawlDichotom: 10
+negativeBawlDichotom: 2
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(ißt, isst, NN): 1.558823529
+(glaube, glauben, VB): 1.088235294
+(wer, wer, WP): -0.6
+(trinken, trinken, VB): 1.424242424
+(liegt, liegen, VB): 0.823529412
+(Teller, Teller, NN): 0.59
+(Auge, Auge, NN): 1.117647059
+(sieht, sehen, VB): 2.0
+(Worte, Wort, NNS): 0.764705882
+(sitzen, sitzen, VB): 0.352941176
+(bleiben, bleiben, VB): 0.823529412
+(Not, Not, NN): -2.0
+
+2.Akt, 14.Szene, 9.Replik, Drama-Nummer: 574, ID:28
+emotion: 4.144117647
+arousel: 16.099624059
+positiveBawl: 7.044117647
+negativeBawl: 2.9
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(spricht, sprechen, VBN): 1.205882353
+(Liebe, Liebe, NN): 2.9
+(Kriege, Krieg, NNS): -2.9
+(Mittage, Mittage, NN): 1.2
+(Abend, Abend, NN): 1.65
+(Uhr, Uhr, NN): 0.088235294
+
+1.Akt, 4.Szene, 12.Replik, Drama-Nummer: 117, ID:29
+emotion: 2.352941176
+arousel: 7.669172932
+positiveBawl: 3.176470588
+negativeBawl: 0.823529412
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(betrachten, betrachten, VB): 0.676470588
+(hängt, hängen, VB): -0.823529412
+(Wahrheit, Wahrheit, NN): 2.5
+
+1.Akt, 6.Szene, 68.Replik, Drama-Nummer: 210, ID:30
+emotion: 2.505882353
+arousel: 11.698412699
+positiveBawl: 3.888235294
+negativeBawl: 1.382352941
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Bücher, Bücher, NN): 1.911764706
+(vergehen, vergehen, VB): -1.382352941
+(mehr, mehr, RB): 1.8
+(nehmen, nehmen, VB): 0.088235294
+(genommen, nehmen, VBN): 0.088235294
+
+3.Akt, 17.Szene, 8.Replik, Drama-Nummer: 1005, ID:31
+emotion: -0.961764706
+arousel: 8.622807017
+positiveBawl: 1.338235294
+negativeBawl: 2.3
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Sache, Sache, NN): 0.25
+(glaubst, glauben, VB): 1.088235294
+(wann, wann, WRB): -2.3
+
+1.Akt, 1.Szene, 14.Replik, Drama-Nummer: 14, ID:32
+emotion: 8.014705882
+arousel: 36.772347533
+positiveBawl: 11.167647059
+negativeBawl: 3.152941177
+positiveBawlDichotom: 11
+negativeBawlDichotom: 3
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Lenk, Lenk, NN): -0.029411765
+(sagen, sagen, VB): 0.676470588
+(Buch, Buch, NN): 1.911764706
+(Stern, Stern, NN): 1.0
+(verstehen, verstehen, VB): 1.735294118
+(Mensch, Mensch, NN): 1.6
+(Wann, Wann, NNP): -2.3
+(Fausts, Fausts, NN): -0.823529412
+(wies, weisen, VB): 0.382352941
+(Leuten, Leuten, NN): 0.75
+(geht, gehen, VB): 0.411764706
+(lernen, lernen, VB): 0.8
+(Geist, Geist, NN): 1.1
+(lernen, lernen, VB): 0.8
+
+3.Akt, 13.Szene, 10.Replik, Drama-Nummer: 847, ID:33
+emotion: 6.14117647
+arousel: 11.98128655
+positiveBawl: 6.14117647
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(gehen, gehen, VB): 0.411764706
+(wandern, wandern, VB): 0.2
+(Paar, Paar, NN): 1.764705882
+(magst, magst, VB): 1.764705882
+(sehen, sehen, RB): 2.0
+
+3.Akt, 15.Szene, 6.Replik, Drama-Nummer: 887, ID:34
+emotion: 4.229411765
+arousel: 4.833333334
+positiveBawl: 4.229411765
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(lieber, lieb, JJ): 2.2
+(wissen, wissen, VB): 2.029411765
+
+3.Akt, 17.Szene, 3.Replik, Drama-Nummer: 1000, ID:35
+emotion: 0.023529412
+arousel: 7.622807017
+positiveBawl: 1.923529412
+negativeBawl: 1.9
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(bleiben, bleiben, VB): 0.823529412
+(Dummheit, Dummheit, NN): -1.9
+(Geist, Geist, NN): 1.1
+
+1.Akt, 6.Szene, 19.Replik, Drama-Nummer: 161, ID:36
+emotion: 1.382352941
+arousel: 3.789473684
+positiveBawl: 1.382352941
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(heiraten, heiraten, VB): 1.382352941
+
+3.Akt, 1.Szene, 33.Replik, Drama-Nummer: 623, ID:37
+emotion: 2.664705882
+arousel: 11.666666665
+positiveBawl: 4.964705882
+negativeBawl: 2.3
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(wann, wann, WRB): -2.3
+(Geld, Geld, NN): 1.6
+(Geld, Geld, NN): 1.6
+(Paar, Paar, NN): 1.764705882
+
+2.Akt, 11.Szene, 49.Replik, Drama-Nummer: 539, ID:38
+emotion: 5.69090909
+arousel: 27.827527151
+positiveBawl: 7.720320855
+negativeBawl: 2.029411765
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(möchte, mögen, VB): 1.764705882
+(platzen, platzen, VB): -0.4
+(stärksten, stärksten, NN): 1.7
+(Beweis, Beweis, NN): 0.6
+(niemand, niemand, DT): -1.1
+(fangen, fangen, VB): -0.529411765
+(junger, jungern, JJ): 0.8
+(wegen, wegen, IN): 0.882352941
+(Einsicht, Einsicht, NN): 1.090909091
+(wegen, wegen, IN): 0.882352941
+
+3.Akt, 12.Szene, 23.Replik, Drama-Nummer: 834, ID:39
+emotion: -0.176470588
+arousel: 5.333333334
+positiveBawl: 1.205882353
+negativeBawl: 1.382352941
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(muß, mussen, VB): -1.382352941
+(sprechen, sprechen, VB): 1.205882353
+
+2.Akt, 11.Szene, 15.Replik, Drama-Nummer: 505, ID:40
+emotion: 0.088235294
+arousel: 11.798245614
+positiveBawl: 2.488235294
+negativeBawl: 2.4
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(glaubt, glauben, VB): 1.088235294
+(Frau, Frau, NN): 1.4
+(Tat, Tat, NN): -0.5
+(schlimme, schlimm, JJ): -1.9
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 646, ID:41
+emotion: 0.629411764
+arousel: 12.9286132
+positiveBawl: 2.323529411
+negativeBawl: 1.694117647
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(wahr, wahr, RP): 0.558823529
+(Herr, Herr, NN): -0.294117647
+(sticht, sticht, NN): -1.4
+(finden, finden, VB): 1.352941176
+(Gehen, Gehen, NN): 0.411764706
+
+2.Akt, 12.Szene, 4.Replik, Drama-Nummer: 545, ID:42
+emotion: 10.999910874
+arousel: 51.182239913
+positiveBawl: 15.784937612
+negativeBawl: 4.785026738
+positiveBawlDichotom: 15
+negativeBawlDichotom: 5
+polarityBawlDichotom: 10
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(erwarten, erwarten, VB): 0.470588235
+(Bücher, Bücher, NN): 1.911764706
+(Seite, Seite, NN): 0.25
+(gelegt, legen, VBN): 0.205882353
+(setzen, setzen, VB): 0.235294118
+(Kenntnis, Kenntnis, NN): 1.147058824
+(Welt, Welt, NN): 1.9
+(Staate, Staate, NN): -0.529411765
+(Dienste, Dienste, NN): -0.764705882
+(leisten, leisten, VB): 0.617647059
+(mehr, mehr, RB): 1.8
+(wert, wert, RB): 1.058823529
+(geschätzt, schätzen, VBN): 0.787878788
+(ekel, ekel, NN): -2.0
+(geholfen, geholfen, NN): 2.0
+(Umsonst, Umsonst, NN): 0.4
+(Genies, Genie, NNS): 1.9
+(Geistern, Geistern, NN): 1.1
+(Larve, Larve, NN): -0.4
+(Valer, Val, NN): -1.090909091
+
+3.Akt, 14.Szene, 11.Replik, Drama-Nummer: 864, ID:43
+emotion: 3.623529412
+arousel: 18.739473683
+positiveBawl: 6.188235294
+negativeBawl: 2.564705882
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Komm, Komm, NN): 1.117647059
+(allein, allein, RB): -1.8
+(mehr, mehr, RB): 1.8
+(Stube, Stube, NN): 0.8
+(gestoßen, gestossen, RP): -0.764705882
+(Komm, Komm, NN): 1.117647059
+(ruft, rufen, VB): 0.088235294
+(Haus, Haus, NN): 1.264705882
+
+3.Akt, 15.Szene, 69.Replik, Drama-Nummer: 950, ID:44
+emotion: 5.414705883
+arousel: 24.744360902
+positiveBawl: 7.414705883
+negativeBawl: 2.0
+positiveBawlDichotom: 8
+negativeBawlDichotom: 2
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(vorstellen, vorstellen, VB): 1.558823529
+(auch, auchen, RB): 1.117647059
+(Soll, Sollen, MD): -1.0
+(Arbeit, Arbeit, NN): 0.05
+(Händen, Händen, NN): 1.205882353
+(sehen, sehen, VB): 2.0
+(Soll, Sollen, MD): -1.0
+(zugeben, zugeben, VB): 0.6
+(Mach, Mach, NN): 0.735294118
+(ergreifen, ergreifen, VB): 0.147058824
+
+2.Akt, 1.Szene, 12.Replik, Drama-Nummer: 264, ID:45
+emotion: -4.552941177
+arousel: 33.673140571
+positiveBawl: 7.405882353
+negativeBawl: 11.95882353
+positiveBawlDichotom: 3
+negativeBawlDichotom: 7
+polarityBawlDichotom: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(liebt, liebt, NN): 2.705882353
+(mehr, mehr, RB): 1.8
+(Verdacht, Verdacht, NN): -0.7
+(fehlte, fehlen, VB): -1.529411765
+(Kummer, Kummer, NNP): -1.9
+(Wann, Wann, NNP): -2.3
+(Liebe, Liebe, NN): 2.9
+(taub, taub, JJ): -1.7
+(koste, koste, NN): -1.529411765
+(wann, wann, WRB): -2.3
+
+3.Akt, 13.Szene, 9.Replik, Drama-Nummer: 846, ID:46
+emotion: -1.17117647
+arousel: 33.198151261
+positiveBawl: 6.599411765
+negativeBawl: 7.770588235
+positiveBawlDichotom: 7
+negativeBawlDichotom: 5
+polarityBawlDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Henker, Henker, NN): -2.35
+(Siehst, Siehst, NN): 2.0
+(Taube, Taube, NN): 0.75
+(Taube, Taube, NN): 0.75
+(fangen, fangen, VB): -0.529411765
+(Nase, Nase, NN): 0.32
+(gefallen, gefallen, RP): 1.529411765
+(verloren, verlor, JJ): -1.558823529
+(Profit, Profit, NN): 0.5
+(Teufel, Teufel, NN): -1.95
+(muß, mussen, VB): -1.382352941
+(Leute, Leute, NN): 0.75
+
+3.Akt, 15.Szene, 90.Replik, Drama-Nummer: 971, ID:47
+emotion: 4.476470588
+arousel: 29.073517126
+positiveBawl: 8.252941176
+negativeBawl: 3.776470588
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(arme, arme, NN): -2.1
+(Brief, Brief, NN): 1.5
+(muß, mussen, VB): -1.382352941
+(kömmt, kömmen, MD): 1.117647059
+(Herr, Herr, JJ): -0.294117647
+(blieben, bleiben, VB): 0.823529412
+(Zeitung, Zeitung, NN): 0.6
+(gefunden, finden, VBN): 1.352941176
+(nennt, nennen, VB): 0.294117647
+(junges, jung, JJ): 0.8
+(möchte, mögen, VB): 1.764705882
+
+1.Akt, 2.Szene, 33.Replik, Drama-Nummer: 78, ID:48
+emotion: 5.65882353
+arousel: 10.403508773
+positiveBawl: 5.65882353
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(kenne, kennen, VB): 1.117647059
+(Sohn, Sohn, NN): 1.323529412
+(kennst, kennst, NN): 1.117647059
+(Lust, Lust, NN): 2.1
+
+1.Akt, 2.Szene, 5.Replik, Drama-Nummer: 50, ID:49
+emotion: 6.338235294
+arousel: 30.972062511
+positiveBawl: 12.320588235
+negativeBawl: 5.982352941
+positiveBawlDichotom: 7
+negativeBawlDichotom: 4
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(warne, warne, NN): -0.2
+(Freund, Freund, NN): 2.558823529
+(Jugend, Jugend, NN): 1.55
+(still, still, JJ): 0.6
+(muß, mussen, VB): -1.382352941
+(Ärgernis, Ärgernis, NN): -1.9
+(Mann, Mann, NN): 1.2
+(sähe, säh, JJ): 2.0
+(tote, tot, JJ): -2.5
+(Bücher, Bücher, NN): 1.911764706
+(lebendiges, lebendiges, JJ): 2.5
+
+3.Akt, 1.Szene, 16.Replik, Drama-Nummer: 606, ID:50
+emotion: 8.522352942
+arousel: 83.583249792
+positiveBawl: 19.38117647
+negativeBawl: 10.858823528
+positiveBawlDichotom: 21
+negativeBawlDichotom: 15
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Lauter, laut, JJ): -0.8
+(Streiche, Streichen, NN): -0.352941176
+(Gabel, Gabel, NN): 0.3
+(Teller, Teller, NN): 0.59
+(hängt, hängen, VB): -0.823529412
+(bewegt, bewegen, VB): 1.352941176
+(Maul, Maul, NN): -1.1
+(Stuhle, Stuhle, NN): 0.5
+(liegen, liegen, RB): 0.823529412
+(Wein, Wein, NN): 1.8
+(laufen, laufen, VB): 0.764705882
+(fährt, fahren, VB): 0.970588235
+(spricht, sprechen, VB): 1.205882353
+(geplaudert, geplaudert, NN): 0.5
+(Buch, Buch, NN): 1.911764706
+(suchen, suchen, VB): -0.058823529
+(Tische, Tischen, VB): 0.5
+(Hand, Hand, NN): 1.205882353
+(liegen, liegen, VB): 0.823529412
+(rechten, rechen, VB): -0.470588235
+(Hand, Hand, NN): 1.205882353
+(rechte, rechen, VB): -0.470588235
+(Hand, Hand, NN): 1.205882353
+(meint, meint, RB): 0.558823529
+(Trete, Trete, NN): -1.117647059
+(rechte, rechen, VB): -0.470588235
+(Hand, Hand, NN): 1.205882353
+(trete, trete, NN): -1.117647059
+(trete, trete, NN): -1.117647059
+(trete, tret, NN): -1.117647059
+(Tritt, Tritt, NN): -0.9
+(Seiten, Seiten, NN): 0.25
+(Tisches, Tisch, NN): 0.5
+(rechte, rechen, VB): -0.470588235
+(rechte, rechen, VB): -0.470588235
+(Hand, Hand, NN): 1.205882353
+
+1.Akt, 4.Szene, 5.Replik, Drama-Nummer: 110, ID:51
+emotion: 1.005882353
+arousel: 5.576441103
+positiveBawl: 1.205882353
+negativeBawl: 0.2
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(spricht, sprechen, VB): 1.205882353
+(albern, albern, JJ): -0.2
+
+1.Akt, 6.Szene, 65.Replik, Drama-Nummer: 207, ID:52
+emotion: 4.582352941
+arousel: 8.956140351
+positiveBawl: 4.582352941
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(mehr, mehr, RB): 1.8
+(Frau, Frau, NN): 1.4
+(heiraten, heiraten, VB): 1.382352941
+
+3.Akt, 18.Szene, 3.Replik, Drama-Nummer: 1010, ID:53
+emotion: -1.299999999
+arousel: 19.225342769
+positiveBawl: 2.535294118
+negativeBawl: 3.835294117
+positiveBawlDichotom: 4
+negativeBawlDichotom: 3
+polarityBawlDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Drohungen, Drohung, NNS): -2.1
+(umsonst, umsonst, RP): 0.4
+(muß, mussen, VB): -1.382352941
+(zeigen, zeigen, VB): 0.588235294
+(Vaterland, Vaterland, NN): -0.352941176
+(verlangen, verlangen, VB): 0.147058824
+(Frau, Frau, NN): 1.4
+
+1.Akt, 6.Szene, 70.Replik, Drama-Nummer: 212, ID:54
+emotion: 6.017647059
+arousel: 16.500584795
+positiveBawl: 7.367647059
+negativeBawl: 1.35
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sehe, sehe, PRP$): 2.0
+(Hülfe, Hülfe, NN): 1.3
+(Gauner, Gauner, NN): -1.35
+(kömmt, kömmen, MD): 1.117647059
+(ehrlichen, ehrlich, JJ): 2.2
+(Leuten, Leuten, NN): 0.75
+
+1.Akt, 3.Szene, 2.Replik, Drama-Nummer: 59, ID:55
+emotion: 5.173529413
+arousel: 24.852548037
+positiveBawl: 7.638235295
+negativeBawl: 2.464705882
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Kommen, kommen, VB): 1.117647059
+(Herr, Herr, NN): -0.294117647
+(kommen, kommen, VB): 1.117647059
+(Sohn, Sohn, NN): 1.323529412
+(Anfall, Anfall, NN): -1.7
+(Heiraten, Heirat, NNS): 1.05
+(bekommen, bekommen, VB): 1.029411765
+(Helfen, Helfen, NN): 2.0
+(rechte, rechen, VB): -0.470588235
+
+1.Akt, 5.Szene, 11.Replik, Drama-Nummer: 123, ID:56
+emotion: 3.035294118
+arousel: 5.087301588
+positiveBawl: 3.035294118
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(erkennen, erkennen, VB): 1.235294118
+(Familie, Familie, NN): 1.8
+
+2.Akt, 5.Szene, 15.Replik, Drama-Nummer: 275, ID:57
+emotion: -0.05882353
+arousel: 8.315789473
+positiveBawl: 1.676470588
+negativeBawl: 1.735294118
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Hängen, hängen, VB): -0.823529412
+(gewonnen, gewinnen, VBN): 1.676470588
+(Bedingung, Bedingung, NN): -0.911764706
+
+1.Akt, 6.Szene, 14.Replik, Drama-Nummer: 148, ID:58
+emotion: 9.274117647
+arousel: 23.875296575
+positiveBawl: 10.685882353
+negativeBawl: 1.411764706
+positiveBawlDichotom: 8
+negativeBawlDichotom: 2
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Pferd, Pferd, NN): 1.18
+(bekömmt, bekömmt, NN): 1.029411765
+(leichter, leicht, JJ): 0.8
+(aufzuhalten, aufzuhalten, NN): -0.411764706
+(wissen, wissen, VB): 2.029411765
+(gesehen, sehen, VB): 2.0
+(Bruder, Bruder, NN): 1.676470588
+(Bruder, Bruder, NN): 1.676470588
+(sollst, sollst, RP): -1.0
+(gelten, gelten, VB): 0.294117647
+
+1.Akt, 7.Szene, 14.Replik, Drama-Nummer: 181, ID:59
+emotion: 5.405882353
+arousel: 20.714285714
+positiveBawl: 7.705882353
+negativeBawl: 2.3
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Willst, Willst, WRB): 0.764705882
+(liegt, liegen, VB): 0.823529412
+(schlechte, schlecht, JJ): -2.3
+(erfahren, erfahren, VB): 1.235294118
+(Wort, Wort, NN): 0.764705882
+(sprichst, sprichst, NN): 1.205882353
+(erfahren, erfahren, RP): 1.235294118
+(Bruder, Bruder, NN): 1.676470588
+
+1.Akt, 6.Szene, 15.Replik, Drama-Nummer: 149, ID:60
+emotion: 7.217647059
+arousel: 13.094444445
+positiveBawl: 7.776470588
+negativeBawl: 0.558823529
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herr, Herr, NN): -0.294117647
+(Vater, Vater, NNP): 2.1
+(Wohltat, Wohltat, NN): 1.8
+(schweige, schweige, NN): -0.264705882
+(lieber, lieb, JJ): 2.2
+(Bruder, Bruder, NN): 1.676470588
+
+3.Akt, 4.Szene, 14.Replik, Drama-Nummer: 390, ID:61
+emotion: 5.794117647
+arousel: 26.229156225
+positiveBawl: 8.952941176
+negativeBawl: 3.158823529
+positiveBawlDichotom: 6
+negativeBawlDichotom: 4
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Meinung, Meinung, NN): 1.5
+(Herr, Herr, JJ): -0.294117647
+(Vater, Vater, NN): 2.1
+(wahr, wahr, RP): 0.558823529
+(finden, finden, VB): 1.352941176
+(Herrn, Herrn, NN): -0.294117647
+(sehen, sehen, VB): 2.0
+(recht, rechen, VB): -0.470588235
+(Zwang, Zwang, NN): -2.1
+(stärker, stärk, JJ): 1.441176471
+
+1.Akt, 6.Szene, 24.Replik, Drama-Nummer: 158, ID:62
+emotion: 10.405882353
+arousel: 17.405916753
+positiveBawl: 10.405882353
+negativeBawl: 0
+positiveBawlDichotom: 7
+negativeBawlDichotom: 0
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Erlauben, erlauben, VB): 0.647058824
+(sag, sag, NN): 0.676470588
+(Schwester, Schwester, NN): 1.323529412
+(Freundin, Freundin, NN): 2.7
+(betrachten, betrachten, VB): 0.676470588
+(Bruders, Bruders, NN): 1.676470588
+(lieben, lieben, VB): 2.705882353
+
+2.Akt, 6.Szene, 5.Replik, Drama-Nummer: 329, ID:63
+emotion: 10.088235294
+arousel: 24.579291364
+positiveBawl: 10.382352941
+negativeBawl: 0.294117647
+positiveBawlDichotom: 8
+negativeBawlDichotom: 1
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Mache, Mache, NN): 0.735294118
+(Herr, Herr, NN): -0.294117647
+(Antrag, Antrag, NN): 0.3
+(finden, finden, VB): 1.352941176
+(Mann, Mann, NN): 1.2
+(Erfahrung, Erfahrung, NN): 1.735294118
+(Vertrauen, Vertrauen, NN): 2.205882353
+(glaubt, glauben, VB): 1.088235294
+(Paar, Paar, NN): 1.764705882
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 369, ID:64
+emotion: 9.552941177
+arousel: 26.570676691
+positiveBawl: 11.611764706
+negativeBawl: 2.058823529
+positiveBawlDichotom: 7
+negativeBawlDichotom: 2
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(nehme, nehmen, VB): 0.088235294
+(Freiheit, Freiheit, NN): 2.8
+(sagen, sagen, VB): 0.676470588
+(Befehl, Befehl, NN): -2.0
+(Bruder, Bruder, NN): 1.676470588
+(reisen, reisen, VB): 2.235294118
+(Willen, Willen, NN): 1.235294118
+(gesucht, suchen, VBN): -0.058823529
+(liebe, liebe, JJ): 2.9
+
+2.Akt, 2.Szene, 18.Replik, Drama-Nummer: 210, ID:65
+emotion: -2.458823529
+arousel: 12.777777777
+positiveBawl: 2.2
+negativeBawl: 4.658823529
+positiveBawlDichotom: 1
+negativeBawlDichotom: 3
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Nein, Nein, NN): -1.6
+(Hoffnung, Hoffnung, NN): 2.2
+(verloren, verlieren, VBN): -1.558823529
+(neidisch, neidisch, JJ): -1.5
+
+3.Akt, 6.Szene, 4.Replik, Drama-Nummer: 409, ID:66
+emotion: -1.24117647
+arousel: 13.961152882
+positiveBawl: 2.0
+negativeBawl: 3.24117647
+positiveBawlDichotom: 1
+negativeBawlDichotom: 4
+polarityBawlDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(sah, sehen, VB): 2.0
+(wundern, wundern, VB): -0.1
+(muß, mussen, VB): -1.382352941
+(Verdacht, Verdacht, NN): -0.7
+(fallen, fallen, VB): -1.058823529
+
+2.Akt, 7.Szene, 6.Replik, Drama-Nummer: 344, ID:67
+emotion: 3.04117647
+arousel: 9.997076024
+positiveBawl: 3.04117647
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Tochter, Tochter, NN): 1.676470588
+(fragen, fragen, VB): 0.676470588
+(wetten, wetten, VB): 0.6
+(melden, melden, VB): 0.088235294
+
+1.Akt, 4.Szene, 7.Replik, Drama-Nummer: 98, ID:68
+emotion: 2.523529412
+arousel: 21.932330828
+positiveBawl: 5.911764706
+negativeBawl: 3.388235294
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Wahne, Wahne, NN): -2.3
+(sollten, sollten, NN): -1.0
+(bestätigen, bestätigen, VB): 0.970588235
+(gehen, gehen, VB): 0.411764706
+(liebste, liebst, NN): 2.705882353
+(Schwester, Schwester, NN): 1.323529412
+(treiben, treiben, VB): -0.088235294
+(weit, weit, JJ): 0.5
+
+1.Akt, 11.Szene, 91.Replik, Drama-Nummer: 511, ID:69
+emotion: 0.611764706
+arousel: 7.736842106
+positiveBawl: 1.211764706
+negativeBawl: 0.6
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(geht, gehen, VB): 0.411764706
+(wer, wer, WP): -0.6
+(Anfangs, Anfangs, NN): 0.8
+
+1.Akt, 1.Szene, 56.Replik, Drama-Nummer: 56, ID:70
+emotion: 3.735294117
+arousel: 9.865497076
+positiveBawl: 3.735294117
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(sagen, sagen, VB): 0.676470588
+(Frau, Frau, NN): 1.4
+(gehört, gehören, VBN): 0.058823529
+(Geld, Geld, NN): 1.6
+
+1.Akt, 1.Szene, 2.Replik, Drama-Nummer: 2, ID:71
+emotion: 6.923529412
+arousel: 12.896825398
+positiveBawl: 6.923529412
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Mädchen, Mädchen, NN): 1.323529412
+(lieb, lieb, JJ): 2.2
+(jung, jung, JJ): 0.8
+(jung, jung, JJ): 0.8
+(Kinder, Kinder, NN): 1.8
+
+1.Akt, 14.Szene, 19.Replik, Drama-Nummer: 564, ID:72
+emotion: 2.852941176
+arousel: 4.748538011
+positiveBawl: 2.852941176
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Ewigkeit, Ewigkeit, NN): 1.5
+(finden, finden, VB): 1.352941176
+
+1.Akt, 5.Szene, 14.Replik, Drama-Nummer: 253, ID:73
+emotion: 7.499999999
+arousel: 11.327485381
+positiveBawl: 7.794117646
+negativeBawl: 0.294117647
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herr, Herr, NN): -0.294117647
+(Nenne, Nenne, NN): 0.294117647
+(Freund, Freund, NN): 2.558823529
+(Lebens, Lebens, NN): 2.382352941
+(Freund, Freund, NN): 2.558823529
+
+1.Akt, 3.Szene, 36.Replik, Drama-Nummer: 110, ID:74
+emotion: 9.744117647
+arousel: 20.12898914
+positiveBawl: 10.038235294
+negativeBawl: 0.294117647
+positiveBawlDichotom: 8
+negativeBawlDichotom: 1
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Tage, Tage, NN): 0.970588235
+(zog, ziehen, VB): -0.294117647
+(Seite, Seite, NN): 0.25
+(Hause, Hause, NN): 1.264705882
+(sprach, sprechen, VB): 1.205882353
+(lieber, lieb, JJ): 2.2
+(entdecken, entdecken, VB): 1.735294118
+(sehe, sehe, PRP$): 2.0
+(gehn, gehn, NN): 0.411764706
+
+1.Akt, 3.Szene, 103.Replik, Drama-Nummer: 177, ID:75
+emotion: -1.691176471
+arousel: 11.345446951
+positiveBawl: 0.926470588
+negativeBawl: 2.617647059
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Seite, Seite, NN): 0.25
+(kriegten, kriegten, NN): -0.5
+(Lügen, Lügen, NN): -2.117647059
+(sagen, sagen, VB): 0.676470588
+
+1.Akt, 18.Szene, 5.Replik, Drama-Nummer: 609, ID:76
+emotion: -0.364705882
+arousel: 18.180033416
+positiveBawl: 2.329411765
+negativeBawl: 2.694117647
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(glauben, glauben, VB): 1.088235294
+(Steh, Steh, NN): 0.205882353
+(Streich, Streich, NN): 0.1
+(machst, machst, RP): 0.735294118
+(vergeben, vergeben, VBN): 0.2
+(Strafe, Strafe, NN): -2.4
+(ziehen, ziehen, VB): -0.294117647
+
+1.Akt, 4.Szene, 33.Replik, Drama-Nummer: 225, ID:77
+emotion: 8.497058824
+arousel: 30.963492063
+positiveBawl: 10.132352942
+negativeBawl: 1.635294118
+positiveBawlDichotom: 9
+negativeBawlDichotom: 3
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(glaube, glauben, VB): 1.088235294
+(kam, kam, VB): 1.117647059
+(Himmel, Himmel, NN): 2.25
+(Herr, Herr, NN): -0.294117647
+(kam, kommen, VB): 1.117647059
+(Schicksal, Schicksal, NN): -0.441176471
+(wünschen, wünschen, VB): 1.529411765
+(sagen, sagen, VB): 0.676470588
+(erlaubt, erlauben, VB): 0.647058824
+(Lohn, Lohn, NN): 1.5
+(sieben, sieben, CD): 0.205882353
+(saure, saur, JJ): -0.9
+
+1.Akt, 3.Szene, 82.Replik, Drama-Nummer: 156, ID:78
+emotion: 15.158823529
+arousel: 53.92898914
+positiveBawl: 17.952941176
+negativeBawl: 2.794117647
+positiveBawlDichotom: 17
+negativeBawlDichotom: 4
+polarityBawlDichotom: 13
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Geld, Geld, NN): 1.6
+(kriege, kriege, NN): -0.5
+(sagen, sagen, VB): 0.676470588
+(her, her, IN): -0.294117647
+(bekommen, bekommen, VBN): 1.029411765
+(Soll, Sollen, MD): -1.0
+(Wahrheit, Wahrheit, NN): 2.5
+(sagen, sagen, VB): 0.676470588
+(ausreden, ausreden, NN): 0.3
+(Taler, Taler, NN): 1.05
+(mehr, mehr, RB): 1.8
+(liegen, liegen, VB): 0.823529412
+(Soll, Sollen, MD): -1.0
+(sagen, sagen, VB): 0.676470588
+(Geld, Geld, NN): 1.6
+(Leute, Leute, NN): 0.75
+(nehmen, nehmen, VB): 0.088235294
+(sprächen, sprächen, VB): 1.205882353
+(Gewissen, Gewissen, NN): 0.7
+(sagte, sagen, VB): 0.676470588
+(Kinder, Kinder, NN): 1.8
+
+1.Akt, 1.Szene, 67.Replik, Drama-Nummer: 67, ID:79
+emotion: 0.6
+arousel: 20.226472431
+positiveBawl: 4.888235294
+negativeBawl: 4.288235294
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Sohn, Sohn, NN): 1.323529412
+(Wort, Wort, NN): 0.764705882
+(Neigung, Neigung, NN): 0.4
+(Gesicht, Gesicht, NN): 1.0
+(satt, satt, JJ): 1.4
+(fehlt, fehlen, VB): -1.529411765
+(Schuld, Schuld, NN): -1.7
+(fallen, fallen, VB): -1.058823529
+
+1.Akt, 1.Szene, 58.Replik, Drama-Nummer: 58, ID:80
+emotion: 0.85882353
+arousel: 13.323976609
+positiveBawl: 2.952941177
+negativeBawl: 2.094117647
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Herr, Herr, JJ): -0.294117647
+(Verdiensten, Verdiensten, NN): 0.941176471
+(ginge, ginge, NN): 0.411764706
+(allein, allein, RB): -1.8
+(reich, reich, JJ): 1.6
+
+2.Akt, 2.Szene, 6.Replik, Drama-Nummer: 164, ID:81
+emotion: 2.558823529
+arousel: 11.397660819
+positiveBawl: 3.852941176
+negativeBawl: 1.294117647
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Sollte, Sollen, VB): -1.0
+(Wahrheit, Wahrheit, NN): 2.5
+(erzählen, erzählen, VB): 1.352941176
+(Herr, Herr, NN): -0.294117647
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 361, ID:82
+emotion: -0.494117648
+arousel: 13.238095239
+positiveBawl: 3.235294117
+negativeBawl: 3.729411765
+positiveBawlDichotom: 2
+negativeBawlDichotom: 3
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Freund, Freund, NN): 2.558823529
+(sagen, sagen, PRP$): 0.676470588
+(muß, mussen, VB): -1.382352941
+(Narr, Narr, NN): -0.7
+(stören, stören, VB): -1.647058824
+
+2.Akt, 2.Szene, 14.Replik, Drama-Nummer: 172, ID:83
+emotion: -2.823529412
+arousel: 8.834586465
+positiveBawl: 0.676470588
+negativeBawl: 3.5
+positiveBawlDichotom: 1
+negativeBawlDichotom: 3
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Schuld, Schuld, NN): -1.7
+(wenig, wenig, RP): -0.9
+(wenig, wenig, RB): -0.9
+(sagen, sagen, VB): 0.676470588
+
+2.Akt, 6.Szene, 39.Replik, Drama-Nummer: 277, ID:84
+emotion: 8.431639928
+arousel: 49.617008207
+positiveBawl: 17.378698752
+negativeBawl: 8.947058824
+positiveBawlDichotom: 13
+negativeBawlDichotom: 5
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Lieder, Lied, NNS): 1.6
+(Jugend, Jugend, NN): 1.55
+(Übel, Übel, NN): -1.823529412
+(gesungen, singen, VBN): 1.575757576
+(gehöre, gehören, VB): 0.058823529
+(Tat, Tat, NN): -0.5
+(Dichter, Dichter, NN): 1.588235294
+(Kunst, Kunst, NN): 1.823529412
+(liegt, liegen, VB): 0.823529412
+(Hause, Hause, NN): 1.264705882
+(Tod, Tod, NN): -2.8
+(krank, krank, JJ): -2.0
+(liegt, liegen, VB): 0.823529412
+(acht, acht, CD): 1.2
+(Tage, Tage, NN): 0.970588235
+(sterben, sterben, VB): -1.823529412
+(lieben, lieb, JJ): 2.2
+(Welt, Welt, NN): 1.9
+
+2.Akt, 2.Szene, 24.Replik, Drama-Nummer: 182, ID:85
+emotion: 2.970588236
+arousel: 13.783792816
+positiveBawl: 4.352941177
+negativeBawl: 1.382352941
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(muß, mussen, VB): -1.382352941
+(Wahl, Wahl, NN): 0.117647059
+(Glück, Glück, NN): 2.617647059
+(wünschen, wünschen, VB): 1.529411765
+(nehmen, nehmen, VB): 0.088235294
+
+3.Akt, 5.Szene, 4.Replik, Drama-Nummer: 334, ID:86
+emotion: 3.902941177
+arousel: 15.218462825
+positiveBawl: 6.05
+negativeBawl: 2.147058823
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(stoßen, stossen, VB): -0.764705882
+(sahen, sahen, NN): 2.0
+(muß, mussen, VB): -1.382352941
+(Lehre, Lehre, NN): 0.65
+(mehr, mehr, RB): 1.8
+(Menschen, Menschen, NN): 1.6
+
+3.Akt, 10.Szene, 20.Replik, Drama-Nummer: 455, ID:87
+emotion: -1.020588236
+arousel: 13.368546366
+positiveBawl: 2.279411764
+negativeBawl: 3.3
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Wort, Wort, NN): 0.764705882
+(Leute, Leute, NN): 0.75
+(willst, willst, RP): 0.764705882
+(allein, allein, RB): -1.8
+(Vetter, Vett, JJ): -1.5
+
+2.Akt, 6.Szene, 17.Replik, Drama-Nummer: 255, ID:88
+emotion: 1.794117647
+arousel: 3.0
+positiveBawl: 1.794117647
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Stärke, Stärke, NN): 1.794117647
+
+3.Akt, 7.Szene, 35.Replik, Drama-Nummer: 392, ID:89
+emotion: 4.164705882
+arousel: 14.70342523
+positiveBawl: 5.664705882
+negativeBawl: 1.5
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Zweifel, Zweifel, NN): -1.5
+(Namen, Namen, NN): 0.588235294
+(lieber, lieb, JJ): 2.2
+(Mann, Mann, NN): 1.2
+(glaube, glauben, VB): 1.088235294
+(Namens, Namens, NN): 0.588235294
+
+3.Akt, 7.Szene, 23.Replik, Drama-Nummer: 380, ID:90
+emotion: 5.53235294
+arousel: 15.690476191
+positiveBawl: 6.061764705
+negativeBawl: 0.529411765
+positiveBawlDichotom: 6
+negativeBawlDichotom: 1
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(nehmen, nehmen, VB): 0.088235294
+(Taler, Taler, NN): 1.05
+(wahr, wahr, RP): 0.558823529
+(liebe, lieb, JJ): 2.2
+(Frau, Frau, NN): 1.4
+(willst, willst, WRB): 0.764705882
+(bezahlen, bezahlen, VB): -0.529411765
+
+1.Akt, 5.Szene, 49.Replik, Drama-Nummer: 150, ID:91
+emotion: 0.105882353
+arousel: 8.43776107
+positiveBawl: 2.0
+negativeBawl: 1.894117647
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herrn, Herrn, NN): -0.294117647
+(Schlag, Schlag, NN): -1.6
+(gesehen, sehen, VBN): 2.0
+
+1.Akt, 1.Szene, 22.Replik, Drama-Nummer: 22, ID:92
+emotion: 3.141265598
+arousel: 18.26754386
+positiveBawl: 5.982442068
+negativeBawl: 2.84117647
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(mußt, mussen, VB): -1.382352941
+(lieber, lieb, JJ): 2.2
+(Mann, Mann, NN): 1.2
+(wenig, wenig, IN): -0.9
+(verfahren, verfahren, VB): -0.558823529
+(Beispiele, Beispiele, NN): 0.303030303
+(wissen, wissen, VB): 2.029411765
+(Sachen, Sachen, NN): 0.25
+
+1.Akt, 4.Szene, 8.Replik, Drama-Nummer: 56, ID:93
+emotion: 4.0
+arousel: 26.910651628
+positiveBawl: 6.447058823
+negativeBawl: 2.447058823
+positiveBawlDichotom: 7
+negativeBawlDichotom: 4
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Scherze, Scherz, NNS): 1.9
+(nehmen, nehmen, VB): 0.088235294
+(Macht, Macht, NN): 0.1
+(junge, jung, JJ): 0.8
+(Fräulein, Fräulein, NN): -0.352941176
+(Kind, Kind, NN): 1.8
+(wenig, wenig, IN): -0.9
+(wenig, wenig, IN): -0.9
+(wahr, wahr, RP): 0.558823529
+(Herr, Herr, NN): -0.294117647
+(Reife, Reife, NN): 1.2
+
+1.Akt, 5.Szene, 9.Replik, Drama-Nummer: 71, ID:94
+emotion: 0.985294118
+arousel: 8.824979115
+positiveBawl: 1.455882353
+negativeBawl: 0.470588235
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(bestimmt, bestimmen, RP): -0.470588235
+(mitten, mitten, RB): 0.75
+(Winter, Winter, NN): 0.323529412
+(weisen, weisen, VB): 0.382352941
+
+1.Akt, 16.Szene, 4.Replik, Drama-Nummer: 268, ID:95
+emotion: -0.870588235
+arousel: 5.403508772
+positiveBawl: 0
+negativeBawl: 0.870588235
+positiveBawlDichotom: 0
+negativeBawlDichotom: 2
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(rechte, rechen, VB): -0.470588235
+(Larve, Larve, NN): -0.4
+
+1.Akt, 2.Szene, 25.Replik, Drama-Nummer: 35, ID:96
+emotion: 0.0
+arousel: 0.0
+positiveBawl: 0
+negativeBawl: 0
+positiveBawlDichotom: 0
+negativeBawlDichotom: 0
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+
+1.Akt, 5.Szene, 8.Replik, Drama-Nummer: 70, ID:97
+emotion: 0.988235294
+arousel: 25.275738366
+positiveBawl: 3.882352941
+negativeBawl: 2.894117647
+positiveBawlDichotom: 6
+negativeBawlDichotom: 4
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sagen, sagen, VB): 0.676470588
+(aufnehmen, aufnehmen, VB): 1.029411765
+(gesetzt, setzen, VBN): 0.235294118
+(Herr, Herr, NN): -0.294117647
+(wenig, wenig, RB): -0.9
+(gesagt, sagen, VB): 0.676470588
+(sage, sagen, VB): 0.676470588
+(zornig, zornigen, VBN): -1.4
+(Abreise, Abreise, NN): -0.3
+(gedenken, gedenken, VB): 0.588235294
+
+1.Akt, 8.Szene, 4.Replik, Drama-Nummer: 122, ID:98
+emotion: 2.485294117
+arousel: 23.093692566
+positiveBawl: 6.214705882
+negativeBawl: 3.729411765
+positiveBawlDichotom: 4
+negativeBawlDichotom: 4
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Diener, Diener, NN): -0.5
+(sehe, sehe, PRP$): 2.0
+(Bitten, Bitte, NNS): 0.65
+(Tat, Tat, NN): -0.5
+(mehr, mehr, RB): 1.8
+(ergebe, ergebe, NN): -0.529411765
+(Furcht, Furcht, NN): -2.2
+(möge, mögen, VB): 1.764705882
+
+1.Akt, 2.Szene, 9.Replik, Drama-Nummer: 19, ID:99
+emotion: 4.6
+arousel: 20.603174604
+positiveBawl: 6.776470588
+negativeBawl: 2.176470588
+positiveBawlDichotom: 4
+negativeBawlDichotom: 4
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Dienen, Dienen, NN): -1.088235294
+(Herr, Herr, NN): -0.294117647
+(bedienen, bedienen, VB): -0.5
+(wissen, wissen, VB): 2.029411765
+(Wollten, Wollten, NN): 0.764705882
+(Herrn, Herrn, NN): -0.294117647
+(Leben, Leben, NN): 2.382352941
+(Geld, Geld, NN): 1.6
+
+1.Akt, 18.Szene, 18.Replik, Drama-Nummer: 310, ID:100
+emotion: 8.441176471
+arousel: 19.653216374
+positiveBawl: 8.441176471
+negativeBawl: 0
+positiveBawlDichotom: 8
+negativeBawlDichotom: 0
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Augen, Augen, NN): 1.117647059
+(trugen, tragen, VB): 0.117647059
+(Bedenken, Bedenken, NN): 0.176470588
+(entdecken, entdecken, VB): 1.735294118
+(gehn, gehn, NN): 0.411764706
+(Wahrheit, Wahrheit, NN): 2.5
+(kommen, kommen, VB): 1.117647059
+(Hause, Hause, NN): 1.264705882
+
+1.Akt, 9.Szene, 9.Replik, Drama-Nummer: 149, ID:101
+emotion: -0.117647059
+arousel: 13.178571429
+positiveBawl: 2.0
+negativeBawl: 2.117647059
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _emotion
+(übel, übel, JJ): -1.823529412
+(nehmen, nehmen, VB): 0.088235294
+(Herr, Herr, NN): -0.294117647
+(gefallen, gefallen, VB): 1.529411765
+(bitte, bitten, VB): 0.382352941
+
+1.Akt, 22.Szene, 19.Replik, Drama-Nummer: 370, ID:102
+emotion: 8.394117647
+arousel: 33.068243526
+positiveBawl: 10.829411765
+negativeBawl: 2.435294118
+positiveBawlDichotom: 10
+negativeBawlDichotom: 3
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(umsonst, umsonst, RP): 0.4
+(Gott, Gott, NN): 1.5
+(Väter, Väter, NN): 2.1
+(mehr, mehr, RB): 1.8
+(brauche, brauche, NN): -0.235294118
+(bitte, bitten, VB): 0.382352941
+(Volke, Volke, NN): 0.147058824
+(Religion, Religion, JJ): 0.5
+(Nein, Nein, NN): -1.6
+(sahe, sahe, NN): 2.0
+(Neigung, Neigung, NN): 0.4
+(Menschen, Menschen, NN): 1.6
+(wer, wer, WP): -0.6
+
+1.Akt, 2.Szene, 10.Replik, Drama-Nummer: 21, ID:103
+emotion: 5.399999999
+arousel: 13.276524645
+positiveBawl: 5.399999999
+negativeBawl: 0
+positiveBawlDichotom: 6
+negativeBawlDichotom: 0
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Damen, Damen, NN): 1.0
+(Tage, Tage, NN): 0.970588235
+(Malen, Malen, NN): 1.1
+(Monaten, Monaten, NN): 0.3
+(können, könn, VB): 1.676470588
+(sitzen, sitzen, VB): 0.352941176
+
+3.Akt, 2.Szene, 18.Replik, Drama-Nummer: 408, ID:104
+emotion: 1.747058824
+arousel: 9.760233919
+positiveBawl: 2.441176471
+negativeBawl: 0.694117647
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herr, Herr, NN): -0.294117647
+(wissen, wissen, VB): 2.029411765
+(billiger, billig, JJ): -0.4
+(Geht, Gehen, VB): 0.411764706
+
+5.Akt, 5.Szene, 39.Replik, Drama-Nummer: 766, ID:105
+emotion: 5.773529411
+arousel: 11.361528823
+positiveBawl: 5.773529411
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(verändert, verändern, VB): 0.764705882
+(Sache, Sache, NN): 0.25
+(lieber, lieb, JJ): 2.2
+(wahr, wahr, RP): 0.558823529
+(sehen, sehen, VB): 2.0
+
+4.Akt, 5.Szene, 42.Replik, Drama-Nummer: 623, ID:106
+emotion: 9.270588235
+arousel: 37.781254608
+positiveBawl: 11.864705882
+negativeBawl: 2.594117647
+positiveBawlDichotom: 12
+negativeBawlDichotom: 2
+polarityBawlDichotom: 10
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Welt, Welt, NN): 1.9
+(Halle, Halle, NN): 0.2
+(gesprochen, sprechen, RP): 1.205882353
+(gesehen, sehen, RP): 2.0
+(gehört, gehören, VBN): 0.058823529
+(gesprochen, sprechen, RP): 1.205882353
+(Herr, Herr, NN): -0.294117647
+(gehört, gehören, RP): 0.058823529
+(trifft, trifft, VB): 1.0
+(Zufall, Zufall, NN): 0.7
+(verstehen, verstehen, VB): 1.735294118
+(Menschen, Menschen, NN): 1.6
+(schlecht, schlecht, JJ): -2.3
+(Vorsicht, Vorsicht, NN): 0.2
+
+4.Akt, 3.Szene, 29.Replik, Drama-Nummer: 574, ID:107
+emotion: 23.591176472
+arousel: 66.340747701
+positiveBawl: 28.808823531
+negativeBawl: 5.217647059
+positiveBawlDichotom: 18
+negativeBawlDichotom: 6
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(wahr, wahr, RP): 0.558823529
+(Wunder, Wunder, NN): 1.85
+(Mann, Mann, NN): 1.2
+(Ding, Ding, NN): -0.029411765
+(lieben, lieben, VB): 2.705882353
+(ekel, ekel, NN): -2.0
+(Mann, Mann, NN): 1.2
+(Lachen, Lachen, NN): 2.647058824
+(lachen, lachen, VB): 2.647058824
+(Herrn, Herrn, NN): -0.294117647
+(Laune, Laune, NN): 0.6
+(erhalten, erhalten, VB): 0.852941176
+(lach, lach, NN): 2.647058824
+(Zufall, Zufall, NN): 0.7
+(schreibe, schreibe, NN): 1.470588235
+(kommen, kommen, VB): 1.117647059
+(Brief, Brief, NN): 1.5
+(lieset, lieset, NN): -0.5
+(kömmt, kömmen, MD): 1.117647059
+(Zufall, Zufall, NN): 0.7
+(lachen, lachen, VB): 2.647058824
+(Herr, Herr, NN): -0.294117647
+(arme, arme, NN): -2.1
+(lachen, lachen, VB): 2.647058824
+
+2.Akt, 6.Szene, 31.Replik, Drama-Nummer: 247, ID:108
+emotion: 10.811497327
+arousel: 21.54803676
+positiveBawl: 12.111497327
+negativeBawl: 1.3
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(wissen, wissen, VB): 2.029411765
+(Mutter, Mutter, NN): 2.05
+(Einsichten, Einsichten, NN): 1.090909091
+(erführe, erführe, NN): 1.235294118
+(gesprochen, sprechen, VB): 1.205882353
+(Unruhe, Unruhe, NN): -1.3
+(lieber, liebern, VB): 2.2
+(Herzen, Herz, NNS): 2.3
+
+4.Akt, 7.Szene, 9.Replik, Drama-Nummer: 652, ID:109
+emotion: 5.276470588
+arousel: 7.166666666
+positiveBawl: 5.276470588
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Tochter, Tochter, NN): 1.676470588
+(Kind, Kind, NN): 1.8
+(Kind, Kind, NN): 1.8
+
+3.Akt, 5.Szene, 11.Replik, Drama-Nummer: 451, ID:110
+emotion: 12.455882354
+arousel: 81.019005846
+positiveBawl: 24.488235294
+negativeBawl: 12.03235294
+positiveBawlDichotom: 18
+negativeBawlDichotom: 12
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(verdiene, verdiene, NN): 0.764705882
+(stummen, stumm, JJ): -0.9
+(Vorwurf, Vorwurf, NN): -1.8
+(Betragen, Betragen, NN): -0.382352941
+(Vorteil, Vorteil, NN): 1.8
+(erwarten, erwarten, VBN): 0.470588235
+(Zufall, Zufall, NN): 0.7
+(ehe, ehe, CC): 0.647058824
+(Hoffnung, Hoffnung, NN): 2.2
+(Glück, Glück, NN): 2.617647059
+(sehen, sehen, VB): 2.0
+(sprechen, sprechen, PRP$): 1.205882353
+(Zufall, Zufall, NN): 0.7
+(Glückes, Glückes, NN): 2.617647059
+(Gnade, Gnade, NN): 1.0
+(Beben, Beben, NN): -1.2
+(Fräulein, Fräulein, NN): -0.352941176
+(allein, allein, RB): -1.8
+(Blicke, Blicke, JJ): 1.264705882
+(Wort, Wort, NN): 0.764705882
+(Gewalt, Gewalt, NN): -2.7
+(falle, falle, NN): -1.7
+(Schutzes, Schutzes, NN): 1.7
+(bedürfen, bedürfen, VB): -0.294117647
+(kommen, kommen, VB): 1.117647059
+(Fräulein, Fräulein, NN): -0.352941176
+(kommen, kommen, VB): 1.117647059
+(mehr, mehr, RB): 1.8
+(billigen, billigen, VB): -0.4
+(Folgen, Folgen, NN): -0.15
+
+4.Akt, 7.Szene, 15.Replik, Drama-Nummer: 658, ID:111
+emotion: 1.55882353
+arousel: 9.500000001
+positiveBawl: 4.05882353
+negativeBawl: 2.5
+positiveBawlDichotom: 2
+negativeBawlDichotom: 1
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(wissen, wissen, VB): 2.029411765
+(wissen, wissen, VB): 2.029411765
+(tot, tot, JJ): -2.5
+
+5.Akt, 5.Szene, 9.Replik, Drama-Nummer: 736, ID:112
+emotion: 6.835294117
+arousel: 14.119883041
+positiveBawl: 7.935294117
+negativeBawl: 1.1
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Kloster, Kloster, NN): 0.058823529
+(Hoffnung, Hoffnung, NN): 2.2
+(Welt, Welt, NN): 1.9
+(Vater, Vater, NN): 2.1
+(niemand, niemand, DT): -1.1
+(Tochter, Tochter, NN): 1.676470588
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 782, ID:113
+emotion: -1.338235294
+arousel: 50.476190478
+positiveBawl: 9.505882353
+negativeBawl: 10.844117647
+positiveBawlDichotom: 11
+negativeBawlDichotom: 8
+polarityBawlDichotom: 3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Wort, Wort, NN): 0.764705882
+(Gefängnis, Gefängnis, NN): -2.264705882
+(Strenge, Strenge, NN): -1.2
+(Gesetze, Gesetze, NN): -0.9
+(Achtung, Achtung, NN): 0.6
+(Tugend, Tugend, NN): 1.4
+(leicht, leichen, VB): -2.45
+(muß, mussen, VBN): -1.382352941
+(Haus, Haus, NN): 1.264705882
+(Kanzlers, Kanzlers, NN): -1.029411765
+(Damen, Damen, NN): 1.0
+(übergeben, übergeben, RP): -0.588235294
+(gehen, gehen, VB): 0.411764706
+(weit, weit, JJ): 0.5
+(weit, weit, JJ): 0.5
+(mehr, mehr, RB): 1.8
+(verlangen, verlangen, VB): 0.147058824
+(kennen, kennen, VB): 1.117647059
+(Kanzler, Kanzler, NN): -1.029411765
+
+5.Akt, 7.Szene, 19.Replik, Drama-Nummer: 808, ID:114
+emotion: 9.232352941
+arousel: 16.95263158
+positiveBawl: 10.532352941
+negativeBawl: 1.3
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Himmels, Himmels, NN): 2.25
+(willen, willen, IN): 1.7
+(Vater, Vater, NN): 2.1
+(Leben, Leben, NN): 2.382352941
+(Vater, Vater, NN): 2.1
+(Dolch, Dolch, NN): -1.3
+
+4.Akt, 1.Szene, 34.Replik, Drama-Nummer: 522, ID:115
+emotion: 0.597058824
+arousel: 17.124686716
+positiveBawl: 3.647058824
+negativeBawl: 3.05
+positiveBawlDichotom: 4
+negativeBawlDichotom: 2
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(läge, läge, NN): 0.823529412
+(Unfalle, Unfalle, NN): -2.35
+(Verdacht, Verdacht, NN): -0.7
+(trifft, treffen, VB): 1.0
+(liegt, liegen, VB): 0.823529412
+(Gnade, Gnade, NN): 1.0
+
+4.Akt, 8.Szene, 14.Replik, Drama-Nummer: 686, ID:116
+emotion: 8.623529412
+arousel: 25.197773846
+positiveBawl: 9.711764706
+negativeBawl: 1.088235294
+positiveBawlDichotom: 9
+negativeBawlDichotom: 1
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(mehr, mehr, RP): 1.8
+(kennest, kennest, RP): 1.117647059
+(Eindrücke, Eindrücke, NN): 0.4
+(findend, findend, JJ): 1.352941176
+(gefaßt, fassen, RP): 0.058823529
+(hält, hält, VB): 2.1
+(Entfernung, Entfernung, NN): -1.088235294
+(spricht, sprechen, VBN): 1.205882353
+(Tone, Tone, NN): 0.941176471
+(Mache, Mache, NN): 0.735294118
+
+3.Akt, 1.Szene, 31.Replik, Drama-Nummer: 384, ID:117
+emotion: 3.879999999
+arousel: 39.41433584
+positiveBawl: 8.397647058
+negativeBawl: 4.517647059
+positiveBawlDichotom: 11
+negativeBawlDichotom: 4
+polarityBawlDichotom: 7
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Leuten, Leuten, IN): 0.75
+(verlassen, verlassen, VB): -1.5
+(geht, gehen, VB): 0.411764706
+(Teil, Teil, NN): 0.382352941
+(Wagen, Wagen, NN): 1.058823529
+(angefallen, angefallen, VBN): -0.9
+(Teil, Teil, NN): 0.382352941
+(Bedienten, Bedienten, NN): -0.5
+(gestürzt, stürzen, VBN): -1.617647059
+(Hülfe, Hülfe, NN): 1.3
+(Teile, Teile, NN): 0.382352941
+(ergreifen, ergreifen, VB): 0.147058824
+(retten, retten, VB): 1.676470588
+(Schloß, Schloss, NN): 1.23
+(sagen, sagen, VB): 0.676470588
+
+3.Akt, 1.Szene, 9.Replik, Drama-Nummer: 362, ID:118
+emotion: 2.05882353
+arousel: 11.333333334
+positiveBawl: 4.05882353
+negativeBawl: 2.0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sollt, sollt, NN): -1.0
+(wissen, wissen, VB): 2.029411765
+(sollt, sollt, NN): -1.0
+(wissen, wissen, VB): 2.029411765
+
+5.Akt, 7.Szene, 9.Replik, Drama-Nummer: 798, ID:119
+emotion: -2.9
+arousel: 11.000000001
+positiveBawl: 2.1
+negativeBawl: 5.0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(tot, tot, JJ): -2.5
+(tot, tot, JJ): -2.5
+(Vater, Vater, NN): 2.1
+
+4.Akt, 2.Szene, 10.Replik, Drama-Nummer: 544, ID:120
+emotion: 0.382352941
+arousel: 3.87134503
+positiveBawl: 0.411764706
+negativeBawl: 0.029411765
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(gehen, gehen, JJ): 0.411764706
+(Dinge, Dinge, NN): -0.029411765
+
+2.Akt, 4.Szene, 5.Replik, Drama-Nummer: 197, ID:121
+emotion: 23.576470588
+arousel: 49.649707603
+positiveBawl: 26.964705882
+negativeBawl: 3.388235294
+positiveBawlDichotom: 15
+negativeBawlDichotom: 3
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(nennst, nennen, VB): 0.294117647
+(verlieren, verlieren, VB): -1.558823529
+(Liebe, Liebe, NN): 2.9
+(wissen, wissen, VB): 2.029411765
+(Glücke, Glücke, NN): 2.617647059
+(möchtest, mögen, VB): 1.764705882
+(Argwohn, Argwohn, NN): -1.3
+(mehr, mehr, RB): 1.8
+(Welt, Welt, NN): 1.9
+(mehr, mehr, RB): 1.8
+(Nähe, Nähe, NN): 2.0
+(Tochter, Tochter, NN): 1.676470588
+(bewog, bewog, NN): 1.352941176
+(Stadt, Stadt, NN): -0.529411765
+(bleiben, bleiben, VB): 0.823529412
+(Manne, Manne, NN): 1.2
+(Vater, Vater, NN): 2.1
+(liebet, liebet, NN): 2.705882353
+
+4.Akt, 7.Szene, 16.Replik, Drama-Nummer: 659, ID:122
+emotion: -0.723529412
+arousel: 19.976190477
+positiveBawl: 5.6
+negativeBawl: 6.323529412
+positiveBawlDichotom: 3
+negativeBawlDichotom: 3
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Tot, tot, JJ): -2.5
+(tot, tot, JJ): -2.5
+(Frau, Frau, NN): 1.4
+(Verstand, Verstand, NN): 1.9
+(brechen, brechen, VB): -1.323529412
+(Herz, Herz, NN): 2.3
+
+4.Akt, 6.Szene, 64.Replik, Drama-Nummer: 875, ID:123
+emotion: 4.082352941
+arousel: 26.652673349
+positiveBawl: 8.358823529
+negativeBawl: 4.276470588
+positiveBawlDichotom: 5
+negativeBawlDichotom: 4
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Nein, nein, NN): -1.6
+(muß, mussen, VB): -1.382352941
+(wahre, wahr, JJ): 0.558823529
+(Liebe, Liebe, NN): 2.9
+(glaube, glauben, VB): 1.088235294
+(Herr, Herr, NN): -0.294117647
+(Ehre, Ehre, NN): 0.911764706
+(Liebe, Liebe, NN): 2.9
+(sollten, sollten, NN): -1.0
+
+1.Akt, 3.Szene, 18.Replik, Drama-Nummer: 63, ID:124
+emotion: 2.000000001
+arousel: 15.058688388
+positiveBawl: 3.352941177
+negativeBawl: 1.352941176
+positiveBawlDichotom: 3
+negativeBawlDichotom: 3
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(verfahren, verfahren, VB): -0.558823529
+(verstehe, verstehen, VB): 1.735294118
+(Gehen, Gehen, NN): 0.411764706
+(Herr, Herr, NN): -0.294117647
+(Bedienten, Bedienten, NN): -0.5
+(sprechen, sprechen, VB): 1.205882353
+
+3.Akt, 7.Szene, 46.Replik, Drama-Nummer: 615, ID:125
+emotion: 11.920588236
+arousel: 38.167919799
+positiveBawl: 13.797058824
+negativeBawl: 1.876470588
+positiveBawlDichotom: 12
+negativeBawlDichotom: 3
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herr, Herr, NN): -0.294117647
+(wissen, wissen, VB): 2.029411765
+(gehört, gehören, RP): 0.058823529
+(bleiben, bleiben, VB): 0.823529412
+(lieber, lieb, JJ): 2.2
+(nehmen, nehmen, VB): 0.088235294
+(Geld, Geld, NN): 1.6
+(muß, mussen, VB): -1.382352941
+(Sache, Sache, NN): 0.25
+(Geld, Geld, NN): 1.6
+(Menge, Menge, NN): -0.2
+(bekommen, bekommen, VB): 1.029411765
+(Interessen, Interessen, NN): 1.617647059
+(Interessen, Interessen, NN): 1.617647059
+(wegen, wegen, RP): 0.882352941
+
+3.Akt, 2.Szene, 60.Replik, Drama-Nummer: 504, ID:126
+emotion: 0.729411764
+arousel: 33.333751043
+positiveBawl: 7.170588235
+negativeBawl: 6.441176471
+positiveBawlDichotom: 7
+negativeBawlDichotom: 5
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(hing, hängen, VB): -0.823529412
+(Mensch, Mensch, NN): 1.6
+(kam, kommen, VB): 1.117647059
+(Hause, Hause, NN): 1.264705882
+(Herrn, Herrn, NN): -0.294117647
+(Namen, Namen, NN): 0.588235294
+(Schulden, Schulden, NN): -1.8
+(Streiche, Streich, NN): 0.1
+(sahe, sahe, NN): 2.0
+(Gewalt, Gewalt, NN): -2.7
+(höher, höh, JJ): 0.5
+(Hängen, Hängen, NN): -0.823529412
+
+5.Akt, 9.Szene, 30.Replik, Drama-Nummer: 1019, ID:127
+emotion: 5.641176472
+arousel: 15.282539683
+positiveBawl: 7.023529413
+negativeBawl: 1.382352941
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Tone, Tone, NN): 0.941176471
+(muß, mussen, VB): -1.382352941
+(Augen, Augen, NN): 1.117647059
+(Glück, Glück, NN): 2.617647059
+(Mannes, Mannes, NN): 1.2
+(verdanken, verdanken, VB): 1.147058824
+
+5.Akt, 11.Szene, 22.Replik, Drama-Nummer: 1066, ID:128
+emotion: 4.6
+arousel: 7.679824562
+positiveBawl: 4.6
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(liebe, lieb, JJ): 2.2
+(Scherz, Scherz, NN): 1.9
+(weit, weit, JJ): 0.5
+
+4.Akt, 6.Szene, 62.Replik, Drama-Nummer: 873, ID:129
+emotion: 5.594117647
+arousel: 23.675438598
+positiveBawl: 9.211764706
+negativeBawl: 3.617647059
+positiveBawlDichotom: 5
+negativeBawlDichotom: 4
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sehen, sehen, VB): 2.0
+(Herr, Herr, NN): -0.294117647
+(muß, mussen, VB): -1.382352941
+(lieben, lieb, NN): 2.2
+(Liebe, Liebe, NN): 2.9
+(versagt, versagen, RP): -1.647058824
+(Ring, Ring, NN): 1.411764706
+(Finger, Finger, NN): 0.7
+(zieht, ziehen, VB): -0.294117647
+
+4.Akt, 2.Szene, 37.Replik, Drama-Nummer: 749, ID:130
+emotion: 0.14117647
+arousel: 9.736842105
+positiveBawl: 1.964705882
+negativeBawl: 1.823529412
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Mann, Mann, NN): 1.2
+(übel, übel, JJ): -1.823529412
+(nehmen, nehmen, VBN): 0.088235294
+(anböte, anböte, NN): 0.676470588
+
+4.Akt, 3.Szene, 5.Replik, Drama-Nummer: 786, ID:131
+emotion: 0.217647059
+arousel: 5.753968254
+positiveBawl: 1.6
+negativeBawl: 1.382352941
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(muß, mussen, VB): -1.382352941
+(Geld, Geld, NN): 1.6
+
+2.Akt, 9.Szene, 29.Replik, Drama-Nummer: 433, ID:132
+emotion: 5.294117648
+arousel: 17.082539682
+positiveBawl: 6.529411765
+negativeBawl: 1.235294117
+positiveBawlDichotom: 5
+negativeBawlDichotom: 2
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(nennen, nennen, VB): 0.294117647
+(geschwiegen, schweigen, VBN): -0.264705882
+(Sprache, Sprache, NN): 1.735294118
+(Vernunft, Vernunft, NN): 1.5
+(vergessen, vergessen, VB): -0.970588235
+(Vernunft, Vernunft, NN): 1.5
+(Vernunft, Vernunft, NN): 1.5
+
+3.Akt, 4.Szene, 7.Replik, Drama-Nummer: 531, ID:133
+emotion: 5.626470588
+arousel: 18.153299917
+positiveBawl: 5.826470588
+negativeBawl: 0.2
+positiveBawlDichotom: 6
+negativeBawlDichotom: 1
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sehe, sehe, PRP$): 2.0
+(Leute, Leute, NN): 0.75
+(gewarnet, gewarnet, NN): -0.2
+(nehm, nehm, NN): 0.088235294
+(Manne, Manne, NN): 1.2
+(Acht, Acht, NN): 1.2
+(zeigend, zeigend, JJ): 0.588235294
+
+3.Akt, 7.Szene, 4.Replik, Drama-Nummer: 573, ID:134
+emotion: 2.135294118
+arousel: 19.933166249
+positiveBawl: 5.7
+negativeBawl: 3.564705882
+positiveBawlDichotom: 4
+negativeBawlDichotom: 4
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(lieb, lieb, JJ): 2.2
+(gezogen, ziehen, VBN): -0.294117647
+(kennen, kennen, VB): 1.117647059
+(Wer, Wer, WP): -0.6
+(wies, weisen, RB): 0.382352941
+(gestohlen, stehlen, VBN): -2.2
+(ersetzen, ersetzen, VB): -0.470588235
+(hülfe, hülfe, NN): 2.0
+
+3.Akt, 2.Szene, 29.Replik, Drama-Nummer: 473, ID:135
+emotion: 4.161764706
+arousel: 19.753550544
+positiveBawl: 5.897058823
+negativeBawl: 1.735294117
+positiveBawlDichotom: 4
+negativeBawlDichotom: 3
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(muß, mussen, VB): -1.382352941
+(gestehen, gestehen, VB): -0.058823529
+(Leute, Leute, NN): 0.75
+(möchte, möchte, VB): 1.764705882
+(wissen, wissen, RB): 2.029411765
+(Herr, Herr, NN): -0.294117647
+(fände, fände, NN): 1.352941176
+
+5.Akt, 13.Szene, 3.Replik, Drama-Nummer: 1098, ID:136
+emotion: 6.673529412
+arousel: 9.888888889
+positiveBawl: 6.673529412
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(liebe, lieb, JJ): 2.2
+(umarmend, umarmend, JJ): 2.2
+(Mädchen, Mädchen, NN): 1.323529412
+(Stunden, Stunden, NN): 0.95
+
+2.Akt, 1.Szene, 2.Replik, Drama-Nummer: 198, ID:137
+emotion: 4.961764706
+arousel: 22.494862156
+positiveBawl: 7.15
+negativeBawl: 2.188235294
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Wer, wer, WP): -0.6
+(schlafen, schlafen, VB): 2.0
+(Trommeln, Trommel, NNS): 0.27
+(Katzen, Katze, NNS): 1.45
+(schreien, schreien, VB): -1.235294118
+(Nacht, Nacht, NN): 1.0
+(Ruhe, Ruhe, NN): 1.7
+(Tasse, Tasse, NN): 0.73
+(Fräulein, Fräulein, NNP): -0.352941176
+
+5.Akt, 9.Szene, 18.Replik, Drama-Nummer: 1007, ID:138
+emotion: -0.111764706
+arousel: 20.059314954
+positiveBawl: 2.811764706
+negativeBawl: 2.923529412
+positiveBawlDichotom: 2
+negativeBawlDichotom: 5
+polarityBawlDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Nein, Nein, NN): -1.6
+(Welt, Welt, NN): 1.9
+(Ehre, Ehre, NN): 0.911764706
+(braucht, brauchen, VB): -0.235294118
+(verlaufen, verlaufen, VB): -0.529411765
+(Fräulein, Fräulein, NN): -0.352941176
+(geworfen, geworfen, VBN): -0.205882353
+
+1.Akt, 6.Szene, 6.Replik, Drama-Nummer: 102, ID:139
+emotion: -1.35882353
+arousel: 23.704260652
+positiveBawl: 3.705882353
+negativeBawl: 5.064705883
+positiveBawlDichotom: 3
+negativeBawlDichotom: 5
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Willen, Willen, NN): 1.235294118
+(vollziehen, vollziehen, VB): -0.323529412
+(erinnerte, erinnern, VB): 1.352941176
+(Ende, Ende, NN): -0.6
+(sterbe, sterben, VB): -1.823529412
+(Schuld, Schuld, NN): -1.7
+(verkauft, verkaufen, VB): -0.617647059
+(komme, kommen, VB): 1.117647059
+
+4.Akt, 6.Szene, 10.Replik, Drama-Nummer: 821, ID:140
+emotion: 6.294117646
+arousel: 28.016081872
+positiveBawl: 9.011764705
+negativeBawl: 2.717647059
+positiveBawlDichotom: 8
+negativeBawlDichotom: 3
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Freund, Freund, NN): 2.558823529
+(gehört, gehört, VB): 0.058823529
+(brennet, brennet, NN): -1.529411765
+(Mann, Mann, NN): 1.2
+(kennen, kennen, VB): 1.117647059
+(Erbin, Erbin, NN): 0.8
+(gewählt, wählen, VBN): 0.058823529
+(kömmt, kömmen, MD): 1.117647059
+(Vormund, Vormund, NN): -0.6
+(Vater, Vater, NN): 2.1
+(übergeben, übergeben, RP): -0.588235294
+
+5.Akt, 9.Szene, 6.Replik, Drama-Nummer: 995, ID:141
+emotion: 14.823529412
+arousel: 58.304970763
+positiveBawl: 20.411764706
+negativeBawl: 5.588235294
+positiveBawlDichotom: 16
+negativeBawlDichotom: 7
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Gefalle, Gefalle, NN): 1.529411765
+(Herr, Herr, NN): -0.294117647
+(nimmt, nehmen, VB): 0.088235294
+(Brief, Brief, NN): 1.5
+(lieset, lieset, NN): -0.5
+(lieber, lieb, JJ): 2.2
+(wissen, wissen, VB): 2.029411765
+(Ehre, Ehre, NN): 0.911764706
+(besorgt, besorgt, JJ): -1.3
+(Vorteil, Vorteil, NN): 1.8
+(Bruder, Bruder, NN): 1.676470588
+(Zeugnis, Zeugnis, NN): -0.6
+(mehr, mehr, RB): 1.8
+(bezahlen, bezahlen, VB): -0.529411765
+(auch, auchen, VBN): 1.117647059
+(Rechnungen, Rechnungen, NN): -1.6
+(Meldet, Meldet, NN): 0.088235294
+(Gesundheit, Gesundheit, NN): 1.970588235
+(erlaubet, erlauben, VB): 0.647058824
+(Dienste, Dienste, NN): -0.764705882
+(nehmen, nehmen, VB): 0.088235294
+(möchte, mögen, VB): 1.764705882
+(Mann, Mann, NN): 1.2
+
+3.Akt, 2.Szene, 6.Replik, Drama-Nummer: 450, ID:142
+emotion: 0.238235294
+arousel: 15.364243944
+positiveBawl: 1.414705882
+negativeBawl: 1.176470588
+positiveBawlDichotom: 3
+negativeBawlDichotom: 3
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herr, Herr, NN): -0.294117647
+(bitten, bitten, VB): 0.382352941
+(übergeben, übergeben, RP): -0.588235294
+(Herr, Herr, NN): -0.294117647
+(bitten, bitten, VB): 0.382352941
+(bitte, bitte, VB): 0.65
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 19, ID:143
+emotion: -2.576470588
+arousel: 14.02631579
+positiveBawl: 0.735294118
+negativeBawl: 3.311764706
+positiveBawlDichotom: 1
+negativeBawlDichotom: 4
+polarityBawlDichotom: -3
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Mache, Mache, NN): 0.735294118
+(Mühe, Mühe, NN): -0.117647059
+(Herr, Herr, JJ): -0.294117647
+(Tropfen, Tropfen, NN): -0.4
+(Gift, Gift, NN): -2.5
+
+4.Akt, 6.Szene, 37.Replik, Drama-Nummer: 848, ID:144
+emotion: -0.347058822
+arousel: 26.05764411
+positiveBawl: 2.594117647
+negativeBawl: 2.941176469
+positiveBawlDichotom: 4
+negativeBawlDichotom: 6
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(sagen, sagen, VB): 0.676470588
+(Fräulein, Fräulein, NN): -0.352941176
+(kam, kam, VB): 1.117647059
+(Mohr, Mohr, NN): 0.4
+(Dienste, Dienste, NN): -0.764705882
+(Mohr, Mohr, NN): 0.4
+(Vaterland, Vaterland, NN): -0.352941176
+(vermietete, vermietete, NN): -0.058823529
+(Blut, Blut, NN): -0.882352941
+(Staate, Staate, NN): -0.529411765
+
+1.Akt, 9.Szene, 8.Replik, Drama-Nummer: 145, ID:145
+emotion: 1.388235293
+arousel: 22.502756893
+positiveBawl: 5.270588235
+negativeBawl: 3.882352942
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Freund, Freund, NN): 2.558823529
+(Auftrag, Auftrag, NN): 0.7
+(gehört, gehören, RP): 0.058823529
+(Herrschaft, Herrschaft, NN): -1.941176471
+(erkenne, erkenne, NN): 1.235294118
+(Macht, Macht, NN): 0.1
+(heißt, heisst, JJ): 0.617647059
+(Herrschaft, Herrschaft, NN): -1.941176471
+
+2.Akt, 1.Szene, 24.Replik, Drama-Nummer: 220, ID:146
+emotion: 1.352941177
+arousel: 8.111111112
+positiveBawl: 2.0
+negativeBawl: 0.647058823
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Fräulein, Fräulein, NN): -0.352941176
+(Treue, Treue, NN): 2.0
+(Herr, Herr, NN): -0.294117647
+
+3.Akt, 3.Szene, 19.Replik, Drama-Nummer: 317, ID:147
+emotion: -1.135294118
+arousel: 9.614870509
+positiveBawl: 1.8
+negativeBawl: 2.935294118
+positiveBawlDichotom: 1
+negativeBawlDichotom: 2
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Gewalt, Gewalt, NN): -2.7
+(Kind, Kind, NN): 1.8
+(brauchen, brauchen, VB): -0.235294118
+
+2.Akt, 3.Szene, 6.Replik, Drama-Nummer: 142, ID:148
+emotion: 16.305882353
+arousel: 35.463978574
+positiveBawl: 19.305882353
+negativeBawl: 3.0
+positiveBawlDichotom: 10
+negativeBawlDichotom: 2
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(mehr, mehr, IN): 1.8
+(Liebe, Liebe, NN): 2.9
+(mehr, mehr, IN): 1.8
+(fühle, fühl, JJ): 2.0
+(Sehen, Sehen, NN): 2.0
+(sehen, sehen, VB): 2.0
+(Freude, Freude, NN): 2.7
+(Tränen, Tränen, NN): -1.5
+(Kinder, Kinder, NN): 1.8
+(Wollust, Wollust, NN): 1.1
+(Tränen, Tränen, NNP): -1.5
+(Hand, Hand, NN): 1.205882353
+
+2.Akt, 4.Szene, 24.Replik, Drama-Nummer: 195, ID:149
+emotion: 26.908823529
+arousel: 97.49231412
+positiveBawl: 38.294117646
+negativeBawl: 11.385294117
+positiveBawlDichotom: 28
+negativeBawlDichotom: 9
+polarityBawlDichotom: 19
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Grund, Grund, NN): 0.5
+(Herzens, Herzens, NN): 2.3
+(gesehen, sehen, VBN): 2.0
+(entdeckt, entdeckt, NN): 1.735294118
+(mehr, mehr, IN): 1.8
+(wahres, wahr, JJ): 0.558823529
+(Miß, Miss, NN): -2.0
+(fühlt, fühlen, VB): 2.0
+(sage, sagen, VB): 0.676470588
+(wahres, wahres, NN): 0.558823529
+(weit, weit, JJ): 0.5
+(Mann, Mann, NN): 1.2
+(langen, lang, JJ): 0.823529412
+(Kunst, Kunst, NN): 1.823529412
+(verführen, verfahren, VB): -0.558823529
+(Erfahrung, Erfahrung, NN): 1.735294118
+(Nutze, Nutze, NN): 0.823529412
+(Zweck, Zweck, NN): -0.176470588
+(erreichten, erreichten, NN): 1.558823529
+(möchte, mögen, VB): 1.764705882
+(Allein, Allein, NN): -1.8
+(Vater, Vater, NN): 2.1
+(Kind, Kind, NN): 1.8
+(wenigen, wenig, JJ): -0.9
+(Schritte, Schritte, NN): 0.911764706
+(Grabe, Grabe, NN): -2.3
+(bitter, bitt, JJ): 0.65
+(Lust, Lust, NN): 2.1
+(wegen, wegen, RP): 0.882352941
+(stärksten, stärksten, NN): 1.7
+(Natur, Natur, NN): 2.35
+(trennten, trennten, NN): -1.5
+(Fehler, Fehler, NN): -1.6
+(weit, weit, JJ): 0.5
+(Alter, Alter, NN): -0.55
+(Tochter, Tochter, NN): 1.676470588
+(Haus, Haus, NN): 1.264705882
+
+3.Akt, 3.Szene, 33.Replik, Drama-Nummer: 331, ID:150
+emotion: 6.147058824
+arousel: 44.435672516
+positiveBawl: 12.747058824
+negativeBawl: 6.6
+positiveBawlDichotom: 13
+negativeBawlDichotom: 4
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Miß, Miss, NN): -2.0
+(glaube, glauben, VB): 1.088235294
+(Leben, Leben, NN): 2.382352941
+(Wer, Wer, WP): -0.6
+(Miß, Miss, NN): -2.0
+(Absicht, Absicht, NN): 0.6
+(geht, gehen, VB): 0.411764706
+(nahe, nahe, RP): 0.8
+(Miß, Miss, NN): -2.0
+(Absicht, Absicht, NN): 0.6
+(Vater, Vater, NN): 2.1
+(Brief, Brief, NN): 1.5
+(gehen, gehen, VB): 0.411764706
+(weit, weit, JJ): 0.5
+(tragen, tragen, VB): 0.117647059
+(Augen, Augen, NN): 1.117647059
+(kommen, kommen, VB): 1.117647059
+
+3.Akt, 2.Szene, 2.Replik, Drama-Nummer: 282, ID:151
+emotion: 3.394117647
+arousel: 12.046365915
+positiveBawl: 4.994117647
+negativeBawl: 1.6
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Nein, Nein, NN): -1.6
+(Könnten, Könnten, NN): 1.676470588
+(lieben, lieb, VB): 2.2
+(Geheimnisse, Geheimnis, NNS): 1.117647059
+
+5.Akt, 7.Szene, 3.Replik, Drama-Nummer: 653, ID:152
+emotion: 6.005882352
+arousel: 79.737719301
+positiveBawl: 23.235294117
+negativeBawl: 17.229411765
+positiveBawlDichotom: 18
+negativeBawlDichotom: 10
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(krank, krank, JJ): -2.0
+(schließe, schliesse, NN): -0.617647059
+(mehr, mehr, RB): 1.8
+(Angst, Angst, NN): -2.6
+(fühle, fühlen, VB): 2.0
+(Briefe, Brief, NNS): 1.5
+(Vater, Vater, NN): 2.1
+(hoffen, hoffen, VB): 1.647058824
+(Willst, Willst, WRB): 0.764705882
+(finde, finde, NN): 1.352941176
+(möchte, mögen, VB): 1.764705882
+(Hand, Hand, NN): 1.205882353
+(hängt, hängen, VB): -0.823529412
+(tot, tot, JJ): -2.5
+(Seite, Seite, NN): 0.25
+(leicht, leicht, JJ): 0.8
+(stirbt, sterben, VB): -1.823529412
+(Mann, Mann, NN): 1.2
+(weit, weit, JJ): 0.5
+(mehr, mehr, IN): 1.8
+(entfernet, entfernet, NN): -0.705882353
+(Glaube, Glaube, NN): 0.8
+(empfinde, empfinde, NN): 1.5
+(Todes, Todes, NN): -2.8
+(Todes, Todes, NN): -2.8
+(bitter, bitt, JJ): 0.65
+(Kehre, Kehre, NN): -0.558823529
+(Mensch, Mensch, NN): 1.6
+
+2.Akt, 4.Szene, 7.Replik, Drama-Nummer: 178, ID:153
+emotion: 9.199999999
+arousel: 36.895989977
+positiveBawl: 16.176470588
+negativeBawl: 6.976470589
+positiveBawlDichotom: 9
+negativeBawlDichotom: 5
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(seufzet, seufzet, NN): -1.1
+(fehlt, fehlen, VB): -1.529411765
+(helfen, helfen, VB): 2.0
+(seufzen, seufzen, VB): -1.1
+(sieht, sehen, VB): 2.0
+(Nein, Nein, NN): -1.6
+(sieht, sehen, VB): 2.0
+(sieht, sehen, VB): 2.0
+(Himmel, Himmel, NN): 2.25
+(wünscht, wünschen, VB): 1.529411765
+(bittet, bitten, VB): 0.382352941
+(Himmel, Himmel, NN): 2.25
+(Möchte, Möchte, NN): 1.764705882
+(versagte, versagen, VB): -1.647058824
+
+3.Akt, 3.Szene, 4.Replik, Drama-Nummer: 302, ID:154
+emotion: -0.182352941
+arousel: 25.485964914
+positiveBawl: 7.517647059
+negativeBawl: 7.7
+positiveBawlDichotom: 5
+negativeBawlDichotom: 3
+polarityBawlDichotom: 2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Gott, Gott, NN): 1.5
+(Nachricht, Nachricht, NN): 0.617647059
+(Tode, Tode, NN): -2.8
+(Vaters, Vaters, NN): 2.1
+(Mann, Mann, NN): 1.2
+(Vater, Vater, NN): 2.1
+(Elende, Elende, NN): -2.1
+(Tod, Tod, NN): -2.8
+
+3.Akt, 1.Szene, 5.Replik, Drama-Nummer: 278, ID:155
+emotion: 19.176114084
+arousel: 114.456015038
+positiveBawl: 33.276114084
+negativeBawl: 14.1
+positiveBawlDichotom: 30
+negativeBawlDichotom: 12
+polarityBawlDichotom: 18
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Geliebten, Geliebten, NN): 1.5
+(Tochter, Tochter, NN): 1.676470588
+(trennen, trennen, VB): -1.5
+(angeht, angehen, VB): 0.705882353
+(siehst, siehst, NN): 2.0
+(Fehler, Fehler, NN): -1.6
+(Mann, Mann, NN): 1.2
+(kennen, kennen, VBN): 1.117647059
+(lernen, lernen, VB): 0.8
+(wegen, wegen, IN): 0.882352941
+(glaubte, glauben, VBN): 1.088235294
+(Hause, Hause, NN): 1.264705882
+(Achtung, Achtung, NN): 0.6
+(Tochter, Tochter, NN): 1.676470588
+(mußte, mussen, VB): -1.382352941
+(Mensch, Mensch, NN): 1.6
+(Achtung, Achtung, NN): 0.6
+(treiben, treiben, VB): -0.088235294
+(Liebe, Liebe, NN): 2.9
+(verwandeln, verwandeln, VB): 1.147058824
+(ehe, ehe, CC): 0.647058824
+(ehe, ehe, RB): 0.647058824
+(geschehen, geschehen, VBN): 0.264705882
+(vergeben, vergeben, VBN): 0.2
+(überlegte, überlegte, NN): 0.735294118
+(allein, allein, RB): -1.8
+(Strenge, Strenge, NN): -1.2
+(Flucht, Flucht, NN): -1.529411765
+(verhindert, verhindern, VBN): -0.647058824
+(muß, mussen, VB): -1.382352941
+(schätzen, schätzen, VB): 0.787878788
+(Sohn, Sohn, NN): 1.323529412
+(wer, wer, WP): -0.6
+(Mädchens, Mädchens, NN): 1.323529412
+(wegen, wegen, IN): 0.882352941
+(aufgeben, aufgeben, VB): -1.470588235
+(Begierden, Begierden, NN): 0.2
+(mehr, mehr, RB): 1.8
+(verlangen, verlangen, VB): 0.147058824
+(Künste, Künste, NN): 1.823529412
+(wenig, wenig, RB): -0.9
+(versteht, verstehen, VB): 1.735294118
+
+4.Akt, 8.Szene, 70.Replik, Drama-Nummer: 580, ID:156
+emotion: -0.782352941
+arousel: 12.784126985
+positiveBawl: 1.617647059
+negativeBawl: 2.4
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(reizend, reizend, JJ): -0.4
+(Erkennen, Erkennen, NN): 1.235294118
+(Miß, Miss, NN): -2.0
+(bitten, bitten, VB): 0.382352941
+
+4.Akt, 8.Szene, 20.Replik, Drama-Nummer: 530, ID:157
+emotion: 1.717647059
+arousel: 25.176691729
+positiveBawl: 6.15882353
+negativeBawl: 4.441176471
+positiveBawlDichotom: 6
+negativeBawlDichotom: 3
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(leid, leid, JJ): -2.0
+(Gedanken, Gedanke, NNS): 1.5
+(Miß, Miss, NN): -2.0
+(setze, setze, NN): 0.235294118
+(nähere, näher, JJ): 0.8
+(Nachricht, Nachricht, NN): 0.617647059
+(Schicksale, Schicksal, NNS): -0.441176471
+(verbinden, verbinden, VB): 1.205882353
+(Wohltat, Wohltat, NN): 1.8
+
+4.Akt, 4.Szene, 29.Replik, Drama-Nummer: 475, ID:158
+emotion: 5.4
+arousel: 21.70760234
+positiveBawl: 8.4
+negativeBawl: 3.0
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Meinung, Meinung, NN): 1.5
+(glaubten, glauben, VB): 1.088235294
+(sollten, sollten, NN): -1.0
+(glauben, glauben, VB): 1.088235294
+(Miß, Miss, NN): -2.0
+(Mädchen, Mädchen, NN): 1.323529412
+(Mann, Mann, NN): 1.2
+(lieben, lieb, JJ): 2.2
+
+4.Akt, 8.Szene, 38.Replik, Drama-Nummer: 548, ID:159
+emotion: 10.547058825
+arousel: 41.427505652
+positiveBawl: 13.623529413
+negativeBawl: 3.076470588
+positiveBawlDichotom: 13
+negativeBawlDichotom: 3
+polarityBawlDichotom: 10
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Mangels, Mangels, NN): -1.9
+(Vermögen, Vermögen, NN): 1.323529412
+(Personen, Personen, NN): 0.5
+(gesucht, suchen, VBN): -0.058823529
+(eifriger, eifrig, JJ): 0.8
+(wünschten, wünschen, VB): 1.529411765
+(reichen, reichen, VB): 0.617647059
+(vornehmen, vornehmen, PRP$): 0.647058824
+(trat, trat, JJ): -1.117647059
+(Antrag, Antrag, NN): 0.3
+(setzen, setzen, PRP$): 0.235294118
+(stützte, stützte, NN): 0.882352941
+(Gefühls, Gefühls, NN): 2.205882353
+(Palaste, Palaste, NN): 1.7
+(Person, Person, NN): 0.5
+(leben, leben, VBN): 2.382352941
+
+2.Akt, 1.Szene, 7.Replik, Drama-Nummer: 117, ID:160
+emotion: 4.2
+arousel: 5.640350878
+positiveBawl: 4.2
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(fühle, fühlen, VB): 2.0
+(lieber, liebern, VB): 2.2
+
+5.Akt, 10.Szene, 14.Replik, Drama-Nummer: 684, ID:161
+emotion: 7.435294118
+arousel: 16.011111111
+positiveBawl: 8.535294118
+negativeBawl: 1.1
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Vater, Vater, NN): 2.1
+(Willen, Willen, NN): 1.235294118
+(Tochter, Tochter, NN): 1.676470588
+(umarmen, umarmen, VB): 2.2
+(Sohn, Sohn, NN): 1.323529412
+(teurer, teurer, NN): -1.1
+
+1.Akt, 7.Szene, 2.Replik, Drama-Nummer: 54, ID:162
+emotion: -1.35
+arousel: 5.839009288
+positiveBawl: 0.2
+negativeBawl: 1.55
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(vergeben, vergeben, VB): 0.2
+(Klagen, Klage, NNS): -1.55
+
+2.Akt, 4.Szene, 9.Replik, Drama-Nummer: 180, ID:163
+emotion: 4.241176471
+arousel: 38.984126983
+positiveBawl: 13.123529412
+negativeBawl: 8.882352941
+positiveBawlDichotom: 7
+negativeBawlDichotom: 6
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(liege, liege, NN): 1.3
+(verlassen, verlassen, VB): -1.5
+(verlassen, verlassen, VB): -1.5
+(Ewigkeit, Ewigkeit, NN): 1.5
+(gesagt, sagen, VBN): 0.676470588
+(liebten, liebten, NN): 2.705882353
+(Verläßt, Verlässt, NN): -1.5
+(liebt, liebt, NN): 2.705882353
+(muß, mussen, VB): -1.382352941
+(lieben, lieben, VB): 2.705882353
+(wünschte, wünschen, VB): 1.529411765
+(verlassen, verlassen, VB): -1.5
+(verlassen, verlassen, VB): -1.5
+
+5.Akt, 10.Szene, 3.Replik, Drama-Nummer: 673, ID:164
+emotion: 13.591176471
+arousel: 49.744152047
+positiveBawl: 19.991176471
+negativeBawl: 6.4
+positiveBawlDichotom: 14
+negativeBawlDichotom: 4
+polarityBawlDichotom: 10
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sollt, sollt, NN): -1.0
+(sehen, sehen, VB): 2.0
+(Nein, Nein, NN): -1.6
+(Miß, Miss, NN): -2.0
+(komme, kommen, VB): 1.117647059
+(Trost, Trost, NN): 1.4
+(Hülfe, Hülfe, NN): 1.3
+(allein, allein, JJ): -1.8
+(seh, seh, PRP$): 2.0
+(Vater, Vater, NN): 2.1
+(Szene, Szene, NN): 0.25
+(gekommen, kommen, RP): 1.117647059
+(kamen, kommen, VB): 1.117647059
+(kommen, kommen, VB): 1.117647059
+(Tochter, Tochter, NN): 1.676470588
+(retten, retten, VB): 1.676470588
+(sehen, sehen, VB): 2.0
+(gekommen, kommen, VBN): 1.117647059
+
+5.Akt, 2.Szene, 7.Replik, Drama-Nummer: 601, ID:165
+emotion: -2.6
+arousel: 4.380952381
+positiveBawl: 0
+negativeBawl: 2.6
+positiveBawlDichotom: 0
+negativeBawlDichotom: 1
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Angst, Angst, NN): -2.6
+
+3.Akt, 3.Szene, 15.Replik, Drama-Nummer: 313, ID:166
+emotion: 12.435294118
+arousel: 21.221190232
+positiveBawl: 12.435294118
+negativeBawl: 0
+positiveBawlDichotom: 8
+negativeBawlDichotom: 0
+polarityBawlDichotom: 8
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(nehmen, nehmen, VB): 0.088235294
+(mehr, mehr, RB): 1.8
+(sehen, sehen, VB): 2.0
+(sagen, sagen, VB): 0.676470588
+(vermag, vermögen, VB): 1.323529412
+(Freude, Freude, NN): 2.7
+(verwandeln, verwandeln, VB): 1.147058824
+(Freude, Freude, NN): 2.7
+
+5.Akt, 5.Szene, 55.Replik, Drama-Nummer: 1148, ID:167
+emotion: 4.84117647
+arousel: 10.263157895
+positiveBawl: 4.84117647
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Sagt, sagen, VB): 0.676470588
+(Liebe, Liebe, NN): 2.9
+(sagt, sagen, VB): 0.676470588
+(Namen, Namen, NN): 0.588235294
+
+4.Akt, 7.Szene, 39.Replik, Drama-Nummer: 1008, ID:168
+emotion: 2.011764707
+arousel: 35.989232885
+positiveBawl: 8.452941177
+negativeBawl: 6.44117647
+positiveBawlDichotom: 8
+negativeBawlDichotom: 4
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(macht, macht, VB): 0.735294118
+(laßt, lasst, WRB): -1.676470588
+(Tat, Tat, NN): -0.5
+(Liebe, Liebe, NN): 2.9
+(Mädchen, Mädchen, NN): 1.323529412
+(band, binden, VB): 0.382352941
+(Gedanke, Gedanke, NN): 1.5
+(tötet, tötet, NN): -2.705882353
+(sieben, sieben, CD): 0.205882353
+(Verlieren, Verlieren, NN): -1.558823529
+(Händen, Händen, NN): 1.205882353
+(Vorsicht, Vorsicht, NN): 0.2
+
+5.Akt, 6.Szene, 52.Replik, Drama-Nummer: 1213, ID:169
+emotion: 5.026470588
+arousel: 21.292627402
+positiveBawl: 6.408823529
+negativeBawl: 1.382352941
+positiveBawlDichotom: 7
+negativeBawlDichotom: 1
+polarityBawlDichotom: 6
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Gebet, Gebet, NN): 0.75
+(Wunder, Wunder, NN): 1.85
+(Blicken, Blicken, NN): 1.264705882
+(wahren, wahren, PRP$): 0.558823529
+(Vergeben, Vergeben, NN): 0.2
+(entdecken, entdecken, VB): 1.735294118
+(müsse, müsse, RB): -1.382352941
+(Kirch, Kirch, NN): 0.05
+
+5.Akt, 6.Szene, 12.Replik, Drama-Nummer: 1173, ID:170
+emotion: -1.123529412
+arousel: 4.660526316
+positiveBawl: 0.676470588
+negativeBawl: 1.8
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: NEGATIVE, Benchmark: POSITIVE --> False
+
+(Token, Lemma, POS): _emotion
+(allein, allein, RB): -1.8
+(sagen, sagen, VB): 0.676470588
+
+3.Akt, 7.Szene, 22.Replik, Drama-Nummer: 693, ID:171
+emotion: 21.300000002
+arousel: 78.946023396
+positiveBawl: 28.941176471
+negativeBawl: 7.641176469
+positiveBawlDichotom: 21
+negativeBawlDichotom: 8
+polarityBawlDichotom: 13
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Richter, Richter, NN): -0.823529412
+(sprach, sprechen, VB): 1.205882353
+(Vater, Vater, NN): 2.1
+(schafft, schaffen, VB): 0.970588235
+(Stuhle, Stuhle, NN): 0.5
+(lösen, lösen, VB): 1.058823529
+(rechte, rechen, VB): -0.470588235
+(Ring, Ring, NN): 1.411764706
+(rechte, rechen, VB): -0.470588235
+(Ring, Ring, NN): 1.411764706
+(beliebt, beliebt, JJ): 2.4
+(Gott, Gott, NN): 1.5
+(Menschen, Menschen, NN): 1.6
+(muß, mussen, VB): -1.382352941
+(Ringe, Ring, NNS): 1.411764706
+(lieben, lieb, JJ): 2.2
+(Macht, Macht, NN): 0.1
+(sagt, sagen, VB): 0.676470588
+(schweigt, schweigen, VB): -0.264705882
+(Ringe, Ring, NNS): 1.411764706
+(wirken, wirken, VB): 0.941176471
+(liebt, lieben, VB): 2.705882353
+(Ringe, Ring, NNS): 1.411764706
+(Ring, Ring, NN): 1.411764706
+(ging, gehen, VB): 0.411764706
+(verloren, verlor, JJ): -1.558823529
+(Verlust, Verlust, NN): -2.2
+(ersetzen, ersetzen, VB): -0.470588235
+(Vater, Vater, NN): 2.1
+
+3.Akt, 2.Szene, 4.Replik, Drama-Nummer: 580, ID:172
+emotion: -7.417647059
+arousel: 31.036092069
+positiveBawl: 2.264705882
+negativeBawl: 9.682352941
+positiveBawlDichotom: 3
+negativeBawlDichotom: 7
+polarityBawlDichotom: -4
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Kummers, Kummers, NN): -1.9
+(Galle, Galle, NN): -1.6
+(Laune, Laune, NN): 0.6
+(übel, übel, JJ): -1.823529412
+(Torheit, Torheit, NN): -1.3
+(Zung, Zung, NN): 0.9
+(hieß, hassen, VB): -2.5
+(rächen, rächen, VB): -0.470588235
+(vertreten, vertreten, VB): -0.088235294
+(willst, willst, RP): 0.764705882
+
+1.Akt, 2.Szene, 15.Replik, Drama-Nummer: 72, ID:173
+emotion: 0.788235294
+arousel: 21.002923977
+positiveBawl: 5.305882353
+negativeBawl: 4.517647059
+positiveBawlDichotom: 4
+negativeBawlDichotom: 3
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(schließt, schlassen, VB): -0.617647059
+(Vater, Vater, NN): 2.1
+(Kömmt, Kömmt, NN): 1.117647059
+(Tode, Tode, NN): -2.8
+(Geht, Gehen, VB): 0.411764706
+(frei, frei, JJ): -1.1
+(retten, retten, VB): 1.676470588
+
+3.Akt, 5.Szene, 20.Replik, Drama-Nummer: 665, ID:174
+emotion: 0.264705882
+arousel: 15.310401002
+positiveBawl: 3.911764706
+negativeBawl: 3.647058824
+positiveBawlDichotom: 3
+negativeBawlDichotom: 2
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Zweifel, Zweifel, NN): -1.5
+(wissen, wissen, VB): 2.029411765
+(Wege, Wege, NN): 0.882352941
+(Feinde, Feind, NNS): -2.147058824
+(getroffen, treffen, VBN): 1.0
+
+4.Akt, 7.Szene, 31.Replik, Drama-Nummer: 1000, ID:175
+emotion: 1.041176469
+arousel: 59.48667502
+positiveBawl: 13.441176469
+negativeBawl: 12.4
+positiveBawlDichotom: 12
+negativeBawlDichotom: 10
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Bruder, Bruder, NN): 1.676470588
+(Erheben, Erheb, NN): 0.088235294
+(sollten, sollten, NN): -1.0
+(wegen, wegen, IN): 0.882352941
+(Tat, Tat, NN): -0.5
+(wegen, wegen, IN): 0.882352941
+(Tat, Tat, NN): -0.5
+(sollt, sollt, NN): -1.0
+(wissen, wissen, VB): 2.029411765
+(Nehmt, Nehmt, NN): 0.088235294
+(Grab, Grab, NN): -2.3
+(erzählen, erzählen, VB): 1.352941176
+(Allein, Allein, NN): -1.8
+(erzähl, erzähl, NN): 1.352941176
+(frommen, fromm, JJ): 0.4
+(Einfalt, Einfalt, NN): -1.2
+(Allein, Allein, NN): -1.8
+(erzähl, erzähl, NN): 1.352941176
+(allein, allein, RB): -1.8
+(Versteht, Verstehen, VB): 1.735294118
+(Mensch, Mensch, NN): 1.6
+(Taten, Taten, NN): -0.5
+
+2.Akt, 5.Szene, 37.Replik, Drama-Nummer: 487, ID:176
+emotion: 5.770588235
+arousel: 12.736675021
+positiveBawl: 6.388235294
+negativeBawl: 0.617647059
+positiveBawlDichotom: 4
+negativeBawlDichotom: 1
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(freuen, freuen, VB): 2.205882353
+(heitre, heitre, NN): 1.8
+(schließt, schlassen, VB): -0.617647059
+(Blicken, Blicken, NN): 1.264705882
+(Kennt, Kennt, NN): 1.117647059
+
+1.Akt, 4.Szene, 10.Replik, Drama-Nummer: 179, ID:177
+emotion: 10.017647058
+arousel: 28.143692566
+positiveBawl: 10.017647058
+negativeBawl: 0
+positiveBawlDichotom: 12
+negativeBawlDichotom: 0
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Kamele, Kamele, NN): 1.1
+(Gestiegen, Gestiegen, NN): 0.882352941
+(Geh, Geh, NN): 0.411764706
+(meld, meld, NN): 0.088235294
+(Acht, Acht, NNP): 1.2
+(Haus, Haus, NN): 1.264705882
+(kömmt, kömmen, MD): 1.117647059
+(Vater, Vater, NN): 2.1
+(Geh, Geh, NN): 0.411764706
+(sag, sag, NN): 0.676470588
+(bitten, bitten, VB): 0.382352941
+(bitten, bitten, VB): 0.382352941
+
+3.Akt, 3.Szene, 6.Replik, Drama-Nummer: 609, ID:178
+emotion: -1.2
+arousel: 3.578947368
+positiveBawl: 0
+negativeBawl: 1.2
+positiveBawlDichotom: 0
+negativeBawlDichotom: 1
+polarityBawlDichotom: -1
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Unruh, Unruh, NN): -1.2
+
+1.Akt, 5.Szene, 65.Replik, Drama-Nummer: 246, ID:179
+emotion: 15.311764706
+arousel: 32.358801416
+positiveBawl: 16.911764706
+negativeBawl: 1.6
+positiveBawlDichotom: 13
+negativeBawlDichotom: 1
+polarityBawlDichotom: 12
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Natur, Natur, NN): 2.35
+(auch, auchen, VB): 1.117647059
+(Bruders, Bruders, NN): 1.676470588
+(Form, Form, NN): 0.352941176
+(gebildet, bilden, VBN): 1.323529412
+(Seele, Seele, NN): 1.8
+(gefallen, gefallen, VB): 1.529411765
+(Natur, Natur, NN): 2.35
+(Gott, Gott, NN): 1.5
+(Geht, Gehen, VB): 0.411764706
+(Bruder, Bruder, NN): 1.676470588
+(Galle, Galle, NN): -1.6
+(Geht, Gehen, VB): 0.411764706
+(geht, gehen, RB): 0.411764706
+
+5.Akt, 8.Szene, 74.Replik, Drama-Nummer: 1315, ID:180
+emotion: 1.805882353
+arousel: 5.222222223
+positiveBawl: 2.1
+negativeBawl: 0.294117647
+positiveBawlDichotom: 1
+negativeBawlDichotom: 1
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Vater, Vater, NN): 2.1
+(her, her, IN): -0.294117647
+
+4.Akt, 7.Szene, 40.Replik, Drama-Nummer: 1009, ID:181
+emotion: 1.1
+arousel: 2.833333333
+positiveBawl: 1.1
+negativeBawl: 0
+positiveBawlDichotom: 1
+negativeBawlDichotom: 0
+polarityBawlDichotom: 1
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Geist, Geist, NN): 1.1
+
+4.Akt, 4.Szene, 45.Replik, Drama-Nummer: 922, ID:182
+emotion: 8.400000001
+arousel: 13.4
+positiveBawl: 8.400000001
+negativeBawl: 0
+positiveBawlDichotom: 5
+negativeBawlDichotom: 0
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Woll, Woll, NN): 0.9
+(entdeckt, entdeckt, RP): 1.735294118
+(tolerante, tolerante, NN): 2.0
+(entdeckt, entdeckt, RB): 1.735294118
+(wissen, wissen, VB): 2.029411765
+
+4.Akt, 5.Szene, 6.Replik, Drama-Nummer: 937, ID:183
+emotion: 2.888235295
+arousel: 26.882727654
+positiveBawl: 6.635294118
+negativeBawl: 3.747058823
+positiveBawlDichotom: 7
+negativeBawlDichotom: 3
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Rede, Rede, NN): 0.235294118
+(ging, gehen, VB): 0.411764706
+(spricht, sprechen, VB): 1.205882353
+(Fehlern, Fehlern, NN): -1.6
+(Launen, Laune, NNS): 0.6
+(weichen, weichen, PRP$): -0.764705882
+(Herzens, Herzens, NN): 2.3
+(Mädchen, Mädchen, NN): 1.323529412
+(muß, mussen, VB): -1.382352941
+(Meinst, Meinst, NN): 0.558823529
+
+3.Akt, 5.Szene, 15.Replik, Drama-Nummer: 660, ID:184
+emotion: 3.338235294
+arousel: 10.067251462
+positiveBawl: 3.338235294
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Vernunft, Vernunft, NN): 1.5
+(erwartet, erwarten, VB): 0.470588235
+(Sache, Sache, NN): 0.25
+(kommen, kommen, VB): 1.117647059
+
+3.Akt, 10.Szene, 53.Replik, Drama-Nummer: 809, ID:185
+emotion: 4.617647058
+arousel: 10.403508772
+positiveBawl: 4.617647058
+negativeBawl: 0
+positiveBawlDichotom: 4
+negativeBawlDichotom: 0
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(sprechen, sprechen, VB): 1.205882353
+(begegnet, begegnen, VB): 1.382352941
+(sagt, sagen, RB): 0.676470588
+(finden, finden, VBN): 1.352941176
+
+3.Akt, 2.Szene, 5.Replik, Drama-Nummer: 581, ID:186
+emotion: 1.25
+arousel: 11.674603175
+positiveBawl: 3.25
+negativeBawl: 2.0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 2
+polarityBawlDichotom: 0
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Ritter, Ritter, NN): 0.95
+(Herz, Herz, NN): 2.3
+(geworfen, werfen, VB): -0.205882353
+(Geschadet, Geschadet, NN): -1.794117647
+
+4.Akt, 4.Szene, 3.Replik, Drama-Nummer: 880, ID:187
+emotion: 5.241176471
+arousel: 20.996658314
+positiveBawl: 7.705882353
+negativeBawl: 2.464705882
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Dank, Dank, IN): 1.823529412
+(Dank, Dank, IN): 1.823529412
+(Leben, Leben, NN): 2.382352941
+(Stand, Stand, NN): 0.205882353
+(Charakter, Charakter, NN): 1.264705882
+(steht, stehen, VB): 0.205882353
+(Fällen, Fällen, NN): -1.7
+(Diensten, Diensten, NN): -0.764705882
+
+5.Akt, 8.Szene, 66.Replik, Drama-Nummer: 1307, ID:188
+emotion: 3.3
+arousel: 5.166666667
+positiveBawl: 3.3
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(mehr, mehr, VB): 1.8
+(Gott, Gott, NN): 1.5
+
+1.Akt, 2.Szene, 18.Replik, Drama-Nummer: 75, ID:189
+emotion: 22.870588235
+arousel: 55.638041183
+positiveBawl: 24.723529411
+negativeBawl: 1.852941176
+positiveBawlDichotom: 19
+negativeBawlDichotom: 2
+polarityBawlDichotom: 17
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(wäre, wäre, VB): 0.558823529
+(wies, weisen, VB): 0.382352941
+(lieber, lieb, JJ): 2.2
+(glauben, glauben, VB): 1.088235294
+(liebt, liebt, NN): 2.705882353
+(jüngern, jüngern, NN): 0.8
+(Bruder, Bruder, NN): 1.676470588
+(lieben, lieb, JJ): 2.2
+(Pflegen, Pflegen, NN): 0.941176471
+(Gesichter, Gesichter, NN): 1.0
+(Eindruck, Eindruck, NN): 0.4
+(verlorner, verlorner, NN): -1.558823529
+(Wirkt, Wirkt, NN): 0.941176471
+(mehr, mehr, RB): 1.8
+(Wunder, Wunder, NN): 1.85
+(mehr, mehr, VB): 1.8
+(Wunder, Wunder, NN): 1.85
+(Bedürf, Bedürf, NN): -0.294117647
+(verdienen, verdienen, VB): 0.764705882
+(sagen, sagen, VB): 0.676470588
+(Glauben, Glauben, NN): 1.088235294
+
+1.Akt, 5.Szene, 50.Replik, Drama-Nummer: 231, ID:190
+emotion: 5.611764706
+arousel: 35.585630744
+positiveBawl: 10.158823529
+negativeBawl: 4.547058823
+positiveBawlDichotom: 8
+negativeBawlDichotom: 5
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Herrn, Herrn, NN): -0.294117647
+(kömmt, kömmen, MD): 1.117647059
+(Feste, Feste, NN): 1.852941176
+(nennt, nennen, VB): 0.294117647
+(liegt, liegen, VB): 0.823529412
+(Vater, Vater, NN): 2.1
+(Heer, Heer, NN): -0.294117647
+(Kriegs, Kriegs, JJ): -2.9
+(bestreitet, bestreitet, NN): -0.970588235
+(verfügt, verfügen, VB): -0.088235294
+(Wegen, Wegen, IN): 0.882352941
+(Feste, Feste, NN): 1.852941176
+(begleitet, begleiten, RP): 1.235294118
+
+2.Akt, 5.Szene, 34.Replik, Drama-Nummer: 484, ID:191
+emotion: 2.705882353
+arousel: 4.277777778
+positiveBawl: 2.705882353
+negativeBawl: 0
+positiveBawlDichotom: 2
+negativeBawlDichotom: 0
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Gott, Gott, NN): 1.5
+(Hand, Hand, NN): 1.205882353
+
+2.Akt, 1.Szene, 21.Replik, Drama-Nummer: 303, ID:192
+emotion: 3.005882353
+arousel: 11.317042606
+positiveBawl: 4.705882353
+negativeBawl: 1.7
+positiveBawlDichotom: 3
+negativeBawlDichotom: 1
+polarityBawlDichotom: 2
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(liebes, lieb, JJ): 2.2
+(Schuld, Schuld, NN): -1.7
+(spielen, spielen, VB): 1.705882353
+(lernen, lernen, VB): 0.8
+
+5.Akt, 7.Szene, 7.Replik, Drama-Nummer: 1223, ID:193
+emotion: 3.088235294
+arousel: 7.318713451
+positiveBawl: 3.088235294
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(steh, steh, NN): 0.205882353
+(mag, mögen, VB): 1.764705882
+(Augen, Augen, NN): 1.117647059
+
+2.Akt, 7.Szene, 2.Replik, Drama-Nummer: 503, ID:194
+emotion: 9.317647059
+arousel: 19.487468673
+positiveBawl: 9.994117647
+negativeBawl: 0.676470588
+positiveBawlDichotom: 6
+negativeBawlDichotom: 2
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(vermieden, vermieden, NN): -0.617647059
+(gesucht, suchen, VBN): -0.058823529
+(kennen, kennen, VB): 1.117647059
+(sprach, sprechen, VB): 1.205882353
+(lieber, lieb, JJ): 2.2
+(glauben, glauben, VB): 1.088235294
+(sehn, sehn, NN): 2.0
+(Lebens, Lebens, NN): 2.382352941
+
+1.Akt, 5.Szene, 42.Replik, Drama-Nummer: 82, ID:195
+emotion: 5.385294118
+arousel: 8.68877193
+positiveBawl: 5.385294118
+negativeBawl: 0
+positiveBawlDichotom: 3
+negativeBawlDichotom: 0
+polarityBawlDichotom: 3
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Papagei, Papagei, NN): 1.55
+(versteht, verstehen, VB): 1.735294118
+(Vater, Vater, NN): 2.1
+
+1.Akt, 5.Szene, 61.Replik, Drama-Nummer: 101, ID:196
+emotion: 4.176470586
+arousel: 51.807189543
+positiveBawl: 15.099999998
+negativeBawl: 10.923529412
+positiveBawlDichotom: 11
+negativeBawlDichotom: 6
+polarityBawlDichotom: 5
+
+Prediction: POSITIVE, Benchmark: NEGATIVE --> False
+
+(Token, Lemma, POS): _emotion
+(Lob, Lob, NN): 2.0
+(Nachteile, Nachteil, NNS): -1.3
+(Vaters, Vaters, NN): 2.1
+(Komm, Komm, NN): 1.117647059
+(Wort, Wort, NN): 0.764705882
+(möge, mögen, VB): 1.764705882
+(Sohn, Sohn, NN): 1.323529412
+(möge, mögen, VB): 1.764705882
+(Tod, Tod, NN): -2.8
+(Schande, Schande, NN): -1.9
+(wählen, wählen, VB): 0.058823529
+(Schande, Schande, NN): -1.9
+(wählen, wählen, VB): 0.058823529
+(möge, mögen, VB): 1.764705882
+(Spott, Spott, NN): -1.2
+(leben, leben, VB): 2.382352941
+(sterben, sterben, VB): -1.823529412
+
+1.Akt, 8.Szene, 15.Replik, Drama-Nummer: 150, ID:197
+emotion: 5.485294118
+arousel: 16.947368421
+positiveBawl: 6.185294118
+negativeBawl: 0.7
+positiveBawlDichotom: 5
+negativeBawlDichotom: 1
+polarityBawlDichotom: 4
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(verstehe, verstehen, VB): 1.735294118
+(mehr, mehr, RB): 1.8
+(Arbeit, Arbeit, NN): 0.05
+(Glaube, Glaube, NN): 0.8
+(mehr, mehr, RB): 1.8
+(gespalten, gespalten, RP): -0.7
+
+1.Akt, 8.Szene, 45.Replik, Drama-Nummer: 180, ID:198
+emotion: -3.970588236
+arousel: 8.205555556
+positiveBawl: 0
+negativeBawl: 3.970588236
+positiveBawlDichotom: 0
+negativeBawlDichotom: 2
+polarityBawlDichotom: -2
+
+Prediction: NEGATIVE, Benchmark: NEGATIVE --> True
+
+(Token, Lemma, POS): _emotion
+(stirbt, sterben, VB): -1.823529412
+(Feind, Feind, NN): -2.147058824
+
+1.Akt, 5.Szene, 24.Replik, Drama-Nummer: 64, ID:199
+emotion: 18.764705882
+arousel: 45.711716793
+positiveBawl: 23.297058823
+negativeBawl: 4.532352941
+positiveBawlDichotom: 13
+negativeBawlDichotom: 4
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Himmel, Himmel, NN): 2.25
+(mußt, mussen, VB): -1.382352941
+(lieber, lieb, JJ): 2.2
+(Held, Held, NNP): 2.1
+(sagen, sagen, VB): 0.676470588
+(Kind, Kind, NN): 1.8
+(Soldat, Soldat, NN): -1.5
+(Kind, Kind, NN): 1.8
+(möchte, mögen, VB): 1.764705882
+(Herzen, Herz, NNS): 2.3
+(möchte, mögen, VB): 1.764705882
+(Vater, Vater, NN): 2.1
+(Vater, Vater, NN): 2.1
+(Sohnes, Sohnes, NN): 1.323529412
+(wenig, wenig, IN): -0.9
+(Hitze, Hitze, NN): -0.75
+(kennst, kennst, NN): 1.117647059
+
+1.Akt, 5.Szene, 54.Replik, Drama-Nummer: 94, ID:200
+emotion: 10.732352938
+arousel: 55.789891397
+positiveBawl: 16.849999998
+negativeBawl: 6.11764706
+positiveBawlDichotom: 15
+negativeBawlDichotom: 6
+polarityBawlDichotom: 9
+
+Prediction: POSITIVE, Benchmark: POSITIVE --> True
+
+(Token, Lemma, POS): _emotion
+(Vater, Vater, NN): 2.1
+(sagen, sagen, VB): 0.676470588
+(auslösen, auslösen, VB): 0.264705882
+(brauch, brauch, NN): -0.235294118
+(wissen, wissen, VB): 2.029411765
+(braucht, brauchen, VB): -0.235294118
+(wissen, wissen, VB): 2.029411765
+(willst, willst, RP): 0.764705882
+(willst, willst, RP): 0.764705882
+(Willst, Willst, WRB): 0.764705882
+(Soll, Sollen, MD): -1.0
+(Soll, Sollen, MD): -1.0
+(Feuer, Feuer, NN): 0.05
+(rennen, rennen, VB): 0.441176471
+(stürzen, stürzen, VB): -1.617647059
+(lieber, lieb, JJ): 2.2
+(Freund, Freund, NN): 2.558823529
+(sage, sagen, VB): 0.676470588
+(Wort, Wort, NN): 0.764705882
+(Verbrechen, Verbrechen, NN): -2.029411765
+(willst, willst, RP): 0.764705882
