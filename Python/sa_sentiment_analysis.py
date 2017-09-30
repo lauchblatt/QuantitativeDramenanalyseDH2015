@@ -19,15 +19,15 @@ def main():
 	processor = Drama_Pre_Processing("treetagger")
 	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Nathan der Weise.p")
 	
-	sa = Sentiment_Analyzer(True,"textblob", True, "standardList", False)
+	sa = Sentiment_Analyzer(True,"treetagger", True, "standardList", False)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 	
 class Sentiment_Analyzer:
 
-	def __init__(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
+	def __init__(self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive):
 
 		self._sentimentDict = {}
-		self._lemmaModeOn = lemmaModeOn
+		self._lemmaMode = lemmaMode
 		self._caseSensitive = caseSensitive
 		self._removeStopwords = False
 		self._stopwords = []
@@ -51,7 +51,8 @@ class Sentiment_Analyzer:
 			lp.setProcessor(processor)
 
 			lp._processor.initStopWords(stopwordList)
-			if(self._lemmaModeOn):
+			# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma
+			if(self._lemmaMode == "bothLemma" or self._lemmaMode == "textLemma"):
 				self._stopwords = lp._processor._stopwords_lemmatized
 			else:
 				self._stopwords = lp._processor._stopwords
@@ -82,7 +83,8 @@ class Sentiment_Analyzer:
 		lexiconHandler.initSingleDict(lexicon, processor)
 		sentimentDictTokens = lexiconHandler._sentimentDict
 		sentimentDictLemmas = lexiconHandler._sentimentDictLemmas
-		if(self._lemmaModeOn):
+		# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma
+		if(self._lemmaMode == "bothLemma"):
 			self._sentimentDict = sentimentDictLemmas
 		else:
 			self._sentimentDict = sentimentDictTokens
@@ -246,7 +248,8 @@ class Sentiment_Analyzer:
 		sentimentBearingWords = []
 
 		for languageInfo in lemmasWithLanguageInfo:
-			if(self._lemmaModeOn):
+			# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma
+			if(self._lemmaMode == "bothLemma" or self._lemmaMode == "textLemma"):
 				word = languageInfo[0]
 			else:
 				word = languageInfo[1][0]

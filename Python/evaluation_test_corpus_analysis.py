@@ -36,7 +36,7 @@ class Test_Corpus_Evaluation:
 		self._polarityBenchmark = []
 		#self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
 		#"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
-		self._polarityNames = ["polarityCombined"]
+		self._polarityNames = ["polaritySentiWS"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}
@@ -75,7 +75,7 @@ class Test_Corpus_Evaluation:
 		return words
 
 	def getAllSentimentBearingWords(self):
-		#self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive
+		#self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive
 		self.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
 		self.attachSentimentInfoOnTestCorpus(False, "treetagger", False, None, False)
 		allSbws = []
@@ -115,27 +115,27 @@ class Test_Corpus_Evaluation:
 	def setEvaluationInfoOfAllCombinationsForSingleMetric(self, polarityMetric):
 		self.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
 
-		DTAExtensions = [False, True]
-		#DTAExtensions = [False]
+		#DTAExtensions = [False, True]
+		DTAExtensions = [False]
 		processors = ["treetagger", "textblob"]
-		lemmaModes = [False, True]
-		#stopwordLists = [None, "standardList"]
-		stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
+		lemmaModes = ["bothLemma", "textLemma", "noLemma"]
+		stopwordLists = [None, "standardList"]
+		#stopwordLists = [None, "standardList", "enhancedList", "enhancedFilteredList"]
 		caseSensitives = [False, True]
 		doneCombinations = []
 		nameResultTuples = []
 		self._evaluationInfo[polarityMetric] = OrderedDict({})
 
 		for DTAExtension in DTAExtensions:
-			for lemmaModeOn in lemmaModes:
+			for lemmaMode in lemmaModes:
 				for processor in processors:
 					for stopwordList in stopwordLists:
 						for caseSensitive in caseSensitives:
 							#To remove automatic Duplicates
-							name = self.getCombinationName(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+							name = self.getCombinationName(DTAExtension, processor, lemmaMode, stopwordList, caseSensitive)
 							if(not(name in doneCombinations)):
 								self.initTestCorpus("Dumps/TestCorpus/testCorpus_" + processor + ".p")
-								self.attachSentimentInfoOnTestCorpus(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+								self.attachSentimentInfoOnTestCorpus(DTAExtension, processor, lemmaMode, stopwordList, caseSensitive)
 								result = self.comparePolarityMetricWithBenchmark(polarityMetric)
 								currentSpeeches = []
 								currentSpeeches.extend(self._testCorpusSpeeches)
@@ -243,12 +243,13 @@ class Test_Corpus_Evaluation:
 		rows = []
 		for name in names:
 			info = name.split("_")
+			print info
 			nameAndInfo = [name]
 			nameAndInfo.extend(info)
 			nameAndInfo.extend(results[i])
 			rows.append(nameAndInfo)
 			i += 1
-		resultNames = ["CombinationType", "DTAExtension", "Lemmatization", "Stopwords",\
+		resultNames = ["CombinationType", "DTAExtension", "Lemmatizer", "LemmatizationType", "Stopwords",\
 		"CaseSensitivity", "accuracy", "recallPositive", "precisionPositive", "F-MeasurePositive",\
 		"recallNegative", "precisionNegative", "F-MeasureNegative", "recallAverage", "precisionAverage", "F-MeasureAverage",\
 		"truePositives", "falsePositives", "trueNegatives", "falseNegatives"]
@@ -270,16 +271,19 @@ class Test_Corpus_Evaluation:
 		path = "../Test-Korpus-Evaluation/Evaluation-Results/" + polarityMetric + "/"
 		return path 
 
-	def getCombinationName(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
+	def getCombinationName(self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive):
 		name = ""
 		if(DTAExtension):
 			name = name + "dtaExtended_"
 		else:
 			name = name + "noExtension_"
-		if(not lemmaModeOn):
-			name = name + "tokens_"
+		if(lemmaMode == "noLemma"):
+			name = name + "tokens_noLemma_"
 		else:
-			name = name + processor + "_"
+			if(lemmaMode == "bothLemma"):
+				name = name + processor + "_lemmaBoth" + "_"
+			elif(lemmaMode == "textLemma"):
+				name = name + processor + "_textLemma" + "_"
 		if(stopwordList is None):
 			name = name + "noStopwordList_"
 		else:
@@ -290,8 +294,8 @@ class Test_Corpus_Evaluation:
 			name = name + "caseInSensitive"
 		return name
 
-	def attachSentimentInfoOnTestCorpus(self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive):
-		sa = Sentiment_Analyzer(DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+	def attachSentimentInfoOnTestCorpus(self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive):
+		sa = Sentiment_Analyzer(DTAExtension, processor, lemmaMode, stopwordList, caseSensitive)
 
 		for testCorpusSpeech in self._testCorpusSpeeches:
 			textAsLanguageInfo = testCorpusSpeech._speech._textAsLanguageInfo
