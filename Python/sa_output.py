@@ -16,10 +16,10 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	sog = Sentiment_Output_Generator()
-	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
+	# self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive
 	#"""
-	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas5.json",\
-	 True, "textblob", True, None, True)
+	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas6.json",\
+	 True, "textblob", "bothLemma", None, True)
 	#"""
 	#sog.generateJSONFileForSingleDrama("Dumps/ProcessedDramas/treetagger/Der Freigeist.p",\
 	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)

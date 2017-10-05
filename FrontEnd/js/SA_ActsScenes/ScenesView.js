@@ -34,6 +34,7 @@ ActsScenes.ScenesView = function(){
 
 	var initNumberOfScenes = function(numberOfScenes){
 		$select = $("#selection-scenes-pie-number");
+		$select[0].options.length = 0;
 		for(i = 0; i < numberOfScenes; i++){
 			option = $("<option></option>")
 			sceneNumber = i + 1;
@@ -44,6 +45,9 @@ ActsScenes.ScenesView = function(){
 
 	var adjustSceneSelectorAndRenderScenesPieChart = function(){
 		$("#selection-scenes-pie-number option").eq(0).prop('selected', true);
+		var actNumber = parseInt($("#selection-scenes-act-pie-number").val()) - 1;
+		var numberOfScenes = proportionsForScenes[actNumber].length
+		initNumberOfScenes(numberOfScenes);
 		renderScenesPieChart();
 	};
 
