@@ -60,7 +60,7 @@ class Lexicon_Handler:
 			self.initGPC(processor, True)
 		elif (lexicon == "CombinedLexicon"):
 			self.readCombinedLexiconsDump(processor, False)
-		elif (lexicon == "CombinedLexicon-DTAExtended"):
+		elif (lexicon == "Combined-DTAExtended"):
 			self.readCombinedLexiconsDump(processor, True)
 		else:
 			print ("Kein korrekte Lexikonname wurde übergeben.")
