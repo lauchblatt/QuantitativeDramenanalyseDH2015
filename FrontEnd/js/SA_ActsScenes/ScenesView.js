@@ -6,6 +6,7 @@ ActsScenes.ScenesView = function(){
 	var init = function(scenesMetrics, scenesProportionData){
 		proportionsForScenes = scenesProportionData;
 		metricsForScenes = scenesMetrics;
+		// init Number of Acts and Scenes for Drop-Downs
 		initNumberOfActs(proportionsForScenes.length);
 		initNumberOfScenes(proportionsForScenes[0].length);
 		initListener();
@@ -43,6 +44,7 @@ ActsScenes.ScenesView = function(){
 		}
 	};
 
+	// Method to call if Scene-Selection is changed
 	var adjustSceneSelectorAndRenderScenesPieChart = function(){
 		$("#selection-scenes-pie-number option").eq(0).prop('selected', true);
 		var actNumber = parseInt($("#selection-scenes-act-pie-number").val()) - 1;
@@ -61,6 +63,7 @@ ActsScenes.ScenesView = function(){
 		drawScenesLineChart(dramaSceneMetricPairs, metricSelection, typeSelection);
 	};
 
+	// Method to calc Data-structure for google Charts from Data from Model
 	var getDramaSceneMetricPairs = function(metric, type){
 		var dataScenesPairs = []
 		for(i = 0; i < metricsForScenes.length; i++){
@@ -73,7 +76,7 @@ ActsScenes.ScenesView = function(){
 		}
 		return dataScenesPairs;
 	};
-
+	
 	var drawScenesLineChart = function(metricPairs, germanMetric, germanType){
 		var vAxisTitle = germanMetric + " - " + germanType;
 		var data = new google.visualization.DataTable();

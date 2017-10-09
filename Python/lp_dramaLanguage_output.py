@@ -11,26 +11,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dlOutput = DramaLanguage_Output()
-	"""
-	dlOutput.setLanguageProcessor("textblob")
-	dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Emilia_t.xml",\
-	 "../Word-Frequencies/testo", False, "standardList");
-	#dlOutput.test()
-	"""
-	
-
-	#dlOutput.processMultipleDramasAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/TestFolder/", False)
-	#dlOutput.processEntireCorpusAndGenerateOutputTokens("../Lessing-Dramen/", "../Word-Frequencies/EntireCorpus-withoutStopwords-noFrequNumbers1.txt", False)
-
-	#dlOutput.processEntireCorpusAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Lemmas/treetagger/EntireCorpus")
-
-	#dlOutput.generateWordFrequenciesOutputLemmas("../Lessing-Dramen/less-Philotas_t.xml", "../Word-Frequencies/test6")
-	#dlOutput.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Tokens/textblob/")
-	#dlOutput = DramaLanguage_Output()
-	#dlOutput.generateOutputForAllDramas(False, "standardList")
-	#dlOutput.generateEntireCorpusOutput(False, "standardList")
-
+# Main-Class to generate Vocabulary-Output for Vocabulary-Evaluation
 class DramaLanguage_Output:
 
 	def __init__(self):
@@ -46,6 +27,7 @@ class DramaLanguage_Output:
 		self.generateOutputForAllDramas(withStopwords)
 		self.generateEntireCorpusOutput(withStopwords)
 
+	# Generates All Evaluation Metrics
 	def generateOutputForAllDramas(self, withStopwords, stopWordList):
 		processors = ["treetagger", "textblob"]
 		for processor in processors:

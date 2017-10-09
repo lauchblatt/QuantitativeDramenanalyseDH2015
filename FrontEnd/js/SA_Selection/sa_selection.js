@@ -1,3 +1,4 @@
+// Script to implement Functions for Selection-Screen
 var setLocalStorageSelection = function(event){
 	var clickedElement = event.target;
 	var chosenDramaNumber = parseInt(clickedElement.id);

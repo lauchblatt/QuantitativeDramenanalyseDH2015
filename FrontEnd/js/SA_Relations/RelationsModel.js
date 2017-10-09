@@ -1,6 +1,7 @@
 SA_Relations.RelationsModel = function(){
 	var that = {};
 
+	// Attributes to save Sentiment-Relations on different Levels
 	var dramaRelationsMetrics = {};
 	var actsRelationsMetrics = {};
 	var scenesRelationsMetrics = {};
@@ -19,25 +20,26 @@ SA_Relations.RelationsModel = function(){
 
 	var initData = function(){
 		var drama = sa_chosenDrama;
-		console.log(sa_chosenDrama);
 		setNumberOfScenesAndActs(drama);
+
+		// Relations on Drama-Level
 		initDramaRelationsMetrics(drama);
 		
+		// Relations on Act-Scene-Level
 		initActsAndScenesObjects(drama);
 		
+		//Relations on Act and on Scene-Level seperately
 		initActsRelationsMetrics(drama);
 		initScenesRelationsMetrics(drama);
-		
-		//console.log(dramaRelationsMetrics);
-		//console.log(actsRelationsMetrics);
-		//console.log(scenesRelationsMetrics);
 
+		// Proportion-Data for every Level
 		initDramaRelationsProportions(drama);
 		initActsRelationsProportions(drama);
 		initScenesRelationsProportions(drama);
 		
 	};
 
+	// calc Relations-Proportions on Scene-Level
 	var initScenesRelationsProportions = function(drama){
 		var relationsPerActList = [];
 		for(var i = 0; i < drama.acts.length; i++){
@@ -68,6 +70,7 @@ SA_Relations.RelationsModel = function(){
 
 	};
 
+	// calc Relations-Proportions on Act-Level
 	var initActsRelationsProportions = function(drama){
 		for(var i = 0; i < drama.acts.length; i++){
 			var speakers = drama.acts[i].speakers;
@@ -87,6 +90,7 @@ SA_Relations.RelationsModel = function(){
 		}
 	};
 
+	// calc Relations-Proportions on Drama-Level
 	var initDramaRelationsProportions = function(drama){
 		var speakers = drama.speakers;
 		for(var i = 0; i < speakers.length; i++){
@@ -125,6 +129,7 @@ SA_Relations.RelationsModel = function(){
 		}
 	};
 
+	// fetch Relations-Metrics for Scenes from Json
 	var initScenesRelationsMetrics = function(drama){
 		for(var i = 0; i < drama.acts.length; i++){
 			for(var j = 0; j < drama.acts[i].configurations.length; j++){
@@ -142,6 +147,7 @@ SA_Relations.RelationsModel = function(){
 		}
 	};
 
+	// fetch Relations-Metrics for Acts from Json
 	var initActsRelationsMetrics = function(drama){
 
 		for(var k = 0; k < drama.acts.length; k++){
@@ -158,6 +164,7 @@ SA_Relations.RelationsModel = function(){
 		fillUndefinedWithNull();
 	};
 
+	// secondary method to replace undefinied with null for easier work-arounds
 	var fillUndefinedWithNull = function(){
 		for(var speaker in actsRelationsMetrics){
 			for(var target in actsRelationsMetrics[speaker]){
@@ -170,6 +177,7 @@ SA_Relations.RelationsModel = function(){
 		}
 	};
 
+	// fetch Drama-Metrics for Acts from Json
 	var initDramaRelationsMetrics = function(drama){
 		var speakers = drama.speakers;
 		for(i = 0; i < speakers.length; i++){

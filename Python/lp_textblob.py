@@ -13,18 +13,14 @@ from collections import defaultdict
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-
-	tb = Text_Blob()
-	tb.processText(" recht ")
-	print tb._lemmas
-
-	#lp.processMultipleDramasAndGenerateOutputLemmas("../Lessing-Dramen/", "../Word-Frequencies/Test/")
 	
-
+# Class to implement text-blob and pattern lemmatization
+# implements also stopword-lists
 class Text_Blob:
 
 	def __init__(self):
 		
+		# several attributes for language informations
 		self._plainText = ""
 		self._filteredText = ""
 		self._textBlob = None
@@ -47,6 +43,7 @@ class Text_Blob:
 
 		self._stopwordLists = ["standardList", "enhancedList", "enhancedFilteredList"]
 
+	# standard method to process and lemmatize text, info saved in attributes
 	def processText(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
@@ -60,6 +57,7 @@ class Text_Blob:
 		print("Lemmas ready...")
 		print("Lemmas With LanguageInfo ready...")
 
+	# simple method to only process until tokens
 	def processTextTokens(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
@@ -68,6 +66,7 @@ class Text_Blob:
 		self._tokens = self._textBlob.words
 		print("Tokens ready...")
 
+	# processText with creation of extra attributes for vocabulary-analysis
 	def processTextFully(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
@@ -85,21 +84,7 @@ class Text_Blob:
 		self.combineLemmasPOSTokens()
 		print("LemmasAndPOSAndTokensDict ready...")
 
-		"""
-		print(len(self._lemmas))
-		print(len(self._lemmasAndPOS))
-		print(len(self._lemmasWithLanguageInfo))
-		print(len(self._lemmaAndPOSDict))
-		print(len(self._lemmasAndPOSAndTokensDict))
-
-		print(self._lemmas)
-		print(self._lemmasAndPOS)
-		print(self._lemmasWithLanguageInfo)
-		print(self._lemmaAndPOSDict)
-		print(self._lemmasAndPOSAndTokensDict)
-		"""
-
-
+	# simple get Lemma-Method for single words of a lexicon
 	def getLemma(self, word):
 		blob = TextBlobDE(unicode(word))
 		lemmas = blob.words.lemmatize()
@@ -114,6 +99,7 @@ class Text_Blob:
 		lemmas = blob.words.lemmatize()
 		return lemmas
 
+	# filter method for words that disturb lemmatization process
 	def filterText(self, text):
 		newText = ""
 		newText = unicode(text.replace("–", ""))
@@ -127,7 +113,7 @@ class Text_Blob:
 
 		return newText
 
-
+	# method to process and lemmatize single drama by path
 	def processSingleDrama(self, path):
 		parser = DramaParser()
 		dramaModel = parser.parse_xml(path)
@@ -143,6 +129,7 @@ class Text_Blob:
 		print("Text ready...")
 		self.processTextFully(text)
 
+	# method to process until tokens single drama by path
 	def processSingleDramaTokens(self, path):
 		parser = DramaParser()
 		dramaModel = parser.parse_xml(path)
@@ -158,6 +145,7 @@ class Text_Blob:
 		print("Text ready...")
 		self.processTextTokens(text)
 
+	# lemmatize method creates languageInfo touples of text
 	def lemmatize(self):
 		self._lemmas = self._textBlob.words.lemmatize()
 		self._lemmasAndPOS = []
@@ -170,7 +158,7 @@ class Text_Blob:
 			lemmaAndTokenPOS = (self._lemmas[i], (self._tokensAndPOS[i][0], self._tokensAndPOS[i][1]))
 			self._lemmasWithLanguageInfo.append(lemmaAndTokenPOS)
 
-	# One Lemma can have multiple POS
+	# Method to save all POS by lemmas
 	def createLemmaAndPOSDict(self):
 		lemmasSet = set(self._lemmas)
 		for lemma in lemmasSet:
@@ -189,8 +177,6 @@ class Text_Blob:
 					token = languageInfo[1][0]
 					if not self.isTokenOfLemma(tokensOfLemma, token):
 						tokensOfLemma.append(token)
-			#lemmaAndPOSAndTokens = (lemma, POS, (tokensOfLemma))
-			#self._lemmasAndPOSAndTokens.append(lemmaAndPOSAndTokens)
 			self._lemmasAndPOSAndTokensDict[lemma] = (POS, tokensOfLemma)
 
 	def isTokenOfLemma(self, tokensOfLemma, token):
@@ -199,6 +185,7 @@ class Text_Blob:
 				return True
 		return False
 	
+	# Methods to handle and init Stopword-List
 	def initStopWords(self, listname):
 		stopwords_text = open("../Stopwords/MainStopwordLists/" + listname + ".txt")
 		for line in stopwords_text:
@@ -223,33 +210,9 @@ class Text_Blob:
 		newList = [word for word in wordList if not (word in self._stopwords_lemmatized)]
 		return newList
 
-		"""
-		for stopword in self._stopwords_lemmatized:
-			while stopword.lower() in wordList:
-				wordList.remove(stopword.lower())
-			while stopword.title() in wordList:
-				wordList.remove(stopword.title())
-		return wordList
-		"""
-
 	def removeStopwordsFromTokensList(self, wordList):
 		newList = [word for word in wordList if not (word in self._stopwords)]
 		return newList
-
-		"""
-		for stopword in self._stopwords:
-			while stopword.lower() in wordList:
-				wordList.remove(stopword.lower())
-			while stopword.title() in wordList:
-				wordList.remove(stopword.title())
-		"""
-
-	"""
-	def removeStopwordsFromWordFrequencies(self, wordFrequencies):
-		for wordFrequ in wordFrequencies:
-			word = wordFrequ[0]
-			if (word.lower() in self._stopwords) or (word.title() in self._stopwords):
-	"""
 
 if __name__ == "__main__":
     main()

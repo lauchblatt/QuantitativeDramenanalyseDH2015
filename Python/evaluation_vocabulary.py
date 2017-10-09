@@ -11,17 +11,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	evaluation = Evaluation_LexiconVsVocabulary()
-
-	#evaluation.init("../Word-Frequencies/Lemmas/treetagger/Die Juden.txt", "SentiWS-DTAExtended", "treetagger")
-	
-	#evaluation.evaluateLexiconTokensAndLemmasVsMultipleVocabularies("../Word-Frequencies/Lemmas/treetagger/", "CombinedLexicon", "treetagger")
-	#result = evaluation.evaluateLexiconLemmasVsVocabulary()
-
-	#evaluation.writeResultOutput("../Evaluation/testchen.txt", result)
-	#evaluation.evaluateLexicon("CD")
-	evaluation.evaluateAll()
-
+# Class to perform Vocabulary-based Evaluation
 class Evaluation_LexiconVsVocabulary:
 
 	def __init__(self):

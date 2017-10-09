@@ -5,7 +5,6 @@ ActsScenes.SpeechesView = function(){
 	var init = function(speechesData){
 		metricsForSpeeches = speechesData;
 		initListener();
-		console.log(metricsForSpeeches);
 	};
 
 	var initListener = function(){
@@ -26,6 +25,7 @@ ActsScenes.SpeechesView = function(){
 
 	};
 
+	// Method to get Google Chart specific Data structure from Data from Model
 	var getMetricPairs = function(type, metric){
 		var metricPairs = []
 		for(i = 0; i < metricsForSpeeches.length; i++){		
@@ -38,6 +38,7 @@ ActsScenes.SpeechesView = function(){
 		return metricPairs;
 	};
 
+	// Build Tooltip for Speech-Line-Graphic with exact meta-info
 	var getSpeechTooltip = function(metric, metricValue, metricName){
 		var divBegin = "<div class='tooltip-test'>"
 		var act = metric.act + ". Akt, ";

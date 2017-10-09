@@ -1,3 +1,5 @@
+// Method to translate Front-End-Metrics to Back-End-Metrics
+// Adjust if Back-End-Metrics get changed
 var transformGermanMetric = function(name){
 		switch(name) {
 		    case "Polarität (gewichtet)":
@@ -75,6 +77,8 @@ var transformGermanMetric = function(name){
 		    }
 	};
 
+// Method to translate Back-End-Metrics to Front-End-Metrics
+// Adjust if Back-End-Metrics get changed
 var transformEnglishMetric = function(name){
 		switch(name) {
 		    case "polaritySentiWS":
@@ -152,6 +156,8 @@ var transformEnglishMetric = function(name){
 		    }
 	};
 
+// Method to transform Back-End-Data to Proportion-Data, , used in Models
+// Adjust if Back-End-Metrics get changed
 var getProportionDataOfUnit = function(unit){
 		var metricsUnit = unit.sentimentMetricsBasic.metricsTotal;
 		var polarityWeighted = [["Positiv", metricsUnit.positiveSentiWS], ["Negativ", metricsUnit.negativeSentiWS]];
@@ -192,6 +198,8 @@ var getProportionDataOfUnit = function(unit){
 
 	};
 
+// Method to get specific Data for global Drama-Analysis, used in Models
+// Adjust if Back-End-Metrics get changed
 var getStructuredBasicData = function(unit){
 	var metricsTotal = unit.sentimentMetricsBasic.metricsTotal;
 	var metricsNormalisedSBWs = unit.sentimentMetricsBasic.metricsNormalisedSBWs;

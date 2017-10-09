@@ -8,15 +8,17 @@ import sys
 import math
 from sa_models import *
 
+# Class to handle Sentiment-Calculation
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
 class Sentiment_Calculator:
-
+	# init Calculator with sentimentBearingWords and length of unit in words as primary normalisation factor
 	def __init__(self, sentimentBearingWords, normalisationFactorLength):
 
 		self._sentimentBearingWords = sentimentBearingWords
+		# saves all Data in Sentiment_Metrics-Object
 		self._sentimentMetrics = Sentiment_Metrics()
 		self._sentimentMetrics.initMetrics()
 
@@ -27,13 +29,14 @@ class Sentiment_Calculator:
 	def calcMetrics(self):
 		self.calcTotalMetrics()
 		self.calcNormalisedMetrics()
+		# deprecated
 		self.calcSentimentRatio()
 
 		self.setSpecificLexiconSBWsNormalisationMetrics()
 		self.calcAllSpecificSBWsNormalisedMetrics()
 	
+	# set SBW-specific Normalisation Factor --> different for every Lexicon
 	def setSpecificLexiconSBWsNormalisationMetrics(self):
-		#TODO some are missing
 		normalisationFactorSentiWS = 0
 		normalisationFactorNrcPolarity = 0
 		normalisationFactorNrcEmotion = 0
@@ -58,11 +61,11 @@ class Sentiment_Calculator:
 
 		self._normalisationFactorLexiconSBWs["Combined"] = self._sentimentMetrics._metricsTotal["positiveCombined"] + \
 		+ self._sentimentMetrics._metricsTotal["negativeCombined"]
-		#TODO
+
 		self._normalisationFactorLexiconSBWs["Combined-Clearly"] = self._sentimentMetrics._metricsTotal["clearlyPositiveCombined"] + \
 		+ self._sentimentMetrics._metricsTotal["clearlyNegativeCombined"]
 
-
+	# deprecated
 	def calcSentimentRatio(self):
 		if self._normalisationFactorLength is 0:
 			sentimentRatio = 0
@@ -71,6 +74,7 @@ class Sentiment_Calculator:
 			sentimentRatioPercent = sentimentRatio*100
 			self._sentimentMetrics._sentimentRatio = sentimentRatioPercent
 
+	# methods to calc normalised Metrics 
 	def calcAllSpecificSBWsNormalisedMetrics(self):
 		for lexicon, names in self._sentimentMetrics._names.items():
 			self.calcSpecificSBWsNormalisedMetrics(names, self._normalisationFactorLexiconSBWs[lexicon])
@@ -93,6 +97,8 @@ class Sentiment_Calculator:
 				metricTotal = self._sentimentMetrics._metricsTotal[metric]
 				self._sentimentMetrics._metricsNormalisedLengthInWords[metric] = float(metricTotal)/self._normalisationFactorLength
 
+	# calc total Metrics by simple sum up Methods for every metric
+	# needs set Sentiment_Metrics-Object
 	def calcTotalMetrics(self):
 
 		self._sentimentMetrics._metricsTotal["polaritySentiWS"] = math.fsum(word._polaritySentiWS for word in self._sentimentBearingWords)
@@ -148,6 +154,7 @@ class Sentiment_Calculator:
 
 		self.calcMissingPosNegMetrics()
 
+	# added Method to calc Metrics for term-counting Method for Bawl and SentiWS
 	def calcMissingPosNegMetrics(self):
 		self._sentimentMetrics._metricsTotal["positiveSentiWS"] = sum(word._polaritySentiWS for word\
 		 in self._sentimentBearingWords if word._polaritySentiWS > 0)

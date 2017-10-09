@@ -12,29 +12,27 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	nrc = NRC()
-	#nrc.resetAllFiles()
-	#nrc.createSentimentDictFileNRCLemmas("treetagger")
-	#nrc.createExtendedOutputDTA()
-	nrc.initNRC();
-
+# NRC specific class to tranform and use NRC
 class NRC:
 
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
+	# init CD from raw data and produced Lemma-Data
 	def readAndInitNRCAndLemmas(self, processor):
 		self.initNRC()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas.txt")
 		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
+	# init DTA-Extended CD from raw data and produced Lemma-Data
 	def readAndInitNRCAndLemmasDTA(self, processor):
 		self.initNRC()
 		self.extendLexiconNRCDTA()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/NRC-Lemmas-DTAExtended.txt")
 		self._sentimentDictLemmas = self.getSentimentDictNRC(sentDictText, True)
 
+	# init Tokens from Raw-Data
 	def initNRC(self):
 		sentDictText = open("../SentimentAnalysis/NRCEmotionLexicon/NRC.txt")
 		self._sentimentDict = self.getSentimentDictNRC(sentDictText, False)
@@ -47,12 +45,14 @@ class NRC:
 		self._sentimentDict = self.removeTotalZerosFromNRC(self._sentimentDict)
 		self.replaceRemainingDoublePolarities()
 
+	# Method to remove ambigue words --> change them to just positive
 	def replaceRemainingDoublePolarities(self):
 		for word in self._sentimentDict:
 			sentiments = self._sentimentDict[word]
 			if(sentiments["positive"] == 1 and sentiments["negative"] == 1):
 				self._sentimentDict[word]["negative"] = 0
 
+	# Method to remove special words with punctuation
 	def handleSpecialCases(self):
 		for word in self._sentimentDict.keys():
 			if(word.endswith("-")):
@@ -62,7 +62,7 @@ class NRC:
 				self._sentimentDict[word.rstrip(",")] = self._sentimentDict[word]
 				del self._sentimentDict[word]
 				
-
+	# Method to read CD from raw Text to create sentimentDict
 	def getSentimentDictNRC(self, sentimentDictText, isLemmas):
 		columnSub = 0
 		if(isLemmas):
@@ -100,6 +100,7 @@ class NRC:
 		
 		return nrcSentimentDict
 
+	# lemmatize sentimentDict
 	def lemmatizeDictNRC(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
@@ -119,6 +120,8 @@ class NRC:
 		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	# method to get better sentiment-Values for word doubles
+	# choose words with more annotations
 	def getHigherSentimentsValueNrc(self, newSentiments, oldSentiments):
 		newSentimentsScore = 0
 		oldSentimentsScore = 0
@@ -142,6 +145,7 @@ class NRC:
 		else:
 			return oldSentiments
 
+	# remove phrases from NRC
 	def removePhrasesFromNRC(self, nrcSentimentDict):
 		phrases = []
 		for word in nrcSentimentDict:
@@ -152,6 +156,7 @@ class NRC:
 			del nrcSentimentDict[phrase]
 		return nrcSentimentDict
 
+	# remove neutral words from NRC
 	def removeTotalZerosFromNRC(self, nrcSentimentDict):
 		totalZeros = self.getTotalZerosNRC(nrcSentimentDict)
 
@@ -159,6 +164,7 @@ class NRC:
 			del nrcSentimentDict[zeroWord]
 		return nrcSentimentDict
 
+	# write outputFile for sentimentDict
 	def createOutputNRC(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 		sentiments = ["positive", "negative", "anger", "anticipation", "disgust", "fear", "joy", "sadness", "surprise", "trust"]
@@ -204,20 +210,14 @@ class NRC:
 
 	def createExtendedOutputDTA(self):
 		self.initNRC()
-		print("###")
-		print(len(self._sentimentDict))
 		self.extendLexiconNRCDTA()
-		print("###")
-		print(len(self._sentimentDict))
 		self.createOutputNRC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/NRC-Token-DTAExtended")
 		self.lemmatizeDictNRC("treetagger")
-		print("###")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/NRC-Lemmas-DTAExtended")
 		self.lemmatizeDictNRC("textblob")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputNRC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/NRC-Lemmas-DTAExtended")
 
+	# Method to call if DTA-Extended Version is desired
 	def extendLexiconNRCDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "NRC")

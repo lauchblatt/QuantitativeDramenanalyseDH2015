@@ -28,6 +28,7 @@ SA_Relations.RelationsDramaView = function(){
 	};
 
 
+	// Set targets according to currentyl chosen Origin-Speaker
 	var setChosenTargets = function(){
 		chosenTargets = [];
 		var checkboxes = ($(".checkboxes-dramaRelations"));

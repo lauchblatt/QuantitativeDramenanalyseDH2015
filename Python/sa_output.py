@@ -15,27 +15,18 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	sog = Sentiment_Output_Generator()
-	# self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive
-	#"""
-	sog.generateJSONFileForAllDramas("Dumps/ProcessedDramas/", "../../../allDramas6.json",\
-	 True, "textblob", "bothLemma", None, True)
-	#"""
-	#sog.generateJSONFileForSingleDrama("Dumps/ProcessedDramas/treetagger/Der Freigeist.p",\
-	#	"../SentimentAnalysis/JSON-OUtput/", "treetagger", False)
-	"""
+	
 	dpp = Drama_Pre_Processing("textblob")
 	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/textblob/Emilia Galotti.p")
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 
-	sa = Sentiment_Analyzer(True, "textblob", True, None, True)
+	sa = Sentiment_Analyzer(True, "textblob", "lemmaBoth", None, True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	sog.createTxtOutputSingleDrama("textblobTest.txt", sentimentExtendedDramaModel)
-	"""
-	#sog = Sentiment_Output_Generator()
-	#sog.processAndCreateTxtOutputMutlipleDramas()
+	sog = Sentiment_Output_Generator()
+	sog.createTxtOutputSingleDrama("textblobTesto.txt", sentimentExtendedDramaModel)
 	
-
+	
+# Class with Methods to generate Outputs --> txt and json - Outputs for metrics are possible
 class Sentiment_Output_Generator:
 
 	def __init__(self):

@@ -11,25 +11,13 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dta = DTA_Handler()
-	dta.createOutputWordSynonymsDTA()
-	la = Lexicon_Handler()
-	la.initSingleDict("SentiWS", "treetagger")
-	sentimentDict = la._sentimentDict
-	dta.createOutputWordSynonymsDTAForLexicon(sentimentDict, "SentiWS")
-	"""
-	la = Lexicon_Handler()
-	la.initSingleDict("NRC", "treetagger")
-	sentimentDict = la._sentimentDict
-	dta.extendSentimentDictDTA(sentimentDict, "NRC")
-	"""
-
+# Class to implement the DTA-Extensiion
 class DTA_Handler:
 	
 	def __init__(self):
 		
 		self._wordSynonymsDict = {}
-
+	# Method to extend a normal lexicon with DTA-Synonyms
 	def extendSentimentDictDTA(self, sentimentDict, lexiconName):
 		self.setWordSynonymsFromDTA()
 		keys = sentimentDict.keys()
@@ -41,18 +29,12 @@ class DTA_Handler:
 				synonyms = self._wordSynonymsDict[word]
 				for synonym in synonyms:
 					#already unicode
-						# Bei doppelungen
+						# for doubles
 						if synonym in sentimentDict:
-							#checken ob das Wort in der Originalmenge war, dann bitte nicht ändern
+							#checken in word is in orignal lexicon, then dont change polarity
 							if(not(synonym in copy)):
+								# get better values according to methods in class
 								betterValues = self.getBetterValues(lexiconName, sentiments, sentimentDict[synonym], synonym)
-								"""
-								if(synonym == "recht"):
-									print synonym
-									print sentimentDict[synonym]
-									print sentiments
-									print betterValues
-								"""
 								sentimentDict[synonym] = betterValues
 						else:
 							sentimentDict[synonym] = sentiments
@@ -60,16 +42,6 @@ class DTA_Handler:
 		return sentimentDict
 
 	def getBetterValues(self, lexicon, newValues, oldValues, word):
-		"""
-		for key in newValues:
-			if (newValues[key] != oldValues[key]):
-				print word
-				pass
-		"""
-		"""
-		if(newValues != oldValues):
-			print word
-		"""
 		if(lexicon == "SentiWS"):
 			return self.getBetterValuesSentiWS(newValues, oldValues)
 		elif(lexicon == "NRC"):
@@ -173,6 +145,8 @@ class DTA_Handler:
 		else:
 			return oldScore
 
+	# Method to get DTA-Data
+	# uses fetched DTA-Data, saves them as dictionary
 	def setWordSynonymsFromDTA(self):
 		currentWord = ""
 		synonyms = []
@@ -200,6 +174,7 @@ class DTA_Handler:
 
 		self._wordSynonymsDict = wordSynonymsDict
 
+	# create structured DTA-Output
 	def createOutputWordSynonymsDTA(self):
 		self.setWordSynonymsFromDTA()
 		data = open("../SentimentAnalysis/DTA-Output/AdditionalInfo/DTA-Word-Synonyms-Dict.txt", "w")

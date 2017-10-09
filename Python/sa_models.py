@@ -12,9 +12,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	sm = Sentiment_Metrics()
-	sm.initMetrics()
-
+# Class to Model Sentiment-Relations
 class Sentiment_Relation:
 
 	def __init__(self, originSpeaker, targetSpeaker, speeches):
@@ -28,6 +26,7 @@ class Sentiment_Relation:
 
 		self.setSentimentBearingWords()
 
+	# set SBWs of sentiment-relation-unit
 	def setSentimentBearingWords(self):
 		lengthInWords = 0
 		for speech in self._speeches:
@@ -35,10 +34,11 @@ class Sentiment_Relation:
 			lengthInWords = lengthInWords + speech._lengthInWords
 		self._lengthInWords = lengthInWords
 
-
+# Data-structure to save all Sentiment-Metrics of a unit (eg. Act, Scene, Speaker)
 class Sentiment_Metrics:
 	
 	def __init__(self):
+		# Attributes for total and normalised metrics, saved by name of Metric
 		self._metricsTotal = OrderedDict([])
 		self._metricsNormalisedLengthInWords = OrderedDict([])
 		self._metricsNormalisedSBWs = OrderedDict([])
@@ -122,7 +122,8 @@ class Sentiment_Metrics:
 		basicMetrics["metricsNormalisedSBWs"] = self._metricsNormalisedSBWs
 
 		return basicMetrics
-
+	# Method to get Metrics for final Output
+	# adjust if Metrics get changed
 	def returnBestMetricsDict(self):
 		names = []
 		names.extend(self._names["sentiWS"])
@@ -143,7 +144,7 @@ class Sentiment_Metrics:
 		
 		return metrics
 
-
+	# Analysis-Method to print all relevant Metrics
 	def printAllInfo(self, lengthInWords):
 		print("Total Values: ")
 		for metric,value in self._metricsTotal.items():
@@ -158,14 +159,7 @@ class Sentiment_Metrics:
 
 		print("Sentiment Ratio: " + str(self._sentimentRatio))
 
-		"""
-		sentiments = ", ".join(str(x) for x in [self._polaritySentiWSTotal,self._positiveNrcTotal,self._negativeNrcTotal,
-		self._polarityNrcTotal, self._angerTotal,self._anticipationTotal,self._disgustTotal,self._fearTotal,
-		self._joyTotal,self._sadnessTotal,self._surpriseTotal,self._trustTotal])
-		info = "All Values: " + sentiments
-		print sentiments
-		"""
-
+# Class to model a SBW, datastructure to save all single Metrics
 class Sentiment_Bearing_Word:
 
 	def __init__(self):
@@ -231,6 +225,7 @@ class Sentiment_Bearing_Word:
 		self._lemma = ""
 		self._POS = ""
 
+	# Method to save all metrics by getting sentiments of CombinedLexicon
 	def setAllSentiments(self, sentiments):
 		if("sentiWS" in sentiments):
 			self._sentiWSOccurence = 1
@@ -291,6 +286,7 @@ class Sentiment_Bearing_Word:
 		self.setClearlyCombinedPolarities()
 		self.setCombinedPolarities()
 
+	# Method to calc polarityCombined and clearlyPolarityCombined
 	def setCombinedPolarities(self):
 		positivities = [self._positiveSentiWSDichotom, self._positiveNrc, self._positiveBawlDichotom,\
 		self._positiveCDDichotom, self._positiveGpc]
@@ -343,9 +339,7 @@ class Sentiment_Bearing_Word:
 		if(len(onesNeg) > len(zerosNeg)):
 			self._clearlyNegativeCombined = 1
 
-	def getNumberOfPositives(self):
-		print("TODO")
-
+	# Print-Methods for Analysis
 	def printAllInformation(self):
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "):"
 		sentiments = ", ".join(str(x) for x in [self._polaritySentiWS,self._positiveNrc,self._negativeNrc,

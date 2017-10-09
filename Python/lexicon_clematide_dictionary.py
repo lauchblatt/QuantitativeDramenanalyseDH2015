@@ -11,15 +11,14 @@ from lexicon_dta_enhancement import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-	cd = CD()
-	cd.initCD()
 
-
+# CD specific class to tranform and use CD
 class CD:
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
+	# init CD from raw data and produced Lemma-Data
 	def readAndInitCDAndLemmas(self, processor):
 		self.initCD()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/CD-Lemmas.txt")
@@ -34,6 +33,7 @@ class CD:
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
+	# init DTA-Extended CD from raw data and produced Lemma-Data
 	def readAndInitCDAndLemmasDTA(self, processor):
 		self.initCD()
 		self.extendLexiconCDDTA()
@@ -49,6 +49,7 @@ class CD:
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
+	# init Tokens from Raw-Data
 	def initCD(self):
 		sentDictText = open("../SentimentAnalysis/CD/cd.txt")
 		sentimentDict = self.getSentimentDictCD(sentDictText)
@@ -61,6 +62,7 @@ class CD:
 			if(len(word.split(" ")) > 1):
 				del self._sentimentDict[word]
 
+	# Method to read CD from raw Text to create sentimentDict
 	def getSentimentDictCD(self, sentimentDictText):
 		lines = sentimentDictText.readlines()
 		sentimentDict = {}
@@ -100,6 +102,7 @@ class CD:
 
 		return sentimentDict
 
+	# lemmatize sentimentDict
 	def lemmatizeDictCD(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
@@ -115,6 +118,7 @@ class CD:
 		print ("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	# write outputFile for sentimentDict
 	def createOutputCD(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 		firstLine = "word\tpositive\tnegative\tneutral"
@@ -137,6 +141,7 @@ class CD:
 			del cdDict[word]
 		return cdDict
 
+	# method to help determine better value for double-words
 	def getHigherSentimentValuesCD(self, newSentiments, oldSentiments):
 		sentiments = {}
 		sentiments["positive"] = self.getHigherSentimentValue(newSentiments["positive"], oldSentiments["positive"])
@@ -144,6 +149,7 @@ class CD:
 		sentiments["neutral"] = self.getHigherSentimentValue(newSentiments["neutral"], oldSentiments["neutral"])
 		return sentiments
 
+	# method to choose the better value for double-words --> choose positive
 	def getBetterSentimentValuesCD(self, newSentiments, oldSentiments, word):
 		# if somethin is neutral take the other
 		highestSentimentValues = self.getHigherSentimentValuesCD(newSentiments, oldSentiments)
@@ -179,20 +185,14 @@ class CD:
 	
 	def createExtendedOutputDTA(self):
 		self.initCD()
-		print("###")
-		print(len(self._sentimentDict))
 		self.extendLexiconCDDTA()
-		print("###")
-		print(len(self._sentimentDict))
 		self.createOutputCD(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/CD-Token-DTAExtended")
 		self.lemmatizeDictCD("treetagger")
-		print("###")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/CD-Lemmas-DTAExtended")
 		self.lemmatizeDictCD("textblob")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputCD(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/CD-Lemmas-DTAExtended")
 
+	# Method to call if DTA-Extended Version is desired
 	def extendLexiconCDDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "CD")

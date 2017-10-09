@@ -16,14 +16,10 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	processor = Drama_Pre_Processing("treetagger")
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Nathan der Weise.p")
-	
-	sa = Sentiment_Analyzer(True,"treetagger", True, "standardList", False)
-	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	
+# Main-Class to perform Sentiment Analysis
 class Sentiment_Analyzer:
 
+	# gets all SA-Options on Init
 	def __init__(self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive):
 
 		self._sentimentDict = {}
@@ -35,6 +31,7 @@ class Sentiment_Analyzer:
 		self.initLexicons(DTAExtension, processor)
 		self.initStopWords(processor, stopwordList)
 	
+	# Main Method to attach all Sentiment Metrics to dramaModel
 	def attachAllSentimentInfoToDrama(self, dramaModel):
 		self.attachSentimentBearingWordsToDrama(dramaModel)
 		self.attachStructuralSentimentMetricsToDrama(dramaModel)
@@ -61,18 +58,6 @@ class Sentiment_Analyzer:
 
 	def initLexicons(self, DTAExtension, processor):
 		
-		"""
-		self._languageProcessor = Language_Processor()
-		lexiconHandlerSentiWS = Lexicon_Handler()
-		lexiconHandlerSentiWS.initSingleDict("SentiWS")
-		self._sentiWS = lexiconHandlerSentiWS._sentimentDictLemmas
-		lexiconHandlerNrc = Lexicon_Handler()
-		lexiconHandlerNrc.initSingleDict("NRC")
-		self._nrc = lexiconHandlerNrc._sentimentDictLemmas
-		lexiconHandlerBawl = Lexicon_Handler()
-		lexiconHandlerBawl.initSingleDict("Bawl")
-		self._bawl = lexiconHandlerBawl._sentimentDictLemmas
-		"""
 		lexicon = ""
 		lexiconHandler = Lexicon_Handler()
 		if(DTAExtension):

@@ -41,6 +41,7 @@ SA_Relations.RelationsScenesView = function(){
 		}
 	};
 
+	// render Checkboxes according to chosen Speaker
 	var renderCheckboxes = function(){
 		chosenSpeaker = $("#selection-relationsScenes-speaker").val();
 		checkboxes = $("#checkboxes-scenesRelations");
@@ -76,6 +77,7 @@ SA_Relations.RelationsScenesView = function(){
 		drawRelationsScenesChart(metricSelection, normalisationSelection, speakerSelection, metrics);
 	};
 
+	// Tranform relation-Metrics from Model to Google Chart-specific Metrics
 	var getRelationsScenesMetrics = function(metricName, typeName, speakerName){
 		var metrics = [];
 		for(var i = 0; i < scenesPerAct.length; i++){

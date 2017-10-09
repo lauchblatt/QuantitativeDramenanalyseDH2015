@@ -35,6 +35,7 @@ SA_Speakers.BasicDramaSpeakersView = function(){
 		
 	}
 
+	// Transform Model-Metrics to Google-Chart-specific Metrics
 	var getDramaMetrics = function(normalisation, metricName, speakerName){
 		var metrics = [];
 		var selectedMetrics = metricsForDrama[speakerName][normalisation][metricName];

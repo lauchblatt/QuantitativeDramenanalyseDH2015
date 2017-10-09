@@ -1,6 +1,7 @@
 SA_Relations.RelationsProportionsView = function(){
 	var that = {};
 
+	// Attributes to save all Proportions for all Levels
 	var proportionsForDramaRelations = {};
 	var proportionsForActsRelations = [];
 	var proportionsForScenesRelations = [];
@@ -11,9 +12,6 @@ SA_Relations.RelationsProportionsView = function(){
 		proportionsForDramaRelations = dramaProportions;
 		proportionsForActsRelations = actsProportions
 		proportionsForScenesRelations = scenesProportions;
-		console.log(proportionsForDramaRelations);
-		console.log(proportionsForActsRelations);
-		console.log(proportionsForScenesRelations);
 		renderDropDowns();
 		initListener();
 	};
@@ -48,6 +46,7 @@ SA_Relations.RelationsProportionsView = function(){
 		renderRelationsPieChart();
 	};
 
+	// global renderDropDown Method
 	var renderDropDowns = function(){
 		var actSelection = $("#selection-relations-act-pie-number");
 		actSelection.append($("<option>Gesamt</option>"));
@@ -55,9 +54,11 @@ SA_Relations.RelationsProportionsView = function(){
 			var $option = $("<option>" + (i+1).toString() + " .Akt</option>");
 			actSelection.append($option);
 		}
+		// after Act is Chosen
 		renderDropDownScenes();
 	};
 
+	// render DropDown for possible OriginSpeakers according to Scene and Act-Selection
 	var renderDropDownOriginSpeakers = function(){
 		var $originSpeakerSelection = $("#selection-relations-originSpeaker-pie");
 		$originSpeakerSelection[0].options.length = 0;
@@ -87,6 +88,7 @@ SA_Relations.RelationsProportionsView = function(){
 		renderDropDownTargetSpeakers();
 	};
 
+	// render DropDown for possible TargetSpeakers according to Scene, Act-Selection and Origin-Speaker-Selection
 	var renderDropDownTargetSpeakers = function(){
 		var $targetSpeakerSelection = $("#selection-relations-targetSpeaker-pie")
 		$targetSpeakerSelection[0].options.length = 0;
@@ -144,7 +146,6 @@ SA_Relations.RelationsProportionsView = function(){
 		var type = transformGermanMetric(typeSelection);
 		
 		var proportions = getRelationsProportions(metric, type);
-		console.log(proportions);
 		drawRelationPieChart(metricSelection, typeSelection, proportions);
 	};
 

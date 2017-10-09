@@ -10,7 +10,6 @@ SA_Speakers.SpeakersSpeechesView = function(){
 		initListener();
 		renderCheckboxes();
 
-		console.log(metricsForSpeeches);
 	};
 
 	var setNumberOfSpeeches = function(){

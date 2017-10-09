@@ -13,22 +13,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	dpp = Drama_Pre_Processing("textblob")
-	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Emilia_t.xml")
-
-	#dpp.preProcessLemmatizeAndDump("../Lessing-Dramen/less-Nathan_der_Weise_s.xml")
-	#dpp.preProcessAndDumpAllDramas()
-	#dpp.preProcessAndLemmatize("../Lessing-Dramen/less-Emilia_t.xml")
-	dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Misogyn.p")
-	"""
-	dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Der Misogyn.p")
-	for speaker in dpp._dramaModel._speakers:
-		print speaker._name
-		for speech in speaker._speeches:
-			print speech._textAsLanguageInfo
-	"""
-
-
+# Class to pre process a drama, necessary for Sentiment Analysis
 class Drama_Pre_Processing:
 
 	def __init__(self, processor):
@@ -37,6 +22,7 @@ class Drama_Pre_Processing:
 		self._processor = processor
 		self.initLanguageProcessor(processor)
 	
+	# Main Method to prePorcess all dramas and dump them for letter use in folder Dumps/ProcessedDramas
 	def preProcessAndDumpAllDramas(self):
 		for filename in os.listdir("../Lessing-Dramen/"):
 			self.preProcessAndLemmatize("../Lessing-Dramen/" + filename)
@@ -51,6 +37,7 @@ class Drama_Pre_Processing:
 		self._dramaModel = pickle.load(open(dramaPath, "rb"))
 		return self._dramaModel
 
+	# Method for pre process
 	def preProcessLemmatizeAndDump(self, dramaPath):
 		self.preProcessAndLemmatize(dramaPath)
 
@@ -63,6 +50,7 @@ class Drama_Pre_Processing:
 		lp = Language_Processor(processor)
 		self._languageProcessor = lp._processor
 
+	# normal pre processing without lemmatization
 	def preProcess(self, path):
 		self.initDramaModel(path)
 		self.attachPositionsToSpeechesAndConfs()
@@ -72,6 +60,7 @@ class Drama_Pre_Processing:
 
 		return self._dramaModel
 
+	# set speakers per conf and act for later SA
 	def createSpeakersPerConfAndAct(self):
 		for act in self._dramaModel._acts:
 			actSpeeches = act.get_speeches_act()
@@ -92,11 +81,11 @@ class Drama_Pre_Processing:
 					confSpeaker._speeches = confSpeakerSpeeches
 					conf._confSpeakers[confAppearingSpeaker] = confSpeaker
 
-
 	def preProcessAndLemmatize(self, path):
 		self.preProcess(path)
 		self.attachLanguageInfoToSpeeches()
 
+	# method to attach languageInfo to all structural units
 	def attachLanguageInfoToSpeeches(self):
 		for act in self._dramaModel._acts:
 			for conf in act._configurations:
@@ -105,6 +94,7 @@ class Drama_Pre_Processing:
 					lemmaInformation = self._languageProcessor._lemmasWithLanguageInfo
 					speech._textAsLanguageInfo = lemmaInformation
 
+	# calc and set length in words to all units
 	def attachLengthInWordsToStructuralElements(self):
 		dramaLength = 0
 		for act in self._dramaModel._acts:
@@ -142,6 +132,7 @@ class Drama_Pre_Processing:
 						currentSpeakerConfLength = currentSpeakerConfLength + speech._lengthInWords
 					speaker._lengthInWords = currentSpeakerConfLength
 
+	# set all pre occuring speakers for Sentiment-Relations
 	def attachPreOccuringSpeakersToSpeeches(self):
 		preOccuringSpeaker = ""
 
@@ -149,11 +140,11 @@ class Drama_Pre_Processing:
 			# Reset every speaker when new act starts
 			preOccuringSpeaker = ""
 			for conf in act._configurations:
-				#TODO Maybe?
 				for speech in conf._speeches:
 					speech._preOccuringSpeaker = preOccuringSpeaker
 					preOccuringSpeaker = speech._speaker
 
+	# set structural positioins for later calculations
 	def attachPositionsToSpeechesAndConfs(self):
 		subsequentNumberSpeech = 1
 		subsequentNumberConf = 1

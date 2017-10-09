@@ -1,3 +1,4 @@
+// global js-Data to save the currently selected Drama
 var sa_chosenNumber = 0;
 if(localStorage.getItem("sa_chosenDramaNumber") != null){
 	sa_chosenNumber = parseInt(localStorage["sa_chosenDramaNumber"]);

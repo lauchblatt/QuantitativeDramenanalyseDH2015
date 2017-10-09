@@ -4,6 +4,7 @@ ActsScenes.ActsScenesView = function(){
 	var actsProportionData = {};
 	var metricsForScenes = [];
 
+	// set all Data from Model
 	var init = function(metricsActs, proportionDataForActs, metricsScenes){
 		metricsForActs = metricsActs;
 		actsProportionData = proportionDataForActs;
@@ -14,6 +15,7 @@ ActsScenes.ActsScenesView = function(){
 
 	};
 
+	// init Number of Acts for Drop-Down-Menu
 	var initNumberOfActs = function(numberOfActs){
 		$select = $("#selection-acts-pie-number");
 		for(i = 0; i < numberOfActs; i++){
@@ -83,6 +85,7 @@ ActsScenes.ActsScenesView = function(){
 		
 	}
 
+	// Method to calculate ScenesPerAct-Data from Model-Data
 	var getScenesPerActMetrics = function(normalisation, metricName){
 		var specificMetricsForScenes = []
 		for(var i = 0; i < metricsForScenes.length; i++){

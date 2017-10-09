@@ -29,14 +29,18 @@ def main():
 	pickle.dump(lexiconHandler._sentimentDictLemmas, open("Dumps/CombinedLexiconsDTAExtended/textblob/CombinedLexiconDTAExtended-textblob-Lemmas.p", "wb"))
 	#"""
 
+# Class to use all given Lexicon and their DTA-Extension
 class Lexicon_Handler:
 
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
+		# Names of all simple Lexicons and DTA-Extended Lexicons
+		# Look to initSingleDict for CombinedLexicon
 		self._sentimentDicts = ["SentiWS", "NRC", "Bawl", "CD", "GPC"]
 		self._sentimentDictsDTAExtended = ["SentiWS-DTAExtended", "NRC-DTAExtended", "Bawl-DTAExtended", "CD-DTAExtended", "GPC-DTAExtended"]
 
+	# init Lexicon by name and language processor, textblob/treetagger
 	def initSingleDict (self, lexicon, processor):
 		if (lexicon == "SentiWS"):
 			self.initSentiWS(processor, False)
@@ -60,7 +64,7 @@ class Lexicon_Handler:
 			self.initGPC(processor, True)
 		elif (lexicon == "CombinedLexicon"):
 			self.readCombinedLexiconsDump(processor, False)
-		elif (lexicon == "Combined-DTAExtended"):
+		elif (lexicon == "CombinedLexicon-DTAExtended"):
 			self.readCombinedLexiconsDump(processor, True)
 		else:
 			print ("Kein korrekte Lexikonname wurde übergeben.")
@@ -111,21 +115,17 @@ class Lexicon_Handler:
 		self._sentimentDict = gpc._sentimentDict
 		self._sentimentDictLemmas = gpc._sentimentDictLemmas
 
+	# Method to combine all Lexicons
+	# needs dumped Keys
 	def combineSentimentLexica(self, processor, CDExtended):
 		if(CDExtended):
 			version = "DTAExtendedCombination"
 		else:
 			version = "SimpleCombination"
-		"""
-		print version
-		print processor
-		print version + " " + processor
-		"""
+
 		keys = self.readAndReturnLexiconKeyDumps(processor, version)
 		lexiconKeysTokens = keys[0]
 		lexiconKeysLemma = keys[1]
-		#print(len(lexiconKeysTokens))
-		#print(len(lexiconKeysLemma))
 		lexicons = {}
 
 		if(CDExtended):
@@ -162,8 +162,8 @@ class Lexicon_Handler:
 		self._sentimentDict = combinedLexiconTokens
 		self._sentimentDictLemmas = combinedLexiconLemmas
 
+	# Method to init CombinedLexicon
 	def readCombinedLexiconsDump(self, processor, DTAExtended):
-		#lexiconKeysTokens = pickle.load(open("Dumps/LexiconKeys/" + version + "/" + processor + "/combinedLexiconKeysTokens.p", "rb"))
 
 		dtaExtended = ""
 		if(DTAExtended):
@@ -175,8 +175,6 @@ class Lexicon_Handler:
 
 		self._sentimentDict = pickle.load(open(pathTokens, "rb"))
 		self._sentimentDictLemmas = pickle.load(open(pathLemmas, "rb"))
-		print len(self._sentimentDict)
-		print len(self._sentimentDictLemmas)
 
 	def dumpCombinedLexicons(self):
 		self.combineSentimentLexica("treetagger", False)
@@ -248,6 +246,7 @@ class Lexicon_Handler:
 		lexiconKeysLemmas = pickle.load(open("Dumps/LexiconKeys/" + version + "/" + processor + "/combinedLexiconKeysLemmas.p", "rb"))
 		return (lexiconKeysTokens, lexiconKeysLemmas)
 
+	# Method to get all the words of all basic lexicons and save them as pickle-data
 	def combineSentimentLexiconsKeysAndDump(self, processor, version):
 		sentimentDictsStrings = []
 		if(version == "DTAExtendedCombination"):
@@ -263,11 +262,9 @@ class Lexicon_Handler:
 	def getCombinedLexiconKeysTokens(self, processor, sentimentDictStrings):
 		newLexiconKeysTokens = {}
 		for dictString in sentimentDictStrings:
-			print dictString
 			self.initSingleDict(dictString, processor)
 			newLexiconKeysTokens.update(self._sentimentDict)
 
-		print len(newLexiconKeysTokens.keys())
 		return newLexiconKeysTokens.keys()
 
 	def getCombinedLexiconKeysLemmas(self, processor, sentimentDictStrings):
@@ -276,7 +273,6 @@ class Lexicon_Handler:
 			self.initSingleDict(dictString, processor)
 			newLexiconKeysLemmas.update(self._sentimentDictLemmas)
 
-		print len(newLexiconKeysLemmas.keys())
 		return newLexiconKeysLemmas.keys()
 
 	
@@ -313,6 +309,7 @@ class Lexicon_Handler:
 		self.combineSentimentLexica(processor, DTAExtended)
 		self.createOutputCombinedLexicon(self._sentimentDictLemmas, processor, "Lemmas", DTAExtended)
 
+	# Helper-Function for Analysis, not used in final system
 	def getPolarityDifferences(self):
 		differences = 0
 		positiveDifferences = 0
@@ -363,14 +360,7 @@ class Lexicon_Handler:
 
 			allZerosNegative = all(value == 0 for value in polaritiesNegative.values())
 			allOnesNegative = all(value == 1 for value in polaritiesNegative.values())
-			"""
-			if(not(allZerosPositive or allOnesPositive)):
-				positiveDifferences = positiveDifferences + 1
-				print word
-				print sentiments
-				print polaritiesPositive.items()
-			"""
-				
+
 			#"""
 			if(not(allZerosNegative or allOnesNegative)):
 				negativeDifferences = negativeDifferences + 1

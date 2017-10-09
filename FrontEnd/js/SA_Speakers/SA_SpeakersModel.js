@@ -1,13 +1,17 @@
 SA_Speakers.SA_SpeakersModel = function(){
 	var that = {};
+
+	// Attributes for Proportion-Metrics on all Levels
 	var dramaSpeakersProportions = {};
 	var actsSpeakersProportions = [];
 	var scenesSpeakersProportions = [];
 
+	// Attributes for Metrics on all Levels
 	var dramaSpeakersMetrics = {};
 	var actsSpeakersMetrics = [];
 	var scenesSpeakersMetrics = [];
 
+	// Attributes for Speaker-Metrics Per Act and Per Scene
 	var speakerMetricsPerAct = {};
 	var speakerMetricsPerScene = {};
 	var speechesMetrics = {};
@@ -20,7 +24,6 @@ SA_Speakers.SA_SpeakersModel = function(){
 
 	var initData = function(){
 		var drama = sa_chosenDrama;
-		console.log(sa_chosenDrama);
 
 		initSpeakersMetrics(drama)
 		initSingleSpeakerProportions(drama);
@@ -30,6 +33,7 @@ SA_Speakers.SA_SpeakersModel = function(){
 		
 	};
 
+	// Method to calc Speeches-Metrics for all Speakers
 	var initSpeechesMetrics = function(drama){
 
 		for(var i = 0; i < drama.speakers.length; i++){
@@ -78,6 +82,7 @@ SA_Speakers.SA_SpeakersModel = function(){
 		}
 	};
 
+	// Method to calc all per act and per Scene Metrics
 	var initSpeakerCourseMetrics = function(drama){
 		allSpeakers = [];
 		for(var i = 0; i < drama.speakers.length; i++){
@@ -127,6 +132,7 @@ SA_Speakers.SA_SpeakersModel = function(){
 		}
 	};
 
+	// Method to calc all normal structural Metrics
 	var initSpeakersMetrics = function(drama){
 		dramaSpeakersMetrics = getSpeakersMetrics(drama.speakers);
 
@@ -150,6 +156,7 @@ SA_Speakers.SA_SpeakersModel = function(){
 		return metrics;
 	};
 
+	// Method to calc all Speaker Proportion Data
 	var initSingleSpeakerProportions = function(drama){
 		dramaSpeakersProportions = getSpeakersProportions(drama.speakers);
 

@@ -29,7 +29,7 @@ SA_Relations.RelationsActsView = function(){
 		renderRelationsActs();
 	};
 
-
+	// save the Targets of current chosen Origin-Speaker
 	var setChosenTargets = function(){
 		chosenTargets = [];
 		var checkboxes = ($(".checkboxes-actsRelations"));
@@ -42,6 +42,7 @@ SA_Relations.RelationsActsView = function(){
 		}
 	};
 
+	// render checkboxes according to current Origin-Speaker
 	var renderCheckboxes = function(){
 		chosenSpeaker = $("#selection-relationsActs-speaker").val();
 		checkboxes = $("#checkboxes-actsRelations");
@@ -77,6 +78,7 @@ SA_Relations.RelationsActsView = function(){
 		drawRelationsActsChart(metricSelection, normalisationSelection, speakerSelection, metrics);
 	};
 
+	// Transform metrics of Model to google-chart-specific metrics
 	var getRelationsActsMetrics = function(metricName, typeName, speakerName){
 		var metrics = [];
 		for(i = 0; i < numberOfActs; i++){

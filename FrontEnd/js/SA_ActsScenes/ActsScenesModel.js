@@ -1,5 +1,6 @@
 ActsScenes.ActsScenesModel = function(){
 	var that = {};
+	// Attributes to save structural Data
 	var metricsActs = [];
 	var metricsScenes = [];
 	var pureMetricsScenes = [];
@@ -14,9 +15,9 @@ ActsScenes.ActsScenesModel = function(){
 		initData();
 	};
 
+	// Method to init all structural Data for all Drama-Levels
 	var initData = function(){
 		var drama = sa_chosenDrama;
-		console.log(sa_chosenDrama);
 		
 		for(i = 0; i < drama.acts.length; i++){
 			metricsActs.push(drama.acts[i].sentimentMetricsBasic)
@@ -51,6 +52,8 @@ ActsScenes.ActsScenesModel = function(){
 		basicDramaData = getStructuredBasicData(drama);
 	};
 
+	// Methods to init structural Proportion-Data for all Drama-Levels
+	// uses global Methods from Global.js
 	var initRowsProportionsDrama = function(drama){
 		dramaProportionData = getProportionDataOfUnit(drama);
 	};

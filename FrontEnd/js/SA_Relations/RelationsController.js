@@ -35,6 +35,7 @@ SA_Relations.RelationsController = function(){
 		var dramaProportions = relationsModel.getDramaRelationsProportions();
 		var actsProportions = relationsModel.getActsRelationsProportions();
 		var scenesProportions = relationsModel.getScenesRelationsProportions();
+		// hide and show Page to allow Fade-In-Effect
 		$("#mainpage").show();
 		dramaView.init(dramaRelationsMetrics);
 		dramaView.renderRelationsDrama();

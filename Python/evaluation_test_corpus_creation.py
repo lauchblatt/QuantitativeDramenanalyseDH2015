@@ -16,21 +16,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	tch = Test_Corpus_Handler()
-	tch.readAndInitTestCorpusFromPickle("Dumps/TestCorpus/test/testCorpus_textblob.p")
-	##tcc.saveTestCorpusWithLanguageInfoAsPickle("Dumps/TestCorpus/testCorpus")
-	tch.calcTestCorpusMetrics()
-
-	"""
-	sa = Sentiment_Analyzer(False)
-	for corpusSpeech in tcr._testCorpusSpeeches:
-		corpusSpeech._speech._sentimentBearingWords = sa.getSentimentBearingWordsSpeech(corpusSpeech._speech._textAsLanguageInfo)
-		sa.attachSentimentMetricsToUnit(corpusSpeech._speech)
-		corpusSpeech._speech._sentimentMetrics.printAllInfo(corpusSpeech._speech._lengthInWords)
-		for word in corpusSpeech._speech._sentimentBearingWords:
-			word.printAllInformation()
-	"""
-
+# Class to create a Test-Corpus for Evaluation Purposes
 class Test_Corpus_Creator:
 
 	def __init__(self):

@@ -11,9 +11,8 @@ from lp_treetagger import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-	lp = Language_Processor("treetagger")
-	lp.initStopWords()
 
+# Higer Class to choose a language-processor
 class Language_Processor:
 
 	def __init__(self, processor):

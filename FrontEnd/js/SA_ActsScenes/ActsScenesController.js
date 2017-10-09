@@ -25,6 +25,7 @@ ActsScenes.ActsScenesController = function(){
       		'packages':['corechart', 'controls']})}, 0);
 	};
 
+	// init all Views and Models
 	var continueInit = function(){
 		actsScenesModel.init();
 		var metricsActs = actsScenesModel.getMetricsActs();

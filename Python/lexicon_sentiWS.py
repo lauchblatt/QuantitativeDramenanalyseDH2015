@@ -17,13 +17,14 @@ def main():
 	sentiWs.initSentiWS()
 	sentiWs.extendLexiconSentiWSDTA()
 
+# SentiWS specific class to tranform and use SentiWS
 class Senti_WS:
 
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
-
+	# init SentiWS from raw data and produced Lemma-Data
 	def readAndInitSentiWSAndLemmas(self, processor):
 		self.initSentiWS()
 		sentimentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/SentiWS-Lemmas.txt")
@@ -37,6 +38,7 @@ class Senti_WS:
 
 		self._sentimentDictLemmas = sentimentDict
 
+	# init DTA-Extended SentiWS from raw data and produced Lemma-Data
 	def readAndInitSentiWSAndLemmasDTA(self, processor):
 		self.initSentiWS()
 		self.extendLexiconSentiWSDTA()
@@ -51,6 +53,7 @@ class Senti_WS:
 
 		self._sentimentDictLemmas = sentimentDict
 
+	# init Tokens from Raw-Data
 	def initSentiWS (self):
 		sentDictTextNegative = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Negative.txt")
 		sentDictTextPositive = open("../SentimentAnalysis/SentiWS/SentiWS_v1.8c_Positive.txt")
@@ -67,6 +70,7 @@ class Senti_WS:
 				sentimentDictNegative[word] = sentimentDictPositiv[word]
 		self._sentimentDict = sentimentDictNegative
 
+	# Method to read SentiWS from raw Text to create sentimentDict
 	def getSentimentDictSentiWS (self, sentimentDictText):
 		sentimentDict = {}
 		sentimentList = []
@@ -98,6 +102,7 @@ class Senti_WS:
 
 		return sentimentDict
 
+	# lemmatize sentimentDict
 	def lemmatizeDictSentiWS(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
@@ -121,6 +126,7 @@ class Senti_WS:
 		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	# write outputFile for sentimentDict
 	def createOutputSentiWS(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 
@@ -129,6 +135,7 @@ class Senti_WS:
 
 		outputFile.close()
 
+	# get higher Sentiment Value for double-Words
 	def getHigherSentimentValue(self, newScore, oldScore, word):
 		if(abs(newScore) > abs(oldScore)):
 			return newScore
@@ -149,6 +156,7 @@ class Senti_WS:
 		self.lemmatizeDictSentiWS("textblob")
 		self.createOutputSentiWS(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/SentiWS-Lemmas-DTAExtended")
 
+	# Method to call if DTA-Extended Version is desired
 	def extendLexiconSentiWSDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "SentiWS")

@@ -18,12 +18,14 @@ def main():
 	dca = Drama_Corpus_Analyzer()
 	dca.calcMetricsForEntireCorpus("Dumps/ProcessedDramas/treetagger/")
 
+# simple Class to analyze the corpus
 class Drama_Corpus_Analyzer:
 	
 	def __init__(self):
 		self._speeches = []
 		self._speechesLengths = []
 
+	# Prints Metrics for all Single Dramas, path to Drama-Folder
 	def calcMetricsForSingleDramas(self, path):
 		for filename in os.listdir(path):
 			dpp = Drama_Pre_Processing("treetagger")
@@ -49,7 +51,7 @@ class Drama_Corpus_Analyzer:
 			print minimum
 			print lengthInWords
 
-
+	# prints Metrics for Entire Corpus --> path to Drama-Folder
 	def calcMetricsForEntireCorpus(self, path):
 
 		for filename in os.listdir(path):
@@ -71,7 +73,7 @@ class Drama_Corpus_Analyzer:
 		print maximum
 		print minimum
 
-
+	# Prints Metrics for one Single Drama, path to specific Drama
 	def calcMetricsForSingleDrama(self, path):
 		dpp = Drama_Pre_Processing()
 		dramaModel = dpp.preProcess(path)

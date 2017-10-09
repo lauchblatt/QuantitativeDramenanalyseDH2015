@@ -13,7 +13,7 @@ ActsScenes.BasicDramaView = function(){
 		$("#selection-basicDrama-bar-normalisation").change(renderDramaBars);
 	};
 
-
+	// render-Method for Global-Drama-Bars
 	var renderDramaBars = function(){
 		var metricSelection = $("#selection-basicDrama-bar-metric").val();
 		var normalisationSelection = $("#selection-basicDrama-bar-normalisation").val()
@@ -25,6 +25,7 @@ ActsScenes.BasicDramaView = function(){
 		
 	}
 
+	// Method to get necessary drama-Metrics, sets color according to Metric
 	var getDramaMetrics = function(normalisation, metricName){
 		var metrics = [];
 		var selectedMetrics = metricsForDrama[normalisation][metricName];

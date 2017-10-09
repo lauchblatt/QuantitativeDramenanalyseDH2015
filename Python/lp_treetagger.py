@@ -14,18 +14,13 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	text = "Das ist ein schöner Tag. Das ist ein großer, aber schwerer Erfolg"
-	text = "Hund"
-	tt = Tree_Tagger()
-	tt.initStopWords()
-	#tt.processSingleDrama("../Lessing-Dramen/less-Philotas_t.xml")
-	#tt.processTextFully(text)
-
-
+# Class to implement treetagger lemmatization
+# implements also stopword-lists
 class Tree_Tagger:
 
 	def __init__(self):
 
+		# several attributes for language informations
 		self._plainText = ""
 		self._filteredText = ""
 
@@ -50,6 +45,7 @@ class Tree_Tagger:
 
 		self._tagger = treetaggerwrapper.TreeTagger(TAGLANG='de')
 
+	# standard method to process and lemmatize text, info saved in attributes
 	def processText(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)	
@@ -60,10 +56,11 @@ class Tree_Tagger:
 		print("Lemmas ready...")
 		print("Lemmas With LanguageInfo ready...")
 
-	# Indeed redundant
+	# simple method to only process until tokens, redundant in treetagger
 	def processTextTokens(self, plainText):
 		self.processText(plainText)
 
+	# processText with creation of extra attributes for vocabulary-analysis
 	def processTextFully(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
@@ -78,7 +75,7 @@ class Tree_Tagger:
 		self.combineLemmasPOSTokens()
 		print("LemmasAndPOSAndTokensDict ready...")	
 	
-	# One Lemma can have multiple POS
+	# Method to save all POS by lemmas
 	def createLemmaAndPOSDict(self):
 		lemmasSet = set(self._lemmas)
 		for lemma in lemmasSet:
@@ -107,6 +104,7 @@ class Tree_Tagger:
 				return True
 		return False
 
+	# simple get Lemma-Method for single words of a lexicon
 	def getLemma(self, word):
 		lemmas = self.getLemmas(word)
 		if(len(lemmas) > 1):
@@ -130,6 +128,7 @@ class Tree_Tagger:
 			lemmas.append(lemma)
 		return lemmas
 
+	# Method to collect and set tags specific for treetagger
 	def tagText(self):
 		tagsTabSeperated = self._tagger.tag_text(self._filteredText)
 		tags = self.removeTabSeperation(tagsTabSeperated)
@@ -153,6 +152,7 @@ class Tree_Tagger:
 			self._lemmasAndPOS.append((lemma, pos))
 			self._lemmasWithLanguageInfo.append(lemmaWithLanguageInfo)
 
+	# specific Method for treetagger
 	def removeTabSeperation(self, tagsTabSeperated):
 		newTags = []
 		for tag in tagsTabSeperated:
@@ -160,6 +160,7 @@ class Tree_Tagger:
 			newTags.append(tags)
 		return newTags
 
+	# method to remove all Sentence-Marks
 	def filterPunctuationMarks(self, tags):
 		newTags = []
 		for tag in tags:
@@ -168,6 +169,7 @@ class Tree_Tagger:
 				
 		return newTags
 	
+	# filter method for words that disturb lemmatization process
 	def filterText(self, text):
 		newText = ""
 		newText = unicode(text.replace("–", ""))
@@ -181,6 +183,7 @@ class Tree_Tagger:
 
 		return newText
 
+	# Methods to handle and init Stopword-List
 	def initStopWords(self, listname):
 		stopwords_text = open("../Stopwords/MainStopwordLists/" + listname + ".txt")
 		for line in stopwords_text:
@@ -189,7 +192,6 @@ class Tree_Tagger:
 			tagsTabSeperated = self._tagger.tag_text(stopword)
 			tags = tagsTabSeperated[0].split("\t")
 			stopword_lemmatized = tags[2]
-			#print stopword_lemmatized
 			self._stopwords_lemmatized.append(stopword_lemmatized)
 			self._stopwords_lemmatized.extend(self._stopwords)
 			self._stopwords_lemmatized = list(set(self._stopwords_lemmatized))
@@ -207,27 +209,27 @@ class Tree_Tagger:
 	def removeStopwordsFromLemmasList(self, wordList):
 		newList = [word for word in wordList if not (word in self._stopwords_lemmatized)]
 		return newList
-		"""
-		for stopword in self._stopwords_lemmatized:
-			while stopword.lower() in wordList:
-				wordList.remove(stopword.lower())
-			while stopword.title() in wordList:
-				wordList.remove(stopword.title())
-		return wordList
-		"""
 
 	def removeStopwordsFromTokensList(self, wordList):
 		newList = [word for word in wordList if not (word in self._stopwords)]
 		return newList
-		
-		"""
-		for stopword in self._stopwords:
-			while stopword.lower() in wordList:
-				wordList.remove(stopword.lower())
-			while stopword.title() in wordList:
-				wordList.remove(stopword.title())
-		return wordList
-		"""
+
+	# method to process and lemmatize single drama by path
+	def processSingleDrama(self, path):
+		parser = DramaParser()
+		dramaModel = parser.parse_xml(path)
+		self._currentDramaName = dramaModel._title
+		print("dramaModel ready...")
+		text = ""
+		#"""
+		for act in dramaModel._acts:
+			for conf in act._configurations:
+				for speech in conf._speeches:
+					text = text + speech._text
+
+		print("Text ready...")
+		self.processTextFully(text)
+
 
 	def processSingleDrama(self, path):
 		parser = DramaParser()
@@ -244,21 +246,7 @@ class Tree_Tagger:
 		print("Text ready...")
 		self.processTextFully(text)
 
-	def processSingleDrama(self, path):
-		parser = DramaParser()
-		dramaModel = parser.parse_xml(path)
-		self._currentDramaName = dramaModel._title
-		print("dramaModel ready...")
-		text = ""
-		#"""
-		for act in dramaModel._acts:
-			for conf in act._configurations:
-				for speech in conf._speeches:
-					text = text + speech._text
-
-		print("Text ready...")
-		self.processTextFully(text)
-
+	# method to process until tokens single drama by path
 	def processSingleDramaTokens(self, path):
 		parser = DramaParser()
 		dramaModel = parser.parse_xml(path)

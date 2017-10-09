@@ -15,28 +15,14 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	tce = Test_Corpus_Evaluation()
-	#tce.getNumberOfPolarityChangedWordsInSBWs()
-	
-	"""
-	tce.initTestCorpus("Dumps/TestCorpus/testCorpus_" + "treetagger" + ".p")
-	tce.attachSentimentInfoOnTestCorpus(False, "treetagger", True, None, False)
-	tce.initPolarityBenchmark("../Evaluation/Test-Korpus-Evaluation/Benchmark-Daten/Polaritaet_dichotom.txt")
-	tce.comparePolarityMetricWithBenchmark("polaritySentiWS")
-	"""
-	
-	tce.createAllOutputsOfAllMetrics()
-	#tce.setEvaluationInfoOfAllCombinationsForSingleMetric("polarityBawlDichotom")
-	#tce.createOutputAllMajorMetricsForSinglePolarity("polarityBawlDichotom")
-	#tce.createOutputDetailInfoOfAllCombinations("polarityBawlDichotom")
 
+# Main Class to evaluate Test-Corpus
 class Test_Corpus_Evaluation:
 	def __init__(self):
 		self._testCorpusSpeeches = []
 		self._polarityBenchmark = []
-		#self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
-		#"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
-		self._polarityNames = ["clearlyPolarityCombined"]
+		self._polarityNames = ["polaritySentiWS", "polaritySentiWSDichotom", "polarityNrc", "emotion", "polarityBawlDichotom",\
+		"polarityCd", "polarityCDDichotom", "polarityGpc", "polarityCombined"]
 		self._evaluationInfo = OrderedDict({})
 
 		self._correspondingSBWMetrics = {}
@@ -220,7 +206,6 @@ class Test_Corpus_Evaluation:
 		allSpeechesInfo = "\n".join(speechInfo)
 		output = name + "\n\n" + majorMetricsInfo + "\n" + crossTable + "\n" + allSpeechesInfo
 		
-		#print output
 		return output
 
 	def getPredictionInfo(self, prediction, benchmark):

@@ -14,38 +14,15 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	#matrix = [[0,0,0,0,14],[0,2,6,4,2],[0,0,3,5,6],[0,3,9,2,0],[2,2,8,1,1],[7,7,0,0,0],[3,2,6,3,0],[2,5,3,2,2],[6,5,2,1,0],[0,2,2,3,7]]
-	#matrix = [[5, 0], [5, 0], [0, 5], [5, 0], [5, 0], [5, 0]]
-	ag = Agreement_Statistics()
-	#ag.test("problem.txt")
-	#ag.getMajorityPolReduced("../Agreement-Daten/polaritaet_reduziert.txt")
-	#print(ag.calcKAlphaForAllDramas("../Agreement-Daten/polaritaet_standard.txt"))
-	#matrix = ag.getTwoDMatrix("../Agreement-Daten/ekel.txt")
-	#print krippendorff_alpha(matrix, nominal_metric, missing_items="*")
-	#
-	
-	#ag.getMajorityData("../Agreement-Daten/polaritaet_standard.txt", 6, 1)
-
-	ag.printAllInfo("../Agreement-Daten/polaritaet_dichotom.txt", "../Agreement-Daten/polaritaet_dichotom_sortiert.txt", 2, 1)
-
-
+# Class to perform the agreement analysis for the evaluation
 class Agreement_Statistics:
 
 	def __init__(self):
 		self._sentimentDict = {}
 
-	def test(self, path):
-		data = open(path)
-		lines = data.readlines()
-		i = 0
-		for line in lines:
-			numbers = line.split("\t")
-			numbers = [int(number.strip()) for number in numbers]
-			if(numbers[0] == 1 and numbers[1] == 2):
-				print ("---")
-				print str(i+1)
-			i += 1
-
+	# prints all necessary agreement info
+	# paths like this ("../Agreement-Daten/polaritaet_dichotom.txt", "../Agreement-Daten/polaritaet_dichotom_sortiert.txt", 2, 1)
+	# categories of metric, start-value of chosen metric
 	def printAllInfo(self, pathNormal, pathToSorted, categories, startValue):
 		fleissKappas = self.calcFleissKappasForAllDramas(pathNormal, categories, startValue)
 		averages = self.getAvgPercentsForAllDramas(pathNormal)
@@ -78,6 +55,7 @@ class Agreement_Statistics:
 			 averages[i][0], averages[i][1]])
 			i += 1 
 
+	# calc Length-specific Majority Data
 	def getMajorityDataLengths(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
@@ -95,6 +73,7 @@ class Agreement_Statistics:
 			data.append(majorityData)
 		return data
 
+	# calc Drama-specific Majority Data
 	def getMajorityDataDramas(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
@@ -120,6 +99,7 @@ class Agreement_Statistics:
 			data.append(majorityData)
 		return data
 
+	# calc Agreement Matrix from Data form Folder Aggreement-Daten
 	def getAgreementMatrixFromPath(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
@@ -184,6 +164,8 @@ class Agreement_Statistics:
 		  smallMajPercent, str(allMajorities), allMajoritiesPercent]
 		return allData
 
+	# Method to calc Fleiss Kappa oriented on Example on Wikipedia
+	# tested with easy examples
 	def fleissKappa(self, matrix):
 		raters = 5
 		N = len(matrix)
@@ -226,6 +208,7 @@ class Agreement_Statistics:
 
 		return twoDMatrix
 
+	# returns agreements-Tuples from an agreementMatrix
 	def getNumberAndPercentsOfTotalAgreements(self, agreementMatrix):
 		totalAgreements = 0
 		for row in agreementMatrix:
@@ -236,6 +219,7 @@ class Agreement_Statistics:
 		percent = str(float(totalAgreements)/len(agreementMatrix)).replace(".", ",")
 		return (totalAgreements, percent)
 
+	# calc drama-specific K-Alpha
 	def calcKAlphaForAllDramas(self, path):
 		matrix = self.getTwoDMatrix(path)
 		dramas = []
@@ -259,6 +243,7 @@ class Agreement_Statistics:
 		kAlphas = [str(item).replace(".", ",") for item in kAlphas]
 		return kAlphas
 
+	# calc Length-Specific K-Alpha
 	def calcKAlphaForLengths(self, path):
 		matrix = self.getTwoDMatrix(path)
 		lengths = []
@@ -273,6 +258,7 @@ class Agreement_Statistics:
 		kAlphas = [str(item).replace(".", ",") for item in kAlphas]
 		return kAlphas
 
+	# calc drama-specific Fleiss Kappa
 	def calcFleissKappasForAllDramas(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
@@ -299,6 +285,7 @@ class Agreement_Statistics:
 
 		return fleissKappas
 
+	# calc Length-specific Fleiss Kappa
 	def calcFleissKappasLengths(self, path, categories, startValue):
 		data = open(path)
 		lines = data.readlines()
@@ -315,6 +302,7 @@ class Agreement_Statistics:
 			fleissKappas.append((str(self.fleissKappa(matrixRows))).replace(".", ","))
 		return fleissKappas
 
+	# calc dramaSpecific avg-Percents
 	def getAvgPercentsForAllDramas(self, path):
 		data = open(path)
 		lines = data.readlines()
@@ -340,6 +328,7 @@ class Agreement_Statistics:
 			averageNumbersAndPercents.append(self.getAveragedPercents(unit))
 		return averageNumbersAndPercents
 
+	# calc Length-specific avgPercents
 	def getAvgPercentsForLengths(self, path):
 		data = open(path)
 		lines = data.readlines()
@@ -354,6 +343,7 @@ class Agreement_Statistics:
 			averageNumbersAndPercents.append(self.getAveragedPercents(unit))
 		return averageNumbersAndPercents
 
+	# calc the averagePercents by input of data in Agreement-Daten
 	def getAveragedPercents(self, lines):
 		numberOfRaters = 5
 		raterRatings = []
@@ -394,6 +384,7 @@ class Agreement_Statistics:
 		return (str(totalAvg).replace(".", ","), str(totalAvgPercent).replace(".", ","))
 
 
+	# specific Method for Variable Emotion_present
 	def getEmotionPresenceByParticipant(self, path):
 		data = open(path)
 		emotionsPresents = []
@@ -435,6 +426,7 @@ class Agreement_Statistics:
 		for item in polMajorities:
 			print item
 
+	# specific Majority Methods for specific Polarity-Variables from Agreement-Daten
 	def getMajorityPolReduced(self, path):
 		data = open(path)
 		lines = data.readlines()
@@ -533,6 +525,7 @@ class Agreement_Statistics:
 				print "-1"
 		return polMajorities
 
+	# Method to compare two List and return avgPercent
 	def compareListsAndReturnPercent(self, list1, list2):
 		i = 0
 		length = len(list1)

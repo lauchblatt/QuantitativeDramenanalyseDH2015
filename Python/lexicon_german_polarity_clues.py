@@ -12,14 +12,13 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	gpc = German_Polarity_Clues()
-	gpc.initGPC()
-
+# GPC specific class to tranform and use GPC
 class German_Polarity_Clues:
 	def __init__(self):
 		self._sentimentDict = {}
 		self._sentimentDictLemmas = {}
 
+	# init GPC from raw data and produced Lemma-Data
 	def readAndInitGPCAndLemmas(self, processor):
 		self.initGPC()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/GPC-Lemmas.txt")
@@ -34,6 +33,7 @@ class German_Polarity_Clues:
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
+	# init DTA-Extended GPC from raw data and produced Lemma-Data
 	def readAndInitGPCAndLemmasDTA(self, processor):
 		self.initGPC()
 		self.extendLexiconGPCDTA()
@@ -50,6 +50,7 @@ class German_Polarity_Clues:
 			sentimentDict[unicode((wordAndValues)[0])] = sentiments
 		self._sentimentDictLemmas = sentimentDict
 
+	# init Tokens from Raw-Data
 	def initGPC(self):
 
 		sentDictTextNegative = open("../SentimentAnalysis/GermanPolarityClues/GermanPolarityClues-Negative-220311.tsv")
@@ -62,11 +63,13 @@ class German_Polarity_Clues:
 		self.handleSpecialCases()
 		self.removePhrasesFromSentimentDict()
 
+	# remove all entries with more than two words
 	def removePhrasesFromSentimentDict(self):
 		for word, sentiments in self._sentimentDict.items():
 			if(len(word.split(" ")) > 1):
 				del self._sentimentDict[word]
 
+	# remove all words with punctuations
 	def handleSpecialCases(self):
 		for word, sentiments in self._sentimentDict.items():
 			if(word.endswith(":")):
@@ -80,6 +83,7 @@ class German_Polarity_Clues:
 				for specialWord in specialWords:
 					self._sentimentDict[unicode(specialWord)] = sentiments
 
+	# Method to read GPC from raw Text to create sentimentDict
 	def getSentimentDictGPC(self, textNegative, textNeutral, textPositive):
 		linesNegative = textNegative.readlines()
 		linesPositive = textPositive.readlines()
@@ -120,18 +124,16 @@ class German_Polarity_Clues:
 			sentimentDictNeutral[unicode(info[0])] = infoPerWord
 			sentimentDictNeutral[unicode(info[1])] = infoPerWord
 
-		print(sentimentDictNeutral["der"])
-		print(sentimentDictNegative["der"])
 		sentimentDictNegative = self.removePositiveDoubles(sentimentDictNegative, sentimentDictPositive)
 		sentimentDictNeutral = self.removeNeutralDoubles(sentimentDictNeutral, sentimentDictPositive, sentimentDictNegative)
 		sentimentDict = {}
 		sentimentDict.update(sentimentDictNegative)
 		sentimentDict.update(sentimentDictPositive)
 		sentimentDict.update(sentimentDictNeutral)
-		print(sentimentDict["der"])
 
 		return sentimentDict
 
+	# remove alle neutral entries
 	def removeNeutralWordsFromGPC(self):
 		toDel = []
 		for word in self._sentimentDict:
@@ -141,6 +143,7 @@ class German_Polarity_Clues:
 		for wordToDel in toDel:
 			del self._sentimentDict[wordToDel]
 	
+	# lemmatize sentimentDict
 	def lemmatizeDictGPC(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
@@ -169,6 +172,7 @@ class German_Polarity_Clues:
 		print ("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	# method to choose values for double words and lemmas --> choose positive
 	def getChosenValues(self, newValues, oldValues, word):
 		if(newValues["neutral"] > oldValues["neutral"]):
 			return oldValues
@@ -187,6 +191,7 @@ class German_Polarity_Clues:
 		else:
 			return True
 	
+	# Method to remove all negative entries that are also positive
 	def removePositiveDoubles(self, sentimentDictNegative, sentimentDictPositive):
 		toDel = []
 		for word in sentimentDictNegative:
@@ -197,6 +202,7 @@ class German_Polarity_Clues:
 			del sentimentDictNegative[wordToDel]
 		return sentimentDictNegative
 
+	# method to remove all neutral entries that also have polarities
 	def removeNeutralDoubles(self, sentimentDictNeutral, sentimentDictPositive, sentimentDictNegative):
 		toDel = []
 
@@ -208,6 +214,7 @@ class German_Polarity_Clues:
 			del sentimentDictNeutral[wordToDel]
 		return sentimentDictNeutral
 
+	# write outputFile for sentimentDict
 	def createOutputGPC(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 		firstLine = "word\tpositive\tnegative\tneutral"
@@ -221,20 +228,14 @@ class German_Polarity_Clues:
 
 	def createExtendedOutputDTA(self):
 		self.initGPC()
-		print("###")
-		print(len(self._sentimentDict))
 		self.extendLexiconGPCDTA()
-		print("###")
-		print(len(self._sentimentDict))
 		self.createOutputGPC(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/GPC-Token-DTAExtended")
 		self.lemmatizeDictGPC("treetagger")
-		print("###")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/GPC-Lemmas-DTAExtended")
 		self.lemmatizeDictGPC("textblob")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputGPC(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/GPC-Lemmas-DTAExtended")
 
+	# Method to call if DTA-Extended Version is desired
 	def extendLexiconGPCDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "GPC")

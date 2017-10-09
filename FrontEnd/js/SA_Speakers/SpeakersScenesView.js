@@ -143,26 +143,6 @@ SA_Speakers.SpeakersScenesView = function(){
 		return acts;
 	};
 
-	/*
-	var getSpeakerScenesPerActMetrics = function(metricName, normalisation, speakerName){
-		var speakerMetricsActs = metricsForSpeakerPerScenes[speakerName];
-		var metrics = [];
-		for(i = 0; i < speakerMetricsActs.length; i++){
-			var metricsPerAct = [];
-			for(j = 0; j <speakerMetricsActs[i].length; j++){
-				if(speakerMetricsActs[i][j] == null){
-					metricsPerAct.push([j+1, 0, "kein Auftritt"]);
-				}else{
-					var metric = speakerMetricsActs[i][j][normalisation][metricName];
-					metricsPerAct.push([j+1, metric, (Math.round(metric * 10000) / 10000).toString()]);
-				}
-			}
-			metrics.push(metricsPerAct);
-		}
-		return metrics;
-	};
-	*/
-
 	var drawChartScenesPerAct = function(metricName, typeName, metrics){
 
 		$charts_scenes = $("#charts-speakersScenesPerAct-bar");
@@ -270,26 +250,6 @@ SA_Speakers.SpeakersScenesView = function(){
 		return rows;
 	};
 
-	/**
-	var getSpeakerScenesMetrics = function(metricName, normalisation, speakerName){
-		var speakerMetricsActs = metricsForSpeakerPerScenes[speakerName];
-		var metrics = [];
-		for(i = 0; i < speakerMetricsActs.length; i++){
-			for(j = 0; j <speakerMetricsActs[i].length; j++){
-				if(speakerMetricsActs[i][j] == null){
-					var sceneName = (i+1).toString() + ". Akt, " + (j+1).toString() + " .Szene";
-					metrics.push([sceneName, 0]);
-				}else{
-					var metric = speakerMetricsActs[i][j][normalisation][metricName];
-					var sceneName = (i+1).toString() + ". Akt, " + (j+1).toString() + " .Szene";
-					metrics.push([sceneName, metric]);
-				}
-			}
-		}
-		return metrics;
-	};
-	**/
-
 	var drawSpeakersScenesLineChart = function(germanMetric, germanType, metrics){
 		var vAxisTitle = germanMetric + " - " + germanType;
 		var data = new google.visualization.DataTable();
@@ -321,7 +281,6 @@ SA_Speakers.SpeakersScenesView = function(){
         var formatter = new google.visualization.NumberFormat(
     		{fractionDigits: 6});
 		formatter.format(data, 1);
-		console.log("hello World");
 		chart.draw(data, options);
 
 	};

@@ -13,16 +13,7 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	bawl = Bawl()
-	bawl.createExtendedOutputDTA()
-	#mat = bawl.test2()
-	#bawl.fleiss_kappa(mat)
-	#bawl.createExtendedOutputDTA()
-	#bawl.createSentimentDictFileBawlLemmas("treetagger")
-	#bawl.resetAllFiles()
-	#bawl.createExtendedOutputDTA()
-	#bawl.readAndInitBawlAndLemmasDTA("treetagger")
-
+# BAWL-R specific class to tranform and use BAWL-R
 class Bawl:
 
 	def __init__(self):
@@ -31,24 +22,28 @@ class Bawl:
 
 		self._counter = 0
 
+	# init Bawl from raw data and produced Lemma-Data
 	def readAndInitBawlAndLemmas(self, processor):
 		dta = DTA_Handler()
 		self.initBawl()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/Bawl-Lemmas.txt")
 		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
 
+	# init DTA-Extended Bawl from raw data and produced Lemma-Data
 	def readAndInitBawlAndLemmasDTA(self, processor):
 		self.initBawl()
 		self.extendLexiconBawlDTA()
 		sentDictText = open("../SentimentAnalysis/TransformedLexicons/" + processor + "-Lemmas/Bawl-Lemmas-DTAExtended.txt")
 		self._sentimentDictLemmas = self.getSentimentDictBawl(sentDictText)
 
+	# init Tokens-Bawl from Raw-Data
 	def initBawl(self):
 		sentDictText = open("../SentimentAnalysis/Bawl-R/bawl-r-wc.txt")
 		sentimentDict = self.getSentimentDictBawl(sentDictText)
 		self._sentimentDict = sentimentDict
 		self.removeNeutralWords()
 
+	# Method to remove neutral Words from Bawl
 	def removeNeutralWords(self):
 		wordsToDel = []
 		for word in self._sentimentDict:
@@ -58,6 +53,7 @@ class Bawl:
 		for word in wordsToDel:
 			del self._sentimentDict[word]
 
+	# Method to read Bawl from raw Text to create sentimentDict
 	def getSentimentDictBawl(self, sentimentDictText):
 		lines = sentimentDictText.readlines()[1:]
 		sentimentDict = {}
@@ -80,6 +76,7 @@ class Bawl:
 		
 		return sentimentDict
 
+	# lemmatize sentimentDict
 	def lemmatizeDictBawl(self, processor):
 		lp = Language_Processor(processor)
 		newSentimentDict = {}
@@ -95,6 +92,7 @@ class Bawl:
 		print("Lemmatisation finished")
 		self._sentimentDictLemmas = newSentimentDict
 
+	# Method to deal with double-Words, --> chose word with higer emotion-Value
 	def getBetterValues(self, newValues, oldValues):
 		newEmotion = abs(newValues["emotion"])
 		newArousel = newValues["arousel"]
@@ -111,7 +109,7 @@ class Bawl:
 			return oldValues
 		return oldValues
 
-
+	# write outputFile for sentimentDict
 	def createOutputBawl(self, sentimentDict, dataName):
 		outputFile = open(dataName + ".txt", "w")
 		firstLine = "word\temotion\tarousel"
@@ -125,18 +123,11 @@ class Bawl:
 
 	def createExtendedOutputDTA(self):
 		self.initBawl()
-		print("###")
-		print(len(self._sentimentDict))
 		self.extendLexiconBawlDTA()
-		print("###")
-		print(len(self._sentimentDict))
 		self.createOutputBawl(self._sentimentDict, "../SentimentAnalysis/TransformedLexicons/Bawl-Token-DTAExtended")
 		self.lemmatizeDictBawl("treetagger")
-		print("###")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/treetagger-Lemmas/Bawl-Lemmas-DTAExtended")
 		self.lemmatizeDictBawl("textblob")
-		print(len(self._sentimentDictLemmas))
 		self.createOutputBawl(self._sentimentDictLemmas, "../SentimentAnalysis/TransformedLexicons/textblob-Lemmas/Bawl-Lemmas-DTAExtended")
 
 	def resetAllFiles(self):
@@ -144,6 +135,7 @@ class Bawl:
 		self.createSentimentDictFileBawlLemmas("treetagger")
 		self.createSentimentDictFileBawlLemmas("textblob")
 
+	# Method to call if DTA-Extended Version is desired
 	def extendLexiconBawlDTA(self):
 		dta = DTA_Handler()
 		self._sentimentDict = dta.extendSentimentDictDTA(self._sentimentDict, "Bawl")
