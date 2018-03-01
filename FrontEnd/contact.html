@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Sentiment Analysis - Sprecher</title>	
+		<title>Katharsis - Kontakt</title>	
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link href="css/sentiment-analysis.css" rel="stylesheet">
@@ -16,11 +16,11 @@
 			<div class="container overhead">
 				<div class="" id="header">
 						<div id="logo-wrapper">
-							<a href="sa_selection.html" ><img id="logo" src="./img/logo.png" title="Katharsis - Sentiment-Analysis"></img></a>
+							<a href="./index.html" ><img id="logo" src="./img/logo.png" title="Katharsis"></img></a>
 						</div>
 						<div id="header-wrapper">
-							<h1 id="dramaTitle" class="page-header">Sentiment Analysis</h1>
-							<h2 id="dramaAuthor">Auswahl - Verfügbare Dramen</h2>
+							<h1 id="dramaTitle" class="page-header">Katharsis - Sentiment Analysis</h1>
+							<h2 id="dramaAuthor">Kontakt</h2>
 						</div>
 				</div>
 			
@@ -31,7 +31,7 @@
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav">
 
-					      	<li class="superactive"><a id="link-overall" href="sa_selection.html" class="links">Auswahl<span class="sr-only">(current)</span></a></li>
+					      	<li class=""><a id="link-overall" href="sa_selection.html" class="links">Auswahl<span class="sr-only">(current)</span></a></li>
 
 					      	<li><a href="sa_dramaActScenes.html" id="link-matrix" class="links">Drama-Akt-Szenen-Repliken-Analyse<span class="sr-only">(current)</span></a></li>
 
@@ -44,8 +44,7 @@
 					          <a href="sa_relations.html" id="link-speeches" class="links">
 					          	Sprecher-Beziehungen<span class="sr-only">(current)</span></span></a>
 					        </li>
-
-					        <li>
+					        <li class="superactive">
 					          <a href="contact.html" id="link-speeches" class="links">
 					          	Kontakt<span class="sr-only">(current)</span></span></a>
 					        </li>
@@ -57,9 +56,13 @@
 			</div>
 
 			<div class="container">
-				<h1>Verfügbare Dramen für die Sentiment Analysis</h1>
-				<div id="drama-selection">
-				</div>
+				<h1> Kontakt und Informationen zur Verwendung</h1>
+				<div>Das Tool Katharsis wurde erstellt von <a href="http://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/sekretariat-team/thomas-schmidt/index.html">Thomas Schmidt</a> (<a href="http://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/index.html">Lehrstuhl für Medieninformatik</a>, <a href="http://www.uni-regensburg.de/">Universität Regensburg </a>) und Dr. Manuel Burghardt (Lehrstuhl für Computational Humanities, Universität Leipzig)</div>
+				<div> Es handelt sich um eine Pre-Release-Version. Das Tool befindet wird laufend bearbeitet.</div>
+				<div> Bei Fragen und Problemen können Sie uns per Mail kontaktieren.</div>
+				<div> <strong>Wenn Sie das Tool außerhalb privater Zwecke verwenden wollen (z.B. in Lehre und Forschung), kontaktieren Sie uns bitte per Mail:</strong></div>
+				<div>Mail (Thomas Schmidt): thomas.schmidt@sprachlit.uni-regensburg.de</div>
+				<div>Mail (Manuel Burghardt): manuel.burghardt@sprachlit.uni-regensburg.de</div>
 
 			</div>
 		</div><!-- maincontent -->
@@ -69,8 +72,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-		<script type="text/javascript" src="json/allDramas.json"></script>
 		<script type="text/javascript" src="js/Globals/global.js"></script>
-		<script type="text/javascript" src="js/SA_Selection/sa_selection.js"></script>
 	</body>
 </html>
