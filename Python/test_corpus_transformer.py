@@ -88,7 +88,8 @@ class Test_Corpus_Transformer:
 			contentRow.append(annotatorPolarities[i])
 			contentRow.append(fullPolarities[i])
 			contentRow.append(fullPolaritiesPerAnnotator[i])
-			#contentRow.append(emotionAnnotations)
+			contentRow.append(emotionAnnotations[i])
+
 		
 			tabSeperatedContentRow = "\t".join(contentRow)
 			contentRows.append(tabSeperatedContentRow)
@@ -98,9 +99,10 @@ class Test_Corpus_Transformer:
 	def getAllEmotionPolaritiesPerAnnotator(self):
 		emotions = ["zorn", "erwartung", "ekel", "angst", "freude", "traurigkeit", "ueberraschung", "vertrauen"]
 		emotionAnns = []
-		#immer nur die erste Zeile
+
 		currentLineNumber = 0
 		emotionLines = []
+		
 		while(currentLineNumber < 200):
 			currentLineEmotions = []
 			for emotion in emotions:
@@ -111,11 +113,15 @@ class Test_Corpus_Transformer:
 				currentLine = lines[currentLineNumber]
 				emoNumber = currentLine.split("\t")
 				for number in emoNumber:
-					#if ("0" in )
+					if ("0" in number):
+						currentLineEmotions.append("nicht_vorhanden")
+					elif("1" in number):
+						currentLineEmotions.append("vorhanden")
 
+			currentLineEmotions = "\t".join(currentLineEmotions)
+			emotionLines.append(currentLineEmotions)
 			currentLineNumber = currentLineNumber + 1
-
-
+		return emotionLines
 
 	def getAnnotatorPolarities(self, path):
 		data = open(path)
