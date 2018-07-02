@@ -16,7 +16,7 @@ def main():
 	sys.setdefaultencoding('utf8')
 
 	dca = Drama_Corpus_Analyzer()
-	dca.calcMetricsForEntireCorpus("Dumps/ProcessedDramas/treetagger/")
+	dca.calcMetricsForSingleDramas("../Lessing-Dramen/")
 
 # simple Class to analyze the corpus
 class Drama_Corpus_Analyzer:

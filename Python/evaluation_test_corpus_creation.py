@@ -11,10 +11,13 @@ from drama_parser import *
 from sa_pre_processing import *
 from statistic_functions import *
 from sa_sentiment_analysis import *
+import numpy as np
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+	tcc = Test_Corpus_Creator()
+	tcc.initSpeechesOfSingleCorpus("less-Nathan_der_Weise_s.xml")	
 
 # Class to create a Test-Corpus for Evaluation Purposes
 class Test_Corpus_Creator:
@@ -26,8 +29,133 @@ class Test_Corpus_Creator:
 		self._speechesCorpusPerDrama = []
 		self._filteredSpeechesCorpus = []
 		self._filteredSpeechesCorpusPerDrama = []
-		self._partsPerDrama = [3, 10, 14, 7, 6, 6, 5, 10, 12, 10, 14, 3]
-		self._testCorpusSizeFactor = 2
+		self._partsPerDrama = [200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+		self._testCorpusSizeFactor = 1
+		#self._partsPerDrama = [3, 10, 14, 7, 6, 6, 5, 10, 12, 10, 14, 3]
+		#self._testCorpusSizeFactor = 2
+
+	def initSpeechesOfSingleCorpus(self, dramaFileName):
+		dramas = []
+		path = "../Lessing-Dramen/"
+
+		#Processor should basically not matter		
+		dpp = Drama_Pre_Processing("textblob")
+		dramaModel = dpp.preProcess(path + dramaFileName)
+		dramaTitle = dramaModel._title
+		print(path+dramaFileName)
+		speechesPerDrama = []
+		filteredSpeechesPerDrama = []
+
+		for act in  dramaModel._acts:
+			actNumber = act._number
+			for conf in act._configurations:
+				confNumber = conf._number
+				confLength = len(conf._speeches)
+				i = 0
+				while (i < confLength):
+					previousSpeech = None
+					nextSpeech = None
+					if((i-1) >= 0):
+						previousSpeech = conf._speeches[i-1]
+
+					currentSpeech = conf._speeches[i]
+					speechLength = conf._speeches[i]._lengthInWords
+					
+					if((i+1) < confLength):
+						nextSpeech = conf._speeches[i+1]
+
+					tcSpeech = Test_Corpus_Speech(currentSpeech, previousSpeech, nextSpeech, dramaTitle, actNumber, confNumber, i+1)
+					tcSpeech._id = i+1
+					tcSpeech.setPositionInfo()
+					speechesPerDrama.append(tcSpeech)
+					i = i + 1
+
+		print len(speechesPerDrama)
+		orderedRandomSpeeches = self.constructOrderedRandomSpeechCorpus(speechesPerDrama, 200)
+		self.createTxtOutputForCorpus("Nathan_Repliken.txt", orderedRandomSpeeches)
+		self._speechesCorpus = orderedRandomSpeeches
+		print(len(orderedRandomSpeeches))
+		#self._speechesCorpus = speechesPerDrama
+		metrics = self.printMetrics()
+		"""
+		upAvg = metrics["average"] + 1
+		downAvg = metrics["average"] - 1
+		med = metrics["median"]
+		"""
+
+	def printMetrics(self):
+		lengths = []
+		metrics = {}
+		for corpusSpeech in self._speechesCorpus:
+			lengths.append(corpusSpeech._speech._lengthInWords)
+		avg = average(lengths)
+		med = median(lengths)
+		maximum = custom_max(lengths)
+		minimun = custom_min(lengths)
+		variance = np.var(lengths)
+		sd = np.std(lengths)
+		print "Average:"
+		print avg
+		metrics["average"] = avg
+		print "Median:"
+		print med
+		metrics["median"] = med
+		print "Maximum"
+		print maximum
+		print "Minimum"
+		print minimun
+		print "Variance"
+		print variance
+		print "Standard Deviation"
+		metrics["sd"] = sd
+		print sd
+		return metrics
+
+	def constructOrderedRandomSpeechCorpus(self, corpusSpeeches, numberOfSpeeches):
+		usedNumbers = []
+		i = 0
+		orderedRandomSpeeches = []
+		while(i < numberOfSpeeches):
+			i = i + 1
+			randomNumber = random.randint(0, len(corpusSpeeches)-1)
+			while(randomNumber in usedNumbers):
+				randomNumber = random.randint(0, len(corpusSpeeches)-1)
+			#print randomNumber
+			usedNumbers.append(randomNumber)
+		usedNumbers.sort()
+		for number in usedNumbers:
+			print number
+			orderedRandomSpeeches.append(corpusSpeeches[number])
+		#print "###"
+		#print len(usedNumbers)
+		#print len(set(usedNumbers))
+		return orderedRandomSpeeches
+
+	def getAverageSpeechLengthOfCorpus(self):
+		lengths = []
+		for corpusSpeech in self._speechesCorpus:
+			lengths.append(corpusSpeech._speech._lengthInWords)
+		average = (float(sum(lengths)))/(float(len(lengths)))
+		return average
+
+	def getRandomSpeeches(self):
+		randomNumber = random.randint(0, (len(self._filteredSpeechesCorpus)-1))
+		testCorpusSpeech = self._filteredSpeechesCorpus[randomNumber]
+		text = self.generateSpeechText(testCorpusSpeech)
+		print text
+
+	def createTxtOutputForCorpus(self, path, corpusSpeeches):
+		outputFile = open(path, "w")
+		text = ""
+		i = 0
+		for corpusSpeech in corpusSpeeches:
+			text = text + self.generateSpeechText(corpusSpeech)
+			text = text + "--------------------\n"
+			if(i == 99):
+				text = text + "###\n"
+			i = i + 1
+		outputFile.write(text)
+		outputFile.close()
 
 	def readAndInitTestCorpusFromPickle(self,path):
 		self._testCorpusSpeeches = pickle.load(open(path, "rb"))
@@ -88,9 +216,15 @@ class Test_Corpus_Creator:
 
 	def generateSpeechText(self, testCorpusSpeech):
 		text = testCorpusSpeech._dramaTitle + " " + testCorpusSpeech._positionInfo + "\n"
-		previousSpeech = testCorpusSpeech._previousSpeech._speaker + ":\n" + testCorpusSpeech._previousSpeech._text.strip() + "\n"
+		if(testCorpusSpeech._previousSpeech is not None):
+			previousSpeech = testCorpusSpeech._previousSpeech._speaker + ":\n" + testCorpusSpeech._previousSpeech._text.strip() + "\n"
+		else:
+			previousSpeech = "Keine direkte VorgÄnger-Replik vorhanden. - Anfang der Szene.\n".upper()
 		currentSpeech = testCorpusSpeech._speech._speaker + ":\n" + testCorpusSpeech._speech._text.strip() + "\n"
-		nextSpeech = testCorpusSpeech._nextSpeech._speaker + ":\n" + testCorpusSpeech._nextSpeech._text.strip() + "\n"
+		if(testCorpusSpeech._nextSpeech is not None):
+			nextSpeech = testCorpusSpeech._nextSpeech._speaker + ":\n" + testCorpusSpeech._nextSpeech._text.strip() + "\n"
+		else:
+			nextSpeech = "Keine direkte Nachfolge-Replik vorhanden. - Ende der Szene.\n".upper()
 		text = text + previousSpeech + currentSpeech + nextSpeech
 		return text
 
@@ -166,12 +300,6 @@ class Test_Corpus_Creator:
 			print (float(float(len(speechesPerDrama[1]))/8171)*100)
 			print ((float(float(len(speechesPerDrama[1]))/8171)*100))
 
-	def getAverageSpeechLengthOfCorpus(self):
-		lengths = []
-		for corpusSpeech in self._speechesCorpus:
-			lengths.append(corpusSpeech._speech._lengthInWords)
-		average = (float(sum(lengths)))/(float(len(lengths)))
-		return average
 	
 	def printInfoOfFilteredSingleDramas(self):
 		print(len(self._filteredSpeechesCorpus))
