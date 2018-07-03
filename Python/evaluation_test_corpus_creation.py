@@ -14,6 +14,7 @@ from sa_sentiment_analysis import *
 import numpy as np
 
 def main():
+	# Eine Test-Änderung
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	tcc = Test_Corpus_Creator()
