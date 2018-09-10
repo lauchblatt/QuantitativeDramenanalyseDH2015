@@ -13,6 +13,7 @@ from drama_parser import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+	print ("hello world")
 
 # Class to implement treetagger lemmatization
 # implements also stopword-lists
