@@ -16,6 +16,8 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
+	sa = Sentiment_Analyzer(False, "textblob" , "noLemma", "None", False)
+
 # Main-Class to perform Sentiment Analysis
 class Sentiment_Analyzer:
 
