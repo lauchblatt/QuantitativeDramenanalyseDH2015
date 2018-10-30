@@ -16,7 +16,24 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	sa = Sentiment_Analyzer(False, "textblob" , "noLemma", "None", False)
+	processor = Drama_Pre_Processing("treetagger")
+	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
+	sa = Sentiment_Analyzer(True, "treetagger" , "textLemma", None, False)
+	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
+
+	for act in sentimentExtendedDramaModel._acts:
+		for conf in act._configurations:
+			for speech in conf._speeches:
+				metric = speech._sentimentMetrics._metricsTotal["polaritySentiWS"]
+				#"""
+				if (metric == 0):
+					print 2
+				elif (metric > 0):
+					print 3
+				elif (metric < 0):
+					print 1
+				#"""
+				#print str(speech._sentimentMetrics._metricsTotal["polaritySentiWS"]).replace(".", ",")
 
 # Main-Class to perform Sentiment Analysis
 class Sentiment_Analyzer:
@@ -80,23 +97,23 @@ class Sentiment_Analyzer:
 		for act in dramaModel._acts:
 			for conf in act._configurations:
 				for speech in conf._speeches:
-					print("Speech")
+					#print("Speech")
 					self.attachSentimentMetricsToUnit(speech)
 					#speech._sentimentMetrics.printAllInfo(speech._lengthInWords)
-				print("Conf")
+				#print("Conf")
 				self.attachSentimentMetricsToUnit(conf)
 				#conf._sentimentMetrics.printAllInfo(conf._lengthInWords)
-			print("Act")
+			#print("Act")
 			self.attachSentimentMetricsToUnit(act)
 			#act._sentimentMetrics.printAllInfo(act._lengthInWords)
-		print("Drama")
+		#print("Drama")
 		self.attachSentimentMetricsToUnit(dramaModel)
 		#dramaModel._sentimentMetrics.printAllInfo(dramaModel._lengthInWords)
 
 	def attachSentimentMetricsToSpeaker(self, dramaModel):
 		for speaker in dramaModel._speakers:
 			self.attachSentimentMetricsToUnit(speaker)
-			print("Speaker")
+			#print("Speaker")
 			#speaker._sentimentMetrics.printAllInfo(speaker._lengthInWords)
 		for act in dramaModel._acts:
 			for name in act._actSpeakers:
