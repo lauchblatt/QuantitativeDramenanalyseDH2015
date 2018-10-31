@@ -4,86 +4,59 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Contact</title>	
+		<title>Katharsis - Kontakt</title>	
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link href="css/sentiment-analysis.css" rel="stylesheet">
 
 	</head>
 	<body>
-		<<div id="maincontent">
+
+		<div id="maincontent">
 			<div class="container overhead">
 				<div class="" id="header">
 						<div id="logo-wrapper">
 							<a href="./index.html" ><img id="logo" src="./img/logo.png" title="Katharsis"></img></a>
 						</div>
 						<div id="header-wrapper">
-							<h1 id="dramaTitle" class="page-header">Katharsis - Quantitative Dramenanalyse</h1>
-							<h2 id="dramaAuthor">Contact and further Information</h2>
+							<h1 id="dramaTitle" class="page-header">Katharsis - Sentiment Analysis</h1>
+							<h2 id="dramaAuthor">Contact and further information</h2>
 						</div>
 				</div>
 			
-			<div class="container">
-				<nav class="navbar navbar-default">
+
+			<nav class="navbar navbar-default">
 					  <div class="container-fluid">
 
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav">
 
-					      	<li><a class="links" href="index.html">Suche <span class="sr-only">(current)</span></a></li>
+					      	<li class=""><a id="link-overall" href="sa_selection.html" class="links">Auswahl<span class="sr-only">(current)</span></a></li>
 
-					      	<li><a id="link-overall" class="links" href="drama.html">Übersicht <span class="sr-only">(current)</span></a></li>
-
-					      	<li><a href="#" id="link-matrix" class="links">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
+					      	<li><a href="sa_dramaActScenes.html" id="link-matrix" class="links">Drama-Akt-Szenen-Repliken-Analyse<span class="sr-only">(current)</span></a></li>
 
 					        <li class="dropdown">
-					          <a href="" id="link-drama" role="button" class="links" aria-expanded="false">
-					          	Drama-Akt-Szenen-Analyse<span class="caret"></span></a>
-					          <ul class="dropdown-menu" role="menu">
-					            <li><a href="#" id="link-drama-actSceneAnalysis">Akt-Szenen-Tabelle</a></li>
-					            <li class="divider"></li>
-					            <li><a href="#" id="link-drama-actStatistic">Balkendiagramm - Akt-Statistik</a></li>
-					            <li class="divider"></li>
-					            <li><a href="#" id="link-drama-sceneStatistic">Balkendiagramm - Szenen-Statistik</a></li>
-					          </ul>
+					          <a id="sa_speakers" class="links" href="sa_speakers.html">
+					          	Sprecher-Analyse<span class="sr-only">(current)</span></span></a>
 					        </li>
 
 					        <li class="dropdown">
-					          <a id="link-speakers" class="links" href="#" role="button" aria-expanded="false">
-					          	Sprecher-Analyse<span class="caret"></span></a>
-					          <ul class="dropdown-menu" role="menu">
-					            <li><a href="#" id="link-speaker-table">Sprecher-Tabelle</a></li>
-					            <li class="divider"></li>
-					            <li><a href="#" id="link-speeches-dominance">Kreisdiagramm - Replikendominanz</a></li>
-					            <li class="divider"></li>
-					            <li><a href="#" id="link-speaker-statistic">Balkendiagramm - Sprecher-Statistik</a></li>
-					            <li class="divider"></li>
-					            <li><a href="#" id="link-speaker-relations">Sprecher-Relationen</a></li>
-					          </ul>
+					          <a href="sa_relations.html" id="link-speeches" class="links">
+					          	Sprecher-Beziehungen<span class="sr-only">(current)</span></span></a>
 					        </li>
-
-					        <li class="dropdown">
-					          <a href="#" id="link-speeches" class="links" role="button" aria-expanded="false">
-					          	Replikenverteilung<span class="caret"></span></a>
-					          <ul class="dropdown-menu" role="menu">
-					            <li><a href="#" id="link-histogram">Replikenverteilung - Histogramm</a></li>
-					            <li class="divider" ></li>
-					            <li><a href="#" id="link-curve-diagram">Replikenverteilung - Kurvendiagramm</a></li>
-					          </ul>
-					        </li>
-
 					        <li class="superactive">
-					          <a href="contact.html" class="links">
+					          <a href="contact.html" id="link-speeches" class="links">
 					          	Contact<span class="sr-only">(current)</span></span></a>
 					        </li>
-					        <li><a class="links" href="sa_selection.html">Zur Sentiment Analysis <span class="sr-only">(current)</span></a></li>
+					        <li><a class="links" href="index.html">Zur quantitativen Dramenanalyse <span class="sr-only">(current)</span></a></li>
 
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 				</nav>
+			</div>
 
-			<div class="container">
+						<div class="container">
 				<h1> Contact and further information </h1>
 <div>
 	Katharsis is a prototype for the quantitative analysis of historic German plays with a sentiment analysis compenent specifically for Lessing's plays. Katharsis is a pre-release version. The tool is currently under development and is constantly changing functionality and design.
@@ -129,13 +102,7 @@
 	Schmidt, T., Burghardt, M. & Dennerlein, K. (2018). „Kann man denn auch nicht lachend sehr ernsthaft sein?“ – Zum Einsatz von Sentiment Analyse-Verfahren für die quantitative Untersuchung von Lessings Dramen. In <em>Book of Abstracts, DHd 2018.</em> Retrieved from <a href="https://epub.uni-regensburg.de/37579/1/Self-Archiving-Version_DHd-2018.pdf">https://epub.uni-regensburg.de/37579/1/Self-Archiving-Version_DHd-2018.pdf</a>
 
 </div>
-
-			</div>
-		</div> <!-- maincontent -->
-
-		<script src="js/libs/jquery-1.11.2.js"></script>
-		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		</div><!-- maincontent -->
 
 		<script src="js/libs/jquery-1.11.2.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
@@ -143,6 +110,5 @@
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 		<script type="text/javascript" src="js/Globals/global.js"></script>
-
 	</body>
 </html>
