@@ -6,6 +6,11 @@ from drama_output import *
 import sys
 import codecs
 import nltk
+from nltk.stem.porter import PorterStemmer
+from nltk.tokenize import sent_tokenize
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from nltk import pos_tag
 
 def main():
     
@@ -13,7 +18,38 @@ def main():
     sys.setdefaultencoding('utf8')
 
     debug = True
+    text = ("I saw the dog carrying some sausages.")
+    
+    tokens = word_tokenize(text)
+    lemmatizer = WordNetLemmatizer()
+    print tokens
+    lemmas = []
+    lemmas.append(lemmatizer.lemmatize("I", pos="n"))
+    lemmas.append(lemmatizer.lemmatize("saw", pos="v"))
+    lemmas.append(lemmatizer.lemmatize("the", pos="n"))
+    lemmas.append(lemmatizer.lemmatize("dog", pos="n"))
+    lemmas.append(lemmatizer.lemmatize("carrying", pos="v"))
+    lemmas.append(lemmatizer.lemmatize("some", pos="a"))
+    lemmas.append(lemmatizer.lemmatize("sausages", pos="n"))
+    
+    print lemmas
 
+    #tags = pos_tag(tokens)
+    #print tags
+    #pos = []
+    #for token in tokens:
+       # posTag = pos_tag(token)
+        #print posTag
+    #print (" ".join(lemmas))
+    """
+    stems = []
+    porter_stemmer = PorterStemmer()
+    for token in tokens:
+        stem = porter_stemmer.stem(token)
+        stems.append(stem)
+    print(" ".join(stems))
+    """
+    """
     for filename in os.listdir("Korpus"):
         parser = DramaParser()
         dramaModel = parser.parse_xml("Korpus/" + filename)
@@ -40,7 +76,6 @@ def main():
            # print "false"
     # used to generate one JSON file
     
-    """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
     output = DramaOutput()

@@ -13,7 +13,10 @@ from drama_parser import *
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
-	print ("hello world")
+	tt = Tree_Tagger()
+	text = "Ich ging gestern Blumen pflücken."
+	tt.processText(text)
+	print tt._tokens
 
 # Class to implement treetagger lemmatization
 # implements also stopword-lists
@@ -168,7 +171,7 @@ class Tree_Tagger:
 			if(not tag[1].startswith("$") or tag[1] == "SEN"):
 				newTags.append(tag)
 				
-		return newTags
+		return tags
 	
 	# filter method for words that disturb lemmatization process
 	def filterText(self, text):

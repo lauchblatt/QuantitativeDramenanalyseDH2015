@@ -13,6 +13,11 @@ from collections import defaultdict
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+
+	tt = Text_Blob()
+	text = "Ich habe zu früh Tag gemacht. – Der Morgen ist so schön. Ich will ausfahren. Marchese Marinelli soll mich begleiten. Laßt ihn rufen."
+	tt.processText(text)
+	print(tt._lemmas)
 	
 # Class to implement text-blob and pattern lemmatization
 # implements also stopword-lists
