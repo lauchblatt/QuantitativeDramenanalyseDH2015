@@ -234,6 +234,8 @@ class ConfigurationModel:
         self._subsequentNumber = -1
         self._confSpeakers = {}
 
+        self._stageDirections = []
+
 
     # calculates speech statistics for configuration
     def calc_speeches_statistics(self):
@@ -248,6 +250,19 @@ class ConfigurationModel:
             self._speechesLength_max = custom_max(speeches_lengths)
             self._speechesLength_min = custom_min(speeches_lengths)
             self._speechesLength_med = median(speeches_lengths)
+
+# model for stageDirections
+class StageDirection:
+
+    def __init__ (self):
+        self._length = None
+        self._lengthInWords = 0
+        self._text = None
+        self._textAsLanguageInfo = []
+
+        self._numberInAct = -1
+        self._numberInConf = -1
+        sefl._subsequentNumber = 0
 
 
 # model for speech

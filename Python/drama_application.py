@@ -11,6 +11,13 @@ from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk import pos_tag
+from drama_parser import *
+from drama_models import *
+from lp_language_processor import *
+from sa_sentiment_analysis import *
+import pickle
+from sa_pre_processing import *
+from lp_treetagger import *
 
 def main():
     
@@ -18,42 +25,61 @@ def main():
     sys.setdefaultencoding('utf8')
 
     debug = True
-    text = ("I saw the dog carrying some sausages.")
-    
-    tokens = word_tokenize(text)
-    lemmatizer = WordNetLemmatizer()
-    print tokens
-    lemmas = []
-    lemmas.append(lemmatizer.lemmatize("I", pos="n"))
-    lemmas.append(lemmatizer.lemmatize("saw", pos="v"))
-    lemmas.append(lemmatizer.lemmatize("the", pos="n"))
-    lemmas.append(lemmatizer.lemmatize("dog", pos="n"))
-    lemmas.append(lemmatizer.lemmatize("carrying", pos="v"))
-    lemmas.append(lemmatizer.lemmatize("some", pos="a"))
-    lemmas.append(lemmatizer.lemmatize("sausages", pos="n"))
-    
-    print lemmas
+    for filename in os.listdir("Dumps/ProcessedDramas/treetagger/"):
+        dpp = Drama_Pre_Processing("treetagger")
+        dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/" + filename)
+        print dramaModel._title
+        newFilename = filename.replace(".p", ".txt")
+        outputPath = ("../Lessing-Dramen-lemmatized-noStopwords/" + newFilename)
+        file = open(outputPath, 'w')
+        treetagger = Tree_Tagger()
+        treetagger.initStopWords("standardList")
+        #"""
+        for act in dramaModel._acts:
+            for conf in act._configurations:
+                for speech in conf._speeches:
+                    #file.write(speech._textAsLanguageInfo.strip() + "\n")
+                    lemmatizedSpeech = ""
+                    for li in speech._textAsLanguageInfo:
+                        if((li[0] in treetagger._stopwords) or (li[0] in treetagger._stopwords_lemmatized)):
+                            pass
+                        else:
+                            lemmatizedSpeech = lemmatizedSpeech + li[0] + " "
+                    lemmatizedSpeech = lemmatizedSpeech.strip()
+                    file.write(lemmatizedSpeech + "\n")
 
-    #tags = pos_tag(tokens)
-    #print tags
-    #pos = []
-    #for token in tokens:
-       # posTag = pos_tag(token)
-        #print posTag
-    #print (" ".join(lemmas))
-    """
-    stems = []
-    porter_stemmer = PorterStemmer()
-    for token in tokens:
-        stem = porter_stemmer.stem(token)
-        stems.append(stem)
-    print(" ".join(stems))
-    """
+        #"""
+        file.close()
+    
     """
     for filename in os.listdir("Korpus"):
         parser = DramaParser()
         dramaModel = parser.parse_xml("Korpus/" + filename)
-        #print filename
+
+        for act in dramaModel._acts:
+            for conf in act._configurations:
+                speakerCount = len(conf._appearing_speakers)
+                if (speakerCount < 2):
+                    lineParts = []
+                    lineParts.append(dramaModel._title)
+                    lineParts.append(dramaModel._type)
+                    lineParts.append(dramaModel._author)
+                    lineParts.append(str(act._number))
+                    lineParts.append(str(conf._number))
+                    lineParts.append(str(len(conf._appearing_speakers)))
+                    if(speakerCount == 1):
+                        lineParts.append(conf._appearing_speakers[0])
+                    else:
+                        lineParts.append("Not identified")
+                    text = ""
+                    for speech in conf._speeches:
+                        text = text + " " + speech._text.strip().replace("\n", "")
+                    lineParts.append(text)
+                    line = "\t".join(lineParts)
+                    print line
+
+
+         Method to get proportion of last scene
         numberOfAllSpeaker = float(len(dramaModel._speakers))
         acts = dramaModel._acts
         lastAct = acts[len(dramaModel._acts)-1]
@@ -68,14 +94,10 @@ def main():
         line.append(str(proportion).replace(".", ","))
         printLine = "\t".join(line)
         print printLine
-        #print proportion
-        #if (proportion == 1.0):
-            #print dramaModel._title + " von " + dramaModel._author
-            #print "true"
-        #else:
-           # print "false"
-    # used to generate one JSON file
-    
+
+
+    """
+    """
     parser = DramaParser()
     dramaModel = parser.parse_xml("../Lessing-Dramen/-Der_junge_Gelehrte.xml")
     output = DramaOutput()

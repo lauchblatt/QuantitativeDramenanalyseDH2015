@@ -228,6 +228,9 @@ class DramaParser:
 
         return speech_data
 
+    def get_stage_text(self, sub_sp_wrapper):
+        print ("no Idea")
+
     # calculates length of speech
     def get_speech_text(self, sub_sp_wrapper):
         speechText = ""
