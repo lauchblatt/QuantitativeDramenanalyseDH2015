@@ -203,6 +203,7 @@ Speeches.SpeechesLineView = function(){
     $("#link-speeches").attr("href", "speeches.html?drama_id=" + currentDrama_id);
     $("#link-histogram").attr("href", "speeches.html?drama_id=" + currentDrama_id + "#histogram");
     $("#link-curve-diagram").attr("href", "speeches.html?drama_id=" + currentDrama_id + "#curve-diagram");
+    $("#link-contact").attr("href", "contact.html?drama_id=" + currentDrama_id);
   };
 
 	that.renderRelative = renderRelative;

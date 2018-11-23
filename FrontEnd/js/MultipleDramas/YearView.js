@@ -319,7 +319,7 @@ MultipleDramas.YearView = function(){
 
 	//create Tooltip for single drama
 	var createTooltip = function(drama){
-		var divBegin = "<div class='tooltip-test'>"
+		var divBegin = "<div class='tooltip-test'>";
 		var headline = "<div>" + "'" + drama.title + "'" + " by <em>" + getLastName(drama.author) + "</em></div>";
 		var year = "<div>" + "<b>Year: </b>" + drama.year + "</div>";
 		var data = "<div>" + "<b>" + yearSelection + ": </b>" + drama[yearAttribute] + "</div>";

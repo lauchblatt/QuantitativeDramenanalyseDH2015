@@ -1,6 +1,4 @@
-Drama.DramaView = function(){
-	var that = {};
-	var currentDrama_id = 0;
+var currentDrama_id = 0;
 
 	var init = function(){
 		initId();
@@ -40,22 +38,4 @@ Drama.DramaView = function(){
 		$("#to_speechAnalysis").attr("href", "speeches.html?drama_id=" + currentDrama_id);
 	};
 
-	var renderView = function(dramaInfo){
-		$("#dramaTitle").text(dramaInfo.title + " (" + dramaInfo.year + ")");
-		$("#dramaAuthor").text(dramaInfo.author);
-		$(".container").fadeIn("slow");
-		$("#loading").css("display", "none");
-		$("#maincontent").fadeIn();;
-		resizeOverviewBoxes();
-	};
-
-	var resizeOverviewBoxes = function(){
-		$("#to_dramaAnalysis .box").height($("#to_matrix .box").height());
-		$("#to_speechAnalysis .box").height($("#to_speakerAnalysis .box").height());
-	};
-
-	that.renderView = renderView;
-	that.init = init;
-
-	return that;
-};
+init();
