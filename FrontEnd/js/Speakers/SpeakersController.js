@@ -28,7 +28,7 @@ Speakers.SpeakersController = function(){
 	var initGoogleCharts = function(){
 		// Load the Visualization API and the piechart package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 
-      		'packages':['corechart', 'controls']})}, 0);
+      		'packages':['corechart', 'controls'], 'language': 'en'})}, 0);
 	};
 
 	var doNothing = function(){

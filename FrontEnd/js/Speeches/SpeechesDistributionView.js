@@ -4,8 +4,8 @@ Speeches.SpeechesDistributionView = function(){
 	var render = function(scenesInfo){
 
 		var data = new google.visualization.DataTable();
-		data.addColumn("string", "Replik");
-		data.addColumn("number", 'Replikenlänge in Worten');
+		data.addColumn("string", "Speech");
+		data.addColumn("number", 'Speech length in number of words');
 		var array = [];
 		var iterator = 0;
 		for(act = 0; act < scenesInfo.length; act++){
@@ -33,13 +33,13 @@ Speeches.SpeechesDistributionView = function(){
           	position: 'none'
           },
           hAxis : {
-          	title: 'Replikenlänge'
+          	title: 'Speech length'
           },
           vAxis: {
-          	title: 'Absolute Häufigkeit'
+          	title: 'Absolute frequency'
           },
 		  chartArea:{width:'75%',height:'80%'},
-          title: 'Histogramm - Häufigkeitsverteilung der Replikenlängen'
+          title: 'Histogram - Distribution of speech lengths'
         };
 
         var dashboard = new google.visualization.Dashboard(
@@ -49,7 +49,7 @@ Speeches.SpeechesDistributionView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'distribution-controls',
           'options': {
-            'filterColumnLabel': 'Replikenlänge in Worten'
+            'filterColumnLabel': 'Speech length in number of words'
           }
         });
 
@@ -73,8 +73,8 @@ Speeches.SpeechesDistributionView = function(){
 	};
 
 	var getSpeechInfo = function(actNumber, sceneNumber, speechNumber, speech){
-		var info = "Sprecher: " + speech.speaker + ", " + (actNumber + 1) + ". Akt, " + (sceneNumber + 1) + ". Szene, " 
-		+ (speechNumber + 1) + ". Replik";
+		var info = "Speaker: " + speech.speaker + ", " + (actNumber + 1) + ". Act, " + (sceneNumber + 1) + ". Scene, " 
+		+ (speechNumber + 1) + ". Speech";
 		return info;
 	};
 

@@ -25,13 +25,13 @@ MultipleDramas.YearView = function(){
 
 	var renderScatterChart = function(dramas, authors){
 		//Call Method according to choice
-		if(compareSelection == 'Kein Vergleich'){
+		if(compareSelection == 'No comparison'){
 			renderScatterChartNormal(dramas);
 		}
-		if(compareSelection == 'Typ'){
+		if(compareSelection == 'Genre'){
 			renderScatterChartType(dramas);
 		}
-		if(compareSelection == 'Autor'){
+		if(compareSelection == 'Author'){
 			renderScatterChartAuthor(dramas, authors);
 		}
 	};
@@ -39,7 +39,7 @@ MultipleDramas.YearView = function(){
 	//Render Scatter Chart with no Selection
 	var renderScatterChartNormal = function(dramas){
 		var data = new google.visualization.DataTable();
-		data.addColumn("number", "Jahr");
+		data.addColumn("number", "Year");
 		data.addColumn("number", yearSelection);
 		//Add custom tooltip for Graph
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
@@ -53,7 +53,7 @@ MultipleDramas.YearView = function(){
 		data.addRows(array);
 
 		var options = {
-          title: 'Epochenverlauf',
+          title: 'Temporal progression',
           height: 700,
           width: 1170,
           explorer: {},
@@ -75,14 +75,14 @@ MultipleDramas.YearView = function(){
 				        }
         };
         var optionsSlider = {
-        	filterColumnLabel: 'Jahr',
+        	filterColumnLabel: 'Year',
         	ui: {
         		chartType: 'ScatterChart',
         		chartOptions: {
         			height: 100,
         			width: 1170,
         			chartArea:{width:'75%',height:'80%'},
-        			hAxis: {title: 'Jahr', format: ' '}
+        			hAxis: {title: 'Year', format: ' '}
         		}
         	}
         };
@@ -127,7 +127,7 @@ MultipleDramas.YearView = function(){
 	var renderScatterChartAuthor = function(dramas, authors){
 		var data = new google.visualization.DataTable();
 		var trendlineObj = {};
-		data.addColumn("number", "Jahr");
+		data.addColumn("number", "Year");
 		for(var i = 0; i < authors.length; i++){
 			//Init Colums for every author and the tooltips
 			data.addColumn("number", getLastNameAndFirstInitial(authors[i].name));
@@ -163,7 +163,7 @@ MultipleDramas.YearView = function(){
 		data.addRows(array);
 
 		var options = {
-          title: 'Epochenverlauf',
+          title: 'Temporal progression',
           height: 700,
           width: 1170,
           explorer: {},
@@ -217,12 +217,12 @@ MultipleDramas.YearView = function(){
 	var renderScatterChartType = function(dramas){
 		var data = new google.visualization.DataTable();
 		//Add Columns for every category
-		data.addColumn("number", "Jahr");
-		data.addColumn("number", 'Komoedie');
+		data.addColumn("number", "Year");
+		data.addColumn("number", 'Comedy');
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 		data.addColumn("number", 'Schauspiel');
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
-		data.addColumn("number", 'Trauerspiel');
+		data.addColumn("number", 'Tragedy');
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 
 		var array = [];
@@ -266,12 +266,12 @@ MultipleDramas.YearView = function(){
 		data.addRows(array);
 
 		var options = {
-          title: 'Epochenverlauf',
+          title: 'Temporal progression',
           height: 700,
           width: 1170,
           explorer: {},
           tooltip: { isHtml: true },
-          hAxis: {title: 'Jahr', format: ' '},
+          hAxis: {title: 'Year', format: ' '},
           vAxis: {title: yearSelection},
           chartArea:{width:'75%',height:'80%'},
           colors: ['blue','red', 'green'],
@@ -279,7 +279,7 @@ MultipleDramas.YearView = function(){
         };
 
         var optionsSlider = {
-        	filterColumnLabel: 'Jahr',
+        	filterColumnLabel: 'Year',
         	ui: {
         		chartType: 'ScatterChart',
         		chartOptions: {
@@ -287,7 +287,7 @@ MultipleDramas.YearView = function(){
         			width: 1170,
         			colors: ['blue', 'red', 'green'],
         			chartArea:{width:'75%',height:'80%'},
-        			hAxis: {title: 'Jahr', format: ' '}
+        			hAxis: {title: 'Year', format: ' '}
         		}
         	}
         }
@@ -320,7 +320,7 @@ MultipleDramas.YearView = function(){
 	//create Tooltip for single drama
 	var createTooltip = function(drama){
 		var divBegin = "<div class='tooltip-test'>"
-		var headline = "<div>" + "'" + drama.title + "'" + " von <em>" + getLastName(drama.author) + "</em></div>";
+		var headline = "<div>" + "'" + drama.title + "'" + " by <em>" + getLastName(drama.author) + "</em></div>";
 		var year = "<div>" + "<b>Jahr: </b>" + drama.year + "</div>";
 		var data = "<div>" + "<b>" + yearSelection + ": </b>" + drama[yearAttribute] + "</div>";
 		var divEnd = "</div>";
@@ -331,14 +331,14 @@ MultipleDramas.YearView = function(){
 	var setYearSelection = function(){
 		yearSelection = $("#selection-year").val();
 
-		if(yearSelection == "Szenenanzahl"){yearAttribute = "number_of_scenes"};
-		if(yearSelection == "Replikenanzahl"){yearAttribute = "number_of_speeches_in_drama";}
-		if(yearSelection == "Sprecheranzahl"){yearAttribute = "speaker_count"};
-		if(yearSelection == "Konfigurationsdichte"){yearAttribute = "configuration_density";}
-		if(yearSelection == "Durchschnittliche Replikenlänge"){yearAttribute = "average_length_of_speeches_in_drama";}
-		if(yearSelection == "Median Replikenlänge"){yearAttribute = "median_length_of_speeches_in_drama";}
-		if(yearSelection == "Maximum Replikenlänge"){yearAttribute = "maximum_length_of_speeches_in_drama";}
-		if(yearSelection == "Minimum Replikenlänge"){yearAttribute = "minimum_length_of_speeches_in_drama";}
+		if(yearSelection == "Number of scenes"){yearAttribute = "number_of_scenes"};
+		if(yearSelection == "Number of speeches"){yearAttribute = "number_of_speeches_in_drama";}
+		if(yearSelection == "Number of speakers"){yearAttribute = "speaker_count"};
+		if(yearSelection == "Configuration density"){yearAttribute = "configuration_density";}
+		if(yearSelection == "Average length of speeches"){yearAttribute = "average_length_of_speeches_in_drama";}
+		if(yearSelection == "Median length of speeches"){yearAttribute = "median_length_of_speeches_in_drama";}
+		if(yearSelection == "Maximum length of speeches"){yearAttribute = "maximum_length_of_speeches_in_drama";}
+		if(yearSelection == "Minimum length of speeches"){yearAttribute = "minimum_length_of_speeches_in_drama";}
 		
 	};
 

@@ -21,31 +21,31 @@ MultipleDramas.LineCurveView = function(){
   //Main Method to render Curve, different methods are evoked acoording to selection
   var renderCurve = function(distribution, catDistribution, authorDistribution){
     //Render Curve according to selection
-    if(compareSelection == 'Kein Vergleich'){
-      if(speechDistributionSelection == "Absolut"){
-        renderCurveNormal(distribution, "Absolute Häufigkeit", "absolut");
+    if(compareSelection == 'No comparison'){
+      if(speechDistributionSelection == "Absolute"){
+        renderCurveNormal(distribution, "Absolute frequency", "absolute");
       }
-      if(speechDistributionSelection == "Relativ"){
+      if(speechDistributionSelection == "Relative"){
         var distributionInPercent = distributionToPercent(distribution);
-        renderCurveNormal(distributionInPercent, "Relative Häufigkeit in Prozent", "in Prozent");
+        renderCurveNormal(distributionInPercent, "Relative frequency in percent", "in percent");
       }
     }
-    if(compareSelection == 'Typ'){
-      if(speechDistributionSelection == "Absolut"){
-        renderTypeCurve(catDistribution, "Absolute Häufigkeit");
+    if(compareSelection == 'Genre'){
+      if(speechDistributionSelection == "Absolute"){
+        renderTypeCurve(catDistribution, "Absolute frequency");
       }
-      if(speechDistributionSelection == "Relativ"){
+      if(speechDistributionSelection == "Relative"){
         var catDisInPercent = distributionToPercent(catDistribution);
-        renderTypeCurve(catDisInPercent, "Relative Häufigkeit in Prozent");
+        renderTypeCurve(catDisInPercent, "Relative frequency in percent");
       }    
     }
-    if(compareSelection == 'Autor'){
-      if(speechDistributionSelection == "Absolut"){
-        renderTypeCurve(authorDistribution, "Absolute Häufigkeit");
+    if(compareSelection == 'Author'){
+      if(speechDistributionSelection == "Absolute"){
+        renderTypeCurve(authorDistribution, "Absolute frequency");
       }
       if(speechDistributionSelection == "Relativ"){
         var authorDisInPercent = distributionToPercent(authorDistribution);
-        renderTypeCurve(authorDisInPercent, "Relative Häufigkeit in Prozent");
+        renderTypeCurve(authorDisInPercent, "Relative frequency in percent");
       }  
     }
   };
@@ -77,8 +77,8 @@ MultipleDramas.LineCurveView = function(){
   //Render a normal curve for the distribution with no type or author comparison
 	var renderCurveNormal = function(distribution, frequencyType, toolExtension){
 		var data = new google.visualization.DataTable();
-		data.addColumn("number", "Replikenlänge in Worten");
-		data.addColumn("number", 'Replikenhäufigkeit ' + toolExtension);
+		data.addColumn("number", "Speech length in words");
+		data.addColumn("number", 'Frequency of speeches ' + toolExtension);
 		var array = [];
 		for(var key in distribution){
 			var row = [parseInt(key), distribution[key]];
@@ -93,13 +93,13 @@ MultipleDramas.LineCurveView = function(){
 		  	duration: 1000
 		  },
 		  chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängenverteilung, ' + frequencyType,
+          title: 'Distribution of speech lengths, ' + frequencyType,
           curveType: 'function',
           legend: {
           	position: 'none'
           },
           hAxis : {
-          	title: 'Replikenlänge in Worten'
+          	title: 'Speech length in words'
           },
           vAxis: {
           	title: frequencyType,
@@ -114,7 +114,7 @@ MultipleDramas.LineCurveView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls',
           'options': {
-            'filterColumnLabel': 'Replikenlänge in Worten'
+            'filterColumnLabel': 'Speech length in words'
           }
         });
 
@@ -135,19 +135,32 @@ MultipleDramas.LineCurveView = function(){
         dashboard.draw(data);
 	};
 
+  var translateGenre = function(genre){
+    switch(genre) {
+      case 'Komoedie':
+        return "Comedy";
+        break;
+      case 'Trauerspiel':
+        return 'Tragedy';
+        break;
+      default:
+        return genre
+    }
+  };
+
   //Render a Curve when type or author-selection is chosen
   var renderTypeCurve = function(typeDistribution, frequencyType){
 
     var data = new google.visualization.DataTable();
 
-    data.addColumn("number", "Replikenlänge in Worten");
+    data.addColumn("number", "Speech length in words");
     for(var i = 0; i < typeDistribution.length; i++){
       //check if type is author or category and adjust the data accordingly
       if(typeDistribution[i].type !== undefined){
-        data.addColumn("number", typeDistribution[i].type);
+        data.addColumn("number", translateGenre(typeDistribution[i].type));
       }
       if(typeDistribution[i].name !== undefined){
-        data.addColumn("number", typeDistribution[i].name)
+        data.addColumn("number", translateGenre(typeDistribution[i].name));
       }
     }
 
@@ -182,10 +195,10 @@ MultipleDramas.LineCurveView = function(){
         duration: 1000
       },
       chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängen, ' + frequencyType,
+          title: 'Speech length, ' + frequencyType,
           curveType: 'function',
           hAxis : {
-            title: 'Replikenlänge in Worten'
+            title: 'Speech length in words'
           },
           vAxis: {
             title: frequencyType,
@@ -200,7 +213,7 @@ MultipleDramas.LineCurveView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls',
           'options': {
-            'filterColumnLabel': 'Replikenlänge in Worten'
+            'filterColumnLabel': 'Speech length in words'
           }
         });
 

@@ -81,7 +81,7 @@ Search.DramaListView = function(){
 		row.append(($("<td>")).text(drama.author));
 
 		if(drama.type !== undefined){
-			row.append(($("<td>")).text(drama.type));
+			row.append(($("<td>")).text(translateGenre(drama.type)));
 		}else{
 			row.append(($("<td>")).text("Unbekannt"));
 		}
@@ -112,6 +112,19 @@ Search.DramaListView = function(){
 		row.on("click", dramaClicked);
 
 		return row;
+	};
+
+	var translateGenre = function(genre){
+		switch(genre) {
+			case 'Komoedie':
+				return "Comedy";
+				break;
+			case 'Trauerspiel':
+				return 'Tragedy';
+				break;
+			default:
+				return genre
+		}
 	};
 
 	var downloadJSON = function(event){

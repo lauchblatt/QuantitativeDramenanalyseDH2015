@@ -28,15 +28,15 @@ SingleDrama.BarChartDramaView = function(){
 
 	var drawChartAct = function(actInfo){
 		//Not important anymore
-		if(actSelection == "Replikenlänge"){
+		if(actSelection == "Speech length"){
 			drawSpeechesChartAct(actInfo);
 			return;
 		}
         var data = new google.visualization.DataTable();
-        data.addColumn('number', 'Akte');
+        data.addColumn('number', 'Acts');
         //Adjust legend according to chosen selection
-        if(actSelection == "Szenen" || actSelection == "Sprecher" || actSelection == "Replikenlänge"){
-        	data.addColumn('number', 'Zahl der ' + actSelection);
+        if(actSelection == "Scenes" || actSelection == "Speakers" || actSelection == "Speech length"){
+        	data.addColumn('number', 'Number of ' + actSelection);
         }else{
         	data.addColumn('number', actSelection);
         }
@@ -62,7 +62,7 @@ SingleDrama.BarChartDramaView = function(){
         }
 
         data.addRows(array);
-        var options = {title:'Akt-Statistik',
+        var options = {title:'Act statistics',
         			   height: 600,
         			   width: 1130,
         			   chartArea:{width:'70%',height:'75%'},
@@ -78,7 +78,7 @@ SingleDrama.BarChartDramaView = function(){
 				          }
 				        },
 				        hAxis: {
-        			   	title: 'Akte'
+        			   	title: 'Acts'
         			   },
         			   vAxis: {
         			   	title: actSelection,
@@ -106,13 +106,13 @@ SingleDrama.BarChartDramaView = function(){
 	var setActSelection = function(){
 		actSelection = $("#selection-act").val();
 
-		if(actSelection == "Szenen"){actAttribute = "number_of_scenes";}
-		if(actSelection == "Sprecher"){actAttribute = "speaker_length";}
-		if(actSelection == "Repliken"){actAttribute = "number_of_speeches_in_act";}
-		if(actSelection == "Durchschnittliche Replikenlänge"){actAttribute = "average_length_of_speeches_in_act";}
-		if(actSelection == "Median Replikenlänge"){actAttribute = "median_length_of_speeches_in_act";}
-		if(actSelection == "Maximum Replikenlänge"){actAttribute = "maximum_length_of_speeches_in_act";}
-		if(actSelection == "Minimum Replikenlänge"){actAttribute = "minimum_length_of_speeches_in_act";}
+		if(actSelection == "Scenes"){actAttribute = "number_of_scenes";}
+		if(actSelection == "Speakers"){actAttribute = "speaker_length";}
+		if(actSelection == "Speeches"){actAttribute = "number_of_speeches_in_act";}
+		if(actSelection == "Average length of speeches"){actAttribute = "average_length_of_speeches_in_act";}
+		if(actSelection == "Median length of speeches"){actAttribute = "median_length_of_speeches_in_act";}
+		if(actSelection == "Maximum length of speeches"){actAttribute = "maximum_length_of_speeches_in_act";}
+		if(actSelection == "Minimum length of speeches"){actAttribute = "minimum_length_of_speeches_in_act";}
 	};
 
 	//Loop to render all Graphs for Scenes dynamically
@@ -134,13 +134,13 @@ SingleDrama.BarChartDramaView = function(){
 
 	//Drawing Chart for Scenes, similar to Act
 	var drawChartForScenesInAct = function(divId, scenesInfoPerAct, act){
-		if(scenesSelection == "Replikenlänge"){
+		if(scenesSelection == "Speech length"){
 			drawSpeechesChartScenes(scenesInfoPerAct, act, divId);
 			return;
 		}
         var data = new google.visualization.DataTable();
-        data.addColumn('number', 'Szenen');
-        if(scenesSelection == "Sprecher" || scenesSelection == "Replikenlänge"){
+        data.addColumn('number', 'Scenes');
+        if(scenesSelection == "Speakers" || scenesSelection == "Speech length"){
         	data.addColumn('number', scenesSelection);
         }else{
         	data.addColumn('number', scenesSelection);
@@ -164,7 +164,7 @@ SingleDrama.BarChartDramaView = function(){
         for(var k = 0; k < scenesInfoPerAct.length; k++){
         	ticksArray.push(k+1);
         }
-        var options = {title:'Szenen-Statistik: Akt ' + act,
+        var options = {title:'Scenes statistics: Act ' + act,
         			   height: 600,
         			   width: 1170,
         			   chartArea:{width:'70%',height:'75%'},
@@ -180,7 +180,7 @@ SingleDrama.BarChartDramaView = function(){
 				          }
 				        },
 				        hAxis: {
-        			   	title: 'Szenen',
+        			   	title: 'Scenes',
         			   	ticks: ticksArray
         			   },
         			   vAxis: {
@@ -205,13 +205,12 @@ SingleDrama.BarChartDramaView = function(){
 
 	//More complex Method to draw selection "Replikenlänge" to visualize all Speech-Data at once
 	var drawSpeechesChartScenes = function(scenesInfoPerAct, act, divId){
-		console.log(scenesInfoPerAct);
 		var data = new google.visualization.DataTable();
-		data.addColumn('number', 'Szenen');
-		data.addColumn('number', 'Minimum Replikenlänge');
-		data.addColumn('number', 'Durchschnittliche Replikenlänge');
-		data.addColumn('number', 'Median Replikenlänge');
-		data.addColumn('number', 'Maximum Replikenlänge');
+		data.addColumn('number', 'Scenes');
+		data.addColumn('number', 'Minimum length of speeches');
+		data.addColumn('number', 'Average length of speeches');
+		data.addColumn('number', 'Median length of speeches');
+		data.addColumn('number', 'Maximum length of speeches');
 		var array = [];
 		for(var i = 0; i < scenesInfoPerAct.length; i++){
 			var row = [(i+1), scenesInfoPerAct[i].minimum_length_of_speeches_in_scene, 
@@ -225,11 +224,11 @@ SingleDrama.BarChartDramaView = function(){
         	ticksArray.push(k+1);
         }
 		data.addRows(array);
-		        var options = {title:'Szenen-Statistik: Akt ' + act,
+		        var options = {title:'Scenes statistics: Act ' + act,
         			   height: 600,
         			   width: 1170,
 				        hAxis: {
-        			   	title: 'Szenen',
+        			   	title: 'Scenes',
         			   	ticks: ticksArray
         			   },
         			   vAxis: {
@@ -251,12 +250,12 @@ SingleDrama.BarChartDramaView = function(){
 	var setScenesSelection = function(){
 		scenesSelection = $("#selection-scenes").val();
 
-		if(scenesSelection == "Sprecher"){scenesAttribute = "number_of_speakers"};
-		if(scenesSelection == "Repliken"){scenesAttribute = "number_of_speeches_in_scene";}
-		if(scenesSelection == "Durchschnittliche Replikenlänge"){scenesAttribute = "average_length_of_speeches_in_scene";}
-		if(scenesSelection == "Median Replikenlänge"){scenesAttribute = "median_length_of_speeches_in_scene";}
-		if(scenesSelection == "Maximum Replikenlänge"){scenesAttribute = "maximum_length_of_speeches_in_scene";}
-		if(scenesSelection == "Minimum Replikenlänge"){scenesAttribute = "minimum_length_of_speeches_in_scene";}
+		if(scenesSelection == "Speakers"){scenesAttribute = "number_of_speakers"};
+		if(scenesSelection == "Speeches"){scenesAttribute = "number_of_speeches_in_scene";}
+		if(scenesSelection == "Average length of speeches"){scenesAttribute = "average_length_of_speeches_in_scene";}
+		if(scenesSelection == "Median length of speeches"){scenesAttribute = "median_length_of_speeches_in_scene";}
+		if(scenesSelection == "Maximum length of speeches"){scenesAttribute = "maximum_length_of_speeches_in_scene";}
+		if(scenesSelection == "Minimum length of speeches"){scenesAttribute = "minimum_length_of_speeches_in_scene";}
 	};
 
 	var roundToTwoDecimals = function(number){

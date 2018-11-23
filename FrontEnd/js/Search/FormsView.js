@@ -19,7 +19,7 @@ Search.FormsView = function(){
 	var initTooltips = function(){
 		var tooltipOverall = $("#info-overall");
 		tooltipOverall.tooltipster({
-					content: 'Dieses Tool bietet Ihnen nicht nur die Möglichkeit,<br/> ein bestimmtes Drama quantitativ zu analysieren,<br/> sondern es ist auch möglich,<br/> mehrere Dramen miteinander zu vergleichen.',
+					content: 'You can analyze a specific single play or you can analyze and compare a collection of multiple plays',
 					position: "right",
 					trigger: 'hover',
 					contentAsHTML: true
@@ -27,7 +27,7 @@ Search.FormsView = function(){
 
 		var tooltipOverall = $("#info-compare");
 		tooltipOverall.tooltipster({
-					content: 'Hiermit ist der Vergleich von mehreren Dramen möglich.<br/> Die mit einem Häkchen markierten Dramen befinden sich in der Sammlung.',
+					content: 'You can analyze and compare a collection of multiple plays. <br/> Plays that are marked with a checkmark are integrated into the collection.',
 					position: "right",
 					trigger: 'hover',
 					contentAsHTML: true
@@ -35,7 +35,7 @@ Search.FormsView = function(){
 
 		var tooltipOverall = $("#input-author");
 		tooltipOverall.tooltipster({
-					content: 'z.B.: <i>Goethe</i> oder <i>Lessing Schiller Schlegel</i>',
+					content: 'e.g.: <i>Goethe</i> or <i>Lessing Schiller Schlegel</i>',
 					//content: '<i>z.B.:</i> Goethe <i>oder</i> Lessing Schiller Schlegel',
 					position: "right",
 					trigger: 'hover',

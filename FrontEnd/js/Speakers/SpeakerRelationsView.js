@@ -17,15 +17,15 @@ Speakers.SpeakerRelationsView = function(){
 		var speaker = findSpeakerInSpeakersInfoByName(speakersInfo);
 		setTextName(speaker.name);
 		$("#gets-dominated-by").append(getList(speaker.relations.gets_dominated_by,
-		 "Wird szenisch dominiert: "));
+		 "Gets scenically dominated by: "));
 		$("#dominates").append(getList(speaker.relations.dominates,
-		 "Dominiert: "));
+		 "Dominates: "));
 		$("#alternative").append(getList(speaker.relations.alternative, 
-			"Szenisch alternativ:"));
+			"Scenically alternative:"));
 		$("#concomitant").append(getList(speaker.relations.concomitant, 
-			"Szenisch konkomitant: "));
+			"Scenically concomitant: "));
 		$("#independent").append(getList(speaker.relations.independent, 
-			"Szenisch unabhängig: "));
+			"Scenically independent: "));
 		$("#speaker-relation").fadeIn("slow");
 	};
 
@@ -44,7 +44,7 @@ Speakers.SpeakerRelationsView = function(){
 		text.append(head);
 		text.append(br);
 		if(relations === undefined){
-			var noSpeakers = $("<span>Keine Sprecher vorhanden</span>");
+			var noSpeakers = $("<span>No speakers available.</span>");
 			text.append(noSpeakers);
 			return text;
 		}

@@ -18,7 +18,7 @@ MultipleDramas.AuthorView = function(){
 
 	var renderBarChart = function(authors){
 		var data = new google.visualization.DataTable();
-		data.addColumn("string", "Autor");
+		data.addColumn("string", "Author");
 		data.addColumn("number", authorSelection);
 		//Extra Column for custom tooltip
 		data.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
@@ -39,7 +39,7 @@ MultipleDramas.AuthorView = function(){
 			estimatedHeight = 300;
 		}
 
-		var options = {title:'Autorenvergleich',
+		var options = {title:'Comparison of authors',
         			   height: estimatedHeight,
         			   tooltip: { isHtml: true },
         			   chartArea:{width:'55%',height:'90%'},
@@ -87,14 +87,14 @@ MultipleDramas.AuthorView = function(){
 	var setAuthorSelection = function(){
 		authorSelection = $("#selection-author").val();
 
-		if(authorSelection == "Szenenanzahl"){authorAttribute = "average_number_of_scenes"};
-		if(authorSelection == "Replikenanzahl"){authorAttribute = "average_number_of_speeches";}
-		if(authorSelection == "Sprecheranzahl"){authorAttribute = "average_number_of_speakers";}
-		if(authorSelection == "Konfigurationsdichte"){authorAttribute = "average_configuration_density";}
-		if(authorSelection == "Durchschnittliche Replikenlänge"){authorAttribute = "average_average_length_of_speeches";}
-		if(authorSelection == "Median Replikenlänge"){authorAttribute = "average_median_length_of_speeches";}
-		if(authorSelection == "Maximum Replikenlänge"){authorAttribute = "average_maximum_length_of_speeches";}
-		if(authorSelection == "Minimum Replikenlänge"){authorAttribute = "average_minimum_length_of_speeches";}
+		if(authorSelection == "Number of scenes"){authorAttribute = "average_number_of_scenes"};
+		if(authorSelection == "Number of speeches"){authorAttribute = "average_number_of_speeches";}
+		if(authorSelection == "Number of speakers"){authorAttribute = "average_number_of_speakers";}
+		if(authorSelection == "Configuration density"){authorAttribute = "average_configuration_density";}
+		if(authorSelection == "Average length of speeches"){authorAttribute = "average_average_length_of_speeches";}
+		if(authorSelection == "Median length of speeches"){authorAttribute = "average_median_length_of_speeches";}
+		if(authorSelection == "Maximum length of speeches"){authorAttribute = "average_maximum_length_of_speeches";}
+		if(authorSelection == "Minimum length of speeches"){authorAttribute = "average_minimum_length_of_speeches";}
 	};
 
 	var getLastNameAndFirstInitial = function(author){
@@ -110,7 +110,7 @@ MultipleDramas.AuthorView = function(){
 		var divBegin = "<div class='tooltip-test'>"
 		var authorDiv = "<div>" + "<b>" + author.name + "</b>" + "</div>";
 		var data = "<div>" + "<b>" + authorSelection + ": </b>" + author[authorAttribute] + "</div>";
-		var dramas = "<div><b>Dramen:</b> ";
+		var dramas = "<div><b>Plays:</b> ";
 		for(var i = 0; i < author.titles.length; i++){
 			dramas = dramas + "'" + author.titles[i] + "'" + " ,";
 		}

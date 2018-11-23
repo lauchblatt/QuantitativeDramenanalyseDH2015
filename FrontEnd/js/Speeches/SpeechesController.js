@@ -61,7 +61,7 @@ Speeches.SpeechesController = function(){
 	var initGoogleCharts = function(){
 		// Load the Visualization API and the package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 
-      		'packages':['corechart', 'controls']})}, 0);
+      		'packages':['corechart', 'controls'], 'language': 'en'})}, 0);
 	};
 
 	var doNothing = function(){

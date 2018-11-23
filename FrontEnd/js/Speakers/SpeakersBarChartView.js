@@ -19,7 +19,7 @@ Speakers.SpeakersBarChartView = function(){
 
 	var renderBarChart = function(speakersInfo){
 		var data = new google.visualization.DataTable();
-		data.addColumn("string", "Sprecher");
+		data.addColumn("string", "Speaker");
 		data.addColumn("number", speakersSelection);
 		//To sort by data-attribute
 		speakersInfo.sort(sort_by(speakersAttribute,true));
@@ -36,7 +36,7 @@ Speakers.SpeakersBarChartView = function(){
 			estimatedHeight = 800;
 		}
 
-		var options = {title:'Sprecher-Statistik',
+		var options = {title:'Speakers statistics',
         			   height: estimatedHeight,
         			   width: 1000,
         			   chartArea:{width:'55%',height:'90%'},
@@ -85,13 +85,13 @@ Speakers.SpeakersBarChartView = function(){
 	var setSpeakersSelection = function(){
 		speakersSelection = $("#selection-speakers").val();
 
-		if(speakersSelection == "Anwesenheit"){speakersAttribute = "number_of_appearances"};
-		if(speakersSelection == "Anwesenheit in Prozent"){speakersAttribute = "appearances_percentage";}
-		if(speakersSelection == "Repliken"){speakersAttribute = "number_of_speakers_speeches";}
-		if(speakersSelection == "Durchschnittliche Replikenlänge"){speakersAttribute = "average_length_of_speakers_speeches";}
-		if(speakersSelection == "Median Replikenlänge"){speakersAttribute = "median_length_of_speakers_speeches";}
-		if(speakersSelection == "Maximum Replikenlänge"){speakersAttribute = "maximum_length_of_speakers_speeches";}
-		if(speakersSelection == "Minimum Replikenlänge"){speakersAttribute = "minimum_length_of_speakers_speeches";}
+		if(speakersSelection == "Presence"){speakersAttribute = "number_of_appearances"};
+		if(speakersSelection == "Presence in percent"){speakersAttribute = "appearances_percentage";}
+		if(speakersSelection == "Speeches"){speakersAttribute = "number_of_speakers_speeches";}
+		if(speakersSelection == "Average length of speeches"){speakersAttribute = "average_length_of_speakers_speeches";}
+		if(speakersSelection == "Median length of speeches"){speakersAttribute = "median_length_of_speakers_speeches";}
+		if(speakersSelection == "Maximum length of speeches"){speakersAttribute = "maximum_length_of_speakers_speeches";}
+		if(speakersSelection == "Minimum length of speeches"){speakersAttribute = "minimum_length_of_speakers_speeches";}
 	};
 
 	//Sort method for objects from http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects

@@ -3,8 +3,8 @@ Speakers.SpeechesDominanceView = function(){
 
 	var renderPieChart = function(speakersInfo){
 		var data = new google.visualization.DataTable();
-		data.addColumn("string", "Sprecher");
-		data.addColumn("number", "Zahl der Repliken");
+		data.addColumn("string", "Speaker");
+		data.addColumn("number", "Number of speeches");
 		var array = [];
 		for(i = 0; i < speakersInfo.length; i++){
 			var row = [speakersInfo[i].name, speakersInfo[i].number_of_speakers_speeches];
@@ -16,7 +16,7 @@ Speakers.SpeechesDominanceView = function(){
 		  height: 600,
       width: 1000,
       chartArea:{width:'70%',height:'75%'},
-          title: 'Replikendominanz',
+          title: 'Dominance of speeches',
           is3D: true,
         };
 
@@ -29,7 +29,7 @@ Speakers.SpeechesDominanceView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'filter-speeches-dominance',
           'options': {
-            'filterColumnLabel': 'Zahl der Repliken'
+            'filterColumnLabel': 'Number of speeches'
           }
         });
 

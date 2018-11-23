@@ -98,8 +98,9 @@ Matrix.MatrixView = function(){
 
 	var getCellTooltip = function(cellObject){
 		var $content = $("<div>");
-		var strings = ["Sprecher:", "Replikenzahl:", "Mittel Replikenlänge:", "Median Replikenlänge:",
-		"Maximum Replikenlänge:", "Minimum Replikenlänge:"];
+		var strings = ["Speaker:", "Number of speeches:", "Average length of speeches:",
+		 "Median length of speeches:",
+		"Maximum length of speeches:", "Minimum length of speeches:"];
 		var data = [cellObject.speaker, cellObject.number_of_speeches, cellObject.average,
 		cellObject.median, cellObject.max, cellObject.min];
 
@@ -113,10 +114,10 @@ Matrix.MatrixView = function(){
 
 	var getDramaTooltip = function(drama){
 		var $content = $("<div></div>");
-		var strings = ["Titel:","Autor:", "Jahr:", "Typ:", "Sprecher:", "Konfigurationsdichte:",
-		"Replikenanzahl:","Mittel Replikenlänge:", "Median Replikenlänge:",
-		"Maximum Replikenlänge:", "Minimum Replikenlänge:"];
-		var data = [drama.title, drama.author, drama.year, drama.type, drama.speakers.length,
+		var strings = ["Title:","Author:", "Year:", "Genre:", "Speaker:", "Configuration density:",
+		"Number of speeches:","Average length of speeches:", "Median lenth of speeches:",
+		"Maximum length of speeches:", "Minimum length of speeches:"];
+		var data = [drama.title, drama.author, drama.year, translateGenre(drama.type), drama.speakers.length,
 		roundToTwoDecimals(drama.configuration_density),
 		drama.number_of_speeches_in_drama, 
 		roundToTwoDecimals(drama.average_length_of_speeches_in_drama),
@@ -147,8 +148,8 @@ Matrix.MatrixView = function(){
 
 	var getSceneTooltip = function(scene){
 		var $content = $("<div></div>");
-		var strings = ["Szene:", "Replikenanzahl:", "Mittel Replikenlänge:",
-			"Median Replikenlänge:", "Maximum Replikenlänge:", "Minimum Replikenlänge:"];
+		var strings = ["Scene:", "Number of speeches:", "Average length of speeches:",
+			"Median length of speeches:", "Maximum length of speeches:", "Minimum length of speeches:"];
 		var data = [scene.number_of_scene, scene.number_of_speeches_in_scene, 
 		roundToTwoDecimals(scene.average_length_of_speeches_in_scene), 
 		scene.median_length_of_speeches_in_scene, scene.maximum_length_of_speeches_in_scene, 
@@ -175,8 +176,8 @@ Matrix.MatrixView = function(){
 	var getActTooltip = function(act){
 		var $content = $("<div></div>");
 
-		var leftColumn = getColumn(["Akt:", "Replikenanzahl:", "Mittel Replikenlänge:",
-			"Median Replikenlänge:", "Maximum Replikenlänge:", "Minimum Replikenlänge:"], "insideLeft");
+		var leftColumn = getColumn(["Act:", "Number of speeches:", "Average length of speeches:",
+			"Median length of speeches:", "Maximum length of speeches:", "Minimum length of speeches:"], "insideLeft");
 		var data = [act.number_of_act, act.number_of_speeches_in_act, 
 		roundToTwoDecimals(act.average_length_of_speeches_in_act), 
 		act.median_length_of_speeches_in_act, act.maximum_length_of_speeches_in_act, 
@@ -216,8 +217,8 @@ Matrix.MatrixView = function(){
 
 	var getSpeakerTooltip = function(speaker){
 		var $content = $("<div></div>");
-		var strings = ["Name", "Replikenanzahl", "Mittel Replikenlänge",
-		"Median Replikenlänge","Maximum Replikenlänge", "Minimum Replikenlänge"];
+		var strings = ["Name:", "Number of speeches:", "Average length of speeches:",
+		"Median length of speeches:","Maximum length of speeches:", "Minimum length of speeches:"];
 		var data = [];
 		if(speaker.number_of_speakers_speeches != 0){
 			data = [speaker.name, speaker.number_of_speakers_speeches,
@@ -303,7 +304,7 @@ Matrix.MatrixView = function(){
 			var $th = ($("<th class='act_" + i + "' colspan='" + lengthOfAct +"'></th>"));
 			var id = "act_" + i + "_id";
 			$th.attr("id", id);
-			$th.text((i+1) + ". Akt");
+			$th.text("Act " + (i+1));
 			$headlineAct.append($th);
 		}
 
@@ -314,11 +315,24 @@ Matrix.MatrixView = function(){
 				var $th = $("<th></th>");
 				$th.addClass(act);
 				$th.attr("id", scene);
-				$th.text((j+1) + ". Szene");
+				$th.text("Scene " + (j+1));
 				$headlineScene.append($th);
 			}
 		}
 
+	};
+
+	var translateGenre = function(genre){
+		switch(genre) {
+			case 'Komoedie':
+				return "Comedy";
+				break;
+			case 'Trauerspiel':
+				return 'Tragedy';
+				break;
+			default:
+				return genre
+		}
 	};
 
 	var roundToTwoDecimals = function(number){

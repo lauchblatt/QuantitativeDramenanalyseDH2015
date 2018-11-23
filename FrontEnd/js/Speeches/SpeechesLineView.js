@@ -28,8 +28,8 @@ Speeches.SpeechesLineView = function(){
 	var renderRelative = function(distribution){
 
 		var data = new google.visualization.DataTable();
-		data.addColumn("number", "Replikenlänge in Worten");
-		data.addColumn("number", 'Replikenhäufigkeit in Prozent');
+		data.addColumn("number", "Speech length in number of words");
+		data.addColumn("number", 'Frequency of speech lengths in percent');
 		var array = [];
 		for(var key in distribution){
 			var row = [parseInt(key), distribution[key]];
@@ -44,16 +44,16 @@ Speeches.SpeechesLineView = function(){
 		  	duration: 1000
 		  },
 		  chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängenverteilung, Relative Häufigkeit in Prozent',
+          title: 'Distribution of speech length, Relative frequency in percent',
           curveType: 'function',
           legend: {
           	position: 'none'
           },
           hAxis : {
-          	title: 'Replikenlänge in Worten'
+          	title: 'Speech length in number of words'
           },
           vAxis: {
-          	title: 'Relative Häufigkeit in Prozent',
+          	title: 'Relative frequency in percent',
             baseline: 0
           }
         };
@@ -65,7 +65,7 @@ Speeches.SpeechesLineView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls1',
           'options': {
-            'filterColumnLabel': 'Replikenlänge in Worten'
+            'filterColumnLabel': 'Speech length in number of words'
           }
         });
 
@@ -73,7 +73,7 @@ Speeches.SpeechesLineView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls2',
           'options': {
-            'filterColumnLabel': 'Replikenhäufigkeit in Prozent'
+            'filterColumnLabel': 'Distribution of speech lengths in percent'
           }
         });
 
@@ -105,8 +105,8 @@ Speeches.SpeechesLineView = function(){
     var renderAbsolute = function(distribution){
 
     var data = new google.visualization.DataTable();
-    data.addColumn("number", "Replikenlänge in Worten");
-    data.addColumn("number", 'Replikenhäufigkeit absolut');
+    data.addColumn("number", "Speech length in number of words");
+    data.addColumn("number", 'Absolute frequency of speech lengths');
     var array = [];
     for(var key in distribution){
       var row = [parseInt(key), distribution[key]];
@@ -121,16 +121,16 @@ Speeches.SpeechesLineView = function(){
         duration: 1000
       },
       chartArea:{width:'75%',height:'80%'},
-          title: 'Replikenlängenverteilung, Absolute Häufigkeit',
+          title: 'Distribution of speech lengths, Absolute frequency',
           curveType: 'function',
           legend: {
             position: 'none'
           },
           hAxis : {
-            title: 'Replikenlänge in Worten'
+            title: 'Speech length in number of words'
           },
           vAxis: {
-            title: 'Absolute Häufigkeit',
+            title: 'Absolute frequency',
             baseline: 0
           }
         };
@@ -142,7 +142,7 @@ Speeches.SpeechesLineView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls1',
           'options': {
-            'filterColumnLabel': 'Replikenlänge in Worten'
+            'filterColumnLabel': 'Speech length in number of words'
           }
         });
 
@@ -150,7 +150,7 @@ Speeches.SpeechesLineView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls2',
           'options': {
-            'filterColumnLabel': 'Replikenhäufigkeit absolut'
+            'filterColumnLabel': 'Absolute frequency of speech lengths'
           }
         });
 
@@ -184,8 +184,6 @@ Speeches.SpeechesLineView = function(){
 
   var initId = function(){
     var params = window.location.search
-    console.log("hello World");
-    console.log(params);
     currentDrama_id = (params.substring(params.indexOf("=") + 1));
   };
 

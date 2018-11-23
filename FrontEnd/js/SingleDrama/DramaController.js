@@ -23,7 +23,7 @@ SingleDrama.DramaController = function(){
 	var initGoogleCharts = function(){
 		// Load the Visualization API and the piechart package.
       	setTimeout(function(){google.load('visualization', '1', {'callback': doNothing, 
-      		'packages':['corechart']})}, 0);
+      		'packages':['corechart'], 'language': 'en'})}, 0);
 	};
 
 	var doNothing = function(){

@@ -13,7 +13,7 @@ MultipleDramas.CategoryView = function(){
 
 	var renderColumnChart = function(categories){
 		var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Typ');
+        data.addColumn('string', 'Genre');
         data.addColumn('number', categorySelection);
         var array = [];
         for(var i = 0; i < categories.length; i++){
@@ -21,11 +21,11 @@ MultipleDramas.CategoryView = function(){
 			array.push(row);
         }
         data.addRows(array);
-        var options = {title:'Typ-Vergleich',
+        var options = {title:'Comparison of genres',
         			   height: 600,
         			   width: 1000,
 				        hAxis: {
-        			   	title: 'Drama-Typ'
+        			   	title: 'Genre'
         			   },
         			   vAxis: {
         			   	title: categorySelection
@@ -52,14 +52,14 @@ MultipleDramas.CategoryView = function(){
 	var setCategorySelection = function(){
 		categorySelection = $("#selection-category").val();
 
-		if(categorySelection == "Szenenanzahl"){categoryAttribute = "average_number_of_scenes"};
-		if(categorySelection == "Replikenanzahl"){categoryAttribute = "average_number_of_speeches";}
-		if(categorySelection == "Sprecheranzahl"){categoryAttribute = "average_number_of_speakers";}
-		if(categorySelection == "Konfigurationsdichte"){categoryAttribute = "average_configuration_density";}
-		if(categorySelection == "Durchschnittliche Replikenlänge"){categoryAttribute = "average_average_length_of_speeches";}
-		if(categorySelection == "Median Replikenlänge"){categoryAttribute = "average_median_length_of_speeches";}
-		if(categorySelection == "Maximum Replikenlänge"){categoryAttribute = "average_maximum_length_of_speeches";}
-		if(categorySelection == "Minimum Replikenlänge"){categoryAttribute = "average_minimum_length_of_speeches";}
+		if(categorySelection == "Number of scenes"){categoryAttribute = "average_number_of_scenes"};
+		if(categorySelection == "Number of speeches"){categoryAttribute = "average_number_of_speeches";}
+		if(categorySelection == "Number of speakers"){categoryAttribute = "average_number_of_speakers";}
+		if(categorySelection == "Configuration density"){categoryAttribute = "average_configuration_density";}
+		if(categorySelection == "Average length of speeches"){categoryAttribute = "average_average_length_of_speeches";}
+		if(categorySelection == "Median length of speeches"){categoryAttribute = "average_median_length_of_speeches";}
+		if(categorySelection == "Maximum length of speeches"){categoryAttribute = "average_maximum_length_of_speeches";}
+		if(categorySelection == "Minimum length of speeches"){categoryAttribute = "average_minimum_length_of_speeches";}
 
 	};
 

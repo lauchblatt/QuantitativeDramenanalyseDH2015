@@ -15,7 +15,7 @@
 			<div id="loading-spinner">
 				<span class="glyphicon glyphicon-repeat glyphicon-repeat-animate loading-button" id="loading-spinner-img">
 				</span>
-				<div id="loading-text">Daten werden berechnet. Dies kann einige Sekunden dauern...</div>
+				<div id="loading-text">Data is calculated. This can take a few seconds...</div>
 			</div>
 		</div>
 
@@ -37,44 +37,44 @@
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav">
 
-					      	<li><a class="links" href="index.html">Suche <span class="sr-only">(current)</span></a></li>
-					      	<li><a id="link-overall" href="#" class="links">Übersicht <span class="sr-only">(current)</span></a></li>
+					      	<li><a class="links" href="index.html">Search <span class="sr-only">(current)</span></a></li>
+					      	<li><a id="link-overall" class="links" href="#">Overview <span class="sr-only">(current)</span></a></li>
 
-					      	<li><a href="#" id="link-matrix" class="links">Konfigurationsmatrix <span class="sr-only">(current)</span></a></li>
+					      	<li><a href="#" id="link-matrix" class="links">Configuration matrix <span class="sr-only">(current)</span></a></li>
 
 					        <li class="dropdown">
-					          <a href="" id="link-drama" class="links" role="button" aria-expanded="false">
-					          	Drama-Akt-Szenen-Analyse<span class="caret"></span></a>
+					          <a href="" id="link-drama" role="button" class="links" aria-expanded="false">
+					          	Structual analysis<span class="caret"></span></a>
 					          <ul class="dropdown-menu" role="menu">
-					            <li><a href="#" id="link-drama-actSceneAnalysis">Akt-Szenen-Tabelle</a></li>
+					            <li><a href="#" id="link-drama-actSceneAnalysis">Act-scene-table</a></li>
 					            <li class="divider"></li>
-					            <li><a href="#" id="link-drama-actStatistic">Balkendiagramm - Akt-Statistik</a></li>
+					            <li><a href="#" id="link-drama-actStatistic">Bar chart - Acts statistics</a></li>
 					            <li class="divider"></li>
-					            <li><a href="#" id="link-drama-sceneStatistic">Balkendiagramm - Szenen-Statistik</a></li>
+					            <li><a href="#" id="link-drama-sceneStatistic">Bar chart - Scenes statistics</a></li>
 					          </ul>
 					        </li>
 
 					        <li class="dropdown superactive">
-					          <a id="link-speakers" href="#" class="links" role="button" aria-expanded="false">
-					          	Sprecher-Analyse<span class="caret"></span></a>
+					          <a id="link-speakers" class="links" href="#" role="button" aria-expanded="false">
+					          	Speaker analysis<span class="caret"></span></a>
 					          <ul class="dropdown-menu" role="menu">
-					            <li><a href="#" id="link-speaker-table">Sprecher-Tabelle</a></li>
+					            <li><a href="#" id="link-speaker-table">Speaker table</a></li>
 					            <li class="divider"></li>
-					            <li><a href="#" id="link-speeches-dominance">Kreisdiagramm - Replikendominanz</a></li>
+					            <li><a href="#" id="link-speeches-dominance">Pie chart - Dominance of speeches</a></li>
 					            <li class="divider"></li>
-					            <li><a href="#" id="link-speaker-statistic">Balkendiagramm - Sprecher-Statistik</a></li>
+					            <li><a href="#" id="link-speaker-statistic">Bar chart - Speaker statistics</a></li>
 					            <li class="divider"></li>
-					            <li><a href="#" id="link-speaker-relations">Sprecher-Relationen</a></li>
+					            <li><a href="#" id="link-speaker-relations">Speaker relations</a></li>
 					          </ul>
 					        </li>
 
 					        <li class="dropdown">
 					          <a href="#" id="link-speeches" class="links" role="button" aria-expanded="false">
-					          	Replikenverteilung<span class="caret"></span></a>
+					          	Distribution of speeches<span class="caret"></span></a>
 					          <ul class="dropdown-menu" role="menu">
-					            <li><a href="#" id="link-histogram">Replikenverteilung - Histogramm</a></li>
+					            <li><a href="#" id="link-histogram">Distribution of speeches - Histogram</a></li>
 					            <li class="divider" ></li>
-					            <li><a href="#" id="link-curve-diagram">Replikenverteilung - Kurvendiagramm</a></li>
+					            <li><a href="#" id="link-curve-diagram">Distribution of speeches - Curve diagram</a></li>
 					          </ul>
 					        </li>
 
@@ -82,7 +82,7 @@
 					          <a href="contact.html" class="links">
 					          	Contact<span class="sr-only">(current)</span></span></a>
 					        </li>
-					        <li><a class="links" href="sa_selection.html">Zur Sentiment Analysis <span class="sr-only">(current)</span></a></li>
+					        <li><a class="links" href="sa_selection.html">To Sentiment Analysis <span class="sr-only">(current)</span></a></li>
 
 					      </ul>
 					    </div><!-- /.navbar-collapse -->
@@ -90,25 +90,25 @@
 				</nav>
 			</div>
 			<div class="container">
-				<a href="#speaker-table" name="speaker-table"><h3>Sprecher-Tabelle</h3></a>
+				<a href="#speaker-table" name="speaker-table"><h3>Speakers table</h3></a>
 					<table class="table table-bordered table-striped table-hover" id="speakers-table">
 						<thead>
 							<tr title="Sortieren...">
 							    <th>Name</th> 
-							    <th>Anwesenheit in Szenen</th>
-							    <th>Anwesenheit pro Szene in Prozent</th>
-							    <th>Anzahl der Repliken</th>
-							    <th>Mittelwert Replikenlänge</th>
-							    <th>Median Replikenlänge</th>
-							    <th>Maximum Replikenlänge</th>
-							    <th>Minimum Replikenlänge</th>
+							    <th>Presence in scenes</th>
+							    <th>Presence per scenes in percent</th>
+							    <th>Number of speeches</th>
+							    <th>Average length of speeches</th>
+							    <th>Median length of speeches</th>
+							    <th>Maximum length of speeches</th>
+							    <th>Minimum length of speeches</th>
 							  </tr>
 						</thead>
 						<tbody id="table-tbody">
 						</tbody>
 					</table>
 
-				<a href="#speeches-dominance" name="speeches-dominance"><h3>Kreisdiagramm - Replikendominanz</h3></a>
+				<a href="#speeches-dominance" name="speeches-dominance"><h3>Pie chart - Dominance of speeches</h3></a>
 				<div class="box">
 					<div id="dashbord-speeches-dominance">
 						<div id="filter-speeches-dominance"></div>
@@ -117,18 +117,18 @@
 					<div class="container"><button class="btn btn-primary png-download" id="download-png-speeches-dominance">Download PNG</button></div>
 				</div>
 
-				<a href="#speaker-statistic" name="speaker-statistic"><h3>Balkendiagramm - Sprecherstatistik</h3></a>
+				<a href="#speaker-statistic" name="speaker-statistic"><h3>Bar chart - Speaker statistics</h3></a>
 				<div class="box container">
 					<div class="form-group dropdown-form" id="form-speakers">
-						  <label for="sel1">Parameter:</label>
+						  <label for="sel1">Metrics:</label>
 						  <select class="form-control" id="selection-speakers">
-						    <option>Anwesenheit</option>
-						    <option>Anwesenheit in Prozent</option>
-						    <option>Repliken</option>
-						    <option>Durchschnittliche Replikenlänge</option>
-						    <option>Median Replikenlänge</option>
-						    <option>Maximum Replikenlänge</option>
-						    <option>Minimum Replikenlänge</option>
+						    <option>Presence</option>
+						    <option>Presence in percent</option>
+						    <option>Speeches</option>
+						    <option>Average length of speeches</option>
+						    <option>Median length of speeches</option>
+						    <option>Maximum length of speeches</option>
+						    <option>Minimum length of speeches</option>
 						  </select>
 					</div>
 
@@ -139,10 +139,10 @@
 					<button class="btn btn-primary png-download" id="download-png-speakers-barChart">Download PNG</button>
 				</div>
 
-				<a href="#speaker-relations" name="speaker-relations"><h3>Sprecherrelationen</h3></a>
+				<a href="#speaker-relations" name="speaker-relations"><h3>Speaker relations</h3></a>
 				<div class="box container">
 					<div class="form-group dropdown-form" id="form-speaker-relations">
-						  <label for="selection-speaker-relations">Sprecher:</label>
+						  <label for="selection-speaker-relations">Speaker:</label>
 						  <select class="form-control" id="selection-speaker-relations">
 						  </select>
 					</div>

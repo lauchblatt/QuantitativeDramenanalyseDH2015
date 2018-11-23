@@ -38,7 +38,6 @@ Speeches.SpeechesModel = function(){
 	var calculateDistribution = function(){
 		for(act = 0; act < scenesInfo.length; act++){
 			for(scene = 0; scene < scenesInfo[act].length; scene++){
-				console.log(scenesInfo[act][scene].speeches);
 				if(scenesInfo[act][scene].speeches !== undefined){
 					for(var speech = 0; speech < scenesInfo[act][scene].speeches.length; speech++){
 							var currentspeechLength = scenesInfo[act][scene].speeches[speech].length;
