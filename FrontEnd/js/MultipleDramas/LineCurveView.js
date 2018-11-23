@@ -43,7 +43,7 @@ MultipleDramas.LineCurveView = function(){
       if(speechDistributionSelection == "Absolute"){
         renderTypeCurve(authorDistribution, "Absolute frequency");
       }
-      if(speechDistributionSelection == "Relativ"){
+      if(speechDistributionSelection == "Relative"){
         var authorDisInPercent = distributionToPercent(authorDistribution);
         renderTypeCurve(authorDisInPercent, "Relative frequency in percent");
       }  

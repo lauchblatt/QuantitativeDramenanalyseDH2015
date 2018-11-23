@@ -11,13 +11,26 @@ MultipleDramas.CategoryView = function(){
 		$("#selection-category").change(categorySelectionClicked);
 	};
 
+	var translateGenre = function(genre){
+    switch(genre) {
+      case 'Komoedie':
+        return "Comedy";
+        break;
+      case 'Trauerspiel':
+        return 'Tragedy';
+        break;
+      default:
+        return genre
+    	}
+  	};
+
 	var renderColumnChart = function(categories){
 		var data = new google.visualization.DataTable();
         data.addColumn('string', 'Genre');
         data.addColumn('number', categorySelection);
         var array = [];
         for(var i = 0; i < categories.length; i++){
-        	var row = [categories[i].type, categories[i][categoryAttribute]];
+        	var row = [translateGenre(categories[i].type), categories[i][categoryAttribute]];
 			array.push(row);
         }
         data.addRows(array);

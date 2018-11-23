@@ -58,7 +58,7 @@ MultipleDramas.YearView = function(){
           width: 1170,
           explorer: {},
           tooltip: { isHtml: true },
-          hAxis: {title: 'Jahr', format: ' '},
+          hAxis: {title: 'Year', format: ' '},
           vAxis: {title: yearSelection},
           legend: 'none',
           chartArea:{width:'75%',height:'80%'},
@@ -168,21 +168,21 @@ MultipleDramas.YearView = function(){
           width: 1170,
           explorer: {},
           tooltip: { isHtml: true },
-          hAxis: {title: 'Jahr', format: ' '},
+          hAxis: {title: 'Year', format: ' '},
           vAxis: {title: yearSelection},
           chartArea:{width:'75%',height:'80%'},
           trendlines: trendlineObj
         };
 
         var optionsSlider = {
-        	filterColumnLabel: 'Jahr',
+        	filterColumnLabel: 'Year',
         	ui: {
         		chartType: 'ScatterChart',
         		chartOptions: {
         			height: 100,
         			width: 1170,
         			chartArea:{width:'75%',height:'80%'},
-        			hAxis: {title: 'Jahr', format: ' '}
+        			hAxis: {title: 'Year', format: ' '}
         		}
         	}
         }
@@ -321,7 +321,7 @@ MultipleDramas.YearView = function(){
 	var createTooltip = function(drama){
 		var divBegin = "<div class='tooltip-test'>"
 		var headline = "<div>" + "'" + drama.title + "'" + " by <em>" + getLastName(drama.author) + "</em></div>";
-		var year = "<div>" + "<b>Jahr: </b>" + drama.year + "</div>";
+		var year = "<div>" + "<b>Year: </b>" + drama.year + "</div>";
 		var data = "<div>" + "<b>" + yearSelection + ": </b>" + drama[yearAttribute] + "</div>";
 		var divEnd = "</div>";
 		return (divBegin + headline + year + data + divEnd); 
