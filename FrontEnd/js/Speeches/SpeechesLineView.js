@@ -29,7 +29,7 @@ Speeches.SpeechesLineView = function(){
 
 		var data = new google.visualization.DataTable();
 		data.addColumn("number", "Speech length in number of words");
-		data.addColumn("number", 'Frequency of speech lengths in percent');
+		data.addColumn("number", 'Frequency of speech length in percent');
 		var array = [];
 		for(var key in distribution){
 			var row = [parseInt(key), distribution[key]];
@@ -73,7 +73,7 @@ Speeches.SpeechesLineView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls2',
           'options': {
-            'filterColumnLabel': 'Distribution of speech lengths in percent'
+            'filterColumnLabel': 'Frequency of speech length in percent'
           }
         });
 
@@ -103,10 +103,10 @@ Speeches.SpeechesLineView = function(){
 
     //Method to render absolute distribution
     var renderAbsolute = function(distribution){
-
+    console.log("renderAbsolute");
     var data = new google.visualization.DataTable();
     data.addColumn("number", "Speech length in number of words");
-    data.addColumn("number", 'Absolute frequency of speech lengths');
+    data.addColumn("number", 'Absolute frequency of speech length');
     var array = [];
     for(var key in distribution){
       var row = [parseInt(key), distribution[key]];
@@ -121,7 +121,7 @@ Speeches.SpeechesLineView = function(){
         duration: 1000
       },
       chartArea:{width:'75%',height:'80%'},
-          title: 'Distribution of speech lengths, Absolute frequency',
+          title: 'Distribution of speech length, Absolute frequency',
           curveType: 'function',
           legend: {
             position: 'none'
@@ -150,7 +150,7 @@ Speeches.SpeechesLineView = function(){
           'controlType': 'NumberRangeFilter',
           'containerId': 'curve-controls2',
           'options': {
-            'filterColumnLabel': 'Absolute frequency of speech lengths'
+            'filterColumnLabel': 'Absolute frequency of speech length'
           }
         });
 

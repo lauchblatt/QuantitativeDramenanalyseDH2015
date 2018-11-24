@@ -28,11 +28,11 @@ Speeches.SpeechesController = function(){
 		var selection = speechesLineView.getSelection();
 		var distribution = null;
 		//Get appropriate Distribution from Model
-		if(selection == "Absolut"){
+		if(selection == "Absolute"){
 			distribution = speechesModel.getDistribution();
 			speechesLineView.renderAbsolute(distribution)
 		}
-		if(selection == "Relativ"){
+		if(selection == "Relative"){
 			distribution = speechesModel.getDistributionInPercent();
 			speechesLineView.renderRelative(distribution)
 		}
