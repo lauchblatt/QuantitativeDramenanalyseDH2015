@@ -15,15 +15,32 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	
-	dpp = Drama_Pre_Processing("textblob")
-	dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/textblob/Emilia Galotti.p")
+	parser = DramaParser()
+	dramaModel = parser.parse_xml("Korpus/schi_kabale_t.xml")
+	dpp = Drama_Pre_Processing("treetagger")
+	dpp.preProcessAndLemmatize("Korpus/schi_kabale_t.xml")
+
+	dramaModel = dpp._dramaModel
+
 	# (self, DTAExtension, processor, lemmaModeOn, stopwordList, caseSensitive)
 
-	sa = Sentiment_Analyzer(True, "textblob", "lemmaBoth", None, True)
+	sa = Sentiment_Analyzer(True, "treetagger", "textLemma", None, True)
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
-	sog = Sentiment_Output_Generator()
-	sog.createTxtOutputSingleDrama("textblobTesto.txt", sentimentExtendedDramaModel)
+
+	for act in dramaModel._acts:
+		for conf in act._configurations:
+			for speech in conf._speeches:
+				metric = speech._sentimentMetrics._metricsTotal["polaritySentiWS"]
+				#"""
+				if (metric == 0):
+					print 2
+				elif (metric > 0):
+					print 3
+				elif (metric < 0):
+					print 1
+
+	#sog = Sentiment_Output_Generator()
+	#sog.createTxtOutputSingleDrama("textblobTesto.txt", sentimentExtendedDramaModel)
 	
 	
 # Class with Methods to generate Outputs --> txt and json - Outputs for metrics are possible

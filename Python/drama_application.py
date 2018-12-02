@@ -25,6 +25,21 @@ def main():
     sys.setdefaultencoding('utf8')
 
     debug = True
+
+    parser = DramaParser()
+    dramaModel = parser.parse_xml("Korpus/schi_kabale_t.xml")
+    for act in dramaModel._acts:
+        for conf in act._configurations:
+            for speech in conf._speeches:
+                text = speech._text.strip()
+                text = text.strip("\n")
+                text = text.rstrip(" ")
+                text = text.lstrip(" ")
+                text = text.replace("\n", "")
+                text = text.replace("   ", " ")
+                print text
+
+    """
     for filename in os.listdir("Dumps/ProcessedDramas/treetagger/"):
         dpp = Drama_Pre_Processing("treetagger")
         dramaModel = dpp.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/" + filename)
@@ -34,7 +49,7 @@ def main():
         file = open(outputPath, 'w')
         treetagger = Tree_Tagger()
         treetagger.initStopWords("standardList")
-        #"""
+        
         for act in dramaModel._acts:
             for conf in act._configurations:
                 for speech in conf._speeches:
@@ -48,8 +63,10 @@ def main():
                     lemmatizedSpeech = lemmatizedSpeech.strip()
                     file.write(lemmatizedSpeech + "\n")
 
-        #"""
+       
         file.close()
+    """
+
     
     """
     for filename in os.listdir("Korpus"):
