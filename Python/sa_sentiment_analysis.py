@@ -11,29 +11,58 @@ from sa_models import *
 from sa_calculator import *
 from sa_output import *
 from sa_pre_processing import *
+from lp_language_processor import *
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 
-	processor = Drama_Pre_Processing("treetagger")
-	dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
-	sa = Sentiment_Analyzer(True, "treetagger" , "textLemma", None, False)
+	#processor = Drama_Pre_Processing("treetagger")
+	#dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
+	
+	#def __init__(self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive)
+	sa = Sentiment_Analyzer(False, "treetagger" , "noLemma", None, False)
+	
+	"""
+	data = open("data/video_text.txt")
+	results = []
+	text = "Ich versprach mir von ihrem iphone der soviel wer weiß, wie albern sie sich dabei genommen hat, wenn der Rat eines Toren einmal gut ist, so muss in ein gescheiter Mann ausführen, das hätte ich Bedenken soll das hätte ich mich schon wenn du dafür belohnt, dass ich noch mal leben darüber schlagen wollte, das wieder ernst noch Sport den Garten bewegen. Konnten seine Liebe nach zusetzen versucht dich in den Haaren ist zu jagen, ich sag den Dinge über die sich vergaß, er steht Beleidigung gegen mich aus und ich fordere Genugtuung wartete sie gleich auf der Stelle und der Graph der steht in dem. Ruf er sich so etwas nicht zweimal sagen soll, aber wer kann es ihnen verdenken, er versetzte dass er doch noch etwas Wichtigeres zu tun habe, als ich mit mir den Hals zu brechen und so beschilderte ich auf die ersten acht Tage nach der Hochzeit."
+	metrics = sa.getSentimentInfoPerText(text, "treetagger")
+	print sa.toString(metrics["polaritySentiWS"])
+	"""
+
+	data = open("data/real_text.txt")
+	results = []
+
+	for line in data.readlines():
+		line = line.rstrip()
+		try:
+			metrics = sa.getSentimentInfoPerText(line, "treetagger")
+			results.append(line + "\t" + sa.toString(metrics["polaritySentiWS"]))
+		except:
+			results.append(line + "\t" + "0!")
+		
+	for result in results:
+		print result
+	
+	
+	"""
 	sentimentExtendedDramaModel = sa.attachAllSentimentInfoToDrama(dramaModel)
 
 	for act in sentimentExtendedDramaModel._acts:
 		for conf in act._configurations:
 			for speech in conf._speeches:
 				metric = speech._sentimentMetrics._metricsTotal["polaritySentiWS"]
-				#"""
+				
 				if (metric == 0):
 					print 2
 				elif (metric > 0):
 					print 3
 				elif (metric < 0):
 					print 1
-				#"""
+				
 				#print str(speech._sentimentMetrics._metricsTotal["polaritySentiWS"]).replace(".", ",")
+	"""
 
 # Main-Class to perform Sentiment Analysis
 class Sentiment_Analyzer:
@@ -49,6 +78,20 @@ class Sentiment_Analyzer:
 
 		self.initLexicons(DTAExtension, processor)
 		self.initStopWords(processor, stopwordList)
+	
+	def toString(self, number):
+		string = str(number).replace(".", ",")
+		return string
+
+	def getSentimentInfoPerText (self, text, processor):
+		lp = Language_Processor(processor)._processor
+		lp.processTextFully(text)
+		textAsLanguageInfo = lp._lemmasWithLanguageInfo
+		
+		sentimentBearingWords = self.getSentimentBearingWords(textAsLanguageInfo)
+		sentimentMetrics = self.calcAndGetSentimentMetrics(sentimentBearingWords, len(textAsLanguageInfo))
+		return sentimentMetrics._metricsTotal
+		
 	
 	# Main Method to attach all Sentiment Metrics to dramaModel
 	def attachAllSentimentInfoToDrama(self, dramaModel):

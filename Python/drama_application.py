@@ -27,17 +27,57 @@ def main():
     debug = True
 
     parser = DramaParser()
+
     dramaModel = parser.parse_xml("Korpus/schi_kabale_t.xml")
+    i = 0
     for act in dramaModel._acts:
         for conf in act._configurations:
             for speech in conf._speeches:
-                text = speech._text.strip()
-                text = text.strip("\n")
-                text = text.rstrip(" ")
-                text = text.lstrip(" ")
-                text = text.replace("\n", "")
-                text = text.replace("   ", " ")
-                print text
+                    text = speech._text
+                    text = speech._text.strip()
+                    text = text.strip("\n")
+                    text = text.rstrip(" ")
+                    text = text.lstrip(" ")
+                    text = text.replace("\n", "")
+                    text = text.replace("   ", " ")
+                    speaker = speech._speaker
+                    print speaker
+                    print text
+                    i = i + 1
+        print i
+
+    """
+    for filename in os.listdir("Korpus/"):
+
+        dramaModel = parser.parse_xml("Korpus/" + filename)
+        print(dramaModel._title)
+        filename = filename.replace(".xml", "")
+        file = open("Korpus_structured/" + filename + ".txt", "w")
+        file.write(dramaModel._title + "\n")
+        file.write("by " + dramaModel._author + "\n")
+        
+        speakerslist = []
+        for speaker in dramaModel._speakers:
+            speakerslist.append(speaker._name)
+        file.write("Speakers: " + str(speakerslist) + "\n" + "\n")  
+        for act in dramaModel._acts:
+            file.write("Act " + str(act._number) + "\n" + "\n")
+            for conf in act._configurations:
+                file.write("Configuration " + str(conf._number)+ "\n"+ "\n")
+                for speech in conf._speeches:
+                    text = speech._text
+                    text = speech._text.strip()
+                    text = text.strip("\n")
+                    text = text.rstrip(" ")
+                    text = text.lstrip(" ")
+                    text = text.replace("\n", "")
+                    text = text.replace("   ", " ")
+                    
+                    file.write(speech._speaker+ "\n")
+                    file.write(text+ "\n")
+                file.write("\n")
+        file.close()
+    """
 
     """
     for filename in os.listdir("Dumps/ProcessedDramas/treetagger/"):
