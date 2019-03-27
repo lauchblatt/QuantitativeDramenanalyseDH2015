@@ -9,16 +9,46 @@ from lexicon_handler import *
 from lp_language_processor import *
 from lexicon_clematide_dictionary import *
 from k_alpha import *
+from nltk import agreement
 
 def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
+
+	ags = Agreement_Statistics()
+	ags.printAllInfoGeneral()
 
 # Class to perform the agreement analysis for the evaluation
 class Agreement_Statistics:
 
 	def __init__(self):
 		self._sentimentDict = {}
+
+
+	def printAllInfoGeneral(self):
+		data = open("../Agreement-Daten/BA_Winterl/Sentimentator/Disgust_Sentimentator.txt")
+		item = 1
+		finalData = []
+		for line in data.readlines():
+			annotations = line.rstrip().split("\t")
+			annotator = 1
+			for anno in annotations:
+				orderedData = [str(annotator), str(item), str(anno)]
+				finalData.append(orderedData)
+				#print(orderedData)
+				annotator = annotator + 1
+			item = item + 1
+		#print finalData
+		task = agreement.AnnotationTask(data=finalData)
+		#task.kappa()
+		task.alpha()
+		print("fleiss " + str(task.multi_kappa()))
+		print("alpha " +str(task.alpha()))
+		#print("Average Cohens " + str(task.kappa()))
+		print("Average observed agreement " + str(task.avg_Ao()))
+		#print("Averaged over all labelers " + str(task.Do_Kw()))
+
+
 
 	# prints all necessary agreement info
 	# paths like this ("../Agreement-Daten/polaritaet_dichotom.txt", "../Agreement-Daten/polaritaet_dichotom_sortiert.txt", 2, 1)
