@@ -18,6 +18,7 @@ from sa_sentiment_analysis import *
 import pickle
 from sa_pre_processing import *
 from lp_treetagger import *
+from statistic_functions import *
 
 def main():
     
@@ -28,6 +29,28 @@ def main():
 
     parser = DramaParser()
 
+    processor = Drama_Pre_Processing("treetagger")
+
+    print "Die ersten 35 Repliken - Maße:"
+    for filename in os.listdir("../Lessing-Dramen/"):
+
+        allSpeechesLengths = []
+        #dramaModel = parser.parse_xml("../Lessing-Dramen/" + filename)
+        newDramaModel = processor.preProcess("../Lessing-Dramen/" + filename)
+        allSpeechesLengths = []
+        for act in newDramaModel._acts:
+            for conf in act._configurations:
+                for speech in conf._speeches:
+                    allSpeechesLengths.append(speech._lengthInWords)
+        avg = average(allSpeechesLengths[:35])
+        med = median(allSpeechesLengths[:35])
+        #print (len(allSpeechesLengths[:50]))
+        print filename.rstrip()
+        print avg
+        print med
+        print " "
+
+    """
     dramaModel = parser.parse_xml("Korpus/schi_kabale_t.xml")
     i = 0
     for act in dramaModel._acts:
@@ -46,6 +69,7 @@ def main():
                     i = i + 1
         print i
 
+    """
     """
     for filename in os.listdir("Korpus/"):
 

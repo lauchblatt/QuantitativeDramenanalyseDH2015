@@ -26,7 +26,7 @@ class Agreement_Statistics:
 
 
 	def printAllInfoGeneral(self):
-		data = open("../Agreement-Daten/BA_Winterl/Sentimentator/Disgust_Sentimentator.txt")
+		data = open("../Agreement-Daten/DH/Catma/Trust_Catma.txt")
 		item = 1
 		finalData = []
 		for line in data.readlines():
@@ -40,11 +40,11 @@ class Agreement_Statistics:
 			item = item + 1
 		#print finalData
 		task = agreement.AnnotationTask(data=finalData)
-		#task.kappa()
+		task.kappa()
 		task.alpha()
 		print("fleiss " + str(task.multi_kappa()))
 		print("alpha " +str(task.alpha()))
-		#print("Average Cohens " + str(task.kappa()))
+		print("Average Cohens " + str(task.kappa()))
 		print("Average observed agreement " + str(task.avg_Ao()))
 		#print("Averaged over all labelers " + str(task.Do_Kw()))
 

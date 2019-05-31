@@ -53,12 +53,12 @@ class Tree_Tagger:
 	def processText(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)	
-		print("Tagger ready...")
+		#print("Tagger ready...")
 		self.tagText()
-		print("Tokens ready...")
-		print("Tags ready...")
-		print("Lemmas ready...")
-		print("Lemmas With LanguageInfo ready...")
+		#print("Tokens ready...")
+		#print("Tags ready...")
+		#print("Lemmas ready...")
+		#print("Lemmas With LanguageInfo ready...")
 
 	# simple method to only process until tokens, redundant in treetagger
 	def processTextTokens(self, plainText):
@@ -68,16 +68,16 @@ class Tree_Tagger:
 	def processTextFully(self, plainText):
 		self._plainText = plainText
 		self._filteredText = self.filterText(plainText)
-		print("Tagger ready...")
+		#print("Tagger ready...")
 		self.tagText()
-		print("Tokens ready...")
-		print("Tags ready...")
-		print("Lemmas ready...")
-		print("Lemmas With LanguageInfo ready...")
+		#print("Tokens ready...")
+		#print("Tags ready...")
+		#print("Lemmas ready...")
+		#print("Lemmas With LanguageInfo ready...")
 		self.createLemmaAndPOSDict()
-		print("LemmasANDPOSDict ready...")
+		#print("LemmasANDPOSDict ready...")
 		self.combineLemmasPOSTokens()
-		print("LemmasAndPOSAndTokensDict ready...")	
+		#print("LemmasAndPOSAndTokensDict ready...")	
 	
 	# Method to save all POS by lemmas
 	def createLemmaAndPOSDict(self):

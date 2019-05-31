@@ -34,7 +34,7 @@ class Drama_Pre_Processing:
 		self._dramaModel = parser.parse_xml(dramaPath)
 	
 	def readDramaModelFromDump(self, dramaPath):
-		self._dramaModel = pickle.load(open(dramaPath, "rb"))
+		self._dramaModel = pickle.loads(str(open(dramaPath, "rb")))
 		return self._dramaModel
 
 	# Method for pre process

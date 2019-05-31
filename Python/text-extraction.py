@@ -15,7 +15,8 @@ def main():
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 	te = Text_Extraction()
-	te.createSpeechesPerLine("../Lessing-Dramen/less-Emilia_t.xml", "Speeches_per_line/Emilia_Act5.txt")
+	te.getAllWordsEndWithl(["Test", "Testl"])
+	#te.createSpeechesPerLine("../Lessing-Dramen/less-Emilia_t.xml", "Speeches_per_line/Emilia_Act5.txt")
 	#parser = DramaParser()
 	#print parser
 	#dramaModel = parser.parse_xml("../Lessing-Dramen/less-Emilia_t.xml")
@@ -26,6 +27,13 @@ class Text_Extraction:
 	def __init__(self):
 		self._tch = None
 		self._parser = None
+
+	def getAllWordsEndWithl(self, words):
+		returnWords = []
+		for word in words:
+			if word.endswith('l'):
+				returnWords.append(word)
+		print returnWords
 
 	def createSpeechesPerLine(self, pathToDrama, pathToSaveFile):
 		saveFile = open(pathToSaveFile, "w")
