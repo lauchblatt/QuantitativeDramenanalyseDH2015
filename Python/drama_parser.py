@@ -3,11 +3,12 @@
 import xml.etree.ElementTree as ET
 import re
 import os
+import nltk
 from drama_models import *
 
 class DramaParser:
 
-    namespaces = {'tei':'http://www.tei-c.org/ns/1.0'} # used to read the tags in the xml correctly
+    namespaces = {"tei":'http://www.tei-c.org/ns/1.0'} # used to read the tags in the xml correctly
 
     # starting point for the parsing
     def parse_xml(self, filepath):
@@ -15,21 +16,22 @@ class DramaParser:
         xml_root = self.get_xml_root(filepath) # get xml treeroot
 
         # general information
+        
         drama_model._title = self.get_title(xml_root)
         drama_model._author = self.get_author(xml_root)
         drama_model._date = self.get_date(xml_root)
+        drama_model._year = drama_model._date
+
+        #drama_model._type = self.get_type(filepath)
+
+        drama_model._subact_type = "Szene"
         
-        if 'when' in drama_model._date:
-            drama_model._year = drama_model._date['when']
-        else:
-            drama_model._year = 'unknown'
-
-        drama_model._type = self.get_type(filepath)
-
-        drama_model._subact_type = self.get_subact_type(xml_root)
         drama_model._acts = self.extract_act_data(xml_root)
-        drama_model._speakers = self.get_all_speakers(xml_root)
-        drama_model._castgroup = self.get_speakers_from_castgroup(xml_root)
+
+        drama_model._speakers = self.get_all_speakers(drama_model._acts)
+
+        drama_model._castgroup = drama_model._speakers
+
 
         self.calc_statistics(drama_model)
 
@@ -67,27 +69,31 @@ class DramaParser:
 
     # returns the drama title
     def get_title(self, xml_root):
-        title = xml_root.find(".//tei:fileDesc/tei:titleStmt/tei:title", self.namespaces).text
+        title = xml_root.find("tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title", self.namespaces).text
         return title
 
     # returns the drama author
     def get_author(self, xml_root):
-        author = xml_root.find(".//tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:author", self.namespaces).text
+        author = xml_root.find("tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:author", self.namespaces).text
         return author
 
     # returns the drama date
     def get_date(self, xml_root):
-        date = xml_root.find(".//tei:profileDesc/tei:creation/tei:date", self.namespaces).attrib
-        if "when" in date:
-            date['when'] = (int) (date['when'])
-            return date
+        sourceDesc = xml_root.find("tei:teiHeader/tei:fileDesc/tei:sourceDesc", self.namespaces)
+        bibl = sourceDesc.find("tei:bibl/tei:bibl", self.namespaces)
+        date_premiere = bibl.find("tei:date[@type='premiere']", self.namespaces)
+        date_print = bibl.find("tei:date[@type='print']", self.namespaces)
+        date_written = bibl.find("tei:date[@type='written']", self.namespaces)
+        if "when" in date_print.attrib:
+            dateText = date_print.attrib["when"]
+        elif "when" in date_premiere.attrib:
+            dateText = date_premier.attrib["when"]
+        elif "when" in date_written.attrib:
+            dateText = date_written.attrib["when"]
+        else:
+            dateText = "0"
 
-        if "notBefore" in date:
-            date['when'] = ((int) (date['notBefore']) + (int) (date['notAfter'])) / 2
-            return date
-
-        date['when'] = 'unknown'
-
+        date = dateText
         return date
 
     # returns the drama type from the filename
@@ -103,35 +109,13 @@ class DramaParser:
             return "not sure"
         return "unknown"
 
-    # returns if the drama contains Szene or Auftritt
-    def get_subact_type(self, xml_root):
-        subact_type = xml_root.find(".//tei:div[@type='act']/tei:div[@subtype='work:no']//tei:desc/tei:title", self.namespaces).text
-        if subact_type.find("Auftritt") != -1:
-            return "Auftritt"
-        elif subact_type.find("Szene") != -1:
-            return "Szene"
-
     # every speaker, even if they are double with different names
-    def get_all_speakers(self, xml_root, as_objects = True):
+    def get_all_speakers(self, acts):
         speaker_list = []
-        for speaker in xml_root.findall(".//tei:div[@type='act']//tei:speaker", self.namespaces):
-            name = speaker.text
-
-            if name:
-                name = name.strip(' \t\n\r')
-
-            if not name:
-                continue
-
-            if name and name[-1] == ".":
-                name = name[:-1]
-            if name and name[-1] == ",":
-                name = name[:-1]
-            if name and name not in speaker_list:
-                speaker_list.append(name)
-
-        if not as_objects:
-            return speaker_list
+        for act in acts:
+            for speaker in act._appearing_speakers:
+                if speaker not in speaker_list:
+                    speaker_list.append(speaker)
 
         speaker_model_list = []
 
@@ -141,46 +125,31 @@ class DramaParser:
             speaker_model_list.append(speaker_model)
         return speaker_model_list
 
-    # persons which are listed in the beginning
-    def get_speakers_from_castgroup(self, xml_root):
-        castgroup = []
-        for actor in xml_root.findall(".//tei:castGroup/tei:castItem", self.namespaces):
-            real_name = actor.text
-
-
-            if real_name:
-                real_name = real_name.strip(' \t\n\r')
-
-            if not real_name:
-                continue
-
-            if "," in real_name:
-                comma = real_name.index(",")
-                real_name = real_name[:comma]
-            elif real_name and real_name[-1] == ".":
-                real_name = real_name[:-1]
-            elif real_name and real_name[-1] == ",":
-                real_name = real_name[:-1]
-
-            if real_name: 
-                castgroup.append(real_name)
-
-        return castgroup
-
     # returns informations about all acts of the drama
     def extract_act_data(self, xml_root):
         act_data = []
         position = 1
         # gets number of acts and corresponding count of scenes
-        for act in xml_root.findall(".//tei:div[@type='act']", self.namespaces):
+        numberOfActs = len(xml_root.findall(".//tei:div[@type='act']", self.namespaces))
 
-            # number_of_scenes = len(act.findall("./tei:div[@subtype='work:no']", self.namespaces))
+        if(numberOfActs > 0):
+            for act in xml_root.findall(".//tei:div[@type='act']", self.namespaces):
+
+                act_model = ActModel()
+                act_model._number = position
+                act_model._configurations = self.extract_subact_data(act, position)
+
+                act_model.set_appearing_speakers()
+                act_data.append(act_model)
+                position += 1
+        else:
+            act = xml_root.find(".//tei:body", self.namespaces)
             act_model = ActModel()
             act_model._number = position
             act_model._configurations = self.extract_subact_data(act, position)
+
             act_model.set_appearing_speakers()
             act_data.append(act_model)
-            position += 1
 
         return act_data
 
@@ -188,14 +157,17 @@ class DramaParser:
     def extract_subact_data(self, act, position):
         config_data = []
         subact_position = 1
-        for subact in act.findall("./tei:div[@subtype='work:no']", self.namespaces):
+        for subact in act.findall(".//tei:div[@type='scene']", self.namespaces):
             config_model = ConfigurationModel()
             config_model._number = subact_position
             config_model._name = str(position) + " - " + str(subact_position)
             config_model._speeches = self.get_speeches_for_subact(subact)
-            config_model._appearing_speakers = self.get_speakers_for_subact(subact)
+            
+            config_model._appearing_speakers = self.get_speakers_for_subact(config_model._speeches)
+
             config_data.append(config_model)
             subact_position += 1
+
         return config_data
 
     # returns speech for subact
@@ -204,23 +176,17 @@ class DramaParser:
 
         for subact_speaker_wrapper in subact.findall(".//tei:sp", self.namespaces):
             speech_model = SpeechModel()
-            subact_speaker = subact_speaker_wrapper.find("./tei:speaker", self.namespaces)
-            name = subact_speaker.text
-
-            if name:
-                name = name.strip(' \t\n\r')
-
-            if not name:
-                continue
-
-            if name and name[-1] == ".":
-                name = name[:-1]
-            if name and name[-1] == ",":
-                name = name[:-1]
+            name = subact_speaker_wrapper.attrib["who"]
+            name = name.replace("#", "")
 
             speech_model._speaker = name
+
             speech_model._text = self.get_speech_text(subact_speaker_wrapper)
-            speech_model._length = self.get_speech_length(subact_speaker_wrapper)
+
+            tokens = nltk.word_tokenize(speech_model._text)
+            tokens = [w for w in tokens if w.isalpha()]
+
+            speech_model._length = len(tokens)
 
             # speech with a length of zero or less are not added
             if(speech_model._length > 0):
@@ -292,62 +258,34 @@ class DramaParser:
 
         return speechText
 
-    # calculates length of speech
-    def get_speech_length(self, sub_sp_wrapper):
-        length = 0
-        stage_dir_length = 0
-        p_tag = sub_sp_wrapper.find("./tei:p", self.namespaces)
-        l_tag = sub_sp_wrapper.find("./tei:l", self.namespaces)
-
-        if p_tag is not None:
-            for element in p_tag.findall("./tei:hi[@rend='italic']", self.namespaces):
-                stage_dir_length += self.get_wordcount_from_string(element.text)
-            for text in p_tag.itertext():
-                length += self.get_wordcount_from_string(text)
-            length = length - stage_dir_length
-
-        elif l_tag is not None:
-            for element in l_tag.findall("./tei:hi[@rend='italic']", self.namespaces):
-                stage_dir_length += self.get_wordcount_from_string(element.text)
-            for text in l_tag.itertext():
-                length += self.get_wordcount_from_string(text)
-            length = length - stage_dir_length
-
-        # for classic dramas with noted line breaks
-        if l_tag is None:
-            lg_tag = sub_sp_wrapper.findall("./tei:lg", self.namespaces)
-            for lg_element in sub_sp_wrapper.findall("./tei:lg", self.namespaces):
-                for l_element in lg_element.findall("./tei:l", self.namespaces):
-                    length += self.get_wordcount_from_string(l_element.text)
-
-        return length
-
-    # calculates the wordcount of a string
-    def get_wordcount_from_string(self, text):
-        word_list = re.sub("[^\w]", " ", text).split()
-        # analise the word list
-        return len(word_list)
-
     # returns all speakers for the subact
-    def get_speakers_for_subact(self, subact):
+    def get_speakers_for_subact(self, speech_list):
         speaker_data = []
 
-        for subact_speaker in subact.findall(".//tei:speaker", self.namespaces):
-            name = subact_speaker.text
-
-            if name:
-                name = name.strip(' \t\n\r')
-
-            if not name:
-                continue
-
-            if name and name[-1] == ".":
-                name = name[:-1]
-            if name and name[-1] == ",":
-                name = name[:-1]
-            if name and name not in speaker_data:
-                speaker_data.append(name)
+        for speech in speech_list:
+            speaker = speech._speaker
+            if speaker not in speaker_data:
+                speaker_data.append(speaker)
 
         return speaker_data
 
+mistakes = 0
+
+parser = DramaParser()
+parser.parse_xml("GerDracor/tei/wohlbrueck-der-vampyr.xml")
+
+
+"""
+for files in os.listdir("GerDracor/tei"):
+    path = "GerDracor/tei/" + files
     
+    try:
+        parser = DramaParser()
+        parser.parse_xml(path)
+        print path
+    except:
+        mistakes = mistakes + 1
+        print "ERRROR " + path
+
+print mistakes
+"""
