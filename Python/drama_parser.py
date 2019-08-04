@@ -30,12 +30,19 @@ class DramaParser:
 
         drama_model._speakers = self.get_all_speakers(drama_model._acts)
 
-        drama_model._castgroup = drama_model._speakers
+        drama_model._castgroup = self.get_cast_group(drama_model._speakers)
 
 
         self.calc_statistics(drama_model)
 
         return drama_model
+
+    def get_cast_group(self, speakerModels):
+        names = []
+        for speaker in speakerModels:
+            names.append(speaker._name)
+        return names
+
 
     # calculates statistics for the whole drama
     def calc_statistics(self, drama_model):
@@ -87,7 +94,7 @@ class DramaParser:
         if "when" in date_print.attrib:
             dateText = date_print.attrib["when"]
         elif "when" in date_premiere.attrib:
-            dateText = date_premier.attrib["when"]
+            dateText = date_premiere.attrib["when"]
         elif "when" in date_written.attrib:
             dateText = date_written.attrib["when"]
         else:
@@ -271,11 +278,13 @@ class DramaParser:
 
 mistakes = 0
 
+"""
 parser = DramaParser()
 parser.parse_xml("GerDracor/tei/wohlbrueck-der-vampyr.xml")
 
 
 """
+#"""
 for files in os.listdir("GerDracor/tei"):
     path = "GerDracor/tei/" + files
     
@@ -285,7 +294,7 @@ for files in os.listdir("GerDracor/tei"):
         print path
     except:
         mistakes = mistakes + 1
-        print "ERRROR " + path
+        print "ERROR " + path
 
 print mistakes
-"""
+#"""
