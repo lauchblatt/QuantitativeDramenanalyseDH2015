@@ -22,7 +22,7 @@ class DramaParser:
         drama_model._date = self.get_date(xml_root)
         drama_model._year = drama_model._date
 
-        #drama_model._type = self.get_type(filepath)
+        drama_model._type = self.get_type(filepath)
 
         drama_model._subact_type = "Szene"
         
@@ -112,8 +112,6 @@ class DramaParser:
             return "Trauerspiel"
         elif filepath.find("_k.xml") != -1 or filepath.find("_.k.xml") != -1:
             return "Komoedie"
-        elif filepath.find("_tk.xml") != -1:
-            return "not sure"
         return "unknown"
 
     # every speaker, even if they are double with different names
@@ -164,12 +162,26 @@ class DramaParser:
     def extract_subact_data(self, act, position):
         config_data = []
         subact_position = 1
-        for subact in act.findall(".//tei:div[@type='scene']", self.namespaces):
+        numberOfScenes = len(act.findall(".//tei:div[@type='scene']", self.namespaces))
+
+        if (numberOfScenes > 0):
+            for subact in act.findall(".//tei:div[@type='scene']", self.namespaces):
+                config_model = ConfigurationModel()
+                config_model._number = subact_position
+                config_model._name = str(position) + " - " + str(subact_position)
+                config_model._speeches = self.get_speeches_for_subact(subact)
+                
+                config_model._appearing_speakers = self.get_speakers_for_subact(config_model._speeches)
+
+                config_data.append(config_model)
+                subact_position += 1
+        else:
+            subact = act
             config_model = ConfigurationModel()
             config_model._number = subact_position
             config_model._name = str(position) + " - " + str(subact_position)
             config_model._speeches = self.get_speeches_for_subact(subact)
-            
+                
             config_model._appearing_speakers = self.get_speakers_for_subact(config_model._speeches)
 
             config_data.append(config_model)
@@ -276,15 +288,16 @@ class DramaParser:
 
         return speaker_data
 
-mistakes = 0
+#mistakes = 0
 
 """
 parser = DramaParser()
-parser.parse_xml("GerDracor/tei/wohlbrueck-der-vampyr.xml")
+model = parser.parse_xml("GerDracor/tei_with_annotations/wilbrandt-gracchus-der-volkstribun.xml")
+print model._type
+"""
 
 
 """
-#"""
 for files in os.listdir("GerDracor/tei"):
     path = "GerDracor/tei/" + files
     
@@ -297,4 +310,4 @@ for files in os.listdir("GerDracor/tei"):
         print "ERROR " + path
 
 print mistakes
-#"""
+"""

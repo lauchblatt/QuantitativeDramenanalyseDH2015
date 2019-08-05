@@ -10,6 +10,7 @@ def main():
     reload(sys)
     sys.setdefaultencoding('utf8')
 
+    """
     namespaces = {"tei":'http://www.tei-c.org/ns/1.0'}
 
     korpusTitles = []
@@ -33,8 +34,8 @@ def main():
     for title in korpusTitles:
         if title not in dracorTitles:
             print title
-
     """
+
     parser = DramaParser()
     output = DramaOutput()
     dramas = []
@@ -60,9 +61,9 @@ def main():
 
     else:
 
-        for filename in os.listdir("GerDracor/tei/"):
+        for filename in os.listdir("GerDracor/tei_with_annotations/"):
             try:
-                dramaModel = parser.parse_xml("GerDracor/tei/" + filename)
+                dramaModel = parser.parse_xml("GerDracor/tei_with_annotations/" + filename)
                 dramasForDenormalizing.append(dramaModel)
                 print("Erfolg beim Parsen eines Dramas")
             except:
@@ -72,7 +73,7 @@ def main():
 
     output.generate_denormalized_JSON(dramasForDenormalizing)
     #output.generates_normalized_JSON(dramas)
-    """
+
 
 
 if __name__ == "__main__":
