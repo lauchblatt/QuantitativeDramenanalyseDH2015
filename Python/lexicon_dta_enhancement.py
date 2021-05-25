@@ -154,7 +154,7 @@ class DTA_Handler:
 		
 		for filename in os.listdir("../SentimentAnalysis/DTA-Output/FetchedDTAData/"):
 			outputFile = open("../SentimentAnalysis/DTA-Output/FetchedDTAData/" + filename) 
-		 	for line in outputFile:
+			for line in outputFile:
 		 		if (not line.startswith("\t")):
 		 			word = line.strip()
 		 			if(word != ""):

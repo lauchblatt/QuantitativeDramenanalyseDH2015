@@ -14,14 +14,16 @@ from sa_pre_processing import *
 from lp_language_processor import *
 
 def main():
-	reload(sys)
-	sys.setdefaultencoding('utf8')
+	#reload(sys)
+	# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma
+	# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma# lemmaMode --> 3 cases: bothLemma, textLemma, noLemma
+	#sys.setdefaultencoding('utf8')
 
 	#processor = Drama_Pre_Processing("treetagger")
 	#dramaModel = processor.readDramaModelFromDump("Dumps/ProcessedDramas/treetagger/Emilia Galotti.p")
 	
 	#def __init__(self, DTAExtension, processor, lemmaMode, stopwordList, caseSensitive)
-	sa = Sentiment_Analyzer(False, "treetagger" , "noLemma", None, False)
+	sa = Sentiment_Analyzer(False, "treetagger" , "noLemma", None, True)
 	
 	"""
 	data = open("data/video_text.txt")
@@ -31,19 +33,31 @@ def main():
 	print sa.toString(metrics["polaritySentiWS"])
 	"""
 
+	data = open("data/polarity-text.txt")
+	write = open("data/lexicon1.txt", "w")
+
+	for line in data.readlines():
+		metric = sa.getSentimentInfoPerText(line, "treetagger")
+		print (metric["polaritySentiWS"])
+		write.write(str(metric["polaritySentiWS"]) + "\n")
+	data.close()
+	write.close()
+
+	"""
 	data = open("data/real_text.txt")
 	results = []
 
 	for line in data.readlines():
 		line = line.rstrip()
 		try:
-			metrics = sa.getSentimentInfoPerText(line, "treetagger")
+			metrics = sa.getSentimentInfoPerText(line, "textblob")
 			results.append(line + "\t" + sa.toString(metrics["polaritySentiWS"]))
 		except:
 			results.append(line + "\t" + "0!")
 		
 	for result in results:
-		print result
+		print (result)
+	"""
 	
 	
 	"""
@@ -87,6 +101,8 @@ class Sentiment_Analyzer:
 		lp = Language_Processor(processor)._processor
 		lp.processTextFully(text)
 		textAsLanguageInfo = lp._lemmasWithLanguageInfo
+
+		#print (textAsLanguageInfo)
 		
 		sentimentBearingWords = self.getSentimentBearingWords(textAsLanguageInfo)
 		sentimentMetrics = self.calcAndGetSentimentMetrics(sentimentBearingWords, len(textAsLanguageInfo))

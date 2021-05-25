@@ -361,14 +361,14 @@ class Lexicon_Handler:
 			allZerosNegative = all(value == 0 for value in polaritiesNegative.values())
 			allOnesNegative = all(value == 1 for value in polaritiesNegative.values())
 
-			#"""
+			"""
 			if(not(allZerosNegative or allOnesNegative)):
 				negativeDifferences = negativeDifferences + 1
-				print word
+				print (word)
 				print sentiments
 				print polaritiesNegative.items()
 			#"""
-		print "Anzahl der Abweichungen bezüglich Polarität: " + str(negativeDifferences)
+		#print "Anzahl der Abweichungen bezüglich Polarität: " + str(negativeDifferences)
 
 	def createOutputCombinedLexicon(self, sentimentDict, processor, tokensOrLemmas, DTAExtended):
 		if(DTAExtended):

@@ -16,7 +16,7 @@ def main():
 	tt = Tree_Tagger()
 	text = "Ich ging gestern Blumen pflücken."
 	tt.processText(text)
-	print tt._tokens
+	#print tt._tokens
 
 # Class to implement treetagger lemmatization
 # implements also stopword-lists
@@ -91,7 +91,7 @@ class Tree_Tagger:
 			self._lemmaAndPOSDict[lemma] = POSList
 	
 	def combineLemmasPOSTokens(self):
-		for lemma, POS in self._lemmaAndPOSDict.iteritems():
+		for lemma, POS in self._lemmaAndPOSDict.items():
 			tokensOfLemma = []
 			for languageInfo in self._lemmasWithLanguageInfo:
 				if(lemma == languageInfo[0]):
@@ -175,17 +175,19 @@ class Tree_Tagger:
 	
 	# filter method for words that disturb lemmatization process
 	def filterText(self, text):
+		"""
 		newText = ""
-		newText = unicode(text.replace("–", ""))
-		newText = unicode(newText.replace("'", ""))
-		newText = unicode(newText.replace("«", ""))
-		newText = unicode(newText.replace("»", ""))
-		newText = unicode(newText.replace("[", ""))
-		newText = unicode(newText.replace("]", ""))
-		newText = unicode(newText.replace("...", ""))
-		newText = unicode(newText.replace("..", ""))
+		newText = str(text.replace("–", ""))
+		newText = str(newText.replace("'", ""))
+		newText = str(newText.replace("«", ""))
+		newText = str(newText.replace("»", ""))
+		newText = str(newText.replace("[", ""))
+		newText = str(newText.replace("]", ""))
+		newText = str(newText.replace("...", ""))
+		newText = str(newText.replace("..", ""))
+		"""
 
-		return newText
+		return text
 
 	# Methods to handle and init Stopword-List
 	def initStopWords(self, listname):

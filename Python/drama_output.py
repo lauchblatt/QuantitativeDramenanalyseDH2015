@@ -168,7 +168,7 @@ class DramaOutput:
 
         dramas_json = json.dumps(dramaJsonArray, indent=4, ensure_ascii=True)
         doc = open('Dramas_data.json', 'w')
-        print dramas_json
+        #print dramas_json
         doc.write(dramas_json)
         doc.close
 

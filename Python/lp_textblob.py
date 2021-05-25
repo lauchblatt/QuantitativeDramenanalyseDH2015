@@ -106,17 +106,19 @@ class Text_Blob:
 
 	# filter method for words that disturb lemmatization process
 	def filterText(self, text):
+		"""
 		newText = ""
-		newText = unicode(text.replace("–", ""))
-		newText = unicode(newText.replace("'", ""))
-		newText = unicode(newText.replace("«", ""))
-		newText = unicode(newText.replace("»", ""))
-		newText = unicode(newText.replace("[", ""))
-		newText = unicode(newText.replace("]", ""))
-		newText = unicode(newText.replace("...", ""))
-		newText = unicode(newText.replace("..", ""))
+		newText = str(text.replace("–", ""))
+		newText = str(newText.replace("'", ""))
+		newText = str(newText.replace("«", ""))
+		newText = str(newText.replace("»", ""))
+		newText = str(newText.replace("[", ""))
+		newText = str(newText.replace("]", ""))
+		newText = str(newText.replace("...", ""))
+		newText = str(newText.replace("..", ""))
+		"""
 
-		return newText
+		return text
 
 	# method to process and lemmatize single drama by path
 	def processSingleDrama(self, path):
@@ -175,7 +177,7 @@ class Text_Blob:
 			self._lemmaAndPOSDict[lemma] = POSList
 	
 	def combineLemmasPOSTokens(self):
-		for lemma, POS in self._lemmaAndPOSDict.iteritems():
+		for lemma, POS in self._lemmaAndPOSDict.items():
 			tokensOfLemma = []
 			for languageInfo in self._lemmasWithLanguageInfo:
 				if(lemma == languageInfo[0]):

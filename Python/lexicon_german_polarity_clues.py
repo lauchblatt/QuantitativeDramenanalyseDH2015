@@ -103,8 +103,6 @@ class German_Polarity_Clues:
 			infoPerWord["neutral"] = 0
 			sentimentDictNegative[unicode(info[0])] = infoPerWord
 			sentimentDictNegative[unicode(info[1])] = infoPerWord
-			print unicode(info[0])
-			print unicode(info[1])
 		
 		for line in linesPositive:
 			info = line.split("\t")

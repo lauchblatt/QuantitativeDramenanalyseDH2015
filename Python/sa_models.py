@@ -149,13 +149,13 @@ class Sentiment_Metrics:
 		print("Total Values: ")
 		for metric,value in self._metricsTotal.items():
 			item = metric + ": " + str(value)
-			print item,
+			#print item,
 
 		print("Normalised Values: ")
 		print("Length in Words: " + str(lengthInWords))
 		for metric,value in self._metricsNormalisedLengthInWords.items():
 			item = metric + ": " + str(value)
-			print item,
+			#print item,
 
 		print("Sentiment Ratio: " + str(self._sentimentRatio))
 
@@ -349,7 +349,7 @@ class Sentiment_Bearing_Word:
 		gpc = ",".join([str(self._positiveGpc), str(self._negativeGpc), str(self._neutralGpc)])
 
 		info = info + " " + sentiments + " " + bawl
-		print info
+		#print info
 
 	def returnInfoAsString(self):
 		info = "(" + self._token + ", " + self._lemma + ", " + self._POS + "): "

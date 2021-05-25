@@ -31,13 +31,6 @@ def main():
 		for conf in act._configurations:
 			for speech in conf._speeches:
 				metric = speech._sentimentMetrics._metricsTotal["polaritySentiWS"]
-				#"""
-				if (metric == 0):
-					print 2
-				elif (metric > 0):
-					print 3
-				elif (metric < 0):
-					print 1
 
 	#sog = Sentiment_Output_Generator()
 	#sog.createTxtOutputSingleDrama("textblobTesto.txt", sentimentExtendedDramaModel)

@@ -88,7 +88,7 @@ class CD:
 				infoPerWord["negative"] = 0
 			if(sentimentInfo[0] == "NEU"):
 				infoPerWord["neutral"] = float(sentimentInfo[1])
-				print word
+				#print word
 			else:
 				infoPerWord["neutral"] = 0
 
